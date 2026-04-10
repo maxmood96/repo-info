@@ -48,7 +48,7 @@
 ## `xwiki:17`
 
 ```console
-$ docker pull xwiki@sha256:eee071b58e511201fe17e57528c9b505c67481807ca35a8c65e7550230a18c51
+$ docker pull xwiki@sha256:0a92a197195f92613a88aafa43d0301eeb20ad3d9c0ca04cf969ba5453c76186
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -61,13 +61,13 @@ $ docker pull xwiki@sha256:eee071b58e511201fe17e57528c9b505c67481807ca35a8c65e75
 ### `xwiki:17` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:fe2edcf3b216e6a9362541d91cb043523424ef7f0f95afc051e6463d97cbefad
+$ docker pull xwiki@sha256:cd32acdfa356b367a08172a751f760e2eee019dbb197a92952da8e0d075ef88f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **639.2 MB (639183956 bytes)**  
+-	Total Size: **639.2 MB (639185369 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9719a03631768e295c3a39a96f5e36a23292cff7c53740cfcec14ddc293b48a`
+-	Image ID: `sha256:b0d261d19d9f028a4cd0c20b82bafecc4a6861b55bbabf4453ea916c5d582adc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -130,53 +130,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:23:34 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 CMD ["xwiki"]
 ```
 
@@ -221,69 +221,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e23f42ce2143e59999ed906d931bb07199027d8285853b6e5dea3ff92dcfd4b6`  
-		Last Modified: Tue, 07 Apr 2026 17:29:29 GMT  
-		Size: 191.2 MB (191192491 bytes)  
+	-	`sha256:7e0fc84863cba3136ca06888d2e3c333bc4fc5464bd286417389ed001cd02843`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 191.2 MB (191192461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2259c1fb33f097350fcec3f98201f6e10116159a7e0068c6710fa5b6236596e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:32 GMT  
-		Size: 331.3 MB (331301493 bytes)  
+	-	`sha256:b25b6c04e898becf799876d70bb3374f0e111303e4ba8751273c7fcf873bcfe3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 331.3 MB (331302931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ee2d88deece360474ed458c74654297b3454a36af70584aa0e1e240356eea62`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 2.4 MB (2441664 bytes)  
+	-	`sha256:8f5433022279f8b39aac51b391b6cd30aee3c12cb19ce0c89a0d1480118d7831`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 2.4 MB (2441658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03d89108ef77771b76968f183460186900846449b84469d27d3986265ee35b31`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 1.3 KB (1338 bytes)  
+	-	`sha256:b9d78506679e13ae5426fa585380e8ca1bc63c4091268f70a9216d7a9a4f0e70`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5fd9e5886f632316cb8cc33355ce7cc08d72848891943b1ddd6fa55f18c75ed7`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:4627a3097827169c9928e66c2cf5e4fcfc06b4a5cacab939056105f11681008c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 2.4 KB (2374 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c91978d2bdc051febbe05073145eef6dc172b3b8932c998d0b8c93ab9df714c`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 10.7 KB (10673 bytes)  
+	-	`sha256:35d408c992e2535da0004e1b8c2982a193b3402767474364724917bbfcb26a08`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 10.7 KB (10678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdf218e62cee6b6e273d5f142ea0a7f66e2667597ed7f0d8a9156ed98796f249`  
-		Last Modified: Tue, 07 Apr 2026 17:29:23 GMT  
-		Size: 2.5 KB (2533 bytes)  
+	-	`sha256:ac41074fc407781ff3c0111d78b396273ce12558962037b035112da05235bbe8`  
+		Last Modified: Thu, 09 Apr 2026 22:24:14 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:17` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:7c48999bfe033b4e0ef594e6ddd19c0a6c964070f8e177aae20a3011bc371424
+$ docker pull xwiki@sha256:5418d43b5ed67294a897d0a983ce6d4e5b4ccdb9cdc07bee7ab2a19720cbdcc2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9222462 bytes)**  
+-	Total Size: **9.2 MB (9222461 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb238883cfc72b669007f9f5ec659a0c374be86a5537f7113671b778b06fc27a`
+-	Image ID: `sha256:4d0788c0277c18fd341858d4454cb8624bc1cdd9b2902f56e2ed6f09ecf82c43`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8f9672ab5243a2b5bfb2cccc992960c4b9139b8fa92172dbec238009b061b02c`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
+	-	`sha256:859cd2748f6bb45ae0caf3f3d3441a667c5b9be38e91722ac0dd4751c2a29707`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 9.2 MB (9180967 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eda98feac87b9a46a344f19f69b9b1f5080d250b94ad46673f10e8c54b047302`  
-		Last Modified: Tue, 07 Apr 2026 17:29:20 GMT  
-		Size: 41.5 KB (41495 bytes)  
+	-	`sha256:2a364ffc6b2202b304890f77ef7b14c7497dc3089c7b3a557e9a0fd39effb9aa`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 41.5 KB (41494 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:17` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:f21c258928c969b3246cc14392c23fc696a1a7df5b7fecfaaec8fda745d851cb
+$ docker pull xwiki@sha256:cf3ca78c3e59bf0b31a6ac008d76768335b489100de74d2084ec55b6b9b76a67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **635.2 MB (635169570 bytes)**  
+-	Total Size: **635.2 MB (635171278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ddbff823fe42d306d09ed30cf187d8afb3f1c458bc8029b478e1ef0ac8dc768`
+-	Image ID: `sha256:52402a3abb675d723ecb18c110dfbc6be76653db28239c4d9750fddc1b75cbf3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -346,53 +346,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:22 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 CMD ["xwiki"]
 ```
 
@@ -437,63 +437,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d4a35dd37dfa25d43cd60c7c5c286bc949db937d93f258dc4ca8d3b9e10c980`  
-		Last Modified: Tue, 07 Apr 2026 17:29:27 GMT  
-		Size: 188.9 MB (188852279 bytes)  
+	-	`sha256:6de840e925519c0409af5cd558df0f21edeb9649779a12b2493891b75e1847bb`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 188.9 MB (188852546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b8aa2eafa310afe8860e9b8d28e4106da8eca6c2a30f2a67673f2b27088415e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:31 GMT  
-		Size: 331.3 MB (331301451 bytes)  
+	-	`sha256:9310dcdb6a597b56a414e66d3f22b7ba2ce34205bde74028db3fe1f2a0fd15bd`  
+		Last Modified: Thu, 09 Apr 2026 22:26:08 GMT  
+		Size: 331.3 MB (331302885 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74c436a59dbc1ba79f385aa2bd1f9d45c73672a9622a9e064c87d1e90b1a38b0`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 2.4 MB (2441660 bytes)  
+	-	`sha256:96808ece531c7ad16047cd0c276b1eaf24eba803a4777be20fa486b1223746f3`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 2.4 MB (2441663 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92425e3de53c7957aa7e4e9d1332ed6c30c5837c4ea10ca520f8cedbf9dcafde`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:9ce7afa650f665e999145f9d31f392769a771cadccb2efd5dfc6c05f9122784d`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:195a4268fd728b15fbdbce402e89fa2e97e22cec9f33902cdb5f1736eba425bb`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 2.4 KB (2373 bytes)  
+	-	`sha256:2d027b61411abad4e11a023df03be9c862868ba06a16c66900ef590e636694c0`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 2.4 KB (2370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c714bc283061903c596cdf73278d2169e127966c319514a7f20bf39fcf2f6bca`  
-		Last Modified: Tue, 07 Apr 2026 17:29:23 GMT  
-		Size: 10.7 KB (10674 bytes)  
+	-	`sha256:b7309071b2cf1018f0903bc2464b90a8ed6a303491d93d5f7c831150f86feb2d`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 10.7 KB (10676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99a34d715634245a7e2a4de015c8621a52b98e8c80b25ef9380d3caee9ce68d1`  
-		Last Modified: Tue, 07 Apr 2026 17:29:24 GMT  
-		Size: 2.5 KB (2531 bytes)  
+	-	`sha256:b71f53f72f1ee9e632bafd61edc51b85d912272724683d7cfdca8d2c3a2e449b`  
+		Last Modified: Thu, 09 Apr 2026 22:25:58 GMT  
+		Size: 2.5 KB (2532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:17` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:e65249f00292be06ccddca8606eeafc8d9d8ad0d2e30cbaebd340420c3b0f946
+$ docker pull xwiki@sha256:57259cbe5603fbf926a45bc60e567fdeea65599656c57de290d10de30399c49f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9223459 bytes)**  
+-	Total Size: **9.2 MB (9223460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76bca099feb71fc857e5f3b48c1b82818c84a0672fd890dcacc7ca94b6f2eeb2`
+-	Image ID: `sha256:43b61a5fe2bc34eab178bf7d52fa31bd2f6414573ec8124977b670dceec03f65`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d4ca55a9c4b706707ecd39b8b249e95dcca83a23eace24a6abe16bdf943e6a5e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
+	-	`sha256:d19cfc5eaf35df59fbff8997866e21c81f882ce45c1271b88333b16b9fd80501`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
 		Size: 9.2 MB (9181756 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bb9a39e60e3ccb2bb32fc601feb85e8b1739e6de789de1e28fc7c90312af68f4`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 41.7 KB (41703 bytes)  
+	-	`sha256:1d7294b680df9d360663567b9abb2f7c69ad02831dd0f9e971ccfc4d2e747594`  
+		Last Modified: Thu, 09 Apr 2026 22:25:55 GMT  
+		Size: 41.7 KB (41704 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:17-mariadb-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:8dcd89a74c1e16e80fdd39d27149c4593fa53d5abf1b21d0a5e25fb325f95b1f
+$ docker pull xwiki@sha256:51beea14e5fe4730d9942169e1a2e742a9fb857a830fa30a2918c099033674d6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -506,13 +506,13 @@ $ docker pull xwiki@sha256:8dcd89a74c1e16e80fdd39d27149c4593fa53d5abf1b21d0a5e25
 ### `xwiki:17-mariadb-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ea50d7e1f3d76d741fd760c3a4a6ea943349dda0b3ec5a5ad1a48804ee148aa0
+$ docker pull xwiki@sha256:d2095f8a7df7705754e60e667f668a25d76f3fcb72248d02b2fbf45e9f4a3591
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **637.5 MB (637450739 bytes)**  
+-	Total Size: **637.5 MB (637452373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:246352fc4471462e75e8be41e663c7fb33ae2295d0923f9aae0db580e14d85bf`
+-	Image ID: `sha256:0a15370c6fcac1c61468cfd259920f8ee147827b31b793a9afa357c5de9ae283`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -575,53 +575,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:24:06 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:24:06 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:24:27 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_VERSION=3.5.7
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 CMD ["xwiki"]
 ```
 
@@ -666,69 +666,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e23f42ce2143e59999ed906d931bb07199027d8285853b6e5dea3ff92dcfd4b6`  
-		Last Modified: Tue, 07 Apr 2026 17:29:29 GMT  
-		Size: 191.2 MB (191192491 bytes)  
+	-	`sha256:d614a1a827bba5456d3e0524700e840ec37b5e1aa8a1a8d3d37f3714ae830447`  
+		Last Modified: Thu, 09 Apr 2026 22:25:10 GMT  
+		Size: 191.2 MB (191192634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2259c1fb33f097350fcec3f98201f6e10116159a7e0068c6710fa5b6236596e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:32 GMT  
-		Size: 331.3 MB (331301493 bytes)  
+	-	`sha256:7ec41c5cd54d504491a7ee2e21cebf61fb0acadbbdbdb5dc1017be7536f9e363`  
+		Last Modified: Thu, 09 Apr 2026 22:25:13 GMT  
+		Size: 331.3 MB (331302981 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be9de30e314e4445d4b37bf01bc2c0a8c56a98f82a6f2d1eb1dd9991a45096ab`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 708.5 KB (708547 bytes)  
+	-	`sha256:13cc41f7666390c761b3d2a7adfd880844a59478decf5db9712902c3250b1341`  
+		Last Modified: Thu, 09 Apr 2026 22:25:04 GMT  
+		Size: 708.5 KB (708545 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73d54380c145c5fbac1cc3fc5befaf8ffd3340b7ae24d4c86ebf35f51d7ca317`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 1.3 KB (1339 bytes)  
+	-	`sha256:66c12f10aabc0ad7bec6a03d187ab4d85b5ed5d92199f5b39ff4ecd0ece2e542`  
+		Last Modified: Thu, 09 Apr 2026 22:25:04 GMT  
+		Size: 1.3 KB (1340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6e659f22d9f0db4c4dfda98b9355eb229cf29dcf975c12b4fcd222bdb97496a`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 2.3 KB (2309 bytes)  
+	-	`sha256:55cc2e4fdf23dc3030f98e2c61065b22222165dea26c107e59e53e316087b9f1`  
+		Last Modified: Thu, 09 Apr 2026 22:25:05 GMT  
+		Size: 2.3 KB (2310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d1941ec54b0a86033ea8a67f1a66ade025992b430c751a95a2252d23c18d02d`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 10.7 KB (10674 bytes)  
+	-	`sha256:1420db266102fab686ce6b01eeaf752b8535b743cce3b5ea673e986688213d37`  
+		Last Modified: Thu, 09 Apr 2026 22:25:05 GMT  
+		Size: 10.7 KB (10677 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6687fa0ea60317b0b04890e7dcb7e16934565062b497bdece31f34d7b4afff21`  
-		Last Modified: Tue, 07 Apr 2026 17:29:55 GMT  
+	-	`sha256:f681e64b6d866908415073cf14262e0f3f4e7c9d65cbb492f8128c4b30bc9909`  
+		Last Modified: Thu, 09 Apr 2026 22:25:06 GMT  
 		Size: 2.5 KB (2494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:17-mariadb-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:ec42cce413bbbaa1ee722d02ae244a34c5b15708d02d92015cd4079bdc2d9741
+$ docker pull xwiki@sha256:78a0829760d07325d86f0eaedaf932719ce3ad0b8908b35f968b5d166dbad1d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9220195 bytes)**  
+-	Total Size: **9.2 MB (9220194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84945ca6f4d8db98d103b2ff026c2b211eb4c3155a7252fa64a2286b88e1df7d`
+-	Image ID: `sha256:02efd847e33a48df0977341df7d49985c6ca77a4120cf8caf703fcfa112e9a41`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:966e8e1c7f650cd9669142cabe8e2f1368b59459c117347de1fd02c710c3de14`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
+	-	`sha256:17be8c05cc005333f8e6f111d9f846cb308bc0219a85a2f1a7e7a92f5510d8a0`  
+		Last Modified: Thu, 09 Apr 2026 22:25:05 GMT  
 		Size: 9.2 MB (9179746 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c64bbb1ad68c2e2905bf9aeed7c58b131ae14fa82c47c6e12848af67e955b39b`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 40.4 KB (40449 bytes)  
+	-	`sha256:4bf73e24884d001bb1d960edddce212d25437830354bc533f18daf13cc420a03`  
+		Last Modified: Thu, 09 Apr 2026 22:25:04 GMT  
+		Size: 40.4 KB (40448 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:17-mariadb-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:22a169aa86c77cfb2239cd30d8b508caac9bc529b8e948e049d45cb05fecf854
+$ docker pull xwiki@sha256:a2afebcd0107e9871dc634a18d8dc4b656af57daf316f0cabbc22ae34ae68e7c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **633.4 MB (633436348 bytes)**  
+-	Total Size: **633.4 MB (633437665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3096a456e6ec48d3e82ba7a96af725ebdc5a75fb7a0de1e5b97d47aed7856283`
+-	Image ID: `sha256:fd1cd6b1eef0e082e763e2342cc9c98a95b74796907ec41591d6c7b2f76fa1c5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -791,53 +791,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:25:06 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:25:06 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:28 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_VERSION=3.5.7
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 CMD ["xwiki"]
 ```
 
@@ -882,63 +882,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d4a35dd37dfa25d43cd60c7c5c286bc949db937d93f258dc4ca8d3b9e10c980`  
-		Last Modified: Tue, 07 Apr 2026 17:29:27 GMT  
-		Size: 188.9 MB (188852279 bytes)  
+	-	`sha256:08823c3db987c987900b6d67c9247d6386ce0eea8143c78e2f3e0b5e32b998e5`  
+		Last Modified: Thu, 09 Apr 2026 22:26:07 GMT  
+		Size: 188.9 MB (188852085 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b8aa2eafa310afe8860e9b8d28e4106da8eca6c2a30f2a67673f2b27088415e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:31 GMT  
-		Size: 331.3 MB (331301451 bytes)  
+	-	`sha256:eb4c31e6885efbe1075a08f5c35e0db15f98101794ae8f5e79f4fe02094c16d9`  
+		Last Modified: Thu, 09 Apr 2026 22:26:09 GMT  
+		Size: 331.3 MB (331302946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13256aaf0560ce630d57487a5eff1f78ca37ad5ef3d68d104cda3b115a01f500`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
-		Size: 708.5 KB (708549 bytes)  
+	-	`sha256:4ab581bc8a38f6d1d41897625bd793c8248b2fb927d26d1bc631585fbdf9e077`  
+		Last Modified: Thu, 09 Apr 2026 22:26:01 GMT  
+		Size: 708.5 KB (708545 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8093fdcee4faeca8b64e81f9eb75760ab5e5b1285c12a62e48889554f2197e19`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
-		Size: 1.3 KB (1338 bytes)  
+	-	`sha256:3f43c596e9456f3683a935cb6c7f38817e91806651e275c84b62dca1dd8987dd`  
+		Last Modified: Thu, 09 Apr 2026 22:26:01 GMT  
+		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c18fb36864988f3127d093a6d021dfe149502b5cc14b9374fc67396880df339c`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
-		Size: 2.3 KB (2305 bytes)  
+	-	`sha256:a8c47e96b643ba7ebd05cfa185496943fb163e85b49129d5550d04d33b9cc123`  
+		Last Modified: Thu, 09 Apr 2026 22:26:02 GMT  
+		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:938e2754954cb840a522bacb1591dadfeaad1d4ee060d33ee90d08073d8f371d`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
-		Size: 10.7 KB (10675 bytes)  
+	-	`sha256:7c47d9d0dfaed412815dbea06f097ef2d94860ed76821693877f188e4cb27717`  
+		Last Modified: Thu, 09 Apr 2026 22:26:02 GMT  
+		Size: 10.7 KB (10676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47437284cfe4309868ddd99ca11b519fe75320a64228b715c3040c94b4ee602f`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 2.5 KB (2489 bytes)  
+	-	`sha256:7e200218e445d54d4cd2843abeb3670147f2b610f53283d91dc918dd4497e630`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 2.5 KB (2500 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:17-mariadb-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:e1d4889be574da18c6ebaad5591682eb0bf631a8eb53588045ae8a78c482b338
+$ docker pull xwiki@sha256:94cd7045ea7f56ce9074d68c9c0b10148d65e775fcf2f0cc037ec3874faa1e21
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9221098 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf805a7309f1e210900169fa0df14c4cc56ebc655c6cf45d9f65ffea3014d2b9`
+-	Image ID: `sha256:3f40e3aa2eff775352b8be74d32bcfdb73e1e1d6c57c79551bbbb4bc30f571a7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:259db551a32f15d0842d92573f251db3da8e048302b4a0309ebd23fb3571d52a`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
+	-	`sha256:ce4eccdb3d5db8c578ed4b14c18ea462a3f5259e7116bf6d994359e843ee463d`  
+		Last Modified: Thu, 09 Apr 2026 22:26:01 GMT  
 		Size: 9.2 MB (9180487 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:362511debf7a8e645ac04dcef890d93c9bf7f016f09457e96533a01327310a8d`  
-		Last Modified: Tue, 07 Apr 2026 17:29:52 GMT  
+	-	`sha256:4410303f0ef1fa1b939c31e269ad8e42d5815d2a80b682d71500f6f5b1e45141`  
+		Last Modified: Thu, 09 Apr 2026 22:26:00 GMT  
 		Size: 40.6 KB (40611 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:17-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:eee071b58e511201fe17e57528c9b505c67481807ca35a8c65e7550230a18c51
+$ docker pull xwiki@sha256:0a92a197195f92613a88aafa43d0301eeb20ad3d9c0ca04cf969ba5453c76186
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -951,13 +951,13 @@ $ docker pull xwiki@sha256:eee071b58e511201fe17e57528c9b505c67481807ca35a8c65e75
 ### `xwiki:17-mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:fe2edcf3b216e6a9362541d91cb043523424ef7f0f95afc051e6463d97cbefad
+$ docker pull xwiki@sha256:cd32acdfa356b367a08172a751f760e2eee019dbb197a92952da8e0d075ef88f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **639.2 MB (639183956 bytes)**  
+-	Total Size: **639.2 MB (639185369 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9719a03631768e295c3a39a96f5e36a23292cff7c53740cfcec14ddc293b48a`
+-	Image ID: `sha256:b0d261d19d9f028a4cd0c20b82bafecc4a6861b55bbabf4453ea916c5d582adc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -1020,53 +1020,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:23:34 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 CMD ["xwiki"]
 ```
 
@@ -1111,69 +1111,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e23f42ce2143e59999ed906d931bb07199027d8285853b6e5dea3ff92dcfd4b6`  
-		Last Modified: Tue, 07 Apr 2026 17:29:29 GMT  
-		Size: 191.2 MB (191192491 bytes)  
+	-	`sha256:7e0fc84863cba3136ca06888d2e3c333bc4fc5464bd286417389ed001cd02843`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 191.2 MB (191192461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2259c1fb33f097350fcec3f98201f6e10116159a7e0068c6710fa5b6236596e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:32 GMT  
-		Size: 331.3 MB (331301493 bytes)  
+	-	`sha256:b25b6c04e898becf799876d70bb3374f0e111303e4ba8751273c7fcf873bcfe3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 331.3 MB (331302931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ee2d88deece360474ed458c74654297b3454a36af70584aa0e1e240356eea62`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 2.4 MB (2441664 bytes)  
+	-	`sha256:8f5433022279f8b39aac51b391b6cd30aee3c12cb19ce0c89a0d1480118d7831`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 2.4 MB (2441658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03d89108ef77771b76968f183460186900846449b84469d27d3986265ee35b31`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 1.3 KB (1338 bytes)  
+	-	`sha256:b9d78506679e13ae5426fa585380e8ca1bc63c4091268f70a9216d7a9a4f0e70`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5fd9e5886f632316cb8cc33355ce7cc08d72848891943b1ddd6fa55f18c75ed7`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:4627a3097827169c9928e66c2cf5e4fcfc06b4a5cacab939056105f11681008c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 2.4 KB (2374 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c91978d2bdc051febbe05073145eef6dc172b3b8932c998d0b8c93ab9df714c`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 10.7 KB (10673 bytes)  
+	-	`sha256:35d408c992e2535da0004e1b8c2982a193b3402767474364724917bbfcb26a08`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 10.7 KB (10678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdf218e62cee6b6e273d5f142ea0a7f66e2667597ed7f0d8a9156ed98796f249`  
-		Last Modified: Tue, 07 Apr 2026 17:29:23 GMT  
-		Size: 2.5 KB (2533 bytes)  
+	-	`sha256:ac41074fc407781ff3c0111d78b396273ce12558962037b035112da05235bbe8`  
+		Last Modified: Thu, 09 Apr 2026 22:24:14 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:17-mysql-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:7c48999bfe033b4e0ef594e6ddd19c0a6c964070f8e177aae20a3011bc371424
+$ docker pull xwiki@sha256:5418d43b5ed67294a897d0a983ce6d4e5b4ccdb9cdc07bee7ab2a19720cbdcc2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9222462 bytes)**  
+-	Total Size: **9.2 MB (9222461 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb238883cfc72b669007f9f5ec659a0c374be86a5537f7113671b778b06fc27a`
+-	Image ID: `sha256:4d0788c0277c18fd341858d4454cb8624bc1cdd9b2902f56e2ed6f09ecf82c43`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8f9672ab5243a2b5bfb2cccc992960c4b9139b8fa92172dbec238009b061b02c`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
+	-	`sha256:859cd2748f6bb45ae0caf3f3d3441a667c5b9be38e91722ac0dd4751c2a29707`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 9.2 MB (9180967 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eda98feac87b9a46a344f19f69b9b1f5080d250b94ad46673f10e8c54b047302`  
-		Last Modified: Tue, 07 Apr 2026 17:29:20 GMT  
-		Size: 41.5 KB (41495 bytes)  
+	-	`sha256:2a364ffc6b2202b304890f77ef7b14c7497dc3089c7b3a557e9a0fd39effb9aa`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 41.5 KB (41494 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:17-mysql-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:f21c258928c969b3246cc14392c23fc696a1a7df5b7fecfaaec8fda745d851cb
+$ docker pull xwiki@sha256:cf3ca78c3e59bf0b31a6ac008d76768335b489100de74d2084ec55b6b9b76a67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **635.2 MB (635169570 bytes)**  
+-	Total Size: **635.2 MB (635171278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ddbff823fe42d306d09ed30cf187d8afb3f1c458bc8029b478e1ef0ac8dc768`
+-	Image ID: `sha256:52402a3abb675d723ecb18c110dfbc6be76653db28239c4d9750fddc1b75cbf3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -1236,53 +1236,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:22 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 CMD ["xwiki"]
 ```
 
@@ -1327,63 +1327,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d4a35dd37dfa25d43cd60c7c5c286bc949db937d93f258dc4ca8d3b9e10c980`  
-		Last Modified: Tue, 07 Apr 2026 17:29:27 GMT  
-		Size: 188.9 MB (188852279 bytes)  
+	-	`sha256:6de840e925519c0409af5cd558df0f21edeb9649779a12b2493891b75e1847bb`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 188.9 MB (188852546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b8aa2eafa310afe8860e9b8d28e4106da8eca6c2a30f2a67673f2b27088415e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:31 GMT  
-		Size: 331.3 MB (331301451 bytes)  
+	-	`sha256:9310dcdb6a597b56a414e66d3f22b7ba2ce34205bde74028db3fe1f2a0fd15bd`  
+		Last Modified: Thu, 09 Apr 2026 22:26:08 GMT  
+		Size: 331.3 MB (331302885 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74c436a59dbc1ba79f385aa2bd1f9d45c73672a9622a9e064c87d1e90b1a38b0`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 2.4 MB (2441660 bytes)  
+	-	`sha256:96808ece531c7ad16047cd0c276b1eaf24eba803a4777be20fa486b1223746f3`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 2.4 MB (2441663 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92425e3de53c7957aa7e4e9d1332ed6c30c5837c4ea10ca520f8cedbf9dcafde`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:9ce7afa650f665e999145f9d31f392769a771cadccb2efd5dfc6c05f9122784d`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:195a4268fd728b15fbdbce402e89fa2e97e22cec9f33902cdb5f1736eba425bb`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 2.4 KB (2373 bytes)  
+	-	`sha256:2d027b61411abad4e11a023df03be9c862868ba06a16c66900ef590e636694c0`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 2.4 KB (2370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c714bc283061903c596cdf73278d2169e127966c319514a7f20bf39fcf2f6bca`  
-		Last Modified: Tue, 07 Apr 2026 17:29:23 GMT  
-		Size: 10.7 KB (10674 bytes)  
+	-	`sha256:b7309071b2cf1018f0903bc2464b90a8ed6a303491d93d5f7c831150f86feb2d`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 10.7 KB (10676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99a34d715634245a7e2a4de015c8621a52b98e8c80b25ef9380d3caee9ce68d1`  
-		Last Modified: Tue, 07 Apr 2026 17:29:24 GMT  
-		Size: 2.5 KB (2531 bytes)  
+	-	`sha256:b71f53f72f1ee9e632bafd61edc51b85d912272724683d7cfdca8d2c3a2e449b`  
+		Last Modified: Thu, 09 Apr 2026 22:25:58 GMT  
+		Size: 2.5 KB (2532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:17-mysql-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:e65249f00292be06ccddca8606eeafc8d9d8ad0d2e30cbaebd340420c3b0f946
+$ docker pull xwiki@sha256:57259cbe5603fbf926a45bc60e567fdeea65599656c57de290d10de30399c49f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9223459 bytes)**  
+-	Total Size: **9.2 MB (9223460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76bca099feb71fc857e5f3b48c1b82818c84a0672fd890dcacc7ca94b6f2eeb2`
+-	Image ID: `sha256:43b61a5fe2bc34eab178bf7d52fa31bd2f6414573ec8124977b670dceec03f65`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d4ca55a9c4b706707ecd39b8b249e95dcca83a23eace24a6abe16bdf943e6a5e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
+	-	`sha256:d19cfc5eaf35df59fbff8997866e21c81f882ce45c1271b88333b16b9fd80501`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
 		Size: 9.2 MB (9181756 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bb9a39e60e3ccb2bb32fc601feb85e8b1739e6de789de1e28fc7c90312af68f4`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 41.7 KB (41703 bytes)  
+	-	`sha256:1d7294b680df9d360663567b9abb2f7c69ad02831dd0f9e971ccfc4d2e747594`  
+		Last Modified: Thu, 09 Apr 2026 22:25:55 GMT  
+		Size: 41.7 KB (41704 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:17-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:e82baa4b3dd2768c52ec4fa7ae2d03d8bd8f112f81764c7b08e22702a29ad762
+$ docker pull xwiki@sha256:04c6ced458e97dd243d066ab6465aad705bbe40bbac4308476016f7829a95a89
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1396,13 +1396,13 @@ $ docker pull xwiki@sha256:e82baa4b3dd2768c52ec4fa7ae2d03d8bd8f112f81764c7b08e22
 ### `xwiki:17-postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:99fbddf1f84eff969b6538c7568ac51f5a5456d2a45bbc5f522584df73b5e570
+$ docker pull xwiki@sha256:331710166586f1711ac5d4af256e9683e3d26330b9242be471676ba83be8dbb5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **637.8 MB (637803964 bytes)**  
+-	Total Size: **637.8 MB (637805392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eafc7de030c6133506e39b0eec7ab251dbe656b1485f4ec008e0f119a84e2adb`
+-	Image ID: `sha256:75c56f18886e8594e0c1755afe5ffeebb81b7e99e691a52f96bfd559287bad6a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -1465,53 +1465,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:29:34 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:29:34 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:29:34 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:23:21 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:23:21 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:23:42 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.10
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 CMD ["xwiki"]
 ```
 
@@ -1556,69 +1556,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72391b26363c456202cdcaf62fc7d9ad0e398bbfd45a238b0ba73bf97c444f25`  
-		Last Modified: Tue, 07 Apr 2026 17:30:40 GMT  
-		Size: 191.2 MB (191192614 bytes)  
+	-	`sha256:3797439f5c9f775829ce928f6b2f7af1fbbd6bb83e94e7ab052daa8c9594f0ff`  
+		Last Modified: Thu, 09 Apr 2026 22:24:29 GMT  
+		Size: 191.2 MB (191192551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6155825cf20cf0a368eca7bc18c72168ddd2fce70665bee7e5c944b01ecbeeef`  
-		Last Modified: Tue, 07 Apr 2026 17:30:45 GMT  
-		Size: 331.3 MB (331301446 bytes)  
+	-	`sha256:aa46533955d6b665b2768ab0b7dfe8be4cecc56f3adf884374e144f119ccd5e3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:31 GMT  
+		Size: 331.3 MB (331302946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:711ea956fcbc0fdc6d7be1ea17bda5b869e4bf2e2e24f096d3a9a4ea91ac70e3`  
-		Last Modified: Tue, 07 Apr 2026 17:30:28 GMT  
-		Size: 1.1 MB (1061589 bytes)  
+	-	`sha256:b77ed1a0ceff162e35b200d9705ab8d46e040e01f744c7e60c1a5f6471494b08`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 1.1 MB (1061588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0577405b6d4ebcffc012e2e1a7c8ffcd69adea75790d7a5def1fa97543f3a777`  
-		Last Modified: Tue, 07 Apr 2026 17:30:28 GMT  
-		Size: 1.3 KB (1343 bytes)  
+	-	`sha256:2c35f693cf0906fb2709635e8e9edd99caafdd14c1086cdab22232e524e39890`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 1.3 KB (1340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30e6249cddd1d4c8eab85ea74271aa88950f1b275a2032b6c759074ad0139250`  
-		Last Modified: Tue, 07 Apr 2026 17:30:30 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:fcd1f2ab418a57c914ee324cdc911f8b672e7248dd86611d0cad845ea6adaf5d`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 2.5 KB (2460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e95018cf0f977ddbec552e3a03bf4815400677ad44703651fa8c48336fceb09e`  
-		Last Modified: Tue, 07 Apr 2026 17:30:30 GMT  
-		Size: 10.7 KB (10674 bytes)  
+	-	`sha256:c03ef1e48647162bad48df4a5bf0c36df95fb2c5f6981541947e1ec4745f0a20`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 10.7 KB (10677 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a73d920581c280b2956839396f036e38aa667eb84b491b59599faf6c1d0eee4`  
-		Last Modified: Tue, 07 Apr 2026 17:30:31 GMT  
-		Size: 2.4 KB (2443 bytes)  
+	-	`sha256:6a7a7a289eb9261a1a24b0a4ec7f99efd1b065a626d9d05c171c1f9800db240a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 2.4 KB (2438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:17-postgres-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:990ba74f61e1ab24cc0cba843de457193e63e6f104d6be69d5a75efe39f7acd9
+$ docker pull xwiki@sha256:db194c6c64e7536650c74b7d7b0e06d6b674248a8a9c2bbc451fd9190912f232
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9220201 bytes)**  
+-	Total Size: **9.2 MB (9220200 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7a76386c9da9fa650a707bc1e6f5cbdf514e6772178240a5dc7cc55d675108e`
+-	Image ID: `sha256:8a164727c721f144e5f97cc6c1044e540c84b9f83939fcea4e07e157572e6d69`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0bbcfd809a35f17e0cf1826c8edc8095ff9d9770ef1bfe1e2ddfb516f1fdb224`  
-		Last Modified: Tue, 07 Apr 2026 17:30:28 GMT  
+	-	`sha256:fd62f8103126c7cb172c5f1732a78dd3175969af1bc835d2558d9ab0dff89b6a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
 		Size: 9.2 MB (9179764 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e4ab4286979ab4447942dcaaad193fd52ae370845662e3df9078997058ee9967`  
-		Last Modified: Tue, 07 Apr 2026 17:30:28 GMT  
-		Size: 40.4 KB (40437 bytes)  
+	-	`sha256:59e2186a3033d31b8ac127b3e3879de0bb0a83fe853047d70407289aee69eb55`  
+		Last Modified: Thu, 09 Apr 2026 22:24:18 GMT  
+		Size: 40.4 KB (40436 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:17-postgres-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:9324a48af1902b5e141f3fff386c36207bad26b28f8733016d381e01cb217dc5
+$ docker pull xwiki@sha256:6024718ae29b5cc19d57905d9f2fca3176ccfe8fa2f97dcb7c8fda4e09989cdf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **633.8 MB (633789473 bytes)**  
+-	Total Size: **633.8 MB (633791082 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba0aa83c813e5efbc87626e9fa123103a7b37b9e1d751766c48341398245f22d`
+-	Image ID: `sha256:e3dcb82f02f4576514408f2836931235c7dae98932df32844ffa8b48a618a670`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -1681,53 +1681,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:29:29 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:29:29 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:29:29 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.10
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 CMD ["xwiki"]
 ```
 
@@ -1772,63 +1772,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21cbd76dcfc34ba37966cec28e89643ec6a0eb2aeed87dfff948edecd245db0a`  
-		Last Modified: Tue, 07 Apr 2026 17:30:30 GMT  
-		Size: 188.9 MB (188852257 bytes)  
+	-	`sha256:184522f6591efdb5d5dccfdc7884b1157c364adc0183901435978d12b09aaca6`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 188.9 MB (188852373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83fb9d7c4f2e50efb2faa6d86324f59e1efd42ab48d9bd17080c4cb22afaeae2`  
-		Last Modified: Tue, 07 Apr 2026 17:30:33 GMT  
-		Size: 331.3 MB (331301451 bytes)  
+	-	`sha256:ed36cf0b12b90b771fdf5d667bc583e62a26ca07ab4a03ccd1ffa03ab6bb73ce`  
+		Last Modified: Thu, 09 Apr 2026 22:26:06 GMT  
+		Size: 331.3 MB (331302932 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2015a7ea484c206ad136da1280d0276ad8900fea06439e15865891711e32c6f1`  
-		Last Modified: Tue, 07 Apr 2026 17:30:24 GMT  
-		Size: 1.1 MB (1061586 bytes)  
+	-	`sha256:e7f4c40509c5f44ec330619a21d3798f064bed6e4060595d02d2ca239b10c891`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.1 MB (1061593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58a79a20f4612a3cb5e59251e694843c260088c21d2d5c84af855702a65d9fdb`  
-		Last Modified: Tue, 07 Apr 2026 17:30:24 GMT  
-		Size: 1.3 KB (1341 bytes)  
+	-	`sha256:723b0edeb4a8dba5b3f47e0c17ac4779807d9807a64916cf4c78647b3fd2754f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.3 KB (1339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ba8f85ff2a590fe0cdb3e672650bdf6c213698743210bf7c6e9d2abb7248ff8`  
-		Last Modified: Tue, 07 Apr 2026 17:30:26 GMT  
-		Size: 2.5 KB (2460 bytes)  
+	-	`sha256:5a60270272edfd051418572723a14fffd0386e7caa1778d547b5f4f864c80b78`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c476686677f94be9b89465578b6e5af8ff276e12aa5a0710736d2e10c956a809`  
-		Last Modified: Tue, 07 Apr 2026 17:30:26 GMT  
-		Size: 10.7 KB (10673 bytes)  
+	-	`sha256:7fa0d2d0693c8e32804da5575a30ad5abdd6e9d8db434414ba20213b0e1af40b`  
+		Last Modified: Thu, 09 Apr 2026 22:25:58 GMT  
+		Size: 10.7 KB (10678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:428281077d2e9216405bdd0e7490368e16adeaa33b12663172c144f65e2f9ace`  
-		Last Modified: Tue, 07 Apr 2026 17:30:27 GMT  
-		Size: 2.4 KB (2443 bytes)  
+	-	`sha256:48988ee4ceb0e5b0e05041202859dc64849f571ba97db08fef238efde9d144da`  
+		Last Modified: Thu, 09 Apr 2026 22:25:59 GMT  
+		Size: 2.4 KB (2441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:17-postgres-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:0649fd2912087eaa80e25c3a9992d2a8d0ae3499121b491032e88d7244dafde9
+$ docker pull xwiki@sha256:afe463fb761456964f6604f8d4aaae678a52abd181be4fe9b07990f05bb58741
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9221102 bytes)**  
+-	Total Size: **9.2 MB (9221103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018d971a061843ecb11c1cf3e4706af1aa97fd851bd90fbf91be87357e0758ad`
+-	Image ID: `sha256:b30e0e2543aea28de9696bfb096c9239c0add79ac7ea737333ecb18cf22a0bff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3c9eb5d243fc8c70715d0af413893473fb7ca93012c4813936dea69c205874a9`  
-		Last Modified: Tue, 07 Apr 2026 17:30:25 GMT  
+	-	`sha256:12379d7c1d051b1287042c5c1c9ed1053e8f81caf265a00abf905a40d3450eb5`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
 		Size: 9.2 MB (9180505 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bf47b38208c1272da7a0a4c29e9474ce9998ca5265afb45b20e90af97734309d`  
-		Last Modified: Tue, 07 Apr 2026 17:30:24 GMT  
-		Size: 40.6 KB (40597 bytes)  
+	-	`sha256:c4ec01cba393297bb8411b9e9eca852fbdd232d1e8d5da314c6afcc0caeb7802`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 40.6 KB (40598 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:17.10`
 
 ```console
-$ docker pull xwiki@sha256:eee071b58e511201fe17e57528c9b505c67481807ca35a8c65e7550230a18c51
+$ docker pull xwiki@sha256:0a92a197195f92613a88aafa43d0301eeb20ad3d9c0ca04cf969ba5453c76186
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1841,13 +1841,13 @@ $ docker pull xwiki@sha256:eee071b58e511201fe17e57528c9b505c67481807ca35a8c65e75
 ### `xwiki:17.10` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:fe2edcf3b216e6a9362541d91cb043523424ef7f0f95afc051e6463d97cbefad
+$ docker pull xwiki@sha256:cd32acdfa356b367a08172a751f760e2eee019dbb197a92952da8e0d075ef88f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **639.2 MB (639183956 bytes)**  
+-	Total Size: **639.2 MB (639185369 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9719a03631768e295c3a39a96f5e36a23292cff7c53740cfcec14ddc293b48a`
+-	Image ID: `sha256:b0d261d19d9f028a4cd0c20b82bafecc4a6861b55bbabf4453ea916c5d582adc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -1910,53 +1910,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:23:34 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 CMD ["xwiki"]
 ```
 
@@ -2001,69 +2001,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e23f42ce2143e59999ed906d931bb07199027d8285853b6e5dea3ff92dcfd4b6`  
-		Last Modified: Tue, 07 Apr 2026 17:29:29 GMT  
-		Size: 191.2 MB (191192491 bytes)  
+	-	`sha256:7e0fc84863cba3136ca06888d2e3c333bc4fc5464bd286417389ed001cd02843`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 191.2 MB (191192461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2259c1fb33f097350fcec3f98201f6e10116159a7e0068c6710fa5b6236596e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:32 GMT  
-		Size: 331.3 MB (331301493 bytes)  
+	-	`sha256:b25b6c04e898becf799876d70bb3374f0e111303e4ba8751273c7fcf873bcfe3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 331.3 MB (331302931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ee2d88deece360474ed458c74654297b3454a36af70584aa0e1e240356eea62`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 2.4 MB (2441664 bytes)  
+	-	`sha256:8f5433022279f8b39aac51b391b6cd30aee3c12cb19ce0c89a0d1480118d7831`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 2.4 MB (2441658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03d89108ef77771b76968f183460186900846449b84469d27d3986265ee35b31`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 1.3 KB (1338 bytes)  
+	-	`sha256:b9d78506679e13ae5426fa585380e8ca1bc63c4091268f70a9216d7a9a4f0e70`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5fd9e5886f632316cb8cc33355ce7cc08d72848891943b1ddd6fa55f18c75ed7`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:4627a3097827169c9928e66c2cf5e4fcfc06b4a5cacab939056105f11681008c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 2.4 KB (2374 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c91978d2bdc051febbe05073145eef6dc172b3b8932c998d0b8c93ab9df714c`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 10.7 KB (10673 bytes)  
+	-	`sha256:35d408c992e2535da0004e1b8c2982a193b3402767474364724917bbfcb26a08`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 10.7 KB (10678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdf218e62cee6b6e273d5f142ea0a7f66e2667597ed7f0d8a9156ed98796f249`  
-		Last Modified: Tue, 07 Apr 2026 17:29:23 GMT  
-		Size: 2.5 KB (2533 bytes)  
+	-	`sha256:ac41074fc407781ff3c0111d78b396273ce12558962037b035112da05235bbe8`  
+		Last Modified: Thu, 09 Apr 2026 22:24:14 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:17.10` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:7c48999bfe033b4e0ef594e6ddd19c0a6c964070f8e177aae20a3011bc371424
+$ docker pull xwiki@sha256:5418d43b5ed67294a897d0a983ce6d4e5b4ccdb9cdc07bee7ab2a19720cbdcc2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9222462 bytes)**  
+-	Total Size: **9.2 MB (9222461 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb238883cfc72b669007f9f5ec659a0c374be86a5537f7113671b778b06fc27a`
+-	Image ID: `sha256:4d0788c0277c18fd341858d4454cb8624bc1cdd9b2902f56e2ed6f09ecf82c43`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8f9672ab5243a2b5bfb2cccc992960c4b9139b8fa92172dbec238009b061b02c`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
+	-	`sha256:859cd2748f6bb45ae0caf3f3d3441a667c5b9be38e91722ac0dd4751c2a29707`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 9.2 MB (9180967 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eda98feac87b9a46a344f19f69b9b1f5080d250b94ad46673f10e8c54b047302`  
-		Last Modified: Tue, 07 Apr 2026 17:29:20 GMT  
-		Size: 41.5 KB (41495 bytes)  
+	-	`sha256:2a364ffc6b2202b304890f77ef7b14c7497dc3089c7b3a557e9a0fd39effb9aa`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 41.5 KB (41494 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:17.10` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:f21c258928c969b3246cc14392c23fc696a1a7df5b7fecfaaec8fda745d851cb
+$ docker pull xwiki@sha256:cf3ca78c3e59bf0b31a6ac008d76768335b489100de74d2084ec55b6b9b76a67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **635.2 MB (635169570 bytes)**  
+-	Total Size: **635.2 MB (635171278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ddbff823fe42d306d09ed30cf187d8afb3f1c458bc8029b478e1ef0ac8dc768`
+-	Image ID: `sha256:52402a3abb675d723ecb18c110dfbc6be76653db28239c4d9750fddc1b75cbf3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -2126,53 +2126,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:22 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 CMD ["xwiki"]
 ```
 
@@ -2217,63 +2217,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d4a35dd37dfa25d43cd60c7c5c286bc949db937d93f258dc4ca8d3b9e10c980`  
-		Last Modified: Tue, 07 Apr 2026 17:29:27 GMT  
-		Size: 188.9 MB (188852279 bytes)  
+	-	`sha256:6de840e925519c0409af5cd558df0f21edeb9649779a12b2493891b75e1847bb`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 188.9 MB (188852546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b8aa2eafa310afe8860e9b8d28e4106da8eca6c2a30f2a67673f2b27088415e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:31 GMT  
-		Size: 331.3 MB (331301451 bytes)  
+	-	`sha256:9310dcdb6a597b56a414e66d3f22b7ba2ce34205bde74028db3fe1f2a0fd15bd`  
+		Last Modified: Thu, 09 Apr 2026 22:26:08 GMT  
+		Size: 331.3 MB (331302885 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74c436a59dbc1ba79f385aa2bd1f9d45c73672a9622a9e064c87d1e90b1a38b0`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 2.4 MB (2441660 bytes)  
+	-	`sha256:96808ece531c7ad16047cd0c276b1eaf24eba803a4777be20fa486b1223746f3`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 2.4 MB (2441663 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92425e3de53c7957aa7e4e9d1332ed6c30c5837c4ea10ca520f8cedbf9dcafde`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:9ce7afa650f665e999145f9d31f392769a771cadccb2efd5dfc6c05f9122784d`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:195a4268fd728b15fbdbce402e89fa2e97e22cec9f33902cdb5f1736eba425bb`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 2.4 KB (2373 bytes)  
+	-	`sha256:2d027b61411abad4e11a023df03be9c862868ba06a16c66900ef590e636694c0`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 2.4 KB (2370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c714bc283061903c596cdf73278d2169e127966c319514a7f20bf39fcf2f6bca`  
-		Last Modified: Tue, 07 Apr 2026 17:29:23 GMT  
-		Size: 10.7 KB (10674 bytes)  
+	-	`sha256:b7309071b2cf1018f0903bc2464b90a8ed6a303491d93d5f7c831150f86feb2d`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 10.7 KB (10676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99a34d715634245a7e2a4de015c8621a52b98e8c80b25ef9380d3caee9ce68d1`  
-		Last Modified: Tue, 07 Apr 2026 17:29:24 GMT  
-		Size: 2.5 KB (2531 bytes)  
+	-	`sha256:b71f53f72f1ee9e632bafd61edc51b85d912272724683d7cfdca8d2c3a2e449b`  
+		Last Modified: Thu, 09 Apr 2026 22:25:58 GMT  
+		Size: 2.5 KB (2532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:17.10` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:e65249f00292be06ccddca8606eeafc8d9d8ad0d2e30cbaebd340420c3b0f946
+$ docker pull xwiki@sha256:57259cbe5603fbf926a45bc60e567fdeea65599656c57de290d10de30399c49f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9223459 bytes)**  
+-	Total Size: **9.2 MB (9223460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76bca099feb71fc857e5f3b48c1b82818c84a0672fd890dcacc7ca94b6f2eeb2`
+-	Image ID: `sha256:43b61a5fe2bc34eab178bf7d52fa31bd2f6414573ec8124977b670dceec03f65`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d4ca55a9c4b706707ecd39b8b249e95dcca83a23eace24a6abe16bdf943e6a5e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
+	-	`sha256:d19cfc5eaf35df59fbff8997866e21c81f882ce45c1271b88333b16b9fd80501`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
 		Size: 9.2 MB (9181756 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bb9a39e60e3ccb2bb32fc601feb85e8b1739e6de789de1e28fc7c90312af68f4`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 41.7 KB (41703 bytes)  
+	-	`sha256:1d7294b680df9d360663567b9abb2f7c69ad02831dd0f9e971ccfc4d2e747594`  
+		Last Modified: Thu, 09 Apr 2026 22:25:55 GMT  
+		Size: 41.7 KB (41704 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:17.10-mariadb-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:8dcd89a74c1e16e80fdd39d27149c4593fa53d5abf1b21d0a5e25fb325f95b1f
+$ docker pull xwiki@sha256:51beea14e5fe4730d9942169e1a2e742a9fb857a830fa30a2918c099033674d6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2286,13 +2286,13 @@ $ docker pull xwiki@sha256:8dcd89a74c1e16e80fdd39d27149c4593fa53d5abf1b21d0a5e25
 ### `xwiki:17.10-mariadb-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ea50d7e1f3d76d741fd760c3a4a6ea943349dda0b3ec5a5ad1a48804ee148aa0
+$ docker pull xwiki@sha256:d2095f8a7df7705754e60e667f668a25d76f3fcb72248d02b2fbf45e9f4a3591
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **637.5 MB (637450739 bytes)**  
+-	Total Size: **637.5 MB (637452373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:246352fc4471462e75e8be41e663c7fb33ae2295d0923f9aae0db580e14d85bf`
+-	Image ID: `sha256:0a15370c6fcac1c61468cfd259920f8ee147827b31b793a9afa357c5de9ae283`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -2355,53 +2355,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:24:06 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:24:06 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:24:27 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_VERSION=3.5.7
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 CMD ["xwiki"]
 ```
 
@@ -2446,69 +2446,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e23f42ce2143e59999ed906d931bb07199027d8285853b6e5dea3ff92dcfd4b6`  
-		Last Modified: Tue, 07 Apr 2026 17:29:29 GMT  
-		Size: 191.2 MB (191192491 bytes)  
+	-	`sha256:d614a1a827bba5456d3e0524700e840ec37b5e1aa8a1a8d3d37f3714ae830447`  
+		Last Modified: Thu, 09 Apr 2026 22:25:10 GMT  
+		Size: 191.2 MB (191192634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2259c1fb33f097350fcec3f98201f6e10116159a7e0068c6710fa5b6236596e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:32 GMT  
-		Size: 331.3 MB (331301493 bytes)  
+	-	`sha256:7ec41c5cd54d504491a7ee2e21cebf61fb0acadbbdbdb5dc1017be7536f9e363`  
+		Last Modified: Thu, 09 Apr 2026 22:25:13 GMT  
+		Size: 331.3 MB (331302981 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be9de30e314e4445d4b37bf01bc2c0a8c56a98f82a6f2d1eb1dd9991a45096ab`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 708.5 KB (708547 bytes)  
+	-	`sha256:13cc41f7666390c761b3d2a7adfd880844a59478decf5db9712902c3250b1341`  
+		Last Modified: Thu, 09 Apr 2026 22:25:04 GMT  
+		Size: 708.5 KB (708545 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73d54380c145c5fbac1cc3fc5befaf8ffd3340b7ae24d4c86ebf35f51d7ca317`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 1.3 KB (1339 bytes)  
+	-	`sha256:66c12f10aabc0ad7bec6a03d187ab4d85b5ed5d92199f5b39ff4ecd0ece2e542`  
+		Last Modified: Thu, 09 Apr 2026 22:25:04 GMT  
+		Size: 1.3 KB (1340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6e659f22d9f0db4c4dfda98b9355eb229cf29dcf975c12b4fcd222bdb97496a`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 2.3 KB (2309 bytes)  
+	-	`sha256:55cc2e4fdf23dc3030f98e2c61065b22222165dea26c107e59e53e316087b9f1`  
+		Last Modified: Thu, 09 Apr 2026 22:25:05 GMT  
+		Size: 2.3 KB (2310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d1941ec54b0a86033ea8a67f1a66ade025992b430c751a95a2252d23c18d02d`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 10.7 KB (10674 bytes)  
+	-	`sha256:1420db266102fab686ce6b01eeaf752b8535b743cce3b5ea673e986688213d37`  
+		Last Modified: Thu, 09 Apr 2026 22:25:05 GMT  
+		Size: 10.7 KB (10677 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6687fa0ea60317b0b04890e7dcb7e16934565062b497bdece31f34d7b4afff21`  
-		Last Modified: Tue, 07 Apr 2026 17:29:55 GMT  
+	-	`sha256:f681e64b6d866908415073cf14262e0f3f4e7c9d65cbb492f8128c4b30bc9909`  
+		Last Modified: Thu, 09 Apr 2026 22:25:06 GMT  
 		Size: 2.5 KB (2494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:17.10-mariadb-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:ec42cce413bbbaa1ee722d02ae244a34c5b15708d02d92015cd4079bdc2d9741
+$ docker pull xwiki@sha256:78a0829760d07325d86f0eaedaf932719ce3ad0b8908b35f968b5d166dbad1d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9220195 bytes)**  
+-	Total Size: **9.2 MB (9220194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84945ca6f4d8db98d103b2ff026c2b211eb4c3155a7252fa64a2286b88e1df7d`
+-	Image ID: `sha256:02efd847e33a48df0977341df7d49985c6ca77a4120cf8caf703fcfa112e9a41`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:966e8e1c7f650cd9669142cabe8e2f1368b59459c117347de1fd02c710c3de14`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
+	-	`sha256:17be8c05cc005333f8e6f111d9f846cb308bc0219a85a2f1a7e7a92f5510d8a0`  
+		Last Modified: Thu, 09 Apr 2026 22:25:05 GMT  
 		Size: 9.2 MB (9179746 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c64bbb1ad68c2e2905bf9aeed7c58b131ae14fa82c47c6e12848af67e955b39b`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 40.4 KB (40449 bytes)  
+	-	`sha256:4bf73e24884d001bb1d960edddce212d25437830354bc533f18daf13cc420a03`  
+		Last Modified: Thu, 09 Apr 2026 22:25:04 GMT  
+		Size: 40.4 KB (40448 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:17.10-mariadb-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:22a169aa86c77cfb2239cd30d8b508caac9bc529b8e948e049d45cb05fecf854
+$ docker pull xwiki@sha256:a2afebcd0107e9871dc634a18d8dc4b656af57daf316f0cabbc22ae34ae68e7c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **633.4 MB (633436348 bytes)**  
+-	Total Size: **633.4 MB (633437665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3096a456e6ec48d3e82ba7a96af725ebdc5a75fb7a0de1e5b97d47aed7856283`
+-	Image ID: `sha256:fd1cd6b1eef0e082e763e2342cc9c98a95b74796907ec41591d6c7b2f76fa1c5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -2571,53 +2571,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:25:06 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:25:06 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:28 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_VERSION=3.5.7
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 CMD ["xwiki"]
 ```
 
@@ -2662,63 +2662,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d4a35dd37dfa25d43cd60c7c5c286bc949db937d93f258dc4ca8d3b9e10c980`  
-		Last Modified: Tue, 07 Apr 2026 17:29:27 GMT  
-		Size: 188.9 MB (188852279 bytes)  
+	-	`sha256:08823c3db987c987900b6d67c9247d6386ce0eea8143c78e2f3e0b5e32b998e5`  
+		Last Modified: Thu, 09 Apr 2026 22:26:07 GMT  
+		Size: 188.9 MB (188852085 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b8aa2eafa310afe8860e9b8d28e4106da8eca6c2a30f2a67673f2b27088415e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:31 GMT  
-		Size: 331.3 MB (331301451 bytes)  
+	-	`sha256:eb4c31e6885efbe1075a08f5c35e0db15f98101794ae8f5e79f4fe02094c16d9`  
+		Last Modified: Thu, 09 Apr 2026 22:26:09 GMT  
+		Size: 331.3 MB (331302946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13256aaf0560ce630d57487a5eff1f78ca37ad5ef3d68d104cda3b115a01f500`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
-		Size: 708.5 KB (708549 bytes)  
+	-	`sha256:4ab581bc8a38f6d1d41897625bd793c8248b2fb927d26d1bc631585fbdf9e077`  
+		Last Modified: Thu, 09 Apr 2026 22:26:01 GMT  
+		Size: 708.5 KB (708545 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8093fdcee4faeca8b64e81f9eb75760ab5e5b1285c12a62e48889554f2197e19`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
-		Size: 1.3 KB (1338 bytes)  
+	-	`sha256:3f43c596e9456f3683a935cb6c7f38817e91806651e275c84b62dca1dd8987dd`  
+		Last Modified: Thu, 09 Apr 2026 22:26:01 GMT  
+		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c18fb36864988f3127d093a6d021dfe149502b5cc14b9374fc67396880df339c`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
-		Size: 2.3 KB (2305 bytes)  
+	-	`sha256:a8c47e96b643ba7ebd05cfa185496943fb163e85b49129d5550d04d33b9cc123`  
+		Last Modified: Thu, 09 Apr 2026 22:26:02 GMT  
+		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:938e2754954cb840a522bacb1591dadfeaad1d4ee060d33ee90d08073d8f371d`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
-		Size: 10.7 KB (10675 bytes)  
+	-	`sha256:7c47d9d0dfaed412815dbea06f097ef2d94860ed76821693877f188e4cb27717`  
+		Last Modified: Thu, 09 Apr 2026 22:26:02 GMT  
+		Size: 10.7 KB (10676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47437284cfe4309868ddd99ca11b519fe75320a64228b715c3040c94b4ee602f`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 2.5 KB (2489 bytes)  
+	-	`sha256:7e200218e445d54d4cd2843abeb3670147f2b610f53283d91dc918dd4497e630`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 2.5 KB (2500 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:17.10-mariadb-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:e1d4889be574da18c6ebaad5591682eb0bf631a8eb53588045ae8a78c482b338
+$ docker pull xwiki@sha256:94cd7045ea7f56ce9074d68c9c0b10148d65e775fcf2f0cc037ec3874faa1e21
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9221098 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf805a7309f1e210900169fa0df14c4cc56ebc655c6cf45d9f65ffea3014d2b9`
+-	Image ID: `sha256:3f40e3aa2eff775352b8be74d32bcfdb73e1e1d6c57c79551bbbb4bc30f571a7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:259db551a32f15d0842d92573f251db3da8e048302b4a0309ebd23fb3571d52a`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
+	-	`sha256:ce4eccdb3d5db8c578ed4b14c18ea462a3f5259e7116bf6d994359e843ee463d`  
+		Last Modified: Thu, 09 Apr 2026 22:26:01 GMT  
 		Size: 9.2 MB (9180487 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:362511debf7a8e645ac04dcef890d93c9bf7f016f09457e96533a01327310a8d`  
-		Last Modified: Tue, 07 Apr 2026 17:29:52 GMT  
+	-	`sha256:4410303f0ef1fa1b939c31e269ad8e42d5815d2a80b682d71500f6f5b1e45141`  
+		Last Modified: Thu, 09 Apr 2026 22:26:00 GMT  
 		Size: 40.6 KB (40611 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:17.10-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:eee071b58e511201fe17e57528c9b505c67481807ca35a8c65e7550230a18c51
+$ docker pull xwiki@sha256:0a92a197195f92613a88aafa43d0301eeb20ad3d9c0ca04cf969ba5453c76186
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2731,13 +2731,13 @@ $ docker pull xwiki@sha256:eee071b58e511201fe17e57528c9b505c67481807ca35a8c65e75
 ### `xwiki:17.10-mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:fe2edcf3b216e6a9362541d91cb043523424ef7f0f95afc051e6463d97cbefad
+$ docker pull xwiki@sha256:cd32acdfa356b367a08172a751f760e2eee019dbb197a92952da8e0d075ef88f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **639.2 MB (639183956 bytes)**  
+-	Total Size: **639.2 MB (639185369 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9719a03631768e295c3a39a96f5e36a23292cff7c53740cfcec14ddc293b48a`
+-	Image ID: `sha256:b0d261d19d9f028a4cd0c20b82bafecc4a6861b55bbabf4453ea916c5d582adc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -2800,53 +2800,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:23:34 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 CMD ["xwiki"]
 ```
 
@@ -2891,69 +2891,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e23f42ce2143e59999ed906d931bb07199027d8285853b6e5dea3ff92dcfd4b6`  
-		Last Modified: Tue, 07 Apr 2026 17:29:29 GMT  
-		Size: 191.2 MB (191192491 bytes)  
+	-	`sha256:7e0fc84863cba3136ca06888d2e3c333bc4fc5464bd286417389ed001cd02843`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 191.2 MB (191192461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2259c1fb33f097350fcec3f98201f6e10116159a7e0068c6710fa5b6236596e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:32 GMT  
-		Size: 331.3 MB (331301493 bytes)  
+	-	`sha256:b25b6c04e898becf799876d70bb3374f0e111303e4ba8751273c7fcf873bcfe3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 331.3 MB (331302931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ee2d88deece360474ed458c74654297b3454a36af70584aa0e1e240356eea62`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 2.4 MB (2441664 bytes)  
+	-	`sha256:8f5433022279f8b39aac51b391b6cd30aee3c12cb19ce0c89a0d1480118d7831`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 2.4 MB (2441658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03d89108ef77771b76968f183460186900846449b84469d27d3986265ee35b31`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 1.3 KB (1338 bytes)  
+	-	`sha256:b9d78506679e13ae5426fa585380e8ca1bc63c4091268f70a9216d7a9a4f0e70`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5fd9e5886f632316cb8cc33355ce7cc08d72848891943b1ddd6fa55f18c75ed7`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:4627a3097827169c9928e66c2cf5e4fcfc06b4a5cacab939056105f11681008c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 2.4 KB (2374 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c91978d2bdc051febbe05073145eef6dc172b3b8932c998d0b8c93ab9df714c`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 10.7 KB (10673 bytes)  
+	-	`sha256:35d408c992e2535da0004e1b8c2982a193b3402767474364724917bbfcb26a08`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 10.7 KB (10678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdf218e62cee6b6e273d5f142ea0a7f66e2667597ed7f0d8a9156ed98796f249`  
-		Last Modified: Tue, 07 Apr 2026 17:29:23 GMT  
-		Size: 2.5 KB (2533 bytes)  
+	-	`sha256:ac41074fc407781ff3c0111d78b396273ce12558962037b035112da05235bbe8`  
+		Last Modified: Thu, 09 Apr 2026 22:24:14 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:17.10-mysql-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:7c48999bfe033b4e0ef594e6ddd19c0a6c964070f8e177aae20a3011bc371424
+$ docker pull xwiki@sha256:5418d43b5ed67294a897d0a983ce6d4e5b4ccdb9cdc07bee7ab2a19720cbdcc2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9222462 bytes)**  
+-	Total Size: **9.2 MB (9222461 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb238883cfc72b669007f9f5ec659a0c374be86a5537f7113671b778b06fc27a`
+-	Image ID: `sha256:4d0788c0277c18fd341858d4454cb8624bc1cdd9b2902f56e2ed6f09ecf82c43`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8f9672ab5243a2b5bfb2cccc992960c4b9139b8fa92172dbec238009b061b02c`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
+	-	`sha256:859cd2748f6bb45ae0caf3f3d3441a667c5b9be38e91722ac0dd4751c2a29707`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 9.2 MB (9180967 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eda98feac87b9a46a344f19f69b9b1f5080d250b94ad46673f10e8c54b047302`  
-		Last Modified: Tue, 07 Apr 2026 17:29:20 GMT  
-		Size: 41.5 KB (41495 bytes)  
+	-	`sha256:2a364ffc6b2202b304890f77ef7b14c7497dc3089c7b3a557e9a0fd39effb9aa`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 41.5 KB (41494 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:17.10-mysql-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:f21c258928c969b3246cc14392c23fc696a1a7df5b7fecfaaec8fda745d851cb
+$ docker pull xwiki@sha256:cf3ca78c3e59bf0b31a6ac008d76768335b489100de74d2084ec55b6b9b76a67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **635.2 MB (635169570 bytes)**  
+-	Total Size: **635.2 MB (635171278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ddbff823fe42d306d09ed30cf187d8afb3f1c458bc8029b478e1ef0ac8dc768`
+-	Image ID: `sha256:52402a3abb675d723ecb18c110dfbc6be76653db28239c4d9750fddc1b75cbf3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -3016,53 +3016,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:22 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 CMD ["xwiki"]
 ```
 
@@ -3107,63 +3107,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d4a35dd37dfa25d43cd60c7c5c286bc949db937d93f258dc4ca8d3b9e10c980`  
-		Last Modified: Tue, 07 Apr 2026 17:29:27 GMT  
-		Size: 188.9 MB (188852279 bytes)  
+	-	`sha256:6de840e925519c0409af5cd558df0f21edeb9649779a12b2493891b75e1847bb`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 188.9 MB (188852546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b8aa2eafa310afe8860e9b8d28e4106da8eca6c2a30f2a67673f2b27088415e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:31 GMT  
-		Size: 331.3 MB (331301451 bytes)  
+	-	`sha256:9310dcdb6a597b56a414e66d3f22b7ba2ce34205bde74028db3fe1f2a0fd15bd`  
+		Last Modified: Thu, 09 Apr 2026 22:26:08 GMT  
+		Size: 331.3 MB (331302885 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74c436a59dbc1ba79f385aa2bd1f9d45c73672a9622a9e064c87d1e90b1a38b0`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 2.4 MB (2441660 bytes)  
+	-	`sha256:96808ece531c7ad16047cd0c276b1eaf24eba803a4777be20fa486b1223746f3`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 2.4 MB (2441663 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92425e3de53c7957aa7e4e9d1332ed6c30c5837c4ea10ca520f8cedbf9dcafde`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:9ce7afa650f665e999145f9d31f392769a771cadccb2efd5dfc6c05f9122784d`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:195a4268fd728b15fbdbce402e89fa2e97e22cec9f33902cdb5f1736eba425bb`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 2.4 KB (2373 bytes)  
+	-	`sha256:2d027b61411abad4e11a023df03be9c862868ba06a16c66900ef590e636694c0`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 2.4 KB (2370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c714bc283061903c596cdf73278d2169e127966c319514a7f20bf39fcf2f6bca`  
-		Last Modified: Tue, 07 Apr 2026 17:29:23 GMT  
-		Size: 10.7 KB (10674 bytes)  
+	-	`sha256:b7309071b2cf1018f0903bc2464b90a8ed6a303491d93d5f7c831150f86feb2d`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 10.7 KB (10676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99a34d715634245a7e2a4de015c8621a52b98e8c80b25ef9380d3caee9ce68d1`  
-		Last Modified: Tue, 07 Apr 2026 17:29:24 GMT  
-		Size: 2.5 KB (2531 bytes)  
+	-	`sha256:b71f53f72f1ee9e632bafd61edc51b85d912272724683d7cfdca8d2c3a2e449b`  
+		Last Modified: Thu, 09 Apr 2026 22:25:58 GMT  
+		Size: 2.5 KB (2532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:17.10-mysql-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:e65249f00292be06ccddca8606eeafc8d9d8ad0d2e30cbaebd340420c3b0f946
+$ docker pull xwiki@sha256:57259cbe5603fbf926a45bc60e567fdeea65599656c57de290d10de30399c49f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9223459 bytes)**  
+-	Total Size: **9.2 MB (9223460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76bca099feb71fc857e5f3b48c1b82818c84a0672fd890dcacc7ca94b6f2eeb2`
+-	Image ID: `sha256:43b61a5fe2bc34eab178bf7d52fa31bd2f6414573ec8124977b670dceec03f65`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d4ca55a9c4b706707ecd39b8b249e95dcca83a23eace24a6abe16bdf943e6a5e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
+	-	`sha256:d19cfc5eaf35df59fbff8997866e21c81f882ce45c1271b88333b16b9fd80501`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
 		Size: 9.2 MB (9181756 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bb9a39e60e3ccb2bb32fc601feb85e8b1739e6de789de1e28fc7c90312af68f4`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 41.7 KB (41703 bytes)  
+	-	`sha256:1d7294b680df9d360663567b9abb2f7c69ad02831dd0f9e971ccfc4d2e747594`  
+		Last Modified: Thu, 09 Apr 2026 22:25:55 GMT  
+		Size: 41.7 KB (41704 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:17.10-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:e82baa4b3dd2768c52ec4fa7ae2d03d8bd8f112f81764c7b08e22702a29ad762
+$ docker pull xwiki@sha256:04c6ced458e97dd243d066ab6465aad705bbe40bbac4308476016f7829a95a89
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3176,13 +3176,13 @@ $ docker pull xwiki@sha256:e82baa4b3dd2768c52ec4fa7ae2d03d8bd8f112f81764c7b08e22
 ### `xwiki:17.10-postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:99fbddf1f84eff969b6538c7568ac51f5a5456d2a45bbc5f522584df73b5e570
+$ docker pull xwiki@sha256:331710166586f1711ac5d4af256e9683e3d26330b9242be471676ba83be8dbb5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **637.8 MB (637803964 bytes)**  
+-	Total Size: **637.8 MB (637805392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eafc7de030c6133506e39b0eec7ab251dbe656b1485f4ec008e0f119a84e2adb`
+-	Image ID: `sha256:75c56f18886e8594e0c1755afe5ffeebb81b7e99e691a52f96bfd559287bad6a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -3245,53 +3245,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:29:34 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:29:34 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:29:34 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:23:21 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:23:21 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:23:42 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.10
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 CMD ["xwiki"]
 ```
 
@@ -3336,69 +3336,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72391b26363c456202cdcaf62fc7d9ad0e398bbfd45a238b0ba73bf97c444f25`  
-		Last Modified: Tue, 07 Apr 2026 17:30:40 GMT  
-		Size: 191.2 MB (191192614 bytes)  
+	-	`sha256:3797439f5c9f775829ce928f6b2f7af1fbbd6bb83e94e7ab052daa8c9594f0ff`  
+		Last Modified: Thu, 09 Apr 2026 22:24:29 GMT  
+		Size: 191.2 MB (191192551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6155825cf20cf0a368eca7bc18c72168ddd2fce70665bee7e5c944b01ecbeeef`  
-		Last Modified: Tue, 07 Apr 2026 17:30:45 GMT  
-		Size: 331.3 MB (331301446 bytes)  
+	-	`sha256:aa46533955d6b665b2768ab0b7dfe8be4cecc56f3adf884374e144f119ccd5e3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:31 GMT  
+		Size: 331.3 MB (331302946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:711ea956fcbc0fdc6d7be1ea17bda5b869e4bf2e2e24f096d3a9a4ea91ac70e3`  
-		Last Modified: Tue, 07 Apr 2026 17:30:28 GMT  
-		Size: 1.1 MB (1061589 bytes)  
+	-	`sha256:b77ed1a0ceff162e35b200d9705ab8d46e040e01f744c7e60c1a5f6471494b08`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 1.1 MB (1061588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0577405b6d4ebcffc012e2e1a7c8ffcd69adea75790d7a5def1fa97543f3a777`  
-		Last Modified: Tue, 07 Apr 2026 17:30:28 GMT  
-		Size: 1.3 KB (1343 bytes)  
+	-	`sha256:2c35f693cf0906fb2709635e8e9edd99caafdd14c1086cdab22232e524e39890`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 1.3 KB (1340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30e6249cddd1d4c8eab85ea74271aa88950f1b275a2032b6c759074ad0139250`  
-		Last Modified: Tue, 07 Apr 2026 17:30:30 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:fcd1f2ab418a57c914ee324cdc911f8b672e7248dd86611d0cad845ea6adaf5d`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 2.5 KB (2460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e95018cf0f977ddbec552e3a03bf4815400677ad44703651fa8c48336fceb09e`  
-		Last Modified: Tue, 07 Apr 2026 17:30:30 GMT  
-		Size: 10.7 KB (10674 bytes)  
+	-	`sha256:c03ef1e48647162bad48df4a5bf0c36df95fb2c5f6981541947e1ec4745f0a20`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 10.7 KB (10677 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a73d920581c280b2956839396f036e38aa667eb84b491b59599faf6c1d0eee4`  
-		Last Modified: Tue, 07 Apr 2026 17:30:31 GMT  
-		Size: 2.4 KB (2443 bytes)  
+	-	`sha256:6a7a7a289eb9261a1a24b0a4ec7f99efd1b065a626d9d05c171c1f9800db240a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 2.4 KB (2438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:17.10-postgres-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:990ba74f61e1ab24cc0cba843de457193e63e6f104d6be69d5a75efe39f7acd9
+$ docker pull xwiki@sha256:db194c6c64e7536650c74b7d7b0e06d6b674248a8a9c2bbc451fd9190912f232
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9220201 bytes)**  
+-	Total Size: **9.2 MB (9220200 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7a76386c9da9fa650a707bc1e6f5cbdf514e6772178240a5dc7cc55d675108e`
+-	Image ID: `sha256:8a164727c721f144e5f97cc6c1044e540c84b9f83939fcea4e07e157572e6d69`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0bbcfd809a35f17e0cf1826c8edc8095ff9d9770ef1bfe1e2ddfb516f1fdb224`  
-		Last Modified: Tue, 07 Apr 2026 17:30:28 GMT  
+	-	`sha256:fd62f8103126c7cb172c5f1732a78dd3175969af1bc835d2558d9ab0dff89b6a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
 		Size: 9.2 MB (9179764 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e4ab4286979ab4447942dcaaad193fd52ae370845662e3df9078997058ee9967`  
-		Last Modified: Tue, 07 Apr 2026 17:30:28 GMT  
-		Size: 40.4 KB (40437 bytes)  
+	-	`sha256:59e2186a3033d31b8ac127b3e3879de0bb0a83fe853047d70407289aee69eb55`  
+		Last Modified: Thu, 09 Apr 2026 22:24:18 GMT  
+		Size: 40.4 KB (40436 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:17.10-postgres-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:9324a48af1902b5e141f3fff386c36207bad26b28f8733016d381e01cb217dc5
+$ docker pull xwiki@sha256:6024718ae29b5cc19d57905d9f2fca3176ccfe8fa2f97dcb7c8fda4e09989cdf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **633.8 MB (633789473 bytes)**  
+-	Total Size: **633.8 MB (633791082 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba0aa83c813e5efbc87626e9fa123103a7b37b9e1d751766c48341398245f22d`
+-	Image ID: `sha256:e3dcb82f02f4576514408f2836931235c7dae98932df32844ffa8b48a618a670`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -3461,53 +3461,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:29:29 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:29:29 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:29:29 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.10
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 CMD ["xwiki"]
 ```
 
@@ -3552,99 +3552,1843 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21cbd76dcfc34ba37966cec28e89643ec6a0eb2aeed87dfff948edecd245db0a`  
-		Last Modified: Tue, 07 Apr 2026 17:30:30 GMT  
-		Size: 188.9 MB (188852257 bytes)  
+	-	`sha256:184522f6591efdb5d5dccfdc7884b1157c364adc0183901435978d12b09aaca6`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 188.9 MB (188852373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83fb9d7c4f2e50efb2faa6d86324f59e1efd42ab48d9bd17080c4cb22afaeae2`  
-		Last Modified: Tue, 07 Apr 2026 17:30:33 GMT  
-		Size: 331.3 MB (331301451 bytes)  
+	-	`sha256:ed36cf0b12b90b771fdf5d667bc583e62a26ca07ab4a03ccd1ffa03ab6bb73ce`  
+		Last Modified: Thu, 09 Apr 2026 22:26:06 GMT  
+		Size: 331.3 MB (331302932 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2015a7ea484c206ad136da1280d0276ad8900fea06439e15865891711e32c6f1`  
-		Last Modified: Tue, 07 Apr 2026 17:30:24 GMT  
-		Size: 1.1 MB (1061586 bytes)  
+	-	`sha256:e7f4c40509c5f44ec330619a21d3798f064bed6e4060595d02d2ca239b10c891`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.1 MB (1061593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58a79a20f4612a3cb5e59251e694843c260088c21d2d5c84af855702a65d9fdb`  
-		Last Modified: Tue, 07 Apr 2026 17:30:24 GMT  
-		Size: 1.3 KB (1341 bytes)  
+	-	`sha256:723b0edeb4a8dba5b3f47e0c17ac4779807d9807a64916cf4c78647b3fd2754f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.3 KB (1339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ba8f85ff2a590fe0cdb3e672650bdf6c213698743210bf7c6e9d2abb7248ff8`  
-		Last Modified: Tue, 07 Apr 2026 17:30:26 GMT  
-		Size: 2.5 KB (2460 bytes)  
+	-	`sha256:5a60270272edfd051418572723a14fffd0386e7caa1778d547b5f4f864c80b78`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c476686677f94be9b89465578b6e5af8ff276e12aa5a0710736d2e10c956a809`  
-		Last Modified: Tue, 07 Apr 2026 17:30:26 GMT  
-		Size: 10.7 KB (10673 bytes)  
+	-	`sha256:7fa0d2d0693c8e32804da5575a30ad5abdd6e9d8db434414ba20213b0e1af40b`  
+		Last Modified: Thu, 09 Apr 2026 22:25:58 GMT  
+		Size: 10.7 KB (10678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:428281077d2e9216405bdd0e7490368e16adeaa33b12663172c144f65e2f9ace`  
-		Last Modified: Tue, 07 Apr 2026 17:30:27 GMT  
-		Size: 2.4 KB (2443 bytes)  
+	-	`sha256:48988ee4ceb0e5b0e05041202859dc64849f571ba97db08fef238efde9d144da`  
+		Last Modified: Thu, 09 Apr 2026 22:25:59 GMT  
+		Size: 2.4 KB (2441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:17.10-postgres-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:0649fd2912087eaa80e25c3a9992d2a8d0ae3499121b491032e88d7244dafde9
+$ docker pull xwiki@sha256:afe463fb761456964f6604f8d4aaae678a52abd181be4fe9b07990f05bb58741
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9221102 bytes)**  
+-	Total Size: **9.2 MB (9221103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018d971a061843ecb11c1cf3e4706af1aa97fd851bd90fbf91be87357e0758ad`
+-	Image ID: `sha256:b30e0e2543aea28de9696bfb096c9239c0add79ac7ea737333ecb18cf22a0bff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3c9eb5d243fc8c70715d0af413893473fb7ca93012c4813936dea69c205874a9`  
-		Last Modified: Tue, 07 Apr 2026 17:30:25 GMT  
+	-	`sha256:12379d7c1d051b1287042c5c1c9ed1053e8f81caf265a00abf905a40d3450eb5`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
 		Size: 9.2 MB (9180505 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bf47b38208c1272da7a0a4c29e9474ce9998ca5265afb45b20e90af97734309d`  
-		Last Modified: Tue, 07 Apr 2026 17:30:24 GMT  
-		Size: 40.6 KB (40597 bytes)  
+	-	`sha256:c4ec01cba393297bb8411b9e9eca852fbdd232d1e8d5da314c6afcc0caeb7802`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 40.6 KB (40598 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:17.10.7`
 
 ```console
-$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull xwiki@sha256:0a92a197195f92613a88aafa43d0301eeb20ad3d9c0ca04cf969ba5453c76186
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `xwiki:17.10.7` - linux; amd64
+
+```console
+$ docker pull xwiki@sha256:cd32acdfa356b367a08172a751f760e2eee019dbb197a92952da8e0d075ef88f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **639.2 MB (639185369 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b0d261d19d9f028a4cd0c20b82bafecc4a6861b55bbabf4453ea916c5d582adc`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Fri, 03 Apr 2026 15:16:40 GMT
+ARG RELEASE
+# Fri, 03 Apr 2026 15:16:40 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 03 Apr 2026 15:16:40 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 03 Apr 2026 15:16:42 GMT
+ADD file:0f6466425c4f1800aae9224ddc3437b90c829cea58fb8edd5dde2f1eb0ee28da in / 
+# Fri, 03 Apr 2026 15:16:43 GMT
+CMD ["/bin/bash"]
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 07 Apr 2026 01:51:36 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Tue, 07 Apr 2026 01:52:07 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='991be6ac6725e76109ecbd131d658f992dcbeacba3a8b4b6650302c8012b52fb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='1a49cffcb348a28c017cf0deeb9322b7296dbfb002a8e43bd7f65ad671e10eb7';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='02cf763836c14bad4d689eb3b4efd691657de753dba07193cd1fb8691c8fe7b8';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='48f8529714c90c6cc61aa729cf8952f2fc47f2f2890551ba7f9e1c061b04be13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 03:30:05 GMT
+RUN mkdir -p "$CATALINA_HOME" # buildkit
+# Tue, 07 Apr 2026 03:30:05 GMT
+WORKDIR /usr/local/tomcat
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_MAJOR=10
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_VERSION=10.1.54
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_SHA512=8694b94324cf6f62ab032fa2438d7334518dcfcbf7878361b147246c46eb1e558c327f32c05fb4b7705c01fcca92fde392ce320934410f1169ff4ab36a1c7139
+# Tue, 07 Apr 2026 03:30:30 GMT
+COPY /usr/local/tomcat /usr/local/tomcat # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+EXPOSE map[8080/tcp:{}]
+# Tue, 07 Apr 2026 03:30:37 GMT
+ENTRYPOINT []
+# Tue, 07 Apr 2026 03:30:37 GMT
+CMD ["catalina.sh" "run"]
+# Thu, 09 Apr 2026 22:23:10 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Thu, 09 Apr 2026 22:23:10 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:23:10 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:23:10 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Thu, 09 Apr 2026 22:23:10 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Thu, 09 Apr 2026 22:23:10 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Thu, 09 Apr 2026 22:23:10 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:23:34 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
+# Thu, 09 Apr 2026 22:23:34 GMT
+ENV MYSQL_JDBC_VERSION=9.6.0
+# Thu, 09 Apr 2026 22:23:34 GMT
+ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
+# Thu, 09 Apr 2026 22:23:34 GMT
+ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
+# Thu, 09 Apr 2026 22:23:34 GMT
+ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
+# Thu, 09 Apr 2026 22:23:34 GMT
+ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
+# Thu, 09 Apr 2026 22:23:35 GMT
+RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
+# Thu, 09 Apr 2026 22:23:35 GMT
+COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
+# Thu, 09 Apr 2026 22:23:35 GMT
+COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
+# Thu, 09 Apr 2026 22:23:35 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
+# Thu, 09 Apr 2026 22:23:35 GMT
+COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Thu, 09 Apr 2026 22:23:35 GMT
+VOLUME [/usr/local/xwiki]
+# Thu, 09 Apr 2026 22:23:35 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 09 Apr 2026 22:23:35 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:689b91d88a0f4086057ec826027b128902ecf2b516be510371c115bc55da19a6`  
+		Last Modified: Fri, 03 Apr 2026 15:56:29 GMT  
+		Size: 29.7 MB (29733459 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3b68b8ef47fdb988fb4023edbb2a8d6a19ba659a4921fc9f25c496fe28ae1ef1`  
+		Last Modified: Tue, 07 Apr 2026 01:51:50 GMT  
+		Size: 17.0 MB (16983568 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e2c9370ed7c35a22ef566a4d1ee7eb152dc6f37abe64e4fc7df70647fa0499dc`  
+		Last Modified: Tue, 07 Apr 2026 01:52:20 GMT  
+		Size: 53.0 MB (52985505 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:75ef302449c04c900de9660d789c58e12374e181f0204d02016bf10d05a2ea02`  
+		Last Modified: Tue, 07 Apr 2026 01:52:19 GMT  
+		Size: 158.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9425bf26e9ee5e1bdec0dd158e59f754d3f4b3866a00a320bf3dafdf1a133d42`  
+		Last Modified: Tue, 07 Apr 2026 01:52:19 GMT  
+		Size: 2.3 KB (2283 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:54c9795ba8e7d43886e47c9f28f417b2ad6594c5ba4081bd0f3079a1a17c92b3`  
+		Last Modified: Tue, 07 Apr 2026 03:30:23 GMT  
+		Size: 137.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:415216d03967c36779ab9218ed04e2d48721c138ee3007af7305157c05d21243`  
+		Last Modified: Tue, 07 Apr 2026 03:30:45 GMT  
+		Size: 14.3 MB (14301303 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:298a021259cbe800fc2783c266cf2edbfe485bf898fa08ccf32f52653362586a`  
+		Last Modified: Tue, 07 Apr 2026 03:30:45 GMT  
+		Size: 224.9 KB (224915 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7e0fc84863cba3136ca06888d2e3c333bc4fc5464bd286417389ed001cd02843`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 191.2 MB (191192461 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b25b6c04e898becf799876d70bb3374f0e111303e4ba8751273c7fcf873bcfe3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 331.3 MB (331302931 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8f5433022279f8b39aac51b391b6cd30aee3c12cb19ce0c89a0d1480118d7831`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 2.4 MB (2441658 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b9d78506679e13ae5426fa585380e8ca1bc63c4091268f70a9216d7a9a4f0e70`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 1.3 KB (1341 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4627a3097827169c9928e66c2cf5e4fcfc06b4a5cacab939056105f11681008c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 2.4 KB (2374 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:35d408c992e2535da0004e1b8c2982a193b3402767474364724917bbfcb26a08`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 10.7 KB (10678 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ac41074fc407781ff3c0111d78b396273ce12558962037b035112da05235bbe8`  
+		Last Modified: Thu, 09 Apr 2026 22:24:14 GMT  
+		Size: 2.5 KB (2534 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `xwiki:17.10.7` - unknown; unknown
+
+```console
+$ docker pull xwiki@sha256:5418d43b5ed67294a897d0a983ce6d4e5b4ccdb9cdc07bee7ab2a19720cbdcc2
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.2 MB (9222461 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4d0788c0277c18fd341858d4454cb8624bc1cdd9b2902f56e2ed6f09ecf82c43`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:859cd2748f6bb45ae0caf3f3d3441a667c5b9be38e91722ac0dd4751c2a29707`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 9.2 MB (9180967 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2a364ffc6b2202b304890f77ef7b14c7497dc3089c7b3a557e9a0fd39effb9aa`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 41.5 KB (41494 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `xwiki:17.10.7` - linux; arm64 variant v8
+
+```console
+$ docker pull xwiki@sha256:cf3ca78c3e59bf0b31a6ac008d76768335b489100de74d2084ec55b6b9b76a67
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **635.2 MB (635171278 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:52402a3abb675d723ecb18c110dfbc6be76653db28239c4d9750fddc1b75cbf3`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Fri, 03 Apr 2026 15:15:14 GMT
+ARG RELEASE
+# Fri, 03 Apr 2026 15:15:14 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 03 Apr 2026 15:15:14 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 03 Apr 2026 15:15:17 GMT
+ADD file:9bab986009eae65b5534b3547eb3a7d0a1564404426de350dfd183cf3a4ffa9f in / 
+# Fri, 03 Apr 2026 15:15:17 GMT
+CMD ["/bin/bash"]
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 07 Apr 2026 01:54:52 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Tue, 07 Apr 2026 01:55:25 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='991be6ac6725e76109ecbd131d658f992dcbeacba3a8b4b6650302c8012b52fb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='1a49cffcb348a28c017cf0deeb9322b7296dbfb002a8e43bd7f65ad671e10eb7';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='02cf763836c14bad4d689eb3b4efd691657de753dba07193cd1fb8691c8fe7b8';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='48f8529714c90c6cc61aa729cf8952f2fc47f2f2890551ba7f9e1c061b04be13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 05:10:00 GMT
+RUN mkdir -p "$CATALINA_HOME" # buildkit
+# Tue, 07 Apr 2026 05:10:00 GMT
+WORKDIR /usr/local/tomcat
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_MAJOR=10
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_VERSION=10.1.54
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_SHA512=8694b94324cf6f62ab032fa2438d7334518dcfcbf7878361b147246c46eb1e558c327f32c05fb4b7705c01fcca92fde392ce320934410f1169ff4ab36a1c7139
+# Tue, 07 Apr 2026 05:10:01 GMT
+COPY /usr/local/tomcat /usr/local/tomcat # buildkit
+# Tue, 07 Apr 2026 05:10:08 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 05:10:09 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
+# Tue, 07 Apr 2026 05:10:09 GMT
+EXPOSE map[8080/tcp:{}]
+# Tue, 07 Apr 2026 05:10:09 GMT
+ENTRYPOINT []
+# Tue, 07 Apr 2026 05:10:09 GMT
+CMD ["catalina.sh" "run"]
+# Thu, 09 Apr 2026 22:24:59 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Thu, 09 Apr 2026 22:24:59 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:24:59 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:24:59 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Thu, 09 Apr 2026 22:24:59 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Thu, 09 Apr 2026 22:24:59 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Thu, 09 Apr 2026 22:24:59 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:22 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
+# Thu, 09 Apr 2026 22:25:22 GMT
+ENV MYSQL_JDBC_VERSION=9.6.0
+# Thu, 09 Apr 2026 22:25:22 GMT
+ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
+# Thu, 09 Apr 2026 22:25:22 GMT
+ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
+# Thu, 09 Apr 2026 22:25:22 GMT
+ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
+# Thu, 09 Apr 2026 22:25:22 GMT
+ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
+# Thu, 09 Apr 2026 22:25:22 GMT
+RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
+# Thu, 09 Apr 2026 22:25:22 GMT
+COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
+# Thu, 09 Apr 2026 22:25:23 GMT
+COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
+# Thu, 09 Apr 2026 22:25:23 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
+# Thu, 09 Apr 2026 22:25:23 GMT
+COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Thu, 09 Apr 2026 22:25:23 GMT
+VOLUME [/usr/local/xwiki]
+# Thu, 09 Apr 2026 22:25:23 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 09 Apr 2026 22:25:23 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:76fd055477b6edf8004a5a962edad02a820d4c8b2f02682410edfbe376b418c5`  
+		Last Modified: Fri, 03 Apr 2026 15:56:36 GMT  
+		Size: 28.9 MB (28874075 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bfc1fe49c2f79e04d9e562ce4ee017e874bf7e23feea81b6df6f351ab993d9b5`  
+		Last Modified: Tue, 07 Apr 2026 01:55:07 GMT  
+		Size: 17.0 MB (16996238 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:538e758f95d8493adbf608ecfa760b05bb49d3ceee0f1e637ca69598f3434ea6`  
+		Last Modified: Tue, 07 Apr 2026 01:55:40 GMT  
+		Size: 52.2 MB (52155642 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:80e0252f321812c22ad7139fe93995a4ab816f331d23ab15579dedbc1027f1ca`  
+		Last Modified: Tue, 07 Apr 2026 01:55:39 GMT  
+		Size: 158.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3f199c35f5162fea3c8f07eef1e388cab02e2e3f619c9b2842b8bcd77a768e1e`  
+		Last Modified: Tue, 07 Apr 2026 01:55:39 GMT  
+		Size: 2.3 KB (2281 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:eac5f94c5bcca79f12bddc6c46eb7fa6c04e4e0e9ed03895d1a50ef57c72bb4b`  
+		Last Modified: Tue, 07 Apr 2026 05:10:17 GMT  
+		Size: 138.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:908a696e504aba798cd3c2d7427bb96e96f3b09202e8c8142034cb000c030d62`  
+		Last Modified: Tue, 07 Apr 2026 05:10:18 GMT  
+		Size: 14.3 MB (14303384 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:85f112508064b8beb36c4dfc19b3697a983e5ded489ff63aef3a3905f0f61481`  
+		Last Modified: Tue, 07 Apr 2026 05:10:18 GMT  
+		Size: 225.3 KB (225282 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6de840e925519c0409af5cd558df0f21edeb9649779a12b2493891b75e1847bb`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 188.9 MB (188852546 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9310dcdb6a597b56a414e66d3f22b7ba2ce34205bde74028db3fe1f2a0fd15bd`  
+		Last Modified: Thu, 09 Apr 2026 22:26:08 GMT  
+		Size: 331.3 MB (331302885 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:96808ece531c7ad16047cd0c276b1eaf24eba803a4777be20fa486b1223746f3`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 2.4 MB (2441663 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9ce7afa650f665e999145f9d31f392769a771cadccb2efd5dfc6c05f9122784d`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.3 KB (1344 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2d027b61411abad4e11a023df03be9c862868ba06a16c66900ef590e636694c0`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 2.4 KB (2370 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b7309071b2cf1018f0903bc2464b90a8ed6a303491d93d5f7c831150f86feb2d`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 10.7 KB (10676 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b71f53f72f1ee9e632bafd61edc51b85d912272724683d7cfdca8d2c3a2e449b`  
+		Last Modified: Thu, 09 Apr 2026 22:25:58 GMT  
+		Size: 2.5 KB (2532 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `xwiki:17.10.7` - unknown; unknown
+
+```console
+$ docker pull xwiki@sha256:57259cbe5603fbf926a45bc60e567fdeea65599656c57de290d10de30399c49f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.2 MB (9223460 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:43b61a5fe2bc34eab178bf7d52fa31bd2f6414573ec8124977b670dceec03f65`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d19cfc5eaf35df59fbff8997866e21c81f882ce45c1271b88333b16b9fd80501`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 9.2 MB (9181756 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:1d7294b680df9d360663567b9abb2f7c69ad02831dd0f9e971ccfc4d2e747594`  
+		Last Modified: Thu, 09 Apr 2026 22:25:55 GMT  
+		Size: 41.7 KB (41704 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `xwiki:17.10.7-mariadb-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull xwiki@sha256:51beea14e5fe4730d9942169e1a2e742a9fb857a830fa30a2918c099033674d6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `xwiki:17.10.7-mariadb-tomcat` - linux; amd64
+
+```console
+$ docker pull xwiki@sha256:d2095f8a7df7705754e60e667f668a25d76f3fcb72248d02b2fbf45e9f4a3591
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **637.5 MB (637452373 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0a15370c6fcac1c61468cfd259920f8ee147827b31b793a9afa357c5de9ae283`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Fri, 03 Apr 2026 15:16:40 GMT
+ARG RELEASE
+# Fri, 03 Apr 2026 15:16:40 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 03 Apr 2026 15:16:40 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 03 Apr 2026 15:16:42 GMT
+ADD file:0f6466425c4f1800aae9224ddc3437b90c829cea58fb8edd5dde2f1eb0ee28da in / 
+# Fri, 03 Apr 2026 15:16:43 GMT
+CMD ["/bin/bash"]
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 07 Apr 2026 01:51:36 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Tue, 07 Apr 2026 01:52:07 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='991be6ac6725e76109ecbd131d658f992dcbeacba3a8b4b6650302c8012b52fb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='1a49cffcb348a28c017cf0deeb9322b7296dbfb002a8e43bd7f65ad671e10eb7';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='02cf763836c14bad4d689eb3b4efd691657de753dba07193cd1fb8691c8fe7b8';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='48f8529714c90c6cc61aa729cf8952f2fc47f2f2890551ba7f9e1c061b04be13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 03:30:05 GMT
+RUN mkdir -p "$CATALINA_HOME" # buildkit
+# Tue, 07 Apr 2026 03:30:05 GMT
+WORKDIR /usr/local/tomcat
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_MAJOR=10
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_VERSION=10.1.54
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_SHA512=8694b94324cf6f62ab032fa2438d7334518dcfcbf7878361b147246c46eb1e558c327f32c05fb4b7705c01fcca92fde392ce320934410f1169ff4ab36a1c7139
+# Tue, 07 Apr 2026 03:30:30 GMT
+COPY /usr/local/tomcat /usr/local/tomcat # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+EXPOSE map[8080/tcp:{}]
+# Tue, 07 Apr 2026 03:30:37 GMT
+ENTRYPOINT []
+# Tue, 07 Apr 2026 03:30:37 GMT
+CMD ["catalina.sh" "run"]
+# Thu, 09 Apr 2026 22:24:06 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Thu, 09 Apr 2026 22:24:06 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:24:06 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:24:06 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Thu, 09 Apr 2026 22:24:06 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Thu, 09 Apr 2026 22:24:06 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Thu, 09 Apr 2026 22:24:06 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Apr 2026 22:24:06 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:24:06 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:24:06 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:24:27 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
+# Thu, 09 Apr 2026 22:24:27 GMT
+ENV MARIADB_JDBC_VERSION=3.5.7
+# Thu, 09 Apr 2026 22:24:27 GMT
+ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
+# Thu, 09 Apr 2026 22:24:27 GMT
+ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
+# Thu, 09 Apr 2026 22:24:27 GMT
+ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
+# Thu, 09 Apr 2026 22:24:27 GMT
+ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
+# Thu, 09 Apr 2026 22:24:28 GMT
+RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
+# Thu, 09 Apr 2026 22:24:28 GMT
+COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
+# Thu, 09 Apr 2026 22:24:28 GMT
+COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
+# Thu, 09 Apr 2026 22:24:28 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
+# Thu, 09 Apr 2026 22:24:28 GMT
+COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Thu, 09 Apr 2026 22:24:28 GMT
+VOLUME [/usr/local/xwiki]
+# Thu, 09 Apr 2026 22:24:28 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 09 Apr 2026 22:24:28 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:689b91d88a0f4086057ec826027b128902ecf2b516be510371c115bc55da19a6`  
+		Last Modified: Fri, 03 Apr 2026 15:56:29 GMT  
+		Size: 29.7 MB (29733459 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3b68b8ef47fdb988fb4023edbb2a8d6a19ba659a4921fc9f25c496fe28ae1ef1`  
+		Last Modified: Tue, 07 Apr 2026 01:51:50 GMT  
+		Size: 17.0 MB (16983568 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e2c9370ed7c35a22ef566a4d1ee7eb152dc6f37abe64e4fc7df70647fa0499dc`  
+		Last Modified: Tue, 07 Apr 2026 01:52:20 GMT  
+		Size: 53.0 MB (52985505 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:75ef302449c04c900de9660d789c58e12374e181f0204d02016bf10d05a2ea02`  
+		Last Modified: Tue, 07 Apr 2026 01:52:19 GMT  
+		Size: 158.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9425bf26e9ee5e1bdec0dd158e59f754d3f4b3866a00a320bf3dafdf1a133d42`  
+		Last Modified: Tue, 07 Apr 2026 01:52:19 GMT  
+		Size: 2.3 KB (2283 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:54c9795ba8e7d43886e47c9f28f417b2ad6594c5ba4081bd0f3079a1a17c92b3`  
+		Last Modified: Tue, 07 Apr 2026 03:30:23 GMT  
+		Size: 137.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:415216d03967c36779ab9218ed04e2d48721c138ee3007af7305157c05d21243`  
+		Last Modified: Tue, 07 Apr 2026 03:30:45 GMT  
+		Size: 14.3 MB (14301303 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:298a021259cbe800fc2783c266cf2edbfe485bf898fa08ccf32f52653362586a`  
+		Last Modified: Tue, 07 Apr 2026 03:30:45 GMT  
+		Size: 224.9 KB (224915 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d614a1a827bba5456d3e0524700e840ec37b5e1aa8a1a8d3d37f3714ae830447`  
+		Last Modified: Thu, 09 Apr 2026 22:25:10 GMT  
+		Size: 191.2 MB (191192634 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7ec41c5cd54d504491a7ee2e21cebf61fb0acadbbdbdb5dc1017be7536f9e363`  
+		Last Modified: Thu, 09 Apr 2026 22:25:13 GMT  
+		Size: 331.3 MB (331302981 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:13cc41f7666390c761b3d2a7adfd880844a59478decf5db9712902c3250b1341`  
+		Last Modified: Thu, 09 Apr 2026 22:25:04 GMT  
+		Size: 708.5 KB (708545 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:66c12f10aabc0ad7bec6a03d187ab4d85b5ed5d92199f5b39ff4ecd0ece2e542`  
+		Last Modified: Thu, 09 Apr 2026 22:25:04 GMT  
+		Size: 1.3 KB (1340 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:55cc2e4fdf23dc3030f98e2c61065b22222165dea26c107e59e53e316087b9f1`  
+		Last Modified: Thu, 09 Apr 2026 22:25:05 GMT  
+		Size: 2.3 KB (2310 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1420db266102fab686ce6b01eeaf752b8535b743cce3b5ea673e986688213d37`  
+		Last Modified: Thu, 09 Apr 2026 22:25:05 GMT  
+		Size: 10.7 KB (10677 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f681e64b6d866908415073cf14262e0f3f4e7c9d65cbb492f8128c4b30bc9909`  
+		Last Modified: Thu, 09 Apr 2026 22:25:06 GMT  
+		Size: 2.5 KB (2494 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `xwiki:17.10.7-mariadb-tomcat` - unknown; unknown
+
+```console
+$ docker pull xwiki@sha256:78a0829760d07325d86f0eaedaf932719ce3ad0b8908b35f968b5d166dbad1d4
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.2 MB (9220194 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:02efd847e33a48df0977341df7d49985c6ca77a4120cf8caf703fcfa112e9a41`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:17be8c05cc005333f8e6f111d9f846cb308bc0219a85a2f1a7e7a92f5510d8a0`  
+		Last Modified: Thu, 09 Apr 2026 22:25:05 GMT  
+		Size: 9.2 MB (9179746 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:4bf73e24884d001bb1d960edddce212d25437830354bc533f18daf13cc420a03`  
+		Last Modified: Thu, 09 Apr 2026 22:25:04 GMT  
+		Size: 40.4 KB (40448 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `xwiki:17.10.7-mariadb-tomcat` - linux; arm64 variant v8
+
+```console
+$ docker pull xwiki@sha256:a2afebcd0107e9871dc634a18d8dc4b656af57daf316f0cabbc22ae34ae68e7c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **633.4 MB (633437665 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fd1cd6b1eef0e082e763e2342cc9c98a95b74796907ec41591d6c7b2f76fa1c5`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Fri, 03 Apr 2026 15:15:14 GMT
+ARG RELEASE
+# Fri, 03 Apr 2026 15:15:14 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 03 Apr 2026 15:15:14 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 03 Apr 2026 15:15:17 GMT
+ADD file:9bab986009eae65b5534b3547eb3a7d0a1564404426de350dfd183cf3a4ffa9f in / 
+# Fri, 03 Apr 2026 15:15:17 GMT
+CMD ["/bin/bash"]
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 07 Apr 2026 01:54:52 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Tue, 07 Apr 2026 01:55:25 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='991be6ac6725e76109ecbd131d658f992dcbeacba3a8b4b6650302c8012b52fb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='1a49cffcb348a28c017cf0deeb9322b7296dbfb002a8e43bd7f65ad671e10eb7';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='02cf763836c14bad4d689eb3b4efd691657de753dba07193cd1fb8691c8fe7b8';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='48f8529714c90c6cc61aa729cf8952f2fc47f2f2890551ba7f9e1c061b04be13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 05:10:00 GMT
+RUN mkdir -p "$CATALINA_HOME" # buildkit
+# Tue, 07 Apr 2026 05:10:00 GMT
+WORKDIR /usr/local/tomcat
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_MAJOR=10
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_VERSION=10.1.54
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_SHA512=8694b94324cf6f62ab032fa2438d7334518dcfcbf7878361b147246c46eb1e558c327f32c05fb4b7705c01fcca92fde392ce320934410f1169ff4ab36a1c7139
+# Tue, 07 Apr 2026 05:10:01 GMT
+COPY /usr/local/tomcat /usr/local/tomcat # buildkit
+# Tue, 07 Apr 2026 05:10:08 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 05:10:09 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
+# Tue, 07 Apr 2026 05:10:09 GMT
+EXPOSE map[8080/tcp:{}]
+# Tue, 07 Apr 2026 05:10:09 GMT
+ENTRYPOINT []
+# Tue, 07 Apr 2026 05:10:09 GMT
+CMD ["catalina.sh" "run"]
+# Thu, 09 Apr 2026 22:25:06 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Thu, 09 Apr 2026 22:25:06 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:25:06 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:25:06 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Thu, 09 Apr 2026 22:25:06 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Thu, 09 Apr 2026 22:25:06 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Thu, 09 Apr 2026 22:25:06 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Apr 2026 22:25:06 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:25:06 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:25:06 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:28 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
+# Thu, 09 Apr 2026 22:25:28 GMT
+ENV MARIADB_JDBC_VERSION=3.5.7
+# Thu, 09 Apr 2026 22:25:28 GMT
+ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
+# Thu, 09 Apr 2026 22:25:28 GMT
+ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
+# Thu, 09 Apr 2026 22:25:28 GMT
+ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
+# Thu, 09 Apr 2026 22:25:28 GMT
+ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
+# Thu, 09 Apr 2026 22:25:28 GMT
+RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
+# Thu, 09 Apr 2026 22:25:28 GMT
+COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
+# Thu, 09 Apr 2026 22:25:28 GMT
+COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
+# Thu, 09 Apr 2026 22:25:28 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
+# Thu, 09 Apr 2026 22:25:28 GMT
+COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Thu, 09 Apr 2026 22:25:28 GMT
+VOLUME [/usr/local/xwiki]
+# Thu, 09 Apr 2026 22:25:28 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 09 Apr 2026 22:25:28 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:76fd055477b6edf8004a5a962edad02a820d4c8b2f02682410edfbe376b418c5`  
+		Last Modified: Fri, 03 Apr 2026 15:56:36 GMT  
+		Size: 28.9 MB (28874075 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bfc1fe49c2f79e04d9e562ce4ee017e874bf7e23feea81b6df6f351ab993d9b5`  
+		Last Modified: Tue, 07 Apr 2026 01:55:07 GMT  
+		Size: 17.0 MB (16996238 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:538e758f95d8493adbf608ecfa760b05bb49d3ceee0f1e637ca69598f3434ea6`  
+		Last Modified: Tue, 07 Apr 2026 01:55:40 GMT  
+		Size: 52.2 MB (52155642 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:80e0252f321812c22ad7139fe93995a4ab816f331d23ab15579dedbc1027f1ca`  
+		Last Modified: Tue, 07 Apr 2026 01:55:39 GMT  
+		Size: 158.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3f199c35f5162fea3c8f07eef1e388cab02e2e3f619c9b2842b8bcd77a768e1e`  
+		Last Modified: Tue, 07 Apr 2026 01:55:39 GMT  
+		Size: 2.3 KB (2281 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:eac5f94c5bcca79f12bddc6c46eb7fa6c04e4e0e9ed03895d1a50ef57c72bb4b`  
+		Last Modified: Tue, 07 Apr 2026 05:10:17 GMT  
+		Size: 138.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:908a696e504aba798cd3c2d7427bb96e96f3b09202e8c8142034cb000c030d62`  
+		Last Modified: Tue, 07 Apr 2026 05:10:18 GMT  
+		Size: 14.3 MB (14303384 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:85f112508064b8beb36c4dfc19b3697a983e5ded489ff63aef3a3905f0f61481`  
+		Last Modified: Tue, 07 Apr 2026 05:10:18 GMT  
+		Size: 225.3 KB (225282 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:08823c3db987c987900b6d67c9247d6386ce0eea8143c78e2f3e0b5e32b998e5`  
+		Last Modified: Thu, 09 Apr 2026 22:26:07 GMT  
+		Size: 188.9 MB (188852085 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:eb4c31e6885efbe1075a08f5c35e0db15f98101794ae8f5e79f4fe02094c16d9`  
+		Last Modified: Thu, 09 Apr 2026 22:26:09 GMT  
+		Size: 331.3 MB (331302946 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4ab581bc8a38f6d1d41897625bd793c8248b2fb927d26d1bc631585fbdf9e077`  
+		Last Modified: Thu, 09 Apr 2026 22:26:01 GMT  
+		Size: 708.5 KB (708545 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3f43c596e9456f3683a935cb6c7f38817e91806651e275c84b62dca1dd8987dd`  
+		Last Modified: Thu, 09 Apr 2026 22:26:01 GMT  
+		Size: 1.3 KB (1343 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a8c47e96b643ba7ebd05cfa185496943fb163e85b49129d5550d04d33b9cc123`  
+		Last Modified: Thu, 09 Apr 2026 22:26:02 GMT  
+		Size: 2.3 KB (2308 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7c47d9d0dfaed412815dbea06f097ef2d94860ed76821693877f188e4cb27717`  
+		Last Modified: Thu, 09 Apr 2026 22:26:02 GMT  
+		Size: 10.7 KB (10676 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7e200218e445d54d4cd2843abeb3670147f2b610f53283d91dc918dd4497e630`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 2.5 KB (2500 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `xwiki:17.10.7-mariadb-tomcat` - unknown; unknown
+
+```console
+$ docker pull xwiki@sha256:94cd7045ea7f56ce9074d68c9c0b10148d65e775fcf2f0cc037ec3874faa1e21
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.2 MB (9221098 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3f40e3aa2eff775352b8be74d32bcfdb73e1e1d6c57c79551bbbb4bc30f571a7`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:ce4eccdb3d5db8c578ed4b14c18ea462a3f5259e7116bf6d994359e843ee463d`  
+		Last Modified: Thu, 09 Apr 2026 22:26:01 GMT  
+		Size: 9.2 MB (9180487 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:4410303f0ef1fa1b939c31e269ad8e42d5815d2a80b682d71500f6f5b1e45141`  
+		Last Modified: Thu, 09 Apr 2026 22:26:00 GMT  
+		Size: 40.6 KB (40611 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `xwiki:17.10.7-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull xwiki@sha256:0a92a197195f92613a88aafa43d0301eeb20ad3d9c0ca04cf969ba5453c76186
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `xwiki:17.10.7-mysql-tomcat` - linux; amd64
+
+```console
+$ docker pull xwiki@sha256:cd32acdfa356b367a08172a751f760e2eee019dbb197a92952da8e0d075ef88f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **639.2 MB (639185369 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b0d261d19d9f028a4cd0c20b82bafecc4a6861b55bbabf4453ea916c5d582adc`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Fri, 03 Apr 2026 15:16:40 GMT
+ARG RELEASE
+# Fri, 03 Apr 2026 15:16:40 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 03 Apr 2026 15:16:40 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 03 Apr 2026 15:16:42 GMT
+ADD file:0f6466425c4f1800aae9224ddc3437b90c829cea58fb8edd5dde2f1eb0ee28da in / 
+# Fri, 03 Apr 2026 15:16:43 GMT
+CMD ["/bin/bash"]
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 07 Apr 2026 01:51:36 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Tue, 07 Apr 2026 01:52:07 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='991be6ac6725e76109ecbd131d658f992dcbeacba3a8b4b6650302c8012b52fb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='1a49cffcb348a28c017cf0deeb9322b7296dbfb002a8e43bd7f65ad671e10eb7';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='02cf763836c14bad4d689eb3b4efd691657de753dba07193cd1fb8691c8fe7b8';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='48f8529714c90c6cc61aa729cf8952f2fc47f2f2890551ba7f9e1c061b04be13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 03:30:05 GMT
+RUN mkdir -p "$CATALINA_HOME" # buildkit
+# Tue, 07 Apr 2026 03:30:05 GMT
+WORKDIR /usr/local/tomcat
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_MAJOR=10
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_VERSION=10.1.54
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_SHA512=8694b94324cf6f62ab032fa2438d7334518dcfcbf7878361b147246c46eb1e558c327f32c05fb4b7705c01fcca92fde392ce320934410f1169ff4ab36a1c7139
+# Tue, 07 Apr 2026 03:30:30 GMT
+COPY /usr/local/tomcat /usr/local/tomcat # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+EXPOSE map[8080/tcp:{}]
+# Tue, 07 Apr 2026 03:30:37 GMT
+ENTRYPOINT []
+# Tue, 07 Apr 2026 03:30:37 GMT
+CMD ["catalina.sh" "run"]
+# Thu, 09 Apr 2026 22:23:10 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Thu, 09 Apr 2026 22:23:10 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:23:10 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:23:10 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Thu, 09 Apr 2026 22:23:10 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Thu, 09 Apr 2026 22:23:10 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Thu, 09 Apr 2026 22:23:10 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:23:34 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
+# Thu, 09 Apr 2026 22:23:34 GMT
+ENV MYSQL_JDBC_VERSION=9.6.0
+# Thu, 09 Apr 2026 22:23:34 GMT
+ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
+# Thu, 09 Apr 2026 22:23:34 GMT
+ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
+# Thu, 09 Apr 2026 22:23:34 GMT
+ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
+# Thu, 09 Apr 2026 22:23:34 GMT
+ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
+# Thu, 09 Apr 2026 22:23:35 GMT
+RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
+# Thu, 09 Apr 2026 22:23:35 GMT
+COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
+# Thu, 09 Apr 2026 22:23:35 GMT
+COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
+# Thu, 09 Apr 2026 22:23:35 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
+# Thu, 09 Apr 2026 22:23:35 GMT
+COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Thu, 09 Apr 2026 22:23:35 GMT
+VOLUME [/usr/local/xwiki]
+# Thu, 09 Apr 2026 22:23:35 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 09 Apr 2026 22:23:35 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:689b91d88a0f4086057ec826027b128902ecf2b516be510371c115bc55da19a6`  
+		Last Modified: Fri, 03 Apr 2026 15:56:29 GMT  
+		Size: 29.7 MB (29733459 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3b68b8ef47fdb988fb4023edbb2a8d6a19ba659a4921fc9f25c496fe28ae1ef1`  
+		Last Modified: Tue, 07 Apr 2026 01:51:50 GMT  
+		Size: 17.0 MB (16983568 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e2c9370ed7c35a22ef566a4d1ee7eb152dc6f37abe64e4fc7df70647fa0499dc`  
+		Last Modified: Tue, 07 Apr 2026 01:52:20 GMT  
+		Size: 53.0 MB (52985505 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:75ef302449c04c900de9660d789c58e12374e181f0204d02016bf10d05a2ea02`  
+		Last Modified: Tue, 07 Apr 2026 01:52:19 GMT  
+		Size: 158.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9425bf26e9ee5e1bdec0dd158e59f754d3f4b3866a00a320bf3dafdf1a133d42`  
+		Last Modified: Tue, 07 Apr 2026 01:52:19 GMT  
+		Size: 2.3 KB (2283 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:54c9795ba8e7d43886e47c9f28f417b2ad6594c5ba4081bd0f3079a1a17c92b3`  
+		Last Modified: Tue, 07 Apr 2026 03:30:23 GMT  
+		Size: 137.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:415216d03967c36779ab9218ed04e2d48721c138ee3007af7305157c05d21243`  
+		Last Modified: Tue, 07 Apr 2026 03:30:45 GMT  
+		Size: 14.3 MB (14301303 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:298a021259cbe800fc2783c266cf2edbfe485bf898fa08ccf32f52653362586a`  
+		Last Modified: Tue, 07 Apr 2026 03:30:45 GMT  
+		Size: 224.9 KB (224915 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7e0fc84863cba3136ca06888d2e3c333bc4fc5464bd286417389ed001cd02843`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 191.2 MB (191192461 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b25b6c04e898becf799876d70bb3374f0e111303e4ba8751273c7fcf873bcfe3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 331.3 MB (331302931 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8f5433022279f8b39aac51b391b6cd30aee3c12cb19ce0c89a0d1480118d7831`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 2.4 MB (2441658 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b9d78506679e13ae5426fa585380e8ca1bc63c4091268f70a9216d7a9a4f0e70`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 1.3 KB (1341 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4627a3097827169c9928e66c2cf5e4fcfc06b4a5cacab939056105f11681008c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 2.4 KB (2374 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:35d408c992e2535da0004e1b8c2982a193b3402767474364724917bbfcb26a08`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 10.7 KB (10678 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ac41074fc407781ff3c0111d78b396273ce12558962037b035112da05235bbe8`  
+		Last Modified: Thu, 09 Apr 2026 22:24:14 GMT  
+		Size: 2.5 KB (2534 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `xwiki:17.10.7-mysql-tomcat` - unknown; unknown
+
+```console
+$ docker pull xwiki@sha256:5418d43b5ed67294a897d0a983ce6d4e5b4ccdb9cdc07bee7ab2a19720cbdcc2
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.2 MB (9222461 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4d0788c0277c18fd341858d4454cb8624bc1cdd9b2902f56e2ed6f09ecf82c43`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:859cd2748f6bb45ae0caf3f3d3441a667c5b9be38e91722ac0dd4751c2a29707`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 9.2 MB (9180967 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2a364ffc6b2202b304890f77ef7b14c7497dc3089c7b3a557e9a0fd39effb9aa`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 41.5 KB (41494 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `xwiki:17.10.7-mysql-tomcat` - linux; arm64 variant v8
+
+```console
+$ docker pull xwiki@sha256:cf3ca78c3e59bf0b31a6ac008d76768335b489100de74d2084ec55b6b9b76a67
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **635.2 MB (635171278 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:52402a3abb675d723ecb18c110dfbc6be76653db28239c4d9750fddc1b75cbf3`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Fri, 03 Apr 2026 15:15:14 GMT
+ARG RELEASE
+# Fri, 03 Apr 2026 15:15:14 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 03 Apr 2026 15:15:14 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 03 Apr 2026 15:15:17 GMT
+ADD file:9bab986009eae65b5534b3547eb3a7d0a1564404426de350dfd183cf3a4ffa9f in / 
+# Fri, 03 Apr 2026 15:15:17 GMT
+CMD ["/bin/bash"]
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 07 Apr 2026 01:54:52 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Tue, 07 Apr 2026 01:55:25 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='991be6ac6725e76109ecbd131d658f992dcbeacba3a8b4b6650302c8012b52fb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='1a49cffcb348a28c017cf0deeb9322b7296dbfb002a8e43bd7f65ad671e10eb7';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='02cf763836c14bad4d689eb3b4efd691657de753dba07193cd1fb8691c8fe7b8';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='48f8529714c90c6cc61aa729cf8952f2fc47f2f2890551ba7f9e1c061b04be13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 05:10:00 GMT
+RUN mkdir -p "$CATALINA_HOME" # buildkit
+# Tue, 07 Apr 2026 05:10:00 GMT
+WORKDIR /usr/local/tomcat
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_MAJOR=10
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_VERSION=10.1.54
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_SHA512=8694b94324cf6f62ab032fa2438d7334518dcfcbf7878361b147246c46eb1e558c327f32c05fb4b7705c01fcca92fde392ce320934410f1169ff4ab36a1c7139
+# Tue, 07 Apr 2026 05:10:01 GMT
+COPY /usr/local/tomcat /usr/local/tomcat # buildkit
+# Tue, 07 Apr 2026 05:10:08 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 05:10:09 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
+# Tue, 07 Apr 2026 05:10:09 GMT
+EXPOSE map[8080/tcp:{}]
+# Tue, 07 Apr 2026 05:10:09 GMT
+ENTRYPOINT []
+# Tue, 07 Apr 2026 05:10:09 GMT
+CMD ["catalina.sh" "run"]
+# Thu, 09 Apr 2026 22:24:59 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Thu, 09 Apr 2026 22:24:59 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:24:59 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:24:59 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Thu, 09 Apr 2026 22:24:59 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Thu, 09 Apr 2026 22:24:59 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Thu, 09 Apr 2026 22:24:59 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:22 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
+# Thu, 09 Apr 2026 22:25:22 GMT
+ENV MYSQL_JDBC_VERSION=9.6.0
+# Thu, 09 Apr 2026 22:25:22 GMT
+ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
+# Thu, 09 Apr 2026 22:25:22 GMT
+ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
+# Thu, 09 Apr 2026 22:25:22 GMT
+ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
+# Thu, 09 Apr 2026 22:25:22 GMT
+ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
+# Thu, 09 Apr 2026 22:25:22 GMT
+RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
+# Thu, 09 Apr 2026 22:25:22 GMT
+COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
+# Thu, 09 Apr 2026 22:25:23 GMT
+COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
+# Thu, 09 Apr 2026 22:25:23 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
+# Thu, 09 Apr 2026 22:25:23 GMT
+COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Thu, 09 Apr 2026 22:25:23 GMT
+VOLUME [/usr/local/xwiki]
+# Thu, 09 Apr 2026 22:25:23 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 09 Apr 2026 22:25:23 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:76fd055477b6edf8004a5a962edad02a820d4c8b2f02682410edfbe376b418c5`  
+		Last Modified: Fri, 03 Apr 2026 15:56:36 GMT  
+		Size: 28.9 MB (28874075 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bfc1fe49c2f79e04d9e562ce4ee017e874bf7e23feea81b6df6f351ab993d9b5`  
+		Last Modified: Tue, 07 Apr 2026 01:55:07 GMT  
+		Size: 17.0 MB (16996238 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:538e758f95d8493adbf608ecfa760b05bb49d3ceee0f1e637ca69598f3434ea6`  
+		Last Modified: Tue, 07 Apr 2026 01:55:40 GMT  
+		Size: 52.2 MB (52155642 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:80e0252f321812c22ad7139fe93995a4ab816f331d23ab15579dedbc1027f1ca`  
+		Last Modified: Tue, 07 Apr 2026 01:55:39 GMT  
+		Size: 158.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3f199c35f5162fea3c8f07eef1e388cab02e2e3f619c9b2842b8bcd77a768e1e`  
+		Last Modified: Tue, 07 Apr 2026 01:55:39 GMT  
+		Size: 2.3 KB (2281 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:eac5f94c5bcca79f12bddc6c46eb7fa6c04e4e0e9ed03895d1a50ef57c72bb4b`  
+		Last Modified: Tue, 07 Apr 2026 05:10:17 GMT  
+		Size: 138.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:908a696e504aba798cd3c2d7427bb96e96f3b09202e8c8142034cb000c030d62`  
+		Last Modified: Tue, 07 Apr 2026 05:10:18 GMT  
+		Size: 14.3 MB (14303384 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:85f112508064b8beb36c4dfc19b3697a983e5ded489ff63aef3a3905f0f61481`  
+		Last Modified: Tue, 07 Apr 2026 05:10:18 GMT  
+		Size: 225.3 KB (225282 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6de840e925519c0409af5cd558df0f21edeb9649779a12b2493891b75e1847bb`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 188.9 MB (188852546 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9310dcdb6a597b56a414e66d3f22b7ba2ce34205bde74028db3fe1f2a0fd15bd`  
+		Last Modified: Thu, 09 Apr 2026 22:26:08 GMT  
+		Size: 331.3 MB (331302885 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:96808ece531c7ad16047cd0c276b1eaf24eba803a4777be20fa486b1223746f3`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 2.4 MB (2441663 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9ce7afa650f665e999145f9d31f392769a771cadccb2efd5dfc6c05f9122784d`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.3 KB (1344 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2d027b61411abad4e11a023df03be9c862868ba06a16c66900ef590e636694c0`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 2.4 KB (2370 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b7309071b2cf1018f0903bc2464b90a8ed6a303491d93d5f7c831150f86feb2d`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 10.7 KB (10676 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b71f53f72f1ee9e632bafd61edc51b85d912272724683d7cfdca8d2c3a2e449b`  
+		Last Modified: Thu, 09 Apr 2026 22:25:58 GMT  
+		Size: 2.5 KB (2532 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `xwiki:17.10.7-mysql-tomcat` - unknown; unknown
+
+```console
+$ docker pull xwiki@sha256:57259cbe5603fbf926a45bc60e567fdeea65599656c57de290d10de30399c49f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.2 MB (9223460 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:43b61a5fe2bc34eab178bf7d52fa31bd2f6414573ec8124977b670dceec03f65`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d19cfc5eaf35df59fbff8997866e21c81f882ce45c1271b88333b16b9fd80501`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 9.2 MB (9181756 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:1d7294b680df9d360663567b9abb2f7c69ad02831dd0f9e971ccfc4d2e747594`  
+		Last Modified: Thu, 09 Apr 2026 22:25:55 GMT  
+		Size: 41.7 KB (41704 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `xwiki:17.10.7-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull xwiki@sha256:04c6ced458e97dd243d066ab6465aad705bbe40bbac4308476016f7829a95a89
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `xwiki:17.10.7-postgres-tomcat` - linux; amd64
+
+```console
+$ docker pull xwiki@sha256:331710166586f1711ac5d4af256e9683e3d26330b9242be471676ba83be8dbb5
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **637.8 MB (637805392 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:75c56f18886e8594e0c1755afe5ffeebb81b7e99e691a52f96bfd559287bad6a`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Fri, 03 Apr 2026 15:16:40 GMT
+ARG RELEASE
+# Fri, 03 Apr 2026 15:16:40 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 03 Apr 2026 15:16:40 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 03 Apr 2026 15:16:42 GMT
+ADD file:0f6466425c4f1800aae9224ddc3437b90c829cea58fb8edd5dde2f1eb0ee28da in / 
+# Fri, 03 Apr 2026 15:16:43 GMT
+CMD ["/bin/bash"]
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 07 Apr 2026 01:51:36 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Tue, 07 Apr 2026 01:52:07 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='991be6ac6725e76109ecbd131d658f992dcbeacba3a8b4b6650302c8012b52fb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='1a49cffcb348a28c017cf0deeb9322b7296dbfb002a8e43bd7f65ad671e10eb7';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='02cf763836c14bad4d689eb3b4efd691657de753dba07193cd1fb8691c8fe7b8';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='48f8529714c90c6cc61aa729cf8952f2fc47f2f2890551ba7f9e1c061b04be13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 03:30:05 GMT
+RUN mkdir -p "$CATALINA_HOME" # buildkit
+# Tue, 07 Apr 2026 03:30:05 GMT
+WORKDIR /usr/local/tomcat
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_MAJOR=10
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_VERSION=10.1.54
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_SHA512=8694b94324cf6f62ab032fa2438d7334518dcfcbf7878361b147246c46eb1e558c327f32c05fb4b7705c01fcca92fde392ce320934410f1169ff4ab36a1c7139
+# Tue, 07 Apr 2026 03:30:30 GMT
+COPY /usr/local/tomcat /usr/local/tomcat # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+EXPOSE map[8080/tcp:{}]
+# Tue, 07 Apr 2026 03:30:37 GMT
+ENTRYPOINT []
+# Tue, 07 Apr 2026 03:30:37 GMT
+CMD ["catalina.sh" "run"]
+# Thu, 09 Apr 2026 22:23:21 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Thu, 09 Apr 2026 22:23:21 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:23:21 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:23:21 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Thu, 09 Apr 2026 22:23:21 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Thu, 09 Apr 2026 22:23:21 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Thu, 09 Apr 2026 22:23:21 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Apr 2026 22:23:21 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:23:21 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:23:21 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:23:42 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
+# Thu, 09 Apr 2026 22:23:42 GMT
+ENV POSTGRES_JDBC_VERSION=42.7.10
+# Thu, 09 Apr 2026 22:23:42 GMT
+ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
+# Thu, 09 Apr 2026 22:23:42 GMT
+ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
+# Thu, 09 Apr 2026 22:23:42 GMT
+ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
+# Thu, 09 Apr 2026 22:23:42 GMT
+ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
+# Thu, 09 Apr 2026 22:23:43 GMT
+RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
+# Thu, 09 Apr 2026 22:23:43 GMT
+COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
+# Thu, 09 Apr 2026 22:23:43 GMT
+COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
+# Thu, 09 Apr 2026 22:23:43 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
+# Thu, 09 Apr 2026 22:23:43 GMT
+COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Thu, 09 Apr 2026 22:23:43 GMT
+VOLUME [/usr/local/xwiki]
+# Thu, 09 Apr 2026 22:23:43 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 09 Apr 2026 22:23:43 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:689b91d88a0f4086057ec826027b128902ecf2b516be510371c115bc55da19a6`  
+		Last Modified: Fri, 03 Apr 2026 15:56:29 GMT  
+		Size: 29.7 MB (29733459 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3b68b8ef47fdb988fb4023edbb2a8d6a19ba659a4921fc9f25c496fe28ae1ef1`  
+		Last Modified: Tue, 07 Apr 2026 01:51:50 GMT  
+		Size: 17.0 MB (16983568 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e2c9370ed7c35a22ef566a4d1ee7eb152dc6f37abe64e4fc7df70647fa0499dc`  
+		Last Modified: Tue, 07 Apr 2026 01:52:20 GMT  
+		Size: 53.0 MB (52985505 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:75ef302449c04c900de9660d789c58e12374e181f0204d02016bf10d05a2ea02`  
+		Last Modified: Tue, 07 Apr 2026 01:52:19 GMT  
+		Size: 158.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9425bf26e9ee5e1bdec0dd158e59f754d3f4b3866a00a320bf3dafdf1a133d42`  
+		Last Modified: Tue, 07 Apr 2026 01:52:19 GMT  
+		Size: 2.3 KB (2283 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:54c9795ba8e7d43886e47c9f28f417b2ad6594c5ba4081bd0f3079a1a17c92b3`  
+		Last Modified: Tue, 07 Apr 2026 03:30:23 GMT  
+		Size: 137.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:415216d03967c36779ab9218ed04e2d48721c138ee3007af7305157c05d21243`  
+		Last Modified: Tue, 07 Apr 2026 03:30:45 GMT  
+		Size: 14.3 MB (14301303 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:298a021259cbe800fc2783c266cf2edbfe485bf898fa08ccf32f52653362586a`  
+		Last Modified: Tue, 07 Apr 2026 03:30:45 GMT  
+		Size: 224.9 KB (224915 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3797439f5c9f775829ce928f6b2f7af1fbbd6bb83e94e7ab052daa8c9594f0ff`  
+		Last Modified: Thu, 09 Apr 2026 22:24:29 GMT  
+		Size: 191.2 MB (191192551 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aa46533955d6b665b2768ab0b7dfe8be4cecc56f3adf884374e144f119ccd5e3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:31 GMT  
+		Size: 331.3 MB (331302946 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b77ed1a0ceff162e35b200d9705ab8d46e040e01f744c7e60c1a5f6471494b08`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 1.1 MB (1061588 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2c35f693cf0906fb2709635e8e9edd99caafdd14c1086cdab22232e524e39890`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 1.3 KB (1340 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fcd1f2ab418a57c914ee324cdc911f8b672e7248dd86611d0cad845ea6adaf5d`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 2.5 KB (2460 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c03ef1e48647162bad48df4a5bf0c36df95fb2c5f6981541947e1ec4745f0a20`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 10.7 KB (10677 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6a7a7a289eb9261a1a24b0a4ec7f99efd1b065a626d9d05c171c1f9800db240a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 2.4 KB (2438 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `xwiki:17.10.7-postgres-tomcat` - unknown; unknown
+
+```console
+$ docker pull xwiki@sha256:db194c6c64e7536650c74b7d7b0e06d6b674248a8a9c2bbc451fd9190912f232
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.2 MB (9220200 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8a164727c721f144e5f97cc6c1044e540c84b9f83939fcea4e07e157572e6d69`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:fd62f8103126c7cb172c5f1732a78dd3175969af1bc835d2558d9ab0dff89b6a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 9.2 MB (9179764 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:59e2186a3033d31b8ac127b3e3879de0bb0a83fe853047d70407289aee69eb55`  
+		Last Modified: Thu, 09 Apr 2026 22:24:18 GMT  
+		Size: 40.4 KB (40436 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `xwiki:17.10.7-postgres-tomcat` - linux; arm64 variant v8
+
+```console
+$ docker pull xwiki@sha256:6024718ae29b5cc19d57905d9f2fca3176ccfe8fa2f97dcb7c8fda4e09989cdf
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **633.8 MB (633791082 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e3dcb82f02f4576514408f2836931235c7dae98932df32844ffa8b48a618a670`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Fri, 03 Apr 2026 15:15:14 GMT
+ARG RELEASE
+# Fri, 03 Apr 2026 15:15:14 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 03 Apr 2026 15:15:14 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 03 Apr 2026 15:15:17 GMT
+ADD file:9bab986009eae65b5534b3547eb3a7d0a1564404426de350dfd183cf3a4ffa9f in / 
+# Fri, 03 Apr 2026 15:15:17 GMT
+CMD ["/bin/bash"]
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 07 Apr 2026 01:54:52 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Tue, 07 Apr 2026 01:55:25 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='991be6ac6725e76109ecbd131d658f992dcbeacba3a8b4b6650302c8012b52fb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='1a49cffcb348a28c017cf0deeb9322b7296dbfb002a8e43bd7f65ad671e10eb7';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='02cf763836c14bad4d689eb3b4efd691657de753dba07193cd1fb8691c8fe7b8';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='48f8529714c90c6cc61aa729cf8952f2fc47f2f2890551ba7f9e1c061b04be13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 05:10:00 GMT
+RUN mkdir -p "$CATALINA_HOME" # buildkit
+# Tue, 07 Apr 2026 05:10:00 GMT
+WORKDIR /usr/local/tomcat
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_MAJOR=10
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_VERSION=10.1.54
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_SHA512=8694b94324cf6f62ab032fa2438d7334518dcfcbf7878361b147246c46eb1e558c327f32c05fb4b7705c01fcca92fde392ce320934410f1169ff4ab36a1c7139
+# Tue, 07 Apr 2026 05:10:01 GMT
+COPY /usr/local/tomcat /usr/local/tomcat # buildkit
+# Tue, 07 Apr 2026 05:10:08 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 05:10:09 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
+# Tue, 07 Apr 2026 05:10:09 GMT
+EXPOSE map[8080/tcp:{}]
+# Tue, 07 Apr 2026 05:10:09 GMT
+ENTRYPOINT []
+# Tue, 07 Apr 2026 05:10:09 GMT
+CMD ["catalina.sh" "run"]
+# Thu, 09 Apr 2026 22:25:01 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Thu, 09 Apr 2026 22:25:01 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:25:01 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:25:01 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Thu, 09 Apr 2026 22:25:01 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Thu, 09 Apr 2026 22:25:01 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Thu, 09 Apr 2026 22:25:01 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:23 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
+# Thu, 09 Apr 2026 22:25:23 GMT
+ENV POSTGRES_JDBC_VERSION=42.7.10
+# Thu, 09 Apr 2026 22:25:23 GMT
+ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
+# Thu, 09 Apr 2026 22:25:23 GMT
+ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
+# Thu, 09 Apr 2026 22:25:23 GMT
+ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
+# Thu, 09 Apr 2026 22:25:23 GMT
+ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
+# Thu, 09 Apr 2026 22:25:23 GMT
+RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
+# Thu, 09 Apr 2026 22:25:23 GMT
+COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
+# Thu, 09 Apr 2026 22:25:23 GMT
+COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
+# Thu, 09 Apr 2026 22:25:23 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
+# Thu, 09 Apr 2026 22:25:23 GMT
+COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Thu, 09 Apr 2026 22:25:23 GMT
+VOLUME [/usr/local/xwiki]
+# Thu, 09 Apr 2026 22:25:23 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 09 Apr 2026 22:25:23 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:76fd055477b6edf8004a5a962edad02a820d4c8b2f02682410edfbe376b418c5`  
+		Last Modified: Fri, 03 Apr 2026 15:56:36 GMT  
+		Size: 28.9 MB (28874075 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bfc1fe49c2f79e04d9e562ce4ee017e874bf7e23feea81b6df6f351ab993d9b5`  
+		Last Modified: Tue, 07 Apr 2026 01:55:07 GMT  
+		Size: 17.0 MB (16996238 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:538e758f95d8493adbf608ecfa760b05bb49d3ceee0f1e637ca69598f3434ea6`  
+		Last Modified: Tue, 07 Apr 2026 01:55:40 GMT  
+		Size: 52.2 MB (52155642 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:80e0252f321812c22ad7139fe93995a4ab816f331d23ab15579dedbc1027f1ca`  
+		Last Modified: Tue, 07 Apr 2026 01:55:39 GMT  
+		Size: 158.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3f199c35f5162fea3c8f07eef1e388cab02e2e3f619c9b2842b8bcd77a768e1e`  
+		Last Modified: Tue, 07 Apr 2026 01:55:39 GMT  
+		Size: 2.3 KB (2281 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:eac5f94c5bcca79f12bddc6c46eb7fa6c04e4e0e9ed03895d1a50ef57c72bb4b`  
+		Last Modified: Tue, 07 Apr 2026 05:10:17 GMT  
+		Size: 138.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:908a696e504aba798cd3c2d7427bb96e96f3b09202e8c8142034cb000c030d62`  
+		Last Modified: Tue, 07 Apr 2026 05:10:18 GMT  
+		Size: 14.3 MB (14303384 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:85f112508064b8beb36c4dfc19b3697a983e5ded489ff63aef3a3905f0f61481`  
+		Last Modified: Tue, 07 Apr 2026 05:10:18 GMT  
+		Size: 225.3 KB (225282 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:184522f6591efdb5d5dccfdc7884b1157c364adc0183901435978d12b09aaca6`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 188.9 MB (188852373 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ed36cf0b12b90b771fdf5d667bc583e62a26ca07ab4a03ccd1ffa03ab6bb73ce`  
+		Last Modified: Thu, 09 Apr 2026 22:26:06 GMT  
+		Size: 331.3 MB (331302932 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e7f4c40509c5f44ec330619a21d3798f064bed6e4060595d02d2ca239b10c891`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.1 MB (1061593 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:723b0edeb4a8dba5b3f47e0c17ac4779807d9807a64916cf4c78647b3fd2754f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.3 KB (1339 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5a60270272edfd051418572723a14fffd0386e7caa1778d547b5f4f864c80b78`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 2.5 KB (2464 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7fa0d2d0693c8e32804da5575a30ad5abdd6e9d8db434414ba20213b0e1af40b`  
+		Last Modified: Thu, 09 Apr 2026 22:25:58 GMT  
+		Size: 10.7 KB (10678 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:48988ee4ceb0e5b0e05041202859dc64849f571ba97db08fef238efde9d144da`  
+		Last Modified: Thu, 09 Apr 2026 22:25:59 GMT  
+		Size: 2.4 KB (2441 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `xwiki:17.10.7-postgres-tomcat` - unknown; unknown
+
+```console
+$ docker pull xwiki@sha256:afe463fb761456964f6604f8d4aaae678a52abd181be4fe9b07990f05bb58741
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.2 MB (9221103 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b30e0e2543aea28de9696bfb096c9239c0add79ac7ea737333ecb18cf22a0bff`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:12379d7c1d051b1287042c5c1c9ed1053e8f81caf265a00abf905a40d3450eb5`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 9.2 MB (9180505 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:c4ec01cba393297bb8411b9e9eca852fbdd232d1e8d5da314c6afcc0caeb7802`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 40.6 KB (40598 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `xwiki:18`
 
 ```console
-$ docker pull xwiki@sha256:f00f1d09f8e34b344ea500a281434f619e8b087265d6111b7e9392b77d04cad0
+$ docker pull xwiki@sha256:e34d244855e337a293e8a3fd1c9c9c6f1d7ca05a3562110679a673053f282be7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3657,13 +5401,13 @@ $ docker pull xwiki@sha256:f00f1d09f8e34b344ea500a281434f619e8b087265d6111b7e939
 ### `xwiki:18` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ddeea30098567cf1855bb0036d8a031c9be52cc1b94daa5e323f67cf944a5a5a
+$ docker pull xwiki@sha256:c78871a0bf7d16fe1f40e072a7ff7f2d5cb6b3dd0036c8ce9a07cfbce1ec821c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **646.1 MB (646125676 bytes)**  
+-	Total Size: **646.1 MB (646125877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:067ca4042eb2c7f7e3153a0205f7fccb387be2be3bd23215f7fde59d2eebefe5`
+-	Image ID: `sha256:6406557bf0308d28e979e04a2cb76517480499088ec1c4b6b9ff17a0682a1d8d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -3726,53 +5470,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 CMD ["xwiki"]
 ```
 
@@ -3817,69 +5561,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84c2a7b89a6376bc596249e7437e541ca07ed8ae6d2399a0a35f8b33b055a5c7`  
-		Last Modified: Tue, 07 Apr 2026 05:04:31 GMT  
-		Size: 191.2 MB (191192504 bytes)  
+	-	`sha256:2b305e1c2488d50848542df06a11b2c47d49a87d3ec354e04e9e1ace645c49e4`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 191.2 MB (191192649 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac76300df4bb9eb1bc756187aeb83e9f64d0f50fe318744de25b0b7a4a32ecc2`  
-		Last Modified: Tue, 07 Apr 2026 05:04:34 GMT  
-		Size: 338.2 MB (338242922 bytes)  
+	-	`sha256:c989f480dbd63e04392ecc6a05de2a97b49456792c75ff0d2ebb676f4daf8d5e`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 338.2 MB (338242976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66cf85f76a0aecef7c91c9c914f207a2f18d962c1c187c53c416ec6406783463`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
-		Size: 2.4 MB (2441661 bytes)  
+	-	`sha256:b3f1096b4eda79d85114e9da549d1e396230b84ce90bb16c77a097cf157f1c7a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
+		Size: 2.4 MB (2441658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d31fde62cff123bdaa705a7110c1d3080e52797d4050ef65953dd7ae860ad501`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
-		Size: 1.3 KB (1339 bytes)  
+	-	`sha256:1285445a43c468abea58a1c806ffa6ec3a224f7ee32f6d3f4775942be8a3eaeb`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
+		Size: 1.3 KB (1342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d2adc64c4ec3ba7bf5e9ea90dc35e854a734bf58ab8199aebad3dda34adef7d`  
-		Last Modified: Tue, 07 Apr 2026 05:04:26 GMT  
-		Size: 2.4 KB (2370 bytes)  
+	-	`sha256:aef7e2f0c8b7f3c40738dc44ee9fab5802418f039644091519daa3a37a8d6e63`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 2.4 KB (2372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2572fbf1adbf47a387e78d99fe3c6c282f971686c7b1ac516c64b0f5aa901a9`  
-		Last Modified: Tue, 07 Apr 2026 05:04:27 GMT  
-		Size: 11.0 KB (10952 bytes)  
+	-	`sha256:6d21b77d6334f8e7926197ef07fc07a8d0ba0c84bb9aaa39c5fd8b8361933759`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 11.0 KB (10954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15a6b9da4b9b81fead5cbedd9dcf298f995dd373606b5401dba5b3a6fa37feab`  
-		Last Modified: Tue, 07 Apr 2026 05:04:28 GMT  
-		Size: 2.5 KB (2536 bytes)  
+	-	`sha256:fa85729b9e9053f46b2cf1db9a539eb44158a8c78ab2f13a97bbec2c4810be94`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:18` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:d6b5893227864e4a79ff6a47535d95e0b49c2f0820e96953a175486f86ae30bd
+$ docker pull xwiki@sha256:30583db40bd8f611165188914f63a1209569a8c17f3e3bc42e15a257c9bcbfd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9236373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5107a10e24ba67b10be339eac19ac49c9ceb5e4d68d2d60f3f0117208bb9dcfb`
+-	Image ID: `sha256:09c400510f16489e44fa4bf5bb6968ea4c09adda015f621c481e686dd8bda87c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7a635a48871515a031d18bf24cccb1b8aa34d30dd12f95017dd079cb962294c`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
+	-	`sha256:4bfb239f58493ab019ded0392c0c37dfdd8c6f9422f2bca449be288e0f692bb7`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
 		Size: 9.2 MB (9194270 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df788f52be495941f548ca56aec65cc098e102aaf2cf30c56924ddf7fef86713`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
+	-	`sha256:f68ab56c6a66bc015d367b8ca90d0bab6fe451699cac85865b3c269e6b592162`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
 		Size: 42.1 KB (42103 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:18` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:f184cc91ffa74d22de687083391731e7468aa4d0150a4e72258a29e8c80566b7
+$ docker pull xwiki@sha256:5743ff5135b40fa2e98c72788136cc5959c25ebc6e0ef3a625d224ddd5bf234a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **642.1 MB (642111188 bytes)**  
+-	Total Size: **642.1 MB (642111569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f3e7d85d600c714b3bec5d230f23beea45c0b9cc6d4fbf2ff48bc985889bd87`
+-	Image ID: `sha256:5e507c5582a3316b2935f16a6bc57950a2bec015ceaec05dce62b34fc02d7bbb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -3942,53 +5686,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:24:46 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 CMD ["xwiki"]
 ```
 
@@ -4033,63 +5777,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e369b2bd065e4b6e847999856d6ea1c99ea3f835edf51132c7f2d2623b59ac08`  
-		Last Modified: Tue, 07 Apr 2026 05:25:49 GMT  
-		Size: 188.9 MB (188852229 bytes)  
+	-	`sha256:385002331e92f8053b9f9da0d27c4a33cc31c35278d007c4b163b256b9ab956e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:27 GMT  
+		Size: 188.9 MB (188852491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d8d5f8c3dbc774444f3c8d71dcba7112ca2fd8d77d6e7f6338ad24aaccbb430`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 338.2 MB (338242839 bytes)  
+	-	`sha256:d96a35bd4a0b81964a36a8356db49767dc7d96c8a10104ba8675dbb1870d26ff`  
+		Last Modified: Thu, 09 Apr 2026 22:25:29 GMT  
+		Size: 338.2 MB (338242967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc58ca5bc4a630f88922701f4f96efe54d0c7086143102f0fa4828b15aab5ffd`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 2.4 MB (2441660 bytes)  
+	-	`sha256:48f004652cfc4ee3fc9e225e525c85f669812ff5fde7051aa1ac0e8fdc4e4233`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
+		Size: 2.4 MB (2441657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd0143f6588623dc5b51f26f8aff50dc77ffd127d85b2c27e26ca206c34786e1`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 1.3 KB (1341 bytes)  
+	-	`sha256:71760da9ba226c177adc275892b984843162f99939cec79601c975c5690ef925`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
+		Size: 1.3 KB (1339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f557c11f5c67c99a855e1583289a0717b46989e7705facd64a4a06d4b73837e4`  
-		Last Modified: Tue, 07 Apr 2026 05:25:43 GMT  
-		Size: 2.4 KB (2371 bytes)  
+	-	`sha256:becf68ad406751339a93d048b5ac2d81675607f41c8a6c7711192dba36f900d2`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 2.4 KB (2369 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e910fceeadacfcf00dc91eb4821226e1b7d8032cbbbbf848a0d525c2864774`  
-		Last Modified: Tue, 07 Apr 2026 05:25:44 GMT  
-		Size: 11.0 KB (10951 bytes)  
+	-	`sha256:ea783563aa9d98b684f22281bf8ba9278d4649371e770a41d4eafa1a67a91d1e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 10.9 KB (10950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73f57b949906c2385790e59738d264d4a7bcb9077c81f8b2236407f25f78d69d`  
-		Last Modified: Tue, 07 Apr 2026 05:25:45 GMT  
-		Size: 2.5 KB (2535 bytes)  
+	-	`sha256:3516759391fd63764d150447c5971edee81db0f23d2276c4a519207102a27d6f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:23 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:18` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:784f68c3786c5855bd4bd5639ee209c47a677135df9486bd291b62be85bfc2ef
+$ docker pull xwiki@sha256:4d2aa706f8794883b2cd9931ffdd5495a6320f4f45f18d014fe987375bdad20c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9237419 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80b76ec51eb373beb748d124e7ad2830a1c84d50beab79095e34d9166b32a584`
+-	Image ID: `sha256:33e54e27c87d03ef1a7ebd00f1e4e5b992aa1ec7499b186450d0d024bc8d4137`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca931a3ed97a89df87b19da35c3fcbe8d8d1d4e291efb6854e776550fac71c09`  
-		Last Modified: Tue, 07 Apr 2026 05:25:43 GMT  
+	-	`sha256:a6a891dd772b4c7bed5db4a7012e38e688345f2cb29e8f6284cb61ad88982f6a`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
 		Size: 9.2 MB (9195083 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6dfb2cbf295a9008cd3b1dd8d96868bb1be439ec66947813e1ad2b64aebf7cd`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
+	-	`sha256:bc5a595378ceebc1723088e0ca439063e80ee26f58248ffac75146b8f6d409f9`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
 		Size: 42.3 KB (42336 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:18-mariadb-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:766af116bb6648b70f93ff9b05e4afb417fb8e95a8abbd24b93c8a3958057717
+$ docker pull xwiki@sha256:2f7b46832fb0394ef3bb070dd1bab2bbb74c9703f1f16b1716bd38ddac018968
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4102,13 +5846,13 @@ $ docker pull xwiki@sha256:766af116bb6648b70f93ff9b05e4afb417fb8e95a8abbd24b93c8
 ### `xwiki:18-mariadb-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ba0948cc23b0bfe434f138031916d4797b854c12346536fdf58d291ad3e6bc45
+$ docker pull xwiki@sha256:7f845529dd6e239b218af996c32c1aaae5b6b345041152bc8bec65ea2ab1f16c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **644.4 MB (644392534 bytes)**  
+-	Total Size: **644.4 MB (644392484 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42ce846f10678ed13d34852e237946f6dcd560d5d2fccd0402126795226b5322`
+-	Image ID: `sha256:99600bae0d5e480f09cd9c7a529becf297efab3062c4511d52fb51fa1a13d938`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -4171,53 +5915,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:04:03 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:04:03 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:04:03 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:14 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:14 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_VERSION=3.5.7
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 CMD ["xwiki"]
 ```
 
@@ -4262,69 +6006,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcca4ff639731b663b2c2e9ea7f2f61d473ffb675abe029c6c28b487491a34ac`  
-		Last Modified: Tue, 07 Apr 2026 05:05:09 GMT  
-		Size: 191.2 MB (191192547 bytes)  
+	-	`sha256:2ac27493d4202eec4afe454eb31c0b2a8b0f7b4be2cfa9ef14e93dbc4cc95a44`  
+		Last Modified: Thu, 09 Apr 2026 22:24:18 GMT  
+		Size: 191.2 MB (191192385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ee6f76735ac92ee9e903ac6f01f34ca081159e907ef896b12530bde859c8a0`  
-		Last Modified: Tue, 07 Apr 2026 05:05:09 GMT  
-		Size: 338.2 MB (338242958 bytes)  
+	-	`sha256:f016d26d1b4337444504499b396c1229ab4be94bfb917e2ef5f8eb5df2f0467d`  
+		Last Modified: Thu, 09 Apr 2026 22:24:21 GMT  
+		Size: 338.2 MB (338243065 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:786a2046ee63e7596c8f74d8762afd7e67457f792de68693203cd33a2ef87abe`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
-		Size: 708.5 KB (708548 bytes)  
+	-	`sha256:8f924396aaf060ebd2222b21b2fc2b60e7c6baa7c3c0940a23caf5aff224c88c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 708.5 KB (708546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:541fb17ec09830dffc5d66a3b0d4e70e88768f6355a5acc688d0f04fee891d9b`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
+	-	`sha256:994f4e25fb3ea19f23ad2a8d56c7a8af1f6eec0bd342a6804bcc74353db582f2`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bfa157fb8d191e5817feb09436686f85c513e25ffaafa7a4be1055d88d53102`  
-		Last Modified: Tue, 07 Apr 2026 05:05:01 GMT  
+	-	`sha256:3704314d67659afee8af05ebcd29916a9c38bfe6b49df3e5043b1b86483f53c9`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:449352b7c13b78fac9811f9f938454b29670ed33479ca577568e21d5bc969122`  
-		Last Modified: Tue, 07 Apr 2026 05:05:02 GMT  
-		Size: 10.9 KB (10949 bytes)  
+	-	`sha256:995e6e40781dc9ad85886c45e18c8c8484eaa0ac9c9309eb1e3a4f94c5fb647c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:14 GMT  
+		Size: 11.0 KB (10951 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:664385d3ae55779c423db6f43209a0ceb1beecca910065ddfe224a89b324a4f4`  
-		Last Modified: Tue, 07 Apr 2026 05:05:02 GMT  
-		Size: 2.5 KB (2491 bytes)  
+	-	`sha256:11aca9dcc74cbfea7c8785ba33ad988bb849f5fc14c7f8252fe74a29ba5d054f`  
+		Last Modified: Thu, 09 Apr 2026 22:24:15 GMT  
+		Size: 2.5 KB (2496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:18-mariadb-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:f825256d7c1731d4d42db2e7f04afde4acb442bb68d9d1c9ea6bbd59e08a5c3e
+$ docker pull xwiki@sha256:56edc12b6e37bc72fbd2acfdd6646f4ceda9abc7cb6423f72e70dd5e33267a1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9233518 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70912a286fbe4bb1616eca60d195e27d52cbfbbdc0204a6e65b7b40a2aa3fb5e`
+-	Image ID: `sha256:6f441cb06f536403dcc6b3429e61b9aafb8e0e4f877c8ba599346df21f7a4948`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d19bbd52fcc1a21ac11ea796976916c04d6cb2e153d39d55aaeb8d6f26744dec`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
+	-	`sha256:5c00d65fb1481e6e70d7c99f21360114a0ea923fbd6f85f287a634837873de35`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 9.2 MB (9192755 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:dfbffb8d08c50344d84c3526df473f2ec15f68b66077800ac3cd80b0846929a9`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
+	-	`sha256:1cb31448128770abf74c5b34fafb352ed380d9a2aa6041cac186f85ad71c8eb5`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 40.8 KB (40763 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:18-mariadb-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:1e716db013c18f6e438b415c7e60876602345e0ce7561f52548f5100052f7d41
+$ docker pull xwiki@sha256:b13b45722cecf651d8e233bac6edf7016acd4f108e9b8cfb7dc9fc0cfaed6b2e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **640.4 MB (640377919 bytes)**  
+-	Total Size: **640.4 MB (640378092 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0eeb05838595a355cf1f91cd1321de0ebfd059a990ba12bc96de9b22b8c8c54e`
+-	Image ID: `sha256:6c6f16e6f8fdd44c1779a62bd994a2297693da5de1176ccae5e7dce1f6076706`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -4387,53 +6131,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:57 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:57 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:57 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:25:10 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_VERSION=3.5.7
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 CMD ["xwiki"]
 ```
 
@@ -4478,63 +6222,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc6ff24fed8958446b55eabf3aaaa6fef97a6a9db73faab712c2d54571af7e66`  
-		Last Modified: Tue, 07 Apr 2026 05:25:59 GMT  
-		Size: 188.9 MB (188852232 bytes)  
+	-	`sha256:7138705fc18cbf1f01ce7fa0c86bf7b78199e805cd67f83b34341bed6665e884`  
+		Last Modified: Thu, 09 Apr 2026 22:25:50 GMT  
+		Size: 188.9 MB (188852257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7687e4fe63aa3b08a56c30b9893ac0f7b43bcd3890e8d75ba2f9522294993924`  
-		Last Modified: Tue, 07 Apr 2026 05:26:02 GMT  
-		Size: 338.2 MB (338242793 bytes)  
+	-	`sha256:a93dfb9c13c1a63a280a43be79ea97cec3bf1fd65c1a3262cbe4217ac0631671`  
+		Last Modified: Thu, 09 Apr 2026 22:25:53 GMT  
+		Size: 338.2 MB (338242922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce8a15cacfe949eb1ebb41beea622aeef12a0e66c5b51aabd5316f3ff85bf61c`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 708.5 KB (708544 bytes)  
+	-	`sha256:74b0ca8ba7114b163b8212d7713b455592e46e72dcc53fc57b668f2c0026af43`  
+		Last Modified: Thu, 09 Apr 2026 22:25:44 GMT  
+		Size: 708.5 KB (708547 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81d324e3c7a7965ac96abbc956763ec0f2e249f1de3bfe8a46cbcdd6da0ee920`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 1.3 KB (1338 bytes)  
+	-	`sha256:c687fcdd47be17835a04f568f977d2d5d9d4f4b9cb2e06abddbd7fb70c441a5c`  
+		Last Modified: Thu, 09 Apr 2026 22:25:43 GMT  
+		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b67a5b91b6f796b462869555582f816a5fb2d577e2a56a0324cda81395d2d815`  
-		Last Modified: Tue, 07 Apr 2026 05:25:54 GMT  
-		Size: 2.3 KB (2305 bytes)  
+	-	`sha256:431f576ce0199d963e945de2258990132b1bdbe4c80f625dc2da12fc9510b550`  
+		Last Modified: Thu, 09 Apr 2026 22:25:45 GMT  
+		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:493cbab57cc6db1c1e169d47b05398e137751dffeaef724c593a34434ca68231`  
-		Last Modified: Tue, 07 Apr 2026 05:25:54 GMT  
-		Size: 10.9 KB (10949 bytes)  
+	-	`sha256:b18a97f27a0055c2e0c043f8125c5dcb20e9ffbecd6321951d49acdb2fbba196`  
+		Last Modified: Thu, 09 Apr 2026 22:25:45 GMT  
+		Size: 11.0 KB (10957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2747fd0272287dacc60e09f6ebe0adba4a8a06f9bf0f05d457b6c6e115b7845f`  
-		Last Modified: Tue, 07 Apr 2026 05:25:55 GMT  
-		Size: 2.5 KB (2496 bytes)  
+	-	`sha256:fed36abd95650841f9c5f59e37c081cdf5d2f51dc6f865902ead59c496bf6cd4`  
+		Last Modified: Thu, 09 Apr 2026 22:25:46 GMT  
+		Size: 2.5 KB (2498 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:18-mariadb-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:344d0a16fa56b087a85e6b87fcd91a585fb71bbb01d61140316009711d8a9444
+$ docker pull xwiki@sha256:8338e29aebd4aaab075bccf3331edba1464b418a0e7452763583a4194eed5d0b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9234445 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0222e81dbc667a0d9b4f265f117d7713420e1945fccd0da6a5b294c0546aa467`
+-	Image ID: `sha256:38d76975db5fdb2fd17c82b040962f2272aeb1346178ef759b04b7974f841883`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ae1212e812d570c880bb98d32665a65f05e123a0f5afd38547e6a43fb9215d76`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
+	-	`sha256:468adf1134aa3cc689ac4c31c05cd10c9867661f4f59da4d5656d69bb3e05bfb`  
+		Last Modified: Thu, 09 Apr 2026 22:25:44 GMT  
 		Size: 9.2 MB (9193508 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c727a7c38f6b0abb8bf026c9858df11ed96ba25d6aff8985f650fad645fb8fa3`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
+	-	`sha256:9c53c355bf660b3feaeeae74ebc4ec1ff70f14c0a261682e31d054b43392a441`  
+		Last Modified: Thu, 09 Apr 2026 22:25:43 GMT  
 		Size: 40.9 KB (40937 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:18-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:f00f1d09f8e34b344ea500a281434f619e8b087265d6111b7e9392b77d04cad0
+$ docker pull xwiki@sha256:e34d244855e337a293e8a3fd1c9c9c6f1d7ca05a3562110679a673053f282be7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4547,13 +6291,13 @@ $ docker pull xwiki@sha256:f00f1d09f8e34b344ea500a281434f619e8b087265d6111b7e939
 ### `xwiki:18-mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ddeea30098567cf1855bb0036d8a031c9be52cc1b94daa5e323f67cf944a5a5a
+$ docker pull xwiki@sha256:c78871a0bf7d16fe1f40e072a7ff7f2d5cb6b3dd0036c8ce9a07cfbce1ec821c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **646.1 MB (646125676 bytes)**  
+-	Total Size: **646.1 MB (646125877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:067ca4042eb2c7f7e3153a0205f7fccb387be2be3bd23215f7fde59d2eebefe5`
+-	Image ID: `sha256:6406557bf0308d28e979e04a2cb76517480499088ec1c4b6b9ff17a0682a1d8d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -4616,53 +6360,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 CMD ["xwiki"]
 ```
 
@@ -4707,69 +6451,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84c2a7b89a6376bc596249e7437e541ca07ed8ae6d2399a0a35f8b33b055a5c7`  
-		Last Modified: Tue, 07 Apr 2026 05:04:31 GMT  
-		Size: 191.2 MB (191192504 bytes)  
+	-	`sha256:2b305e1c2488d50848542df06a11b2c47d49a87d3ec354e04e9e1ace645c49e4`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 191.2 MB (191192649 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac76300df4bb9eb1bc756187aeb83e9f64d0f50fe318744de25b0b7a4a32ecc2`  
-		Last Modified: Tue, 07 Apr 2026 05:04:34 GMT  
-		Size: 338.2 MB (338242922 bytes)  
+	-	`sha256:c989f480dbd63e04392ecc6a05de2a97b49456792c75ff0d2ebb676f4daf8d5e`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 338.2 MB (338242976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66cf85f76a0aecef7c91c9c914f207a2f18d962c1c187c53c416ec6406783463`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
-		Size: 2.4 MB (2441661 bytes)  
+	-	`sha256:b3f1096b4eda79d85114e9da549d1e396230b84ce90bb16c77a097cf157f1c7a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
+		Size: 2.4 MB (2441658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d31fde62cff123bdaa705a7110c1d3080e52797d4050ef65953dd7ae860ad501`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
-		Size: 1.3 KB (1339 bytes)  
+	-	`sha256:1285445a43c468abea58a1c806ffa6ec3a224f7ee32f6d3f4775942be8a3eaeb`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
+		Size: 1.3 KB (1342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d2adc64c4ec3ba7bf5e9ea90dc35e854a734bf58ab8199aebad3dda34adef7d`  
-		Last Modified: Tue, 07 Apr 2026 05:04:26 GMT  
-		Size: 2.4 KB (2370 bytes)  
+	-	`sha256:aef7e2f0c8b7f3c40738dc44ee9fab5802418f039644091519daa3a37a8d6e63`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 2.4 KB (2372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2572fbf1adbf47a387e78d99fe3c6c282f971686c7b1ac516c64b0f5aa901a9`  
-		Last Modified: Tue, 07 Apr 2026 05:04:27 GMT  
-		Size: 11.0 KB (10952 bytes)  
+	-	`sha256:6d21b77d6334f8e7926197ef07fc07a8d0ba0c84bb9aaa39c5fd8b8361933759`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 11.0 KB (10954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15a6b9da4b9b81fead5cbedd9dcf298f995dd373606b5401dba5b3a6fa37feab`  
-		Last Modified: Tue, 07 Apr 2026 05:04:28 GMT  
-		Size: 2.5 KB (2536 bytes)  
+	-	`sha256:fa85729b9e9053f46b2cf1db9a539eb44158a8c78ab2f13a97bbec2c4810be94`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:18-mysql-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:d6b5893227864e4a79ff6a47535d95e0b49c2f0820e96953a175486f86ae30bd
+$ docker pull xwiki@sha256:30583db40bd8f611165188914f63a1209569a8c17f3e3bc42e15a257c9bcbfd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9236373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5107a10e24ba67b10be339eac19ac49c9ceb5e4d68d2d60f3f0117208bb9dcfb`
+-	Image ID: `sha256:09c400510f16489e44fa4bf5bb6968ea4c09adda015f621c481e686dd8bda87c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7a635a48871515a031d18bf24cccb1b8aa34d30dd12f95017dd079cb962294c`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
+	-	`sha256:4bfb239f58493ab019ded0392c0c37dfdd8c6f9422f2bca449be288e0f692bb7`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
 		Size: 9.2 MB (9194270 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df788f52be495941f548ca56aec65cc098e102aaf2cf30c56924ddf7fef86713`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
+	-	`sha256:f68ab56c6a66bc015d367b8ca90d0bab6fe451699cac85865b3c269e6b592162`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
 		Size: 42.1 KB (42103 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:18-mysql-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:f184cc91ffa74d22de687083391731e7468aa4d0150a4e72258a29e8c80566b7
+$ docker pull xwiki@sha256:5743ff5135b40fa2e98c72788136cc5959c25ebc6e0ef3a625d224ddd5bf234a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **642.1 MB (642111188 bytes)**  
+-	Total Size: **642.1 MB (642111569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f3e7d85d600c714b3bec5d230f23beea45c0b9cc6d4fbf2ff48bc985889bd87`
+-	Image ID: `sha256:5e507c5582a3316b2935f16a6bc57950a2bec015ceaec05dce62b34fc02d7bbb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -4832,53 +6576,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:24:46 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 CMD ["xwiki"]
 ```
 
@@ -4923,63 +6667,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e369b2bd065e4b6e847999856d6ea1c99ea3f835edf51132c7f2d2623b59ac08`  
-		Last Modified: Tue, 07 Apr 2026 05:25:49 GMT  
-		Size: 188.9 MB (188852229 bytes)  
+	-	`sha256:385002331e92f8053b9f9da0d27c4a33cc31c35278d007c4b163b256b9ab956e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:27 GMT  
+		Size: 188.9 MB (188852491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d8d5f8c3dbc774444f3c8d71dcba7112ca2fd8d77d6e7f6338ad24aaccbb430`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 338.2 MB (338242839 bytes)  
+	-	`sha256:d96a35bd4a0b81964a36a8356db49767dc7d96c8a10104ba8675dbb1870d26ff`  
+		Last Modified: Thu, 09 Apr 2026 22:25:29 GMT  
+		Size: 338.2 MB (338242967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc58ca5bc4a630f88922701f4f96efe54d0c7086143102f0fa4828b15aab5ffd`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 2.4 MB (2441660 bytes)  
+	-	`sha256:48f004652cfc4ee3fc9e225e525c85f669812ff5fde7051aa1ac0e8fdc4e4233`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
+		Size: 2.4 MB (2441657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd0143f6588623dc5b51f26f8aff50dc77ffd127d85b2c27e26ca206c34786e1`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 1.3 KB (1341 bytes)  
+	-	`sha256:71760da9ba226c177adc275892b984843162f99939cec79601c975c5690ef925`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
+		Size: 1.3 KB (1339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f557c11f5c67c99a855e1583289a0717b46989e7705facd64a4a06d4b73837e4`  
-		Last Modified: Tue, 07 Apr 2026 05:25:43 GMT  
-		Size: 2.4 KB (2371 bytes)  
+	-	`sha256:becf68ad406751339a93d048b5ac2d81675607f41c8a6c7711192dba36f900d2`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 2.4 KB (2369 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e910fceeadacfcf00dc91eb4821226e1b7d8032cbbbbf848a0d525c2864774`  
-		Last Modified: Tue, 07 Apr 2026 05:25:44 GMT  
-		Size: 11.0 KB (10951 bytes)  
+	-	`sha256:ea783563aa9d98b684f22281bf8ba9278d4649371e770a41d4eafa1a67a91d1e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 10.9 KB (10950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73f57b949906c2385790e59738d264d4a7bcb9077c81f8b2236407f25f78d69d`  
-		Last Modified: Tue, 07 Apr 2026 05:25:45 GMT  
-		Size: 2.5 KB (2535 bytes)  
+	-	`sha256:3516759391fd63764d150447c5971edee81db0f23d2276c4a519207102a27d6f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:23 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:18-mysql-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:784f68c3786c5855bd4bd5639ee209c47a677135df9486bd291b62be85bfc2ef
+$ docker pull xwiki@sha256:4d2aa706f8794883b2cd9931ffdd5495a6320f4f45f18d014fe987375bdad20c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9237419 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80b76ec51eb373beb748d124e7ad2830a1c84d50beab79095e34d9166b32a584`
+-	Image ID: `sha256:33e54e27c87d03ef1a7ebd00f1e4e5b992aa1ec7499b186450d0d024bc8d4137`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca931a3ed97a89df87b19da35c3fcbe8d8d1d4e291efb6854e776550fac71c09`  
-		Last Modified: Tue, 07 Apr 2026 05:25:43 GMT  
+	-	`sha256:a6a891dd772b4c7bed5db4a7012e38e688345f2cb29e8f6284cb61ad88982f6a`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
 		Size: 9.2 MB (9195083 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6dfb2cbf295a9008cd3b1dd8d96868bb1be439ec66947813e1ad2b64aebf7cd`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
+	-	`sha256:bc5a595378ceebc1723088e0ca439063e80ee26f58248ffac75146b8f6d409f9`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
 		Size: 42.3 KB (42336 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:18-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:03a2fd83dac41948d776759fa025fe29a3fffb62fe3b6e1f0d19e2303b5c8118
+$ docker pull xwiki@sha256:a0e045d953be6c583b90ff4c988a9b60122c825d318e3dee9aa033e12746fea4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4992,13 +6736,13 @@ $ docker pull xwiki@sha256:03a2fd83dac41948d776759fa025fe29a3fffb62fe3b6e1f0d19e
 ### `xwiki:18-postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:c0bc1625114b66671b54332d29166d6fde9d04fa4369f0a77760f4c7ce1d3885
+$ docker pull xwiki@sha256:d2cbe99724d64df219ff5189bca9526d9e34bf74372cc6893af310ac37e4e9a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **644.7 MB (644745470 bytes)**  
+-	Total Size: **644.7 MB (644745744 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ebe4413fa1c31dc12f90279bad16b74608584918b3072e2c034d1fdfa03f7aa`
+-	Image ID: `sha256:47c5e517d5084ef2cfcbdc8d781e5a3ecef00d4fbcc3f6a558b0161d7e16b771`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -5061,53 +6805,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:03:45 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:03:45 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:03:45 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:04 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:04 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:25 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.10
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 CMD ["xwiki"]
 ```
 
@@ -5152,69 +6896,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ba00b5a9b86656512fc3936b60ded13346ef82ee705751f57005f76f6e5c034`  
-		Last Modified: Tue, 07 Apr 2026 05:04:44 GMT  
-		Size: 191.2 MB (191192541 bytes)  
+	-	`sha256:ab6685658399dffbc8f6656ffe1ebd1fdfcc6699d77fa36fec74ffbefc7d7b54`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 191.2 MB (191192591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4f1fefa858353d68123cb5fc0c324a087c75c278f4cc4e482e52dbcecd526d9`  
-		Last Modified: Tue, 07 Apr 2026 05:04:47 GMT  
-		Size: 338.2 MB (338242748 bytes)  
+	-	`sha256:c989f480dbd63e04392ecc6a05de2a97b49456792c75ff0d2ebb676f4daf8d5e`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 338.2 MB (338242976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9de60098dfdf6ef9a105e2bf136f0d4684bcabeae5d9dae16243adbb51123b08`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
-		Size: 1.1 MB (1061593 bytes)  
+	-	`sha256:69d977e52ab4cba7bd0877fc512509281eccfd9fc216abed6e776e2c3427fd81`  
+		Last Modified: Thu, 09 Apr 2026 22:23:58 GMT  
+		Size: 1.1 MB (1061588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80e957e7f9eda289c7012e596b69a9b2089fd613f529a06508e18633ad0f6b44`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
-		Size: 1.3 KB (1339 bytes)  
+	-	`sha256:5f8e780bd2266349061f00ece7007c226289167843e7b406db8b195be74a0f3c`  
+		Last Modified: Thu, 09 Apr 2026 22:23:58 GMT  
+		Size: 1.3 KB (1342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ca3dc4dacd0a50350a453c22f7256f5e71ef13839cd578b41d35aa5b74f7aa8`  
-		Last Modified: Tue, 07 Apr 2026 05:04:39 GMT  
-		Size: 2.5 KB (2461 bytes)  
+	-	`sha256:2c7466b32f0bb173d36cedee71c9c5da416ab1247b55db117ba72453b649fab3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:00 GMT  
+		Size: 2.5 KB (2460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13117c0fec91aa18bfa98d06d6044ee31bb747edf0165cfaef7fcfdec79f051a`  
-		Last Modified: Tue, 07 Apr 2026 05:04:39 GMT  
-		Size: 11.0 KB (10955 bytes)  
+	-	`sha256:da88dc9ce3cc8fee0892d033c043fa15935f551fd51d7f659fc24cf3769d9f50`  
+		Last Modified: Thu, 09 Apr 2026 22:24:00 GMT  
+		Size: 11.0 KB (10953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4808d580d758143dccd7263848b640dd270b71dc97c04f16e4bc036e1fc6d888`  
-		Last Modified: Tue, 07 Apr 2026 05:04:41 GMT  
-		Size: 2.4 KB (2441 bytes)  
+	-	`sha256:c5e385eb876c8cb883fe04a886066fef4e0b3729f58e5fcd976e5aa596b9b619`  
+		Last Modified: Thu, 09 Apr 2026 22:24:01 GMT  
+		Size: 2.4 KB (2442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:18-postgres-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:22896b002bc78d904d945279283c4c40b950b3105d9d8b2aa5796778086942b0
+$ docker pull xwiki@sha256:7261816e696033c1b72f3a0484dd25c9976d88d8b5e834094d24382df6385dfa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9233523 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49655e1361a16ff6cb8f2f811b407e96b1987e0280ad1d37e7892493b69e2254`
+-	Image ID: `sha256:b5b184fcf3dd33956004d47268444ff9b69b9de44ab0602806e6171f9fb20f18`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:69cfa0066674d1a8bf9bce38871de49599de777a167ff457471977d7ca44ae74`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
+	-	`sha256:6c881a2eb8c3f7e6688f55d447518decbb5c845e6fa17ec2588cfe2761cd45ac`  
+		Last Modified: Thu, 09 Apr 2026 22:23:59 GMT  
 		Size: 9.2 MB (9192775 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f921fb4396b3758e9d4f8b23c9aa3958855837e3e642487d4e3b3e33b5334b0b`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
+	-	`sha256:3a1d74de71ef8a2df0ae58502c4fcd3e7f9ddce4c8451cff5264b15593430a4b`  
+		Last Modified: Thu, 09 Apr 2026 22:23:58 GMT  
 		Size: 40.7 KB (40748 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:18-postgres-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:9fd400c01a4dedea2a59d4f88c8ebb46c9985de41fe605ad86ac9531cf6c96a2
+$ docker pull xwiki@sha256:6a89cf110097a4b1112b5cfc7c7a1ba47071555b98cb3ef20cd56f868199aafb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **640.7 MB (640731243 bytes)**  
+-	Total Size: **640.7 MB (640731414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5933bc99364a7507df6dac49353e015710aa9b47cd41306d515a780c28780d4a`
+-	Image ID: `sha256:27222df73402ea4a2139f143c97b06161b76cb82e3681ee4dfc5735e302ef33c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -5277,53 +7021,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:45 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:45 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:45 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:30 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:30 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.10
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 CMD ["xwiki"]
 ```
 
@@ -5368,63 +7112,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:980798a812d77d18400ebd9a1b3386b55d7210e7553e2a76c1fd0d6f46f58b71`  
-		Last Modified: Tue, 07 Apr 2026 05:25:46 GMT  
-		Size: 188.9 MB (188852350 bytes)  
+	-	`sha256:91e4ba2406ca17d92518a9c8fed78922587ccdaed82a817003b3a6a7a2630415`  
+		Last Modified: Thu, 09 Apr 2026 22:25:41 GMT  
+		Size: 188.9 MB (188852239 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09955a9b20fb6241692c2cde02d00ab48db3fd23cd3fb1a9cbf3429e1b65b4dc`  
-		Last Modified: Tue, 07 Apr 2026 05:25:49 GMT  
-		Size: 338.2 MB (338242841 bytes)  
+	-	`sha256:ed48fd32fa977664a9efae1c399214cfb95d56e6704a9427b29fbb504e4c4512`  
+		Last Modified: Thu, 09 Apr 2026 22:25:43 GMT  
+		Size: 338.2 MB (338243125 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6de5e23d7f80da3cb56170285de02fd6fc02ee66165660503489c2a1f81cda95`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:0a72878e1ceec4717b64831232e4483e4d2971324205b6ef54c1b1ed17705679`  
+		Last Modified: Thu, 09 Apr 2026 22:25:34 GMT  
 		Size: 1.1 MB (1061591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fffbe365397b1f6f020664d340eba77704fddcb96692b936dbaef558b54f376b`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:34cb4092a53be364a54edb4e5e4b46840eebca3a4cd6a0c15ef67fc442b4fd32`  
+		Last Modified: Thu, 09 Apr 2026 22:25:34 GMT  
 		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c021a6cbe1cb0eab76abbc0c470f0cbc082e6addf1cf66e387f74a173d7e7767`  
-		Last Modified: Tue, 07 Apr 2026 05:25:40 GMT  
+	-	`sha256:6f91579b573491d279efff4290f1cdee81295fdac0dbc76a08b81920f672884f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:35 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1726884ae241041161bea092e77fba5a22055efacbb48dd121b80e9310620a7`  
-		Last Modified: Tue, 07 Apr 2026 05:25:40 GMT  
+	-	`sha256:46e4b141c31a2f4b521111a0fa2c360d96424b65989b910cd76805940c3cc410`  
+		Last Modified: Thu, 09 Apr 2026 22:25:35 GMT  
 		Size: 11.0 KB (10952 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0562b7325829da80eb97bdcf49ac44aa45740e274b052c8f2628a7e95a216ad`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 2.4 KB (2443 bytes)  
+	-	`sha256:ecd716ce84b4394d7cdd6c69a53d61b45d0efff4cabb7da722434ba543e48a34`  
+		Last Modified: Thu, 09 Apr 2026 22:25:36 GMT  
+		Size: 2.4 KB (2441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:18-postgres-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:79100acca7f49898f585ce1b1e9465726ae241412ba3c4d8053c8499b5006107
+$ docker pull xwiki@sha256:efbef603fc75fbb6a94b05d0ac6cdb0cc621cf8072cbe0cc94735d35b0fb2e84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9234450 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7973f1c5d62b9a9c65d9e22709db7e05c1cba90d104212a94e7fc3c08d85105d`
+-	Image ID: `sha256:97876a24c85611944f8841c97128dcfa49fe09c3f4f66c6dd4c83b183cee897f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62c771d538957625b54c5398a25ecf305ea674ccdc606c2f439f5d28631d6531`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:8148f070bd5ebea9555d2e9f95434581bd8d772a937e398f9a738297bfe6dad2`  
+		Last Modified: Thu, 09 Apr 2026 22:25:34 GMT  
 		Size: 9.2 MB (9193528 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:04c03ec1e1bd36c832bb68fc8ca3623139ee3a180b8686240fcf62051cb57321`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:d198ff4680d5dbf674e8254ef7a3552d1f9f16db4998966bd10050c6bd542658`  
+		Last Modified: Thu, 09 Apr 2026 22:25:33 GMT  
 		Size: 40.9 KB (40922 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:18.2`
 
 ```console
-$ docker pull xwiki@sha256:f00f1d09f8e34b344ea500a281434f619e8b087265d6111b7e9392b77d04cad0
+$ docker pull xwiki@sha256:e34d244855e337a293e8a3fd1c9c9c6f1d7ca05a3562110679a673053f282be7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5437,13 +7181,13 @@ $ docker pull xwiki@sha256:f00f1d09f8e34b344ea500a281434f619e8b087265d6111b7e939
 ### `xwiki:18.2` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ddeea30098567cf1855bb0036d8a031c9be52cc1b94daa5e323f67cf944a5a5a
+$ docker pull xwiki@sha256:c78871a0bf7d16fe1f40e072a7ff7f2d5cb6b3dd0036c8ce9a07cfbce1ec821c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **646.1 MB (646125676 bytes)**  
+-	Total Size: **646.1 MB (646125877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:067ca4042eb2c7f7e3153a0205f7fccb387be2be3bd23215f7fde59d2eebefe5`
+-	Image ID: `sha256:6406557bf0308d28e979e04a2cb76517480499088ec1c4b6b9ff17a0682a1d8d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -5506,53 +7250,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 CMD ["xwiki"]
 ```
 
@@ -5597,69 +7341,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84c2a7b89a6376bc596249e7437e541ca07ed8ae6d2399a0a35f8b33b055a5c7`  
-		Last Modified: Tue, 07 Apr 2026 05:04:31 GMT  
-		Size: 191.2 MB (191192504 bytes)  
+	-	`sha256:2b305e1c2488d50848542df06a11b2c47d49a87d3ec354e04e9e1ace645c49e4`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 191.2 MB (191192649 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac76300df4bb9eb1bc756187aeb83e9f64d0f50fe318744de25b0b7a4a32ecc2`  
-		Last Modified: Tue, 07 Apr 2026 05:04:34 GMT  
-		Size: 338.2 MB (338242922 bytes)  
+	-	`sha256:c989f480dbd63e04392ecc6a05de2a97b49456792c75ff0d2ebb676f4daf8d5e`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 338.2 MB (338242976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66cf85f76a0aecef7c91c9c914f207a2f18d962c1c187c53c416ec6406783463`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
-		Size: 2.4 MB (2441661 bytes)  
+	-	`sha256:b3f1096b4eda79d85114e9da549d1e396230b84ce90bb16c77a097cf157f1c7a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
+		Size: 2.4 MB (2441658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d31fde62cff123bdaa705a7110c1d3080e52797d4050ef65953dd7ae860ad501`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
-		Size: 1.3 KB (1339 bytes)  
+	-	`sha256:1285445a43c468abea58a1c806ffa6ec3a224f7ee32f6d3f4775942be8a3eaeb`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
+		Size: 1.3 KB (1342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d2adc64c4ec3ba7bf5e9ea90dc35e854a734bf58ab8199aebad3dda34adef7d`  
-		Last Modified: Tue, 07 Apr 2026 05:04:26 GMT  
-		Size: 2.4 KB (2370 bytes)  
+	-	`sha256:aef7e2f0c8b7f3c40738dc44ee9fab5802418f039644091519daa3a37a8d6e63`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 2.4 KB (2372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2572fbf1adbf47a387e78d99fe3c6c282f971686c7b1ac516c64b0f5aa901a9`  
-		Last Modified: Tue, 07 Apr 2026 05:04:27 GMT  
-		Size: 11.0 KB (10952 bytes)  
+	-	`sha256:6d21b77d6334f8e7926197ef07fc07a8d0ba0c84bb9aaa39c5fd8b8361933759`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 11.0 KB (10954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15a6b9da4b9b81fead5cbedd9dcf298f995dd373606b5401dba5b3a6fa37feab`  
-		Last Modified: Tue, 07 Apr 2026 05:04:28 GMT  
-		Size: 2.5 KB (2536 bytes)  
+	-	`sha256:fa85729b9e9053f46b2cf1db9a539eb44158a8c78ab2f13a97bbec2c4810be94`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:18.2` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:d6b5893227864e4a79ff6a47535d95e0b49c2f0820e96953a175486f86ae30bd
+$ docker pull xwiki@sha256:30583db40bd8f611165188914f63a1209569a8c17f3e3bc42e15a257c9bcbfd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9236373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5107a10e24ba67b10be339eac19ac49c9ceb5e4d68d2d60f3f0117208bb9dcfb`
+-	Image ID: `sha256:09c400510f16489e44fa4bf5bb6968ea4c09adda015f621c481e686dd8bda87c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7a635a48871515a031d18bf24cccb1b8aa34d30dd12f95017dd079cb962294c`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
+	-	`sha256:4bfb239f58493ab019ded0392c0c37dfdd8c6f9422f2bca449be288e0f692bb7`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
 		Size: 9.2 MB (9194270 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df788f52be495941f548ca56aec65cc098e102aaf2cf30c56924ddf7fef86713`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
+	-	`sha256:f68ab56c6a66bc015d367b8ca90d0bab6fe451699cac85865b3c269e6b592162`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
 		Size: 42.1 KB (42103 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:18.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:f184cc91ffa74d22de687083391731e7468aa4d0150a4e72258a29e8c80566b7
+$ docker pull xwiki@sha256:5743ff5135b40fa2e98c72788136cc5959c25ebc6e0ef3a625d224ddd5bf234a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **642.1 MB (642111188 bytes)**  
+-	Total Size: **642.1 MB (642111569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f3e7d85d600c714b3bec5d230f23beea45c0b9cc6d4fbf2ff48bc985889bd87`
+-	Image ID: `sha256:5e507c5582a3316b2935f16a6bc57950a2bec015ceaec05dce62b34fc02d7bbb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -5722,53 +7466,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:24:46 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 CMD ["xwiki"]
 ```
 
@@ -5813,63 +7557,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e369b2bd065e4b6e847999856d6ea1c99ea3f835edf51132c7f2d2623b59ac08`  
-		Last Modified: Tue, 07 Apr 2026 05:25:49 GMT  
-		Size: 188.9 MB (188852229 bytes)  
+	-	`sha256:385002331e92f8053b9f9da0d27c4a33cc31c35278d007c4b163b256b9ab956e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:27 GMT  
+		Size: 188.9 MB (188852491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d8d5f8c3dbc774444f3c8d71dcba7112ca2fd8d77d6e7f6338ad24aaccbb430`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 338.2 MB (338242839 bytes)  
+	-	`sha256:d96a35bd4a0b81964a36a8356db49767dc7d96c8a10104ba8675dbb1870d26ff`  
+		Last Modified: Thu, 09 Apr 2026 22:25:29 GMT  
+		Size: 338.2 MB (338242967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc58ca5bc4a630f88922701f4f96efe54d0c7086143102f0fa4828b15aab5ffd`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 2.4 MB (2441660 bytes)  
+	-	`sha256:48f004652cfc4ee3fc9e225e525c85f669812ff5fde7051aa1ac0e8fdc4e4233`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
+		Size: 2.4 MB (2441657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd0143f6588623dc5b51f26f8aff50dc77ffd127d85b2c27e26ca206c34786e1`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 1.3 KB (1341 bytes)  
+	-	`sha256:71760da9ba226c177adc275892b984843162f99939cec79601c975c5690ef925`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
+		Size: 1.3 KB (1339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f557c11f5c67c99a855e1583289a0717b46989e7705facd64a4a06d4b73837e4`  
-		Last Modified: Tue, 07 Apr 2026 05:25:43 GMT  
-		Size: 2.4 KB (2371 bytes)  
+	-	`sha256:becf68ad406751339a93d048b5ac2d81675607f41c8a6c7711192dba36f900d2`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 2.4 KB (2369 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e910fceeadacfcf00dc91eb4821226e1b7d8032cbbbbf848a0d525c2864774`  
-		Last Modified: Tue, 07 Apr 2026 05:25:44 GMT  
-		Size: 11.0 KB (10951 bytes)  
+	-	`sha256:ea783563aa9d98b684f22281bf8ba9278d4649371e770a41d4eafa1a67a91d1e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 10.9 KB (10950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73f57b949906c2385790e59738d264d4a7bcb9077c81f8b2236407f25f78d69d`  
-		Last Modified: Tue, 07 Apr 2026 05:25:45 GMT  
-		Size: 2.5 KB (2535 bytes)  
+	-	`sha256:3516759391fd63764d150447c5971edee81db0f23d2276c4a519207102a27d6f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:23 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:18.2` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:784f68c3786c5855bd4bd5639ee209c47a677135df9486bd291b62be85bfc2ef
+$ docker pull xwiki@sha256:4d2aa706f8794883b2cd9931ffdd5495a6320f4f45f18d014fe987375bdad20c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9237419 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80b76ec51eb373beb748d124e7ad2830a1c84d50beab79095e34d9166b32a584`
+-	Image ID: `sha256:33e54e27c87d03ef1a7ebd00f1e4e5b992aa1ec7499b186450d0d024bc8d4137`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca931a3ed97a89df87b19da35c3fcbe8d8d1d4e291efb6854e776550fac71c09`  
-		Last Modified: Tue, 07 Apr 2026 05:25:43 GMT  
+	-	`sha256:a6a891dd772b4c7bed5db4a7012e38e688345f2cb29e8f6284cb61ad88982f6a`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
 		Size: 9.2 MB (9195083 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6dfb2cbf295a9008cd3b1dd8d96868bb1be439ec66947813e1ad2b64aebf7cd`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
+	-	`sha256:bc5a595378ceebc1723088e0ca439063e80ee26f58248ffac75146b8f6d409f9`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
 		Size: 42.3 KB (42336 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:18.2-mariadb-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:766af116bb6648b70f93ff9b05e4afb417fb8e95a8abbd24b93c8a3958057717
+$ docker pull xwiki@sha256:2f7b46832fb0394ef3bb070dd1bab2bbb74c9703f1f16b1716bd38ddac018968
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5882,13 +7626,13 @@ $ docker pull xwiki@sha256:766af116bb6648b70f93ff9b05e4afb417fb8e95a8abbd24b93c8
 ### `xwiki:18.2-mariadb-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ba0948cc23b0bfe434f138031916d4797b854c12346536fdf58d291ad3e6bc45
+$ docker pull xwiki@sha256:7f845529dd6e239b218af996c32c1aaae5b6b345041152bc8bec65ea2ab1f16c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **644.4 MB (644392534 bytes)**  
+-	Total Size: **644.4 MB (644392484 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42ce846f10678ed13d34852e237946f6dcd560d5d2fccd0402126795226b5322`
+-	Image ID: `sha256:99600bae0d5e480f09cd9c7a529becf297efab3062c4511d52fb51fa1a13d938`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -5951,53 +7695,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:04:03 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:04:03 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:04:03 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:14 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:14 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_VERSION=3.5.7
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 CMD ["xwiki"]
 ```
 
@@ -6042,69 +7786,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcca4ff639731b663b2c2e9ea7f2f61d473ffb675abe029c6c28b487491a34ac`  
-		Last Modified: Tue, 07 Apr 2026 05:05:09 GMT  
-		Size: 191.2 MB (191192547 bytes)  
+	-	`sha256:2ac27493d4202eec4afe454eb31c0b2a8b0f7b4be2cfa9ef14e93dbc4cc95a44`  
+		Last Modified: Thu, 09 Apr 2026 22:24:18 GMT  
+		Size: 191.2 MB (191192385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ee6f76735ac92ee9e903ac6f01f34ca081159e907ef896b12530bde859c8a0`  
-		Last Modified: Tue, 07 Apr 2026 05:05:09 GMT  
-		Size: 338.2 MB (338242958 bytes)  
+	-	`sha256:f016d26d1b4337444504499b396c1229ab4be94bfb917e2ef5f8eb5df2f0467d`  
+		Last Modified: Thu, 09 Apr 2026 22:24:21 GMT  
+		Size: 338.2 MB (338243065 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:786a2046ee63e7596c8f74d8762afd7e67457f792de68693203cd33a2ef87abe`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
-		Size: 708.5 KB (708548 bytes)  
+	-	`sha256:8f924396aaf060ebd2222b21b2fc2b60e7c6baa7c3c0940a23caf5aff224c88c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 708.5 KB (708546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:541fb17ec09830dffc5d66a3b0d4e70e88768f6355a5acc688d0f04fee891d9b`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
+	-	`sha256:994f4e25fb3ea19f23ad2a8d56c7a8af1f6eec0bd342a6804bcc74353db582f2`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bfa157fb8d191e5817feb09436686f85c513e25ffaafa7a4be1055d88d53102`  
-		Last Modified: Tue, 07 Apr 2026 05:05:01 GMT  
+	-	`sha256:3704314d67659afee8af05ebcd29916a9c38bfe6b49df3e5043b1b86483f53c9`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:449352b7c13b78fac9811f9f938454b29670ed33479ca577568e21d5bc969122`  
-		Last Modified: Tue, 07 Apr 2026 05:05:02 GMT  
-		Size: 10.9 KB (10949 bytes)  
+	-	`sha256:995e6e40781dc9ad85886c45e18c8c8484eaa0ac9c9309eb1e3a4f94c5fb647c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:14 GMT  
+		Size: 11.0 KB (10951 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:664385d3ae55779c423db6f43209a0ceb1beecca910065ddfe224a89b324a4f4`  
-		Last Modified: Tue, 07 Apr 2026 05:05:02 GMT  
-		Size: 2.5 KB (2491 bytes)  
+	-	`sha256:11aca9dcc74cbfea7c8785ba33ad988bb849f5fc14c7f8252fe74a29ba5d054f`  
+		Last Modified: Thu, 09 Apr 2026 22:24:15 GMT  
+		Size: 2.5 KB (2496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:18.2-mariadb-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:f825256d7c1731d4d42db2e7f04afde4acb442bb68d9d1c9ea6bbd59e08a5c3e
+$ docker pull xwiki@sha256:56edc12b6e37bc72fbd2acfdd6646f4ceda9abc7cb6423f72e70dd5e33267a1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9233518 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70912a286fbe4bb1616eca60d195e27d52cbfbbdc0204a6e65b7b40a2aa3fb5e`
+-	Image ID: `sha256:6f441cb06f536403dcc6b3429e61b9aafb8e0e4f877c8ba599346df21f7a4948`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d19bbd52fcc1a21ac11ea796976916c04d6cb2e153d39d55aaeb8d6f26744dec`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
+	-	`sha256:5c00d65fb1481e6e70d7c99f21360114a0ea923fbd6f85f287a634837873de35`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 9.2 MB (9192755 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:dfbffb8d08c50344d84c3526df473f2ec15f68b66077800ac3cd80b0846929a9`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
+	-	`sha256:1cb31448128770abf74c5b34fafb352ed380d9a2aa6041cac186f85ad71c8eb5`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 40.8 KB (40763 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:18.2-mariadb-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:1e716db013c18f6e438b415c7e60876602345e0ce7561f52548f5100052f7d41
+$ docker pull xwiki@sha256:b13b45722cecf651d8e233bac6edf7016acd4f108e9b8cfb7dc9fc0cfaed6b2e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **640.4 MB (640377919 bytes)**  
+-	Total Size: **640.4 MB (640378092 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0eeb05838595a355cf1f91cd1321de0ebfd059a990ba12bc96de9b22b8c8c54e`
+-	Image ID: `sha256:6c6f16e6f8fdd44c1779a62bd994a2297693da5de1176ccae5e7dce1f6076706`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -6167,53 +7911,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:57 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:57 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:57 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:25:10 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_VERSION=3.5.7
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 CMD ["xwiki"]
 ```
 
@@ -6258,63 +8002,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc6ff24fed8958446b55eabf3aaaa6fef97a6a9db73faab712c2d54571af7e66`  
-		Last Modified: Tue, 07 Apr 2026 05:25:59 GMT  
-		Size: 188.9 MB (188852232 bytes)  
+	-	`sha256:7138705fc18cbf1f01ce7fa0c86bf7b78199e805cd67f83b34341bed6665e884`  
+		Last Modified: Thu, 09 Apr 2026 22:25:50 GMT  
+		Size: 188.9 MB (188852257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7687e4fe63aa3b08a56c30b9893ac0f7b43bcd3890e8d75ba2f9522294993924`  
-		Last Modified: Tue, 07 Apr 2026 05:26:02 GMT  
-		Size: 338.2 MB (338242793 bytes)  
+	-	`sha256:a93dfb9c13c1a63a280a43be79ea97cec3bf1fd65c1a3262cbe4217ac0631671`  
+		Last Modified: Thu, 09 Apr 2026 22:25:53 GMT  
+		Size: 338.2 MB (338242922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce8a15cacfe949eb1ebb41beea622aeef12a0e66c5b51aabd5316f3ff85bf61c`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 708.5 KB (708544 bytes)  
+	-	`sha256:74b0ca8ba7114b163b8212d7713b455592e46e72dcc53fc57b668f2c0026af43`  
+		Last Modified: Thu, 09 Apr 2026 22:25:44 GMT  
+		Size: 708.5 KB (708547 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81d324e3c7a7965ac96abbc956763ec0f2e249f1de3bfe8a46cbcdd6da0ee920`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 1.3 KB (1338 bytes)  
+	-	`sha256:c687fcdd47be17835a04f568f977d2d5d9d4f4b9cb2e06abddbd7fb70c441a5c`  
+		Last Modified: Thu, 09 Apr 2026 22:25:43 GMT  
+		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b67a5b91b6f796b462869555582f816a5fb2d577e2a56a0324cda81395d2d815`  
-		Last Modified: Tue, 07 Apr 2026 05:25:54 GMT  
-		Size: 2.3 KB (2305 bytes)  
+	-	`sha256:431f576ce0199d963e945de2258990132b1bdbe4c80f625dc2da12fc9510b550`  
+		Last Modified: Thu, 09 Apr 2026 22:25:45 GMT  
+		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:493cbab57cc6db1c1e169d47b05398e137751dffeaef724c593a34434ca68231`  
-		Last Modified: Tue, 07 Apr 2026 05:25:54 GMT  
-		Size: 10.9 KB (10949 bytes)  
+	-	`sha256:b18a97f27a0055c2e0c043f8125c5dcb20e9ffbecd6321951d49acdb2fbba196`  
+		Last Modified: Thu, 09 Apr 2026 22:25:45 GMT  
+		Size: 11.0 KB (10957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2747fd0272287dacc60e09f6ebe0adba4a8a06f9bf0f05d457b6c6e115b7845f`  
-		Last Modified: Tue, 07 Apr 2026 05:25:55 GMT  
-		Size: 2.5 KB (2496 bytes)  
+	-	`sha256:fed36abd95650841f9c5f59e37c081cdf5d2f51dc6f865902ead59c496bf6cd4`  
+		Last Modified: Thu, 09 Apr 2026 22:25:46 GMT  
+		Size: 2.5 KB (2498 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:18.2-mariadb-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:344d0a16fa56b087a85e6b87fcd91a585fb71bbb01d61140316009711d8a9444
+$ docker pull xwiki@sha256:8338e29aebd4aaab075bccf3331edba1464b418a0e7452763583a4194eed5d0b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9234445 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0222e81dbc667a0d9b4f265f117d7713420e1945fccd0da6a5b294c0546aa467`
+-	Image ID: `sha256:38d76975db5fdb2fd17c82b040962f2272aeb1346178ef759b04b7974f841883`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ae1212e812d570c880bb98d32665a65f05e123a0f5afd38547e6a43fb9215d76`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
+	-	`sha256:468adf1134aa3cc689ac4c31c05cd10c9867661f4f59da4d5656d69bb3e05bfb`  
+		Last Modified: Thu, 09 Apr 2026 22:25:44 GMT  
 		Size: 9.2 MB (9193508 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c727a7c38f6b0abb8bf026c9858df11ed96ba25d6aff8985f650fad645fb8fa3`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
+	-	`sha256:9c53c355bf660b3feaeeae74ebc4ec1ff70f14c0a261682e31d054b43392a441`  
+		Last Modified: Thu, 09 Apr 2026 22:25:43 GMT  
 		Size: 40.9 KB (40937 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:18.2-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:f00f1d09f8e34b344ea500a281434f619e8b087265d6111b7e9392b77d04cad0
+$ docker pull xwiki@sha256:e34d244855e337a293e8a3fd1c9c9c6f1d7ca05a3562110679a673053f282be7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6327,13 +8071,13 @@ $ docker pull xwiki@sha256:f00f1d09f8e34b344ea500a281434f619e8b087265d6111b7e939
 ### `xwiki:18.2-mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ddeea30098567cf1855bb0036d8a031c9be52cc1b94daa5e323f67cf944a5a5a
+$ docker pull xwiki@sha256:c78871a0bf7d16fe1f40e072a7ff7f2d5cb6b3dd0036c8ce9a07cfbce1ec821c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **646.1 MB (646125676 bytes)**  
+-	Total Size: **646.1 MB (646125877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:067ca4042eb2c7f7e3153a0205f7fccb387be2be3bd23215f7fde59d2eebefe5`
+-	Image ID: `sha256:6406557bf0308d28e979e04a2cb76517480499088ec1c4b6b9ff17a0682a1d8d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -6396,53 +8140,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 CMD ["xwiki"]
 ```
 
@@ -6487,69 +8231,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84c2a7b89a6376bc596249e7437e541ca07ed8ae6d2399a0a35f8b33b055a5c7`  
-		Last Modified: Tue, 07 Apr 2026 05:04:31 GMT  
-		Size: 191.2 MB (191192504 bytes)  
+	-	`sha256:2b305e1c2488d50848542df06a11b2c47d49a87d3ec354e04e9e1ace645c49e4`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 191.2 MB (191192649 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac76300df4bb9eb1bc756187aeb83e9f64d0f50fe318744de25b0b7a4a32ecc2`  
-		Last Modified: Tue, 07 Apr 2026 05:04:34 GMT  
-		Size: 338.2 MB (338242922 bytes)  
+	-	`sha256:c989f480dbd63e04392ecc6a05de2a97b49456792c75ff0d2ebb676f4daf8d5e`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 338.2 MB (338242976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66cf85f76a0aecef7c91c9c914f207a2f18d962c1c187c53c416ec6406783463`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
-		Size: 2.4 MB (2441661 bytes)  
+	-	`sha256:b3f1096b4eda79d85114e9da549d1e396230b84ce90bb16c77a097cf157f1c7a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
+		Size: 2.4 MB (2441658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d31fde62cff123bdaa705a7110c1d3080e52797d4050ef65953dd7ae860ad501`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
-		Size: 1.3 KB (1339 bytes)  
+	-	`sha256:1285445a43c468abea58a1c806ffa6ec3a224f7ee32f6d3f4775942be8a3eaeb`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
+		Size: 1.3 KB (1342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d2adc64c4ec3ba7bf5e9ea90dc35e854a734bf58ab8199aebad3dda34adef7d`  
-		Last Modified: Tue, 07 Apr 2026 05:04:26 GMT  
-		Size: 2.4 KB (2370 bytes)  
+	-	`sha256:aef7e2f0c8b7f3c40738dc44ee9fab5802418f039644091519daa3a37a8d6e63`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 2.4 KB (2372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2572fbf1adbf47a387e78d99fe3c6c282f971686c7b1ac516c64b0f5aa901a9`  
-		Last Modified: Tue, 07 Apr 2026 05:04:27 GMT  
-		Size: 11.0 KB (10952 bytes)  
+	-	`sha256:6d21b77d6334f8e7926197ef07fc07a8d0ba0c84bb9aaa39c5fd8b8361933759`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 11.0 KB (10954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15a6b9da4b9b81fead5cbedd9dcf298f995dd373606b5401dba5b3a6fa37feab`  
-		Last Modified: Tue, 07 Apr 2026 05:04:28 GMT  
-		Size: 2.5 KB (2536 bytes)  
+	-	`sha256:fa85729b9e9053f46b2cf1db9a539eb44158a8c78ab2f13a97bbec2c4810be94`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:18.2-mysql-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:d6b5893227864e4a79ff6a47535d95e0b49c2f0820e96953a175486f86ae30bd
+$ docker pull xwiki@sha256:30583db40bd8f611165188914f63a1209569a8c17f3e3bc42e15a257c9bcbfd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9236373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5107a10e24ba67b10be339eac19ac49c9ceb5e4d68d2d60f3f0117208bb9dcfb`
+-	Image ID: `sha256:09c400510f16489e44fa4bf5bb6968ea4c09adda015f621c481e686dd8bda87c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7a635a48871515a031d18bf24cccb1b8aa34d30dd12f95017dd079cb962294c`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
+	-	`sha256:4bfb239f58493ab019ded0392c0c37dfdd8c6f9422f2bca449be288e0f692bb7`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
 		Size: 9.2 MB (9194270 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df788f52be495941f548ca56aec65cc098e102aaf2cf30c56924ddf7fef86713`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
+	-	`sha256:f68ab56c6a66bc015d367b8ca90d0bab6fe451699cac85865b3c269e6b592162`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
 		Size: 42.1 KB (42103 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:18.2-mysql-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:f184cc91ffa74d22de687083391731e7468aa4d0150a4e72258a29e8c80566b7
+$ docker pull xwiki@sha256:5743ff5135b40fa2e98c72788136cc5959c25ebc6e0ef3a625d224ddd5bf234a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **642.1 MB (642111188 bytes)**  
+-	Total Size: **642.1 MB (642111569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f3e7d85d600c714b3bec5d230f23beea45c0b9cc6d4fbf2ff48bc985889bd87`
+-	Image ID: `sha256:5e507c5582a3316b2935f16a6bc57950a2bec015ceaec05dce62b34fc02d7bbb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -6612,53 +8356,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:24:46 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 CMD ["xwiki"]
 ```
 
@@ -6703,63 +8447,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e369b2bd065e4b6e847999856d6ea1c99ea3f835edf51132c7f2d2623b59ac08`  
-		Last Modified: Tue, 07 Apr 2026 05:25:49 GMT  
-		Size: 188.9 MB (188852229 bytes)  
+	-	`sha256:385002331e92f8053b9f9da0d27c4a33cc31c35278d007c4b163b256b9ab956e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:27 GMT  
+		Size: 188.9 MB (188852491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d8d5f8c3dbc774444f3c8d71dcba7112ca2fd8d77d6e7f6338ad24aaccbb430`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 338.2 MB (338242839 bytes)  
+	-	`sha256:d96a35bd4a0b81964a36a8356db49767dc7d96c8a10104ba8675dbb1870d26ff`  
+		Last Modified: Thu, 09 Apr 2026 22:25:29 GMT  
+		Size: 338.2 MB (338242967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc58ca5bc4a630f88922701f4f96efe54d0c7086143102f0fa4828b15aab5ffd`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 2.4 MB (2441660 bytes)  
+	-	`sha256:48f004652cfc4ee3fc9e225e525c85f669812ff5fde7051aa1ac0e8fdc4e4233`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
+		Size: 2.4 MB (2441657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd0143f6588623dc5b51f26f8aff50dc77ffd127d85b2c27e26ca206c34786e1`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 1.3 KB (1341 bytes)  
+	-	`sha256:71760da9ba226c177adc275892b984843162f99939cec79601c975c5690ef925`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
+		Size: 1.3 KB (1339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f557c11f5c67c99a855e1583289a0717b46989e7705facd64a4a06d4b73837e4`  
-		Last Modified: Tue, 07 Apr 2026 05:25:43 GMT  
-		Size: 2.4 KB (2371 bytes)  
+	-	`sha256:becf68ad406751339a93d048b5ac2d81675607f41c8a6c7711192dba36f900d2`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 2.4 KB (2369 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e910fceeadacfcf00dc91eb4821226e1b7d8032cbbbbf848a0d525c2864774`  
-		Last Modified: Tue, 07 Apr 2026 05:25:44 GMT  
-		Size: 11.0 KB (10951 bytes)  
+	-	`sha256:ea783563aa9d98b684f22281bf8ba9278d4649371e770a41d4eafa1a67a91d1e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 10.9 KB (10950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73f57b949906c2385790e59738d264d4a7bcb9077c81f8b2236407f25f78d69d`  
-		Last Modified: Tue, 07 Apr 2026 05:25:45 GMT  
-		Size: 2.5 KB (2535 bytes)  
+	-	`sha256:3516759391fd63764d150447c5971edee81db0f23d2276c4a519207102a27d6f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:23 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:18.2-mysql-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:784f68c3786c5855bd4bd5639ee209c47a677135df9486bd291b62be85bfc2ef
+$ docker pull xwiki@sha256:4d2aa706f8794883b2cd9931ffdd5495a6320f4f45f18d014fe987375bdad20c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9237419 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80b76ec51eb373beb748d124e7ad2830a1c84d50beab79095e34d9166b32a584`
+-	Image ID: `sha256:33e54e27c87d03ef1a7ebd00f1e4e5b992aa1ec7499b186450d0d024bc8d4137`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca931a3ed97a89df87b19da35c3fcbe8d8d1d4e291efb6854e776550fac71c09`  
-		Last Modified: Tue, 07 Apr 2026 05:25:43 GMT  
+	-	`sha256:a6a891dd772b4c7bed5db4a7012e38e688345f2cb29e8f6284cb61ad88982f6a`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
 		Size: 9.2 MB (9195083 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6dfb2cbf295a9008cd3b1dd8d96868bb1be439ec66947813e1ad2b64aebf7cd`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
+	-	`sha256:bc5a595378ceebc1723088e0ca439063e80ee26f58248ffac75146b8f6d409f9`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
 		Size: 42.3 KB (42336 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:18.2-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:03a2fd83dac41948d776759fa025fe29a3fffb62fe3b6e1f0d19e2303b5c8118
+$ docker pull xwiki@sha256:a0e045d953be6c583b90ff4c988a9b60122c825d318e3dee9aa033e12746fea4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6772,13 +8516,13 @@ $ docker pull xwiki@sha256:03a2fd83dac41948d776759fa025fe29a3fffb62fe3b6e1f0d19e
 ### `xwiki:18.2-postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:c0bc1625114b66671b54332d29166d6fde9d04fa4369f0a77760f4c7ce1d3885
+$ docker pull xwiki@sha256:d2cbe99724d64df219ff5189bca9526d9e34bf74372cc6893af310ac37e4e9a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **644.7 MB (644745470 bytes)**  
+-	Total Size: **644.7 MB (644745744 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ebe4413fa1c31dc12f90279bad16b74608584918b3072e2c034d1fdfa03f7aa`
+-	Image ID: `sha256:47c5e517d5084ef2cfcbdc8d781e5a3ecef00d4fbcc3f6a558b0161d7e16b771`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -6841,53 +8585,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:03:45 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:03:45 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:03:45 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:04 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:04 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:25 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.10
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 CMD ["xwiki"]
 ```
 
@@ -6932,69 +8676,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ba00b5a9b86656512fc3936b60ded13346ef82ee705751f57005f76f6e5c034`  
-		Last Modified: Tue, 07 Apr 2026 05:04:44 GMT  
-		Size: 191.2 MB (191192541 bytes)  
+	-	`sha256:ab6685658399dffbc8f6656ffe1ebd1fdfcc6699d77fa36fec74ffbefc7d7b54`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 191.2 MB (191192591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4f1fefa858353d68123cb5fc0c324a087c75c278f4cc4e482e52dbcecd526d9`  
-		Last Modified: Tue, 07 Apr 2026 05:04:47 GMT  
-		Size: 338.2 MB (338242748 bytes)  
+	-	`sha256:c989f480dbd63e04392ecc6a05de2a97b49456792c75ff0d2ebb676f4daf8d5e`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 338.2 MB (338242976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9de60098dfdf6ef9a105e2bf136f0d4684bcabeae5d9dae16243adbb51123b08`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
-		Size: 1.1 MB (1061593 bytes)  
+	-	`sha256:69d977e52ab4cba7bd0877fc512509281eccfd9fc216abed6e776e2c3427fd81`  
+		Last Modified: Thu, 09 Apr 2026 22:23:58 GMT  
+		Size: 1.1 MB (1061588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80e957e7f9eda289c7012e596b69a9b2089fd613f529a06508e18633ad0f6b44`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
-		Size: 1.3 KB (1339 bytes)  
+	-	`sha256:5f8e780bd2266349061f00ece7007c226289167843e7b406db8b195be74a0f3c`  
+		Last Modified: Thu, 09 Apr 2026 22:23:58 GMT  
+		Size: 1.3 KB (1342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ca3dc4dacd0a50350a453c22f7256f5e71ef13839cd578b41d35aa5b74f7aa8`  
-		Last Modified: Tue, 07 Apr 2026 05:04:39 GMT  
-		Size: 2.5 KB (2461 bytes)  
+	-	`sha256:2c7466b32f0bb173d36cedee71c9c5da416ab1247b55db117ba72453b649fab3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:00 GMT  
+		Size: 2.5 KB (2460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13117c0fec91aa18bfa98d06d6044ee31bb747edf0165cfaef7fcfdec79f051a`  
-		Last Modified: Tue, 07 Apr 2026 05:04:39 GMT  
-		Size: 11.0 KB (10955 bytes)  
+	-	`sha256:da88dc9ce3cc8fee0892d033c043fa15935f551fd51d7f659fc24cf3769d9f50`  
+		Last Modified: Thu, 09 Apr 2026 22:24:00 GMT  
+		Size: 11.0 KB (10953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4808d580d758143dccd7263848b640dd270b71dc97c04f16e4bc036e1fc6d888`  
-		Last Modified: Tue, 07 Apr 2026 05:04:41 GMT  
-		Size: 2.4 KB (2441 bytes)  
+	-	`sha256:c5e385eb876c8cb883fe04a886066fef4e0b3729f58e5fcd976e5aa596b9b619`  
+		Last Modified: Thu, 09 Apr 2026 22:24:01 GMT  
+		Size: 2.4 KB (2442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:18.2-postgres-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:22896b002bc78d904d945279283c4c40b950b3105d9d8b2aa5796778086942b0
+$ docker pull xwiki@sha256:7261816e696033c1b72f3a0484dd25c9976d88d8b5e834094d24382df6385dfa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9233523 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49655e1361a16ff6cb8f2f811b407e96b1987e0280ad1d37e7892493b69e2254`
+-	Image ID: `sha256:b5b184fcf3dd33956004d47268444ff9b69b9de44ab0602806e6171f9fb20f18`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:69cfa0066674d1a8bf9bce38871de49599de777a167ff457471977d7ca44ae74`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
+	-	`sha256:6c881a2eb8c3f7e6688f55d447518decbb5c845e6fa17ec2588cfe2761cd45ac`  
+		Last Modified: Thu, 09 Apr 2026 22:23:59 GMT  
 		Size: 9.2 MB (9192775 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f921fb4396b3758e9d4f8b23c9aa3958855837e3e642487d4e3b3e33b5334b0b`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
+	-	`sha256:3a1d74de71ef8a2df0ae58502c4fcd3e7f9ddce4c8451cff5264b15593430a4b`  
+		Last Modified: Thu, 09 Apr 2026 22:23:58 GMT  
 		Size: 40.7 KB (40748 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:18.2-postgres-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:9fd400c01a4dedea2a59d4f88c8ebb46c9985de41fe605ad86ac9531cf6c96a2
+$ docker pull xwiki@sha256:6a89cf110097a4b1112b5cfc7c7a1ba47071555b98cb3ef20cd56f868199aafb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **640.7 MB (640731243 bytes)**  
+-	Total Size: **640.7 MB (640731414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5933bc99364a7507df6dac49353e015710aa9b47cd41306d515a780c28780d4a`
+-	Image ID: `sha256:27222df73402ea4a2139f143c97b06161b76cb82e3681ee4dfc5735e302ef33c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -7057,53 +8801,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:45 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:45 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:45 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:30 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:30 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.10
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 CMD ["xwiki"]
 ```
 
@@ -7148,99 +8892,1843 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:980798a812d77d18400ebd9a1b3386b55d7210e7553e2a76c1fd0d6f46f58b71`  
-		Last Modified: Tue, 07 Apr 2026 05:25:46 GMT  
-		Size: 188.9 MB (188852350 bytes)  
+	-	`sha256:91e4ba2406ca17d92518a9c8fed78922587ccdaed82a817003b3a6a7a2630415`  
+		Last Modified: Thu, 09 Apr 2026 22:25:41 GMT  
+		Size: 188.9 MB (188852239 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09955a9b20fb6241692c2cde02d00ab48db3fd23cd3fb1a9cbf3429e1b65b4dc`  
-		Last Modified: Tue, 07 Apr 2026 05:25:49 GMT  
-		Size: 338.2 MB (338242841 bytes)  
+	-	`sha256:ed48fd32fa977664a9efae1c399214cfb95d56e6704a9427b29fbb504e4c4512`  
+		Last Modified: Thu, 09 Apr 2026 22:25:43 GMT  
+		Size: 338.2 MB (338243125 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6de5e23d7f80da3cb56170285de02fd6fc02ee66165660503489c2a1f81cda95`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:0a72878e1ceec4717b64831232e4483e4d2971324205b6ef54c1b1ed17705679`  
+		Last Modified: Thu, 09 Apr 2026 22:25:34 GMT  
 		Size: 1.1 MB (1061591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fffbe365397b1f6f020664d340eba77704fddcb96692b936dbaef558b54f376b`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:34cb4092a53be364a54edb4e5e4b46840eebca3a4cd6a0c15ef67fc442b4fd32`  
+		Last Modified: Thu, 09 Apr 2026 22:25:34 GMT  
 		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c021a6cbe1cb0eab76abbc0c470f0cbc082e6addf1cf66e387f74a173d7e7767`  
-		Last Modified: Tue, 07 Apr 2026 05:25:40 GMT  
+	-	`sha256:6f91579b573491d279efff4290f1cdee81295fdac0dbc76a08b81920f672884f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:35 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1726884ae241041161bea092e77fba5a22055efacbb48dd121b80e9310620a7`  
-		Last Modified: Tue, 07 Apr 2026 05:25:40 GMT  
+	-	`sha256:46e4b141c31a2f4b521111a0fa2c360d96424b65989b910cd76805940c3cc410`  
+		Last Modified: Thu, 09 Apr 2026 22:25:35 GMT  
 		Size: 11.0 KB (10952 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0562b7325829da80eb97bdcf49ac44aa45740e274b052c8f2628a7e95a216ad`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 2.4 KB (2443 bytes)  
+	-	`sha256:ecd716ce84b4394d7cdd6c69a53d61b45d0efff4cabb7da722434ba543e48a34`  
+		Last Modified: Thu, 09 Apr 2026 22:25:36 GMT  
+		Size: 2.4 KB (2441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:18.2-postgres-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:79100acca7f49898f585ce1b1e9465726ae241412ba3c4d8053c8499b5006107
+$ docker pull xwiki@sha256:efbef603fc75fbb6a94b05d0ac6cdb0cc621cf8072cbe0cc94735d35b0fb2e84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9234450 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7973f1c5d62b9a9c65d9e22709db7e05c1cba90d104212a94e7fc3c08d85105d`
+-	Image ID: `sha256:97876a24c85611944f8841c97128dcfa49fe09c3f4f66c6dd4c83b183cee897f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62c771d538957625b54c5398a25ecf305ea674ccdc606c2f439f5d28631d6531`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:8148f070bd5ebea9555d2e9f95434581bd8d772a937e398f9a738297bfe6dad2`  
+		Last Modified: Thu, 09 Apr 2026 22:25:34 GMT  
 		Size: 9.2 MB (9193528 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:04c03ec1e1bd36c832bb68fc8ca3623139ee3a180b8686240fcf62051cb57321`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:d198ff4680d5dbf674e8254ef7a3552d1f9f16db4998966bd10050c6bd542658`  
+		Last Modified: Thu, 09 Apr 2026 22:25:33 GMT  
 		Size: 40.9 KB (40922 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:18.2.1`
 
 ```console
-$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull xwiki@sha256:e34d244855e337a293e8a3fd1c9c9c6f1d7ca05a3562110679a673053f282be7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `xwiki:18.2.1` - linux; amd64
+
+```console
+$ docker pull xwiki@sha256:c78871a0bf7d16fe1f40e072a7ff7f2d5cb6b3dd0036c8ce9a07cfbce1ec821c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **646.1 MB (646125877 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6406557bf0308d28e979e04a2cb76517480499088ec1c4b6b9ff17a0682a1d8d`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Fri, 03 Apr 2026 15:16:40 GMT
+ARG RELEASE
+# Fri, 03 Apr 2026 15:16:40 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 03 Apr 2026 15:16:40 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 03 Apr 2026 15:16:42 GMT
+ADD file:0f6466425c4f1800aae9224ddc3437b90c829cea58fb8edd5dde2f1eb0ee28da in / 
+# Fri, 03 Apr 2026 15:16:43 GMT
+CMD ["/bin/bash"]
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 07 Apr 2026 01:51:36 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Tue, 07 Apr 2026 01:52:07 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='991be6ac6725e76109ecbd131d658f992dcbeacba3a8b4b6650302c8012b52fb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='1a49cffcb348a28c017cf0deeb9322b7296dbfb002a8e43bd7f65ad671e10eb7';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='02cf763836c14bad4d689eb3b4efd691657de753dba07193cd1fb8691c8fe7b8';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='48f8529714c90c6cc61aa729cf8952f2fc47f2f2890551ba7f9e1c061b04be13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 03:30:05 GMT
+RUN mkdir -p "$CATALINA_HOME" # buildkit
+# Tue, 07 Apr 2026 03:30:05 GMT
+WORKDIR /usr/local/tomcat
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_MAJOR=10
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_VERSION=10.1.54
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_SHA512=8694b94324cf6f62ab032fa2438d7334518dcfcbf7878361b147246c46eb1e558c327f32c05fb4b7705c01fcca92fde392ce320934410f1169ff4ab36a1c7139
+# Tue, 07 Apr 2026 03:30:30 GMT
+COPY /usr/local/tomcat /usr/local/tomcat # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+EXPOSE map[8080/tcp:{}]
+# Tue, 07 Apr 2026 03:30:37 GMT
+ENTRYPOINT []
+# Tue, 07 Apr 2026 03:30:37 GMT
+CMD ["catalina.sh" "run"]
+# Thu, 09 Apr 2026 22:23:03 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Thu, 09 Apr 2026 22:23:03 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:23:03 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:23:03 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Thu, 09 Apr 2026 22:23:03 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Thu, 09 Apr 2026 22:23:03 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:32 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
+# Thu, 09 Apr 2026 22:23:32 GMT
+ENV MYSQL_JDBC_VERSION=9.6.0
+# Thu, 09 Apr 2026 22:23:32 GMT
+ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
+# Thu, 09 Apr 2026 22:23:32 GMT
+ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
+# Thu, 09 Apr 2026 22:23:32 GMT
+ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
+# Thu, 09 Apr 2026 22:23:32 GMT
+ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
+# Thu, 09 Apr 2026 22:23:32 GMT
+RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
+# Thu, 09 Apr 2026 22:23:32 GMT
+COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
+# Thu, 09 Apr 2026 22:23:32 GMT
+COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
+# Thu, 09 Apr 2026 22:23:32 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
+# Thu, 09 Apr 2026 22:23:32 GMT
+COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Thu, 09 Apr 2026 22:23:32 GMT
+VOLUME [/usr/local/xwiki]
+# Thu, 09 Apr 2026 22:23:32 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 09 Apr 2026 22:23:32 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:689b91d88a0f4086057ec826027b128902ecf2b516be510371c115bc55da19a6`  
+		Last Modified: Fri, 03 Apr 2026 15:56:29 GMT  
+		Size: 29.7 MB (29733459 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3b68b8ef47fdb988fb4023edbb2a8d6a19ba659a4921fc9f25c496fe28ae1ef1`  
+		Last Modified: Tue, 07 Apr 2026 01:51:50 GMT  
+		Size: 17.0 MB (16983568 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e2c9370ed7c35a22ef566a4d1ee7eb152dc6f37abe64e4fc7df70647fa0499dc`  
+		Last Modified: Tue, 07 Apr 2026 01:52:20 GMT  
+		Size: 53.0 MB (52985505 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:75ef302449c04c900de9660d789c58e12374e181f0204d02016bf10d05a2ea02`  
+		Last Modified: Tue, 07 Apr 2026 01:52:19 GMT  
+		Size: 158.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9425bf26e9ee5e1bdec0dd158e59f754d3f4b3866a00a320bf3dafdf1a133d42`  
+		Last Modified: Tue, 07 Apr 2026 01:52:19 GMT  
+		Size: 2.3 KB (2283 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:54c9795ba8e7d43886e47c9f28f417b2ad6594c5ba4081bd0f3079a1a17c92b3`  
+		Last Modified: Tue, 07 Apr 2026 03:30:23 GMT  
+		Size: 137.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:415216d03967c36779ab9218ed04e2d48721c138ee3007af7305157c05d21243`  
+		Last Modified: Tue, 07 Apr 2026 03:30:45 GMT  
+		Size: 14.3 MB (14301303 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:298a021259cbe800fc2783c266cf2edbfe485bf898fa08ccf32f52653362586a`  
+		Last Modified: Tue, 07 Apr 2026 03:30:45 GMT  
+		Size: 224.9 KB (224915 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2b305e1c2488d50848542df06a11b2c47d49a87d3ec354e04e9e1ace645c49e4`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 191.2 MB (191192649 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c989f480dbd63e04392ecc6a05de2a97b49456792c75ff0d2ebb676f4daf8d5e`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 338.2 MB (338242976 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b3f1096b4eda79d85114e9da549d1e396230b84ce90bb16c77a097cf157f1c7a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
+		Size: 2.4 MB (2441658 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1285445a43c468abea58a1c806ffa6ec3a224f7ee32f6d3f4775942be8a3eaeb`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
+		Size: 1.3 KB (1342 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aef7e2f0c8b7f3c40738dc44ee9fab5802418f039644091519daa3a37a8d6e63`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 2.4 KB (2372 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6d21b77d6334f8e7926197ef07fc07a8d0ba0c84bb9aaa39c5fd8b8361933759`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 11.0 KB (10954 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fa85729b9e9053f46b2cf1db9a539eb44158a8c78ab2f13a97bbec2c4810be94`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 2.5 KB (2534 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `xwiki:18.2.1` - unknown; unknown
+
+```console
+$ docker pull xwiki@sha256:30583db40bd8f611165188914f63a1209569a8c17f3e3bc42e15a257c9bcbfd3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.2 MB (9236373 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:09c400510f16489e44fa4bf5bb6968ea4c09adda015f621c481e686dd8bda87c`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:4bfb239f58493ab019ded0392c0c37dfdd8c6f9422f2bca449be288e0f692bb7`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
+		Size: 9.2 MB (9194270 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:f68ab56c6a66bc015d367b8ca90d0bab6fe451699cac85865b3c269e6b592162`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
+		Size: 42.1 KB (42103 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `xwiki:18.2.1` - linux; arm64 variant v8
+
+```console
+$ docker pull xwiki@sha256:5743ff5135b40fa2e98c72788136cc5959c25ebc6e0ef3a625d224ddd5bf234a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **642.1 MB (642111569 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5e507c5582a3316b2935f16a6bc57950a2bec015ceaec05dce62b34fc02d7bbb`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Fri, 03 Apr 2026 15:15:14 GMT
+ARG RELEASE
+# Fri, 03 Apr 2026 15:15:14 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 03 Apr 2026 15:15:14 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 03 Apr 2026 15:15:17 GMT
+ADD file:9bab986009eae65b5534b3547eb3a7d0a1564404426de350dfd183cf3a4ffa9f in / 
+# Fri, 03 Apr 2026 15:15:17 GMT
+CMD ["/bin/bash"]
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 07 Apr 2026 01:54:52 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Tue, 07 Apr 2026 01:55:25 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='991be6ac6725e76109ecbd131d658f992dcbeacba3a8b4b6650302c8012b52fb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='1a49cffcb348a28c017cf0deeb9322b7296dbfb002a8e43bd7f65ad671e10eb7';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='02cf763836c14bad4d689eb3b4efd691657de753dba07193cd1fb8691c8fe7b8';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='48f8529714c90c6cc61aa729cf8952f2fc47f2f2890551ba7f9e1c061b04be13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 05:10:00 GMT
+RUN mkdir -p "$CATALINA_HOME" # buildkit
+# Tue, 07 Apr 2026 05:10:00 GMT
+WORKDIR /usr/local/tomcat
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_MAJOR=10
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_VERSION=10.1.54
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_SHA512=8694b94324cf6f62ab032fa2438d7334518dcfcbf7878361b147246c46eb1e558c327f32c05fb4b7705c01fcca92fde392ce320934410f1169ff4ab36a1c7139
+# Tue, 07 Apr 2026 05:10:01 GMT
+COPY /usr/local/tomcat /usr/local/tomcat # buildkit
+# Tue, 07 Apr 2026 05:10:08 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 05:10:09 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
+# Tue, 07 Apr 2026 05:10:09 GMT
+EXPOSE map[8080/tcp:{}]
+# Tue, 07 Apr 2026 05:10:09 GMT
+ENTRYPOINT []
+# Tue, 07 Apr 2026 05:10:09 GMT
+CMD ["catalina.sh" "run"]
+# Thu, 09 Apr 2026 22:24:24 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Thu, 09 Apr 2026 22:24:24 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:24:24 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:24:24 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Thu, 09 Apr 2026 22:24:24 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Thu, 09 Apr 2026 22:24:24 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:24:46 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
+# Thu, 09 Apr 2026 22:24:46 GMT
+ENV MYSQL_JDBC_VERSION=9.6.0
+# Thu, 09 Apr 2026 22:24:46 GMT
+ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
+# Thu, 09 Apr 2026 22:24:46 GMT
+ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
+# Thu, 09 Apr 2026 22:24:46 GMT
+ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
+# Thu, 09 Apr 2026 22:24:46 GMT
+ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
+# Thu, 09 Apr 2026 22:24:46 GMT
+RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
+# Thu, 09 Apr 2026 22:24:47 GMT
+COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
+# Thu, 09 Apr 2026 22:24:47 GMT
+COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
+# Thu, 09 Apr 2026 22:24:47 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
+# Thu, 09 Apr 2026 22:24:47 GMT
+COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Thu, 09 Apr 2026 22:24:47 GMT
+VOLUME [/usr/local/xwiki]
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 09 Apr 2026 22:24:47 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:76fd055477b6edf8004a5a962edad02a820d4c8b2f02682410edfbe376b418c5`  
+		Last Modified: Fri, 03 Apr 2026 15:56:36 GMT  
+		Size: 28.9 MB (28874075 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bfc1fe49c2f79e04d9e562ce4ee017e874bf7e23feea81b6df6f351ab993d9b5`  
+		Last Modified: Tue, 07 Apr 2026 01:55:07 GMT  
+		Size: 17.0 MB (16996238 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:538e758f95d8493adbf608ecfa760b05bb49d3ceee0f1e637ca69598f3434ea6`  
+		Last Modified: Tue, 07 Apr 2026 01:55:40 GMT  
+		Size: 52.2 MB (52155642 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:80e0252f321812c22ad7139fe93995a4ab816f331d23ab15579dedbc1027f1ca`  
+		Last Modified: Tue, 07 Apr 2026 01:55:39 GMT  
+		Size: 158.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3f199c35f5162fea3c8f07eef1e388cab02e2e3f619c9b2842b8bcd77a768e1e`  
+		Last Modified: Tue, 07 Apr 2026 01:55:39 GMT  
+		Size: 2.3 KB (2281 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:eac5f94c5bcca79f12bddc6c46eb7fa6c04e4e0e9ed03895d1a50ef57c72bb4b`  
+		Last Modified: Tue, 07 Apr 2026 05:10:17 GMT  
+		Size: 138.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:908a696e504aba798cd3c2d7427bb96e96f3b09202e8c8142034cb000c030d62`  
+		Last Modified: Tue, 07 Apr 2026 05:10:18 GMT  
+		Size: 14.3 MB (14303384 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:85f112508064b8beb36c4dfc19b3697a983e5ded489ff63aef3a3905f0f61481`  
+		Last Modified: Tue, 07 Apr 2026 05:10:18 GMT  
+		Size: 225.3 KB (225282 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:385002331e92f8053b9f9da0d27c4a33cc31c35278d007c4b163b256b9ab956e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:27 GMT  
+		Size: 188.9 MB (188852491 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d96a35bd4a0b81964a36a8356db49767dc7d96c8a10104ba8675dbb1870d26ff`  
+		Last Modified: Thu, 09 Apr 2026 22:25:29 GMT  
+		Size: 338.2 MB (338242967 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:48f004652cfc4ee3fc9e225e525c85f669812ff5fde7051aa1ac0e8fdc4e4233`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
+		Size: 2.4 MB (2441657 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:71760da9ba226c177adc275892b984843162f99939cec79601c975c5690ef925`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
+		Size: 1.3 KB (1339 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:becf68ad406751339a93d048b5ac2d81675607f41c8a6c7711192dba36f900d2`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 2.4 KB (2369 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ea783563aa9d98b684f22281bf8ba9278d4649371e770a41d4eafa1a67a91d1e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 10.9 KB (10950 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3516759391fd63764d150447c5971edee81db0f23d2276c4a519207102a27d6f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:23 GMT  
+		Size: 2.5 KB (2534 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `xwiki:18.2.1` - unknown; unknown
+
+```console
+$ docker pull xwiki@sha256:4d2aa706f8794883b2cd9931ffdd5495a6320f4f45f18d014fe987375bdad20c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.2 MB (9237419 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:33e54e27c87d03ef1a7ebd00f1e4e5b992aa1ec7499b186450d0d024bc8d4137`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:a6a891dd772b4c7bed5db4a7012e38e688345f2cb29e8f6284cb61ad88982f6a`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
+		Size: 9.2 MB (9195083 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:bc5a595378ceebc1723088e0ca439063e80ee26f58248ffac75146b8f6d409f9`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
+		Size: 42.3 KB (42336 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `xwiki:18.2.1-mariadb-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull xwiki@sha256:2f7b46832fb0394ef3bb070dd1bab2bbb74c9703f1f16b1716bd38ddac018968
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `xwiki:18.2.1-mariadb-tomcat` - linux; amd64
+
+```console
+$ docker pull xwiki@sha256:7f845529dd6e239b218af996c32c1aaae5b6b345041152bc8bec65ea2ab1f16c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **644.4 MB (644392484 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:99600bae0d5e480f09cd9c7a529becf297efab3062c4511d52fb51fa1a13d938`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Fri, 03 Apr 2026 15:16:40 GMT
+ARG RELEASE
+# Fri, 03 Apr 2026 15:16:40 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 03 Apr 2026 15:16:40 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 03 Apr 2026 15:16:42 GMT
+ADD file:0f6466425c4f1800aae9224ddc3437b90c829cea58fb8edd5dde2f1eb0ee28da in / 
+# Fri, 03 Apr 2026 15:16:43 GMT
+CMD ["/bin/bash"]
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 07 Apr 2026 01:51:36 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Tue, 07 Apr 2026 01:52:07 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='991be6ac6725e76109ecbd131d658f992dcbeacba3a8b4b6650302c8012b52fb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='1a49cffcb348a28c017cf0deeb9322b7296dbfb002a8e43bd7f65ad671e10eb7';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='02cf763836c14bad4d689eb3b4efd691657de753dba07193cd1fb8691c8fe7b8';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='48f8529714c90c6cc61aa729cf8952f2fc47f2f2890551ba7f9e1c061b04be13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 03:30:05 GMT
+RUN mkdir -p "$CATALINA_HOME" # buildkit
+# Tue, 07 Apr 2026 03:30:05 GMT
+WORKDIR /usr/local/tomcat
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_MAJOR=10
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_VERSION=10.1.54
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_SHA512=8694b94324cf6f62ab032fa2438d7334518dcfcbf7878361b147246c46eb1e558c327f32c05fb4b7705c01fcca92fde392ce320934410f1169ff4ab36a1c7139
+# Tue, 07 Apr 2026 03:30:30 GMT
+COPY /usr/local/tomcat /usr/local/tomcat # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+EXPOSE map[8080/tcp:{}]
+# Tue, 07 Apr 2026 03:30:37 GMT
+ENTRYPOINT []
+# Tue, 07 Apr 2026 03:30:37 GMT
+CMD ["catalina.sh" "run"]
+# Thu, 09 Apr 2026 22:23:14 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Thu, 09 Apr 2026 22:23:14 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:23:14 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:23:14 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Thu, 09 Apr 2026 22:23:14 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Thu, 09 Apr 2026 22:23:14 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Thu, 09 Apr 2026 22:23:14 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Apr 2026 22:23:14 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:14 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:14 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:35 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
+# Thu, 09 Apr 2026 22:23:35 GMT
+ENV MARIADB_JDBC_VERSION=3.5.7
+# Thu, 09 Apr 2026 22:23:35 GMT
+ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
+# Thu, 09 Apr 2026 22:23:35 GMT
+ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
+# Thu, 09 Apr 2026 22:23:35 GMT
+ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
+# Thu, 09 Apr 2026 22:23:35 GMT
+ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
+# Thu, 09 Apr 2026 22:23:35 GMT
+RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
+# Thu, 09 Apr 2026 22:23:35 GMT
+COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
+# Thu, 09 Apr 2026 22:23:36 GMT
+COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
+# Thu, 09 Apr 2026 22:23:36 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
+# Thu, 09 Apr 2026 22:23:36 GMT
+COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Thu, 09 Apr 2026 22:23:36 GMT
+VOLUME [/usr/local/xwiki]
+# Thu, 09 Apr 2026 22:23:36 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 09 Apr 2026 22:23:36 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:689b91d88a0f4086057ec826027b128902ecf2b516be510371c115bc55da19a6`  
+		Last Modified: Fri, 03 Apr 2026 15:56:29 GMT  
+		Size: 29.7 MB (29733459 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3b68b8ef47fdb988fb4023edbb2a8d6a19ba659a4921fc9f25c496fe28ae1ef1`  
+		Last Modified: Tue, 07 Apr 2026 01:51:50 GMT  
+		Size: 17.0 MB (16983568 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e2c9370ed7c35a22ef566a4d1ee7eb152dc6f37abe64e4fc7df70647fa0499dc`  
+		Last Modified: Tue, 07 Apr 2026 01:52:20 GMT  
+		Size: 53.0 MB (52985505 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:75ef302449c04c900de9660d789c58e12374e181f0204d02016bf10d05a2ea02`  
+		Last Modified: Tue, 07 Apr 2026 01:52:19 GMT  
+		Size: 158.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9425bf26e9ee5e1bdec0dd158e59f754d3f4b3866a00a320bf3dafdf1a133d42`  
+		Last Modified: Tue, 07 Apr 2026 01:52:19 GMT  
+		Size: 2.3 KB (2283 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:54c9795ba8e7d43886e47c9f28f417b2ad6594c5ba4081bd0f3079a1a17c92b3`  
+		Last Modified: Tue, 07 Apr 2026 03:30:23 GMT  
+		Size: 137.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:415216d03967c36779ab9218ed04e2d48721c138ee3007af7305157c05d21243`  
+		Last Modified: Tue, 07 Apr 2026 03:30:45 GMT  
+		Size: 14.3 MB (14301303 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:298a021259cbe800fc2783c266cf2edbfe485bf898fa08ccf32f52653362586a`  
+		Last Modified: Tue, 07 Apr 2026 03:30:45 GMT  
+		Size: 224.9 KB (224915 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2ac27493d4202eec4afe454eb31c0b2a8b0f7b4be2cfa9ef14e93dbc4cc95a44`  
+		Last Modified: Thu, 09 Apr 2026 22:24:18 GMT  
+		Size: 191.2 MB (191192385 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f016d26d1b4337444504499b396c1229ab4be94bfb917e2ef5f8eb5df2f0467d`  
+		Last Modified: Thu, 09 Apr 2026 22:24:21 GMT  
+		Size: 338.2 MB (338243065 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8f924396aaf060ebd2222b21b2fc2b60e7c6baa7c3c0940a23caf5aff224c88c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 708.5 KB (708546 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:994f4e25fb3ea19f23ad2a8d56c7a8af1f6eec0bd342a6804bcc74353db582f2`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 1.3 KB (1341 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3704314d67659afee8af05ebcd29916a9c38bfe6b49df3e5043b1b86483f53c9`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 2.3 KB (2308 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:995e6e40781dc9ad85886c45e18c8c8484eaa0ac9c9309eb1e3a4f94c5fb647c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:14 GMT  
+		Size: 11.0 KB (10951 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:11aca9dcc74cbfea7c8785ba33ad988bb849f5fc14c7f8252fe74a29ba5d054f`  
+		Last Modified: Thu, 09 Apr 2026 22:24:15 GMT  
+		Size: 2.5 KB (2496 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `xwiki:18.2.1-mariadb-tomcat` - unknown; unknown
+
+```console
+$ docker pull xwiki@sha256:56edc12b6e37bc72fbd2acfdd6646f4ceda9abc7cb6423f72e70dd5e33267a1e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.2 MB (9233518 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6f441cb06f536403dcc6b3429e61b9aafb8e0e4f877c8ba599346df21f7a4948`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:5c00d65fb1481e6e70d7c99f21360114a0ea923fbd6f85f287a634837873de35`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 9.2 MB (9192755 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:1cb31448128770abf74c5b34fafb352ed380d9a2aa6041cac186f85ad71c8eb5`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 40.8 KB (40763 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `xwiki:18.2.1-mariadb-tomcat` - linux; arm64 variant v8
+
+```console
+$ docker pull xwiki@sha256:b13b45722cecf651d8e233bac6edf7016acd4f108e9b8cfb7dc9fc0cfaed6b2e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **640.4 MB (640378092 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6c6f16e6f8fdd44c1779a62bd994a2297693da5de1176ccae5e7dce1f6076706`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Fri, 03 Apr 2026 15:15:14 GMT
+ARG RELEASE
+# Fri, 03 Apr 2026 15:15:14 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 03 Apr 2026 15:15:14 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 03 Apr 2026 15:15:17 GMT
+ADD file:9bab986009eae65b5534b3547eb3a7d0a1564404426de350dfd183cf3a4ffa9f in / 
+# Fri, 03 Apr 2026 15:15:17 GMT
+CMD ["/bin/bash"]
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 07 Apr 2026 01:54:52 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Tue, 07 Apr 2026 01:55:25 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='991be6ac6725e76109ecbd131d658f992dcbeacba3a8b4b6650302c8012b52fb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='1a49cffcb348a28c017cf0deeb9322b7296dbfb002a8e43bd7f65ad671e10eb7';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='02cf763836c14bad4d689eb3b4efd691657de753dba07193cd1fb8691c8fe7b8';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='48f8529714c90c6cc61aa729cf8952f2fc47f2f2890551ba7f9e1c061b04be13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 05:10:00 GMT
+RUN mkdir -p "$CATALINA_HOME" # buildkit
+# Tue, 07 Apr 2026 05:10:00 GMT
+WORKDIR /usr/local/tomcat
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_MAJOR=10
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_VERSION=10.1.54
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_SHA512=8694b94324cf6f62ab032fa2438d7334518dcfcbf7878361b147246c46eb1e558c327f32c05fb4b7705c01fcca92fde392ce320934410f1169ff4ab36a1c7139
+# Tue, 07 Apr 2026 05:10:01 GMT
+COPY /usr/local/tomcat /usr/local/tomcat # buildkit
+# Tue, 07 Apr 2026 05:10:08 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 05:10:09 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
+# Tue, 07 Apr 2026 05:10:09 GMT
+EXPOSE map[8080/tcp:{}]
+# Tue, 07 Apr 2026 05:10:09 GMT
+ENTRYPOINT []
+# Tue, 07 Apr 2026 05:10:09 GMT
+CMD ["catalina.sh" "run"]
+# Thu, 09 Apr 2026 22:24:47 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Thu, 09 Apr 2026 22:24:47 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:24:47 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:24:47 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Thu, 09 Apr 2026 22:24:47 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Thu, 09 Apr 2026 22:24:47 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Thu, 09 Apr 2026 22:24:47 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:25:10 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
+# Thu, 09 Apr 2026 22:25:10 GMT
+ENV MARIADB_JDBC_VERSION=3.5.7
+# Thu, 09 Apr 2026 22:25:10 GMT
+ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
+# Thu, 09 Apr 2026 22:25:10 GMT
+ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
+# Thu, 09 Apr 2026 22:25:10 GMT
+ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
+# Thu, 09 Apr 2026 22:25:10 GMT
+ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
+# Thu, 09 Apr 2026 22:25:10 GMT
+RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
+# Thu, 09 Apr 2026 22:25:10 GMT
+COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
+# Thu, 09 Apr 2026 22:25:10 GMT
+COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
+# Thu, 09 Apr 2026 22:25:10 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
+# Thu, 09 Apr 2026 22:25:10 GMT
+COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Thu, 09 Apr 2026 22:25:10 GMT
+VOLUME [/usr/local/xwiki]
+# Thu, 09 Apr 2026 22:25:10 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 09 Apr 2026 22:25:10 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:76fd055477b6edf8004a5a962edad02a820d4c8b2f02682410edfbe376b418c5`  
+		Last Modified: Fri, 03 Apr 2026 15:56:36 GMT  
+		Size: 28.9 MB (28874075 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bfc1fe49c2f79e04d9e562ce4ee017e874bf7e23feea81b6df6f351ab993d9b5`  
+		Last Modified: Tue, 07 Apr 2026 01:55:07 GMT  
+		Size: 17.0 MB (16996238 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:538e758f95d8493adbf608ecfa760b05bb49d3ceee0f1e637ca69598f3434ea6`  
+		Last Modified: Tue, 07 Apr 2026 01:55:40 GMT  
+		Size: 52.2 MB (52155642 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:80e0252f321812c22ad7139fe93995a4ab816f331d23ab15579dedbc1027f1ca`  
+		Last Modified: Tue, 07 Apr 2026 01:55:39 GMT  
+		Size: 158.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3f199c35f5162fea3c8f07eef1e388cab02e2e3f619c9b2842b8bcd77a768e1e`  
+		Last Modified: Tue, 07 Apr 2026 01:55:39 GMT  
+		Size: 2.3 KB (2281 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:eac5f94c5bcca79f12bddc6c46eb7fa6c04e4e0e9ed03895d1a50ef57c72bb4b`  
+		Last Modified: Tue, 07 Apr 2026 05:10:17 GMT  
+		Size: 138.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:908a696e504aba798cd3c2d7427bb96e96f3b09202e8c8142034cb000c030d62`  
+		Last Modified: Tue, 07 Apr 2026 05:10:18 GMT  
+		Size: 14.3 MB (14303384 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:85f112508064b8beb36c4dfc19b3697a983e5ded489ff63aef3a3905f0f61481`  
+		Last Modified: Tue, 07 Apr 2026 05:10:18 GMT  
+		Size: 225.3 KB (225282 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7138705fc18cbf1f01ce7fa0c86bf7b78199e805cd67f83b34341bed6665e884`  
+		Last Modified: Thu, 09 Apr 2026 22:25:50 GMT  
+		Size: 188.9 MB (188852257 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a93dfb9c13c1a63a280a43be79ea97cec3bf1fd65c1a3262cbe4217ac0631671`  
+		Last Modified: Thu, 09 Apr 2026 22:25:53 GMT  
+		Size: 338.2 MB (338242922 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:74b0ca8ba7114b163b8212d7713b455592e46e72dcc53fc57b668f2c0026af43`  
+		Last Modified: Thu, 09 Apr 2026 22:25:44 GMT  
+		Size: 708.5 KB (708547 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c687fcdd47be17835a04f568f977d2d5d9d4f4b9cb2e06abddbd7fb70c441a5c`  
+		Last Modified: Thu, 09 Apr 2026 22:25:43 GMT  
+		Size: 1.3 KB (1341 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:431f576ce0199d963e945de2258990132b1bdbe4c80f625dc2da12fc9510b550`  
+		Last Modified: Thu, 09 Apr 2026 22:25:45 GMT  
+		Size: 2.3 KB (2308 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b18a97f27a0055c2e0c043f8125c5dcb20e9ffbecd6321951d49acdb2fbba196`  
+		Last Modified: Thu, 09 Apr 2026 22:25:45 GMT  
+		Size: 11.0 KB (10957 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fed36abd95650841f9c5f59e37c081cdf5d2f51dc6f865902ead59c496bf6cd4`  
+		Last Modified: Thu, 09 Apr 2026 22:25:46 GMT  
+		Size: 2.5 KB (2498 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `xwiki:18.2.1-mariadb-tomcat` - unknown; unknown
+
+```console
+$ docker pull xwiki@sha256:8338e29aebd4aaab075bccf3331edba1464b418a0e7452763583a4194eed5d0b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.2 MB (9234445 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:38d76975db5fdb2fd17c82b040962f2272aeb1346178ef759b04b7974f841883`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:468adf1134aa3cc689ac4c31c05cd10c9867661f4f59da4d5656d69bb3e05bfb`  
+		Last Modified: Thu, 09 Apr 2026 22:25:44 GMT  
+		Size: 9.2 MB (9193508 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:9c53c355bf660b3feaeeae74ebc4ec1ff70f14c0a261682e31d054b43392a441`  
+		Last Modified: Thu, 09 Apr 2026 22:25:43 GMT  
+		Size: 40.9 KB (40937 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `xwiki:18.2.1-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull xwiki@sha256:e34d244855e337a293e8a3fd1c9c9c6f1d7ca05a3562110679a673053f282be7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `xwiki:18.2.1-mysql-tomcat` - linux; amd64
+
+```console
+$ docker pull xwiki@sha256:c78871a0bf7d16fe1f40e072a7ff7f2d5cb6b3dd0036c8ce9a07cfbce1ec821c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **646.1 MB (646125877 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6406557bf0308d28e979e04a2cb76517480499088ec1c4b6b9ff17a0682a1d8d`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Fri, 03 Apr 2026 15:16:40 GMT
+ARG RELEASE
+# Fri, 03 Apr 2026 15:16:40 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 03 Apr 2026 15:16:40 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 03 Apr 2026 15:16:42 GMT
+ADD file:0f6466425c4f1800aae9224ddc3437b90c829cea58fb8edd5dde2f1eb0ee28da in / 
+# Fri, 03 Apr 2026 15:16:43 GMT
+CMD ["/bin/bash"]
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 07 Apr 2026 01:51:36 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Tue, 07 Apr 2026 01:52:07 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='991be6ac6725e76109ecbd131d658f992dcbeacba3a8b4b6650302c8012b52fb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='1a49cffcb348a28c017cf0deeb9322b7296dbfb002a8e43bd7f65ad671e10eb7';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='02cf763836c14bad4d689eb3b4efd691657de753dba07193cd1fb8691c8fe7b8';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='48f8529714c90c6cc61aa729cf8952f2fc47f2f2890551ba7f9e1c061b04be13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 03:30:05 GMT
+RUN mkdir -p "$CATALINA_HOME" # buildkit
+# Tue, 07 Apr 2026 03:30:05 GMT
+WORKDIR /usr/local/tomcat
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_MAJOR=10
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_VERSION=10.1.54
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_SHA512=8694b94324cf6f62ab032fa2438d7334518dcfcbf7878361b147246c46eb1e558c327f32c05fb4b7705c01fcca92fde392ce320934410f1169ff4ab36a1c7139
+# Tue, 07 Apr 2026 03:30:30 GMT
+COPY /usr/local/tomcat /usr/local/tomcat # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+EXPOSE map[8080/tcp:{}]
+# Tue, 07 Apr 2026 03:30:37 GMT
+ENTRYPOINT []
+# Tue, 07 Apr 2026 03:30:37 GMT
+CMD ["catalina.sh" "run"]
+# Thu, 09 Apr 2026 22:23:03 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Thu, 09 Apr 2026 22:23:03 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:23:03 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:23:03 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Thu, 09 Apr 2026 22:23:03 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Thu, 09 Apr 2026 22:23:03 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:32 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
+# Thu, 09 Apr 2026 22:23:32 GMT
+ENV MYSQL_JDBC_VERSION=9.6.0
+# Thu, 09 Apr 2026 22:23:32 GMT
+ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
+# Thu, 09 Apr 2026 22:23:32 GMT
+ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
+# Thu, 09 Apr 2026 22:23:32 GMT
+ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
+# Thu, 09 Apr 2026 22:23:32 GMT
+ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
+# Thu, 09 Apr 2026 22:23:32 GMT
+RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
+# Thu, 09 Apr 2026 22:23:32 GMT
+COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
+# Thu, 09 Apr 2026 22:23:32 GMT
+COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
+# Thu, 09 Apr 2026 22:23:32 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
+# Thu, 09 Apr 2026 22:23:32 GMT
+COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Thu, 09 Apr 2026 22:23:32 GMT
+VOLUME [/usr/local/xwiki]
+# Thu, 09 Apr 2026 22:23:32 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 09 Apr 2026 22:23:32 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:689b91d88a0f4086057ec826027b128902ecf2b516be510371c115bc55da19a6`  
+		Last Modified: Fri, 03 Apr 2026 15:56:29 GMT  
+		Size: 29.7 MB (29733459 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3b68b8ef47fdb988fb4023edbb2a8d6a19ba659a4921fc9f25c496fe28ae1ef1`  
+		Last Modified: Tue, 07 Apr 2026 01:51:50 GMT  
+		Size: 17.0 MB (16983568 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e2c9370ed7c35a22ef566a4d1ee7eb152dc6f37abe64e4fc7df70647fa0499dc`  
+		Last Modified: Tue, 07 Apr 2026 01:52:20 GMT  
+		Size: 53.0 MB (52985505 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:75ef302449c04c900de9660d789c58e12374e181f0204d02016bf10d05a2ea02`  
+		Last Modified: Tue, 07 Apr 2026 01:52:19 GMT  
+		Size: 158.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9425bf26e9ee5e1bdec0dd158e59f754d3f4b3866a00a320bf3dafdf1a133d42`  
+		Last Modified: Tue, 07 Apr 2026 01:52:19 GMT  
+		Size: 2.3 KB (2283 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:54c9795ba8e7d43886e47c9f28f417b2ad6594c5ba4081bd0f3079a1a17c92b3`  
+		Last Modified: Tue, 07 Apr 2026 03:30:23 GMT  
+		Size: 137.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:415216d03967c36779ab9218ed04e2d48721c138ee3007af7305157c05d21243`  
+		Last Modified: Tue, 07 Apr 2026 03:30:45 GMT  
+		Size: 14.3 MB (14301303 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:298a021259cbe800fc2783c266cf2edbfe485bf898fa08ccf32f52653362586a`  
+		Last Modified: Tue, 07 Apr 2026 03:30:45 GMT  
+		Size: 224.9 KB (224915 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2b305e1c2488d50848542df06a11b2c47d49a87d3ec354e04e9e1ace645c49e4`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 191.2 MB (191192649 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c989f480dbd63e04392ecc6a05de2a97b49456792c75ff0d2ebb676f4daf8d5e`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 338.2 MB (338242976 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b3f1096b4eda79d85114e9da549d1e396230b84ce90bb16c77a097cf157f1c7a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
+		Size: 2.4 MB (2441658 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1285445a43c468abea58a1c806ffa6ec3a224f7ee32f6d3f4775942be8a3eaeb`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
+		Size: 1.3 KB (1342 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aef7e2f0c8b7f3c40738dc44ee9fab5802418f039644091519daa3a37a8d6e63`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 2.4 KB (2372 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6d21b77d6334f8e7926197ef07fc07a8d0ba0c84bb9aaa39c5fd8b8361933759`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 11.0 KB (10954 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fa85729b9e9053f46b2cf1db9a539eb44158a8c78ab2f13a97bbec2c4810be94`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 2.5 KB (2534 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `xwiki:18.2.1-mysql-tomcat` - unknown; unknown
+
+```console
+$ docker pull xwiki@sha256:30583db40bd8f611165188914f63a1209569a8c17f3e3bc42e15a257c9bcbfd3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.2 MB (9236373 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:09c400510f16489e44fa4bf5bb6968ea4c09adda015f621c481e686dd8bda87c`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:4bfb239f58493ab019ded0392c0c37dfdd8c6f9422f2bca449be288e0f692bb7`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
+		Size: 9.2 MB (9194270 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:f68ab56c6a66bc015d367b8ca90d0bab6fe451699cac85865b3c269e6b592162`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
+		Size: 42.1 KB (42103 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `xwiki:18.2.1-mysql-tomcat` - linux; arm64 variant v8
+
+```console
+$ docker pull xwiki@sha256:5743ff5135b40fa2e98c72788136cc5959c25ebc6e0ef3a625d224ddd5bf234a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **642.1 MB (642111569 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5e507c5582a3316b2935f16a6bc57950a2bec015ceaec05dce62b34fc02d7bbb`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Fri, 03 Apr 2026 15:15:14 GMT
+ARG RELEASE
+# Fri, 03 Apr 2026 15:15:14 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 03 Apr 2026 15:15:14 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 03 Apr 2026 15:15:17 GMT
+ADD file:9bab986009eae65b5534b3547eb3a7d0a1564404426de350dfd183cf3a4ffa9f in / 
+# Fri, 03 Apr 2026 15:15:17 GMT
+CMD ["/bin/bash"]
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 07 Apr 2026 01:54:52 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Tue, 07 Apr 2026 01:55:25 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='991be6ac6725e76109ecbd131d658f992dcbeacba3a8b4b6650302c8012b52fb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='1a49cffcb348a28c017cf0deeb9322b7296dbfb002a8e43bd7f65ad671e10eb7';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='02cf763836c14bad4d689eb3b4efd691657de753dba07193cd1fb8691c8fe7b8';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='48f8529714c90c6cc61aa729cf8952f2fc47f2f2890551ba7f9e1c061b04be13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 05:10:00 GMT
+RUN mkdir -p "$CATALINA_HOME" # buildkit
+# Tue, 07 Apr 2026 05:10:00 GMT
+WORKDIR /usr/local/tomcat
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_MAJOR=10
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_VERSION=10.1.54
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_SHA512=8694b94324cf6f62ab032fa2438d7334518dcfcbf7878361b147246c46eb1e558c327f32c05fb4b7705c01fcca92fde392ce320934410f1169ff4ab36a1c7139
+# Tue, 07 Apr 2026 05:10:01 GMT
+COPY /usr/local/tomcat /usr/local/tomcat # buildkit
+# Tue, 07 Apr 2026 05:10:08 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 05:10:09 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
+# Tue, 07 Apr 2026 05:10:09 GMT
+EXPOSE map[8080/tcp:{}]
+# Tue, 07 Apr 2026 05:10:09 GMT
+ENTRYPOINT []
+# Tue, 07 Apr 2026 05:10:09 GMT
+CMD ["catalina.sh" "run"]
+# Thu, 09 Apr 2026 22:24:24 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Thu, 09 Apr 2026 22:24:24 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:24:24 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:24:24 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Thu, 09 Apr 2026 22:24:24 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Thu, 09 Apr 2026 22:24:24 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:24:46 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
+# Thu, 09 Apr 2026 22:24:46 GMT
+ENV MYSQL_JDBC_VERSION=9.6.0
+# Thu, 09 Apr 2026 22:24:46 GMT
+ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
+# Thu, 09 Apr 2026 22:24:46 GMT
+ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
+# Thu, 09 Apr 2026 22:24:46 GMT
+ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
+# Thu, 09 Apr 2026 22:24:46 GMT
+ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
+# Thu, 09 Apr 2026 22:24:46 GMT
+RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
+# Thu, 09 Apr 2026 22:24:47 GMT
+COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
+# Thu, 09 Apr 2026 22:24:47 GMT
+COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
+# Thu, 09 Apr 2026 22:24:47 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
+# Thu, 09 Apr 2026 22:24:47 GMT
+COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Thu, 09 Apr 2026 22:24:47 GMT
+VOLUME [/usr/local/xwiki]
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 09 Apr 2026 22:24:47 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:76fd055477b6edf8004a5a962edad02a820d4c8b2f02682410edfbe376b418c5`  
+		Last Modified: Fri, 03 Apr 2026 15:56:36 GMT  
+		Size: 28.9 MB (28874075 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bfc1fe49c2f79e04d9e562ce4ee017e874bf7e23feea81b6df6f351ab993d9b5`  
+		Last Modified: Tue, 07 Apr 2026 01:55:07 GMT  
+		Size: 17.0 MB (16996238 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:538e758f95d8493adbf608ecfa760b05bb49d3ceee0f1e637ca69598f3434ea6`  
+		Last Modified: Tue, 07 Apr 2026 01:55:40 GMT  
+		Size: 52.2 MB (52155642 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:80e0252f321812c22ad7139fe93995a4ab816f331d23ab15579dedbc1027f1ca`  
+		Last Modified: Tue, 07 Apr 2026 01:55:39 GMT  
+		Size: 158.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3f199c35f5162fea3c8f07eef1e388cab02e2e3f619c9b2842b8bcd77a768e1e`  
+		Last Modified: Tue, 07 Apr 2026 01:55:39 GMT  
+		Size: 2.3 KB (2281 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:eac5f94c5bcca79f12bddc6c46eb7fa6c04e4e0e9ed03895d1a50ef57c72bb4b`  
+		Last Modified: Tue, 07 Apr 2026 05:10:17 GMT  
+		Size: 138.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:908a696e504aba798cd3c2d7427bb96e96f3b09202e8c8142034cb000c030d62`  
+		Last Modified: Tue, 07 Apr 2026 05:10:18 GMT  
+		Size: 14.3 MB (14303384 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:85f112508064b8beb36c4dfc19b3697a983e5ded489ff63aef3a3905f0f61481`  
+		Last Modified: Tue, 07 Apr 2026 05:10:18 GMT  
+		Size: 225.3 KB (225282 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:385002331e92f8053b9f9da0d27c4a33cc31c35278d007c4b163b256b9ab956e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:27 GMT  
+		Size: 188.9 MB (188852491 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d96a35bd4a0b81964a36a8356db49767dc7d96c8a10104ba8675dbb1870d26ff`  
+		Last Modified: Thu, 09 Apr 2026 22:25:29 GMT  
+		Size: 338.2 MB (338242967 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:48f004652cfc4ee3fc9e225e525c85f669812ff5fde7051aa1ac0e8fdc4e4233`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
+		Size: 2.4 MB (2441657 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:71760da9ba226c177adc275892b984843162f99939cec79601c975c5690ef925`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
+		Size: 1.3 KB (1339 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:becf68ad406751339a93d048b5ac2d81675607f41c8a6c7711192dba36f900d2`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 2.4 KB (2369 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ea783563aa9d98b684f22281bf8ba9278d4649371e770a41d4eafa1a67a91d1e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 10.9 KB (10950 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3516759391fd63764d150447c5971edee81db0f23d2276c4a519207102a27d6f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:23 GMT  
+		Size: 2.5 KB (2534 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `xwiki:18.2.1-mysql-tomcat` - unknown; unknown
+
+```console
+$ docker pull xwiki@sha256:4d2aa706f8794883b2cd9931ffdd5495a6320f4f45f18d014fe987375bdad20c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.2 MB (9237419 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:33e54e27c87d03ef1a7ebd00f1e4e5b992aa1ec7499b186450d0d024bc8d4137`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:a6a891dd772b4c7bed5db4a7012e38e688345f2cb29e8f6284cb61ad88982f6a`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
+		Size: 9.2 MB (9195083 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:bc5a595378ceebc1723088e0ca439063e80ee26f58248ffac75146b8f6d409f9`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
+		Size: 42.3 KB (42336 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `xwiki:18.2.1-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull xwiki@sha256:a0e045d953be6c583b90ff4c988a9b60122c825d318e3dee9aa033e12746fea4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `xwiki:18.2.1-postgres-tomcat` - linux; amd64
+
+```console
+$ docker pull xwiki@sha256:d2cbe99724d64df219ff5189bca9526d9e34bf74372cc6893af310ac37e4e9a9
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **644.7 MB (644745744 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:47c5e517d5084ef2cfcbdc8d781e5a3ecef00d4fbcc3f6a558b0161d7e16b771`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Fri, 03 Apr 2026 15:16:40 GMT
+ARG RELEASE
+# Fri, 03 Apr 2026 15:16:40 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 03 Apr 2026 15:16:40 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 03 Apr 2026 15:16:42 GMT
+ADD file:0f6466425c4f1800aae9224ddc3437b90c829cea58fb8edd5dde2f1eb0ee28da in / 
+# Fri, 03 Apr 2026 15:16:43 GMT
+CMD ["/bin/bash"]
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 07 Apr 2026 01:51:36 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 01:51:36 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Tue, 07 Apr 2026 01:52:07 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='991be6ac6725e76109ecbd131d658f992dcbeacba3a8b4b6650302c8012b52fb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='1a49cffcb348a28c017cf0deeb9322b7296dbfb002a8e43bd7f65ad671e10eb7';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='02cf763836c14bad4d689eb3b4efd691657de753dba07193cd1fb8691c8fe7b8';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='48f8529714c90c6cc61aa729cf8952f2fc47f2f2890551ba7f9e1c061b04be13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 07 Apr 2026 01:52:07 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 03:30:05 GMT
+RUN mkdir -p "$CATALINA_HOME" # buildkit
+# Tue, 07 Apr 2026 03:30:05 GMT
+WORKDIR /usr/local/tomcat
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_MAJOR=10
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_VERSION=10.1.54
+# Tue, 07 Apr 2026 03:30:05 GMT
+ENV TOMCAT_SHA512=8694b94324cf6f62ab032fa2438d7334518dcfcbf7878361b147246c46eb1e558c327f32c05fb4b7705c01fcca92fde392ce320934410f1169ff4ab36a1c7139
+# Tue, 07 Apr 2026 03:30:30 GMT
+COPY /usr/local/tomcat /usr/local/tomcat # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
+# Tue, 07 Apr 2026 03:30:37 GMT
+EXPOSE map[8080/tcp:{}]
+# Tue, 07 Apr 2026 03:30:37 GMT
+ENTRYPOINT []
+# Tue, 07 Apr 2026 03:30:37 GMT
+CMD ["catalina.sh" "run"]
+# Thu, 09 Apr 2026 22:23:04 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Thu, 09 Apr 2026 22:23:04 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:23:04 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:23:04 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Thu, 09 Apr 2026 22:23:04 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Thu, 09 Apr 2026 22:23:04 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Thu, 09 Apr 2026 22:23:04 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Apr 2026 22:23:04 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:04 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:04 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:25 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
+# Thu, 09 Apr 2026 22:23:25 GMT
+ENV POSTGRES_JDBC_VERSION=42.7.10
+# Thu, 09 Apr 2026 22:23:25 GMT
+ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
+# Thu, 09 Apr 2026 22:23:25 GMT
+ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
+# Thu, 09 Apr 2026 22:23:25 GMT
+ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
+# Thu, 09 Apr 2026 22:23:25 GMT
+ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
+# Thu, 09 Apr 2026 22:23:25 GMT
+RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
+# Thu, 09 Apr 2026 22:23:25 GMT
+COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
+# Thu, 09 Apr 2026 22:23:25 GMT
+COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
+# Thu, 09 Apr 2026 22:23:25 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
+# Thu, 09 Apr 2026 22:23:25 GMT
+COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Thu, 09 Apr 2026 22:23:25 GMT
+VOLUME [/usr/local/xwiki]
+# Thu, 09 Apr 2026 22:23:25 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 09 Apr 2026 22:23:25 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:689b91d88a0f4086057ec826027b128902ecf2b516be510371c115bc55da19a6`  
+		Last Modified: Fri, 03 Apr 2026 15:56:29 GMT  
+		Size: 29.7 MB (29733459 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3b68b8ef47fdb988fb4023edbb2a8d6a19ba659a4921fc9f25c496fe28ae1ef1`  
+		Last Modified: Tue, 07 Apr 2026 01:51:50 GMT  
+		Size: 17.0 MB (16983568 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e2c9370ed7c35a22ef566a4d1ee7eb152dc6f37abe64e4fc7df70647fa0499dc`  
+		Last Modified: Tue, 07 Apr 2026 01:52:20 GMT  
+		Size: 53.0 MB (52985505 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:75ef302449c04c900de9660d789c58e12374e181f0204d02016bf10d05a2ea02`  
+		Last Modified: Tue, 07 Apr 2026 01:52:19 GMT  
+		Size: 158.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9425bf26e9ee5e1bdec0dd158e59f754d3f4b3866a00a320bf3dafdf1a133d42`  
+		Last Modified: Tue, 07 Apr 2026 01:52:19 GMT  
+		Size: 2.3 KB (2283 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:54c9795ba8e7d43886e47c9f28f417b2ad6594c5ba4081bd0f3079a1a17c92b3`  
+		Last Modified: Tue, 07 Apr 2026 03:30:23 GMT  
+		Size: 137.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:415216d03967c36779ab9218ed04e2d48721c138ee3007af7305157c05d21243`  
+		Last Modified: Tue, 07 Apr 2026 03:30:45 GMT  
+		Size: 14.3 MB (14301303 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:298a021259cbe800fc2783c266cf2edbfe485bf898fa08ccf32f52653362586a`  
+		Last Modified: Tue, 07 Apr 2026 03:30:45 GMT  
+		Size: 224.9 KB (224915 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ab6685658399dffbc8f6656ffe1ebd1fdfcc6699d77fa36fec74ffbefc7d7b54`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 191.2 MB (191192591 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c989f480dbd63e04392ecc6a05de2a97b49456792c75ff0d2ebb676f4daf8d5e`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 338.2 MB (338242976 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:69d977e52ab4cba7bd0877fc512509281eccfd9fc216abed6e776e2c3427fd81`  
+		Last Modified: Thu, 09 Apr 2026 22:23:58 GMT  
+		Size: 1.1 MB (1061588 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5f8e780bd2266349061f00ece7007c226289167843e7b406db8b195be74a0f3c`  
+		Last Modified: Thu, 09 Apr 2026 22:23:58 GMT  
+		Size: 1.3 KB (1342 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2c7466b32f0bb173d36cedee71c9c5da416ab1247b55db117ba72453b649fab3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:00 GMT  
+		Size: 2.5 KB (2460 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:da88dc9ce3cc8fee0892d033c043fa15935f551fd51d7f659fc24cf3769d9f50`  
+		Last Modified: Thu, 09 Apr 2026 22:24:00 GMT  
+		Size: 11.0 KB (10953 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c5e385eb876c8cb883fe04a886066fef4e0b3729f58e5fcd976e5aa596b9b619`  
+		Last Modified: Thu, 09 Apr 2026 22:24:01 GMT  
+		Size: 2.4 KB (2442 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `xwiki:18.2.1-postgres-tomcat` - unknown; unknown
+
+```console
+$ docker pull xwiki@sha256:7261816e696033c1b72f3a0484dd25c9976d88d8b5e834094d24382df6385dfa
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.2 MB (9233523 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b5b184fcf3dd33956004d47268444ff9b69b9de44ab0602806e6171f9fb20f18`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:6c881a2eb8c3f7e6688f55d447518decbb5c845e6fa17ec2588cfe2761cd45ac`  
+		Last Modified: Thu, 09 Apr 2026 22:23:59 GMT  
+		Size: 9.2 MB (9192775 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:3a1d74de71ef8a2df0ae58502c4fcd3e7f9ddce4c8451cff5264b15593430a4b`  
+		Last Modified: Thu, 09 Apr 2026 22:23:58 GMT  
+		Size: 40.7 KB (40748 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `xwiki:18.2.1-postgres-tomcat` - linux; arm64 variant v8
+
+```console
+$ docker pull xwiki@sha256:6a89cf110097a4b1112b5cfc7c7a1ba47071555b98cb3ef20cd56f868199aafb
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **640.7 MB (640731414 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:27222df73402ea4a2139f143c97b06161b76cb82e3681ee4dfc5735e302ef33c`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["xwiki"]`
+
+```dockerfile
+# Fri, 03 Apr 2026 15:15:14 GMT
+ARG RELEASE
+# Fri, 03 Apr 2026 15:15:14 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 03 Apr 2026 15:15:14 GMT
+LABEL org.opencontainers.image.version=24.04
+# Fri, 03 Apr 2026 15:15:17 GMT
+ADD file:9bab986009eae65b5534b3547eb3a7d0a1564404426de350dfd183cf3a4ffa9f in / 
+# Fri, 03 Apr 2026 15:15:17 GMT
+CMD ["/bin/bash"]
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Tue, 07 Apr 2026 01:54:52 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 01:54:52 GMT
+ENV JAVA_VERSION=jdk-21.0.10+7
+# Tue, 07 Apr 2026 01:55:25 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='991be6ac6725e76109ecbd131d658f992dcbeacba3a8b4b6650302c8012b52fb';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.10_7.tar.gz';          ;;        arm64)          ESUM='3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz';          ;;        ppc64el)          ESUM='1a49cffcb348a28c017cf0deeb9322b7296dbfb002a8e43bd7f65ad671e10eb7';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.10_7.tar.gz';          ;;        riscv64)          ESUM='02cf763836c14bad4d689eb3b4efd691657de753dba07193cd1fb8691c8fe7b8';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.10_7.tar.gz';          ;;        s390x)          ESUM='48f8529714c90c6cc61aa729cf8952f2fc47f2f2890551ba7f9e1c061b04be13';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.10_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Tue, 07 Apr 2026 01:55:26 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV CATALINA_HOME=/usr/local/tomcat
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 07 Apr 2026 05:10:00 GMT
+RUN mkdir -p "$CATALINA_HOME" # buildkit
+# Tue, 07 Apr 2026 05:10:00 GMT
+WORKDIR /usr/local/tomcat
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_MAJOR=10
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_VERSION=10.1.54
+# Tue, 07 Apr 2026 05:10:00 GMT
+ENV TOMCAT_SHA512=8694b94324cf6f62ab032fa2438d7334518dcfcbf7878361b147246c46eb1e558c327f32c05fb4b7705c01fcca92fde392ce320934410f1169ff4ab36a1c7139
+# Tue, 07 Apr 2026 05:10:01 GMT
+COPY /usr/local/tomcat /usr/local/tomcat # buildkit
+# Tue, 07 Apr 2026 05:10:08 GMT
+RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 07 Apr 2026 05:10:09 GMT
+RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
+# Tue, 07 Apr 2026 05:10:09 GMT
+EXPOSE map[8080/tcp:{}]
+# Tue, 07 Apr 2026 05:10:09 GMT
+ENTRYPOINT []
+# Tue, 07 Apr 2026 05:10:09 GMT
+CMD ["catalina.sh" "run"]
+# Thu, 09 Apr 2026 22:24:30 GMT
+LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
+# Thu, 09 Apr 2026 22:24:30 GMT
+LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:24:30 GMT
+LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
+# Thu, 09 Apr 2026 22:24:30 GMT
+LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
+# Thu, 09 Apr 2026 22:24:30 GMT
+LABEL org.opencontainers.image.vendor=xwiki.org
+# Thu, 09 Apr 2026 22:24:30 GMT
+LABEL org.opencontainers.image.licenses=LGPL-2.1
+# Thu, 09 Apr 2026 22:24:30 GMT
+RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Apr 2026 22:24:30 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:30 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:30 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:25:01 GMT
+RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV POSTGRES_JDBC_VERSION=42.7.10
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
+# Thu, 09 Apr 2026 22:25:01 GMT
+RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
+# Thu, 09 Apr 2026 22:25:01 GMT
+COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
+# Thu, 09 Apr 2026 22:25:01 GMT
+COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
+# Thu, 09 Apr 2026 22:25:01 GMT
+RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
+# Thu, 09 Apr 2026 22:25:01 GMT
+COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Thu, 09 Apr 2026 22:25:01 GMT
+VOLUME [/usr/local/xwiki]
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 09 Apr 2026 22:25:01 GMT
+CMD ["xwiki"]
+```
+
+-	Layers:
+	-	`sha256:76fd055477b6edf8004a5a962edad02a820d4c8b2f02682410edfbe376b418c5`  
+		Last Modified: Fri, 03 Apr 2026 15:56:36 GMT  
+		Size: 28.9 MB (28874075 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bfc1fe49c2f79e04d9e562ce4ee017e874bf7e23feea81b6df6f351ab993d9b5`  
+		Last Modified: Tue, 07 Apr 2026 01:55:07 GMT  
+		Size: 17.0 MB (16996238 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:538e758f95d8493adbf608ecfa760b05bb49d3ceee0f1e637ca69598f3434ea6`  
+		Last Modified: Tue, 07 Apr 2026 01:55:40 GMT  
+		Size: 52.2 MB (52155642 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:80e0252f321812c22ad7139fe93995a4ab816f331d23ab15579dedbc1027f1ca`  
+		Last Modified: Tue, 07 Apr 2026 01:55:39 GMT  
+		Size: 158.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3f199c35f5162fea3c8f07eef1e388cab02e2e3f619c9b2842b8bcd77a768e1e`  
+		Last Modified: Tue, 07 Apr 2026 01:55:39 GMT  
+		Size: 2.3 KB (2281 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:eac5f94c5bcca79f12bddc6c46eb7fa6c04e4e0e9ed03895d1a50ef57c72bb4b`  
+		Last Modified: Tue, 07 Apr 2026 05:10:17 GMT  
+		Size: 138.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:908a696e504aba798cd3c2d7427bb96e96f3b09202e8c8142034cb000c030d62`  
+		Last Modified: Tue, 07 Apr 2026 05:10:18 GMT  
+		Size: 14.3 MB (14303384 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:85f112508064b8beb36c4dfc19b3697a983e5ded489ff63aef3a3905f0f61481`  
+		Last Modified: Tue, 07 Apr 2026 05:10:18 GMT  
+		Size: 225.3 KB (225282 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:91e4ba2406ca17d92518a9c8fed78922587ccdaed82a817003b3a6a7a2630415`  
+		Last Modified: Thu, 09 Apr 2026 22:25:41 GMT  
+		Size: 188.9 MB (188852239 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ed48fd32fa977664a9efae1c399214cfb95d56e6704a9427b29fbb504e4c4512`  
+		Last Modified: Thu, 09 Apr 2026 22:25:43 GMT  
+		Size: 338.2 MB (338243125 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0a72878e1ceec4717b64831232e4483e4d2971324205b6ef54c1b1ed17705679`  
+		Last Modified: Thu, 09 Apr 2026 22:25:34 GMT  
+		Size: 1.1 MB (1061591 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:34cb4092a53be364a54edb4e5e4b46840eebca3a4cd6a0c15ef67fc442b4fd32`  
+		Last Modified: Thu, 09 Apr 2026 22:25:34 GMT  
+		Size: 1.3 KB (1341 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6f91579b573491d279efff4290f1cdee81295fdac0dbc76a08b81920f672884f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:35 GMT  
+		Size: 2.5 KB (2463 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:46e4b141c31a2f4b521111a0fa2c360d96424b65989b910cd76805940c3cc410`  
+		Last Modified: Thu, 09 Apr 2026 22:25:35 GMT  
+		Size: 11.0 KB (10952 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ecd716ce84b4394d7cdd6c69a53d61b45d0efff4cabb7da722434ba543e48a34`  
+		Last Modified: Thu, 09 Apr 2026 22:25:36 GMT  
+		Size: 2.4 KB (2441 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `xwiki:18.2.1-postgres-tomcat` - unknown; unknown
+
+```console
+$ docker pull xwiki@sha256:efbef603fc75fbb6a94b05d0ac6cdb0cc621cf8072cbe0cc94735d35b0fb2e84
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **9.2 MB (9234450 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:97876a24c85611944f8841c97128dcfa49fe09c3f4f66c6dd4c83b183cee897f`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:8148f070bd5ebea9555d2e9f95434581bd8d772a937e398f9a738297bfe6dad2`  
+		Last Modified: Thu, 09 Apr 2026 22:25:34 GMT  
+		Size: 9.2 MB (9193528 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:d198ff4680d5dbf674e8254ef7a3552d1f9f16db4998966bd10050c6bd542658`  
+		Last Modified: Thu, 09 Apr 2026 22:25:33 GMT  
+		Size: 40.9 KB (40922 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `xwiki:latest`
 
 ```console
-$ docker pull xwiki@sha256:f00f1d09f8e34b344ea500a281434f619e8b087265d6111b7e9392b77d04cad0
+$ docker pull xwiki@sha256:e34d244855e337a293e8a3fd1c9c9c6f1d7ca05a3562110679a673053f282be7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7253,13 +10741,13 @@ $ docker pull xwiki@sha256:f00f1d09f8e34b344ea500a281434f619e8b087265d6111b7e939
 ### `xwiki:latest` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ddeea30098567cf1855bb0036d8a031c9be52cc1b94daa5e323f67cf944a5a5a
+$ docker pull xwiki@sha256:c78871a0bf7d16fe1f40e072a7ff7f2d5cb6b3dd0036c8ce9a07cfbce1ec821c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **646.1 MB (646125676 bytes)**  
+-	Total Size: **646.1 MB (646125877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:067ca4042eb2c7f7e3153a0205f7fccb387be2be3bd23215f7fde59d2eebefe5`
+-	Image ID: `sha256:6406557bf0308d28e979e04a2cb76517480499088ec1c4b6b9ff17a0682a1d8d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -7322,53 +10810,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 CMD ["xwiki"]
 ```
 
@@ -7413,69 +10901,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84c2a7b89a6376bc596249e7437e541ca07ed8ae6d2399a0a35f8b33b055a5c7`  
-		Last Modified: Tue, 07 Apr 2026 05:04:31 GMT  
-		Size: 191.2 MB (191192504 bytes)  
+	-	`sha256:2b305e1c2488d50848542df06a11b2c47d49a87d3ec354e04e9e1ace645c49e4`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 191.2 MB (191192649 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac76300df4bb9eb1bc756187aeb83e9f64d0f50fe318744de25b0b7a4a32ecc2`  
-		Last Modified: Tue, 07 Apr 2026 05:04:34 GMT  
-		Size: 338.2 MB (338242922 bytes)  
+	-	`sha256:c989f480dbd63e04392ecc6a05de2a97b49456792c75ff0d2ebb676f4daf8d5e`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 338.2 MB (338242976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66cf85f76a0aecef7c91c9c914f207a2f18d962c1c187c53c416ec6406783463`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
-		Size: 2.4 MB (2441661 bytes)  
+	-	`sha256:b3f1096b4eda79d85114e9da549d1e396230b84ce90bb16c77a097cf157f1c7a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
+		Size: 2.4 MB (2441658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d31fde62cff123bdaa705a7110c1d3080e52797d4050ef65953dd7ae860ad501`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
-		Size: 1.3 KB (1339 bytes)  
+	-	`sha256:1285445a43c468abea58a1c806ffa6ec3a224f7ee32f6d3f4775942be8a3eaeb`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
+		Size: 1.3 KB (1342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d2adc64c4ec3ba7bf5e9ea90dc35e854a734bf58ab8199aebad3dda34adef7d`  
-		Last Modified: Tue, 07 Apr 2026 05:04:26 GMT  
-		Size: 2.4 KB (2370 bytes)  
+	-	`sha256:aef7e2f0c8b7f3c40738dc44ee9fab5802418f039644091519daa3a37a8d6e63`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 2.4 KB (2372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2572fbf1adbf47a387e78d99fe3c6c282f971686c7b1ac516c64b0f5aa901a9`  
-		Last Modified: Tue, 07 Apr 2026 05:04:27 GMT  
-		Size: 11.0 KB (10952 bytes)  
+	-	`sha256:6d21b77d6334f8e7926197ef07fc07a8d0ba0c84bb9aaa39c5fd8b8361933759`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 11.0 KB (10954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15a6b9da4b9b81fead5cbedd9dcf298f995dd373606b5401dba5b3a6fa37feab`  
-		Last Modified: Tue, 07 Apr 2026 05:04:28 GMT  
-		Size: 2.5 KB (2536 bytes)  
+	-	`sha256:fa85729b9e9053f46b2cf1db9a539eb44158a8c78ab2f13a97bbec2c4810be94`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:latest` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:d6b5893227864e4a79ff6a47535d95e0b49c2f0820e96953a175486f86ae30bd
+$ docker pull xwiki@sha256:30583db40bd8f611165188914f63a1209569a8c17f3e3bc42e15a257c9bcbfd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9236373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5107a10e24ba67b10be339eac19ac49c9ceb5e4d68d2d60f3f0117208bb9dcfb`
+-	Image ID: `sha256:09c400510f16489e44fa4bf5bb6968ea4c09adda015f621c481e686dd8bda87c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7a635a48871515a031d18bf24cccb1b8aa34d30dd12f95017dd079cb962294c`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
+	-	`sha256:4bfb239f58493ab019ded0392c0c37dfdd8c6f9422f2bca449be288e0f692bb7`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
 		Size: 9.2 MB (9194270 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df788f52be495941f548ca56aec65cc098e102aaf2cf30c56924ddf7fef86713`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
+	-	`sha256:f68ab56c6a66bc015d367b8ca90d0bab6fe451699cac85865b3c269e6b592162`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
 		Size: 42.1 KB (42103 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:f184cc91ffa74d22de687083391731e7468aa4d0150a4e72258a29e8c80566b7
+$ docker pull xwiki@sha256:5743ff5135b40fa2e98c72788136cc5959c25ebc6e0ef3a625d224ddd5bf234a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **642.1 MB (642111188 bytes)**  
+-	Total Size: **642.1 MB (642111569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f3e7d85d600c714b3bec5d230f23beea45c0b9cc6d4fbf2ff48bc985889bd87`
+-	Image ID: `sha256:5e507c5582a3316b2935f16a6bc57950a2bec015ceaec05dce62b34fc02d7bbb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -7538,53 +11026,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:24:46 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 CMD ["xwiki"]
 ```
 
@@ -7629,63 +11117,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e369b2bd065e4b6e847999856d6ea1c99ea3f835edf51132c7f2d2623b59ac08`  
-		Last Modified: Tue, 07 Apr 2026 05:25:49 GMT  
-		Size: 188.9 MB (188852229 bytes)  
+	-	`sha256:385002331e92f8053b9f9da0d27c4a33cc31c35278d007c4b163b256b9ab956e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:27 GMT  
+		Size: 188.9 MB (188852491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d8d5f8c3dbc774444f3c8d71dcba7112ca2fd8d77d6e7f6338ad24aaccbb430`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 338.2 MB (338242839 bytes)  
+	-	`sha256:d96a35bd4a0b81964a36a8356db49767dc7d96c8a10104ba8675dbb1870d26ff`  
+		Last Modified: Thu, 09 Apr 2026 22:25:29 GMT  
+		Size: 338.2 MB (338242967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc58ca5bc4a630f88922701f4f96efe54d0c7086143102f0fa4828b15aab5ffd`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 2.4 MB (2441660 bytes)  
+	-	`sha256:48f004652cfc4ee3fc9e225e525c85f669812ff5fde7051aa1ac0e8fdc4e4233`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
+		Size: 2.4 MB (2441657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd0143f6588623dc5b51f26f8aff50dc77ffd127d85b2c27e26ca206c34786e1`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 1.3 KB (1341 bytes)  
+	-	`sha256:71760da9ba226c177adc275892b984843162f99939cec79601c975c5690ef925`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
+		Size: 1.3 KB (1339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f557c11f5c67c99a855e1583289a0717b46989e7705facd64a4a06d4b73837e4`  
-		Last Modified: Tue, 07 Apr 2026 05:25:43 GMT  
-		Size: 2.4 KB (2371 bytes)  
+	-	`sha256:becf68ad406751339a93d048b5ac2d81675607f41c8a6c7711192dba36f900d2`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 2.4 KB (2369 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e910fceeadacfcf00dc91eb4821226e1b7d8032cbbbbf848a0d525c2864774`  
-		Last Modified: Tue, 07 Apr 2026 05:25:44 GMT  
-		Size: 11.0 KB (10951 bytes)  
+	-	`sha256:ea783563aa9d98b684f22281bf8ba9278d4649371e770a41d4eafa1a67a91d1e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 10.9 KB (10950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73f57b949906c2385790e59738d264d4a7bcb9077c81f8b2236407f25f78d69d`  
-		Last Modified: Tue, 07 Apr 2026 05:25:45 GMT  
-		Size: 2.5 KB (2535 bytes)  
+	-	`sha256:3516759391fd63764d150447c5971edee81db0f23d2276c4a519207102a27d6f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:23 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:latest` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:784f68c3786c5855bd4bd5639ee209c47a677135df9486bd291b62be85bfc2ef
+$ docker pull xwiki@sha256:4d2aa706f8794883b2cd9931ffdd5495a6320f4f45f18d014fe987375bdad20c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9237419 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80b76ec51eb373beb748d124e7ad2830a1c84d50beab79095e34d9166b32a584`
+-	Image ID: `sha256:33e54e27c87d03ef1a7ebd00f1e4e5b992aa1ec7499b186450d0d024bc8d4137`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca931a3ed97a89df87b19da35c3fcbe8d8d1d4e291efb6854e776550fac71c09`  
-		Last Modified: Tue, 07 Apr 2026 05:25:43 GMT  
+	-	`sha256:a6a891dd772b4c7bed5db4a7012e38e688345f2cb29e8f6284cb61ad88982f6a`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
 		Size: 9.2 MB (9195083 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6dfb2cbf295a9008cd3b1dd8d96868bb1be439ec66947813e1ad2b64aebf7cd`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
+	-	`sha256:bc5a595378ceebc1723088e0ca439063e80ee26f58248ffac75146b8f6d409f9`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
 		Size: 42.3 KB (42336 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:lts`
 
 ```console
-$ docker pull xwiki@sha256:eee071b58e511201fe17e57528c9b505c67481807ca35a8c65e7550230a18c51
+$ docker pull xwiki@sha256:0a92a197195f92613a88aafa43d0301eeb20ad3d9c0ca04cf969ba5453c76186
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7698,13 +11186,13 @@ $ docker pull xwiki@sha256:eee071b58e511201fe17e57528c9b505c67481807ca35a8c65e75
 ### `xwiki:lts` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:fe2edcf3b216e6a9362541d91cb043523424ef7f0f95afc051e6463d97cbefad
+$ docker pull xwiki@sha256:cd32acdfa356b367a08172a751f760e2eee019dbb197a92952da8e0d075ef88f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **639.2 MB (639183956 bytes)**  
+-	Total Size: **639.2 MB (639185369 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9719a03631768e295c3a39a96f5e36a23292cff7c53740cfcec14ddc293b48a`
+-	Image ID: `sha256:b0d261d19d9f028a4cd0c20b82bafecc4a6861b55bbabf4453ea916c5d582adc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -7767,53 +11255,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:23:34 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 CMD ["xwiki"]
 ```
 
@@ -7858,69 +11346,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e23f42ce2143e59999ed906d931bb07199027d8285853b6e5dea3ff92dcfd4b6`  
-		Last Modified: Tue, 07 Apr 2026 17:29:29 GMT  
-		Size: 191.2 MB (191192491 bytes)  
+	-	`sha256:7e0fc84863cba3136ca06888d2e3c333bc4fc5464bd286417389ed001cd02843`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 191.2 MB (191192461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2259c1fb33f097350fcec3f98201f6e10116159a7e0068c6710fa5b6236596e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:32 GMT  
-		Size: 331.3 MB (331301493 bytes)  
+	-	`sha256:b25b6c04e898becf799876d70bb3374f0e111303e4ba8751273c7fcf873bcfe3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 331.3 MB (331302931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ee2d88deece360474ed458c74654297b3454a36af70584aa0e1e240356eea62`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 2.4 MB (2441664 bytes)  
+	-	`sha256:8f5433022279f8b39aac51b391b6cd30aee3c12cb19ce0c89a0d1480118d7831`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 2.4 MB (2441658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03d89108ef77771b76968f183460186900846449b84469d27d3986265ee35b31`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 1.3 KB (1338 bytes)  
+	-	`sha256:b9d78506679e13ae5426fa585380e8ca1bc63c4091268f70a9216d7a9a4f0e70`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5fd9e5886f632316cb8cc33355ce7cc08d72848891943b1ddd6fa55f18c75ed7`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:4627a3097827169c9928e66c2cf5e4fcfc06b4a5cacab939056105f11681008c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 2.4 KB (2374 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c91978d2bdc051febbe05073145eef6dc172b3b8932c998d0b8c93ab9df714c`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 10.7 KB (10673 bytes)  
+	-	`sha256:35d408c992e2535da0004e1b8c2982a193b3402767474364724917bbfcb26a08`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 10.7 KB (10678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdf218e62cee6b6e273d5f142ea0a7f66e2667597ed7f0d8a9156ed98796f249`  
-		Last Modified: Tue, 07 Apr 2026 17:29:23 GMT  
-		Size: 2.5 KB (2533 bytes)  
+	-	`sha256:ac41074fc407781ff3c0111d78b396273ce12558962037b035112da05235bbe8`  
+		Last Modified: Thu, 09 Apr 2026 22:24:14 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:lts` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:7c48999bfe033b4e0ef594e6ddd19c0a6c964070f8e177aae20a3011bc371424
+$ docker pull xwiki@sha256:5418d43b5ed67294a897d0a983ce6d4e5b4ccdb9cdc07bee7ab2a19720cbdcc2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9222462 bytes)**  
+-	Total Size: **9.2 MB (9222461 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb238883cfc72b669007f9f5ec659a0c374be86a5537f7113671b778b06fc27a`
+-	Image ID: `sha256:4d0788c0277c18fd341858d4454cb8624bc1cdd9b2902f56e2ed6f09ecf82c43`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8f9672ab5243a2b5bfb2cccc992960c4b9139b8fa92172dbec238009b061b02c`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
+	-	`sha256:859cd2748f6bb45ae0caf3f3d3441a667c5b9be38e91722ac0dd4751c2a29707`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 9.2 MB (9180967 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eda98feac87b9a46a344f19f69b9b1f5080d250b94ad46673f10e8c54b047302`  
-		Last Modified: Tue, 07 Apr 2026 17:29:20 GMT  
-		Size: 41.5 KB (41495 bytes)  
+	-	`sha256:2a364ffc6b2202b304890f77ef7b14c7497dc3089c7b3a557e9a0fd39effb9aa`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 41.5 KB (41494 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:lts` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:f21c258928c969b3246cc14392c23fc696a1a7df5b7fecfaaec8fda745d851cb
+$ docker pull xwiki@sha256:cf3ca78c3e59bf0b31a6ac008d76768335b489100de74d2084ec55b6b9b76a67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **635.2 MB (635169570 bytes)**  
+-	Total Size: **635.2 MB (635171278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ddbff823fe42d306d09ed30cf187d8afb3f1c458bc8029b478e1ef0ac8dc768`
+-	Image ID: `sha256:52402a3abb675d723ecb18c110dfbc6be76653db28239c4d9750fddc1b75cbf3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -7983,53 +11471,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:22 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 CMD ["xwiki"]
 ```
 
@@ -8074,63 +11562,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d4a35dd37dfa25d43cd60c7c5c286bc949db937d93f258dc4ca8d3b9e10c980`  
-		Last Modified: Tue, 07 Apr 2026 17:29:27 GMT  
-		Size: 188.9 MB (188852279 bytes)  
+	-	`sha256:6de840e925519c0409af5cd558df0f21edeb9649779a12b2493891b75e1847bb`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 188.9 MB (188852546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b8aa2eafa310afe8860e9b8d28e4106da8eca6c2a30f2a67673f2b27088415e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:31 GMT  
-		Size: 331.3 MB (331301451 bytes)  
+	-	`sha256:9310dcdb6a597b56a414e66d3f22b7ba2ce34205bde74028db3fe1f2a0fd15bd`  
+		Last Modified: Thu, 09 Apr 2026 22:26:08 GMT  
+		Size: 331.3 MB (331302885 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74c436a59dbc1ba79f385aa2bd1f9d45c73672a9622a9e064c87d1e90b1a38b0`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 2.4 MB (2441660 bytes)  
+	-	`sha256:96808ece531c7ad16047cd0c276b1eaf24eba803a4777be20fa486b1223746f3`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 2.4 MB (2441663 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92425e3de53c7957aa7e4e9d1332ed6c30c5837c4ea10ca520f8cedbf9dcafde`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:9ce7afa650f665e999145f9d31f392769a771cadccb2efd5dfc6c05f9122784d`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:195a4268fd728b15fbdbce402e89fa2e97e22cec9f33902cdb5f1736eba425bb`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 2.4 KB (2373 bytes)  
+	-	`sha256:2d027b61411abad4e11a023df03be9c862868ba06a16c66900ef590e636694c0`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 2.4 KB (2370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c714bc283061903c596cdf73278d2169e127966c319514a7f20bf39fcf2f6bca`  
-		Last Modified: Tue, 07 Apr 2026 17:29:23 GMT  
-		Size: 10.7 KB (10674 bytes)  
+	-	`sha256:b7309071b2cf1018f0903bc2464b90a8ed6a303491d93d5f7c831150f86feb2d`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 10.7 KB (10676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99a34d715634245a7e2a4de015c8621a52b98e8c80b25ef9380d3caee9ce68d1`  
-		Last Modified: Tue, 07 Apr 2026 17:29:24 GMT  
-		Size: 2.5 KB (2531 bytes)  
+	-	`sha256:b71f53f72f1ee9e632bafd61edc51b85d912272724683d7cfdca8d2c3a2e449b`  
+		Last Modified: Thu, 09 Apr 2026 22:25:58 GMT  
+		Size: 2.5 KB (2532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:lts` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:e65249f00292be06ccddca8606eeafc8d9d8ad0d2e30cbaebd340420c3b0f946
+$ docker pull xwiki@sha256:57259cbe5603fbf926a45bc60e567fdeea65599656c57de290d10de30399c49f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9223459 bytes)**  
+-	Total Size: **9.2 MB (9223460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76bca099feb71fc857e5f3b48c1b82818c84a0672fd890dcacc7ca94b6f2eeb2`
+-	Image ID: `sha256:43b61a5fe2bc34eab178bf7d52fa31bd2f6414573ec8124977b670dceec03f65`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d4ca55a9c4b706707ecd39b8b249e95dcca83a23eace24a6abe16bdf943e6a5e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
+	-	`sha256:d19cfc5eaf35df59fbff8997866e21c81f882ce45c1271b88333b16b9fd80501`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
 		Size: 9.2 MB (9181756 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bb9a39e60e3ccb2bb32fc601feb85e8b1739e6de789de1e28fc7c90312af68f4`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 41.7 KB (41703 bytes)  
+	-	`sha256:1d7294b680df9d360663567b9abb2f7c69ad02831dd0f9e971ccfc4d2e747594`  
+		Last Modified: Thu, 09 Apr 2026 22:25:55 GMT  
+		Size: 41.7 KB (41704 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:lts-mariadb`
 
 ```console
-$ docker pull xwiki@sha256:8dcd89a74c1e16e80fdd39d27149c4593fa53d5abf1b21d0a5e25fb325f95b1f
+$ docker pull xwiki@sha256:51beea14e5fe4730d9942169e1a2e742a9fb857a830fa30a2918c099033674d6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8143,13 +11631,13 @@ $ docker pull xwiki@sha256:8dcd89a74c1e16e80fdd39d27149c4593fa53d5abf1b21d0a5e25
 ### `xwiki:lts-mariadb` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ea50d7e1f3d76d741fd760c3a4a6ea943349dda0b3ec5a5ad1a48804ee148aa0
+$ docker pull xwiki@sha256:d2095f8a7df7705754e60e667f668a25d76f3fcb72248d02b2fbf45e9f4a3591
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **637.5 MB (637450739 bytes)**  
+-	Total Size: **637.5 MB (637452373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:246352fc4471462e75e8be41e663c7fb33ae2295d0923f9aae0db580e14d85bf`
+-	Image ID: `sha256:0a15370c6fcac1c61468cfd259920f8ee147827b31b793a9afa357c5de9ae283`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -8212,53 +11700,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:24:06 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:24:06 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:24:27 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_VERSION=3.5.7
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 CMD ["xwiki"]
 ```
 
@@ -8303,69 +11791,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e23f42ce2143e59999ed906d931bb07199027d8285853b6e5dea3ff92dcfd4b6`  
-		Last Modified: Tue, 07 Apr 2026 17:29:29 GMT  
-		Size: 191.2 MB (191192491 bytes)  
+	-	`sha256:d614a1a827bba5456d3e0524700e840ec37b5e1aa8a1a8d3d37f3714ae830447`  
+		Last Modified: Thu, 09 Apr 2026 22:25:10 GMT  
+		Size: 191.2 MB (191192634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2259c1fb33f097350fcec3f98201f6e10116159a7e0068c6710fa5b6236596e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:32 GMT  
-		Size: 331.3 MB (331301493 bytes)  
+	-	`sha256:7ec41c5cd54d504491a7ee2e21cebf61fb0acadbbdbdb5dc1017be7536f9e363`  
+		Last Modified: Thu, 09 Apr 2026 22:25:13 GMT  
+		Size: 331.3 MB (331302981 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be9de30e314e4445d4b37bf01bc2c0a8c56a98f82a6f2d1eb1dd9991a45096ab`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 708.5 KB (708547 bytes)  
+	-	`sha256:13cc41f7666390c761b3d2a7adfd880844a59478decf5db9712902c3250b1341`  
+		Last Modified: Thu, 09 Apr 2026 22:25:04 GMT  
+		Size: 708.5 KB (708545 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73d54380c145c5fbac1cc3fc5befaf8ffd3340b7ae24d4c86ebf35f51d7ca317`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 1.3 KB (1339 bytes)  
+	-	`sha256:66c12f10aabc0ad7bec6a03d187ab4d85b5ed5d92199f5b39ff4ecd0ece2e542`  
+		Last Modified: Thu, 09 Apr 2026 22:25:04 GMT  
+		Size: 1.3 KB (1340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6e659f22d9f0db4c4dfda98b9355eb229cf29dcf975c12b4fcd222bdb97496a`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 2.3 KB (2309 bytes)  
+	-	`sha256:55cc2e4fdf23dc3030f98e2c61065b22222165dea26c107e59e53e316087b9f1`  
+		Last Modified: Thu, 09 Apr 2026 22:25:05 GMT  
+		Size: 2.3 KB (2310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d1941ec54b0a86033ea8a67f1a66ade025992b430c751a95a2252d23c18d02d`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 10.7 KB (10674 bytes)  
+	-	`sha256:1420db266102fab686ce6b01eeaf752b8535b743cce3b5ea673e986688213d37`  
+		Last Modified: Thu, 09 Apr 2026 22:25:05 GMT  
+		Size: 10.7 KB (10677 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6687fa0ea60317b0b04890e7dcb7e16934565062b497bdece31f34d7b4afff21`  
-		Last Modified: Tue, 07 Apr 2026 17:29:55 GMT  
+	-	`sha256:f681e64b6d866908415073cf14262e0f3f4e7c9d65cbb492f8128c4b30bc9909`  
+		Last Modified: Thu, 09 Apr 2026 22:25:06 GMT  
 		Size: 2.5 KB (2494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:lts-mariadb` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:ec42cce413bbbaa1ee722d02ae244a34c5b15708d02d92015cd4079bdc2d9741
+$ docker pull xwiki@sha256:78a0829760d07325d86f0eaedaf932719ce3ad0b8908b35f968b5d166dbad1d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9220195 bytes)**  
+-	Total Size: **9.2 MB (9220194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84945ca6f4d8db98d103b2ff026c2b211eb4c3155a7252fa64a2286b88e1df7d`
+-	Image ID: `sha256:02efd847e33a48df0977341df7d49985c6ca77a4120cf8caf703fcfa112e9a41`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:966e8e1c7f650cd9669142cabe8e2f1368b59459c117347de1fd02c710c3de14`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
+	-	`sha256:17be8c05cc005333f8e6f111d9f846cb308bc0219a85a2f1a7e7a92f5510d8a0`  
+		Last Modified: Thu, 09 Apr 2026 22:25:05 GMT  
 		Size: 9.2 MB (9179746 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c64bbb1ad68c2e2905bf9aeed7c58b131ae14fa82c47c6e12848af67e955b39b`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 40.4 KB (40449 bytes)  
+	-	`sha256:4bf73e24884d001bb1d960edddce212d25437830354bc533f18daf13cc420a03`  
+		Last Modified: Thu, 09 Apr 2026 22:25:04 GMT  
+		Size: 40.4 KB (40448 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:lts-mariadb` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:22a169aa86c77cfb2239cd30d8b508caac9bc529b8e948e049d45cb05fecf854
+$ docker pull xwiki@sha256:a2afebcd0107e9871dc634a18d8dc4b656af57daf316f0cabbc22ae34ae68e7c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **633.4 MB (633436348 bytes)**  
+-	Total Size: **633.4 MB (633437665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3096a456e6ec48d3e82ba7a96af725ebdc5a75fb7a0de1e5b97d47aed7856283`
+-	Image ID: `sha256:fd1cd6b1eef0e082e763e2342cc9c98a95b74796907ec41591d6c7b2f76fa1c5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -8428,53 +11916,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:25:06 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:25:06 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:28 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_VERSION=3.5.7
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 CMD ["xwiki"]
 ```
 
@@ -8519,63 +12007,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d4a35dd37dfa25d43cd60c7c5c286bc949db937d93f258dc4ca8d3b9e10c980`  
-		Last Modified: Tue, 07 Apr 2026 17:29:27 GMT  
-		Size: 188.9 MB (188852279 bytes)  
+	-	`sha256:08823c3db987c987900b6d67c9247d6386ce0eea8143c78e2f3e0b5e32b998e5`  
+		Last Modified: Thu, 09 Apr 2026 22:26:07 GMT  
+		Size: 188.9 MB (188852085 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b8aa2eafa310afe8860e9b8d28e4106da8eca6c2a30f2a67673f2b27088415e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:31 GMT  
-		Size: 331.3 MB (331301451 bytes)  
+	-	`sha256:eb4c31e6885efbe1075a08f5c35e0db15f98101794ae8f5e79f4fe02094c16d9`  
+		Last Modified: Thu, 09 Apr 2026 22:26:09 GMT  
+		Size: 331.3 MB (331302946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13256aaf0560ce630d57487a5eff1f78ca37ad5ef3d68d104cda3b115a01f500`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
-		Size: 708.5 KB (708549 bytes)  
+	-	`sha256:4ab581bc8a38f6d1d41897625bd793c8248b2fb927d26d1bc631585fbdf9e077`  
+		Last Modified: Thu, 09 Apr 2026 22:26:01 GMT  
+		Size: 708.5 KB (708545 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8093fdcee4faeca8b64e81f9eb75760ab5e5b1285c12a62e48889554f2197e19`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
-		Size: 1.3 KB (1338 bytes)  
+	-	`sha256:3f43c596e9456f3683a935cb6c7f38817e91806651e275c84b62dca1dd8987dd`  
+		Last Modified: Thu, 09 Apr 2026 22:26:01 GMT  
+		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c18fb36864988f3127d093a6d021dfe149502b5cc14b9374fc67396880df339c`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
-		Size: 2.3 KB (2305 bytes)  
+	-	`sha256:a8c47e96b643ba7ebd05cfa185496943fb163e85b49129d5550d04d33b9cc123`  
+		Last Modified: Thu, 09 Apr 2026 22:26:02 GMT  
+		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:938e2754954cb840a522bacb1591dadfeaad1d4ee060d33ee90d08073d8f371d`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
-		Size: 10.7 KB (10675 bytes)  
+	-	`sha256:7c47d9d0dfaed412815dbea06f097ef2d94860ed76821693877f188e4cb27717`  
+		Last Modified: Thu, 09 Apr 2026 22:26:02 GMT  
+		Size: 10.7 KB (10676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47437284cfe4309868ddd99ca11b519fe75320a64228b715c3040c94b4ee602f`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 2.5 KB (2489 bytes)  
+	-	`sha256:7e200218e445d54d4cd2843abeb3670147f2b610f53283d91dc918dd4497e630`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 2.5 KB (2500 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:lts-mariadb` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:e1d4889be574da18c6ebaad5591682eb0bf631a8eb53588045ae8a78c482b338
+$ docker pull xwiki@sha256:94cd7045ea7f56ce9074d68c9c0b10148d65e775fcf2f0cc037ec3874faa1e21
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9221098 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf805a7309f1e210900169fa0df14c4cc56ebc655c6cf45d9f65ffea3014d2b9`
+-	Image ID: `sha256:3f40e3aa2eff775352b8be74d32bcfdb73e1e1d6c57c79551bbbb4bc30f571a7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:259db551a32f15d0842d92573f251db3da8e048302b4a0309ebd23fb3571d52a`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
+	-	`sha256:ce4eccdb3d5db8c578ed4b14c18ea462a3f5259e7116bf6d994359e843ee463d`  
+		Last Modified: Thu, 09 Apr 2026 22:26:01 GMT  
 		Size: 9.2 MB (9180487 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:362511debf7a8e645ac04dcef890d93c9bf7f016f09457e96533a01327310a8d`  
-		Last Modified: Tue, 07 Apr 2026 17:29:52 GMT  
+	-	`sha256:4410303f0ef1fa1b939c31e269ad8e42d5815d2a80b682d71500f6f5b1e45141`  
+		Last Modified: Thu, 09 Apr 2026 22:26:00 GMT  
 		Size: 40.6 KB (40611 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:lts-mariadb-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:8dcd89a74c1e16e80fdd39d27149c4593fa53d5abf1b21d0a5e25fb325f95b1f
+$ docker pull xwiki@sha256:51beea14e5fe4730d9942169e1a2e742a9fb857a830fa30a2918c099033674d6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8588,13 +12076,13 @@ $ docker pull xwiki@sha256:8dcd89a74c1e16e80fdd39d27149c4593fa53d5abf1b21d0a5e25
 ### `xwiki:lts-mariadb-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ea50d7e1f3d76d741fd760c3a4a6ea943349dda0b3ec5a5ad1a48804ee148aa0
+$ docker pull xwiki@sha256:d2095f8a7df7705754e60e667f668a25d76f3fcb72248d02b2fbf45e9f4a3591
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **637.5 MB (637450739 bytes)**  
+-	Total Size: **637.5 MB (637452373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:246352fc4471462e75e8be41e663c7fb33ae2295d0923f9aae0db580e14d85bf`
+-	Image ID: `sha256:0a15370c6fcac1c61468cfd259920f8ee147827b31b793a9afa357c5de9ae283`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -8657,53 +12145,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:06 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:24:06 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:24:06 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:24:27 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_VERSION=3.5.7
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:24:27 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:29:39 GMT
+# Thu, 09 Apr 2026 22:24:28 GMT
 CMD ["xwiki"]
 ```
 
@@ -8748,69 +12236,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e23f42ce2143e59999ed906d931bb07199027d8285853b6e5dea3ff92dcfd4b6`  
-		Last Modified: Tue, 07 Apr 2026 17:29:29 GMT  
-		Size: 191.2 MB (191192491 bytes)  
+	-	`sha256:d614a1a827bba5456d3e0524700e840ec37b5e1aa8a1a8d3d37f3714ae830447`  
+		Last Modified: Thu, 09 Apr 2026 22:25:10 GMT  
+		Size: 191.2 MB (191192634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2259c1fb33f097350fcec3f98201f6e10116159a7e0068c6710fa5b6236596e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:32 GMT  
-		Size: 331.3 MB (331301493 bytes)  
+	-	`sha256:7ec41c5cd54d504491a7ee2e21cebf61fb0acadbbdbdb5dc1017be7536f9e363`  
+		Last Modified: Thu, 09 Apr 2026 22:25:13 GMT  
+		Size: 331.3 MB (331302981 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be9de30e314e4445d4b37bf01bc2c0a8c56a98f82a6f2d1eb1dd9991a45096ab`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 708.5 KB (708547 bytes)  
+	-	`sha256:13cc41f7666390c761b3d2a7adfd880844a59478decf5db9712902c3250b1341`  
+		Last Modified: Thu, 09 Apr 2026 22:25:04 GMT  
+		Size: 708.5 KB (708545 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73d54380c145c5fbac1cc3fc5befaf8ffd3340b7ae24d4c86ebf35f51d7ca317`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 1.3 KB (1339 bytes)  
+	-	`sha256:66c12f10aabc0ad7bec6a03d187ab4d85b5ed5d92199f5b39ff4ecd0ece2e542`  
+		Last Modified: Thu, 09 Apr 2026 22:25:04 GMT  
+		Size: 1.3 KB (1340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6e659f22d9f0db4c4dfda98b9355eb229cf29dcf975c12b4fcd222bdb97496a`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 2.3 KB (2309 bytes)  
+	-	`sha256:55cc2e4fdf23dc3030f98e2c61065b22222165dea26c107e59e53e316087b9f1`  
+		Last Modified: Thu, 09 Apr 2026 22:25:05 GMT  
+		Size: 2.3 KB (2310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d1941ec54b0a86033ea8a67f1a66ade025992b430c751a95a2252d23c18d02d`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 10.7 KB (10674 bytes)  
+	-	`sha256:1420db266102fab686ce6b01eeaf752b8535b743cce3b5ea673e986688213d37`  
+		Last Modified: Thu, 09 Apr 2026 22:25:05 GMT  
+		Size: 10.7 KB (10677 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6687fa0ea60317b0b04890e7dcb7e16934565062b497bdece31f34d7b4afff21`  
-		Last Modified: Tue, 07 Apr 2026 17:29:55 GMT  
+	-	`sha256:f681e64b6d866908415073cf14262e0f3f4e7c9d65cbb492f8128c4b30bc9909`  
+		Last Modified: Thu, 09 Apr 2026 22:25:06 GMT  
 		Size: 2.5 KB (2494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:lts-mariadb-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:ec42cce413bbbaa1ee722d02ae244a34c5b15708d02d92015cd4079bdc2d9741
+$ docker pull xwiki@sha256:78a0829760d07325d86f0eaedaf932719ce3ad0b8908b35f968b5d166dbad1d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9220195 bytes)**  
+-	Total Size: **9.2 MB (9220194 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:84945ca6f4d8db98d103b2ff026c2b211eb4c3155a7252fa64a2286b88e1df7d`
+-	Image ID: `sha256:02efd847e33a48df0977341df7d49985c6ca77a4120cf8caf703fcfa112e9a41`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:966e8e1c7f650cd9669142cabe8e2f1368b59459c117347de1fd02c710c3de14`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
+	-	`sha256:17be8c05cc005333f8e6f111d9f846cb308bc0219a85a2f1a7e7a92f5510d8a0`  
+		Last Modified: Thu, 09 Apr 2026 22:25:05 GMT  
 		Size: 9.2 MB (9179746 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c64bbb1ad68c2e2905bf9aeed7c58b131ae14fa82c47c6e12848af67e955b39b`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 40.4 KB (40449 bytes)  
+	-	`sha256:4bf73e24884d001bb1d960edddce212d25437830354bc533f18daf13cc420a03`  
+		Last Modified: Thu, 09 Apr 2026 22:25:04 GMT  
+		Size: 40.4 KB (40448 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:lts-mariadb-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:22a169aa86c77cfb2239cd30d8b508caac9bc529b8e948e049d45cb05fecf854
+$ docker pull xwiki@sha256:a2afebcd0107e9871dc634a18d8dc4b656af57daf316f0cabbc22ae34ae68e7c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **633.4 MB (633436348 bytes)**  
+-	Total Size: **633.4 MB (633437665 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3096a456e6ec48d3e82ba7a96af725ebdc5a75fb7a0de1e5b97d47aed7856283`
+-	Image ID: `sha256:fd1cd6b1eef0e082e763e2342cc9c98a95b74796907ec41591d6c7b2f76fa1c5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -8873,53 +12361,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:06 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:25:06 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:25:06 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:28 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_VERSION=3.5.7
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:29:38 GMT
+# Thu, 09 Apr 2026 22:25:28 GMT
 CMD ["xwiki"]
 ```
 
@@ -8964,63 +12452,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d4a35dd37dfa25d43cd60c7c5c286bc949db937d93f258dc4ca8d3b9e10c980`  
-		Last Modified: Tue, 07 Apr 2026 17:29:27 GMT  
-		Size: 188.9 MB (188852279 bytes)  
+	-	`sha256:08823c3db987c987900b6d67c9247d6386ce0eea8143c78e2f3e0b5e32b998e5`  
+		Last Modified: Thu, 09 Apr 2026 22:26:07 GMT  
+		Size: 188.9 MB (188852085 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b8aa2eafa310afe8860e9b8d28e4106da8eca6c2a30f2a67673f2b27088415e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:31 GMT  
-		Size: 331.3 MB (331301451 bytes)  
+	-	`sha256:eb4c31e6885efbe1075a08f5c35e0db15f98101794ae8f5e79f4fe02094c16d9`  
+		Last Modified: Thu, 09 Apr 2026 22:26:09 GMT  
+		Size: 331.3 MB (331302946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13256aaf0560ce630d57487a5eff1f78ca37ad5ef3d68d104cda3b115a01f500`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
-		Size: 708.5 KB (708549 bytes)  
+	-	`sha256:4ab581bc8a38f6d1d41897625bd793c8248b2fb927d26d1bc631585fbdf9e077`  
+		Last Modified: Thu, 09 Apr 2026 22:26:01 GMT  
+		Size: 708.5 KB (708545 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8093fdcee4faeca8b64e81f9eb75760ab5e5b1285c12a62e48889554f2197e19`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
-		Size: 1.3 KB (1338 bytes)  
+	-	`sha256:3f43c596e9456f3683a935cb6c7f38817e91806651e275c84b62dca1dd8987dd`  
+		Last Modified: Thu, 09 Apr 2026 22:26:01 GMT  
+		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c18fb36864988f3127d093a6d021dfe149502b5cc14b9374fc67396880df339c`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
-		Size: 2.3 KB (2305 bytes)  
+	-	`sha256:a8c47e96b643ba7ebd05cfa185496943fb163e85b49129d5550d04d33b9cc123`  
+		Last Modified: Thu, 09 Apr 2026 22:26:02 GMT  
+		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:938e2754954cb840a522bacb1591dadfeaad1d4ee060d33ee90d08073d8f371d`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
-		Size: 10.7 KB (10675 bytes)  
+	-	`sha256:7c47d9d0dfaed412815dbea06f097ef2d94860ed76821693877f188e4cb27717`  
+		Last Modified: Thu, 09 Apr 2026 22:26:02 GMT  
+		Size: 10.7 KB (10676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47437284cfe4309868ddd99ca11b519fe75320a64228b715c3040c94b4ee602f`  
-		Last Modified: Tue, 07 Apr 2026 17:29:54 GMT  
-		Size: 2.5 KB (2489 bytes)  
+	-	`sha256:7e200218e445d54d4cd2843abeb3670147f2b610f53283d91dc918dd4497e630`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 2.5 KB (2500 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:lts-mariadb-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:e1d4889be574da18c6ebaad5591682eb0bf631a8eb53588045ae8a78c482b338
+$ docker pull xwiki@sha256:94cd7045ea7f56ce9074d68c9c0b10148d65e775fcf2f0cc037ec3874faa1e21
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9221098 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf805a7309f1e210900169fa0df14c4cc56ebc655c6cf45d9f65ffea3014d2b9`
+-	Image ID: `sha256:3f40e3aa2eff775352b8be74d32bcfdb73e1e1d6c57c79551bbbb4bc30f571a7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:259db551a32f15d0842d92573f251db3da8e048302b4a0309ebd23fb3571d52a`  
-		Last Modified: Tue, 07 Apr 2026 17:29:53 GMT  
+	-	`sha256:ce4eccdb3d5db8c578ed4b14c18ea462a3f5259e7116bf6d994359e843ee463d`  
+		Last Modified: Thu, 09 Apr 2026 22:26:01 GMT  
 		Size: 9.2 MB (9180487 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:362511debf7a8e645ac04dcef890d93c9bf7f016f09457e96533a01327310a8d`  
-		Last Modified: Tue, 07 Apr 2026 17:29:52 GMT  
+	-	`sha256:4410303f0ef1fa1b939c31e269ad8e42d5815d2a80b682d71500f6f5b1e45141`  
+		Last Modified: Thu, 09 Apr 2026 22:26:00 GMT  
 		Size: 40.6 KB (40611 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:lts-mysql`
 
 ```console
-$ docker pull xwiki@sha256:eee071b58e511201fe17e57528c9b505c67481807ca35a8c65e7550230a18c51
+$ docker pull xwiki@sha256:0a92a197195f92613a88aafa43d0301eeb20ad3d9c0ca04cf969ba5453c76186
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9033,13 +12521,13 @@ $ docker pull xwiki@sha256:eee071b58e511201fe17e57528c9b505c67481807ca35a8c65e75
 ### `xwiki:lts-mysql` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:fe2edcf3b216e6a9362541d91cb043523424ef7f0f95afc051e6463d97cbefad
+$ docker pull xwiki@sha256:cd32acdfa356b367a08172a751f760e2eee019dbb197a92952da8e0d075ef88f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **639.2 MB (639183956 bytes)**  
+-	Total Size: **639.2 MB (639185369 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9719a03631768e295c3a39a96f5e36a23292cff7c53740cfcec14ddc293b48a`
+-	Image ID: `sha256:b0d261d19d9f028a4cd0c20b82bafecc4a6861b55bbabf4453ea916c5d582adc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -9102,53 +12590,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:23:34 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 CMD ["xwiki"]
 ```
 
@@ -9193,69 +12681,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e23f42ce2143e59999ed906d931bb07199027d8285853b6e5dea3ff92dcfd4b6`  
-		Last Modified: Tue, 07 Apr 2026 17:29:29 GMT  
-		Size: 191.2 MB (191192491 bytes)  
+	-	`sha256:7e0fc84863cba3136ca06888d2e3c333bc4fc5464bd286417389ed001cd02843`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 191.2 MB (191192461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2259c1fb33f097350fcec3f98201f6e10116159a7e0068c6710fa5b6236596e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:32 GMT  
-		Size: 331.3 MB (331301493 bytes)  
+	-	`sha256:b25b6c04e898becf799876d70bb3374f0e111303e4ba8751273c7fcf873bcfe3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 331.3 MB (331302931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ee2d88deece360474ed458c74654297b3454a36af70584aa0e1e240356eea62`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 2.4 MB (2441664 bytes)  
+	-	`sha256:8f5433022279f8b39aac51b391b6cd30aee3c12cb19ce0c89a0d1480118d7831`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 2.4 MB (2441658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03d89108ef77771b76968f183460186900846449b84469d27d3986265ee35b31`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 1.3 KB (1338 bytes)  
+	-	`sha256:b9d78506679e13ae5426fa585380e8ca1bc63c4091268f70a9216d7a9a4f0e70`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5fd9e5886f632316cb8cc33355ce7cc08d72848891943b1ddd6fa55f18c75ed7`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:4627a3097827169c9928e66c2cf5e4fcfc06b4a5cacab939056105f11681008c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 2.4 KB (2374 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c91978d2bdc051febbe05073145eef6dc172b3b8932c998d0b8c93ab9df714c`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 10.7 KB (10673 bytes)  
+	-	`sha256:35d408c992e2535da0004e1b8c2982a193b3402767474364724917bbfcb26a08`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 10.7 KB (10678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdf218e62cee6b6e273d5f142ea0a7f66e2667597ed7f0d8a9156ed98796f249`  
-		Last Modified: Tue, 07 Apr 2026 17:29:23 GMT  
-		Size: 2.5 KB (2533 bytes)  
+	-	`sha256:ac41074fc407781ff3c0111d78b396273ce12558962037b035112da05235bbe8`  
+		Last Modified: Thu, 09 Apr 2026 22:24:14 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:lts-mysql` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:7c48999bfe033b4e0ef594e6ddd19c0a6c964070f8e177aae20a3011bc371424
+$ docker pull xwiki@sha256:5418d43b5ed67294a897d0a983ce6d4e5b4ccdb9cdc07bee7ab2a19720cbdcc2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9222462 bytes)**  
+-	Total Size: **9.2 MB (9222461 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb238883cfc72b669007f9f5ec659a0c374be86a5537f7113671b778b06fc27a`
+-	Image ID: `sha256:4d0788c0277c18fd341858d4454cb8624bc1cdd9b2902f56e2ed6f09ecf82c43`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8f9672ab5243a2b5bfb2cccc992960c4b9139b8fa92172dbec238009b061b02c`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
+	-	`sha256:859cd2748f6bb45ae0caf3f3d3441a667c5b9be38e91722ac0dd4751c2a29707`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 9.2 MB (9180967 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eda98feac87b9a46a344f19f69b9b1f5080d250b94ad46673f10e8c54b047302`  
-		Last Modified: Tue, 07 Apr 2026 17:29:20 GMT  
-		Size: 41.5 KB (41495 bytes)  
+	-	`sha256:2a364ffc6b2202b304890f77ef7b14c7497dc3089c7b3a557e9a0fd39effb9aa`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 41.5 KB (41494 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:lts-mysql` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:f21c258928c969b3246cc14392c23fc696a1a7df5b7fecfaaec8fda745d851cb
+$ docker pull xwiki@sha256:cf3ca78c3e59bf0b31a6ac008d76768335b489100de74d2084ec55b6b9b76a67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **635.2 MB (635169570 bytes)**  
+-	Total Size: **635.2 MB (635171278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ddbff823fe42d306d09ed30cf187d8afb3f1c458bc8029b478e1ef0ac8dc768`
+-	Image ID: `sha256:52402a3abb675d723ecb18c110dfbc6be76653db28239c4d9750fddc1b75cbf3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -9318,53 +12806,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:22 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 CMD ["xwiki"]
 ```
 
@@ -9409,63 +12897,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d4a35dd37dfa25d43cd60c7c5c286bc949db937d93f258dc4ca8d3b9e10c980`  
-		Last Modified: Tue, 07 Apr 2026 17:29:27 GMT  
-		Size: 188.9 MB (188852279 bytes)  
+	-	`sha256:6de840e925519c0409af5cd558df0f21edeb9649779a12b2493891b75e1847bb`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 188.9 MB (188852546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b8aa2eafa310afe8860e9b8d28e4106da8eca6c2a30f2a67673f2b27088415e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:31 GMT  
-		Size: 331.3 MB (331301451 bytes)  
+	-	`sha256:9310dcdb6a597b56a414e66d3f22b7ba2ce34205bde74028db3fe1f2a0fd15bd`  
+		Last Modified: Thu, 09 Apr 2026 22:26:08 GMT  
+		Size: 331.3 MB (331302885 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74c436a59dbc1ba79f385aa2bd1f9d45c73672a9622a9e064c87d1e90b1a38b0`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 2.4 MB (2441660 bytes)  
+	-	`sha256:96808ece531c7ad16047cd0c276b1eaf24eba803a4777be20fa486b1223746f3`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 2.4 MB (2441663 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92425e3de53c7957aa7e4e9d1332ed6c30c5837c4ea10ca520f8cedbf9dcafde`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:9ce7afa650f665e999145f9d31f392769a771cadccb2efd5dfc6c05f9122784d`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:195a4268fd728b15fbdbce402e89fa2e97e22cec9f33902cdb5f1736eba425bb`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 2.4 KB (2373 bytes)  
+	-	`sha256:2d027b61411abad4e11a023df03be9c862868ba06a16c66900ef590e636694c0`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 2.4 KB (2370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c714bc283061903c596cdf73278d2169e127966c319514a7f20bf39fcf2f6bca`  
-		Last Modified: Tue, 07 Apr 2026 17:29:23 GMT  
-		Size: 10.7 KB (10674 bytes)  
+	-	`sha256:b7309071b2cf1018f0903bc2464b90a8ed6a303491d93d5f7c831150f86feb2d`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 10.7 KB (10676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99a34d715634245a7e2a4de015c8621a52b98e8c80b25ef9380d3caee9ce68d1`  
-		Last Modified: Tue, 07 Apr 2026 17:29:24 GMT  
-		Size: 2.5 KB (2531 bytes)  
+	-	`sha256:b71f53f72f1ee9e632bafd61edc51b85d912272724683d7cfdca8d2c3a2e449b`  
+		Last Modified: Thu, 09 Apr 2026 22:25:58 GMT  
+		Size: 2.5 KB (2532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:lts-mysql` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:e65249f00292be06ccddca8606eeafc8d9d8ad0d2e30cbaebd340420c3b0f946
+$ docker pull xwiki@sha256:57259cbe5603fbf926a45bc60e567fdeea65599656c57de290d10de30399c49f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9223459 bytes)**  
+-	Total Size: **9.2 MB (9223460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76bca099feb71fc857e5f3b48c1b82818c84a0672fd890dcacc7ca94b6f2eeb2`
+-	Image ID: `sha256:43b61a5fe2bc34eab178bf7d52fa31bd2f6414573ec8124977b670dceec03f65`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d4ca55a9c4b706707ecd39b8b249e95dcca83a23eace24a6abe16bdf943e6a5e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
+	-	`sha256:d19cfc5eaf35df59fbff8997866e21c81f882ce45c1271b88333b16b9fd80501`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
 		Size: 9.2 MB (9181756 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bb9a39e60e3ccb2bb32fc601feb85e8b1739e6de789de1e28fc7c90312af68f4`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 41.7 KB (41703 bytes)  
+	-	`sha256:1d7294b680df9d360663567b9abb2f7c69ad02831dd0f9e971ccfc4d2e747594`  
+		Last Modified: Thu, 09 Apr 2026 22:25:55 GMT  
+		Size: 41.7 KB (41704 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:lts-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:eee071b58e511201fe17e57528c9b505c67481807ca35a8c65e7550230a18c51
+$ docker pull xwiki@sha256:0a92a197195f92613a88aafa43d0301eeb20ad3d9c0ca04cf969ba5453c76186
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9478,13 +12966,13 @@ $ docker pull xwiki@sha256:eee071b58e511201fe17e57528c9b505c67481807ca35a8c65e75
 ### `xwiki:lts-mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:fe2edcf3b216e6a9362541d91cb043523424ef7f0f95afc051e6463d97cbefad
+$ docker pull xwiki@sha256:cd32acdfa356b367a08172a751f760e2eee019dbb197a92952da8e0d075ef88f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **639.2 MB (639183956 bytes)**  
+-	Total Size: **639.2 MB (639185369 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9719a03631768e295c3a39a96f5e36a23292cff7c53740cfcec14ddc293b48a`
+-	Image ID: `sha256:b0d261d19d9f028a4cd0c20b82bafecc4a6861b55bbabf4453ea916c5d582adc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -9547,53 +13035,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:22 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:22 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:23:10 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:23:34 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:34 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:28:43 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:28:44 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 CMD ["xwiki"]
 ```
 
@@ -9638,69 +13126,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e23f42ce2143e59999ed906d931bb07199027d8285853b6e5dea3ff92dcfd4b6`  
-		Last Modified: Tue, 07 Apr 2026 17:29:29 GMT  
-		Size: 191.2 MB (191192491 bytes)  
+	-	`sha256:7e0fc84863cba3136ca06888d2e3c333bc4fc5464bd286417389ed001cd02843`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 191.2 MB (191192461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2259c1fb33f097350fcec3f98201f6e10116159a7e0068c6710fa5b6236596e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:32 GMT  
-		Size: 331.3 MB (331301493 bytes)  
+	-	`sha256:b25b6c04e898becf799876d70bb3374f0e111303e4ba8751273c7fcf873bcfe3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 331.3 MB (331302931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ee2d88deece360474ed458c74654297b3454a36af70584aa0e1e240356eea62`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 2.4 MB (2441664 bytes)  
+	-	`sha256:8f5433022279f8b39aac51b391b6cd30aee3c12cb19ce0c89a0d1480118d7831`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 2.4 MB (2441658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03d89108ef77771b76968f183460186900846449b84469d27d3986265ee35b31`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 1.3 KB (1338 bytes)  
+	-	`sha256:b9d78506679e13ae5426fa585380e8ca1bc63c4091268f70a9216d7a9a4f0e70`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5fd9e5886f632316cb8cc33355ce7cc08d72848891943b1ddd6fa55f18c75ed7`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:4627a3097827169c9928e66c2cf5e4fcfc06b4a5cacab939056105f11681008c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 2.4 KB (2374 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c91978d2bdc051febbe05073145eef6dc172b3b8932c998d0b8c93ab9df714c`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 10.7 KB (10673 bytes)  
+	-	`sha256:35d408c992e2535da0004e1b8c2982a193b3402767474364724917bbfcb26a08`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
+		Size: 10.7 KB (10678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdf218e62cee6b6e273d5f142ea0a7f66e2667597ed7f0d8a9156ed98796f249`  
-		Last Modified: Tue, 07 Apr 2026 17:29:23 GMT  
-		Size: 2.5 KB (2533 bytes)  
+	-	`sha256:ac41074fc407781ff3c0111d78b396273ce12558962037b035112da05235bbe8`  
+		Last Modified: Thu, 09 Apr 2026 22:24:14 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:lts-mysql-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:7c48999bfe033b4e0ef594e6ddd19c0a6c964070f8e177aae20a3011bc371424
+$ docker pull xwiki@sha256:5418d43b5ed67294a897d0a983ce6d4e5b4ccdb9cdc07bee7ab2a19720cbdcc2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9222462 bytes)**  
+-	Total Size: **9.2 MB (9222461 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb238883cfc72b669007f9f5ec659a0c374be86a5537f7113671b778b06fc27a`
+-	Image ID: `sha256:4d0788c0277c18fd341858d4454cb8624bc1cdd9b2902f56e2ed6f09ecf82c43`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8f9672ab5243a2b5bfb2cccc992960c4b9139b8fa92172dbec238009b061b02c`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
+	-	`sha256:859cd2748f6bb45ae0caf3f3d3441a667c5b9be38e91722ac0dd4751c2a29707`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 9.2 MB (9180967 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eda98feac87b9a46a344f19f69b9b1f5080d250b94ad46673f10e8c54b047302`  
-		Last Modified: Tue, 07 Apr 2026 17:29:20 GMT  
-		Size: 41.5 KB (41495 bytes)  
+	-	`sha256:2a364ffc6b2202b304890f77ef7b14c7497dc3089c7b3a557e9a0fd39effb9aa`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 41.5 KB (41494 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:lts-mysql-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:f21c258928c969b3246cc14392c23fc696a1a7df5b7fecfaaec8fda745d851cb
+$ docker pull xwiki@sha256:cf3ca78c3e59bf0b31a6ac008d76768335b489100de74d2084ec55b6b9b76a67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **635.2 MB (635169570 bytes)**  
+-	Total Size: **635.2 MB (635171278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ddbff823fe42d306d09ed30cf187d8afb3f1c458bc8029b478e1ef0ac8dc768`
+-	Image ID: `sha256:52402a3abb675d723ecb18c110dfbc6be76653db28239c4d9750fddc1b75cbf3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -9763,53 +13251,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:28:26 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:28:26 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:24:59 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:22 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:22 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:28:48 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 CMD ["xwiki"]
 ```
 
@@ -9854,63 +13342,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d4a35dd37dfa25d43cd60c7c5c286bc949db937d93f258dc4ca8d3b9e10c980`  
-		Last Modified: Tue, 07 Apr 2026 17:29:27 GMT  
-		Size: 188.9 MB (188852279 bytes)  
+	-	`sha256:6de840e925519c0409af5cd558df0f21edeb9649779a12b2493891b75e1847bb`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 188.9 MB (188852546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b8aa2eafa310afe8860e9b8d28e4106da8eca6c2a30f2a67673f2b27088415e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:31 GMT  
-		Size: 331.3 MB (331301451 bytes)  
+	-	`sha256:9310dcdb6a597b56a414e66d3f22b7ba2ce34205bde74028db3fe1f2a0fd15bd`  
+		Last Modified: Thu, 09 Apr 2026 22:26:08 GMT  
+		Size: 331.3 MB (331302885 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74c436a59dbc1ba79f385aa2bd1f9d45c73672a9622a9e064c87d1e90b1a38b0`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 2.4 MB (2441660 bytes)  
+	-	`sha256:96808ece531c7ad16047cd0c276b1eaf24eba803a4777be20fa486b1223746f3`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 2.4 MB (2441663 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92425e3de53c7957aa7e4e9d1332ed6c30c5837c4ea10ca520f8cedbf9dcafde`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:9ce7afa650f665e999145f9d31f392769a771cadccb2efd5dfc6c05f9122784d`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.3 KB (1344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:195a4268fd728b15fbdbce402e89fa2e97e22cec9f33902cdb5f1736eba425bb`  
-		Last Modified: Tue, 07 Apr 2026 17:29:22 GMT  
-		Size: 2.4 KB (2373 bytes)  
+	-	`sha256:2d027b61411abad4e11a023df03be9c862868ba06a16c66900ef590e636694c0`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 2.4 KB (2370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c714bc283061903c596cdf73278d2169e127966c319514a7f20bf39fcf2f6bca`  
-		Last Modified: Tue, 07 Apr 2026 17:29:23 GMT  
-		Size: 10.7 KB (10674 bytes)  
+	-	`sha256:b7309071b2cf1018f0903bc2464b90a8ed6a303491d93d5f7c831150f86feb2d`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 10.7 KB (10676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99a34d715634245a7e2a4de015c8621a52b98e8c80b25ef9380d3caee9ce68d1`  
-		Last Modified: Tue, 07 Apr 2026 17:29:24 GMT  
-		Size: 2.5 KB (2531 bytes)  
+	-	`sha256:b71f53f72f1ee9e632bafd61edc51b85d912272724683d7cfdca8d2c3a2e449b`  
+		Last Modified: Thu, 09 Apr 2026 22:25:58 GMT  
+		Size: 2.5 KB (2532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:lts-mysql-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:e65249f00292be06ccddca8606eeafc8d9d8ad0d2e30cbaebd340420c3b0f946
+$ docker pull xwiki@sha256:57259cbe5603fbf926a45bc60e567fdeea65599656c57de290d10de30399c49f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9223459 bytes)**  
+-	Total Size: **9.2 MB (9223460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76bca099feb71fc857e5f3b48c1b82818c84a0672fd890dcacc7ca94b6f2eeb2`
+-	Image ID: `sha256:43b61a5fe2bc34eab178bf7d52fa31bd2f6414573ec8124977b670dceec03f65`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d4ca55a9c4b706707ecd39b8b249e95dcca83a23eace24a6abe16bdf943e6a5e`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
+	-	`sha256:d19cfc5eaf35df59fbff8997866e21c81f882ce45c1271b88333b16b9fd80501`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
 		Size: 9.2 MB (9181756 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bb9a39e60e3ccb2bb32fc601feb85e8b1739e6de789de1e28fc7c90312af68f4`  
-		Last Modified: Tue, 07 Apr 2026 17:29:21 GMT  
-		Size: 41.7 KB (41703 bytes)  
+	-	`sha256:1d7294b680df9d360663567b9abb2f7c69ad02831dd0f9e971ccfc4d2e747594`  
+		Last Modified: Thu, 09 Apr 2026 22:25:55 GMT  
+		Size: 41.7 KB (41704 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:lts-postgres`
 
 ```console
-$ docker pull xwiki@sha256:e82baa4b3dd2768c52ec4fa7ae2d03d8bd8f112f81764c7b08e22702a29ad762
+$ docker pull xwiki@sha256:04c6ced458e97dd243d066ab6465aad705bbe40bbac4308476016f7829a95a89
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9923,13 +13411,13 @@ $ docker pull xwiki@sha256:e82baa4b3dd2768c52ec4fa7ae2d03d8bd8f112f81764c7b08e22
 ### `xwiki:lts-postgres` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:99fbddf1f84eff969b6538c7568ac51f5a5456d2a45bbc5f522584df73b5e570
+$ docker pull xwiki@sha256:331710166586f1711ac5d4af256e9683e3d26330b9242be471676ba83be8dbb5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **637.8 MB (637803964 bytes)**  
+-	Total Size: **637.8 MB (637805392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eafc7de030c6133506e39b0eec7ab251dbe656b1485f4ec008e0f119a84e2adb`
+-	Image ID: `sha256:75c56f18886e8594e0c1755afe5ffeebb81b7e99e691a52f96bfd559287bad6a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -9992,53 +13480,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:29:34 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:29:34 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:29:34 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:23:21 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:23:21 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:23:42 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.10
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 CMD ["xwiki"]
 ```
 
@@ -10083,69 +13571,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72391b26363c456202cdcaf62fc7d9ad0e398bbfd45a238b0ba73bf97c444f25`  
-		Last Modified: Tue, 07 Apr 2026 17:30:40 GMT  
-		Size: 191.2 MB (191192614 bytes)  
+	-	`sha256:3797439f5c9f775829ce928f6b2f7af1fbbd6bb83e94e7ab052daa8c9594f0ff`  
+		Last Modified: Thu, 09 Apr 2026 22:24:29 GMT  
+		Size: 191.2 MB (191192551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6155825cf20cf0a368eca7bc18c72168ddd2fce70665bee7e5c944b01ecbeeef`  
-		Last Modified: Tue, 07 Apr 2026 17:30:45 GMT  
-		Size: 331.3 MB (331301446 bytes)  
+	-	`sha256:aa46533955d6b665b2768ab0b7dfe8be4cecc56f3adf884374e144f119ccd5e3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:31 GMT  
+		Size: 331.3 MB (331302946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:711ea956fcbc0fdc6d7be1ea17bda5b869e4bf2e2e24f096d3a9a4ea91ac70e3`  
-		Last Modified: Tue, 07 Apr 2026 17:30:28 GMT  
-		Size: 1.1 MB (1061589 bytes)  
+	-	`sha256:b77ed1a0ceff162e35b200d9705ab8d46e040e01f744c7e60c1a5f6471494b08`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 1.1 MB (1061588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0577405b6d4ebcffc012e2e1a7c8ffcd69adea75790d7a5def1fa97543f3a777`  
-		Last Modified: Tue, 07 Apr 2026 17:30:28 GMT  
-		Size: 1.3 KB (1343 bytes)  
+	-	`sha256:2c35f693cf0906fb2709635e8e9edd99caafdd14c1086cdab22232e524e39890`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 1.3 KB (1340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30e6249cddd1d4c8eab85ea74271aa88950f1b275a2032b6c759074ad0139250`  
-		Last Modified: Tue, 07 Apr 2026 17:30:30 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:fcd1f2ab418a57c914ee324cdc911f8b672e7248dd86611d0cad845ea6adaf5d`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 2.5 KB (2460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e95018cf0f977ddbec552e3a03bf4815400677ad44703651fa8c48336fceb09e`  
-		Last Modified: Tue, 07 Apr 2026 17:30:30 GMT  
-		Size: 10.7 KB (10674 bytes)  
+	-	`sha256:c03ef1e48647162bad48df4a5bf0c36df95fb2c5f6981541947e1ec4745f0a20`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 10.7 KB (10677 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a73d920581c280b2956839396f036e38aa667eb84b491b59599faf6c1d0eee4`  
-		Last Modified: Tue, 07 Apr 2026 17:30:31 GMT  
-		Size: 2.4 KB (2443 bytes)  
+	-	`sha256:6a7a7a289eb9261a1a24b0a4ec7f99efd1b065a626d9d05c171c1f9800db240a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 2.4 KB (2438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:lts-postgres` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:990ba74f61e1ab24cc0cba843de457193e63e6f104d6be69d5a75efe39f7acd9
+$ docker pull xwiki@sha256:db194c6c64e7536650c74b7d7b0e06d6b674248a8a9c2bbc451fd9190912f232
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9220201 bytes)**  
+-	Total Size: **9.2 MB (9220200 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7a76386c9da9fa650a707bc1e6f5cbdf514e6772178240a5dc7cc55d675108e`
+-	Image ID: `sha256:8a164727c721f144e5f97cc6c1044e540c84b9f83939fcea4e07e157572e6d69`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0bbcfd809a35f17e0cf1826c8edc8095ff9d9770ef1bfe1e2ddfb516f1fdb224`  
-		Last Modified: Tue, 07 Apr 2026 17:30:28 GMT  
+	-	`sha256:fd62f8103126c7cb172c5f1732a78dd3175969af1bc835d2558d9ab0dff89b6a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
 		Size: 9.2 MB (9179764 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e4ab4286979ab4447942dcaaad193fd52ae370845662e3df9078997058ee9967`  
-		Last Modified: Tue, 07 Apr 2026 17:30:28 GMT  
-		Size: 40.4 KB (40437 bytes)  
+	-	`sha256:59e2186a3033d31b8ac127b3e3879de0bb0a83fe853047d70407289aee69eb55`  
+		Last Modified: Thu, 09 Apr 2026 22:24:18 GMT  
+		Size: 40.4 KB (40436 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:lts-postgres` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:9324a48af1902b5e141f3fff386c36207bad26b28f8733016d381e01cb217dc5
+$ docker pull xwiki@sha256:6024718ae29b5cc19d57905d9f2fca3176ccfe8fa2f97dcb7c8fda4e09989cdf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **633.8 MB (633789473 bytes)**  
+-	Total Size: **633.8 MB (633791082 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba0aa83c813e5efbc87626e9fa123103a7b37b9e1d751766c48341398245f22d`
+-	Image ID: `sha256:e3dcb82f02f4576514408f2836931235c7dae98932df32844ffa8b48a618a670`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -10208,53 +13696,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:29:29 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:29:29 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:29:29 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.10
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 CMD ["xwiki"]
 ```
 
@@ -10299,63 +13787,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21cbd76dcfc34ba37966cec28e89643ec6a0eb2aeed87dfff948edecd245db0a`  
-		Last Modified: Tue, 07 Apr 2026 17:30:30 GMT  
-		Size: 188.9 MB (188852257 bytes)  
+	-	`sha256:184522f6591efdb5d5dccfdc7884b1157c364adc0183901435978d12b09aaca6`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 188.9 MB (188852373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83fb9d7c4f2e50efb2faa6d86324f59e1efd42ab48d9bd17080c4cb22afaeae2`  
-		Last Modified: Tue, 07 Apr 2026 17:30:33 GMT  
-		Size: 331.3 MB (331301451 bytes)  
+	-	`sha256:ed36cf0b12b90b771fdf5d667bc583e62a26ca07ab4a03ccd1ffa03ab6bb73ce`  
+		Last Modified: Thu, 09 Apr 2026 22:26:06 GMT  
+		Size: 331.3 MB (331302932 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2015a7ea484c206ad136da1280d0276ad8900fea06439e15865891711e32c6f1`  
-		Last Modified: Tue, 07 Apr 2026 17:30:24 GMT  
-		Size: 1.1 MB (1061586 bytes)  
+	-	`sha256:e7f4c40509c5f44ec330619a21d3798f064bed6e4060595d02d2ca239b10c891`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.1 MB (1061593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58a79a20f4612a3cb5e59251e694843c260088c21d2d5c84af855702a65d9fdb`  
-		Last Modified: Tue, 07 Apr 2026 17:30:24 GMT  
-		Size: 1.3 KB (1341 bytes)  
+	-	`sha256:723b0edeb4a8dba5b3f47e0c17ac4779807d9807a64916cf4c78647b3fd2754f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.3 KB (1339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ba8f85ff2a590fe0cdb3e672650bdf6c213698743210bf7c6e9d2abb7248ff8`  
-		Last Modified: Tue, 07 Apr 2026 17:30:26 GMT  
-		Size: 2.5 KB (2460 bytes)  
+	-	`sha256:5a60270272edfd051418572723a14fffd0386e7caa1778d547b5f4f864c80b78`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c476686677f94be9b89465578b6e5af8ff276e12aa5a0710736d2e10c956a809`  
-		Last Modified: Tue, 07 Apr 2026 17:30:26 GMT  
-		Size: 10.7 KB (10673 bytes)  
+	-	`sha256:7fa0d2d0693c8e32804da5575a30ad5abdd6e9d8db434414ba20213b0e1af40b`  
+		Last Modified: Thu, 09 Apr 2026 22:25:58 GMT  
+		Size: 10.7 KB (10678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:428281077d2e9216405bdd0e7490368e16adeaa33b12663172c144f65e2f9ace`  
-		Last Modified: Tue, 07 Apr 2026 17:30:27 GMT  
-		Size: 2.4 KB (2443 bytes)  
+	-	`sha256:48988ee4ceb0e5b0e05041202859dc64849f571ba97db08fef238efde9d144da`  
+		Last Modified: Thu, 09 Apr 2026 22:25:59 GMT  
+		Size: 2.4 KB (2441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:lts-postgres` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:0649fd2912087eaa80e25c3a9992d2a8d0ae3499121b491032e88d7244dafde9
+$ docker pull xwiki@sha256:afe463fb761456964f6604f8d4aaae678a52abd181be4fe9b07990f05bb58741
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9221102 bytes)**  
+-	Total Size: **9.2 MB (9221103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018d971a061843ecb11c1cf3e4706af1aa97fd851bd90fbf91be87357e0758ad`
+-	Image ID: `sha256:b30e0e2543aea28de9696bfb096c9239c0add79ac7ea737333ecb18cf22a0bff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3c9eb5d243fc8c70715d0af413893473fb7ca93012c4813936dea69c205874a9`  
-		Last Modified: Tue, 07 Apr 2026 17:30:25 GMT  
+	-	`sha256:12379d7c1d051b1287042c5c1c9ed1053e8f81caf265a00abf905a40d3450eb5`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
 		Size: 9.2 MB (9180505 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bf47b38208c1272da7a0a4c29e9474ce9998ca5265afb45b20e90af97734309d`  
-		Last Modified: Tue, 07 Apr 2026 17:30:24 GMT  
-		Size: 40.6 KB (40597 bytes)  
+	-	`sha256:c4ec01cba393297bb8411b9e9eca852fbdd232d1e8d5da314c6afcc0caeb7802`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 40.6 KB (40598 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:lts-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:e82baa4b3dd2768c52ec4fa7ae2d03d8bd8f112f81764c7b08e22702a29ad762
+$ docker pull xwiki@sha256:04c6ced458e97dd243d066ab6465aad705bbe40bbac4308476016f7829a95a89
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10368,13 +13856,13 @@ $ docker pull xwiki@sha256:e82baa4b3dd2768c52ec4fa7ae2d03d8bd8f112f81764c7b08e22
 ### `xwiki:lts-postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:99fbddf1f84eff969b6538c7568ac51f5a5456d2a45bbc5f522584df73b5e570
+$ docker pull xwiki@sha256:331710166586f1711ac5d4af256e9683e3d26330b9242be471676ba83be8dbb5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **637.8 MB (637803964 bytes)**  
+-	Total Size: **637.8 MB (637805392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eafc7de030c6133506e39b0eec7ab251dbe656b1485f4ec008e0f119a84e2adb`
+-	Image ID: `sha256:75c56f18886e8594e0c1755afe5ffeebb81b7e99e691a52f96bfd559287bad6a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -10437,53 +13925,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:29:34 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:29:34 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:29:34 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:29:34 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:21 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:23:21 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:23:21 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:23:42 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.10
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 17:29:55 GMT
+# Thu, 09 Apr 2026 22:23:42 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:29:56 GMT
+# Thu, 09 Apr 2026 22:23:43 GMT
 CMD ["xwiki"]
 ```
 
@@ -10528,69 +14016,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72391b26363c456202cdcaf62fc7d9ad0e398bbfd45a238b0ba73bf97c444f25`  
-		Last Modified: Tue, 07 Apr 2026 17:30:40 GMT  
-		Size: 191.2 MB (191192614 bytes)  
+	-	`sha256:3797439f5c9f775829ce928f6b2f7af1fbbd6bb83e94e7ab052daa8c9594f0ff`  
+		Last Modified: Thu, 09 Apr 2026 22:24:29 GMT  
+		Size: 191.2 MB (191192551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6155825cf20cf0a368eca7bc18c72168ddd2fce70665bee7e5c944b01ecbeeef`  
-		Last Modified: Tue, 07 Apr 2026 17:30:45 GMT  
-		Size: 331.3 MB (331301446 bytes)  
+	-	`sha256:aa46533955d6b665b2768ab0b7dfe8be4cecc56f3adf884374e144f119ccd5e3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:31 GMT  
+		Size: 331.3 MB (331302946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:711ea956fcbc0fdc6d7be1ea17bda5b869e4bf2e2e24f096d3a9a4ea91ac70e3`  
-		Last Modified: Tue, 07 Apr 2026 17:30:28 GMT  
-		Size: 1.1 MB (1061589 bytes)  
+	-	`sha256:b77ed1a0ceff162e35b200d9705ab8d46e040e01f744c7e60c1a5f6471494b08`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 1.1 MB (1061588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0577405b6d4ebcffc012e2e1a7c8ffcd69adea75790d7a5def1fa97543f3a777`  
-		Last Modified: Tue, 07 Apr 2026 17:30:28 GMT  
-		Size: 1.3 KB (1343 bytes)  
+	-	`sha256:2c35f693cf0906fb2709635e8e9edd99caafdd14c1086cdab22232e524e39890`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
+		Size: 1.3 KB (1340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30e6249cddd1d4c8eab85ea74271aa88950f1b275a2032b6c759074ad0139250`  
-		Last Modified: Tue, 07 Apr 2026 17:30:30 GMT  
-		Size: 2.5 KB (2463 bytes)  
+	-	`sha256:fcd1f2ab418a57c914ee324cdc911f8b672e7248dd86611d0cad845ea6adaf5d`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 2.5 KB (2460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e95018cf0f977ddbec552e3a03bf4815400677ad44703651fa8c48336fceb09e`  
-		Last Modified: Tue, 07 Apr 2026 17:30:30 GMT  
-		Size: 10.7 KB (10674 bytes)  
+	-	`sha256:c03ef1e48647162bad48df4a5bf0c36df95fb2c5f6981541947e1ec4745f0a20`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 10.7 KB (10677 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a73d920581c280b2956839396f036e38aa667eb84b491b59599faf6c1d0eee4`  
-		Last Modified: Tue, 07 Apr 2026 17:30:31 GMT  
-		Size: 2.4 KB (2443 bytes)  
+	-	`sha256:6a7a7a289eb9261a1a24b0a4ec7f99efd1b065a626d9d05c171c1f9800db240a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 2.4 KB (2438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:lts-postgres-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:990ba74f61e1ab24cc0cba843de457193e63e6f104d6be69d5a75efe39f7acd9
+$ docker pull xwiki@sha256:db194c6c64e7536650c74b7d7b0e06d6b674248a8a9c2bbc451fd9190912f232
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9220201 bytes)**  
+-	Total Size: **9.2 MB (9220200 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d7a76386c9da9fa650a707bc1e6f5cbdf514e6772178240a5dc7cc55d675108e`
+-	Image ID: `sha256:8a164727c721f144e5f97cc6c1044e540c84b9f83939fcea4e07e157572e6d69`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0bbcfd809a35f17e0cf1826c8edc8095ff9d9770ef1bfe1e2ddfb516f1fdb224`  
-		Last Modified: Tue, 07 Apr 2026 17:30:28 GMT  
+	-	`sha256:fd62f8103126c7cb172c5f1732a78dd3175969af1bc835d2558d9ab0dff89b6a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:19 GMT  
 		Size: 9.2 MB (9179764 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e4ab4286979ab4447942dcaaad193fd52ae370845662e3df9078997058ee9967`  
-		Last Modified: Tue, 07 Apr 2026 17:30:28 GMT  
-		Size: 40.4 KB (40437 bytes)  
+	-	`sha256:59e2186a3033d31b8ac127b3e3879de0bb0a83fe853047d70407289aee69eb55`  
+		Last Modified: Thu, 09 Apr 2026 22:24:18 GMT  
+		Size: 40.4 KB (40436 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:lts-postgres-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:9324a48af1902b5e141f3fff386c36207bad26b28f8733016d381e01cb217dc5
+$ docker pull xwiki@sha256:6024718ae29b5cc19d57905d9f2fca3176ccfe8fa2f97dcb7c8fda4e09989cdf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **633.8 MB (633789473 bytes)**  
+-	Total Size: **633.8 MB (633791082 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ba0aa83c813e5efbc87626e9fa123103a7b37b9e1d751766c48341398245f22d`
+-	Image ID: `sha256:e3dcb82f02f4576514408f2836931235c7dae98932df32844ffa8b48a618a670`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -10653,53 +14141,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 17:29:29 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 17:29:29 GMT
-ENV XWIKI_VERSION=17.10.6
-# Tue, 07 Apr 2026 17:29:29 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.6
-# Tue, 07 Apr 2026 17:29:29 GMT
-ENV XWIKI_DOWNLOAD_SHA256=b9e55f30a206830b14f7fdfec1ef30a7114d242729c131662d4d4254b35c45c8
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV XWIKI_VERSION=17.10.7
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.7
+# Thu, 09 Apr 2026 22:25:01 GMT
+ENV XWIKI_DOWNLOAD_SHA256=df33fb71c7149bfc05a24db32ed0d2c3fd91c15d2a562cfed425c71d5f47a91f
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.10
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 17:29:51 GMT
+# Thu, 09 Apr 2026 22:25:23 GMT
 CMD ["xwiki"]
 ```
 
@@ -10744,63 +14232,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21cbd76dcfc34ba37966cec28e89643ec6a0eb2aeed87dfff948edecd245db0a`  
-		Last Modified: Tue, 07 Apr 2026 17:30:30 GMT  
-		Size: 188.9 MB (188852257 bytes)  
+	-	`sha256:184522f6591efdb5d5dccfdc7884b1157c364adc0183901435978d12b09aaca6`  
+		Last Modified: Thu, 09 Apr 2026 22:26:03 GMT  
+		Size: 188.9 MB (188852373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83fb9d7c4f2e50efb2faa6d86324f59e1efd42ab48d9bd17080c4cb22afaeae2`  
-		Last Modified: Tue, 07 Apr 2026 17:30:33 GMT  
-		Size: 331.3 MB (331301451 bytes)  
+	-	`sha256:ed36cf0b12b90b771fdf5d667bc583e62a26ca07ab4a03ccd1ffa03ab6bb73ce`  
+		Last Modified: Thu, 09 Apr 2026 22:26:06 GMT  
+		Size: 331.3 MB (331302932 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2015a7ea484c206ad136da1280d0276ad8900fea06439e15865891711e32c6f1`  
-		Last Modified: Tue, 07 Apr 2026 17:30:24 GMT  
-		Size: 1.1 MB (1061586 bytes)  
+	-	`sha256:e7f4c40509c5f44ec330619a21d3798f064bed6e4060595d02d2ca239b10c891`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.1 MB (1061593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58a79a20f4612a3cb5e59251e694843c260088c21d2d5c84af855702a65d9fdb`  
-		Last Modified: Tue, 07 Apr 2026 17:30:24 GMT  
-		Size: 1.3 KB (1341 bytes)  
+	-	`sha256:723b0edeb4a8dba5b3f47e0c17ac4779807d9807a64916cf4c78647b3fd2754f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 1.3 KB (1339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ba8f85ff2a590fe0cdb3e672650bdf6c213698743210bf7c6e9d2abb7248ff8`  
-		Last Modified: Tue, 07 Apr 2026 17:30:26 GMT  
-		Size: 2.5 KB (2460 bytes)  
+	-	`sha256:5a60270272edfd051418572723a14fffd0386e7caa1778d547b5f4f864c80b78`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
+		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c476686677f94be9b89465578b6e5af8ff276e12aa5a0710736d2e10c956a809`  
-		Last Modified: Tue, 07 Apr 2026 17:30:26 GMT  
-		Size: 10.7 KB (10673 bytes)  
+	-	`sha256:7fa0d2d0693c8e32804da5575a30ad5abdd6e9d8db434414ba20213b0e1af40b`  
+		Last Modified: Thu, 09 Apr 2026 22:25:58 GMT  
+		Size: 10.7 KB (10678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:428281077d2e9216405bdd0e7490368e16adeaa33b12663172c144f65e2f9ace`  
-		Last Modified: Tue, 07 Apr 2026 17:30:27 GMT  
-		Size: 2.4 KB (2443 bytes)  
+	-	`sha256:48988ee4ceb0e5b0e05041202859dc64849f571ba97db08fef238efde9d144da`  
+		Last Modified: Thu, 09 Apr 2026 22:25:59 GMT  
+		Size: 2.4 KB (2441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:lts-postgres-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:0649fd2912087eaa80e25c3a9992d2a8d0ae3499121b491032e88d7244dafde9
+$ docker pull xwiki@sha256:afe463fb761456964f6604f8d4aaae678a52abd181be4fe9b07990f05bb58741
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9221102 bytes)**  
+-	Total Size: **9.2 MB (9221103 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:018d971a061843ecb11c1cf3e4706af1aa97fd851bd90fbf91be87357e0758ad`
+-	Image ID: `sha256:b30e0e2543aea28de9696bfb096c9239c0add79ac7ea737333ecb18cf22a0bff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3c9eb5d243fc8c70715d0af413893473fb7ca93012c4813936dea69c205874a9`  
-		Last Modified: Tue, 07 Apr 2026 17:30:25 GMT  
+	-	`sha256:12379d7c1d051b1287042c5c1c9ed1053e8f81caf265a00abf905a40d3450eb5`  
+		Last Modified: Thu, 09 Apr 2026 22:25:57 GMT  
 		Size: 9.2 MB (9180505 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bf47b38208c1272da7a0a4c29e9474ce9998ca5265afb45b20e90af97734309d`  
-		Last Modified: Tue, 07 Apr 2026 17:30:24 GMT  
-		Size: 40.6 KB (40597 bytes)  
+	-	`sha256:c4ec01cba393297bb8411b9e9eca852fbdd232d1e8d5da314c6afcc0caeb7802`  
+		Last Modified: Thu, 09 Apr 2026 22:25:56 GMT  
+		Size: 40.6 KB (40598 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:mariadb-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:766af116bb6648b70f93ff9b05e4afb417fb8e95a8abbd24b93c8a3958057717
+$ docker pull xwiki@sha256:2f7b46832fb0394ef3bb070dd1bab2bbb74c9703f1f16b1716bd38ddac018968
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10813,13 +14301,13 @@ $ docker pull xwiki@sha256:766af116bb6648b70f93ff9b05e4afb417fb8e95a8abbd24b93c8
 ### `xwiki:mariadb-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ba0948cc23b0bfe434f138031916d4797b854c12346536fdf58d291ad3e6bc45
+$ docker pull xwiki@sha256:7f845529dd6e239b218af996c32c1aaae5b6b345041152bc8bec65ea2ab1f16c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **644.4 MB (644392534 bytes)**  
+-	Total Size: **644.4 MB (644392484 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42ce846f10678ed13d34852e237946f6dcd560d5d2fccd0402126795226b5322`
+-	Image ID: `sha256:99600bae0d5e480f09cd9c7a529becf297efab3062c4511d52fb51fa1a13d938`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -10882,53 +14370,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:04:03 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:04:03 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:04:03 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:14 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:14 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_VERSION=3.5.7
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 CMD ["xwiki"]
 ```
 
@@ -10973,69 +14461,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcca4ff639731b663b2c2e9ea7f2f61d473ffb675abe029c6c28b487491a34ac`  
-		Last Modified: Tue, 07 Apr 2026 05:05:09 GMT  
-		Size: 191.2 MB (191192547 bytes)  
+	-	`sha256:2ac27493d4202eec4afe454eb31c0b2a8b0f7b4be2cfa9ef14e93dbc4cc95a44`  
+		Last Modified: Thu, 09 Apr 2026 22:24:18 GMT  
+		Size: 191.2 MB (191192385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ee6f76735ac92ee9e903ac6f01f34ca081159e907ef896b12530bde859c8a0`  
-		Last Modified: Tue, 07 Apr 2026 05:05:09 GMT  
-		Size: 338.2 MB (338242958 bytes)  
+	-	`sha256:f016d26d1b4337444504499b396c1229ab4be94bfb917e2ef5f8eb5df2f0467d`  
+		Last Modified: Thu, 09 Apr 2026 22:24:21 GMT  
+		Size: 338.2 MB (338243065 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:786a2046ee63e7596c8f74d8762afd7e67457f792de68693203cd33a2ef87abe`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
-		Size: 708.5 KB (708548 bytes)  
+	-	`sha256:8f924396aaf060ebd2222b21b2fc2b60e7c6baa7c3c0940a23caf5aff224c88c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 708.5 KB (708546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:541fb17ec09830dffc5d66a3b0d4e70e88768f6355a5acc688d0f04fee891d9b`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
+	-	`sha256:994f4e25fb3ea19f23ad2a8d56c7a8af1f6eec0bd342a6804bcc74353db582f2`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bfa157fb8d191e5817feb09436686f85c513e25ffaafa7a4be1055d88d53102`  
-		Last Modified: Tue, 07 Apr 2026 05:05:01 GMT  
+	-	`sha256:3704314d67659afee8af05ebcd29916a9c38bfe6b49df3e5043b1b86483f53c9`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:449352b7c13b78fac9811f9f938454b29670ed33479ca577568e21d5bc969122`  
-		Last Modified: Tue, 07 Apr 2026 05:05:02 GMT  
-		Size: 10.9 KB (10949 bytes)  
+	-	`sha256:995e6e40781dc9ad85886c45e18c8c8484eaa0ac9c9309eb1e3a4f94c5fb647c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:14 GMT  
+		Size: 11.0 KB (10951 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:664385d3ae55779c423db6f43209a0ceb1beecca910065ddfe224a89b324a4f4`  
-		Last Modified: Tue, 07 Apr 2026 05:05:02 GMT  
-		Size: 2.5 KB (2491 bytes)  
+	-	`sha256:11aca9dcc74cbfea7c8785ba33ad988bb849f5fc14c7f8252fe74a29ba5d054f`  
+		Last Modified: Thu, 09 Apr 2026 22:24:15 GMT  
+		Size: 2.5 KB (2496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:mariadb-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:f825256d7c1731d4d42db2e7f04afde4acb442bb68d9d1c9ea6bbd59e08a5c3e
+$ docker pull xwiki@sha256:56edc12b6e37bc72fbd2acfdd6646f4ceda9abc7cb6423f72e70dd5e33267a1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9233518 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70912a286fbe4bb1616eca60d195e27d52cbfbbdc0204a6e65b7b40a2aa3fb5e`
+-	Image ID: `sha256:6f441cb06f536403dcc6b3429e61b9aafb8e0e4f877c8ba599346df21f7a4948`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d19bbd52fcc1a21ac11ea796976916c04d6cb2e153d39d55aaeb8d6f26744dec`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
+	-	`sha256:5c00d65fb1481e6e70d7c99f21360114a0ea923fbd6f85f287a634837873de35`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 9.2 MB (9192755 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:dfbffb8d08c50344d84c3526df473f2ec15f68b66077800ac3cd80b0846929a9`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
+	-	`sha256:1cb31448128770abf74c5b34fafb352ed380d9a2aa6041cac186f85ad71c8eb5`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 40.8 KB (40763 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:mariadb-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:1e716db013c18f6e438b415c7e60876602345e0ce7561f52548f5100052f7d41
+$ docker pull xwiki@sha256:b13b45722cecf651d8e233bac6edf7016acd4f108e9b8cfb7dc9fc0cfaed6b2e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **640.4 MB (640377919 bytes)**  
+-	Total Size: **640.4 MB (640378092 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0eeb05838595a355cf1f91cd1321de0ebfd059a990ba12bc96de9b22b8c8c54e`
+-	Image ID: `sha256:6c6f16e6f8fdd44c1779a62bd994a2297693da5de1176ccae5e7dce1f6076706`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -11098,53 +14586,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:57 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:57 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:57 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:25:10 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_VERSION=3.5.7
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 CMD ["xwiki"]
 ```
 
@@ -11189,63 +14677,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc6ff24fed8958446b55eabf3aaaa6fef97a6a9db73faab712c2d54571af7e66`  
-		Last Modified: Tue, 07 Apr 2026 05:25:59 GMT  
-		Size: 188.9 MB (188852232 bytes)  
+	-	`sha256:7138705fc18cbf1f01ce7fa0c86bf7b78199e805cd67f83b34341bed6665e884`  
+		Last Modified: Thu, 09 Apr 2026 22:25:50 GMT  
+		Size: 188.9 MB (188852257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7687e4fe63aa3b08a56c30b9893ac0f7b43bcd3890e8d75ba2f9522294993924`  
-		Last Modified: Tue, 07 Apr 2026 05:26:02 GMT  
-		Size: 338.2 MB (338242793 bytes)  
+	-	`sha256:a93dfb9c13c1a63a280a43be79ea97cec3bf1fd65c1a3262cbe4217ac0631671`  
+		Last Modified: Thu, 09 Apr 2026 22:25:53 GMT  
+		Size: 338.2 MB (338242922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce8a15cacfe949eb1ebb41beea622aeef12a0e66c5b51aabd5316f3ff85bf61c`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 708.5 KB (708544 bytes)  
+	-	`sha256:74b0ca8ba7114b163b8212d7713b455592e46e72dcc53fc57b668f2c0026af43`  
+		Last Modified: Thu, 09 Apr 2026 22:25:44 GMT  
+		Size: 708.5 KB (708547 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81d324e3c7a7965ac96abbc956763ec0f2e249f1de3bfe8a46cbcdd6da0ee920`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 1.3 KB (1338 bytes)  
+	-	`sha256:c687fcdd47be17835a04f568f977d2d5d9d4f4b9cb2e06abddbd7fb70c441a5c`  
+		Last Modified: Thu, 09 Apr 2026 22:25:43 GMT  
+		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b67a5b91b6f796b462869555582f816a5fb2d577e2a56a0324cda81395d2d815`  
-		Last Modified: Tue, 07 Apr 2026 05:25:54 GMT  
-		Size: 2.3 KB (2305 bytes)  
+	-	`sha256:431f576ce0199d963e945de2258990132b1bdbe4c80f625dc2da12fc9510b550`  
+		Last Modified: Thu, 09 Apr 2026 22:25:45 GMT  
+		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:493cbab57cc6db1c1e169d47b05398e137751dffeaef724c593a34434ca68231`  
-		Last Modified: Tue, 07 Apr 2026 05:25:54 GMT  
-		Size: 10.9 KB (10949 bytes)  
+	-	`sha256:b18a97f27a0055c2e0c043f8125c5dcb20e9ffbecd6321951d49acdb2fbba196`  
+		Last Modified: Thu, 09 Apr 2026 22:25:45 GMT  
+		Size: 11.0 KB (10957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2747fd0272287dacc60e09f6ebe0adba4a8a06f9bf0f05d457b6c6e115b7845f`  
-		Last Modified: Tue, 07 Apr 2026 05:25:55 GMT  
-		Size: 2.5 KB (2496 bytes)  
+	-	`sha256:fed36abd95650841f9c5f59e37c081cdf5d2f51dc6f865902ead59c496bf6cd4`  
+		Last Modified: Thu, 09 Apr 2026 22:25:46 GMT  
+		Size: 2.5 KB (2498 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:mariadb-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:344d0a16fa56b087a85e6b87fcd91a585fb71bbb01d61140316009711d8a9444
+$ docker pull xwiki@sha256:8338e29aebd4aaab075bccf3331edba1464b418a0e7452763583a4194eed5d0b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9234445 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0222e81dbc667a0d9b4f265f117d7713420e1945fccd0da6a5b294c0546aa467`
+-	Image ID: `sha256:38d76975db5fdb2fd17c82b040962f2272aeb1346178ef759b04b7974f841883`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ae1212e812d570c880bb98d32665a65f05e123a0f5afd38547e6a43fb9215d76`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
+	-	`sha256:468adf1134aa3cc689ac4c31c05cd10c9867661f4f59da4d5656d69bb3e05bfb`  
+		Last Modified: Thu, 09 Apr 2026 22:25:44 GMT  
 		Size: 9.2 MB (9193508 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c727a7c38f6b0abb8bf026c9858df11ed96ba25d6aff8985f650fad645fb8fa3`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
+	-	`sha256:9c53c355bf660b3feaeeae74ebc4ec1ff70f14c0a261682e31d054b43392a441`  
+		Last Modified: Thu, 09 Apr 2026 22:25:43 GMT  
 		Size: 40.9 KB (40937 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:f00f1d09f8e34b344ea500a281434f619e8b087265d6111b7e9392b77d04cad0
+$ docker pull xwiki@sha256:e34d244855e337a293e8a3fd1c9c9c6f1d7ca05a3562110679a673053f282be7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11258,13 +14746,13 @@ $ docker pull xwiki@sha256:f00f1d09f8e34b344ea500a281434f619e8b087265d6111b7e939
 ### `xwiki:mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ddeea30098567cf1855bb0036d8a031c9be52cc1b94daa5e323f67cf944a5a5a
+$ docker pull xwiki@sha256:c78871a0bf7d16fe1f40e072a7ff7f2d5cb6b3dd0036c8ce9a07cfbce1ec821c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **646.1 MB (646125676 bytes)**  
+-	Total Size: **646.1 MB (646125877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:067ca4042eb2c7f7e3153a0205f7fccb387be2be3bd23215f7fde59d2eebefe5`
+-	Image ID: `sha256:6406557bf0308d28e979e04a2cb76517480499088ec1c4b6b9ff17a0682a1d8d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -11327,53 +14815,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 CMD ["xwiki"]
 ```
 
@@ -11418,69 +14906,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84c2a7b89a6376bc596249e7437e541ca07ed8ae6d2399a0a35f8b33b055a5c7`  
-		Last Modified: Tue, 07 Apr 2026 05:04:31 GMT  
-		Size: 191.2 MB (191192504 bytes)  
+	-	`sha256:2b305e1c2488d50848542df06a11b2c47d49a87d3ec354e04e9e1ace645c49e4`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 191.2 MB (191192649 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac76300df4bb9eb1bc756187aeb83e9f64d0f50fe318744de25b0b7a4a32ecc2`  
-		Last Modified: Tue, 07 Apr 2026 05:04:34 GMT  
-		Size: 338.2 MB (338242922 bytes)  
+	-	`sha256:c989f480dbd63e04392ecc6a05de2a97b49456792c75ff0d2ebb676f4daf8d5e`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 338.2 MB (338242976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66cf85f76a0aecef7c91c9c914f207a2f18d962c1c187c53c416ec6406783463`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
-		Size: 2.4 MB (2441661 bytes)  
+	-	`sha256:b3f1096b4eda79d85114e9da549d1e396230b84ce90bb16c77a097cf157f1c7a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
+		Size: 2.4 MB (2441658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d31fde62cff123bdaa705a7110c1d3080e52797d4050ef65953dd7ae860ad501`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
-		Size: 1.3 KB (1339 bytes)  
+	-	`sha256:1285445a43c468abea58a1c806ffa6ec3a224f7ee32f6d3f4775942be8a3eaeb`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
+		Size: 1.3 KB (1342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d2adc64c4ec3ba7bf5e9ea90dc35e854a734bf58ab8199aebad3dda34adef7d`  
-		Last Modified: Tue, 07 Apr 2026 05:04:26 GMT  
-		Size: 2.4 KB (2370 bytes)  
+	-	`sha256:aef7e2f0c8b7f3c40738dc44ee9fab5802418f039644091519daa3a37a8d6e63`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 2.4 KB (2372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2572fbf1adbf47a387e78d99fe3c6c282f971686c7b1ac516c64b0f5aa901a9`  
-		Last Modified: Tue, 07 Apr 2026 05:04:27 GMT  
-		Size: 11.0 KB (10952 bytes)  
+	-	`sha256:6d21b77d6334f8e7926197ef07fc07a8d0ba0c84bb9aaa39c5fd8b8361933759`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 11.0 KB (10954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15a6b9da4b9b81fead5cbedd9dcf298f995dd373606b5401dba5b3a6fa37feab`  
-		Last Modified: Tue, 07 Apr 2026 05:04:28 GMT  
-		Size: 2.5 KB (2536 bytes)  
+	-	`sha256:fa85729b9e9053f46b2cf1db9a539eb44158a8c78ab2f13a97bbec2c4810be94`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:mysql-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:d6b5893227864e4a79ff6a47535d95e0b49c2f0820e96953a175486f86ae30bd
+$ docker pull xwiki@sha256:30583db40bd8f611165188914f63a1209569a8c17f3e3bc42e15a257c9bcbfd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9236373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5107a10e24ba67b10be339eac19ac49c9ceb5e4d68d2d60f3f0117208bb9dcfb`
+-	Image ID: `sha256:09c400510f16489e44fa4bf5bb6968ea4c09adda015f621c481e686dd8bda87c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7a635a48871515a031d18bf24cccb1b8aa34d30dd12f95017dd079cb962294c`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
+	-	`sha256:4bfb239f58493ab019ded0392c0c37dfdd8c6f9422f2bca449be288e0f692bb7`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
 		Size: 9.2 MB (9194270 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df788f52be495941f548ca56aec65cc098e102aaf2cf30c56924ddf7fef86713`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
+	-	`sha256:f68ab56c6a66bc015d367b8ca90d0bab6fe451699cac85865b3c269e6b592162`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
 		Size: 42.1 KB (42103 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:mysql-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:f184cc91ffa74d22de687083391731e7468aa4d0150a4e72258a29e8c80566b7
+$ docker pull xwiki@sha256:5743ff5135b40fa2e98c72788136cc5959c25ebc6e0ef3a625d224ddd5bf234a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **642.1 MB (642111188 bytes)**  
+-	Total Size: **642.1 MB (642111569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f3e7d85d600c714b3bec5d230f23beea45c0b9cc6d4fbf2ff48bc985889bd87`
+-	Image ID: `sha256:5e507c5582a3316b2935f16a6bc57950a2bec015ceaec05dce62b34fc02d7bbb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -11543,53 +15031,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:24:46 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 CMD ["xwiki"]
 ```
 
@@ -11634,63 +15122,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e369b2bd065e4b6e847999856d6ea1c99ea3f835edf51132c7f2d2623b59ac08`  
-		Last Modified: Tue, 07 Apr 2026 05:25:49 GMT  
-		Size: 188.9 MB (188852229 bytes)  
+	-	`sha256:385002331e92f8053b9f9da0d27c4a33cc31c35278d007c4b163b256b9ab956e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:27 GMT  
+		Size: 188.9 MB (188852491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d8d5f8c3dbc774444f3c8d71dcba7112ca2fd8d77d6e7f6338ad24aaccbb430`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 338.2 MB (338242839 bytes)  
+	-	`sha256:d96a35bd4a0b81964a36a8356db49767dc7d96c8a10104ba8675dbb1870d26ff`  
+		Last Modified: Thu, 09 Apr 2026 22:25:29 GMT  
+		Size: 338.2 MB (338242967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc58ca5bc4a630f88922701f4f96efe54d0c7086143102f0fa4828b15aab5ffd`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 2.4 MB (2441660 bytes)  
+	-	`sha256:48f004652cfc4ee3fc9e225e525c85f669812ff5fde7051aa1ac0e8fdc4e4233`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
+		Size: 2.4 MB (2441657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd0143f6588623dc5b51f26f8aff50dc77ffd127d85b2c27e26ca206c34786e1`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 1.3 KB (1341 bytes)  
+	-	`sha256:71760da9ba226c177adc275892b984843162f99939cec79601c975c5690ef925`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
+		Size: 1.3 KB (1339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f557c11f5c67c99a855e1583289a0717b46989e7705facd64a4a06d4b73837e4`  
-		Last Modified: Tue, 07 Apr 2026 05:25:43 GMT  
-		Size: 2.4 KB (2371 bytes)  
+	-	`sha256:becf68ad406751339a93d048b5ac2d81675607f41c8a6c7711192dba36f900d2`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 2.4 KB (2369 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e910fceeadacfcf00dc91eb4821226e1b7d8032cbbbbf848a0d525c2864774`  
-		Last Modified: Tue, 07 Apr 2026 05:25:44 GMT  
-		Size: 11.0 KB (10951 bytes)  
+	-	`sha256:ea783563aa9d98b684f22281bf8ba9278d4649371e770a41d4eafa1a67a91d1e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 10.9 KB (10950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73f57b949906c2385790e59738d264d4a7bcb9077c81f8b2236407f25f78d69d`  
-		Last Modified: Tue, 07 Apr 2026 05:25:45 GMT  
-		Size: 2.5 KB (2535 bytes)  
+	-	`sha256:3516759391fd63764d150447c5971edee81db0f23d2276c4a519207102a27d6f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:23 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:mysql-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:784f68c3786c5855bd4bd5639ee209c47a677135df9486bd291b62be85bfc2ef
+$ docker pull xwiki@sha256:4d2aa706f8794883b2cd9931ffdd5495a6320f4f45f18d014fe987375bdad20c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9237419 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80b76ec51eb373beb748d124e7ad2830a1c84d50beab79095e34d9166b32a584`
+-	Image ID: `sha256:33e54e27c87d03ef1a7ebd00f1e4e5b992aa1ec7499b186450d0d024bc8d4137`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca931a3ed97a89df87b19da35c3fcbe8d8d1d4e291efb6854e776550fac71c09`  
-		Last Modified: Tue, 07 Apr 2026 05:25:43 GMT  
+	-	`sha256:a6a891dd772b4c7bed5db4a7012e38e688345f2cb29e8f6284cb61ad88982f6a`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
 		Size: 9.2 MB (9195083 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6dfb2cbf295a9008cd3b1dd8d96868bb1be439ec66947813e1ad2b64aebf7cd`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
+	-	`sha256:bc5a595378ceebc1723088e0ca439063e80ee26f58248ffac75146b8f6d409f9`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
 		Size: 42.3 KB (42336 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:03a2fd83dac41948d776759fa025fe29a3fffb62fe3b6e1f0d19e2303b5c8118
+$ docker pull xwiki@sha256:a0e045d953be6c583b90ff4c988a9b60122c825d318e3dee9aa033e12746fea4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11703,13 +15191,13 @@ $ docker pull xwiki@sha256:03a2fd83dac41948d776759fa025fe29a3fffb62fe3b6e1f0d19e
 ### `xwiki:postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:c0bc1625114b66671b54332d29166d6fde9d04fa4369f0a77760f4c7ce1d3885
+$ docker pull xwiki@sha256:d2cbe99724d64df219ff5189bca9526d9e34bf74372cc6893af310ac37e4e9a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **644.7 MB (644745470 bytes)**  
+-	Total Size: **644.7 MB (644745744 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ebe4413fa1c31dc12f90279bad16b74608584918b3072e2c034d1fdfa03f7aa`
+-	Image ID: `sha256:47c5e517d5084ef2cfcbdc8d781e5a3ecef00d4fbcc3f6a558b0161d7e16b771`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -11772,53 +15260,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:03:45 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:03:45 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:03:45 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:04 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:04 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:25 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.10
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 CMD ["xwiki"]
 ```
 
@@ -11863,69 +15351,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ba00b5a9b86656512fc3936b60ded13346ef82ee705751f57005f76f6e5c034`  
-		Last Modified: Tue, 07 Apr 2026 05:04:44 GMT  
-		Size: 191.2 MB (191192541 bytes)  
+	-	`sha256:ab6685658399dffbc8f6656ffe1ebd1fdfcc6699d77fa36fec74ffbefc7d7b54`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 191.2 MB (191192591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4f1fefa858353d68123cb5fc0c324a087c75c278f4cc4e482e52dbcecd526d9`  
-		Last Modified: Tue, 07 Apr 2026 05:04:47 GMT  
-		Size: 338.2 MB (338242748 bytes)  
+	-	`sha256:c989f480dbd63e04392ecc6a05de2a97b49456792c75ff0d2ebb676f4daf8d5e`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 338.2 MB (338242976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9de60098dfdf6ef9a105e2bf136f0d4684bcabeae5d9dae16243adbb51123b08`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
-		Size: 1.1 MB (1061593 bytes)  
+	-	`sha256:69d977e52ab4cba7bd0877fc512509281eccfd9fc216abed6e776e2c3427fd81`  
+		Last Modified: Thu, 09 Apr 2026 22:23:58 GMT  
+		Size: 1.1 MB (1061588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80e957e7f9eda289c7012e596b69a9b2089fd613f529a06508e18633ad0f6b44`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
-		Size: 1.3 KB (1339 bytes)  
+	-	`sha256:5f8e780bd2266349061f00ece7007c226289167843e7b406db8b195be74a0f3c`  
+		Last Modified: Thu, 09 Apr 2026 22:23:58 GMT  
+		Size: 1.3 KB (1342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ca3dc4dacd0a50350a453c22f7256f5e71ef13839cd578b41d35aa5b74f7aa8`  
-		Last Modified: Tue, 07 Apr 2026 05:04:39 GMT  
-		Size: 2.5 KB (2461 bytes)  
+	-	`sha256:2c7466b32f0bb173d36cedee71c9c5da416ab1247b55db117ba72453b649fab3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:00 GMT  
+		Size: 2.5 KB (2460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13117c0fec91aa18bfa98d06d6044ee31bb747edf0165cfaef7fcfdec79f051a`  
-		Last Modified: Tue, 07 Apr 2026 05:04:39 GMT  
-		Size: 11.0 KB (10955 bytes)  
+	-	`sha256:da88dc9ce3cc8fee0892d033c043fa15935f551fd51d7f659fc24cf3769d9f50`  
+		Last Modified: Thu, 09 Apr 2026 22:24:00 GMT  
+		Size: 11.0 KB (10953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4808d580d758143dccd7263848b640dd270b71dc97c04f16e4bc036e1fc6d888`  
-		Last Modified: Tue, 07 Apr 2026 05:04:41 GMT  
-		Size: 2.4 KB (2441 bytes)  
+	-	`sha256:c5e385eb876c8cb883fe04a886066fef4e0b3729f58e5fcd976e5aa596b9b619`  
+		Last Modified: Thu, 09 Apr 2026 22:24:01 GMT  
+		Size: 2.4 KB (2442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:postgres-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:22896b002bc78d904d945279283c4c40b950b3105d9d8b2aa5796778086942b0
+$ docker pull xwiki@sha256:7261816e696033c1b72f3a0484dd25c9976d88d8b5e834094d24382df6385dfa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9233523 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49655e1361a16ff6cb8f2f811b407e96b1987e0280ad1d37e7892493b69e2254`
+-	Image ID: `sha256:b5b184fcf3dd33956004d47268444ff9b69b9de44ab0602806e6171f9fb20f18`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:69cfa0066674d1a8bf9bce38871de49599de777a167ff457471977d7ca44ae74`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
+	-	`sha256:6c881a2eb8c3f7e6688f55d447518decbb5c845e6fa17ec2588cfe2761cd45ac`  
+		Last Modified: Thu, 09 Apr 2026 22:23:59 GMT  
 		Size: 9.2 MB (9192775 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f921fb4396b3758e9d4f8b23c9aa3958855837e3e642487d4e3b3e33b5334b0b`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
+	-	`sha256:3a1d74de71ef8a2df0ae58502c4fcd3e7f9ddce4c8451cff5264b15593430a4b`  
+		Last Modified: Thu, 09 Apr 2026 22:23:58 GMT  
 		Size: 40.7 KB (40748 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:postgres-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:9fd400c01a4dedea2a59d4f88c8ebb46c9985de41fe605ad86ac9531cf6c96a2
+$ docker pull xwiki@sha256:6a89cf110097a4b1112b5cfc7c7a1ba47071555b98cb3ef20cd56f868199aafb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **640.7 MB (640731243 bytes)**  
+-	Total Size: **640.7 MB (640731414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5933bc99364a7507df6dac49353e015710aa9b47cd41306d515a780c28780d4a`
+-	Image ID: `sha256:27222df73402ea4a2139f143c97b06161b76cb82e3681ee4dfc5735e302ef33c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -11988,53 +15476,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:45 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:45 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:45 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:30 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:30 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.10
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 CMD ["xwiki"]
 ```
 
@@ -12079,63 +15567,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:980798a812d77d18400ebd9a1b3386b55d7210e7553e2a76c1fd0d6f46f58b71`  
-		Last Modified: Tue, 07 Apr 2026 05:25:46 GMT  
-		Size: 188.9 MB (188852350 bytes)  
+	-	`sha256:91e4ba2406ca17d92518a9c8fed78922587ccdaed82a817003b3a6a7a2630415`  
+		Last Modified: Thu, 09 Apr 2026 22:25:41 GMT  
+		Size: 188.9 MB (188852239 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09955a9b20fb6241692c2cde02d00ab48db3fd23cd3fb1a9cbf3429e1b65b4dc`  
-		Last Modified: Tue, 07 Apr 2026 05:25:49 GMT  
-		Size: 338.2 MB (338242841 bytes)  
+	-	`sha256:ed48fd32fa977664a9efae1c399214cfb95d56e6704a9427b29fbb504e4c4512`  
+		Last Modified: Thu, 09 Apr 2026 22:25:43 GMT  
+		Size: 338.2 MB (338243125 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6de5e23d7f80da3cb56170285de02fd6fc02ee66165660503489c2a1f81cda95`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:0a72878e1ceec4717b64831232e4483e4d2971324205b6ef54c1b1ed17705679`  
+		Last Modified: Thu, 09 Apr 2026 22:25:34 GMT  
 		Size: 1.1 MB (1061591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fffbe365397b1f6f020664d340eba77704fddcb96692b936dbaef558b54f376b`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:34cb4092a53be364a54edb4e5e4b46840eebca3a4cd6a0c15ef67fc442b4fd32`  
+		Last Modified: Thu, 09 Apr 2026 22:25:34 GMT  
 		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c021a6cbe1cb0eab76abbc0c470f0cbc082e6addf1cf66e387f74a173d7e7767`  
-		Last Modified: Tue, 07 Apr 2026 05:25:40 GMT  
+	-	`sha256:6f91579b573491d279efff4290f1cdee81295fdac0dbc76a08b81920f672884f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:35 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1726884ae241041161bea092e77fba5a22055efacbb48dd121b80e9310620a7`  
-		Last Modified: Tue, 07 Apr 2026 05:25:40 GMT  
+	-	`sha256:46e4b141c31a2f4b521111a0fa2c360d96424b65989b910cd76805940c3cc410`  
+		Last Modified: Thu, 09 Apr 2026 22:25:35 GMT  
 		Size: 11.0 KB (10952 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0562b7325829da80eb97bdcf49ac44aa45740e274b052c8f2628a7e95a216ad`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 2.4 KB (2443 bytes)  
+	-	`sha256:ecd716ce84b4394d7cdd6c69a53d61b45d0efff4cabb7da722434ba543e48a34`  
+		Last Modified: Thu, 09 Apr 2026 22:25:36 GMT  
+		Size: 2.4 KB (2441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:postgres-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:79100acca7f49898f585ce1b1e9465726ae241412ba3c4d8053c8499b5006107
+$ docker pull xwiki@sha256:efbef603fc75fbb6a94b05d0ac6cdb0cc621cf8072cbe0cc94735d35b0fb2e84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9234450 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7973f1c5d62b9a9c65d9e22709db7e05c1cba90d104212a94e7fc3c08d85105d`
+-	Image ID: `sha256:97876a24c85611944f8841c97128dcfa49fe09c3f4f66c6dd4c83b183cee897f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62c771d538957625b54c5398a25ecf305ea674ccdc606c2f439f5d28631d6531`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:8148f070bd5ebea9555d2e9f95434581bd8d772a937e398f9a738297bfe6dad2`  
+		Last Modified: Thu, 09 Apr 2026 22:25:34 GMT  
 		Size: 9.2 MB (9193528 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:04c03ec1e1bd36c832bb68fc8ca3623139ee3a180b8686240fcf62051cb57321`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:d198ff4680d5dbf674e8254ef7a3552d1f9f16db4998966bd10050c6bd542658`  
+		Last Modified: Thu, 09 Apr 2026 22:25:33 GMT  
 		Size: 40.9 KB (40922 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:stable`
 
 ```console
-$ docker pull xwiki@sha256:f00f1d09f8e34b344ea500a281434f619e8b087265d6111b7e9392b77d04cad0
+$ docker pull xwiki@sha256:e34d244855e337a293e8a3fd1c9c9c6f1d7ca05a3562110679a673053f282be7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12148,13 +15636,13 @@ $ docker pull xwiki@sha256:f00f1d09f8e34b344ea500a281434f619e8b087265d6111b7e939
 ### `xwiki:stable` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ddeea30098567cf1855bb0036d8a031c9be52cc1b94daa5e323f67cf944a5a5a
+$ docker pull xwiki@sha256:c78871a0bf7d16fe1f40e072a7ff7f2d5cb6b3dd0036c8ce9a07cfbce1ec821c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **646.1 MB (646125676 bytes)**  
+-	Total Size: **646.1 MB (646125877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:067ca4042eb2c7f7e3153a0205f7fccb387be2be3bd23215f7fde59d2eebefe5`
+-	Image ID: `sha256:6406557bf0308d28e979e04a2cb76517480499088ec1c4b6b9ff17a0682a1d8d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -12217,53 +15705,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 CMD ["xwiki"]
 ```
 
@@ -12308,69 +15796,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84c2a7b89a6376bc596249e7437e541ca07ed8ae6d2399a0a35f8b33b055a5c7`  
-		Last Modified: Tue, 07 Apr 2026 05:04:31 GMT  
-		Size: 191.2 MB (191192504 bytes)  
+	-	`sha256:2b305e1c2488d50848542df06a11b2c47d49a87d3ec354e04e9e1ace645c49e4`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 191.2 MB (191192649 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac76300df4bb9eb1bc756187aeb83e9f64d0f50fe318744de25b0b7a4a32ecc2`  
-		Last Modified: Tue, 07 Apr 2026 05:04:34 GMT  
-		Size: 338.2 MB (338242922 bytes)  
+	-	`sha256:c989f480dbd63e04392ecc6a05de2a97b49456792c75ff0d2ebb676f4daf8d5e`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 338.2 MB (338242976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66cf85f76a0aecef7c91c9c914f207a2f18d962c1c187c53c416ec6406783463`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
-		Size: 2.4 MB (2441661 bytes)  
+	-	`sha256:b3f1096b4eda79d85114e9da549d1e396230b84ce90bb16c77a097cf157f1c7a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
+		Size: 2.4 MB (2441658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d31fde62cff123bdaa705a7110c1d3080e52797d4050ef65953dd7ae860ad501`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
-		Size: 1.3 KB (1339 bytes)  
+	-	`sha256:1285445a43c468abea58a1c806ffa6ec3a224f7ee32f6d3f4775942be8a3eaeb`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
+		Size: 1.3 KB (1342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d2adc64c4ec3ba7bf5e9ea90dc35e854a734bf58ab8199aebad3dda34adef7d`  
-		Last Modified: Tue, 07 Apr 2026 05:04:26 GMT  
-		Size: 2.4 KB (2370 bytes)  
+	-	`sha256:aef7e2f0c8b7f3c40738dc44ee9fab5802418f039644091519daa3a37a8d6e63`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 2.4 KB (2372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2572fbf1adbf47a387e78d99fe3c6c282f971686c7b1ac516c64b0f5aa901a9`  
-		Last Modified: Tue, 07 Apr 2026 05:04:27 GMT  
-		Size: 11.0 KB (10952 bytes)  
+	-	`sha256:6d21b77d6334f8e7926197ef07fc07a8d0ba0c84bb9aaa39c5fd8b8361933759`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 11.0 KB (10954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15a6b9da4b9b81fead5cbedd9dcf298f995dd373606b5401dba5b3a6fa37feab`  
-		Last Modified: Tue, 07 Apr 2026 05:04:28 GMT  
-		Size: 2.5 KB (2536 bytes)  
+	-	`sha256:fa85729b9e9053f46b2cf1db9a539eb44158a8c78ab2f13a97bbec2c4810be94`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:stable` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:d6b5893227864e4a79ff6a47535d95e0b49c2f0820e96953a175486f86ae30bd
+$ docker pull xwiki@sha256:30583db40bd8f611165188914f63a1209569a8c17f3e3bc42e15a257c9bcbfd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9236373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5107a10e24ba67b10be339eac19ac49c9ceb5e4d68d2d60f3f0117208bb9dcfb`
+-	Image ID: `sha256:09c400510f16489e44fa4bf5bb6968ea4c09adda015f621c481e686dd8bda87c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7a635a48871515a031d18bf24cccb1b8aa34d30dd12f95017dd079cb962294c`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
+	-	`sha256:4bfb239f58493ab019ded0392c0c37dfdd8c6f9422f2bca449be288e0f692bb7`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
 		Size: 9.2 MB (9194270 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df788f52be495941f548ca56aec65cc098e102aaf2cf30c56924ddf7fef86713`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
+	-	`sha256:f68ab56c6a66bc015d367b8ca90d0bab6fe451699cac85865b3c269e6b592162`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
 		Size: 42.1 KB (42103 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:stable` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:f184cc91ffa74d22de687083391731e7468aa4d0150a4e72258a29e8c80566b7
+$ docker pull xwiki@sha256:5743ff5135b40fa2e98c72788136cc5959c25ebc6e0ef3a625d224ddd5bf234a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **642.1 MB (642111188 bytes)**  
+-	Total Size: **642.1 MB (642111569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f3e7d85d600c714b3bec5d230f23beea45c0b9cc6d4fbf2ff48bc985889bd87`
+-	Image ID: `sha256:5e507c5582a3316b2935f16a6bc57950a2bec015ceaec05dce62b34fc02d7bbb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -12433,53 +15921,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:24:46 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 CMD ["xwiki"]
 ```
 
@@ -12524,63 +16012,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e369b2bd065e4b6e847999856d6ea1c99ea3f835edf51132c7f2d2623b59ac08`  
-		Last Modified: Tue, 07 Apr 2026 05:25:49 GMT  
-		Size: 188.9 MB (188852229 bytes)  
+	-	`sha256:385002331e92f8053b9f9da0d27c4a33cc31c35278d007c4b163b256b9ab956e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:27 GMT  
+		Size: 188.9 MB (188852491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d8d5f8c3dbc774444f3c8d71dcba7112ca2fd8d77d6e7f6338ad24aaccbb430`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 338.2 MB (338242839 bytes)  
+	-	`sha256:d96a35bd4a0b81964a36a8356db49767dc7d96c8a10104ba8675dbb1870d26ff`  
+		Last Modified: Thu, 09 Apr 2026 22:25:29 GMT  
+		Size: 338.2 MB (338242967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc58ca5bc4a630f88922701f4f96efe54d0c7086143102f0fa4828b15aab5ffd`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 2.4 MB (2441660 bytes)  
+	-	`sha256:48f004652cfc4ee3fc9e225e525c85f669812ff5fde7051aa1ac0e8fdc4e4233`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
+		Size: 2.4 MB (2441657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd0143f6588623dc5b51f26f8aff50dc77ffd127d85b2c27e26ca206c34786e1`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 1.3 KB (1341 bytes)  
+	-	`sha256:71760da9ba226c177adc275892b984843162f99939cec79601c975c5690ef925`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
+		Size: 1.3 KB (1339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f557c11f5c67c99a855e1583289a0717b46989e7705facd64a4a06d4b73837e4`  
-		Last Modified: Tue, 07 Apr 2026 05:25:43 GMT  
-		Size: 2.4 KB (2371 bytes)  
+	-	`sha256:becf68ad406751339a93d048b5ac2d81675607f41c8a6c7711192dba36f900d2`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 2.4 KB (2369 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e910fceeadacfcf00dc91eb4821226e1b7d8032cbbbbf848a0d525c2864774`  
-		Last Modified: Tue, 07 Apr 2026 05:25:44 GMT  
-		Size: 11.0 KB (10951 bytes)  
+	-	`sha256:ea783563aa9d98b684f22281bf8ba9278d4649371e770a41d4eafa1a67a91d1e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 10.9 KB (10950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73f57b949906c2385790e59738d264d4a7bcb9077c81f8b2236407f25f78d69d`  
-		Last Modified: Tue, 07 Apr 2026 05:25:45 GMT  
-		Size: 2.5 KB (2535 bytes)  
+	-	`sha256:3516759391fd63764d150447c5971edee81db0f23d2276c4a519207102a27d6f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:23 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:stable` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:784f68c3786c5855bd4bd5639ee209c47a677135df9486bd291b62be85bfc2ef
+$ docker pull xwiki@sha256:4d2aa706f8794883b2cd9931ffdd5495a6320f4f45f18d014fe987375bdad20c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9237419 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80b76ec51eb373beb748d124e7ad2830a1c84d50beab79095e34d9166b32a584`
+-	Image ID: `sha256:33e54e27c87d03ef1a7ebd00f1e4e5b992aa1ec7499b186450d0d024bc8d4137`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca931a3ed97a89df87b19da35c3fcbe8d8d1d4e291efb6854e776550fac71c09`  
-		Last Modified: Tue, 07 Apr 2026 05:25:43 GMT  
+	-	`sha256:a6a891dd772b4c7bed5db4a7012e38e688345f2cb29e8f6284cb61ad88982f6a`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
 		Size: 9.2 MB (9195083 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6dfb2cbf295a9008cd3b1dd8d96868bb1be439ec66947813e1ad2b64aebf7cd`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
+	-	`sha256:bc5a595378ceebc1723088e0ca439063e80ee26f58248ffac75146b8f6d409f9`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
 		Size: 42.3 KB (42336 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:stable-mariadb`
 
 ```console
-$ docker pull xwiki@sha256:766af116bb6648b70f93ff9b05e4afb417fb8e95a8abbd24b93c8a3958057717
+$ docker pull xwiki@sha256:2f7b46832fb0394ef3bb070dd1bab2bbb74c9703f1f16b1716bd38ddac018968
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12593,13 +16081,13 @@ $ docker pull xwiki@sha256:766af116bb6648b70f93ff9b05e4afb417fb8e95a8abbd24b93c8
 ### `xwiki:stable-mariadb` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ba0948cc23b0bfe434f138031916d4797b854c12346536fdf58d291ad3e6bc45
+$ docker pull xwiki@sha256:7f845529dd6e239b218af996c32c1aaae5b6b345041152bc8bec65ea2ab1f16c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **644.4 MB (644392534 bytes)**  
+-	Total Size: **644.4 MB (644392484 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42ce846f10678ed13d34852e237946f6dcd560d5d2fccd0402126795226b5322`
+-	Image ID: `sha256:99600bae0d5e480f09cd9c7a529becf297efab3062c4511d52fb51fa1a13d938`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -12662,53 +16150,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:04:03 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:04:03 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:04:03 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:14 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:14 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_VERSION=3.5.7
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 CMD ["xwiki"]
 ```
 
@@ -12753,69 +16241,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcca4ff639731b663b2c2e9ea7f2f61d473ffb675abe029c6c28b487491a34ac`  
-		Last Modified: Tue, 07 Apr 2026 05:05:09 GMT  
-		Size: 191.2 MB (191192547 bytes)  
+	-	`sha256:2ac27493d4202eec4afe454eb31c0b2a8b0f7b4be2cfa9ef14e93dbc4cc95a44`  
+		Last Modified: Thu, 09 Apr 2026 22:24:18 GMT  
+		Size: 191.2 MB (191192385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ee6f76735ac92ee9e903ac6f01f34ca081159e907ef896b12530bde859c8a0`  
-		Last Modified: Tue, 07 Apr 2026 05:05:09 GMT  
-		Size: 338.2 MB (338242958 bytes)  
+	-	`sha256:f016d26d1b4337444504499b396c1229ab4be94bfb917e2ef5f8eb5df2f0467d`  
+		Last Modified: Thu, 09 Apr 2026 22:24:21 GMT  
+		Size: 338.2 MB (338243065 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:786a2046ee63e7596c8f74d8762afd7e67457f792de68693203cd33a2ef87abe`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
-		Size: 708.5 KB (708548 bytes)  
+	-	`sha256:8f924396aaf060ebd2222b21b2fc2b60e7c6baa7c3c0940a23caf5aff224c88c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 708.5 KB (708546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:541fb17ec09830dffc5d66a3b0d4e70e88768f6355a5acc688d0f04fee891d9b`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
+	-	`sha256:994f4e25fb3ea19f23ad2a8d56c7a8af1f6eec0bd342a6804bcc74353db582f2`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bfa157fb8d191e5817feb09436686f85c513e25ffaafa7a4be1055d88d53102`  
-		Last Modified: Tue, 07 Apr 2026 05:05:01 GMT  
+	-	`sha256:3704314d67659afee8af05ebcd29916a9c38bfe6b49df3e5043b1b86483f53c9`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:449352b7c13b78fac9811f9f938454b29670ed33479ca577568e21d5bc969122`  
-		Last Modified: Tue, 07 Apr 2026 05:05:02 GMT  
-		Size: 10.9 KB (10949 bytes)  
+	-	`sha256:995e6e40781dc9ad85886c45e18c8c8484eaa0ac9c9309eb1e3a4f94c5fb647c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:14 GMT  
+		Size: 11.0 KB (10951 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:664385d3ae55779c423db6f43209a0ceb1beecca910065ddfe224a89b324a4f4`  
-		Last Modified: Tue, 07 Apr 2026 05:05:02 GMT  
-		Size: 2.5 KB (2491 bytes)  
+	-	`sha256:11aca9dcc74cbfea7c8785ba33ad988bb849f5fc14c7f8252fe74a29ba5d054f`  
+		Last Modified: Thu, 09 Apr 2026 22:24:15 GMT  
+		Size: 2.5 KB (2496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:stable-mariadb` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:f825256d7c1731d4d42db2e7f04afde4acb442bb68d9d1c9ea6bbd59e08a5c3e
+$ docker pull xwiki@sha256:56edc12b6e37bc72fbd2acfdd6646f4ceda9abc7cb6423f72e70dd5e33267a1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9233518 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70912a286fbe4bb1616eca60d195e27d52cbfbbdc0204a6e65b7b40a2aa3fb5e`
+-	Image ID: `sha256:6f441cb06f536403dcc6b3429e61b9aafb8e0e4f877c8ba599346df21f7a4948`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d19bbd52fcc1a21ac11ea796976916c04d6cb2e153d39d55aaeb8d6f26744dec`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
+	-	`sha256:5c00d65fb1481e6e70d7c99f21360114a0ea923fbd6f85f287a634837873de35`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 9.2 MB (9192755 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:dfbffb8d08c50344d84c3526df473f2ec15f68b66077800ac3cd80b0846929a9`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
+	-	`sha256:1cb31448128770abf74c5b34fafb352ed380d9a2aa6041cac186f85ad71c8eb5`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 40.8 KB (40763 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:stable-mariadb` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:1e716db013c18f6e438b415c7e60876602345e0ce7561f52548f5100052f7d41
+$ docker pull xwiki@sha256:b13b45722cecf651d8e233bac6edf7016acd4f108e9b8cfb7dc9fc0cfaed6b2e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **640.4 MB (640377919 bytes)**  
+-	Total Size: **640.4 MB (640378092 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0eeb05838595a355cf1f91cd1321de0ebfd059a990ba12bc96de9b22b8c8c54e`
+-	Image ID: `sha256:6c6f16e6f8fdd44c1779a62bd994a2297693da5de1176ccae5e7dce1f6076706`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -12878,53 +16366,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:57 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:57 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:57 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:25:10 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_VERSION=3.5.7
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 CMD ["xwiki"]
 ```
 
@@ -12969,63 +16457,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc6ff24fed8958446b55eabf3aaaa6fef97a6a9db73faab712c2d54571af7e66`  
-		Last Modified: Tue, 07 Apr 2026 05:25:59 GMT  
-		Size: 188.9 MB (188852232 bytes)  
+	-	`sha256:7138705fc18cbf1f01ce7fa0c86bf7b78199e805cd67f83b34341bed6665e884`  
+		Last Modified: Thu, 09 Apr 2026 22:25:50 GMT  
+		Size: 188.9 MB (188852257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7687e4fe63aa3b08a56c30b9893ac0f7b43bcd3890e8d75ba2f9522294993924`  
-		Last Modified: Tue, 07 Apr 2026 05:26:02 GMT  
-		Size: 338.2 MB (338242793 bytes)  
+	-	`sha256:a93dfb9c13c1a63a280a43be79ea97cec3bf1fd65c1a3262cbe4217ac0631671`  
+		Last Modified: Thu, 09 Apr 2026 22:25:53 GMT  
+		Size: 338.2 MB (338242922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce8a15cacfe949eb1ebb41beea622aeef12a0e66c5b51aabd5316f3ff85bf61c`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 708.5 KB (708544 bytes)  
+	-	`sha256:74b0ca8ba7114b163b8212d7713b455592e46e72dcc53fc57b668f2c0026af43`  
+		Last Modified: Thu, 09 Apr 2026 22:25:44 GMT  
+		Size: 708.5 KB (708547 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81d324e3c7a7965ac96abbc956763ec0f2e249f1de3bfe8a46cbcdd6da0ee920`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 1.3 KB (1338 bytes)  
+	-	`sha256:c687fcdd47be17835a04f568f977d2d5d9d4f4b9cb2e06abddbd7fb70c441a5c`  
+		Last Modified: Thu, 09 Apr 2026 22:25:43 GMT  
+		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b67a5b91b6f796b462869555582f816a5fb2d577e2a56a0324cda81395d2d815`  
-		Last Modified: Tue, 07 Apr 2026 05:25:54 GMT  
-		Size: 2.3 KB (2305 bytes)  
+	-	`sha256:431f576ce0199d963e945de2258990132b1bdbe4c80f625dc2da12fc9510b550`  
+		Last Modified: Thu, 09 Apr 2026 22:25:45 GMT  
+		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:493cbab57cc6db1c1e169d47b05398e137751dffeaef724c593a34434ca68231`  
-		Last Modified: Tue, 07 Apr 2026 05:25:54 GMT  
-		Size: 10.9 KB (10949 bytes)  
+	-	`sha256:b18a97f27a0055c2e0c043f8125c5dcb20e9ffbecd6321951d49acdb2fbba196`  
+		Last Modified: Thu, 09 Apr 2026 22:25:45 GMT  
+		Size: 11.0 KB (10957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2747fd0272287dacc60e09f6ebe0adba4a8a06f9bf0f05d457b6c6e115b7845f`  
-		Last Modified: Tue, 07 Apr 2026 05:25:55 GMT  
-		Size: 2.5 KB (2496 bytes)  
+	-	`sha256:fed36abd95650841f9c5f59e37c081cdf5d2f51dc6f865902ead59c496bf6cd4`  
+		Last Modified: Thu, 09 Apr 2026 22:25:46 GMT  
+		Size: 2.5 KB (2498 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:stable-mariadb` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:344d0a16fa56b087a85e6b87fcd91a585fb71bbb01d61140316009711d8a9444
+$ docker pull xwiki@sha256:8338e29aebd4aaab075bccf3331edba1464b418a0e7452763583a4194eed5d0b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9234445 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0222e81dbc667a0d9b4f265f117d7713420e1945fccd0da6a5b294c0546aa467`
+-	Image ID: `sha256:38d76975db5fdb2fd17c82b040962f2272aeb1346178ef759b04b7974f841883`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ae1212e812d570c880bb98d32665a65f05e123a0f5afd38547e6a43fb9215d76`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
+	-	`sha256:468adf1134aa3cc689ac4c31c05cd10c9867661f4f59da4d5656d69bb3e05bfb`  
+		Last Modified: Thu, 09 Apr 2026 22:25:44 GMT  
 		Size: 9.2 MB (9193508 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c727a7c38f6b0abb8bf026c9858df11ed96ba25d6aff8985f650fad645fb8fa3`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
+	-	`sha256:9c53c355bf660b3feaeeae74ebc4ec1ff70f14c0a261682e31d054b43392a441`  
+		Last Modified: Thu, 09 Apr 2026 22:25:43 GMT  
 		Size: 40.9 KB (40937 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:stable-mariadb-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:766af116bb6648b70f93ff9b05e4afb417fb8e95a8abbd24b93c8a3958057717
+$ docker pull xwiki@sha256:2f7b46832fb0394ef3bb070dd1bab2bbb74c9703f1f16b1716bd38ddac018968
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13038,13 +16526,13 @@ $ docker pull xwiki@sha256:766af116bb6648b70f93ff9b05e4afb417fb8e95a8abbd24b93c8
 ### `xwiki:stable-mariadb-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ba0948cc23b0bfe434f138031916d4797b854c12346536fdf58d291ad3e6bc45
+$ docker pull xwiki@sha256:7f845529dd6e239b218af996c32c1aaae5b6b345041152bc8bec65ea2ab1f16c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **644.4 MB (644392534 bytes)**  
+-	Total Size: **644.4 MB (644392484 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:42ce846f10678ed13d34852e237946f6dcd560d5d2fccd0402126795226b5322`
+-	Image ID: `sha256:99600bae0d5e480f09cd9c7a529becf297efab3062c4511d52fb51fa1a13d938`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -13107,53 +16595,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:04:03 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:04:03 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:04:03 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:04:03 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:14 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:14 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:14 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_VERSION=3.5.7
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:35 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:04:24 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:04:25 GMT
+# Thu, 09 Apr 2026 22:23:36 GMT
 CMD ["xwiki"]
 ```
 
@@ -13198,69 +16686,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcca4ff639731b663b2c2e9ea7f2f61d473ffb675abe029c6c28b487491a34ac`  
-		Last Modified: Tue, 07 Apr 2026 05:05:09 GMT  
-		Size: 191.2 MB (191192547 bytes)  
+	-	`sha256:2ac27493d4202eec4afe454eb31c0b2a8b0f7b4be2cfa9ef14e93dbc4cc95a44`  
+		Last Modified: Thu, 09 Apr 2026 22:24:18 GMT  
+		Size: 191.2 MB (191192385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ee6f76735ac92ee9e903ac6f01f34ca081159e907ef896b12530bde859c8a0`  
-		Last Modified: Tue, 07 Apr 2026 05:05:09 GMT  
-		Size: 338.2 MB (338242958 bytes)  
+	-	`sha256:f016d26d1b4337444504499b396c1229ab4be94bfb917e2ef5f8eb5df2f0467d`  
+		Last Modified: Thu, 09 Apr 2026 22:24:21 GMT  
+		Size: 338.2 MB (338243065 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:786a2046ee63e7596c8f74d8762afd7e67457f792de68693203cd33a2ef87abe`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
-		Size: 708.5 KB (708548 bytes)  
+	-	`sha256:8f924396aaf060ebd2222b21b2fc2b60e7c6baa7c3c0940a23caf5aff224c88c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 708.5 KB (708546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:541fb17ec09830dffc5d66a3b0d4e70e88768f6355a5acc688d0f04fee891d9b`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
+	-	`sha256:994f4e25fb3ea19f23ad2a8d56c7a8af1f6eec0bd342a6804bcc74353db582f2`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bfa157fb8d191e5817feb09436686f85c513e25ffaafa7a4be1055d88d53102`  
-		Last Modified: Tue, 07 Apr 2026 05:05:01 GMT  
+	-	`sha256:3704314d67659afee8af05ebcd29916a9c38bfe6b49df3e5043b1b86483f53c9`  
+		Last Modified: Thu, 09 Apr 2026 22:24:13 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:449352b7c13b78fac9811f9f938454b29670ed33479ca577568e21d5bc969122`  
-		Last Modified: Tue, 07 Apr 2026 05:05:02 GMT  
-		Size: 10.9 KB (10949 bytes)  
+	-	`sha256:995e6e40781dc9ad85886c45e18c8c8484eaa0ac9c9309eb1e3a4f94c5fb647c`  
+		Last Modified: Thu, 09 Apr 2026 22:24:14 GMT  
+		Size: 11.0 KB (10951 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:664385d3ae55779c423db6f43209a0ceb1beecca910065ddfe224a89b324a4f4`  
-		Last Modified: Tue, 07 Apr 2026 05:05:02 GMT  
-		Size: 2.5 KB (2491 bytes)  
+	-	`sha256:11aca9dcc74cbfea7c8785ba33ad988bb849f5fc14c7f8252fe74a29ba5d054f`  
+		Last Modified: Thu, 09 Apr 2026 22:24:15 GMT  
+		Size: 2.5 KB (2496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:stable-mariadb-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:f825256d7c1731d4d42db2e7f04afde4acb442bb68d9d1c9ea6bbd59e08a5c3e
+$ docker pull xwiki@sha256:56edc12b6e37bc72fbd2acfdd6646f4ceda9abc7cb6423f72e70dd5e33267a1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9233518 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70912a286fbe4bb1616eca60d195e27d52cbfbbdc0204a6e65b7b40a2aa3fb5e`
+-	Image ID: `sha256:6f441cb06f536403dcc6b3429e61b9aafb8e0e4f877c8ba599346df21f7a4948`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d19bbd52fcc1a21ac11ea796976916c04d6cb2e153d39d55aaeb8d6f26744dec`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
+	-	`sha256:5c00d65fb1481e6e70d7c99f21360114a0ea923fbd6f85f287a634837873de35`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 9.2 MB (9192755 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:dfbffb8d08c50344d84c3526df473f2ec15f68b66077800ac3cd80b0846929a9`  
-		Last Modified: Tue, 07 Apr 2026 05:05:00 GMT  
+	-	`sha256:1cb31448128770abf74c5b34fafb352ed380d9a2aa6041cac186f85ad71c8eb5`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
 		Size: 40.8 KB (40763 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:stable-mariadb-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:1e716db013c18f6e438b415c7e60876602345e0ce7561f52548f5100052f7d41
+$ docker pull xwiki@sha256:b13b45722cecf651d8e233bac6edf7016acd4f108e9b8cfb7dc9fc0cfaed6b2e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **640.4 MB (640377919 bytes)**  
+-	Total Size: **640.4 MB (640378092 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0eeb05838595a355cf1f91cd1321de0ebfd059a990ba12bc96de9b22b8c8c54e`
+-	Image ID: `sha256:6c6f16e6f8fdd44c1779a62bd994a2297693da5de1176ccae5e7dce1f6076706`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -13323,53 +16811,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:57 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:57 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:57 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:57 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:47 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:25:10 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_VERSION=3.5.7
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_SHA256=07bb1229dc184f3313a5aef4c5a6b3207c8dbaa09db4a26814c936f004b4c526
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.7
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_ARTIFACT=mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENV MARIADB_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mariadb-java-client-3.5.7.jar
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 RUN curl -fSL "${MARIADB_JDBC_PREFIX}/${MARIADB_JDBC_ARTIFACT}" -o $MARIADB_JDBC_TARGET &&   echo "$MARIADB_JDBC_SHA256 $MARIADB_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:19 GMT
+# Thu, 09 Apr 2026 22:25:10 GMT
 CMD ["xwiki"]
 ```
 
@@ -13414,63 +16902,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc6ff24fed8958446b55eabf3aaaa6fef97a6a9db73faab712c2d54571af7e66`  
-		Last Modified: Tue, 07 Apr 2026 05:25:59 GMT  
-		Size: 188.9 MB (188852232 bytes)  
+	-	`sha256:7138705fc18cbf1f01ce7fa0c86bf7b78199e805cd67f83b34341bed6665e884`  
+		Last Modified: Thu, 09 Apr 2026 22:25:50 GMT  
+		Size: 188.9 MB (188852257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7687e4fe63aa3b08a56c30b9893ac0f7b43bcd3890e8d75ba2f9522294993924`  
-		Last Modified: Tue, 07 Apr 2026 05:26:02 GMT  
-		Size: 338.2 MB (338242793 bytes)  
+	-	`sha256:a93dfb9c13c1a63a280a43be79ea97cec3bf1fd65c1a3262cbe4217ac0631671`  
+		Last Modified: Thu, 09 Apr 2026 22:25:53 GMT  
+		Size: 338.2 MB (338242922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce8a15cacfe949eb1ebb41beea622aeef12a0e66c5b51aabd5316f3ff85bf61c`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 708.5 KB (708544 bytes)  
+	-	`sha256:74b0ca8ba7114b163b8212d7713b455592e46e72dcc53fc57b668f2c0026af43`  
+		Last Modified: Thu, 09 Apr 2026 22:25:44 GMT  
+		Size: 708.5 KB (708547 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81d324e3c7a7965ac96abbc956763ec0f2e249f1de3bfe8a46cbcdd6da0ee920`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 1.3 KB (1338 bytes)  
+	-	`sha256:c687fcdd47be17835a04f568f977d2d5d9d4f4b9cb2e06abddbd7fb70c441a5c`  
+		Last Modified: Thu, 09 Apr 2026 22:25:43 GMT  
+		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b67a5b91b6f796b462869555582f816a5fb2d577e2a56a0324cda81395d2d815`  
-		Last Modified: Tue, 07 Apr 2026 05:25:54 GMT  
-		Size: 2.3 KB (2305 bytes)  
+	-	`sha256:431f576ce0199d963e945de2258990132b1bdbe4c80f625dc2da12fc9510b550`  
+		Last Modified: Thu, 09 Apr 2026 22:25:45 GMT  
+		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:493cbab57cc6db1c1e169d47b05398e137751dffeaef724c593a34434ca68231`  
-		Last Modified: Tue, 07 Apr 2026 05:25:54 GMT  
-		Size: 10.9 KB (10949 bytes)  
+	-	`sha256:b18a97f27a0055c2e0c043f8125c5dcb20e9ffbecd6321951d49acdb2fbba196`  
+		Last Modified: Thu, 09 Apr 2026 22:25:45 GMT  
+		Size: 11.0 KB (10957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2747fd0272287dacc60e09f6ebe0adba4a8a06f9bf0f05d457b6c6e115b7845f`  
-		Last Modified: Tue, 07 Apr 2026 05:25:55 GMT  
-		Size: 2.5 KB (2496 bytes)  
+	-	`sha256:fed36abd95650841f9c5f59e37c081cdf5d2f51dc6f865902ead59c496bf6cd4`  
+		Last Modified: Thu, 09 Apr 2026 22:25:46 GMT  
+		Size: 2.5 KB (2498 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:stable-mariadb-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:344d0a16fa56b087a85e6b87fcd91a585fb71bbb01d61140316009711d8a9444
+$ docker pull xwiki@sha256:8338e29aebd4aaab075bccf3331edba1464b418a0e7452763583a4194eed5d0b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9234445 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0222e81dbc667a0d9b4f265f117d7713420e1945fccd0da6a5b294c0546aa467`
+-	Image ID: `sha256:38d76975db5fdb2fd17c82b040962f2272aeb1346178ef759b04b7974f841883`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ae1212e812d570c880bb98d32665a65f05e123a0f5afd38547e6a43fb9215d76`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
+	-	`sha256:468adf1134aa3cc689ac4c31c05cd10c9867661f4f59da4d5656d69bb3e05bfb`  
+		Last Modified: Thu, 09 Apr 2026 22:25:44 GMT  
 		Size: 9.2 MB (9193508 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c727a7c38f6b0abb8bf026c9858df11ed96ba25d6aff8985f650fad645fb8fa3`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
+	-	`sha256:9c53c355bf660b3feaeeae74ebc4ec1ff70f14c0a261682e31d054b43392a441`  
+		Last Modified: Thu, 09 Apr 2026 22:25:43 GMT  
 		Size: 40.9 KB (40937 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:stable-mysql`
 
 ```console
-$ docker pull xwiki@sha256:f00f1d09f8e34b344ea500a281434f619e8b087265d6111b7e9392b77d04cad0
+$ docker pull xwiki@sha256:e34d244855e337a293e8a3fd1c9c9c6f1d7ca05a3562110679a673053f282be7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13483,13 +16971,13 @@ $ docker pull xwiki@sha256:f00f1d09f8e34b344ea500a281434f619e8b087265d6111b7e939
 ### `xwiki:stable-mysql` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ddeea30098567cf1855bb0036d8a031c9be52cc1b94daa5e323f67cf944a5a5a
+$ docker pull xwiki@sha256:c78871a0bf7d16fe1f40e072a7ff7f2d5cb6b3dd0036c8ce9a07cfbce1ec821c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **646.1 MB (646125676 bytes)**  
+-	Total Size: **646.1 MB (646125877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:067ca4042eb2c7f7e3153a0205f7fccb387be2be3bd23215f7fde59d2eebefe5`
+-	Image ID: `sha256:6406557bf0308d28e979e04a2cb76517480499088ec1c4b6b9ff17a0682a1d8d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -13552,53 +17040,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 CMD ["xwiki"]
 ```
 
@@ -13643,69 +17131,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84c2a7b89a6376bc596249e7437e541ca07ed8ae6d2399a0a35f8b33b055a5c7`  
-		Last Modified: Tue, 07 Apr 2026 05:04:31 GMT  
-		Size: 191.2 MB (191192504 bytes)  
+	-	`sha256:2b305e1c2488d50848542df06a11b2c47d49a87d3ec354e04e9e1ace645c49e4`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 191.2 MB (191192649 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac76300df4bb9eb1bc756187aeb83e9f64d0f50fe318744de25b0b7a4a32ecc2`  
-		Last Modified: Tue, 07 Apr 2026 05:04:34 GMT  
-		Size: 338.2 MB (338242922 bytes)  
+	-	`sha256:c989f480dbd63e04392ecc6a05de2a97b49456792c75ff0d2ebb676f4daf8d5e`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 338.2 MB (338242976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66cf85f76a0aecef7c91c9c914f207a2f18d962c1c187c53c416ec6406783463`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
-		Size: 2.4 MB (2441661 bytes)  
+	-	`sha256:b3f1096b4eda79d85114e9da549d1e396230b84ce90bb16c77a097cf157f1c7a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
+		Size: 2.4 MB (2441658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d31fde62cff123bdaa705a7110c1d3080e52797d4050ef65953dd7ae860ad501`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
-		Size: 1.3 KB (1339 bytes)  
+	-	`sha256:1285445a43c468abea58a1c806ffa6ec3a224f7ee32f6d3f4775942be8a3eaeb`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
+		Size: 1.3 KB (1342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d2adc64c4ec3ba7bf5e9ea90dc35e854a734bf58ab8199aebad3dda34adef7d`  
-		Last Modified: Tue, 07 Apr 2026 05:04:26 GMT  
-		Size: 2.4 KB (2370 bytes)  
+	-	`sha256:aef7e2f0c8b7f3c40738dc44ee9fab5802418f039644091519daa3a37a8d6e63`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 2.4 KB (2372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2572fbf1adbf47a387e78d99fe3c6c282f971686c7b1ac516c64b0f5aa901a9`  
-		Last Modified: Tue, 07 Apr 2026 05:04:27 GMT  
-		Size: 11.0 KB (10952 bytes)  
+	-	`sha256:6d21b77d6334f8e7926197ef07fc07a8d0ba0c84bb9aaa39c5fd8b8361933759`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 11.0 KB (10954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15a6b9da4b9b81fead5cbedd9dcf298f995dd373606b5401dba5b3a6fa37feab`  
-		Last Modified: Tue, 07 Apr 2026 05:04:28 GMT  
-		Size: 2.5 KB (2536 bytes)  
+	-	`sha256:fa85729b9e9053f46b2cf1db9a539eb44158a8c78ab2f13a97bbec2c4810be94`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:stable-mysql` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:d6b5893227864e4a79ff6a47535d95e0b49c2f0820e96953a175486f86ae30bd
+$ docker pull xwiki@sha256:30583db40bd8f611165188914f63a1209569a8c17f3e3bc42e15a257c9bcbfd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9236373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5107a10e24ba67b10be339eac19ac49c9ceb5e4d68d2d60f3f0117208bb9dcfb`
+-	Image ID: `sha256:09c400510f16489e44fa4bf5bb6968ea4c09adda015f621c481e686dd8bda87c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7a635a48871515a031d18bf24cccb1b8aa34d30dd12f95017dd079cb962294c`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
+	-	`sha256:4bfb239f58493ab019ded0392c0c37dfdd8c6f9422f2bca449be288e0f692bb7`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
 		Size: 9.2 MB (9194270 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df788f52be495941f548ca56aec65cc098e102aaf2cf30c56924ddf7fef86713`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
+	-	`sha256:f68ab56c6a66bc015d367b8ca90d0bab6fe451699cac85865b3c269e6b592162`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
 		Size: 42.1 KB (42103 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:stable-mysql` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:f184cc91ffa74d22de687083391731e7468aa4d0150a4e72258a29e8c80566b7
+$ docker pull xwiki@sha256:5743ff5135b40fa2e98c72788136cc5959c25ebc6e0ef3a625d224ddd5bf234a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **642.1 MB (642111188 bytes)**  
+-	Total Size: **642.1 MB (642111569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f3e7d85d600c714b3bec5d230f23beea45c0b9cc6d4fbf2ff48bc985889bd87`
+-	Image ID: `sha256:5e507c5582a3316b2935f16a6bc57950a2bec015ceaec05dce62b34fc02d7bbb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -13768,53 +17256,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:24:46 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 CMD ["xwiki"]
 ```
 
@@ -13859,63 +17347,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e369b2bd065e4b6e847999856d6ea1c99ea3f835edf51132c7f2d2623b59ac08`  
-		Last Modified: Tue, 07 Apr 2026 05:25:49 GMT  
-		Size: 188.9 MB (188852229 bytes)  
+	-	`sha256:385002331e92f8053b9f9da0d27c4a33cc31c35278d007c4b163b256b9ab956e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:27 GMT  
+		Size: 188.9 MB (188852491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d8d5f8c3dbc774444f3c8d71dcba7112ca2fd8d77d6e7f6338ad24aaccbb430`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 338.2 MB (338242839 bytes)  
+	-	`sha256:d96a35bd4a0b81964a36a8356db49767dc7d96c8a10104ba8675dbb1870d26ff`  
+		Last Modified: Thu, 09 Apr 2026 22:25:29 GMT  
+		Size: 338.2 MB (338242967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc58ca5bc4a630f88922701f4f96efe54d0c7086143102f0fa4828b15aab5ffd`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 2.4 MB (2441660 bytes)  
+	-	`sha256:48f004652cfc4ee3fc9e225e525c85f669812ff5fde7051aa1ac0e8fdc4e4233`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
+		Size: 2.4 MB (2441657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd0143f6588623dc5b51f26f8aff50dc77ffd127d85b2c27e26ca206c34786e1`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 1.3 KB (1341 bytes)  
+	-	`sha256:71760da9ba226c177adc275892b984843162f99939cec79601c975c5690ef925`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
+		Size: 1.3 KB (1339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f557c11f5c67c99a855e1583289a0717b46989e7705facd64a4a06d4b73837e4`  
-		Last Modified: Tue, 07 Apr 2026 05:25:43 GMT  
-		Size: 2.4 KB (2371 bytes)  
+	-	`sha256:becf68ad406751339a93d048b5ac2d81675607f41c8a6c7711192dba36f900d2`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 2.4 KB (2369 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e910fceeadacfcf00dc91eb4821226e1b7d8032cbbbbf848a0d525c2864774`  
-		Last Modified: Tue, 07 Apr 2026 05:25:44 GMT  
-		Size: 11.0 KB (10951 bytes)  
+	-	`sha256:ea783563aa9d98b684f22281bf8ba9278d4649371e770a41d4eafa1a67a91d1e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 10.9 KB (10950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73f57b949906c2385790e59738d264d4a7bcb9077c81f8b2236407f25f78d69d`  
-		Last Modified: Tue, 07 Apr 2026 05:25:45 GMT  
-		Size: 2.5 KB (2535 bytes)  
+	-	`sha256:3516759391fd63764d150447c5971edee81db0f23d2276c4a519207102a27d6f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:23 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:stable-mysql` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:784f68c3786c5855bd4bd5639ee209c47a677135df9486bd291b62be85bfc2ef
+$ docker pull xwiki@sha256:4d2aa706f8794883b2cd9931ffdd5495a6320f4f45f18d014fe987375bdad20c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9237419 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80b76ec51eb373beb748d124e7ad2830a1c84d50beab79095e34d9166b32a584`
+-	Image ID: `sha256:33e54e27c87d03ef1a7ebd00f1e4e5b992aa1ec7499b186450d0d024bc8d4137`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca931a3ed97a89df87b19da35c3fcbe8d8d1d4e291efb6854e776550fac71c09`  
-		Last Modified: Tue, 07 Apr 2026 05:25:43 GMT  
+	-	`sha256:a6a891dd772b4c7bed5db4a7012e38e688345f2cb29e8f6284cb61ad88982f6a`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
 		Size: 9.2 MB (9195083 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6dfb2cbf295a9008cd3b1dd8d96868bb1be439ec66947813e1ad2b64aebf7cd`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
+	-	`sha256:bc5a595378ceebc1723088e0ca439063e80ee26f58248ffac75146b8f6d409f9`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
 		Size: 42.3 KB (42336 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:stable-mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:f00f1d09f8e34b344ea500a281434f619e8b087265d6111b7e9392b77d04cad0
+$ docker pull xwiki@sha256:e34d244855e337a293e8a3fd1c9c9c6f1d7ca05a3562110679a673053f282be7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13928,13 +17416,13 @@ $ docker pull xwiki@sha256:f00f1d09f8e34b344ea500a281434f619e8b087265d6111b7e939
 ### `xwiki:stable-mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ddeea30098567cf1855bb0036d8a031c9be52cc1b94daa5e323f67cf944a5a5a
+$ docker pull xwiki@sha256:c78871a0bf7d16fe1f40e072a7ff7f2d5cb6b3dd0036c8ce9a07cfbce1ec821c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **646.1 MB (646125676 bytes)**  
+-	Total Size: **646.1 MB (646125877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:067ca4042eb2c7f7e3153a0205f7fccb387be2be3bd23215f7fde59d2eebefe5`
+-	Image ID: `sha256:6406557bf0308d28e979e04a2cb76517480499088ec1c4b6b9ff17a0682a1d8d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -13997,53 +17485,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:03:27 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:03:27 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:03 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:03:49 GMT
+# Thu, 09 Apr 2026 22:23:32 GMT
 CMD ["xwiki"]
 ```
 
@@ -14088,69 +17576,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84c2a7b89a6376bc596249e7437e541ca07ed8ae6d2399a0a35f8b33b055a5c7`  
-		Last Modified: Tue, 07 Apr 2026 05:04:31 GMT  
-		Size: 191.2 MB (191192504 bytes)  
+	-	`sha256:2b305e1c2488d50848542df06a11b2c47d49a87d3ec354e04e9e1ace645c49e4`  
+		Last Modified: Thu, 09 Apr 2026 22:24:22 GMT  
+		Size: 191.2 MB (191192649 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac76300df4bb9eb1bc756187aeb83e9f64d0f50fe318744de25b0b7a4a32ecc2`  
-		Last Modified: Tue, 07 Apr 2026 05:04:34 GMT  
-		Size: 338.2 MB (338242922 bytes)  
+	-	`sha256:c989f480dbd63e04392ecc6a05de2a97b49456792c75ff0d2ebb676f4daf8d5e`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 338.2 MB (338242976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66cf85f76a0aecef7c91c9c914f207a2f18d962c1c187c53c416ec6406783463`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
-		Size: 2.4 MB (2441661 bytes)  
+	-	`sha256:b3f1096b4eda79d85114e9da549d1e396230b84ce90bb16c77a097cf157f1c7a`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
+		Size: 2.4 MB (2441658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d31fde62cff123bdaa705a7110c1d3080e52797d4050ef65953dd7ae860ad501`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
-		Size: 1.3 KB (1339 bytes)  
+	-	`sha256:1285445a43c468abea58a1c806ffa6ec3a224f7ee32f6d3f4775942be8a3eaeb`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
+		Size: 1.3 KB (1342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d2adc64c4ec3ba7bf5e9ea90dc35e854a734bf58ab8199aebad3dda34adef7d`  
-		Last Modified: Tue, 07 Apr 2026 05:04:26 GMT  
-		Size: 2.4 KB (2370 bytes)  
+	-	`sha256:aef7e2f0c8b7f3c40738dc44ee9fab5802418f039644091519daa3a37a8d6e63`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 2.4 KB (2372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2572fbf1adbf47a387e78d99fe3c6c282f971686c7b1ac516c64b0f5aa901a9`  
-		Last Modified: Tue, 07 Apr 2026 05:04:27 GMT  
-		Size: 11.0 KB (10952 bytes)  
+	-	`sha256:6d21b77d6334f8e7926197ef07fc07a8d0ba0c84bb9aaa39c5fd8b8361933759`  
+		Last Modified: Thu, 09 Apr 2026 22:24:10 GMT  
+		Size: 11.0 KB (10954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15a6b9da4b9b81fead5cbedd9dcf298f995dd373606b5401dba5b3a6fa37feab`  
-		Last Modified: Tue, 07 Apr 2026 05:04:28 GMT  
-		Size: 2.5 KB (2536 bytes)  
+	-	`sha256:fa85729b9e9053f46b2cf1db9a539eb44158a8c78ab2f13a97bbec2c4810be94`  
+		Last Modified: Thu, 09 Apr 2026 22:24:11 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:stable-mysql-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:d6b5893227864e4a79ff6a47535d95e0b49c2f0820e96953a175486f86ae30bd
+$ docker pull xwiki@sha256:30583db40bd8f611165188914f63a1209569a8c17f3e3bc42e15a257c9bcbfd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9236373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5107a10e24ba67b10be339eac19ac49c9ceb5e4d68d2d60f3f0117208bb9dcfb`
+-	Image ID: `sha256:09c400510f16489e44fa4bf5bb6968ea4c09adda015f621c481e686dd8bda87c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7a635a48871515a031d18bf24cccb1b8aa34d30dd12f95017dd079cb962294c`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
+	-	`sha256:4bfb239f58493ab019ded0392c0c37dfdd8c6f9422f2bca449be288e0f692bb7`  
+		Last Modified: Thu, 09 Apr 2026 22:24:09 GMT  
 		Size: 9.2 MB (9194270 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df788f52be495941f548ca56aec65cc098e102aaf2cf30c56924ddf7fef86713`  
-		Last Modified: Tue, 07 Apr 2026 05:04:25 GMT  
+	-	`sha256:f68ab56c6a66bc015d367b8ca90d0bab6fe451699cac85865b3c269e6b592162`  
+		Last Modified: Thu, 09 Apr 2026 22:24:08 GMT  
 		Size: 42.1 KB (42103 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:stable-mysql-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:f184cc91ffa74d22de687083391731e7468aa4d0150a4e72258a29e8c80566b7
+$ docker pull xwiki@sha256:5743ff5135b40fa2e98c72788136cc5959c25ebc6e0ef3a625d224ddd5bf234a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **642.1 MB (642111188 bytes)**  
+-	Total Size: **642.1 MB (642111569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f3e7d85d600c714b3bec5d230f23beea45c0b9cc6d4fbf2ff48bc985889bd87`
+-	Image ID: `sha256:5e507c5582a3316b2935f16a6bc57950a2bec015ceaec05dce62b34fc02d7bbb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -14213,53 +17701,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:47 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:47 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:24 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:24:46 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_VERSION=9.6.0
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:25:08 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:46 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:09 GMT
+# Thu, 09 Apr 2026 22:24:47 GMT
 CMD ["xwiki"]
 ```
 
@@ -14304,63 +17792,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e369b2bd065e4b6e847999856d6ea1c99ea3f835edf51132c7f2d2623b59ac08`  
-		Last Modified: Tue, 07 Apr 2026 05:25:49 GMT  
-		Size: 188.9 MB (188852229 bytes)  
+	-	`sha256:385002331e92f8053b9f9da0d27c4a33cc31c35278d007c4b163b256b9ab956e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:27 GMT  
+		Size: 188.9 MB (188852491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d8d5f8c3dbc774444f3c8d71dcba7112ca2fd8d77d6e7f6338ad24aaccbb430`  
-		Last Modified: Tue, 07 Apr 2026 05:25:53 GMT  
-		Size: 338.2 MB (338242839 bytes)  
+	-	`sha256:d96a35bd4a0b81964a36a8356db49767dc7d96c8a10104ba8675dbb1870d26ff`  
+		Last Modified: Thu, 09 Apr 2026 22:25:29 GMT  
+		Size: 338.2 MB (338242967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc58ca5bc4a630f88922701f4f96efe54d0c7086143102f0fa4828b15aab5ffd`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 2.4 MB (2441660 bytes)  
+	-	`sha256:48f004652cfc4ee3fc9e225e525c85f669812ff5fde7051aa1ac0e8fdc4e4233`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
+		Size: 2.4 MB (2441657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd0143f6588623dc5b51f26f8aff50dc77ffd127d85b2c27e26ca206c34786e1`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 1.3 KB (1341 bytes)  
+	-	`sha256:71760da9ba226c177adc275892b984843162f99939cec79601c975c5690ef925`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
+		Size: 1.3 KB (1339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f557c11f5c67c99a855e1583289a0717b46989e7705facd64a4a06d4b73837e4`  
-		Last Modified: Tue, 07 Apr 2026 05:25:43 GMT  
-		Size: 2.4 KB (2371 bytes)  
+	-	`sha256:becf68ad406751339a93d048b5ac2d81675607f41c8a6c7711192dba36f900d2`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 2.4 KB (2369 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e910fceeadacfcf00dc91eb4821226e1b7d8032cbbbbf848a0d525c2864774`  
-		Last Modified: Tue, 07 Apr 2026 05:25:44 GMT  
-		Size: 11.0 KB (10951 bytes)  
+	-	`sha256:ea783563aa9d98b684f22281bf8ba9278d4649371e770a41d4eafa1a67a91d1e`  
+		Last Modified: Thu, 09 Apr 2026 22:25:22 GMT  
+		Size: 10.9 KB (10950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73f57b949906c2385790e59738d264d4a7bcb9077c81f8b2236407f25f78d69d`  
-		Last Modified: Tue, 07 Apr 2026 05:25:45 GMT  
-		Size: 2.5 KB (2535 bytes)  
+	-	`sha256:3516759391fd63764d150447c5971edee81db0f23d2276c4a519207102a27d6f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:23 GMT  
+		Size: 2.5 KB (2534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:stable-mysql-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:784f68c3786c5855bd4bd5639ee209c47a677135df9486bd291b62be85bfc2ef
+$ docker pull xwiki@sha256:4d2aa706f8794883b2cd9931ffdd5495a6320f4f45f18d014fe987375bdad20c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9237419 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80b76ec51eb373beb748d124e7ad2830a1c84d50beab79095e34d9166b32a584`
+-	Image ID: `sha256:33e54e27c87d03ef1a7ebd00f1e4e5b992aa1ec7499b186450d0d024bc8d4137`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca931a3ed97a89df87b19da35c3fcbe8d8d1d4e291efb6854e776550fac71c09`  
-		Last Modified: Tue, 07 Apr 2026 05:25:43 GMT  
+	-	`sha256:a6a891dd772b4c7bed5db4a7012e38e688345f2cb29e8f6284cb61ad88982f6a`  
+		Last Modified: Thu, 09 Apr 2026 22:25:21 GMT  
 		Size: 9.2 MB (9195083 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6dfb2cbf295a9008cd3b1dd8d96868bb1be439ec66947813e1ad2b64aebf7cd`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
+	-	`sha256:bc5a595378ceebc1723088e0ca439063e80ee26f58248ffac75146b8f6d409f9`  
+		Last Modified: Thu, 09 Apr 2026 22:25:20 GMT  
 		Size: 42.3 KB (42336 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:stable-postgres`
 
 ```console
-$ docker pull xwiki@sha256:03a2fd83dac41948d776759fa025fe29a3fffb62fe3b6e1f0d19e2303b5c8118
+$ docker pull xwiki@sha256:a0e045d953be6c583b90ff4c988a9b60122c825d318e3dee9aa033e12746fea4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14373,13 +17861,13 @@ $ docker pull xwiki@sha256:03a2fd83dac41948d776759fa025fe29a3fffb62fe3b6e1f0d19e
 ### `xwiki:stable-postgres` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:c0bc1625114b66671b54332d29166d6fde9d04fa4369f0a77760f4c7ce1d3885
+$ docker pull xwiki@sha256:d2cbe99724d64df219ff5189bca9526d9e34bf74372cc6893af310ac37e4e9a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **644.7 MB (644745470 bytes)**  
+-	Total Size: **644.7 MB (644745744 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ebe4413fa1c31dc12f90279bad16b74608584918b3072e2c034d1fdfa03f7aa`
+-	Image ID: `sha256:47c5e517d5084ef2cfcbdc8d781e5a3ecef00d4fbcc3f6a558b0161d7e16b771`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -14442,53 +17930,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:03:45 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:03:45 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:03:45 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:04 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:04 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:25 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.10
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 CMD ["xwiki"]
 ```
 
@@ -14533,69 +18021,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ba00b5a9b86656512fc3936b60ded13346ef82ee705751f57005f76f6e5c034`  
-		Last Modified: Tue, 07 Apr 2026 05:04:44 GMT  
-		Size: 191.2 MB (191192541 bytes)  
+	-	`sha256:ab6685658399dffbc8f6656ffe1ebd1fdfcc6699d77fa36fec74ffbefc7d7b54`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 191.2 MB (191192591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4f1fefa858353d68123cb5fc0c324a087c75c278f4cc4e482e52dbcecd526d9`  
-		Last Modified: Tue, 07 Apr 2026 05:04:47 GMT  
-		Size: 338.2 MB (338242748 bytes)  
+	-	`sha256:c989f480dbd63e04392ecc6a05de2a97b49456792c75ff0d2ebb676f4daf8d5e`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 338.2 MB (338242976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9de60098dfdf6ef9a105e2bf136f0d4684bcabeae5d9dae16243adbb51123b08`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
-		Size: 1.1 MB (1061593 bytes)  
+	-	`sha256:69d977e52ab4cba7bd0877fc512509281eccfd9fc216abed6e776e2c3427fd81`  
+		Last Modified: Thu, 09 Apr 2026 22:23:58 GMT  
+		Size: 1.1 MB (1061588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80e957e7f9eda289c7012e596b69a9b2089fd613f529a06508e18633ad0f6b44`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
-		Size: 1.3 KB (1339 bytes)  
+	-	`sha256:5f8e780bd2266349061f00ece7007c226289167843e7b406db8b195be74a0f3c`  
+		Last Modified: Thu, 09 Apr 2026 22:23:58 GMT  
+		Size: 1.3 KB (1342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ca3dc4dacd0a50350a453c22f7256f5e71ef13839cd578b41d35aa5b74f7aa8`  
-		Last Modified: Tue, 07 Apr 2026 05:04:39 GMT  
-		Size: 2.5 KB (2461 bytes)  
+	-	`sha256:2c7466b32f0bb173d36cedee71c9c5da416ab1247b55db117ba72453b649fab3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:00 GMT  
+		Size: 2.5 KB (2460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13117c0fec91aa18bfa98d06d6044ee31bb747edf0165cfaef7fcfdec79f051a`  
-		Last Modified: Tue, 07 Apr 2026 05:04:39 GMT  
-		Size: 11.0 KB (10955 bytes)  
+	-	`sha256:da88dc9ce3cc8fee0892d033c043fa15935f551fd51d7f659fc24cf3769d9f50`  
+		Last Modified: Thu, 09 Apr 2026 22:24:00 GMT  
+		Size: 11.0 KB (10953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4808d580d758143dccd7263848b640dd270b71dc97c04f16e4bc036e1fc6d888`  
-		Last Modified: Tue, 07 Apr 2026 05:04:41 GMT  
-		Size: 2.4 KB (2441 bytes)  
+	-	`sha256:c5e385eb876c8cb883fe04a886066fef4e0b3729f58e5fcd976e5aa596b9b619`  
+		Last Modified: Thu, 09 Apr 2026 22:24:01 GMT  
+		Size: 2.4 KB (2442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:stable-postgres` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:22896b002bc78d904d945279283c4c40b950b3105d9d8b2aa5796778086942b0
+$ docker pull xwiki@sha256:7261816e696033c1b72f3a0484dd25c9976d88d8b5e834094d24382df6385dfa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9233523 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49655e1361a16ff6cb8f2f811b407e96b1987e0280ad1d37e7892493b69e2254`
+-	Image ID: `sha256:b5b184fcf3dd33956004d47268444ff9b69b9de44ab0602806e6171f9fb20f18`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:69cfa0066674d1a8bf9bce38871de49599de777a167ff457471977d7ca44ae74`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
+	-	`sha256:6c881a2eb8c3f7e6688f55d447518decbb5c845e6fa17ec2588cfe2761cd45ac`  
+		Last Modified: Thu, 09 Apr 2026 22:23:59 GMT  
 		Size: 9.2 MB (9192775 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f921fb4396b3758e9d4f8b23c9aa3958855837e3e642487d4e3b3e33b5334b0b`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
+	-	`sha256:3a1d74de71ef8a2df0ae58502c4fcd3e7f9ddce4c8451cff5264b15593430a4b`  
+		Last Modified: Thu, 09 Apr 2026 22:23:58 GMT  
 		Size: 40.7 KB (40748 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:stable-postgres` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:9fd400c01a4dedea2a59d4f88c8ebb46c9985de41fe605ad86ac9531cf6c96a2
+$ docker pull xwiki@sha256:6a89cf110097a4b1112b5cfc7c7a1ba47071555b98cb3ef20cd56f868199aafb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **640.7 MB (640731243 bytes)**  
+-	Total Size: **640.7 MB (640731414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5933bc99364a7507df6dac49353e015710aa9b47cd41306d515a780c28780d4a`
+-	Image ID: `sha256:27222df73402ea4a2139f143c97b06161b76cb82e3681ee4dfc5735e302ef33c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -14658,53 +18146,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:45 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:45 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:45 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:30 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:30 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.10
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 CMD ["xwiki"]
 ```
 
@@ -14749,63 +18237,63 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:980798a812d77d18400ebd9a1b3386b55d7210e7553e2a76c1fd0d6f46f58b71`  
-		Last Modified: Tue, 07 Apr 2026 05:25:46 GMT  
-		Size: 188.9 MB (188852350 bytes)  
+	-	`sha256:91e4ba2406ca17d92518a9c8fed78922587ccdaed82a817003b3a6a7a2630415`  
+		Last Modified: Thu, 09 Apr 2026 22:25:41 GMT  
+		Size: 188.9 MB (188852239 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09955a9b20fb6241692c2cde02d00ab48db3fd23cd3fb1a9cbf3429e1b65b4dc`  
-		Last Modified: Tue, 07 Apr 2026 05:25:49 GMT  
-		Size: 338.2 MB (338242841 bytes)  
+	-	`sha256:ed48fd32fa977664a9efae1c399214cfb95d56e6704a9427b29fbb504e4c4512`  
+		Last Modified: Thu, 09 Apr 2026 22:25:43 GMT  
+		Size: 338.2 MB (338243125 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6de5e23d7f80da3cb56170285de02fd6fc02ee66165660503489c2a1f81cda95`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:0a72878e1ceec4717b64831232e4483e4d2971324205b6ef54c1b1ed17705679`  
+		Last Modified: Thu, 09 Apr 2026 22:25:34 GMT  
 		Size: 1.1 MB (1061591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fffbe365397b1f6f020664d340eba77704fddcb96692b936dbaef558b54f376b`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:34cb4092a53be364a54edb4e5e4b46840eebca3a4cd6a0c15ef67fc442b4fd32`  
+		Last Modified: Thu, 09 Apr 2026 22:25:34 GMT  
 		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c021a6cbe1cb0eab76abbc0c470f0cbc082e6addf1cf66e387f74a173d7e7767`  
-		Last Modified: Tue, 07 Apr 2026 05:25:40 GMT  
+	-	`sha256:6f91579b573491d279efff4290f1cdee81295fdac0dbc76a08b81920f672884f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:35 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1726884ae241041161bea092e77fba5a22055efacbb48dd121b80e9310620a7`  
-		Last Modified: Tue, 07 Apr 2026 05:25:40 GMT  
+	-	`sha256:46e4b141c31a2f4b521111a0fa2c360d96424b65989b910cd76805940c3cc410`  
+		Last Modified: Thu, 09 Apr 2026 22:25:35 GMT  
 		Size: 11.0 KB (10952 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0562b7325829da80eb97bdcf49ac44aa45740e274b052c8f2628a7e95a216ad`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 2.4 KB (2443 bytes)  
+	-	`sha256:ecd716ce84b4394d7cdd6c69a53d61b45d0efff4cabb7da722434ba543e48a34`  
+		Last Modified: Thu, 09 Apr 2026 22:25:36 GMT  
+		Size: 2.4 KB (2441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:stable-postgres` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:79100acca7f49898f585ce1b1e9465726ae241412ba3c4d8053c8499b5006107
+$ docker pull xwiki@sha256:efbef603fc75fbb6a94b05d0ac6cdb0cc621cf8072cbe0cc94735d35b0fb2e84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9234450 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7973f1c5d62b9a9c65d9e22709db7e05c1cba90d104212a94e7fc3c08d85105d`
+-	Image ID: `sha256:97876a24c85611944f8841c97128dcfa49fe09c3f4f66c6dd4c83b183cee897f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62c771d538957625b54c5398a25ecf305ea674ccdc606c2f439f5d28631d6531`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:8148f070bd5ebea9555d2e9f95434581bd8d772a937e398f9a738297bfe6dad2`  
+		Last Modified: Thu, 09 Apr 2026 22:25:34 GMT  
 		Size: 9.2 MB (9193528 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:04c03ec1e1bd36c832bb68fc8ca3623139ee3a180b8686240fcf62051cb57321`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:d198ff4680d5dbf674e8254ef7a3552d1f9f16db4998966bd10050c6bd542658`  
+		Last Modified: Thu, 09 Apr 2026 22:25:33 GMT  
 		Size: 40.9 KB (40922 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `xwiki:stable-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:03a2fd83dac41948d776759fa025fe29a3fffb62fe3b6e1f0d19e2303b5c8118
+$ docker pull xwiki@sha256:a0e045d953be6c583b90ff4c988a9b60122c825d318e3dee9aa033e12746fea4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14818,13 +18306,13 @@ $ docker pull xwiki@sha256:03a2fd83dac41948d776759fa025fe29a3fffb62fe3b6e1f0d19e
 ### `xwiki:stable-postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:c0bc1625114b66671b54332d29166d6fde9d04fa4369f0a77760f4c7ce1d3885
+$ docker pull xwiki@sha256:d2cbe99724d64df219ff5189bca9526d9e34bf74372cc6893af310ac37e4e9a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **644.7 MB (644745470 bytes)**  
+-	Total Size: **644.7 MB (644745744 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5ebe4413fa1c31dc12f90279bad16b74608584918b3072e2c034d1fdfa03f7aa`
+-	Image ID: `sha256:47c5e517d5084ef2cfcbdc8d781e5a3ecef00d4fbcc3f6a558b0161d7e16b771`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -14887,53 +18375,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 03:30:37 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:03:45 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:03:45 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:03:45 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:03:45 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:04 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:23:04 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:23:04 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:23:25 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.10
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:04:06 GMT
+# Thu, 09 Apr 2026 22:23:25 GMT
 CMD ["xwiki"]
 ```
 
@@ -14978,69 +18466,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ba00b5a9b86656512fc3936b60ded13346ef82ee705751f57005f76f6e5c034`  
-		Last Modified: Tue, 07 Apr 2026 05:04:44 GMT  
-		Size: 191.2 MB (191192541 bytes)  
+	-	`sha256:ab6685658399dffbc8f6656ffe1ebd1fdfcc6699d77fa36fec74ffbefc7d7b54`  
+		Last Modified: Thu, 09 Apr 2026 22:24:12 GMT  
+		Size: 191.2 MB (191192591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4f1fefa858353d68123cb5fc0c324a087c75c278f4cc4e482e52dbcecd526d9`  
-		Last Modified: Tue, 07 Apr 2026 05:04:47 GMT  
-		Size: 338.2 MB (338242748 bytes)  
+	-	`sha256:c989f480dbd63e04392ecc6a05de2a97b49456792c75ff0d2ebb676f4daf8d5e`  
+		Last Modified: Thu, 09 Apr 2026 22:24:20 GMT  
+		Size: 338.2 MB (338242976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9de60098dfdf6ef9a105e2bf136f0d4684bcabeae5d9dae16243adbb51123b08`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
-		Size: 1.1 MB (1061593 bytes)  
+	-	`sha256:69d977e52ab4cba7bd0877fc512509281eccfd9fc216abed6e776e2c3427fd81`  
+		Last Modified: Thu, 09 Apr 2026 22:23:58 GMT  
+		Size: 1.1 MB (1061588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80e957e7f9eda289c7012e596b69a9b2089fd613f529a06508e18633ad0f6b44`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
-		Size: 1.3 KB (1339 bytes)  
+	-	`sha256:5f8e780bd2266349061f00ece7007c226289167843e7b406db8b195be74a0f3c`  
+		Last Modified: Thu, 09 Apr 2026 22:23:58 GMT  
+		Size: 1.3 KB (1342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ca3dc4dacd0a50350a453c22f7256f5e71ef13839cd578b41d35aa5b74f7aa8`  
-		Last Modified: Tue, 07 Apr 2026 05:04:39 GMT  
-		Size: 2.5 KB (2461 bytes)  
+	-	`sha256:2c7466b32f0bb173d36cedee71c9c5da416ab1247b55db117ba72453b649fab3`  
+		Last Modified: Thu, 09 Apr 2026 22:24:00 GMT  
+		Size: 2.5 KB (2460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13117c0fec91aa18bfa98d06d6044ee31bb747edf0165cfaef7fcfdec79f051a`  
-		Last Modified: Tue, 07 Apr 2026 05:04:39 GMT  
-		Size: 11.0 KB (10955 bytes)  
+	-	`sha256:da88dc9ce3cc8fee0892d033c043fa15935f551fd51d7f659fc24cf3769d9f50`  
+		Last Modified: Thu, 09 Apr 2026 22:24:00 GMT  
+		Size: 11.0 KB (10953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4808d580d758143dccd7263848b640dd270b71dc97c04f16e4bc036e1fc6d888`  
-		Last Modified: Tue, 07 Apr 2026 05:04:41 GMT  
-		Size: 2.4 KB (2441 bytes)  
+	-	`sha256:c5e385eb876c8cb883fe04a886066fef4e0b3729f58e5fcd976e5aa596b9b619`  
+		Last Modified: Thu, 09 Apr 2026 22:24:01 GMT  
+		Size: 2.4 KB (2442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:stable-postgres-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:22896b002bc78d904d945279283c4c40b950b3105d9d8b2aa5796778086942b0
+$ docker pull xwiki@sha256:7261816e696033c1b72f3a0484dd25c9976d88d8b5e834094d24382df6385dfa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9233523 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:49655e1361a16ff6cb8f2f811b407e96b1987e0280ad1d37e7892493b69e2254`
+-	Image ID: `sha256:b5b184fcf3dd33956004d47268444ff9b69b9de44ab0602806e6171f9fb20f18`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:69cfa0066674d1a8bf9bce38871de49599de777a167ff457471977d7ca44ae74`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
+	-	`sha256:6c881a2eb8c3f7e6688f55d447518decbb5c845e6fa17ec2588cfe2761cd45ac`  
+		Last Modified: Thu, 09 Apr 2026 22:23:59 GMT  
 		Size: 9.2 MB (9192775 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f921fb4396b3758e9d4f8b23c9aa3958855837e3e642487d4e3b3e33b5334b0b`  
-		Last Modified: Tue, 07 Apr 2026 05:04:38 GMT  
+	-	`sha256:3a1d74de71ef8a2df0ae58502c4fcd3e7f9ddce4c8451cff5264b15593430a4b`  
+		Last Modified: Thu, 09 Apr 2026 22:23:58 GMT  
 		Size: 40.7 KB (40748 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:stable-postgres-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:9fd400c01a4dedea2a59d4f88c8ebb46c9985de41fe605ad86ac9531cf6c96a2
+$ docker pull xwiki@sha256:6a89cf110097a4b1112b5cfc7c7a1ba47071555b98cb3ef20cd56f868199aafb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **640.7 MB (640731243 bytes)**  
+-	Total Size: **640.7 MB (640731414 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5933bc99364a7507df6dac49353e015710aa9b47cd41306d515a780c28780d4a`
+-	Image ID: `sha256:27222df73402ea4a2139f143c97b06161b76cb82e3681ee4dfc5735e302ef33c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -15103,53 +18591,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Tue, 07 Apr 2026 05:10:09 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 07 Apr 2026 05:24:45 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 05:24:45 GMT
-ENV XWIKI_VERSION=18.2.0
-# Tue, 07 Apr 2026 05:24:45 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.0
-# Tue, 07 Apr 2026 05:24:45 GMT
-ENV XWIKI_DOWNLOAD_SHA256=1dbbf05fcb593f738a3f922c0d12bd4524c789a9f404e0e035bd6b2da2d1d26f
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:24:30 GMT
+ENV XWIKI_VERSION=18.2.1
+# Thu, 09 Apr 2026 22:24:30 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.2.1
+# Thu, 09 Apr 2026 22:24:30 GMT
+ENV XWIKI_DOWNLOAD_SHA256=d18d8d16f39d6a37ba11c0015dbafced57183a9bdbdf35ed1103191e24dac7b2
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.10
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_SHA256=cab1cd67cfa25c25de4348e532298028288a877ba01c77d1619fe45416193387
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.10
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.10.jar
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 07 Apr 2026 05:25:06 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 05:25:07 GMT
+# Thu, 09 Apr 2026 22:25:01 GMT
 CMD ["xwiki"]
 ```
 
@@ -15194,55 +18682,55 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:980798a812d77d18400ebd9a1b3386b55d7210e7553e2a76c1fd0d6f46f58b71`  
-		Last Modified: Tue, 07 Apr 2026 05:25:46 GMT  
-		Size: 188.9 MB (188852350 bytes)  
+	-	`sha256:91e4ba2406ca17d92518a9c8fed78922587ccdaed82a817003b3a6a7a2630415`  
+		Last Modified: Thu, 09 Apr 2026 22:25:41 GMT  
+		Size: 188.9 MB (188852239 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09955a9b20fb6241692c2cde02d00ab48db3fd23cd3fb1a9cbf3429e1b65b4dc`  
-		Last Modified: Tue, 07 Apr 2026 05:25:49 GMT  
-		Size: 338.2 MB (338242841 bytes)  
+	-	`sha256:ed48fd32fa977664a9efae1c399214cfb95d56e6704a9427b29fbb504e4c4512`  
+		Last Modified: Thu, 09 Apr 2026 22:25:43 GMT  
+		Size: 338.2 MB (338243125 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6de5e23d7f80da3cb56170285de02fd6fc02ee66165660503489c2a1f81cda95`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:0a72878e1ceec4717b64831232e4483e4d2971324205b6ef54c1b1ed17705679`  
+		Last Modified: Thu, 09 Apr 2026 22:25:34 GMT  
 		Size: 1.1 MB (1061591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fffbe365397b1f6f020664d340eba77704fddcb96692b936dbaef558b54f376b`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:34cb4092a53be364a54edb4e5e4b46840eebca3a4cd6a0c15ef67fc442b4fd32`  
+		Last Modified: Thu, 09 Apr 2026 22:25:34 GMT  
 		Size: 1.3 KB (1341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c021a6cbe1cb0eab76abbc0c470f0cbc082e6addf1cf66e387f74a173d7e7767`  
-		Last Modified: Tue, 07 Apr 2026 05:25:40 GMT  
+	-	`sha256:6f91579b573491d279efff4290f1cdee81295fdac0dbc76a08b81920f672884f`  
+		Last Modified: Thu, 09 Apr 2026 22:25:35 GMT  
 		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1726884ae241041161bea092e77fba5a22055efacbb48dd121b80e9310620a7`  
-		Last Modified: Tue, 07 Apr 2026 05:25:40 GMT  
+	-	`sha256:46e4b141c31a2f4b521111a0fa2c360d96424b65989b910cd76805940c3cc410`  
+		Last Modified: Thu, 09 Apr 2026 22:25:35 GMT  
 		Size: 11.0 KB (10952 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0562b7325829da80eb97bdcf49ac44aa45740e274b052c8f2628a7e95a216ad`  
-		Last Modified: Tue, 07 Apr 2026 05:25:42 GMT  
-		Size: 2.4 KB (2443 bytes)  
+	-	`sha256:ecd716ce84b4394d7cdd6c69a53d61b45d0efff4cabb7da722434ba543e48a34`  
+		Last Modified: Thu, 09 Apr 2026 22:25:36 GMT  
+		Size: 2.4 KB (2441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:stable-postgres-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:79100acca7f49898f585ce1b1e9465726ae241412ba3c4d8053c8499b5006107
+$ docker pull xwiki@sha256:efbef603fc75fbb6a94b05d0ac6cdb0cc621cf8072cbe0cc94735d35b0fb2e84
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.2 MB (9234450 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7973f1c5d62b9a9c65d9e22709db7e05c1cba90d104212a94e7fc3c08d85105d`
+-	Image ID: `sha256:97876a24c85611944f8841c97128dcfa49fe09c3f4f66c6dd4c83b183cee897f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:62c771d538957625b54c5398a25ecf305ea674ccdc606c2f439f5d28631d6531`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:8148f070bd5ebea9555d2e9f95434581bd8d772a937e398f9a738297bfe6dad2`  
+		Last Modified: Thu, 09 Apr 2026 22:25:34 GMT  
 		Size: 9.2 MB (9193528 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:04c03ec1e1bd36c832bb68fc8ca3623139ee3a180b8686240fcf62051cb57321`  
-		Last Modified: Tue, 07 Apr 2026 05:25:39 GMT  
+	-	`sha256:d198ff4680d5dbf674e8254ef7a3552d1f9f16db4998966bd10050c6bd542658`  
+		Last Modified: Thu, 09 Apr 2026 22:25:33 GMT  
 		Size: 40.9 KB (40922 bytes)  
 		MIME: application/vnd.in-toto+json
