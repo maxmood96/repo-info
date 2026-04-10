@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6ce5d3f9dba77fa44c75ab9f2a366e671dd52351d76d06aab7ce1c81467a493a`
-- Created: `2026-03-16T22:40:22.374680252Z`
-- Virtual Size: ~ 848.31 Mb  
+- Image ID: `sha256:a18acbfa131e0ceefd2cf434b62bf0f00536b06db364fda8a8371a2e8b0087cc`
+- Created: `2026-04-07T01:51:35.918043818Z`
+- Virtual Size: ~ 848.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -240,13 +240,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bash/5.2.37-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bash/5.2.37-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `bind9=1:9.20.18-1~deb13u1`
+### `dpkg` source package: `bind9=1:9.20.21-1~deb13u1`
 
 Binary Packages:
 
-- `bind9-dnsutils=1:9.20.18-1~deb13u1`
-- `bind9-host=1:9.20.18-1~deb13u1`
-- `bind9-libs:amd64=1:9.20.18-1~deb13u1`
+- `bind9-dnsutils=1:9.20.21-1~deb13u1`
+- `bind9-host=1:9.20.21-1~deb13u1`
+- `bind9-libs:amd64=1:9.20.21-1~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/bind9-dnsutils/copyright`, `/usr/share/doc/bind9-host/copyright`, `/usr/share/doc/bind9-libs/copyright`)
 
@@ -261,18 +261,18 @@ Licenses: (parsed from: `/usr/share/doc/bind9-dnsutils/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris bind9=1:9.20.18-1~deb13u1
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.20.18-1%7edeb13u1.dsc' bind9_9.20.18-1~deb13u1.dsc 3197 SHA256:b53f64dde0b5c42be3cd56410481899fca8dfaec7e6f08dc94d5fb50a8fc8b35
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.20.18.orig.tar.xz' bind9_9.20.18.orig.tar.xz 5775248 SHA256:dfc546c990ac4515529cd45c4dd995862b18ae8a2d0cb29208e8896a5d325331
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.20.18.orig.tar.xz.asc' bind9_9.20.18.orig.tar.xz.asc 833 SHA256:d56f087e30a8efd1b624acdf06203bb45fe8cfca18e9565c8a566957edacf069
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.20.18-1%7edeb13u1.debian.tar.xz' bind9_9.20.18-1~deb13u1.debian.tar.xz 61968 SHA256:8637cc9863804bac64b896fa0a2957506731b02b5975b8afab9a52efd77c5f28
+$ apt-get source -qq --print-uris bind9=1:9.20.21-1~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.20.21-1%7edeb13u1.dsc' bind9_9.20.21-1~deb13u1.dsc 3197 SHA256:72eac2084f3e365f4ea2c8346cd4449053e07b5eb3c893dd15af4f0dd89fdd6e
+'http://deb.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.20.21.orig.tar.xz' bind9_9.20.21.orig.tar.xz 5808576 SHA256:15e1b5a227d2890f7c4e823a6ea018de70ee2f3a0e859cbff3d82aad8590de03
+'http://deb.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.20.21.orig.tar.xz.asc' bind9_9.20.21.orig.tar.xz.asc 833 SHA256:95b2b9ac3b6f216d69a086d97da7feabb68e25d2ed264dc4049de7c6be61de5c
+'http://deb.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.20.21-1%7edeb13u1.debian.tar.xz' bind9_9.20.21-1~deb13u1.debian.tar.xz 62100 SHA256:fd83209c4aed3e66f8164cbee11e648c48504a399e87491b28207f3bf803a223
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/bind9/1:9.20.18-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/bind9/1:9.20.18-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bind9/1:9.20.18-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/bind9/1:9.20.21-1~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/bind9/1:9.20.21-1~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/bind9/1:9.20.21-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `brotli=1.1.0-2`
 
