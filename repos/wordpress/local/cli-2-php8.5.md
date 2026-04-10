@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a108b76d3cc52b97b512199fcc80479633b913a510d97dd89def109b0e939223`
-- Created: `2026-03-13T00:13:30.802966725Z`
-- Virtual Size: ~ 236.58 Mb  
+- Image ID: `sha256:afae1397f680bc27050dd28afa688ccd0f767828286924d5e7d322e583ef59d7`
+- Created: `2026-04-09T23:13:09.252906376Z`
+- Virtual Size: ~ 237.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.4`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.4.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.4.tar.xz.asc`
-  - `PHP_SHA256=c1569f1f543f6b025c583cdc0e730e5c5833c603618613f1aa8e75d1524b8c91`
+  - `PHP_VERSION=8.5.5`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc`
+  - `PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.12.0`
   - `WORDPRESS_CLI_SHA512=be928f6b8ca1e8dfb9d2f4b75a13aa4aee0896f8a9a0a1c45cd5d2c98605e6172e6d014dda2e27f88c98befc16c040cbb2bd1bfa121510ea5cdf5f6a30fe8832`
@@ -472,16 +472,16 @@ ICU
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.15-r0 description:
+imagemagick-libs-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.15-r0 webpage:
+imagemagick-libs-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.15-r0 installed size:
-4249 KiB
+imagemagick-libs-7.1.2.17-r0 installed size:
+4257 KiB
 
-imagemagick-libs-7.1.2.15-r0 license:
+imagemagick-libs-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -557,16 +557,16 @@ BSD-2-Clause
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.41.2-r0 description:
+libblkid-2.41.4-r0 description:
 Block device identification library from util-linux
 
-libblkid-2.41.2-r0 webpage:
+libblkid-2.41.4-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.41.2-r0 installed size:
-190 KiB
+libblkid-2.41.4-r0 installed size:
+194 KiB
 
-libblkid-2.41.2-r0 license:
+libblkid-2.41.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -676,16 +676,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.4-r0 description:
+libexpat-2.7.5-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.4-r0 webpage:
+libexpat-2.7.5-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.4-r0 installed size:
+libexpat-2.7.5-r0 installed size:
 133 KiB
 
-libexpat-2.7.4-r0 license:
+libexpat-2.7.5-r0 license:
 MIT
 
 ```
@@ -829,16 +829,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libmount`
 
 ```console
-libmount-2.41.2-r0 description:
+libmount-2.41.4-r0 description:
 Block device identification library from util-linux
 
-libmount-2.41.2-r0 webpage:
+libmount-2.41.4-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libmount-2.41.2-r0 installed size:
+libmount-2.41.4-r0 installed size:
 266 KiB
 
-libmount-2.41.2-r0 license:
+libmount-2.41.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -863,16 +863,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.55-r0 description:
+libpng-1.6.56-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.55-r0 webpage:
+libpng-1.6.56-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.55-r0 installed size:
-177 KiB
+libpng-1.6.56-r0 installed size:
+181 KiB
 
-libpng-1.6.55-r0 license:
+libpng-1.6.56-r0 license:
 Libpng
 
 ```
@@ -1186,16 +1186,16 @@ GPL-2.0-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r21 description:
+musl-1.2.5-r22 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r21 webpage:
+musl-1.2.5-r22 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r21 installed size:
+musl-1.2.5-r22 installed size:
 650 KiB
 
-musl-1.2.5-r21 license:
+musl-1.2.5-r22 license:
 MIT
 
 ```
