@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f42980c54e0074a9a51b77352ca60a41611ad6101ae6a6ad1ca3d86e220de535`
-- Created: `2026-04-07T03:25:55.93529279Z`
-- Virtual Size: ~ 249.94 Mb  
+- Image ID: `sha256:45d1c8fe2d7bef670b67b19768218e34d66ef09c880d177541f34dedc6363535`
+- Created: `2026-04-07T18:04:03.329720697Z`
+- Virtual Size: ~ 249.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1269,14 +1269,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.7.dsc' openssl_3.0.13-0ubuntu3.7.dsc 2512 SHA512:cd164a3e4bb504d5022d7012610f6f77e0953903f6cc9e0ba455c215a252593326f2ef010244da494c01f115b572ff548f608745f7d1c35ce7e3641da1326240
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.7.debian.tar.xz' openssl_3.0.13-0ubuntu3.7.debian.tar.xz 174788 SHA512:c396fd3603fa0ee909f8d637e82b395a338133074c1c83c4b0ffbf1cb1c791c7fb9680fa5837d761e47d47909312d9f850894ba4cf2aa40a9f2768a0a47b5c28
-```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 
@@ -1528,9 +1523,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.14
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.14.dsc' systemd_255.4-1ubuntu8.14.dsc 7324 SHA512:cc3b0d413b31e1995708683ea8bfb139952b74783ccfcc8c4dcc1d0b3950ebecfa58eeb54f01a5d44e38ee85b55107c830ce42d2571c2042da8d0cc2a204aa1e
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.14.debian.tar.xz' systemd_255.4-1ubuntu8.14.debian.tar.xz 262172 SHA512:a7e3657be6aebac7b2baeacc4e179db686565a3db05f0730ce8f10e36d075dc8db8af43433ec712c3f45331b061614f76dedbfe08d00dd7f06c4a79e2fdde11d
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.14.dsc' systemd_255.4-1ubuntu8.14.dsc 7324 SHA512:cc3b0d413b31e1995708683ea8bfb139952b74783ccfcc8c4dcc1d0b3950ebecfa58eeb54f01a5d44e38ee85b55107c830ce42d2571c2042da8d0cc2a204aa1e
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.14.debian.tar.xz' systemd_255.4-1ubuntu8.14.debian.tar.xz 262172 SHA512:a7e3657be6aebac7b2baeacc4e179db686565a3db05f0730ce8f10e36d075dc8db8af43433ec712c3f45331b061614f76dedbfe08d00dd7f06c4a79e2fdde11d
 ```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
