@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:de49491ab8baf1d111f3a3ea0226bdbe6585e1851b723c40997932ab3075df12`
-- Created: `2026-04-07T02:53:19.316938426Z`
-- Virtual Size: ~ 791.00 Mb  
+- Image ID: `sha256:13504d825af44d80980ede85782ccd279e9aa8c538e6bf7cbc7b543696119074`
+- Created: `2026-04-09T23:17:07.390763013Z`
+- Virtual Size: ~ 799.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.19`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.19.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.19.tar.xz.asc`
-  - `PHP_SHA256=11f7164ab26d356c31f94d3d69cc0e0707d5d2d6494a221aaeae307c08eaaa1c`
+  - `PHP_VERSION=8.4.20`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.20.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.20.tar.xz.asc`
+  - `PHP_SHA256=e454c6f7c89a42f41ebb06dc5c3578e8c8b5f1a3f0da6675665affab04e221f7`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=6.0.4`
   - `JOOMLA_SHA512=c1d98a550c43dbbd68b9be369352f015a05e858d6e163e5fdb909fa40563d34dee268f2fcb64b122deb8bb025b4c6af27d391e26563a58a3350c4875a2e1b3e8`
@@ -3809,13 +3809,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.6.10+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.6.10+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.5.5-1~deb13u1`
+### `dpkg` source package: `openssl=3.5.5-1~deb13u2`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.5.5-1~deb13u1`
-- `openssl=3.5.5-1~deb13u1`
-- `openssl-provider-legacy=3.5.5-1~deb13u1`
+- `libssl3t64:amd64=3.5.5-1~deb13u2`
+- `openssl=3.5.5-1~deb13u2`
+- `openssl-provider-legacy=3.5.5-1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -3827,18 +3827,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.5.5-1~deb13u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.5-1%7edeb13u1.dsc' openssl_3.5.5-1~deb13u1.dsc 2707 SHA256:9fef06359b7e7f0abfb0ac6869f7bb344ae7f8efb25d5969f004f278a877b146
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA256:b28c91532a8b65a1f983b4c28b7488174e4a01008e29ce8e69bd789f28bc2a89
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA256:eaef5b1054b84b8d1e6c61c9fc8867828be5ce686d0221580faf8bdc16489da9
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.5-1%7edeb13u1.debian.tar.xz' openssl_3.5.5-1~deb13u1.debian.tar.xz 50668 SHA256:87377bad1f77b157bf95ebc18c5dfe70b5d3ab276441f92b66a5338b2500705f
+$ apt-get source -qq --print-uris openssl=3.5.5-1~deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5-1%7edeb13u2.dsc' openssl_3.5.5-1~deb13u2.dsc 2707 SHA256:2cba43d38a2f4ca1ef09a89ccc348fc63a5a43a58850a913bca46c6ceeb007ed
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA256:b28c91532a8b65a1f983b4c28b7488174e4a01008e29ce8e69bd789f28bc2a89
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA256:eaef5b1054b84b8d1e6c61c9fc8867828be5ce686d0221580faf8bdc16489da9
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5-1%7edeb13u2.debian.tar.xz' openssl_3.5.5-1~deb13u2.debian.tar.xz 68136 SHA256:92355f8cd5112cb4d49b9487c30507e5f85fc5497ad85223aecf661566f5ad8e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.5.5-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.5.5-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.5.5-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.5.5-1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.5.5-1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.5.5-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.25.5-3`
 
@@ -4629,11 +4629,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.35+dfsg-3.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.35+dfsg-3.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tiff=4.7.0-3+deb13u1`
+### `dpkg` source package: `tiff=4.7.0-3+deb13u2`
 
 Binary Packages:
 
-- `libtiff6:amd64=4.7.0-3+deb13u1`
+- `libtiff6:amd64=4.7.0-3+deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 
@@ -4642,17 +4642,17 @@ Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff=4.7.0-3+deb13u1
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0-3%2bdeb13u1.dsc' tiff_4.7.0-3+deb13u1.dsc 2287 SHA256:2456052f090792160c4e5db9a63cb9007e7a63fadbc4ae7abaf10188e5f35e5d
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0.orig.tar.bz2' tiff_4.7.0.orig.tar.bz2 2111254 SHA256:2b8b5c4e79cb2a4651796602e45d6179b7f18bc283feab417b8e881ef7e81862
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0-3%2bdeb13u1.debian.tar.xz' tiff_4.7.0-3+deb13u1.debian.tar.xz 26320 SHA256:50f5a0cbc8d8ccebc08ff65ec836aaaa870bf8f14aef55d5a7aa949f11834733
+$ apt-get source -qq --print-uris tiff=4.7.0-3+deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0-3%2bdeb13u2.dsc' tiff_4.7.0-3+deb13u2.dsc 2287 SHA256:503d624f692bd30c8b005204065ec6f1197455b850c4f760ca2e6c67cd8b0f4b
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0.orig.tar.bz2' tiff_4.7.0.orig.tar.bz2 2111254 SHA256:2b8b5c4e79cb2a4651796602e45d6179b7f18bc283feab417b8e881ef7e81862
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0-3%2bdeb13u2.debian.tar.xz' tiff_4.7.0-3+deb13u2.debian.tar.xz 26680 SHA256:3a201857c5c8433ddd494e01a8d2745f88ae200c3d509446a4aaa480dc106f64
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tiff/4.7.0-3+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.7.0-3+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.7.0-3+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tiff/4.7.0-3+deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.7.0-3+deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.7.0-3+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2026a-0+deb13u1`
 
