@@ -1,17 +1,17 @@
-# `nginx:1.29.7-alpine-perl`
+# `nginx:1.29.8-alpine-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:adec26bd720bb383aaa933893fbfad4b08755b5306feec42825379911f3205bc`
-- Created: `2026-03-25T00:10:10.41348897Z`
-- Virtual Size: ~ 102.70 Mb  
+- Image ID: `sha256:26415245f5b69d24d0f860b5f3572bec5d357031869303e909c1051467eb6cd4`
+- Created: `2026-04-07T18:03:31.273193905Z`
+- Virtual Size: ~ 102.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.29.7`
+  - `NGINX_VERSION=1.29.8`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
   - `NJS_VERSION=0.9.6`
@@ -603,16 +603,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.55-r0 description:
+libpng-1.6.56-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.55-r0 webpage:
+libpng-1.6.56-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.55-r0 installed size:
-177 KiB
+libpng-1.6.56-r0 installed size:
+181 KiB
 
-libpng-1.6.55-r0 license:
+libpng-1.6.56-r0 license:
 Libpng
 
 ```
@@ -1011,16 +1011,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.29.7-r1 description:
+nginx-1.29.8-r1 description:
 High performance web server
 
-nginx-1.29.7-r1 webpage:
+nginx-1.29.8-r1 webpage:
 https://nginx.org/
 
-nginx-1.29.7-r1 installed size:
+nginx-1.29.8-r1 installed size:
 2732 KiB
 
-nginx-1.29.7-r1 license:
+nginx-1.29.8-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1028,16 +1028,16 @@ nginx-1.29.7-r1 license:
 ### `apk` package: `nginx-module-acme`
 
 ```console
-nginx-module-acme-1.29.7.0.3.1-r1 description:
+nginx-module-acme-1.29.8.0.3.1-r1 description:
 nginx nginx-acme
 
-nginx-module-acme-1.29.7.0.3.1-r1 webpage:
+nginx-module-acme-1.29.8.0.3.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-acme-1.29.7.0.3.1-r1 installed size:
+nginx-module-acme-1.29.8.0.3.1-r1 installed size:
 7959 KiB
 
-nginx-module-acme-1.29.7.0.3.1-r1 license:
+nginx-module-acme-1.29.8.0.3.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1045,16 +1045,16 @@ nginx-module-acme-1.29.7.0.3.1-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.29.7-r1 description:
+nginx-module-geoip-1.29.8-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.29.7-r1 webpage:
+nginx-module-geoip-1.29.8-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.29.7-r1 installed size:
+nginx-module-geoip-1.29.8-r1 installed size:
 62 KiB
 
-nginx-module-geoip-1.29.7-r1 license:
+nginx-module-geoip-1.29.8-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1062,16 +1062,16 @@ nginx-module-geoip-1.29.7-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.29.7-r1 description:
+nginx-module-image-filter-1.29.8-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.29.7-r1 webpage:
+nginx-module-image-filter-1.29.8-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.29.7-r1 installed size:
+nginx-module-image-filter-1.29.8-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.29.7-r1 license:
+nginx-module-image-filter-1.29.8-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1079,16 +1079,16 @@ nginx-module-image-filter-1.29.7-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.29.7.0.9.6-r1 description:
+nginx-module-njs-1.29.8.0.9.6-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.29.7.0.9.6-r1 webpage:
+nginx-module-njs-1.29.8.0.9.6-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.29.7.0.9.6-r1 installed size:
+nginx-module-njs-1.29.8.0.9.6-r1 installed size:
 9367 KiB
 
-nginx-module-njs-1.29.7.0.9.6-r1 license:
+nginx-module-njs-1.29.8.0.9.6-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1096,16 +1096,16 @@ nginx-module-njs-1.29.7.0.9.6-r1 license:
 ### `apk` package: `nginx-module-perl`
 
 ```console
-nginx-module-perl-1.29.7-r1 description:
+nginx-module-perl-1.29.8-r1 description:
 nginx Perl dynamic module
 
-nginx-module-perl-1.29.7-r1 webpage:
+nginx-module-perl-1.29.8-r1 webpage:
 https://nginx.org/
 
-nginx-module-perl-1.29.7-r1 installed size:
+nginx-module-perl-1.29.8-r1 installed size:
 85 KiB
 
-nginx-module-perl-1.29.7-r1 license:
+nginx-module-perl-1.29.8-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1113,16 +1113,16 @@ nginx-module-perl-1.29.7-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.29.7-r1 description:
+nginx-module-xslt-1.29.8-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.29.7-r1 webpage:
+nginx-module-xslt-1.29.8-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.29.7-r1 installed size:
+nginx-module-xslt-1.29.8-r1 installed size:
 46 KiB
 
-nginx-module-xslt-1.29.7-r1 license:
+nginx-module-xslt-1.29.8-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1147,16 +1147,16 @@ BSD-3-Clause
 ### `apk` package: `perl`
 
 ```console
-perl-5.42.1-r0 description:
+perl-5.42.2-r0 description:
 Larry Wall's Practical Extraction and Report Language
 
-perl-5.42.1-r0 webpage:
+perl-5.42.2-r0 webpage:
 https://www.perl.org/
 
-perl-5.42.1-r0 installed size:
+perl-5.42.2-r0 installed size:
 38 MiB
 
-perl-5.42.1-r0 license:
+perl-5.42.2-r0 license:
 Artistic-1.0-Perl OR GPL-1.0-or-later
 
 ```
