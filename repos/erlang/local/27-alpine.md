@@ -1,19 +1,19 @@
-# `erlang:27.3.4.9-alpine`
+# `erlang:27.3.4.10-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4d731c6308c9a52730e9881ae051650dfab889ca27ae9f722770d6d168219304`
-- Created: `2026-03-13T17:15:55.592524289Z`
-- Virtual Size: ~ 88.75 Mb  
+- Image ID: `sha256:8e2825c88396b769fbb4aa9f3b6d7ac9de77ff56a26a02fa0ab4d145f9231c5e`
+- Created: `2026-04-13T20:49:25.537169263Z`
+- Virtual Size: ~ 95.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=27.3.4.9`
+  - `OTP_VERSION=27.3.4.10`
   - `REBAR3_VERSION=3.26.0`
 - Labels:
-  - `org.opencontainers.image.version=27.3.4.9`
+  - `org.opencontainers.image.version=27.3.4.10`
 
 ## `apk` (`.apk`-based packages)
 
@@ -190,16 +190,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.5-r0 description:
+libcrypto3-3.5.6-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.5-r0 webpage:
+libcrypto3-3.5.6-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.5-r0 installed size:
-5091 KiB
+libcrypto3-3.5.6-r0 installed size:
+5095 KiB
 
-libcrypto3-3.5.5-r0 license:
+libcrypto3-3.5.6-r0 license:
 Apache-2.0
 
 ```
@@ -258,16 +258,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.5-r0 description:
+libssl3-3.5.6-r0 description:
 SSL shared libraries
 
-libssl3-3.5.5-r0 webpage:
+libssl3-3.5.6-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.5-r0 installed size:
+libssl3-3.5.6-r0 installed size:
 823 KiB
 
-libssl3-3.5.5-r0 license:
+libssl3-3.5.6-r0 license:
 Apache-2.0
 
 ```
@@ -309,16 +309,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r10 description:
+musl-1.2.5-r12 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r10 webpage:
+musl-1.2.5-r12 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r10 installed size:
+musl-1.2.5-r12 installed size:
 646 KiB
 
-musl-1.2.5-r10 license:
+musl-1.2.5-r12 license:
 MIT
 
 ```

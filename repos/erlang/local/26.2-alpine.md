@@ -1,19 +1,19 @@
-# `erlang:26.2.5.18-alpine`
+# `erlang:26.2.5.19-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e6721c2a8fb2e78c0ee0ebd444e556c99591e931367a483dde920ec7c44b1597`
-- Created: `2026-03-13T17:18:28.745256398Z`
-- Virtual Size: ~ 74.70 Mb  
+- Image ID: `sha256:71682a9b72f105e93c91f4d43bfe4c9bc4f4adfa1b630faeb328dbf9f18eee92`
+- Created: `2026-04-13T20:52:22.412075614Z`
+- Virtual Size: ~ 80.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=26.2.5.18`
+  - `OTP_VERSION=26.2.5.19`
   - `REBAR3_VERSION=3.26.0`
 - Labels:
-  - `org.opencontainers.image.version=26.2.5.18`
+  - `org.opencontainers.image.version=26.2.5.19`
 
 ## `apk` (`.apk`-based packages)
 
@@ -156,16 +156,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.6-r0 description:
+libcrypto3-3.3.7-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.6-r0 webpage:
+libcrypto3-3.3.7-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.6-r0 installed size:
+libcrypto3-3.3.7-r0 installed size:
 4664 KiB
 
-libcrypto3-3.3.6-r0 license:
+libcrypto3-3.3.7-r0 license:
 Apache-2.0
 
 ```
@@ -224,16 +224,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.6-r0 description:
+libssl3-3.3.7-r0 description:
 SSL shared libraries
 
-libssl3-3.3.6-r0 webpage:
+libssl3-3.3.7-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.6-r0 installed size:
+libssl3-3.3.7-r0 installed size:
 800 KiB
 
-libssl3-3.3.6-r0 license:
+libssl3-3.3.7-r0 license:
 Apache-2.0
 
 ```
@@ -275,16 +275,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r1 description:
+musl-1.2.5-r3 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r1 webpage:
+musl-1.2.5-r3 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r1 installed size:
+musl-1.2.5-r3 installed size:
 652 KiB
 
-musl-1.2.5-r1 license:
+musl-1.2.5-r3 license:
 MIT
 
 ```
