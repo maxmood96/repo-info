@@ -1,10 +1,10 @@
-# `golang:tip-20260404-bookworm`
+# `golang:tip-20260411-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7578b23d6ec6b2eff3a9098b40eac1a2539520b8f3e4f98e75d05b5e64533a0e`
-- Created: `2026-04-07T22:01:52.120203823Z`
-- Virtual Size: ~ 857.19 Mb  
+- Image ID: `sha256:58613e14d7f970f2782583b83f2ca8840a68a2a8baecfe6db08acdd3595b60ad`
+- Created: `2026-04-14T00:01:58.643019941Z`
+- Virtual Size: ~ 858.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
