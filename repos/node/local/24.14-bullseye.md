@@ -1369,20 +1369,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.42.2+dfsg-1+deb11u4
-'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.2%2bdfsg-1%2bdeb11u4.dsc' gdk-pixbuf_2.42.2+dfsg-1+deb11u4.dsc 3223 SHA256:9e343f720be9e7ccfb278db7ee582accb5b0f63ea7b5a63c54105f0350d8bc39
-'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.2%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.2+dfsg.orig.tar.xz 6433920 SHA256:f781dca5af4c6536befb1faaa3b82efb9750c52a350842bc82b2aa08ce129ee9
-'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.2%2bdfsg-1%2bdeb11u4.debian.tar.xz' gdk-pixbuf_2.42.2+dfsg-1+deb11u4.debian.tar.xz 38996 SHA256:bfab04e2fb603870e1d43f447a4fa131a892f1a7f8d24f10e71aeb2224c2c60e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gdk-pixbuf/2.42.2+dfsg-1+deb11u4/
 
-- https://sources.debian.net/src/gdk-pixbuf/2.42.2+dfsg-1+deb11u4/ (for browsing the source)
-- https://sources.debian.net/src/gdk-pixbuf/2.42.2+dfsg-1+deb11u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdk-pixbuf/2.42.2+dfsg-1+deb11u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `git=1:2.30.2-1+deb11u5`
 
@@ -4737,20 +4730,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-13=13.23-0+deb11u1
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.23-0%2bdeb11u1.dsc' postgresql-13_13.23-0+deb11u1.dsc 3703 SHA256:76dc707467d02e4881849f7c432140f2678ff52cf10c51f4716cd470ce1ce180
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.23.orig.tar.bz2' postgresql-13_13.23.orig.tar.bz2 21767253 SHA256:6ec3c82726af92b7dec873fa1cdf881eca92a4219787dfad05acb6b10e041fd6
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.23-0%2bdeb11u1.debian.tar.xz' postgresql-13_13.23-0+deb11u1.debian.tar.xz 37416 SHA256:bb5559329b6a7f19d1f9897c7c16b3ef8e3bfb1c8d279c790be62e2bcf3d2415
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-13/13.23-0+deb11u1/
 
-- https://sources.debian.net/src/postgresql-13/13.23-0+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-13/13.23-0+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-13/13.23-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.17-5`
 
