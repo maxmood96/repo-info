@@ -1,10 +1,10 @@
-# `ghost:6.26.0-alpine3.23`
+# `ghost:6.28.0-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5cf4c7fdf2febba4c37437e0230b0cec2912f59ab241372f0db727489fb93b46`
-- Created: `2026-04-03T21:58:29.116212497Z`
-- Virtual Size: ~ 812.90 Mb  
+- Image ID: `sha256:c8b266557efac71f8ec722b3e2633f7ab25b34eb7a3b3f3b3be68dc8e232db00`
+- Created: `2026-04-13T23:44:23.126930706Z`
+- Virtual Size: ~ 807.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `GHOST_CLI_VERSION=1.29.1`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
-  - `GHOST_VERSION=6.26.0`
+  - `GHOST_VERSION=6.28.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -280,16 +280,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r21 description:
+musl-1.2.5-r23 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r21 webpage:
+musl-1.2.5-r23 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r21 installed size:
+musl-1.2.5-r23 installed size:
 650 KiB
 
-musl-1.2.5-r21 license:
+musl-1.2.5-r23 license:
 MIT
 
 ```
