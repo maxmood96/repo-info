@@ -12,7 +12,7 @@
 ## `composer:2`
 
 ```console
-$ docker pull composer@sha256:698d3801b2a622ace460c4743c781282fcbcb733a4cbf8b31c44731e846585e8
+$ docker pull composer@sha256:97051b5ca53613b16f920a3ec970c6510113897a9a0e56cbbaf146ca75f60f4c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -37,13 +37,13 @@ $ docker pull composer@sha256:698d3801b2a622ace460c4743c781282fcbcb733a4cbf8b31c
 ### `composer:2` - linux; amd64
 
 ```console
-$ docker pull composer@sha256:dc21210ab4f258498cc741b3fcae648ecea0512bf1902f626258a5a2416dd65f
+$ docker pull composer@sha256:6831e1267924c4a680b36b7963cb7914a9bb09ca67f47f4c55d3b2588bb7b20f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.9 MB (81858697 bytes)**  
+-	Total Size: **82.3 MB (82295138 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6678aa980a418c3522152c0c80f8d3f50e33c46f51cb57116806e62f77af4f1b`
+-	Image ID: `sha256:9b937e0bed4668eb643fa8f083b674431c0d175c794bcc3609b7e561053fb196`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -90,25 +90,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Thu, 09 Apr 2026 22:15:32 GMT
 CMD ["php" "-a"]
-# Thu, 09 Apr 2026 23:14:27 GMT
+# Tue, 14 Apr 2026 18:17:29 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Thu, 09 Apr 2026 23:14:27 GMT
+# Tue, 14 Apr 2026 18:17:29 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:14:45 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:17:48 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
 CMD ["composer"]
 ```
 
@@ -149,61 +149,61 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 22:15:41 GMT  
 		Size: 23.6 KB (23583 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9723e03930e9f0fe1216bb34316b88fbe27bb2d3f225e1ae91f2390c1460d74f`  
-		Last Modified: Thu, 09 Apr 2026 23:14:56 GMT  
-		Size: 32.8 MB (32826883 bytes)  
+	-	`sha256:ac4568126a4e8983af81719a57437ee6ff5aad920af0340db28529977ea91d6b`  
+		Last Modified: Tue, 14 Apr 2026 18:17:59 GMT  
+		Size: 32.8 MB (32829097 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e97a6213d305494b52ce665477c0b0fd4fed29c6c59629f6c03c4ea5a8112a24`  
-		Last Modified: Thu, 09 Apr 2026 23:14:55 GMT  
-		Size: 257.0 B  
+	-	`sha256:b8083645afae32266131920c3d7eb39891e44ee5e662f6ba12625430b1f63424`  
+		Last Modified: Tue, 14 Apr 2026 18:17:57 GMT  
+		Size: 260.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:420f0677074b1e47cd7faf772c8154a2c23382aa632bd16980455335061464dd`  
-		Last Modified: Thu, 09 Apr 2026 23:14:55 GMT  
-		Size: 4.2 MB (4168140 bytes)  
+	-	`sha256:777a820e754516716a459f5ea53530c7bb8b44ecd7c0c75c672b7d46b53c9654`  
+		Last Modified: Tue, 14 Apr 2026 18:17:58 GMT  
+		Size: 4.6 MB (4602365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16da88d43c8a671d9ffeddd194f58f88543cf9c4210b1f28d0fd83d734763d95`  
-		Last Modified: Thu, 09 Apr 2026 23:14:55 GMT  
-		Size: 419.0 B  
+	-	`sha256:a92de384986fb1f77474533112a7ce2919285f0d09c30aab81ae535ff0aba6cc`  
+		Last Modified: Tue, 14 Apr 2026 18:17:58 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36c4ed811ff8fa8458ebf2d4f1c1278dbe5166ff1397e2324710a142244f539c`  
-		Last Modified: Thu, 09 Apr 2026 23:14:56 GMT  
+	-	`sha256:ac79c6f82514103d437b10c68165bcfa5a61cfb3bc81cb8e910e796a0dee183c`  
+		Last Modified: Tue, 14 Apr 2026 18:17:59 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:324c5387d9ea8e70dae9347327dd8227e25d9519c5adcee7877e66dd80e84923
+$ docker pull composer@sha256:ee00b542afdd2a27036af0cbd82a4253954b9b64cc0f09f848564315e015ea75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.2 MB (2211307 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c221afd67ff21176979fbf2daf17a51f07f346a6f3d4af48f0e743b5cbaa60e2`
+-	Image ID: `sha256:d8203a2bfd877820004ce1a6d294f600aa02641b8321acbe0ebec7f012e93adb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:82dd0f61fc8cb85cab6fddc34200a14153f22b72eabfdabf146d85c06208302c`  
-		Last Modified: Thu, 09 Apr 2026 23:14:55 GMT  
+	-	`sha256:128dc41da46e86602161c5959ee81ac033975e865de3301a91665ad88755c037`  
+		Last Modified: Tue, 14 Apr 2026 18:17:57 GMT  
 		Size: 2.2 MB (2180640 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2b441ceb66555731ed226980b28b95c1f640d818aa23f18044b31016b9fba0a8`  
-		Last Modified: Thu, 09 Apr 2026 23:14:54 GMT  
+	-	`sha256:86478cd97ce76ef38fbb5db11ca2460e00316caafd6b587b503eb065936dffc6`  
+		Last Modified: Tue, 14 Apr 2026 18:17:57 GMT  
 		Size: 30.7 KB (30667 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2` - linux; arm variant v6
 
 ```console
-$ docker pull composer@sha256:64c65bae4657ee29ad71bc38a70e404deed3757a80aec7076ab67943c920e881
+$ docker pull composer@sha256:42b5ab08f93a7776a252ff6af611370f95606dd6bfdabcb827e28d492a76d90c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.0 MB (78024717 bytes)**  
+-	Total Size: **78.5 MB (78461847 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5efe45d626f095603c884a0caa83f51d1de24f93ed2cdd3e276da9352c5cd511`
+-	Image ID: `sha256:1eef3072ff95c35656312c430f28ffb549db3063573258ab858c40b56c104e87`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -250,25 +250,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Thu, 09 Apr 2026 22:14:34 GMT
 CMD ["php" "-a"]
-# Thu, 09 Apr 2026 23:21:14 GMT
+# Tue, 14 Apr 2026 18:18:32 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Thu, 09 Apr 2026 23:21:14 GMT
+# Tue, 14 Apr 2026 18:18:32 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:21:40 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:18:58 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
 CMD ["composer"]
 ```
 
@@ -309,57 +309,57 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 22:14:42 GMT  
 		Size: 23.4 KB (23405 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538a3fa028c21a44563fbab2f5dff114de9f509bc7f26abbb33b70b84a781004`  
-		Last Modified: Thu, 09 Apr 2026 23:21:48 GMT  
-		Size: 32.7 MB (32661802 bytes)  
+	-	`sha256:456c9909eae7754cbdb5abf1910a07254de4c28117fad83f54361ff5992b7cc8`  
+		Last Modified: Tue, 14 Apr 2026 18:19:06 GMT  
+		Size: 32.7 MB (32666304 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f8a52cccc08b0aa66da5c300daac33e72433b311c137a3e977bb861441c4715`  
-		Last Modified: Thu, 09 Apr 2026 23:21:47 GMT  
-		Size: 258.0 B  
+	-	`sha256:3f2ac7068ea46a8cad6b04730031a92cdf0a2c82943308c2445b4b3bfb3b61ae`  
+		Last Modified: Tue, 14 Apr 2026 18:19:05 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8664d1290eb012cee58455909e9c4af2c46c299455e9f212059a82a68bf543af`  
-		Last Modified: Thu, 09 Apr 2026 23:21:47 GMT  
-		Size: 3.8 MB (3835204 bytes)  
+	-	`sha256:9243233de423e41092205cff54f31f06ed50b369e5c0ac635be8d54c91faa2f6`  
+		Last Modified: Tue, 14 Apr 2026 18:19:05 GMT  
+		Size: 4.3 MB (4267832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f17c662a41e8bf1ade0f5dce478977a2f1b2260b6fb9e1f71c66ac647c7ca99`  
-		Last Modified: Thu, 09 Apr 2026 23:21:47 GMT  
-		Size: 420.0 B  
+	-	`sha256:cd76a36b321ba2cbdf2c18b2f483b7556fc3c67bcf48a42eebcbb8ecaa79ac5d`  
+		Last Modified: Tue, 14 Apr 2026 18:19:05 GMT  
+		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fd4d3294fbaab8aeebe4635b51df3382d3861ff2fb2bdc3666d9eff34f5a2d9`  
-		Last Modified: Thu, 09 Apr 2026 23:21:48 GMT  
+	-	`sha256:313b2a5816631d2e1dd9f29597ed589c59afe33a708b0edd9e8b5b53b53b71b9`  
+		Last Modified: Tue, 14 Apr 2026 18:19:06 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:69285922413d2887d15b847ca28cb5dc65de1917bc8dc7a916ed067af6bdce92
+$ docker pull composer@sha256:a612bca8961914475793f1cc12673bc733e3e30975bbe0447cc6cef74d4eae6e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.6 KB (30557 bytes)**  
+-	Total Size: **30.6 KB (30558 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9781ac30005cb3d9769cc5945cd9f938746dfb8fc4bd87c3a8b9fe07c9bdb8f9`
+-	Image ID: `sha256:4902477b1c1d79e9a92e75c1c985b7fcc1f11c9897b798b4c71bbe9da2195994`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6dbe0d8ff4b6a78086888c630492be37fa6475048a363855b18d186aafc4be4f`  
-		Last Modified: Thu, 09 Apr 2026 23:21:47 GMT  
-		Size: 30.6 KB (30557 bytes)  
+	-	`sha256:257cbcbdf5518823fda62b94d1069bd1beaecace4115bbcd15240d9017176baf`  
+		Last Modified: Tue, 14 Apr 2026 18:19:04 GMT  
+		Size: 30.6 KB (30558 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2` - linux; arm variant v7
 
 ```console
-$ docker pull composer@sha256:b96a2faa9fc0b78642a1206fe286e09e58b7816406493b96ef8f5b708d263e07
+$ docker pull composer@sha256:a2e1201a4b434919271c712678b5c8e4c243a9bcb3d522da04594fed18383601
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.6 MB (74613350 bytes)**  
+-	Total Size: **75.0 MB (75025755 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3201782b277aaf1ab4181ec07049632cc7824a994227cd9fdb91ce2274b49f7`
+-	Image ID: `sha256:c19c70269f301855e5f51696300cb0dd99b177e589f1e635686d0339f7551abd`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -406,25 +406,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Thu, 09 Apr 2026 22:19:31 GMT
 CMD ["php" "-a"]
-# Thu, 09 Apr 2026 23:26:12 GMT
+# Tue, 14 Apr 2026 18:17:27 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Thu, 09 Apr 2026 23:26:12 GMT
+# Tue, 14 Apr 2026 18:17:27 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:26:35 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:17:53 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 CMD ["composer"]
 ```
 
@@ -465,61 +465,61 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 22:19:40 GMT  
 		Size: 23.4 KB (23410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e77a59d1a7cad0c2860d18edeb77537fddbcfecfd1639e3241ac8d79aab43fbd`  
-		Last Modified: Thu, 09 Apr 2026 23:26:45 GMT  
-		Size: 31.1 MB (31089553 bytes)  
+	-	`sha256:8a63be5222c033e49c0b0ab2fb861b34a74a01b755699bfd7131f8ac60ef4078`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 31.1 MB (31095949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60b809b533ee5d173f9e42053de3c0560fe60685d48c7b9bbf3f1f1b46813bae`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
+	-	`sha256:7ef22a83fd441ef20be2944f2c2a3b60b0aaa91d854de9b13a4c50d00ebf5279`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
 		Size: 257.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37b416b8cbc92a8cd4e485714bda026bd05ffa9191bcd6a9bf58699c806890de`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
-		Size: 3.6 MB (3616658 bytes)  
+	-	`sha256:56949d23eda79baf6fd7f09de98362e08ff7bf64e8849bcabb9a6e2f4c4d6afb`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
+		Size: 4.0 MB (4022668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f707392fbb3b85a2386e759710fd7599510e1fccb9bd1c801d0caab12f867a59`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
-		Size: 419.0 B  
+	-	`sha256:9dd656ca101b55a63ad908f0e987ba026b8e346d38bf80f490c8213e337b5f74`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44819e994e8a217fd086c81ac457c84bcce5d0c46d8d588f6960543683b16893`  
-		Last Modified: Thu, 09 Apr 2026 23:26:45 GMT  
+	-	`sha256:8a59db22cab798384fc9801339a3900c22762b61cb6350dc01072d6e77037fee`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:25f32f022fe9a0e2414ba4a1d7183277f6bc5aaa2c6dfb700c61ff3bdbf9c756
+$ docker pull composer@sha256:8ae07250715c8adacdee49f68335a2f03726ae61bc23c213c818f76498127ebd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.2 MB (2211084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa29874e3a7f556b2abac9ce3d57ea0b46183867d0654b79da705a2452086011`
+-	Image ID: `sha256:3c0414c658b1eaadc671332e5ef010ff3e5532bf4903cbf37de530cd3f4c8119`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:46b3d039506bd733074618dbdb3604d73be66454a466882015da199887537baf`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
+	-	`sha256:2a08a0655434744241683c630df38f108a308ddf79325a3669b3ae96bda483f7`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
 		Size: 2.2 MB (2180311 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5308f978febb9103380adfd171e0f0bfd0041551fb914befd2fdb80471ca6bc6`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
+	-	`sha256:decd009e4f03dcfec4e0310a6d9e53ba4eb5553b8df82d98526f2df7750f9733`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
 		Size: 30.8 KB (30773 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2` - linux; arm64 variant v8
 
 ```console
-$ docker pull composer@sha256:f22c5be0b0e4f10715209e484aad7ba392834defddf68fa4fe3a6ad4f90fb6bc
+$ docker pull composer@sha256:90d74468001bfe32251948d171e65156b231f7f3f3488bfdeb8af939c4fc5ca9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.8 MB (81821998 bytes)**  
+-	Total Size: **82.3 MB (82264617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32098a09598603209bb2199303470024e397a4e5e6298c9821ea1d87f287c321`
+-	Image ID: `sha256:672986627c2c9f6a0aba130627ff344c10241897df399837f7cb9b39cbcbf794`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -566,25 +566,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Thu, 09 Apr 2026 22:15:54 GMT
 CMD ["php" "-a"]
-# Thu, 09 Apr 2026 23:14:48 GMT
+# Tue, 14 Apr 2026 18:17:33 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Thu, 09 Apr 2026 23:14:49 GMT
+# Tue, 14 Apr 2026 18:17:33 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:15:09 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:17:53 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 CMD ["composer"]
 ```
 
@@ -625,61 +625,61 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 22:16:03 GMT  
 		Size: 23.4 KB (23441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c46a008b7b18b605f3227cf01b9a8fc1e4633c3f862508793cfd7e7cc1e094b`  
-		Last Modified: Thu, 09 Apr 2026 23:15:19 GMT  
-		Size: 33.0 MB (32967700 bytes)  
+	-	`sha256:285ebfa4268e8a60fcb14bad51f63da6f60b8e8b79fc0d5bdc7b272bac34cdc9`  
+		Last Modified: Tue, 14 Apr 2026 18:18:04 GMT  
+		Size: 33.0 MB (32971912 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:521248ffae582244240d1948b296c8343de1d30a4967ee3e7415b99abc0a3e55`  
-		Last Modified: Thu, 09 Apr 2026 23:15:18 GMT  
-		Size: 257.0 B  
+	-	`sha256:e481a251a9dd2ae932f1cd49809cabb48c84b5842f905e3cd318fb5f860efa48`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 258.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14d13eb7c1e4351f2a1156b9e995fd34a9983c2e23b705859295d9091091249e`  
-		Last Modified: Thu, 09 Apr 2026 23:15:18 GMT  
-		Size: 4.5 MB (4469398 bytes)  
+	-	`sha256:607104842caf9031627e0561da94643dbd6e5a53fdf2ec68236e50e9785d2c1f`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 4.9 MB (4907805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7161d39c731861555f41ef22b553710ff6d41fb44e366c20d2bae65678c454c9`  
-		Last Modified: Thu, 09 Apr 2026 23:15:18 GMT  
-		Size: 420.0 B  
+	-	`sha256:a0da1d1720bb544613f3a7ac195b9474bba4d0af56f95c4014dff71a3e36191b`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e51d69411c9b6288276791ce75ac910562da89c7f79fea5623533a81cf02f23e`  
-		Last Modified: Thu, 09 Apr 2026 23:15:19 GMT  
+	-	`sha256:8a59db22cab798384fc9801339a3900c22762b61cb6350dc01072d6e77037fee`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:c47a3ff8522f24a6325f8823e4e18c7be53e056336278303d18f16e788a24c85
+$ docker pull composer@sha256:f9886027cfff443f88c11e204f27408769431ab8a4c40907ec0a1fd0c3fd8667
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2210941 bytes)**  
+-	Total Size: **2.2 MB (2210942 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eac1904c54af68e71e21c43fbb13a82a437118a28712d8edd04183470b88485d`
+-	Image ID: `sha256:755fa5560c7b510ecf888c7cd0c18f1e6400b62fc2791be2ba6a62a048715f3a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1d1020e78d360fac53438ab48084de8c9180f68d7f0589ded5d6d7cf660ee448`  
-		Last Modified: Thu, 09 Apr 2026 23:15:18 GMT  
+	-	`sha256:09c9515975e1f29265f024bb85736c52ec0dc5558513139c649880cb5dd96327`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
 		Size: 2.2 MB (2180141 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f1744a79780d0b1a2862eedec8c798c06f4018e16b6a6ce7b2c8085bf237d9f1`  
-		Last Modified: Thu, 09 Apr 2026 23:15:18 GMT  
-		Size: 30.8 KB (30800 bytes)  
+	-	`sha256:004cecbd51710f917a4a089cecc51490d929da9b6455b182df183f302162c8c3`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
+		Size: 30.8 KB (30801 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2` - linux; 386
 
 ```console
-$ docker pull composer@sha256:51be144016efe9d3107ff1c265d4ef128d4aade4f46e4a8547dbb32829126922
+$ docker pull composer@sha256:5059aa7f8aeb8fd9ad00e166cfc4504d01b632d5c987150dfde3e7167b11e492
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.0 MB (82044136 bytes)**  
+-	Total Size: **82.5 MB (82480079 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7922054a8378b96c0d850297147a3264b1a096f35d4e21d00e214f0f7d179c3`
+-	Image ID: `sha256:05da3dd80cd6d3c296bb9f77ac1d48716d0282b354fc840118af6947f2db6dbd`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -726,25 +726,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Fri, 10 Apr 2026 00:16:54 GMT
 CMD ["php" "-a"]
-# Fri, 10 Apr 2026 03:30:11 GMT
+# Tue, 14 Apr 2026 18:19:28 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Fri, 10 Apr 2026 03:30:11 GMT
+# Tue, 14 Apr 2026 18:19:28 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:47 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:47 GMT
 ENV COMPOSER_HOME=/tmp
-# Fri, 10 Apr 2026 03:30:30 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:47 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:19:47 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:48 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:48 GMT
 WORKDIR /app
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:48 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:48 GMT
 CMD ["composer"]
 ```
 
@@ -785,61 +785,61 @@ CMD ["composer"]
 		Last Modified: Fri, 10 Apr 2026 00:17:04 GMT  
 		Size: 23.6 KB (23625 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:264bb3f93a83fd21be54144943c4bd2326d7e8faee5725cfb429412510b81bf5`  
-		Last Modified: Fri, 10 Apr 2026 03:30:39 GMT  
-		Size: 33.4 MB (33353250 bytes)  
+	-	`sha256:fb92bca6a7200abd5ed57acbc2406d1b631ce897e9fcb8321df6d6ad30cb6114`  
+		Last Modified: Tue, 14 Apr 2026 18:19:58 GMT  
+		Size: 33.4 MB (33354023 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35d2c4367b9165d857f66acabab09744031c0e80be9bed3f29c30f3a3ed317e6`  
-		Last Modified: Fri, 10 Apr 2026 03:30:39 GMT  
-		Size: 257.0 B  
+	-	`sha256:3acb4361787726cd8ad52c3d9467b84e1d1aa7dfe6414e7e3be8d2816cc76617`  
+		Last Modified: Tue, 14 Apr 2026 18:19:57 GMT  
+		Size: 256.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d8bdcb9bb948a7198d374e5bcfd725598a7e1e09ffe81ff2937bd6b83a957f1`  
-		Last Modified: Fri, 10 Apr 2026 03:30:39 GMT  
-		Size: 1.2 MB (1247708 bytes)  
+	-	`sha256:9241059ece99827922266cdf5f4d2003877d75ddf68699cd4c70ce7987a21836`  
+		Last Modified: Tue, 14 Apr 2026 18:19:57 GMT  
+		Size: 1.7 MB (1682879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fccaa5c05839bcf1bbf0c74a21d946d8c32b920c1a51579645e326e3e70f5847`  
-		Last Modified: Fri, 10 Apr 2026 03:30:39 GMT  
+	-	`sha256:69641c04f229a2ab6016f07abf23bea732612f28baf219fd9fcf0c899d7617e5`  
+		Last Modified: Tue, 14 Apr 2026 18:19:42 GMT  
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6128f3407a8386a4c5d982cbf8496044bde218003d5c6f9c44e2fe57524edf24`  
-		Last Modified: Fri, 10 Apr 2026 03:30:40 GMT  
+	-	`sha256:67f4289f14f4bb7e5b1629ac4c78856e0c3b60c94f52f95daa671e1a219d5df8`  
+		Last Modified: Tue, 14 Apr 2026 18:19:59 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:5a6ef4b3bc4c8ef26afcb79dc9cf9e9156a44a20f4f6987fd0930bfa791c2ffa
+$ docker pull composer@sha256:c254802094079f1308563379ad369533970752e4908cfa224d9e97811d3d39ff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.2 MB (2211056 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e78c0e30842c7be21a79d4c4a2c37f23a826478ad9e74069fcb7b3b4a058a625`
+-	Image ID: `sha256:b4ce198e58e85ea5dc923b1568aaa064676ae0112aaf5ac90c6cc3e58fdc12bf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a69fecf1ebec9c87958269f311b28ab10d67044d90456550137a5004ea2473c`  
-		Last Modified: Fri, 10 Apr 2026 03:30:39 GMT  
+	-	`sha256:340334093e4da71051f77042453963dbc6f4fd36456e9b67f499e0b94970d025`  
+		Last Modified: Tue, 14 Apr 2026 18:19:57 GMT  
 		Size: 2.2 MB (2180425 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6a2ab5e4abe1589c45a291c89ed1647413951799b6c3b99b69a0ceff6580122e`  
-		Last Modified: Fri, 10 Apr 2026 03:30:38 GMT  
+	-	`sha256:47bf377a779ae13fd18570cc75e3fe8f0a691c683d330c3c388994b1f8641121`  
+		Last Modified: Tue, 14 Apr 2026 18:19:57 GMT  
 		Size: 30.6 KB (30631 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2` - linux; ppc64le
 
 ```console
-$ docker pull composer@sha256:00ec0805030fde6ed8f1ff7bb10346e7b4d4a7deebf9987c9c39c1e566a30a23
+$ docker pull composer@sha256:6b0debe85067d180c3dca5be15549aa709e405e5c6da97f106b302afa0be7b3d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.4 MB (83375909 bytes)**  
+-	Total Size: **96.7 MB (96713081 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7681058a2ea18d7cb7f87614244ec8fdb1739b9f1faa5d5862130c3645734c60`
+-	Image ID: `sha256:8d658b5ad399d03987449b91b37ae36fb531e2591aba9b560f1469876bcd1472`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -890,21 +890,21 @@ CMD ["php" "-a"]
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
 # Fri, 10 Apr 2026 00:21:07 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Fri, 10 Apr 2026 00:21:53 GMT
+# Tue, 14 Apr 2026 18:19:02 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Fri, 10 Apr 2026 00:21:53 GMT
+# Tue, 14 Apr 2026 18:19:02 GMT
 ENV COMPOSER_HOME=/tmp
-# Fri, 10 Apr 2026 00:21:53 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Fri, 10 Apr 2026 00:21:53 GMT
+# Tue, 14 Apr 2026 18:19:02 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:19:02 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Fri, 10 Apr 2026 00:21:55 GMT
+# Tue, 14 Apr 2026 18:19:05 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Fri, 10 Apr 2026 00:21:55 GMT
+# Tue, 14 Apr 2026 18:19:09 GMT
 WORKDIR /app
-# Fri, 10 Apr 2026 00:21:55 GMT
+# Tue, 14 Apr 2026 18:19:09 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 10 Apr 2026 00:21:55 GMT
+# Tue, 14 Apr 2026 18:19:09 GMT
 CMD ["composer"]
 ```
 
@@ -953,53 +953,53 @@ CMD ["composer"]
 		Last Modified: Fri, 10 Apr 2026 00:22:17 GMT  
 		Size: 256.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b31fa43b3f93f0b76d992020dac29d95d3fa7f480405a5b90e321db6fd87ffe8`  
-		Last Modified: Fri, 10 Apr 2026 00:22:18 GMT  
-		Size: 4.1 MB (4074208 bytes)  
+	-	`sha256:efaac84e88b2da4e607702934bba5a10ee9d45974d858538b478a29b89842e33`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
+		Size: 17.4 MB (17411381 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68c3cab8a1118927127f6fee35a4a0c6166a96e6487f9bcdb1c573a9fb7a073a`  
-		Last Modified: Fri, 10 Apr 2026 00:22:17 GMT  
-		Size: 420.0 B  
+	-	`sha256:1e029883ecefeeaf8733085cd8e526dfbbca7e594b984c759f9d554d542181f0`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
+		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f4be6c0b727f62cac62e8d3426b5c7c0666f501c164de8162435b1fee3f92e7`  
-		Last Modified: Fri, 10 Apr 2026 00:22:18 GMT  
+	-	`sha256:aebb4782c2d3dfa3ac371b8a44cd1f51c8cca8d476ce08683daefb52097b9bf7`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:418efe1daaf6e19d2e3f144eaed10be2bd2fdff4e4c67a20591cf53112600e10
+$ docker pull composer@sha256:b96e3b5bce750eb3282de808dd8aafbf3a051c5f80e3f716df031de690321657
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2211212 bytes)**  
+-	Total Size: **2.2 MB (2211215 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef65904f54fee01dac863ce2cb02144840b5a614ea062747eebdd25f7f23d07a`
+-	Image ID: `sha256:5342929d05c922fd2d787aa2179debfaee17cdccf8781a7e329e1d3d484d07f1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4cfd9c9f57c13ffbbad3b79a33ac68fdd95b8413890ad74619f5187859d6090b`  
-		Last Modified: Fri, 10 Apr 2026 00:22:17 GMT  
+	-	`sha256:fc050012567990ae6904da1426da82a6cc21eeb168d8d2fa9b316fe513258f54`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
 		Size: 2.2 MB (2180498 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a7dc3a56af04734990d9219060ae7663ef8f8657234c743b3429ef705973583a`  
-		Last Modified: Fri, 10 Apr 2026 00:22:17 GMT  
-		Size: 30.7 KB (30714 bytes)  
+	-	`sha256:6dc4ab7a528f883fc6476f1d2c72c9454b32b1cd4fefe0ac8fb1da3fec8e6c44`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
+		Size: 30.7 KB (30717 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2` - linux; riscv64
 
 ```console
-$ docker pull composer@sha256:2e28d405174601c8353950eaf4aedc5abc983797ee1c850e8ce332acfad093dc
+$ docker pull composer@sha256:600f68dee998197590fbadd5f49b007afb10faf4f15287a315a79fa198635908
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.1 MB (78090898 bytes)**  
+-	Total Size: **78.1 MB (78108283 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8ac9098f7cec9c987591cd2e39c3d6cddbe95990429f1a1c7e16690f470bdfa`
+-	Image ID: `sha256:abd844ec36780aac229ca2fdb372bcc3b96fc3ad9a0c8de0b25c8458b53af256`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -1050,21 +1050,21 @@ CMD ["php" "-a"]
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
 # Sun, 12 Apr 2026 09:33:49 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
 ENV COMPOSER_HOME=/tmp
-# Sun, 12 Apr 2026 09:37:19 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:22:48 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
 WORKDIR /app
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
 CMD ["composer"]
 ```
 
@@ -1113,53 +1113,53 @@ CMD ["composer"]
 		Last Modified: Sun, 12 Apr 2026 09:38:52 GMT  
 		Size: 258.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de63d88390efbbd37f89ee6ed90696a2424afb852a8f76c1ddc63a2da87f6dea`  
-		Last Modified: Sun, 12 Apr 2026 09:38:53 GMT  
-		Size: 4.3 MB (4284938 bytes)  
+	-	`sha256:849fae3a43556661d0d79306c12a48046432673ac49917b14937307d36a24458`  
+		Last Modified: Tue, 14 Apr 2026 18:24:04 GMT  
+		Size: 4.3 MB (4302324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49dba59a7a2de417f4fe767e3305854a809068a0e54dda038e3455ef84b74c48`  
-		Last Modified: Sun, 12 Apr 2026 09:38:52 GMT  
-		Size: 419.0 B  
+	-	`sha256:01efda7965080036e2b76754ef2276308322ed2394f97d073063348bded60a09`  
+		Last Modified: Tue, 14 Apr 2026 18:24:03 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fd2d28ee22449b9e873c12cbf9d45377da2060c5aaa6457472c507a8cd6ddf8`  
-		Last Modified: Sun, 12 Apr 2026 09:38:54 GMT  
+	-	`sha256:0f5997a67e70609c3ecf2d0c94e158584b948e5f7e90a85dd896325c6db3a7ed`  
+		Last Modified: Tue, 14 Apr 2026 18:22:53 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:389510811e158c72b3440515bee98c80e327aa35b7756e7693fcbe13430080d0
+$ docker pull composer@sha256:55155328eaf6b4a8b732344c31723c0e2e7026edb1151e056f7260b0c23793eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2210154 bytes)**  
+-	Total Size: **2.2 MB (2210153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:388623d8ff7a325189378e3e66af43fd2d42dabd421d6b6fa71b67c1d3a7c366`
+-	Image ID: `sha256:baabb88b9e58574b8449e58ff8e49bdd472dd2b4eac9aec0cd90224e32a110f8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a615a9f6c5f92b7b686873aa72f3e18034f89549b413d3026a5862f04d9d689d`  
-		Last Modified: Sun, 12 Apr 2026 09:38:52 GMT  
+	-	`sha256:14f5989ff5313284e35f85efde25d95ba6cf9e9207afa6539c85ba5cfebf3e22`  
+		Last Modified: Tue, 14 Apr 2026 18:24:03 GMT  
 		Size: 2.2 MB (2179439 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d4c0567918027a1377910c87b5b8f8f98f6a66bae71834e0e75cc20dba3104d1`  
-		Last Modified: Sun, 12 Apr 2026 09:38:52 GMT  
-		Size: 30.7 KB (30715 bytes)  
+	-	`sha256:d12e5da0f5f9cce27555430a40d6dc9e18c54764d62f13fed79c09c33cdd6769`  
+		Last Modified: Tue, 14 Apr 2026 18:24:03 GMT  
+		Size: 30.7 KB (30714 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2` - linux; s390x
 
 ```console
-$ docker pull composer@sha256:58b97cba0c77cf06d404693fb746289f0d88bd3755c3eae8d2fdf27d3d951c45
+$ docker pull composer@sha256:1f94545e77b0a527f486fd42ce1a3ed8e347a32e951166e75e667c9a8b9c5055
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.9 MB (79948174 bytes)**  
+-	Total Size: **93.2 MB (93248850 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:675c2c3642bef66a776afe0150e8f1c203b8030b0c76c200de582d6d6e07a957`
+-	Image ID: `sha256:cc4e000a0f721a102b5621d79143082167c85fe36cbab314eff8808e5f343a36`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -1210,21 +1210,21 @@ CMD ["php" "-a"]
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
 # Thu, 09 Apr 2026 23:18:42 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:19:04 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:19:04 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:19:04 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Thu, 09 Apr 2026 23:19:04 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:19:36 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:19:05 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:19:05 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:19:05 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:19:05 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 CMD ["composer"]
 ```
 
@@ -1273,47 +1273,47 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 23:19:20 GMT  
 		Size: 257.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b9f25cd6120fd706d78f3466d6de459d6be294d56100ac31f0a04ed40c3822e`  
-		Last Modified: Thu, 09 Apr 2026 23:19:20 GMT  
-		Size: 4.0 MB (4016878 bytes)  
+	-	`sha256:cdd4c500e9eb181938a1ef4ef73f183e9b27420814a10ea55b06e736b40bf16a`  
+		Last Modified: Tue, 14 Apr 2026 18:19:51 GMT  
+		Size: 17.3 MB (17317554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89aca6b805f4520b30bccd54134f111fdece5338deac037abca9b5d0d1697afc`  
-		Last Modified: Thu, 09 Apr 2026 23:19:20 GMT  
+	-	`sha256:8bc53ab4bbf74e12a9c7818288fc97c9f60326574f248c11959ba84015cc1ee0`  
+		Last Modified: Tue, 14 Apr 2026 18:19:51 GMT  
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ec187884818743865caae146e7434c75eee078d70bf482caa942f8af18a6bbc4`  
-		Last Modified: Thu, 09 Apr 2026 23:19:21 GMT  
+	-	`sha256:35c73a8be0d813065a838fdca97a14527a4ee7e1530e35f656f93a424f4d7c27`  
+		Last Modified: Tue, 14 Apr 2026 18:19:42 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:127cd4b719f3d7f1d5680711bf696e3a88a00f1d02550ad9f452d0efa181c92a
+$ docker pull composer@sha256:0bc79feb6a333a11cc49a0e80b8edad445b1bc590d108776ee1d1f9cba4c69b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2209888 bytes)**  
+-	Total Size: **2.2 MB (2209891 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57a7a701ec1570fa3bab06acbd00b4d5885f8c42f06f1761ffd2a5831535c408`
+-	Image ID: `sha256:e15343c996740440561a353bfba972b4a6752dff34802d7eb98b3923520488bd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ff8070e9aa7ac9125bd915c8c8268a4fa42fbd487e80da8dc204aa6da3b3f031`  
-		Last Modified: Thu, 09 Apr 2026 23:19:20 GMT  
+	-	`sha256:10647c8aceb5f18307cac8578a92f75dc319b2558c6f7cfcacc86be9c1ffd2ee`  
+		Last Modified: Tue, 14 Apr 2026 18:19:50 GMT  
 		Size: 2.2 MB (2179221 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2add8498849a95096ed6b099f50fbb7b7c4f5291cab0b610e62323dfc19d2df9`  
-		Last Modified: Thu, 09 Apr 2026 23:19:20 GMT  
-		Size: 30.7 KB (30667 bytes)  
+	-	`sha256:6ceacdd28fffe318712ca3aebf2993293f60ba3f21a55c590b010d01ac5e20b8`  
+		Last Modified: Tue, 14 Apr 2026 18:19:50 GMT  
+		Size: 30.7 KB (30670 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `composer:2.2`
 
 ```console
-$ docker pull composer@sha256:a8baf9a6e73939697db4b62444281899339b1949ece5a7c76af901cfe08eb5f8
+$ docker pull composer@sha256:8b5fffe4c5ad5385dadd72b5afb74aac33de16b66d469d507dcad79d0f3a94e7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1338,13 +1338,13 @@ $ docker pull composer@sha256:a8baf9a6e73939697db4b62444281899339b1949ece5a7c76a
 ### `composer:2.2` - linux; amd64
 
 ```console
-$ docker pull composer@sha256:b730a928a4177b98f5190b83cf2bc4952661cd20a11bda57c5352ad596406831
+$ docker pull composer@sha256:bec9accef60f3fccafc8523015d73f9a39f0b7132438f1a4b93d5192f88e9a07
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.7 MB (81673097 bytes)**  
+-	Total Size: **82.1 MB (82103844 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63c34a5b911d3c4d7e9f6c6aab6967547670e6b4ea1fa153e67e8271eef46d23`
+-	Image ID: `sha256:505f53816c198af889a516ee016f41a59dbbfe3b41304ce79e1df34b6d0a6659`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -1391,25 +1391,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Thu, 09 Apr 2026 22:15:32 GMT
 CMD ["php" "-a"]
-# Thu, 09 Apr 2026 23:14:28 GMT
+# Tue, 14 Apr 2026 18:17:29 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Thu, 09 Apr 2026 23:14:28 GMT
+# Tue, 14 Apr 2026 18:17:29 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:18:22 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:18:22 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:14:45 GMT
-ENV COMPOSER_VERSION=2.2.26
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:18:22 GMT
+ENV COMPOSER_VERSION=2.2.27
+# Tue, 14 Apr 2026 18:18:22 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:18:22 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:18:22 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:18:22 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:18:22 GMT
 CMD ["composer"]
 ```
 
@@ -1450,61 +1450,61 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 22:15:41 GMT  
 		Size: 23.6 KB (23583 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e218755dcf3d6614ebca0d13fd159d03484cc6683ce13687d2987a0536ce9fe`  
-		Last Modified: Thu, 09 Apr 2026 23:14:56 GMT  
-		Size: 32.8 MB (32826449 bytes)  
+	-	`sha256:ac4568126a4e8983af81719a57437ee6ff5aad920af0340db28529977ea91d6b`  
+		Last Modified: Tue, 14 Apr 2026 18:17:59 GMT  
+		Size: 32.8 MB (32829097 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bfbc4766e9cedb7688c8adb3fb5db0e29099bd5e14468cab8d14c63007a23ce`  
-		Last Modified: Thu, 09 Apr 2026 23:14:55 GMT  
-		Size: 257.0 B  
+	-	`sha256:b8083645afae32266131920c3d7eb39891e44ee5e662f6ba12625430b1f63424`  
+		Last Modified: Tue, 14 Apr 2026 18:17:57 GMT  
+		Size: 260.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab86f6fe8ed79ecc211bbf68f62847dac7cbf4e671add4a38fc4b6d32714cc21`  
-		Last Modified: Thu, 09 Apr 2026 23:14:55 GMT  
-		Size: 4.0 MB (3982974 bytes)  
+	-	`sha256:c3c5071145b6aecbefc8f3ec83eaa77932d678b86d8cba5e5ed36dbe134975fd`  
+		Last Modified: Tue, 14 Apr 2026 18:18:28 GMT  
+		Size: 4.4 MB (4411071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:046d82c4738023a28099cdc6d36e8240c7c98bfafa837d059624a52a826eecc6`  
-		Last Modified: Thu, 09 Apr 2026 23:14:55 GMT  
-		Size: 419.0 B  
+	-	`sha256:516dad3f033442c00e3f39784f0adaef3aa52d2fabeaea40959853714a61f986`  
+		Last Modified: Tue, 14 Apr 2026 18:18:28 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36c4ed811ff8fa8458ebf2d4f1c1278dbe5166ff1397e2324710a142244f539c`  
-		Last Modified: Thu, 09 Apr 2026 23:14:56 GMT  
+	-	`sha256:edbae146a22998b6915510f26cce02945777e86161f2ff7bd20cca578e515f20`  
+		Last Modified: Tue, 14 Apr 2026 18:18:29 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2.2` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:e473c1ad7e8753d14ba7184e9de56a5614009fc17eb6776122bce04d1031581a
+$ docker pull composer@sha256:1920708649ea1b3f311f12fc4da12853394b86f5caf01c7483640a70a1b952d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2210116 bytes)**  
+-	Total Size: **2.2 MB (2210117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cfd8a2038dbc989beac5fa78d64939c4bf934b2a591ce70d7d5c180d42a6079a`
+-	Image ID: `sha256:32a22b13f29360daacb63b27828d80c940dd2b694acf3ad51da0179070336b43`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:affac140c1320d89ddebbdcb60f7133def0a57d51a3d55e5f1e5441b28ea7d35`  
-		Last Modified: Thu, 09 Apr 2026 23:14:55 GMT  
+	-	`sha256:9cff980c33ff40ffd086f649915581ca1ad0ac677ebdb6a957311bfc5f9cec56`  
+		Last Modified: Tue, 14 Apr 2026 18:18:28 GMT  
 		Size: 2.2 MB (2180050 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b450fbc415ee245af17893f5c0e2d5e00586da364b82e90390e9d062dc4af77e`  
-		Last Modified: Thu, 09 Apr 2026 23:14:55 GMT  
-		Size: 30.1 KB (30066 bytes)  
+	-	`sha256:dadafa2bd6c45025e325f7f5325e8a5104143ebc941fc74d0f0a0104a4a26b57`  
+		Last Modified: Tue, 14 Apr 2026 18:18:28 GMT  
+		Size: 30.1 KB (30067 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2.2` - linux; arm variant v6
 
 ```console
-$ docker pull composer@sha256:d541909f72f7030dd6dbd04f3d3f6b0d6dc867467b736e18cca23ecc0a2bfba5
+$ docker pull composer@sha256:d9d9c1cd9ef41ae27d42caed13c11fd17e48480665cf92d1d34ad8311446c41c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.8 MB (77838245 bytes)**  
+-	Total Size: **78.3 MB (78263622 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c14ae15d6800455137fd3dcabe216eb76f9bb807aaf79ec22b9b0e60ab22b5c1`
+-	Image ID: `sha256:a118ee9d773a3607ff354da462d7284ddf18a1f7aec3c5eb4a6f22bcaaadc395`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -1551,25 +1551,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Thu, 09 Apr 2026 22:14:34 GMT
 CMD ["php" "-a"]
-# Thu, 09 Apr 2026 23:22:40 GMT
+# Tue, 14 Apr 2026 18:18:32 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Thu, 09 Apr 2026 23:22:40 GMT
+# Tue, 14 Apr 2026 18:18:32 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:23:03 GMT
+# Tue, 14 Apr 2026 18:20:12 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:23:03 GMT
+# Tue, 14 Apr 2026 18:20:12 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:23:03 GMT
-ENV COMPOSER_VERSION=2.2.26
-# Thu, 09 Apr 2026 23:23:03 GMT
+# Tue, 14 Apr 2026 18:20:12 GMT
+ENV COMPOSER_VERSION=2.2.27
+# Tue, 14 Apr 2026 18:20:12 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:23:03 GMT
+# Tue, 14 Apr 2026 18:20:12 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:23:03 GMT
+# Tue, 14 Apr 2026 18:20:12 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:23:03 GMT
+# Tue, 14 Apr 2026 18:20:12 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:23:03 GMT
+# Tue, 14 Apr 2026 18:20:12 GMT
 CMD ["composer"]
 ```
 
@@ -1610,57 +1610,57 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 22:14:42 GMT  
 		Size: 23.4 KB (23405 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9cdc2dd3f8dfa97195789a3a871551e1aafddfc936b1cc6d205fc40853244886`  
-		Last Modified: Thu, 09 Apr 2026 23:23:11 GMT  
-		Size: 32.7 MB (32661820 bytes)  
+	-	`sha256:456c9909eae7754cbdb5abf1910a07254de4c28117fad83f54361ff5992b7cc8`  
+		Last Modified: Tue, 14 Apr 2026 18:19:06 GMT  
+		Size: 32.7 MB (32666304 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33f2f46c796f0c7b5e87f409791788ee5739f34914e5cd2461c9adc604313c28`  
-		Last Modified: Thu, 09 Apr 2026 23:23:10 GMT  
-		Size: 258.0 B  
+	-	`sha256:3f2ac7068ea46a8cad6b04730031a92cdf0a2c82943308c2445b4b3bfb3b61ae`  
+		Last Modified: Tue, 14 Apr 2026 18:19:05 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69452c944369134c7f30ac72da116ff7c695073ee855eac3d30bc35776a5c493`  
-		Last Modified: Thu, 09 Apr 2026 23:23:10 GMT  
-		Size: 3.6 MB (3648715 bytes)  
+	-	`sha256:48019666ffb967e10cc43b47842d41311b8cb0cfbd0174ffece8e8bfb93083d6`  
+		Last Modified: Tue, 14 Apr 2026 18:20:16 GMT  
+		Size: 4.1 MB (4069608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55f7f25f38f023872be65e5c373b2214767f646de2aef87034fb847cb556642c`  
-		Last Modified: Thu, 09 Apr 2026 23:23:10 GMT  
-		Size: 419.0 B  
+	-	`sha256:b3301785193009dd9578be6a13990f95c65f7dad3f0e8f54d714149e1e5bc026`  
+		Last Modified: Tue, 14 Apr 2026 18:20:16 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6048d28d4db4ce20e81619df2422d7a36dc7e6c3d97908c282951bdddb37f394`  
-		Last Modified: Thu, 09 Apr 2026 23:23:06 GMT  
+	-	`sha256:7a74aa74c877b416ad95f757fa327f90d4382793f93f150da4bc74e6f49477dd`  
+		Last Modified: Tue, 14 Apr 2026 18:20:17 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2.2` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:89f035dd66f4f19b2d7039fbab9fe1df4e91866ce52b05124d42e5186604a76a
+$ docker pull composer@sha256:2db0f71733293191386c635481820f866a105e99f4783de1961fbb22d512e8fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **29.9 KB (29942 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7faddebb5bb53145657729961cf3795c3e78c2083b603932d0a29304723174fa`
+-	Image ID: `sha256:70a4a57dc8a5694e5a16bea165feae5258fcdda04f9b51fb7cb8132ebf1f345d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e360844721030f4fb673ae8f69b45426d5f8811117c93b7a0125cb635ec09d24`  
-		Last Modified: Thu, 09 Apr 2026 23:23:10 GMT  
+	-	`sha256:6ef876ba92a2ef63ec184a2516f6777e7e858934847515cdc1755e4105fafe52`  
+		Last Modified: Tue, 14 Apr 2026 18:20:16 GMT  
 		Size: 29.9 KB (29942 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2.2` - linux; arm variant v7
 
 ```console
-$ docker pull composer@sha256:b5c1268acd6fd0c3b8728d03455acdd57846ad525269d954405af323f708e2d6
+$ docker pull composer@sha256:e6edcba94634e3a26ebafd61bf8c0a1ca52117e908db97042b0c423b15660b1a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.4 MB (74428256 bytes)**  
+-	Total Size: **74.8 MB (74827699 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dd365bf38a79d0b87186b8c225c15362699bee4aa4b4d39a19842fce23c69de7`
+-	Image ID: `sha256:3b0f4c074115c64da6ac9f73856c9c65d7b54d0b5fd2313b4f6e983dfe69f296`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -1707,25 +1707,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Thu, 09 Apr 2026 22:19:31 GMT
 CMD ["php" "-a"]
-# Thu, 09 Apr 2026 23:26:13 GMT
+# Tue, 14 Apr 2026 18:17:27 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Thu, 09 Apr 2026 23:26:13 GMT
+# Tue, 14 Apr 2026 18:17:27 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:26:35 GMT
-ENV COMPOSER_VERSION=2.2.26
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
+ENV COMPOSER_VERSION=2.2.27
+# Tue, 14 Apr 2026 18:19:36 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 CMD ["composer"]
 ```
 
@@ -1766,61 +1766,61 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 22:19:40 GMT  
 		Size: 23.4 KB (23410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8570d866058046f64d98308fe68e7ebf32d2e85ed68b4e32cc657be96389b193`  
-		Last Modified: Thu, 09 Apr 2026 23:26:45 GMT  
-		Size: 31.1 MB (31089579 bytes)  
+	-	`sha256:8a63be5222c033e49c0b0ab2fb861b34a74a01b755699bfd7131f8ac60ef4078`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 31.1 MB (31095949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14077a6a675c0746936a15be3628de633b7d0797343e093509cb2a1c4cc6a9ae`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
+	-	`sha256:7ef22a83fd441ef20be2944f2c2a3b60b0aaa91d854de9b13a4c50d00ebf5279`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
 		Size: 257.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3b4f0f7938588d7ec31d3368b4d96990db4d9f5c928c90cd5fb7d5d1a702f61`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
-		Size: 3.4 MB (3431541 bytes)  
+	-	`sha256:56fb7202feb89edd3edb6fdfad3005b4be0d6b393834612a82b15d755e25bca0`  
+		Last Modified: Tue, 14 Apr 2026 18:19:42 GMT  
+		Size: 3.8 MB (3824611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53865a911950a903cfa1d63514c8b70caa138ee09ddb9a429fe66e825d64886e`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
-		Size: 416.0 B  
+	-	`sha256:69641c04f229a2ab6016f07abf23bea732612f28baf219fd9fcf0c899d7617e5`  
+		Last Modified: Tue, 14 Apr 2026 18:19:42 GMT  
+		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44819e994e8a217fd086c81ac457c84bcce5d0c46d8d588f6960543683b16893`  
-		Last Modified: Thu, 09 Apr 2026 23:26:45 GMT  
+	-	`sha256:35c73a8be0d813065a838fdca97a14527a4ee7e1530e35f656f93a424f4d7c27`  
+		Last Modified: Tue, 14 Apr 2026 18:19:42 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2.2` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:b26e2c954230e1d20ade567a6ba3e70f246ea7bc2b3e6651a65488ce684bc9cd
+$ docker pull composer@sha256:22f6c3090a1e08a479120b8d2944d976a5f7b1f1231a4101dd38993318363065
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2209862 bytes)**  
+-	Total Size: **2.2 MB (2209861 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b1ed981e382c528342265283e8135e333b7681cf9d50c159f650cb4dc536b60`
+-	Image ID: `sha256:03653d247f5f072466e2dbdac4853beaba24adebc3094e2410804eec3a021d72`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44fd1cbbe0bd8d215d4aa4fd78fea1c47dc0bb970b5b1e44f51008bb20259290`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
+	-	`sha256:cd8bf60410f02ec55d27901594dbed14dae35b18b0bacaf4ea59e9a7f4b41589`  
+		Last Modified: Tue, 14 Apr 2026 18:19:42 GMT  
 		Size: 2.2 MB (2179705 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:457972013e8f4358db7fb6adb1aaafc15d1f9c01c620985e729d72e4aea893d5`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
-		Size: 30.2 KB (30157 bytes)  
+	-	`sha256:da2550800c5525cb6a49db60ba6a67710931c62bdaa2d6ff5ab2838d3a828358`  
+		Last Modified: Tue, 14 Apr 2026 18:19:42 GMT  
+		Size: 30.2 KB (30156 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull composer@sha256:5286d4127519173705cb71e8bc74061f97715ccec84910f49ffda79bbfc2688d
+$ docker pull composer@sha256:cd0f250504d8fafad34cfebf90721dea6e223d2018d952b0b8c40041a0dc543c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.6 MB (81636836 bytes)**  
+-	Total Size: **82.1 MB (82071234 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f8fb860116a2dab9f377e836f8b40613084897da7293133d35e4853a1c889da`
+-	Image ID: `sha256:282357744ba75661461df14f18a0297ae6f7a55881e396a7e3c6350b205a5d51`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -1867,25 +1867,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Thu, 09 Apr 2026 22:15:54 GMT
 CMD ["php" "-a"]
-# Thu, 09 Apr 2026 23:14:49 GMT
+# Tue, 14 Apr 2026 18:17:33 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Thu, 09 Apr 2026 23:14:49 GMT
+# Tue, 14 Apr 2026 18:17:33 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:15:10 GMT
+# Tue, 14 Apr 2026 18:18:30 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:15:10 GMT
+# Tue, 14 Apr 2026 18:18:30 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:15:10 GMT
-ENV COMPOSER_VERSION=2.2.26
-# Thu, 09 Apr 2026 23:15:10 GMT
+# Tue, 14 Apr 2026 18:18:30 GMT
+ENV COMPOSER_VERSION=2.2.27
+# Tue, 14 Apr 2026 18:18:30 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:15:10 GMT
+# Tue, 14 Apr 2026 18:18:30 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:15:10 GMT
+# Tue, 14 Apr 2026 18:18:30 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:15:10 GMT
+# Tue, 14 Apr 2026 18:18:30 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:15:10 GMT
+# Tue, 14 Apr 2026 18:18:30 GMT
 CMD ["composer"]
 ```
 
@@ -1926,61 +1926,61 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 22:16:03 GMT  
 		Size: 23.4 KB (23441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5490ffe9ed29124578b3db20863963fdc417f5132da0ed84e3a7e12f7e91518c`  
-		Last Modified: Thu, 09 Apr 2026 23:15:20 GMT  
-		Size: 33.0 MB (32967698 bytes)  
+	-	`sha256:285ebfa4268e8a60fcb14bad51f63da6f60b8e8b79fc0d5bdc7b272bac34cdc9`  
+		Last Modified: Tue, 14 Apr 2026 18:18:04 GMT  
+		Size: 33.0 MB (32971912 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f02cbb4743cb4b80b978c0ef9c459b7b61736a34b3e075774fbb13407658d187`  
-		Last Modified: Thu, 09 Apr 2026 23:15:19 GMT  
-		Size: 256.0 B  
+	-	`sha256:e481a251a9dd2ae932f1cd49809cabb48c84b5842f905e3cd318fb5f860efa48`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 258.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98de97d599dfb4ce330d23d1b59627413d0190aa762995e301f065972c9d8a37`  
-		Last Modified: Thu, 09 Apr 2026 23:15:19 GMT  
-		Size: 4.3 MB (4284240 bytes)  
+	-	`sha256:923788c0d06899a0ccca3d741141539b98c3f3d61931099e58a4b0fc83fe3e3b`  
+		Last Modified: Tue, 14 Apr 2026 18:18:37 GMT  
+		Size: 4.7 MB (4714422 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81643b117317aacacd661e6153ba02bb2e3d6f26a276a3b7173e0a0d342fede3`  
-		Last Modified: Thu, 09 Apr 2026 23:15:19 GMT  
+	-	`sha256:ff496184c65f3a979b14bab85e3a3ceac96a90d3b6d1e1cd0bfbb011fe4bf7ee`  
+		Last Modified: Tue, 14 Apr 2026 18:18:37 GMT  
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17847167cccaf67617d20bcbe5f673cf116aa2fb6c662e52612eb58ec6ce655d`  
-		Last Modified: Thu, 09 Apr 2026 23:15:19 GMT  
+	-	`sha256:f1913ed92f32be4d5e05f914ecd0fa0ceb586f5583cf804eaa83d4734c1539e3`  
+		Last Modified: Tue, 14 Apr 2026 18:18:32 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2.2` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:8acbc5b67a5a7600dc527b1a1d3a96a2140e089b0687cee7c4cf6d76429ae001
+$ docker pull composer@sha256:f5b0b9288cddd4802039657290c960ed63192b6cfba713712211a0a28ea1c5f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2209704 bytes)**  
+-	Total Size: **2.2 MB (2209703 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d6484549aac3056e86a32e45a25780b096462cff98f46107dfddf9136e20dc4`
+-	Image ID: `sha256:ddd4480e135b6a6c07a40a81864ddb723a6df99bb6b552cb41b7244f851bc72c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fada42f22e5d7e6e4638c875d4752daf93174878057e99bd8e15af6beddebd68`  
-		Last Modified: Thu, 09 Apr 2026 23:15:19 GMT  
+	-	`sha256:3f3286787d125e28bd8debcf83e5e4cfec7bd4104018fbd8404a75189f75ff75`  
+		Last Modified: Tue, 14 Apr 2026 18:18:37 GMT  
 		Size: 2.2 MB (2179527 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:317f2c5357310df1cb84e5f291c5aa59b2195a1159f6d47940586e51f005ff83`  
-		Last Modified: Thu, 09 Apr 2026 23:15:19 GMT  
-		Size: 30.2 KB (30177 bytes)  
+	-	`sha256:a43570f8e53c6026d4b20b8ac2ed368fec976c4c2b67cf9b5c268a3b467c7e87`  
+		Last Modified: Tue, 14 Apr 2026 18:18:36 GMT  
+		Size: 30.2 KB (30176 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2.2` - linux; 386
 
 ```console
-$ docker pull composer@sha256:33dc3f5913d44d6c99fa073e6fad09b8355007a7bfadacb35531573ef9687a94
+$ docker pull composer@sha256:35f5329693ba247b75cdf7c773f0ebd55e0e3b9da051c03699b7c9e0abb71cd4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.9 MB (81863553 bytes)**  
+-	Total Size: **82.3 MB (82285109 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8e3d911846e823b30c72e8f44b4cdbf31d815df452cd722bca12976098b5557c`
+-	Image ID: `sha256:748b8a46da60c2b55abee6ef41e5a4f80192a39cdfcdf03aaad1775dd05a512e`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -2027,25 +2027,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Fri, 10 Apr 2026 00:16:54 GMT
 CMD ["php" "-a"]
-# Fri, 10 Apr 2026 03:30:11 GMT
+# Tue, 14 Apr 2026 18:19:28 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Fri, 10 Apr 2026 03:30:11 GMT
+# Tue, 14 Apr 2026 18:19:28 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:20:22 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:20:22 GMT
 ENV COMPOSER_HOME=/tmp
-# Fri, 10 Apr 2026 03:30:30 GMT
-ENV COMPOSER_VERSION=2.2.26
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:20:22 GMT
+ENV COMPOSER_VERSION=2.2.27
+# Tue, 14 Apr 2026 18:20:22 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:20:22 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:20:22 GMT
 WORKDIR /app
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:20:22 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:20:22 GMT
 CMD ["composer"]
 ```
 
@@ -2086,61 +2086,61 @@ CMD ["composer"]
 		Last Modified: Fri, 10 Apr 2026 00:17:04 GMT  
 		Size: 23.6 KB (23625 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c0e3493fb288938886048d38967e286ab38d68d9179829f732b7ccee98bd5d3`  
-		Last Modified: Fri, 10 Apr 2026 03:30:41 GMT  
-		Size: 33.4 MB (33353250 bytes)  
+	-	`sha256:fb92bca6a7200abd5ed57acbc2406d1b631ce897e9fcb8321df6d6ad30cb6114`  
+		Last Modified: Tue, 14 Apr 2026 18:19:58 GMT  
+		Size: 33.4 MB (33354023 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35d2c4367b9165d857f66acabab09744031c0e80be9bed3f29c30f3a3ed317e6`  
-		Last Modified: Fri, 10 Apr 2026 03:30:39 GMT  
-		Size: 257.0 B  
+	-	`sha256:3acb4361787726cd8ad52c3d9467b84e1d1aa7dfe6414e7e3be8d2816cc76617`  
+		Last Modified: Tue, 14 Apr 2026 18:19:57 GMT  
+		Size: 256.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d934d65c887c87a0e99996ff5a014d4819ff666dabadb65f94197c5f1674554`  
-		Last Modified: Fri, 10 Apr 2026 03:30:40 GMT  
-		Size: 1.1 MB (1067125 bytes)  
+	-	`sha256:649871246b4636d3e71336ce00677bad781148c88f1b63a1358cf436f11feac4`  
+		Last Modified: Tue, 14 Apr 2026 18:20:28 GMT  
+		Size: 1.5 MB (1487908 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ee1553d5599c0faca462ade9c435e36ff25f6a81458f8817cd70a2bc0de66d5`  
-		Last Modified: Fri, 10 Apr 2026 03:30:40 GMT  
-		Size: 419.0 B  
+	-	`sha256:9db2ceeac24b57d267726c3a0854b3db4a10c8f8be761f7f653a0c97fc86e57d`  
+		Last Modified: Tue, 14 Apr 2026 18:20:28 GMT  
+		Size: 420.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6128f3407a8386a4c5d982cbf8496044bde218003d5c6f9c44e2fe57524edf24`  
-		Last Modified: Fri, 10 Apr 2026 03:30:40 GMT  
+	-	`sha256:43b0fc048d318578d95fbcda07a86c87b70bb13465e4a96a6f8cd472ba6b7fc5`  
+		Last Modified: Tue, 14 Apr 2026 18:20:28 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2.2` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:58fd91ed109379d5e13b48fd34edbdc35b7fea356d7cb5f9fa3e84f8e1537bb8
+$ docker pull composer@sha256:6884a4f582cf2cce11394bbc1245585b552aa80cf36ceb1c9d4ef7f115bf1e39
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.2 MB (2209886 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b441ac7520f72801927f12e8884f6886baf5d1ddfe021a30f61622b66660ddb`
+-	Image ID: `sha256:af552b456c5f7c8ba7208226abe75e9da9e899a0cf7f25b20762f8ba266a59e2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:48569358b0f2ddf46fdbee4b5217ff0fc4a47940d9a992ff3a82c29d16983d22`  
-		Last Modified: Fri, 10 Apr 2026 03:30:40 GMT  
+	-	`sha256:f642b0c6b11ef666fee6cf07735b6410a1f0c832aceb20154fc0006c77c66794`  
+		Last Modified: Tue, 14 Apr 2026 18:20:28 GMT  
 		Size: 2.2 MB (2179845 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:91557e33483af6a62b58465bb4d8983b84f3dcb25b486861f34486ae5b38ddc9`  
-		Last Modified: Fri, 10 Apr 2026 03:30:40 GMT  
+	-	`sha256:ffe56978f8a88a319c332992e7ef101b50d32c77831087a868f2c4c7872fb94b`  
+		Last Modified: Tue, 14 Apr 2026 18:20:28 GMT  
 		Size: 30.0 KB (30041 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2.2` - linux; ppc64le
 
 ```console
-$ docker pull composer@sha256:96707cb45411306d4188a40aec8066393ac6a2bb9c3757ec9b8bcd718732ba96
+$ docker pull composer@sha256:3bc9df9d34e445d60475370f8bf6ca3238a9de88a772bb54a4cb5978ed15739a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.2 MB (83189710 bytes)**  
+-	Total Size: **96.5 MB (96516566 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fef9533ebebf35a3668ce5b68b527e1c9c939d9b51239798f65a99d996b99ad0`
+-	Image ID: `sha256:a1ee0ee938940b40491579bf9c0a7ba8ecda47725576918950bf7b239cd7aa26`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -2191,21 +2191,21 @@ CMD ["php" "-a"]
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
 # Fri, 10 Apr 2026 00:21:07 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Fri, 10 Apr 2026 00:23:04 GMT
+# Tue, 14 Apr 2026 18:19:02 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Fri, 10 Apr 2026 00:23:04 GMT
+# Tue, 14 Apr 2026 18:19:02 GMT
 ENV COMPOSER_HOME=/tmp
-# Fri, 10 Apr 2026 00:23:04 GMT
-ENV COMPOSER_VERSION=2.2.26
-# Fri, 10 Apr 2026 00:23:04 GMT
+# Tue, 14 Apr 2026 18:19:02 GMT
+ENV COMPOSER_VERSION=2.2.27
+# Tue, 14 Apr 2026 18:19:02 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Fri, 10 Apr 2026 00:23:04 GMT
+# Tue, 14 Apr 2026 18:19:05 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Fri, 10 Apr 2026 00:23:05 GMT
+# Tue, 14 Apr 2026 18:19:09 GMT
 WORKDIR /app
-# Fri, 10 Apr 2026 00:23:05 GMT
+# Tue, 14 Apr 2026 18:19:09 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 10 Apr 2026 00:23:05 GMT
+# Tue, 14 Apr 2026 18:19:09 GMT
 CMD ["composer"]
 ```
 
@@ -2254,53 +2254,53 @@ CMD ["composer"]
 		Last Modified: Fri, 10 Apr 2026 00:22:17 GMT  
 		Size: 256.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd9a4aec6e26374d40a201ea1f0ce36b64e9b1b6cb23b8679d07947228af7590`  
-		Last Modified: Fri, 10 Apr 2026 00:23:20 GMT  
-		Size: 3.9 MB (3888009 bytes)  
+	-	`sha256:a00b8129dae026b4288901fdf4844d14631360cd95724ef7a99b65dab607a3a7`  
+		Last Modified: Tue, 14 Apr 2026 18:19:38 GMT  
+		Size: 17.2 MB (17214867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:803c9959bc6156c58284662fba3d24568652b074f24aed6347b137dade3d9225`  
-		Last Modified: Fri, 10 Apr 2026 00:23:20 GMT  
-		Size: 420.0 B  
+	-	`sha256:b642fc002306ffa035fabc99948ab54d676222458872361b5da11d126da7f4a9`  
+		Last Modified: Tue, 14 Apr 2026 18:19:38 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59a7a660396196da059189818583f5d9cb0d77cc0e3dfde1df21dba15cb2a1eb`  
-		Last Modified: Fri, 10 Apr 2026 00:23:20 GMT  
+	-	`sha256:d33f861bae9f5ec9825aa85d366c341ad622e0c26fad222ee7341b19546dfac2`  
+		Last Modified: Tue, 14 Apr 2026 18:19:38 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2.2` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:25fd7412f42a3e7ed1d041b2eedd3e0a54f6c5b7ba1837ca40f3787b0edb8d68
+$ docker pull composer@sha256:a1c93648e57614e4c8f0dcf7199c333eeda49c94176869dc05e8f7de304f3cf6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2209999 bytes)**  
+-	Total Size: **2.2 MB (2210002 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e9c294bf1134b0ba3345b551d39bbfa08290a9da82dcc4bec88b441ee013bf4`
+-	Image ID: `sha256:6040621f06dbe2c2a62e88287ee16b383a874ac09143e68a6d024651c828f7e3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:faa177a674465d53fb727fee1376c91ad5b5bdefce7f034d84c59c0985cfd298`  
-		Last Modified: Fri, 10 Apr 2026 00:23:20 GMT  
+	-	`sha256:9d93dcd35f40f1b73d8e6aab1f0ad312cef0d127b4d9561162774bc7ed41925d`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
 		Size: 2.2 MB (2179896 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7b59a4f18432eea2c92bdc831b267a0c0f6aae636033aa4598eeb435d8cec4ee`  
-		Last Modified: Fri, 10 Apr 2026 00:23:20 GMT  
-		Size: 30.1 KB (30103 bytes)  
+	-	`sha256:b2a711e174b0c511983fc08afe41d592f4c8cf2cf2facda7a2594455b610ba0b`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
+		Size: 30.1 KB (30106 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2.2` - linux; riscv64
 
 ```console
-$ docker pull composer@sha256:de72aea5e4e35febb24f08f0fb6ad2eb26fc594ffe30b3d099b1d48fcb69951f
+$ docker pull composer@sha256:cf698321e756d82bc12e24f70c655b5d1daf8ed9e605cee5c19a8140aea3fd33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.9 MB (77910334 bytes)**  
+-	Total Size: **77.9 MB (77909972 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ceb85ac566538e142aaebe97117ae7306127fe0810d51b1a7cc7ef563ef5a90b`
+-	Image ID: `sha256:3fe71051367b5659b8bb62a70a49db12f4724db7aee6fde4c3fb22601ce02e9f`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -2351,21 +2351,21 @@ CMD ["php" "-a"]
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
 # Sun, 12 Apr 2026 09:33:49 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Sun, 12 Apr 2026 09:42:57 GMT
+# Tue, 14 Apr 2026 18:28:51 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Sun, 12 Apr 2026 09:42:57 GMT
+# Tue, 14 Apr 2026 18:28:51 GMT
 ENV COMPOSER_HOME=/tmp
-# Sun, 12 Apr 2026 09:42:57 GMT
-ENV COMPOSER_VERSION=2.2.26
-# Sun, 12 Apr 2026 09:42:57 GMT
+# Tue, 14 Apr 2026 18:28:51 GMT
+ENV COMPOSER_VERSION=2.2.27
+# Tue, 14 Apr 2026 18:28:51 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Sun, 12 Apr 2026 09:42:57 GMT
+# Tue, 14 Apr 2026 18:28:51 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Sun, 12 Apr 2026 09:42:57 GMT
+# Tue, 14 Apr 2026 18:28:51 GMT
 WORKDIR /app
-# Sun, 12 Apr 2026 09:42:57 GMT
+# Tue, 14 Apr 2026 18:28:51 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sun, 12 Apr 2026 09:42:57 GMT
+# Tue, 14 Apr 2026 18:28:51 GMT
 CMD ["composer"]
 ```
 
@@ -2414,53 +2414,53 @@ CMD ["composer"]
 		Last Modified: Sun, 12 Apr 2026 09:38:52 GMT  
 		Size: 258.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65410c772dcb057f7e6a8bb21a5ee2e4efdc78ebb905838cd0439a2a7e0fc2be`  
-		Last Modified: Sun, 12 Apr 2026 09:44:03 GMT  
-		Size: 4.1 MB (4104374 bytes)  
+	-	`sha256:8b5bdd2e2f534ae25a788c0f4fe04db08c09d85e043bff17c4238b4c5c6e12e2`  
+		Last Modified: Tue, 14 Apr 2026 18:30:04 GMT  
+		Size: 4.1 MB (4104012 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57f15578651c012e6193ec27559a2ef74deb9d99b85c35904c7db62f6c169922`  
-		Last Modified: Sun, 12 Apr 2026 09:44:02 GMT  
+	-	`sha256:7c1ca5c26ad5a331c9c78d1736a316cd75130f2c5fc620da2614c677c1610b79`  
+		Last Modified: Tue, 14 Apr 2026 18:30:03 GMT  
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:963d25570d6a893ae23cfa87caf23ac1b5bad3d46a2337e3159c2130d7731e3a`  
-		Last Modified: Sun, 12 Apr 2026 09:44:02 GMT  
+	-	`sha256:1bd33bb4fad3f92609198afdae7d92af15161acef56cb4c6f80fa7a9cdefa0c3`  
+		Last Modified: Tue, 14 Apr 2026 18:29:56 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2.2` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:a0551a21e96c1f1f01c290c06b838145911bd305d6420a731751f1cfef150bef
+$ docker pull composer@sha256:d499efcf872dd10295b0361b3f735682b694176478d8de89f6e9ed88975b6fef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.2 MB (2208939 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b5e9c42475e20451381b5294a982a89a89636777da33eed8ff59b34555b62c2d`
+-	Image ID: `sha256:1a4e7210e9321acd0aa206f7db001b89b492df5fd3f869de1f7910b3ebcaca37`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:06b2eb79dba1aa9d3700392d7b59764c105c8c85d5c56e0bcc26352f014acd3f`  
-		Last Modified: Sun, 12 Apr 2026 09:44:02 GMT  
+	-	`sha256:e1ebc611e5beb930a14f43da834427bd8cba5278ee9b1ae4178ff4cba263cbd8`  
+		Last Modified: Tue, 14 Apr 2026 18:30:03 GMT  
 		Size: 2.2 MB (2178837 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:701ba5f309074b9926ca67d651740df6a99cf3b780044dbad8ffc2251faaf715`  
-		Last Modified: Sun, 12 Apr 2026 09:44:02 GMT  
+	-	`sha256:8c1b2893b53b2641c74019ec997c6cd50ba35ff87e1cc59416af349b182e62ef`  
+		Last Modified: Tue, 14 Apr 2026 18:30:03 GMT  
 		Size: 30.1 KB (30102 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2.2` - linux; s390x
 
 ```console
-$ docker pull composer@sha256:e12285341bbe7a05e94974b0f71f9bfdf8379035a6b679ed07d41aa9fceb5543
+$ docker pull composer@sha256:093e24e420e8a8867177194221f361d676048cacadf0270ba0b9f58bbf5b2ada
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.8 MB (79762855 bytes)**  
+-	Total Size: **93.1 MB (93052143 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e970641810986f14862b620b42d39f372130e824dac6cb27d56eeb6f2326f5dc`
+-	Image ID: `sha256:61dc9356e7aa5e6362a5b41607515476a6800d97e3fbbfc6bdd998a0b89de4db`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -2511,21 +2511,21 @@ CMD ["php" "-a"]
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
 # Thu, 09 Apr 2026 23:18:55 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:19:18 GMT
+# Tue, 14 Apr 2026 18:19:55 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:19:18 GMT
+# Tue, 14 Apr 2026 18:19:55 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:19:18 GMT
-ENV COMPOSER_VERSION=2.2.26
-# Thu, 09 Apr 2026 23:19:18 GMT
+# Tue, 14 Apr 2026 18:19:55 GMT
+ENV COMPOSER_VERSION=2.2.27
+# Tue, 14 Apr 2026 18:19:55 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:19:18 GMT
+# Tue, 14 Apr 2026 18:19:55 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:19:18 GMT
+# Tue, 14 Apr 2026 18:19:55 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:19:18 GMT
+# Tue, 14 Apr 2026 18:19:55 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:19:18 GMT
+# Tue, 14 Apr 2026 18:19:55 GMT
 CMD ["composer"]
 ```
 
@@ -2574,51 +2574,1348 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 23:19:33 GMT  
 		Size: 257.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4438c5becf7f85fb8103491584ab44d199af05239ceedf99ce89cb6ab30ff98`  
-		Last Modified: Thu, 09 Apr 2026 23:19:33 GMT  
-		Size: 3.8 MB (3831575 bytes)  
+	-	`sha256:e9d4eb190454ffaef90be5e6e0c819cb3a9e7a990e97007fc908ab14eb6c53b8`  
+		Last Modified: Tue, 14 Apr 2026 18:20:11 GMT  
+		Size: 17.1 MB (17120862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e700646b3467a74707c8fa1da8653e8388272a9c639f4bafd784612f285781e`  
-		Last Modified: Thu, 09 Apr 2026 23:19:33 GMT  
+	-	`sha256:3d69b603af35c10edfc476777fd1bcdd7a3bf814ea42956731c8ce32d7871b70`  
+		Last Modified: Tue, 14 Apr 2026 18:20:10 GMT  
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a78f1bc3189cb7ba57c4cdb26b105ab0eb7f897cb9b55ac5f03105d326200743`  
-		Last Modified: Thu, 09 Apr 2026 23:19:34 GMT  
-		Size: 92.0 B  
+	-	`sha256:30182dd14eb74e4c391867549fbf9c4dfb3eb2bd14ffe94db514ef30c07d544c`  
+		Last Modified: Tue, 14 Apr 2026 18:20:10 GMT  
+		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2.2` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:0e3535861121f00c8ab27cb5f85604fbcc0034aa674b0de2d5ab690b8d04fdf0
+$ docker pull composer@sha256:064684950c506dc3ada188dc93ce31604db9827dc2a07eb9cec3ddd72297fa76
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2208698 bytes)**  
+-	Total Size: **2.2 MB (2208701 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e87d91647a5ed87d63d45fe96e1b61255786339f3c397f5b4ee9e7100459f683`
+-	Image ID: `sha256:e15954f05e76147d256bb7d2637ffee0a926191203bc152df824c2e93d4ec50f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9cfe507d65b1864ea5cb973b9d204f4f45f91971b1046e8bd92001e130f23e7c`  
-		Last Modified: Thu, 09 Apr 2026 23:19:33 GMT  
+	-	`sha256:414ea970aecb739f4c603b73c40816576cbb8d0bfbc46b5d72cc910ca4773312`  
+		Last Modified: Tue, 14 Apr 2026 18:20:10 GMT  
 		Size: 2.2 MB (2178631 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d7b515029d274f0128c08f8d34858c42d58d34b51e435ed8be566dff3f8e7d49`  
-		Last Modified: Thu, 09 Apr 2026 23:19:33 GMT  
-		Size: 30.1 KB (30067 bytes)  
+	-	`sha256:16aeaa77a826b0c9e08631385e3529effaef99aac59efcaa6ed272e688af12ba`  
+		Last Modified: Tue, 14 Apr 2026 18:20:10 GMT  
+		Size: 30.1 KB (30070 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `composer:2.2.27`
 
-**does not exist** (yet?)
+```console
+$ docker pull composer@sha256:8b5fffe4c5ad5385dadd72b5afb74aac33de16b66d469d507dcad79d0f3a94e7
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 16
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm variant v6
+	-	unknown; unknown
+	-	linux; arm variant v7
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+	-	linux; 386
+	-	unknown; unknown
+	-	linux; ppc64le
+	-	unknown; unknown
+	-	linux; riscv64
+	-	unknown; unknown
+	-	linux; s390x
+	-	unknown; unknown
+
+### `composer:2.2.27` - linux; amd64
+
+```console
+$ docker pull composer@sha256:bec9accef60f3fccafc8523015d73f9a39f0b7132438f1a4b93d5192f88e9a07
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **82.1 MB (82103844 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:505f53816c198af889a516ee016f41a59dbbfe3b41304ce79e1df34b6d0a6659`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["composer"]`
+
+```dockerfile
+# Wed, 28 Jan 2026 01:18:04 GMT
+ADD alpine-minirootfs-3.23.3-x86_64.tar.gz / # buildkit
+# Wed, 28 Jan 2026 01:18:04 GMT
+CMD ["/bin/sh"]
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
+# Thu, 09 Apr 2026 22:12:28 GMT
+RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
+# Thu, 09 Apr 2026 22:12:28 GMT
+RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Thu, 09 Apr 2026 22:12:28 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_VERSION=8.5.5
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2
+# Thu, 09 Apr 2026 22:12:32 GMT
+RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
+# Thu, 09 Apr 2026 22:12:32 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:15:31 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 			; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Thu, 09 Apr 2026 22:15:31 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:15:32 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Thu, 09 Apr 2026 22:15:32 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Thu, 09 Apr 2026 22:15:32 GMT
+CMD ["php" "-a"]
+# Tue, 14 Apr 2026 18:17:29 GMT
+RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
+# Tue, 14 Apr 2026 18:17:29 GMT
+RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
+# Tue, 14 Apr 2026 18:18:22 GMT
+ENV COMPOSER_ALLOW_SUPERUSER=1
+# Tue, 14 Apr 2026 18:18:22 GMT
+ENV COMPOSER_HOME=/tmp
+# Tue, 14 Apr 2026 18:18:22 GMT
+ENV COMPOSER_VERSION=2.2.27
+# Tue, 14 Apr 2026 18:18:22 GMT
+RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
+# Tue, 14 Apr 2026 18:18:22 GMT
+COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
+# Tue, 14 Apr 2026 18:18:22 GMT
+WORKDIR /app
+# Tue, 14 Apr 2026 18:18:22 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Tue, 14 Apr 2026 18:18:22 GMT
+CMD ["composer"]
+```
+
+-	Layers:
+	-	`sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6ee0f8eaa0285cc21ac153`  
+		Last Modified: Wed, 28 Jan 2026 01:18:09 GMT  
+		Size: 3.9 MB (3861821 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e94097f1c1bf898f02421ec14dc47a5266903225d50ba7540733edaf01dd3c2f`  
+		Last Modified: Thu, 09 Apr 2026 22:15:40 GMT  
+		Size: 3.6 MB (3591773 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ccef8ef58d0d2684c7ba8f5e2aa002162cb05bac20e4aaa9604516a35c502817`  
+		Last Modified: Thu, 09 Apr 2026 22:15:40 GMT  
+		Size: 933.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f1d20b07f5f5847265819ed4e25a4c68fcb770d468367b0533ed57947c9799a4`  
+		Last Modified: Thu, 09 Apr 2026 22:15:40 GMT  
+		Size: 214.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:90453edd65cd9a234d8d2650b7c7d3db9cdc8bb745be44c9ee8bde649de0cb88`  
+		Last Modified: Thu, 09 Apr 2026 22:15:40 GMT  
+		Size: 14.4 MB (14379277 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:29e695e9a724ff2c86fb7c9f5a46c9d7abf168a0cb33f35ec8f749c6dfdff910`  
+		Last Modified: Thu, 09 Apr 2026 22:15:41 GMT  
+		Size: 487.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e68a9f584879ca34f693a09f59ab03009fa9014e5ecd2a796655f364152154bf`  
+		Last Modified: Thu, 09 Apr 2026 22:15:41 GMT  
+		Size: 23.0 MB (23002368 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:367e268d3bd7dac87362f7dee169fce9990d079638d685b1913d037c0ff9ae33`  
+		Last Modified: Thu, 09 Apr 2026 22:15:41 GMT  
+		Size: 2.4 KB (2449 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:631484828d1bffcdede48605d5975d227b17c3a153854af99b93800963860ad9`  
+		Last Modified: Thu, 09 Apr 2026 22:15:41 GMT  
+		Size: 23.6 KB (23583 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ac4568126a4e8983af81719a57437ee6ff5aad920af0340db28529977ea91d6b`  
+		Last Modified: Tue, 14 Apr 2026 18:17:59 GMT  
+		Size: 32.8 MB (32829097 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b8083645afae32266131920c3d7eb39891e44ee5e662f6ba12625430b1f63424`  
+		Last Modified: Tue, 14 Apr 2026 18:17:57 GMT  
+		Size: 260.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c3c5071145b6aecbefc8f3ec83eaa77932d678b86d8cba5e5ed36dbe134975fd`  
+		Last Modified: Tue, 14 Apr 2026 18:18:28 GMT  
+		Size: 4.4 MB (4411071 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:516dad3f033442c00e3f39784f0adaef3aa52d2fabeaea40959853714a61f986`  
+		Last Modified: Tue, 14 Apr 2026 18:18:28 GMT  
+		Size: 418.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:edbae146a22998b6915510f26cce02945777e86161f2ff7bd20cca578e515f20`  
+		Last Modified: Tue, 14 Apr 2026 18:18:29 GMT  
+		Size: 93.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `composer:2.2.27` - unknown; unknown
+
+```console
+$ docker pull composer@sha256:1920708649ea1b3f311f12fc4da12853394b86f5caf01c7483640a70a1b952d2
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.2 MB (2210117 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:32a22b13f29360daacb63b27828d80c940dd2b694acf3ad51da0179070336b43`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:9cff980c33ff40ffd086f649915581ca1ad0ac677ebdb6a957311bfc5f9cec56`  
+		Last Modified: Tue, 14 Apr 2026 18:18:28 GMT  
+		Size: 2.2 MB (2180050 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:dadafa2bd6c45025e325f7f5325e8a5104143ebc941fc74d0f0a0104a4a26b57`  
+		Last Modified: Tue, 14 Apr 2026 18:18:28 GMT  
+		Size: 30.1 KB (30067 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `composer:2.2.27` - linux; arm variant v6
+
+```console
+$ docker pull composer@sha256:d9d9c1cd9ef41ae27d42caed13c11fd17e48480665cf92d1d34ad8311446c41c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **78.3 MB (78263622 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a118ee9d773a3607ff354da462d7284ddf18a1f7aec3c5eb4a6f22bcaaadc395`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["composer"]`
+
+```dockerfile
+# Wed, 28 Jan 2026 01:17:52 GMT
+ADD alpine-minirootfs-3.23.3-armhf.tar.gz / # buildkit
+# Wed, 28 Jan 2026 01:17:52 GMT
+CMD ["/bin/sh"]
+# Thu, 09 Apr 2026 22:11:27 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
+# Thu, 09 Apr 2026 22:11:27 GMT
+RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
+# Thu, 09 Apr 2026 22:11:27 GMT
+RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
+# Thu, 09 Apr 2026 22:11:27 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Thu, 09 Apr 2026 22:11:27 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Thu, 09 Apr 2026 22:11:27 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 09 Apr 2026 22:11:27 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 09 Apr 2026 22:11:27 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Thu, 09 Apr 2026 22:11:27 GMT
+ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
+# Thu, 09 Apr 2026 22:11:27 GMT
+ENV PHP_VERSION=8.5.5
+# Thu, 09 Apr 2026 22:11:27 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc
+# Thu, 09 Apr 2026 22:11:27 GMT
+ENV PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2
+# Thu, 09 Apr 2026 22:11:31 GMT
+RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
+# Thu, 09 Apr 2026 22:11:31 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:14:33 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 			; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Thu, 09 Apr 2026 22:14:33 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:14:34 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Thu, 09 Apr 2026 22:14:34 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Thu, 09 Apr 2026 22:14:34 GMT
+CMD ["php" "-a"]
+# Tue, 14 Apr 2026 18:18:32 GMT
+RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
+# Tue, 14 Apr 2026 18:18:32 GMT
+RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
+# Tue, 14 Apr 2026 18:20:12 GMT
+ENV COMPOSER_ALLOW_SUPERUSER=1
+# Tue, 14 Apr 2026 18:20:12 GMT
+ENV COMPOSER_HOME=/tmp
+# Tue, 14 Apr 2026 18:20:12 GMT
+ENV COMPOSER_VERSION=2.2.27
+# Tue, 14 Apr 2026 18:20:12 GMT
+RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
+# Tue, 14 Apr 2026 18:20:12 GMT
+COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
+# Tue, 14 Apr 2026 18:20:12 GMT
+WORKDIR /app
+# Tue, 14 Apr 2026 18:20:12 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Tue, 14 Apr 2026 18:20:12 GMT
+CMD ["composer"]
+```
+
+-	Layers:
+	-	`sha256:f067a9ad7b3a4e3b687105344f6ad0934a0623c4359c2d841a3d4fab27e26060`  
+		Last Modified: Wed, 28 Jan 2026 01:17:56 GMT  
+		Size: 3.6 MB (3569821 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a3a4dc4970270bf4f15bb24e692f20607636e6743f40cfa66d01531f5319fb28`  
+		Last Modified: Thu, 09 Apr 2026 22:14:40 GMT  
+		Size: 3.5 MB (3548746 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e129abfd69dfd79358ebf9b83a11028547be00a7a3271d77063c0c448a988bfc`  
+		Last Modified: Thu, 09 Apr 2026 22:14:40 GMT  
+		Size: 933.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2ac6b529b8df346add8d5af6de7aad2ab2c46608903288d600d8245578abd3c1`  
+		Last Modified: Thu, 09 Apr 2026 22:14:40 GMT  
+		Size: 222.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a9bd67c665518d75fabc40abbb2d2ff9ab0437944c9cbe73026a388e40a3ad1a`  
+		Last Modified: Thu, 09 Apr 2026 22:14:40 GMT  
+		Size: 14.4 MB (14379287 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1b6aea5959183c8bdbd6c384dae47f74bb9c397f5dc89892029a8d2eeb564e3f`  
+		Last Modified: Thu, 09 Apr 2026 22:14:41 GMT  
+		Size: 486.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:35d40fceac132065a91c8b2abf315c2876b183b0c8290513b43015d1a46d283f`  
+		Last Modified: Thu, 09 Apr 2026 22:14:42 GMT  
+		Size: 20.0 MB (20001589 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:49df59235c6605ce311a418c6cccaf9c39480fc3903a169b8458379ec93ce3e1`  
+		Last Modified: Thu, 09 Apr 2026 22:14:41 GMT  
+		Size: 2.5 KB (2451 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e4fd3150604b7a3239470a3693295865298bd4290730a49b7aaa788b4b51f106`  
+		Last Modified: Thu, 09 Apr 2026 22:14:42 GMT  
+		Size: 23.4 KB (23405 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:456c9909eae7754cbdb5abf1910a07254de4c28117fad83f54361ff5992b7cc8`  
+		Last Modified: Tue, 14 Apr 2026 18:19:06 GMT  
+		Size: 32.7 MB (32666304 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3f2ac7068ea46a8cad6b04730031a92cdf0a2c82943308c2445b4b3bfb3b61ae`  
+		Last Modified: Tue, 14 Apr 2026 18:19:05 GMT  
+		Size: 259.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:48019666ffb967e10cc43b47842d41311b8cb0cfbd0174ffece8e8bfb93083d6`  
+		Last Modified: Tue, 14 Apr 2026 18:20:16 GMT  
+		Size: 4.1 MB (4069608 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b3301785193009dd9578be6a13990f95c65f7dad3f0e8f54d714149e1e5bc026`  
+		Last Modified: Tue, 14 Apr 2026 18:20:16 GMT  
+		Size: 418.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7a74aa74c877b416ad95f757fa327f90d4382793f93f150da4bc74e6f49477dd`  
+		Last Modified: Tue, 14 Apr 2026 18:20:17 GMT  
+		Size: 93.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `composer:2.2.27` - unknown; unknown
+
+```console
+$ docker pull composer@sha256:2db0f71733293191386c635481820f866a105e99f4783de1961fbb22d512e8fe
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **29.9 KB (29942 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:70a4a57dc8a5694e5a16bea165feae5258fcdda04f9b51fb7cb8132ebf1f345d`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:6ef876ba92a2ef63ec184a2516f6777e7e858934847515cdc1755e4105fafe52`  
+		Last Modified: Tue, 14 Apr 2026 18:20:16 GMT  
+		Size: 29.9 KB (29942 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `composer:2.2.27` - linux; arm variant v7
+
+```console
+$ docker pull composer@sha256:e6edcba94634e3a26ebafd61bf8c0a1ca52117e908db97042b0c423b15660b1a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **74.8 MB (74827699 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3b0f4c074115c64da6ac9f73856c9c65d7b54d0b5fd2313b4f6e983dfe69f296`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["composer"]`
+
+```dockerfile
+# Wed, 28 Jan 2026 01:18:44 GMT
+ADD alpine-minirootfs-3.23.3-armv7.tar.gz / # buildkit
+# Wed, 28 Jan 2026 01:18:44 GMT
+CMD ["/bin/sh"]
+# Thu, 09 Apr 2026 22:16:13 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
+# Thu, 09 Apr 2026 22:16:13 GMT
+RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
+# Thu, 09 Apr 2026 22:16:13 GMT
+RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
+# Thu, 09 Apr 2026 22:16:13 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Thu, 09 Apr 2026 22:16:14 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Thu, 09 Apr 2026 22:16:14 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 09 Apr 2026 22:16:14 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 09 Apr 2026 22:16:14 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Thu, 09 Apr 2026 22:16:14 GMT
+ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
+# Thu, 09 Apr 2026 22:16:14 GMT
+ENV PHP_VERSION=8.5.5
+# Thu, 09 Apr 2026 22:16:14 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc
+# Thu, 09 Apr 2026 22:16:14 GMT
+ENV PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2
+# Thu, 09 Apr 2026 22:16:18 GMT
+RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
+# Thu, 09 Apr 2026 22:16:18 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:19:30 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 			; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Thu, 09 Apr 2026 22:19:30 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:19:31 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Thu, 09 Apr 2026 22:19:31 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Thu, 09 Apr 2026 22:19:31 GMT
+CMD ["php" "-a"]
+# Tue, 14 Apr 2026 18:17:27 GMT
+RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
+# Tue, 14 Apr 2026 18:17:27 GMT
+RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
+# Tue, 14 Apr 2026 18:19:36 GMT
+ENV COMPOSER_ALLOW_SUPERUSER=1
+# Tue, 14 Apr 2026 18:19:36 GMT
+ENV COMPOSER_HOME=/tmp
+# Tue, 14 Apr 2026 18:19:36 GMT
+ENV COMPOSER_VERSION=2.2.27
+# Tue, 14 Apr 2026 18:19:36 GMT
+RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
+# Tue, 14 Apr 2026 18:19:36 GMT
+COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
+# Tue, 14 Apr 2026 18:19:36 GMT
+WORKDIR /app
+# Tue, 14 Apr 2026 18:19:36 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Tue, 14 Apr 2026 18:19:36 GMT
+CMD ["composer"]
+```
+
+-	Layers:
+	-	`sha256:7ed661450d9b41ba25f81f6ef8649bb379f47471d21c4898a8a6a3e11b819220`  
+		Last Modified: Wed, 28 Jan 2026 01:18:50 GMT  
+		Size: 3.3 MB (3281724 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:183887b3c6d93b524a882eb77b3ec2a6a1837e1968c76e8e5f1fd7fb1873fe88`  
+		Last Modified: Thu, 09 Apr 2026 22:19:37 GMT  
+		Size: 3.3 MB (3347458 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4eceb1d525707fd1cb5f95177add52ffe0719a1e9d269e70d4eb3c059a001e4a`  
+		Last Modified: Thu, 09 Apr 2026 22:19:37 GMT  
+		Size: 930.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:39b59192c85cc47751731ef9c3567084d42be727034604e047769629ca3e8d6a`  
+		Last Modified: Thu, 09 Apr 2026 22:19:37 GMT  
+		Size: 220.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e8700141d239b58d021b936145b84fdf4358b7d0c3140d18ce77a8b4bf23c86d`  
+		Last Modified: Thu, 09 Apr 2026 22:19:38 GMT  
+		Size: 14.4 MB (14379287 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b4cd2fa8ba3621d1b7832f001ff01e64024f17fdd37d60f51a531f8db4c70ee6`  
+		Last Modified: Thu, 09 Apr 2026 22:19:38 GMT  
+		Size: 488.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:414c5642173b2968ae736cd59c41f4834d408be10dac95010189169b3ad0f1a4`  
+		Last Modified: Thu, 09 Apr 2026 22:19:39 GMT  
+		Size: 18.9 MB (18870405 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aa8e08489ba203b77c0899ac7f52a0ab546a8939999d4039293987f3287f259b`  
+		Last Modified: Thu, 09 Apr 2026 22:19:39 GMT  
+		Size: 2.4 KB (2448 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d052dbf2f6e97471c0eb3914ed3c425dc1d21bc06fa6a4d59a30638097426eef`  
+		Last Modified: Thu, 09 Apr 2026 22:19:40 GMT  
+		Size: 23.4 KB (23410 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8a63be5222c033e49c0b0ab2fb861b34a74a01b755699bfd7131f8ac60ef4078`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 31.1 MB (31095949 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7ef22a83fd441ef20be2944f2c2a3b60b0aaa91d854de9b13a4c50d00ebf5279`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
+		Size: 257.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:56fb7202feb89edd3edb6fdfad3005b4be0d6b393834612a82b15d755e25bca0`  
+		Last Modified: Tue, 14 Apr 2026 18:19:42 GMT  
+		Size: 3.8 MB (3824611 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:69641c04f229a2ab6016f07abf23bea732612f28baf219fd9fcf0c899d7617e5`  
+		Last Modified: Tue, 14 Apr 2026 18:19:42 GMT  
+		Size: 419.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:35c73a8be0d813065a838fdca97a14527a4ee7e1530e35f656f93a424f4d7c27`  
+		Last Modified: Tue, 14 Apr 2026 18:19:42 GMT  
+		Size: 93.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `composer:2.2.27` - unknown; unknown
+
+```console
+$ docker pull composer@sha256:22f6c3090a1e08a479120b8d2944d976a5f7b1f1231a4101dd38993318363065
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.2 MB (2209861 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:03653d247f5f072466e2dbdac4853beaba24adebc3094e2410804eec3a021d72`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:cd8bf60410f02ec55d27901594dbed14dae35b18b0bacaf4ea59e9a7f4b41589`  
+		Last Modified: Tue, 14 Apr 2026 18:19:42 GMT  
+		Size: 2.2 MB (2179705 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:da2550800c5525cb6a49db60ba6a67710931c62bdaa2d6ff5ab2838d3a828358`  
+		Last Modified: Tue, 14 Apr 2026 18:19:42 GMT  
+		Size: 30.2 KB (30156 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `composer:2.2.27` - linux; arm64 variant v8
+
+```console
+$ docker pull composer@sha256:cd0f250504d8fafad34cfebf90721dea6e223d2018d952b0b8c40041a0dc543c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **82.1 MB (82071234 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:282357744ba75661461df14f18a0297ae6f7a55881e396a7e3c6350b205a5d51`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["composer"]`
+
+```dockerfile
+# Wed, 28 Jan 2026 01:18:09 GMT
+ADD alpine-minirootfs-3.23.3-aarch64.tar.gz / # buildkit
+# Wed, 28 Jan 2026 01:18:09 GMT
+CMD ["/bin/sh"]
+# Thu, 09 Apr 2026 22:12:27 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
+# Thu, 09 Apr 2026 22:12:27 GMT
+RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
+# Thu, 09 Apr 2026 22:12:28 GMT
+RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Thu, 09 Apr 2026 22:12:28 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_VERSION=8.5.5
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2
+# Thu, 09 Apr 2026 22:12:31 GMT
+RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
+# Thu, 09 Apr 2026 22:12:31 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:15:53 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 			; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Thu, 09 Apr 2026 22:15:53 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:15:54 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Thu, 09 Apr 2026 22:15:54 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Thu, 09 Apr 2026 22:15:54 GMT
+CMD ["php" "-a"]
+# Tue, 14 Apr 2026 18:17:33 GMT
+RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
+# Tue, 14 Apr 2026 18:17:33 GMT
+RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
+# Tue, 14 Apr 2026 18:18:30 GMT
+ENV COMPOSER_ALLOW_SUPERUSER=1
+# Tue, 14 Apr 2026 18:18:30 GMT
+ENV COMPOSER_HOME=/tmp
+# Tue, 14 Apr 2026 18:18:30 GMT
+ENV COMPOSER_VERSION=2.2.27
+# Tue, 14 Apr 2026 18:18:30 GMT
+RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
+# Tue, 14 Apr 2026 18:18:30 GMT
+COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
+# Tue, 14 Apr 2026 18:18:30 GMT
+WORKDIR /app
+# Tue, 14 Apr 2026 18:18:30 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Tue, 14 Apr 2026 18:18:30 GMT
+CMD ["composer"]
+```
+
+-	Layers:
+	-	`sha256:d8ad8cd72600f46cc068e16c39046ebc76526e41051f43a8c249884b200936c0`  
+		Last Modified: Wed, 28 Jan 2026 01:18:15 GMT  
+		Size: 4.2 MB (4197091 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5430766e93c0741f7a45019a298fa39df4adc31a6c8e3a918857d5c9f481fd79`  
+		Last Modified: Thu, 09 Apr 2026 22:16:02 GMT  
+		Size: 3.6 MB (3601875 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ccef8ef58d0d2684c7ba8f5e2aa002162cb05bac20e4aaa9604516a35c502817`  
+		Last Modified: Thu, 09 Apr 2026 22:15:40 GMT  
+		Size: 933.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f0ab3ae22b44d42a632d3b89887883b84506e7bc19fbec627c8edf0f887e8325`  
+		Last Modified: Thu, 09 Apr 2026 22:16:01 GMT  
+		Size: 220.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:770f3aeef1dea9c193f1ce2ac18244b9527c8e9358858ec5623b74d7edc26a63`  
+		Last Modified: Thu, 09 Apr 2026 22:16:02 GMT  
+		Size: 14.4 MB (14379274 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0cb0004e2202e670cbc096689781e1a39e84d79ce164c38b78f5de2e05a809ac`  
+		Last Modified: Thu, 09 Apr 2026 22:16:02 GMT  
+		Size: 485.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5d9008ab4d936d389891c5d92f6f167b042e41b99c0def8be44873e248b0231a`  
+		Last Modified: Thu, 09 Apr 2026 22:16:03 GMT  
+		Size: 22.2 MB (22178363 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1e35bb8c89ca8e3de22d54e19f5032ef636cddc58a95b5710d4ed566c1a667b0`  
+		Last Modified: Thu, 09 Apr 2026 22:16:03 GMT  
+		Size: 2.4 KB (2448 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7362ba4acfe6ed4242ab72e5ec39726e45e7bdea85637511f7156a7b39cc347c`  
+		Last Modified: Thu, 09 Apr 2026 22:16:03 GMT  
+		Size: 23.4 KB (23441 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:285ebfa4268e8a60fcb14bad51f63da6f60b8e8b79fc0d5bdc7b272bac34cdc9`  
+		Last Modified: Tue, 14 Apr 2026 18:18:04 GMT  
+		Size: 33.0 MB (32971912 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e481a251a9dd2ae932f1cd49809cabb48c84b5842f905e3cd318fb5f860efa48`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 258.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:923788c0d06899a0ccca3d741141539b98c3f3d61931099e58a4b0fc83fe3e3b`  
+		Last Modified: Tue, 14 Apr 2026 18:18:37 GMT  
+		Size: 4.7 MB (4714422 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ff496184c65f3a979b14bab85e3a3ceac96a90d3b6d1e1cd0bfbb011fe4bf7ee`  
+		Last Modified: Tue, 14 Apr 2026 18:18:37 GMT  
+		Size: 419.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f1913ed92f32be4d5e05f914ecd0fa0ceb586f5583cf804eaa83d4734c1539e3`  
+		Last Modified: Tue, 14 Apr 2026 18:18:32 GMT  
+		Size: 93.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `composer:2.2.27` - unknown; unknown
+
+```console
+$ docker pull composer@sha256:f5b0b9288cddd4802039657290c960ed63192b6cfba713712211a0a28ea1c5f2
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.2 MB (2209703 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ddd4480e135b6a6c07a40a81864ddb723a6df99bb6b552cb41b7244f851bc72c`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:3f3286787d125e28bd8debcf83e5e4cfec7bd4104018fbd8404a75189f75ff75`  
+		Last Modified: Tue, 14 Apr 2026 18:18:37 GMT  
+		Size: 2.2 MB (2179527 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:a43570f8e53c6026d4b20b8ac2ed368fec976c4c2b67cf9b5c268a3b467c7e87`  
+		Last Modified: Tue, 14 Apr 2026 18:18:36 GMT  
+		Size: 30.2 KB (30176 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `composer:2.2.27` - linux; 386
+
+```console
+$ docker pull composer@sha256:35f5329693ba247b75cdf7c773f0ebd55e0e3b9da051c03699b7c9e0abb71cd4
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **82.3 MB (82285109 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:748b8a46da60c2b55abee6ef41e5a4f80192a39cdfcdf03aaad1775dd05a512e`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["composer"]`
+
+```dockerfile
+# Wed, 28 Jan 2026 01:18:11 GMT
+ADD alpine-minirootfs-3.23.3-x86.tar.gz / # buildkit
+# Wed, 28 Jan 2026 01:18:11 GMT
+CMD ["/bin/sh"]
+# Fri, 10 Apr 2026 00:13:16 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
+# Fri, 10 Apr 2026 00:13:16 GMT
+RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
+# Fri, 10 Apr 2026 00:13:16 GMT
+RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
+# Fri, 10 Apr 2026 00:13:16 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Fri, 10 Apr 2026 00:13:16 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Fri, 10 Apr 2026 00:13:16 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Fri, 10 Apr 2026 00:13:16 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Fri, 10 Apr 2026 00:13:16 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Fri, 10 Apr 2026 00:13:16 GMT
+ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
+# Fri, 10 Apr 2026 00:13:16 GMT
+ENV PHP_VERSION=8.5.5
+# Fri, 10 Apr 2026 00:13:16 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc
+# Fri, 10 Apr 2026 00:13:16 GMT
+ENV PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2
+# Fri, 10 Apr 2026 00:13:20 GMT
+RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
+# Fri, 10 Apr 2026 00:13:20 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Fri, 10 Apr 2026 00:16:53 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 			; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Fri, 10 Apr 2026 00:16:53 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Fri, 10 Apr 2026 00:16:54 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Fri, 10 Apr 2026 00:16:54 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Fri, 10 Apr 2026 00:16:54 GMT
+CMD ["php" "-a"]
+# Tue, 14 Apr 2026 18:19:28 GMT
+RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
+# Tue, 14 Apr 2026 18:19:28 GMT
+RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
+# Tue, 14 Apr 2026 18:20:22 GMT
+ENV COMPOSER_ALLOW_SUPERUSER=1
+# Tue, 14 Apr 2026 18:20:22 GMT
+ENV COMPOSER_HOME=/tmp
+# Tue, 14 Apr 2026 18:20:22 GMT
+ENV COMPOSER_VERSION=2.2.27
+# Tue, 14 Apr 2026 18:20:22 GMT
+RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
+# Tue, 14 Apr 2026 18:20:22 GMT
+COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
+# Tue, 14 Apr 2026 18:20:22 GMT
+WORKDIR /app
+# Tue, 14 Apr 2026 18:20:22 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Tue, 14 Apr 2026 18:20:22 GMT
+CMD ["composer"]
+```
+
+-	Layers:
+	-	`sha256:18bdec7eea78464ecf9b88f4ec630eaeb694ea1c0101ecd9c20eda20c9065e23`  
+		Last Modified: Wed, 28 Jan 2026 01:18:16 GMT  
+		Size: 3.7 MB (3686998 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:62d2062b0536d4d6a1543e3a6bfd55452c7706979a7def0ad5ff0f3e183f183d`  
+		Last Modified: Fri, 10 Apr 2026 00:17:02 GMT  
+		Size: 5.9 MB (5909460 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7fb9b53f46bb29bde8242534cc51035c71b65536a0a0acada6428f7a8ba0889c`  
+		Last Modified: Fri, 10 Apr 2026 00:17:02 GMT  
+		Size: 933.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ab50b39601a88f935ec690047331c7481ff9b7ae2bb959cfc4cc98313c492986`  
+		Last Modified: Fri, 10 Apr 2026 00:17:02 GMT  
+		Size: 215.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:92225e063d6f653398ed45adcff1579a3a3cf3ccbe764a4bb5b301283ee3b2ee`  
+		Last Modified: Fri, 10 Apr 2026 00:17:02 GMT  
+		Size: 14.4 MB (14379292 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:78ccaecce131db93828716f892d3ad6e523dec70db239cc1bed3bb5394e8396c`  
+		Last Modified: Fri, 10 Apr 2026 00:17:03 GMT  
+		Size: 487.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:06e4efa73be7dce94cd5df6088620edcd50156eafe81c782274c129a7a3e191d`  
+		Last Modified: Fri, 10 Apr 2026 00:17:04 GMT  
+		Size: 23.4 MB (23438953 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ab8684032f9c15ecd79788e50ca55f90486d5bf79b5b3a24018772984e7a1cb5`  
+		Last Modified: Fri, 10 Apr 2026 00:17:04 GMT  
+		Size: 2.4 KB (2446 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aba72ff6334ace2c9a0d737cdf3c0fa9f61f267a07af45bf21e2ff77820277e5`  
+		Last Modified: Fri, 10 Apr 2026 00:17:04 GMT  
+		Size: 23.6 KB (23625 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fb92bca6a7200abd5ed57acbc2406d1b631ce897e9fcb8321df6d6ad30cb6114`  
+		Last Modified: Tue, 14 Apr 2026 18:19:58 GMT  
+		Size: 33.4 MB (33354023 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3acb4361787726cd8ad52c3d9467b84e1d1aa7dfe6414e7e3be8d2816cc76617`  
+		Last Modified: Tue, 14 Apr 2026 18:19:57 GMT  
+		Size: 256.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:649871246b4636d3e71336ce00677bad781148c88f1b63a1358cf436f11feac4`  
+		Last Modified: Tue, 14 Apr 2026 18:20:28 GMT  
+		Size: 1.5 MB (1487908 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9db2ceeac24b57d267726c3a0854b3db4a10c8f8be761f7f653a0c97fc86e57d`  
+		Last Modified: Tue, 14 Apr 2026 18:20:28 GMT  
+		Size: 420.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:43b0fc048d318578d95fbcda07a86c87b70bb13465e4a96a6f8cd472ba6b7fc5`  
+		Last Modified: Tue, 14 Apr 2026 18:20:28 GMT  
+		Size: 93.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `composer:2.2.27` - unknown; unknown
+
+```console
+$ docker pull composer@sha256:6884a4f582cf2cce11394bbc1245585b552aa80cf36ceb1c9d4ef7f115bf1e39
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.2 MB (2209886 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:af552b456c5f7c8ba7208226abe75e9da9e899a0cf7f25b20762f8ba266a59e2`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:f642b0c6b11ef666fee6cf07735b6410a1f0c832aceb20154fc0006c77c66794`  
+		Last Modified: Tue, 14 Apr 2026 18:20:28 GMT  
+		Size: 2.2 MB (2179845 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:ffe56978f8a88a319c332992e7ef101b50d32c77831087a868f2c4c7872fb94b`  
+		Last Modified: Tue, 14 Apr 2026 18:20:28 GMT  
+		Size: 30.0 KB (30041 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `composer:2.2.27` - linux; ppc64le
+
+```console
+$ docker pull composer@sha256:3bc9df9d34e445d60475370f8bf6ca3238a9de88a772bb54a4cb5978ed15739a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **96.5 MB (96516566 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a1ee0ee938940b40491579bf9c0a7ba8ecda47725576918950bf7b239cd7aa26`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["composer"]`
+
+```dockerfile
+# Wed, 28 Jan 2026 01:17:01 GMT
+ADD alpine-minirootfs-3.23.3-ppc64le.tar.gz / # buildkit
+# Wed, 28 Jan 2026 01:17:01 GMT
+CMD ["/bin/sh"]
+# Thu, 12 Mar 2026 23:53:02 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
+# Thu, 12 Mar 2026 23:53:02 GMT
+RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
+# Thu, 12 Mar 2026 23:53:02 GMT
+RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
+# Thu, 12 Mar 2026 23:53:02 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Thu, 12 Mar 2026 23:53:02 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Thu, 12 Mar 2026 23:53:02 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 12 Mar 2026 23:53:02 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 12 Mar 2026 23:53:02 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Thu, 12 Mar 2026 23:53:02 GMT
+ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
+# Thu, 12 Mar 2026 23:53:02 GMT
+ENV PHP_VERSION=8.5.5
+# Thu, 12 Mar 2026 23:53:02 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc
+# Thu, 12 Mar 2026 23:53:02 GMT
+ENV PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2
+# Thu, 09 Apr 2026 22:33:42 GMT
+RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
+# Thu, 09 Apr 2026 22:33:43 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:38:28 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 			; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Thu, 09 Apr 2026 22:38:29 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:38:30 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Thu, 09 Apr 2026 22:38:30 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Thu, 09 Apr 2026 22:38:30 GMT
+CMD ["php" "-a"]
+# Fri, 10 Apr 2026 00:21:05 GMT
+RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
+# Fri, 10 Apr 2026 00:21:07 GMT
+RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
+# Tue, 14 Apr 2026 18:19:02 GMT
+ENV COMPOSER_ALLOW_SUPERUSER=1
+# Tue, 14 Apr 2026 18:19:02 GMT
+ENV COMPOSER_HOME=/tmp
+# Tue, 14 Apr 2026 18:19:02 GMT
+ENV COMPOSER_VERSION=2.2.27
+# Tue, 14 Apr 2026 18:19:02 GMT
+RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
+# Tue, 14 Apr 2026 18:19:05 GMT
+COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
+# Tue, 14 Apr 2026 18:19:09 GMT
+WORKDIR /app
+# Tue, 14 Apr 2026 18:19:09 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Tue, 14 Apr 2026 18:19:09 GMT
+CMD ["composer"]
+```
+
+-	Layers:
+	-	`sha256:532f7d227cfd697fe6a6f7bfe8c0cc7baa9d99d3d41d50d9b6394fdb6322f4aa`  
+		Last Modified: Wed, 28 Jan 2026 01:17:23 GMT  
+		Size: 3.8 MB (3829643 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a7db1cc7b26f64d5de44e75f81962c30dead7dbc1dae3ebb93d0dc3d0cea721a`  
+		Last Modified: Thu, 12 Mar 2026 23:58:51 GMT  
+		Size: 3.8 MB (3768852 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fd4a23ff5963c3f844b77db123769c733318f6ad54386c9f63e356424059470b`  
+		Last Modified: Thu, 12 Mar 2026 23:58:51 GMT  
+		Size: 933.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a071b7623ea30b2e8950858971a7e7838856db9c469a46b6305dcd619d0531fc`  
+		Last Modified: Thu, 12 Mar 2026 23:58:51 GMT  
+		Size: 221.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d012a34014d339e95156eab3252cc22fbae82a4670be3766b110c04e96ff1a17`  
+		Last Modified: Thu, 09 Apr 2026 22:38:45 GMT  
+		Size: 14.4 MB (14379301 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9b8b7c5afa56dcdf0f01aaba59b305697db6b72603309ba573605f5fcd422fc0`  
+		Last Modified: Thu, 09 Apr 2026 22:38:45 GMT  
+		Size: 494.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1971acbe5d44b0f37d3698908a5766cea69f16ef4c4472ca8a30f5d48eec93ec`  
+		Last Modified: Thu, 09 Apr 2026 22:38:46 GMT  
+		Size: 23.1 MB (23118163 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:51ee71922b29fe2228fde987804ee785c857383e7941a35e885bb5f06b7c3aba`  
+		Last Modified: Thu, 09 Apr 2026 22:38:45 GMT  
+		Size: 2.4 KB (2449 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8fbefb03f1cf2736ed7b9f334b7e8f2f16dbedad1876c833ba4682b99ca9f99a`  
+		Last Modified: Thu, 09 Apr 2026 22:38:46 GMT  
+		Size: 23.4 KB (23442 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:db29015527299944deffccc76c5bfb597208be66aea62b09cf37a0cef1bb364e`  
+		Last Modified: Fri, 10 Apr 2026 00:22:19 GMT  
+		Size: 34.2 MB (34177434 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:972a41e22feca9d4bfcc298283918766cb03ebb7dd146ebbded895c8b431c973`  
+		Last Modified: Fri, 10 Apr 2026 00:22:17 GMT  
+		Size: 256.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a00b8129dae026b4288901fdf4844d14631360cd95724ef7a99b65dab607a3a7`  
+		Last Modified: Tue, 14 Apr 2026 18:19:38 GMT  
+		Size: 17.2 MB (17214867 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b642fc002306ffa035fabc99948ab54d676222458872361b5da11d126da7f4a9`  
+		Last Modified: Tue, 14 Apr 2026 18:19:38 GMT  
+		Size: 418.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d33f861bae9f5ec9825aa85d366c341ad622e0c26fad222ee7341b19546dfac2`  
+		Last Modified: Tue, 14 Apr 2026 18:19:38 GMT  
+		Size: 93.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `composer:2.2.27` - unknown; unknown
+
+```console
+$ docker pull composer@sha256:a1c93648e57614e4c8f0dcf7199c333eeda49c94176869dc05e8f7de304f3cf6
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.2 MB (2210002 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6040621f06dbe2c2a62e88287ee16b383a874ac09143e68a6d024651c828f7e3`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:9d93dcd35f40f1b73d8e6aab1f0ad312cef0d127b4d9561162774bc7ed41925d`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
+		Size: 2.2 MB (2179896 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:b2a711e174b0c511983fc08afe41d592f4c8cf2cf2facda7a2594455b610ba0b`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
+		Size: 30.1 KB (30106 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `composer:2.2.27` - linux; riscv64
+
+```console
+$ docker pull composer@sha256:cf698321e756d82bc12e24f70c655b5d1daf8ed9e605cee5c19a8140aea3fd33
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **77.9 MB (77909972 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3fe71051367b5659b8bb62a70a49db12f4724db7aee6fde4c3fb22601ce02e9f`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["composer"]`
+
+```dockerfile
+# Wed, 28 Jan 2026 03:47:28 GMT
+ADD alpine-minirootfs-3.23.3-riscv64.tar.gz / # buildkit
+# Wed, 28 Jan 2026 03:47:28 GMT
+CMD ["/bin/sh"]
+# Wed, 28 Jan 2026 09:13:06 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
+# Wed, 28 Jan 2026 09:13:06 GMT
+RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
+# Wed, 28 Jan 2026 09:13:06 GMT
+RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
+# Wed, 28 Jan 2026 09:13:06 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Wed, 28 Jan 2026 09:13:07 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Wed, 28 Jan 2026 09:13:07 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Wed, 28 Jan 2026 09:13:07 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Wed, 28 Jan 2026 09:13:07 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Wed, 28 Jan 2026 09:13:07 GMT
+ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
+# Wed, 28 Jan 2026 09:13:07 GMT
+ENV PHP_VERSION=8.5.5
+# Wed, 28 Jan 2026 09:13:07 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc
+# Wed, 28 Jan 2026 09:13:07 GMT
+ENV PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2
+# Fri, 10 Apr 2026 09:29:21 GMT
+RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
+# Fri, 10 Apr 2026 09:29:21 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Fri, 10 Apr 2026 10:28:28 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 			; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Fri, 10 Apr 2026 10:28:28 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Fri, 10 Apr 2026 10:28:33 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Fri, 10 Apr 2026 10:28:33 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Fri, 10 Apr 2026 10:28:33 GMT
+CMD ["php" "-a"]
+# Sun, 12 Apr 2026 09:33:49 GMT
+RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
+# Sun, 12 Apr 2026 09:33:49 GMT
+RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
+# Tue, 14 Apr 2026 18:28:51 GMT
+ENV COMPOSER_ALLOW_SUPERUSER=1
+# Tue, 14 Apr 2026 18:28:51 GMT
+ENV COMPOSER_HOME=/tmp
+# Tue, 14 Apr 2026 18:28:51 GMT
+ENV COMPOSER_VERSION=2.2.27
+# Tue, 14 Apr 2026 18:28:51 GMT
+RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
+# Tue, 14 Apr 2026 18:28:51 GMT
+COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
+# Tue, 14 Apr 2026 18:28:51 GMT
+WORKDIR /app
+# Tue, 14 Apr 2026 18:28:51 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Tue, 14 Apr 2026 18:28:51 GMT
+CMD ["composer"]
+```
+
+-	Layers:
+	-	`sha256:9da5d16b2a566416844fd0c62fa81165037aa0b7f154a5c1f58f06412739471c`  
+		Last Modified: Wed, 28 Jan 2026 03:48:00 GMT  
+		Size: 3.6 MB (3585287 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e2d64a68485fdb9ab2ec4159ac3e04e0bb79d9f1d037e580e928ca2b9604180f`  
+		Last Modified: Wed, 28 Jan 2026 10:13:59 GMT  
+		Size: 3.7 MB (3741000 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b030c1b113432578231e8fe7c8a1bc913f2dc5dcba512e805fa9ab07768c9bd4`  
+		Last Modified: Wed, 28 Jan 2026 10:13:58 GMT  
+		Size: 933.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c32a0e9bcb36b34307b4eada1f50c1cd4244d43d19ee57d962818dcb0ff0b110`  
+		Last Modified: Wed, 28 Jan 2026 10:13:58 GMT  
+		Size: 222.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:20501e9e3d17b72af47b7d522d0c369998be222ed66ed9070ed2cbc45e500ca7`  
+		Last Modified: Fri, 10 Apr 2026 10:29:42 GMT  
+		Size: 14.4 MB (14379290 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0f7fa0bbe8ea35a7aeededb6a1c62d4e192d88a3cbaa6a9ac613390cef5f797e`  
+		Last Modified: Fri, 10 Apr 2026 10:29:38 GMT  
+		Size: 493.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3c00b6c348638ca2fb138534e98df3a83c5788350e7f682c5dab61388d5988a1`  
+		Last Modified: Fri, 10 Apr 2026 10:29:43 GMT  
+		Size: 20.8 MB (20772153 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ddf32615937490fdbee93796b59955ce07e051f019b76917819692421da228ef`  
+		Last Modified: Fri, 10 Apr 2026 10:29:38 GMT  
+		Size: 2.5 KB (2451 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:491cab84c5a842c690a34c22c4cfe20f23d7b27019ca9d80e387fd23ef96828d`  
+		Last Modified: Fri, 10 Apr 2026 10:29:39 GMT  
+		Size: 23.3 KB (23349 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e865e7a35bee8605e802d4714eef1a4cd079ed0b68a414c076e698d97cfbedd6`  
+		Last Modified: Sun, 12 Apr 2026 09:38:57 GMT  
+		Size: 31.3 MB (31300012 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:670c7192db5936f38910b865b3f6746b70a4b2523b1e25db7d274900db0fca4f`  
+		Last Modified: Sun, 12 Apr 2026 09:38:52 GMT  
+		Size: 258.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8b5bdd2e2f534ae25a788c0f4fe04db08c09d85e043bff17c4238b4c5c6e12e2`  
+		Last Modified: Tue, 14 Apr 2026 18:30:04 GMT  
+		Size: 4.1 MB (4104012 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7c1ca5c26ad5a331c9c78d1736a316cd75130f2c5fc620da2614c677c1610b79`  
+		Last Modified: Tue, 14 Apr 2026 18:30:03 GMT  
+		Size: 419.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1bd33bb4fad3f92609198afdae7d92af15161acef56cb4c6f80fa7a9cdefa0c3`  
+		Last Modified: Tue, 14 Apr 2026 18:29:56 GMT  
+		Size: 93.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `composer:2.2.27` - unknown; unknown
+
+```console
+$ docker pull composer@sha256:d499efcf872dd10295b0361b3f735682b694176478d8de89f6e9ed88975b6fef
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.2 MB (2208939 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1a4e7210e9321acd0aa206f7db001b89b492df5fd3f869de1f7910b3ebcaca37`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:e1ebc611e5beb930a14f43da834427bd8cba5278ee9b1ae4178ff4cba263cbd8`  
+		Last Modified: Tue, 14 Apr 2026 18:30:03 GMT  
+		Size: 2.2 MB (2178837 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:8c1b2893b53b2641c74019ec997c6cd50ba35ff87e1cc59416af349b182e62ef`  
+		Last Modified: Tue, 14 Apr 2026 18:30:03 GMT  
+		Size: 30.1 KB (30102 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `composer:2.2.27` - linux; s390x
+
+```console
+$ docker pull composer@sha256:093e24e420e8a8867177194221f361d676048cacadf0270ba0b9f58bbf5b2ada
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **93.1 MB (93052143 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:61dc9356e7aa5e6362a5b41607515476a6800d97e3fbbfc6bdd998a0b89de4db`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["composer"]`
+
+```dockerfile
+# Wed, 28 Jan 2026 01:17:06 GMT
+ADD alpine-minirootfs-3.23.3-s390x.tar.gz / # buildkit
+# Wed, 28 Jan 2026 01:17:06 GMT
+CMD ["/bin/sh"]
+# Thu, 12 Mar 2026 23:37:17 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
+# Thu, 12 Mar 2026 23:37:17 GMT
+RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
+# Thu, 12 Mar 2026 23:37:17 GMT
+RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
+# Thu, 12 Mar 2026 23:37:17 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Thu, 12 Mar 2026 23:37:17 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Thu, 12 Mar 2026 23:37:17 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 12 Mar 2026 23:37:17 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 12 Mar 2026 23:37:17 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Thu, 12 Mar 2026 23:37:17 GMT
+ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
+# Thu, 12 Mar 2026 23:37:17 GMT
+ENV PHP_VERSION=8.5.5
+# Thu, 12 Mar 2026 23:37:17 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc
+# Thu, 12 Mar 2026 23:37:17 GMT
+ENV PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2
+# Thu, 09 Apr 2026 22:21:35 GMT
+RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
+# Thu, 09 Apr 2026 22:21:35 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:27:00 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 			; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Thu, 09 Apr 2026 22:27:00 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:27:01 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Thu, 09 Apr 2026 22:27:01 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Thu, 09 Apr 2026 22:27:01 GMT
+CMD ["php" "-a"]
+# Thu, 09 Apr 2026 23:18:55 GMT
+RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
+# Thu, 09 Apr 2026 23:18:55 GMT
+RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
+# Tue, 14 Apr 2026 18:19:55 GMT
+ENV COMPOSER_ALLOW_SUPERUSER=1
+# Tue, 14 Apr 2026 18:19:55 GMT
+ENV COMPOSER_HOME=/tmp
+# Tue, 14 Apr 2026 18:19:55 GMT
+ENV COMPOSER_VERSION=2.2.27
+# Tue, 14 Apr 2026 18:19:55 GMT
+RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
+# Tue, 14 Apr 2026 18:19:55 GMT
+COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
+# Tue, 14 Apr 2026 18:19:55 GMT
+WORKDIR /app
+# Tue, 14 Apr 2026 18:19:55 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Tue, 14 Apr 2026 18:19:55 GMT
+CMD ["composer"]
+```
+
+-	Layers:
+	-	`sha256:623c99520afcb8c68e21bd22d3bc252ae348c276fb9c45a79aeccb4caf2b8d9f`  
+		Last Modified: Wed, 28 Jan 2026 01:17:15 GMT  
+		Size: 3.7 MB (3725333 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4348d21358ef752a357c33976b85357317bfb623a79cb91ec462b4e5128b82d5`  
+		Last Modified: Thu, 12 Mar 2026 23:43:03 GMT  
+		Size: 3.8 MB (3795119 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6a169c2de4deea9b877eb224ec8f2d4f4502dd0bb4e22037516ea41c23c8c1e6`  
+		Last Modified: Thu, 12 Mar 2026 23:43:02 GMT  
+		Size: 932.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5f88a80dfabed7faa02e1bbe28dd4e26c817c26d54bb3411b27cc398ea997ef8`  
+		Last Modified: Thu, 12 Mar 2026 23:43:02 GMT  
+		Size: 222.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1f5e7662fcf96af1dfae3edab12e535e5dbb2bd9336314490ac9484222315cc0`  
+		Last Modified: Thu, 09 Apr 2026 22:27:14 GMT  
+		Size: 14.4 MB (14379286 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:26b2bd611f10e897bc78163d788b300458c71f27af849508076d219371619381`  
+		Last Modified: Thu, 09 Apr 2026 22:27:14 GMT  
+		Size: 494.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:84c1175a23bc886b3bc9f9e6845c90d99d1125fc788f6d88d5ad9501ed086f83`  
+		Last Modified: Thu, 09 Apr 2026 22:27:15 GMT  
+		Size: 21.9 MB (21889964 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c48a98f93d43e57e9161beb90862e90db489cf9d4b4d09bfbd7d3bc1566f7981`  
+		Last Modified: Thu, 09 Apr 2026 22:27:14 GMT  
+		Size: 2.4 KB (2446 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c91cdaaeb755a7dbc3a463542f5d9410ef527eb1babc2850059c13f703b6bf5f`  
+		Last Modified: Thu, 09 Apr 2026 22:27:15 GMT  
+		Size: 23.4 KB (23427 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d4fdf3eb0ccd09c5d847e8404ebd00d415ec8a926328bb55405913777275f663`  
+		Last Modified: Thu, 09 Apr 2026 23:19:34 GMT  
+		Size: 32.1 MB (32113289 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:233a242e39cffb8912002ca05f6e84274f01e36739c65884086e484ec1f9ce01`  
+		Last Modified: Thu, 09 Apr 2026 23:19:33 GMT  
+		Size: 257.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e9d4eb190454ffaef90be5e6e0c819cb3a9e7a990e97007fc908ab14eb6c53b8`  
+		Last Modified: Tue, 14 Apr 2026 18:20:11 GMT  
+		Size: 17.1 MB (17120862 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3d69b603af35c10edfc476777fd1bcdd7a3bf814ea42956731c8ce32d7871b70`  
+		Last Modified: Tue, 14 Apr 2026 18:20:10 GMT  
+		Size: 419.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:30182dd14eb74e4c391867549fbf9c4dfb3eb2bd14ffe94db514ef30c07d544c`  
+		Last Modified: Tue, 14 Apr 2026 18:20:10 GMT  
+		Size: 93.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `composer:2.2.27` - unknown; unknown
+
+```console
+$ docker pull composer@sha256:064684950c506dc3ada188dc93ce31604db9827dc2a07eb9cec3ddd72297fa76
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.2 MB (2208701 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e15954f05e76147d256bb7d2637ffee0a926191203bc152df824c2e93d4ec50f`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:414ea970aecb739f4c603b73c40816576cbb8d0bfbc46b5d72cc910ca4773312`  
+		Last Modified: Tue, 14 Apr 2026 18:20:10 GMT  
+		Size: 2.2 MB (2178631 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:16aeaa77a826b0c9e08631385e3529effaef99aac59efcaa6ed272e688af12ba`  
+		Last Modified: Tue, 14 Apr 2026 18:20:10 GMT  
+		Size: 30.1 KB (30070 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `composer:2.9`
 
 ```console
-$ docker pull composer@sha256:698d3801b2a622ace460c4743c781282fcbcb733a4cbf8b31c44731e846585e8
+$ docker pull composer@sha256:97051b5ca53613b16f920a3ec970c6510113897a9a0e56cbbaf146ca75f60f4c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2643,13 +3940,13 @@ $ docker pull composer@sha256:698d3801b2a622ace460c4743c781282fcbcb733a4cbf8b31c
 ### `composer:2.9` - linux; amd64
 
 ```console
-$ docker pull composer@sha256:dc21210ab4f258498cc741b3fcae648ecea0512bf1902f626258a5a2416dd65f
+$ docker pull composer@sha256:6831e1267924c4a680b36b7963cb7914a9bb09ca67f47f4c55d3b2588bb7b20f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.9 MB (81858697 bytes)**  
+-	Total Size: **82.3 MB (82295138 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6678aa980a418c3522152c0c80f8d3f50e33c46f51cb57116806e62f77af4f1b`
+-	Image ID: `sha256:9b937e0bed4668eb643fa8f083b674431c0d175c794bcc3609b7e561053fb196`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -2696,25 +3993,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Thu, 09 Apr 2026 22:15:32 GMT
 CMD ["php" "-a"]
-# Thu, 09 Apr 2026 23:14:27 GMT
+# Tue, 14 Apr 2026 18:17:29 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Thu, 09 Apr 2026 23:14:27 GMT
+# Tue, 14 Apr 2026 18:17:29 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:14:45 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:17:48 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
 CMD ["composer"]
 ```
 
@@ -2755,61 +4052,61 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 22:15:41 GMT  
 		Size: 23.6 KB (23583 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9723e03930e9f0fe1216bb34316b88fbe27bb2d3f225e1ae91f2390c1460d74f`  
-		Last Modified: Thu, 09 Apr 2026 23:14:56 GMT  
-		Size: 32.8 MB (32826883 bytes)  
+	-	`sha256:ac4568126a4e8983af81719a57437ee6ff5aad920af0340db28529977ea91d6b`  
+		Last Modified: Tue, 14 Apr 2026 18:17:59 GMT  
+		Size: 32.8 MB (32829097 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e97a6213d305494b52ce665477c0b0fd4fed29c6c59629f6c03c4ea5a8112a24`  
-		Last Modified: Thu, 09 Apr 2026 23:14:55 GMT  
-		Size: 257.0 B  
+	-	`sha256:b8083645afae32266131920c3d7eb39891e44ee5e662f6ba12625430b1f63424`  
+		Last Modified: Tue, 14 Apr 2026 18:17:57 GMT  
+		Size: 260.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:420f0677074b1e47cd7faf772c8154a2c23382aa632bd16980455335061464dd`  
-		Last Modified: Thu, 09 Apr 2026 23:14:55 GMT  
-		Size: 4.2 MB (4168140 bytes)  
+	-	`sha256:777a820e754516716a459f5ea53530c7bb8b44ecd7c0c75c672b7d46b53c9654`  
+		Last Modified: Tue, 14 Apr 2026 18:17:58 GMT  
+		Size: 4.6 MB (4602365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16da88d43c8a671d9ffeddd194f58f88543cf9c4210b1f28d0fd83d734763d95`  
-		Last Modified: Thu, 09 Apr 2026 23:14:55 GMT  
-		Size: 419.0 B  
+	-	`sha256:a92de384986fb1f77474533112a7ce2919285f0d09c30aab81ae535ff0aba6cc`  
+		Last Modified: Tue, 14 Apr 2026 18:17:58 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36c4ed811ff8fa8458ebf2d4f1c1278dbe5166ff1397e2324710a142244f539c`  
-		Last Modified: Thu, 09 Apr 2026 23:14:56 GMT  
+	-	`sha256:ac79c6f82514103d437b10c68165bcfa5a61cfb3bc81cb8e910e796a0dee183c`  
+		Last Modified: Tue, 14 Apr 2026 18:17:59 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2.9` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:324c5387d9ea8e70dae9347327dd8227e25d9519c5adcee7877e66dd80e84923
+$ docker pull composer@sha256:ee00b542afdd2a27036af0cbd82a4253954b9b64cc0f09f848564315e015ea75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.2 MB (2211307 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c221afd67ff21176979fbf2daf17a51f07f346a6f3d4af48f0e743b5cbaa60e2`
+-	Image ID: `sha256:d8203a2bfd877820004ce1a6d294f600aa02641b8321acbe0ebec7f012e93adb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:82dd0f61fc8cb85cab6fddc34200a14153f22b72eabfdabf146d85c06208302c`  
-		Last Modified: Thu, 09 Apr 2026 23:14:55 GMT  
+	-	`sha256:128dc41da46e86602161c5959ee81ac033975e865de3301a91665ad88755c037`  
+		Last Modified: Tue, 14 Apr 2026 18:17:57 GMT  
 		Size: 2.2 MB (2180640 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2b441ceb66555731ed226980b28b95c1f640d818aa23f18044b31016b9fba0a8`  
-		Last Modified: Thu, 09 Apr 2026 23:14:54 GMT  
+	-	`sha256:86478cd97ce76ef38fbb5db11ca2460e00316caafd6b587b503eb065936dffc6`  
+		Last Modified: Tue, 14 Apr 2026 18:17:57 GMT  
 		Size: 30.7 KB (30667 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2.9` - linux; arm variant v6
 
 ```console
-$ docker pull composer@sha256:64c65bae4657ee29ad71bc38a70e404deed3757a80aec7076ab67943c920e881
+$ docker pull composer@sha256:42b5ab08f93a7776a252ff6af611370f95606dd6bfdabcb827e28d492a76d90c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.0 MB (78024717 bytes)**  
+-	Total Size: **78.5 MB (78461847 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5efe45d626f095603c884a0caa83f51d1de24f93ed2cdd3e276da9352c5cd511`
+-	Image ID: `sha256:1eef3072ff95c35656312c430f28ffb549db3063573258ab858c40b56c104e87`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -2856,25 +4153,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Thu, 09 Apr 2026 22:14:34 GMT
 CMD ["php" "-a"]
-# Thu, 09 Apr 2026 23:21:14 GMT
+# Tue, 14 Apr 2026 18:18:32 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Thu, 09 Apr 2026 23:21:14 GMT
+# Tue, 14 Apr 2026 18:18:32 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:21:40 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:18:58 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
 CMD ["composer"]
 ```
 
@@ -2915,57 +4212,57 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 22:14:42 GMT  
 		Size: 23.4 KB (23405 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538a3fa028c21a44563fbab2f5dff114de9f509bc7f26abbb33b70b84a781004`  
-		Last Modified: Thu, 09 Apr 2026 23:21:48 GMT  
-		Size: 32.7 MB (32661802 bytes)  
+	-	`sha256:456c9909eae7754cbdb5abf1910a07254de4c28117fad83f54361ff5992b7cc8`  
+		Last Modified: Tue, 14 Apr 2026 18:19:06 GMT  
+		Size: 32.7 MB (32666304 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f8a52cccc08b0aa66da5c300daac33e72433b311c137a3e977bb861441c4715`  
-		Last Modified: Thu, 09 Apr 2026 23:21:47 GMT  
-		Size: 258.0 B  
+	-	`sha256:3f2ac7068ea46a8cad6b04730031a92cdf0a2c82943308c2445b4b3bfb3b61ae`  
+		Last Modified: Tue, 14 Apr 2026 18:19:05 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8664d1290eb012cee58455909e9c4af2c46c299455e9f212059a82a68bf543af`  
-		Last Modified: Thu, 09 Apr 2026 23:21:47 GMT  
-		Size: 3.8 MB (3835204 bytes)  
+	-	`sha256:9243233de423e41092205cff54f31f06ed50b369e5c0ac635be8d54c91faa2f6`  
+		Last Modified: Tue, 14 Apr 2026 18:19:05 GMT  
+		Size: 4.3 MB (4267832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f17c662a41e8bf1ade0f5dce478977a2f1b2260b6fb9e1f71c66ac647c7ca99`  
-		Last Modified: Thu, 09 Apr 2026 23:21:47 GMT  
-		Size: 420.0 B  
+	-	`sha256:cd76a36b321ba2cbdf2c18b2f483b7556fc3c67bcf48a42eebcbb8ecaa79ac5d`  
+		Last Modified: Tue, 14 Apr 2026 18:19:05 GMT  
+		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fd4d3294fbaab8aeebe4635b51df3382d3861ff2fb2bdc3666d9eff34f5a2d9`  
-		Last Modified: Thu, 09 Apr 2026 23:21:48 GMT  
+	-	`sha256:313b2a5816631d2e1dd9f29597ed589c59afe33a708b0edd9e8b5b53b53b71b9`  
+		Last Modified: Tue, 14 Apr 2026 18:19:06 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2.9` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:69285922413d2887d15b847ca28cb5dc65de1917bc8dc7a916ed067af6bdce92
+$ docker pull composer@sha256:a612bca8961914475793f1cc12673bc733e3e30975bbe0447cc6cef74d4eae6e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.6 KB (30557 bytes)**  
+-	Total Size: **30.6 KB (30558 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9781ac30005cb3d9769cc5945cd9f938746dfb8fc4bd87c3a8b9fe07c9bdb8f9`
+-	Image ID: `sha256:4902477b1c1d79e9a92e75c1c985b7fcc1f11c9897b798b4c71bbe9da2195994`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6dbe0d8ff4b6a78086888c630492be37fa6475048a363855b18d186aafc4be4f`  
-		Last Modified: Thu, 09 Apr 2026 23:21:47 GMT  
-		Size: 30.6 KB (30557 bytes)  
+	-	`sha256:257cbcbdf5518823fda62b94d1069bd1beaecace4115bbcd15240d9017176baf`  
+		Last Modified: Tue, 14 Apr 2026 18:19:04 GMT  
+		Size: 30.6 KB (30558 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2.9` - linux; arm variant v7
 
 ```console
-$ docker pull composer@sha256:b96a2faa9fc0b78642a1206fe286e09e58b7816406493b96ef8f5b708d263e07
+$ docker pull composer@sha256:a2e1201a4b434919271c712678b5c8e4c243a9bcb3d522da04594fed18383601
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.6 MB (74613350 bytes)**  
+-	Total Size: **75.0 MB (75025755 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3201782b277aaf1ab4181ec07049632cc7824a994227cd9fdb91ce2274b49f7`
+-	Image ID: `sha256:c19c70269f301855e5f51696300cb0dd99b177e589f1e635686d0339f7551abd`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -3012,25 +4309,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Thu, 09 Apr 2026 22:19:31 GMT
 CMD ["php" "-a"]
-# Thu, 09 Apr 2026 23:26:12 GMT
+# Tue, 14 Apr 2026 18:17:27 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Thu, 09 Apr 2026 23:26:12 GMT
+# Tue, 14 Apr 2026 18:17:27 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:26:35 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:17:53 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 CMD ["composer"]
 ```
 
@@ -3071,61 +4368,61 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 22:19:40 GMT  
 		Size: 23.4 KB (23410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e77a59d1a7cad0c2860d18edeb77537fddbcfecfd1639e3241ac8d79aab43fbd`  
-		Last Modified: Thu, 09 Apr 2026 23:26:45 GMT  
-		Size: 31.1 MB (31089553 bytes)  
+	-	`sha256:8a63be5222c033e49c0b0ab2fb861b34a74a01b755699bfd7131f8ac60ef4078`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 31.1 MB (31095949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60b809b533ee5d173f9e42053de3c0560fe60685d48c7b9bbf3f1f1b46813bae`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
+	-	`sha256:7ef22a83fd441ef20be2944f2c2a3b60b0aaa91d854de9b13a4c50d00ebf5279`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
 		Size: 257.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37b416b8cbc92a8cd4e485714bda026bd05ffa9191bcd6a9bf58699c806890de`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
-		Size: 3.6 MB (3616658 bytes)  
+	-	`sha256:56949d23eda79baf6fd7f09de98362e08ff7bf64e8849bcabb9a6e2f4c4d6afb`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
+		Size: 4.0 MB (4022668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f707392fbb3b85a2386e759710fd7599510e1fccb9bd1c801d0caab12f867a59`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
-		Size: 419.0 B  
+	-	`sha256:9dd656ca101b55a63ad908f0e987ba026b8e346d38bf80f490c8213e337b5f74`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44819e994e8a217fd086c81ac457c84bcce5d0c46d8d588f6960543683b16893`  
-		Last Modified: Thu, 09 Apr 2026 23:26:45 GMT  
+	-	`sha256:8a59db22cab798384fc9801339a3900c22762b61cb6350dc01072d6e77037fee`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2.9` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:25f32f022fe9a0e2414ba4a1d7183277f6bc5aaa2c6dfb700c61ff3bdbf9c756
+$ docker pull composer@sha256:8ae07250715c8adacdee49f68335a2f03726ae61bc23c213c818f76498127ebd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.2 MB (2211084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa29874e3a7f556b2abac9ce3d57ea0b46183867d0654b79da705a2452086011`
+-	Image ID: `sha256:3c0414c658b1eaadc671332e5ef010ff3e5532bf4903cbf37de530cd3f4c8119`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:46b3d039506bd733074618dbdb3604d73be66454a466882015da199887537baf`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
+	-	`sha256:2a08a0655434744241683c630df38f108a308ddf79325a3669b3ae96bda483f7`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
 		Size: 2.2 MB (2180311 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5308f978febb9103380adfd171e0f0bfd0041551fb914befd2fdb80471ca6bc6`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
+	-	`sha256:decd009e4f03dcfec4e0310a6d9e53ba4eb5553b8df82d98526f2df7750f9733`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
 		Size: 30.8 KB (30773 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2.9` - linux; arm64 variant v8
 
 ```console
-$ docker pull composer@sha256:f22c5be0b0e4f10715209e484aad7ba392834defddf68fa4fe3a6ad4f90fb6bc
+$ docker pull composer@sha256:90d74468001bfe32251948d171e65156b231f7f3f3488bfdeb8af939c4fc5ca9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.8 MB (81821998 bytes)**  
+-	Total Size: **82.3 MB (82264617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32098a09598603209bb2199303470024e397a4e5e6298c9821ea1d87f287c321`
+-	Image ID: `sha256:672986627c2c9f6a0aba130627ff344c10241897df399837f7cb9b39cbcbf794`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -3172,25 +4469,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Thu, 09 Apr 2026 22:15:54 GMT
 CMD ["php" "-a"]
-# Thu, 09 Apr 2026 23:14:48 GMT
+# Tue, 14 Apr 2026 18:17:33 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Thu, 09 Apr 2026 23:14:49 GMT
+# Tue, 14 Apr 2026 18:17:33 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:15:09 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:17:53 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 CMD ["composer"]
 ```
 
@@ -3231,61 +4528,61 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 22:16:03 GMT  
 		Size: 23.4 KB (23441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c46a008b7b18b605f3227cf01b9a8fc1e4633c3f862508793cfd7e7cc1e094b`  
-		Last Modified: Thu, 09 Apr 2026 23:15:19 GMT  
-		Size: 33.0 MB (32967700 bytes)  
+	-	`sha256:285ebfa4268e8a60fcb14bad51f63da6f60b8e8b79fc0d5bdc7b272bac34cdc9`  
+		Last Modified: Tue, 14 Apr 2026 18:18:04 GMT  
+		Size: 33.0 MB (32971912 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:521248ffae582244240d1948b296c8343de1d30a4967ee3e7415b99abc0a3e55`  
-		Last Modified: Thu, 09 Apr 2026 23:15:18 GMT  
-		Size: 257.0 B  
+	-	`sha256:e481a251a9dd2ae932f1cd49809cabb48c84b5842f905e3cd318fb5f860efa48`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 258.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14d13eb7c1e4351f2a1156b9e995fd34a9983c2e23b705859295d9091091249e`  
-		Last Modified: Thu, 09 Apr 2026 23:15:18 GMT  
-		Size: 4.5 MB (4469398 bytes)  
+	-	`sha256:607104842caf9031627e0561da94643dbd6e5a53fdf2ec68236e50e9785d2c1f`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 4.9 MB (4907805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7161d39c731861555f41ef22b553710ff6d41fb44e366c20d2bae65678c454c9`  
-		Last Modified: Thu, 09 Apr 2026 23:15:18 GMT  
-		Size: 420.0 B  
+	-	`sha256:a0da1d1720bb544613f3a7ac195b9474bba4d0af56f95c4014dff71a3e36191b`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e51d69411c9b6288276791ce75ac910562da89c7f79fea5623533a81cf02f23e`  
-		Last Modified: Thu, 09 Apr 2026 23:15:19 GMT  
+	-	`sha256:8a59db22cab798384fc9801339a3900c22762b61cb6350dc01072d6e77037fee`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2.9` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:c47a3ff8522f24a6325f8823e4e18c7be53e056336278303d18f16e788a24c85
+$ docker pull composer@sha256:f9886027cfff443f88c11e204f27408769431ab8a4c40907ec0a1fd0c3fd8667
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2210941 bytes)**  
+-	Total Size: **2.2 MB (2210942 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eac1904c54af68e71e21c43fbb13a82a437118a28712d8edd04183470b88485d`
+-	Image ID: `sha256:755fa5560c7b510ecf888c7cd0c18f1e6400b62fc2791be2ba6a62a048715f3a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1d1020e78d360fac53438ab48084de8c9180f68d7f0589ded5d6d7cf660ee448`  
-		Last Modified: Thu, 09 Apr 2026 23:15:18 GMT  
+	-	`sha256:09c9515975e1f29265f024bb85736c52ec0dc5558513139c649880cb5dd96327`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
 		Size: 2.2 MB (2180141 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f1744a79780d0b1a2862eedec8c798c06f4018e16b6a6ce7b2c8085bf237d9f1`  
-		Last Modified: Thu, 09 Apr 2026 23:15:18 GMT  
-		Size: 30.8 KB (30800 bytes)  
+	-	`sha256:004cecbd51710f917a4a089cecc51490d929da9b6455b182df183f302162c8c3`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
+		Size: 30.8 KB (30801 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2.9` - linux; 386
 
 ```console
-$ docker pull composer@sha256:51be144016efe9d3107ff1c265d4ef128d4aade4f46e4a8547dbb32829126922
+$ docker pull composer@sha256:5059aa7f8aeb8fd9ad00e166cfc4504d01b632d5c987150dfde3e7167b11e492
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.0 MB (82044136 bytes)**  
+-	Total Size: **82.5 MB (82480079 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7922054a8378b96c0d850297147a3264b1a096f35d4e21d00e214f0f7d179c3`
+-	Image ID: `sha256:05da3dd80cd6d3c296bb9f77ac1d48716d0282b354fc840118af6947f2db6dbd`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -3332,25 +4629,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Fri, 10 Apr 2026 00:16:54 GMT
 CMD ["php" "-a"]
-# Fri, 10 Apr 2026 03:30:11 GMT
+# Tue, 14 Apr 2026 18:19:28 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Fri, 10 Apr 2026 03:30:11 GMT
+# Tue, 14 Apr 2026 18:19:28 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:47 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:47 GMT
 ENV COMPOSER_HOME=/tmp
-# Fri, 10 Apr 2026 03:30:30 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:47 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:19:47 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:48 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:48 GMT
 WORKDIR /app
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:48 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:48 GMT
 CMD ["composer"]
 ```
 
@@ -3391,61 +4688,61 @@ CMD ["composer"]
 		Last Modified: Fri, 10 Apr 2026 00:17:04 GMT  
 		Size: 23.6 KB (23625 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:264bb3f93a83fd21be54144943c4bd2326d7e8faee5725cfb429412510b81bf5`  
-		Last Modified: Fri, 10 Apr 2026 03:30:39 GMT  
-		Size: 33.4 MB (33353250 bytes)  
+	-	`sha256:fb92bca6a7200abd5ed57acbc2406d1b631ce897e9fcb8321df6d6ad30cb6114`  
+		Last Modified: Tue, 14 Apr 2026 18:19:58 GMT  
+		Size: 33.4 MB (33354023 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35d2c4367b9165d857f66acabab09744031c0e80be9bed3f29c30f3a3ed317e6`  
-		Last Modified: Fri, 10 Apr 2026 03:30:39 GMT  
-		Size: 257.0 B  
+	-	`sha256:3acb4361787726cd8ad52c3d9467b84e1d1aa7dfe6414e7e3be8d2816cc76617`  
+		Last Modified: Tue, 14 Apr 2026 18:19:57 GMT  
+		Size: 256.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d8bdcb9bb948a7198d374e5bcfd725598a7e1e09ffe81ff2937bd6b83a957f1`  
-		Last Modified: Fri, 10 Apr 2026 03:30:39 GMT  
-		Size: 1.2 MB (1247708 bytes)  
+	-	`sha256:9241059ece99827922266cdf5f4d2003877d75ddf68699cd4c70ce7987a21836`  
+		Last Modified: Tue, 14 Apr 2026 18:19:57 GMT  
+		Size: 1.7 MB (1682879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fccaa5c05839bcf1bbf0c74a21d946d8c32b920c1a51579645e326e3e70f5847`  
-		Last Modified: Fri, 10 Apr 2026 03:30:39 GMT  
+	-	`sha256:69641c04f229a2ab6016f07abf23bea732612f28baf219fd9fcf0c899d7617e5`  
+		Last Modified: Tue, 14 Apr 2026 18:19:42 GMT  
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6128f3407a8386a4c5d982cbf8496044bde218003d5c6f9c44e2fe57524edf24`  
-		Last Modified: Fri, 10 Apr 2026 03:30:40 GMT  
+	-	`sha256:67f4289f14f4bb7e5b1629ac4c78856e0c3b60c94f52f95daa671e1a219d5df8`  
+		Last Modified: Tue, 14 Apr 2026 18:19:59 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2.9` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:5a6ef4b3bc4c8ef26afcb79dc9cf9e9156a44a20f4f6987fd0930bfa791c2ffa
+$ docker pull composer@sha256:c254802094079f1308563379ad369533970752e4908cfa224d9e97811d3d39ff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.2 MB (2211056 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e78c0e30842c7be21a79d4c4a2c37f23a826478ad9e74069fcb7b3b4a058a625`
+-	Image ID: `sha256:b4ce198e58e85ea5dc923b1568aaa064676ae0112aaf5ac90c6cc3e58fdc12bf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a69fecf1ebec9c87958269f311b28ab10d67044d90456550137a5004ea2473c`  
-		Last Modified: Fri, 10 Apr 2026 03:30:39 GMT  
+	-	`sha256:340334093e4da71051f77042453963dbc6f4fd36456e9b67f499e0b94970d025`  
+		Last Modified: Tue, 14 Apr 2026 18:19:57 GMT  
 		Size: 2.2 MB (2180425 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6a2ab5e4abe1589c45a291c89ed1647413951799b6c3b99b69a0ceff6580122e`  
-		Last Modified: Fri, 10 Apr 2026 03:30:38 GMT  
+	-	`sha256:47bf377a779ae13fd18570cc75e3fe8f0a691c683d330c3c388994b1f8641121`  
+		Last Modified: Tue, 14 Apr 2026 18:19:57 GMT  
 		Size: 30.6 KB (30631 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2.9` - linux; ppc64le
 
 ```console
-$ docker pull composer@sha256:00ec0805030fde6ed8f1ff7bb10346e7b4d4a7deebf9987c9c39c1e566a30a23
+$ docker pull composer@sha256:6b0debe85067d180c3dca5be15549aa709e405e5c6da97f106b302afa0be7b3d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.4 MB (83375909 bytes)**  
+-	Total Size: **96.7 MB (96713081 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7681058a2ea18d7cb7f87614244ec8fdb1739b9f1faa5d5862130c3645734c60`
+-	Image ID: `sha256:8d658b5ad399d03987449b91b37ae36fb531e2591aba9b560f1469876bcd1472`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -3496,21 +4793,21 @@ CMD ["php" "-a"]
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
 # Fri, 10 Apr 2026 00:21:07 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Fri, 10 Apr 2026 00:21:53 GMT
+# Tue, 14 Apr 2026 18:19:02 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Fri, 10 Apr 2026 00:21:53 GMT
+# Tue, 14 Apr 2026 18:19:02 GMT
 ENV COMPOSER_HOME=/tmp
-# Fri, 10 Apr 2026 00:21:53 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Fri, 10 Apr 2026 00:21:53 GMT
+# Tue, 14 Apr 2026 18:19:02 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:19:02 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Fri, 10 Apr 2026 00:21:55 GMT
+# Tue, 14 Apr 2026 18:19:05 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Fri, 10 Apr 2026 00:21:55 GMT
+# Tue, 14 Apr 2026 18:19:09 GMT
 WORKDIR /app
-# Fri, 10 Apr 2026 00:21:55 GMT
+# Tue, 14 Apr 2026 18:19:09 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 10 Apr 2026 00:21:55 GMT
+# Tue, 14 Apr 2026 18:19:09 GMT
 CMD ["composer"]
 ```
 
@@ -3559,53 +4856,53 @@ CMD ["composer"]
 		Last Modified: Fri, 10 Apr 2026 00:22:17 GMT  
 		Size: 256.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b31fa43b3f93f0b76d992020dac29d95d3fa7f480405a5b90e321db6fd87ffe8`  
-		Last Modified: Fri, 10 Apr 2026 00:22:18 GMT  
-		Size: 4.1 MB (4074208 bytes)  
+	-	`sha256:efaac84e88b2da4e607702934bba5a10ee9d45974d858538b478a29b89842e33`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
+		Size: 17.4 MB (17411381 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68c3cab8a1118927127f6fee35a4a0c6166a96e6487f9bcdb1c573a9fb7a073a`  
-		Last Modified: Fri, 10 Apr 2026 00:22:17 GMT  
-		Size: 420.0 B  
+	-	`sha256:1e029883ecefeeaf8733085cd8e526dfbbca7e594b984c759f9d554d542181f0`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
+		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f4be6c0b727f62cac62e8d3426b5c7c0666f501c164de8162435b1fee3f92e7`  
-		Last Modified: Fri, 10 Apr 2026 00:22:18 GMT  
+	-	`sha256:aebb4782c2d3dfa3ac371b8a44cd1f51c8cca8d476ce08683daefb52097b9bf7`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2.9` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:418efe1daaf6e19d2e3f144eaed10be2bd2fdff4e4c67a20591cf53112600e10
+$ docker pull composer@sha256:b96e3b5bce750eb3282de808dd8aafbf3a051c5f80e3f716df031de690321657
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2211212 bytes)**  
+-	Total Size: **2.2 MB (2211215 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef65904f54fee01dac863ce2cb02144840b5a614ea062747eebdd25f7f23d07a`
+-	Image ID: `sha256:5342929d05c922fd2d787aa2179debfaee17cdccf8781a7e329e1d3d484d07f1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4cfd9c9f57c13ffbbad3b79a33ac68fdd95b8413890ad74619f5187859d6090b`  
-		Last Modified: Fri, 10 Apr 2026 00:22:17 GMT  
+	-	`sha256:fc050012567990ae6904da1426da82a6cc21eeb168d8d2fa9b316fe513258f54`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
 		Size: 2.2 MB (2180498 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a7dc3a56af04734990d9219060ae7663ef8f8657234c743b3429ef705973583a`  
-		Last Modified: Fri, 10 Apr 2026 00:22:17 GMT  
-		Size: 30.7 KB (30714 bytes)  
+	-	`sha256:6dc4ab7a528f883fc6476f1d2c72c9454b32b1cd4fefe0ac8fb1da3fec8e6c44`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
+		Size: 30.7 KB (30717 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2.9` - linux; riscv64
 
 ```console
-$ docker pull composer@sha256:2e28d405174601c8353950eaf4aedc5abc983797ee1c850e8ce332acfad093dc
+$ docker pull composer@sha256:600f68dee998197590fbadd5f49b007afb10faf4f15287a315a79fa198635908
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.1 MB (78090898 bytes)**  
+-	Total Size: **78.1 MB (78108283 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8ac9098f7cec9c987591cd2e39c3d6cddbe95990429f1a1c7e16690f470bdfa`
+-	Image ID: `sha256:abd844ec36780aac229ca2fdb372bcc3b96fc3ad9a0c8de0b25c8458b53af256`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -3656,21 +4953,21 @@ CMD ["php" "-a"]
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
 # Sun, 12 Apr 2026 09:33:49 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
 ENV COMPOSER_HOME=/tmp
-# Sun, 12 Apr 2026 09:37:19 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:22:48 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
 WORKDIR /app
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
 CMD ["composer"]
 ```
 
@@ -3719,53 +5016,53 @@ CMD ["composer"]
 		Last Modified: Sun, 12 Apr 2026 09:38:52 GMT  
 		Size: 258.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de63d88390efbbd37f89ee6ed90696a2424afb852a8f76c1ddc63a2da87f6dea`  
-		Last Modified: Sun, 12 Apr 2026 09:38:53 GMT  
-		Size: 4.3 MB (4284938 bytes)  
+	-	`sha256:849fae3a43556661d0d79306c12a48046432673ac49917b14937307d36a24458`  
+		Last Modified: Tue, 14 Apr 2026 18:24:04 GMT  
+		Size: 4.3 MB (4302324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49dba59a7a2de417f4fe767e3305854a809068a0e54dda038e3455ef84b74c48`  
-		Last Modified: Sun, 12 Apr 2026 09:38:52 GMT  
-		Size: 419.0 B  
+	-	`sha256:01efda7965080036e2b76754ef2276308322ed2394f97d073063348bded60a09`  
+		Last Modified: Tue, 14 Apr 2026 18:24:03 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fd2d28ee22449b9e873c12cbf9d45377da2060c5aaa6457472c507a8cd6ddf8`  
-		Last Modified: Sun, 12 Apr 2026 09:38:54 GMT  
+	-	`sha256:0f5997a67e70609c3ecf2d0c94e158584b948e5f7e90a85dd896325c6db3a7ed`  
+		Last Modified: Tue, 14 Apr 2026 18:22:53 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2.9` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:389510811e158c72b3440515bee98c80e327aa35b7756e7693fcbe13430080d0
+$ docker pull composer@sha256:55155328eaf6b4a8b732344c31723c0e2e7026edb1151e056f7260b0c23793eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2210154 bytes)**  
+-	Total Size: **2.2 MB (2210153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:388623d8ff7a325189378e3e66af43fd2d42dabd421d6b6fa71b67c1d3a7c366`
+-	Image ID: `sha256:baabb88b9e58574b8449e58ff8e49bdd472dd2b4eac9aec0cd90224e32a110f8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a615a9f6c5f92b7b686873aa72f3e18034f89549b413d3026a5862f04d9d689d`  
-		Last Modified: Sun, 12 Apr 2026 09:38:52 GMT  
+	-	`sha256:14f5989ff5313284e35f85efde25d95ba6cf9e9207afa6539c85ba5cfebf3e22`  
+		Last Modified: Tue, 14 Apr 2026 18:24:03 GMT  
 		Size: 2.2 MB (2179439 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d4c0567918027a1377910c87b5b8f8f98f6a66bae71834e0e75cc20dba3104d1`  
-		Last Modified: Sun, 12 Apr 2026 09:38:52 GMT  
-		Size: 30.7 KB (30715 bytes)  
+	-	`sha256:d12e5da0f5f9cce27555430a40d6dc9e18c54764d62f13fed79c09c33cdd6769`  
+		Last Modified: Tue, 14 Apr 2026 18:24:03 GMT  
+		Size: 30.7 KB (30714 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:2.9` - linux; s390x
 
 ```console
-$ docker pull composer@sha256:58b97cba0c77cf06d404693fb746289f0d88bd3755c3eae8d2fdf27d3d951c45
+$ docker pull composer@sha256:1f94545e77b0a527f486fd42ce1a3ed8e347a32e951166e75e667c9a8b9c5055
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.9 MB (79948174 bytes)**  
+-	Total Size: **93.2 MB (93248850 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:675c2c3642bef66a776afe0150e8f1c203b8030b0c76c200de582d6d6e07a957`
+-	Image ID: `sha256:cc4e000a0f721a102b5621d79143082167c85fe36cbab314eff8808e5f343a36`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -3816,21 +5113,21 @@ CMD ["php" "-a"]
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
 # Thu, 09 Apr 2026 23:18:42 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:19:04 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:19:04 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:19:04 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Thu, 09 Apr 2026 23:19:04 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:19:36 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:19:05 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:19:05 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:19:05 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:19:05 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 CMD ["composer"]
 ```
 
@@ -3879,51 +5176,1348 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 23:19:20 GMT  
 		Size: 257.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b9f25cd6120fd706d78f3466d6de459d6be294d56100ac31f0a04ed40c3822e`  
-		Last Modified: Thu, 09 Apr 2026 23:19:20 GMT  
-		Size: 4.0 MB (4016878 bytes)  
+	-	`sha256:cdd4c500e9eb181938a1ef4ef73f183e9b27420814a10ea55b06e736b40bf16a`  
+		Last Modified: Tue, 14 Apr 2026 18:19:51 GMT  
+		Size: 17.3 MB (17317554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89aca6b805f4520b30bccd54134f111fdece5338deac037abca9b5d0d1697afc`  
-		Last Modified: Thu, 09 Apr 2026 23:19:20 GMT  
+	-	`sha256:8bc53ab4bbf74e12a9c7818288fc97c9f60326574f248c11959ba84015cc1ee0`  
+		Last Modified: Tue, 14 Apr 2026 18:19:51 GMT  
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ec187884818743865caae146e7434c75eee078d70bf482caa942f8af18a6bbc4`  
-		Last Modified: Thu, 09 Apr 2026 23:19:21 GMT  
+	-	`sha256:35c73a8be0d813065a838fdca97a14527a4ee7e1530e35f656f93a424f4d7c27`  
+		Last Modified: Tue, 14 Apr 2026 18:19:42 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:2.9` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:127cd4b719f3d7f1d5680711bf696e3a88a00f1d02550ad9f452d0efa181c92a
+$ docker pull composer@sha256:0bc79feb6a333a11cc49a0e80b8edad445b1bc590d108776ee1d1f9cba4c69b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2209888 bytes)**  
+-	Total Size: **2.2 MB (2209891 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57a7a701ec1570fa3bab06acbd00b4d5885f8c42f06f1761ffd2a5831535c408`
+-	Image ID: `sha256:e15343c996740440561a353bfba972b4a6752dff34802d7eb98b3923520488bd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ff8070e9aa7ac9125bd915c8c8268a4fa42fbd487e80da8dc204aa6da3b3f031`  
-		Last Modified: Thu, 09 Apr 2026 23:19:20 GMT  
+	-	`sha256:10647c8aceb5f18307cac8578a92f75dc319b2558c6f7cfcacc86be9c1ffd2ee`  
+		Last Modified: Tue, 14 Apr 2026 18:19:50 GMT  
 		Size: 2.2 MB (2179221 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2add8498849a95096ed6b099f50fbb7b7c4f5291cab0b610e62323dfc19d2df9`  
-		Last Modified: Thu, 09 Apr 2026 23:19:20 GMT  
-		Size: 30.7 KB (30667 bytes)  
+	-	`sha256:6ceacdd28fffe318712ca3aebf2993293f60ba3f21a55c590b010d01ac5e20b8`  
+		Last Modified: Tue, 14 Apr 2026 18:19:50 GMT  
+		Size: 30.7 KB (30670 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `composer:2.9.7`
 
-**does not exist** (yet?)
+```console
+$ docker pull composer@sha256:97051b5ca53613b16f920a3ec970c6510113897a9a0e56cbbaf146ca75f60f4c
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 16
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm variant v6
+	-	unknown; unknown
+	-	linux; arm variant v7
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+	-	linux; 386
+	-	unknown; unknown
+	-	linux; ppc64le
+	-	unknown; unknown
+	-	linux; riscv64
+	-	unknown; unknown
+	-	linux; s390x
+	-	unknown; unknown
+
+### `composer:2.9.7` - linux; amd64
+
+```console
+$ docker pull composer@sha256:6831e1267924c4a680b36b7963cb7914a9bb09ca67f47f4c55d3b2588bb7b20f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **82.3 MB (82295138 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9b937e0bed4668eb643fa8f083b674431c0d175c794bcc3609b7e561053fb196`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["composer"]`
+
+```dockerfile
+# Wed, 28 Jan 2026 01:18:04 GMT
+ADD alpine-minirootfs-3.23.3-x86_64.tar.gz / # buildkit
+# Wed, 28 Jan 2026 01:18:04 GMT
+CMD ["/bin/sh"]
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
+# Thu, 09 Apr 2026 22:12:28 GMT
+RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
+# Thu, 09 Apr 2026 22:12:28 GMT
+RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Thu, 09 Apr 2026 22:12:28 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_VERSION=8.5.5
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2
+# Thu, 09 Apr 2026 22:12:32 GMT
+RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
+# Thu, 09 Apr 2026 22:12:32 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:15:31 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 			; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Thu, 09 Apr 2026 22:15:31 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:15:32 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Thu, 09 Apr 2026 22:15:32 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Thu, 09 Apr 2026 22:15:32 GMT
+CMD ["php" "-a"]
+# Tue, 14 Apr 2026 18:17:29 GMT
+RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
+# Tue, 14 Apr 2026 18:17:29 GMT
+RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
+# Tue, 14 Apr 2026 18:17:48 GMT
+ENV COMPOSER_ALLOW_SUPERUSER=1
+# Tue, 14 Apr 2026 18:17:48 GMT
+ENV COMPOSER_HOME=/tmp
+# Tue, 14 Apr 2026 18:17:48 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:17:48 GMT
+RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
+# Tue, 14 Apr 2026 18:17:48 GMT
+COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
+# Tue, 14 Apr 2026 18:17:48 GMT
+WORKDIR /app
+# Tue, 14 Apr 2026 18:17:48 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Tue, 14 Apr 2026 18:17:48 GMT
+CMD ["composer"]
+```
+
+-	Layers:
+	-	`sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6ee0f8eaa0285cc21ac153`  
+		Last Modified: Wed, 28 Jan 2026 01:18:09 GMT  
+		Size: 3.9 MB (3861821 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e94097f1c1bf898f02421ec14dc47a5266903225d50ba7540733edaf01dd3c2f`  
+		Last Modified: Thu, 09 Apr 2026 22:15:40 GMT  
+		Size: 3.6 MB (3591773 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ccef8ef58d0d2684c7ba8f5e2aa002162cb05bac20e4aaa9604516a35c502817`  
+		Last Modified: Thu, 09 Apr 2026 22:15:40 GMT  
+		Size: 933.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f1d20b07f5f5847265819ed4e25a4c68fcb770d468367b0533ed57947c9799a4`  
+		Last Modified: Thu, 09 Apr 2026 22:15:40 GMT  
+		Size: 214.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:90453edd65cd9a234d8d2650b7c7d3db9cdc8bb745be44c9ee8bde649de0cb88`  
+		Last Modified: Thu, 09 Apr 2026 22:15:40 GMT  
+		Size: 14.4 MB (14379277 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:29e695e9a724ff2c86fb7c9f5a46c9d7abf168a0cb33f35ec8f749c6dfdff910`  
+		Last Modified: Thu, 09 Apr 2026 22:15:41 GMT  
+		Size: 487.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e68a9f584879ca34f693a09f59ab03009fa9014e5ecd2a796655f364152154bf`  
+		Last Modified: Thu, 09 Apr 2026 22:15:41 GMT  
+		Size: 23.0 MB (23002368 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:367e268d3bd7dac87362f7dee169fce9990d079638d685b1913d037c0ff9ae33`  
+		Last Modified: Thu, 09 Apr 2026 22:15:41 GMT  
+		Size: 2.4 KB (2449 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:631484828d1bffcdede48605d5975d227b17c3a153854af99b93800963860ad9`  
+		Last Modified: Thu, 09 Apr 2026 22:15:41 GMT  
+		Size: 23.6 KB (23583 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ac4568126a4e8983af81719a57437ee6ff5aad920af0340db28529977ea91d6b`  
+		Last Modified: Tue, 14 Apr 2026 18:17:59 GMT  
+		Size: 32.8 MB (32829097 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b8083645afae32266131920c3d7eb39891e44ee5e662f6ba12625430b1f63424`  
+		Last Modified: Tue, 14 Apr 2026 18:17:57 GMT  
+		Size: 260.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:777a820e754516716a459f5ea53530c7bb8b44ecd7c0c75c672b7d46b53c9654`  
+		Last Modified: Tue, 14 Apr 2026 18:17:58 GMT  
+		Size: 4.6 MB (4602365 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a92de384986fb1f77474533112a7ce2919285f0d09c30aab81ae535ff0aba6cc`  
+		Last Modified: Tue, 14 Apr 2026 18:17:58 GMT  
+		Size: 418.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ac79c6f82514103d437b10c68165bcfa5a61cfb3bc81cb8e910e796a0dee183c`  
+		Last Modified: Tue, 14 Apr 2026 18:17:59 GMT  
+		Size: 93.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `composer:2.9.7` - unknown; unknown
+
+```console
+$ docker pull composer@sha256:ee00b542afdd2a27036af0cbd82a4253954b9b64cc0f09f848564315e015ea75
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.2 MB (2211307 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d8203a2bfd877820004ce1a6d294f600aa02641b8321acbe0ebec7f012e93adb`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:128dc41da46e86602161c5959ee81ac033975e865de3301a91665ad88755c037`  
+		Last Modified: Tue, 14 Apr 2026 18:17:57 GMT  
+		Size: 2.2 MB (2180640 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:86478cd97ce76ef38fbb5db11ca2460e00316caafd6b587b503eb065936dffc6`  
+		Last Modified: Tue, 14 Apr 2026 18:17:57 GMT  
+		Size: 30.7 KB (30667 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `composer:2.9.7` - linux; arm variant v6
+
+```console
+$ docker pull composer@sha256:42b5ab08f93a7776a252ff6af611370f95606dd6bfdabcb827e28d492a76d90c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **78.5 MB (78461847 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1eef3072ff95c35656312c430f28ffb549db3063573258ab858c40b56c104e87`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["composer"]`
+
+```dockerfile
+# Wed, 28 Jan 2026 01:17:52 GMT
+ADD alpine-minirootfs-3.23.3-armhf.tar.gz / # buildkit
+# Wed, 28 Jan 2026 01:17:52 GMT
+CMD ["/bin/sh"]
+# Thu, 09 Apr 2026 22:11:27 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
+# Thu, 09 Apr 2026 22:11:27 GMT
+RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
+# Thu, 09 Apr 2026 22:11:27 GMT
+RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
+# Thu, 09 Apr 2026 22:11:27 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Thu, 09 Apr 2026 22:11:27 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Thu, 09 Apr 2026 22:11:27 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 09 Apr 2026 22:11:27 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 09 Apr 2026 22:11:27 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Thu, 09 Apr 2026 22:11:27 GMT
+ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
+# Thu, 09 Apr 2026 22:11:27 GMT
+ENV PHP_VERSION=8.5.5
+# Thu, 09 Apr 2026 22:11:27 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc
+# Thu, 09 Apr 2026 22:11:27 GMT
+ENV PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2
+# Thu, 09 Apr 2026 22:11:31 GMT
+RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
+# Thu, 09 Apr 2026 22:11:31 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:14:33 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 			; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Thu, 09 Apr 2026 22:14:33 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:14:34 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Thu, 09 Apr 2026 22:14:34 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Thu, 09 Apr 2026 22:14:34 GMT
+CMD ["php" "-a"]
+# Tue, 14 Apr 2026 18:18:32 GMT
+RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
+# Tue, 14 Apr 2026 18:18:32 GMT
+RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
+# Tue, 14 Apr 2026 18:18:58 GMT
+ENV COMPOSER_ALLOW_SUPERUSER=1
+# Tue, 14 Apr 2026 18:18:58 GMT
+ENV COMPOSER_HOME=/tmp
+# Tue, 14 Apr 2026 18:18:58 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:18:58 GMT
+RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
+# Tue, 14 Apr 2026 18:18:58 GMT
+COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
+# Tue, 14 Apr 2026 18:18:58 GMT
+WORKDIR /app
+# Tue, 14 Apr 2026 18:18:58 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Tue, 14 Apr 2026 18:18:58 GMT
+CMD ["composer"]
+```
+
+-	Layers:
+	-	`sha256:f067a9ad7b3a4e3b687105344f6ad0934a0623c4359c2d841a3d4fab27e26060`  
+		Last Modified: Wed, 28 Jan 2026 01:17:56 GMT  
+		Size: 3.6 MB (3569821 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a3a4dc4970270bf4f15bb24e692f20607636e6743f40cfa66d01531f5319fb28`  
+		Last Modified: Thu, 09 Apr 2026 22:14:40 GMT  
+		Size: 3.5 MB (3548746 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e129abfd69dfd79358ebf9b83a11028547be00a7a3271d77063c0c448a988bfc`  
+		Last Modified: Thu, 09 Apr 2026 22:14:40 GMT  
+		Size: 933.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2ac6b529b8df346add8d5af6de7aad2ab2c46608903288d600d8245578abd3c1`  
+		Last Modified: Thu, 09 Apr 2026 22:14:40 GMT  
+		Size: 222.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a9bd67c665518d75fabc40abbb2d2ff9ab0437944c9cbe73026a388e40a3ad1a`  
+		Last Modified: Thu, 09 Apr 2026 22:14:40 GMT  
+		Size: 14.4 MB (14379287 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1b6aea5959183c8bdbd6c384dae47f74bb9c397f5dc89892029a8d2eeb564e3f`  
+		Last Modified: Thu, 09 Apr 2026 22:14:41 GMT  
+		Size: 486.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:35d40fceac132065a91c8b2abf315c2876b183b0c8290513b43015d1a46d283f`  
+		Last Modified: Thu, 09 Apr 2026 22:14:42 GMT  
+		Size: 20.0 MB (20001589 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:49df59235c6605ce311a418c6cccaf9c39480fc3903a169b8458379ec93ce3e1`  
+		Last Modified: Thu, 09 Apr 2026 22:14:41 GMT  
+		Size: 2.5 KB (2451 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e4fd3150604b7a3239470a3693295865298bd4290730a49b7aaa788b4b51f106`  
+		Last Modified: Thu, 09 Apr 2026 22:14:42 GMT  
+		Size: 23.4 KB (23405 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:456c9909eae7754cbdb5abf1910a07254de4c28117fad83f54361ff5992b7cc8`  
+		Last Modified: Tue, 14 Apr 2026 18:19:06 GMT  
+		Size: 32.7 MB (32666304 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3f2ac7068ea46a8cad6b04730031a92cdf0a2c82943308c2445b4b3bfb3b61ae`  
+		Last Modified: Tue, 14 Apr 2026 18:19:05 GMT  
+		Size: 259.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9243233de423e41092205cff54f31f06ed50b369e5c0ac635be8d54c91faa2f6`  
+		Last Modified: Tue, 14 Apr 2026 18:19:05 GMT  
+		Size: 4.3 MB (4267832 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:cd76a36b321ba2cbdf2c18b2f483b7556fc3c67bcf48a42eebcbb8ecaa79ac5d`  
+		Last Modified: Tue, 14 Apr 2026 18:19:05 GMT  
+		Size: 419.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:313b2a5816631d2e1dd9f29597ed589c59afe33a708b0edd9e8b5b53b53b71b9`  
+		Last Modified: Tue, 14 Apr 2026 18:19:06 GMT  
+		Size: 93.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `composer:2.9.7` - unknown; unknown
+
+```console
+$ docker pull composer@sha256:a612bca8961914475793f1cc12673bc733e3e30975bbe0447cc6cef74d4eae6e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **30.6 KB (30558 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4902477b1c1d79e9a92e75c1c985b7fcc1f11c9897b798b4c71bbe9da2195994`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:257cbcbdf5518823fda62b94d1069bd1beaecace4115bbcd15240d9017176baf`  
+		Last Modified: Tue, 14 Apr 2026 18:19:04 GMT  
+		Size: 30.6 KB (30558 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `composer:2.9.7` - linux; arm variant v7
+
+```console
+$ docker pull composer@sha256:a2e1201a4b434919271c712678b5c8e4c243a9bcb3d522da04594fed18383601
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **75.0 MB (75025755 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c19c70269f301855e5f51696300cb0dd99b177e589f1e635686d0339f7551abd`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["composer"]`
+
+```dockerfile
+# Wed, 28 Jan 2026 01:18:44 GMT
+ADD alpine-minirootfs-3.23.3-armv7.tar.gz / # buildkit
+# Wed, 28 Jan 2026 01:18:44 GMT
+CMD ["/bin/sh"]
+# Thu, 09 Apr 2026 22:16:13 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
+# Thu, 09 Apr 2026 22:16:13 GMT
+RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
+# Thu, 09 Apr 2026 22:16:13 GMT
+RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
+# Thu, 09 Apr 2026 22:16:13 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Thu, 09 Apr 2026 22:16:14 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Thu, 09 Apr 2026 22:16:14 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 09 Apr 2026 22:16:14 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 09 Apr 2026 22:16:14 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Thu, 09 Apr 2026 22:16:14 GMT
+ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
+# Thu, 09 Apr 2026 22:16:14 GMT
+ENV PHP_VERSION=8.5.5
+# Thu, 09 Apr 2026 22:16:14 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc
+# Thu, 09 Apr 2026 22:16:14 GMT
+ENV PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2
+# Thu, 09 Apr 2026 22:16:18 GMT
+RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
+# Thu, 09 Apr 2026 22:16:18 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:19:30 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 			; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Thu, 09 Apr 2026 22:19:30 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:19:31 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Thu, 09 Apr 2026 22:19:31 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Thu, 09 Apr 2026 22:19:31 GMT
+CMD ["php" "-a"]
+# Tue, 14 Apr 2026 18:17:27 GMT
+RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
+# Tue, 14 Apr 2026 18:17:27 GMT
+RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
+# Tue, 14 Apr 2026 18:17:53 GMT
+ENV COMPOSER_ALLOW_SUPERUSER=1
+# Tue, 14 Apr 2026 18:17:53 GMT
+ENV COMPOSER_HOME=/tmp
+# Tue, 14 Apr 2026 18:17:53 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:17:53 GMT
+RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
+# Tue, 14 Apr 2026 18:17:53 GMT
+COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
+# Tue, 14 Apr 2026 18:17:53 GMT
+WORKDIR /app
+# Tue, 14 Apr 2026 18:17:53 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Tue, 14 Apr 2026 18:17:53 GMT
+CMD ["composer"]
+```
+
+-	Layers:
+	-	`sha256:7ed661450d9b41ba25f81f6ef8649bb379f47471d21c4898a8a6a3e11b819220`  
+		Last Modified: Wed, 28 Jan 2026 01:18:50 GMT  
+		Size: 3.3 MB (3281724 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:183887b3c6d93b524a882eb77b3ec2a6a1837e1968c76e8e5f1fd7fb1873fe88`  
+		Last Modified: Thu, 09 Apr 2026 22:19:37 GMT  
+		Size: 3.3 MB (3347458 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4eceb1d525707fd1cb5f95177add52ffe0719a1e9d269e70d4eb3c059a001e4a`  
+		Last Modified: Thu, 09 Apr 2026 22:19:37 GMT  
+		Size: 930.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:39b59192c85cc47751731ef9c3567084d42be727034604e047769629ca3e8d6a`  
+		Last Modified: Thu, 09 Apr 2026 22:19:37 GMT  
+		Size: 220.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e8700141d239b58d021b936145b84fdf4358b7d0c3140d18ce77a8b4bf23c86d`  
+		Last Modified: Thu, 09 Apr 2026 22:19:38 GMT  
+		Size: 14.4 MB (14379287 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b4cd2fa8ba3621d1b7832f001ff01e64024f17fdd37d60f51a531f8db4c70ee6`  
+		Last Modified: Thu, 09 Apr 2026 22:19:38 GMT  
+		Size: 488.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:414c5642173b2968ae736cd59c41f4834d408be10dac95010189169b3ad0f1a4`  
+		Last Modified: Thu, 09 Apr 2026 22:19:39 GMT  
+		Size: 18.9 MB (18870405 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aa8e08489ba203b77c0899ac7f52a0ab546a8939999d4039293987f3287f259b`  
+		Last Modified: Thu, 09 Apr 2026 22:19:39 GMT  
+		Size: 2.4 KB (2448 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d052dbf2f6e97471c0eb3914ed3c425dc1d21bc06fa6a4d59a30638097426eef`  
+		Last Modified: Thu, 09 Apr 2026 22:19:40 GMT  
+		Size: 23.4 KB (23410 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8a63be5222c033e49c0b0ab2fb861b34a74a01b755699bfd7131f8ac60ef4078`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 31.1 MB (31095949 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7ef22a83fd441ef20be2944f2c2a3b60b0aaa91d854de9b13a4c50d00ebf5279`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
+		Size: 257.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:56949d23eda79baf6fd7f09de98362e08ff7bf64e8849bcabb9a6e2f4c4d6afb`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
+		Size: 4.0 MB (4022668 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9dd656ca101b55a63ad908f0e987ba026b8e346d38bf80f490c8213e337b5f74`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
+		Size: 418.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8a59db22cab798384fc9801339a3900c22762b61cb6350dc01072d6e77037fee`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 93.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `composer:2.9.7` - unknown; unknown
+
+```console
+$ docker pull composer@sha256:8ae07250715c8adacdee49f68335a2f03726ae61bc23c213c818f76498127ebd
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.2 MB (2211084 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3c0414c658b1eaadc671332e5ef010ff3e5532bf4903cbf37de530cd3f4c8119`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:2a08a0655434744241683c630df38f108a308ddf79325a3669b3ae96bda483f7`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
+		Size: 2.2 MB (2180311 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:decd009e4f03dcfec4e0310a6d9e53ba4eb5553b8df82d98526f2df7750f9733`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
+		Size: 30.8 KB (30773 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `composer:2.9.7` - linux; arm64 variant v8
+
+```console
+$ docker pull composer@sha256:90d74468001bfe32251948d171e65156b231f7f3f3488bfdeb8af939c4fc5ca9
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **82.3 MB (82264617 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:672986627c2c9f6a0aba130627ff344c10241897df399837f7cb9b39cbcbf794`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["composer"]`
+
+```dockerfile
+# Wed, 28 Jan 2026 01:18:09 GMT
+ADD alpine-minirootfs-3.23.3-aarch64.tar.gz / # buildkit
+# Wed, 28 Jan 2026 01:18:09 GMT
+CMD ["/bin/sh"]
+# Thu, 09 Apr 2026 22:12:27 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
+# Thu, 09 Apr 2026 22:12:27 GMT
+RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
+# Thu, 09 Apr 2026 22:12:28 GMT
+RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Thu, 09 Apr 2026 22:12:28 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_VERSION=8.5.5
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc
+# Thu, 09 Apr 2026 22:12:28 GMT
+ENV PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2
+# Thu, 09 Apr 2026 22:12:31 GMT
+RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
+# Thu, 09 Apr 2026 22:12:31 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:15:53 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 			; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Thu, 09 Apr 2026 22:15:53 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:15:54 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Thu, 09 Apr 2026 22:15:54 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Thu, 09 Apr 2026 22:15:54 GMT
+CMD ["php" "-a"]
+# Tue, 14 Apr 2026 18:17:33 GMT
+RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
+# Tue, 14 Apr 2026 18:17:33 GMT
+RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
+# Tue, 14 Apr 2026 18:17:53 GMT
+ENV COMPOSER_ALLOW_SUPERUSER=1
+# Tue, 14 Apr 2026 18:17:53 GMT
+ENV COMPOSER_HOME=/tmp
+# Tue, 14 Apr 2026 18:17:53 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:17:53 GMT
+RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
+# Tue, 14 Apr 2026 18:17:53 GMT
+COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
+# Tue, 14 Apr 2026 18:17:53 GMT
+WORKDIR /app
+# Tue, 14 Apr 2026 18:17:53 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Tue, 14 Apr 2026 18:17:53 GMT
+CMD ["composer"]
+```
+
+-	Layers:
+	-	`sha256:d8ad8cd72600f46cc068e16c39046ebc76526e41051f43a8c249884b200936c0`  
+		Last Modified: Wed, 28 Jan 2026 01:18:15 GMT  
+		Size: 4.2 MB (4197091 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5430766e93c0741f7a45019a298fa39df4adc31a6c8e3a918857d5c9f481fd79`  
+		Last Modified: Thu, 09 Apr 2026 22:16:02 GMT  
+		Size: 3.6 MB (3601875 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ccef8ef58d0d2684c7ba8f5e2aa002162cb05bac20e4aaa9604516a35c502817`  
+		Last Modified: Thu, 09 Apr 2026 22:15:40 GMT  
+		Size: 933.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f0ab3ae22b44d42a632d3b89887883b84506e7bc19fbec627c8edf0f887e8325`  
+		Last Modified: Thu, 09 Apr 2026 22:16:01 GMT  
+		Size: 220.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:770f3aeef1dea9c193f1ce2ac18244b9527c8e9358858ec5623b74d7edc26a63`  
+		Last Modified: Thu, 09 Apr 2026 22:16:02 GMT  
+		Size: 14.4 MB (14379274 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0cb0004e2202e670cbc096689781e1a39e84d79ce164c38b78f5de2e05a809ac`  
+		Last Modified: Thu, 09 Apr 2026 22:16:02 GMT  
+		Size: 485.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5d9008ab4d936d389891c5d92f6f167b042e41b99c0def8be44873e248b0231a`  
+		Last Modified: Thu, 09 Apr 2026 22:16:03 GMT  
+		Size: 22.2 MB (22178363 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1e35bb8c89ca8e3de22d54e19f5032ef636cddc58a95b5710d4ed566c1a667b0`  
+		Last Modified: Thu, 09 Apr 2026 22:16:03 GMT  
+		Size: 2.4 KB (2448 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7362ba4acfe6ed4242ab72e5ec39726e45e7bdea85637511f7156a7b39cc347c`  
+		Last Modified: Thu, 09 Apr 2026 22:16:03 GMT  
+		Size: 23.4 KB (23441 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:285ebfa4268e8a60fcb14bad51f63da6f60b8e8b79fc0d5bdc7b272bac34cdc9`  
+		Last Modified: Tue, 14 Apr 2026 18:18:04 GMT  
+		Size: 33.0 MB (32971912 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e481a251a9dd2ae932f1cd49809cabb48c84b5842f905e3cd318fb5f860efa48`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 258.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:607104842caf9031627e0561da94643dbd6e5a53fdf2ec68236e50e9785d2c1f`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 4.9 MB (4907805 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a0da1d1720bb544613f3a7ac195b9474bba4d0af56f95c4014dff71a3e36191b`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 419.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8a59db22cab798384fc9801339a3900c22762b61cb6350dc01072d6e77037fee`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 93.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `composer:2.9.7` - unknown; unknown
+
+```console
+$ docker pull composer@sha256:f9886027cfff443f88c11e204f27408769431ab8a4c40907ec0a1fd0c3fd8667
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.2 MB (2210942 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:755fa5560c7b510ecf888c7cd0c18f1e6400b62fc2791be2ba6a62a048715f3a`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:09c9515975e1f29265f024bb85736c52ec0dc5558513139c649880cb5dd96327`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 2.2 MB (2180141 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:004cecbd51710f917a4a089cecc51490d929da9b6455b182df183f302162c8c3`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
+		Size: 30.8 KB (30801 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `composer:2.9.7` - linux; 386
+
+```console
+$ docker pull composer@sha256:5059aa7f8aeb8fd9ad00e166cfc4504d01b632d5c987150dfde3e7167b11e492
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **82.5 MB (82480079 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:05da3dd80cd6d3c296bb9f77ac1d48716d0282b354fc840118af6947f2db6dbd`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["composer"]`
+
+```dockerfile
+# Wed, 28 Jan 2026 01:18:11 GMT
+ADD alpine-minirootfs-3.23.3-x86.tar.gz / # buildkit
+# Wed, 28 Jan 2026 01:18:11 GMT
+CMD ["/bin/sh"]
+# Fri, 10 Apr 2026 00:13:16 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
+# Fri, 10 Apr 2026 00:13:16 GMT
+RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
+# Fri, 10 Apr 2026 00:13:16 GMT
+RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
+# Fri, 10 Apr 2026 00:13:16 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Fri, 10 Apr 2026 00:13:16 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Fri, 10 Apr 2026 00:13:16 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Fri, 10 Apr 2026 00:13:16 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Fri, 10 Apr 2026 00:13:16 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Fri, 10 Apr 2026 00:13:16 GMT
+ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
+# Fri, 10 Apr 2026 00:13:16 GMT
+ENV PHP_VERSION=8.5.5
+# Fri, 10 Apr 2026 00:13:16 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc
+# Fri, 10 Apr 2026 00:13:16 GMT
+ENV PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2
+# Fri, 10 Apr 2026 00:13:20 GMT
+RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
+# Fri, 10 Apr 2026 00:13:20 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Fri, 10 Apr 2026 00:16:53 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 			; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Fri, 10 Apr 2026 00:16:53 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Fri, 10 Apr 2026 00:16:54 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Fri, 10 Apr 2026 00:16:54 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Fri, 10 Apr 2026 00:16:54 GMT
+CMD ["php" "-a"]
+# Tue, 14 Apr 2026 18:19:28 GMT
+RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
+# Tue, 14 Apr 2026 18:19:28 GMT
+RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
+# Tue, 14 Apr 2026 18:19:47 GMT
+ENV COMPOSER_ALLOW_SUPERUSER=1
+# Tue, 14 Apr 2026 18:19:47 GMT
+ENV COMPOSER_HOME=/tmp
+# Tue, 14 Apr 2026 18:19:47 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:19:47 GMT
+RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
+# Tue, 14 Apr 2026 18:19:48 GMT
+COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
+# Tue, 14 Apr 2026 18:19:48 GMT
+WORKDIR /app
+# Tue, 14 Apr 2026 18:19:48 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Tue, 14 Apr 2026 18:19:48 GMT
+CMD ["composer"]
+```
+
+-	Layers:
+	-	`sha256:18bdec7eea78464ecf9b88f4ec630eaeb694ea1c0101ecd9c20eda20c9065e23`  
+		Last Modified: Wed, 28 Jan 2026 01:18:16 GMT  
+		Size: 3.7 MB (3686998 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:62d2062b0536d4d6a1543e3a6bfd55452c7706979a7def0ad5ff0f3e183f183d`  
+		Last Modified: Fri, 10 Apr 2026 00:17:02 GMT  
+		Size: 5.9 MB (5909460 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7fb9b53f46bb29bde8242534cc51035c71b65536a0a0acada6428f7a8ba0889c`  
+		Last Modified: Fri, 10 Apr 2026 00:17:02 GMT  
+		Size: 933.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ab50b39601a88f935ec690047331c7481ff9b7ae2bb959cfc4cc98313c492986`  
+		Last Modified: Fri, 10 Apr 2026 00:17:02 GMT  
+		Size: 215.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:92225e063d6f653398ed45adcff1579a3a3cf3ccbe764a4bb5b301283ee3b2ee`  
+		Last Modified: Fri, 10 Apr 2026 00:17:02 GMT  
+		Size: 14.4 MB (14379292 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:78ccaecce131db93828716f892d3ad6e523dec70db239cc1bed3bb5394e8396c`  
+		Last Modified: Fri, 10 Apr 2026 00:17:03 GMT  
+		Size: 487.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:06e4efa73be7dce94cd5df6088620edcd50156eafe81c782274c129a7a3e191d`  
+		Last Modified: Fri, 10 Apr 2026 00:17:04 GMT  
+		Size: 23.4 MB (23438953 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ab8684032f9c15ecd79788e50ca55f90486d5bf79b5b3a24018772984e7a1cb5`  
+		Last Modified: Fri, 10 Apr 2026 00:17:04 GMT  
+		Size: 2.4 KB (2446 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aba72ff6334ace2c9a0d737cdf3c0fa9f61f267a07af45bf21e2ff77820277e5`  
+		Last Modified: Fri, 10 Apr 2026 00:17:04 GMT  
+		Size: 23.6 KB (23625 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fb92bca6a7200abd5ed57acbc2406d1b631ce897e9fcb8321df6d6ad30cb6114`  
+		Last Modified: Tue, 14 Apr 2026 18:19:58 GMT  
+		Size: 33.4 MB (33354023 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3acb4361787726cd8ad52c3d9467b84e1d1aa7dfe6414e7e3be8d2816cc76617`  
+		Last Modified: Tue, 14 Apr 2026 18:19:57 GMT  
+		Size: 256.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9241059ece99827922266cdf5f4d2003877d75ddf68699cd4c70ce7987a21836`  
+		Last Modified: Tue, 14 Apr 2026 18:19:57 GMT  
+		Size: 1.7 MB (1682879 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:69641c04f229a2ab6016f07abf23bea732612f28baf219fd9fcf0c899d7617e5`  
+		Last Modified: Tue, 14 Apr 2026 18:19:42 GMT  
+		Size: 419.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:67f4289f14f4bb7e5b1629ac4c78856e0c3b60c94f52f95daa671e1a219d5df8`  
+		Last Modified: Tue, 14 Apr 2026 18:19:59 GMT  
+		Size: 93.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `composer:2.9.7` - unknown; unknown
+
+```console
+$ docker pull composer@sha256:c254802094079f1308563379ad369533970752e4908cfa224d9e97811d3d39ff
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.2 MB (2211056 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b4ce198e58e85ea5dc923b1568aaa064676ae0112aaf5ac90c6cc3e58fdc12bf`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:340334093e4da71051f77042453963dbc6f4fd36456e9b67f499e0b94970d025`  
+		Last Modified: Tue, 14 Apr 2026 18:19:57 GMT  
+		Size: 2.2 MB (2180425 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:47bf377a779ae13fd18570cc75e3fe8f0a691c683d330c3c388994b1f8641121`  
+		Last Modified: Tue, 14 Apr 2026 18:19:57 GMT  
+		Size: 30.6 KB (30631 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `composer:2.9.7` - linux; ppc64le
+
+```console
+$ docker pull composer@sha256:6b0debe85067d180c3dca5be15549aa709e405e5c6da97f106b302afa0be7b3d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **96.7 MB (96713081 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8d658b5ad399d03987449b91b37ae36fb531e2591aba9b560f1469876bcd1472`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["composer"]`
+
+```dockerfile
+# Wed, 28 Jan 2026 01:17:01 GMT
+ADD alpine-minirootfs-3.23.3-ppc64le.tar.gz / # buildkit
+# Wed, 28 Jan 2026 01:17:01 GMT
+CMD ["/bin/sh"]
+# Thu, 12 Mar 2026 23:53:02 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
+# Thu, 12 Mar 2026 23:53:02 GMT
+RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
+# Thu, 12 Mar 2026 23:53:02 GMT
+RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
+# Thu, 12 Mar 2026 23:53:02 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Thu, 12 Mar 2026 23:53:02 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Thu, 12 Mar 2026 23:53:02 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 12 Mar 2026 23:53:02 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 12 Mar 2026 23:53:02 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Thu, 12 Mar 2026 23:53:02 GMT
+ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
+# Thu, 12 Mar 2026 23:53:02 GMT
+ENV PHP_VERSION=8.5.5
+# Thu, 12 Mar 2026 23:53:02 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc
+# Thu, 12 Mar 2026 23:53:02 GMT
+ENV PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2
+# Thu, 09 Apr 2026 22:33:42 GMT
+RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
+# Thu, 09 Apr 2026 22:33:43 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:38:28 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 			; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Thu, 09 Apr 2026 22:38:29 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:38:30 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Thu, 09 Apr 2026 22:38:30 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Thu, 09 Apr 2026 22:38:30 GMT
+CMD ["php" "-a"]
+# Fri, 10 Apr 2026 00:21:05 GMT
+RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
+# Fri, 10 Apr 2026 00:21:07 GMT
+RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
+# Tue, 14 Apr 2026 18:19:02 GMT
+ENV COMPOSER_ALLOW_SUPERUSER=1
+# Tue, 14 Apr 2026 18:19:02 GMT
+ENV COMPOSER_HOME=/tmp
+# Tue, 14 Apr 2026 18:19:02 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:19:02 GMT
+RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
+# Tue, 14 Apr 2026 18:19:05 GMT
+COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
+# Tue, 14 Apr 2026 18:19:09 GMT
+WORKDIR /app
+# Tue, 14 Apr 2026 18:19:09 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Tue, 14 Apr 2026 18:19:09 GMT
+CMD ["composer"]
+```
+
+-	Layers:
+	-	`sha256:532f7d227cfd697fe6a6f7bfe8c0cc7baa9d99d3d41d50d9b6394fdb6322f4aa`  
+		Last Modified: Wed, 28 Jan 2026 01:17:23 GMT  
+		Size: 3.8 MB (3829643 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a7db1cc7b26f64d5de44e75f81962c30dead7dbc1dae3ebb93d0dc3d0cea721a`  
+		Last Modified: Thu, 12 Mar 2026 23:58:51 GMT  
+		Size: 3.8 MB (3768852 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fd4a23ff5963c3f844b77db123769c733318f6ad54386c9f63e356424059470b`  
+		Last Modified: Thu, 12 Mar 2026 23:58:51 GMT  
+		Size: 933.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a071b7623ea30b2e8950858971a7e7838856db9c469a46b6305dcd619d0531fc`  
+		Last Modified: Thu, 12 Mar 2026 23:58:51 GMT  
+		Size: 221.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d012a34014d339e95156eab3252cc22fbae82a4670be3766b110c04e96ff1a17`  
+		Last Modified: Thu, 09 Apr 2026 22:38:45 GMT  
+		Size: 14.4 MB (14379301 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9b8b7c5afa56dcdf0f01aaba59b305697db6b72603309ba573605f5fcd422fc0`  
+		Last Modified: Thu, 09 Apr 2026 22:38:45 GMT  
+		Size: 494.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1971acbe5d44b0f37d3698908a5766cea69f16ef4c4472ca8a30f5d48eec93ec`  
+		Last Modified: Thu, 09 Apr 2026 22:38:46 GMT  
+		Size: 23.1 MB (23118163 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:51ee71922b29fe2228fde987804ee785c857383e7941a35e885bb5f06b7c3aba`  
+		Last Modified: Thu, 09 Apr 2026 22:38:45 GMT  
+		Size: 2.4 KB (2449 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8fbefb03f1cf2736ed7b9f334b7e8f2f16dbedad1876c833ba4682b99ca9f99a`  
+		Last Modified: Thu, 09 Apr 2026 22:38:46 GMT  
+		Size: 23.4 KB (23442 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:db29015527299944deffccc76c5bfb597208be66aea62b09cf37a0cef1bb364e`  
+		Last Modified: Fri, 10 Apr 2026 00:22:19 GMT  
+		Size: 34.2 MB (34177434 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:972a41e22feca9d4bfcc298283918766cb03ebb7dd146ebbded895c8b431c973`  
+		Last Modified: Fri, 10 Apr 2026 00:22:17 GMT  
+		Size: 256.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:efaac84e88b2da4e607702934bba5a10ee9d45974d858538b478a29b89842e33`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
+		Size: 17.4 MB (17411381 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1e029883ecefeeaf8733085cd8e526dfbbca7e594b984c759f9d554d542181f0`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
+		Size: 419.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aebb4782c2d3dfa3ac371b8a44cd1f51c8cca8d476ce08683daefb52097b9bf7`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
+		Size: 93.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `composer:2.9.7` - unknown; unknown
+
+```console
+$ docker pull composer@sha256:b96e3b5bce750eb3282de808dd8aafbf3a051c5f80e3f716df031de690321657
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.2 MB (2211215 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5342929d05c922fd2d787aa2179debfaee17cdccf8781a7e329e1d3d484d07f1`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:fc050012567990ae6904da1426da82a6cc21eeb168d8d2fa9b316fe513258f54`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
+		Size: 2.2 MB (2180498 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:6dc4ab7a528f883fc6476f1d2c72c9454b32b1cd4fefe0ac8fb1da3fec8e6c44`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
+		Size: 30.7 KB (30717 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `composer:2.9.7` - linux; riscv64
+
+```console
+$ docker pull composer@sha256:600f68dee998197590fbadd5f49b007afb10faf4f15287a315a79fa198635908
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **78.1 MB (78108283 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:abd844ec36780aac229ca2fdb372bcc3b96fc3ad9a0c8de0b25c8458b53af256`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["composer"]`
+
+```dockerfile
+# Wed, 28 Jan 2026 03:47:28 GMT
+ADD alpine-minirootfs-3.23.3-riscv64.tar.gz / # buildkit
+# Wed, 28 Jan 2026 03:47:28 GMT
+CMD ["/bin/sh"]
+# Wed, 28 Jan 2026 09:13:06 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
+# Wed, 28 Jan 2026 09:13:06 GMT
+RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
+# Wed, 28 Jan 2026 09:13:06 GMT
+RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
+# Wed, 28 Jan 2026 09:13:06 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Wed, 28 Jan 2026 09:13:07 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Wed, 28 Jan 2026 09:13:07 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Wed, 28 Jan 2026 09:13:07 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Wed, 28 Jan 2026 09:13:07 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Wed, 28 Jan 2026 09:13:07 GMT
+ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
+# Wed, 28 Jan 2026 09:13:07 GMT
+ENV PHP_VERSION=8.5.5
+# Wed, 28 Jan 2026 09:13:07 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc
+# Wed, 28 Jan 2026 09:13:07 GMT
+ENV PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2
+# Fri, 10 Apr 2026 09:29:21 GMT
+RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
+# Fri, 10 Apr 2026 09:29:21 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Fri, 10 Apr 2026 10:28:28 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 			; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Fri, 10 Apr 2026 10:28:28 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Fri, 10 Apr 2026 10:28:33 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Fri, 10 Apr 2026 10:28:33 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Fri, 10 Apr 2026 10:28:33 GMT
+CMD ["php" "-a"]
+# Sun, 12 Apr 2026 09:33:49 GMT
+RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
+# Sun, 12 Apr 2026 09:33:49 GMT
+RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
+# Tue, 14 Apr 2026 18:22:48 GMT
+ENV COMPOSER_ALLOW_SUPERUSER=1
+# Tue, 14 Apr 2026 18:22:48 GMT
+ENV COMPOSER_HOME=/tmp
+# Tue, 14 Apr 2026 18:22:48 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:22:48 GMT
+RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
+# Tue, 14 Apr 2026 18:22:48 GMT
+COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
+# Tue, 14 Apr 2026 18:22:48 GMT
+WORKDIR /app
+# Tue, 14 Apr 2026 18:22:48 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Tue, 14 Apr 2026 18:22:48 GMT
+CMD ["composer"]
+```
+
+-	Layers:
+	-	`sha256:9da5d16b2a566416844fd0c62fa81165037aa0b7f154a5c1f58f06412739471c`  
+		Last Modified: Wed, 28 Jan 2026 03:48:00 GMT  
+		Size: 3.6 MB (3585287 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e2d64a68485fdb9ab2ec4159ac3e04e0bb79d9f1d037e580e928ca2b9604180f`  
+		Last Modified: Wed, 28 Jan 2026 10:13:59 GMT  
+		Size: 3.7 MB (3741000 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b030c1b113432578231e8fe7c8a1bc913f2dc5dcba512e805fa9ab07768c9bd4`  
+		Last Modified: Wed, 28 Jan 2026 10:13:58 GMT  
+		Size: 933.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c32a0e9bcb36b34307b4eada1f50c1cd4244d43d19ee57d962818dcb0ff0b110`  
+		Last Modified: Wed, 28 Jan 2026 10:13:58 GMT  
+		Size: 222.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:20501e9e3d17b72af47b7d522d0c369998be222ed66ed9070ed2cbc45e500ca7`  
+		Last Modified: Fri, 10 Apr 2026 10:29:42 GMT  
+		Size: 14.4 MB (14379290 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0f7fa0bbe8ea35a7aeededb6a1c62d4e192d88a3cbaa6a9ac613390cef5f797e`  
+		Last Modified: Fri, 10 Apr 2026 10:29:38 GMT  
+		Size: 493.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3c00b6c348638ca2fb138534e98df3a83c5788350e7f682c5dab61388d5988a1`  
+		Last Modified: Fri, 10 Apr 2026 10:29:43 GMT  
+		Size: 20.8 MB (20772153 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ddf32615937490fdbee93796b59955ce07e051f019b76917819692421da228ef`  
+		Last Modified: Fri, 10 Apr 2026 10:29:38 GMT  
+		Size: 2.5 KB (2451 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:491cab84c5a842c690a34c22c4cfe20f23d7b27019ca9d80e387fd23ef96828d`  
+		Last Modified: Fri, 10 Apr 2026 10:29:39 GMT  
+		Size: 23.3 KB (23349 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e865e7a35bee8605e802d4714eef1a4cd079ed0b68a414c076e698d97cfbedd6`  
+		Last Modified: Sun, 12 Apr 2026 09:38:57 GMT  
+		Size: 31.3 MB (31300012 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:670c7192db5936f38910b865b3f6746b70a4b2523b1e25db7d274900db0fca4f`  
+		Last Modified: Sun, 12 Apr 2026 09:38:52 GMT  
+		Size: 258.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:849fae3a43556661d0d79306c12a48046432673ac49917b14937307d36a24458`  
+		Last Modified: Tue, 14 Apr 2026 18:24:04 GMT  
+		Size: 4.3 MB (4302324 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:01efda7965080036e2b76754ef2276308322ed2394f97d073063348bded60a09`  
+		Last Modified: Tue, 14 Apr 2026 18:24:03 GMT  
+		Size: 418.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0f5997a67e70609c3ecf2d0c94e158584b948e5f7e90a85dd896325c6db3a7ed`  
+		Last Modified: Tue, 14 Apr 2026 18:22:53 GMT  
+		Size: 93.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `composer:2.9.7` - unknown; unknown
+
+```console
+$ docker pull composer@sha256:55155328eaf6b4a8b732344c31723c0e2e7026edb1151e056f7260b0c23793eb
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.2 MB (2210153 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:baabb88b9e58574b8449e58ff8e49bdd472dd2b4eac9aec0cd90224e32a110f8`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:14f5989ff5313284e35f85efde25d95ba6cf9e9207afa6539c85ba5cfebf3e22`  
+		Last Modified: Tue, 14 Apr 2026 18:24:03 GMT  
+		Size: 2.2 MB (2179439 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:d12e5da0f5f9cce27555430a40d6dc9e18c54764d62f13fed79c09c33cdd6769`  
+		Last Modified: Tue, 14 Apr 2026 18:24:03 GMT  
+		Size: 30.7 KB (30714 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `composer:2.9.7` - linux; s390x
+
+```console
+$ docker pull composer@sha256:1f94545e77b0a527f486fd42ce1a3ed8e347a32e951166e75e667c9a8b9c5055
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **93.2 MB (93248850 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:cc4e000a0f721a102b5621d79143082167c85fe36cbab314eff8808e5f343a36`
+-	Entrypoint: `["\/docker-entrypoint.sh"]`
+-	Default Command: `["composer"]`
+
+```dockerfile
+# Wed, 28 Jan 2026 01:17:06 GMT
+ADD alpine-minirootfs-3.23.3-s390x.tar.gz / # buildkit
+# Wed, 28 Jan 2026 01:17:06 GMT
+CMD ["/bin/sh"]
+# Thu, 12 Mar 2026 23:37:17 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev dpkg 		file 		g++ 		gcc 		libc-dev 		make 		pkgconf 		re2c
+# Thu, 12 Mar 2026 23:37:17 GMT
+RUN apk add --no-cache 		ca-certificates 		curl 		openssl 		tar 		xz # buildkit
+# Thu, 12 Mar 2026 23:37:17 GMT
+RUN set -eux; 	adduser -u 82 -D -S -G www-data www-data # buildkit
+# Thu, 12 Mar 2026 23:37:17 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Thu, 12 Mar 2026 23:37:17 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Thu, 12 Mar 2026 23:37:17 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 12 Mar 2026 23:37:17 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 12 Mar 2026 23:37:17 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Thu, 12 Mar 2026 23:37:17 GMT
+ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5
+# Thu, 12 Mar 2026 23:37:17 GMT
+ENV PHP_VERSION=8.5.5
+# Thu, 12 Mar 2026 23:37:17 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc
+# Thu, 12 Mar 2026 23:37:17 GMT
+ENV PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2
+# Thu, 09 Apr 2026 22:21:35 GMT
+RUN set -eux; 		apk add --no-cache --virtual .fetch-deps gnupg; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apk del --no-network .fetch-deps # buildkit
+# Thu, 09 Apr 2026 22:21:35 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:27:00 GMT
+RUN set -eux; 	apk add --no-cache --virtual .build-deps 		$PHPIZE_DEPS 		argon2-dev 		coreutils 		curl-dev 		gnu-libiconv-dev 		libsodium-dev 		libxml2-dev 		linux-headers 		oniguruma-dev 		openssl-dev 		readline-dev 		sqlite-dev 	; 		rm -vf /usr/include/iconv.h; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv=/usr 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 			; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache $runDeps; 		apk del --no-network .build-deps; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Thu, 09 Apr 2026 22:27:00 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Thu, 09 Apr 2026 22:27:01 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Thu, 09 Apr 2026 22:27:01 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Thu, 09 Apr 2026 22:27:01 GMT
+CMD ["php" "-a"]
+# Thu, 09 Apr 2026 23:18:42 GMT
+RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
+# Thu, 09 Apr 2026 23:18:42 GMT
+RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
+# Tue, 14 Apr 2026 18:19:36 GMT
+ENV COMPOSER_ALLOW_SUPERUSER=1
+# Tue, 14 Apr 2026 18:19:36 GMT
+ENV COMPOSER_HOME=/tmp
+# Tue, 14 Apr 2026 18:19:36 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:19:36 GMT
+RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
+# Tue, 14 Apr 2026 18:19:36 GMT
+COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
+# Tue, 14 Apr 2026 18:19:36 GMT
+WORKDIR /app
+# Tue, 14 Apr 2026 18:19:36 GMT
+ENTRYPOINT ["/docker-entrypoint.sh"]
+# Tue, 14 Apr 2026 18:19:36 GMT
+CMD ["composer"]
+```
+
+-	Layers:
+	-	`sha256:623c99520afcb8c68e21bd22d3bc252ae348c276fb9c45a79aeccb4caf2b8d9f`  
+		Last Modified: Wed, 28 Jan 2026 01:17:15 GMT  
+		Size: 3.7 MB (3725333 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4348d21358ef752a357c33976b85357317bfb623a79cb91ec462b4e5128b82d5`  
+		Last Modified: Thu, 12 Mar 2026 23:43:03 GMT  
+		Size: 3.8 MB (3795119 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6a169c2de4deea9b877eb224ec8f2d4f4502dd0bb4e22037516ea41c23c8c1e6`  
+		Last Modified: Thu, 12 Mar 2026 23:43:02 GMT  
+		Size: 932.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5f88a80dfabed7faa02e1bbe28dd4e26c817c26d54bb3411b27cc398ea997ef8`  
+		Last Modified: Thu, 12 Mar 2026 23:43:02 GMT  
+		Size: 222.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1f5e7662fcf96af1dfae3edab12e535e5dbb2bd9336314490ac9484222315cc0`  
+		Last Modified: Thu, 09 Apr 2026 22:27:14 GMT  
+		Size: 14.4 MB (14379286 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:26b2bd611f10e897bc78163d788b300458c71f27af849508076d219371619381`  
+		Last Modified: Thu, 09 Apr 2026 22:27:14 GMT  
+		Size: 494.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:84c1175a23bc886b3bc9f9e6845c90d99d1125fc788f6d88d5ad9501ed086f83`  
+		Last Modified: Thu, 09 Apr 2026 22:27:15 GMT  
+		Size: 21.9 MB (21889964 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c48a98f93d43e57e9161beb90862e90db489cf9d4b4d09bfbd7d3bc1566f7981`  
+		Last Modified: Thu, 09 Apr 2026 22:27:14 GMT  
+		Size: 2.4 KB (2446 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c91cdaaeb755a7dbc3a463542f5d9410ef527eb1babc2850059c13f703b6bf5f`  
+		Last Modified: Thu, 09 Apr 2026 22:27:15 GMT  
+		Size: 23.4 KB (23427 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:38b0c643f457b3285c9b024aac2f31693051af6eb786510b03d7580e65134de8`  
+		Last Modified: Thu, 09 Apr 2026 23:19:25 GMT  
+		Size: 32.1 MB (32113304 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7a5512141ecbaa16f283bdbec60a949479d2d7ef6afafc01d5cc3b3351085cd1`  
+		Last Modified: Thu, 09 Apr 2026 23:19:20 GMT  
+		Size: 257.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:cdd4c500e9eb181938a1ef4ef73f183e9b27420814a10ea55b06e736b40bf16a`  
+		Last Modified: Tue, 14 Apr 2026 18:19:51 GMT  
+		Size: 17.3 MB (17317554 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8bc53ab4bbf74e12a9c7818288fc97c9f60326574f248c11959ba84015cc1ee0`  
+		Last Modified: Tue, 14 Apr 2026 18:19:51 GMT  
+		Size: 419.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:35c73a8be0d813065a838fdca97a14527a4ee7e1530e35f656f93a424f4d7c27`  
+		Last Modified: Tue, 14 Apr 2026 18:19:42 GMT  
+		Size: 93.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `composer:2.9.7` - unknown; unknown
+
+```console
+$ docker pull composer@sha256:0bc79feb6a333a11cc49a0e80b8edad445b1bc590d108776ee1d1f9cba4c69b6
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.2 MB (2209891 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e15343c996740440561a353bfba972b4a6752dff34802d7eb98b3923520488bd`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:10647c8aceb5f18307cac8578a92f75dc319b2558c6f7cfcacc86be9c1ffd2ee`  
+		Last Modified: Tue, 14 Apr 2026 18:19:50 GMT  
+		Size: 2.2 MB (2179221 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:6ceacdd28fffe318712ca3aebf2993293f60ba3f21a55c590b010d01ac5e20b8`  
+		Last Modified: Tue, 14 Apr 2026 18:19:50 GMT  
+		Size: 30.7 KB (30670 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `composer:latest`
 
 ```console
-$ docker pull composer@sha256:698d3801b2a622ace460c4743c781282fcbcb733a4cbf8b31c44731e846585e8
+$ docker pull composer@sha256:97051b5ca53613b16f920a3ec970c6510113897a9a0e56cbbaf146ca75f60f4c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3948,13 +6542,13 @@ $ docker pull composer@sha256:698d3801b2a622ace460c4743c781282fcbcb733a4cbf8b31c
 ### `composer:latest` - linux; amd64
 
 ```console
-$ docker pull composer@sha256:dc21210ab4f258498cc741b3fcae648ecea0512bf1902f626258a5a2416dd65f
+$ docker pull composer@sha256:6831e1267924c4a680b36b7963cb7914a9bb09ca67f47f4c55d3b2588bb7b20f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.9 MB (81858697 bytes)**  
+-	Total Size: **82.3 MB (82295138 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6678aa980a418c3522152c0c80f8d3f50e33c46f51cb57116806e62f77af4f1b`
+-	Image ID: `sha256:9b937e0bed4668eb643fa8f083b674431c0d175c794bcc3609b7e561053fb196`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -4001,25 +6595,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Thu, 09 Apr 2026 22:15:32 GMT
 CMD ["php" "-a"]
-# Thu, 09 Apr 2026 23:14:27 GMT
+# Tue, 14 Apr 2026 18:17:29 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Thu, 09 Apr 2026 23:14:27 GMT
+# Tue, 14 Apr 2026 18:17:29 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:14:45 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:17:48 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:14:45 GMT
+# Tue, 14 Apr 2026 18:17:48 GMT
 CMD ["composer"]
 ```
 
@@ -4060,61 +6654,61 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 22:15:41 GMT  
 		Size: 23.6 KB (23583 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9723e03930e9f0fe1216bb34316b88fbe27bb2d3f225e1ae91f2390c1460d74f`  
-		Last Modified: Thu, 09 Apr 2026 23:14:56 GMT  
-		Size: 32.8 MB (32826883 bytes)  
+	-	`sha256:ac4568126a4e8983af81719a57437ee6ff5aad920af0340db28529977ea91d6b`  
+		Last Modified: Tue, 14 Apr 2026 18:17:59 GMT  
+		Size: 32.8 MB (32829097 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e97a6213d305494b52ce665477c0b0fd4fed29c6c59629f6c03c4ea5a8112a24`  
-		Last Modified: Thu, 09 Apr 2026 23:14:55 GMT  
-		Size: 257.0 B  
+	-	`sha256:b8083645afae32266131920c3d7eb39891e44ee5e662f6ba12625430b1f63424`  
+		Last Modified: Tue, 14 Apr 2026 18:17:57 GMT  
+		Size: 260.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:420f0677074b1e47cd7faf772c8154a2c23382aa632bd16980455335061464dd`  
-		Last Modified: Thu, 09 Apr 2026 23:14:55 GMT  
-		Size: 4.2 MB (4168140 bytes)  
+	-	`sha256:777a820e754516716a459f5ea53530c7bb8b44ecd7c0c75c672b7d46b53c9654`  
+		Last Modified: Tue, 14 Apr 2026 18:17:58 GMT  
+		Size: 4.6 MB (4602365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16da88d43c8a671d9ffeddd194f58f88543cf9c4210b1f28d0fd83d734763d95`  
-		Last Modified: Thu, 09 Apr 2026 23:14:55 GMT  
-		Size: 419.0 B  
+	-	`sha256:a92de384986fb1f77474533112a7ce2919285f0d09c30aab81ae535ff0aba6cc`  
+		Last Modified: Tue, 14 Apr 2026 18:17:58 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36c4ed811ff8fa8458ebf2d4f1c1278dbe5166ff1397e2324710a142244f539c`  
-		Last Modified: Thu, 09 Apr 2026 23:14:56 GMT  
+	-	`sha256:ac79c6f82514103d437b10c68165bcfa5a61cfb3bc81cb8e910e796a0dee183c`  
+		Last Modified: Tue, 14 Apr 2026 18:17:59 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:latest` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:324c5387d9ea8e70dae9347327dd8227e25d9519c5adcee7877e66dd80e84923
+$ docker pull composer@sha256:ee00b542afdd2a27036af0cbd82a4253954b9b64cc0f09f848564315e015ea75
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.2 MB (2211307 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c221afd67ff21176979fbf2daf17a51f07f346a6f3d4af48f0e743b5cbaa60e2`
+-	Image ID: `sha256:d8203a2bfd877820004ce1a6d294f600aa02641b8321acbe0ebec7f012e93adb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:82dd0f61fc8cb85cab6fddc34200a14153f22b72eabfdabf146d85c06208302c`  
-		Last Modified: Thu, 09 Apr 2026 23:14:55 GMT  
+	-	`sha256:128dc41da46e86602161c5959ee81ac033975e865de3301a91665ad88755c037`  
+		Last Modified: Tue, 14 Apr 2026 18:17:57 GMT  
 		Size: 2.2 MB (2180640 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2b441ceb66555731ed226980b28b95c1f640d818aa23f18044b31016b9fba0a8`  
-		Last Modified: Thu, 09 Apr 2026 23:14:54 GMT  
+	-	`sha256:86478cd97ce76ef38fbb5db11ca2460e00316caafd6b587b503eb065936dffc6`  
+		Last Modified: Tue, 14 Apr 2026 18:17:57 GMT  
 		Size: 30.7 KB (30667 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:latest` - linux; arm variant v6
 
 ```console
-$ docker pull composer@sha256:64c65bae4657ee29ad71bc38a70e404deed3757a80aec7076ab67943c920e881
+$ docker pull composer@sha256:42b5ab08f93a7776a252ff6af611370f95606dd6bfdabcb827e28d492a76d90c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.0 MB (78024717 bytes)**  
+-	Total Size: **78.5 MB (78461847 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5efe45d626f095603c884a0caa83f51d1de24f93ed2cdd3e276da9352c5cd511`
+-	Image ID: `sha256:1eef3072ff95c35656312c430f28ffb549db3063573258ab858c40b56c104e87`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -4161,25 +6755,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Thu, 09 Apr 2026 22:14:34 GMT
 CMD ["php" "-a"]
-# Thu, 09 Apr 2026 23:21:14 GMT
+# Tue, 14 Apr 2026 18:18:32 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Thu, 09 Apr 2026 23:21:14 GMT
+# Tue, 14 Apr 2026 18:18:32 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:21:40 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:18:58 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:21:40 GMT
+# Tue, 14 Apr 2026 18:18:58 GMT
 CMD ["composer"]
 ```
 
@@ -4220,57 +6814,57 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 22:14:42 GMT  
 		Size: 23.4 KB (23405 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:538a3fa028c21a44563fbab2f5dff114de9f509bc7f26abbb33b70b84a781004`  
-		Last Modified: Thu, 09 Apr 2026 23:21:48 GMT  
-		Size: 32.7 MB (32661802 bytes)  
+	-	`sha256:456c9909eae7754cbdb5abf1910a07254de4c28117fad83f54361ff5992b7cc8`  
+		Last Modified: Tue, 14 Apr 2026 18:19:06 GMT  
+		Size: 32.7 MB (32666304 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f8a52cccc08b0aa66da5c300daac33e72433b311c137a3e977bb861441c4715`  
-		Last Modified: Thu, 09 Apr 2026 23:21:47 GMT  
-		Size: 258.0 B  
+	-	`sha256:3f2ac7068ea46a8cad6b04730031a92cdf0a2c82943308c2445b4b3bfb3b61ae`  
+		Last Modified: Tue, 14 Apr 2026 18:19:05 GMT  
+		Size: 259.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8664d1290eb012cee58455909e9c4af2c46c299455e9f212059a82a68bf543af`  
-		Last Modified: Thu, 09 Apr 2026 23:21:47 GMT  
-		Size: 3.8 MB (3835204 bytes)  
+	-	`sha256:9243233de423e41092205cff54f31f06ed50b369e5c0ac635be8d54c91faa2f6`  
+		Last Modified: Tue, 14 Apr 2026 18:19:05 GMT  
+		Size: 4.3 MB (4267832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f17c662a41e8bf1ade0f5dce478977a2f1b2260b6fb9e1f71c66ac647c7ca99`  
-		Last Modified: Thu, 09 Apr 2026 23:21:47 GMT  
-		Size: 420.0 B  
+	-	`sha256:cd76a36b321ba2cbdf2c18b2f483b7556fc3c67bcf48a42eebcbb8ecaa79ac5d`  
+		Last Modified: Tue, 14 Apr 2026 18:19:05 GMT  
+		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fd4d3294fbaab8aeebe4635b51df3382d3861ff2fb2bdc3666d9eff34f5a2d9`  
-		Last Modified: Thu, 09 Apr 2026 23:21:48 GMT  
+	-	`sha256:313b2a5816631d2e1dd9f29597ed589c59afe33a708b0edd9e8b5b53b53b71b9`  
+		Last Modified: Tue, 14 Apr 2026 18:19:06 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:latest` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:69285922413d2887d15b847ca28cb5dc65de1917bc8dc7a916ed067af6bdce92
+$ docker pull composer@sha256:a612bca8961914475793f1cc12673bc733e3e30975bbe0447cc6cef74d4eae6e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.6 KB (30557 bytes)**  
+-	Total Size: **30.6 KB (30558 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9781ac30005cb3d9769cc5945cd9f938746dfb8fc4bd87c3a8b9fe07c9bdb8f9`
+-	Image ID: `sha256:4902477b1c1d79e9a92e75c1c985b7fcc1f11c9897b798b4c71bbe9da2195994`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6dbe0d8ff4b6a78086888c630492be37fa6475048a363855b18d186aafc4be4f`  
-		Last Modified: Thu, 09 Apr 2026 23:21:47 GMT  
-		Size: 30.6 KB (30557 bytes)  
+	-	`sha256:257cbcbdf5518823fda62b94d1069bd1beaecace4115bbcd15240d9017176baf`  
+		Last Modified: Tue, 14 Apr 2026 18:19:04 GMT  
+		Size: 30.6 KB (30558 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:latest` - linux; arm variant v7
 
 ```console
-$ docker pull composer@sha256:b96a2faa9fc0b78642a1206fe286e09e58b7816406493b96ef8f5b708d263e07
+$ docker pull composer@sha256:a2e1201a4b434919271c712678b5c8e4c243a9bcb3d522da04594fed18383601
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **74.6 MB (74613350 bytes)**  
+-	Total Size: **75.0 MB (75025755 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3201782b277aaf1ab4181ec07049632cc7824a994227cd9fdb91ce2274b49f7`
+-	Image ID: `sha256:c19c70269f301855e5f51696300cb0dd99b177e589f1e635686d0339f7551abd`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -4317,25 +6911,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Thu, 09 Apr 2026 22:19:31 GMT
 CMD ["php" "-a"]
-# Thu, 09 Apr 2026 23:26:12 GMT
+# Tue, 14 Apr 2026 18:17:27 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Thu, 09 Apr 2026 23:26:12 GMT
+# Tue, 14 Apr 2026 18:17:27 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:26:35 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:17:53 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:26:35 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 CMD ["composer"]
 ```
 
@@ -4376,61 +6970,61 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 22:19:40 GMT  
 		Size: 23.4 KB (23410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e77a59d1a7cad0c2860d18edeb77537fddbcfecfd1639e3241ac8d79aab43fbd`  
-		Last Modified: Thu, 09 Apr 2026 23:26:45 GMT  
-		Size: 31.1 MB (31089553 bytes)  
+	-	`sha256:8a63be5222c033e49c0b0ab2fb861b34a74a01b755699bfd7131f8ac60ef4078`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 31.1 MB (31095949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60b809b533ee5d173f9e42053de3c0560fe60685d48c7b9bbf3f1f1b46813bae`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
+	-	`sha256:7ef22a83fd441ef20be2944f2c2a3b60b0aaa91d854de9b13a4c50d00ebf5279`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
 		Size: 257.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37b416b8cbc92a8cd4e485714bda026bd05ffa9191bcd6a9bf58699c806890de`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
-		Size: 3.6 MB (3616658 bytes)  
+	-	`sha256:56949d23eda79baf6fd7f09de98362e08ff7bf64e8849bcabb9a6e2f4c4d6afb`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
+		Size: 4.0 MB (4022668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f707392fbb3b85a2386e759710fd7599510e1fccb9bd1c801d0caab12f867a59`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
-		Size: 419.0 B  
+	-	`sha256:9dd656ca101b55a63ad908f0e987ba026b8e346d38bf80f490c8213e337b5f74`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44819e994e8a217fd086c81ac457c84bcce5d0c46d8d588f6960543683b16893`  
-		Last Modified: Thu, 09 Apr 2026 23:26:45 GMT  
+	-	`sha256:8a59db22cab798384fc9801339a3900c22762b61cb6350dc01072d6e77037fee`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:latest` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:25f32f022fe9a0e2414ba4a1d7183277f6bc5aaa2c6dfb700c61ff3bdbf9c756
+$ docker pull composer@sha256:8ae07250715c8adacdee49f68335a2f03726ae61bc23c213c818f76498127ebd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.2 MB (2211084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa29874e3a7f556b2abac9ce3d57ea0b46183867d0654b79da705a2452086011`
+-	Image ID: `sha256:3c0414c658b1eaadc671332e5ef010ff3e5532bf4903cbf37de530cd3f4c8119`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:46b3d039506bd733074618dbdb3604d73be66454a466882015da199887537baf`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
+	-	`sha256:2a08a0655434744241683c630df38f108a308ddf79325a3669b3ae96bda483f7`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
 		Size: 2.2 MB (2180311 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5308f978febb9103380adfd171e0f0bfd0041551fb914befd2fdb80471ca6bc6`  
-		Last Modified: Thu, 09 Apr 2026 23:26:44 GMT  
+	-	`sha256:decd009e4f03dcfec4e0310a6d9e53ba4eb5553b8df82d98526f2df7750f9733`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
 		Size: 30.8 KB (30773 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull composer@sha256:f22c5be0b0e4f10715209e484aad7ba392834defddf68fa4fe3a6ad4f90fb6bc
+$ docker pull composer@sha256:90d74468001bfe32251948d171e65156b231f7f3f3488bfdeb8af939c4fc5ca9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.8 MB (81821998 bytes)**  
+-	Total Size: **82.3 MB (82264617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32098a09598603209bb2199303470024e397a4e5e6298c9821ea1d87f287c321`
+-	Image ID: `sha256:672986627c2c9f6a0aba130627ff344c10241897df399837f7cb9b39cbcbf794`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -4477,25 +7071,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Thu, 09 Apr 2026 22:15:54 GMT
 CMD ["php" "-a"]
-# Thu, 09 Apr 2026 23:14:48 GMT
+# Tue, 14 Apr 2026 18:17:33 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Thu, 09 Apr 2026 23:14:49 GMT
+# Tue, 14 Apr 2026 18:17:33 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:15:09 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:17:53 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:15:09 GMT
+# Tue, 14 Apr 2026 18:17:53 GMT
 CMD ["composer"]
 ```
 
@@ -4536,61 +7130,61 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 22:16:03 GMT  
 		Size: 23.4 KB (23441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c46a008b7b18b605f3227cf01b9a8fc1e4633c3f862508793cfd7e7cc1e094b`  
-		Last Modified: Thu, 09 Apr 2026 23:15:19 GMT  
-		Size: 33.0 MB (32967700 bytes)  
+	-	`sha256:285ebfa4268e8a60fcb14bad51f63da6f60b8e8b79fc0d5bdc7b272bac34cdc9`  
+		Last Modified: Tue, 14 Apr 2026 18:18:04 GMT  
+		Size: 33.0 MB (32971912 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:521248ffae582244240d1948b296c8343de1d30a4967ee3e7415b99abc0a3e55`  
-		Last Modified: Thu, 09 Apr 2026 23:15:18 GMT  
-		Size: 257.0 B  
+	-	`sha256:e481a251a9dd2ae932f1cd49809cabb48c84b5842f905e3cd318fb5f860efa48`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 258.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14d13eb7c1e4351f2a1156b9e995fd34a9983c2e23b705859295d9091091249e`  
-		Last Modified: Thu, 09 Apr 2026 23:15:18 GMT  
-		Size: 4.5 MB (4469398 bytes)  
+	-	`sha256:607104842caf9031627e0561da94643dbd6e5a53fdf2ec68236e50e9785d2c1f`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 4.9 MB (4907805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7161d39c731861555f41ef22b553710ff6d41fb44e366c20d2bae65678c454c9`  
-		Last Modified: Thu, 09 Apr 2026 23:15:18 GMT  
-		Size: 420.0 B  
+	-	`sha256:a0da1d1720bb544613f3a7ac195b9474bba4d0af56f95c4014dff71a3e36191b`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
+		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e51d69411c9b6288276791ce75ac910562da89c7f79fea5623533a81cf02f23e`  
-		Last Modified: Thu, 09 Apr 2026 23:15:19 GMT  
+	-	`sha256:8a59db22cab798384fc9801339a3900c22762b61cb6350dc01072d6e77037fee`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:latest` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:c47a3ff8522f24a6325f8823e4e18c7be53e056336278303d18f16e788a24c85
+$ docker pull composer@sha256:f9886027cfff443f88c11e204f27408769431ab8a4c40907ec0a1fd0c3fd8667
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2210941 bytes)**  
+-	Total Size: **2.2 MB (2210942 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eac1904c54af68e71e21c43fbb13a82a437118a28712d8edd04183470b88485d`
+-	Image ID: `sha256:755fa5560c7b510ecf888c7cd0c18f1e6400b62fc2791be2ba6a62a048715f3a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1d1020e78d360fac53438ab48084de8c9180f68d7f0589ded5d6d7cf660ee448`  
-		Last Modified: Thu, 09 Apr 2026 23:15:18 GMT  
+	-	`sha256:09c9515975e1f29265f024bb85736c52ec0dc5558513139c649880cb5dd96327`  
+		Last Modified: Tue, 14 Apr 2026 18:18:03 GMT  
 		Size: 2.2 MB (2180141 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f1744a79780d0b1a2862eedec8c798c06f4018e16b6a6ce7b2c8085bf237d9f1`  
-		Last Modified: Thu, 09 Apr 2026 23:15:18 GMT  
-		Size: 30.8 KB (30800 bytes)  
+	-	`sha256:004cecbd51710f917a4a089cecc51490d929da9b6455b182df183f302162c8c3`  
+		Last Modified: Tue, 14 Apr 2026 18:18:02 GMT  
+		Size: 30.8 KB (30801 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:latest` - linux; 386
 
 ```console
-$ docker pull composer@sha256:51be144016efe9d3107ff1c265d4ef128d4aade4f46e4a8547dbb32829126922
+$ docker pull composer@sha256:5059aa7f8aeb8fd9ad00e166cfc4504d01b632d5c987150dfde3e7167b11e492
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.0 MB (82044136 bytes)**  
+-	Total Size: **82.5 MB (82480079 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7922054a8378b96c0d850297147a3264b1a096f35d4e21d00e214f0f7d179c3`
+-	Image ID: `sha256:05da3dd80cd6d3c296bb9f77ac1d48716d0282b354fc840118af6947f2db6dbd`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -4637,25 +7231,25 @@ RUN docker-php-ext-enable sodium # buildkit
 ENTRYPOINT ["docker-php-entrypoint"]
 # Fri, 10 Apr 2026 00:16:54 GMT
 CMD ["php" "-a"]
-# Fri, 10 Apr 2026 03:30:11 GMT
+# Tue, 14 Apr 2026 18:19:28 GMT
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
-# Fri, 10 Apr 2026 03:30:11 GMT
+# Tue, 14 Apr 2026 18:19:28 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:47 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:47 GMT
 ENV COMPOSER_HOME=/tmp
-# Fri, 10 Apr 2026 03:30:30 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:47 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:19:47 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:48 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:48 GMT
 WORKDIR /app
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:48 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 10 Apr 2026 03:30:30 GMT
+# Tue, 14 Apr 2026 18:19:48 GMT
 CMD ["composer"]
 ```
 
@@ -4696,61 +7290,61 @@ CMD ["composer"]
 		Last Modified: Fri, 10 Apr 2026 00:17:04 GMT  
 		Size: 23.6 KB (23625 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:264bb3f93a83fd21be54144943c4bd2326d7e8faee5725cfb429412510b81bf5`  
-		Last Modified: Fri, 10 Apr 2026 03:30:39 GMT  
-		Size: 33.4 MB (33353250 bytes)  
+	-	`sha256:fb92bca6a7200abd5ed57acbc2406d1b631ce897e9fcb8321df6d6ad30cb6114`  
+		Last Modified: Tue, 14 Apr 2026 18:19:58 GMT  
+		Size: 33.4 MB (33354023 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35d2c4367b9165d857f66acabab09744031c0e80be9bed3f29c30f3a3ed317e6`  
-		Last Modified: Fri, 10 Apr 2026 03:30:39 GMT  
-		Size: 257.0 B  
+	-	`sha256:3acb4361787726cd8ad52c3d9467b84e1d1aa7dfe6414e7e3be8d2816cc76617`  
+		Last Modified: Tue, 14 Apr 2026 18:19:57 GMT  
+		Size: 256.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d8bdcb9bb948a7198d374e5bcfd725598a7e1e09ffe81ff2937bd6b83a957f1`  
-		Last Modified: Fri, 10 Apr 2026 03:30:39 GMT  
-		Size: 1.2 MB (1247708 bytes)  
+	-	`sha256:9241059ece99827922266cdf5f4d2003877d75ddf68699cd4c70ce7987a21836`  
+		Last Modified: Tue, 14 Apr 2026 18:19:57 GMT  
+		Size: 1.7 MB (1682879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fccaa5c05839bcf1bbf0c74a21d946d8c32b920c1a51579645e326e3e70f5847`  
-		Last Modified: Fri, 10 Apr 2026 03:30:39 GMT  
+	-	`sha256:69641c04f229a2ab6016f07abf23bea732612f28baf219fd9fcf0c899d7617e5`  
+		Last Modified: Tue, 14 Apr 2026 18:19:42 GMT  
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6128f3407a8386a4c5d982cbf8496044bde218003d5c6f9c44e2fe57524edf24`  
-		Last Modified: Fri, 10 Apr 2026 03:30:40 GMT  
+	-	`sha256:67f4289f14f4bb7e5b1629ac4c78856e0c3b60c94f52f95daa671e1a219d5df8`  
+		Last Modified: Tue, 14 Apr 2026 18:19:59 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:latest` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:5a6ef4b3bc4c8ef26afcb79dc9cf9e9156a44a20f4f6987fd0930bfa791c2ffa
+$ docker pull composer@sha256:c254802094079f1308563379ad369533970752e4908cfa224d9e97811d3d39ff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.2 MB (2211056 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e78c0e30842c7be21a79d4c4a2c37f23a826478ad9e74069fcb7b3b4a058a625`
+-	Image ID: `sha256:b4ce198e58e85ea5dc923b1568aaa064676ae0112aaf5ac90c6cc3e58fdc12bf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a69fecf1ebec9c87958269f311b28ab10d67044d90456550137a5004ea2473c`  
-		Last Modified: Fri, 10 Apr 2026 03:30:39 GMT  
+	-	`sha256:340334093e4da71051f77042453963dbc6f4fd36456e9b67f499e0b94970d025`  
+		Last Modified: Tue, 14 Apr 2026 18:19:57 GMT  
 		Size: 2.2 MB (2180425 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6a2ab5e4abe1589c45a291c89ed1647413951799b6c3b99b69a0ceff6580122e`  
-		Last Modified: Fri, 10 Apr 2026 03:30:38 GMT  
+	-	`sha256:47bf377a779ae13fd18570cc75e3fe8f0a691c683d330c3c388994b1f8641121`  
+		Last Modified: Tue, 14 Apr 2026 18:19:57 GMT  
 		Size: 30.6 KB (30631 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:latest` - linux; ppc64le
 
 ```console
-$ docker pull composer@sha256:00ec0805030fde6ed8f1ff7bb10346e7b4d4a7deebf9987c9c39c1e566a30a23
+$ docker pull composer@sha256:6b0debe85067d180c3dca5be15549aa709e405e5c6da97f106b302afa0be7b3d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.4 MB (83375909 bytes)**  
+-	Total Size: **96.7 MB (96713081 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7681058a2ea18d7cb7f87614244ec8fdb1739b9f1faa5d5862130c3645734c60`
+-	Image ID: `sha256:8d658b5ad399d03987449b91b37ae36fb531e2591aba9b560f1469876bcd1472`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -4801,21 +7395,21 @@ CMD ["php" "-a"]
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
 # Fri, 10 Apr 2026 00:21:07 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Fri, 10 Apr 2026 00:21:53 GMT
+# Tue, 14 Apr 2026 18:19:02 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Fri, 10 Apr 2026 00:21:53 GMT
+# Tue, 14 Apr 2026 18:19:02 GMT
 ENV COMPOSER_HOME=/tmp
-# Fri, 10 Apr 2026 00:21:53 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Fri, 10 Apr 2026 00:21:53 GMT
+# Tue, 14 Apr 2026 18:19:02 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:19:02 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Fri, 10 Apr 2026 00:21:55 GMT
+# Tue, 14 Apr 2026 18:19:05 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Fri, 10 Apr 2026 00:21:55 GMT
+# Tue, 14 Apr 2026 18:19:09 GMT
 WORKDIR /app
-# Fri, 10 Apr 2026 00:21:55 GMT
+# Tue, 14 Apr 2026 18:19:09 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Fri, 10 Apr 2026 00:21:55 GMT
+# Tue, 14 Apr 2026 18:19:09 GMT
 CMD ["composer"]
 ```
 
@@ -4864,53 +7458,53 @@ CMD ["composer"]
 		Last Modified: Fri, 10 Apr 2026 00:22:17 GMT  
 		Size: 256.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b31fa43b3f93f0b76d992020dac29d95d3fa7f480405a5b90e321db6fd87ffe8`  
-		Last Modified: Fri, 10 Apr 2026 00:22:18 GMT  
-		Size: 4.1 MB (4074208 bytes)  
+	-	`sha256:efaac84e88b2da4e607702934bba5a10ee9d45974d858538b478a29b89842e33`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
+		Size: 17.4 MB (17411381 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68c3cab8a1118927127f6fee35a4a0c6166a96e6487f9bcdb1c573a9fb7a073a`  
-		Last Modified: Fri, 10 Apr 2026 00:22:17 GMT  
-		Size: 420.0 B  
+	-	`sha256:1e029883ecefeeaf8733085cd8e526dfbbca7e594b984c759f9d554d542181f0`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
+		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f4be6c0b727f62cac62e8d3426b5c7c0666f501c164de8162435b1fee3f92e7`  
-		Last Modified: Fri, 10 Apr 2026 00:22:18 GMT  
+	-	`sha256:aebb4782c2d3dfa3ac371b8a44cd1f51c8cca8d476ce08683daefb52097b9bf7`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:latest` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:418efe1daaf6e19d2e3f144eaed10be2bd2fdff4e4c67a20591cf53112600e10
+$ docker pull composer@sha256:b96e3b5bce750eb3282de808dd8aafbf3a051c5f80e3f716df031de690321657
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2211212 bytes)**  
+-	Total Size: **2.2 MB (2211215 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef65904f54fee01dac863ce2cb02144840b5a614ea062747eebdd25f7f23d07a`
+-	Image ID: `sha256:5342929d05c922fd2d787aa2179debfaee17cdccf8781a7e329e1d3d484d07f1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4cfd9c9f57c13ffbbad3b79a33ac68fdd95b8413890ad74619f5187859d6090b`  
-		Last Modified: Fri, 10 Apr 2026 00:22:17 GMT  
+	-	`sha256:fc050012567990ae6904da1426da82a6cc21eeb168d8d2fa9b316fe513258f54`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
 		Size: 2.2 MB (2180498 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a7dc3a56af04734990d9219060ae7663ef8f8657234c743b3429ef705973583a`  
-		Last Modified: Fri, 10 Apr 2026 00:22:17 GMT  
-		Size: 30.7 KB (30714 bytes)  
+	-	`sha256:6dc4ab7a528f883fc6476f1d2c72c9454b32b1cd4fefe0ac8fb1da3fec8e6c44`  
+		Last Modified: Tue, 14 Apr 2026 18:19:37 GMT  
+		Size: 30.7 KB (30717 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:latest` - linux; riscv64
 
 ```console
-$ docker pull composer@sha256:2e28d405174601c8353950eaf4aedc5abc983797ee1c850e8ce332acfad093dc
+$ docker pull composer@sha256:600f68dee998197590fbadd5f49b007afb10faf4f15287a315a79fa198635908
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.1 MB (78090898 bytes)**  
+-	Total Size: **78.1 MB (78108283 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8ac9098f7cec9c987591cd2e39c3d6cddbe95990429f1a1c7e16690f470bdfa`
+-	Image ID: `sha256:abd844ec36780aac229ca2fdb372bcc3b96fc3ad9a0c8de0b25c8458b53af256`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -4961,21 +7555,21 @@ CMD ["php" "-a"]
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
 # Sun, 12 Apr 2026 09:33:49 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
 ENV COMPOSER_HOME=/tmp
-# Sun, 12 Apr 2026 09:37:19 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:22:48 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
 WORKDIR /app
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Sun, 12 Apr 2026 09:37:19 GMT
+# Tue, 14 Apr 2026 18:22:48 GMT
 CMD ["composer"]
 ```
 
@@ -5024,53 +7618,53 @@ CMD ["composer"]
 		Last Modified: Sun, 12 Apr 2026 09:38:52 GMT  
 		Size: 258.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de63d88390efbbd37f89ee6ed90696a2424afb852a8f76c1ddc63a2da87f6dea`  
-		Last Modified: Sun, 12 Apr 2026 09:38:53 GMT  
-		Size: 4.3 MB (4284938 bytes)  
+	-	`sha256:849fae3a43556661d0d79306c12a48046432673ac49917b14937307d36a24458`  
+		Last Modified: Tue, 14 Apr 2026 18:24:04 GMT  
+		Size: 4.3 MB (4302324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49dba59a7a2de417f4fe767e3305854a809068a0e54dda038e3455ef84b74c48`  
-		Last Modified: Sun, 12 Apr 2026 09:38:52 GMT  
-		Size: 419.0 B  
+	-	`sha256:01efda7965080036e2b76754ef2276308322ed2394f97d073063348bded60a09`  
+		Last Modified: Tue, 14 Apr 2026 18:24:03 GMT  
+		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fd2d28ee22449b9e873c12cbf9d45377da2060c5aaa6457472c507a8cd6ddf8`  
-		Last Modified: Sun, 12 Apr 2026 09:38:54 GMT  
+	-	`sha256:0f5997a67e70609c3ecf2d0c94e158584b948e5f7e90a85dd896325c6db3a7ed`  
+		Last Modified: Tue, 14 Apr 2026 18:22:53 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:latest` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:389510811e158c72b3440515bee98c80e327aa35b7756e7693fcbe13430080d0
+$ docker pull composer@sha256:55155328eaf6b4a8b732344c31723c0e2e7026edb1151e056f7260b0c23793eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2210154 bytes)**  
+-	Total Size: **2.2 MB (2210153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:388623d8ff7a325189378e3e66af43fd2d42dabd421d6b6fa71b67c1d3a7c366`
+-	Image ID: `sha256:baabb88b9e58574b8449e58ff8e49bdd472dd2b4eac9aec0cd90224e32a110f8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a615a9f6c5f92b7b686873aa72f3e18034f89549b413d3026a5862f04d9d689d`  
-		Last Modified: Sun, 12 Apr 2026 09:38:52 GMT  
+	-	`sha256:14f5989ff5313284e35f85efde25d95ba6cf9e9207afa6539c85ba5cfebf3e22`  
+		Last Modified: Tue, 14 Apr 2026 18:24:03 GMT  
 		Size: 2.2 MB (2179439 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d4c0567918027a1377910c87b5b8f8f98f6a66bae71834e0e75cc20dba3104d1`  
-		Last Modified: Sun, 12 Apr 2026 09:38:52 GMT  
-		Size: 30.7 KB (30715 bytes)  
+	-	`sha256:d12e5da0f5f9cce27555430a40d6dc9e18c54764d62f13fed79c09c33cdd6769`  
+		Last Modified: Tue, 14 Apr 2026 18:24:03 GMT  
+		Size: 30.7 KB (30714 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `composer:latest` - linux; s390x
 
 ```console
-$ docker pull composer@sha256:58b97cba0c77cf06d404693fb746289f0d88bd3755c3eae8d2fdf27d3d951c45
+$ docker pull composer@sha256:1f94545e77b0a527f486fd42ce1a3ed8e347a32e951166e75e667c9a8b9c5055
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **79.9 MB (79948174 bytes)**  
+-	Total Size: **93.2 MB (93248850 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:675c2c3642bef66a776afe0150e8f1c203b8030b0c76c200de582d6d6e07a957`
+-	Image ID: `sha256:cc4e000a0f721a102b5621d79143082167c85fe36cbab314eff8808e5f343a36`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["composer"]`
 
@@ -5121,21 +7715,21 @@ CMD ["php" "-a"]
 RUN set -eux ;   apk add --no-cache --virtual .composer-rundeps     7zip     bash     coreutils     git     make     mercurial     openssh-client     patch     subversion     tini     unzip     zip # buildkit
 # Thu, 09 Apr 2026 23:18:42 GMT
 RUN printf "# composer php cli ini settings\ndate.timezone=UTC\nmemory_limit=-1\n" > $PHP_INI_DIR/php-cli.ini # buildkit
-# Thu, 09 Apr 2026 23:19:04 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
-# Thu, 09 Apr 2026 23:19:04 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 ENV COMPOSER_HOME=/tmp
-# Thu, 09 Apr 2026 23:19:04 GMT
-ENV COMPOSER_VERSION=2.9.5
-# Thu, 09 Apr 2026 23:19:04 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
+ENV COMPOSER_VERSION=2.9.7
+# Tue, 14 Apr 2026 18:19:36 GMT
 RUN set -eux ;   curl     --silent     --fail     --location     --retry 3     --output /usr/local/bin/install-php-extensions     --url https://github.com/mlocati/docker-php-extension-installer/releases/download/1.2.58/install-php-extensions   ;   echo 182011b3dca5544a70fdeb587af44ed1760aa9a2ed37d787d0f280a99f92b008e638c37762360cd85583830a097665547849cb2293c4a0ee32c2a36ef7a349e2 /usr/local/bin/install-php-extensions | sha512sum --strict --check ;   chmod +x /usr/local/bin/install-php-extensions ;   install-php-extensions     bz2     zip   ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.dev.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/snapshots.pub   ;   echo 572b963c4b7512a7de3c71a788772440b1996d918b1d2b5354bf8ba2bb057fadec6f7ac4852f2f8a8c01ab94c18141ce0422aec3619354b057216e0597db5ac2 /tmp/keys.dev.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/keys.tags.pub     --url https://raw.githubusercontent.com/composer/composer.github.io/e7f28b7200249f8e5bc912b42837d4598c74153a/releases.pub   ;   echo 47f374b8840dcb0aa7b2327f13d24ab5f6ae9e58aa630af0d62b3d0ea114f4a315c5d97b21dcad3c7ffe2f0a95db2edec267adaba3f4f5a262abebe39aed3a28 /tmp/keys.tags.pub | sha512sum --strict --check ;   curl     --silent     --fail     --location     --retry 3     --output /tmp/installer.php     --url https://raw.githubusercontent.com/composer/getcomposer.org/f24b8f860b95b52167f91bbd3e3a7bcafe043038/web/installer   ;   echo 3137ad86bd990524ba1dedc2038309dfa6b63790d3ca52c28afea65dcc2eaead16fb33e9a72fd2a7a8240afaf26e065939a2d472f3b0eeaa575d1e8648f9bf19 /tmp/installer.php | sha512sum --strict --check ;   php /tmp/installer.php     --no-ansi     --install-dir=/usr/bin     --filename=composer     --version=${COMPOSER_VERSION}   ;   composer --ansi --version --no-interaction ;   rm -f /tmp/installer.php ;   find /tmp -type d -exec chmod -v 1777 {} + # buildkit
-# Thu, 09 Apr 2026 23:19:05 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 COPY docker-entrypoint.sh /docker-entrypoint.sh # buildkit
-# Thu, 09 Apr 2026 23:19:05 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 WORKDIR /app
-# Thu, 09 Apr 2026 23:19:05 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Thu, 09 Apr 2026 23:19:05 GMT
+# Tue, 14 Apr 2026 18:19:36 GMT
 CMD ["composer"]
 ```
 
@@ -5184,39 +7778,39 @@ CMD ["composer"]
 		Last Modified: Thu, 09 Apr 2026 23:19:20 GMT  
 		Size: 257.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b9f25cd6120fd706d78f3466d6de459d6be294d56100ac31f0a04ed40c3822e`  
-		Last Modified: Thu, 09 Apr 2026 23:19:20 GMT  
-		Size: 4.0 MB (4016878 bytes)  
+	-	`sha256:cdd4c500e9eb181938a1ef4ef73f183e9b27420814a10ea55b06e736b40bf16a`  
+		Last Modified: Tue, 14 Apr 2026 18:19:51 GMT  
+		Size: 17.3 MB (17317554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89aca6b805f4520b30bccd54134f111fdece5338deac037abca9b5d0d1697afc`  
-		Last Modified: Thu, 09 Apr 2026 23:19:20 GMT  
+	-	`sha256:8bc53ab4bbf74e12a9c7818288fc97c9f60326574f248c11959ba84015cc1ee0`  
+		Last Modified: Tue, 14 Apr 2026 18:19:51 GMT  
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ec187884818743865caae146e7434c75eee078d70bf482caa942f8af18a6bbc4`  
-		Last Modified: Thu, 09 Apr 2026 23:19:21 GMT  
+	-	`sha256:35c73a8be0d813065a838fdca97a14527a4ee7e1530e35f656f93a424f4d7c27`  
+		Last Modified: Tue, 14 Apr 2026 18:19:42 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `composer:latest` - unknown; unknown
 
 ```console
-$ docker pull composer@sha256:127cd4b719f3d7f1d5680711bf696e3a88a00f1d02550ad9f452d0efa181c92a
+$ docker pull composer@sha256:0bc79feb6a333a11cc49a0e80b8edad445b1bc590d108776ee1d1f9cba4c69b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2209888 bytes)**  
+-	Total Size: **2.2 MB (2209891 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57a7a701ec1570fa3bab06acbd00b4d5885f8c42f06f1761ffd2a5831535c408`
+-	Image ID: `sha256:e15343c996740440561a353bfba972b4a6752dff34802d7eb98b3923520488bd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ff8070e9aa7ac9125bd915c8c8268a4fa42fbd487e80da8dc204aa6da3b3f031`  
-		Last Modified: Thu, 09 Apr 2026 23:19:20 GMT  
+	-	`sha256:10647c8aceb5f18307cac8578a92f75dc319b2558c6f7cfcacc86be9c1ffd2ee`  
+		Last Modified: Tue, 14 Apr 2026 18:19:50 GMT  
 		Size: 2.2 MB (2179221 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2add8498849a95096ed6b099f50fbb7b7c4f5291cab0b610e62323dfc19d2df9`  
-		Last Modified: Thu, 09 Apr 2026 23:19:20 GMT  
-		Size: 30.7 KB (30667 bytes)  
+	-	`sha256:6ceacdd28fffe318712ca3aebf2993293f60ba3f21a55c590b010d01ac5e20b8`  
+		Last Modified: Tue, 14 Apr 2026 18:19:50 GMT  
+		Size: 30.7 KB (30670 bytes)  
 		MIME: application/vnd.in-toto+json
