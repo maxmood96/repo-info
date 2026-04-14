@@ -1083,14 +1083,9 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.42.8+dfsg-1ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.8%2bdfsg-1ubuntu0.4.dsc' gdk-pixbuf_2.42.8+dfsg-1ubuntu0.4.dsc 3238 SHA512:9037c66cb7fd221a38e36d36d42177c440d8ab98ad87cbeedde45ff4381156bb659fba7ec28c171b6f058625618cd490aefcfc5f42456dc6fb6054e6eae2e91c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.8%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.8+dfsg.orig.tar.xz 6439548 SHA512:d77093ac4bd5c8f9a5267e67958dd99db009e16f94c44be95a547cd291b6d03fcc35c4a02327dd9f4341af1ae2ecdaa6a1bec02dcf1116ec5a440d22b3f68924
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.8%2bdfsg-1ubuntu0.4.debian.tar.xz' gdk-pixbuf_2.42.8+dfsg-1ubuntu0.4.debian.tar.xz 29736 SHA512:5f88b7e49f1ffdb70ab6560e96f0ecacd83b7c4e7d980593e06f128c15c84139462918e65c034d231463070618fa5e38fd65e8d083d1bbfda2ae656e7592e911
-```
 
 ### `dpkg` source package: `git=1:2.34.1-1ubuntu1.17`
 
@@ -3558,15 +3553,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.21
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.21.dsc' openssl_3.0.2-0ubuntu1.21.dsc 2730 SHA512:d44268af95768ef47713202c8f544f58e78e4849ac594344cf538c4a3b4e315673424258b51e41753b0a071091d2d601e59c1cc3a91ee7228feacbf008b967bf
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.21.debian.tar.xz' openssl_3.0.2-0ubuntu1.21.debian.tar.xz 271652 SHA512:fc8b09b1ef6832af36384b3e1c1b2c8e0e435ea82375cb3e4f7eedae6965a0280abcd7f3b7cb497902929422b93e4fdf4dad7a9dd1938b993add3d4b4ab66785
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 

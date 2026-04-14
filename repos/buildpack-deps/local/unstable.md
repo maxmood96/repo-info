@@ -109,19 +109,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.1.16
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.16.dsc' apt_3.1.16.dsc 3131 SHA256:ba6a93145dc01714089080c8c0ebeb9c0ffe52795dc5101d0d773aaf813a88c0
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.1.16.tar.xz' apt_3.1.16.tar.xz 2473316 SHA256:56d88a1c818b355c387aca485ed95b80be8ca206d81a75e718f017c6f94d8756
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.1.16/
 
-- https://sources.debian.net/src/apt/3.1.16/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.1.16/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.1.16/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `architecture-properties=0.2.6`
 
@@ -2958,20 +2952,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.56-1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.56-1.dsc' libpng1.6_1.6.56-1.dsc 2273 SHA256:e5edd482d1dfd2a9fee1c744807f29ae80cab2f18ffeac16f913b0902dfb71cd
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.56.orig.tar.gz' libpng1.6_1.6.56.orig.tar.gz 1590073 SHA256:41d74ffe235cb7e8bab40bcad2167f7bb25edbf2231dcfff57ccf4305dc0bfae
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.56-1.debian.tar.xz' libpng1.6_1.6.56-1.debian.tar.xz 33696 SHA256:58ae26e6422cc2f0934b1b6cbacdd8744a2e8a52f9042a91b66ba5ee503e5cdc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpng1.6/1.6.56-1/
 
-- https://sources.debian.net/src/libpng1.6/1.6.56-1/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.56-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.56-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.5-1`
 
@@ -3818,20 +3805,13 @@ Licenses: (parsed from: `/usr/share/doc/liblz4-1/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lz4=1.10.0-8
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.10.0-8.dsc' lz4_1.10.0-8.dsc 2062 SHA256:4f8a893c7aeee9516aa35a95cbaa293a867d1c57811b2e80ac9a4dd0dc0c51d7
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.10.0.orig.tar.gz' lz4_1.10.0.orig.tar.gz 387114 SHA256:537512904744b35e232912055ccf8ec66d768639ff3abe5788d90d792ec5f48b
-'http://deb.debian.org/debian/pool/main/l/lz4/lz4_1.10.0-8.debian.tar.xz' lz4_1.10.0-8.debian.tar.xz 9676 SHA256:66d57e79483da61dee090b37b005fe43657846472c854709220621434df8e84c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lz4/1.10.0-8/
 
-- https://sources.debian.net/src/lz4/1.10.0-8/ (for browsing the source)
-- https://sources.debian.net/src/lz4/1.10.0-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lz4/1.10.0-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `m4=1.4.21-1`
 
@@ -3915,21 +3895,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:11.8.6-5
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.6-5.dsc' mariadb_11.8.6-5.dsc 5608 SHA256:5ca56880b2b65efeab9f5ba091274bbff0c4761da206c92bc3aeb651c7fad919
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.6.orig.tar.gz' mariadb_11.8.6.orig.tar.gz 120887651 SHA256:b126581a8ca89376d2a3ce63fee97c114c3e15315345e769b9d00c51e1b7d619
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.6.orig.tar.gz.asc' mariadb_11.8.6.orig.tar.gz.asc 833 SHA256:83fdc365789ef5f4b2974468061896971c10c605b0e41e1888a90f4e5342008a
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.6-5.debian.tar.xz' mariadb_11.8.6-5.debian.tar.xz 300900 SHA256:f0786a452059c248aa72823bed9cb5ee9845085aab05f2f08c214514b9d2cf1b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb/1:11.8.6-5/
 
-- https://sources.debian.net/src/mariadb/1:11.8.6-5/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:11.8.6-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:11.8.6-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20260302-1`
 
@@ -4472,21 +4444,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:10.2p1-6
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.2p1-6.dsc' openssh_10.2p1-6.dsc 3668 SHA256:9626c4ff065fd1f2028fe2a9ad8cedf03960931c83513733e539f2289bc49d21
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.2p1.orig.tar.gz' openssh_10.2p1.orig.tar.gz 1974519 SHA256:ccc42c0419937959263fa1dbd16dafc18c56b984c03562d2937ce56a60f798b2
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.2p1.orig.tar.gz.asc' openssh_10.2p1.orig.tar.gz.asc 833 SHA256:9abf9435ca9d437b896e14bf35c63993f523aea34795d93fc03539f9bf780fd7
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.2p1-6.debian.tar.xz' openssh_10.2p1-6.debian.tar.xz 200260 SHA256:c901bfeb0d1d6238e600c5121d7b93e008b867853ce39a0fce8c670000ef6f1b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:10.2p1-6/
 
-- https://sources.debian.net/src/openssh/1:10.2p1-6/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:10.2p1-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:10.2p1-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.6.1-3`
 
@@ -4504,21 +4468,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.6.1-3
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.1-3.dsc' openssl_3.6.1-3.dsc 2675 SHA256:f88d121dc304bd83f4193a2295064aeccecef0a4ed156ccd9725faaada912259
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.1.orig.tar.gz' openssl_3.6.1.orig.tar.gz 54891951 SHA256:b1bfedcd5b289ff22aee87c9d600f515767ebf45f77168cb6d64f231f518a82e
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.1.orig.tar.gz.asc' openssl_3.6.1.orig.tar.gz.asc 833 SHA256:a549571f98ac883a6eca7a2c21021a9d2129e6f4bcad2a261f9bd2487fb80f4b
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.1-3.debian.tar.xz' openssl_3.6.1-3.debian.tar.xz 48768 SHA256:de70378498d2d652e9c5b8bbc65e9471e4845980ecc249f8205cf1a1f47871db
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.6.1-3/
 
-- https://sources.debian.net/src/openssl/3.6.1-3/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.6.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.6.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.26.2-2`
 
@@ -4621,20 +4577,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.57.1-1
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.57.1-1.dsc' pango1.0_1.57.1-1.dsc 3667 SHA256:2fba4214775752034a7a30471655216cf200811112a1d5b4b6ce67300dd5c189
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.57.1.orig.tar.xz' pango1.0_1.57.1.orig.tar.xz 2588416 SHA256:e65d6d117080dc3aeeb7d8b4b3b518f7383aa2e6cfce23117c623cd624764c2f
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.57.1-1.debian.tar.xz' pango1.0_1.57.1-1.debian.tar.xz 44160 SHA256:53cdc6d0371666efc25ac4909bd40c8ece3eb9af9cd74a53d8e362a752bd0b04
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.57.1-1/
 
-- https://sources.debian.net/src/pango1.0/1.57.1-1/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.57.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.57.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.8-2`
 
@@ -5084,20 +5033,13 @@ Licenses: (parsed from: `/usr/share/doc/librtmp-dev/copyright`, `/usr/share/doc/
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rtmpdump=2.4+20151223.gitfa8646d.1-3
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4%2b20151223.gitfa8646d.1-3.dsc' rtmpdump_2.4+20151223.gitfa8646d.1-3.dsc 2295 SHA256:8a593a016f6c816dac66ba78a49915af645056acf424146c3488edd27c52075c
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4%2b20151223.gitfa8646d.1.orig.tar.gz' rtmpdump_2.4+20151223.gitfa8646d.1.orig.tar.gz 142213 SHA256:5c032f5c8cc2937eb55a81a94effdfed3b0a0304b6376147b86f951e225e3ab5
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4%2b20151223.gitfa8646d.1-3.debian.tar.xz' rtmpdump_2.4+20151223.gitfa8646d.1-3.debian.tar.xz 8180 SHA256:8b1d25a5942e762d792ea1beacb0fda0f9761331fd46ce3874fe24c2360485e2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rtmpdump/2.4+20151223.gitfa8646d.1-3/
 
-- https://sources.debian.net/src/rtmpdump/2.4+20151223.gitfa8646d.1-3/ (for browsing the source)
-- https://sources.debian.net/src/rtmpdump/2.4+20151223.gitfa8646d.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rtmpdump/2.4+20151223.gitfa8646d.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rust-sequoia-sq=1.3.1-7`
 
@@ -5669,20 +5611,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.42-1
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42-1.dsc' util-linux_2.42-1.dsc 5314 SHA256:3583dfe7b5f68f1e54f712063247235f2191535ce8821b752afdef8c2d00f373
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42.orig.tar.xz' util-linux_2.42.orig.tar.xz 10608300 SHA256:3452b260bbaa775d6e749ac3bb22111785003fc1f444970025c8da26dfa758e9
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42-1.debian.tar.xz' util-linux_2.42-1.debian.tar.xz 99056 SHA256:8e2e70f5b962185acd3cce01f57aab53d49253cbc68a4882fe457bf182d87ff3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.42-1/
 
-- https://sources.debian.net/src/util-linux/2.42-1/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.42-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.42-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 

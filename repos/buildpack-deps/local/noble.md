@@ -1179,14 +1179,9 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.42.10+dfsg-3ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg-3ubuntu3.2.dsc' gdk-pixbuf_2.42.10+dfsg-3ubuntu3.2.dsc 3187 SHA512:e455481b5d70fa26e5fe8020f922282df0dcd4a9e1135030d4d064ae6d7fee63d3ee266cb7bb4327d4e07080a2230e48d3bbc2c4e080a00a93a662427daee662
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.10+dfsg.orig.tar.xz 6439240 SHA512:34f8d7d44d12308c57bd9622efdb7344bad5a89bad7043b40d4d1cab4112ff505ebb9df98d788068ddd2e44cee193e7bcb4f1d56f0432cc859075425652a06fc
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.10%2bdfsg-3ubuntu3.2.debian.tar.xz' gdk-pixbuf_2.42.10+dfsg-3ubuntu3.2.debian.tar.xz 29380 SHA512:7bd6b18bf45467261595c9f73169913a038809607c1e98497a4e538a875da0309a1568e7f40581d248735fa615be51d748403b8928316c99e370afffff5b0b08
-```
 
 ### `dpkg` source package: `git=1:2.43.0-1ubuntu7.3`
 
@@ -3175,9 +3170,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=6.8.0-107.107
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-107.107.dsc' linux_6.8.0-107.107.dsc 9448 SHA512:a2069dc5b1994656b0fe485b39f4547e3968f23f1057abbfa8a254e57c7e1bc4bbc60901cdff6f1d3748bfbcd8d48aa927dce7861e8592a2367c1c41d2e6bff4
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-107.107.diff.gz' linux_6.8.0-107.107.diff.gz 8169381 SHA512:dffef069d2e339e9dd9f5f77da173a49b48adc3c8f870fd032d108023f3fd3b9b66f85afa33245c66eab39042c996cbf198188a83b554809c3472bb5ef181bfb
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-107.107.dsc' linux_6.8.0-107.107.dsc 9448 SHA512:a2069dc5b1994656b0fe485b39f4547e3968f23f1057abbfa8a254e57c7e1bc4bbc60901cdff6f1d3748bfbcd8d48aa927dce7861e8592a2367c1c41d2e6bff4
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-107.107.diff.gz' linux_6.8.0-107.107.diff.gz 8169381 SHA512:dffef069d2e339e9dd9f5f77da173a49b48adc3c8f870fd032d108023f3fd3b9b66f85afa33245c66eab39042c996cbf198188a83b554809c3472bb5ef181bfb
 ```
 
 ### `dpkg` source package: `lto-disabled-list=47`
@@ -3729,14 +3724,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.7.dsc' openssl_3.0.13-0ubuntu3.7.dsc 2512 SHA512:cd164a3e4bb504d5022d7012610f6f77e0953903f6cc9e0ba455c215a252593326f2ef010244da494c01f115b572ff548f608745f7d1c35ce7e3641da1326240
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.7.debian.tar.xz' openssl_3.0.13-0ubuntu3.7.debian.tar.xz 174788 SHA512:c396fd3603fa0ee909f8d637e82b395a338133074c1c83c4b0ffbf1cb1c791c7fb9680fa5837d761e47d47909312d9f850894ba4cf2aa40a9f2768a0a47b5c28
-```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 
@@ -4456,9 +4446,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.14
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.14.dsc' systemd_255.4-1ubuntu8.14.dsc 7324 SHA512:cc3b0d413b31e1995708683ea8bfb139952b74783ccfcc8c4dcc1d0b3950ebecfa58eeb54f01a5d44e38ee85b55107c830ce42d2571c2042da8d0cc2a204aa1e
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.14.debian.tar.xz' systemd_255.4-1ubuntu8.14.debian.tar.xz 262172 SHA512:a7e3657be6aebac7b2baeacc4e179db686565a3db05f0730ce8f10e36d075dc8db8af43433ec712c3f45331b061614f76dedbfe08d00dd7f06c4a79e2fdde11d
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.14.dsc' systemd_255.4-1ubuntu8.14.dsc 7324 SHA512:cc3b0d413b31e1995708683ea8bfb139952b74783ccfcc8c4dcc1d0b3950ebecfa58eeb54f01a5d44e38ee85b55107c830ce42d2571c2042da8d0cc2a204aa1e
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.14.debian.tar.xz' systemd_255.4-1ubuntu8.14.debian.tar.xz 262172 SHA512:a7e3657be6aebac7b2baeacc4e179db686565a3db05f0730ce8f10e36d075dc8db8af43433ec712c3f45331b061614f76dedbfe08d00dd7f06c4a79e2fdde11d
 ```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
