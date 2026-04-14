@@ -1,17 +1,17 @@
-# `python:3.14.3-alpine3.22`
+# `python:3.14.4-alpine3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:782df995ac1f58ad8d41202adde9084ce2b953a056e888882ace29b2877ec46c`
-- Created: `2026-02-04T20:09:31.181114235Z`
-- Virtual Size: ~ 47.24 Mb  
+- Image ID: `sha256:72ca92797ecc843362272846407d57498a975dd1644b3cb7f0f7de1e6577fda8`
+- Created: `2026-04-08T17:42:17.799979Z`
+- Virtual Size: ~ 47.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PYTHON_VERSION=3.14.3`
-  - `PYTHON_SHA256=a97d5549e9ad81fe17159ed02c68774ad5d266c72f8d9a0b5a9c371fe85d902b`
+  - `PYTHON_VERSION=3.14.4`
+  - `PYTHON_SHA256=d923c51303e38e249136fc1bdf3568d56ecb03214efdef48516176d3d7faaef8`
 
 ## `apk` (`.apk`-based packages)
 
@@ -443,16 +443,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025c-r0 description:
+tzdata-2026a-r0 description:
 Timezone data
 
-tzdata-2025c-r0 webpage:
+tzdata-2026a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025c-r0 installed size:
+tzdata-2026a-r0 installed size:
 436 KiB
 
-tzdata-2025c-r0 license:
+tzdata-2026a-r0 license:
 Public-Domain
 
 ```
