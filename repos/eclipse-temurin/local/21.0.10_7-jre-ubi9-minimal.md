@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a094248b2f7451bf50de6ed8559ae27737f7c98e12c7c6d3f972dc31be71a390`
-- Created: `2026-03-20T00:17:54.520443299Z`
-- Virtual Size: ~ 352.22 Mb  
+- Image ID: `sha256:e801447b28d21ceb8269181803e9537c7da2a317cc9b4efe6ab9d3efa0b74fe4`
+- Created: `2026-04-14T20:45:58.884471001Z`
+- Virtual Size: ~ 352.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `JAVA_VERSION=jdk-21.0.10+7`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-03-19T17:02:39Z`
+  - `build-date=2026-04-13T18:26:26Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-03-19T17:02:39Z`
-  - `org.opencontainers.image.revision=d0c250a501ab44b94ebea3e751fcaa45749a08a2`
-  - `release=1773939694`
+  - `org.opencontainers.image.created=2026-04-13T18:26:26Z`
+  - `org.opencontainers.image.revision=49cc6237764cacc4684bc968dd9fc53fb8abd12c`
+  - `release=1776104705`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=d0c250a501ab44b94ebea3e751fcaa45749a08a2`
+  - `vcs-ref=49cc6237764cacc4684bc968dd9fc53fb8abd12c`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -913,15 +913,15 @@ $ dnf --quiet download --source --url libmount-2.37.4-21.el9_7
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-21.el9_7.src.rpm
 ```
 
-### `rpm` package: `libnghttp2-1.43.0-6.el9.x86_64`
+### `rpm` package: `libnghttp2-1.43.0-6.el9_7.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libnghttp2-1.43.0-6.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/n/nghttp2-1.43.0-6.el9.src.rpm
+$ dnf --quiet download --source --url libnghttp2-1.43.0-6.el9_7.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/n/nghttp2-1.43.0-6.el9_7.1.src.rpm
 ```
 
 ### `rpm` package: `libpeas-1.30.0-4.el9.x86_64`
@@ -1540,48 +1540,48 @@ $ dnf --quiet download --source --url sqlite-libs-3.34.1-9.el9_7
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-9.el9_7.src.rpm
 ```
 
-### `rpm` package: `systemd-252-55.el9_7.7.x86_64`
+### `rpm` package: `systemd-252-55.el9_7.8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-252-55.el9_7.7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
+$ dnf --quiet download --source --url systemd-252-55.el9_7.8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.8.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-252-55.el9_7.7.x86_64`
+### `rpm` package: `systemd-libs-252-55.el9_7.8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-libs-252-55.el9_7.7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
+$ dnf --quiet download --source --url systemd-libs-252-55.el9_7.8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.8.src.rpm
 ```
 
-### `rpm` package: `systemd-pam-252-55.el9_7.7.x86_64`
+### `rpm` package: `systemd-pam-252-55.el9_7.8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-pam-252-55.el9_7.7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
+$ dnf --quiet download --source --url systemd-pam-252-55.el9_7.8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.8.src.rpm
 ```
 
-### `rpm` package: `systemd-rpm-macros-252-55.el9_7.7.noarch`
+### `rpm` package: `systemd-rpm-macros-252-55.el9_7.8.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-rpm-macros-252-55.el9_7.7.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.7.src.rpm
+$ dnf --quiet download --source --url systemd-rpm-macros-252-55.el9_7.8.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-55.el9_7.8.src.rpm
 ```
 
 ### `rpm` package: `tar-1.34-9.el9_7.x86_64`
