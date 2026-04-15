@@ -2,20 +2,20 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a4446ebf41180c252dfcadba4abd3fc061c278ce866db081a39a3fea4f774fa4`
-- Created: `2026-03-13T18:11:43.986634144Z`
-- Virtual Size: ~ 88.74 Mb  
+- Image ID: `sha256:a7143a8d72768edbc0ef8cb0e5d1eef90953c9876f83f729868dfe3f57202733`
+- Created: `2026-04-13T21:48:28.135840639Z`
+- Virtual Size: ~ 94.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=26.2.5.18`
+  - `OTP_VERSION=26.2.5.19`
   - `REBAR3_VERSION=3.26.0`
   - `ELIXIR_VERSION=v1.19.5`
   - `LANG=C.UTF-8`
 - Labels:
-  - `org.opencontainers.image.version=26.2.5.18`
+  - `org.opencontainers.image.version=26.2.5.19`
 
 ## `apk` (`.apk`-based packages)
 
@@ -158,16 +158,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.6-r0 description:
+libcrypto3-3.3.7-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.6-r0 webpage:
+libcrypto3-3.3.7-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.6-r0 installed size:
+libcrypto3-3.3.7-r0 installed size:
 4664 KiB
 
-libcrypto3-3.3.6-r0 license:
+libcrypto3-3.3.7-r0 license:
 Apache-2.0
 
 ```
@@ -226,16 +226,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.6-r0 description:
+libssl3-3.3.7-r0 description:
 SSL shared libraries
 
-libssl3-3.3.6-r0 webpage:
+libssl3-3.3.7-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.6-r0 installed size:
+libssl3-3.3.7-r0 installed size:
 800 KiB
 
-libssl3-3.3.6-r0 license:
+libssl3-3.3.7-r0 license:
 Apache-2.0
 
 ```
@@ -277,16 +277,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r1 description:
+musl-1.2.5-r3 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r1 webpage:
+musl-1.2.5-r3 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r1 installed size:
+musl-1.2.5-r3 installed size:
 652 KiB
 
-musl-1.2.5-r1 license:
+musl-1.2.5-r3 license:
 MIT
 
 ```
