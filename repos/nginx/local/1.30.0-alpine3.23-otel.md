@@ -1,17 +1,17 @@
-# `nginx:1.28.3-alpine-otel`
+# `nginx:1.30.0-alpine-otel`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4bd84dacde60a2a2e1130a602717df5022c2e9801dde95cabeaa3e92061c2a81`
-- Created: `2026-03-25T00:10:47.676669816Z`
-- Virtual Size: ~ 105.19 Mb  
+- Image ID: `sha256:9bed7f3b332332ccf1b88af8885a2b9345790a7e7fbdfbabf30cd89b111b09cd`
+- Created: `2026-04-15T01:11:03.474742239Z`
+- Virtual Size: ~ 111.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.28.3`
+  - `NGINX_VERSION=1.30.0`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
   - `NJS_VERSION=0.9.6`
@@ -1318,16 +1318,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20251003-r0 description:
+ca-certificates-20260413-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20251003-r0 webpage:
+ca-certificates-20260413-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20251003-r0 installed size:
-250 KiB
+ca-certificates-20260413-r0 installed size:
+246 KiB
 
-ca-certificates-20251003-r0 license:
+ca-certificates-20260413-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -1590,16 +1590,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.5-r0 description:
+libcrypto3-3.5.6-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.5-r0 webpage:
+libcrypto3-3.5.6-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.5-r0 installed size:
-5083 KiB
+libcrypto3-3.5.6-r0 installed size:
+5091 KiB
 
-libcrypto3-3.5.5-r0 license:
+libcrypto3-3.5.6-r0 license:
 Apache-2.0
 
 ```
@@ -1862,16 +1862,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.55-r0 description:
+libpng-1.6.57-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.55-r0 webpage:
+libpng-1.6.57-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.55-r0 installed size:
-177 KiB
+libpng-1.6.57-r0 installed size:
+181 KiB
 
-libpng-1.6.55-r0 license:
+libpng-1.6.57-r0 license:
 Libpng
 
 ```
@@ -1981,16 +1981,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.5-r0 description:
+libssl3-3.5.6-r0 description:
 SSL shared libraries
 
-libssl3-3.5.5-r0 webpage:
+libssl3-3.5.6-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.5-r0 installed size:
+libssl3-3.5.6-r0 installed size:
 819 KiB
 
-libssl3-3.5.5-r0 license:
+libssl3-3.5.6-r0 license:
 Apache-2.0
 
 ```
@@ -2117,16 +2117,16 @@ Apache-2.0 AND BSD-3-Clause AND MIT
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.41.2-r0 description:
+libuuid-2.41.4-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.41.2-r0 webpage:
+libuuid-2.41.4-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.41.2-r0 installed size:
+libuuid-2.41.4-r0 installed size:
 29 KiB
 
-libuuid-2.41.2-r0 license:
+libuuid-2.41.4-r0 license:
 BSD-3-Clause
 
 ```
@@ -2406,16 +2406,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.28.3-r1 description:
+nginx-1.30.0-r1 description:
 High performance web server
 
-nginx-1.28.3-r1 webpage:
+nginx-1.30.0-r1 webpage:
 https://nginx.org/
 
-nginx-1.28.3-r1 installed size:
-2651 KiB
+nginx-1.30.0-r1 installed size:
+2732 KiB
 
-nginx-1.28.3-r1 license:
+nginx-1.30.0-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2423,16 +2423,16 @@ nginx-1.28.3-r1 license:
 ### `apk` package: `nginx-module-acme`
 
 ```console
-nginx-module-acme-1.28.3.0.3.1-r1 description:
+nginx-module-acme-1.30.0.0.3.1-r1 description:
 nginx nginx-acme
 
-nginx-module-acme-1.28.3.0.3.1-r1 webpage:
+nginx-module-acme-1.30.0.0.3.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-acme-1.28.3.0.3.1-r1 installed size:
+nginx-module-acme-1.30.0.0.3.1-r1 installed size:
 7959 KiB
 
-nginx-module-acme-1.28.3.0.3.1-r1 license:
+nginx-module-acme-1.30.0.0.3.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2440,16 +2440,16 @@ nginx-module-acme-1.28.3.0.3.1-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.28.3-r1 description:
+nginx-module-geoip-1.30.0-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.28.3-r1 webpage:
+nginx-module-geoip-1.30.0-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.28.3-r1 installed size:
+nginx-module-geoip-1.30.0-r1 installed size:
 62 KiB
 
-nginx-module-geoip-1.28.3-r1 license:
+nginx-module-geoip-1.30.0-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2457,16 +2457,16 @@ nginx-module-geoip-1.28.3-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.28.3-r1 description:
+nginx-module-image-filter-1.30.0-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.28.3-r1 webpage:
+nginx-module-image-filter-1.30.0-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.28.3-r1 installed size:
+nginx-module-image-filter-1.30.0-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.28.3-r1 license:
+nginx-module-image-filter-1.30.0-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2474,16 +2474,16 @@ nginx-module-image-filter-1.28.3-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.28.3.0.9.6-r1 description:
+nginx-module-njs-1.30.0.0.9.6-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.28.3.0.9.6-r1 webpage:
+nginx-module-njs-1.30.0.0.9.6-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.28.3.0.9.6-r1 installed size:
+nginx-module-njs-1.30.0.0.9.6-r1 installed size:
 9367 KiB
 
-nginx-module-njs-1.28.3.0.9.6-r1 license:
+nginx-module-njs-1.30.0.0.9.6-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2491,16 +2491,16 @@ nginx-module-njs-1.28.3.0.9.6-r1 license:
 ### `apk` package: `nginx-module-otel`
 
 ```console
-nginx-module-otel-1.28.3.0.1.2-r1 description:
+nginx-module-otel-1.30.0.0.1.2-r1 description:
 nginx OpenTelemetry dynamic module
 
-nginx-module-otel-1.28.3.0.1.2-r1 webpage:
+nginx-module-otel-1.30.0.0.1.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-otel-1.28.3.0.1.2-r1 installed size:
-755 KiB
+nginx-module-otel-1.30.0.0.1.2-r1 installed size:
+708 KiB
 
-nginx-module-otel-1.28.3.0.1.2-r1 license:
+nginx-module-otel-1.30.0.0.1.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2508,16 +2508,16 @@ nginx-module-otel-1.28.3.0.1.2-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.28.3-r1 description:
+nginx-module-xslt-1.30.0-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.28.3-r1 webpage:
+nginx-module-xslt-1.30.0-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.28.3-r1 installed size:
+nginx-module-xslt-1.30.0-r1 installed size:
 46 KiB
 
-nginx-module-xslt-1.28.3-r1 license:
+nginx-module-xslt-1.30.0-r1 license:
 2-clause BSD-like license
 
 ```

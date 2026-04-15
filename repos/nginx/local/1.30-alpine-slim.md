@@ -1,17 +1,17 @@
-# `nginx:1.28.3-alpine-slim`
+# `nginx:1.30.0-alpine-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:db00fe2a2c3626fbefb567fe76aba34eee1e222d5de0af335c47832217001ca7`
-- Created: `2026-03-24T22:12:25.2243772Z`
-- Virtual Size: ~ 12.65 Mb  
+- Image ID: `sha256:4bbdfb70a109966fd918991b2b8437e36ba3360a5dd11b4da40ef849e5d8e0c6`
+- Created: `2026-04-14T23:12:34.78180876Z`
+- Virtual Size: ~ 18.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.28.3`
+  - `NGINX_VERSION=1.30.0`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
 - Labels:
@@ -192,16 +192,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.5-r0 description:
+libcrypto3-3.5.6-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.5-r0 webpage:
+libcrypto3-3.5.6-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.5-r0 installed size:
-5083 KiB
+libcrypto3-3.5.6-r0 installed size:
+5091 KiB
 
-libcrypto3-3.5.5-r0 license:
+libcrypto3-3.5.6-r0 license:
 Apache-2.0
 
 ```
@@ -226,16 +226,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.5-r0 description:
+libssl3-3.5.6-r0 description:
 SSL shared libraries
 
-libssl3-3.5.5-r0 webpage:
+libssl3-3.5.6-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.5-r0 installed size:
+libssl3-3.5.6-r0 installed size:
 819 KiB
 
-libssl3-3.5.5-r0 license:
+libssl3-3.5.6-r0 license:
 Apache-2.0
 
 ```
@@ -277,16 +277,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.28.3-r1 description:
+nginx-1.30.0-r1 description:
 High performance web server
 
-nginx-1.28.3-r1 webpage:
+nginx-1.30.0-r1 webpage:
 https://nginx.org/
 
-nginx-1.28.3-r1 installed size:
-2651 KiB
+nginx-1.30.0-r1 installed size:
+2732 KiB
 
-nginx-1.28.3-r1 license:
+nginx-1.30.0-r1 license:
 2-clause BSD-like license
 
 ```
