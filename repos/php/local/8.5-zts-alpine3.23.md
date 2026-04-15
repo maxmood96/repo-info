@@ -1,10 +1,10 @@
-# `php:8.5.4-zts-alpine3.23`
+# `php:8.5.5-zts-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a5419dfc763fd694857b10a5417429f01c7fadcafa5abfa313c83035ba419663`
-- Created: `2026-03-12T23:34:50.768466771Z`
-- Virtual Size: ~ 162.33 Mb  
+- Image ID: `sha256:728ee0711135ff71317f312abded54fbe56933107cf7fea1ea51f0d403a5b114`
+- Created: `2026-04-09T22:18:32.401477019Z`
+- Virtual Size: ~ 163.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.4`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.4.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.4.tar.xz.asc`
-  - `PHP_SHA256=c1569f1f543f6b025c583cdc0e730e5c5833c603618613f1aa8e75d1524b8c91`
+  - `PHP_VERSION=8.5.5`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc`
+  - `PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2`
 
 ## `apk` (`.apk`-based packages)
 
@@ -469,16 +469,16 @@ MIT
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r21 description:
+musl-1.2.5-r22 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r21 webpage:
+musl-1.2.5-r22 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r21 installed size:
+musl-1.2.5-r22 installed size:
 650 KiB
 
-musl-1.2.5-r21 license:
+musl-1.2.5-r22 license:
 MIT
 
 ```
