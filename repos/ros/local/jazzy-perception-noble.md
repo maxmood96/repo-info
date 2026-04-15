@@ -4340,14 +4340,9 @@ Licenses: (parsed from: `/usr/share/doc/libinput-bin/copyright`, `/usr/share/doc
 - `Expat`
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libinput=1.25.0-1ubuntu3.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.25.0-1ubuntu3.3.dsc' libinput_1.25.0-1ubuntu3.3.dsc 2590 SHA512:f8f10d691d520fa91fe68817472aa81c1b04f937a82026a7abad7a233c3a7c5f83769df8e6a971ad36c6adbc38a953dde54b6eaef77afd150bdd3cdb4abc23ba
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.25.0.orig.tar.gz' libinput_1.25.0.orig.tar.gz 1016846 SHA512:17c668d04e3ff7d3e99519f7e7fe37377bd25e90ff36acc8c3f06f6de31265514780a0823b6fbd5712272a6b6f759bf768cb35b4f68c29828c1964899e9ee752
-'http://archive.ubuntu.com/ubuntu/pool/main/libi/libinput/libinput_1.25.0-1ubuntu3.3.debian.tar.xz' libinput_1.25.0-1ubuntu3.3.debian.tar.xz 13808 SHA512:053e13244b29d33392ee6b281becad95da62d270b5bf438e5ab0227e207b3515a2955cedeb1b09aef440405b60c93b58503af4f2f4b600b13b97957880397b16
-```
 
 ### `dpkg` source package: `libjpeg-turbo=2.1.5-2ubuntu2`
 
@@ -6003,9 +5998,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=6.8.0-107.107
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-107.107.dsc' linux_6.8.0-107.107.dsc 9448 SHA512:a2069dc5b1994656b0fe485b39f4547e3968f23f1057abbfa8a254e57c7e1bc4bbc60901cdff6f1d3748bfbcd8d48aa927dce7861e8592a2367c1c41d2e6bff4
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-107.107.diff.gz' linux_6.8.0-107.107.diff.gz 8169381 SHA512:dffef069d2e339e9dd9f5f77da173a49b48adc3c8f870fd032d108023f3fd3b9b66f85afa33245c66eab39042c996cbf198188a83b554809c3472bb5ef181bfb
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-107.107.dsc' linux_6.8.0-107.107.dsc 9448 SHA512:a2069dc5b1994656b0fe485b39f4547e3968f23f1057abbfa8a254e57c7e1bc4bbc60901cdff6f1d3748bfbcd8d48aa927dce7861e8592a2367c1c41d2e6bff4
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-107.107.diff.gz' linux_6.8.0-107.107.diff.gz 8169381 SHA512:dffef069d2e339e9dd9f5f77da173a49b48adc3c8f870fd032d108023f3fd3b9b66f85afa33245c66eab39042c996cbf198188a83b554809c3472bb5ef181bfb
 ```
 
 ### `dpkg` source package: `llvm-toolchain-15=1:15.0.7-14build3`
