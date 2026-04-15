@@ -5028,20 +5028,13 @@ Licenses: (parsed from: `/usr/share/doc/librtmp-dev/copyright`, `/usr/share/doc/
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rtmpdump=2.4+20151223.gitfa8646d.1-3
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4%2b20151223.gitfa8646d.1-3.dsc' rtmpdump_2.4+20151223.gitfa8646d.1-3.dsc 2295 SHA256:8a593a016f6c816dac66ba78a49915af645056acf424146c3488edd27c52075c
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4%2b20151223.gitfa8646d.1.orig.tar.gz' rtmpdump_2.4+20151223.gitfa8646d.1.orig.tar.gz 142213 SHA256:5c032f5c8cc2937eb55a81a94effdfed3b0a0304b6376147b86f951e225e3ab5
-'http://deb.debian.org/debian/pool/main/r/rtmpdump/rtmpdump_2.4%2b20151223.gitfa8646d.1-3.debian.tar.xz' rtmpdump_2.4+20151223.gitfa8646d.1-3.debian.tar.xz 8180 SHA256:8b1d25a5942e762d792ea1beacb0fda0f9761331fd46ce3874fe24c2360485e2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rtmpdump/2.4+20151223.gitfa8646d.1-3/
 
-- https://sources.debian.net/src/rtmpdump/2.4+20151223.gitfa8646d.1-3/ (for browsing the source)
-- https://sources.debian.net/src/rtmpdump/2.4+20151223.gitfa8646d.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rtmpdump/2.4+20151223.gitfa8646d.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rust-sequoia-sq=1.3.1-6`
 
