@@ -1698,15 +1698,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.21
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.21.dsc' openssl_3.0.2-0ubuntu1.21.dsc 2730 SHA512:d44268af95768ef47713202c8f544f58e78e4849ac594344cf538c4a3b4e315673424258b51e41753b0a071091d2d601e59c1cc3a91ee7228feacbf008b967bf
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.21.debian.tar.xz' openssl_3.0.2-0ubuntu1.21.debian.tar.xz 271652 SHA512:fc8b09b1ef6832af36384b3e1c1b2c8e0e435ea82375cb3e4f7eedae6965a0280abcd7f3b7cb497902929422b93e4fdf4dad7a9dd1938b993add3d4b4ab66785
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
@@ -2174,9 +2168,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.19
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.19.dsc' systemd_249.11-0ubuntu3.19.dsc 5907 SHA512:d46fe1f092c431e4e5a7e8fccc11030fde7aaf406db0fa1a8aadf65ebbc3519e9a85be7bad9ec918b15118b557d5fe0c0f5a07f1a7bd2e8b00c0ecf4c2b9fbad
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.19.debian.tar.xz' systemd_249.11-0ubuntu3.19.debian.tar.xz 266012 SHA512:581e1a988873037088832e7d6e29a1f6dc718f410f0afbece702f104d6f30a0dcb4757c015b7a3e874cce6435d98a2fcc06a613db9bd8a63f86941dc26838e9a
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.19.dsc' systemd_249.11-0ubuntu3.19.dsc 5907 SHA512:d46fe1f092c431e4e5a7e8fccc11030fde7aaf406db0fa1a8aadf65ebbc3519e9a85be7bad9ec918b15118b557d5fe0c0f5a07f1a7bd2e8b00c0ecf4c2b9fbad
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
+'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.19.debian.tar.xz' systemd_249.11-0ubuntu3.19.debian.tar.xz 266012 SHA512:581e1a988873037088832e7d6e29a1f6dc718f410f0afbece702f104d6f30a0dcb4757c015b7a3e874cce6435d98a2fcc06a613db9bd8a63f86941dc26838e9a
 ```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
