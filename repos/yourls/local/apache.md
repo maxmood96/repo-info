@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0edac9cb38c5b1894716d2e4b442c0f12a8b33804372f20f0cbaf5c014e8b444`
-- Created: `2026-03-16T23:24:17.529378158Z`
-- Virtual Size: ~ 536.41 Mb  
+- Image ID: `sha256:f3029033a13a2736c19e0dc1f2543deae2489cb3d53781b2aaf2c4d4d1027ce6`
+- Created: `2026-04-09T23:13:43.988327683Z`
+- Virtual Size: ~ 544.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["container-entrypoint.sh"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.4`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.4.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.4.tar.xz.asc`
-  - `PHP_SHA256=c1569f1f543f6b025c583cdc0e730e5c5833c603618613f1aa8e75d1524b8c91`
+  - `PHP_VERSION=8.5.5`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.5.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.5.tar.xz.asc`
+  - `PHP_SHA256=95bec382f4bd00570a8ef52a58ec04d8d9b9a90494781f1c106d1b274a3902f2`
   - `YOURLS_VERSION=1.10.3`
   - `YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740`
 
@@ -2478,13 +2478,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.6.10+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.6.10+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.5.5-1~deb13u1`
+### `dpkg` source package: `openssl=3.5.5-1~deb13u2`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.5.5-1~deb13u1`
-- `openssl=3.5.5-1~deb13u1`
-- `openssl-provider-legacy=3.5.5-1~deb13u1`
+- `libssl3t64:amd64=3.5.5-1~deb13u2`
+- `openssl=3.5.5-1~deb13u2`
+- `openssl-provider-legacy=3.5.5-1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -2496,18 +2496,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.5.5-1~deb13u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.5-1%7edeb13u1.dsc' openssl_3.5.5-1~deb13u1.dsc 2707 SHA256:9fef06359b7e7f0abfb0ac6869f7bb344ae7f8efb25d5969f004f278a877b146
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA256:b28c91532a8b65a1f983b4c28b7488174e4a01008e29ce8e69bd789f28bc2a89
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA256:eaef5b1054b84b8d1e6c61c9fc8867828be5ce686d0221580faf8bdc16489da9
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.5-1%7edeb13u1.debian.tar.xz' openssl_3.5.5-1~deb13u1.debian.tar.xz 50668 SHA256:87377bad1f77b157bf95ebc18c5dfe70b5d3ab276441f92b66a5338b2500705f
+$ apt-get source -qq --print-uris openssl=3.5.5-1~deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5-1%7edeb13u2.dsc' openssl_3.5.5-1~deb13u2.dsc 2707 SHA256:2cba43d38a2f4ca1ef09a89ccc348fc63a5a43a58850a913bca46c6ceeb007ed
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA256:b28c91532a8b65a1f983b4c28b7488174e4a01008e29ce8e69bd789f28bc2a89
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA256:eaef5b1054b84b8d1e6c61c9fc8867828be5ce686d0221580faf8bdc16489da9
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5-1%7edeb13u2.debian.tar.xz' openssl_3.5.5-1~deb13u2.debian.tar.xz 68136 SHA256:92355f8cd5112cb4d49b9487c30507e5f85fc5497ad85223aecf661566f5ad8e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.5.5-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.5.5-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.5.5-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.5.5-1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.5.5-1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.5.5-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.25.5-3`
 
