@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4866304546cd1c6d056b4d5e205407d4abaa3e015ad0ef0a105d8555849752f2`
-- Created: `2026-04-03T17:04:33.060542829Z`
-- Virtual Size: ~ 215.95 Mb  
+- Image ID: `sha256:d434f26305c671d9dd88486220d02fb19eeb86b4e36ca0ee31a5629cb707c2ad`
+- Created: `2026-04-13T22:07:41.181816885Z`
+- Virtual Size: ~ 223.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["raku"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/core/bin:/usr/share/perl6/site/bin:/usr/share/perl6/vendor/bin`
-  - `rakudo_version=2026.02-01`
+  - `rakudo_version=2026.03-01`
 
 ## `apk` (`.apk`-based packages)
 
@@ -374,16 +374,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r21 description:
+musl-1.2.5-r23 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r21 webpage:
+musl-1.2.5-r23 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r21 installed size:
+musl-1.2.5-r23 installed size:
 650 KiB
 
-musl-1.2.5-r21 license:
+musl-1.2.5-r23 license:
 MIT
 
 ```
