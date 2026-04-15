@@ -4850,20 +4850,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.9-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.9=3.9.2-1+deb11u5
-'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2-1%2bdeb11u5.dsc' python3.9_3.9.2-1+deb11u5.dsc 3007 SHA256:e1484a80600e726c3e6d0790c2f07a3fdc984c16f8464124f8fdacd587bd5fb8
-'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2.orig.tar.xz' python3.9_3.9.2.orig.tar.xz 18889164 SHA256:3c2034c54f811448f516668dce09d24008a0716c3a794dd8639b5388cbde247d
-'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2-1%2bdeb11u5.debian.tar.xz' python3.9_3.9.2-1+deb11u5.debian.tar.xz 302112 SHA256:b6731f8cb7800ee81512086b36dcffd1a8358a98bdb02f1c31677f0812df526a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.9/3.9.2-1+deb11u5/
 
-- https://sources.debian.net/src/python3.9/3.9.2-1+deb11u5/ (for browsing the source)
-- https://sources.debian.net/src/python3.9/3.9.2-1+deb11u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.9/3.9.2-1+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.1-1`
 
@@ -5129,20 +5122,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=247.3-7+deb11u7
-'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_247.3-7%2bdeb11u7.dsc' systemd_247.3-7+deb11u7.dsc 5236 SHA256:2521703c26bedac0ce9bddf6aee2d500d01bf12c3a80d5d62950a30a3fdfa497
-'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_247.3.orig.tar.gz' systemd_247.3.orig.tar.gz 9895385 SHA256:2869986e219a8dfc96cc0dffac66e0c13bb70a89e16b85a3948876c146cfa3e0
-'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_247.3-7%2bdeb11u7.debian.tar.xz' systemd_247.3-7+deb11u7.debian.tar.xz 207972 SHA256:a175340e4b1341c2f614227de0ffd154073d56cc3ddba2a92668f7f5386f1366
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/247.3-7+deb11u7/
 
-- https://sources.debian.net/src/systemd/247.3-7+deb11u7/ (for browsing the source)
-- https://sources.debian.net/src/systemd/247.3-7+deb11u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/247.3-7+deb11u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.96-7+deb11u1`
 
