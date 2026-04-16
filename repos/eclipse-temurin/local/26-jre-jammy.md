@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e112881311940a92fed5d5764a9b902a9a99df9d90c24afbc91a7f753e65d167`
-- Created: `2026-04-08T17:29:09.646699437Z`
+- Image ID: `sha256:b47b9b9e2f505927a442f74f2ab756d06164810cb63ac3abc58aa16c077b787e`
+- Created: `2026-04-15T20:35:26.719691264Z`
 - Virtual Size: ~ 315.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1313,30 +1313,14 @@ $ apt-get source -qq --print-uris nettle=3.7.3-1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.7.3-1build2.debian.tar.xz' nettle_3.7.3-1build2.debian.tar.xz 22100 SHA512:c1935d35e9f04798273053ab92c7405ec225a5d72ba6c2869b0f2bf54b459ac428e113bc149796e91834a8b56082f8bbfbb906a6cd6787142b8932bd1dd83cec
 ```
 
-### `dpkg` source package: `openssl=3.0.2-0ubuntu1.21`
-
-Binary Packages:
-
-- `libssl3:amd64=3.0.2-0ubuntu1.21`
-
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
-
-- `Apache-2.0`
-- `Artistic`
-- `GPL-1`
-- `GPL-1+`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.23`
 
 Binary Packages:
 
+- `libssl3:amd64=3.0.2-0ubuntu1.23`
 - `openssl=3.0.2-0ubuntu1.23`
 
-Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -1575,12 +1559,12 @@ $ apt-get source -qq --print-uris shadow=1:4.8.1-2ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-2ubuntu2.2.debian.tar.xz' shadow_4.8.1-2ubuntu2.2.debian.tar.xz 98488 SHA512:dfa83a48e365f57c4881e77307bdea56db3e1b78e28ae687e5346daf1e71fe8df3388329ef6e7c90377555367267719e42e9c7f752da5b897e731bd9ca50a581
 ```
 
-### `dpkg` source package: `systemd=249.11-0ubuntu3.17`
+### `dpkg` source package: `systemd=249.11-0ubuntu3.20`
 
 Binary Packages:
 
-- `libsystemd0:amd64=249.11-0ubuntu3.17`
-- `libudev1:amd64=249.11-0ubuntu3.17`
+- `libsystemd0:amd64=249.11-0ubuntu3.20`
+- `libudev1:amd64=249.11-0ubuntu3.20`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1593,9 +1577,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.20
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.20.dsc' systemd_249.11-0ubuntu3.20.dsc 5907 SHA512:03aafe1147f29ce0778400bfe78bb8ecc2a4d9458f7fd297abc0921b100249e4cfe1b62d9b852e0ec848849c9d82e5ad002f7cbe46c64a422ee691fb119a8708
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.20.debian.tar.xz' systemd_249.11-0ubuntu3.20.debian.tar.xz 268300 SHA512:3e35df414c80d09525da9c78e9fb5cac1b220f4579c18cae26e557a469e98b48f4a8177a49a95def1de3fc000e5b9a3da0a64f1f7cad99d6042d1b1db602297a
+```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
