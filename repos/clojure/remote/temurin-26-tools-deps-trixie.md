@@ -1,7 +1,7 @@
 ## `clojure:temurin-26-tools-deps-trixie`
 
 ```console
-$ docker pull clojure@sha256:c2276abb4e98655f0df7ac0c19b345ad1871ff0c53ed7899350ea5b718e98751
+$ docker pull clojure@sha256:2007bbb63933bc0663d5d18fb744076ae24007f63ce32bb331ca180a7f497bff
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -372,7 +372,7 @@ $ docker pull clojure@sha256:db12d8b89d0b3958bec692fc70093a5b36b05d03c8a84245f0f
 ### `clojure:temurin-26-tools-deps-trixie` - linux; s390x
 
 ```console
-$ docker pull clojure@sha256:a77d8711278307b00ccb29a84d0222832894725c64952a9a87a1d8a71c4ee432
+$ docker pull clojure@sha256:8751d9a65266fc354f029d9df9789263ffc437ad8841d2f7340cda6fc8099c43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -436,23 +436,23 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-26-tools-deps-trixie` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:753530b1716f0a61a289fb7b7490c9dae63707bfc3282a2f99fb934e64b27dff
+$ docker pull clojure@sha256:2007cc8eb169170e8bb6db55bc581bfa803ec834bf8d886f9ec09063ef24b3cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **7.4 MB (7433026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e37d218f689598d8bbd0163bf2d9bf5ca874a2086849a34d082b1e2f0bfce8e`
+-	Image ID: `sha256:acdc43df4efec94cd4b78d40a9c6fcfb44f3a35b5d7f9ebb583560ed3aeef17e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bebf64d7985d1132a0b2f7a379638d453478a3d5fbf61d0e349e2f6db7669f48`  
-		Last Modified: Thu, 09 Apr 2026 23:46:14 GMT  
+	-	`sha256:5b1227ab20a2a0687fec6d0e1eb6d10fb8861d355d6ebccb6a83c7d227884e67`  
+		Last Modified: Thu, 16 Apr 2026 00:47:44 GMT  
 		Size: 7.4 MB (7417279 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1ae242669a9ec4ededed4f62470fabde50440392e61c8c248b0c47ae7a76f424`  
-		Last Modified: Thu, 09 Apr 2026 23:46:14 GMT  
+	-	`sha256:992f5ae2e075b5e38587320d3d375635b5595adcf1efe340c38d7af0a1b97c5d`  
+		Last Modified: Thu, 16 Apr 2026 00:47:44 GMT  
 		Size: 15.7 KB (15747 bytes)  
 		MIME: application/vnd.in-toto+json
