@@ -1,7 +1,7 @@
 ## `eggdrop:develop`
 
 ```console
-$ docker pull eggdrop@sha256:67d597f82c400b13c0cfd3f134c78e3530c0bc216834551c5febd0975380b826
+$ docker pull eggdrop@sha256:666e4a892765cda5c7c970df1af74a2a39fc8d666eb589dd7051da729fb277e8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,319 +16,319 @@ $ docker pull eggdrop@sha256:67d597f82c400b13c0cfd3f134c78e3530c0bc216834551c5fe
 ### `eggdrop:develop` - linux; amd64
 
 ```console
-$ docker pull eggdrop@sha256:11c0a298d5ef1205cf2ec3ea32c52dd86382805eb599ded7e8633df03cfab185
+$ docker pull eggdrop@sha256:e9950121ce910ba4202bad49480397ca324582ab5e488d198c40b19dd29d6713
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.8 MB (12785926 bytes)**  
+-	Total Size: **11.3 MB (11287423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4828abaf60df71f71de40643d5589a58846860ddf30c24f521b63980b9ced614`
+-	Image ID: `sha256:1b54173944d710f2d965fe321e1df5aa13d39e7b212cb477483bd6e6a1b0443d`
 -	Entrypoint: `["\/home\/eggdrop\/eggdrop\/entrypoint.sh"]`
 -	Default Command: `["eggdrop.conf"]`
 
 ```dockerfile
-# Wed, 28 Jan 2026 01:18:43 GMT
-ADD alpine-minirootfs-3.21.6-x86_64.tar.gz / # buildkit
-# Wed, 28 Jan 2026 01:18:43 GMT
+# Wed, 15 Apr 2026 20:01:40 GMT
+ADD alpine-minirootfs-3.23.4-x86_64.tar.gz / # buildkit
+# Wed, 15 Apr 2026 20:01:40 GMT
 CMD ["/bin/sh"]
-# Wed, 28 Jan 2026 02:15:55 GMT
+# Wed, 15 Apr 2026 23:13:43 GMT
 LABEL org.opencontainers.image.authors=Geo Van O <geo@eggheads.org> org.opencontainers.image.url=https://www.eggheads.org
-# Wed, 28 Jan 2026 02:15:55 GMT
+# Wed, 15 Apr 2026 23:13:43 GMT
 RUN addgroup -S -g 3333 eggdrop     && adduser -S -u 3333 eggdrop eggdrop # buildkit
-# Wed, 28 Jan 2026 02:15:55 GMT
-RUN apk add --no-cache 'su-exec>=0.2' bash openssl # buildkit
-# Wed, 28 Jan 2026 02:15:55 GMT
+# Wed, 15 Apr 2026 23:13:45 GMT
+RUN apk add --no-cache 'su-exec>=0.2' bash openssl tcl9 tcl9-dev # buildkit
+# Wed, 15 Apr 2026 23:13:45 GMT
 ENV EGGDROP_SHA256=e42668f102c1446901b066d13fe0bf39622afca8d723f356ac2390d5faaf6e5e
-# Wed, 28 Jan 2026 02:15:55 GMT
+# Wed, 15 Apr 2026 23:13:45 GMT
 ENV EGGDROP_COMMIT=541e8ac17e549a40e177b5eea54e4abf24629a33
-# Wed, 28 Jan 2026 02:19:14 GMT
-RUN apk add --no-cache --virtual egg-deps wget ca-certificates make tar gnupg build-base openssl-dev bsd-compat-headers zlib-dev   && wget "https://prdownloads.sourceforge.net/tcl/tcl9.0.1-src.tar.gz" -O tcl9.0.1-src.tar.gz --progress=dot:giga   && tar -zxf tcl9.0.1-src.tar.gz   && ( cd tcl9.0.1     && cd unix     && ./configure     && nproc="$(nproc)"     && make -j"$nproc"     && make install )   && rm -rf tcl9.0.1-src.tar.gz   && rm -rf tcl9.0.1   && wget "https://github.com/eggheads/eggdrop/archive/$EGGDROP_COMMIT.tar.gz" -O develop.tar.gz   && echo "$EGGDROP_SHA256 *develop.tar.gz" | sha256sum -c -   && tar -zxf develop.tar.gz   && rm develop.tar.gz     && ( cd eggdrop-$EGGDROP_COMMIT     && ./configure     && make config     && nproc="$(nproc)"     && make -j"$nproc"     && make install DEST=/home/eggdrop/eggdrop )   && rm -rf eggdrop-$EGGDROP_COMMIT   && mkdir /home/eggdrop/eggdrop/data   && chown -R eggdrop /home/eggdrop/eggdrop   && apk del --no-network egg-deps # buildkit
-# Wed, 28 Jan 2026 02:19:14 GMT
+# Wed, 15 Apr 2026 23:14:01 GMT
+RUN apk add --no-cache --virtual egg-deps wget ca-certificates make tar gnupg build-base openssl-dev bsd-compat-headers zlib-dev   && wget "https://github.com/eggheads/eggdrop/archive/$EGGDROP_COMMIT.tar.gz" -O develop.tar.gz   && echo "$EGGDROP_SHA256 *develop.tar.gz" | sha256sum -c -   && tar -zxf develop.tar.gz   && rm develop.tar.gz     && ( cd eggdrop-$EGGDROP_COMMIT     && ./configure     && make config     && nproc="$(nproc)"     && make -j"$nproc"     && make install DEST=/home/eggdrop/eggdrop )   && rm -rf eggdrop-$EGGDROP_COMMIT   && mkdir /home/eggdrop/eggdrop/data   && chown -R eggdrop /home/eggdrop/eggdrop   && apk del --no-network egg-deps # buildkit
+# Wed, 15 Apr 2026 23:14:01 GMT
 ENV NICK=
-# Wed, 28 Jan 2026 02:19:14 GMT
+# Wed, 15 Apr 2026 23:14:01 GMT
 ENV SERVER=
-# Wed, 28 Jan 2026 02:19:14 GMT
+# Wed, 15 Apr 2026 23:14:01 GMT
 ENV LISTEN=3333
-# Wed, 28 Jan 2026 02:19:14 GMT
+# Wed, 15 Apr 2026 23:14:01 GMT
 ENV USERFILE=eggdrop.user
-# Wed, 28 Jan 2026 02:19:14 GMT
+# Wed, 15 Apr 2026 23:14:01 GMT
 ENV CHANFILE=eggdrop.chan
-# Wed, 28 Jan 2026 02:19:14 GMT
+# Wed, 15 Apr 2026 23:14:01 GMT
 WORKDIR /home/eggdrop/eggdrop
-# Wed, 28 Jan 2026 02:19:14 GMT
+# Wed, 15 Apr 2026 23:14:01 GMT
 EXPOSE map[3333/tcp:{}]
-# Wed, 28 Jan 2026 02:19:14 GMT
+# Wed, 15 Apr 2026 23:14:01 GMT
 COPY entrypoint.sh ./ # buildkit
-# Wed, 28 Jan 2026 02:19:14 GMT
+# Wed, 15 Apr 2026 23:14:01 GMT
 COPY docker.tcl ./scripts/ # buildkit
-# Wed, 28 Jan 2026 02:19:14 GMT
+# Wed, 15 Apr 2026 23:14:01 GMT
 ENTRYPOINT ["/home/eggdrop/eggdrop/entrypoint.sh"]
-# Wed, 28 Jan 2026 02:19:14 GMT
+# Wed, 15 Apr 2026 23:14:01 GMT
 CMD ["eggdrop.conf"]
 ```
 
 -	Layers:
-	-	`sha256:bc1da058f299723f8258c5a82dd007d1dd72e275087b726d5e1be5ef6198f286`  
-		Last Modified: Wed, 28 Jan 2026 01:18:49 GMT  
-		Size: 3.6 MB (3643742 bytes)  
+	-	`sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763195a70a4a5adda577bb`  
+		Last Modified: Wed, 15 Apr 2026 20:01:46 GMT  
+		Size: 3.9 MB (3864189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e039def8eb7e6142c52b5d56bd7db8c89b4e1ad23571c7510d34c76deb93704`  
-		Last Modified: Wed, 28 Jan 2026 02:19:20 GMT  
-		Size: 955.0 B  
+	-	`sha256:89d3f36bc274178e9cf0c997c9995ccae73b4483b90dc54812a57e09e58046a1`  
+		Last Modified: Wed, 15 Apr 2026 23:14:07 GMT  
+		Size: 957.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2cacc13964d6975089b071cbf3cb6640097201cfa52f4e9a1f84c0d6f592503`  
-		Last Modified: Wed, 28 Jan 2026 02:19:20 GMT  
-		Size: 1.1 MB (1116690 bytes)  
+	-	`sha256:5b7f29b577422ce2a44c969d5f946cf87c68ff68076d1d78010f2d2c5c9415ac`  
+		Last Modified: Wed, 15 Apr 2026 23:14:07 GMT  
+		Size: 4.7 MB (4749966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:841f81b1478901671b8d1e4d87aefb6ad6412b1a1333c0caa83012ecf25796b6`  
-		Last Modified: Wed, 28 Jan 2026 02:19:20 GMT  
-		Size: 8.0 MB (8021415 bytes)  
+	-	`sha256:7ed8515cc3aa2ef55ff12dbb1b49aa29c23aff53788847667c63efd93d4e7bf9`  
+		Last Modified: Wed, 15 Apr 2026 23:14:07 GMT  
+		Size: 2.7 MB (2669196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2aec9435a53e3578b338d7d0969bade1eb62145cb02a7e3f6b0d47162f62ca3d`  
-		Last Modified: Wed, 28 Jan 2026 02:19:20 GMT  
-		Size: 2.0 KB (1967 bytes)  
+	-	`sha256:c1eec04bdb91d8c45196ec27e91a5f1c33ff97cae6e884d5472c92a5443a6baa`  
+		Last Modified: Wed, 15 Apr 2026 23:14:07 GMT  
+		Size: 2.0 KB (1963 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a8ab4f35c2586ea1c10c9bb42e52ff1ec59f0633e3f7c7fe1d3a04aa78ae05d`  
-		Last Modified: Wed, 28 Jan 2026 02:19:21 GMT  
-		Size: 1.1 KB (1125 bytes)  
+	-	`sha256:9f8136ba79ce0f9fc46d084dccfc5ca0b7d51a4cdffa0f9db244156e6e4f86ab`  
+		Last Modified: Wed, 15 Apr 2026 23:14:08 GMT  
+		Size: 1.1 KB (1120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eggdrop:develop` - unknown; unknown
 
 ```console
-$ docker pull eggdrop@sha256:a02ed2fd428fbd866864ea7e2efe2495240f1b2d271ebfea9b462cb5a7c19d06
+$ docker pull eggdrop@sha256:d34b0451d989c0795f490f73921baa3e35aa28105ef3d636365953e7e156d4d0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **159.9 KB (159908 bytes)**  
+-	Total Size: **754.0 KB (754019 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a73a082d0d7e15efd3547e38cda36b9b51eb1f33d27c93a7ef8d3c0e8cebcd71`
+-	Image ID: `sha256:f85d3eb681a399e7aa2394d95f91cb369f47a54899152646aa9b43005c5157ac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f298cbef1f561d71dcd79a19ad709b166cd5aff3386962b86bd38d2390893b0d`  
-		Last Modified: Wed, 28 Jan 2026 02:19:20 GMT  
-		Size: 142.9 KB (142860 bytes)  
+	-	`sha256:8d18ab7f6050c0bf6a8a11a75e4e7ea14ac7fcdb9217f5b81996b79ac497353e`  
+		Last Modified: Wed, 15 Apr 2026 23:14:07 GMT  
+		Size: 738.2 KB (738227 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ff08cb3d5c07426cc3156abc89f0300062266e8dbff34d3421931b385374b762`  
-		Last Modified: Wed, 28 Jan 2026 02:19:20 GMT  
-		Size: 17.0 KB (17048 bytes)  
+	-	`sha256:fe9f1842f8e1a6418f24751c4b4ae2a2c4307abdb88bf47ce573cc46e38fdea2`  
+		Last Modified: Wed, 15 Apr 2026 23:14:07 GMT  
+		Size: 15.8 KB (15792 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `eggdrop:develop` - linux; arm variant v6
 
 ```console
-$ docker pull eggdrop@sha256:47d8c408984edee13e9f16cb2d54873ac7b976125f30b64f7384d3307a26f067
+$ docker pull eggdrop@sha256:0a9fd250fcab458c40735a85e42d6e95b0d63d775afd599b2d5d3f0943173497
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.3 MB (12336595 bytes)**  
+-	Total Size: **11.0 MB (10966036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7bd14656d14331ded9911d87253ae90c70f285e990fa27ca6bca0217083d9dfb`
+-	Image ID: `sha256:b0189d93460064e265df5513975bbffc3378bf4b85555dbdfc0a6b54ecb55b04`
 -	Entrypoint: `["\/home\/eggdrop\/eggdrop\/entrypoint.sh"]`
 -	Default Command: `["eggdrop.conf"]`
 
 ```dockerfile
-# Wed, 28 Jan 2026 01:18:04 GMT
-ADD alpine-minirootfs-3.21.6-armhf.tar.gz / # buildkit
-# Wed, 28 Jan 2026 01:18:04 GMT
+# Wed, 15 Apr 2026 20:02:13 GMT
+ADD alpine-minirootfs-3.23.4-armhf.tar.gz / # buildkit
+# Wed, 15 Apr 2026 20:02:13 GMT
 CMD ["/bin/sh"]
-# Wed, 28 Jan 2026 02:20:00 GMT
+# Wed, 15 Apr 2026 23:13:08 GMT
 LABEL org.opencontainers.image.authors=Geo Van O <geo@eggheads.org> org.opencontainers.image.url=https://www.eggheads.org
-# Wed, 28 Jan 2026 02:20:00 GMT
+# Wed, 15 Apr 2026 23:13:08 GMT
 RUN addgroup -S -g 3333 eggdrop     && adduser -S -u 3333 eggdrop eggdrop # buildkit
-# Wed, 28 Jan 2026 02:20:01 GMT
-RUN apk add --no-cache 'su-exec>=0.2' bash openssl # buildkit
-# Wed, 28 Jan 2026 02:20:01 GMT
+# Wed, 15 Apr 2026 23:13:10 GMT
+RUN apk add --no-cache 'su-exec>=0.2' bash openssl tcl9 tcl9-dev # buildkit
+# Wed, 15 Apr 2026 23:13:10 GMT
 ENV EGGDROP_SHA256=e42668f102c1446901b066d13fe0bf39622afca8d723f356ac2390d5faaf6e5e
-# Wed, 28 Jan 2026 02:20:01 GMT
+# Wed, 15 Apr 2026 23:13:10 GMT
 ENV EGGDROP_COMMIT=541e8ac17e549a40e177b5eea54e4abf24629a33
-# Wed, 28 Jan 2026 02:24:51 GMT
-RUN apk add --no-cache --virtual egg-deps wget ca-certificates make tar gnupg build-base openssl-dev bsd-compat-headers zlib-dev   && wget "https://prdownloads.sourceforge.net/tcl/tcl9.0.1-src.tar.gz" -O tcl9.0.1-src.tar.gz --progress=dot:giga   && tar -zxf tcl9.0.1-src.tar.gz   && ( cd tcl9.0.1     && cd unix     && ./configure     && nproc="$(nproc)"     && make -j"$nproc"     && make install )   && rm -rf tcl9.0.1-src.tar.gz   && rm -rf tcl9.0.1   && wget "https://github.com/eggheads/eggdrop/archive/$EGGDROP_COMMIT.tar.gz" -O develop.tar.gz   && echo "$EGGDROP_SHA256 *develop.tar.gz" | sha256sum -c -   && tar -zxf develop.tar.gz   && rm develop.tar.gz     && ( cd eggdrop-$EGGDROP_COMMIT     && ./configure     && make config     && nproc="$(nproc)"     && make -j"$nproc"     && make install DEST=/home/eggdrop/eggdrop )   && rm -rf eggdrop-$EGGDROP_COMMIT   && mkdir /home/eggdrop/eggdrop/data   && chown -R eggdrop /home/eggdrop/eggdrop   && apk del --no-network egg-deps # buildkit
-# Wed, 28 Jan 2026 02:24:51 GMT
+# Wed, 15 Apr 2026 23:13:30 GMT
+RUN apk add --no-cache --virtual egg-deps wget ca-certificates make tar gnupg build-base openssl-dev bsd-compat-headers zlib-dev   && wget "https://github.com/eggheads/eggdrop/archive/$EGGDROP_COMMIT.tar.gz" -O develop.tar.gz   && echo "$EGGDROP_SHA256 *develop.tar.gz" | sha256sum -c -   && tar -zxf develop.tar.gz   && rm develop.tar.gz     && ( cd eggdrop-$EGGDROP_COMMIT     && ./configure     && make config     && nproc="$(nproc)"     && make -j"$nproc"     && make install DEST=/home/eggdrop/eggdrop )   && rm -rf eggdrop-$EGGDROP_COMMIT   && mkdir /home/eggdrop/eggdrop/data   && chown -R eggdrop /home/eggdrop/eggdrop   && apk del --no-network egg-deps # buildkit
+# Wed, 15 Apr 2026 23:13:30 GMT
 ENV NICK=
-# Wed, 28 Jan 2026 02:24:51 GMT
+# Wed, 15 Apr 2026 23:13:30 GMT
 ENV SERVER=
-# Wed, 28 Jan 2026 02:24:51 GMT
+# Wed, 15 Apr 2026 23:13:30 GMT
 ENV LISTEN=3333
-# Wed, 28 Jan 2026 02:24:51 GMT
+# Wed, 15 Apr 2026 23:13:30 GMT
 ENV USERFILE=eggdrop.user
-# Wed, 28 Jan 2026 02:24:51 GMT
+# Wed, 15 Apr 2026 23:13:30 GMT
 ENV CHANFILE=eggdrop.chan
-# Wed, 28 Jan 2026 02:24:51 GMT
+# Wed, 15 Apr 2026 23:13:31 GMT
 WORKDIR /home/eggdrop/eggdrop
-# Wed, 28 Jan 2026 02:24:51 GMT
+# Wed, 15 Apr 2026 23:13:31 GMT
 EXPOSE map[3333/tcp:{}]
-# Wed, 28 Jan 2026 02:24:51 GMT
+# Wed, 15 Apr 2026 23:13:31 GMT
 COPY entrypoint.sh ./ # buildkit
-# Wed, 28 Jan 2026 02:24:51 GMT
+# Wed, 15 Apr 2026 23:13:31 GMT
 COPY docker.tcl ./scripts/ # buildkit
-# Wed, 28 Jan 2026 02:24:51 GMT
+# Wed, 15 Apr 2026 23:13:31 GMT
 ENTRYPOINT ["/home/eggdrop/eggdrop/entrypoint.sh"]
-# Wed, 28 Jan 2026 02:24:51 GMT
+# Wed, 15 Apr 2026 23:13:31 GMT
 CMD ["eggdrop.conf"]
 ```
 
 -	Layers:
-	-	`sha256:a7fd0d978b605e6a6ed974adfe73f3035a5a60d1bebd2c9d5bb111651502c33e`  
-		Last Modified: Wed, 28 Jan 2026 01:18:08 GMT  
-		Size: 3.4 MB (3365870 bytes)  
+	-	`sha256:c9cf8ef099e6e20ca4c7a2ae5b731a4beff960c0ffb88dd64fd6cdfdfe04839d`  
+		Last Modified: Wed, 15 Apr 2026 20:02:17 GMT  
+		Size: 3.6 MB (3571863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33e2a68e34e078099e94134d24feddbed5b8f32557051f3f938caf41e11c952e`  
-		Last Modified: Wed, 28 Jan 2026 02:24:55 GMT  
-		Size: 955.0 B  
+	-	`sha256:1a5ac7e0d6f968ff7f1963fd26ee579d9958c1bee0d2d5eb55acdaf5d5dd1126`  
+		Last Modified: Wed, 15 Apr 2026 23:13:35 GMT  
+		Size: 956.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:45fdab165210050821af2a5f001d5baf8ccca79e3a009422af17370dad47f252`  
-		Last Modified: Wed, 28 Jan 2026 02:24:55 GMT  
-		Size: 1.1 MB (1129836 bytes)  
+	-	`sha256:6e7adba4b481ebecd1aa5ad5ddcd9208d17d014302c93399f60e89165aba3bc0`  
+		Last Modified: Wed, 15 Apr 2026 23:13:36 GMT  
+		Size: 4.7 MB (4708171 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e49ba6c5c6be60d596e52593d7a1d3123519d7970a33420befa556d889a3bc3`  
-		Last Modified: Wed, 28 Jan 2026 02:24:55 GMT  
-		Size: 7.8 MB (7836805 bytes)  
+	-	`sha256:b85d4f9a5f70b9df5160b0bafbe61fe83d8a4093998914c54e6711c3482df315`  
+		Last Modified: Wed, 15 Apr 2026 23:13:36 GMT  
+		Size: 2.7 MB (2681923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f145ec6b46d009f299a3286ae36570980ce83ff55f2000fa9dee92b3104bc317`  
-		Last Modified: Wed, 28 Jan 2026 02:24:55 GMT  
-		Size: 2.0 KB (1970 bytes)  
+	-	`sha256:031ef5c760f5deaead1ed263ac8ed7fee8b59b5972c6985423643ef5b5869a14`  
+		Last Modified: Wed, 15 Apr 2026 23:13:36 GMT  
+		Size: 2.0 KB (1967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed69d4b95bdade791673c1eeb6a6818cc455be2a0908d20fb81c621a81741a9f`  
-		Last Modified: Wed, 28 Jan 2026 02:24:56 GMT  
-		Size: 1.1 KB (1127 bytes)  
+	-	`sha256:196e78aca3c655572a461d79618618158cfac06449b877ade5987542f0a65b8d`  
+		Last Modified: Wed, 15 Apr 2026 23:13:37 GMT  
+		Size: 1.1 KB (1124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eggdrop:develop` - unknown; unknown
 
 ```console
-$ docker pull eggdrop@sha256:19fb84bb3687c06f77111bec63322ab97d7283d337714772d4f96948d6565afe
+$ docker pull eggdrop@sha256:5857c7c4a8a6c8d948158bf9edc168b9945f6564da05c1420e64fe1034ebbbea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.9 KB (16915 bytes)**  
+-	Total Size: **15.7 KB (15659 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d2537fb097272264eb4f8068e3096aaaea243f9c60592ca6272e8e6ab3d5397`
+-	Image ID: `sha256:d7fb3668341d0ccb54bdc157fb98b9d76db15045ab5c9a04fcbdf0b60cd5c33b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8ad8d8683e2f25ab6f97dd7ecfe2ea1c0dbebf39b215b06c30f62a78a9f3c19a`  
-		Last Modified: Wed, 28 Jan 2026 02:24:55 GMT  
-		Size: 16.9 KB (16915 bytes)  
+	-	`sha256:f5bd723bd399876662b1201a5b67868a6f07af8f01e39137bb5ab0d91243abb6`  
+		Last Modified: Wed, 15 Apr 2026 23:13:35 GMT  
+		Size: 15.7 KB (15659 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `eggdrop:develop` - linux; arm64 variant v8
 
 ```console
-$ docker pull eggdrop@sha256:8381867690c8f9a851d6d04f642df04c523173dc7b2d09c366819b22ad14f8c5
+$ docker pull eggdrop@sha256:2c9332a895e9b8a0cc500ccde5c1f1ef252dbdf354468727cdadd67757b6afd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.2 MB (13234241 bytes)**  
+-	Total Size: **11.7 MB (11712810 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0927a23c3ffb78b855b6614e79cbb478e2d687d8e4ddd281503f3868f38c0be3`
+-	Image ID: `sha256:83526d1b3273ce138fd04307fc90b68a37604dec4a5eaf712ee81952047f5e19`
 -	Entrypoint: `["\/home\/eggdrop\/eggdrop\/entrypoint.sh"]`
 -	Default Command: `["eggdrop.conf"]`
 
 ```dockerfile
-# Wed, 28 Jan 2026 01:18:07 GMT
-ADD alpine-minirootfs-3.21.6-aarch64.tar.gz / # buildkit
-# Wed, 28 Jan 2026 01:18:07 GMT
+# Wed, 15 Apr 2026 20:01:25 GMT
+ADD alpine-minirootfs-3.23.4-aarch64.tar.gz / # buildkit
+# Wed, 15 Apr 2026 20:01:25 GMT
 CMD ["/bin/sh"]
-# Wed, 28 Jan 2026 02:15:33 GMT
+# Wed, 15 Apr 2026 23:13:18 GMT
 LABEL org.opencontainers.image.authors=Geo Van O <geo@eggheads.org> org.opencontainers.image.url=https://www.eggheads.org
-# Wed, 28 Jan 2026 02:15:33 GMT
+# Wed, 15 Apr 2026 23:13:18 GMT
 RUN addgroup -S -g 3333 eggdrop     && adduser -S -u 3333 eggdrop eggdrop # buildkit
-# Wed, 28 Jan 2026 02:15:34 GMT
-RUN apk add --no-cache 'su-exec>=0.2' bash openssl # buildkit
-# Wed, 28 Jan 2026 02:15:34 GMT
+# Wed, 15 Apr 2026 23:13:19 GMT
+RUN apk add --no-cache 'su-exec>=0.2' bash openssl tcl9 tcl9-dev # buildkit
+# Wed, 15 Apr 2026 23:13:19 GMT
 ENV EGGDROP_SHA256=e42668f102c1446901b066d13fe0bf39622afca8d723f356ac2390d5faaf6e5e
-# Wed, 28 Jan 2026 02:15:34 GMT
+# Wed, 15 Apr 2026 23:13:19 GMT
 ENV EGGDROP_COMMIT=541e8ac17e549a40e177b5eea54e4abf24629a33
-# Wed, 28 Jan 2026 02:19:49 GMT
-RUN apk add --no-cache --virtual egg-deps wget ca-certificates make tar gnupg build-base openssl-dev bsd-compat-headers zlib-dev   && wget "https://prdownloads.sourceforge.net/tcl/tcl9.0.1-src.tar.gz" -O tcl9.0.1-src.tar.gz --progress=dot:giga   && tar -zxf tcl9.0.1-src.tar.gz   && ( cd tcl9.0.1     && cd unix     && ./configure     && nproc="$(nproc)"     && make -j"$nproc"     && make install )   && rm -rf tcl9.0.1-src.tar.gz   && rm -rf tcl9.0.1   && wget "https://github.com/eggheads/eggdrop/archive/$EGGDROP_COMMIT.tar.gz" -O develop.tar.gz   && echo "$EGGDROP_SHA256 *develop.tar.gz" | sha256sum -c -   && tar -zxf develop.tar.gz   && rm develop.tar.gz     && ( cd eggdrop-$EGGDROP_COMMIT     && ./configure     && make config     && nproc="$(nproc)"     && make -j"$nproc"     && make install DEST=/home/eggdrop/eggdrop )   && rm -rf eggdrop-$EGGDROP_COMMIT   && mkdir /home/eggdrop/eggdrop/data   && chown -R eggdrop /home/eggdrop/eggdrop   && apk del --no-network egg-deps # buildkit
-# Wed, 28 Jan 2026 02:19:49 GMT
+# Wed, 15 Apr 2026 23:13:35 GMT
+RUN apk add --no-cache --virtual egg-deps wget ca-certificates make tar gnupg build-base openssl-dev bsd-compat-headers zlib-dev   && wget "https://github.com/eggheads/eggdrop/archive/$EGGDROP_COMMIT.tar.gz" -O develop.tar.gz   && echo "$EGGDROP_SHA256 *develop.tar.gz" | sha256sum -c -   && tar -zxf develop.tar.gz   && rm develop.tar.gz     && ( cd eggdrop-$EGGDROP_COMMIT     && ./configure     && make config     && nproc="$(nproc)"     && make -j"$nproc"     && make install DEST=/home/eggdrop/eggdrop )   && rm -rf eggdrop-$EGGDROP_COMMIT   && mkdir /home/eggdrop/eggdrop/data   && chown -R eggdrop /home/eggdrop/eggdrop   && apk del --no-network egg-deps # buildkit
+# Wed, 15 Apr 2026 23:13:35 GMT
 ENV NICK=
-# Wed, 28 Jan 2026 02:19:49 GMT
+# Wed, 15 Apr 2026 23:13:35 GMT
 ENV SERVER=
-# Wed, 28 Jan 2026 02:19:49 GMT
+# Wed, 15 Apr 2026 23:13:35 GMT
 ENV LISTEN=3333
-# Wed, 28 Jan 2026 02:19:49 GMT
+# Wed, 15 Apr 2026 23:13:35 GMT
 ENV USERFILE=eggdrop.user
-# Wed, 28 Jan 2026 02:19:49 GMT
+# Wed, 15 Apr 2026 23:13:35 GMT
 ENV CHANFILE=eggdrop.chan
-# Wed, 28 Jan 2026 02:19:49 GMT
+# Wed, 15 Apr 2026 23:13:35 GMT
 WORKDIR /home/eggdrop/eggdrop
-# Wed, 28 Jan 2026 02:19:49 GMT
+# Wed, 15 Apr 2026 23:13:35 GMT
 EXPOSE map[3333/tcp:{}]
-# Wed, 28 Jan 2026 02:19:49 GMT
+# Wed, 15 Apr 2026 23:13:35 GMT
 COPY entrypoint.sh ./ # buildkit
-# Wed, 28 Jan 2026 02:19:49 GMT
+# Wed, 15 Apr 2026 23:13:36 GMT
 COPY docker.tcl ./scripts/ # buildkit
-# Wed, 28 Jan 2026 02:19:49 GMT
+# Wed, 15 Apr 2026 23:13:36 GMT
 ENTRYPOINT ["/home/eggdrop/eggdrop/entrypoint.sh"]
-# Wed, 28 Jan 2026 02:19:49 GMT
+# Wed, 15 Apr 2026 23:13:36 GMT
 CMD ["eggdrop.conf"]
 ```
 
 -	Layers:
-	-	`sha256:a447a5de8f4eb4a987d81c0afa14d459cc714599c020c08f45fafa9c6c904b30`  
-		Last Modified: Wed, 28 Jan 2026 01:18:13 GMT  
-		Size: 4.0 MB (3992880 bytes)  
+	-	`sha256:d17f077ada118cc762df373ff803592abf2dfa3ddafaa7381e364dd27a88fca7`  
+		Last Modified: Wed, 15 Apr 2026 20:01:32 GMT  
+		Size: 4.2 MB (4199870 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef5d326835b03441f2d0547500e8b5b6656690da7a2ff55861d5c264ea343a83`  
-		Last Modified: Wed, 28 Jan 2026 02:19:55 GMT  
-		Size: 955.0 B  
+	-	`sha256:0917f956f3193e362e9996b0aaf09dfcbec0dd4237ec2b5586573c8ad3d12300`  
+		Last Modified: Wed, 15 Apr 2026 23:13:41 GMT  
+		Size: 957.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7010c1534bbac2ca5df72008697b9f66e66597a1ca99133ea66928f8e813af30`  
-		Last Modified: Wed, 28 Jan 2026 02:19:56 GMT  
-		Size: 1.2 MB (1171004 bytes)  
+	-	`sha256:45f134e415348636293acd9fb5208ff982aaab8ffb1b9ade56a98396a8341732`  
+		Last Modified: Wed, 15 Apr 2026 23:13:41 GMT  
+		Size: 4.8 MB (4823830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e0f3569257823b47daa88a726588fc8036e267fb562f3398b1c33874ced31e3`  
-		Last Modified: Wed, 28 Jan 2026 02:19:56 GMT  
-		Size: 8.1 MB (8066291 bytes)  
+	-	`sha256:f1c981992008899ae79291752bebfcf3e31ee3ab8fd8acb29ede1d35cf4746d6`  
+		Last Modified: Wed, 15 Apr 2026 23:13:41 GMT  
+		Size: 2.7 MB (2685032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d36b3217393e5d6208ba667e95e80c41e490ecca6d0d42312c37a1d83159ad8`  
-		Last Modified: Wed, 28 Jan 2026 02:19:56 GMT  
-		Size: 2.0 KB (1961 bytes)  
+	-	`sha256:de3727664a4c7d8f3e385cd64bd918176db313d61d3d92239adb0c837994001c`  
+		Last Modified: Wed, 15 Apr 2026 23:13:41 GMT  
+		Size: 2.0 KB (1966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57125704996435c761c26848340fc8180aa49a3375f1ddc3440e216c6ea62505`  
-		Last Modified: Wed, 28 Jan 2026 02:19:56 GMT  
-		Size: 1.1 KB (1118 bytes)  
+	-	`sha256:2acedb75c1470eb5b6132f256ccfb72bf3690eb28c816e1a485163f4650f42cd`  
+		Last Modified: Wed, 15 Apr 2026 23:13:42 GMT  
+		Size: 1.1 KB (1123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eggdrop:develop` - unknown; unknown
 
 ```console
-$ docker pull eggdrop@sha256:ded820e13d9814b416f7903a27105df0c859d51dcb7dd5ab44411bbd2b489b0d
+$ docker pull eggdrop@sha256:cbe0b6a7ff924773eb2d6e31c5c853385cd434b14727163c10e1def4e208da6e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.0 KB (160025 bytes)**  
+-	Total Size: **753.5 KB (753486 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b08edd1506473eb6118b8a07c1b3e6fe96d553a8ca36b2cfa4aec5820514968`
+-	Image ID: `sha256:02a98fb89a483b596747ffcc7616399dae88c944ce937478e178dbb4214c1077`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b38c81a463b11d91af7b34bcacd0e3ac42a05c09b395d227e6fcd90e65ee5f97`  
-		Last Modified: Wed, 28 Jan 2026 02:19:55 GMT  
-		Size: 142.9 KB (142880 bytes)  
+	-	`sha256:9dda099678bfba2422cf3d1510550671a2ae23b9485830b25af0c5c266af858a`  
+		Last Modified: Wed, 15 Apr 2026 23:13:41 GMT  
+		Size: 737.6 KB (737597 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e15de479200558222c18ed2410b3f98b6fa9d9d7481d5793cadaad84c5e311c1`  
-		Last Modified: Wed, 28 Jan 2026 02:19:55 GMT  
-		Size: 17.1 KB (17145 bytes)  
+	-	`sha256:bb426b300dfc66628ab8ddf6389d6b207dc8746ff469e1031db48a0b9799c3a6`  
+		Last Modified: Wed, 15 Apr 2026 23:13:41 GMT  
+		Size: 15.9 KB (15889 bytes)  
 		MIME: application/vnd.in-toto+json
