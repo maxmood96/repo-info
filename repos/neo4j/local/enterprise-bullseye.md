@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:edb13044b41e3d06abbc90ef09248eb35bbefefdf22ec00185cf31c6667c9225`
-- Created: `2026-04-07T02:58:15.371774929Z`
+- Image ID: `sha256:5c7da79da5a7f46b9989b0c34062e751c0698ab46c5a275f3d5d8dbd84edb8c2`
+- Created: `2026-04-15T21:40:12.324498218Z`
 - Virtual Size: ~ 829.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1917,20 +1917,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=247.3-7+deb11u7
-'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_247.3-7%2bdeb11u7.dsc' systemd_247.3-7+deb11u7.dsc 5236 SHA256:2521703c26bedac0ce9bddf6aee2d500d01bf12c3a80d5d62950a30a3fdfa497
-'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_247.3.orig.tar.gz' systemd_247.3.orig.tar.gz 9895385 SHA256:2869986e219a8dfc96cc0dffac66e0c13bb70a89e16b85a3948876c146cfa3e0
-'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_247.3-7%2bdeb11u7.debian.tar.xz' systemd_247.3-7+deb11u7.debian.tar.xz 207972 SHA256:a175340e4b1341c2f614227de0ffd154073d56cc3ddba2a92668f7f5386f1366
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/247.3-7+deb11u7/
 
-- https://sources.debian.net/src/systemd/247.3-7+deb11u7/ (for browsing the source)
-- https://sources.debian.net/src/systemd/247.3-7+deb11u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/247.3-7+deb11u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.96-7+deb11u1`
 
