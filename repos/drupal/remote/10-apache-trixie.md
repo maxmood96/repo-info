@@ -1,7 +1,7 @@
 ## `drupal:10-apache-trixie`
 
 ```console
-$ docker pull drupal@sha256:8aa8437657008d9bb049d9f06eab60f31cb094447445eebda8ec43367794ff24
+$ docker pull drupal@sha256:038815002b185daa94dfbd9397e34e2ff8b9517edb773a5c2c4ecb216bd08155
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -840,7 +840,7 @@ $ docker pull drupal@sha256:22b56e68c74abe90f54d5758cb6e1801c7ff60ad0262c6c52a52
 ### `drupal:10-apache-trixie` - linux; ppc64le
 
 ```console
-$ docker pull drupal@sha256:b72786969e356743fa7fedea49a5fe0ac8a2bbc9dcdb9bd6f9e4d89825029871
+$ docker pull drupal@sha256:416291e653116f3dad4d2c70a80343910942fb9f1bde607d46343766314f4afd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -1020,25 +1020,25 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 ### `drupal:10-apache-trixie` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:3573d5b914ea258f5f540b14a6d596348a9c387bccb711cb2684e0e9359e7da5
+$ docker pull drupal@sha256:0e80a42f35cb0d92c32bac4dbd1ef640e7649de8cb6fbfc17a12832d19dc6e95
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.4 MB (7379269 bytes)**  
+-	Total Size: **7.4 MB (7379267 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c696a9fb34be71caeac4d7e781546e4af5941b2f0713bc24b669d4cf2636d87d`
+-	Image ID: `sha256:cdd7001bd9870fb13204f698b44af1f5be2dbe675f12301e088987872f47362d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f3a05d95be1b51b34937c090de156735b1c4ab1ecf0b569ca710a4519f88dc01`  
-		Last Modified: Tue, 14 Apr 2026 19:08:52 GMT  
+	-	`sha256:3b15a8b8966b5e5ef42d00fa42959e69b8844ec3dc81a88eda940da8dd8bf317`  
+		Last Modified: Thu, 16 Apr 2026 04:01:55 GMT  
 		Size: 7.3 MB (7332181 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1e808fbf4b91a8646292ead75e1032d1ae9e8c302d1d9e7494567e9ade10cb53`  
-		Last Modified: Tue, 14 Apr 2026 19:08:51 GMT  
-		Size: 47.1 KB (47088 bytes)  
+	-	`sha256:f9485e9362313554d381fcd5a939f213d42d6f66850ae7f6d350680d4d728f68`  
+		Last Modified: Thu, 16 Apr 2026 04:01:55 GMT  
+		Size: 47.1 KB (47086 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:10-apache-trixie` - linux; riscv64

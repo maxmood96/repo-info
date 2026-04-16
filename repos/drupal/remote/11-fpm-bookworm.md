@@ -1,7 +1,7 @@
 ## `drupal:11-fpm-bookworm`
 
 ```console
-$ docker pull drupal@sha256:512cde9e6f9a1b4a946e0998f9d569f355aa9e3e65548524bd65398d823f2c28
+$ docker pull drupal@sha256:d3d7867066755eeb2677a4095aad0d811f34ad35ab825b6fd5aac03b7aa8485d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -726,7 +726,7 @@ $ docker pull drupal@sha256:cb48b1715a34b2daf5b5351da752ede77f93aa9d36b5311f0b61
 ### `drupal:11-fpm-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull drupal@sha256:6ec3406e51f158627544612d2adf4ae8457bb5c77e1c5911b3eba5aeb9f3d9df
+$ docker pull drupal@sha256:6ca17f52713d151a82e8cb43c101ebc1b07b5515b7fe5df9a104b8576e629f1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -878,25 +878,25 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 ### `drupal:11-fpm-bookworm` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:c31244f08da01f8dbade7ea39fa6a6d1043f5ff69619249855667d3209820962
+$ docker pull drupal@sha256:9627a703f51dce212d0cd5b2dc535b57ea6475003032d7d10a4ca404377468b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 MB (6536885 bytes)**  
+-	Total Size: **6.5 MB (6536884 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:de61d0872db68b2e011d8dca8ad333b8b07822f7c403b677b04f50b107cdce01`
+-	Image ID: `sha256:3ef169ba212b623e826c745869489c1609accb886f0524a42d35216aa8213d05`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3da563ccf515e0a55fac62184b5d99290e7fabaf10718a3d2ef237fa882daded`  
-		Last Modified: Tue, 14 Apr 2026 19:00:21 GMT  
+	-	`sha256:e88b85159776ac2825f046d20e70b23f3f23a1f04578aee7519dcff3f7358393`  
+		Last Modified: Thu, 16 Apr 2026 03:53:43 GMT  
 		Size: 6.5 MB (6501057 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:793191c08eb7ea24a2839de6dbd6c94a508b82b307883bd485c0d9692b34f10b`  
-		Last Modified: Tue, 14 Apr 2026 19:00:20 GMT  
-		Size: 35.8 KB (35828 bytes)  
+	-	`sha256:462760dcbfc307cced17974596f40807ba132aa7713d3cea857abf8851dfd856`  
+		Last Modified: Thu, 16 Apr 2026 03:53:42 GMT  
+		Size: 35.8 KB (35827 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:11-fpm-bookworm` - linux; s390x
