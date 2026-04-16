@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d2d11399bdd3e6c869a9534b13d22eb341c37fca183fc94e3ecdccac41dd7a30`
-- Created: `2026-04-07T01:49:02.594456532Z`
+- Image ID: `sha256:597da93887ffee4ab934b135ad1a913194c05a6425df714c3fa0faa875179398`
+- Created: `2026-04-15T20:27:44.696969232Z`
 - Virtual Size: ~ 1.88 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -59,11 +59,11 @@ $ apt-get source -qq --print-uris adduser=3.137ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.137ubuntu1.tar.xz' adduser_3.137ubuntu1.tar.xz 280408 SHA512:46979160ef2f6b85097958cd11e549ae48efa24e1719155fd90ae7b322c0adac087cac7d0a709cd084ee11557575b05dfde89a9d63bcfd80fb47779c41098d48
 ```
 
-### `dpkg` source package: `apparmor=4.0.1really4.0.1-0ubuntu0.24.04.5`
+### `dpkg` source package: `apparmor=4.0.1really4.0.1-0ubuntu0.24.04.6`
 
 Binary Packages:
 
-- `libapparmor1:amd64=4.0.1really4.0.1-0ubuntu0.24.04.5`
+- `libapparmor1:amd64=4.0.1really4.0.1-0ubuntu0.24.04.6`
 
 Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 
@@ -73,9 +73,14 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apparmor=4.0.1really4.0.1-0ubuntu0.24.04.6
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1-0ubuntu0.24.04.6.dsc' apparmor_4.0.1really4.0.1-0ubuntu0.24.04.6.dsc 3434 SHA512:c22256934b76eaf3a98f1a152bb8feeed1d9b50a9dca95c173092c187011902c34c5a60b994e5a8622cebc988e2d51f03cb742e6b7ca69571e452fa680523612
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1.orig.tar.gz' apparmor_4.0.1really4.0.1.orig.tar.gz 6984984 SHA512:5e569c3f6adc7b72cd61c65c54a5c3686647eb535bf11e0ceb888e8a093f317fa49df598131493af6ec807011459286516df0170788d02fc73e3a70f218a1923
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1-0ubuntu0.24.04.6.debian.tar.xz' apparmor_4.0.1really4.0.1-0ubuntu0.24.04.6.debian.tar.xz 139420 SHA512:28b63412257bbed708f8e438a1efffb8fbc46683e89397777190cb005098eb84d1c6f5307550d22cb73fdce18b14782e41622c8d644a977bfa83d6e3400d3fea
+```
 
 ### `dpkg` source package: `apt=2.8.3`
 
@@ -1841,12 +1846,12 @@ $ apt-get source -qq --print-uris numactl=2.0.18-1ubuntu0.24.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/numactl/numactl_2.0.18-1ubuntu0.24.04.1.debian.tar.xz' numactl_2.0.18-1ubuntu0.24.04.1.debian.tar.xz 7936 SHA512:dfa172698cb88e33a00b88735b9b643538471786c4b0e54160e8c10004b82a7b94cd0466bb8206bb632710512964298cc32f2341d8f0983b9cf6235057b4bc8d
 ```
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3.7`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.9`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.0.13-0ubuntu3.7`
-- `openssl=3.0.13-0ubuntu3.7`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.9`
+- `openssl=3.0.13-0ubuntu3.9`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -1855,9 +1860,14 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.9.dsc' openssl_3.0.13-0ubuntu3.9.dsc 2512 SHA512:bd293e19828a97bde4d3c8327399fbddc65e9350cc0dced2d8daff15970bbd4fdae9996b43c31d324e829d55d98bcc0e03b0f5e4f07ef8282f6d16cb4ed7990d
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.9.debian.tar.xz' openssl_3.0.13-0ubuntu3.9.debian.tar.xz 181192 SHA512:a196f92fa68f7b5f55efe4a0805bdc62bd62b16c5d2cb9523d588c5c39bea68f9b386de6a1b832d41eadcb082f1e6ea2f8df56a9faaf5c022dbd6e872b90b077
+```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 
@@ -2294,17 +2304,17 @@ $ apt-get source -qq --print-uris sysstat=12.6.1-2
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysstat/sysstat_12.6.1-2.debian.tar.xz' sysstat_12.6.1-2.debian.tar.xz 38240 SHA512:e2733fcfee6639e86c1c08ab06ffa29e56e11820df1c0dcb09feb8352d20f1bbb714191544ee624d27cd302e09c392d94d9957b3298e276a5a5c93070eb48c6c
 ```
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.14`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.15`
 
 Binary Packages:
 
-- `libsystemd-shared:amd64=255.4-1ubuntu8.14`
-- `libsystemd0:amd64=255.4-1ubuntu8.14`
-- `libudev1:amd64=255.4-1ubuntu8.14`
-- `systemd=255.4-1ubuntu8.14`
-- `systemd-dev=255.4-1ubuntu8.14`
-- `systemd-resolved=255.4-1ubuntu8.14`
-- `systemd-timesyncd=255.4-1ubuntu8.14`
+- `libsystemd-shared:amd64=255.4-1ubuntu8.15`
+- `libsystemd0:amd64=255.4-1ubuntu8.15`
+- `libudev1:amd64=255.4-1ubuntu8.15`
+- `systemd=255.4-1ubuntu8.15`
+- `systemd-dev=255.4-1ubuntu8.15`
+- `systemd-resolved=255.4-1ubuntu8.15`
+- `systemd-timesyncd=255.4-1ubuntu8.15`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd-shared/copyright`, `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`, `/usr/share/doc/systemd/copyright`, `/usr/share/doc/systemd-dev/copyright`, `/usr/share/doc/systemd-resolved/copyright`, `/usr/share/doc/systemd-timesyncd/copyright`)
 
@@ -2320,10 +2330,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd-shared/copyright`, `/usr/shar
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.14
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.14.dsc' systemd_255.4-1ubuntu8.14.dsc 7324 SHA512:cc3b0d413b31e1995708683ea8bfb139952b74783ccfcc8c4dcc1d0b3950ebecfa58eeb54f01a5d44e38ee85b55107c830ce42d2571c2042da8d0cc2a204aa1e
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
-'http://security.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.14.debian.tar.xz' systemd_255.4-1ubuntu8.14.debian.tar.xz 262172 SHA512:a7e3657be6aebac7b2baeacc4e179db686565a3db05f0730ce8f10e36d075dc8db8af43433ec712c3f45331b061614f76dedbfe08d00dd7f06c4a79e2fdde11d
+$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.15
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.15.dsc' systemd_255.4-1ubuntu8.15.dsc 7324 SHA512:1d4133d59aba00e08cc32da6bbac3dd3d9f049134d7538df9dea8891da7f10f3d418933802fd057234b8ab9b0e79b44557d1d6f710a3bc1009b01b641703430f
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.15.debian.tar.xz' systemd_255.4-1ubuntu8.15.debian.tar.xz 264648 SHA512:a94d4757267f9c86a0189dc7538c317d4597ca5f424acabe26e5f2beecbf5535ecd24fedac970c37e63ee653e633b0b19dc0fe0e6ee118b0559e593cbc8208f7
 ```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
