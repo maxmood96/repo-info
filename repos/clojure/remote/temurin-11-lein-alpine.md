@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-lein-alpine`
 
 ```console
-$ docker pull clojure@sha256:8d291d8d6ff6688740fd0ea196a0911cec1ad2ee36a55fb4ce26e83a742f22eb
+$ docker pull clojure@sha256:7c43acf344853ac882b7115395acaeca39d5b6383fd1ebcea73d2d115c72cdfa
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,113 +12,113 @@ $ docker pull clojure@sha256:8d291d8d6ff6688740fd0ea196a0911cec1ad2ee36a55fb4ce2
 ### `clojure:temurin-11-lein-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:e59bc896bc0ad906a6b0d9e1084448583a19978db60e46e42817c240fe59d0e8
+$ docker pull clojure@sha256:4a349c1bb20aad84a9d04051e2434bc36408b8ea8346613b498d128f4c9b48f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **181.1 MB (181054761 bytes)**  
+-	Total Size: **181.1 MB (181054902 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b95f3145e134007707c3efa8f9f37700b8d88e37036f6a03aebe7900f18df592`
+-	Image ID: `sha256:2b6785af13f92a5689e29553e81a9329ff61a0afe7f40909f04e4cec757bae48`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
-# Wed, 28 Jan 2026 01:18:04 GMT
-ADD alpine-minirootfs-3.23.3-x86_64.tar.gz / # buildkit
-# Wed, 28 Jan 2026 01:18:04 GMT
+# Wed, 15 Apr 2026 20:01:40 GMT
+ADD alpine-minirootfs-3.23.4-x86_64.tar.gz / # buildkit
+# Wed, 15 Apr 2026 20:01:40 GMT
 CMD ["/bin/sh"]
-# Thu, 05 Feb 2026 22:13:12 GMT
+# Wed, 15 Apr 2026 20:32:47 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 05 Feb 2026 22:13:12 GMT
+# Wed, 15 Apr 2026 20:32:47 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Feb 2026 22:13:12 GMT
+# Wed, 15 Apr 2026 20:32:47 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 05 Feb 2026 22:13:12 GMT
+# Wed, 15 Apr 2026 20:32:47 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Thu, 05 Feb 2026 22:13:12 GMT
+# Wed, 15 Apr 2026 20:32:47 GMT
 ENV JAVA_VERSION=jdk-11.0.30+7
-# Thu, 05 Feb 2026 22:15:19 GMT
+# Wed, 15 Apr 2026 20:32:55 GMT
 RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='b55a38b75ba99d86f4adb47552ee5306b9589e2026861a3b8f030993c42aedc7';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.30%2B7/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.30_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Thu, 05 Feb 2026 22:15:20 GMT
+# Wed, 15 Apr 2026 20:32:56 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 05 Feb 2026 22:15:20 GMT
+# Wed, 15 Apr 2026 20:32:56 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 05 Feb 2026 22:15:20 GMT
+# Wed, 15 Apr 2026 20:32:56 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Thu, 05 Feb 2026 22:15:20 GMT
+# Wed, 15 Apr 2026 20:32:56 GMT
 CMD ["jshell"]
-# Thu, 05 Feb 2026 23:01:38 GMT
+# Wed, 15 Apr 2026 22:01:52 GMT
 ENV LEIN_VERSION=2.12.0
-# Thu, 05 Feb 2026 23:01:38 GMT
+# Wed, 15 Apr 2026 22:01:52 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Thu, 05 Feb 2026 23:01:38 GMT
+# Wed, 15 Apr 2026 22:01:52 GMT
 WORKDIR /tmp
-# Thu, 05 Feb 2026 23:02:05 GMT
+# Wed, 15 Apr 2026 22:01:59 GMT
 RUN set -eux; apk add --no-cache ca-certificates bash tar openssl gnupg && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "12a9c5e3a2471619ca3d64a7462f920fdf713ae8959eb4fcd6257c23332b5aa4 *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mkdir -p /root/.lein && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apk del ca-certificates tar openssl gnupg # buildkit
-# Thu, 05 Feb 2026 23:02:05 GMT
+# Wed, 15 Apr 2026 22:01:59 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Thu, 05 Feb 2026 23:02:05 GMT
+# Wed, 15 Apr 2026 22:01:59 GMT
 ENV LEIN_ROOT=1
-# Thu, 05 Feb 2026 23:02:07 GMT
+# Wed, 15 Apr 2026 22:02:01 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.12.1"]])' > project.clj   && lein deps && rm project.clj # buildkit
-# Thu, 05 Feb 2026 23:02:07 GMT
+# Wed, 15 Apr 2026 22:02:01 GMT
 CMD ["lein" "repl"]
 ```
 
 -	Layers:
-	-	`sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6ee0f8eaa0285cc21ac153`  
-		Last Modified: Wed, 28 Jan 2026 01:18:09 GMT  
-		Size: 3.9 MB (3861821 bytes)  
+	-	`sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763195a70a4a5adda577bb`  
+		Last Modified: Wed, 15 Apr 2026 20:01:46 GMT  
+		Size: 3.9 MB (3864189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fba30a9b9fbd57b01a8081d96f19cccf9befdb10d3a054b012d5419c813f251a`  
-		Last Modified: Thu, 05 Feb 2026 22:13:27 GMT  
-		Size: 16.8 MB (16839871 bytes)  
+	-	`sha256:7ec914d871e26d0465399fedbb12a944add78359e4bacb45111654e407011389`  
+		Last Modified: Wed, 15 Apr 2026 20:33:10 GMT  
+		Size: 16.8 MB (16837789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e03198ce1bcff72d14da682b57422ca0339a46a5a480a429fb7dfc1584cf098`  
-		Last Modified: Thu, 05 Feb 2026 22:15:37 GMT  
-		Size: 140.9 MB (140916724 bytes)  
+	-	`sha256:43e0f2de0712b22eb820b820ec9d10381f0162a40034dd9db90063cf9bc5b7f9`  
+		Last Modified: Wed, 15 Apr 2026 20:33:13 GMT  
+		Size: 140.9 MB (140916718 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9ec050240a37b134eae130d1c8a581f8dc3f6a1812c89605de53cbc4807a7c8`  
-		Last Modified: Thu, 05 Feb 2026 22:15:32 GMT  
-		Size: 131.0 B  
+	-	`sha256:97836bb5bbf19dc634eaea3ff5cfbc9b0ca22932b1bbb49c9a806a0bb040b842`  
+		Last Modified: Wed, 15 Apr 2026 20:33:09 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b685f9f516a02949ff913848fd8f5097682da3f014f7f123cd6d47c1c03e35fa`  
-		Last Modified: Thu, 05 Feb 2026 22:15:34 GMT  
-		Size: 2.3 KB (2281 bytes)  
+	-	`sha256:c470514f36b76e7d4fbd25626009aade331446b35fde7acb2f42ae8b0b5c53a1`  
+		Last Modified: Wed, 15 Apr 2026 20:33:09 GMT  
+		Size: 2.3 KB (2276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05739b9fcea1a7cbdded6ca45c6d7c37fbea4ad5fc427502415208c1da014cb7`  
-		Last Modified: Thu, 05 Feb 2026 23:02:17 GMT  
-		Size: 14.9 MB (14916214 bytes)  
+	-	`sha256:51ef5a3060d44ae05453f75c02599ad2002f0033c42691d052d95717aeb4856a`  
+		Last Modified: Wed, 15 Apr 2026 22:02:10 GMT  
+		Size: 14.9 MB (14916075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c7119a1666e1bb3cd4d79da03b1442f85a6ae11310149023aa9de81fe24116fa`  
-		Last Modified: Thu, 05 Feb 2026 23:02:17 GMT  
-		Size: 4.5 MB (4517687 bytes)  
+	-	`sha256:b1b6aa3def49dded927151de3268ebdcca14bab1c525258e345a5eef98f866de`  
+		Last Modified: Wed, 15 Apr 2026 22:02:10 GMT  
+		Size: 4.5 MB (4517693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-alpine` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:5f186cc5cd239034cc9942fe88d232c337343957a48f58a4f0156b7586dc57df
+$ docker pull clojure@sha256:70ebd6e47e09e7c34ee16f0406307f7c2cc313520ed04aa7e41a0a1c94508782
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **976.4 KB (976352 bytes)**  
+-	Total Size: **976.4 KB (976380 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7be5ad3669f7106457980775ec8302a320f557a15d4f5db0b5617c3932699c3a`
+-	Image ID: `sha256:a61a139c2d8afc1ea58d9bac65b3e619af8a11c58d0ed3d4e72551d1aa5a805f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:15520f7a81c9e6112576fb00e40fdd606939daae4502d4ea967fb3309fdd5917`  
-		Last Modified: Thu, 05 Feb 2026 23:02:17 GMT  
-		Size: 960.6 KB (960603 bytes)  
+	-	`sha256:88260c70ce3bb7e4553d83d848d1107d644e8d9267e45cfaf7ba6f31dcd184ef`  
+		Last Modified: Wed, 15 Apr 2026 22:02:10 GMT  
+		Size: 960.6 KB (960631 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:76d257df5a6a03dc5a45f26f701dbf4788c1ede41ed3c1e66442dac6b7678cf3`  
-		Last Modified: Thu, 05 Feb 2026 23:02:17 GMT  
+	-	`sha256:fe4a606286a5883bb901c2cd02126ccba191dbcc15fb4ee3f8f16f84b832f002`  
+		Last Modified: Wed, 15 Apr 2026 22:02:09 GMT  
 		Size: 15.7 KB (15749 bytes)  
 		MIME: application/vnd.in-toto+json
