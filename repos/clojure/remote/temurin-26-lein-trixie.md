@@ -1,7 +1,7 @@
 ## `clojure:temurin-26-lein-trixie`
 
 ```console
-$ docker pull clojure@sha256:1de4c7818e3b3c9645d8d2421dad8e1b5628b610caeed132781fbf292d86bcdb
+$ docker pull clojure@sha256:cff6e4558d8d8d94c967357b7a747177831f863abad94888c771a744d98359ee
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -208,7 +208,7 @@ $ docker pull clojure@sha256:aafb321d3086235f171d503b649a24a2ff5ce1f1f72d0dc2c0b
 ### `clojure:temurin-26-lein-trixie` - linux; ppc64le
 
 ```console
-$ docker pull clojure@sha256:b34e0c191c4b869b889212586712f9df0b8f0a032979a06df8fa1f366e73b588
+$ docker pull clojure@sha256:d610ec23f876dcdfc94e4a1872c90ea576bcfcd5c493812966cd5751ed43d652
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -278,25 +278,25 @@ CMD ["repl"]
 ### `clojure:temurin-26-lein-trixie` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:b8b6152cd97e2f5e3721864def283f760cf702d51bac877282633fe34c08cbe3
+$ docker pull clojure@sha256:12fbde7cdc265274fdbb66c2644f446c2547bf54da85d32eed10555352a1ceb3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3784355 bytes)**  
+-	Total Size: **3.8 MB (3784356 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:681d7e7ec96508188344480fd45e483d209c0039c1c30bbd01a8eef433fd4b87`
+-	Image ID: `sha256:2e0a23cb3a8ebd6e4995efe182dfa1f4b9c3f81001dc8bd33940cebf68652ff5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b215aa3f859a8f1df366394dd4f9bf8535c0754f77f52c023dbf3a612142d3c0`  
-		Last Modified: Fri, 10 Apr 2026 00:54:19 GMT  
+	-	`sha256:8e507514efe3f8524adbcdc02d3858d0bc2d2f49409896853c62777e71f729e1`  
+		Last Modified: Thu, 16 Apr 2026 03:16:15 GMT  
 		Size: 3.8 MB (3765967 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:27d8701b0d35b6b103f1d50cc7ef85d59e76b5de417b4888a9691e5214a70810`  
-		Last Modified: Fri, 10 Apr 2026 00:54:18 GMT  
-		Size: 18.4 KB (18388 bytes)  
+	-	`sha256:0ddd7b1ff76881a5a776f0928c79e45cff6ea6052725d6a19b9e08797e705aa6`  
+		Last Modified: Thu, 16 Apr 2026 03:16:15 GMT  
+		Size: 18.4 KB (18389 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-26-lein-trixie` - linux; riscv64

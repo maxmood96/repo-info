@@ -1,7 +1,7 @@
 ## `clojure:temurin-17-trixie`
 
 ```console
-$ docker pull clojure@sha256:6a0cefc19feb395c894c95227e0106f828505759026aef20b27642a6f278426a
+$ docker pull clojure@sha256:e3109e2b285867d6af3d2de6be0209c9bd28d759492a75218f830926bd503e2c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -196,38 +196,38 @@ $ docker pull clojure@sha256:9aa246cc7336dafaa05b1ae1d0dce6f9003cec63890320132ae
 ### `clojure:temurin-17-trixie` - linux; ppc64le
 
 ```console
-$ docker pull clojure@sha256:ed4a3a6da4294418d36cc10973eacd172784ff47c1a85de5308bfb26736ce48e
+$ docker pull clojure@sha256:fc24b6887061df4bc5bd92bd03ae9f2cf1661eda794196a29990dd07f9139e6f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **289.5 MB (289545217 bytes)**  
+-	Total Size: **293.3 MB (293280260 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a116dbbf2763b11f769a3f7bb778524221c1c5ee5bd626dabff1203290fc934a`
+-	Image ID: `sha256:12e0877a2b0aa4591426ffa6d8349b422f5702851abb77e9fc929f40ff018d0c`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
 # Mon, 06 Apr 2026 00:00:00 GMT
 RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1775433600'
-# Tue, 07 Apr 2026 14:39:23 GMT
+# Thu, 16 Apr 2026 02:51:45 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 07 Apr 2026 14:39:23 GMT
+# Thu, 16 Apr 2026 02:51:45 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Tue, 07 Apr 2026 14:39:23 GMT
+# Thu, 16 Apr 2026 02:51:45 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Apr 2026 14:39:23 GMT
+# Thu, 16 Apr 2026 02:51:45 GMT
 ENV CLOJURE_VERSION=1.12.4.1618
-# Tue, 07 Apr 2026 14:39:23 GMT
+# Thu, 16 Apr 2026 02:51:46 GMT
 WORKDIR /tmp
-# Tue, 07 Apr 2026 14:44:11 GMT
+# Thu, 16 Apr 2026 02:57:20 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "8a49ab11a639ce1d49e5459a7bfa8fcc74684ad3bc9acd181e3adc7a662918cf *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apt-get purge -y --auto-remove curl # buildkit
-# Tue, 07 Apr 2026 14:44:11 GMT
+# Thu, 16 Apr 2026 02:57:20 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Tue, 07 Apr 2026 14:44:11 GMT
+# Thu, 16 Apr 2026 02:57:23 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Tue, 07 Apr 2026 14:44:11 GMT
+# Thu, 16 Apr 2026 02:57:23 GMT
 ENTRYPOINT ["entrypoint"]
-# Tue, 07 Apr 2026 14:44:11 GMT
+# Thu, 16 Apr 2026 02:57:23 GMT
 CMD ["-M" "--repl"]
 ```
 
@@ -236,49 +236,49 @@ CMD ["-M" "--repl"]
 		Last Modified: Tue, 07 Apr 2026 00:12:52 GMT  
 		Size: 53.1 MB (53118669 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0a76b0a411921a776a6aa7e333480c75bdb58776d62cc75ddfeb7b455ebd920`  
-		Last Modified: Tue, 07 Apr 2026 14:40:55 GMT  
-		Size: 145.4 MB (145438242 bytes)  
+	-	`sha256:d6d63fa71f8a08634b0312e1df11dd8fc3363471d8c3e45af52999c7c3ba56e4`  
+		Last Modified: Thu, 16 Apr 2026 02:53:12 GMT  
+		Size: 145.4 MB (145438287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75447135804fb71e3d513ed66a3c7c9b086abc5ebcdfac0cf77581693feb81ff`  
-		Last Modified: Tue, 07 Apr 2026 14:44:53 GMT  
-		Size: 91.0 MB (90987264 bytes)  
+	-	`sha256:13f4f8ab741da512d80931a6a079143eadd8b6c2ede80fcd81c7b7fc15028c80`  
+		Last Modified: Thu, 16 Apr 2026 02:58:17 GMT  
+		Size: 94.7 MB (94722259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:393c169e5e4f0b37362cf91bdd20a15fd3f74d7c20cadc18319073de1a380e4f`  
-		Last Modified: Tue, 07 Apr 2026 14:44:51 GMT  
-		Size: 613.0 B  
+	-	`sha256:5bd1e215df1b1fc90d8e238c08e8a00506699e11a949d47283f46b167155918d`  
+		Last Modified: Thu, 16 Apr 2026 02:58:15 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c7f37ce994f8d76f3f373e1af75f252dcbba6ea810629a9aed01743bb56a24b5`  
-		Last Modified: Tue, 07 Apr 2026 14:44:51 GMT  
-		Size: 397.0 B  
+	-	`sha256:045a83e090065c566f36f08d430100cb9bc688b6f69fcd776c3dc42d6d26fb10`  
+		Last Modified: Thu, 16 Apr 2026 02:58:15 GMT  
+		Size: 399.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-trixie` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:3bea987772449128db09ec88636db916b62d34bca970cfd0ec8727405852b2b5
+$ docker pull clojure@sha256:59ef7dce9a92ae6986910399b37dca4a6952ef4a8f4c886d03d02b7b8fefbfed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.5 MB (7490890 bytes)**  
+-	Total Size: **7.5 MB (7490887 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f0e2643688b4108ea7cb245e1f2343e665bf1a55e6395a5cec438ad38181bb62`
+-	Image ID: `sha256:98facbdbe0b0baecfc782b4c659c74c04e214cafe813c9c3d873063b1c6844d3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:65ba6e8cebad57da8ed14b8c1b2a560a70d537d2d582a3a801d4577947d8243c`  
-		Last Modified: Tue, 07 Apr 2026 14:44:51 GMT  
+	-	`sha256:c08fc8bc92a5a7637f03b181c6c29b4a2631c4a6365c0f01c3ab8916eb66f649`  
+		Last Modified: Thu, 16 Apr 2026 02:58:15 GMT  
 		Size: 7.5 MB (7475088 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df7576debbc758fc2bd23ccfe4baf2ee7f196527b946ea88247aef57d0606861`  
-		Last Modified: Tue, 07 Apr 2026 14:44:51 GMT  
-		Size: 15.8 KB (15802 bytes)  
+	-	`sha256:c8a0f943d96b65c3edef091d5f60d82af3c76c357a5b6671f68c5dd752fd8ee3`  
+		Last Modified: Thu, 16 Apr 2026 02:58:14 GMT  
+		Size: 15.8 KB (15799 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-17-trixie` - linux; riscv64

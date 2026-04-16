@@ -1,7 +1,7 @@
 ## `clojure:temurin-26-tools-deps`
 
 ```console
-$ docker pull clojure@sha256:ae47dba025b25aaae4f5f48a81ee16010eaf02d0cb669ddbd0ca2e70576338d4
+$ docker pull clojure@sha256:75d38c4a62fbe404df50d213bb6b023555ff221deb6c8ec2721f9eb29ccfcfd7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -194,7 +194,7 @@ $ docker pull clojure@sha256:dc3023a6fce53a85b32165382889bf18a01d9ec4af04ac2ef49
 ### `clojure:temurin-26-tools-deps` - linux; ppc64le
 
 ```console
-$ docker pull clojure@sha256:f8defcc2478dba0b4b0a88dfdad9e645a206bb81bbdee6ee323427c8ddd19171
+$ docker pull clojure@sha256:4a9ce04e37617329c2b64dd562cc2f295687198d4f1172842f4b8fe726713c2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -258,25 +258,25 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-26-tools-deps` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:e38fcd19768b68785bd6c68ac8b7b0903a48af1fabe84838b894b6ff13a5c1da
+$ docker pull clojure@sha256:63f9512fcbc7162bad635b41bff289dd26ea602d7d179eab48a56595cecad686
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.4 MB (7350168 bytes)**  
+-	Total Size: **7.4 MB (7350169 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c41ae4de92b9f1087b6d3d0fb36798194139c8920f324cc727905be0224f46bc`
+-	Image ID: `sha256:b3cb9b848f1ebc4860cddce5f91ddec3a5e44790eaa94fe998d294185cef81e6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:05783f37aee0ec4bd8d708c55b62e43476d4a37790e536d6d1b6f6b18f6a0ff2`  
-		Last Modified: Fri, 10 Apr 2026 00:55:58 GMT  
+	-	`sha256:028560077e9643b18032ee075f0512672020deb5ecf2c6bb90ca70ceb3b8de5f`  
+		Last Modified: Thu, 16 Apr 2026 03:17:03 GMT  
 		Size: 7.3 MB (7333654 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c489bdb2c382cb70c59f5e765bc6dc641ab8e519b74aee57591ea95d72ad2162`  
-		Last Modified: Fri, 10 Apr 2026 00:55:58 GMT  
-		Size: 16.5 KB (16514 bytes)  
+	-	`sha256:fb0eedcf349d2b3870b492fa8b7230f93da2a7099dc8eb83db9c4b774645c2ff`  
+		Last Modified: Thu, 16 Apr 2026 03:17:02 GMT  
+		Size: 16.5 KB (16515 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-26-tools-deps` - linux; s390x
