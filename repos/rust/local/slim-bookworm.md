@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fc0b7caf3589b6f0de94006aa14e7189603ffcd2c869c67024d7beeab9154428`
-- Created: `2026-04-07T02:31:21.745421111Z`
-- Virtual Size: ~ 886.07 Mb  
+- Image ID: `sha256:76d6c39fa492865eebe8ca47f22697ae2c23da0798ada0572723e8fda6fac345`
+- Created: `2026-04-16T23:57:42.38409562Z`
+- Virtual Size: ~ 901.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.94.1`
+  - `RUST_VERSION=1.95.0`
 - Labels:
   - `org.opencontainers.image.source=https://github.com/rust-lang/docker-rust`
 
@@ -1824,12 +1824,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.8.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.8.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.0.18-1~deb12u2`
+### `dpkg` source package: `openssl=3.0.19-1~deb12u2`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.18-1~deb12u2`
-- `openssl=3.0.18-1~deb12u2`
+- `libssl3:amd64=3.0.19-1~deb12u2`
+- `openssl=3.0.19-1~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -1838,13 +1838,21 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl=3.0.19-1~deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.19-1%7edeb12u2.dsc' openssl_3.0.19-1~deb12u2.dsc 2539 SHA256:41e248cd9117c13ab0b7fdd2b54451630697c07bf2428dba2cc604e397d79fe6
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.19.orig.tar.gz' openssl_3.0.19.orig.tar.gz 15280904 SHA256:fa5a4143b8aae18be53ef2f3caf29a2e0747430b8bc74d32d88335b94ab63072
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.19.orig.tar.gz.asc' openssl_3.0.19.orig.tar.gz.asc 833 SHA256:06da7f8f3e4663f58aaa86001923077b0fc98ebffe0673e1d2d733b0f0405d68
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.19-1%7edeb12u2.debian.tar.xz' openssl_3.0.19-1~deb12u2.debian.tar.xz 65088 SHA256:0c6c01d2a92f6b5f02fed230047461d2e8069f0112505686f51e4c9c8d8d5b8d
+```
 
-- http://snapshot.debian.org/package/openssl/3.0.18-1~deb12u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl/3.0.19-1~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.19-1~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.19-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
