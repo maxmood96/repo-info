@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dc7b046335a20b119d0dff41161a917d3e65debcd4a5aba1bc448cc3720c7eb8`
-- Created: `2026-04-07T02:48:32.233548318Z`
-- Virtual Size: ~ 745.81 Mb  
+- Image ID: `sha256:d22b98662a3a92d484c19da681e5c8c7246c37865ca9311a5bf174367869092c`
+- Created: `2026-04-15T21:30:50.98723687Z`
+- Virtual Size: ~ 1.01 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-25.0.2+10`
   - `JAVA_LTS_HOME=/opt/java/openjdk25`
-  - `JAVA_CURRENT_HOME=/opt/java/openjdk25`
+  - `JAVA_CURRENT_HOME=/opt/java/openjdk26`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=9.4.1`
 - Labels:
@@ -890,9 +890,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris git-lfs=3.4.1-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1-1ubuntu0.3.dsc' git-lfs_3.4.1-1ubuntu0.3.dsc 2785 SHA512:1500b4de4ce4d9890aa573e51bda030459d445ac2f82b7a0d9b3667dea642371023ead21490792e5525a11a644e6d51a4788cce44786a98dc82c6fe25dbe9c88
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1.orig.tar.gz' git-lfs_3.4.1.orig.tar.gz 674163 SHA512:ef30b7906548594edf28e75046bb78f70043d0363390ec3a241fc2ff7790b0f6ab1869b8a6b10d13a4cbcd559db7ea51aa4c1d64e75707357b84f1ddc0f7095c
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1-1ubuntu0.3.debian.tar.xz' git-lfs_3.4.1-1ubuntu0.3.debian.tar.xz 4756 SHA512:da054387f81a7fed3eb997dcd01c235befbb349a35aa548b7ab3d436cd0d4b83d6bfb144e86f6d9f962437ea255b71b02cd294866e43f62c9c1f35765ad51ef7
+'http://security.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1-1ubuntu0.3.dsc' git-lfs_3.4.1-1ubuntu0.3.dsc 2785 SHA512:1500b4de4ce4d9890aa573e51bda030459d445ac2f82b7a0d9b3667dea642371023ead21490792e5525a11a644e6d51a4788cce44786a98dc82c6fe25dbe9c88
+'http://security.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1.orig.tar.gz' git-lfs_3.4.1.orig.tar.gz 674163 SHA512:ef30b7906548594edf28e75046bb78f70043d0363390ec3a241fc2ff7790b0f6ab1869b8a6b10d13a4cbcd559db7ea51aa4c1d64e75707357b84f1ddc0f7095c
+'http://security.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1-1ubuntu0.3.debian.tar.xz' git-lfs_3.4.1-1ubuntu0.3.debian.tar.xz 4756 SHA512:da054387f81a7fed3eb997dcd01c235befbb349a35aa548b7ab3d436cd0d4b83d6bfb144e86f6d9f962437ea255b71b02cd294866e43f62c9c1f35765ad51ef7
 ```
 
 ### `dpkg` source package: `git=1:2.43.0-1ubuntu7.3`
@@ -2074,12 +2074,12 @@ $ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.15
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.15.debian.tar.xz' openssh_9.6p1-3ubuntu13.15.debian.tar.xz 207616 SHA512:af20601145c7ca319f0b3e20931250684e34c48c648a26b342d023288a66d0f8d2c82ef88884090226db73cc084a0b5168f67f47aff1fcce17d8e599d97d4136
 ```
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3.7`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.9`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.0.13-0ubuntu3.7`
-- `openssl=3.0.13-0ubuntu3.7`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.9`
+- `openssl=3.0.13-0ubuntu3.9`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -2091,10 +2091,10 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.7.dsc' openssl_3.0.13-0ubuntu3.7.dsc 2512 SHA512:cd164a3e4bb504d5022d7012610f6f77e0953903f6cc9e0ba455c215a252593326f2ef010244da494c01f115b572ff548f608745f7d1c35ce7e3641da1326240
+$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.9.dsc' openssl_3.0.13-0ubuntu3.9.dsc 2512 SHA512:bd293e19828a97bde4d3c8327399fbddc65e9350cc0dced2d8daff15970bbd4fdae9996b43c31d324e829d55d98bcc0e03b0f5e4f07ef8282f6d16cb4ed7990d
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.7.debian.tar.xz' openssl_3.0.13-0ubuntu3.7.debian.tar.xz 174788 SHA512:c396fd3603fa0ee909f8d637e82b395a338133074c1c83c4b0ffbf1cb1c791c7fb9680fa5837d761e47d47909312d9f850894ba4cf2aa40a9f2768a0a47b5c28
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.9.debian.tar.xz' openssl_3.0.13-0ubuntu3.9.debian.tar.xz 181192 SHA512:a196f92fa68f7b5f55efe4a0805bdc62bd62b16c5d2cb9523d588c5c39bea68f9b386de6a1b832d41eadcb082f1e6ea2f8df56a9faaf5c022dbd6e872b90b077
 ```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
@@ -2623,12 +2623,12 @@ $ apt-get source -qq --print-uris subversion=1.14.3-1build4
 'http://archive.ubuntu.com/ubuntu/pool/universe/s/subversion/subversion_1.14.3-1build4.debian.tar.xz' subversion_1.14.3-1build4.debian.tar.xz 337036 SHA512:62a40df50e32846f25ffde6e806575427cca51b0f7ff24f184d1dc73b58c120b19739893280371764e23d174bab4b714ae6caf95eaf620fde5bd28cd35b6ace8
 ```
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.14`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.15`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8.14`
-- `libudev1:amd64=255.4-1ubuntu8.14`
+- `libsystemd0:amd64=255.4-1ubuntu8.15`
+- `libudev1:amd64=255.4-1ubuntu8.15`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2644,10 +2644,10 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.14
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.14.dsc' systemd_255.4-1ubuntu8.14.dsc 7324 SHA512:cc3b0d413b31e1995708683ea8bfb139952b74783ccfcc8c4dcc1d0b3950ebecfa58eeb54f01a5d44e38ee85b55107c830ce42d2571c2042da8d0cc2a204aa1e
+$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.15
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.15.dsc' systemd_255.4-1ubuntu8.15.dsc 7324 SHA512:1d4133d59aba00e08cc32da6bbac3dd3d9f049134d7538df9dea8891da7f10f3d418933802fd057234b8ab9b0e79b44557d1d6f710a3bc1009b01b641703430f
 'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.14.debian.tar.xz' systemd_255.4-1ubuntu8.14.debian.tar.xz 262172 SHA512:a7e3657be6aebac7b2baeacc4e179db686565a3db05f0730ce8f10e36d075dc8db8af43433ec712c3f45331b061614f76dedbfe08d00dd7f06c4a79e2fdde11d
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.15.debian.tar.xz' systemd_255.4-1ubuntu8.15.debian.tar.xz 264648 SHA512:a94d4757267f9c86a0189dc7538c317d4597ca5f424acabe26e5f2beecbf5535ecd24fedac970c37e63ee653e633b0b19dc0fe0e6ee118b0559e593cbc8208f7
 ```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
