@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:922e99724fd1c42cd3f9cee96e9d4bcfe78b4e2def5f38358af6285d26e7737b`
-- Created: `2026-04-13T23:43:10.698089775Z`
+- Image ID: `sha256:f7b00b71b3764d9636c0d24a77a5771de2d0cec1f44e0d871f1bbb72a3d7d3ae`
+- Created: `2026-04-15T22:51:13.631470502Z`
 - Virtual Size: ~ 1.06 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -833,15 +833,15 @@ $ dnf --quiet download --source --url libnghttp2-1.41.0-1.amzn2.0.5
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1807695cfa04fdc6d080dfe57a81fd7290d7d817469e091c88426770929e6c38/../../../../../blobstore/8da0fd7d90c15a804a1e65d334a29814cd39273a449891f46ad90771e6e35261/nghttp2-1.41.0-1.amzn2.0.5.src.rpm
 ```
 
-### `rpm` package: `libpng-1.5.13-8.amzn2.0.7.x86_64`
+### `rpm` package: `libpng-1.5.13-8.amzn2.0.8.x86_64`
 
 Licenses (from `rpm --query`): zlib
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libpng-1.5.13-8.amzn2.0.7
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1807695cfa04fdc6d080dfe57a81fd7290d7d817469e091c88426770929e6c38/../../../../../blobstore/03e5c5ea1142af01258ac006c4af08ac5e0bc05f360b89f17ff9a9eebe32da08/libpng-1.5.13-8.amzn2.0.7.src.rpm
+$ dnf --quiet download --source --url libpng-1.5.13-8.amzn2.0.8
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1807695cfa04fdc6d080dfe57a81fd7290d7d817469e091c88426770929e6c38/../../../../../blobstore/3197643ff6b6e7a43125bdf2c9072b139983174c87837fd6e743fd22bc5dd198/libpng-1.5.13-8.amzn2.0.8.src.rpm
 ```
 
 ### `rpm` package: `libpsl-0.21.5-1.amzn2.x86_64`
