@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9b937e0bed4668eb643fa8f083b674431c0d175c794bcc3609b7e561053fb196`
-- Created: `2026-04-14T18:17:48.451337597Z`
-- Virtual Size: ~ 236.14 Mb  
+- Image ID: `sha256:39f4699ce5525450650cad74ebb243efd73730fda6d6011a5d805089f9bc61ce`
+- Created: `2026-04-15T21:27:31.382603162Z`
+- Virtual Size: ~ 227.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -115,16 +115,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.3-r0 description:
+alpine-release-3.23.4-r0 description:
 Alpine release data
 
-alpine-release-3.23.3-r0 webpage:
+alpine-release-3.23.4-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.3-r0 installed size:
+alpine-release-3.23.4-r0 installed size:
 343 B
 
-alpine-release-3.23.3-r0 license:
+alpine-release-3.23.4-r0 license:
 MIT
 
 ```
@@ -132,16 +132,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.5-r0 description:
+apk-tools-3.0.6-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.5-r0 webpage:
+apk-tools-3.0.6-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.5-r0 installed size:
+apk-tools-3.0.6-r0 installed size:
 112 KiB
 
-apk-tools-3.0.5-r0 license:
+apk-tools-3.0.6-r0 license:
 GPL-2.0-only
 
 ```
@@ -285,16 +285,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20251003-r0 description:
+ca-certificates-20260413-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20251003-r0 webpage:
+ca-certificates-20260413-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20251003-r0 installed size:
-250 KiB
+ca-certificates-20260413-r0 installed size:
+246 KiB
 
-ca-certificates-20251003-r0 license:
+ca-certificates-20260413-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -302,16 +302,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20251003-r0 description:
+ca-certificates-bundle-20260413-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20251003-r0 webpage:
+ca-certificates-bundle-20260413-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20251003-r0 installed size:
-216 KiB
+ca-certificates-bundle-20260413-r0 installed size:
+212 KiB
 
-ca-certificates-bundle-20251003-r0 license:
+ca-certificates-bundle-20260413-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -472,16 +472,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.5-r0 description:
+libapk-3.0.6-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.5-r0 webpage:
+libapk-3.0.6-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.5-r0 installed size:
+libapk-3.0.6-r0 installed size:
 270 KiB
 
-libapk-3.0.5-r0 license:
+libapk-3.0.6-r0 license:
 GPL-2.0-only
 
 ```
