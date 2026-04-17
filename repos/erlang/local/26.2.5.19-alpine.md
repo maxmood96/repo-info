@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:71682a9b72f105e93c91f4d43bfe4c9bc4f4adfa1b630faeb328dbf9f18eee92`
-- Created: `2026-04-13T20:52:22.412075614Z`
-- Virtual Size: ~ 80.87 Mb  
+- Image ID: `sha256:f5a0d226b690076393fb9e6aafac004101637263d6b45f4deb5056331ca2444e`
+- Created: `2026-04-17T00:28:35.17677428Z`
+- Virtual Size: ~ 74.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
@@ -122,16 +122,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20250911-r0 description:
+ca-certificates-20260413-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20250911-r0 webpage:
+ca-certificates-20260413-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20250911-r0 installed size:
-708 KiB
+ca-certificates-20260413-r0 installed size:
+704 KiB
 
-ca-certificates-20250911-r0 license:
+ca-certificates-20260413-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -139,16 +139,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20250911-r0 description:
+ca-certificates-bundle-20260413-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20250911-r0 webpage:
+ca-certificates-bundle-20260413-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20250911-r0 installed size:
+ca-certificates-bundle-20260413-r0 installed size:
 236 KiB
 
-ca-certificates-bundle-20250911-r0 license:
+ca-certificates-bundle-20260413-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -292,16 +292,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r1 description:
+musl-utils-1.2.5-r3 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r1 webpage:
+musl-utils-1.2.5-r3 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r1 installed size:
+musl-utils-1.2.5-r3 installed size:
 128 KiB
 
-musl-utils-1.2.5-r1 license:
+musl-utils-1.2.5-r3 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -394,16 +394,16 @@ LGPL-2.0-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.1-r1 description:
+zlib-1.3.2-r0 description:
 A compression/decompression Library
 
-zlib-1.3.1-r1 webpage:
+zlib-1.3.2-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.1-r1 installed size:
-108 KiB
+zlib-1.3.2-r0 installed size:
+112 KiB
 
-zlib-1.3.1-r1 license:
+zlib-1.3.2-r0 license:
 Zlib
 
 ```
