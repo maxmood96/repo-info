@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5a4fc52b7897cc9d17dd24adfc4c4d43f3080165453b12e356dd02466c57192a`
-- Created: `2026-04-07T22:01:28.928331016Z`
+- Image ID: `sha256:48c775a1a3336e255042d46d7838902b6358b321f724ad2ae84b513fc24f92f0`
+- Created: `2026-04-15T21:59:46.449820915Z`
 - Virtual Size: ~ 259.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -23,16 +23,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.7.1-r8 description:
+alpine-baselayout-3.7.2-r0 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.7.1-r8 webpage:
-https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
+alpine-baselayout-3.7.2-r0 webpage:
+https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/main/alpine-baselayout
 
-alpine-baselayout-3.7.1-r8 installed size:
+alpine-baselayout-3.7.2-r0 installed size:
 6552 B
 
-alpine-baselayout-3.7.1-r8 license:
+alpine-baselayout-3.7.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -40,16 +40,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.7.1-r8 description:
+alpine-baselayout-data-3.7.2-r0 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.7.1-r8 webpage:
-https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
+alpine-baselayout-data-3.7.2-r0 webpage:
+https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/main/alpine-baselayout
 
-alpine-baselayout-data-3.7.1-r8 installed size:
+alpine-baselayout-data-3.7.2-r0 installed size:
 18 KiB
 
-alpine-baselayout-data-3.7.1-r8 license:
+alpine-baselayout-data-3.7.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -74,16 +74,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.3-r0 description:
+alpine-release-3.23.4-r0 description:
 Alpine release data
 
-alpine-release-3.23.3-r0 webpage:
+alpine-release-3.23.4-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.3-r0 installed size:
+alpine-release-3.23.4-r0 installed size:
 343 B
 
-alpine-release-3.23.3-r0 license:
+alpine-release-3.23.4-r0 license:
 MIT
 
 ```
@@ -91,16 +91,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.3-r1 description:
+apk-tools-3.0.6-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.3-r1 webpage:
+apk-tools-3.0.6-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.3-r1 installed size:
+apk-tools-3.0.6-r0 installed size:
 112 KiB
 
-apk-tools-3.0.3-r1 license:
+apk-tools-3.0.6-r0 license:
 GPL-2.0-only
 
 ```
@@ -176,16 +176,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20251003-r0 description:
+ca-certificates-20260413-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20251003-r0 webpage:
+ca-certificates-20260413-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20251003-r0 installed size:
-250 KiB
+ca-certificates-20260413-r0 installed size:
+246 KiB
 
-ca-certificates-20251003-r0 license:
+ca-certificates-20260413-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -193,16 +193,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20251003-r0 description:
+ca-certificates-bundle-20260413-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20251003-r0 webpage:
+ca-certificates-bundle-20260413-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20251003-r0 installed size:
-216 KiB
+ca-certificates-bundle-20260413-r0 installed size:
+212 KiB
 
-ca-certificates-bundle-20251003-r0 license:
+ca-certificates-bundle-20260413-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -261,16 +261,16 @@ GPL-2.0-only
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.3-r1 description:
+libapk-3.0.6-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.3-r1 webpage:
+libapk-3.0.6-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.3-r1 installed size:
+libapk-3.0.6-r0 installed size:
 270 KiB
 
-libapk-3.0.3-r1 license:
+libapk-3.0.6-r0 license:
 GPL-2.0-only
 
 ```
@@ -278,16 +278,16 @@ GPL-2.0-only
 ### `apk` package: `libcap`
 
 ```console
-libcap-2.77-r0 description:
+libcap-2.78-r0 description:
 POSIX 1003.1e capabilities
 
-libcap-2.77-r0 webpage:
+libcap-2.78-r0 webpage:
 https://sites.google.com/site/fullycapable/
 
-libcap-2.77-r0 installed size:
+libcap-2.78-r0 installed size:
 0 B
 
-libcap-2.77-r0 license:
+libcap-2.78-r0 license:
 BSD-3-Clause OR GPL-2.0-only
 
 ```
@@ -295,16 +295,16 @@ BSD-3-Clause OR GPL-2.0-only
 ### `apk` package: `libcap-getcap`
 
 ```console
-libcap-getcap-2.77-r0 description:
+libcap-getcap-2.78-r0 description:
 POSIX 1003.1e capabilities (getcap utility)
 
-libcap-getcap-2.77-r0 webpage:
+libcap-getcap-2.78-r0 webpage:
 https://sites.google.com/site/fullycapable/
 
-libcap-getcap-2.77-r0 installed size:
+libcap-getcap-2.78-r0 installed size:
 13 KiB
 
-libcap-getcap-2.77-r0 license:
+libcap-getcap-2.78-r0 license:
 BSD-3-Clause OR GPL-2.0-only
 
 ```
@@ -312,16 +312,16 @@ BSD-3-Clause OR GPL-2.0-only
 ### `apk` package: `libcap-setcap`
 
 ```console
-libcap-setcap-2.77-r0 description:
+libcap-setcap-2.78-r0 description:
 POSIX 1003.1e capabilities (setcap utility)
 
-libcap-setcap-2.77-r0 webpage:
+libcap-setcap-2.78-r0 webpage:
 https://sites.google.com/site/fullycapable/
 
-libcap-setcap-2.77-r0 installed size:
+libcap-setcap-2.78-r0 installed size:
 13 KiB
 
-libcap-setcap-2.77-r0 license:
+libcap-setcap-2.78-r0 license:
 BSD-3-Clause OR GPL-2.0-only
 
 ```
@@ -329,16 +329,16 @@ BSD-3-Clause OR GPL-2.0-only
 ### `apk` package: `libcap-utils`
 
 ```console
-libcap-utils-2.77-r0 description:
+libcap-utils-2.78-r0 description:
 POSIX 1003.1e capabilities (extra utils)
 
-libcap-utils-2.77-r0 webpage:
+libcap-utils-2.78-r0 webpage:
 https://sites.google.com/site/fullycapable/
 
-libcap-utils-2.77-r0 installed size:
+libcap-utils-2.78-r0 installed size:
 58 KiB
 
-libcap-utils-2.77-r0 license:
+libcap-utils-2.78-r0 license:
 BSD-3-Clause OR GPL-2.0-only
 
 ```
@@ -346,16 +346,16 @@ BSD-3-Clause OR GPL-2.0-only
 ### `apk` package: `libcap2`
 
 ```console
-libcap2-2.77-r0 description:
+libcap2-2.78-r0 description:
 POSIX 1003.1e capabilities (libraries)
 
-libcap2-2.77-r0 webpage:
+libcap2-2.78-r0 webpage:
 https://sites.google.com/site/fullycapable/
 
-libcap2-2.77-r0 installed size:
+libcap2-2.78-r0 installed size:
 47 KiB
 
-libcap2-2.77-r0 license:
+libcap2-2.78-r0 license:
 BSD-3-Clause OR GPL-2.0-only
 
 ```
@@ -363,16 +363,16 @@ BSD-3-Clause OR GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.5-r0 description:
+libcrypto3-3.5.6-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.5-r0 webpage:
+libcrypto3-3.5.6-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.5-r0 installed size:
-5083 KiB
+libcrypto3-3.5.6-r0 installed size:
+5091 KiB
 
-libcrypto3-3.5.5-r0 license:
+libcrypto3-3.5.6-r0 license:
 Apache-2.0
 
 ```
@@ -448,16 +448,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.5-r0 description:
+libssl3-3.5.6-r0 description:
 SSL shared libraries
 
-libssl3-3.5.5-r0 webpage:
+libssl3-3.5.6-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.5-r0 installed size:
+libssl3-3.5.6-r0 installed size:
 819 KiB
 
-libssl3-3.5.5-r0 license:
+libssl3-3.5.6-r0 license:
 Apache-2.0
 
 ```
@@ -482,16 +482,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r21 description:
+musl-1.2.5-r23 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r21 webpage:
+musl-1.2.5-r23 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r21 installed size:
+musl-1.2.5-r23 installed size:
 650 KiB
 
-musl-1.2.5-r21 license:
+musl-1.2.5-r23 license:
 MIT
 
 ```
@@ -499,16 +499,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r21 description:
+musl-utils-1.2.5-r23 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r21 webpage:
+musl-utils-1.2.5-r23 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r21 installed size:
+musl-utils-1.2.5-r23 installed size:
 54 KiB
 
-musl-utils-1.2.5-r21 license:
+musl-utils-1.2.5-r23 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -601,16 +601,16 @@ GPL-2.0-only
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.1-r2 description:
+zlib-1.3.2-r0 description:
 A compression/decompression Library
 
-zlib-1.3.1-r2 webpage:
+zlib-1.3.2-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.1-r2 installed size:
-101 KiB
+zlib-1.3.2-r0 installed size:
+105 KiB
 
-zlib-1.3.1-r2 license:
+zlib-1.3.2-r0 license:
 Zlib
 
 ```
