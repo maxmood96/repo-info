@@ -1,7 +1,7 @@
 ## `alt:sisyphus`
 
 ```console
-$ docker pull alt@sha256:2eee0cd037611c8292dc0af2a83054007b32dec2210ad56a3df89a6f266fae0e
+$ docker pull alt@sha256:113d54eb3cbf5d868563a387ebbb39edef91baed4c0e35e03f75893b57bf99ae
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -189,58 +189,56 @@ $ docker pull alt@sha256:e4b893293b7016a9fb32da440bb282b96d7c5cb468cd9a8c74e6474
 ### `alt:sisyphus` - linux; riscv64
 
 ```console
-$ docker pull alt@sha256:3cf5bc6acfc8273dc2052faea43de4db6ad0007cd0cd63af5081bcc90e81332b
+$ docker pull alt@sha256:f90ff05f3d5d0e9fc1d53e0b9836012d17defa5687127c67cfdb90a0f509896d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.5 MB (44486087 bytes)**  
+-	Total Size: **44.5 MB (44543691 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:41d2a588d57b588ae5273d2a515302542b60a3ceda71458c6a4f6c0e93075f90`
+-	Image ID: `sha256:3430ef850515b16249bfcb0aa8feca490b523b4382b28d9dc0d8261f5f682975`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 22 Jan 2026 05:23:03 GMT
-MAINTAINER [Alexey Shabalin <shaba@altlinux.org>] [Nadezhda Fedorova <fedor@altlinux.org>]
-# Thu, 22 Jan 2026 05:23:03 GMT
-LABEL org.opencontainers.image.licenses=GPLv3 org.opencontainers.image.title=alt org.opencontainers.image.description=Minimal image org.opencontainers.image.vendor=ALT Linux Team
-# Thu, 22 Jan 2026 05:23:03 GMT
+# Fri, 17 Apr 2026 07:22:36 GMT
+LABEL org.opencontainers.image.authors=Alexey Shabalin <shaba@altlinux.org>,Nadezhda Fedorova <fedor@altlinux.org> org.opencontainers.image.licenses=GPLv3 org.opencontainers.image.title=alt org.opencontainers.image.description=Minimal image org.opencontainers.image.vendor=ALT Linux Team
+# Fri, 17 Apr 2026 07:22:36 GMT
 ADD alt-sisyphus-riscv64.tar.xz / # buildkit
-# Thu, 22 Jan 2026 05:23:04 GMT
+# Fri, 17 Apr 2026 07:22:38 GMT
 RUN true > /etc/security/limits.d/50-defaults.conf # buildkit
-# Thu, 22 Jan 2026 05:23:04 GMT
+# Fri, 17 Apr 2026 07:22:38 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:ba25e668b40b2efaa9085cfdb237dd3fdac12bee44a47b6d0f8175d7c3eaa120`  
-		Last Modified: Thu, 22 Jan 2026 05:24:49 GMT  
-		Size: 44.5 MB (44485897 bytes)  
+	-	`sha256:1472f0766337e02fb86e8fbe412f0afd777fe8b23e5be9d82751cbb858b1d666`  
+		Last Modified: Fri, 17 Apr 2026 07:24:20 GMT  
+		Size: 44.5 MB (44543499 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31f644b3bca52aac38924d1e8d7515b0cb5ec91079fe48391b191fff649a9e5d`  
-		Last Modified: Thu, 22 Jan 2026 05:24:42 GMT  
-		Size: 190.0 B  
+	-	`sha256:21e52d3a0ed0955c5d66a86bd749fbee3a3fa55b4ccf226c3f5b3fa66d74bd7e`  
+		Last Modified: Fri, 17 Apr 2026 07:24:13 GMT  
+		Size: 192.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `alt:sisyphus` - unknown; unknown
 
 ```console
-$ docker pull alt@sha256:52c85bd8165d1b5da180d18ce920bf9ce8a74fa34e27d1b515834cf7883c8a6d
+$ docker pull alt@sha256:a1257f790a7b0a273e6a4bb7d20ed66d30584ebaaa926526f9420fd46f1ca0a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2623698 bytes)**  
+-	Total Size: **2.7 MB (2653488 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:18908b805353e0f803018b9e1dd6005bf5bd9b4b37efe28ddc7accfa6f6309bd`
+-	Image ID: `sha256:bce8e82915a4d9a89de4d9931fbf24a6ef1c69e971937fc5f67845475b4157ca`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7398354c4d28200d04aa4b30f5da872e5946e83d13d627671a9f01c40d73aa65`  
-		Last Modified: Thu, 22 Jan 2026 05:24:42 GMT  
-		Size: 2.6 MB (2617596 bytes)  
+	-	`sha256:6edede7aa4f7eb4c8ff4a488cc8f688e84cf5433e3d827c89f987054fb9b7854`  
+		Last Modified: Fri, 17 Apr 2026 07:24:14 GMT  
+		Size: 2.6 MB (2647368 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6598b1c5289c5c942753cee096d29bcbe5743711a88b57e9a06da50f3ed0ae98`  
-		Last Modified: Thu, 22 Jan 2026 05:24:42 GMT  
-		Size: 6.1 KB (6102 bytes)  
+	-	`sha256:395edecf3a28130ef51680fb963f30c7aeb3bcf34a885c03dacd1e5af5dd2e95`  
+		Last Modified: Fri, 17 Apr 2026 07:24:13 GMT  
+		Size: 6.1 KB (6120 bytes)  
 		MIME: application/vnd.in-toto+json
