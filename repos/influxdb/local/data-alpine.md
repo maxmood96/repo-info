@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1400d4cce180749da87d26bc2280d46b2b35a19829e902f86b8e549d201c9114`
-- Created: `2026-04-13T22:50:09.142601966Z`
+- Image ID: `sha256:63094d0e7597666e3a6319a4c087f71fe682814c16de22d762b1de6dd9c5cca7`
+- Created: `2026-04-17T00:29:15.862005115Z`
 - Virtual Size: ~ 147.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -71,16 +71,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.6-r0 description:
+alpine-release-3.21.7-r0 description:
 Alpine release data
 
-alpine-release-3.21.6-r0 webpage:
+alpine-release-3.21.7-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.6-r0 installed size:
+alpine-release-3.21.7-r0 installed size:
 346 B
 
-alpine-release-3.21.6-r0 license:
+alpine-release-3.21.7-r0 license:
 MIT
 
 ```
@@ -156,16 +156,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20250911-r0 description:
+ca-certificates-20260413-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20250911-r0 webpage:
+ca-certificates-20260413-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20250911-r0 installed size:
-248 KiB
+ca-certificates-20260413-r0 installed size:
+246 KiB
 
-ca-certificates-20250911-r0 license:
+ca-certificates-20260413-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -173,16 +173,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20250911-r0 description:
+ca-certificates-bundle-20260413-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20250911-r0 webpage:
+ca-certificates-bundle-20260413-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20250911-r0 installed size:
-214 KiB
+ca-certificates-bundle-20260413-r0 installed size:
+212 KiB
 
-ca-certificates-bundle-20250911-r0 license:
+ca-certificates-bundle-20260413-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -190,16 +190,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.6-r0 description:
+libcrypto3-3.3.7-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.6-r0 webpage:
+libcrypto3-3.3.7-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.6-r0 installed size:
+libcrypto3-3.3.7-r0 installed size:
 4611 KiB
 
-libcrypto3-3.3.6-r0 license:
+libcrypto3-3.3.7-r0 license:
 Apache-2.0
 
 ```
@@ -224,16 +224,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.6-r0 description:
+libssl3-3.3.7-r0 description:
 SSL shared libraries
 
-libssl3-3.3.6-r0 webpage:
+libssl3-3.3.7-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.6-r0 installed size:
+libssl3-3.3.7-r0 installed size:
 779 KiB
 
-libssl3-3.3.6-r0 license:
+libssl3-3.3.7-r0 license:
 Apache-2.0
 
 ```
@@ -241,16 +241,16 @@ Apache-2.0
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r9 description:
+musl-1.2.5-r11 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r9 webpage:
+musl-1.2.5-r11 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r9 installed size:
+musl-1.2.5-r11 installed size:
 646 KiB
 
-musl-1.2.5-r9 license:
+musl-1.2.5-r11 license:
 MIT
 
 ```
@@ -258,16 +258,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r9 description:
+musl-utils-1.2.5-r11 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r9 webpage:
+musl-utils-1.2.5-r11 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r9 installed size:
+musl-utils-1.2.5-r11 installed size:
 102 KiB
 
-musl-utils-1.2.5-r9 license:
+musl-utils-1.2.5-r11 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -360,16 +360,16 @@ Public-Domain
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.1-r2 description:
+zlib-1.3.2-r0 description:
 A compression/decompression Library
 
-zlib-1.3.1-r2 webpage:
+zlib-1.3.2-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.1-r2 installed size:
+zlib-1.3.2-r0 installed size:
 101 KiB
 
-zlib-1.3.1-r2 license:
+zlib-1.3.2-r0 license:
 Zlib
 
 ```
