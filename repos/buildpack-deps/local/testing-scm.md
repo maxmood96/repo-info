@@ -3188,20 +3188,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.41.3-4
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.3-4.dsc' util-linux_2.41.3-4.dsc 5331 SHA256:144d452dd95d79ff046c104936558f99c57f7a46cff564777fcf5477cfe7617f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.3.orig.tar.xz' util-linux_2.41.3.orig.tar.xz 9467224 SHA256:3330d873f0fceb5560b89a7dc14e4f3288bbd880e96903ed9b50ec2b5799e58b
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.3-4.debian.tar.xz' util-linux_2.41.3-4.debian.tar.xz 108764 SHA256:12b8207507e33b0032cb4711a7e43951ce3538327e5d0bc1c223d028c4a66265
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.41.3-4/
 
-- https://sources.debian.net/src/util-linux/2.41.3-4/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.41.3-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.41.3-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 

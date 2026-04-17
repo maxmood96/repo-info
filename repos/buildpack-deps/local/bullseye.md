@@ -4348,21 +4348,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:8.4p1-5+deb11u5
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1-5%2bdeb11u5.dsc' openssh_8.4p1-5+deb11u5.dsc 3270 SHA256:4b98a5e54e3a84467c891ba09fdca7aafae562690401a465cbbc6e18eace3558
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1.orig.tar.gz' openssh_8.4p1.orig.tar.gz 1742201 SHA256:5a01d22e407eb1c05ba8a8f7c654d388a13e9f226e4ed33bd38748dafa1d2b24
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1.orig.tar.gz.asc' openssh_8.4p1.orig.tar.gz.asc 683 SHA256:ccd9dd484651ce4cc926228f6e1b46afaf0c5ab98a866217fa0ef1074370ea2b
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1-5%2bdeb11u5.debian.tar.xz' openssh_8.4p1-5+deb11u5.debian.tar.xz 188096 SHA256:f29ce9cc1eb5f7f01570555f96d3db3d8fe434c8267d1214a15aeaf1a1b06d4d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:8.4p1-5+deb11u5/
 
-- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u5/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:8.4p1-5+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1w-0+deb11u5`
 
@@ -4847,20 +4839,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.9-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.9=3.9.2-1+deb11u5
-'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2-1%2bdeb11u5.dsc' python3.9_3.9.2-1+deb11u5.dsc 3007 SHA256:e1484a80600e726c3e6d0790c2f07a3fdc984c16f8464124f8fdacd587bd5fb8
-'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2.orig.tar.xz' python3.9_3.9.2.orig.tar.xz 18889164 SHA256:3c2034c54f811448f516668dce09d24008a0716c3a794dd8639b5388cbde247d
-'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2-1%2bdeb11u5.debian.tar.xz' python3.9_3.9.2-1+deb11u5.debian.tar.xz 302112 SHA256:b6731f8cb7800ee81512086b36dcffd1a8358a98bdb02f1c31677f0812df526a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.9/3.9.2-1+deb11u5/
 
-- https://sources.debian.net/src/python3.9/3.9.2-1+deb11u5/ (for browsing the source)
-- https://sources.debian.net/src/python3.9/3.9.2-1+deb11u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.9/3.9.2-1+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.1-1`
 

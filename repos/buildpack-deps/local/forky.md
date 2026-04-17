@@ -3867,21 +3867,13 @@ Licenses: (parsed from: `/usr/share/doc/libmariadb-dev/copyright`, `/usr/share/d
 - `unlimited-free-doc`
 - `zlib/libpng`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:11.8.6-5
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.6-5.dsc' mariadb_11.8.6-5.dsc 5608 SHA256:5ca56880b2b65efeab9f5ba091274bbff0c4761da206c92bc3aeb651c7fad919
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.6.orig.tar.gz' mariadb_11.8.6.orig.tar.gz 120887651 SHA256:b126581a8ca89376d2a3ce63fee97c114c3e15315345e769b9d00c51e1b7d619
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.6.orig.tar.gz.asc' mariadb_11.8.6.orig.tar.gz.asc 833 SHA256:83fdc365789ef5f4b2974468061896971c10c605b0e41e1888a90f4e5342008a
-'http://deb.debian.org/debian/pool/main/m/mariadb/mariadb_11.8.6-5.debian.tar.xz' mariadb_11.8.6-5.debian.tar.xz 300900 SHA256:f0786a452059c248aa72823bed9cb5ee9845085aab05f2f08c214514b9d2cf1b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mariadb/1:11.8.6-5/
 
-- https://sources.debian.net/src/mariadb/1:11.8.6-5/ (for browsing the source)
-- https://sources.debian.net/src/mariadb/1:11.8.6-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mariadb/1:11.8.6-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mawk=1.3.4.20260302-1`
 
@@ -4565,20 +4557,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.57.1-1
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.57.1-1.dsc' pango1.0_1.57.1-1.dsc 3667 SHA256:2fba4214775752034a7a30471655216cf200811112a1d5b4b6ce67300dd5c189
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.57.1.orig.tar.xz' pango1.0_1.57.1.orig.tar.xz 2588416 SHA256:e65d6d117080dc3aeeb7d8b4b3b518f7383aa2e6cfce23117c623cd624764c2f
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.57.1-1.debian.tar.xz' pango1.0_1.57.1-1.debian.tar.xz 44160 SHA256:53cdc6d0371666efc25ac4909bd40c8ece3eb9af9cd74a53d8e362a752bd0b04
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.57.1-1/
 
-- https://sources.debian.net/src/pango1.0/1.57.1-1/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.57.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.57.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.8-2`
 
@@ -5591,20 +5576,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.41.3-4
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.3-4.dsc' util-linux_2.41.3-4.dsc 5331 SHA256:144d452dd95d79ff046c104936558f99c57f7a46cff564777fcf5477cfe7617f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.3.orig.tar.xz' util-linux_2.41.3.orig.tar.xz 9467224 SHA256:3330d873f0fceb5560b89a7dc14e4f3288bbd880e96903ed9b50ec2b5799e58b
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.41.3-4.debian.tar.xz' util-linux_2.41.3-4.debian.tar.xz 108764 SHA256:12b8207507e33b0032cb4711a7e43951ce3538327e5d0bc1c223d028c4a66265
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.41.3-4/
 
-- https://sources.debian.net/src/util-linux/2.41.3-4/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.41.3-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.41.3-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
