@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:145337321debd4fd938fa3a7f6302e9ee60d2d53b9d057e99e1fe306642ffb2a`
-- Created: `2026-01-28T04:05:48.050978718Z`
-- Virtual Size: ~ 205.67 Mb  
+- Image ID: `sha256:3d7c87d2d83262a86e646880eb2b2a10b700521dcf5b565c62be249a7f42260c`
+- Created: `2026-04-15T21:21:26.861531567Z`
+- Virtual Size: ~ 205.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -47,16 +47,16 @@ LGPL-2.1-or-later AND GPL-2.0-or-later
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.7.1-r8 description:
+alpine-baselayout-3.7.2-r0 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.7.1-r8 webpage:
-https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
+alpine-baselayout-3.7.2-r0 webpage:
+https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/main/alpine-baselayout
 
-alpine-baselayout-3.7.1-r8 installed size:
+alpine-baselayout-3.7.2-r0 installed size:
 6552 B
 
-alpine-baselayout-3.7.1-r8 license:
+alpine-baselayout-3.7.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -64,16 +64,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.7.1-r8 description:
+alpine-baselayout-data-3.7.2-r0 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.7.1-r8 webpage:
-https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
+alpine-baselayout-data-3.7.2-r0 webpage:
+https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/main/alpine-baselayout
 
-alpine-baselayout-data-3.7.1-r8 installed size:
+alpine-baselayout-data-3.7.2-r0 installed size:
 18 KiB
 
-alpine-baselayout-data-3.7.1-r8 license:
+alpine-baselayout-data-3.7.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -98,16 +98,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.3-r0 description:
+alpine-release-3.23.4-r0 description:
 Alpine release data
 
-alpine-release-3.23.3-r0 webpage:
+alpine-release-3.23.4-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.3-r0 installed size:
+alpine-release-3.23.4-r0 installed size:
 343 B
 
-alpine-release-3.23.3-r0 license:
+alpine-release-3.23.4-r0 license:
 MIT
 
 ```
@@ -115,16 +115,16 @@ MIT
 ### `apk` package: `aom-libs`
 
 ```console
-aom-libs-3.13.1-r0 description:
+aom-libs-3.13.1-r1 description:
 Alliance for Open Media (AOM) AV1 codec SDK (libraries)
 
-aom-libs-3.13.1-r0 webpage:
+aom-libs-3.13.1-r1 webpage:
 https://aomedia.org/
 
-aom-libs-3.13.1-r0 installed size:
+aom-libs-3.13.1-r1 installed size:
 8140 KiB
 
-aom-libs-3.13.1-r0 license:
+aom-libs-3.13.1-r1 license:
 BSD-2-Clause AND custom
 
 ```
@@ -132,16 +132,16 @@ BSD-2-Clause AND custom
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-3.0.3-r1 description:
+apk-tools-3.0.6-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-3.0.3-r1 webpage:
+apk-tools-3.0.6-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-3.0.3-r1 installed size:
+apk-tools-3.0.6-r0 installed size:
 112 KiB
 
-apk-tools-3.0.3-r1 license:
+apk-tools-3.0.6-r0 license:
 GPL-2.0-only
 
 ```
@@ -251,16 +251,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20251003-r0 description:
+ca-certificates-20260413-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20251003-r0 webpage:
+ca-certificates-20260413-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20251003-r0 installed size:
-250 KiB
+ca-certificates-20260413-r0 installed size:
+246 KiB
 
-ca-certificates-20251003-r0 license:
+ca-certificates-20260413-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -268,16 +268,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20251003-r0 description:
+ca-certificates-bundle-20260413-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20251003-r0 webpage:
+ca-certificates-bundle-20260413-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20251003-r0 installed size:
-216 KiB
+ca-certificates-bundle-20260413-r0 installed size:
+212 KiB
 
-ca-certificates-bundle-20251003-r0 license:
+ca-certificates-bundle-20260413-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -472,16 +472,16 @@ ICU
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.13-r0 description:
+imagemagick-libs-7.1.2.17-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.13-r0 webpage:
+imagemagick-libs-7.1.2.17-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.13-r0 installed size:
-4245 KiB
+imagemagick-libs-7.1.2.17-r0 installed size:
+4257 KiB
 
-imagemagick-libs-7.1.2.13-r0 license:
+imagemagick-libs-7.1.2.17-r0 license:
 ImageMagick
 
 ```
@@ -523,16 +523,16 @@ GPL-3.0-or-later OR BSD-2-Clause
 ### `apk` package: `libapk`
 
 ```console
-libapk-3.0.3-r1 description:
+libapk-3.0.6-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk-3.0.3-r1 webpage:
+libapk-3.0.6-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk-3.0.3-r1 installed size:
+libapk-3.0.6-r0 installed size:
 270 KiB
 
-libapk-3.0.3-r1 license:
+libapk-3.0.6-r0 license:
 GPL-2.0-only
 
 ```
@@ -557,16 +557,16 @@ BSD-2-Clause
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.41.2-r0 description:
+libblkid-2.41.4-r0 description:
 Block device identification library from util-linux
 
-libblkid-2.41.2-r0 webpage:
+libblkid-2.41.4-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.41.2-r0 installed size:
-190 KiB
+libblkid-2.41.4-r0 installed size:
+194 KiB
 
-libblkid-2.41.2-r0 license:
+libblkid-2.41.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -608,16 +608,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.5-r0 description:
+libcrypto3-3.5.6-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.5-r0 webpage:
+libcrypto3-3.5.6-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.5-r0 installed size:
-5083 KiB
+libcrypto3-3.5.6-r0 installed size:
+5091 KiB
 
-libcrypto3-3.5.5-r0 license:
+libcrypto3-3.5.6-r0 license:
 Apache-2.0
 
 ```
@@ -676,16 +676,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.3-r0 description:
+libexpat-2.7.5-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.3-r0 webpage:
+libexpat-2.7.5-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.3-r0 installed size:
+libexpat-2.7.5-r0 installed size:
 133 KiB
 
-libexpat-2.7.3-r0 license:
+libexpat-2.7.5-r0 license:
 MIT
 
 ```
@@ -829,16 +829,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libmount`
 
 ```console
-libmount-2.41.2-r0 description:
+libmount-2.41.4-r0 description:
 Block device identification library from util-linux
 
-libmount-2.41.2-r0 webpage:
+libmount-2.41.4-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libmount-2.41.2-r0 installed size:
+libmount-2.41.4-r0 installed size:
 266 KiB
 
-libmount-2.41.2-r0 license:
+libmount-2.41.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -863,16 +863,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.54-r0 description:
+libpng-1.6.57-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.54-r0 webpage:
+libpng-1.6.57-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.54-r0 installed size:
-177 KiB
+libpng-1.6.57-r0 installed size:
+181 KiB
 
-libpng-1.6.54-r0 license:
+libpng-1.6.57-r0 license:
 Libpng
 
 ```
@@ -948,16 +948,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.5-r0 description:
+libssl3-3.5.6-r0 description:
 SSL shared libraries
 
-libssl3-3.5.5-r0 webpage:
+libssl3-3.5.6-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.5-r0 installed size:
+libssl3-3.5.6-r0 installed size:
 819 KiB
 
-libssl3-3.5.5-r0 license:
+libssl3-3.5.6-r0 license:
 Apache-2.0
 
 ```
@@ -1186,16 +1186,16 @@ GPL-2.0-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r21 description:
+musl-1.2.5-r23 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r21 webpage:
+musl-1.2.5-r23 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r21 installed size:
+musl-1.2.5-r23 installed size:
 650 KiB
 
-musl-1.2.5-r21 license:
+musl-1.2.5-r23 license:
 MIT
 
 ```
@@ -1203,16 +1203,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r21 description:
+musl-utils-1.2.5-r23 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r21 webpage:
+musl-utils-1.2.5-r23 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r21 installed size:
+musl-utils-1.2.5-r23 installed size:
 54 KiB
 
-musl-utils-1.2.5-r21 license:
+musl-utils-1.2.5-r23 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -1305,16 +1305,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.5-r0 description:
+openssl-3.5.6-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.5-r0 webpage:
+openssl-3.5.6-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.5-r0 installed size:
+openssl-3.5.6-r0 installed size:
 801 KiB
 
-openssl-3.5.5-r0 license:
+openssl-3.5.6-r0 license:
 Apache-2.0
 
 ```
@@ -1458,16 +1458,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.1-r2 description:
+zlib-1.3.2-r0 description:
 A compression/decompression Library
 
-zlib-1.3.1-r2 webpage:
+zlib-1.3.2-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.1-r2 installed size:
-101 KiB
+zlib-1.3.2-r0 installed size:
+105 KiB
 
-zlib-1.3.1-r2 license:
+zlib-1.3.2-r0 license:
 Zlib
 
 ```
