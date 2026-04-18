@@ -1,7 +1,7 @@
 ## `clojure:temurin-25-lein-2.12.0-trixie`
 
 ```console
-$ docker pull clojure@sha256:7e136402ad84be48feb8657f0a57d498d28540a9e2e4328057747ca31e7829bc
+$ docker pull clojure@sha256:9545733270cfc29ea44784e15b08811825016b54fc1a3c79ff7eebc1a95d1bd6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -302,13 +302,13 @@ $ docker pull clojure@sha256:686decc61ce0e8026a29bf2995df41f50f24a8a686528519317
 ### `clojure:temurin-25-lein-2.12.0-trixie` - linux; riscv64
 
 ```console
-$ docker pull clojure@sha256:65e004b7b404793fef4fefd47b1f1be89638bb2e7d19c5f4ceac411e8dc83f9a
+$ docker pull clojure@sha256:713c62cc62b857e811022dc0ad6021f28159b350ee65a2da977f5433fd233825
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.8 MB (164780419 bytes)**  
+-	Total Size: **164.8 MB (164780395 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b95425362c462b6d3fdeb0b1d4307602ff9ba155b3bd6bf6ee0dcb4c1e858305`
+-	Image ID: `sha256:f315c82e2997d52244767062b945bc8e9d9352aca7fbdb86344bc0ba5c30def7`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -325,21 +325,21 @@ ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
 ENV LEIN_VERSION=2.12.0
 # Sat, 11 Apr 2026 22:33:17 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Sat, 11 Apr 2026 22:33:17 GMT
+# Sat, 18 Apr 2026 05:20:11 GMT
 WORKDIR /tmp
-# Sat, 11 Apr 2026 22:34:52 GMT
+# Sat, 18 Apr 2026 05:21:47 GMT
 RUN set -eux; apt-get update && apt-get install -y make gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "12a9c5e3a2471619ca3d64a7462f920fdf713ae8959eb4fcd6257c23332b5aa4 *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mkdir -p /root/.lein && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget # buildkit
-# Sat, 11 Apr 2026 22:34:52 GMT
+# Sat, 18 Apr 2026 05:21:47 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Sat, 11 Apr 2026 22:34:52 GMT
+# Sat, 18 Apr 2026 05:21:47 GMT
 ENV LEIN_ROOT=1
-# Sat, 11 Apr 2026 22:35:09 GMT
+# Sat, 18 Apr 2026 05:22:03 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.12.1"]])' > project.clj   && lein deps && rm project.clj # buildkit
-# Sat, 11 Apr 2026 22:35:09 GMT
+# Sat, 18 Apr 2026 05:22:04 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Sat, 11 Apr 2026 22:35:09 GMT
+# Sat, 18 Apr 2026 05:22:04 GMT
 ENTRYPOINT ["entrypoint"]
-# Sat, 11 Apr 2026 22:35:09 GMT
+# Sat, 18 Apr 2026 05:22:04 GMT
 CMD ["repl"]
 ```
 
@@ -356,40 +356,40 @@ CMD ["repl"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd3cee8b7858b6e47a6142136700e3a8c00971ca2899b3e905d79cf95926ef27`  
-		Last Modified: Sat, 11 Apr 2026 22:38:46 GMT  
-		Size: 21.7 MB (21696155 bytes)  
+	-	`sha256:15f2a30adf76821106329954ef00b07f570d7c752969de531b86703f4c60992e`  
+		Last Modified: Sat, 18 Apr 2026 05:24:15 GMT  
+		Size: 21.7 MB (21696131 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ca377022b8af3a58916923f4fdd929aa705a15a0725212b93712ff7be44a253`  
-		Last Modified: Sat, 11 Apr 2026 22:38:41 GMT  
+	-	`sha256:be69aa747a0ee50e3fabba7511388f717a9b3126a43424f447621d5556d52b85`  
+		Last Modified: Sat, 18 Apr 2026 05:24:13 GMT  
 		Size: 4.5 MB (4517783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4899f012572b5a96438d13f91ee2fc973c7f36c565fcfbf1e72cf05a02ba0b45`  
-		Last Modified: Sat, 11 Apr 2026 22:38:39 GMT  
+	-	`sha256:b0d44b60e80530fc5b6865ab25421dcbef5c0af834c53352f463c1044db1c30a`  
+		Last Modified: Sat, 18 Apr 2026 05:24:11 GMT  
 		Size: 398.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-25-lein-2.12.0-trixie` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:ade6fcb3d67049d0a3c5bc90050def8e7352c218c423833cbb6a3a966784e5da
+$ docker pull clojure@sha256:8d0f63a13ce3b330860b3d37d274908b08f6e3ab7665ad70a7a45be0b2262ad4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.8 MB (3775094 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ccf68ed424dee997b234c9aab2bb8faaf8fe13b2716b9da1811e5f27834da6a`
+-	Image ID: `sha256:684ce20a55e8e3b49090e51aed765f3a1a3a605da66e6b2923c612b97affb7cc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b92c7045a34f98036522ef013f25497e4e9478ca2e367c87366dd82ec91d533`  
-		Last Modified: Sat, 11 Apr 2026 22:38:41 GMT  
+	-	`sha256:911cfc0a239e5d4ba9a6c035af5f5aab572d76b7288b70822d93ff5d6ab6a521`  
+		Last Modified: Sat, 18 Apr 2026 05:24:12 GMT  
 		Size: 3.8 MB (3756059 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ce5c4511cc11635b411c9071f1f590820b3d03c011f5ab9c3d3d07cb09d9ff65`  
-		Last Modified: Sat, 11 Apr 2026 22:38:39 GMT  
+	-	`sha256:dcc5e90a71864fddc8c714c95204fb6308f40cef834169d60a653649e5e88a99`  
+		Last Modified: Sat, 18 Apr 2026 05:24:11 GMT  
 		Size: 19.0 KB (19035 bytes)  
 		MIME: application/vnd.in-toto+json
 
