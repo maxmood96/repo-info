@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cfc8d7efaf0f7bc16f732d92731a5e3f034b0d8cac1f4b8c4e57d48374e50151`
-- Created: `2026-04-13T23:42:24.859358636Z`
+- Image ID: `sha256:cab0fd326cc97fd84756d2de7f1381fdc368249c1b071ab41c53f0cd2cc6b0ff`
+- Created: `2026-04-15T22:23:22.051363578Z`
 - Virtual Size: ~ 384.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -633,15 +633,15 @@ $ dnf --quiet download --source --url libnghttp2-1.41.0-1.amzn2.0.5
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1807695cfa04fdc6d080dfe57a81fd7290d7d817469e091c88426770929e6c38/../../../../../blobstore/8da0fd7d90c15a804a1e65d334a29814cd39273a449891f46ad90771e6e35261/nghttp2-1.41.0-1.amzn2.0.5.src.rpm
 ```
 
-### `rpm` package: `libpng-1.5.13-8.amzn2.0.7.x86_64`
+### `rpm` package: `libpng-1.5.13-8.amzn2.0.8.x86_64`
 
 Licenses (from `rpm --query`): zlib
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libpng-1.5.13-8.amzn2.0.7
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1807695cfa04fdc6d080dfe57a81fd7290d7d817469e091c88426770929e6c38/../../../../../blobstore/03e5c5ea1142af01258ac006c4af08ac5e0bc05f360b89f17ff9a9eebe32da08/libpng-1.5.13-8.amzn2.0.7.src.rpm
+$ dnf --quiet download --source --url libpng-1.5.13-8.amzn2.0.8
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1807695cfa04fdc6d080dfe57a81fd7290d7d817469e091c88426770929e6c38/../../../../../blobstore/3197643ff6b6e7a43125bdf2c9072b139983174c87837fd6e743fd22bc5dd198/libpng-1.5.13-8.amzn2.0.8.src.rpm
 ```
 
 ### `rpm` package: `libpsl-0.21.5-1.amzn2.x86_64`
@@ -908,15 +908,15 @@ $ dnf --quiet download --source --url openssl-libs-1.0.2k-24.amzn2.0.17
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1807695cfa04fdc6d080dfe57a81fd7290d7d817469e091c88426770929e6c38/../../../../../blobstore/77cbcf79b3d34aedf681709892f364e25b40e0a7d4a4838f342c318b81f14993/openssl-1.0.2k-24.amzn2.0.17.src.rpm
 ```
 
-### `rpm` package: `openssl11-libs-1.1.1zf-1.amzn2.0.1.x86_64`
+### `rpm` package: `openssl11-libs-1.1.1zg-1.amzn2.0.1.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL and ASL 2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl11-libs-1.1.1zf-1.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1807695cfa04fdc6d080dfe57a81fd7290d7d817469e091c88426770929e6c38/../../../../../blobstore/49c4e7ee406c755789799665d0e87aabb9c275806ec694139b65a03137e30879/openssl11-1.1.1zf-1.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url openssl11-libs-1.1.1zg-1.amzn2.0.1
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1807695cfa04fdc6d080dfe57a81fd7290d7d817469e091c88426770929e6c38/../../../../../blobstore/b565c944c4d9e25c251b24ff287ab558b22d30d39acbb28d4204cd27c2b944a6/openssl11-1.1.1zg-1.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `openssl11-pkcs11-0.4.10-6.amzn2.0.1.x86_64`
