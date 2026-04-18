@@ -4351,21 +4351,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:8.4p1-5+deb11u5
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1-5%2bdeb11u5.dsc' openssh_8.4p1-5+deb11u5.dsc 3270 SHA256:4b98a5e54e3a84467c891ba09fdca7aafae562690401a465cbbc6e18eace3558
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1.orig.tar.gz' openssh_8.4p1.orig.tar.gz 1742201 SHA256:5a01d22e407eb1c05ba8a8f7c654d388a13e9f226e4ed33bd38748dafa1d2b24
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1.orig.tar.gz.asc' openssh_8.4p1.orig.tar.gz.asc 683 SHA256:ccd9dd484651ce4cc926228f6e1b46afaf0c5ab98a866217fa0ef1074370ea2b
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1-5%2bdeb11u5.debian.tar.xz' openssh_8.4p1-5+deb11u5.debian.tar.xz 188096 SHA256:f29ce9cc1eb5f7f01570555f96d3db3d8fe434c8267d1214a15aeaf1a1b06d4d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:8.4p1-5+deb11u5/
 
-- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u5/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:8.4p1-5+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1w-0+deb11u5`
 
@@ -5194,21 +5186,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.2.0-1+deb11u7
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0-1%2bdeb11u7.dsc' tiff_4.2.0-1+deb11u7.dsc 2461 SHA256:81940329e678f02202facbcae460dc02a0cddbcfe80b2d96977d51a1cb70cc8c
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0.orig.tar.gz' tiff_4.2.0.orig.tar.gz 2809373 SHA256:eb0484e568ead8fa23b513e9b0041df7e327f4ee2d22db5a533929dfc19633cb
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0.orig.tar.gz.asc' tiff_4.2.0.orig.tar.gz.asc 228 SHA256:119bb62934603ff4d3cd81c739d11904b28812a860773b9b2268cc96a339b14f
-'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0-1%2bdeb11u7.debian.tar.xz' tiff_4.2.0-1+deb11u7.debian.tar.xz 46088 SHA256:50a74d0a12fc402ec425b1b0a49bc18e3cf0698cb9d43b67a81086d1f067c662
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.2.0-1+deb11u7/
 
-- https://sources.debian.net/src/tiff/4.2.0-1+deb11u7/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.2.0-1+deb11u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.2.0-1+deb11u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2025b-0+deb11u2`
 
