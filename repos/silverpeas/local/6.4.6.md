@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:20267922e5c1ae699030e17279cc135bd9d3045bcfed7cf593c5b692d30d36af`
-- Created: `2026-04-01T20:21:20.371389856Z`
+- Image ID: `sha256:ed829afe4c8c10612bc140892217fd0b878155e28855b61bc8d650621d468cd0`
+- Created: `2026-04-15T21:04:19.715169664Z`
 - Virtual Size: ~ 2.87 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1173,12 +1173,12 @@ $ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04.3
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.3.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.3.debian.tar.xz 587456 SHA512:d7721ad3f05f4918ac658b7df557db130cd5549b138578a212f616dec53485d4e80a59c4ef2afc7b46ddd66e51dd77a4036d57e8f99a44a4c4be3eff854f62e3
 ```
 
-### `dpkg` source package: `gdk-pixbuf=2.42.8+dfsg-1ubuntu0.4`
+### `dpkg` source package: `gdk-pixbuf=2.42.8+dfsg-1ubuntu0.5`
 
 Binary Packages:
 
-- `libgdk-pixbuf-2.0-0:amd64=2.42.8+dfsg-1ubuntu0.4`
-- `libgdk-pixbuf2.0-common=2.42.8+dfsg-1ubuntu0.4`
+- `libgdk-pixbuf-2.0-0:amd64=2.42.8+dfsg-1ubuntu0.5`
+- `libgdk-pixbuf2.0-common=2.42.8+dfsg-1ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf-2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
@@ -1190,9 +1190,14 @@ Licenses: (parsed from: `/usr/share/doc/libgdk-pixbuf-2.0-0/copyright`, `/usr/sh
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris gdk-pixbuf=2.42.8+dfsg-1ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.8%2bdfsg-1ubuntu0.5.dsc' gdk-pixbuf_2.42.8+dfsg-1ubuntu0.5.dsc 3238 SHA512:1b1b643ef7afbfdaf9c9accd9862fa424ff74a966a0b947814905bbb8cf032ba0d476b4530b7510460230061c2be2a7eca8f1267f23b1290a4fa9d73b4d4dc28
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.8%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.8+dfsg.orig.tar.xz 6439548 SHA512:d77093ac4bd5c8f9a5267e67958dd99db009e16f94c44be95a547cd291b6d03fcc35c4a02327dd9f4341af1ae2ecdaa6a1bec02dcf1116ec5a440d22b3f68924
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.8%2bdfsg-1ubuntu0.5.debian.tar.xz' gdk-pixbuf_2.42.8+dfsg-1ubuntu0.5.debian.tar.xz 30172 SHA512:94b378e7ad90d2d08b46870a63dc17c15edebde78daef07b043b17706546063e75e832cc14bf7e27db74881bfef4460d8a0c4d5df5b8081d19ec2c5b7e4ad702
+```
 
 ### `dpkg` source package: `ghostscript=9.55.0~dfsg1-0ubuntu5.13`
 
@@ -5302,12 +5307,12 @@ $ apt-get source -qq --print-uris openldap=2.5.20+dfsg-0ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg-0ubuntu0.22.04.1.debian.tar.xz' openldap_2.5.20+dfsg-0ubuntu0.22.04.1.debian.tar.xz 178364 SHA512:1c16d4050864511b688889b9ac3c375168111cd2d3b9b9633d594b2fc8881dca9bb4fb2f2fbbfe249a3a2d7525900e8249948bfcfe8f92ee975d2a45fb77c586
 ```
 
-### `dpkg` source package: `openssl=3.0.2-0ubuntu1.21`
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.23`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.2-0ubuntu1.21`
-- `openssl=3.0.2-0ubuntu1.21`
+- `libssl3:amd64=3.0.2-0ubuntu1.23`
+- `openssl=3.0.2-0ubuntu1.23`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -5316,9 +5321,15 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.23
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.23.dsc' openssl_3.0.2-0ubuntu1.23.dsc 2730 SHA512:63c782499d5cee71f4d999ae0581c3b1f3ccc6f68b0147e1e3487c2dcd43e83c420b9a3d9bbf305ec6ed39f7dfc73e2386c2a5d89adc46878d8a36dd53d1d431
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.23.debian.tar.xz' openssl_3.0.2-0ubuntu1.23.debian.tar.xz 277852 SHA512:1de5b111ad19a4d0400c2195574737293a83a23d4f79ca44e86f09e8438f879d29888be39455f7483fdaf8a9314841ffb9511ace908813e7f849c4d98af53562
+```
 
 ### `dpkg` source package: `opus=1.3.1-0.1build2`
 
@@ -6259,12 +6270,12 @@ $ apt-get source -qq --print-uris suitesparse=1:5.10.1+dfsg-4build1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/suitesparse/suitesparse_5.10.1%2bdfsg-4build1.debian.tar.xz' suitesparse_5.10.1+dfsg-4build1.debian.tar.xz 23168 SHA512:56f5c555ebc8faed35998582edd66ea1068b5846cf488d0ebefd16f0b43eeeebf1878990e5000aca2635f5aca33dcda996e6b69eefe27dc5b2a92c8c8b090e72
 ```
 
-### `dpkg` source package: `systemd=249.11-0ubuntu3.17`
+### `dpkg` source package: `systemd=249.11-0ubuntu3.20`
 
 Binary Packages:
 
-- `libsystemd0:amd64=249.11-0ubuntu3.17`
-- `libudev1:amd64=249.11-0ubuntu3.17`
+- `libsystemd0:amd64=249.11-0ubuntu3.20`
+- `libudev1:amd64=249.11-0ubuntu3.20`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -6277,9 +6288,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.20
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.20.dsc' systemd_249.11-0ubuntu3.20.dsc 5907 SHA512:03aafe1147f29ce0778400bfe78bb8ecc2a4d9458f7fd297abc0921b100249e4cfe1b62d9b852e0ec848849c9d82e5ad002f7cbe46c64a422ee691fb119a8708
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.20.debian.tar.xz' systemd_249.11-0ubuntu3.20.debian.tar.xz 268300 SHA512:3e35df414c80d09525da9c78e9fb5cac1b220f4579c18cae26e557a469e98b48f4a8177a49a95def1de3fc000e5b9a3da0a64f1f7cad99d6042d1b1db602297a
+```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
@@ -6361,11 +6377,11 @@ $ apt-get source -qq --print-uris twolame=0.4.0-2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/twolame/twolame_0.4.0-2build2.debian.tar.xz' twolame_0.4.0-2build2.debian.tar.xz 4944 SHA512:1eefc13508c60de81ac1e604ccc43f7fe92eb5b6031b65846138ae53ff31df2080ab9a47a4f1f0a24a93b5ab13256d48a1ebebf4bbd23911335d05bc5fe82a44
 ```
 
-### `dpkg` source package: `tzdata=2025b-0ubuntu0.22.04.1`
+### `dpkg` source package: `tzdata=2026a-0ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `tzdata=2025b-0ubuntu0.22.04.1`
+- `tzdata=2026a-0ubuntu0.22.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -6374,11 +6390,11 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2025b-0ubuntu0.22.04.1
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.22.04.1.dsc' tzdata_2025b-0ubuntu0.22.04.1.dsc 2541 SHA512:7e9735cd0230941067895eb4ba5ccbe881347e1114c0dcae4def86a35e66d5bbdbc35cf2d7e26936cbbe4aec1f45d546caf4d7a16143eab6ec4c3bab0dc0d280
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA512:7d83741f3cae81fac8131994b43c55b6da7328df18b706e5ee40e9b3212bc506e6f8fc90988b18da424ed59eff69bce593f2783b7b5f18eb483a17aeb94258d6
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA512:ad39fe16b32fad7eee27ff968b4e8af23267ce586629ad70e7625136d2c3cc3a42295a87b3dc770c291aa9112c56301629c1fe379735f70008e62864ce4e735a
-'http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2025b-0ubuntu0.22.04.1.debian.tar.xz 181492 SHA512:0acbc2b6326c9b51bc10dec5cb28cfa2b66346620755388fe5ce7d87edf4e4f435804c696c7f635bea15e0d306302be789c8f8f5f65cd3b2437b3d2dd21a80c2
+$ apt-get source -qq --print-uris tzdata=2026a-0ubuntu0.22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a-0ubuntu0.22.04.1.dsc' tzdata_2026a-0ubuntu0.22.04.1.dsc 2541 SHA512:6f982d0be7bede63a58ab10da9f316aafc6676ce3019748cc8bab52502405243f7fce15a14f60869ae1a88f009b6b89955778976d57e892e137154ad19f2db53
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz' tzdata_2026a.orig.tar.gz 471812 SHA512:407e8e93aaa054a22a4a7d6d8cf480a20630073bf1a00956df16b10318f239a12015de38fad3072249193e314d6fddbff4e74afa40a88f7bf5c9eecc7659ea15
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz.asc' tzdata_2026a.orig.tar.gz.asc 833 SHA512:e84300a1a26c9bcd1f53dc9807794fc3424a362dff7101615592c8f323c4e5ad72be82c4d36220e2666376945f4aaaaa2fbcb87486eda90f23ea1b37e4cf3833
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2026a-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2026a-0ubuntu0.22.04.1.debian.tar.xz 181756 SHA512:2aea23dd44515355a1eb6f3a1388fc008a083675b8da2fb4d47a4499a07c822e1d4bc7a765df52670ea84309a761fa016ca60b484ac993035aa19b733b175759
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
@@ -6496,14 +6512,14 @@ $ apt-get source -qq --print-uris util-linux=2.37.2-4ubuntu3.5
 'http://archive.ubuntu.com/ubuntu/pool/main/u/util-linux/util-linux_2.37.2-4ubuntu3.5.debian.tar.xz' util-linux_2.37.2-4ubuntu3.5.debian.tar.xz 115268 SHA512:e0cd54819b53c5787ad0f96caea67ecaf6264a656f534296487bcfd2af520c51918aef8694294602aa899808a9dc76de3d69f138b16b23170f500b2ef92db242
 ```
 
-### `dpkg` source package: `vim=2:8.2.3995-1ubuntu2.26`
+### `dpkg` source package: `vim=2:8.2.3995-1ubuntu2.27`
 
 Binary Packages:
 
-- `vim=2:8.2.3995-1ubuntu2.26`
-- `vim-common=2:8.2.3995-1ubuntu2.26`
-- `vim-runtime=2:8.2.3995-1ubuntu2.26`
-- `xxd=2:8.2.3995-1ubuntu2.26`
+- `vim=2:8.2.3995-1ubuntu2.27`
+- `vim-common=2:8.2.3995-1ubuntu2.27`
+- `vim-runtime=2:8.2.3995-1ubuntu2.27`
+- `xxd=2:8.2.3995-1ubuntu2.27`
 
 Licenses: (parsed from: `/usr/share/doc/vim/copyright`, `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/vim-runtime/copyright`, `/usr/share/doc/xxd/copyright`)
 
@@ -6533,9 +6549,14 @@ Licenses: (parsed from: `/usr/share/doc/vim/copyright`, `/usr/share/doc/vim-comm
 - `XPM`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris vim=2:8.2.3995-1ubuntu2.27
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.2.3995-1ubuntu2.27.dsc' vim_8.2.3995-1ubuntu2.27.dsc 3070 SHA512:6733af4b3b7332761393b52a2d75a82dd741bf2097345ee620362a74c40e3b34efa04c517ad0081632342d7ae1b87900bd861046631062f0be3237a94bdc6f63
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.2.3995.orig.tar.xz' vim_8.2.3995.orig.tar.xz 10377164 SHA512:2326b3484858c92f55076bcd2336290cc292b35c9a8963e3b14e7140dd1fe36179fe8431d71b0121f8345dac3627c80cd016899aa6120f3354fa882144a28b07
+'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.2.3995-1ubuntu2.27.debian.tar.xz' vim_8.2.3995-1ubuntu2.27.debian.tar.xz 311620 SHA512:c294a01626f7a6da810eb6faf670be9b2d6621278eba42e8f77f86b6b3b5f9fbcd56110ebfcc17a4594cc96898d5396e5b336f33314d456ed0227999fe87b13f
+```
 
 ### `dpkg` source package: `wayland=1.20.0-1ubuntu0.1`
 
