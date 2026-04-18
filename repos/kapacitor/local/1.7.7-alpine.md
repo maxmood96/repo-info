@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:168fcf9b2f142305619b781d38caee32bb205260c8f6b488640d37f280ee3c4b`
-- Created: `2026-01-28T03:27:12.03102089Z`
+- Image ID: `sha256:b3afb14c37dc00503a0e3d186c16cca67e6e6cf79f380e0768c83b473ab21723`
+- Created: `2026-04-17T00:30:05.867906654Z`
 - Virtual Size: ~ 192.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -120,16 +120,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20250911-r0 description:
+ca-certificates-20260413-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20250911-r0 webpage:
+ca-certificates-20260413-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20250911-r0 installed size:
-708 KiB
+ca-certificates-20260413-r0 installed size:
+704 KiB
 
-ca-certificates-20250911-r0 license:
+ca-certificates-20260413-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -137,16 +137,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20250911-r0 description:
+ca-certificates-bundle-20260413-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20250911-r0 webpage:
+ca-certificates-bundle-20260413-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20250911-r0 installed size:
+ca-certificates-bundle-20260413-r0 installed size:
 236 KiB
 
-ca-certificates-bundle-20250911-r0 license:
+ca-certificates-bundle-20260413-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -154,16 +154,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.6-r0 description:
+libcrypto3-3.3.7-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.6-r0 webpage:
+libcrypto3-3.3.7-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.6-r0 installed size:
+libcrypto3-3.3.7-r0 installed size:
 4664 KiB
 
-libcrypto3-3.3.6-r0 license:
+libcrypto3-3.3.7-r0 license:
 Apache-2.0
 
 ```
@@ -171,16 +171,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.6-r0 description:
+libssl3-3.3.7-r0 description:
 SSL shared libraries
 
-libssl3-3.3.6-r0 webpage:
+libssl3-3.3.7-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.6-r0 installed size:
+libssl3-3.3.7-r0 installed size:
 800 KiB
 
-libssl3-3.3.6-r0 license:
+libssl3-3.3.7-r0 license:
 Apache-2.0
 
 ```
@@ -188,16 +188,16 @@ Apache-2.0
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r1 description:
+musl-1.2.5-r3 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r1 webpage:
+musl-1.2.5-r3 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r1 installed size:
+musl-1.2.5-r3 installed size:
 652 KiB
 
-musl-1.2.5-r1 license:
+musl-1.2.5-r3 license:
 MIT
 
 ```
@@ -205,16 +205,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r1 description:
+musl-utils-1.2.5-r3 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r1 webpage:
+musl-utils-1.2.5-r3 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r1 installed size:
+musl-utils-1.2.5-r3 installed size:
 128 KiB
 
-musl-utils-1.2.5-r1 license:
+musl-utils-1.2.5-r3 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -273,16 +273,16 @@ MIT
 ### `apk` package: `zlib`
 
 ```console
-zlib-1.3.1-r1 description:
+zlib-1.3.2-r0 description:
 A compression/decompression Library
 
-zlib-1.3.1-r1 webpage:
+zlib-1.3.2-r0 webpage:
 https://zlib.net/
 
-zlib-1.3.1-r1 installed size:
-108 KiB
+zlib-1.3.2-r0 installed size:
+112 KiB
 
-zlib-1.3.1-r1 license:
+zlib-1.3.2-r0 license:
 Zlib
 
 ```
