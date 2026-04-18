@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d134be8c87f40dc3c527595fd19227a91359fbe264750c8bf47111561751569a`
-- Created: `2026-04-13T22:48:07.253642399Z`
+- Image ID: `sha256:af54213f7b01db0e844825ae4a762cfecfc07a6f93db8888dd8cafa9a99c7b73`
+- Created: `2026-04-15T21:24:15.85525826Z`
 - Virtual Size: ~ 491.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -477,15 +477,15 @@ $ dnf --quiet download --source --url gdbm-1.13-6.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1807695cfa04fdc6d080dfe57a81fd7290d7d817469e091c88426770929e6c38/../../../../../blobstore/e2866f1817e24bcd350768bf85c8bbddde135513ced29ce315df75f311cf77cf/gdbm-1.13-6.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `gdk-pixbuf2-2.36.12-3.amzn2.0.2.x86_64`
+### `rpm` package: `gdk-pixbuf2-2.36.12-3.amzn2.0.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gdk-pixbuf2-2.36.12-3.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1807695cfa04fdc6d080dfe57a81fd7290d7d817469e091c88426770929e6c38/../../../../../blobstore/d01890f21b88440f133f1114c3c8f72b21c2dc9364b5b4bdf9462dabfd41452c/gdk-pixbuf2-2.36.12-3.amzn2.0.2.src.rpm
+$ dnf --quiet download --source --url gdk-pixbuf2-2.36.12-3.amzn2.0.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1807695cfa04fdc6d080dfe57a81fd7290d7d817469e091c88426770929e6c38/../../../../../blobstore/7b7cde3137d862749a7290536906dee7e85cb6969acd36c261a72f47e68ca10f/gdk-pixbuf2-2.36.12-3.amzn2.0.3.src.rpm
 ```
 
 ### `rpm` package: `giflib-4.1.6-9.amzn2.0.5.i686`
@@ -1320,15 +1320,15 @@ $ dnf --quiet download --source --url libpciaccess-0.14-1.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1807695cfa04fdc6d080dfe57a81fd7290d7d817469e091c88426770929e6c38/../../../../../blobstore/8b222f410c8425e7492b3736e4a15e24667cdaf56a43970f4a8e3e8ddcb7aa6e/libpciaccess-0.14-1.amzn2.src.rpm
 ```
 
-### `rpm` package: `libpng-1.5.13-8.amzn2.0.7.x86_64`
+### `rpm` package: `libpng-1.5.13-8.amzn2.0.8.x86_64`
 
 Licenses (from `rpm --query`): zlib
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libpng-1.5.13-8.amzn2.0.7
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1807695cfa04fdc6d080dfe57a81fd7290d7d817469e091c88426770929e6c38/../../../../../blobstore/03e5c5ea1142af01258ac006c4af08ac5e0bc05f360b89f17ff9a9eebe32da08/libpng-1.5.13-8.amzn2.0.7.src.rpm
+$ dnf --quiet download --source --url libpng-1.5.13-8.amzn2.0.8
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1807695cfa04fdc6d080dfe57a81fd7290d7d817469e091c88426770929e6c38/../../../../../blobstore/3197643ff6b6e7a43125bdf2c9072b139983174c87837fd6e743fd22bc5dd198/libpng-1.5.13-8.amzn2.0.8.src.rpm
 ```
 
 ### `rpm` package: `libpsl-0.21.5-1.amzn2.x86_64`
@@ -1441,15 +1441,15 @@ $ dnf --quiet download --source --url libthai-0.1.14-9.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1807695cfa04fdc6d080dfe57a81fd7290d7d817469e091c88426770929e6c38/../../../../../blobstore/8aee8438aa5685bf8dac6ccff2ca30d589257d4763a8f4d4e27243fe3a24bbfa/libthai-0.1.14-9.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `libtiff-4.0.3-35.amzn2.0.29.x86_64`
+### `rpm` package: `libtiff-4.0.3-35.amzn2.0.30.x86_64`
 
 Licenses (from `rpm --query`): libtiff
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libtiff-4.0.3-35.amzn2.0.29
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1807695cfa04fdc6d080dfe57a81fd7290d7d817469e091c88426770929e6c38/../../../../../blobstore/d3eb691825cf808edd5211cfbccd38f7623463be55c1d16e0b126e12a0d6b998/libtiff-4.0.3-35.amzn2.0.29.src.rpm
+$ dnf --quiet download --source --url libtiff-4.0.3-35.amzn2.0.30
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/1807695cfa04fdc6d080dfe57a81fd7290d7d817469e091c88426770929e6c38/../../../../../blobstore/696a57aefeaae43654be2b0f24d62ab9445098317893b8ef892d7aedd428e821/libtiff-4.0.3-35.amzn2.0.30.src.rpm
 ```
 
 ### `rpm` package: `libunistring-0.9.3-9.amzn2.0.2.x86_64`
