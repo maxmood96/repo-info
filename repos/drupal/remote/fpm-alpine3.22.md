@@ -1,7 +1,7 @@
 ## `drupal:fpm-alpine3.22`
 
 ```console
-$ docker pull drupal@sha256:4106b1b4bf445258a2fc268b560dc5d14e704657d8116d105397816846d673ec
+$ docker pull drupal@sha256:817a18dbb746f6e2442350c3a081bb69453d80327f453b9b9d7b37d3d4853ef7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1090,13 +1090,13 @@ $ docker pull drupal@sha256:8416885ad5497fc862133ce1caafa96afc02f4e80afacf854959
 ### `drupal:fpm-alpine3.22` - linux; riscv64
 
 ```console
-$ docker pull drupal@sha256:25f7c0d234faf7d3bd744e5a14fb293d87a13b8fd9690fd946d7a0172a1ae604
+$ docker pull drupal@sha256:8c0e4a9d55c73a45a9c4c0273cf9769930a508d336efbbb6a86d1601e8e1e5eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **58.9 MB (58873360 bytes)**  
+-	Total Size: **58.9 MB (58874097 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5aa9a4c1b1ac8abd3eda4afa70909be220dcbac998ee6f551538e66be4ac3f41`
+-	Image ID: `sha256:9d48f97b5d506b2a80ba8874b5ad822f0bb6776be1775c66573fff2c05752251`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1160,14 +1160,14 @@ RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_
 # Sun, 19 Apr 2026 18:06:59 GMT
 COPY /usr/bin/composer /usr/local/bin/ # buildkit
 # Sun, 19 Apr 2026 18:06:59 GMT
-ENV DRUPAL_VERSION=11.3.7
+ENV DRUPAL_VERSION=11.3.8
 # Sun, 19 Apr 2026 18:06:59 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
 # Sun, 19 Apr 2026 18:06:59 GMT
 WORKDIR /opt/drupal
-# Sun, 19 Apr 2026 18:07:41 GMT
+# Mon, 20 Apr 2026 20:22:51 GMT
 RUN set -eux; 	export COMPOSER_HOME="$(mktemp -d)"; 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; 	composer check-platform-reqs; 	chown -R www-data:www-data web/sites web/modules web/themes; 	rmdir /var/www/html; 	ln -sf /opt/drupal/web /var/www/html; 	rm -rf "$COMPOSER_HOME" # buildkit
-# Sun, 19 Apr 2026 18:07:41 GMT
+# Mon, 20 Apr 2026 20:22:51 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupal/vendor/bin
 ```
 
@@ -1236,33 +1236,33 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Sun, 19 Apr 2026 18:10:12 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cec515492446721c5776d841932a3ec28f459f3d1fe4d20ceda5b83e9d1a5447`  
-		Last Modified: Sun, 19 Apr 2026 18:10:16 GMT  
-		Size: 21.3 MB (21336298 bytes)  
+	-	`sha256:d0ce604a34e03f166e6f6ba9c2cdeeefbf7537c1035d595e26636ba400d870c5`  
+		Last Modified: Mon, 20 Apr 2026 20:25:28 GMT  
+		Size: 21.3 MB (21337035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:fpm-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:9a7c9e9a20320025db579a7868b6cac8eb6d008585b14dc143290b190a9addbe
+$ docker pull drupal@sha256:436c6fd28ff3307ceaa30fd06d2ed06a67563579c80af59ce4ed8433996fbe6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **406.3 KB (406325 bytes)**  
+-	Total Size: **406.3 KB (406326 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d95446785e3284baf43825d1349267486090d1342b78956ef74adeae271e3ae`
+-	Image ID: `sha256:4aa9f18c5aba3f855cd6c65181b5430a30c308dcf72cb6265e0608e4f76c768e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3770455c2a27d7de8b01bc06ab6edc8320e610321e0535ad8c7d984129467f9f`  
-		Last Modified: Sun, 19 Apr 2026 18:10:12 GMT  
+	-	`sha256:4b1823efa261cdc75fdf3644427126aef88ad0868300c739757cd8b4d9d2fcca`  
+		Last Modified: Mon, 20 Apr 2026 20:25:23 GMT  
 		Size: 371.7 KB (371744 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:733ed4e1c99e105e20bb3f584f5fc15c582b578cf3586b4356af307dfa8aefa4`  
-		Last Modified: Sun, 19 Apr 2026 18:10:11 GMT  
-		Size: 34.6 KB (34581 bytes)  
+	-	`sha256:134aacaa19d26d8bc5a0f93ab4b6734d287dd7285084313cbded445ff81d2a5e`  
+		Last Modified: Mon, 20 Apr 2026 20:25:23 GMT  
+		Size: 34.6 KB (34582 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:fpm-alpine3.22` - linux; s390x
