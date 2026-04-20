@@ -126,13 +126,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=14ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu5.dsc' base-files_14ubuntu5.dsc 1727 SHA512:cd864000c1c3b385f8c995899be30e64b653c482abcf74da9f52b8b26275c94fcaf082f48faba584a90b28b29fba19f0ac06db506bef264e7e09e99d5875bd86
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_14ubuntu5.tar.xz' base-files_14ubuntu5.tar.xz 97972 SHA512:73bb888d0691426ea5d9637a00ad82c99907485a6db473ef078596c5705f4882d4d19acc85944cf51badea9c6f0713c95dc60040fa6315370e24afbad04f90a1
-```
 
 ### `dpkg` source package: `base-passwd=3.6.8`
 
@@ -1232,16 +1228,9 @@ Licenses: (parsed from: `/usr/share/doc/rust-coreutils/copyright`)
 - `MIT`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-coreutils=0.7.0-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.7.0-0ubuntu1.dsc' rust-coreutils_0.7.0-0ubuntu1.dsc 8743 SHA512:49159f31f8f27e3ae42e6d41688da13d7e53eed1baf0b005241de81cb482fb43bd917504bb2a437206b42917daf52c9436507c4c334ac539c3d388dd9dc05cee
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.7.0.orig-l10n.tar.gz' rust-coreutils_0.7.0.orig-l10n.tar.gz 717302 SHA512:104cc87dc1949f9f890684d9c09275f942b02010d01f9d0d0069cb88ab2a084544731863c80b477668fb13735b45c20c128fa0a074f40df8d567cad62f78c9e3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.7.0.orig-rust-vendor.tar.xz' rust-coreutils_0.7.0.orig-rust-vendor.tar.xz 12950648 SHA512:7fae7a242d08171baeb04961706d95f851c7a5f8b32d2afb09feb28eb8d5073fcf2e50b1aed6c532a0f8c857b8074488f501dc6dc3f1cb5aa0ce4443c26bb336
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.7.0.orig.tar.gz' rust-coreutils_0.7.0.orig.tar.gz 3138285 SHA512:c2d92758b28c3e61510452280046bd1d4519d810115f104006d93d909c86d0a0562ea485f8482ed18456414ebf7f9150bcef569d6cc77107a819a11686438ad7
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.7.0-0ubuntu1.debian.tar.xz' rust-coreutils_0.7.0-0ubuntu1.debian.tar.xz 19612 SHA512:52b2251a6b075e62c4e6c7fe70eba3c0c0d930157a47f815e9b109a46ccc9592af931e8117e71749a680c5b55f43781f91db93e0797241f60b5f1f828fc2ee78
-```
 
 ### `dpkg` source package: `sed=4.9-2build3`
 
@@ -1334,14 +1323,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=259.5-0ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5-0ubuntu2.dsc' systemd_259.5-0ubuntu2.dsc 8517 SHA512:9c52cca57062caad37caa720cb27fdd6067e207ee2002ce7693d397c349d0da8ec74e398b7e1b44b8fa79947b2a641110d2cc9b6e34dddeaadfbb356c5f40fe3
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5.orig.tar.gz' systemd_259.5.orig.tar.gz 17336729 SHA512:cb76b3a11b400fea94de2be74bcd9178b2e986c1965cbc19824114fe14fdd9b6aed43ae325cf5bc505efa1333adc71e131e0a8b54519e6741baa090392bf0a98
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_259.5-0ubuntu2.debian.tar.xz' systemd_259.5-0ubuntu2.debian.tar.xz 252268 SHA512:7e9a63b2e99b17477008ce4065ebd9eefd382a63656fb7cca00c87e43bdf03fb36db9b6dfd0b4b9a6914595e133a689783c6ed251f53d6a59743efe197e9b591
-```
 
 ### `dpkg` source package: `sysvinit=3.15-5ubuntu1`
 
