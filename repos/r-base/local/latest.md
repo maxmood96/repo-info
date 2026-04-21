@@ -1594,14 +1594,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap-ng=0.9.2-1
-'http://http.debian.net/debian/pool/main/libc/libcap-ng/libcap-ng_0.9.2-1.dsc' libcap-ng_0.9.2-1.dsc 1743 SHA256:ff9b01871b1e8d25af067c5f98dfdfd9844c20a39279a8518a68a3eca3512b65
-'http://http.debian.net/debian/pool/main/libc/libcap-ng/libcap-ng_0.9.2.orig.tar.gz' libcap-ng_0.9.2.orig.tar.gz 116861 SHA256:ce54f4da036f0ebabfcb43cf9367aff73922fd8687a4222f78aca55ec3beb253
-'http://http.debian.net/debian/pool/main/libc/libcap-ng/libcap-ng_0.9.2-1.debian.tar.xz' libcap-ng_0.9.2-1.debian.tar.xz 8168 SHA256:29b7610d7d4a0ede50c2e5b39a5e80300fe18db126481e9a9099ceeec26e4523
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libcap-ng/0.9.2-1/
+
 
 ### `dpkg` source package: `libdatrie=0.2.14-1`
 
@@ -2424,20 +2423,13 @@ Licenses: (parsed from: `/usr/share/doc/littler/copyright`, `/usr/share/doc/r-cr
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris littler=0.3.22-1
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.22-1.dsc' littler_0.3.22-1.dsc 1888 SHA256:192626ce823a8eaa652d2c9a494e50a0a3e2f1985d6f1d2244eefd8bdb9faf63
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.22.orig.tar.gz' littler_0.3.22.orig.tar.gz 132161 SHA256:20ed040261260279919e23597f48962d5a5dc50ebbee5c956f79f32bf9927ff1
-'http://deb.debian.org/debian/pool/main/l/littler/littler_0.3.22-1.debian.tar.xz' littler_0.3.22-1.debian.tar.xz 5516 SHA256:46426ec7480c5fa7eab6cff38cecc5db2253f36f997ebf4aad4e1d79ac11e435
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/littler/0.3.22-1/
 
-- https://sources.debian.net/src/littler/0.3.22-1/ (for browsing the source)
-- https://sources.debian.net/src/littler/0.3.22-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/littler/0.3.22-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-6`
 
@@ -2698,11 +2690,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ngtcp2=1.21.0-1
-'http://http.debian.net/debian/pool/main/n/ngtcp2/ngtcp2_1.21.0-1.dsc' ngtcp2_1.21.0-1.dsc 1994 SHA256:c46145ee871bc338938b0807be43d9cc465e27a3dbb70c8cd5611ebecec52758
-'http://http.debian.net/debian/pool/main/n/ngtcp2/ngtcp2_1.21.0.orig.tar.xz' ngtcp2_1.21.0.orig.tar.xz 687504 SHA256:2d1c07e6aa509c017516c08307b0b707cd165a17275ab5f1caff9aaa0e3b6c7d
-'http://http.debian.net/debian/pool/main/n/ngtcp2/ngtcp2_1.21.0.orig.tar.xz.asc' ngtcp2_1.21.0.orig.tar.xz.asc 833 SHA256:cb686634feaffd34e2d3ce36f9f90187714dfe13f8dd7e86b2e5361b80da60d2
-'http://http.debian.net/debian/pool/main/n/ngtcp2/ngtcp2_1.21.0-1.debian.tar.xz' ngtcp2_1.21.0-1.debian.tar.xz 11680 SHA256:6cecc2e27b78488549623ec7ece01f71400f696ceca0bd9dcd8abb4eee873a03
+'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.21.0-1.dsc' ngtcp2_1.21.0-1.dsc 1994 SHA256:c46145ee871bc338938b0807be43d9cc465e27a3dbb70c8cd5611ebecec52758
+'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.21.0.orig.tar.xz' ngtcp2_1.21.0.orig.tar.xz 687504 SHA256:2d1c07e6aa509c017516c08307b0b707cd165a17275ab5f1caff9aaa0e3b6c7d
+'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.21.0.orig.tar.xz.asc' ngtcp2_1.21.0.orig.tar.xz.asc 833 SHA256:cb686634feaffd34e2d3ce36f9f90187714dfe13f8dd7e86b2e5361b80da60d2
+'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.21.0-1.debian.tar.xz' ngtcp2_1.21.0-1.debian.tar.xz 11680 SHA256:6cecc2e27b78488549623ec7ece01f71400f696ceca0bd9dcd8abb4eee873a03
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/ngtcp2/1.21.0-1/ (for browsing the source)
+- https://sources.debian.net/src/ngtcp2/1.21.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ngtcp2/1.21.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nlme=3.1.169-1`
 
@@ -2804,21 +2802,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.6.1-3
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.1-3.dsc' openssl_3.6.1-3.dsc 2675 SHA256:f88d121dc304bd83f4193a2295064aeccecef0a4ed156ccd9725faaada912259
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.1.orig.tar.gz' openssl_3.6.1.orig.tar.gz 54891951 SHA256:b1bfedcd5b289ff22aee87c9d600f515767ebf45f77168cb6d64f231f518a82e
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.1.orig.tar.gz.asc' openssl_3.6.1.orig.tar.gz.asc 833 SHA256:a549571f98ac883a6eca7a2c21021a9d2129e6f4bcad2a261f9bd2487fb80f4b
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.1-3.debian.tar.xz' openssl_3.6.1-3.debian.tar.xz 48768 SHA256:de70378498d2d652e9c5b8bbc65e9471e4845980ecc249f8205cf1a1f47871db
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.6.1-3/
 
-- https://sources.debian.net/src/openssl/3.6.1-3/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.6.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.6.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.26.2-2`
 
@@ -3733,20 +3723,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:9.2.0218-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.2.0218-1.dsc' vim_9.2.0218-1.dsc 3198 SHA256:41ec4140aa3c7aea9e8cb60902d8915d60bc9109365615c4f8fca29df6d280e2
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.2.0218.orig.tar.xz' vim_9.2.0218.orig.tar.xz 13348976 SHA256:47c340937294e3fbece77303f49886c87298e234bfc236f7beec1cc2de1896f1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.2.0218-1.debian.tar.xz' vim_9.2.0218-1.debian.tar.xz 163992 SHA256:78bf44f10652fc36f15ab933ee8c5274ad3c7f6502801a1866a9175ea06a8590
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/vim/2:9.2.0218-1/
 
-- https://sources.debian.net/src/vim/2:9.2.0218-1/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:9.2.0218-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:9.2.0218-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
