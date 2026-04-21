@@ -281,19 +281,13 @@ Licenses: (parsed from: `/usr/share/doc/autotools-dev/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris autotools-dev=20240727.1
-'http://deb.debian.org/debian/pool/main/a/autotools-dev/autotools-dev_20240727.1.dsc' autotools-dev_20240727.1.dsc 1661 SHA256:be24901a0f474bb9a6eb70490f65888c0c9462008d48a0ef854cfe1dd67d691d
-'http://deb.debian.org/debian/pool/main/a/autotools-dev/autotools-dev_20240727.1.tar.xz' autotools-dev_20240727.1.tar.xz 99716 SHA256:799808eb70d3f8c851c0974e2a4acc3539a6e6f5c8dcf27d7c1ef9de5cc18bb0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/autotools-dev/20240727.1/
 
-- https://sources.debian.net/src/autotools-dev/20240727.1/ (for browsing the source)
-- https://sources.debian.net/src/autotools-dev/20240727.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/autotools-dev/20240727.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-files=14`
 
@@ -1945,20 +1939,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.2.18+dfsg1-1
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.18%2bdfsg1-1.dsc' imagemagick_7.1.2.18+dfsg1-1.dsc 5202 SHA256:59e70a320bdf83ceed8143d5304366f6a1cd63c7e9fa70a18e8e83b6abdd9760
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.18%2bdfsg1.orig.tar.xz' imagemagick_7.1.2.18+dfsg1.orig.tar.xz 10531512 SHA256:22404c1dd467b22596be48bb54b37063d1941663000df0bdf05b2e852ca8a4a8
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.18%2bdfsg1-1.debian.tar.xz' imagemagick_7.1.2.18+dfsg1-1.debian.tar.xz 271492 SHA256:438745c4d7606c0fdc7bc3a95259fa018feff91f587698c9686544967d046e10
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:7.1.2.18+dfsg1-1/
 
-- https://sources.debian.net/src/imagemagick/8:7.1.2.18+dfsg1-1/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:7.1.2.18+dfsg1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:7.1.2.18+dfsg1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.12-1`
 
@@ -2305,20 +2292,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap-ng=0.9.2-1
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.9.2-1.dsc' libcap-ng_0.9.2-1.dsc 1743 SHA256:ff9b01871b1e8d25af067c5f98dfdfd9844c20a39279a8518a68a3eca3512b65
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.9.2.orig.tar.gz' libcap-ng_0.9.2.orig.tar.gz 116861 SHA256:ce54f4da036f0ebabfcb43cf9367aff73922fd8687a4222f78aca55ec3beb253
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.9.2-1.debian.tar.xz' libcap-ng_0.9.2-1.debian.tar.xz 8168 SHA256:29b7610d7d4a0ede50c2e5b39a5e80300fe18db126481e9a9099ceeec26e4523
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcap-ng/0.9.2-1/
 
-- https://sources.debian.net/src/libcap-ng/0.9.2-1/ (for browsing the source)
-- https://sources.debian.net/src/libcap-ng/0.9.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcap-ng/0.9.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcbor=0.10.2-2.1`
 
@@ -2543,20 +2523,13 @@ Licenses: (parsed from: `/usr/share/doc/libexif-dev/copyright`, `/usr/share/doc/
 - `LicenseRef-Wrobel`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libexif=0.6.25-2
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.25-2.dsc' libexif_0.6.25-2.dsc 2338 SHA256:3362ee6b5aa5a1499a8084b2a02d4e67e08d1006cc069b10bb7c7cf7c384df20
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.25.orig.tar.gz' libexif_0.6.25.orig.tar.gz 1253324 SHA256:ee0795432c20d2fdb2a8a579dd6fc0e19d402e36f14f42c03ab60d2345950f09
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.25-2.debian.tar.xz' libexif_0.6.25-2.debian.tar.xz 12732 SHA256:2426f08b6b1a23525073e3903fc4fe1b9446e3971eabe3ee81baee3a0f5d0bd0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libexif/0.6.25-2/
 
-- https://sources.debian.net/src/libexif/0.6.25-2/ (for browsing the source)
-- https://sources.debian.net/src/libexif/0.6.25-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libexif/0.6.25-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.5.2-4`
 
@@ -4221,21 +4194,13 @@ Licenses: (parsed from: `/usr/share/doc/libngtcp2-16/copyright`, `/usr/share/doc
 - `ISC`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ngtcp2=1.21.0-1
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.21.0-1.dsc' ngtcp2_1.21.0-1.dsc 1994 SHA256:c46145ee871bc338938b0807be43d9cc465e27a3dbb70c8cd5611ebecec52758
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.21.0.orig.tar.xz' ngtcp2_1.21.0.orig.tar.xz 687504 SHA256:2d1c07e6aa509c017516c08307b0b707cd165a17275ab5f1caff9aaa0e3b6c7d
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.21.0.orig.tar.xz.asc' ngtcp2_1.21.0.orig.tar.xz.asc 833 SHA256:cb686634feaffd34e2d3ce36f9f90187714dfe13f8dd7e86b2e5361b80da60d2
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.21.0-1.debian.tar.xz' ngtcp2_1.21.0-1.debian.tar.xz 11680 SHA256:6cecc2e27b78488549623ec7ece01f71400f696ceca0bd9dcd8abb4eee873a03
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ngtcp2/1.21.0-1/
 
-- https://sources.debian.net/src/ngtcp2/1.21.0-1/ (for browsing the source)
-- https://sources.debian.net/src/ngtcp2/1.21.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ngtcp2/1.21.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.8-3`
 
@@ -5265,20 +5230,13 @@ Licenses: (parsed from: `/usr/share/doc/libsysprof-capture-4-dev/copyright`)
 - `LGPL-3.0+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysprof=50.0-1
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_50.0-1.dsc' sysprof_50.0-1.dsc 3561 SHA256:a29097ffa62856c8b1058f0adbe38825f473f250628e3582e17040a725f4d598
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_50.0.orig.tar.xz' sysprof_50.0.orig.tar.xz 1289588 SHA256:aace44e90e90f6c34bb2fbec8ccb47b8f81103080978d65759287843c329d53a
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_50.0-1.debian.tar.xz' sysprof_50.0-1.debian.tar.xz 16956 SHA256:9c169a74720a9d48fae705cefcc7baef42ede0dc7044073fce510833dabc18ca
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysprof/50.0-1/
 
-- https://sources.debian.net/src/sysprof/50.0-1/ (for browsing the source)
-- https://sources.debian.net/src/sysprof/50.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysprof/50.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=260.1-1`
 

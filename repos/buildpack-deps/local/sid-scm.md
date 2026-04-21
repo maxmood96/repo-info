@@ -1345,20 +1345,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap-ng=0.9.2-1
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.9.2-1.dsc' libcap-ng_0.9.2-1.dsc 1743 SHA256:ff9b01871b1e8d25af067c5f98dfdfd9844c20a39279a8518a68a3eca3512b65
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.9.2.orig.tar.gz' libcap-ng_0.9.2.orig.tar.gz 116861 SHA256:ce54f4da036f0ebabfcb43cf9367aff73922fd8687a4222f78aca55ec3beb253
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.9.2-1.debian.tar.xz' libcap-ng_0.9.2-1.debian.tar.xz 8168 SHA256:29b7610d7d4a0ede50c2e5b39a5e80300fe18db126481e9a9099ceeec26e4523
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcap-ng/0.9.2-1/
 
-- https://sources.debian.net/src/libcap-ng/0.9.2-1/ (for browsing the source)
-- https://sources.debian.net/src/libcap-ng/0.9.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcap-ng/0.9.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcbor=0.10.2-2.1`
 
@@ -2284,21 +2277,13 @@ Licenses: (parsed from: `/usr/share/doc/libngtcp2-16/copyright`, `/usr/share/doc
 - `ISC`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ngtcp2=1.21.0-1
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.21.0-1.dsc' ngtcp2_1.21.0-1.dsc 1994 SHA256:c46145ee871bc338938b0807be43d9cc465e27a3dbb70c8cd5611ebecec52758
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.21.0.orig.tar.xz' ngtcp2_1.21.0.orig.tar.xz 687504 SHA256:2d1c07e6aa509c017516c08307b0b707cd165a17275ab5f1caff9aaa0e3b6c7d
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.21.0.orig.tar.xz.asc' ngtcp2_1.21.0.orig.tar.xz.asc 833 SHA256:cb686634feaffd34e2d3ce36f9f90187714dfe13f8dd7e86b2e5361b80da60d2
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.21.0-1.debian.tar.xz' ngtcp2_1.21.0-1.debian.tar.xz 11680 SHA256:6cecc2e27b78488549623ec7ece01f71400f696ceca0bd9dcd8abb4eee873a03
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ngtcp2/1.21.0-1/
 
-- https://sources.debian.net/src/ngtcp2/1.21.0-1/ (for browsing the source)
-- https://sources.debian.net/src/ngtcp2/1.21.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ngtcp2/1.21.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.8-3`
 
