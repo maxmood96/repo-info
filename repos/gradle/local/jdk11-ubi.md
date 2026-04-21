@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d11faad1ea6650fe7d69a6e3485af2348f75400ecb42fe0b71a3f8ba86b5588a`
-- Created: `2026-04-14T20:59:20.137231058Z`
-- Virtual Size: ~ 716.76 Mb  
+- Image ID: `sha256:0ba559266879710300fe73082903386bb992be10f2035fdfe00dae3b5e169f58`
+- Created: `2026-04-21T00:02:04.344855318Z`
+- Virtual Size: ~ 716.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -21,7 +21,7 @@
   - `GRADLE_VERSION=8.14.4`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-04-13T18:26:26Z`
+  - `build-date=2026-04-20T00:46:48Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-04-13T18:26:26Z`
-  - `org.opencontainers.image.revision=49cc6237764cacc4684bc968dd9fc53fb8abd12c`
-  - `release=1776104705`
+  - `org.opencontainers.image.created=2026-04-20T00:46:48Z`
+  - `org.opencontainers.image.revision=0bc61a274edddc1467c2ad0ddc3139543c4da4da`
+  - `release=1776645941`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=49cc6237764cacc4684bc968dd9fc53fb8abd12c`
+  - `vcs-ref=0bc61a274edddc1467c2ad0ddc3139543c4da4da`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -795,11 +795,16 @@ $ dnf --quiet download --source --url libacl-2.3.1-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/acl-2.3.1-4.el9.src.rpm
 ```
 
-### `rpm` package: `libarchive-3.5.3-7.el9_7.x86_64`
+### `rpm` package: `libarchive-3.5.3-9.el9_7.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libarchive-3.5.3-9.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libarchive-3.5.3-9.el9_7.src.rpm
+```
 
 ### `rpm` package: `libassuan-2.5.5-3.el9.x86_64`
 

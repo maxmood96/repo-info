@@ -884,9 +884,14 @@ Licenses: (parsed from: `/usr/share/doc/git-lfs/copyright`)
 
 - `Expat`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git-lfs=3.4.1-1ubuntu0.3
+'http://security.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1-1ubuntu0.3.dsc' git-lfs_3.4.1-1ubuntu0.3.dsc 2785 SHA512:1500b4de4ce4d9890aa573e51bda030459d445ac2f82b7a0d9b3667dea642371023ead21490792e5525a11a644e6d51a4788cce44786a98dc82c6fe25dbe9c88
+'http://security.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1.orig.tar.gz' git-lfs_3.4.1.orig.tar.gz 674163 SHA512:ef30b7906548594edf28e75046bb78f70043d0363390ec3a241fc2ff7790b0f6ab1869b8a6b10d13a4cbcd559db7ea51aa4c1d64e75707357b84f1ddc0f7095c
+'http://security.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1-1ubuntu0.3.debian.tar.xz' git-lfs_3.4.1-1ubuntu0.3.debian.tar.xz 4756 SHA512:da054387f81a7fed3eb997dcd01c235befbb349a35aa548b7ab3d436cd0d4b83d6bfb144e86f6d9f962437ea255b71b02cd294866e43f62c9c1f35765ad51ef7
+```
 
 ### `dpkg` source package: `git=1:2.43.0-1ubuntu7.3`
 
