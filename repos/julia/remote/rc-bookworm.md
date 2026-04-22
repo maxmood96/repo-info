@@ -1,7 +1,7 @@
 ## `julia:rc-bookworm`
 
 ```console
-$ docker pull julia@sha256:8b38620d5545442a034a704dcdf1c92ab903d905e67b7b0546b22b890736cdde
+$ docker pull julia@sha256:1fcad5419bed95ebcd47baca69a2f64523481bfe853f05f707ccb34baa665993
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,157 +16,157 @@ $ docker pull julia@sha256:8b38620d5545442a034a704dcdf1c92ab903d905e67b7b0546b22
 ### `julia:rc-bookworm` - linux; amd64
 
 ```console
-$ docker pull julia@sha256:56e49128c24cda86039aff6a2ef4ed27b4e61ceef9464d4654338fafb1ddab40
+$ docker pull julia@sha256:2ef99ca30bcbf326365c52ca6ce2931e79a3ee612430f687545a8509a259c926
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **342.7 MB (342712185 bytes)**  
+-	Total Size: **342.7 MB (342712936 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:124ede59aa9cf8e2dc84d9e602aaf0006397255b4d092a53588b0ef3e90ea855`
+-	Image ID: `sha256:0a8c60f42265f91dc080fd8185f3185f6f2392787a6e1639239428527d8e6e6b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["julia"]`
 
 ```dockerfile
-# Mon, 06 Apr 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1775433600'
-# Tue, 07 Apr 2026 01:23:41 GMT
+# Tue, 21 Apr 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1776729600'
+# Wed, 22 Apr 2026 01:21:38 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 01:24:04 GMT
+# Wed, 22 Apr 2026 01:22:01 GMT
 ENV JULIA_PATH=/usr/local/julia
-# Tue, 07 Apr 2026 01:24:04 GMT
+# Wed, 22 Apr 2026 01:22:01 GMT
 ENV PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Apr 2026 01:24:04 GMT
+# Wed, 22 Apr 2026 01:22:01 GMT
 ENV JULIA_GPG=3673DF529D9049477F76B37566E3C7DC03D6E495
-# Tue, 07 Apr 2026 01:24:04 GMT
+# Wed, 22 Apr 2026 01:22:01 GMT
 ENV JULIA_VERSION=1.13.0-beta3
-# Tue, 07 Apr 2026 01:24:04 GMT
+# Wed, 22 Apr 2026 01:22:01 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 	; 	rm -rf /var/lib/apt/lists/*; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			url='https://julialang-s3.julialang.org/bin/linux/x64/1.13/julia-1.13.0-beta3-linux-x86_64.tar.gz'; 			sha256='02111690b460ad1641d10fc920f3000a6254916d2f53b6d0f5f7482f47283e62'; 			;; 		'i386') 			url='https://julialang-s3.julialang.org/bin/linux/x86/1.13/julia-1.13.0-beta3-linux-i686.tar.gz'; 			sha256='3f0f1a362e611559b58acb71a50a130b9fc53273d157755cb7ac8f0fa7d99ef2'; 			;; 		'arm64') 			url='https://julialang-s3.julialang.org/bin/linux/aarch64/1.13/julia-1.13.0-beta3-linux-aarch64.tar.gz'; 			sha256='56043f2572c169a4d515b201f192d91792b4f5dfc8f1d90f595101a240693348'; 			;; 		*) 			echo >&2 "error: current architecture ($arch) does not have a corresponding Julia binary release"; 			exit 1; 			;; 	esac; 		curl -fL -o julia.tar.gz.asc "$url.asc"; 	curl -fL -o julia.tar.gz "$url"; 		echo "$sha256 *julia.tar.gz" | sha256sum --strict --check -; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$JULIA_GPG"; 	gpg --batch --verify julia.tar.gz.asc julia.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" julia.tar.gz.asc; 		mkdir "$JULIA_PATH"; 	tar -xzf julia.tar.gz -C "$JULIA_PATH" --strip-components 1; 	rm julia.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		julia --version # buildkit
-# Tue, 07 Apr 2026 01:24:04 GMT
+# Wed, 22 Apr 2026 01:22:02 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 07 Apr 2026 01:24:04 GMT
+# Wed, 22 Apr 2026 01:22:02 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 01:24:04 GMT
+# Wed, 22 Apr 2026 01:22:02 GMT
 CMD ["julia"]
 ```
 
 -	Layers:
-	-	`sha256:da539b6761059a0a114c6671f1267b57445e3a54da023db5c28be019e40f0284`  
-		Last Modified: Tue, 07 Apr 2026 00:11:03 GMT  
-		Size: 28.2 MB (28236332 bytes)  
+	-	`sha256:ff86ea2e5edce334d19a34fbc65d1a511aa1fc823dba1110422f991aa56b44d4`  
+		Last Modified: Wed, 22 Apr 2026 00:16:25 GMT  
+		Size: 28.2 MB (28236252 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9020fde103cf086079063d7121c1536157351c8c1b3a2df2586adbda62a9a95d`  
-		Last Modified: Tue, 07 Apr 2026 01:24:50 GMT  
-		Size: 5.7 MB (5717984 bytes)  
+	-	`sha256:1f01ade60bcaa01b8cd97ea912a024277c3114e83de575a9689470c9ba44bfd7`  
+		Last Modified: Wed, 22 Apr 2026 01:22:44 GMT  
+		Size: 5.7 MB (5718773 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e7fcce164498dc0801c867f9eef2ee57c0e627e41f458fdeeb8b8da7616637c`  
-		Last Modified: Tue, 07 Apr 2026 01:24:55 GMT  
-		Size: 308.8 MB (308757499 bytes)  
+	-	`sha256:cf0321a377ef115b7242aa000adc69a4ac4ffbe60265bd2aa63c6c6ddd9d587f`  
+		Last Modified: Wed, 22 Apr 2026 01:22:51 GMT  
+		Size: 308.8 MB (308757542 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9c70e530513d24133c7e2a53175bb25321fa075b17c89c98731836dad12ef45`  
-		Last Modified: Tue, 07 Apr 2026 01:24:49 GMT  
-		Size: 370.0 B  
+	-	`sha256:d037245760d943eb6f2504a778654b92661ad7690a84ef580b0fc31c21ba17ef`  
+		Last Modified: Wed, 22 Apr 2026 01:22:44 GMT  
+		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `julia:rc-bookworm` - unknown; unknown
 
 ```console
-$ docker pull julia@sha256:ecc9d963e08e09d83908f9463caf0ed93f57a4fbc43f821e43873864ce06c60b
+$ docker pull julia@sha256:ea7396dfbea60123af9cc8675da3d019d77fdb9e7ecbaa65e876d98d62244aa5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.6 MB (2584943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:67484ffe8b584e16d5057315ee2eef6b44cd949605e5d09eb26571dc396f9071`
+-	Image ID: `sha256:cded3ce87f45a8b15edf39222e03bc19514a7421c34796e8c7e52b7b959d45e1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ab62314fbd259e43094cf5be12539fe26eea86f7f2c9266d4e4d11357e3c67a9`  
-		Last Modified: Tue, 07 Apr 2026 01:24:50 GMT  
+	-	`sha256:26e6c19f1a03f816c002041d6c5c260d0641071246941f04d0318f40179ffa5b`  
+		Last Modified: Wed, 22 Apr 2026 01:22:44 GMT  
 		Size: 2.6 MB (2568624 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:16a4e2451bfa4d6daad28905161e63c6565509d236b27e54f6e62a9f5fac766e`  
-		Last Modified: Tue, 07 Apr 2026 01:24:50 GMT  
+	-	`sha256:66e0816a147ea5a84b992da7b731cc9f8b18b1739a5d699a08ed3a2b74441a93`  
+		Last Modified: Wed, 22 Apr 2026 01:22:44 GMT  
 		Size: 16.3 KB (16319 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `julia:rc-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull julia@sha256:8c8caf0c762fd96e6b86ae2b8e4e51cf642ec5c7773da90208600b45d85e088e
+$ docker pull julia@sha256:ca8d18aa91df50efe98a5f362fea7088177ff9032b159d4dd6a9e98c96b689e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **366.5 MB (366490213 bytes)**  
+-	Total Size: **366.5 MB (366490937 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b5838b8ca63a5c8d8193d8cf3d0b84640a62058dbda672513bb139a29c8e6285`
+-	Image ID: `sha256:6d56709afb3a4380ec2ff57c928f1c662f483dbdb7d4bf208eb6edea310ba6ea`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["julia"]`
 
 ```dockerfile
-# Mon, 06 Apr 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1775433600'
-# Tue, 07 Apr 2026 01:22:45 GMT
+# Tue, 21 Apr 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1776729600'
+# Wed, 22 Apr 2026 01:21:52 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 01:23:11 GMT
+# Wed, 22 Apr 2026 01:22:17 GMT
 ENV JULIA_PATH=/usr/local/julia
-# Tue, 07 Apr 2026 01:23:11 GMT
+# Wed, 22 Apr 2026 01:22:17 GMT
 ENV PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Apr 2026 01:23:11 GMT
+# Wed, 22 Apr 2026 01:22:17 GMT
 ENV JULIA_GPG=3673DF529D9049477F76B37566E3C7DC03D6E495
-# Tue, 07 Apr 2026 01:23:11 GMT
+# Wed, 22 Apr 2026 01:22:17 GMT
 ENV JULIA_VERSION=1.13.0-beta3
-# Tue, 07 Apr 2026 01:23:11 GMT
+# Wed, 22 Apr 2026 01:22:17 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 	; 	rm -rf /var/lib/apt/lists/*; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			url='https://julialang-s3.julialang.org/bin/linux/x64/1.13/julia-1.13.0-beta3-linux-x86_64.tar.gz'; 			sha256='02111690b460ad1641d10fc920f3000a6254916d2f53b6d0f5f7482f47283e62'; 			;; 		'i386') 			url='https://julialang-s3.julialang.org/bin/linux/x86/1.13/julia-1.13.0-beta3-linux-i686.tar.gz'; 			sha256='3f0f1a362e611559b58acb71a50a130b9fc53273d157755cb7ac8f0fa7d99ef2'; 			;; 		'arm64') 			url='https://julialang-s3.julialang.org/bin/linux/aarch64/1.13/julia-1.13.0-beta3-linux-aarch64.tar.gz'; 			sha256='56043f2572c169a4d515b201f192d91792b4f5dfc8f1d90f595101a240693348'; 			;; 		*) 			echo >&2 "error: current architecture ($arch) does not have a corresponding Julia binary release"; 			exit 1; 			;; 	esac; 		curl -fL -o julia.tar.gz.asc "$url.asc"; 	curl -fL -o julia.tar.gz "$url"; 		echo "$sha256 *julia.tar.gz" | sha256sum --strict --check -; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$JULIA_GPG"; 	gpg --batch --verify julia.tar.gz.asc julia.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" julia.tar.gz.asc; 		mkdir "$JULIA_PATH"; 	tar -xzf julia.tar.gz -C "$JULIA_PATH" --strip-components 1; 	rm julia.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		julia --version # buildkit
-# Tue, 07 Apr 2026 01:23:11 GMT
+# Wed, 22 Apr 2026 01:22:17 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 07 Apr 2026 01:23:11 GMT
+# Wed, 22 Apr 2026 01:22:17 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Apr 2026 01:23:11 GMT
+# Wed, 22 Apr 2026 01:22:17 GMT
 CMD ["julia"]
 ```
 
 -	Layers:
-	-	`sha256:1dbbb2db815c2527e90ef5a3e4dfb957cfe7b61b6a7fc59722f1f64b1a1b611e`  
-		Last Modified: Tue, 07 Apr 2026 00:10:39 GMT  
-		Size: 28.1 MB (28116166 bytes)  
+	-	`sha256:46ac7a0b9811e518f6b5a0d52940c913a1a560a8f78b82267804914e50244d2d`  
+		Last Modified: Wed, 22 Apr 2026 00:16:03 GMT  
+		Size: 28.1 MB (28116114 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b051f9b77045532c76b3bdc8fa1efc31ff3044282fa7cea2e72dd7d7e0ff43af`  
-		Last Modified: Tue, 07 Apr 2026 01:23:59 GMT  
-		Size: 5.6 MB (5567936 bytes)  
+	-	`sha256:2eeb255be5d3f45115aee29571287c7080789c0f234c951d64c4fbb2fa479b0d`  
+		Last Modified: Wed, 22 Apr 2026 01:23:04 GMT  
+		Size: 5.6 MB (5568689 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3e430a04d82b6ccd4477e8b4be7fd83de4c78c9dd351360fa2e84a9e56a2626`  
-		Last Modified: Tue, 07 Apr 2026 01:24:07 GMT  
-		Size: 332.8 MB (332805744 bytes)  
+	-	`sha256:fb0ccbc8cb3c6a2c0ea6e4ff91e9211d1d3ea10d03fe8ac72c23af98570d61b9`  
+		Last Modified: Wed, 22 Apr 2026 01:23:13 GMT  
+		Size: 332.8 MB (332805763 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2fc49e816b52c314eb87476dc1c28d2fbcbb05338606e35d50cc131c97dab411`  
-		Last Modified: Tue, 07 Apr 2026 01:23:59 GMT  
-		Size: 367.0 B  
+	-	`sha256:94d1623ed9cdec9b6538e019d8447b68df82fe4ebb03ab45f89cef16e36af72e`  
+		Last Modified: Wed, 22 Apr 2026 01:23:03 GMT  
+		Size: 371.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `julia:rc-bookworm` - unknown; unknown
 
 ```console
-$ docker pull julia@sha256:3f2d0ade63c412849cc0196c6efd8bd02d1909093ecb7a94fd883a635c1d082a
+$ docker pull julia@sha256:4747a0cd92229ce9ad4dd07b162b908625c6198e557dcc7454963faed0dd7846
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2585313 bytes)**  
+-	Total Size: **2.6 MB (2585312 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eee17cf6b4443256c15cdaa57f1e49f4956f27abed6d239ea7227ab8d3d18ea3`
+-	Image ID: `sha256:22f1378bf36c12f292c5ae593d5e2e390a46dde41aa6c957b552a5f8a48447cc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:88a9f4c2f2da8dd590ced9cebc40832d3371d1269b5a07cf52cd94cca4cb7d44`  
-		Last Modified: Tue, 07 Apr 2026 01:23:59 GMT  
+	-	`sha256:f46de0bf56b8dc5b7c8f301d90a21ab2544073b3d59df37a2c2e99bb4d94f28d`  
+		Last Modified: Wed, 22 Apr 2026 01:23:04 GMT  
 		Size: 2.6 MB (2568887 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a46317bcd4ebe2ca6d5ed45a1a1a84e649c23700dd5f1606eae5ea3aefbd04e9`  
-		Last Modified: Tue, 07 Apr 2026 01:23:59 GMT  
-		Size: 16.4 KB (16426 bytes)  
+	-	`sha256:d969680b5abbd2b72288a98a0518a92002ca0557f575d35949ce74cba5a13798`  
+		Last Modified: Wed, 22 Apr 2026 01:23:04 GMT  
+		Size: 16.4 KB (16425 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `julia:rc-bookworm` - linux; 386
