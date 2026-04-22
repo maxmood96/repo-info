@@ -1,7 +1,7 @@
 ## `postgres:16-alpine3.22`
 
 ```console
-$ docker pull postgres@sha256:6a92ebea3513b92d52f1831daca8cae6b88d0b2582140f09cad7b8545e94d4f1
+$ docker pull postgres@sha256:caf536ebd910e85473a9f5e2fd1aea360c965c4a911c8555ac1f61b2102006cb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -826,13 +826,13 @@ $ docker pull postgres@sha256:2d8f39d53c526b5caa02907cf62771940748c5d8f20b08b436
 ### `postgres:16-alpine3.22` - linux; riscv64
 
 ```console
-$ docker pull postgres@sha256:d1e144d517210b78cf350f2ee7f8f1ff3bd3478e5c487a56997094c63cd149f6
+$ docker pull postgres@sha256:50ac318686ff1a7b450a12e94f7baec518c03b2a818a70387b5995917d6cde70
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **109.5 MB (109509272 bytes)**  
+-	Total Size: **109.5 MB (109509535 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d43389e6736e1eef8e119b80292e083e3c7b4e60363133821a0c34aa632f3fc`
+-	Image ID: `sha256:8925c23fca116ed4371c81f1728c9ee4147c06ea044cf7b041d902a9d37966c3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
@@ -869,21 +869,21 @@ RUN set -eux; 	cp -v /usr/local/share/postgresql/postgresql.conf.sample /usr/loc
 RUN install --verbose --directory --owner postgres --group postgres --mode 3777 /var/run/postgresql # buildkit
 # Sun, 19 Apr 2026 00:59:09 GMT
 ENV PGDATA=/var/lib/postgresql/data
-# Sun, 19 Apr 2026 00:59:09 GMT
+# Wed, 22 Apr 2026 02:43:22 GMT
 RUN install --verbose --directory --owner postgres --group postgres --mode 1777 "$PGDATA" # buildkit
-# Sun, 19 Apr 2026 00:59:09 GMT
+# Wed, 22 Apr 2026 02:43:22 GMT
 VOLUME [/var/lib/postgresql/data]
-# Sun, 19 Apr 2026 00:59:09 GMT
+# Wed, 22 Apr 2026 02:43:22 GMT
 COPY docker-entrypoint.sh docker-ensure-initdb.sh /usr/local/bin/ # buildkit
-# Sun, 19 Apr 2026 00:59:10 GMT
+# Wed, 22 Apr 2026 02:43:22 GMT
 RUN ln -sT docker-ensure-initdb.sh /usr/local/bin/docker-enforce-initdb.sh # buildkit
-# Sun, 19 Apr 2026 00:59:10 GMT
+# Wed, 22 Apr 2026 02:43:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sun, 19 Apr 2026 00:59:10 GMT
+# Wed, 22 Apr 2026 02:43:22 GMT
 STOPSIGNAL SIGINT
-# Sun, 19 Apr 2026 00:59:10 GMT
+# Wed, 22 Apr 2026 02:43:22 GMT
 EXPOSE map[5432/tcp:{}]
-# Sun, 19 Apr 2026 00:59:10 GMT
+# Wed, 22 Apr 2026 02:43:22 GMT
 CMD ["postgres"]
 ```
 
@@ -920,40 +920,40 @@ CMD ["postgres"]
 		Last Modified: Sun, 19 Apr 2026 01:02:01 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24c90796859c39df458cf18de41e05ac971e27dd444041086b278baa716637be`  
-		Last Modified: Sun, 19 Apr 2026 01:02:01 GMT  
-		Size: 169.0 B  
+	-	`sha256:193b4e891662fda8e16345a112f7296b25a3a0975f58806f65a0ca1876a76378`  
+		Last Modified: Wed, 22 Apr 2026 02:44:37 GMT  
+		Size: 171.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:baadeb9ba4f9f7b883a6517149a4e9b38cafb1ba6ec819bdd161db685a8d6b75`  
-		Last Modified: Sun, 19 Apr 2026 01:02:01 GMT  
-		Size: 5.8 KB (5843 bytes)  
+	-	`sha256:7092058199b0cd6616669741f60f79fe964b46cbd5b9b24dbfd0f33df06cc90f`  
+		Last Modified: Wed, 22 Apr 2026 02:44:37 GMT  
+		Size: 6.1 KB (6100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:54ad0638374912c2a7402464f305b5cfaed6d1a000508ef2b11748388fda0e55`  
-		Last Modified: Sun, 19 Apr 2026 01:02:03 GMT  
-		Size: 184.0 B  
+	-	`sha256:237b709e3d137b21dc1302bc2d69b7e625177eb131329945a3dde89c99c23c2c`  
+		Last Modified: Wed, 22 Apr 2026 02:44:37 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `postgres:16-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull postgres@sha256:d1cae70c3fb0165847e19aebe1f0059a4653a3938758cfebb885e159f91d292b
+$ docker pull postgres@sha256:be4a928e6d474085d3feceb687ff274c63a162045ce03309ae73a693581f4235
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **638.1 KB (638114 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4b764fb15e1eaa85964de6cc44e34734c9af57207017f338d49664fcc737ec24`
+-	Image ID: `sha256:0e3a7d0b217bfc1329ad7bfb82c9a5d0a6499dc61c5c87fb769942f82e8c13ef`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bda95ebac7d14e6736946fd4554ecbd0c53e62502d36cb5ef8f588567524c0ba`  
-		Last Modified: Sun, 19 Apr 2026 01:02:00 GMT  
+	-	`sha256:3293e6ff8627f64b79904346056356ddb810570b23916332980b84f24c411774`  
+		Last Modified: Wed, 22 Apr 2026 02:44:37 GMT  
 		Size: 594.4 KB (594382 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:21c3e945b1066ef2d8dc8ba0b03f6b9470702d0cdf814fca937805282be988da`  
-		Last Modified: Sun, 19 Apr 2026 01:01:59 GMT  
+	-	`sha256:d74d51657458051a78a435cc2319b9c59faa3ba953591cb51e4887a58e3f8b96`  
+		Last Modified: Wed, 22 Apr 2026 02:44:37 GMT  
 		Size: 43.7 KB (43732 bytes)  
 		MIME: application/vnd.in-toto+json
 
