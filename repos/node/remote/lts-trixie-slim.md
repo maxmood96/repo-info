@@ -1,7 +1,7 @@
 ## `node:lts-trixie-slim`
 
 ```console
-$ docker pull node@sha256:28fd420825d8e922eab0fd91740c7cf88ddbdc8116a2b20a82049f0c946feb03
+$ docker pull node@sha256:a31ca31cb79fe52f77a56aed35d03586e41beffc886e59d80d4a1fd0dbb92dab
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,80 +18,80 @@ $ docker pull node@sha256:28fd420825d8e922eab0fd91740c7cf88ddbdc8116a2b20a82049f
 ### `node:lts-trixie-slim` - linux; amd64
 
 ```console
-$ docker pull node@sha256:a237e58f839c025b03b56db32ff02e38e55ed862284a18324a35e073395e552d
+$ docker pull node@sha256:0c8e81e563f53eff669a642c110c987ddd3c4a360a9718705d7fa7d81a2a565d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.2 MB (84161265 bytes)**  
+-	Total Size: **81.2 MB (81217469 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d9040bcd0cc4b8a20742cde0d05e1be96ce7a4b8badb9168104fef62adccc82`
+-	Image ID: `sha256:d5cad9fc4b1f2bb6203a638f00e73bca9dc83bbf95bdbb822757e3f6d6789ef6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
-# Mon, 06 Apr 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1775433600'
-# Thu, 16 Apr 2026 13:39:08 GMT
+# Tue, 21 Apr 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1776729600'
+# Wed, 22 Apr 2026 01:44:44 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Thu, 16 Apr 2026 13:39:30 GMT
+# Wed, 22 Apr 2026 01:45:05 GMT
 ENV NODE_VERSION=24.15.0
-# Thu, 16 Apr 2026 13:39:30 GMT
+# Wed, 22 Apr 2026 01:45:05 GMT
 RUN ARCH= OPENSSL_ARCH= && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in       amd64) ARCH='x64' OPENSSL_ARCH='linux-x86_64';;       ppc64el) ARCH='ppc64le' OPENSSL_ARCH='linux-ppc64le';;       s390x) ARCH='s390x' OPENSSL_ARCH='linux*-s390x';;       arm64) ARCH='arm64' OPENSSL_ARCH='linux-aarch64';;       armhf) ARCH='armv7l' OPENSSL_ARCH='linux-armv4';;       i386) ARCH='x86' OPENSSL_ARCH='linux-elf';;       *) echo "unsupported architecture"; exit 1 ;;     esac     && set -ex     && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr xz-utils libatomic1 --no-install-recommends     && rm -rf /var/lib/apt/lists/*     && export GNUPGHOME="$(mktemp -d)"     && for key in       5BE8A3F6C8A5C01D106C0AD820B1A390B168D356       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||       { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner     && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt     && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;     && apt-mark auto '.*' > /dev/null     && find /usr/local -type f -executable -exec ldd '{}' ';'       | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'       | sort -u       | xargs -r dpkg-query --search       | cut -d: -f1       | sort -u       | xargs -r apt-mark manual     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && ln -s /usr/local/bin/node /usr/local/bin/nodejs     && node --version     && npm --version     && rm -rf /tmp/* # buildkit
-# Thu, 16 Apr 2026 13:39:30 GMT
+# Wed, 22 Apr 2026 01:45:05 GMT
 ENV YARN_VERSION=1.22.22
-# Thu, 16 Apr 2026 13:39:43 GMT
+# Wed, 22 Apr 2026 01:45:19 GMT
 RUN set -ex   && savedAptMark="$(apt-mark showmanual)"   && apt-get update && apt-get install -y ca-certificates curl wget gnupg dirmngr --no-install-recommends   && rm -rf /var/lib/apt/lists/*   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     { gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ||     { gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" && gpg --batch --fingerprint "$key"; } ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apt-mark auto '.*' > /dev/null   && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; }   && find /usr/local -type f -executable -exec ldd '{}' ';'     | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'     | sort -u     | xargs -r dpkg-query --search     | cut -d: -f1     | sort -u     | xargs -r apt-mark manual   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false   && yarn --version   && rm -rf /tmp/* # buildkit
-# Thu, 16 Apr 2026 13:39:44 GMT
+# Wed, 22 Apr 2026 01:45:19 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 16 Apr 2026 13:39:44 GMT
+# Wed, 22 Apr 2026 01:45:19 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 16 Apr 2026 13:39:44 GMT
+# Wed, 22 Apr 2026 01:45:19 GMT
 CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:5435b2dcdf5cb7faa0d5b1d4d54be2c72a776fab9a605336f5067d6e9ecb5976`  
-		Last Modified: Tue, 07 Apr 2026 00:11:35 GMT  
-		Size: 29.8 MB (29775640 bytes)  
+	-	`sha256:3531af2bc2a9c8883754652783cf96207d53189db279c9637b7157d034de7ecd`  
+		Last Modified: Wed, 22 Apr 2026 00:17:32 GMT  
+		Size: 29.8 MB (29780174 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1101f02de8774477cced50c55a0c619a6ca9abd1ffb85a475ae0a93ade48a832`  
-		Last Modified: Thu, 16 Apr 2026 13:39:57 GMT  
-		Size: 3.3 KB (3313 bytes)  
+	-	`sha256:904b19fc2ef093cffc47ce18ac52e6c7fc6056b9faca93c1ee62a6994fb047fa`  
+		Last Modified: Wed, 22 Apr 2026 01:45:31 GMT  
+		Size: 3.3 KB (3310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c9cb89afbb2f9fcb4631f59b6ce7437bc067d574566b944f4f401e37e468caa`  
-		Last Modified: Thu, 16 Apr 2026 13:39:59 GMT  
-		Size: 52.7 MB (52664144 bytes)  
+	-	`sha256:8109473d060c0faf468993ae3e49badc59263cd38b91baccbbc1800fb4708d9c`  
+		Last Modified: Wed, 22 Apr 2026 01:45:33 GMT  
+		Size: 49.7 MB (49716038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3332a98a151a4b67198ccce3cbf480a5c35f1029b6f1f76369178aca1832e5a7`  
-		Last Modified: Thu, 16 Apr 2026 13:39:57 GMT  
-		Size: 1.7 MB (1717718 bytes)  
+	-	`sha256:620335b85daf720a0c94ae3dd5b126818784444184707fbb2784670c24733083`  
+		Last Modified: Wed, 22 Apr 2026 01:45:31 GMT  
+		Size: 1.7 MB (1717501 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0710b96e30559d4fa95c2da33d4781e84894f71567037ee06f0dd4243627f5a4`  
-		Last Modified: Thu, 16 Apr 2026 13:39:57 GMT  
-		Size: 450.0 B  
+	-	`sha256:fb0bb12cc3f215ec42cca020d8b6385dc12f09681ddc44285ca7086c1836ffe0`  
+		Last Modified: Wed, 22 Apr 2026 01:45:31 GMT  
+		Size: 446.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:lts-trixie-slim` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:5ba215998b4d4045a9ebd0533280b32484088acce332a8d493e9855975d8885d
+$ docker pull node@sha256:28368825270bd1fee5a3b7d7b92be1446b97ad44e19ef25c8cf5e7abe3c8bb87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.2 MB (2225114 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:856eedb7ce6e823f2ce79f09e5cca0f1aa461d5d0a0494c2571e87edf1a2e0db`
+-	Image ID: `sha256:4c2a44c085dc3259bb56ff2acedc290a1b68d728f655491742d1adf7fb62bc07`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6799eaa94d018607a7768314efaf7fdbfbf9499734bf055c6f421fc939aa9523`  
-		Last Modified: Thu, 16 Apr 2026 13:39:57 GMT  
+	-	`sha256:99994bbfe70263960c70ba9630b11d860a556b1b8a7c5ad964fb8cf8ffccb445`  
+		Last Modified: Wed, 22 Apr 2026 01:45:31 GMT  
 		Size: 2.2 MB (2199100 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:31abcfca8084f42f66d465ad95c98fb2f9b7b514484719123d97a0b429e8f362`  
-		Last Modified: Thu, 16 Apr 2026 13:39:57 GMT  
+	-	`sha256:4dfb5939364b46d595a4610eae90d57033f1e2d909c8a1c37007ec326906e321`  
+		Last Modified: Wed, 22 Apr 2026 01:45:31 GMT  
 		Size: 26.0 KB (26014 bytes)  
 		MIME: application/vnd.in-toto+json
 
