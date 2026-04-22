@@ -1,7 +1,7 @@
 ## `sapmachine:lts-jre-alpine-3.23`
 
 ```console
-$ docker pull sapmachine@sha256:8f003a525ed1bed23238b01100c8266718ad09cdb545b2b1763feee3d1a36792
+$ docker pull sapmachine@sha256:b497f015ed7bcccd0ccd8234b391131cdf39bd738db59a5bed98b5a5e72316e2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,13 +12,13 @@ $ docker pull sapmachine@sha256:8f003a525ed1bed23238b01100c8266718ad09cdb545b2b1
 ### `sapmachine:lts-jre-alpine-3.23` - linux; amd64
 
 ```console
-$ docker pull sapmachine@sha256:33d71781c62e11cccf5ee77ce59d532c87d590bdc7ce658b7cd19f956e8acca5
+$ docker pull sapmachine@sha256:f111fbb8466da1df7104846008fb554a0966f425dcde2e12656c7254a1745d9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.3 MB (62255346 bytes)**  
+-	Total Size: **62.3 MB (62348525 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64bec4512b8c65de8d7b90479ea9ac7f7e41acda27d2fb88f2dd16e721b10de4`
+-	Image ID: `sha256:0af669de4804cf5c05928d01f94a5e847ffc2f309dd65e9b0537e41ac26943f2`
 -	Default Command: `["sh"]`
 
 ```dockerfile
@@ -26,11 +26,11 @@ $ docker pull sapmachine@sha256:33d71781c62e11cccf5ee77ce59d532c87d590bdc7ce658b
 ADD alpine-minirootfs-3.23.4-x86_64.tar.gz / # buildkit
 # Wed, 15 Apr 2026 20:01:40 GMT
 CMD ["/bin/sh"]
-# Wed, 15 Apr 2026 20:58:34 GMT
-RUN wget -qO /etc/apk/keys/sapmachine-apk.rsa.pub https://dist.sapmachine.io/alpine/sapmachine-apk.rsa.pub &&     echo "4444e47cabf35695f9406692848de191d3b7cbd47dcdc1ffb62f4f70aea06e89 /etc/apk/keys/sapmachine-apk.rsa.pub" | sha256sum -c - &&     echo "https://dist.sapmachine.io/alpine" >> /etc/apk/repositories &&     apk add sapmachine-25-jre=25.0.2-r0 # buildkit
-# Wed, 15 Apr 2026 20:58:34 GMT
+# Tue, 21 Apr 2026 23:03:55 GMT
+RUN wget -qO /etc/apk/keys/sapmachine-apk.rsa.pub https://dist.sapmachine.io/alpine/sapmachine-apk.rsa.pub &&     echo "4444e47cabf35695f9406692848de191d3b7cbd47dcdc1ffb62f4f70aea06e89 /etc/apk/keys/sapmachine-apk.rsa.pub" | sha256sum -c - &&     echo "https://dist.sapmachine.io/alpine" >> /etc/apk/repositories &&     apk add sapmachine-25-jre=25.0.3-r0 # buildkit
+# Tue, 21 Apr 2026 23:03:55 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-25-sapmachine-jre
-# Wed, 15 Apr 2026 20:58:34 GMT
+# Tue, 21 Apr 2026 23:03:55 GMT
 CMD ["sh"]
 ```
 
@@ -39,31 +39,31 @@ CMD ["sh"]
 		Last Modified: Wed, 15 Apr 2026 20:01:46 GMT  
 		Size: 3.9 MB (3864189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d2a5c364dbb8d06363475e5c6540aa8731e857109d26e253c2778646fdac497`  
-		Last Modified: Wed, 15 Apr 2026 20:58:45 GMT  
-		Size: 58.4 MB (58391157 bytes)  
+	-	`sha256:d830cf19b9a64746afc73cf8a4f654f2b089439f63fc9f2cdd879fb5144f238d`  
+		Last Modified: Tue, 21 Apr 2026 23:04:07 GMT  
+		Size: 58.5 MB (58484336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `sapmachine:lts-jre-alpine-3.23` - unknown; unknown
 
 ```console
-$ docker pull sapmachine@sha256:37e3b14a39cfa729520e3d5dc456d3637f5d76d115500900a01e91413ad9446d
+$ docker pull sapmachine@sha256:8d56d2f60a7180218531c04b7fd2a1f539443c24fb1bae5dee486fe9f956da8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **441.4 KB (441393 bytes)**  
+-	Total Size: **442.0 KB (442036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1a3d84e5fa7a38d9c14930ae2da644ba57e1488e76197b350d2a123fd6fc442e`
+-	Image ID: `sha256:d40a2b4cf9625e72ad9a5c7e4204f4dad674e9a3835dd351d76f584091a69d90`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:644f03afc874ea411dc8d58cd1741696daa1049fb9490bce218571e917fef978`  
-		Last Modified: Wed, 15 Apr 2026 20:58:43 GMT  
-		Size: 433.1 KB (433134 bytes)  
+	-	`sha256:22f947527eb25708ed17581701ea505d4f2602108c3e153a116accaa4b4b47b2`  
+		Last Modified: Tue, 21 Apr 2026 23:04:05 GMT  
+		Size: 433.8 KB (433777 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6587bef1fd0592c9e88b6a6ad67772a98de20edc93c4d626a59e268122ded504`  
-		Last Modified: Wed, 15 Apr 2026 20:58:43 GMT  
+	-	`sha256:b8d8fc2dddd2ae6c4378fc3ad4c703169603b2b97be32266c1e02a0eddc137d2`  
+		Last Modified: Tue, 21 Apr 2026 23:04:05 GMT  
 		Size: 8.3 KB (8259 bytes)  
 		MIME: application/vnd.in-toto+json
