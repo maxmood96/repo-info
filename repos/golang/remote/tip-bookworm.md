@@ -1,7 +1,7 @@
 ## `golang:tip-bookworm`
 
 ```console
-$ docker pull golang@sha256:4ba3bb764845529d7fa92ef99ff9b98ca7c955b9a14733fb451a63987a72e9a2
+$ docker pull golang@sha256:e7fb31714bd4c714180e25bf7f5f949189127922002460d8ed8c3a594565dbfe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -465,23 +465,23 @@ $ docker pull golang@sha256:e3f711c00deb2ee5af06bb0bffceeca595836423e20ee1c4748a
 ### `golang:tip-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull golang@sha256:f6b2bbd8e56a34283df84cdc3625ea6e69a2128d5cde4f19f01931c05275bdc6
+$ docker pull golang@sha256:72a9c4e86091840480d067ba2196c3e8bb9a425a056317141d653308a8c743de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **332.2 MB (332189765 bytes)**  
+-	Total Size: **332.2 MB (332197511 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad7c2dbc1c9667a411c6501c9e684c3f24c0be04f3311d646c3c5dc752337143`
+-	Image ID: `sha256:53a4bd8085310dab995ea6f7a15931e23e39d721a47250387c4b856cc9462665`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 06 Apr 2026 00:00:00 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1775433600'
-# Tue, 07 Apr 2026 04:21:27 GMT
+# Tue, 21 Apr 2026 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1776729600'
+# Wed, 22 Apr 2026 03:38:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 09:50:44 GMT
+# Wed, 22 Apr 2026 09:36:57 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 07 Apr 2026 18:22:01 GMT
+# Wed, 22 Apr 2026 12:19:04 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 20 Apr 2026 17:41:28 GMT
 ENV GOTOOLCHAIN=local
@@ -491,35 +491,35 @@ ENV GOPATH=/go
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Mon, 20 Apr 2026 17:41:28 GMT
 COPY /target/ / # buildkit
-# Mon, 20 Apr 2026 17:41:34 GMT
+# Wed, 22 Apr 2026 16:22:42 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Mon, 20 Apr 2026 17:41:35 GMT
+# Wed, 22 Apr 2026 16:22:42 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:6b775f7ad22043f8bb75d535d8a1279e43453a08a4a9e6a0b48c020c9b387079`  
-		Last Modified: Tue, 07 Apr 2026 00:09:43 GMT  
-		Size: 52.3 MB (52336938 bytes)  
+	-	`sha256:0b84f035435acf0ec33df4748d96fad1243fd6b0ea9917f29eaa507d4c458365`  
+		Last Modified: Wed, 22 Apr 2026 00:15:04 GMT  
+		Size: 52.3 MB (52336735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04a522a501745b6503b15f6badc6170d6fa2321f26576c47b363acd8cb21b2ee`  
-		Last Modified: Tue, 07 Apr 2026 04:21:54 GMT  
-		Size: 25.7 MB (25671577 bytes)  
+	-	`sha256:a8c150273f4a5b502fcc97d9a922e79c7bc7d5035fb9eb1142f5adfbcea709a1`  
+		Last Modified: Wed, 22 Apr 2026 03:39:23 GMT  
+		Size: 25.7 MB (25679369 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f98ce990098f8650217504a159d9031cc264dd29e8af85f749d78eacc319c5a`  
-		Last Modified: Tue, 07 Apr 2026 09:51:25 GMT  
-		Size: 69.8 MB (69846122 bytes)  
+	-	`sha256:db5543a629afcc86e06f307e20d98c8cdd9f2490908cdef00122fb2daf671594`  
+		Last Modified: Wed, 22 Apr 2026 09:37:35 GMT  
+		Size: 69.8 MB (69846406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3f67f0a7bc2638109117ec62f84bf4d06b91348ec6d8486011aaadaa5f42f65`  
-		Last Modified: Tue, 07 Apr 2026 18:22:57 GMT  
-		Size: 90.5 MB (90462415 bytes)  
+	-	`sha256:e3d0990486f4b2961ddb1dc565f0340ce8c54912962db202d46956eda24803e7`  
+		Last Modified: Wed, 22 Apr 2026 12:20:13 GMT  
+		Size: 90.5 MB (90462288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:88f72075717c40f723c05a62a7b4daebee738f45ad2854cdb0f9f31a6113d444`  
 		Last Modified: Mon, 20 Apr 2026 17:42:34 GMT  
 		Size: 93.9 MB (93872555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88efcabef6e283d5bcc78bb9abfc58b745bff2a831e6eb81d3934de39ad4fc63`  
-		Last Modified: Mon, 20 Apr 2026 17:42:32 GMT  
+	-	`sha256:4f9d1d1c4be19b6d59e8933423a2711df0c7c6e0557940ffcb0e0283ef65fd54`  
+		Last Modified: Wed, 22 Apr 2026 16:23:22 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -530,24 +530,24 @@ WORKDIR /go
 ### `golang:tip-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:b257830361dbaaa4e20a51df708340943edd76348f581547aa9fba6c03ffaf6f
+$ docker pull golang@sha256:8bc3a5659eab46e2c1f6c41bafeb665f2402101e9ebf21004dfec61380504972
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 MB (10497950 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:29a02418715350b53dd1093608245c97af0473616d3f0ab9d95d1197ebf5d6e3`
+-	Image ID: `sha256:887a7e556132bc044af0b4d6c4efcc3f9d903661e306ddcdfe56ddecb218ea88`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7ab6ec7c895b0149d80daab238264aa3a54dc147123389430828974ffd12446`  
-		Last Modified: Mon, 20 Apr 2026 17:42:32 GMT  
+	-	`sha256:a757406dee5bb920a764d3c04800f051d385d4d76c22e5ed0174a0058b5ccbe9`  
+		Last Modified: Wed, 22 Apr 2026 16:23:23 GMT  
 		Size: 10.5 MB (10469518 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9649b64ee7d21b941e87bac7c925a4b4b19f24fb3f9ab0d0100a99cdbc21a1c5`  
-		Last Modified: Mon, 20 Apr 2026 17:42:32 GMT  
+	-	`sha256:95348831e026b16bd43e571f40a239f453645896177280078aa6dfd70eea8b54`  
+		Last Modified: Wed, 22 Apr 2026 16:23:22 GMT  
 		Size: 28.4 KB (28432 bytes)  
 		MIME: application/vnd.in-toto+json
 
