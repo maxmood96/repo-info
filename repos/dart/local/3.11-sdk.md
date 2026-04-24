@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3a7e007e19bf63dc0cbb3927dd58eb415c453106ea52b388be62b2de9ae12fa4`
-- Created: `2026-04-15T17:45:42.347509831Z`
-- Virtual Size: ~ 844.80 Mb  
+- Image ID: `sha256:35e27e26babd3fb01528bcf25882ca53099d08b7566bd3072dcba2577811b18c`
+- Created: `2026-04-22T01:40:31.464345168Z`
+- Virtual Size: ~ 836.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -2228,12 +2228,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp3/1.8.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp3/1.8.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ngtcp2=1.11.0-1`
+### `dpkg` source package: `ngtcp2=1.11.0-1+deb13u1`
 
 Binary Packages:
 
-- `libngtcp2-16:amd64=1.11.0-1`
-- `libngtcp2-crypto-gnutls8:amd64=1.11.0-1`
+- `libngtcp2-16:amd64=1.11.0-1+deb13u1`
+- `libngtcp2-crypto-gnutls8:amd64=1.11.0-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libngtcp2-16/copyright`, `/usr/share/doc/libngtcp2-crypto-gnutls8/copyright`)
 
@@ -2251,18 +2251,18 @@ Licenses: (parsed from: `/usr/share/doc/libngtcp2-16/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ngtcp2=1.11.0-1
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.11.0-1.dsc' ngtcp2_1.11.0-1.dsc 1969 SHA256:ebb120f6d08f61f8a5d0878fd37f7d00ffcc09977ee75469a6f1992c34d934f8
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.11.0.orig.tar.xz' ngtcp2_1.11.0.orig.tar.xz 652904 SHA256:382c15bf66b630f26021631b25b7eb1feac42c67c1d6826189d61091dfaa4d09
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.11.0.orig.tar.xz.asc' ngtcp2_1.11.0.orig.tar.xz.asc 833 SHA256:56193493ac1e2a05dbf48d7b4480a2590d7fbdb2439475fd7c5087bc31cb988d
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.11.0-1.debian.tar.xz' ngtcp2_1.11.0-1.debian.tar.xz 9764 SHA256:e054092ac4f0f3138950f8d99aeb1961d3fa6f71dcd0bc983a3dae35170ac10c
+$ apt-get source -qq --print-uris ngtcp2=1.11.0-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/n/ngtcp2/ngtcp2_1.11.0-1%2bdeb13u1.dsc' ngtcp2_1.11.0-1+deb13u1.dsc 2609 SHA256:f14f724e9031e0565be0d75b8bb3b693887f5111e1901ed32401eb860e3ac004
+'http://deb.debian.org/debian-security/pool/updates/main/n/ngtcp2/ngtcp2_1.11.0.orig.tar.xz' ngtcp2_1.11.0.orig.tar.xz 652904 SHA256:382c15bf66b630f26021631b25b7eb1feac42c67c1d6826189d61091dfaa4d09
+'http://deb.debian.org/debian-security/pool/updates/main/n/ngtcp2/ngtcp2_1.11.0.orig.tar.xz.asc' ngtcp2_1.11.0.orig.tar.xz.asc 833 SHA256:56193493ac1e2a05dbf48d7b4480a2590d7fbdb2439475fd7c5087bc31cb988d
+'http://deb.debian.org/debian-security/pool/updates/main/n/ngtcp2/ngtcp2_1.11.0-1%2bdeb13u1.debian.tar.xz' ngtcp2_1.11.0-1+deb13u1.debian.tar.xz 10324 SHA256:5d45f3e07ebaf4fff773d6ec32eee78c8514e17bac67dee8e268fa97af440854
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ngtcp2/1.11.0-1/ (for browsing the source)
-- https://sources.debian.net/src/ngtcp2/1.11.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ngtcp2/1.11.0-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ngtcp2/1.11.0-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/ngtcp2/1.11.0-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ngtcp2/1.11.0-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.6.10+dfsg-1`
 
