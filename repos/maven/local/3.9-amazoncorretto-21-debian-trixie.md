@@ -1,10 +1,10 @@
-# `maven:3.9.14-amazoncorretto-21-debian`
+# `maven:3.9.15-amazoncorretto-21-debian`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1fc41a18b488dccedca36c9dbbe1bb161509a068aaf9c7df41da5e315ed1ada7`
-- Created: `2026-04-15T22:51:30.095627364Z`
-- Virtual Size: ~ 479.27 Mb  
+- Image ID: `sha256:4f6b3b2504da0596d5c46651010a2fcbb099930b35a97ebe27d09d4fe96f23cc`
+- Created: `2026-04-22T02:23:14.381261375Z`
+- Virtual Size: ~ 471.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -910,11 +910,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/init-system-helpers/1.69~deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/init-system-helpers/1.69~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `java-21-amazon-corretto-jdk=1:21.0.10.7-1`
+### `dpkg` source package: `java-21-amazon-corretto-jdk=1:21.0.11.10-1`
 
 Binary Packages:
 
-- `java-21-amazon-corretto-jdk:amd64=1:21.0.10.7-1`
+- `java-21-amazon-corretto-jdk:amd64=1:21.0.11.10-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
