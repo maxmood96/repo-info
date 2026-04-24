@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dc3bcabe74627324c95ed516aa0e1b6a37262f2aa24e8694eb8e40432f4cd4c1`
-- Created: `2026-04-09T22:22:16.721799292Z`
+- Image ID: `sha256:811f8c305dc1da5fbcd266f0ae4d7f26a297532dd7d27cab2f4f2b804cb440da`
+- Created: `2026-04-22T06:15:25.045483884Z`
 - Virtual Size: ~ 1.80 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2082,15 +2082,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.24-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.24-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gdk-pixbuf=2.42.12+dfsg-4`
+### `dpkg` source package: `gdk-pixbuf=2.42.12+dfsg-4+deb13u1`
 
 Binary Packages:
 
-- `gir1.2-gdkpixbuf-2.0:amd64=2.42.12+dfsg-4`
-- `libgdk-pixbuf-2.0-0:amd64=2.42.12+dfsg-4`
-- `libgdk-pixbuf-2.0-dev:amd64=2.42.12+dfsg-4`
-- `libgdk-pixbuf2.0-bin=2.42.12+dfsg-4`
-- `libgdk-pixbuf2.0-common=2.42.12+dfsg-4`
+- `gir1.2-gdkpixbuf-2.0:amd64=2.42.12+dfsg-4+deb13u1`
+- `libgdk-pixbuf-2.0-0:amd64=2.42.12+dfsg-4+deb13u1`
+- `libgdk-pixbuf-2.0-dev:amd64=2.42.12+dfsg-4+deb13u1`
+- `libgdk-pixbuf2.0-bin=2.42.12+dfsg-4+deb13u1`
+- `libgdk-pixbuf2.0-common=2.42.12+dfsg-4+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/share/doc/libgdk-pixbuf-2.0-0/copyright`, `/usr/share/doc/libgdk-pixbuf-2.0-dev/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-bin/copyright`, `/usr/share/doc/libgdk-pixbuf2.0-common/copyright`)
 
@@ -2105,17 +2105,17 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-gdkpixbuf-2.0/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gdk-pixbuf=2.42.12+dfsg-4
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.12%2bdfsg-4.dsc' gdk-pixbuf_2.42.12+dfsg-4.dsc 3214 SHA256:dcf1fd170103dda12ad325fc4779308ba4f59f46b7cc8d07acc6b53ba2039c6e
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.12%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.12+dfsg.orig.tar.xz 6443656 SHA256:2fab7a828f1a017a235cd800cf0b47d83733037bade493337c46ed79e7ef3678
-'http://deb.debian.org/debian/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.42.12%2bdfsg-4.debian.tar.xz' gdk-pixbuf_2.42.12+dfsg-4.debian.tar.xz 23048 SHA256:170ea746faefe8d03eb3afd9c5edacc0ef47437c3585e40fd6f2df9eddddcfdb
+$ apt-get source -qq --print-uris gdk-pixbuf=2.42.12+dfsg-4+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.12%2bdfsg-4%2bdeb13u1.dsc' gdk-pixbuf_2.42.12+dfsg-4+deb13u1.dsc 3334 SHA256:2c9ece90468e0273717906b4d57111639be478d300bb41656189366152c429ad
+'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.12%2bdfsg.orig.tar.xz' gdk-pixbuf_2.42.12+dfsg.orig.tar.xz 6443656 SHA256:2fab7a828f1a017a235cd800cf0b47d83733037bade493337c46ed79e7ef3678
+'http://deb.debian.org/debian-security/pool/updates/main/g/gdk-pixbuf/gdk-pixbuf_2.42.12%2bdfsg-4%2bdeb13u1.debian.tar.xz' gdk-pixbuf_2.42.12+dfsg-4+deb13u1.debian.tar.xz 23524 SHA256:427732b792fdcab09f7ef8928fe7039df982f5004e1dba70bd58a69c8c03ece7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gdk-pixbuf/2.42.12+dfsg-4/ (for browsing the source)
-- https://sources.debian.net/src/gdk-pixbuf/2.42.12+dfsg-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gdk-pixbuf/2.42.12+dfsg-4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gdk-pixbuf/2.42.12+dfsg-4+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/gdk-pixbuf/2.42.12+dfsg-4+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gdk-pixbuf/2.42.12+dfsg-4+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `git=1:2.47.3-0+deb13u1`
 
@@ -6908,12 +6908,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp3/1.8.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp3/1.8.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ngtcp2=1.11.0-1`
+### `dpkg` source package: `ngtcp2=1.11.0-1+deb13u1`
 
 Binary Packages:
 
-- `libngtcp2-16:amd64=1.11.0-1`
-- `libngtcp2-crypto-gnutls8:amd64=1.11.0-1`
+- `libngtcp2-16:amd64=1.11.0-1+deb13u1`
+- `libngtcp2-crypto-gnutls8:amd64=1.11.0-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libngtcp2-16/copyright`, `/usr/share/doc/libngtcp2-crypto-gnutls8/copyright`)
 
@@ -6931,18 +6931,18 @@ Licenses: (parsed from: `/usr/share/doc/libngtcp2-16/copyright`, `/usr/share/doc
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ngtcp2=1.11.0-1
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.11.0-1.dsc' ngtcp2_1.11.0-1.dsc 1969 SHA256:ebb120f6d08f61f8a5d0878fd37f7d00ffcc09977ee75469a6f1992c34d934f8
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.11.0.orig.tar.xz' ngtcp2_1.11.0.orig.tar.xz 652904 SHA256:382c15bf66b630f26021631b25b7eb1feac42c67c1d6826189d61091dfaa4d09
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.11.0.orig.tar.xz.asc' ngtcp2_1.11.0.orig.tar.xz.asc 833 SHA256:56193493ac1e2a05dbf48d7b4480a2590d7fbdb2439475fd7c5087bc31cb988d
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.11.0-1.debian.tar.xz' ngtcp2_1.11.0-1.debian.tar.xz 9764 SHA256:e054092ac4f0f3138950f8d99aeb1961d3fa6f71dcd0bc983a3dae35170ac10c
+$ apt-get source -qq --print-uris ngtcp2=1.11.0-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/n/ngtcp2/ngtcp2_1.11.0-1%2bdeb13u1.dsc' ngtcp2_1.11.0-1+deb13u1.dsc 2609 SHA256:f14f724e9031e0565be0d75b8bb3b693887f5111e1901ed32401eb860e3ac004
+'http://deb.debian.org/debian-security/pool/updates/main/n/ngtcp2/ngtcp2_1.11.0.orig.tar.xz' ngtcp2_1.11.0.orig.tar.xz 652904 SHA256:382c15bf66b630f26021631b25b7eb1feac42c67c1d6826189d61091dfaa4d09
+'http://deb.debian.org/debian-security/pool/updates/main/n/ngtcp2/ngtcp2_1.11.0.orig.tar.xz.asc' ngtcp2_1.11.0.orig.tar.xz.asc 833 SHA256:56193493ac1e2a05dbf48d7b4480a2590d7fbdb2439475fd7c5087bc31cb988d
+'http://deb.debian.org/debian-security/pool/updates/main/n/ngtcp2/ngtcp2_1.11.0-1%2bdeb13u1.debian.tar.xz' ngtcp2_1.11.0-1+deb13u1.debian.tar.xz 10324 SHA256:5d45f3e07ebaf4fff773d6ec32eee78c8514e17bac67dee8e268fa97af440854
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ngtcp2/1.11.0-1/ (for browsing the source)
-- https://sources.debian.net/src/ngtcp2/1.11.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ngtcp2/1.11.0-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ngtcp2/1.11.0-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/ngtcp2/1.11.0-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ngtcp2/1.11.0-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.8-3`
 
@@ -7107,11 +7107,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.6.10+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.6.10+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssh=1:10.0p1-7+deb13u1`
+### `dpkg` source package: `openssh=1:10.0p1-7+deb13u2`
 
 Binary Packages:
 
-- `openssh-client=1:10.0p1-7+deb13u1`
+- `openssh-client=1:10.0p1-7+deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -7126,27 +7126,27 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:10.0p1-7+deb13u1
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1-7%2bdeb13u1.dsc' openssh_10.0p1-7+deb13u1.dsc 3694 SHA256:3701286974f2ebf6b6afec546e269c6568e63b21f8d6d053be3eef3a7c664753
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz' openssh_10.0p1.orig.tar.gz 1972675 SHA256:021a2e709a0edf4250b1256bd5a9e500411a90dddabea830ed59cef90eb9d85c
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz.asc' openssh_10.0p1.orig.tar.gz.asc 833 SHA256:f71cf3240516ce59c2240532143982fcd97e2e286e6eb1eb6c3080a1ec012a04
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1-7%2bdeb13u1.debian.tar.xz' openssh_10.0p1-7+deb13u1.debian.tar.xz 202608 SHA256:c9240cd765d32de2f117a0a0343e05f85cd89d2f30c681501306aac5d9c48fbe
+$ apt-get source -qq --print-uris openssh=1:10.0p1-7+deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_10.0p1-7%2bdeb13u2.dsc' openssh_10.0p1-7+deb13u2.dsc 3485 SHA256:cd9639100e7c59d9544519292e170d914bde5d3b020b35dd39b1bee03e199401
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_10.0p1.orig.tar.gz' openssh_10.0p1.orig.tar.gz 1972675 SHA256:021a2e709a0edf4250b1256bd5a9e500411a90dddabea830ed59cef90eb9d85c
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_10.0p1.orig.tar.gz.asc' openssh_10.0p1.orig.tar.gz.asc 833 SHA256:f71cf3240516ce59c2240532143982fcd97e2e286e6eb1eb6c3080a1ec012a04
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_10.0p1-7%2bdeb13u2.debian.tar.xz' openssh_10.0p1-7+deb13u2.debian.tar.xz 202740 SHA256:dcf91abb8173cebfee4db62b7b8c9b883fe308e9d25876016e135bd0cdd6fe27
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssh/1:10.0p1-7+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:10.0p1-7+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:10.0p1-7+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssh/1:10.0p1-7+deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/openssh/1:10.0p1-7+deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssh/1:10.0p1-7+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.5.5-1~deb13u1`
+### `dpkg` source package: `openssl=3.5.5-1~deb13u2`
 
 Binary Packages:
 
-- `libssl-dev:amd64=3.5.5-1~deb13u1`
-- `libssl3t64:amd64=3.5.5-1~deb13u1`
-- `openssl=3.5.5-1~deb13u1`
-- `openssl-provider-legacy=3.5.5-1~deb13u1`
+- `libssl-dev:amd64=3.5.5-1~deb13u2`
+- `libssl3t64:amd64=3.5.5-1~deb13u2`
+- `openssl=3.5.5-1~deb13u2`
+- `openssl-provider-legacy=3.5.5-1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -7158,18 +7158,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.5.5-1~deb13u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.5-1%7edeb13u1.dsc' openssl_3.5.5-1~deb13u1.dsc 2707 SHA256:9fef06359b7e7f0abfb0ac6869f7bb344ae7f8efb25d5969f004f278a877b146
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA256:b28c91532a8b65a1f983b4c28b7488174e4a01008e29ce8e69bd789f28bc2a89
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA256:eaef5b1054b84b8d1e6c61c9fc8867828be5ce686d0221580faf8bdc16489da9
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.5-1%7edeb13u1.debian.tar.xz' openssl_3.5.5-1~deb13u1.debian.tar.xz 50668 SHA256:87377bad1f77b157bf95ebc18c5dfe70b5d3ab276441f92b66a5338b2500705f
+$ apt-get source -qq --print-uris openssl=3.5.5-1~deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5-1%7edeb13u2.dsc' openssl_3.5.5-1~deb13u2.dsc 2707 SHA256:2cba43d38a2f4ca1ef09a89ccc348fc63a5a43a58850a913bca46c6ceeb007ed
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA256:b28c91532a8b65a1f983b4c28b7488174e4a01008e29ce8e69bd789f28bc2a89
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA256:eaef5b1054b84b8d1e6c61c9fc8867828be5ce686d0221580faf8bdc16489da9
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5-1%7edeb13u2.debian.tar.xz' openssl_3.5.5-1~deb13u2.debian.tar.xz 68136 SHA256:92355f8cd5112cb4d49b9487c30507e5f85fc5497ad85223aecf661566f5ad8e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.5.5-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.5.5-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.5.5-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.5.5-1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.5.5-1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.5.5-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `opus=1.5.2-2`
 
@@ -8398,13 +8398,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.35+dfsg-3.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.35+dfsg-3.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tiff=4.7.0-3+deb13u1`
+### `dpkg` source package: `tiff=4.7.0-3+deb13u2`
 
 Binary Packages:
 
-- `libtiff-dev:amd64=4.7.0-3+deb13u1`
-- `libtiff6:amd64=4.7.0-3+deb13u1`
-- `libtiffxx6:amd64=4.7.0-3+deb13u1`
+- `libtiff-dev:amd64=4.7.0-3+deb13u2`
+- `libtiff6:amd64=4.7.0-3+deb13u2`
+- `libtiffxx6:amd64=4.7.0-3+deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/libtiff6/copyright`, `/usr/share/doc/libtiffxx6/copyright`)
 
@@ -8413,17 +8413,17 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff=4.7.0-3+deb13u1
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0-3%2bdeb13u1.dsc' tiff_4.7.0-3+deb13u1.dsc 2287 SHA256:2456052f090792160c4e5db9a63cb9007e7a63fadbc4ae7abaf10188e5f35e5d
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0.orig.tar.bz2' tiff_4.7.0.orig.tar.bz2 2111254 SHA256:2b8b5c4e79cb2a4651796602e45d6179b7f18bc283feab417b8e881ef7e81862
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.0-3%2bdeb13u1.debian.tar.xz' tiff_4.7.0-3+deb13u1.debian.tar.xz 26320 SHA256:50f5a0cbc8d8ccebc08ff65ec836aaaa870bf8f14aef55d5a7aa949f11834733
+$ apt-get source -qq --print-uris tiff=4.7.0-3+deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0-3%2bdeb13u2.dsc' tiff_4.7.0-3+deb13u2.dsc 2287 SHA256:503d624f692bd30c8b005204065ec6f1197455b850c4f760ca2e6c67cd8b0f4b
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0.orig.tar.bz2' tiff_4.7.0.orig.tar.bz2 2111254 SHA256:2b8b5c4e79cb2a4651796602e45d6179b7f18bc283feab417b8e881ef7e81862
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.7.0-3%2bdeb13u2.debian.tar.xz' tiff_4.7.0-3+deb13u2.debian.tar.xz 26680 SHA256:3a201857c5c8433ddd494e01a8d2745f88ae200c3d509446a4aaa480dc106f64
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tiff/4.7.0-3+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.7.0-3+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.7.0-3+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tiff/4.7.0-3+deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.7.0-3+deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.7.0-3+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `twolame=0.4.0-2`
 
@@ -8965,11 +8965,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/wxwidgets3.2/3.2.8+dfsg-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/wxwidgets3.2/3.2.8+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `xdg-dbus-proxy=0.1.6-1`
+### `dpkg` source package: `xdg-dbus-proxy=0.1.6-1+deb13u1`
 
 Binary Packages:
 
-- `xdg-dbus-proxy=0.1.6-1`
+- `xdg-dbus-proxy=0.1.6-1+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/xdg-dbus-proxy/copyright`)
 
@@ -8980,17 +8980,17 @@ Licenses: (parsed from: `/usr/share/doc/xdg-dbus-proxy/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris xdg-dbus-proxy=0.1.6-1
-'http://deb.debian.org/debian/pool/main/x/xdg-dbus-proxy/xdg-dbus-proxy_0.1.6-1.dsc' xdg-dbus-proxy_0.1.6-1.dsc 2197 SHA256:2e29b08b076f7289fd7927f0ca9683c81fd9decc97018bd7c6ccab2fec7f2da4
-'http://deb.debian.org/debian/pool/main/x/xdg-dbus-proxy/xdg-dbus-proxy_0.1.6.orig.tar.xz' xdg-dbus-proxy_0.1.6.orig.tar.xz 48920 SHA256:131bf59fce7c7ee7ecbc5d9106d6750f4f597bfe609966573240f7e4952973a1
-'http://deb.debian.org/debian/pool/main/x/xdg-dbus-proxy/xdg-dbus-proxy_0.1.6-1.debian.tar.xz' xdg-dbus-proxy_0.1.6-1.debian.tar.xz 4056 SHA256:ec45074253e62199319ef052bbc22245790e493b84e2ec0c55352c2b431f2ffa
+$ apt-get source -qq --print-uris xdg-dbus-proxy=0.1.6-1+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/x/xdg-dbus-proxy/xdg-dbus-proxy_0.1.6-1%2bdeb13u1.dsc' xdg-dbus-proxy_0.1.6-1+deb13u1.dsc 2229 SHA256:a61ba827ec23029ed746364a73484d318c1763ed0eac951755013d2d81e62bb3
+'http://deb.debian.org/debian-security/pool/updates/main/x/xdg-dbus-proxy/xdg-dbus-proxy_0.1.6.orig.tar.xz' xdg-dbus-proxy_0.1.6.orig.tar.xz 48920 SHA256:131bf59fce7c7ee7ecbc5d9106d6750f4f597bfe609966573240f7e4952973a1
+'http://deb.debian.org/debian-security/pool/updates/main/x/xdg-dbus-proxy/xdg-dbus-proxy_0.1.6-1%2bdeb13u1.debian.tar.xz' xdg-dbus-proxy_0.1.6-1+deb13u1.debian.tar.xz 5164 SHA256:2c5aa245b89b4711ebad0a1f21d581cc5a6d5e293621f045dbfb7cc53e783f71
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/xdg-dbus-proxy/0.1.6-1/ (for browsing the source)
-- https://sources.debian.net/src/xdg-dbus-proxy/0.1.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xdg-dbus-proxy/0.1.6-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/xdg-dbus-proxy/0.1.6-1+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/xdg-dbus-proxy/0.1.6-1+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xdg-dbus-proxy/0.1.6-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xft=2.3.6-1`
 
