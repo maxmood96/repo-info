@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7994363ede67a0e96d487b23fc9c48374dd9c10bb0d6d9082433559aa89e4979`
-- Created: `2026-04-21T00:01:17.18220349Z`
+- Image ID: `sha256:99ed2382e59d9b12f2603a06f5d92ef0973324e7d382ed46b5ccb422a9e7d496`
+- Created: `2026-04-22T19:12:47.300234405Z`
 - Virtual Size: ~ 707.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,7 +21,7 @@
   - `GRADLE_VERSION=7.6.6`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-04-20T00:46:48Z`
+  - `build-date=2026-04-22T04:58:33Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-04-20T00:46:48Z`
-  - `org.opencontainers.image.revision=0bc61a274edddc1467c2ad0ddc3139543c4da4da`
-  - `release=1776645941`
+  - `org.opencontainers.image.created=2026-04-22T04:58:33Z`
+  - `org.opencontainers.image.revision=5bb1e5f6eb0dd42dce5d2f21f64a3a9feec995f1`
+  - `release=1776833838`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=0bc61a274edddc1467c2ad0ddc3139543c4da4da`
+  - `vcs-ref=5bb1e5f6eb0dd42dce5d2f21f64a3a9feec995f1`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -729,15 +729,15 @@ $ dnf --quiet download --source --url kmod-libs-28-11.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/kmod-28-11.el9.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.21.1-8.el9_6.x86_64`
+### `rpm` package: `krb5-libs-1.21.1-9.el9_7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.21.1-8.el9_6
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/krb5-1.21.1-8.el9_6.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.21.1-9.el9_7
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/krb5-1.21.1-9.el9_7.src.rpm
 ```
 
 ### `rpm` package: `langpacks-core-en-3.0-16.el9.noarch`

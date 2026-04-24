@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b3bd316f3671a62b54b248f3d10e69a458cc31fef9b24c4ca51c6abe0fbc7793`
-- Created: `2026-04-15T22:17:47.798544324Z`
+- Image ID: `sha256:03e2d35f7a40803b0a247b557f210091926088c0562073ba9ea56c1c710f4116`
+- Created: `2026-04-22T22:11:53.043647206Z`
 - Virtual Size: ~ 1.30 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -751,49 +751,29 @@ $ dnf --quiet download --source --url harfbuzz-7.0.0-2.amzn2023.0.2
 https://cdn.amazonlinux.com/al2023/core/guids/add9afd76d9985fa0605951f2255317b3b414fabd2262a79341c80066dfa19c9/SRPMS/../../../../blobstore/3cc7971ddcf04cd18ac90b4a978eb7acf4249d5a04124a457b0913212fa1e684/harfbuzz-7.0.0-2.amzn2023.0.2.src.rpm
 ```
 
-### `rpm` package: `java-25-amazon-corretto-25.0.2+10-1.amzn2023.1.x86_64`
+### `rpm` package: `java-25-amazon-corretto-25.0.3+9-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-```console
-$ dnf --quiet download --source --url java-25-amazon-corretto-25.0.2+10-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/add9afd76d9985fa0605951f2255317b3b414fabd2262a79341c80066dfa19c9/SRPMS/../../../../blobstore/b598e7da583ff0044559be9a74d0050b10f689308416a844c064a1c6fb2aff69/java-25-amazon-corretto-25.0.2+10-1.amzn2023.1.src.rpm
-```
-
-### `rpm` package: `java-25-amazon-corretto-devel-25.0.2+10-1.amzn2023.1.x86_64`
+### `rpm` package: `java-25-amazon-corretto-devel-25.0.3+9-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-```console
-$ dnf --quiet download --source --url java-25-amazon-corretto-devel-25.0.2+10-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/add9afd76d9985fa0605951f2255317b3b414fabd2262a79341c80066dfa19c9/SRPMS/../../../../blobstore/b598e7da583ff0044559be9a74d0050b10f689308416a844c064a1c6fb2aff69/java-25-amazon-corretto-25.0.2+10-1.amzn2023.1.src.rpm
-```
-
-### `rpm` package: `java-25-amazon-corretto-headless-25.0.2+10-1.amzn2023.1.x86_64`
+### `rpm` package: `java-25-amazon-corretto-headless-25.0.3+9-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-```console
-$ dnf --quiet download --source --url java-25-amazon-corretto-headless-25.0.2+10-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/add9afd76d9985fa0605951f2255317b3b414fabd2262a79341c80066dfa19c9/SRPMS/../../../../blobstore/b598e7da583ff0044559be9a74d0050b10f689308416a844c064a1c6fb2aff69/java-25-amazon-corretto-25.0.2+10-1.amzn2023.1.src.rpm
-```
-
-### `rpm` package: `java-25-amazon-corretto-jmods-25.0.2+10-1.amzn2023.1.x86_64`
+### `rpm` package: `java-25-amazon-corretto-jmods-25.0.3+9-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
-
-```console
-$ dnf --quiet download --source --url java-25-amazon-corretto-jmods-25.0.2+10-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/add9afd76d9985fa0605951f2255317b3b414fabd2262a79341c80066dfa19c9/SRPMS/../../../../blobstore/b598e7da583ff0044559be9a74d0050b10f689308416a844c064a1c6fb2aff69/java-25-amazon-corretto-25.0.2+10-1.amzn2023.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `javapackages-filesystem-6.0.0-7.amzn2023.0.6.noarch`
 
