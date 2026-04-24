@@ -377,9 +377,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris binutils=2.45-7ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.45-7ubuntu1.2.dsc' binutils_2.45-7ubuntu1.2.dsc 9038 SHA512:73bad04ebfba8c99bbb37db8ed1264a681910728250f8458ffd4f30e0db0444909d4db0dc2f74810681f8c013cfe7bd54de80d3936fe0af973c7a7c330cbb62c
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.45.orig.tar.xz' binutils_2.45.orig.tar.xz 27868232 SHA512:c7b10a7466d9fd398d7a0b3f2a43318432668d714f2ec70069a31bdc93c86d28e0fe83792195727167743707fbae45337c0873a0786416db53bbf22860c16ce7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.45-7ubuntu1.2.debian.tar.xz' binutils_2.45-7ubuntu1.2.debian.tar.xz 155516 SHA512:cc05b8907b2665a01b4d04e8e4453e00402598fd5ea46ef7ef3d52f7c5e1059cf3aecc8ee42fa71b82038348ef72e3751ef6bd220a8ac8c608b8a407da01f1be
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.45.orig.tar.xz' binutils_2.45.orig.tar.xz 27868232 SHA256:c50c0e7f9cb188980e2cc97e4537626b1672441815587f1eab69d2a1bfbef5d2
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.45-7ubuntu1.2.debian.tar.xz' binutils_2.45-7ubuntu1.2.debian.tar.xz 155516 SHA256:86c0f75613a1f06112d65b238b2e68a700e53397840f29df3ae3fc50d413caee
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.45-7ubuntu1.2.dsc' binutils_2.45-7ubuntu1.2.dsc 9038 SHA256:de1042468439300d06187e2245ae547be6dbd8cdc68d6147bcca2168845447ed
 ```
 
 ### `dpkg` source package: `brotli=1.1.0-2build5`
@@ -779,8 +779,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris dpkg=1.22.21ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.21ubuntu3.1.dsc' dpkg_1.22.21ubuntu3.1.dsc 3486 SHA512:142ea330912e6c2c9fdc6de497b5613de30b394850ef2faf4888c09a50e58b48ee94d7883ea7b257432c02f50d3f9520fe6a4998c538da6e3c0abe41976663b9
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.21ubuntu3.1.tar.xz' dpkg_1.22.21ubuntu3.1.tar.xz 5672872 SHA512:7e49ffdf72eaa89e1b165aa7c54bd254c5382eb674bbec64e3f4c62037560f20c6b331661cf4022ddd81ece73df6e0e7c1085ab578523a2fcc183626118be386
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.21ubuntu3.1.tar.xz' dpkg_1.22.21ubuntu3.1.tar.xz 5672872 SHA256:c1ff029255fbdc496203de2d2eea95f021d34654d892cc4d78ba6c8dab028876
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.21ubuntu3.1.dsc' dpkg_1.22.21ubuntu3.1.dsc 3486 SHA256:92e596f6fb32c9638da7017cc24a80c2c3a4412fcc65c3fa9736cd310a725374
 ```
 
 ### `dpkg` source package: `e2fsprogs=1.47.2-3ubuntu2`
@@ -4072,10 +4072,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris rust-coreutils=0.2.2-0ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.2.2-0ubuntu2.1.dsc' rust-coreutils_0.2.2-0ubuntu2.1.dsc 8098 SHA512:889ac86cee4ae6a400c4ad335c68dac5e18f0cab46c3c2f2c8c8fe6f182301120fc7faf2b7690c3f373da1d4fd48d89a551774046df720aead1673f2acac18c7
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.2.2.orig-rust-vendor.tar.xz' rust-coreutils_0.2.2.orig-rust-vendor.tar.xz 10803468 SHA512:a9b29f06270f216da761f535f303db4a840535259030695a8bbe7a5269fdab872941785700b22ab21a570b105ad0ade2750015dc1648ca4ec385b9fe4b414c52
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.2.2.orig.tar.gz' rust-coreutils_0.2.2.orig.tar.gz 2827753 SHA512:58def9fe8f01640c6eb7c16cd182061bf62fab22124bdedcb931cdb39b25c2bd3f31523561e321a4822d9e09107dc0c5cc2ddf8e20333138ddaa19d284db609f
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.2.2-0ubuntu2.1.debian.tar.xz' rust-coreutils_0.2.2-0ubuntu2.1.debian.tar.xz 19448 SHA512:e63052b47df74ae3411db007b17fd7e1be606c84eb87583c1aef774f2f72b7ac8921dc1560363f35de11cc2d60b2caa969a998e646bb0f7928c381a77f34c43f
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.2.2.orig-rust-vendor.tar.xz' rust-coreutils_0.2.2.orig-rust-vendor.tar.xz 10803468 SHA256:80965d434b7e8f8df2e31824ef672e0d8f4b7000f61c4b5b9043beeb7bb1a639
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.2.2.orig.tar.gz' rust-coreutils_0.2.2.orig.tar.gz 2827753 SHA256:4a847a3aaf241d11f07fdc04ef36d73c722759675858665bc17e94f56c4fbfb3
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.2.2-0ubuntu2.1.debian.tar.xz' rust-coreutils_0.2.2-0ubuntu2.1.debian.tar.xz 19448 SHA256:b94dc5f348f196899472836bacf40ceab81cd8414c3f56e3158c2ccfee631f32
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rust-coreutils/rust-coreutils_0.2.2-0ubuntu2.1.dsc' rust-coreutils_0.2.2-0ubuntu2.1.dsc 8098 SHA256:c5b391c789e4189b6d4838e869c9461750aca1af2532f4b6302818b2356231f4
 ```
 
 ### `dpkg` source package: `rust-sequoia-sq=1.3.1-2`
@@ -4459,10 +4459,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris unbound=1.22.0-2ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.22.0-2ubuntu2.2.dsc' unbound_1.22.0-2ubuntu2.2.dsc 3337 SHA512:886c4749b0c46663693bc8752987bdc1df4ef9ab428e2ff7b7b90c1ee17697b6796fec42bfc01552522bedc52384c5543b7b4297b157df5112725b6eae33d94e
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.22.0.orig.tar.gz' unbound_1.22.0.orig.tar.gz 6682466 SHA512:6c873e19902ce6cd59cec7084d5dba1a5bd5fe4437c827ae69bdf9273bcd8d2d1ec0dc183076f8d2e1fd38730bf8c10852d678399f0b2ea8ccf7e39119568978
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.22.0.orig.tar.gz.asc' unbound_1.22.0.orig.tar.gz.asc 833 SHA512:afbf5a125f104a25576b1c416b32f68d715b41a025fc3a61e6ee3bc28f9988b4277c7f0dd188c51cbe5641f51ade20f740ea131d1a7b5db38e2d1462a9edbb69
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.22.0-2ubuntu2.2.debian.tar.xz' unbound_1.22.0-2ubuntu2.2.debian.tar.xz 40328 SHA512:f31e2d0ef442cf86e17fba4db95165f773a6e7db515464e0fa7f9ef0761d60c356a033e39410dacee8d5d1286e7dbfff7be263587eb9f344a6ef850fe2a1ee4f
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.22.0.orig.tar.gz' unbound_1.22.0.orig.tar.gz 6682466 SHA256:c5dd1bdef5d5685b2cedb749158dd152c52d44f65529a34ac15cd88d4b1b3d43
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.22.0.orig.tar.gz.asc' unbound_1.22.0.orig.tar.gz.asc 833 SHA256:1b5d91ad040b1f1c0351b8f6fe288b4123fc63b887152463512be69bc687f915
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.22.0-2ubuntu2.2.debian.tar.xz' unbound_1.22.0-2ubuntu2.2.debian.tar.xz 40328 SHA256:3f2284e35d99d8546b2a054346f689c403d5dfafd7b13470e5d80a888325ad6c
+'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.22.0-2ubuntu2.2.dsc' unbound_1.22.0-2ubuntu2.2.dsc 3337 SHA256:d66215dd53f69436ed06336f88fef2623e87bca6c08c9607be8e1cd101132b59
 ```
 
 ### `dpkg` source package: `unzip=6.0-28ubuntu7`
