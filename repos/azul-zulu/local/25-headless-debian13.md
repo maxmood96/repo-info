@@ -1,10 +1,10 @@
-# `azul-zulu:25.32-25.0.2-jdk-headless-debian13`
+# `azul-zulu:25.34-25.0.3-jdk-headless-debian13`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3df3c20b06ee5608766f920ddeee20e035493c2831146a814c36857305661bd1`
-- Created: `2026-04-07T01:46:19.421461674Z`
-- Virtual Size: ~ 445.49 Mb  
+- Image ID: `sha256:67ec7a4b01f39f082e02b5b88f9def1e4ad4bd24a9c01a0eb978ce1c11cbbc52`
+- Created: `2026-04-22T01:38:34.425867493Z`
+- Virtual Size: ~ 446.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -1538,13 +1538,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.10.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.10.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.5.5-1~deb13u1`
+### `dpkg` source package: `openssl=3.5.5-1~deb13u2`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.5.5-1~deb13u1`
-- `openssl=3.5.5-1~deb13u1`
-- `openssl-provider-legacy=3.5.5-1~deb13u1`
+- `libssl3t64:amd64=3.5.5-1~deb13u2`
+- `openssl=3.5.5-1~deb13u2`
+- `openssl-provider-legacy=3.5.5-1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -1556,18 +1556,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.5.5-1~deb13u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.5-1%7edeb13u1.dsc' openssl_3.5.5-1~deb13u1.dsc 2707 SHA256:9fef06359b7e7f0abfb0ac6869f7bb344ae7f8efb25d5969f004f278a877b146
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA256:b28c91532a8b65a1f983b4c28b7488174e4a01008e29ce8e69bd789f28bc2a89
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA256:eaef5b1054b84b8d1e6c61c9fc8867828be5ce686d0221580faf8bdc16489da9
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.5-1%7edeb13u1.debian.tar.xz' openssl_3.5.5-1~deb13u1.debian.tar.xz 50668 SHA256:87377bad1f77b157bf95ebc18c5dfe70b5d3ab276441f92b66a5338b2500705f
+$ apt-get source -qq --print-uris openssl=3.5.5-1~deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5-1%7edeb13u2.dsc' openssl_3.5.5-1~deb13u2.dsc 2707 SHA256:2cba43d38a2f4ca1ef09a89ccc348fc63a5a43a58850a913bca46c6ceeb007ed
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA256:b28c91532a8b65a1f983b4c28b7488174e4a01008e29ce8e69bd789f28bc2a89
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA256:eaef5b1054b84b8d1e6c61c9fc8867828be5ce686d0221580faf8bdc16489da9
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5-1%7edeb13u2.debian.tar.xz' openssl_3.5.5-1~deb13u2.debian.tar.xz 68136 SHA256:92355f8cd5112cb4d49b9487c30507e5f85fc5497ad85223aecf661566f5ad8e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.5.5-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.5.5-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.5.5-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.5.5-1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.5.5-1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.5.5-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.7.0-5`
 
@@ -2069,12 +2069,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/zlib/1:1.3.dfsg+really1.3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/zlib/1:1.3.dfsg+really1.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `zulu25-ca=25.0.2-3`
+### `dpkg` source package: `zulu25-ca=25.0.3-3`
 
 Binary Packages:
 
-- `zulu25-ca-jdk-headless=25.0.2-3`
-- `zulu25-ca-jre-headless=25.0.2-3`
+- `zulu25-ca-jdk-headless=25.0.3-3`
+- `zulu25-ca-jre-headless=25.0.3-3`
 
 Licenses: (parsed from: `/usr/share/doc/zulu25-ca-jdk-headless/copyright`, `/usr/share/doc/zulu25-ca-jre-headless/copyright`)
 
@@ -2084,12 +2084,12 @@ Licenses: (parsed from: `/usr/share/doc/zulu25-ca-jdk-headless/copyright`, `/usr
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `zulu25=25.0.2-3`
+### `dpkg` source package: `zulu25=25.0.3-3`
 
 Binary Packages:
 
-- `zulu25-jdk-headless=25.0.2-3`
-- `zulu25-jre-headless=25.0.2-3`
+- `zulu25-jdk-headless=25.0.3-3`
+- `zulu25-jre-headless=25.0.3-3`
 
 Licenses: (parsed from: `/usr/share/doc/zulu25-jdk-headless/copyright`, `/usr/share/doc/zulu25-jre-headless/copyright`)
 
