@@ -747,14 +747,9 @@ Licenses: (parsed from: `/usr/share/doc/jq/copyright`, `/usr/share/doc/libjq1/co
 - `GPL-2.0+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris jq=1.6-2.1ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/j/jq/jq_1.6.orig.tar.gz' jq_1.6.orig.tar.gz 419859 SHA256:3ba940b97571c866923f0409678033d33b5a98758dfc174fad8397ed908bc4d9
-'http://archive.ubuntu.com/ubuntu/pool/main/j/jq/jq_1.6-2.1ubuntu3.1.debian.tar.xz' jq_1.6-2.1ubuntu3.1.debian.tar.xz 17528 SHA256:ff0574181f53ff8e6facc23539cc4c277d99adbee9b786cbca52a3a01f994ada
-'http://archive.ubuntu.com/ubuntu/pool/main/j/jq/jq_1.6-2.1ubuntu3.1.dsc' jq_1.6-2.1ubuntu3.1.dsc 2056 SHA256:c1bf147d3defaac18d66162c442980ee5ed1328c2e93a69d6b7acf688df0e7a9
-```
 
 ### `dpkg` source package: `keyutils=1.6.1-2ubuntu3`
 
