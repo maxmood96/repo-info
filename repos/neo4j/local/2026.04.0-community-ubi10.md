@@ -1,10 +1,10 @@
-# `neo4j:2026.03.1-community-ubi10`
+# `neo4j:2026.04.0-community-ubi10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:050ca8a08855b2395122c7abd5d6cd33dd2c14a25309e00254c3faa9e8c43527`
-- Created: `2026-04-22T18:19:10.926432717Z`
-- Virtual Size: ~ 649.25 Mb  
+- Image ID: `sha256:02c0945951009a68274d6c5190ab1bdb2f209d38945c92bce34c252db07cb0ce`
+- Created: `2026-04-23T17:15:17.701852428Z`
+- Virtual Size: ~ 644.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `NEO4J_SHA256=419c5a471a8b6918570da687215d7d3406983a6ae209fd3d96c2de2a90a5dcfb`
-  - `NEO4J_TARBALL=neo4j-community-2026.03.1-unix.tar.gz`
+  - `NEO4J_SHA256=fd750466b1247c0d1ef09a84c614f7e045793b30dfa277148e8da71646598820`
+  - `NEO4J_TARBALL=neo4j-community-2026.04.0-unix.tar.gz`
   - `NEO4J_EDITION=community`
   - `NEO4J_HOME=/var/lib/neo4j`
   - `LANG=C.UTF-8`
