@@ -30,10 +30,31 @@
 -	[`jruby:10.0.5.0-jre`](#jruby10050-jre)
 -	[`jruby:10.0.5.0-jre21`](#jruby10050-jre21)
 -	[`jruby:10.0.5.0-jre25`](#jruby10050-jre25)
+-	[`jruby:10.1`](#jruby101)
 -	[`jruby:10.1-dev-jdk21`](#jruby101-dev-jdk21)
 -	[`jruby:10.1-dev-jdk25`](#jruby101-dev-jdk25)
 -	[`jruby:10.1-dev-jre21`](#jruby101-dev-jre21)
 -	[`jruby:10.1-dev-jre25`](#jruby101-dev-jre25)
+-	[`jruby:10.1-jdk`](#jruby101-jdk)
+-	[`jruby:10.1-jdk21`](#jruby101-jdk21)
+-	[`jruby:10.1-jdk25`](#jruby101-jdk25)
+-	[`jruby:10.1-jre`](#jruby101-jre)
+-	[`jruby:10.1-jre21`](#jruby101-jre21)
+-	[`jruby:10.1-jre25`](#jruby101-jre25)
+-	[`jruby:10.1.0`](#jruby1010)
+-	[`jruby:10.1.0-jdk`](#jruby1010-jdk)
+-	[`jruby:10.1.0-jdk21`](#jruby1010-jdk21)
+-	[`jruby:10.1.0-jdk25`](#jruby1010-jdk25)
+-	[`jruby:10.1.0-jre`](#jruby1010-jre)
+-	[`jruby:10.1.0-jre21`](#jruby1010-jre21)
+-	[`jruby:10.1.0-jre25`](#jruby1010-jre25)
+-	[`jruby:10.1.0.0`](#jruby10100)
+-	[`jruby:10.1.0.0-jdk`](#jruby10100-jdk)
+-	[`jruby:10.1.0.0-jdk21`](#jruby10100-jdk21)
+-	[`jruby:10.1.0.0-jdk25`](#jruby10100-jdk25)
+-	[`jruby:10.1.0.0-jre`](#jruby10100-jre)
+-	[`jruby:10.1.0.0-jre21`](#jruby10100-jre21)
+-	[`jruby:10.1.0.0-jre25`](#jruby10100-jre25)
 -	[`jruby:9`](#jruby9)
 -	[`jruby:9-jdk`](#jruby9-jdk)
 -	[`jruby:9-jdk8`](#jruby9-jdk8)
@@ -8089,6 +8110,10 @@ $ docker pull jruby@sha256:690f0cd670cb8d84951b132aad9b6f802ff3dc6df0ee56e04596f
 		Size: 19.0 KB (18986 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `jruby:10.1`
+
+**does not exist** (yet?)
+
 ## `jruby:10.1-dev-jdk21`
 
 ```console
@@ -9268,6 +9293,86 @@ $ docker pull jruby@sha256:aaf56522a80c2847a92f66345358edab8d73f5c46e7de05268bf6
 		Last Modified: Wed, 15 Apr 2026 21:49:57 GMT  
 		Size: 19.2 KB (19216 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `jruby:10.1-jdk`
+
+**does not exist** (yet?)
+
+## `jruby:10.1-jdk21`
+
+**does not exist** (yet?)
+
+## `jruby:10.1-jdk25`
+
+**does not exist** (yet?)
+
+## `jruby:10.1-jre`
+
+**does not exist** (yet?)
+
+## `jruby:10.1-jre21`
+
+**does not exist** (yet?)
+
+## `jruby:10.1-jre25`
+
+**does not exist** (yet?)
+
+## `jruby:10.1.0`
+
+**does not exist** (yet?)
+
+## `jruby:10.1.0-jdk`
+
+**does not exist** (yet?)
+
+## `jruby:10.1.0-jdk21`
+
+**does not exist** (yet?)
+
+## `jruby:10.1.0-jdk25`
+
+**does not exist** (yet?)
+
+## `jruby:10.1.0-jre`
+
+**does not exist** (yet?)
+
+## `jruby:10.1.0-jre21`
+
+**does not exist** (yet?)
+
+## `jruby:10.1.0-jre25`
+
+**does not exist** (yet?)
+
+## `jruby:10.1.0.0`
+
+**does not exist** (yet?)
+
+## `jruby:10.1.0.0-jdk`
+
+**does not exist** (yet?)
+
+## `jruby:10.1.0.0-jdk21`
+
+**does not exist** (yet?)
+
+## `jruby:10.1.0.0-jdk25`
+
+**does not exist** (yet?)
+
+## `jruby:10.1.0.0-jre`
+
+**does not exist** (yet?)
+
+## `jruby:10.1.0.0-jre21`
+
+**does not exist** (yet?)
+
+## `jruby:10.1.0.0-jre25`
+
+**does not exist** (yet?)
 
 ## `jruby:9`
 
