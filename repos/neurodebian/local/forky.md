@@ -1108,21 +1108,13 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 - `GPL-2`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgcrypt20=1.12.1-2
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.12.1-2.dsc' libgcrypt20_1.12.1-2.dsc 2962 SHA256:3c601367fb181071204eabdb2c585cbf24a5e66d5fbb0d2d0c12d4fcce5578e5
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.12.1.orig.tar.bz2' libgcrypt20_1.12.1.orig.tar.bz2 4441330 SHA256:7df5c08d952ba33f9b6bdabdb06a61a78b2cf62d2122c2d1d03a91a79832aa3c
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.12.1.orig.tar.bz2.asc' libgcrypt20_1.12.1.orig.tar.bz2.asc 265 SHA256:3707d922360d4862c09f3998862e8a3e522aa5d73c9d17e24f76d99be741ced8
-'http://deb.debian.org/debian/pool/main/libg/libgcrypt20/libgcrypt20_1.12.1-2.debian.tar.xz' libgcrypt20_1.12.1-2.debian.tar.xz 39440 SHA256:c3db7d11826e5252ce4d0ae0443395cd3a95e7e5c6fb2c0c83073cfcecd7408a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libgcrypt20/1.12.1-2/
 
-- https://sources.debian.net/src/libgcrypt20/1.12.1-2/ (for browsing the source)
-- https://sources.debian.net/src/libgcrypt20/1.12.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgcrypt20/1.12.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgpg-error=1.59-4`
 
@@ -2189,21 +2181,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026a-3
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026a-3.dsc' tzdata_2026a-3.dsc 2434 SHA256:ee701c746161ecd5515084df752fc83f8d0bf410b3f9a5e672ca3bb520e3ae1d
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz' tzdata_2026a.orig.tar.gz 471812 SHA256:77b541725937bb53bd92bd484c0b43bec8545e2d3431ee01f04ef8f2203ba2b7
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz.asc' tzdata_2026a.orig.tar.gz.asc 833 SHA256:39525413908f3c28cd80dff718fc3a47a563871fd26ca3b526db2b5f700de3cb
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026a-3.debian.tar.xz' tzdata_2026a-3.debian.tar.xz 128300 SHA256:7514564cb535f4639dcc4794d51249c07bb053d81a8ca0002bee6ff390be5366
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2026a-3/
 
-- https://sources.debian.net/src/tzdata/2026a-3/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2026a-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2026a-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.42-3`
 
