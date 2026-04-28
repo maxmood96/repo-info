@@ -890,20 +890,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.7.5-1
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.5-1.dsc' expat_2.7.5-1.dsc 1970 SHA256:b9d12670f800b12fb41cf39d2b34d9115223b95d50e3814deb17aaf47bd5f0fb
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.5.orig.tar.gz' expat_2.7.5.orig.tar.gz 8449555 SHA256:7e23daf05f0ab028570d709ce48d724802baa6e4fbfa4db9b7cee3b72ee2062b
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.7.5-1.debian.tar.xz' expat_2.7.5-1.debian.tar.xz 13544 SHA256:16927000bcde5e8f2ed26c7bd934cec3741d03205bbb29e1071eb884ee6bed49
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.7.5-1/
 
-- https://sources.debian.net/src/expat/2.7.5-1/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.7.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.7.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.10.0-3`
 
@@ -1144,20 +1137,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-16-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-16=16-20260423-1
-'http://deb.debian.org/debian/pool/main/g/gcc-16/gcc-16_16-20260423-1.dsc' gcc-16_16-20260423-1.dsc 52607 SHA256:860bc668085f80bf4bb70c21112b7e9eb09a0559ed8b9e945f037cc2895b56e8
-'http://deb.debian.org/debian/pool/main/g/gcc-16/gcc-16_16-20260423.orig.tar.gz' gcc-16_16-20260423.orig.tar.gz 100470210 SHA256:7fdc139510de2aee5709b8181d1d862f4c1267db1040be1d3d14b2f20b404dcf
-'http://deb.debian.org/debian/pool/main/g/gcc-16/gcc-16_16-20260423-1.debian.tar.xz' gcc-16_16-20260423-1.debian.tar.xz 624884 SHA256:777a22b68b4cf57b1fc6ed1ce54340b4ce53affee77bb458a99006ba7acd0978
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-16/16-20260423-1/
 
-- https://sources.debian.net/src/gcc-16/16-20260423-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-16/16-20260423-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-16/16-20260423-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-defaults=1.230`
 
@@ -3812,20 +3798,13 @@ Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-bas
 - `LGPL-2.1`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-base=4.6.0-1
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.6.0-1.dsc' r-base_4.6.0-1.dsc 2848 SHA256:d6e16bbadad359b3fdf0dba779dde9a29ad16b8e751f295f87a201cf9b1064bb
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.6.0.orig.tar.gz' r-base_4.6.0.orig.tar.gz 40916004 SHA256:b8dc9b4543660c7b596b87938df532394350360976527d344228ee0ed12e45ec
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.6.0-1.debian.tar.xz' r-base_4.6.0-1.debian.tar.xz 101356 SHA256:34c519bfaf6d340da92bdc4e267b65accc44135aea2b3aa31c21c4d45eb6d993
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-base/4.6.0-1/
 
-- https://sources.debian.net/src/r-base/4.6.0-1/ (for browsing the source)
-- https://sources.debian.net/src/r-base/4.6.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-base/4.6.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-class=7.3-23-1`
 
@@ -4421,21 +4400,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026a-3
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026a-3.dsc' tzdata_2026a-3.dsc 2434 SHA256:ee701c746161ecd5515084df752fc83f8d0bf410b3f9a5e672ca3bb520e3ae1d
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz' tzdata_2026a.orig.tar.gz 471812 SHA256:77b541725937bb53bd92bd484c0b43bec8545e2d3431ee01f04ef8f2203ba2b7
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz.asc' tzdata_2026a.orig.tar.gz.asc 833 SHA256:39525413908f3c28cd80dff718fc3a47a563871fd26ca3b526db2b5f700de3cb
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026a-3.debian.tar.xz' tzdata_2026a-3.debian.tar.xz 128300 SHA256:7514564cb535f4639dcc4794d51249c07bb053d81a8ca0002bee6ff390be5366
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2026a-3/
 
-- https://sources.debian.net/src/tzdata/2026a-3/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2026a-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2026a-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0053`
 
