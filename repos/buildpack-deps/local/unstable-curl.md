@@ -370,21 +370,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.20.0~rc2-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.20.0%7erc2-1.dsc' curl_8.20.0~rc2-1.dsc 3347 SHA256:d186d14eca1246c9e037f77e78b0f79610b728222ce6c6f8ba5d559e420e37dc
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.20.0%7erc2.orig.tar.xz' curl_8.20.0~rc2.orig.tar.xz 2821812 SHA256:183d87af6c87a5b8b6d5a525743987441df41eb1bda070ba6c8c7d9b51e09a4e
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.20.0%7erc2.orig.tar.xz.asc' curl_8.20.0~rc2.orig.tar.xz.asc 488 SHA256:60cf793fa7ae91689eec6985ee1ab4cb79e071b01c3d1208f7620d820d47a463
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.20.0%7erc2-1.debian.tar.xz' curl_8.20.0~rc2-1.debian.tar.xz 52744 SHA256:c598fd2e03b3b4826e8baec5d218abf27ea8dd2cf0b6abdef5cde13bf7ee16ec
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.20.0~rc2-1/
 
-- https://sources.debian.net/src/curl/8.20.0~rc2-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.20.0~rc2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.20.0~rc2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-11`
 
@@ -2550,20 +2542,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.42-4
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42-4.dsc' util-linux_2.42-4.dsc 5317 SHA256:d0ca922f691d1486735480ba6ff8308048f8b71880dce862e5a0b904aa6d64c8
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42.orig.tar.xz' util-linux_2.42.orig.tar.xz 10608300 SHA256:3452b260bbaa775d6e749ac3bb22111785003fc1f444970025c8da26dfa758e9
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42-4.debian.tar.xz' util-linux_2.42-4.debian.tar.xz 101828 SHA256:979d4a0ecefed803872890e4e53bf8f1b734add40f1f166b20cc8a2f3bcba682
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.42-4/
 
-- https://sources.debian.net/src/util-linux/2.42-4/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.42-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.42-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
