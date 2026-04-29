@@ -6544,14 +6544,9 @@ Licenses: (parsed from: `/usr/share/doc/vim/copyright`, `/usr/share/doc/vim-comm
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:8.2.3995-1ubuntu2.27
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.2.3995.orig.tar.xz' vim_8.2.3995.orig.tar.xz 10377164 SHA512:2326b3484858c92f55076bcd2336290cc292b35c9a8963e3b14e7140dd1fe36179fe8431d71b0121f8345dac3627c80cd016899aa6120f3354fa882144a28b07
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.2.3995-1ubuntu2.27.debian.tar.xz' vim_8.2.3995-1ubuntu2.27.debian.tar.xz 311620 SHA512:c294a01626f7a6da810eb6faf670be9b2d6621278eba42e8f77f86b6b3b5f9fbcd56110ebfcc17a4594cc96898d5396e5b336f33314d456ed0227999fe87b13f
-'http://archive.ubuntu.com/ubuntu/pool/main/v/vim/vim_8.2.3995-1ubuntu2.27.dsc' vim_8.2.3995-1ubuntu2.27.dsc 3070 SHA512:6733af4b3b7332761393b52a2d75a82dd741bf2097345ee620362a74c40e3b34efa04c517ad0081632342d7ae1b87900bd861046631062f0be3237a94bdc6f63
-```
 
 ### `dpkg` source package: `wayland=1.20.0-1ubuntu0.1`
 
