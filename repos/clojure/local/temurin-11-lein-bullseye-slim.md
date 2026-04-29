@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:acf10c157093d8cb59c94c0f1d98fe10f04dfb810800579782926af69cf91275`
-- Created: `2026-03-17T02:57:10.709344928Z`
+- Image ID: `sha256:b3356eba4faa14d783e78421efc8c2e9ffa9f82c710964d88563c4de1058ced1`
+- Created: `2026-04-22T02:17:16.589665545Z`
 - Virtual Size: ~ 384.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1640,11 +1640,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre3/2:8.39-13/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre3/2:8.39-13/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.32.1-4+deb11u4`
+### `dpkg` source package: `perl=5.32.1-4+deb11u5`
 
 Binary Packages:
 
-- `perl-base=5.32.1-4+deb11u4`
+- `perl-base=5.32.1-4+deb11u5`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1679,18 +1679,18 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.32.1-4+deb11u4
-'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.32.1-4%2bdeb11u4.dsc' perl_5.32.1-4+deb11u4.dsc 2893 SHA256:57ac45e316fd4a82e476883c3326f9df7f27ed6ff07cc4541a0600b503742695
+$ apt-get source -qq --print-uris perl=5.32.1-4+deb11u5
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.32.1-4%2bdeb11u5.dsc' perl_5.32.1-4+deb11u5.dsc 2893 SHA256:16068c67a051887f661beabb6bb63211241e347823c66e1ada49a596c4e55d9a
 'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.32.1.orig-regen-configure.tar.gz' perl_5.32.1.orig-regen-configure.tar.gz 871331 SHA256:1d179b41283f12ad83f9758430f6ddc49bdf20db5c396aeae7e51ebb4e4afd29
 'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.32.1.orig.tar.xz' perl_5.32.1.orig.tar.xz 12610988 SHA256:57cc47c735c8300a8ce2fa0643507b44c4ae59012bfdad0121313db639e02309
-'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.32.1-4%2bdeb11u4.debian.tar.xz' perl_5.32.1-4+deb11u4.debian.tar.xz 170428 SHA256:3fd8c90c0b5a8d4efeb2f2cb03d4c83d9fff90e223d3d1d385754a44cf59f597
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.32.1-4%2bdeb11u5.debian.tar.xz' perl_5.32.1-4+deb11u5.debian.tar.xz 173764 SHA256:7ff54cb58e60d0dac81b2b644f937edcb226c60ecd25f665a2f372ac9862caf7
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/perl/5.32.1-4+deb11u4/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.32.1-4+deb11u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.32.1-4+deb11u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/perl/5.32.1-4+deb11u5/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.32.1-4+deb11u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.32.1-4+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.7-1`
 
@@ -1743,12 +1743,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/shadow/1:4.8.1-1+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/shadow/1:4.8.1-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=247.3-7+deb11u7`
+### `dpkg` source package: `systemd=247.3-7+deb11u8`
 
 Binary Packages:
 
-- `libsystemd0:amd64=247.3-7+deb11u7`
-- `libudev1:amd64=247.3-7+deb11u7`
+- `libsystemd0:amd64=247.3-7+deb11u8`
+- `libudev1:amd64=247.3-7+deb11u8`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1764,17 +1764,17 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=247.3-7+deb11u7
-'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_247.3-7%2bdeb11u7.dsc' systemd_247.3-7+deb11u7.dsc 5236 SHA256:2521703c26bedac0ce9bddf6aee2d500d01bf12c3a80d5d62950a30a3fdfa497
+$ apt-get source -qq --print-uris systemd=247.3-7+deb11u8
+'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_247.3-7%2bdeb11u8.dsc' systemd_247.3-7+deb11u8.dsc 5346 SHA256:3c15769273b3258fdbbc20387198a68e819c72f381af445a54c3fe5fe9e9a958
 'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_247.3.orig.tar.gz' systemd_247.3.orig.tar.gz 9895385 SHA256:2869986e219a8dfc96cc0dffac66e0c13bb70a89e16b85a3948876c146cfa3e0
-'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_247.3-7%2bdeb11u7.debian.tar.xz' systemd_247.3-7+deb11u7.debian.tar.xz 207972 SHA256:a175340e4b1341c2f614227de0ffd154073d56cc3ddba2a92668f7f5386f1366
+'http://deb.debian.org/debian-security/pool/updates/main/s/systemd/systemd_247.3-7%2bdeb11u8.debian.tar.xz' systemd_247.3-7+deb11u8.debian.tar.xz 214704 SHA256:bf9b03f659d399605cca4338dd974b173d39b8cd80a37d4e376b751eae73b2ac
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/247.3-7+deb11u7/ (for browsing the source)
-- https://sources.debian.net/src/systemd/247.3-7+deb11u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/247.3-7+deb11u7/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/systemd/247.3-7+deb11u8/ (for browsing the source)
+- https://sources.debian.net/src/systemd/247.3-7+deb11u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/247.3-7+deb11u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=2.96-7+deb11u1`
 
