@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac5d0850c9245e654b940ebae01a9a9dacca17e4929ee061d6cf49fd4d9e267e`
-- Created: `2026-04-07T19:24:34.525940388Z`
+- Image ID: `sha256:0fbec11d5a3fb80bdc5ba9457a5fcd4e38ee4d0ec1997ffd4b56163386c47174`
+- Created: `2026-04-28T00:02:25.091256706Z`
 - Virtual Size: ~ 93.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -377,15 +377,15 @@ $ dnf --quiet download --source --url libacl-2.2.53-3.el8
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/acl-2.2.53-3.el8.src.rpm
 ```
 
-### `rpm` package: `libarchive-3.3.3-6.el8_10.x86_64`
+### `rpm` package: `libarchive-3.3.3-7.el8_10.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libarchive-3.3.3-6.el8_10
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libarchive-3.3.3-6.el8_10.src.rpm
+$ dnf --quiet download --source --url libarchive-3.3.3-7.el8_10
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libarchive-3.3.3-7.el8_10.src.rpm
 ```
 
 ### `rpm` package: `libassuan-2.5.1-3.el8.x86_64`
@@ -586,15 +586,15 @@ $ dnf --quiet download --source --url libmount-2.32.1-48.el8_10
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/util-linux-2.32.1-48.el8_10.src.rpm
 ```
 
-### `rpm` package: `libnghttp2-1.33.0-6.el8_10.1.x86_64`
+### `rpm` package: `libnghttp2-1.33.0-6.el8_10.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libnghttp2-1.33.0-6.el8_10.1
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/nghttp2-1.33.0-6.el8_10.1.src.rpm
+$ dnf --quiet download --source --url libnghttp2-1.33.0-6.el8_10.2
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/nghttp2-1.33.0-6.el8_10.2.src.rpm
 ```
 
 ### `rpm` package: `libpeas-1.22.0-6.el8.x86_64`
@@ -1037,15 +1037,15 @@ $ dnf --quiet download --source --url rpm-libs-4.14.3-32.el8_10
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/rpm-4.14.3-32.el8_10.src.rpm
 ```
 
-### `rpm` package: `sed-4.5-5.el8.x86_64`
+### `rpm` package: `sed-4.5-5.el8_10.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url sed-4.5-5.el8
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/sed-4.5-5.el8.src.rpm
+$ dnf --quiet download --source --url sed-4.5-5.el8_10
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/sed-4.5-5.el8_10.src.rpm
 ```
 
 ### `rpm` package: `setup-2.12.2-9.el8.noarch`

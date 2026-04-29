@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:81ff9f6146718183edfd955dd7adcdc2687795c65c92ce2042468099e5e284d1`
-- Created: `2026-04-07T19:24:47.221592822Z`
-- Virtual Size: ~ 93.25 Mb  
+- Image ID: `sha256:b21d7d6dad11a65f7f838a731e063311015a6488c4a332343de9bde7060e5fc4`
+- Created: `2026-04-28T00:02:09.39796933Z`
+- Virtual Size: ~ 93.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -360,15 +360,15 @@ $ dnf --quiet download --source --url keyutils-libs-1.6.3-1.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/keyutils-1.6.3-1.el9.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.21.1-8.el9_6.x86_64`
+### `rpm` package: `krb5-libs-1.21.1-9.el9_7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.21.1-8.el9_6
-http://vault.almalinux.org/9.7/BaseOS/Source/Packages/krb5-1.21.1-8.el9_6.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.21.1-9.el9_7
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/krb5-1.21.1-9.el9_7.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.3.1-4.el9.x86_64`
@@ -382,15 +382,15 @@ $ dnf --quiet download --source --url libacl-2.3.1-4.el9
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/acl-2.3.1-4.el9.src.rpm
 ```
 
-### `rpm` package: `libarchive-3.5.3-7.el9_7.x86_64`
+### `rpm` package: `libarchive-3.5.3-9.el9_7.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libarchive-3.5.3-7.el9_7
-http://vault.almalinux.org/9.7/BaseOS/Source/Packages/libarchive-3.5.3-7.el9_7.src.rpm
+$ dnf --quiet download --source --url libarchive-3.5.3-9.el9_7
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/libarchive-3.5.3-9.el9_7.src.rpm
 ```
 
 ### `rpm` package: `libassuan-2.5.5-3.el9.x86_64`
@@ -580,15 +580,15 @@ $ dnf --quiet download --source --url libmount-2.37.4-21.el9_7
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/util-linux-2.37.4-21.el9_7.src.rpm
 ```
 
-### `rpm` package: `libnghttp2-1.43.0-6.el9.x86_64`
+### `rpm` package: `libnghttp2-1.43.0-6.el9_7.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libnghttp2-1.43.0-6.el9
-http://vault.almalinux.org/9.7/BaseOS/Source/Packages/nghttp2-1.43.0-6.el9.src.rpm
+$ dnf --quiet download --source --url libnghttp2-1.43.0-6.el9_7.1
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/nghttp2-1.43.0-6.el9_7.1.src.rpm
 ```
 
 ### `rpm` package: `libpeas-1.30.0-4.el9.x86_64`
@@ -1086,15 +1086,15 @@ $ dnf --quiet download --source --url sqlite-libs-3.34.1-9.el9_7
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/sqlite-3.34.1-9.el9_7.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-252-55.el9_7.7.alma.1.x86_64`
+### `rpm` package: `systemd-libs-252-55.el9_7.8.alma.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-libs-252-55.el9_7.7.alma.1
-http://vault.almalinux.org/9.7/BaseOS/Source/Packages/systemd-252-55.el9_7.7.alma.1.src.rpm
+$ dnf --quiet download --source --url systemd-libs-252-55.el9_7.8.alma.1
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/systemd-252-55.el9_7.8.alma.1.src.rpm
 ```
 
 ### `rpm` package: `tzdata-2026a-1.el9.noarch`
