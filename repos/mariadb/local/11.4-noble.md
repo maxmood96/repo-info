@@ -860,14 +860,9 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris iproute2=6.1.0-1ubuntu6.2
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_6.1.0.orig.tar.xz' iproute2_6.1.0.orig.tar.xz 905512 SHA256:5ce12a0fec6b212725ef218735941b2dab76244db7e72646a76021b0537b43ab
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_6.1.0-1ubuntu6.2.debian.tar.xz' iproute2_6.1.0-1ubuntu6.2.debian.tar.xz 41816 SHA256:8f8276ea816791e5e1f48243abe13639ad297d0753d0932fa24a15b56fcf205d
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_6.1.0-1ubuntu6.2.dsc' iproute2_6.1.0-1ubuntu6.2.dsc 2402 SHA256:24f825c15ac012fe77af273706abe7909badc82f50c81f8788a76991ca23b47f
-```
 
 ### `dpkg` source package: `iptables=1.8.10-3ubuntu2`
 
