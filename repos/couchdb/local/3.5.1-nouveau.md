@@ -2517,21 +2517,13 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-17-jre-headless/copyright`)
 - `LGPL`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-17=17.0.18+8-1~deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/o/openjdk-17/openjdk-17_17.0.18%2b8-1%7edeb12u1.dsc' openjdk-17_17.0.18+8-1~deb12u1.dsc 4879 SHA256:bce0d88ce929f4b5b1026787a245cf94398f38015a7b6d1318ac8ad3179473a2
-'http://deb.debian.org/debian-security/pool/updates/main/o/openjdk-17/openjdk-17_17.0.18%2b8.orig-googletest.tar.xz' openjdk-17_17.0.18+8.orig-googletest.tar.xz 613408 SHA256:6e6699c442cd6bc008140d159b43a7a39bb811d1ecd380cf3b707cc535e04393
-'http://deb.debian.org/debian-security/pool/updates/main/o/openjdk-17/openjdk-17_17.0.18%2b8.orig.tar.xz' openjdk-17_17.0.18+8.orig.tar.xz 63904440 SHA256:4fcf04a097e76e2533bc11ac9f75ff2c175053431debc82ca37a00951a1f9915
-'http://deb.debian.org/debian-security/pool/updates/main/o/openjdk-17/openjdk-17_17.0.18%2b8-1%7edeb12u1.debian.tar.xz' openjdk-17_17.0.18+8-1~deb12u1.debian.tar.xz 204664 SHA256:c38a6c0f44ee40c6ee1f79266ff62163a04eb6ba97f88dd268f67ec1f0811237
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjdk-17/17.0.18+8-1~deb12u1/
 
-- https://sources.debian.net/src/openjdk-17/17.0.18+8-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/openjdk-17/17.0.18+8-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjdk-17/17.0.18+8-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.5.13+dfsg-5`
 
