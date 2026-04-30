@@ -3358,14 +3358,9 @@ Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris kmod=31+20240202-2ubuntu7.1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_31%2b20240202.orig.tar.xz' kmod_31+20240202.orig.tar.xz 253852 SHA256:0b8521d929cc62b7594886c8ed24109a22b96e732fdcc6f0afa486bd62c487bc
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_31%2b20240202-2ubuntu7.1.debian.tar.xz' kmod_31+20240202-2ubuntu7.1.debian.tar.xz 15108 SHA256:6d34ee55a8bff3c7c4e07f294aa1995af6560ab61a03b767e8c6dfdb8a54f75f
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_31%2b20240202-2ubuntu7.1.dsc' kmod_31+20240202-2ubuntu7.1.dsc 2288 SHA256:0f8e6a6f471c57029ec2cd9e9a452be88281fc00fd32701f3dfa93bc3aefd169
-```
 
 ### `dpkg` source package: `krb5=1.20.1-6ubuntu2.6`
 
@@ -6046,9 +6041,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=6.8.0-110.110
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA256:26512115972bdf017a4ac826cc7d3e9b0ba397d4f85cd330e4e4ff54c78061c8
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-110.110.diff.gz' linux_6.8.0-110.110.diff.gz 7803087 SHA256:e064e0f2f9252bbc38aaa74559d1edfca30b6b5438c614cf06a768e0e7bc1e6d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-110.110.dsc' linux_6.8.0-110.110.dsc 9407 SHA256:6ab61e14923e81c734c4e77c527f2300966402338c7001341efab1bf259b8a2c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA256:26512115972bdf017a4ac826cc7d3e9b0ba397d4f85cd330e4e4ff54c78061c8
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-110.110.diff.gz' linux_6.8.0-110.110.diff.gz 7803087 SHA256:e064e0f2f9252bbc38aaa74559d1edfca30b6b5438c614cf06a768e0e7bc1e6d
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-110.110.dsc' linux_6.8.0-110.110.dsc 9407 SHA256:6ab61e14923e81c734c4e77c527f2300966402338c7001341efab1bf259b8a2c
 ```
 
 ### `dpkg` source package: `llvm-toolchain-15=1:15.0.7-14build3`
@@ -7356,15 +7351,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.15
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA256:910211c07255a8c5ad654391b40ee59800710dd8119dd5362de09385aa7a777c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA256:9b1e931cbc811f02e91f7eacd55f8211cc45dade11975462f4b0dcdad29927aa
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.15.debian.tar.xz' openssh_9.6p1-3ubuntu13.15.debian.tar.xz 207616 SHA256:d578c39df6d2dea398f8a5dde94e303a18b32dd1b8c0d22c7db363307a863054
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.15.dsc' openssh_9.6p1-3ubuntu13.15.dsc 3346 SHA256:6b1c411abc17d0b31ec210afd9454c87ed1bcee86a977a89c35bd88a4902eba0
-```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.9`
 
