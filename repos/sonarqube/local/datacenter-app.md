@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ad114803eee80e3369603c1d1d2e80b912133b44dc2afa103d5f46517a9fe1e8`
-- Created: `2026-04-15T21:48:17.743070396Z`
+- Image ID: `sha256:eafdae178526862f74bab11b19af4cfd81e87e5449cefa97552aaa0427fa5c2a`
+- Created: `2026-04-30T23:51:08.663924131Z`
 - Virtual Size: ~ 2.00 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-25.0.2+10`
+  - `JAVA_VERSION=jdk-25.0.3+9`
   - `DOCKER_RUNNING=true`
   - `SONARQUBE_HOME=/opt/sonarqube`
   - `SONAR_VERSION=2026.2.1.121354`
@@ -993,11 +993,11 @@ $ apt-get source -qq --print-uris init-system-helpers=1.66ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.66ubuntu1.tar.xz' init-system-helpers_1.66ubuntu1.tar.xz 45100 SHA512:222f73347b0ce9eb137c8ce5dc36e9fedbc8dc5ed3f1fde7fbf52258a5437d0a10d3d610ca1d1b206646bb92a5355d1061705440b2d22d9109b5de6d1cb92e98
 ```
 
-### `dpkg` source package: `iproute2=6.1.0-1ubuntu6.2`
+### `dpkg` source package: `iproute2=6.1.0-1ubuntu6.3`
 
 Binary Packages:
 
-- `iproute2=6.1.0-1ubuntu6.2`
+- `iproute2=6.1.0-1ubuntu6.3`
 
 Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
@@ -1006,10 +1006,10 @@ Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris iproute2=6.1.0-1ubuntu6.2
+$ apt-get source -qq --print-uris iproute2=6.1.0-1ubuntu6.3
 'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_6.1.0.orig.tar.xz' iproute2_6.1.0.orig.tar.xz 905512 SHA256:5ce12a0fec6b212725ef218735941b2dab76244db7e72646a76021b0537b43ab
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_6.1.0-1ubuntu6.2.debian.tar.xz' iproute2_6.1.0-1ubuntu6.2.debian.tar.xz 41816 SHA256:8f8276ea816791e5e1f48243abe13639ad297d0753d0932fa24a15b56fcf205d
-'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_6.1.0-1ubuntu6.2.dsc' iproute2_6.1.0-1ubuntu6.2.dsc 2402 SHA256:24f825c15ac012fe77af273706abe7909badc82f50c81f8788a76991ca23b47f
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_6.1.0-1ubuntu6.3.debian.tar.xz' iproute2_6.1.0-1ubuntu6.3.debian.tar.xz 45308 SHA256:bb027157a0fb37877e8632a54b21acff0ab4491101004a85f038ee8a0335028e
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_6.1.0-1ubuntu6.3.dsc' iproute2_6.1.0-1ubuntu6.3.dsc 2439 SHA256:e9388d8171e9129cf5db9a84198111dd861cd57498400f3691b5efd2f6170dc9
 ```
 
 ### `dpkg` source package: `iptables=1.8.10-3ubuntu2`
@@ -1177,12 +1177,12 @@ $ apt-get source -qq --print-uris libcap-ng=0.8.4-2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.4-2build2.debian.tar.xz' libcap-ng_0.8.4-2build2.debian.tar.xz 7384 SHA512:c21cf4b7df670034773ab883e5149bc28606d11416a5f075c85106395a6d46ea529227e270f9342c910631059b8cf94a55dc5cfa5ec908a6f57d6a8c0a32277e
 ```
 
-### `dpkg` source package: `libcap2=1:2.66-5ubuntu2.2`
+### `dpkg` source package: `libcap2=1:2.66-5ubuntu2.4`
 
 Binary Packages:
 
-- `libcap2:amd64=1:2.66-5ubuntu2.2`
-- `libcap2-bin=1:2.66-5ubuntu2.2`
+- `libcap2:amd64=1:2.66-5ubuntu2.4`
+- `libcap2-bin=1:2.66-5ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`, `/usr/share/doc/libcap2-bin/copyright`)
 
@@ -1190,9 +1190,14 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`, `/usr/share/doc/libc
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libcap2=1:2.66-5ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66.orig.tar.xz' libcap2_2.66.orig.tar.xz 181592 SHA512:ac005b622f6e065f30ce282a5c87240e7b9da75366ee537aa4835bc501b44bc242c10a4ba4dc070e2415fc7f635d1c3c4e45fbeeaf962cf7973dda82bf6377f0
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-5ubuntu2.4.debian.tar.xz' libcap2_2.66-5ubuntu2.4.debian.tar.xz 24724 SHA512:d8e7c11b8457de7606d007d8e447c2569a43d937096153b95e7702c4adef8031b0adb89be6d534896c93cb2e9a469eafbd6681d02a5567c33ed35bd2f94b1762
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-5ubuntu2.4.dsc' libcap2_2.66-5ubuntu2.4.dsc 2319 SHA512:4792efe7caeecddd81aed675be95828fdc03140484303be3548b7f55f0ffcd2fe039c87b4b4cd0f5ef30222adb3bb1baedb8a38f6418b64bd9816f9a318d60c9
+```
 
 ### `dpkg` source package: `libffi=3.4.6-1build1`
 
