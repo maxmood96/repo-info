@@ -3,106 +3,184 @@
 # Tags of `azul-zulu`
 
 -	[`azul-zulu:11`](#azul-zulu11)
+-	[`azul-zulu:11-alpine3.23`](#azul-zulu11-alpine323)
 -	[`azul-zulu:11-headless`](#azul-zulu11-headless)
+-	[`azul-zulu:11-headless-alpine`](#azul-zulu11-headless-alpine)
+-	[`azul-zulu:11-headless-alpine3.23`](#azul-zulu11-headless-alpine323)
 -	[`azul-zulu:11-headless-debian`](#azul-zulu11-headless-debian)
 -	[`azul-zulu:11-headless-debian13`](#azul-zulu11-headless-debian13)
 -	[`azul-zulu:11-jdk`](#azul-zulu11-jdk)
+-	[`azul-zulu:11-jdk-alpine`](#azul-zulu11-jdk-alpine)
+-	[`azul-zulu:11-jdk-alpine3.23`](#azul-zulu11-jdk-alpine323)
 -	[`azul-zulu:11-jdk-debian`](#azul-zulu11-jdk-debian)
 -	[`azul-zulu:11-jdk-debian13`](#azul-zulu11-jdk-debian13)
 -	[`azul-zulu:11-jre`](#azul-zulu11-jre)
+-	[`azul-zulu:11-jre-alpine`](#azul-zulu11-jre-alpine)
+-	[`azul-zulu:11-jre-alpine3.23`](#azul-zulu11-jre-alpine323)
 -	[`azul-zulu:11-jre-debian`](#azul-zulu11-jre-debian)
 -	[`azul-zulu:11-jre-debian13`](#azul-zulu11-jre-debian13)
 -	[`azul-zulu:11-jre-headless`](#azul-zulu11-jre-headless)
+-	[`azul-zulu:11-jre-headless-alpine`](#azul-zulu11-jre-headless-alpine)
+-	[`azul-zulu:11-jre-headless-alpine3.23`](#azul-zulu11-jre-headless-alpine323)
 -	[`azul-zulu:11-jre-headless-debian`](#azul-zulu11-jre-headless-debian)
 -	[`azul-zulu:11-jre-headless-debian13`](#azul-zulu11-jre-headless-debian13)
+-	[`azul-zulu:11.88-11.0.31-jdk-alpine3.23`](#azul-zulu1188-11031-jdk-alpine323)
 -	[`azul-zulu:11.88-11.0.31-jdk-debian13`](#azul-zulu1188-11031-jdk-debian13)
+-	[`azul-zulu:11.88-11.0.31-jdk-headless-alpine3.23`](#azul-zulu1188-11031-jdk-headless-alpine323)
 -	[`azul-zulu:11.88-11.0.31-jdk-headless-debian13`](#azul-zulu1188-11031-jdk-headless-debian13)
+-	[`azul-zulu:11.88-11.0.31-jre-alpine3.23`](#azul-zulu1188-11031-jre-alpine323)
 -	[`azul-zulu:11.88-11.0.31-jre-debian13`](#azul-zulu1188-11031-jre-debian13)
+-	[`azul-zulu:11.88-11.0.31-jre-headless-alpine3.23`](#azul-zulu1188-11031-jre-headless-alpine323)
 -	[`azul-zulu:11.88-11.0.31-jre-headless-debian13`](#azul-zulu1188-11031-jre-headless-debian13)
 -	[`azul-zulu:17`](#azul-zulu17)
+-	[`azul-zulu:17-alpine3.23`](#azul-zulu17-alpine323)
 -	[`azul-zulu:17-headless`](#azul-zulu17-headless)
+-	[`azul-zulu:17-headless-alpine`](#azul-zulu17-headless-alpine)
+-	[`azul-zulu:17-headless-alpine3.23`](#azul-zulu17-headless-alpine323)
 -	[`azul-zulu:17-headless-debian`](#azul-zulu17-headless-debian)
 -	[`azul-zulu:17-headless-debian13`](#azul-zulu17-headless-debian13)
 -	[`azul-zulu:17-jdk`](#azul-zulu17-jdk)
+-	[`azul-zulu:17-jdk-alpine`](#azul-zulu17-jdk-alpine)
+-	[`azul-zulu:17-jdk-alpine3.23`](#azul-zulu17-jdk-alpine323)
 -	[`azul-zulu:17-jdk-debian`](#azul-zulu17-jdk-debian)
 -	[`azul-zulu:17-jdk-debian13`](#azul-zulu17-jdk-debian13)
 -	[`azul-zulu:17-jre`](#azul-zulu17-jre)
+-	[`azul-zulu:17-jre-alpine`](#azul-zulu17-jre-alpine)
+-	[`azul-zulu:17-jre-alpine3.23`](#azul-zulu17-jre-alpine323)
 -	[`azul-zulu:17-jre-debian`](#azul-zulu17-jre-debian)
 -	[`azul-zulu:17-jre-debian13`](#azul-zulu17-jre-debian13)
 -	[`azul-zulu:17-jre-headless`](#azul-zulu17-jre-headless)
+-	[`azul-zulu:17-jre-headless-alpine`](#azul-zulu17-jre-headless-alpine)
+-	[`azul-zulu:17-jre-headless-alpine3.23`](#azul-zulu17-jre-headless-alpine323)
 -	[`azul-zulu:17-jre-headless-debian`](#azul-zulu17-jre-headless-debian)
 -	[`azul-zulu:17-jre-headless-debian13`](#azul-zulu17-jre-headless-debian13)
+-	[`azul-zulu:17.66-17.0.19-jdk-alpine3.23`](#azul-zulu1766-17019-jdk-alpine323)
 -	[`azul-zulu:17.66-17.0.19-jdk-debian13`](#azul-zulu1766-17019-jdk-debian13)
+-	[`azul-zulu:17.66-17.0.19-jdk-headless-alpine3.23`](#azul-zulu1766-17019-jdk-headless-alpine323)
 -	[`azul-zulu:17.66-17.0.19-jdk-headless-debian13`](#azul-zulu1766-17019-jdk-headless-debian13)
+-	[`azul-zulu:17.66-17.0.19-jre-alpine3.23`](#azul-zulu1766-17019-jre-alpine323)
 -	[`azul-zulu:17.66-17.0.19-jre-debian13`](#azul-zulu1766-17019-jre-debian13)
+-	[`azul-zulu:17.66-17.0.19-jre-headless-alpine3.23`](#azul-zulu1766-17019-jre-headless-alpine323)
 -	[`azul-zulu:17.66-17.0.19-jre-headless-debian13`](#azul-zulu1766-17019-jre-headless-debian13)
 -	[`azul-zulu:21`](#azul-zulu21)
+-	[`azul-zulu:21-alpine3.23`](#azul-zulu21-alpine323)
 -	[`azul-zulu:21-headless`](#azul-zulu21-headless)
+-	[`azul-zulu:21-headless-alpine`](#azul-zulu21-headless-alpine)
+-	[`azul-zulu:21-headless-alpine3.23`](#azul-zulu21-headless-alpine323)
 -	[`azul-zulu:21-headless-debian`](#azul-zulu21-headless-debian)
 -	[`azul-zulu:21-headless-debian13`](#azul-zulu21-headless-debian13)
 -	[`azul-zulu:21-jdk`](#azul-zulu21-jdk)
+-	[`azul-zulu:21-jdk-alpine`](#azul-zulu21-jdk-alpine)
+-	[`azul-zulu:21-jdk-alpine3.23`](#azul-zulu21-jdk-alpine323)
 -	[`azul-zulu:21-jdk-debian`](#azul-zulu21-jdk-debian)
 -	[`azul-zulu:21-jdk-debian13`](#azul-zulu21-jdk-debian13)
 -	[`azul-zulu:21-jre`](#azul-zulu21-jre)
+-	[`azul-zulu:21-jre-alpine`](#azul-zulu21-jre-alpine)
+-	[`azul-zulu:21-jre-alpine3.23`](#azul-zulu21-jre-alpine323)
 -	[`azul-zulu:21-jre-debian`](#azul-zulu21-jre-debian)
 -	[`azul-zulu:21-jre-debian13`](#azul-zulu21-jre-debian13)
 -	[`azul-zulu:21-jre-headless`](#azul-zulu21-jre-headless)
+-	[`azul-zulu:21-jre-headless-alpine`](#azul-zulu21-jre-headless-alpine)
+-	[`azul-zulu:21-jre-headless-alpine3.23`](#azul-zulu21-jre-headless-alpine323)
 -	[`azul-zulu:21-jre-headless-debian`](#azul-zulu21-jre-headless-debian)
 -	[`azul-zulu:21-jre-headless-debian13`](#azul-zulu21-jre-headless-debian13)
+-	[`azul-zulu:21.50-21.0.11-jdk-alpine3.23`](#azul-zulu2150-21011-jdk-alpine323)
 -	[`azul-zulu:21.50-21.0.11-jdk-debian13`](#azul-zulu2150-21011-jdk-debian13)
+-	[`azul-zulu:21.50-21.0.11-jdk-headless-alpine3.23`](#azul-zulu2150-21011-jdk-headless-alpine323)
 -	[`azul-zulu:21.50-21.0.11-jdk-headless-debian13`](#azul-zulu2150-21011-jdk-headless-debian13)
+-	[`azul-zulu:21.50-21.0.11-jre-alpine3.23`](#azul-zulu2150-21011-jre-alpine323)
 -	[`azul-zulu:21.50-21.0.11-jre-debian13`](#azul-zulu2150-21011-jre-debian13)
+-	[`azul-zulu:21.50-21.0.11-jre-headless-alpine3.23`](#azul-zulu2150-21011-jre-headless-alpine323)
 -	[`azul-zulu:21.50-21.0.11-jre-headless-debian13`](#azul-zulu2150-21011-jre-headless-debian13)
 -	[`azul-zulu:25`](#azul-zulu25)
+-	[`azul-zulu:25-alpine3.23`](#azul-zulu25-alpine323)
 -	[`azul-zulu:25-headless`](#azul-zulu25-headless)
+-	[`azul-zulu:25-headless-alpine`](#azul-zulu25-headless-alpine)
+-	[`azul-zulu:25-headless-alpine3.23`](#azul-zulu25-headless-alpine323)
 -	[`azul-zulu:25-headless-debian`](#azul-zulu25-headless-debian)
 -	[`azul-zulu:25-headless-debian13`](#azul-zulu25-headless-debian13)
 -	[`azul-zulu:25-jdk`](#azul-zulu25-jdk)
+-	[`azul-zulu:25-jdk-alpine`](#azul-zulu25-jdk-alpine)
+-	[`azul-zulu:25-jdk-alpine3.23`](#azul-zulu25-jdk-alpine323)
 -	[`azul-zulu:25-jdk-debian`](#azul-zulu25-jdk-debian)
 -	[`azul-zulu:25-jdk-debian13`](#azul-zulu25-jdk-debian13)
 -	[`azul-zulu:25-jre`](#azul-zulu25-jre)
+-	[`azul-zulu:25-jre-alpine`](#azul-zulu25-jre-alpine)
+-	[`azul-zulu:25-jre-alpine3.23`](#azul-zulu25-jre-alpine323)
 -	[`azul-zulu:25-jre-debian`](#azul-zulu25-jre-debian)
 -	[`azul-zulu:25-jre-debian13`](#azul-zulu25-jre-debian13)
 -	[`azul-zulu:25-jre-headless`](#azul-zulu25-jre-headless)
+-	[`azul-zulu:25-jre-headless-alpine`](#azul-zulu25-jre-headless-alpine)
+-	[`azul-zulu:25-jre-headless-alpine3.23`](#azul-zulu25-jre-headless-alpine323)
 -	[`azul-zulu:25-jre-headless-debian`](#azul-zulu25-jre-headless-debian)
 -	[`azul-zulu:25-jre-headless-debian13`](#azul-zulu25-jre-headless-debian13)
+-	[`azul-zulu:25.34-25.0.3-jdk-alpine3.23`](#azul-zulu2534-2503-jdk-alpine323)
 -	[`azul-zulu:25.34-25.0.3-jdk-debian13`](#azul-zulu2534-2503-jdk-debian13)
+-	[`azul-zulu:25.34-25.0.3-jdk-headless-alpine3.23`](#azul-zulu2534-2503-jdk-headless-alpine323)
 -	[`azul-zulu:25.34-25.0.3-jdk-headless-debian13`](#azul-zulu2534-2503-jdk-headless-debian13)
+-	[`azul-zulu:25.34-25.0.3-jre-alpine3.23`](#azul-zulu2534-2503-jre-alpine323)
 -	[`azul-zulu:25.34-25.0.3-jre-debian13`](#azul-zulu2534-2503-jre-debian13)
+-	[`azul-zulu:25.34-25.0.3-jre-headless-alpine3.23`](#azul-zulu2534-2503-jre-headless-alpine323)
 -	[`azul-zulu:25.34-25.0.3-jre-headless-debian13`](#azul-zulu2534-2503-jre-headless-debian13)
 -	[`azul-zulu:26`](#azul-zulu26)
+-	[`azul-zulu:26-alpine3.23`](#azul-zulu26-alpine323)
 -	[`azul-zulu:26-headless`](#azul-zulu26-headless)
+-	[`azul-zulu:26-headless-alpine`](#azul-zulu26-headless-alpine)
+-	[`azul-zulu:26-headless-alpine3.23`](#azul-zulu26-headless-alpine323)
 -	[`azul-zulu:26-headless-debian`](#azul-zulu26-headless-debian)
 -	[`azul-zulu:26-headless-debian13`](#azul-zulu26-headless-debian13)
 -	[`azul-zulu:26-jdk`](#azul-zulu26-jdk)
+-	[`azul-zulu:26-jdk-alpine`](#azul-zulu26-jdk-alpine)
+-	[`azul-zulu:26-jdk-alpine3.23`](#azul-zulu26-jdk-alpine323)
 -	[`azul-zulu:26-jdk-debian`](#azul-zulu26-jdk-debian)
 -	[`azul-zulu:26-jdk-debian13`](#azul-zulu26-jdk-debian13)
 -	[`azul-zulu:26-jre`](#azul-zulu26-jre)
+-	[`azul-zulu:26-jre-alpine`](#azul-zulu26-jre-alpine)
+-	[`azul-zulu:26-jre-alpine3.23`](#azul-zulu26-jre-alpine323)
 -	[`azul-zulu:26-jre-debian`](#azul-zulu26-jre-debian)
 -	[`azul-zulu:26-jre-debian13`](#azul-zulu26-jre-debian13)
 -	[`azul-zulu:26-jre-headless`](#azul-zulu26-jre-headless)
+-	[`azul-zulu:26-jre-headless-alpine`](#azul-zulu26-jre-headless-alpine)
+-	[`azul-zulu:26-jre-headless-alpine3.23`](#azul-zulu26-jre-headless-alpine323)
 -	[`azul-zulu:26-jre-headless-debian`](#azul-zulu26-jre-headless-debian)
 -	[`azul-zulu:26-jre-headless-debian13`](#azul-zulu26-jre-headless-debian13)
+-	[`azul-zulu:26.30-26.0.1-jdk-alpine3.23`](#azul-zulu2630-2601-jdk-alpine323)
 -	[`azul-zulu:26.30-26.0.1-jdk-debian13`](#azul-zulu2630-2601-jdk-debian13)
+-	[`azul-zulu:26.30-26.0.1-jdk-headless-alpine3.23`](#azul-zulu2630-2601-jdk-headless-alpine323)
 -	[`azul-zulu:26.30-26.0.1-jdk-headless-debian13`](#azul-zulu2630-2601-jdk-headless-debian13)
+-	[`azul-zulu:26.30-26.0.1-jre-alpine3.23`](#azul-zulu2630-2601-jre-alpine323)
 -	[`azul-zulu:26.30-26.0.1-jre-debian13`](#azul-zulu2630-2601-jre-debian13)
+-	[`azul-zulu:26.30-26.0.1-jre-headless-alpine3.23`](#azul-zulu2630-2601-jre-headless-alpine323)
 -	[`azul-zulu:26.30-26.0.1-jre-headless-debian13`](#azul-zulu2630-2601-jre-headless-debian13)
 -	[`azul-zulu:8`](#azul-zulu8)
+-	[`azul-zulu:8-alpine3.23`](#azul-zulu8-alpine323)
 -	[`azul-zulu:8-headless`](#azul-zulu8-headless)
+-	[`azul-zulu:8-headless-alpine`](#azul-zulu8-headless-alpine)
+-	[`azul-zulu:8-headless-alpine3.23`](#azul-zulu8-headless-alpine323)
 -	[`azul-zulu:8-headless-debian`](#azul-zulu8-headless-debian)
 -	[`azul-zulu:8-headless-debian13`](#azul-zulu8-headless-debian13)
 -	[`azul-zulu:8-jdk`](#azul-zulu8-jdk)
+-	[`azul-zulu:8-jdk-alpine`](#azul-zulu8-jdk-alpine)
+-	[`azul-zulu:8-jdk-alpine3.23`](#azul-zulu8-jdk-alpine323)
 -	[`azul-zulu:8-jdk-debian`](#azul-zulu8-jdk-debian)
 -	[`azul-zulu:8-jdk-debian13`](#azul-zulu8-jdk-debian13)
 -	[`azul-zulu:8-jre`](#azul-zulu8-jre)
+-	[`azul-zulu:8-jre-alpine`](#azul-zulu8-jre-alpine)
+-	[`azul-zulu:8-jre-alpine3.23`](#azul-zulu8-jre-alpine323)
 -	[`azul-zulu:8-jre-debian`](#azul-zulu8-jre-debian)
 -	[`azul-zulu:8-jre-debian13`](#azul-zulu8-jre-debian13)
 -	[`azul-zulu:8-jre-headless`](#azul-zulu8-jre-headless)
+-	[`azul-zulu:8-jre-headless-alpine`](#azul-zulu8-jre-headless-alpine)
+-	[`azul-zulu:8-jre-headless-alpine3.23`](#azul-zulu8-jre-headless-alpine323)
 -	[`azul-zulu:8-jre-headless-debian`](#azul-zulu8-jre-headless-debian)
 -	[`azul-zulu:8-jre-headless-debian13`](#azul-zulu8-jre-headless-debian13)
+-	[`azul-zulu:8.94-8.0.492-jdk-alpine3.23`](#azul-zulu894-80492-jdk-alpine323)
 -	[`azul-zulu:8.94-8.0.492-jdk-debian13`](#azul-zulu894-80492-jdk-debian13)
+-	[`azul-zulu:8.94-8.0.492-jdk-headless-alpine3.23`](#azul-zulu894-80492-jdk-headless-alpine323)
 -	[`azul-zulu:8.94-8.0.492-jdk-headless-debian13`](#azul-zulu894-80492-jdk-headless-debian13)
+-	[`azul-zulu:8.94-8.0.492-jre-alpine3.23`](#azul-zulu894-80492-jre-alpine323)
 -	[`azul-zulu:8.94-8.0.492-jre-debian13`](#azul-zulu894-80492-jre-debian13)
+-	[`azul-zulu:8.94-8.0.492-jre-headless-alpine3.23`](#azul-zulu894-80492-jre-headless-alpine323)
 -	[`azul-zulu:8.94-8.0.492-jre-headless-debian13`](#azul-zulu894-80492-jre-headless-debian13)
 
 ## `azul-zulu:11`
@@ -234,6 +312,10 @@ $ docker pull azul-zulu@sha256:3159e8a03d24bc138d708c367beca53bfd57a02937fa31195
 		Size: 9.6 KB (9623 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:11-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:11-headless`
 
 ```console
@@ -362,6 +444,14 @@ $ docker pull azul-zulu@sha256:d51078c5122e9f0ad7c64f9d2b6262c8275da570a43fd586c
 		Last Modified: Wed, 22 Apr 2026 01:40:37 GMT  
 		Size: 9.4 KB (9401 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:11-headless-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:11-headless-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:11-headless-debian`
 
@@ -750,6 +840,14 @@ $ docker pull azul-zulu@sha256:3159e8a03d24bc138d708c367beca53bfd57a02937fa31195
 		Size: 9.6 KB (9623 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:11-jdk-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:11-jdk-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:11-jdk-debian`
 
 ```console
@@ -1133,6 +1231,14 @@ $ docker pull azul-zulu@sha256:c2c8fafea4bff2e3411f654d52840499e4b31bdcf7fb23c21
 		Size: 9.3 KB (9294 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:11-jre-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:11-jre-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:11-jre-debian`
 
 ```console
@@ -1508,6 +1614,14 @@ $ docker pull azul-zulu@sha256:8ea60b417b1d0bcaaa5f1d39aa0f3d24d90ffcb6710bd85f6
 		Size: 9.4 KB (9405 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:11-jre-headless-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:11-jre-headless-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:11-jre-headless-debian`
 
 ```console
@@ -1758,6 +1872,10 @@ $ docker pull azul-zulu@sha256:8ea60b417b1d0bcaaa5f1d39aa0f3d24d90ffcb6710bd85f6
 		Size: 9.4 KB (9405 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:11.88-11.0.31-jdk-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:11.88-11.0.31-jdk-debian13`
 
 ```console
@@ -1886,6 +2004,10 @@ $ docker pull azul-zulu@sha256:3159e8a03d24bc138d708c367beca53bfd57a02937fa31195
 		Last Modified: Wed, 22 Apr 2026 01:40:34 GMT  
 		Size: 9.6 KB (9623 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:11.88-11.0.31-jdk-headless-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:11.88-11.0.31-jdk-headless-debian13`
 
@@ -2016,6 +2138,10 @@ $ docker pull azul-zulu@sha256:d51078c5122e9f0ad7c64f9d2b6262c8275da570a43fd586c
 		Size: 9.4 KB (9401 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:11.88-11.0.31-jre-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:11.88-11.0.31-jre-debian13`
 
 ```console
@@ -2140,6 +2266,10 @@ $ docker pull azul-zulu@sha256:c2c8fafea4bff2e3411f654d52840499e4b31bdcf7fb23c21
 		Last Modified: Wed, 22 Apr 2026 01:40:40 GMT  
 		Size: 9.3 KB (9294 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:11.88-11.0.31-jre-headless-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:11.88-11.0.31-jre-headless-debian13`
 
@@ -2395,6 +2525,10 @@ $ docker pull azul-zulu@sha256:c0b702f005e7ce5203c50108a426854653b01f3bc9436fbe6
 		Size: 9.6 KB (9623 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:17-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:17-headless`
 
 ```console
@@ -2523,6 +2657,14 @@ $ docker pull azul-zulu@sha256:a83f0a3cf341252ce3c796eafea99fbdd8e37d938bca74720
 		Last Modified: Wed, 22 Apr 2026 01:41:36 GMT  
 		Size: 9.4 KB (9402 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:17-headless-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:17-headless-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:17-headless-debian`
 
@@ -2911,6 +3053,14 @@ $ docker pull azul-zulu@sha256:c0b702f005e7ce5203c50108a426854653b01f3bc9436fbe6
 		Size: 9.6 KB (9623 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:17-jdk-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:17-jdk-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:17-jdk-debian`
 
 ```console
@@ -3294,6 +3444,14 @@ $ docker pull azul-zulu@sha256:71257c961fc62bad514033988b7da9cfa74ccc95a32ec525a
 		Size: 9.3 KB (9294 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:17-jre-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:17-jre-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:17-jre-debian`
 
 ```console
@@ -3669,6 +3827,14 @@ $ docker pull azul-zulu@sha256:3159bc3a928bb1030c43e5ddd2077ed45548ff4cd600c2ef0
 		Size: 9.4 KB (9405 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:17-jre-headless-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:17-jre-headless-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:17-jre-headless-debian`
 
 ```console
@@ -3919,6 +4085,10 @@ $ docker pull azul-zulu@sha256:3159bc3a928bb1030c43e5ddd2077ed45548ff4cd600c2ef0
 		Size: 9.4 KB (9405 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:17.66-17.0.19-jdk-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:17.66-17.0.19-jdk-debian13`
 
 ```console
@@ -4047,6 +4217,10 @@ $ docker pull azul-zulu@sha256:c0b702f005e7ce5203c50108a426854653b01f3bc9436fbe6
 		Last Modified: Wed, 22 Apr 2026 01:41:31 GMT  
 		Size: 9.6 KB (9623 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:17.66-17.0.19-jdk-headless-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:17.66-17.0.19-jdk-headless-debian13`
 
@@ -4177,6 +4351,10 @@ $ docker pull azul-zulu@sha256:a83f0a3cf341252ce3c796eafea99fbdd8e37d938bca74720
 		Size: 9.4 KB (9402 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:17.66-17.0.19-jre-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:17.66-17.0.19-jre-debian13`
 
 ```console
@@ -4301,6 +4479,10 @@ $ docker pull azul-zulu@sha256:71257c961fc62bad514033988b7da9cfa74ccc95a32ec525a
 		Last Modified: Wed, 22 Apr 2026 01:41:45 GMT  
 		Size: 9.3 KB (9294 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:17.66-17.0.19-jre-headless-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:17.66-17.0.19-jre-headless-debian13`
 
@@ -4556,6 +4738,10 @@ $ docker pull azul-zulu@sha256:cb5afa6c4d80b8b02e77d117b98edac6bd27402679977e41e
 		Size: 9.6 KB (9623 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:21-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:21-headless`
 
 ```console
@@ -4684,6 +4870,14 @@ $ docker pull azul-zulu@sha256:d56a2d5b0edf8d0d918abb98c864789ef1ae4121db943b1ae
 		Last Modified: Wed, 22 Apr 2026 01:42:20 GMT  
 		Size: 9.4 KB (9402 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:21-headless-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:21-headless-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:21-headless-debian`
 
@@ -5072,6 +5266,14 @@ $ docker pull azul-zulu@sha256:cb5afa6c4d80b8b02e77d117b98edac6bd27402679977e41e
 		Size: 9.6 KB (9623 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:21-jdk-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:21-jdk-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:21-jdk-debian`
 
 ```console
@@ -5455,6 +5657,14 @@ $ docker pull azul-zulu@sha256:fc367c47558ab2572a58e5d5edbbb688e4611d3581d23fad1
 		Size: 9.3 KB (9294 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:21-jre-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:21-jre-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:21-jre-debian`
 
 ```console
@@ -5830,6 +6040,14 @@ $ docker pull azul-zulu@sha256:88f6d4ef7ba65ca40a4a5c8e941e93305aefc3fc911f2447f
 		Size: 9.4 KB (9405 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:21-jre-headless-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:21-jre-headless-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:21-jre-headless-debian`
 
 ```console
@@ -6080,6 +6298,10 @@ $ docker pull azul-zulu@sha256:88f6d4ef7ba65ca40a4a5c8e941e93305aefc3fc911f2447f
 		Size: 9.4 KB (9405 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:21.50-21.0.11-jdk-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:21.50-21.0.11-jdk-debian13`
 
 ```console
@@ -6208,6 +6430,10 @@ $ docker pull azul-zulu@sha256:cb5afa6c4d80b8b02e77d117b98edac6bd27402679977e41e
 		Last Modified: Wed, 22 Apr 2026 01:42:03 GMT  
 		Size: 9.6 KB (9623 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:21.50-21.0.11-jdk-headless-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:21.50-21.0.11-jdk-headless-debian13`
 
@@ -6338,6 +6564,10 @@ $ docker pull azul-zulu@sha256:d56a2d5b0edf8d0d918abb98c864789ef1ae4121db943b1ae
 		Size: 9.4 KB (9402 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:21.50-21.0.11-jre-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:21.50-21.0.11-jre-debian13`
 
 ```console
@@ -6462,6 +6692,10 @@ $ docker pull azul-zulu@sha256:fc367c47558ab2572a58e5d5edbbb688e4611d3581d23fad1
 		Last Modified: Wed, 22 Apr 2026 01:42:12 GMT  
 		Size: 9.3 KB (9294 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:21.50-21.0.11-jre-headless-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:21.50-21.0.11-jre-headless-debian13`
 
@@ -6717,6 +6951,10 @@ $ docker pull azul-zulu@sha256:099d40b4d2692ffccd71cfc839046422538ebf06b4d1b1023
 		Size: 9.6 KB (9620 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:25-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:25-headless`
 
 ```console
@@ -6845,6 +7083,14 @@ $ docker pull azul-zulu@sha256:27592560c71a49b7fe9162c9270e77656121728c681406e5b
 		Last Modified: Wed, 22 Apr 2026 01:42:39 GMT  
 		Size: 9.4 KB (9398 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:25-headless-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:25-headless-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:25-headless-debian`
 
@@ -7233,6 +7479,14 @@ $ docker pull azul-zulu@sha256:099d40b4d2692ffccd71cfc839046422538ebf06b4d1b1023
 		Size: 9.6 KB (9620 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:25-jdk-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:25-jdk-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:25-jdk-debian`
 
 ```console
@@ -7616,6 +7870,14 @@ $ docker pull azul-zulu@sha256:1a2c347d9d0b3f218e0b25c4f986d4a96ad4c546a9aced270
 		Size: 9.3 KB (9290 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:25-jre-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:25-jre-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:25-jre-debian`
 
 ```console
@@ -7991,6 +8253,14 @@ $ docker pull azul-zulu@sha256:4938008251efe3e7804d294afecfae5163a983b8fcf70ad8d
 		Size: 9.4 KB (9402 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:25-jre-headless-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:25-jre-headless-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:25-jre-headless-debian`
 
 ```console
@@ -8241,6 +8511,10 @@ $ docker pull azul-zulu@sha256:4938008251efe3e7804d294afecfae5163a983b8fcf70ad8d
 		Size: 9.4 KB (9402 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:25.34-25.0.3-jdk-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:25.34-25.0.3-jdk-debian13`
 
 ```console
@@ -8369,6 +8643,10 @@ $ docker pull azul-zulu@sha256:099d40b4d2692ffccd71cfc839046422538ebf06b4d1b1023
 		Last Modified: Wed, 22 Apr 2026 01:42:35 GMT  
 		Size: 9.6 KB (9620 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:25.34-25.0.3-jdk-headless-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:25.34-25.0.3-jdk-headless-debian13`
 
@@ -8499,6 +8777,10 @@ $ docker pull azul-zulu@sha256:27592560c71a49b7fe9162c9270e77656121728c681406e5b
 		Size: 9.4 KB (9398 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:25.34-25.0.3-jre-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:25.34-25.0.3-jre-debian13`
 
 ```console
@@ -8623,6 +8905,10 @@ $ docker pull azul-zulu@sha256:1a2c347d9d0b3f218e0b25c4f986d4a96ad4c546a9aced270
 		Last Modified: Wed, 22 Apr 2026 01:42:32 GMT  
 		Size: 9.3 KB (9290 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:25.34-25.0.3-jre-headless-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:25.34-25.0.3-jre-headless-debian13`
 
@@ -8878,6 +9164,10 @@ $ docker pull azul-zulu@sha256:c4f3fa9f3634eee6705b22898b99d1ab71aa9799b041bbf31
 		Size: 9.6 KB (9620 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:26-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:26-headless`
 
 ```console
@@ -9006,6 +9296,14 @@ $ docker pull azul-zulu@sha256:5953faf89250594846f2e1e6f487f50b063bee92c7daf009c
 		Last Modified: Wed, 22 Apr 2026 01:43:08 GMT  
 		Size: 9.4 KB (9399 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:26-headless-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26-headless-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:26-headless-debian`
 
@@ -9394,6 +9692,14 @@ $ docker pull azul-zulu@sha256:c4f3fa9f3634eee6705b22898b99d1ab71aa9799b041bbf31
 		Size: 9.6 KB (9620 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:26-jdk-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26-jdk-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:26-jdk-debian`
 
 ```console
@@ -9777,6 +10083,14 @@ $ docker pull azul-zulu@sha256:05056d7b20ba327750df8c367d044fbf82ece4385cd86cba1
 		Size: 9.3 KB (9291 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:26-jre-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26-jre-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:26-jre-debian`
 
 ```console
@@ -10152,6 +10466,14 @@ $ docker pull azul-zulu@sha256:2324a8d8d81e0d15f8fca2d80889ae93930828d19433d8dcb
 		Size: 9.4 KB (9402 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:26-jre-headless-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:26-jre-headless-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:26-jre-headless-debian`
 
 ```console
@@ -10402,6 +10724,10 @@ $ docker pull azul-zulu@sha256:2324a8d8d81e0d15f8fca2d80889ae93930828d19433d8dcb
 		Size: 9.4 KB (9402 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:26.30-26.0.1-jdk-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:26.30-26.0.1-jdk-debian13`
 
 ```console
@@ -10530,6 +10856,10 @@ $ docker pull azul-zulu@sha256:c4f3fa9f3634eee6705b22898b99d1ab71aa9799b041bbf31
 		Last Modified: Wed, 22 Apr 2026 01:43:04 GMT  
 		Size: 9.6 KB (9620 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:26.30-26.0.1-jdk-headless-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:26.30-26.0.1-jdk-headless-debian13`
 
@@ -10660,6 +10990,10 @@ $ docker pull azul-zulu@sha256:5953faf89250594846f2e1e6f487f50b063bee92c7daf009c
 		Size: 9.4 KB (9399 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:26.30-26.0.1-jre-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:26.30-26.0.1-jre-debian13`
 
 ```console
@@ -10784,6 +11118,10 @@ $ docker pull azul-zulu@sha256:05056d7b20ba327750df8c367d044fbf82ece4385cd86cba1
 		Last Modified: Wed, 22 Apr 2026 01:43:11 GMT  
 		Size: 9.3 KB (9291 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:26.30-26.0.1-jre-headless-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:26.30-26.0.1-jre-headless-debian13`
 
@@ -11035,6 +11373,10 @@ $ docker pull azul-zulu@sha256:8b90026904cb735c9e3dd500060032e48ea7a4ab84773a24b
 		Size: 9.6 KB (9584 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:8-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:8-headless`
 
 ```console
@@ -11159,6 +11501,14 @@ $ docker pull azul-zulu@sha256:438bdeb52b2e25363cc4f3d5f98b5f703f9c2adc30a4c3aec
 		Last Modified: Wed, 22 Apr 2026 01:40:06 GMT  
 		Size: 9.4 KB (9365 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:8-headless-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:8-headless-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:8-headless-debian`
 
@@ -11535,6 +11885,14 @@ $ docker pull azul-zulu@sha256:8b90026904cb735c9e3dd500060032e48ea7a4ab84773a24b
 		Size: 9.6 KB (9584 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:8-jdk-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:8-jdk-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:8-jdk-debian`
 
 ```console
@@ -11909,6 +12267,14 @@ $ docker pull azul-zulu@sha256:1ecdc3e8ef742a9711126647947e90c5d030402f249451a44
 		Last Modified: Wed, 22 Apr 2026 02:48:28 GMT  
 		Size: 9.3 KB (9278 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:8-jre-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:8-jre-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:8-jre-debian`
 
@@ -12285,6 +12651,14 @@ $ docker pull azul-zulu@sha256:f80b69a0e7a0d1002c83a9b504937cb6768a60fe3df4fd0f4
 		Size: 9.4 KB (9389 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:8-jre-headless-alpine`
+
+**does not exist** (yet?)
+
+## `azul-zulu:8-jre-headless-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:8-jre-headless-debian`
 
 ```console
@@ -12535,6 +12909,10 @@ $ docker pull azul-zulu@sha256:f80b69a0e7a0d1002c83a9b504937cb6768a60fe3df4fd0f4
 		Size: 9.4 KB (9389 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:8.94-8.0.492-jdk-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:8.94-8.0.492-jdk-debian13`
 
 ```console
@@ -12659,6 +13037,10 @@ $ docker pull azul-zulu@sha256:8b90026904cb735c9e3dd500060032e48ea7a4ab84773a24b
 		Last Modified: Wed, 22 Apr 2026 01:39:26 GMT  
 		Size: 9.6 KB (9584 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:8.94-8.0.492-jdk-headless-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:8.94-8.0.492-jdk-headless-debian13`
 
@@ -12785,6 +13167,10 @@ $ docker pull azul-zulu@sha256:438bdeb52b2e25363cc4f3d5f98b5f703f9c2adc30a4c3aec
 		Size: 9.4 KB (9365 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `azul-zulu:8.94-8.0.492-jre-alpine3.23`
+
+**does not exist** (yet?)
+
 ## `azul-zulu:8.94-8.0.492-jre-debian13`
 
 ```console
@@ -12909,6 +13295,10 @@ $ docker pull azul-zulu@sha256:1ecdc3e8ef742a9711126647947e90c5d030402f249451a44
 		Last Modified: Wed, 22 Apr 2026 02:48:28 GMT  
 		Size: 9.3 KB (9278 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `azul-zulu:8.94-8.0.492-jre-headless-alpine3.23`
+
+**does not exist** (yet?)
 
 ## `azul-zulu:8.94-8.0.492-jre-headless-debian13`
 
