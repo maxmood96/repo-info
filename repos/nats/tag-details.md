@@ -47,6 +47,24 @@
 -	[`nats:2.12.8-scratch`](#nats2128-scratch)
 -	[`nats:2.12.8-windowsservercore`](#nats2128-windowsservercore)
 -	[`nats:2.12.8-windowsservercore-ltsc2022`](#nats2128-windowsservercore-ltsc2022)
+-	[`nats:2.14`](#nats214)
+-	[`nats:2.14-alpine`](#nats214-alpine)
+-	[`nats:2.14-alpine3.22`](#nats214-alpine322)
+-	[`nats:2.14-linux`](#nats214-linux)
+-	[`nats:2.14-nanoserver`](#nats214-nanoserver)
+-	[`nats:2.14-nanoserver-ltsc2022`](#nats214-nanoserver-ltsc2022)
+-	[`nats:2.14-scratch`](#nats214-scratch)
+-	[`nats:2.14-windowsservercore`](#nats214-windowsservercore)
+-	[`nats:2.14-windowsservercore-ltsc2022`](#nats214-windowsservercore-ltsc2022)
+-	[`nats:2.14.0`](#nats2140)
+-	[`nats:2.14.0-alpine`](#nats2140-alpine)
+-	[`nats:2.14.0-alpine3.22`](#nats2140-alpine322)
+-	[`nats:2.14.0-linux`](#nats2140-linux)
+-	[`nats:2.14.0-nanoserver`](#nats2140-nanoserver)
+-	[`nats:2.14.0-nanoserver-ltsc2022`](#nats2140-nanoserver-ltsc2022)
+-	[`nats:2.14.0-scratch`](#nats2140-scratch)
+-	[`nats:2.14.0-windowsservercore`](#nats2140-windowsservercore)
+-	[`nats:2.14.0-windowsservercore-ltsc2022`](#nats2140-windowsservercore-ltsc2022)
 -	[`nats:alpine`](#natsalpine)
 -	[`nats:alpine3.22`](#natsalpine322)
 -	[`nats:latest`](#natslatest)
@@ -12401,6 +12419,78 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 28 Apr 2026 00:24:10 GMT  
 		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `nats:2.14`
+
+**does not exist** (yet?)
+
+## `nats:2.14-alpine`
+
+**does not exist** (yet?)
+
+## `nats:2.14-alpine3.22`
+
+**does not exist** (yet?)
+
+## `nats:2.14-linux`
+
+**does not exist** (yet?)
+
+## `nats:2.14-nanoserver`
+
+**does not exist** (yet?)
+
+## `nats:2.14-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `nats:2.14-scratch`
+
+**does not exist** (yet?)
+
+## `nats:2.14-windowsservercore`
+
+**does not exist** (yet?)
+
+## `nats:2.14-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `nats:2.14.0`
+
+**does not exist** (yet?)
+
+## `nats:2.14.0-alpine`
+
+**does not exist** (yet?)
+
+## `nats:2.14.0-alpine3.22`
+
+**does not exist** (yet?)
+
+## `nats:2.14.0-linux`
+
+**does not exist** (yet?)
+
+## `nats:2.14.0-nanoserver`
+
+**does not exist** (yet?)
+
+## `nats:2.14.0-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `nats:2.14.0-scratch`
+
+**does not exist** (yet?)
+
+## `nats:2.14.0-windowsservercore`
+
+**does not exist** (yet?)
+
+## `nats:2.14.0-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
 
 ## `nats:alpine`
 
