@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:36fb2632dd7c63c50ee481aa6287bf6f68307f3b81f25d42a5c7b39a17a3422a`
-- Created: `2026-04-22T19:12:12.778909434Z`
-- Virtual Size: ~ 716.74 Mb  
+- Image ID: `sha256:aa3281e2c399dacdb0f538f035f6f25af2ebff14058eb805de37db5084cfff5e`
+- Created: `2026-04-29T23:11:53.032113548Z`
+- Virtual Size: ~ 716.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.30+7`
+  - `JAVA_VERSION=jdk-11.0.31+11`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=8.14.4`
 - Labels:
@@ -854,12 +854,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): BSD or GPLv2
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libcap-2.48-10.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libcap-2.48-10.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libcap-ng-0.8.2-7.el9.x86_64`
 

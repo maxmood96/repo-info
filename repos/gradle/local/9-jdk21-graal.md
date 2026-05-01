@@ -1,9 +1,9 @@
-# `gradle:9.4.1-jdk21-graal`
+# `gradle:9.5.0-jdk21-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:54f929aef1adf9fa971676fdcd41737ffd4dcece3c2b5c26be4e2fc49ac85cd0`
-- Created: `2026-04-15T20:36:27.556526966Z`
+- Image ID: `sha256:e0d5be5831bb5b3331a53ec038d0a1dc9b394911314de3a867ea681bc9cd03b3`
+- Created: `2026-04-28T23:31:03.484677832Z`
 - Virtual Size: ~ 1.21 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=21.0.2`
-  - `GRADLE_VERSION=9.4.1`
+  - `GRADLE_VERSION=9.5.0`
 - Labels:
   - `org.opencontainers.image.version=24.04`
 
@@ -930,11 +930,11 @@ $ apt-get source -qq --print-uris gdbm=1.23-5.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.23-5.1build1.debian.tar.xz' gdbm_1.23-5.1build1.debian.tar.xz 18524 SHA512:93936a3cb86632d3ba4c2c4275e045749d04cd0ef3caf88fce52e2de46ac419ef75478f7ccb1b8d89de0f8c6835fe5231aa85884e2ba095950f3831e26947855
 ```
 
-### `dpkg` source package: `git-lfs=3.4.1-1ubuntu0.3`
+### `dpkg` source package: `git-lfs=3.4.1-1ubuntu0.4`
 
 Binary Packages:
 
-- `git-lfs=3.4.1-1ubuntu0.3`
+- `git-lfs=3.4.1-1ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/git-lfs/copyright`)
 
@@ -943,10 +943,10 @@ Licenses: (parsed from: `/usr/share/doc/git-lfs/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git-lfs=3.4.1-1ubuntu0.3
-'http://security.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1.orig.tar.gz' git-lfs_3.4.1.orig.tar.gz 674163 SHA256:2a36239d7968ae18e1ba2820dc664c4ef753f10bf424f98bccaf44d527f19a17
-'http://security.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1-1ubuntu0.3.debian.tar.xz' git-lfs_3.4.1-1ubuntu0.3.debian.tar.xz 4756 SHA256:a6183c9c05675b4c4247d560924dd18e4232f0b3dca29e9a7599c376a00d93f5
-'http://security.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1-1ubuntu0.3.dsc' git-lfs_3.4.1-1ubuntu0.3.dsc 2785 SHA256:3540a708c412936fc07025e73599a262808626e11b2608f090242cdb65395572
+$ apt-get source -qq --print-uris git-lfs=3.4.1-1ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1.orig.tar.gz' git-lfs_3.4.1.orig.tar.gz 674163 SHA512:ef30b7906548594edf28e75046bb78f70043d0363390ec3a241fc2ff7790b0f6ab1869b8a6b10d13a4cbcd559db7ea51aa4c1d64e75707357b84f1ddc0f7095c
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1-1ubuntu0.4.debian.tar.xz' git-lfs_3.4.1-1ubuntu0.4.debian.tar.xz 11280 SHA512:10bff093865e1d332957f133200a589b357a393f1b6fcd9cdf0ac6776b0a3721029a566a03f4401d9cc37d7b8eae07c74b86ee0fbda755a3103ae5487e4653f6
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.4.1-1ubuntu0.4.dsc' git-lfs_3.4.1-1ubuntu0.4.dsc 2825 SHA512:010c99c0270d3e0ab4fa24ea11f1af046596d05db3c205d061f62192b2797c7757e23c384cac490222609e6ed91ae8dd5462e820e92dc78e0fa4dc52fa9fd4ca
 ```
 
 ### `dpkg` source package: `git=1:2.43.0-1ubuntu7.3`
@@ -1870,9 +1870,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=6.8.0-110.110
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA256:26512115972bdf017a4ac826cc7d3e9b0ba397d4f85cd330e4e4ff54c78061c8
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-110.110.diff.gz' linux_6.8.0-110.110.diff.gz 7803087 SHA256:e064e0f2f9252bbc38aaa74559d1edfca30b6b5438c614cf06a768e0e7bc1e6d
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-110.110.dsc' linux_6.8.0-110.110.dsc 9407 SHA256:6ab61e14923e81c734c4e77c527f2300966402338c7001341efab1bf259b8a2c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA256:26512115972bdf017a4ac826cc7d3e9b0ba397d4f85cd330e4e4ff54c78061c8
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-110.110.diff.gz' linux_6.8.0-110.110.diff.gz 7803087 SHA256:e064e0f2f9252bbc38aaa74559d1edfca30b6b5438c614cf06a768e0e7bc1e6d
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-110.110.dsc' linux_6.8.0-110.110.dsc 9407 SHA256:6ab61e14923e81c734c4e77c527f2300966402338c7001341efab1bf259b8a2c
 ```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
@@ -2196,15 +2196,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.15
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA256:910211c07255a8c5ad654391b40ee59800710dd8119dd5362de09385aa7a777c
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA256:9b1e931cbc811f02e91f7eacd55f8211cc45dade11975462f4b0dcdad29927aa
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.15.debian.tar.xz' openssh_9.6p1-3ubuntu13.15.debian.tar.xz 207616 SHA256:d578c39df6d2dea398f8a5dde94e303a18b32dd1b8c0d22c7db363307a863054
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.15.dsc' openssh_9.6p1-3ubuntu13.15.dsc 3346 SHA256:6b1c411abc17d0b31ec210afd9454c87ed1bcee86a977a89c35bd88a4902eba0
-```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.9`
 
@@ -2506,15 +2500,15 @@ $ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.1.dsc' python3-defaults_3.12.3-0ubuntu2.1.dsc 3116 SHA256:79676920120c7f45f1605d92047174fca9cc75a39d9df91c9740be98fb8cc542
 ```
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.12`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.13`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.12`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.12`
-- `libpython3.12t64:amd64=3.12.3-1ubuntu0.12`
-- `python3.12=3.12.3-1ubuntu0.12`
-- `python3.12-minimal=3.12.3-1ubuntu0.12`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.13`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.13`
+- `libpython3.12t64:amd64=3.12.3-1ubuntu0.13`
+- `python3.12=3.12.3-1ubuntu0.13`
+- `python3.12-minimal=3.12.3-1ubuntu0.13`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/libpython3.12t64/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -2536,9 +2530,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.13
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA256:56bfef1fdfc1221ce6720e43a661e3eb41785dd914ce99698d8c7896af4bdaa1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.13.debian.tar.xz' python3.12_3.12.3-1ubuntu0.13.debian.tar.xz 271684 SHA256:c29d3713afdaadbeb910f01df96877a81c3deb114876be42a47ce8e7172a2b91
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.13.dsc' python3.12_3.12.3-1ubuntu0.13.dsc 3879 SHA256:c9dac8ff007c2b12b917cae256b2477cd1662de3fd3d02171ba3ebe98bbd7b30
+```
 
 ### `dpkg` source package: `pyyaml=6.0.1-2build2`
 

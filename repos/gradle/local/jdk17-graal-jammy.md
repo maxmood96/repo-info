@@ -1,10 +1,10 @@
-# `gradle:9.4.1-jdk17-graal-jammy`
+# `gradle:9.5.0-jdk17-graal-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:87673cb2b8e1551e9295996762db4216d714d117d1f6d352d071bfe3f2fc27d5`
-- Created: `2026-04-15T20:36:29.164947169Z`
-- Virtual Size: ~ 1.15 Gb  
+- Image ID: `sha256:19a94f04a548df7b9d18831cd35214e1c516aa5d65ab60f2490b7405edf5687f`
+- Created: `2026-04-28T23:31:41.913275081Z`
+- Virtual Size: ~ 1.16 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -13,7 +13,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=17.0.9`
-  - `GRADLE_VERSION=9.4.1`
+  - `GRADLE_VERSION=9.5.0`
 - Labels:
   - `org.opencontainers.image.version=22.04`
 
@@ -1735,19 +1735,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-174.184`
+### `dpkg` source package: `linux=5.15.0-176.186`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-174.184`
+- `linux-libc-dev:amd64=5.15.0-176.186`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.15.0-176.186
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA256:4d7908da75ad50a70a0141721e259c2589b7bdcc317f7bd885b80c2ffa689211
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-176.186.diff.gz' linux_5.15.0-176.186.diff.gz 12779535 SHA256:ac0725cd592325a7f36b404390fdc056e8d423492949bbcb54edb428a2083c1e
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-176.186.dsc' linux_5.15.0-176.186.dsc 7758 SHA256:77f6729906f251656824474bcd0616e8ee6b9b4be23862d79344b25a8ad2ff92
+```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
 
@@ -2047,15 +2052,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:8.9p1-3ubuntu0.14
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz' openssh_8.9p1.orig.tar.gz 1820282 SHA256:fd497654b7ab1686dac672fb83dfb4ba4096e8b5ffcdaccd262380ae58bec5e7
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz.asc' openssh_8.9p1.orig.tar.gz.asc 833 SHA256:ed9b972e9a1c1474d279fa97f2a03431e14e888e1b18eff93570962843320d58
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.14.debian.tar.xz' openssh_8.9p1-3ubuntu0.14.debian.tar.xz 202080 SHA256:d7aff0f11cd26488f5b2a8d6d1c50e7432d6800fb419d19e2b6ee0fb0b68058f
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.14.dsc' openssh_8.9p1-3ubuntu0.14.dsc 3380 SHA256:b25c18c11de13ae023ec07831648714eb30ef5597726265fd854a61d2f14581c
-```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.23`
 

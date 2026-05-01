@@ -1,10 +1,10 @@
-# `gradle:9.4.1-jdk26-ubi`
+# `gradle:9.5.0-jdk26-ubi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:59a6cf36687a1f203b0063dd9eabbdd358d8df56b8088f6267a9dd4c8518518f`
-- Created: `2026-04-22T19:12:19.836388337Z`
-- Virtual Size: ~ 726.15 Mb  
+- Image ID: `sha256:1a9e398d419cd598d18fb1578d7dcd9dc3d64d8a117aa0ea386bc81d2b8fa950`
+- Created: `2026-04-28T23:31:30.523943101Z`
+- Virtual Size: ~ 729.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-26+35`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.4.1`
+  - `GRADLE_VERSION=9.5.0`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2026-04-22T05:17:41Z`

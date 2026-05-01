@@ -1,10 +1,10 @@
-# `gradle:9.4.1-jdk21-ubi9`
+# `gradle:9.5.0-jdk21-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:81334c9bc357b1cc495efe36be052ac3dd7049ded47c5114b82d5019d98086df`
-- Created: `2026-04-22T19:11:38.795779744Z`
-- Virtual Size: ~ 757.27 Mb  
+- Image ID: `sha256:e5d68d337506622ae757f794e2fb96c55ba48cdc1463adff9e7c1ad4702c9f1a`
+- Created: `2026-04-28T23:30:31.641785557Z`
+- Virtual Size: ~ 760.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.10+7`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.4.1`
+  - `GRADLE_VERSION=9.5.0`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2026-04-22T04:58:33Z`
@@ -854,12 +854,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): BSD or GPLv2
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libcap-2.48-10.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libcap-2.48-10.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libcap-ng-0.8.2-7.el9.x86_64`
 

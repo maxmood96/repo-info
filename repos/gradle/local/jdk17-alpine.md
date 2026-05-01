@@ -1,10 +1,10 @@
-# `gradle:9.4.1-jdk17-alpine`
+# `gradle:9.5.0-jdk17-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b637ba131480a409a0fbd52e21fa59ebf3cbeb708e5eb0142df637ed6e5c2763`
-- Created: `2026-04-15T21:30:15.742367148Z`
-- Virtual Size: ~ 605.21 Mb  
+- Image ID: `sha256:c44859286c410fe0864c6ca0ecc4488ec014fb7d3937bc938ca4a9b545ff41bc`
+- Created: `2026-04-28T23:29:54.506345041Z`
+- Virtual Size: ~ 608.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.18+8`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.4.1`
+  - `GRADLE_VERSION=9.5.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1418,16 +1418,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.68.0-r0 description:
+nghttp2-libs-1.69.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.68.0-r0 webpage:
+nghttp2-libs-1.69.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.68.0-r0 installed size:
+nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.68.0-r0 license:
+nghttp2-libs-1.69.0-r0 license:
 MIT
 
 ```
@@ -2132,16 +2132,16 @@ GPL-3.0-or-later WITH OpenSSL-Exception
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.2-r0 description:
+xz-libs-5.8.3-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.2-r0 webpage:
+xz-libs-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.2-r0 installed size:
+xz-libs-5.8.3-r0 installed size:
 221 KiB
 
-xz-libs-5.8.2-r0 license:
+xz-libs-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
