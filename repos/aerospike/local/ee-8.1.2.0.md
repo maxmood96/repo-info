@@ -1,10 +1,10 @@
-# `aerospike:ce-8.1.1.1`
+# `aerospike:ee-8.1.2.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9c6a76a58fb89fd77593827b4118b84e432ac849b4b0d70c5ce03e8861b9e269`
-- Created: `2026-04-15T20:24:05.753748276Z`
-- Virtual Size: ~ 214.90 Mb  
+- Image ID: `sha256:bb5eabfdbfa374a39bf409909221c30c321579f169ab9b4d97777ec79321004e`
+- Created: `2026-04-28T20:34:23.289003346Z`
+- Virtual Size: ~ 345.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/bin/as-tini-static","-r","SIGUSR1","-t","SIGTERM","--","/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `org.opencontainers.image.description=Aerospike is a real-time database with predictable performance at petabyte scale with microsecond latency over billions of transactions.`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/aerospike`
   - `org.opencontainers.image.source=https://github.com/aerospike/aerospike-server.docker`
-  - `org.opencontainers.image.title=Aerospike Community Server`
+  - `org.opencontainers.image.title=Aerospike Enterprise Server`
   - `org.opencontainers.image.url=https://github.com/aerospike/aerospike-server.docker`
   - `org.opencontainers.image.vendor=Aerospike`
-  - `org.opencontainers.image.version=8.1.1.1`
+  - `org.opencontainers.image.version=8.1.2.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -47,11 +47,25 @@ $ apt-get source -qq --print-uris acl=2.3.2-1build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/acl/acl_2.3.2-1build1.1.dsc' acl_2.3.2-1build1.1.dsc 2616 SHA256:da831b979338d324df2adcedd5a06f9a5f303e83be2b43d58ee39288dde8fc88
 ```
 
-### `dpkg` source package: `aerospike-server-community=8.1.1.1-2`
+### `dpkg` source package: `aerospike-server-enterprise=8.1.2.0-40`
 
 Binary Packages:
 
-- `aerospike-server-community=8.1.1.1-2`
+- `aerospike-server-enterprise=8.1.2.0-40`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `aerospike-tools=13.0.0+rc1`
+
+Binary Packages:
+
+- `aerospike-tools=13.0.0+rc1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -303,10 +317,9 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.2
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.8`
 - `libcurl4t64:amd64=8.5.0-2ubuntu10.8`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-3-clause`
