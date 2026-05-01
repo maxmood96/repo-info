@@ -1,10 +1,10 @@
-# `bonita:2025.2-u5`
+# `bonita:2026.1-u0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d2e7caf87ebf6748596857baecadbe330f3c7d35176194d2108d9c0e2f8889dc`
-- Created: `2026-04-15T21:59:58.626294479Z`
-- Virtual Size: ~ 349.38 Mb  
+- Image ID: `sha256:72f563b43274474b71b68a0152e62871d3685ef34c517c3b32534d45d51cefa8`
+- Created: `2026-04-29T17:11:37.803380226Z`
+- Virtual Size: ~ 338.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh","/opt/files/startup.sh"]`
@@ -16,12 +16,12 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.10+7`
-  - `BONITA_VERSION=10.4.5`
-  - `BRANDING_VERSION=2025.2-u5`
-  - `BONITA_SHA256=3446d99cf1b202534df7fe5175d6804bed26653c17e1f7a6f413d16c395ce8e5`
-  - `ZIP_FILE=BonitaCommunity-2025.2-u5.zip`
+  - `BONITA_VERSION=11.0.0`
+  - `BRANDING_VERSION=2026.1-u0`
+  - `BONITA_SHA256=a3a0c80b975b51e247c630a204170beb675f4a83139ff2d1c533c1b7db17a25b`
+  - `ZIP_FILE=BonitaCommunity-2026.1-u0.zip`
   - `BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat`
-  - `BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/10.4.5/bundle-tomcat-10.4.5.zip`
+  - `BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/11.0.0/bundle-tomcat-11.0.0.zip`
   - `HTTP_API=false`
   - `HTTP_API_USERNAME=http-api`
   - `HTTP_API_PASSWORD=`
@@ -1167,16 +1167,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.68.0-r0 description:
+nghttp2-libs-1.69.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.68.0-r0 webpage:
+nghttp2-libs-1.69.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.68.0-r0 installed size:
+nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.68.0-r0 license:
+nghttp2-libs-1.69.0-r0 license:
 MIT
 
 ```
