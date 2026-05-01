@@ -538,21 +538,13 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.20.0~rc3-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.20.0%7erc3-1.dsc' curl_8.20.0~rc3-1.dsc 3310 SHA256:6f59b62ab0110f39d95c1da3390cf387c46a4b64125666fb6572c036d3141df5
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.20.0%7erc3.orig.tar.xz' curl_8.20.0~rc3.orig.tar.xz 2831148 SHA256:958d7be2f436ea2fce6d4aa6517fe142008cc2300a06bd6ab11f9c898cd3123c
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.20.0%7erc3.orig.tar.xz.asc' curl_8.20.0~rc3.orig.tar.xz.asc 488 SHA256:9f6df3aba8d773cc4fe2220e8fe77fb9d08db811a4376a8a1fcbe17113cd6749
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.20.0%7erc3-1.debian.tar.xz' curl_8.20.0~rc3-1.debian.tar.xz 52728 SHA256:02c04354d06dc56912663236f3d2600adb07be859979a670e10f5d2679e20616
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.20.0~rc3-1/
 
-- https://sources.debian.net/src/curl/8.20.0~rc3-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.20.0~rc3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.20.0~rc3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-11`
 
@@ -865,20 +857,13 @@ Licenses: (parsed from: `/usr/share/doc/ed/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ed=1.22.4-1
-'http://deb.debian.org/debian/pool/main/e/ed/ed_1.22.4-1.dsc' ed_1.22.4-1.dsc 1832 SHA256:c415c993a1a37ddd996a198440d77b7c1187951e80a42922d6016ec4b3284837
-'http://deb.debian.org/debian/pool/main/e/ed/ed_1.22.4.orig.tar.gz' ed_1.22.4.orig.tar.gz 96644 SHA256:9b9d7dd462c72563c84dc6043b48187692ca7b902e68a85319e84a4a7da289e0
-'http://deb.debian.org/debian/pool/main/e/ed/ed_1.22.4-1.debian.tar.xz' ed_1.22.4-1.debian.tar.xz 8744 SHA256:c690a6447594c9f08f04ec168c932d7d5c6420a5195959e1c3cdd8c41ed7c56d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ed/1.22.4-1/
 
-- https://sources.debian.net/src/ed/1.22.4-1/ (for browsing the source)
-- https://sources.debian.net/src/ed/1.22.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ed/1.22.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.7.5-1`
 
