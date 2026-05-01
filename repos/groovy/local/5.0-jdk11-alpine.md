@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ced52b338098cfe299da42bbdc710bfc97fdb5bbdd52aac627a763f1f9b69cf5`
-- Created: `2026-04-15T21:32:40.769437285Z`
-- Virtual Size: ~ 345.90 Mb  
+- Image ID: `sha256:8ad318cbfcb477cf5be2e7cf99304feeb95070d87d5e400d8949de9171d7e4b8`
+- Created: `2026-04-29T23:13:04.298850484Z`
+- Virtual Size: ~ 346.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.30+7`
+  - `JAVA_VERSION=jdk-11.0.31+11`
   - `GROOVY_HOME=/opt/groovy`
   - `GROOVY_VERSION=5.0.4`
 
@@ -1197,16 +1197,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026a-r0 description:
+tzdata-2026b-r0 description:
 Timezone data
 
-tzdata-2026a-r0 webpage:
+tzdata-2026b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026a-r0 installed size:
+tzdata-2026b-r0 installed size:
 436 KiB
 
-tzdata-2026a-r0 license:
+tzdata-2026b-r0 license:
 Public-Domain
 
 ```

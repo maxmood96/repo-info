@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cdeef2cc520c9f5a276f3f328ee76b48e9e8366ebd5647a3e46cefe699432525`
-- Created: `2026-04-15T21:33:36.802324632Z`
-- Virtual Size: ~ 451.28 Mb  
+- Image ID: `sha256:23f8686c0f4b6ac94d170e1760ce435bdf84b405a3c5a5dc63c3bff04c2f21f8`
+- Created: `2026-04-29T23:12:57.041749216Z`
+- Virtual Size: ~ 451.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.30+7`
+  - `JAVA_VERSION=jdk-11.0.31+11`
   - `GROOVY_HOME=/opt/groovy`
   - `GROOVY_VERSION=3.0.25`
 - Labels:
