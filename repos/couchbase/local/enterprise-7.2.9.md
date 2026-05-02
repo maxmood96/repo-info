@@ -1055,14 +1055,9 @@ Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris kmod=31+20240202-2ubuntu7.1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_31%2b20240202.orig.tar.xz' kmod_31+20240202.orig.tar.xz 253852 SHA256:0b8521d929cc62b7594886c8ed24109a22b96e732fdcc6f0afa486bd62c487bc
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_31%2b20240202-2ubuntu7.1.debian.tar.xz' kmod_31+20240202-2ubuntu7.1.debian.tar.xz 15108 SHA256:6d34ee55a8bff3c7c4e07f294aa1995af6560ab61a03b767e8c6dfdb8a54f75f
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_31%2b20240202-2ubuntu7.1.dsc' kmod_31+20240202-2ubuntu7.1.dsc 2288 SHA256:0f8e6a6f471c57029ec2cd9e9a452be88281fc00fd32701f3dfa93bc3aefd169
-```
 
 ### `dpkg` source package: `krb5=1.20.1-6ubuntu2.6`
 
