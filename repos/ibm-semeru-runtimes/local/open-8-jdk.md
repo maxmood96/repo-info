@@ -1,10 +1,10 @@
-# `ibm-semeru-runtimes:open-8u482-b08.1-jdk-noble`
+# `ibm-semeru-runtimes:open-8.0.492.0-jdk-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5ec237cdcffae2b3cbbc2624cf9e0083491d5a11294bb3658a3a5d70bb58b613`
-- Created: `2026-04-15T20:39:25.819778404Z`
-- Virtual Size: ~ 369.12 Mb  
+- Image ID: `sha256:7e524a06963f88b6836049aba29941fd7acdd3c8eafc8faf2abc657da33124ae`
+- Created: `2026-04-30T23:46:39.434829724Z`
+- Virtual Size: ~ 368.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -13,7 +13,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u482-b08.1_openj9-0.57.0`
+  - `JAVA_VERSION=8.0.492.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
 - Labels:
