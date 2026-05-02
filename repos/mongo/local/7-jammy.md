@@ -1,10 +1,10 @@
-# `mongo:7.0.31-jammy`
+# `mongo:7.0.32-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:faa77adca8915c6672577288a0a20db7d666de0c872cb2465daea6fd0082e274`
-- Created: `2026-04-15T20:46:10.379983307Z`
-- Virtual Size: ~ 877.66 Mb  
+- Image ID: `sha256:b9a64ab3cb9fdc0646ead7af85b7de1faa8befd8e4be41071b08a92ab1785090`
+- Created: `2026-05-01T05:32:38.807707788Z`
+- Virtual Size: ~ 880.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=7.0`
-  - `MONGO_VERSION=7.0.31`
+  - `MONGO_VERSION=7.0.32`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.version=22.04`
@@ -732,12 +732,12 @@ $ apt-get source -qq --print-uris init-system-helpers=1.62
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.62.tar.xz' init-system-helpers_1.62.tar.xz 42144 SHA512:d90f12e642d086bd0d560ece87d119079c164b90ddbb77b2f804979540095b655715febbc2a5b0d50d7f94434d1ff7c0f4044d5d5411916fbca8300f3f88da7f
 ```
 
-### `dpkg` source package: `jq=1.6-2.1ubuntu3.1`
+### `dpkg` source package: `jq=1.6-2.1ubuntu3.2`
 
 Binary Packages:
 
-- `jq=1.6-2.1ubuntu3.1`
-- `libjq1:amd64=1.6-2.1ubuntu3.1`
+- `jq=1.6-2.1ubuntu3.2`
+- `libjq1:amd64=1.6-2.1ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/jq/copyright`, `/usr/share/doc/libjq1/copyright`)
 
@@ -747,9 +747,14 @@ Licenses: (parsed from: `/usr/share/doc/jq/copyright`, `/usr/share/doc/libjq1/co
 - `GPL-2.0+`
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris jq=1.6-2.1ubuntu3.2
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jq/jq_1.6.orig.tar.gz' jq_1.6.orig.tar.gz 419859 SHA512:1a67af3ca16b7b4bf125868cea2185f7e98576d195f30d3e202a3f8a788ac98aa90db6685d36e9261eb85809e48b1ffc85ad30f6ebe0a76b9257fc3f92834dd0
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jq/jq_1.6-2.1ubuntu3.2.debian.tar.xz' jq_1.6-2.1ubuntu3.2.debian.tar.xz 20720 SHA512:a392a394548178296d75a70c43dfab4360b95513d22841e9a7fffcdffaf1e3ba9479b4247eec86bf39b3faaaf9c10142a121463eaa56f5eef4f5cfc6a159176a
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jq/jq_1.6-2.1ubuntu3.2.dsc' jq_1.6-2.1ubuntu3.2.dsc 1882 SHA512:e03313ba30af3302ebc2a33c93264587b6a0fc3b50dac490ff0451facfacb96bbd0975182cf5415fc09eac471a25d559fcb2df1b7215b4a7ec72e5cc3c56acbf
+```
 
 ### `dpkg` source package: `keyutils=1.6.1-2ubuntu3`
 
@@ -1280,11 +1285,11 @@ $ apt-get source -qq --print-uris mawk=1.3.4.20200120-3
 'http://archive.ubuntu.com/ubuntu/pool/main/m/mawk/mawk_1.3.4.20200120-3.debian.tar.xz' mawk_1.3.4.20200120-3.debian.tar.xz 7520 SHA512:bc4f5401de313108595ba91b17f44b5c67d7650b5557eef8a6c63c75e2ccee5dfd8900576d7e81f0ab1ac2e570f64fa75f38f56f6d4535437c803029216501af
 ```
 
-### `dpkg` source package: `mongodb-database-tools=100.16.0`
+### `dpkg` source package: `mongodb-database-tools=100.16.1`
 
 Binary Packages:
 
-- `mongodb-database-tools=100.16.0`
+- `mongodb-database-tools=100.16.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1309,17 +1314,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=7.0.31`
+### `dpkg` source package: `mongodb-org=7.0.32`
 
 Binary Packages:
 
-- `mongodb-org=7.0.31`
-- `mongodb-org-database=7.0.31`
-- `mongodb-org-database-tools-extra=7.0.31`
-- `mongodb-org-mongos=7.0.31`
-- `mongodb-org-server=7.0.31`
-- `mongodb-org-shell=7.0.31`
-- `mongodb-org-tools=7.0.31`
+- `mongodb-org=7.0.32`
+- `mongodb-org-database=7.0.32`
+- `mongodb-org-database-tools-extra=7.0.32`
+- `mongodb-org-mongos=7.0.32`
+- `mongodb-org-server=7.0.32`
+- `mongodb-org-shell=7.0.32`
+- `mongodb-org-tools=7.0.32`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
