@@ -1,10 +1,10 @@
-# `traefik:v3.7.0-rc.2`
+# `traefik:v3.7.0-rc.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f110ef8d64951eb4655c569778fdeb15309d2e6b37c06efad26a44440f8a912`
-- Created: `2026-04-22T17:37:38.723097169Z`
-- Virtual Size: ~ 186.64 Mb  
+- Image ID: `sha256:9e41da8df37757b08ce7d9717dc96c971bd52e496fac8705ad58adcfac039e66`
+- Created: `2026-04-29T23:18:20.991979285Z`
+- Virtual Size: ~ 186.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `org.opencontainers.image.title=Traefik`
   - `org.opencontainers.image.url=https://traefik.io`
   - `org.opencontainers.image.vendor=Traefik Labs`
-  - `org.opencontainers.image.version=v3.7.0-rc.2`
+  - `org.opencontainers.image.version=v3.7.0-rc.3`
 
 ## `apk` (`.apk`-based packages)
 
@@ -297,16 +297,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026a-r0 description:
+tzdata-2026b-r0 description:
 Timezone data
 
-tzdata-2026a-r0 webpage:
+tzdata-2026b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026a-r0 installed size:
+tzdata-2026b-r0 installed size:
 436 KiB
 
-tzdata-2026a-r0 license:
+tzdata-2026b-r0 license:
 Public-Domain
 
 ```
