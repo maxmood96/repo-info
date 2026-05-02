@@ -1,10 +1,10 @@
-# `eclipse-temurin:25.0.2_10-jdk-alpine-3.23`
+# `eclipse-temurin:25.0.3_9-jdk-alpine-3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:051dcd635fc952d1be652c7652da74710fc02fbcf30063775205743ec239ddf5`
-- Created: `2026-04-15T20:34:23.415245752Z`
-- Virtual Size: ~ 302.47 Mb  
+- Image ID: `sha256:90fcad76e46bde2a8b48618e6142eac3de98fb5402869758bf8fb64f9888e3b9`
+- Created: `2026-04-30T23:26:33.248286404Z`
+- Virtual Size: ~ 302.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-25.0.2+10`
+  - `JAVA_VERSION=jdk-25.0.3+9`
 
 ## `apk` (`.apk`-based packages)
 
@@ -787,16 +787,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026a-r0 description:
+tzdata-2026b-r0 description:
 Timezone data
 
-tzdata-2026a-r0 webpage:
+tzdata-2026b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026a-r0 installed size:
+tzdata-2026b-r0 installed size:
 436 KiB
 
-tzdata-2026a-r0 license:
+tzdata-2026b-r0 license:
 Public-Domain
 
 ```
