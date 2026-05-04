@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fe1c6bd94f03049aeb1250e5619e7fa57865ded1cad89fa19c926278aa97f084`
-- Created: `2026-04-23T17:15:13.018758333Z`
-- Virtual Size: ~ 633.08 Mb  
+- Image ID: `sha256:633840537d1cada397353d074390feebec4aaa900270f41847b3c50ddded94f0`
+- Created: `2026-04-30T23:44:48.704609319Z`
+- Virtual Size: ~ 634.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -1380,11 +1380,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.74-2`
+### `dpkg` source package: `linux=6.12.85-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.74-2`
+- `linux-libc-dev=6.12.85-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1398,17 +1398,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.74-2
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.74-2.dsc' linux_6.12.74-2.dsc 292516 SHA256:a7f32f062d9285c776112af5c8fa90a3f745a3429ede7115867f3e89eb95f8e6
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.74.orig.tar.xz' linux_6.12.74.orig.tar.xz 151185392 SHA256:b12440d62ef47193c3c8ae5b8dbb76cfcd1084bbb54d6c64a485aed07ecec708
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.74-2.debian.tar.xz' linux_6.12.74-2.debian.tar.xz 1783784 SHA256:0c62402e33df8569a56f7cab7c376eb359ba1f0062872af816d3634a29277f9e
+$ apt-get source -qq --print-uris linux=6.12.85-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.85-1.dsc' linux_6.12.85-1.dsc 288306 SHA256:e7ae8f2035318e1ba23524842378d0b9b4a42bf96391e81dc8da1b3e7307d595
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.85.orig.tar.xz' linux_6.12.85.orig.tar.xz 151249536 SHA256:73804f04cf5be865389d4d13bdae06a87b2e6675f0ff31e93804e20d091736e2
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.85-1.debian.tar.xz' linux_6.12.85-1.debian.tar.xz 1806504 SHA256:ba2d2e1f8df6583992565aa5ca1db95c1af06da765fae440e1f86d6f12c61e89
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.74-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.74-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.74-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.85-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.85-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.85-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
