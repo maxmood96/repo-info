@@ -1,7 +1,7 @@
 ## `tomee:10-jre21-alpine-plus`
 
 ```console
-$ docker pull tomee@sha256:69b5162415c45cb61e8e73542fa188f065952d312ade9afb242d58116085aade
+$ docker pull tomee@sha256:5618269346ea8e4cafc7848ac80a51042835c0d5dc16e3858487acfc76fc910d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull tomee@sha256:69b5162415c45cb61e8e73542fa188f065952d312ade9afb242d5
 ### `tomee:10-jre21-alpine-plus` - linux; amd64
 
 ```console
-$ docker pull tomee@sha256:07097e9b38e053ae935365244ae03e4a764b7f9846e8655058651f75c3debcf6
+$ docker pull tomee@sha256:959fb25434181773b759ebc2b919dc515be65ea54a135d6160084f6015f55386
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **149.9 MB (149853866 bytes)**  
+-	Total Size: **151.6 MB (151627588 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b7d36a358bb662b727a8444a793110ad5814e322f1401aafefd1893232fbecf`
+-	Image ID: `sha256:0bb58e255bdaf86e98d8bb6e5accb9f34ec59075e256d1fb8d43a5150ce2e841`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -47,25 +47,25 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Wed, 15 Apr 2026 20:33:59 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 15 Apr 2026 21:57:59 GMT
+# Tue, 05 May 2026 19:15:26 GMT
 ENV PATH=/usr/local/tomee/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 15 Apr 2026 21:57:59 GMT
+# Tue, 05 May 2026 19:15:26 GMT
 RUN mkdir -p /usr/local/tomee ~/.gnupg # buildkit
-# Wed, 15 Apr 2026 21:57:59 GMT
+# Tue, 05 May 2026 19:15:26 GMT
 WORKDIR /usr/local/tomee
-# Wed, 15 Apr 2026 21:58:00 GMT
+# Tue, 05 May 2026 19:15:26 GMT
 RUN apk add --no-cache gpg gpg-agent dirmngr curl   && rm -rf /var/cache/apk/* # buildkit
-# Wed, 15 Apr 2026 21:58:09 GMT
+# Tue, 05 May 2026 19:15:36 GMT
 RUN set -xe;   for key in   9056B710F1E332780DE7AF34CBAEBE39A46C4CA1   F067B8140F5DD80E1D3B5D92318242FE9A0B1183   223D3A74B068ECA354DC385CE126833F9CF64915   DBCCD103B8B24F86FFAAB025C8BB472CD297D428   7A2744A8A9AAF063C23EB7868EBE7DBE8D050EEF   B8B301E6105DF628076BD92C5483E55897ABD9B9   FAA603D58B1BA4EDF65896D0ED340E0E6D545F97   A57DAF81C1B69921F4BA8723A8DE0A4DB863A7C1   82D8419BA697F0E7FB85916EE91287822FDB81B1   B7574789F5018690043E6DD9C212662E12F3E1DD   C23A3F6F595EBD0F960270CC997C8F1A5BE6E4C1   678F2D98F1FD9643811639FB622B8F2D043F71D8   BDD0BBEB753192957EFC5F896A62FC8EF17D8FEF   D11DF12CC2CA4894BDE638B967C1227A2678363C   C92604B0DEC5C62CFF5801E73D4683C24EDC64D1   626C542EDA7C113814B77AF09C04914D63645D20   3948829384B269D333CC5B98358807C52B4B0E23   B83D15E72253ED1104EB4FBBDAB472F0E5B8A431   871638A21A7F2C38066471420306A354336B4F0D   85FBBE98D6C37CDA8A7D8FF9F9FF83A48D339D37   ; do     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done # buildkit
-# Wed, 15 Apr 2026 21:58:09 GMT
-ENV TOMEE_VER=10.1.4
-# Wed, 15 Apr 2026 21:58:09 GMT
+# Tue, 05 May 2026 19:15:36 GMT
+ENV TOMEE_VER=10.1.5
+# Tue, 05 May 2026 19:15:36 GMT
 ENV TOMEE_BUILD=plus
-# Wed, 15 Apr 2026 21:58:11 GMT
+# Tue, 05 May 2026 19:15:38 GMT
 RUN set -eux; 	ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			https://dlcdn.apache.org/ 			https://archive.apache.org/dist/ 		; do 			if curl -fSL "$distUrl$distFile" -o "$f" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	};   ddist tomee.tar.gz.asc tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.asc   && ddist tomee.tar.gz.sha512 tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.sha512   && ddist apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && gpg --batch --verify tomee.tar.gz.asc apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && sed "s/\t/  /" tomee.tar.gz.sha512 | sha512sum -c -   && tar -zxf apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && mv apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}/* /usr/local/tomee   && rm apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && rm -Rf apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}   && rm bin/*.bat   && rm bin/*.exe   && rm bin/*.tar.gz*   && rm tomee.tar.gz.asc   && rm tomee.tar.gz* # buildkit
-# Wed, 15 Apr 2026 21:58:11 GMT
+# Tue, 05 May 2026 19:15:38 GMT
 EXPOSE map[8080/tcp:{}]
-# Wed, 15 Apr 2026 21:58:11 GMT
+# Tue, 05 May 2026 19:15:38 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -90,61 +90,61 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Wed, 15 Apr 2026 20:34:09 GMT  
 		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9ed50d02335e7470deba8dbd922cd19808e0b02d1375f136d28bbf526c3ba4d`  
-		Last Modified: Wed, 15 Apr 2026 21:58:21 GMT  
-		Size: 171.0 B  
+	-	`sha256:3f45d778a878a9926d04d1a9cf2f755e4c7baae7396b4cb28e21edbb9305be1a`  
+		Last Modified: Tue, 05 May 2026 19:15:48 GMT  
+		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:244a6d51d4d4af151f312e2967595593ae2c41dbeda4bbc08865a5cd814438bd`  
-		Last Modified: Wed, 15 Apr 2026 21:58:21 GMT  
-		Size: 888.1 KB (888066 bytes)  
+	-	`sha256:c5fcb55ff26e90e1401a5782db21226faf27b9049ad2da5129f5196caf699a26`  
+		Last Modified: Tue, 05 May 2026 19:15:48 GMT  
+		Size: 888.2 KB (888153 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d878f237eacace2a6dd7571264dd400cdd4ab0605e345fb9fe2f00873dddbc45`  
-		Last Modified: Wed, 15 Apr 2026 21:58:21 GMT  
-		Size: 75.6 KB (75629 bytes)  
+	-	`sha256:5af146c5dbd4fe79ac199a23e9cde32e08280081bffce1c9e408a516c3489b65`  
+		Last Modified: Tue, 05 May 2026 19:15:48 GMT  
+		Size: 75.7 KB (75664 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14b63f4264bf7abbff0b43b2f287ab9e58c9a07fbccd119b94d2ee029ac03cef`  
-		Last Modified: Wed, 15 Apr 2026 21:58:23 GMT  
-		Size: 75.0 MB (75016846 bytes)  
+	-	`sha256:02c80ff8ea6b809dc68912716790b64a56a3a648c18ae7a971021f2050237251`  
+		Last Modified: Tue, 05 May 2026 19:15:50 GMT  
+		Size: 76.8 MB (76790445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `tomee:10-jre21-alpine-plus` - unknown; unknown
 
 ```console
-$ docker pull tomee@sha256:034a602d7983a90f31fe065bda1bf63f1b517fc1976d18f372ca2110a65ea68e
+$ docker pull tomee@sha256:797c4a034c3b0b15a4aa10cfa5507557a76e695b3fdc51e04127195a4138617c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 MB (1335338 bytes)**  
+-	Total Size: **1.3 MB (1335319 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:69ab36776aa4ff65c45ed7e2c0d018518c870c140565964ddb3f1d80271473b0`
+-	Image ID: `sha256:f41acf3d35119e90e07778eda60c8f541b090c9cd71178acf283365ae521a144`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ac3adc0ced69c983365e45c345697a7c7975a8c75d6e98ec839afb4013c5b564`  
-		Last Modified: Wed, 15 Apr 2026 21:58:21 GMT  
-		Size: 1.3 MB (1307804 bytes)  
+	-	`sha256:e9f006de5f88e3b85e6f4177827a412ac4e0523c6409fcd1d1e4f1d7b2642b08`  
+		Last Modified: Tue, 05 May 2026 19:15:48 GMT  
+		Size: 1.3 MB (1307786 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b6b4e5e766d2a8bfc9a9db97c92b7b830820ea36c07c4d3e99e1e591dcf82d73`  
-		Last Modified: Wed, 15 Apr 2026 21:58:21 GMT  
-		Size: 27.5 KB (27534 bytes)  
+	-	`sha256:ae98b7eec545e8c1b886166ebf160843e90da6191c3b1e67116c05723b6fa159`  
+		Last Modified: Tue, 05 May 2026 19:15:48 GMT  
+		Size: 27.5 KB (27533 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `tomee:10-jre21-alpine-plus` - linux; arm64 variant v8
 
 ```console
-$ docker pull tomee@sha256:1d44041ec4a280f39e7a246fc639ecbd0b352bf42a9174602257c55933cd19f6
+$ docker pull tomee@sha256:2e7c9abd5fecf6ea424cf8e03d648cc1e4d00c9fb59e3cb4508cbe51612cecbb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **149.2 MB (149219259 bytes)**  
+-	Total Size: **151.0 MB (150993187 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94a0e47edc8c6dc5bfae60404950a7830116f9352ea8da690cfce7b1540ee2dd`
+-	Image ID: `sha256:f836b2b7a6b9ee173b42625b474d4c90680c9038b4552d75812d3222ceb75608`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["catalina.sh","run"]`
 
@@ -171,25 +171,25 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Wed, 15 Apr 2026 20:34:06 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 15 Apr 2026 22:10:24 GMT
+# Tue, 05 May 2026 19:14:39 GMT
 ENV PATH=/usr/local/tomee/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 15 Apr 2026 22:10:24 GMT
+# Tue, 05 May 2026 19:14:39 GMT
 RUN mkdir -p /usr/local/tomee ~/.gnupg # buildkit
-# Wed, 15 Apr 2026 22:10:24 GMT
+# Tue, 05 May 2026 19:14:39 GMT
 WORKDIR /usr/local/tomee
-# Wed, 15 Apr 2026 22:10:25 GMT
+# Tue, 05 May 2026 19:14:39 GMT
 RUN apk add --no-cache gpg gpg-agent dirmngr curl   && rm -rf /var/cache/apk/* # buildkit
-# Wed, 15 Apr 2026 22:10:34 GMT
+# Tue, 05 May 2026 19:14:50 GMT
 RUN set -xe;   for key in   9056B710F1E332780DE7AF34CBAEBE39A46C4CA1   F067B8140F5DD80E1D3B5D92318242FE9A0B1183   223D3A74B068ECA354DC385CE126833F9CF64915   DBCCD103B8B24F86FFAAB025C8BB472CD297D428   7A2744A8A9AAF063C23EB7868EBE7DBE8D050EEF   B8B301E6105DF628076BD92C5483E55897ABD9B9   FAA603D58B1BA4EDF65896D0ED340E0E6D545F97   A57DAF81C1B69921F4BA8723A8DE0A4DB863A7C1   82D8419BA697F0E7FB85916EE91287822FDB81B1   B7574789F5018690043E6DD9C212662E12F3E1DD   C23A3F6F595EBD0F960270CC997C8F1A5BE6E4C1   678F2D98F1FD9643811639FB622B8F2D043F71D8   BDD0BBEB753192957EFC5F896A62FC8EF17D8FEF   D11DF12CC2CA4894BDE638B967C1227A2678363C   C92604B0DEC5C62CFF5801E73D4683C24EDC64D1   626C542EDA7C113814B77AF09C04914D63645D20   3948829384B269D333CC5B98358807C52B4B0E23   B83D15E72253ED1104EB4FBBDAB472F0E5B8A431   871638A21A7F2C38066471420306A354336B4F0D   85FBBE98D6C37CDA8A7D8FF9F9FF83A48D339D37   ; do     gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys "$key" ||     gpg --batch --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ;   done # buildkit
-# Wed, 15 Apr 2026 22:10:34 GMT
-ENV TOMEE_VER=10.1.4
-# Wed, 15 Apr 2026 22:10:34 GMT
+# Tue, 05 May 2026 19:14:50 GMT
+ENV TOMEE_VER=10.1.5
+# Tue, 05 May 2026 19:14:50 GMT
 ENV TOMEE_BUILD=plus
-# Wed, 15 Apr 2026 22:10:36 GMT
+# Tue, 05 May 2026 19:14:51 GMT
 RUN set -eux; 	ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			https://dlcdn.apache.org/ 			https://archive.apache.org/dist/ 		; do 			if curl -fSL "$distUrl$distFile" -o "$f" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	};   ddist tomee.tar.gz.asc tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.asc   && ddist tomee.tar.gz.sha512 tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz.sha512   && ddist apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz tomee/tomee-${TOMEE_VER}/apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && gpg --batch --verify tomee.tar.gz.asc apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && sed "s/\t/  /" tomee.tar.gz.sha512 | sha512sum -c -   && tar -zxf apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && mv apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}/* /usr/local/tomee   && rm apache-tomee-${TOMEE_VER}-${TOMEE_BUILD}.tar.gz   && rm -Rf apache-tomee-${TOMEE_BUILD}-${TOMEE_VER}   && rm bin/*.bat   && rm bin/*.exe   && rm bin/*.tar.gz*   && rm tomee.tar.gz.asc   && rm tomee.tar.gz* # buildkit
-# Wed, 15 Apr 2026 22:10:36 GMT
+# Tue, 05 May 2026 19:14:51 GMT
 EXPOSE map[8080/tcp:{}]
-# Wed, 15 Apr 2026 22:10:36 GMT
+# Tue, 05 May 2026 19:14:51 GMT
 CMD ["catalina.sh" "run"]
 ```
 
@@ -214,47 +214,47 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Wed, 15 Apr 2026 20:34:18 GMT  
 		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:582372f5d2ce56876f37c2af36d476d3ff1d3a9025445872acf4119dc36e43b9`  
-		Last Modified: Wed, 15 Apr 2026 22:10:46 GMT  
-		Size: 172.0 B  
+	-	`sha256:0dd4935c84e884d6976194089f5f3486cb2a6950a649e9237483e49806e3d148`  
+		Last Modified: Tue, 05 May 2026 19:15:01 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b66be490235aba482fb73aff70d162db67b50f60cc1f7801e2b225a5aaa40e13`  
-		Last Modified: Wed, 15 Apr 2026 22:10:46 GMT  
-		Size: 893.4 KB (893351 bytes)  
+	-	`sha256:c6577560d20ba67c9f5d38c8e1ba309e5a94602f4e10c5d360d1c320d36fea88`  
+		Last Modified: Tue, 05 May 2026 19:15:01 GMT  
+		Size: 894.0 KB (893959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:421aca2367d100468b7d776dbc49848bfb7a54e4d73f9a1e90861a249a99166d`  
-		Last Modified: Wed, 15 Apr 2026 22:10:46 GMT  
-		Size: 75.6 KB (75622 bytes)  
+	-	`sha256:7738a850ad064bc01966078c3502d717053948fd825b887a439790330edd630f`  
+		Last Modified: Tue, 05 May 2026 19:15:01 GMT  
+		Size: 75.6 KB (75617 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e3f732855fb33e32eb0ccf8360f5008be612a5ba2753049c28bff2c52d82f38`  
-		Last Modified: Wed, 15 Apr 2026 22:10:48 GMT  
-		Size: 75.0 MB (75016907 bytes)  
+	-	`sha256:1428c922c02d5e55a15d4ae11373fd651bc43ba119ee847300916f4e02a41868`  
+		Last Modified: Tue, 05 May 2026 19:15:03 GMT  
+		Size: 76.8 MB (76790231 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `tomee:10-jre21-alpine-plus` - unknown; unknown
 
 ```console
-$ docker pull tomee@sha256:cf02bf298f996388e00717af731fc6c38ff1c1a94fb1bee921b403ac8da7d6ec
+$ docker pull tomee@sha256:c68fd7498f8e047ce2f04e69ab984a096df0d980380492a679d6bb53e3bc190f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.3 MB (1334371 bytes)**  
+-	Total Size: **1.3 MB (1334352 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63cce69efe745a0b4c0f6ac6f2a57b046ec7337c23326457a13e4a93c9d4c23d`
+-	Image ID: `sha256:eaaddb6ba2e69c9904b60aaf4c13af5715738d14397877b8063ed9cf8d3feb02`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:be8f74d39e17c66d124111f64d17ea5c6629bee859aad1993cda37cd3f1c32c5`  
-		Last Modified: Wed, 15 Apr 2026 22:10:46 GMT  
-		Size: 1.3 MB (1306640 bytes)  
+	-	`sha256:7a19b1eb25c95c4ee4c920728de7a5ac1dcfad76a7d6cf66226104fd08a4f25a`  
+		Last Modified: Tue, 05 May 2026 19:15:01 GMT  
+		Size: 1.3 MB (1306622 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:10d4ffff32ada099b8b9b0937d8567e258556c57a17c8d0ecb03aca516bf289e`  
-		Last Modified: Wed, 15 Apr 2026 22:10:46 GMT  
-		Size: 27.7 KB (27731 bytes)  
+	-	`sha256:805d5a0c6a5dd850ba22fc8022f00b09ef216cb9b44197c795b98929a03f299a`  
+		Last Modified: Tue, 05 May 2026 19:15:01 GMT  
+		Size: 27.7 KB (27730 bytes)  
 		MIME: application/vnd.in-toto+json
