@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:14c982870ed0f2165579cc75426eb003f3ec1cf0501b950e53146052e68a7b34`
-- Created: `2026-04-15T20:43:39.688001712Z`
-- Virtual Size: ~ 434.84 Mb  
+- Image ID: `sha256:68aa326322ac34c5534cc776f18b712958bbeb3ad2965bc0b97734e41241d920`
+- Created: `2026-05-04T19:32:45.906926211Z`
+- Virtual Size: ~ 434.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/bin/entrypoint.sh"]`
 - Command: `["influxdb3","serve"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `INFLUXDB_VERSION=3.9.1`
+  - `INFLUXDB_VERSION=3.9.2`
   - `INFLUXDB3_PLUGIN_DIR=/plugins`
   - `INFLUXDB3_DATA_DIR=/home/influxdb3/.influxdb3`
   - `INFLUXDB3_SERVE_INVOCATION_METHOD=docker-hub`
@@ -302,12 +302,12 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.2.dsc' coreutils_9.4-3ubuntu6.2.dsc 2030 SHA256:a16ffb435f38507bea51474f5e40a26e4c8191d2190da8770e8e4726c18e37ba
 ```
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.8`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.9`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.8`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.8`
+- `curl=8.5.0-2ubuntu10.9`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.9`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -327,10 +327,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.8
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA256:05fc17ff25b793a437a0906e0484b82172a9f4de02be5ed447e0cab8c3475add
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.8.debian.tar.xz' curl_8.5.0-2ubuntu10.8.debian.tar.xz 68580 SHA256:aaee38ce53b81464e1e05b3691b98cd3a9ba3d9f36f9dd2ad0bb54f3d93e228e
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.8.dsc' curl_8.5.0-2ubuntu10.8.dsc 3051 SHA256:46e69156687b64496bc1195a556ff2dc79cd529cdac341bf6b25898574a657cc
+$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.9
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.9.debian.tar.xz' curl_8.5.0-2ubuntu10.9.debian.tar.xz 76576 SHA512:e2758617da044745e488a26b65c245e236d02442486dc20bb281b0fd8eb3258d736b339caac26b1584a30235b321f58b4f88827dfc659be5559ef5da3703016d
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.9.dsc' curl_8.5.0-2ubuntu10.9.dsc 3051 SHA512:0c23074297e3c67ac1ecabd4598036fbee147d8b336c8cb9c787a350567d1f0320b0f93e5c4bca4a9153221604bf5f7598b5329f075da015feb710f79aca6e29
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
