@@ -57,19 +57,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.2.0
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.2.0.dsc' apt_3.2.0.dsc 3127 SHA256:364347278a531cf073f809a14f84617c2b935cfb324bd413aa01c214b6f8a3e8
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.2.0.tar.xz' apt_3.2.0.tar.xz 2476660 SHA256:dcd186912a7b8553cc885412127925858ee340c655e2f26e77eacdab23f48089
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.2.0/
 
-- https://sources.debian.net/src/apt/3.2.0/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.2.0/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.2.0/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-4`
 
@@ -198,20 +192,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 - `MIT-like`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.3-2
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.3-2.dsc' bash_5.3-2.dsc 2141 SHA256:c4e8f54f49b0fc9a43ed59016c00626f354f3fd7dcb0894646496e9deae0f120
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.3.orig.tar.xz' bash_5.3.orig.tar.xz 5571836 SHA256:a70de6bb41f5e192534a5a1836b1d7fad9a8d4818a6e1506d70f38441552c17a
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.3-2.debian.tar.xz' bash_5.3-2.debian.tar.xz 91816 SHA256:e076ede422f979e4fbd1a0c5818b0a1dec87d6bcd3770eceb3dd8168522b48a5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/5.3-2/
 
-- https://sources.debian.net/src/bash/5.3-2/ (for browsing the source)
-- https://sources.debian.net/src/bash/5.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/5.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `brotli=1.2.0-3`
 
@@ -726,20 +713,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-16-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-16=16-20260322-1
-'http://deb.debian.org/debian/pool/main/g/gcc-16/gcc-16_16-20260322-1.dsc' gcc-16_16-20260322-1.dsc 52607 SHA256:c193b53be00f9c33000940fdf7ea55e0bad96340fd88747dcb71a3dee6698771
-'http://deb.debian.org/debian/pool/main/g/gcc-16/gcc-16_16-20260322.orig.tar.gz' gcc-16_16-20260322.orig.tar.gz 100226042 SHA256:503fe48ed4915a537daaf14d1cd5578a40123f4564ebad5d6e46d4051fb8496e
-'http://deb.debian.org/debian/pool/main/g/gcc-16/gcc-16_16-20260322-1.debian.tar.xz' gcc-16_16-20260322-1.debian.tar.xz 625016 SHA256:d67180c12f1bc9367b89144ca00abec29b0694f67398fa771bfc83b8575edcdd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-16/16-20260322-1/
 
-- https://sources.debian.net/src/gcc-16/16-20260322-1/ (for browsing the source)
-- https://sources.debian.net/src/gcc-16/16-20260322-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-16/16-20260322-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.42-15`
 
@@ -899,21 +879,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `MIT OR Unlicense`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.12-3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.12-3.dsc' gnutls28_3.8.12-3.dsc 3067 SHA256:49816fe7e27ac71df2a3c629c0834daa72da22a08821e1c9c95d18e99fd0d0a1
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.12.orig.tar.xz' gnutls28_3.8.12.orig.tar.xz 6949604 SHA256:a7b341421bfd459acf7a374ca4af3b9e06608dcd7bd792b2bf470bea012b8e51
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.12.orig.tar.xz.asc' gnutls28_3.8.12.orig.tar.xz.asc 996 SHA256:7a70d4071502974666f2f661e4ab06ba06076efd20468e4198f5f09c7ace41e2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.12-3.debian.tar.xz' gnutls28_3.8.12-3.debian.tar.xz 173324 SHA256:b331186c32e99ec8fc6fbd29b26f8bbae73863fad3efc8dbec9c83a21a748eb8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.12-3/
 
-- https://sources.debian.net/src/gnutls28/3.8.12-3/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.12-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.12-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.12-1`
 
