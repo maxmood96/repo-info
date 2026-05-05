@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6a46de6d7007712c9d8019264739fbbac0f0975ed168137537a43715bb4a8498`
-- Created: `2026-04-15T21:42:57.648774597Z`
-- Virtual Size: ~ 733.74 Mb  
+- Image ID: `sha256:b75ce6f39d9e5f7652d91edf0784498e8ba18f05a7a6860369ea20ef8045f4a8`
+- Created: `2026-05-01T00:12:14.782958212Z`
+- Virtual Size: ~ 735.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/helpers/runtime/docker-server.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.30+7.1_openj9-0.57.0`
+  - `JAVA_VERSION=11.0.31.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
   - `LOG_DIR=/liberty/logs`
@@ -320,14 +320,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.8
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA256:05fc17ff25b793a437a0906e0484b82172a9f4de02be5ed447e0cab8c3475add
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.8.debian.tar.xz' curl_8.5.0-2ubuntu10.8.debian.tar.xz 68580 SHA256:aaee38ce53b81464e1e05b3691b98cd3a9ba3d9f36f9dd2ad0bb54f3d93e228e
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.8.dsc' curl_8.5.0-2ubuntu10.8.dsc 3051 SHA256:46e69156687b64496bc1195a556ff2dc79cd529cdac341bf6b25898574a657cc
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
 
