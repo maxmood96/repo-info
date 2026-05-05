@@ -4135,7 +4135,12 @@ $ docker pull ubuntu@sha256:87a1854fa3ef91f9d00526cf6976ad5cdbb27fa45045aa404434
 
 ## `ubuntu:resolute-20260421`
 
-**does not exist** (yet?)
+```console
+$ docker pull ubuntu@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ubuntu:rolling`
 
