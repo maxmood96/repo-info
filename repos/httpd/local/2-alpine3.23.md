@@ -1,18 +1,18 @@
-# `httpd:2.4.66-alpine`
+# `httpd:2.4.67-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1330ad8e3398d39471a635a8fe5cec23f7edc6f7f1d9f206cbe1d76cce71e589`
-- Created: `2026-04-15T20:18:39.913661753Z`
-- Virtual Size: ~ 67.15 Mb  
+- Image ID: `sha256:c9e51ef5214c52b120c52611ebf3292ee790be454d84de82aa1e9431595d36db`
+- Created: `2026-05-05T17:41:11.809000817Z`
+- Virtual Size: ~ 67.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
 - Environment:
   - `PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HTTPD_PREFIX=/usr/local/apache2`
-  - `HTTPD_VERSION=2.4.66`
-  - `HTTPD_SHA256=94d7ff2b42acbb828e870ba29e4cbad48e558a79c623ad3596e4116efcfea25a`
+  - `HTTPD_VERSION=2.4.67`
+  - `HTTPD_SHA256=66cd206637b0d5c446fa7dabe75fe03525da8fb55855876c46288cd88b136aa4`
   - `HTTPD_PATCHES=`
 
 ## `apk` (`.apk`-based packages)
@@ -564,16 +564,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.68.0-r0 description:
+nghttp2-libs-1.69.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.68.0-r0 webpage:
+nghttp2-libs-1.69.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.68.0-r0 installed size:
+nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.68.0-r0 license:
+nghttp2-libs-1.69.0-r0 license:
 MIT
 
 ```
@@ -666,16 +666,16 @@ GPL-2.0-only
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.2-r0 description:
+xz-libs-5.8.3-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.2-r0 webpage:
+xz-libs-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.2-r0 installed size:
+xz-libs-5.8.3-r0 installed size:
 221 KiB
 
-xz-libs-5.8.2-r0 license:
+xz-libs-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
