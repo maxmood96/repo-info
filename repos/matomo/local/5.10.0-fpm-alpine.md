@@ -1,10 +1,10 @@
-# `matomo:5.9.0-fpm-alpine`
+# `matomo:5.10.0-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:60e7a902fc0458b11bf95012afe431420f4fcdb380eb5e723f9c926e5883a608`
-- Created: `2026-04-24T17:32:38.609775925Z`
-- Virtual Size: ~ 169.49 Mb  
+- Image ID: `sha256:6ad31cea07da12198594f30e6e9551baa0df0d370653194fc6b33a6c9a2370bc`
+- Created: `2026-05-04T22:05:33.684781918Z`
+- Virtual Size: ~ 170.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,7 +22,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.20.tar.xz.asc`
   - `PHP_SHA256=e454c6f7c89a42f41ebb06dc5c3578e8c8b5f1a3f0da6675665affab04e221f7`
   - `PHP_MEMORY_LIMIT=256M`
-  - `MATOMO_VERSION=5.9.0`
+  - `MATOMO_VERSION=5.10.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -811,16 +811,16 @@ GPL-3.0-or-later
 ### `apk` package: `xz`
 
 ```console
-xz-5.8.2-r0 description:
+xz-5.8.3-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.8.2-r0 webpage:
+xz-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
-xz-5.8.2-r0 installed size:
+xz-5.8.3-r0 installed size:
 162 KiB
 
-xz-5.8.2-r0 license:
+xz-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -828,16 +828,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.2-r0 description:
+xz-libs-5.8.3-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.2-r0 webpage:
+xz-libs-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.2-r0 installed size:
+xz-libs-5.8.3-r0 installed size:
 221 KiB
 
-xz-libs-5.8.2-r0 license:
+xz-libs-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
