@@ -26,6 +26,12 @@
 -	[`gcc:15.2-trixie`](#gcc152-trixie)
 -	[`gcc:15.2.0`](#gcc1520)
 -	[`gcc:15.2.0-trixie`](#gcc1520-trixie)
+-	[`gcc:16`](#gcc16)
+-	[`gcc:16-trixie`](#gcc16-trixie)
+-	[`gcc:16.1`](#gcc161)
+-	[`gcc:16.1-trixie`](#gcc161-trixie)
+-	[`gcc:16.1.0`](#gcc1610)
+-	[`gcc:16.1.0-trixie`](#gcc1610-trixie)
 -	[`gcc:latest`](#gcclatest)
 -	[`gcc:trixie`](#gcctrixie)
 
@@ -14212,6 +14218,30 @@ $ docker pull gcc@sha256:2ec430dc88f061341b89e6ce7a72472c5ea0fc0e8c6fe16d2e4c200
 		Last Modified: Wed, 22 Apr 2026 08:14:24 GMT  
 		Size: 30.3 KB (30285 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `gcc:16`
+
+**does not exist** (yet?)
+
+## `gcc:16-trixie`
+
+**does not exist** (yet?)
+
+## `gcc:16.1`
+
+**does not exist** (yet?)
+
+## `gcc:16.1-trixie`
+
+**does not exist** (yet?)
+
+## `gcc:16.1.0`
+
+**does not exist** (yet?)
+
+## `gcc:16.1.0-trixie`
+
+**does not exist** (yet?)
 
 ## `gcc:latest`
 
