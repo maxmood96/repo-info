@@ -1,20 +1,16 @@
-# `redis:7.4.8-alpine`
+# `redis:7.4.9-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9210b8dc25f122eb00e5572dcc7147c8e11fb1a08308b088e06c9d5dd2aa49d6`
-- Created: `2026-04-17T00:21:59.857043829Z`
-- Virtual Size: ~ 41.41 Mb  
+- Image ID: `sha256:0f16dc869bf201a80a8e2106317fe3d7d39396cdb5bc9465a81025a2c3b89cd1`
+- Created: `2026-05-05T17:56:31.950856009Z`
+- Virtual Size: ~ 39.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["redis-server"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOSU_VERSION=1.17`
-  - `REDIS_VERSION=7.4.8`
-  - `REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.8.tar.gz`
-  - `REDIS_DOWNLOAD_SHA=f6773cb7d63be236c59c2917a82f1f08e47b77d89b2f0c9f53becb22b8ea4172`
 
 ## `apk` (`.apk`-based packages)
 
@@ -154,6 +150,23 @@ MPL-2.0 AND MIT
 
 ```
 
+### `apk` package: `libcap-ng`
+
+```console
+libcap-ng-0.8.5-r0 description:
+POSIX capabilities library
+
+libcap-ng-0.8.5-r0 webpage:
+https://people.redhat.com/sgrubb/libcap-ng/index.html
+
+libcap-ng-0.8.5-r0 installed size:
+39 KiB
+
+libcap-ng-0.8.5-r0 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
+
+```
+
 ### `apk` package: `libcrypto3`
 
 ```console
@@ -239,6 +252,23 @@ GPL-2.0-only
 
 ```
 
+### `apk` package: `setpriv`
+
+```console
+setpriv-2.40.4-r1 description:
+Run a program with different Linux privilege settings
+
+setpriv-2.40.4-r1 webpage:
+https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+
+setpriv-2.40.4-r1 installed size:
+33 KiB
+
+setpriv-2.40.4-r1 license:
+GPL-2.0-or-later
+
+```
+
 ### `apk` package: `ssl_client`
 
 ```console
@@ -259,16 +289,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026a-r0 description:
+tzdata-2026b-r0 description:
 Timezone data
 
-tzdata-2026a-r0 webpage:
+tzdata-2026b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026a-r0 installed size:
+tzdata-2026b-r0 installed size:
 436 KiB
 
-tzdata-2026a-r0 license:
+tzdata-2026b-r0 license:
 Public-Domain
 
 ```
