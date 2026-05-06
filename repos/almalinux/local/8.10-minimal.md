@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0fbec11d5a3fb80bdc5ba9457a5fcd4e38ee4d0ec1997ffd4b56163386c47174`
-- Created: `2026-04-28T00:02:25.091256706Z`
+- Image ID: `sha256:759f0c7220f10cf9daa66d5b7999eb628757ab13bde9e19bb39f6f4e7ad0a328`
+- Created: `2026-05-04T20:41:10.153607462Z`
 - Virtual Size: ~ 93.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -784,15 +784,15 @@ $ dnf --quiet download --source --url libxcrypt-4.1.1-6.el8
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libxcrypt-4.1.1-6.el8.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.7-21.el8_10.3.x86_64`
+### `rpm` package: `libxml2-2.9.7-21.el8_10.4.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.7-21.el8_10.3
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libxml2-2.9.7-21.el8_10.3.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.7-21.el8_10.4
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/libxml2-2.9.7-21.el8_10.4.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.1.7-5.el8.x86_64`
@@ -1070,15 +1070,15 @@ $ dnf --quiet download --source --url sqlite-libs-3.26.0-20.el8_10
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/sqlite-3.26.0-20.el8_10.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-239-82.el8_10.15.x86_64`
+### `rpm` package: `systemd-libs-239-82.el8_10.16.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-libs-239-82.el8_10.15
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/systemd-239-82.el8_10.15.src.rpm
+$ dnf --quiet download --source --url systemd-libs-239-82.el8_10.16
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/systemd-239-82.el8_10.16.src.rpm
 ```
 
 ### `rpm` package: `tzdata-2026a-1.el8.noarch`

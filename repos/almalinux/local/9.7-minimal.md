@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b21d7d6dad11a65f7f838a731e063311015a6488c4a332343de9bde7060e5fc4`
-- Created: `2026-04-28T00:02:09.39796933Z`
+- Image ID: `sha256:2e47bfe92113ac4a7aa968cfcc6b202e0917e3aba076ed34fb909ba43d0145a1`
+- Created: `2026-05-04T20:41:21.372963563Z`
 - Virtual Size: ~ 93.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -426,15 +426,15 @@ $ dnf --quiet download --source --url libblkid-2.37.4-21.el9_7
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/util-linux-2.37.4-21.el9_7.src.rpm
 ```
 
-### `rpm` package: `libcap-2.48-10.el9.x86_64`
+### `rpm` package: `libcap-2.48-10.el9_7.1.x86_64`
 
 Licenses (from `rpm --query`): BSD or GPLv2
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcap-2.48-10.el9
-http://vault.almalinux.org/9.7/BaseOS/Source/Packages/libcap-2.48-10.el9.src.rpm
+$ dnf --quiet download --source --url libcap-2.48-10.el9_7.1
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/libcap-2.48-10.el9_7.1.src.rpm
 ```
 
 ### `rpm` package: `libcap-ng-0.8.2-7.el9.x86_64`
