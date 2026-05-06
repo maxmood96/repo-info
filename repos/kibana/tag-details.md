@@ -306,7 +306,7 @@ $ docker pull kibana@sha256:e33b82fc336b432f9dcdb047f6662de8fc839438d1910fdd3ebe
 ## `kibana:9.3.4`
 
 ```console
-$ docker pull kibana@sha256:ae2c5e63e91efa2ea49269d194f77756bfb87513ca6da6559076cf6d30f0220c
+$ docker pull kibana@sha256:ffed32747932446d4954ab8b7b4e3a27fefefdec4cb408ca851ea6d6981ced1b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -319,367 +319,367 @@ $ docker pull kibana@sha256:ae2c5e63e91efa2ea49269d194f77756bfb87513ca6da6559076
 ### `kibana:9.3.4` - linux; amd64
 
 ```console
-$ docker pull kibana@sha256:661e5ee17c2a682652a0ca24419545e5d8944d677b6ca08434df344ebba72e17
+$ docker pull kibana@sha256:89c3009b5f2b29303be6e92ea0ad3156c8b05190ab57aa3f38c0639d21458ff3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **461.7 MB (461718601 bytes)**  
+-	Total Size: **461.7 MB (461718856 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3d021717a832dc5b6456577fdc5c50683a4576890a2ff97f3a05ad2a331c515`
+-	Image ID: `sha256:1e817c41d2d4bf6142765290d38d2bc8e9aab39db60d26f76c51cc70e90eb0de`
 -	Entrypoint: `["\/bin\/tini","--"]`
 -	Default Command: `["\/usr\/local\/bin\/kibana-docker"]`
 
 ```dockerfile
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:16 GMT
 LABEL maintainer="Red Hat, Inc."
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:16 GMT
 LABEL vendor="Red Hat, Inc."
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:16 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:16 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.7"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:16 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:16 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:17 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:17 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:17 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:17 GMT
 LABEL io.openshift.expose-services=""
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:17 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:17 GMT
 ENV container oci
-# Wed, 22 Apr 2026 04:58:45 GMT
-COPY dir:82e03e3ceb4a712116e9d6ecd1b99e2e729a68954b82c791f435d1cb8db14f8a in /      
-# Wed, 22 Apr 2026 04:58:46 GMT
+# Mon, 04 May 2026 01:27:17 GMT
+COPY dir:65829633e0a732ee03a3da731062eca14df67dc0e6bab86d02002ef9d123d97c in /      
+# Mon, 04 May 2026 01:27:17 GMT
 COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Wed, 22 Apr 2026 04:58:46 GMT
+# Mon, 04 May 2026 01:27:17 GMT
 CMD ["/bin/bash"]
-# Wed, 22 Apr 2026 04:58:46 GMT
+# Mon, 04 May 2026 01:27:17 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      
-# Wed, 22 Apr 2026 04:58:46 GMT
+# Mon, 04 May 2026 01:27:17 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      
-# Wed, 22 Apr 2026 04:58:46 GMT
-COPY file:bc4dcbf01192949338f7e5550a4152e5364437463c0f897fd55b15eb58f57ead in /usr/share/buildinfo/labels.json      
-# Wed, 22 Apr 2026 04:58:46 GMT
-COPY file:bc4dcbf01192949338f7e5550a4152e5364437463c0f897fd55b15eb58f57ead in /root/buildinfo/labels.json      
-# Wed, 22 Apr 2026 04:58:46 GMT
-LABEL "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="5bb1e5f6eb0dd42dce5d2f21f64a3a9feec995f1" "org.opencontainers.image.revision"="5bb1e5f6eb0dd42dce5d2f21f64a3a9feec995f1" "build-date"="2026-04-22T04:58:33Z" "org.opencontainers.image.created"="2026-04-22T04:58:33Z" "release"="1776833838"org.opencontainers.image.revision=5bb1e5f6eb0dd42dce5d2f21f64a3a9feec995f1,org.opencontainers.image.created=2026-04-22T04:58:33Z
-# Fri, 01 May 2026 00:09:54 GMT
+# Mon, 04 May 2026 01:27:18 GMT
+COPY file:c2149fceb878782b97b2875047824d21e0e5ecd57a50bf8e1dd5d47550f18358 in /usr/share/buildinfo/labels.json      
+# Mon, 04 May 2026 01:27:18 GMT
+COPY file:c2149fceb878782b97b2875047824d21e0e5ecd57a50bf8e1dd5d47550f18358 in /root/buildinfo/labels.json      
+# Mon, 04 May 2026 01:27:18 GMT
+LABEL "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="dbf428e1775c5e4c4802b4c714d3b50b652d0c8a" "org.opencontainers.image.revision"="dbf428e1775c5e4c4802b4c714d3b50b652d0c8a" "build-date"="2026-05-04T01:27:05Z" "org.opencontainers.image.created"="2026-05-04T01:27:05Z" "release"="1777857961"org.opencontainers.image.revision=dbf428e1775c5e4c4802b4c714d3b50b652d0c8a,org.opencontainers.image.created=2026-05-04T01:27:05Z
+# Tue, 05 May 2026 23:09:23 GMT
 EXPOSE map[5601/tcp:{}]
-# Fri, 01 May 2026 00:09:54 GMT
+# Tue, 05 May 2026 23:09:23 GMT
 RUN microdnf install --setopt=tsflags=nodocs -y       fontconfig liberation-fonts-common freetype shadow-utils nss findutils &&       microdnf clean all # buildkit
-# Fri, 01 May 2026 00:19:09 GMT
+# Tue, 05 May 2026 23:18:49 GMT
 COPY --chown=1000:0 /usr/share/kibana /usr/share/kibana # buildkit
-# Fri, 01 May 2026 00:19:09 GMT
+# Tue, 05 May 2026 23:18:49 GMT
 COPY --chown=0:0 /bin/tini /bin/tini # buildkit
-# Fri, 01 May 2026 00:19:09 GMT
+# Tue, 05 May 2026 23:18:50 GMT
 COPY --chown=0:0 /usr/share/fonts/local/NotoSansCJK-Regular.ttc /usr/share/fonts/local/NotoSansCJK-Regular.ttc # buildkit
-# Fri, 01 May 2026 00:19:10 GMT
+# Tue, 05 May 2026 23:18:50 GMT
 RUN fc-cache -v # buildkit
-# Fri, 01 May 2026 00:19:10 GMT
+# Tue, 05 May 2026 23:18:50 GMT
 WORKDIR /usr/share/kibana
-# Fri, 01 May 2026 00:19:10 GMT
+# Tue, 05 May 2026 23:18:50 GMT
 RUN ln -s /usr/share/kibana /opt/kibana # buildkit
-# Fri, 01 May 2026 00:19:10 GMT
+# Tue, 05 May 2026 23:18:50 GMT
 ENV ELASTIC_CONTAINER=true
-# Fri, 01 May 2026 00:19:10 GMT
+# Tue, 05 May 2026 23:18:50 GMT
 ENV PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 01 May 2026 00:19:10 GMT
+# Tue, 05 May 2026 23:18:50 GMT
 COPY --chown=1000:0 config/kibana.yml /usr/share/kibana/config/kibana.yml # buildkit
-# Fri, 01 May 2026 00:19:10 GMT
+# Tue, 05 May 2026 23:18:50 GMT
 COPY bin/kibana-docker /usr/local/bin/ # buildkit
-# Fri, 01 May 2026 00:19:10 GMT
+# Tue, 05 May 2026 23:18:50 GMT
 RUN chmod g+ws /usr/share/kibana &&     find /usr/share/kibana -gid 0 -and -not -perm /g+w -exec chmod g+w {} \; # buildkit
-# Fri, 01 May 2026 00:19:11 GMT
+# Tue, 05 May 2026 23:18:51 GMT
 RUN find / -xdev -perm -4000 -exec chmod u-s {} + # buildkit
-# Fri, 01 May 2026 00:19:11 GMT
+# Tue, 05 May 2026 23:18:51 GMT
 RUN groupadd --gid 1000 kibana &&     useradd --uid 1000 --gid 1000 -G 0       --home-dir /usr/share/kibana --no-create-home       kibana # buildkit
-# Fri, 01 May 2026 00:19:11 GMT
+# Tue, 05 May 2026 23:18:51 GMT
 LABEL org.label-schema.build-date=2026-04-22T11:33:27.171Z org.label-schema.license=Elastic License org.label-schema.name=Kibana org.label-schema.schema-version=1.0 org.label-schema.url=https://www.elastic.co/products/kibana org.label-schema.usage=https://www.elastic.co/guide/en/kibana/reference/index.html org.label-schema.vcs-ref=49d42f259436b65ab5297f19a65855bed082f302 org.label-schema.vcs-url=https://github.com/elastic/kibana org.label-schema.vendor=Elastic org.label-schema.version=9.3.4 org.opencontainers.image.created=2026-04-22T11:33:27.171Z org.opencontainers.image.documentation=https://www.elastic.co/guide/en/kibana/reference/index.html org.opencontainers.image.licenses=Elastic License org.opencontainers.image.revision=49d42f259436b65ab5297f19a65855bed082f302 org.opencontainers.image.source=https://github.com/elastic/kibana org.opencontainers.image.title=Kibana org.opencontainers.image.url=https://www.elastic.co/products/kibana org.opencontainers.image.vendor=Elastic org.opencontainers.image.version=9.3.4
-# Fri, 01 May 2026 00:19:11 GMT
+# Tue, 05 May 2026 23:18:51 GMT
 LABEL name=Kibana maintainer=infra@elastic.co vendor=Elastic version=9.3.4 release=1 summary=Kibana description=Your window into the Elastic Stack.
-# Fri, 01 May 2026 00:19:12 GMT
+# Tue, 05 May 2026 23:18:51 GMT
 RUN mkdir /licenses && ln LICENSE.txt /licenses/LICENSE # buildkit
-# Fri, 01 May 2026 00:19:12 GMT
+# Tue, 05 May 2026 23:18:51 GMT
 ENTRYPOINT ["/bin/tini" "--"]
-# Fri, 01 May 2026 00:19:12 GMT
+# Tue, 05 May 2026 23:18:51 GMT
 CMD ["/usr/local/bin/kibana-docker"]
-# Fri, 01 May 2026 00:19:12 GMT
+# Tue, 05 May 2026 23:18:51 GMT
 USER 1000
 ```
 
 -	Layers:
-	-	`sha256:c770e69088fa05bea8942da1c1e3fa6066cc7c288153d81443e0c9435861e0b1`  
-		Last Modified: Wed, 22 Apr 2026 05:40:43 GMT  
-		Size: 40.0 MB (40024775 bytes)  
+	-	`sha256:cd8d59cb7a894fbcbefe70d3cdbc433492e715351e24e77b24a441609ab2de47`  
+		Last Modified: Mon, 04 May 2026 03:52:20 GMT  
+		Size: 40.0 MB (40019116 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd4c3132ec572e334f5c18ac7ee2358a302c410c5804ab1d840b74d71c2cafa`  
-		Last Modified: Fri, 01 May 2026 00:20:13 GMT  
-		Size: 19.5 MB (19520807 bytes)  
+	-	`sha256:072ed2377e1d013bb56bc1bdc970b8ee3ef88dec4e75e82012e2ef2aa5ebd183`  
+		Last Modified: Tue, 05 May 2026 23:19:48 GMT  
+		Size: 19.5 MB (19520027 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2f05a8634078d88d47f498db47fa6d8c8847d520f7090a624953d84294fa276`  
-		Last Modified: Fri, 01 May 2026 00:20:21 GMT  
-		Size: 385.6 MB (385614606 bytes)  
+	-	`sha256:ccd2ed125457b0706f8374ce8598b63bf561fe3b73f3f8d9a00e92c905b44409`  
+		Last Modified: Tue, 05 May 2026 23:19:58 GMT  
+		Size: 385.6 MB (385621318 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:effcc1fe26d25d2ab958c98c60aba6c9294ab5ace388a31f4071e75c0178860d`  
-		Last Modified: Fri, 01 May 2026 00:20:12 GMT  
-		Size: 9.5 KB (9529 bytes)  
+	-	`sha256:4db267a1ccbf4eb4361f8598a2d89ae26e365ab07614017ea8c6bcdb7892aa5f`  
+		Last Modified: Tue, 05 May 2026 23:19:47 GMT  
+		Size: 9.5 KB (9528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:122c34667db3e2092a04a9289bec585243dbe188af86da2ceb1583983c7f284f`  
-		Last Modified: Fri, 01 May 2026 00:20:13 GMT  
-		Size: 16.5 MB (16460492 bytes)  
+	-	`sha256:895dbea8f5e4b19bf89681ee954bbcbf4ee56d40e4a90a4015d66bc78fb445c8`  
+		Last Modified: Tue, 05 May 2026 23:19:48 GMT  
+		Size: 16.5 MB (16460483 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c01242a3eff91ff9e1ca297d27d4a29f4ebdd8a361189b4d22fafb8a5a6a6ce`  
-		Last Modified: Fri, 01 May 2026 00:20:14 GMT  
-		Size: 5.2 KB (5228 bytes)  
+	-	`sha256:fbca92a75d671c8811ae58b3f2044a087ab7e2938d7585dad67c34f688f88c29`  
+		Last Modified: Tue, 05 May 2026 23:19:48 GMT  
+		Size: 5.2 KB (5223 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ae233e19c0e489a271fd4d8b5a332f64b72ea96a89eea39e28f10a22b165e9a`  
-		Last Modified: Fri, 01 May 2026 00:20:15 GMT  
-		Size: 130.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:556e02ded3d7992680d300a9177b7cc055a0aa93b9d91aa4e9830ad7bd79e4f0`  
-		Last Modified: Fri, 01 May 2026 00:20:15 GMT  
-		Size: 395.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:177297ae29501b0524bdc1337ba862c4b58780d8015e9150411b30a12b30cdf9`  
-		Last Modified: Fri, 01 May 2026 00:20:15 GMT  
-		Size: 4.9 KB (4921 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4423c195d0e9e39fb7e4a2725a105b3fe200f3ff8755f94125afea9a37488809`  
-		Last Modified: Fri, 01 May 2026 00:20:16 GMT  
-		Size: 399.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85d8638979343ad807b213a3d1a14addeded7cc42c3a886de9ec8687ebbb80ec`  
-		Last Modified: Fri, 01 May 2026 00:20:16 GMT  
-		Size: 74.5 KB (74539 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19d8a2d6ebec095aa081971612253c9bdf1fbbb18f61d58dfc542628bfa37747`  
-		Last Modified: Fri, 01 May 2026 00:20:16 GMT  
-		Size: 1.0 KB (1044 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c224f104289dd8c2e910b02b68482e7c9d7ac7f52ee678cdd00b816163602942`  
-		Last Modified: Fri, 01 May 2026 00:20:18 GMT  
-		Size: 1.7 KB (1704 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `kibana:9.3.4` - unknown; unknown
-
-```console
-$ docker pull kibana@sha256:06f54f55367c9125ee871fa47186aa0e0d39c1766fa4345c22d489234105478a
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5865065 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:795f2579f6a5b1113fc1ec3d88b847ca484fa2e86338999a1479f840a47dd7c6`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:abbad17445fc165a2ca9246fed6525acff5ae9258ab45aa575d65c207a19fc6d`  
-		Last Modified: Fri, 01 May 2026 00:20:13 GMT  
-		Size: 5.8 MB (5821839 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:8f66dcb321c1b6295f4093fdc3de2e39f15980797cddc74684ab27501e52bfb6`  
-		Last Modified: Fri, 01 May 2026 00:20:12 GMT  
-		Size: 43.2 KB (43226 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `kibana:9.3.4` - linux; arm64 variant v8
-
-```console
-$ docker pull kibana@sha256:f44501012022608e04cd6b64b5f1618c3f8b5cd8a10abecb271aa50a7e72c1d7
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **473.1 MB (473069729 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0a97a774a6a40329743490b20fe8348fca19ae4e432f23fde2deb02683741ac9`
--	Entrypoint: `["\/bin\/tini","--"]`
--	Default Command: `["\/usr\/local\/bin\/kibana-docker"]`
-
-```dockerfile
-# Wed, 22 Apr 2026 05:00:29 GMT
-LABEL maintainer="Red Hat, Inc."
-# Wed, 22 Apr 2026 05:00:29 GMT
-LABEL vendor="Red Hat, Inc."
-# Wed, 22 Apr 2026 05:00:29 GMT
-LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Wed, 22 Apr 2026 05:00:29 GMT
-LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.7"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Wed, 22 Apr 2026 05:00:29 GMT
-LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Wed, 22 Apr 2026 05:00:29 GMT
-LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Wed, 22 Apr 2026 05:00:29 GMT
-LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 22 Apr 2026 05:00:29 GMT
-LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 22 Apr 2026 05:00:29 GMT
-LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Wed, 22 Apr 2026 05:00:29 GMT
-LABEL io.openshift.expose-services=""
-# Wed, 22 Apr 2026 05:00:29 GMT
-LABEL io.openshift.tags="minimal rhel9"
-# Wed, 22 Apr 2026 05:00:29 GMT
-ENV container oci
-# Wed, 22 Apr 2026 05:00:30 GMT
-COPY dir:5dfc5d431dcfd4937d8e6a4dd1184486112214c6f8d103a0640fb0f8231a0840 in /      
-# Wed, 22 Apr 2026 05:00:30 GMT
-COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Wed, 22 Apr 2026 05:00:30 GMT
-CMD ["/bin/bash"]
-# Wed, 22 Apr 2026 05:00:30 GMT
-COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      
-# Wed, 22 Apr 2026 05:00:30 GMT
-COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      
-# Wed, 22 Apr 2026 05:00:30 GMT
-COPY file:15cced1d80c5bc31ac720f4e201d7d85c034d443588a80d803a468e8714fc167 in /usr/share/buildinfo/labels.json      
-# Wed, 22 Apr 2026 05:00:30 GMT
-COPY file:15cced1d80c5bc31ac720f4e201d7d85c034d443588a80d803a468e8714fc167 in /root/buildinfo/labels.json      
-# Wed, 22 Apr 2026 05:00:31 GMT
-LABEL "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="5bb1e5f6eb0dd42dce5d2f21f64a3a9feec995f1" "org.opencontainers.image.revision"="5bb1e5f6eb0dd42dce5d2f21f64a3a9feec995f1" "build-date"="2026-04-22T05:00:16Z" "org.opencontainers.image.created"="2026-04-22T05:00:16Z" "release"="1776833838"org.opencontainers.image.revision=5bb1e5f6eb0dd42dce5d2f21f64a3a9feec995f1,org.opencontainers.image.created=2026-04-22T05:00:16Z
-# Fri, 01 May 2026 00:09:29 GMT
-EXPOSE map[5601/tcp:{}]
-# Fri, 01 May 2026 00:09:29 GMT
-RUN microdnf install --setopt=tsflags=nodocs -y       fontconfig liberation-fonts-common freetype shadow-utils nss findutils &&       microdnf clean all # buildkit
-# Fri, 01 May 2026 00:16:50 GMT
-COPY --chown=1000:0 /usr/share/kibana /usr/share/kibana # buildkit
-# Fri, 01 May 2026 00:16:51 GMT
-COPY --chown=0:0 /bin/tini /bin/tini # buildkit
-# Fri, 01 May 2026 00:16:51 GMT
-COPY --chown=0:0 /usr/share/fonts/local/NotoSansCJK-Regular.ttc /usr/share/fonts/local/NotoSansCJK-Regular.ttc # buildkit
-# Fri, 01 May 2026 00:16:51 GMT
-RUN fc-cache -v # buildkit
-# Fri, 01 May 2026 00:16:51 GMT
-WORKDIR /usr/share/kibana
-# Fri, 01 May 2026 00:16:51 GMT
-RUN ln -s /usr/share/kibana /opt/kibana # buildkit
-# Fri, 01 May 2026 00:16:51 GMT
-ENV ELASTIC_CONTAINER=true
-# Fri, 01 May 2026 00:16:51 GMT
-ENV PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Fri, 01 May 2026 00:16:52 GMT
-COPY --chown=1000:0 config/kibana.yml /usr/share/kibana/config/kibana.yml # buildkit
-# Fri, 01 May 2026 00:16:52 GMT
-COPY bin/kibana-docker /usr/local/bin/ # buildkit
-# Fri, 01 May 2026 00:16:52 GMT
-RUN chmod g+ws /usr/share/kibana &&     find /usr/share/kibana -gid 0 -and -not -perm /g+w -exec chmod g+w {} \; # buildkit
-# Fri, 01 May 2026 00:16:53 GMT
-RUN find / -xdev -perm -4000 -exec chmod u-s {} + # buildkit
-# Fri, 01 May 2026 00:16:53 GMT
-RUN groupadd --gid 1000 kibana &&     useradd --uid 1000 --gid 1000 -G 0       --home-dir /usr/share/kibana --no-create-home       kibana # buildkit
-# Fri, 01 May 2026 00:16:53 GMT
-LABEL org.label-schema.build-date=2026-04-22T11:33:27.171Z org.label-schema.license=Elastic License org.label-schema.name=Kibana org.label-schema.schema-version=1.0 org.label-schema.url=https://www.elastic.co/products/kibana org.label-schema.usage=https://www.elastic.co/guide/en/kibana/reference/index.html org.label-schema.vcs-ref=49d42f259436b65ab5297f19a65855bed082f302 org.label-schema.vcs-url=https://github.com/elastic/kibana org.label-schema.vendor=Elastic org.label-schema.version=9.3.4 org.opencontainers.image.created=2026-04-22T11:33:27.171Z org.opencontainers.image.documentation=https://www.elastic.co/guide/en/kibana/reference/index.html org.opencontainers.image.licenses=Elastic License org.opencontainers.image.revision=49d42f259436b65ab5297f19a65855bed082f302 org.opencontainers.image.source=https://github.com/elastic/kibana org.opencontainers.image.title=Kibana org.opencontainers.image.url=https://www.elastic.co/products/kibana org.opencontainers.image.vendor=Elastic org.opencontainers.image.version=9.3.4
-# Fri, 01 May 2026 00:16:53 GMT
-LABEL name=Kibana maintainer=infra@elastic.co vendor=Elastic version=9.3.4 release=1 summary=Kibana description=Your window into the Elastic Stack.
-# Fri, 01 May 2026 00:16:54 GMT
-RUN mkdir /licenses && ln LICENSE.txt /licenses/LICENSE # buildkit
-# Fri, 01 May 2026 00:16:54 GMT
-ENTRYPOINT ["/bin/tini" "--"]
-# Fri, 01 May 2026 00:16:54 GMT
-CMD ["/usr/local/bin/kibana-docker"]
-# Fri, 01 May 2026 00:16:54 GMT
-USER 1000
-```
-
--	Layers:
-	-	`sha256:c57a97b2502dbf8d905aa782f6a2be8f57c8774e28f6d2ddf6a9a866fcc5fd8b`  
-		Last Modified: Wed, 22 Apr 2026 06:11:08 GMT  
-		Size: 38.2 MB (38204491 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f3e49332680533330b4999af5d95771411400e104355efa3833797a3c1168a2`  
-		Last Modified: Fri, 01 May 2026 00:18:01 GMT  
-		Size: 19.5 MB (19470615 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88a23d789127ac0b07dec23e1cb50e651bb6a937f177ee76d89cd4650c2df2a8`  
-		Last Modified: Fri, 01 May 2026 00:18:10 GMT  
-		Size: 398.8 MB (398837721 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e0ae8d17e868d1ee9fcd07990c4ffe76a69d89c98aa6668ab9ff27407bd72560`  
-		Last Modified: Fri, 01 May 2026 00:17:59 GMT  
-		Size: 9.1 KB (9099 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b70f4f9a9c6fb63c6c066388c21eedce5556a24c9b501547b403922e2da0e8ad`  
-		Last Modified: Fri, 01 May 2026 00:18:00 GMT  
-		Size: 16.5 MB (16460493 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6fc1752865264338c2e19da82e7f2ec5943faa1dd930ce1a8f355b5142510bdb`  
-		Last Modified: Fri, 01 May 2026 00:18:01 GMT  
-		Size: 5.2 KB (5232 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1bd0718debe86d8ba607d1bd2420e6478743d8ec21262d907ca06b369ad142f3`  
-		Last Modified: Fri, 01 May 2026 00:18:02 GMT  
+	-	`sha256:7c155e694e00c75c1f287e40316b67313491f6411b988820effed4fc0e957788`  
+		Last Modified: Tue, 05 May 2026 23:19:50 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b5fe4ae13ee188bb8154f8344186bce7c87cb532a424c78f8ad60365da7861d`  
-		Last Modified: Fri, 01 May 2026 00:18:02 GMT  
-		Size: 397.0 B  
+	-	`sha256:f2450e672c42638ab232d20f277554f309faf607fff64125aa6d135d52a498ea`  
+		Last Modified: Tue, 05 May 2026 23:19:50 GMT  
+		Size: 395.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c7ddf0f658f7bc11bd6b97050ff4bd7c56880dc56ce9e888a43fc5f99f611fdb`  
-		Last Modified: Fri, 01 May 2026 00:18:03 GMT  
-		Size: 4.9 KB (4919 bytes)  
+	-	`sha256:3ae023a17c9000ddcd5dfcca9f6cdb37923c7220d6e8b6885c253a694913db78`  
+		Last Modified: Tue, 05 May 2026 23:19:50 GMT  
+		Size: 4.9 KB (4914 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fde0ead2bde4b01b12485394cd8e35b1ea36739625623d9e7d2f9d44339ccb1`  
-		Last Modified: Fri, 01 May 2026 00:18:04 GMT  
+	-	`sha256:e5d8f0d86e845e74d550eb56fee4554d87e6d212977dbb2d062c8909d08da5f2`  
+		Last Modified: Tue, 05 May 2026 23:19:51 GMT  
 		Size: 398.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6380440b5b8a128e48d2e6719aa8e513d69c43d0550ce180c086b166dd3ed91`  
-		Last Modified: Fri, 01 May 2026 00:18:04 GMT  
-		Size: 73.4 KB (73449 bytes)  
+	-	`sha256:b7ccf45a1e28a5e613aeb3c4dfa55160c0f1ab220b4a07b467cce8ee1e523b3e`  
+		Last Modified: Tue, 05 May 2026 23:19:51 GMT  
+		Size: 74.5 KB (74539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a271b07068ebdc72e26ebd76e045cc2926dbd519ddb8a1fe569a6e3a17f93093`  
-		Last Modified: Fri, 01 May 2026 00:18:04 GMT  
+	-	`sha256:563c808b21533e77768f153ffe0776f18317a75d029b6601f3f785039fb9edb7`  
+		Last Modified: Tue, 05 May 2026 23:19:51 GMT  
 		Size: 1.0 KB (1044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a92a5509153cd63171fa6efaf9a626ec59b5ca4c14b86f4220f4723349ac730`  
-		Last Modified: Fri, 01 May 2026 00:18:05 GMT  
+	-	`sha256:b84a1df1c387dc1ee3308b35b524644771609c4a031d95854bd38763fdc9a354`  
+		Last Modified: Tue, 05 May 2026 23:19:53 GMT  
 		Size: 1.7 KB (1707 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `kibana:9.3.4` - unknown; unknown
 
 ```console
-$ docker pull kibana@sha256:59730eec0de4e6da3afc7d5acd6d5f0f10771065b0d3354a568ab41181b0ea52
+$ docker pull kibana@sha256:3caedec43f1a2b5a0533e0d091a6b4fadc4b10c47e7f2882dbd484439a7706f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5863994 bytes)**  
+-	Total Size: **5.9 MB (5865073 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e77aabd4ec96f79ddba3f610924707cf166885f697a8a854c81516733850ef1b`
+-	Image ID: `sha256:0f7a5fdd2558bfd7710b8c60de146a9a7e4429fa9d94ba9dd2d1e36783ef50ff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8b2ac7a660472345ce9569ec498b0d16843a63f707449f3dbb25a37c1c317344`  
-		Last Modified: Fri, 01 May 2026 00:17:59 GMT  
-		Size: 5.8 MB (5820511 bytes)  
+	-	`sha256:985fcd5caeaf217deb2eba96f404c33705f430ab71aa91f11dacb5aa144ffd9a`  
+		Last Modified: Tue, 05 May 2026 23:19:48 GMT  
+		Size: 5.8 MB (5821847 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:91d97491cc009de020b9bfaecd7d895beb30fca6ee1bd0e9d1c60314bf31f37a`  
-		Last Modified: Fri, 01 May 2026 00:17:59 GMT  
-		Size: 43.5 KB (43483 bytes)  
+	-	`sha256:911f3997ec3247e6a875be6531085a2462ea755d142b42330330d48b2d60e4a5`  
+		Last Modified: Tue, 05 May 2026 23:19:47 GMT  
+		Size: 43.2 KB (43226 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `kibana:9.3.4` - linux; arm64 variant v8
+
+```console
+$ docker pull kibana@sha256:14bdd41b20f8d5c7da0d7fa9c8591fc1a12977a4302034a0c4d17a76f3a749c3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **473.1 MB (473069577 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:bed01266f1e975423680dde99b3de4391023145a1f8c9f95c1ef43e12acf7877`
+-	Entrypoint: `["\/bin\/tini","--"]`
+-	Default Command: `["\/usr\/local\/bin\/kibana-docker"]`
+
+```dockerfile
+# Mon, 04 May 2026 01:30:08 GMT
+LABEL maintainer="Red Hat, Inc."
+# Mon, 04 May 2026 01:30:08 GMT
+LABEL vendor="Red Hat, Inc."
+# Mon, 04 May 2026 01:30:08 GMT
+LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
+# Mon, 04 May 2026 01:30:08 GMT
+LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.7"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
+# Mon, 04 May 2026 01:30:08 GMT
+LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
+# Mon, 04 May 2026 01:30:08 GMT
+LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
+# Mon, 04 May 2026 01:30:08 GMT
+LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
+# Mon, 04 May 2026 01:30:08 GMT
+LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
+# Mon, 04 May 2026 01:30:08 GMT
+LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
+# Mon, 04 May 2026 01:30:08 GMT
+LABEL io.openshift.expose-services=""
+# Mon, 04 May 2026 01:30:08 GMT
+LABEL io.openshift.tags="minimal rhel9"
+# Mon, 04 May 2026 01:30:08 GMT
+ENV container oci
+# Mon, 04 May 2026 01:30:09 GMT
+COPY dir:5ad712b8248d48b2932fa5bdcc0ad50ec37c7d49fe231a7db1a1c2391217329a in /      
+# Mon, 04 May 2026 01:30:09 GMT
+COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
+# Mon, 04 May 2026 01:30:09 GMT
+CMD ["/bin/bash"]
+# Mon, 04 May 2026 01:30:09 GMT
+COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      
+# Mon, 04 May 2026 01:30:09 GMT
+COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      
+# Mon, 04 May 2026 01:30:09 GMT
+COPY file:11a91ebd5ef22e4f28676b4a9dc8447f7af7f01609b0311ebd76ca9c6631f340 in /usr/share/buildinfo/labels.json      
+# Mon, 04 May 2026 01:30:10 GMT
+COPY file:11a91ebd5ef22e4f28676b4a9dc8447f7af7f01609b0311ebd76ca9c6631f340 in /root/buildinfo/labels.json      
+# Mon, 04 May 2026 01:30:10 GMT
+LABEL "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="dbf428e1775c5e4c4802b4c714d3b50b652d0c8a" "org.opencontainers.image.revision"="dbf428e1775c5e4c4802b4c714d3b50b652d0c8a" "build-date"="2026-05-04T01:29:56Z" "org.opencontainers.image.created"="2026-05-04T01:29:56Z" "release"="1777857961"org.opencontainers.image.revision=dbf428e1775c5e4c4802b4c714d3b50b652d0c8a,org.opencontainers.image.created=2026-05-04T01:29:56Z
+# Tue, 05 May 2026 23:08:57 GMT
+EXPOSE map[5601/tcp:{}]
+# Tue, 05 May 2026 23:08:57 GMT
+RUN microdnf install --setopt=tsflags=nodocs -y       fontconfig liberation-fonts-common freetype shadow-utils nss findutils &&       microdnf clean all # buildkit
+# Tue, 05 May 2026 23:16:41 GMT
+COPY --chown=1000:0 /usr/share/kibana /usr/share/kibana # buildkit
+# Tue, 05 May 2026 23:16:41 GMT
+COPY --chown=0:0 /bin/tini /bin/tini # buildkit
+# Tue, 05 May 2026 23:16:41 GMT
+COPY --chown=0:0 /usr/share/fonts/local/NotoSansCJK-Regular.ttc /usr/share/fonts/local/NotoSansCJK-Regular.ttc # buildkit
+# Tue, 05 May 2026 23:16:41 GMT
+RUN fc-cache -v # buildkit
+# Tue, 05 May 2026 23:16:41 GMT
+WORKDIR /usr/share/kibana
+# Tue, 05 May 2026 23:16:41 GMT
+RUN ln -s /usr/share/kibana /opt/kibana # buildkit
+# Tue, 05 May 2026 23:16:41 GMT
+ENV ELASTIC_CONTAINER=true
+# Tue, 05 May 2026 23:16:41 GMT
+ENV PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 05 May 2026 23:16:42 GMT
+COPY --chown=1000:0 config/kibana.yml /usr/share/kibana/config/kibana.yml # buildkit
+# Tue, 05 May 2026 23:16:42 GMT
+COPY bin/kibana-docker /usr/local/bin/ # buildkit
+# Tue, 05 May 2026 23:16:42 GMT
+RUN chmod g+ws /usr/share/kibana &&     find /usr/share/kibana -gid 0 -and -not -perm /g+w -exec chmod g+w {} \; # buildkit
+# Tue, 05 May 2026 23:16:43 GMT
+RUN find / -xdev -perm -4000 -exec chmod u-s {} + # buildkit
+# Tue, 05 May 2026 23:16:43 GMT
+RUN groupadd --gid 1000 kibana &&     useradd --uid 1000 --gid 1000 -G 0       --home-dir /usr/share/kibana --no-create-home       kibana # buildkit
+# Tue, 05 May 2026 23:16:43 GMT
+LABEL org.label-schema.build-date=2026-04-22T11:33:27.171Z org.label-schema.license=Elastic License org.label-schema.name=Kibana org.label-schema.schema-version=1.0 org.label-schema.url=https://www.elastic.co/products/kibana org.label-schema.usage=https://www.elastic.co/guide/en/kibana/reference/index.html org.label-schema.vcs-ref=49d42f259436b65ab5297f19a65855bed082f302 org.label-schema.vcs-url=https://github.com/elastic/kibana org.label-schema.vendor=Elastic org.label-schema.version=9.3.4 org.opencontainers.image.created=2026-04-22T11:33:27.171Z org.opencontainers.image.documentation=https://www.elastic.co/guide/en/kibana/reference/index.html org.opencontainers.image.licenses=Elastic License org.opencontainers.image.revision=49d42f259436b65ab5297f19a65855bed082f302 org.opencontainers.image.source=https://github.com/elastic/kibana org.opencontainers.image.title=Kibana org.opencontainers.image.url=https://www.elastic.co/products/kibana org.opencontainers.image.vendor=Elastic org.opencontainers.image.version=9.3.4
+# Tue, 05 May 2026 23:16:43 GMT
+LABEL name=Kibana maintainer=infra@elastic.co vendor=Elastic version=9.3.4 release=1 summary=Kibana description=Your window into the Elastic Stack.
+# Tue, 05 May 2026 23:16:44 GMT
+RUN mkdir /licenses && ln LICENSE.txt /licenses/LICENSE # buildkit
+# Tue, 05 May 2026 23:16:44 GMT
+ENTRYPOINT ["/bin/tini" "--"]
+# Tue, 05 May 2026 23:16:44 GMT
+CMD ["/usr/local/bin/kibana-docker"]
+# Tue, 05 May 2026 23:16:44 GMT
+USER 1000
+```
+
+-	Layers:
+	-	`sha256:eae0b4c39ea6d65927abe502bd11bbd574acc09733cb468c989628c5b204a24b`  
+		Last Modified: Mon, 04 May 2026 05:13:02 GMT  
+		Size: 38.2 MB (38205818 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a77cb4662c10e5e5adaaba8bd1b56e12f3a142a8e3142e755691b0373377d709`  
+		Last Modified: Tue, 05 May 2026 23:17:50 GMT  
+		Size: 19.5 MB (19468956 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e10ab29913f114001d12634f2b678b0a4c6a2f07218d46550c3150d8036d95b2`  
+		Last Modified: Tue, 05 May 2026 23:17:56 GMT  
+		Size: 398.8 MB (398837907 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f474e808c7a94b881554ab1ed53c22f1829a6e57b365bba88fca98ba2c9a6e24`  
+		Last Modified: Tue, 05 May 2026 23:17:48 GMT  
+		Size: 9.1 KB (9101 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f528a5a90e8181b7232d2e8b0fe2d04d553fe1598b4ad24251d02f0cb65f8004`  
+		Last Modified: Tue, 05 May 2026 23:17:49 GMT  
+		Size: 16.5 MB (16460493 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2f9b5b035a81e02ab13010d0f2668c9429ade8a1f3c4254cbe55dae6bf7dfbff`  
+		Last Modified: Tue, 05 May 2026 23:17:49 GMT  
+		Size: 5.2 KB (5222 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5d9f8cbbd91dcbfa03263dbeb13f529b2653ddd2dcf289bdce1b23244252d36e`  
+		Last Modified: Tue, 05 May 2026 23:17:51 GMT  
+		Size: 131.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:41a5c75ddd7d95bfbd4f5f543368bfd6982dad0032d0a05836fef6d1c31ce4f5`  
+		Last Modified: Tue, 05 May 2026 23:17:51 GMT  
+		Size: 397.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:912dbd674479c34ab7e5f0c6760ec3dd35f6b17e127050f6550d1e135bc1c4bb`  
+		Last Modified: Tue, 05 May 2026 23:17:51 GMT  
+		Size: 4.9 KB (4918 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:059f013d5a14462e274f60fdcf5c53781966433a96346c04eff8da0375364949`  
+		Last Modified: Tue, 05 May 2026 23:17:52 GMT  
+		Size: 400.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3e9b1094d3fe71e6c54b7d8b15e247d3e239808bf03ed875b7d89d2edc34438b`  
+		Last Modified: Tue, 05 May 2026 23:17:52 GMT  
+		Size: 73.4 KB (73449 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:60ed4afe58ce159857ddfbb5f3bd128bdeb6e8f51cab2f52dea74f8f11a1a64f`  
+		Last Modified: Tue, 05 May 2026 23:17:52 GMT  
+		Size: 1.0 KB (1046 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fbc44605ca60a7cd970f012b55c273a76b1c754d87ee5f0a6f706e59e233b6ad`  
+		Last Modified: Tue, 05 May 2026 23:17:53 GMT  
+		Size: 1.7 KB (1707 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `kibana:9.3.4` - unknown; unknown
+
+```console
+$ docker pull kibana@sha256:fcaeca47ea20601033cb512145d0cc3236ade0154798e9fe1c56a9d16b294da0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **5.9 MB (5864001 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1123f6a98b4bf1ed00ca46d64951acbd72cc2882d2fed0d1dfcbe0c6f4db4e8d`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:6ce5d2a569bcd957b1dee0dd47bcc4551314097c69fc1a04baca88d31be69655`  
+		Last Modified: Tue, 05 May 2026 23:17:49 GMT  
+		Size: 5.8 MB (5820519 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2e5def4d1ed395ffba03c1a4e6ada0b1fb88410f0c96eda9591a8a56a7dcf183`  
+		Last Modified: Tue, 05 May 2026 23:17:48 GMT  
+		Size: 43.5 KB (43482 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `kibana:9.4.0`
 
 ```console
-$ docker pull kibana@sha256:39d7b7c6abe72155ead3769e310b03e9679f6628ff2b95d1497f869ac63488df
+$ docker pull kibana@sha256:de6f4172462778e2038ddada543407df1549ff57b21b529afdbfad41045dc616
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -692,359 +692,359 @@ $ docker pull kibana@sha256:39d7b7c6abe72155ead3769e310b03e9679f6628ff2b95d1497f
 ### `kibana:9.4.0` - linux; amd64
 
 ```console
-$ docker pull kibana@sha256:3d88fd51637bda3a6e5656d0386524637cd14afe389693272598dcad04bd4482
+$ docker pull kibana@sha256:be192b1626f96cbe96a36696f00c117c9560e017ad88c4e3ba44ae5510f82a4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **528.2 MB (528241586 bytes)**  
+-	Total Size: **528.2 MB (528249034 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6246aa65e2d503b7d1b6215b7d30078a18906a8f2a9eadaef026960bef3a8544`
+-	Image ID: `sha256:1f149863887083a741720cfa54b288749796bab65f8cd7b8f9b13fd542e0c696`
 -	Entrypoint: `["\/bin\/tini","--"]`
 -	Default Command: `["\/usr\/local\/bin\/kibana-docker"]`
 
 ```dockerfile
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:16 GMT
 LABEL maintainer="Red Hat, Inc."
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:16 GMT
 LABEL vendor="Red Hat, Inc."
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:16 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:16 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.7"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:16 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:16 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:17 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:17 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:17 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:17 GMT
 LABEL io.openshift.expose-services=""
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:17 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Wed, 22 Apr 2026 04:58:45 GMT
+# Mon, 04 May 2026 01:27:17 GMT
 ENV container oci
-# Wed, 22 Apr 2026 04:58:45 GMT
-COPY dir:82e03e3ceb4a712116e9d6ecd1b99e2e729a68954b82c791f435d1cb8db14f8a in /      
-# Wed, 22 Apr 2026 04:58:46 GMT
+# Mon, 04 May 2026 01:27:17 GMT
+COPY dir:65829633e0a732ee03a3da731062eca14df67dc0e6bab86d02002ef9d123d97c in /      
+# Mon, 04 May 2026 01:27:17 GMT
 COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Wed, 22 Apr 2026 04:58:46 GMT
+# Mon, 04 May 2026 01:27:17 GMT
 CMD ["/bin/bash"]
-# Wed, 22 Apr 2026 04:58:46 GMT
+# Mon, 04 May 2026 01:27:17 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      
-# Wed, 22 Apr 2026 04:58:46 GMT
+# Mon, 04 May 2026 01:27:17 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      
-# Wed, 22 Apr 2026 04:58:46 GMT
-COPY file:bc4dcbf01192949338f7e5550a4152e5364437463c0f897fd55b15eb58f57ead in /usr/share/buildinfo/labels.json      
-# Wed, 22 Apr 2026 04:58:46 GMT
-COPY file:bc4dcbf01192949338f7e5550a4152e5364437463c0f897fd55b15eb58f57ead in /root/buildinfo/labels.json      
-# Wed, 22 Apr 2026 04:58:46 GMT
-LABEL "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="5bb1e5f6eb0dd42dce5d2f21f64a3a9feec995f1" "org.opencontainers.image.revision"="5bb1e5f6eb0dd42dce5d2f21f64a3a9feec995f1" "build-date"="2026-04-22T04:58:33Z" "org.opencontainers.image.created"="2026-04-22T04:58:33Z" "release"="1776833838"org.opencontainers.image.revision=5bb1e5f6eb0dd42dce5d2f21f64a3a9feec995f1,org.opencontainers.image.created=2026-04-22T04:58:33Z
-# Tue, 05 May 2026 18:58:52 GMT
+# Mon, 04 May 2026 01:27:18 GMT
+COPY file:c2149fceb878782b97b2875047824d21e0e5ecd57a50bf8e1dd5d47550f18358 in /usr/share/buildinfo/labels.json      
+# Mon, 04 May 2026 01:27:18 GMT
+COPY file:c2149fceb878782b97b2875047824d21e0e5ecd57a50bf8e1dd5d47550f18358 in /root/buildinfo/labels.json      
+# Mon, 04 May 2026 01:27:18 GMT
+LABEL "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="dbf428e1775c5e4c4802b4c714d3b50b652d0c8a" "org.opencontainers.image.revision"="dbf428e1775c5e4c4802b4c714d3b50b652d0c8a" "build-date"="2026-05-04T01:27:05Z" "org.opencontainers.image.created"="2026-05-04T01:27:05Z" "release"="1777857961"org.opencontainers.image.revision=dbf428e1775c5e4c4802b4c714d3b50b652d0c8a,org.opencontainers.image.created=2026-05-04T01:27:05Z
+# Tue, 05 May 2026 23:09:22 GMT
 EXPOSE map[5601/tcp:{}]
-# Tue, 05 May 2026 18:58:52 GMT
+# Tue, 05 May 2026 23:09:22 GMT
 RUN microdnf install --setopt=tsflags=nodocs -y       fontconfig liberation-fonts-common freetype shadow-utils nss findutils &&       microdnf clean all # buildkit
-# Tue, 05 May 2026 19:09:27 GMT
+# Tue, 05 May 2026 23:19:56 GMT
 COPY --chown=1000:0 /usr/share/kibana /usr/share/kibana # buildkit
-# Tue, 05 May 2026 19:09:27 GMT
+# Tue, 05 May 2026 23:19:56 GMT
 COPY --chown=0:0 /bin/tini /bin/tini # buildkit
-# Tue, 05 May 2026 19:09:27 GMT
+# Tue, 05 May 2026 23:19:56 GMT
 COPY --chown=0:0 /usr/share/fonts/local/NotoSansCJK-Regular.ttc /usr/share/fonts/local/NotoSansCJK-Regular.ttc # buildkit
-# Tue, 05 May 2026 19:09:27 GMT
+# Tue, 05 May 2026 23:19:56 GMT
 RUN fc-cache -v # buildkit
-# Tue, 05 May 2026 19:09:28 GMT
+# Tue, 05 May 2026 23:19:56 GMT
 WORKDIR /usr/share/kibana
-# Tue, 05 May 2026 19:09:28 GMT
+# Tue, 05 May 2026 23:19:57 GMT
 RUN ln -s /usr/share/kibana /opt/kibana # buildkit
-# Tue, 05 May 2026 19:09:28 GMT
+# Tue, 05 May 2026 23:19:57 GMT
 ENV ELASTIC_CONTAINER=true
-# Tue, 05 May 2026 19:09:28 GMT
+# Tue, 05 May 2026 23:19:57 GMT
 ENV PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 05 May 2026 19:09:28 GMT
+# Tue, 05 May 2026 23:19:57 GMT
 COPY --chown=1000:0 config/kibana.yml /usr/share/kibana/config/kibana.yml # buildkit
-# Tue, 05 May 2026 19:09:28 GMT
+# Tue, 05 May 2026 23:19:57 GMT
 COPY bin/kibana-docker /usr/local/bin/ # buildkit
-# Tue, 05 May 2026 19:09:28 GMT
+# Tue, 05 May 2026 23:19:57 GMT
 RUN chmod g+ws /usr/share/kibana &&     find /usr/share/kibana -gid 0 -and -not -perm /g+w -exec chmod g+w {} \; # buildkit
-# Tue, 05 May 2026 19:09:29 GMT
+# Tue, 05 May 2026 23:19:58 GMT
 RUN find / -xdev -perm -4000 -exec chmod u-s {} + # buildkit
-# Tue, 05 May 2026 19:09:30 GMT
+# Tue, 05 May 2026 23:19:59 GMT
 RUN groupadd --gid 1000 kibana &&     useradd --uid 1000 --gid 1000 -G 0       --home-dir /usr/share/kibana --no-create-home       kibana # buildkit
-# Tue, 05 May 2026 19:09:30 GMT
+# Tue, 05 May 2026 23:19:59 GMT
 LABEL org.label-schema.build-date=2026-04-30T16:38:11.955Z org.label-schema.license=Elastic License org.label-schema.name=Kibana org.label-schema.schema-version=1.0 org.label-schema.url=https://www.elastic.co/products/kibana org.label-schema.usage=https://www.elastic.co/guide/en/kibana/reference/index.html org.label-schema.vcs-ref=b2e39752e03b56f48f51943214475ddba1f8e974 org.label-schema.vcs-url=https://github.com/elastic/kibana org.label-schema.vendor=Elastic org.label-schema.version=9.4.0 org.opencontainers.image.created=2026-04-30T16:38:11.955Z org.opencontainers.image.documentation=https://www.elastic.co/guide/en/kibana/reference/index.html org.opencontainers.image.licenses=Elastic License org.opencontainers.image.revision=b2e39752e03b56f48f51943214475ddba1f8e974 org.opencontainers.image.source=https://github.com/elastic/kibana org.opencontainers.image.title=Kibana org.opencontainers.image.url=https://www.elastic.co/products/kibana org.opencontainers.image.vendor=Elastic org.opencontainers.image.version=9.4.0
-# Tue, 05 May 2026 19:09:30 GMT
+# Tue, 05 May 2026 23:19:59 GMT
 LABEL name=Kibana maintainer=infra@elastic.co vendor=Elastic version=9.4.0 release=1 summary=Kibana description=Your window into the Elastic Stack.
-# Tue, 05 May 2026 19:09:30 GMT
+# Tue, 05 May 2026 23:19:59 GMT
 RUN mkdir /licenses && ln LICENSE.txt /licenses/LICENSE # buildkit
-# Tue, 05 May 2026 19:09:30 GMT
+# Tue, 05 May 2026 23:19:59 GMT
 ENTRYPOINT ["/bin/tini" "--"]
-# Tue, 05 May 2026 19:09:30 GMT
+# Tue, 05 May 2026 23:19:59 GMT
 CMD ["/usr/local/bin/kibana-docker"]
-# Tue, 05 May 2026 19:09:30 GMT
+# Tue, 05 May 2026 23:19:59 GMT
 USER 1000
 ```
 
 -	Layers:
-	-	`sha256:c770e69088fa05bea8942da1c1e3fa6066cc7c288153d81443e0c9435861e0b1`  
-		Last Modified: Wed, 22 Apr 2026 05:40:43 GMT  
-		Size: 40.0 MB (40024775 bytes)  
+	-	`sha256:cd8d59cb7a894fbcbefe70d3cdbc433492e715351e24e77b24a441609ab2de47`  
+		Last Modified: Mon, 04 May 2026 03:52:20 GMT  
+		Size: 40.0 MB (40019116 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f9c80a7e3f7655c8529cc5a3754f1dccd2922aa401d7e0cee3c728d934ada60`  
-		Last Modified: Tue, 05 May 2026 19:10:43 GMT  
-		Size: 19.5 MB (19520912 bytes)  
+	-	`sha256:06fedb4300ba6d75cddd57bcfb225165777d5e42328949542bd1e962a1609e15`  
+		Last Modified: Tue, 05 May 2026 23:21:11 GMT  
+		Size: 19.5 MB (19520062 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e667e635b0c7f14f03c9c3ca62e80ee741c35870cc8fbe1fd7d93a1bd8abb565`  
-		Last Modified: Tue, 05 May 2026 19:10:54 GMT  
-		Size: 452.1 MB (452137478 bytes)  
+	-	`sha256:3a69f41489686f75dc125b9363f8c0a180775b1b1fc7faf9159d2cb8808b0845`  
+		Last Modified: Tue, 05 May 2026 23:21:20 GMT  
+		Size: 452.2 MB (452151449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5bede11ed4c14eccbd215a561f9442f6bae1f0515bde8b37c1c5efc1ce801d6`  
-		Last Modified: Tue, 05 May 2026 19:10:42 GMT  
-		Size: 9.5 KB (9531 bytes)  
+	-	`sha256:cb55d21b3bf8fb8626751b196cc2a9c13bdc322c657d3b76e1f95a8a2c0b008b`  
+		Last Modified: Tue, 05 May 2026 23:21:09 GMT  
+		Size: 9.5 KB (9529 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55d6b5a08c3c28c6d355f888e80338f99f6ab1a1eced82299837dc3f78093f11`  
-		Last Modified: Tue, 05 May 2026 19:10:43 GMT  
-		Size: 16.5 MB (16460489 bytes)  
+	-	`sha256:120dcee83066db9b2bc951aa7c7b604487fd5cbb15ed32b4032bd4dcd303abc6`  
+		Last Modified: Tue, 05 May 2026 23:21:11 GMT  
+		Size: 16.5 MB (16460492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fcccc8cd03c5a65f67c5074c052a955eed7460d319a917a7beed229a5a0c639`  
-		Last Modified: Tue, 05 May 2026 19:10:43 GMT  
-		Size: 5.2 KB (5223 bytes)  
+	-	`sha256:6c494ec74ad975e1cd62f651757af1366543f991c77950e2618752e0522756d8`  
+		Last Modified: Tue, 05 May 2026 23:21:11 GMT  
+		Size: 5.2 KB (5224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e353a1d8987633cb8f4cd52a66683b0eee2ae9f399d73d9ec6c8a7ca2fcdcedf`  
-		Last Modified: Tue, 05 May 2026 19:10:45 GMT  
-		Size: 130.0 B  
+	-	`sha256:36b127a4d24317f3ca313187a56a6da7eb4a16da42b4ec9963356f9a09faae36`  
+		Last Modified: Tue, 05 May 2026 23:21:13 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fb0616cb4a4690e691adec37ba501c3ebc34113bbfe7bfd519700e96cd4c968`  
-		Last Modified: Tue, 05 May 2026 19:10:45 GMT  
-		Size: 396.0 B  
+	-	`sha256:2e0e772101b5b848cdc4378367ea524864430fb20e1907af58c8be627a240dce`  
+		Last Modified: Tue, 05 May 2026 23:21:13 GMT  
+		Size: 395.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ebca1833e26ed5d8b3aded19be63c946b168addf099c75426079af2011df7a4`  
-		Last Modified: Tue, 05 May 2026 19:10:45 GMT  
-		Size: 4.9 KB (4918 bytes)  
+	-	`sha256:e96593d11e8f933f23a0950b133611520f8dbb11770f7eb98574b828641c37c6`  
+		Last Modified: Tue, 05 May 2026 23:21:13 GMT  
+		Size: 4.9 KB (4915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e8e4fc9f07b42546ea7c99a533e50f2b740e113f072ba1f800fbd33fe2065f1`  
-		Last Modified: Tue, 05 May 2026 19:10:46 GMT  
-		Size: 399.0 B  
+	-	`sha256:773db0200b5e1df81233ff28ac17fee78eec5f6e30ddfb938633ca6c777012e2`  
+		Last Modified: Tue, 05 May 2026 23:21:14 GMT  
+		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6ad873302984ede1a3a8a30330beb9374758db97919724277ae00daef75e8b5`  
-		Last Modified: Tue, 05 May 2026 19:10:47 GMT  
-		Size: 74.5 KB (74542 bytes)  
+	-	`sha256:f193801f68d585c27e124890e9102dad574f05e06afd73d584be6a9427d06220`  
+		Last Modified: Tue, 05 May 2026 23:21:14 GMT  
+		Size: 74.5 KB (74540 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d47b41f37627b1a2b350571c60ee0d3f136dd9f7d7adb6982f7c3c68f7984b75`  
-		Last Modified: Tue, 05 May 2026 19:10:47 GMT  
-		Size: 1.1 KB (1054 bytes)  
+	-	`sha256:0f930c1b36d1aca081f849d4269a0869809a5ed7548f6a32f35652dab42e3163`  
+		Last Modified: Tue, 05 May 2026 23:21:14 GMT  
+		Size: 1.0 KB (1046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f6fb7d0a3c92e40edf7343c3ab65ac0ea84197fd6c4adfeccc96d0697c65ea54`  
-		Last Modified: Tue, 05 May 2026 19:10:48 GMT  
-		Size: 1.7 KB (1707 bytes)  
+	-	`sha256:b0b55241c6f5e766202c90b31254b4858de3264e6ffe8b9d42533d96a1d8381f`  
+		Last Modified: Tue, 05 May 2026 23:21:15 GMT  
+		Size: 1.7 KB (1706 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `kibana:9.4.0` - unknown; unknown
 
 ```console
-$ docker pull kibana@sha256:ad80414cbce87eb5ddb0b0b67a96628eb3e9ac542e8f49c07cf6244de7f5172f
+$ docker pull kibana@sha256:05d2df64019f60a965705c3361e9ccf5beecba8a81aba9dffda2df58fe3e2e46
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5927636 bytes)**  
+-	Total Size: **5.9 MB (5927644 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e91e9dae659f3bce52a9732c97eb9fb2fe48336a8d81c91612c0c76ec024356`
+-	Image ID: `sha256:ed5a2b574a02a61865d0a16969690a402147e69969f211af049b836525f0c402`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e694ac2496d499fe970870dc9ccc9452178e9f92b4e9df229b1ec27fd108d1bf`  
-		Last Modified: Tue, 05 May 2026 19:10:43 GMT  
-		Size: 5.9 MB (5884410 bytes)  
+	-	`sha256:87089bb77db943c18f90998ff6500427e0e6b5c6801f940d9b32e976617f06fd`  
+		Last Modified: Tue, 05 May 2026 23:21:11 GMT  
+		Size: 5.9 MB (5884418 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:75719f5832cc39f60c9826e261a18e4c63ded7ea269f5e24594de3427dadedf0`  
-		Last Modified: Tue, 05 May 2026 19:10:42 GMT  
+	-	`sha256:20e983bbbdb9bf02bd9e820af4903232b64372288a12498d4f6850b8b120b544`  
+		Last Modified: Tue, 05 May 2026 23:21:10 GMT  
 		Size: 43.2 KB (43226 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `kibana:9.4.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull kibana@sha256:412747d5dccb33a8d29b5e4055df99b9ffd5f2fab7731beabb02d96416fce6dc
+$ docker pull kibana@sha256:bd9620ca94bd2d9589a943470c3e1965e817ab396288d73f62e85fd07a655364
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **539.2 MB (539248997 bytes)**  
+-	Total Size: **539.3 MB (539251352 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa3cbc53794da433de91c1b93bac2caae76ac3baadae785c54825bafbfe9cf0b`
+-	Image ID: `sha256:df5a6ccc2f6eae5bc254df0fde85a02615dafdf31d016172af65a8a70cfea1a6`
 -	Entrypoint: `["\/bin\/tini","--"]`
 -	Default Command: `["\/usr\/local\/bin\/kibana-docker"]`
 
 ```dockerfile
-# Wed, 22 Apr 2026 05:00:29 GMT
+# Mon, 04 May 2026 01:30:08 GMT
 LABEL maintainer="Red Hat, Inc."
-# Wed, 22 Apr 2026 05:00:29 GMT
+# Mon, 04 May 2026 01:30:08 GMT
 LABEL vendor="Red Hat, Inc."
-# Wed, 22 Apr 2026 05:00:29 GMT
+# Mon, 04 May 2026 01:30:08 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Wed, 22 Apr 2026 05:00:29 GMT
+# Mon, 04 May 2026 01:30:08 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.7"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Wed, 22 Apr 2026 05:00:29 GMT
+# Mon, 04 May 2026 01:30:08 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Wed, 22 Apr 2026 05:00:29 GMT
+# Mon, 04 May 2026 01:30:08 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Wed, 22 Apr 2026 05:00:29 GMT
+# Mon, 04 May 2026 01:30:08 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 22 Apr 2026 05:00:29 GMT
+# Mon, 04 May 2026 01:30:08 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 22 Apr 2026 05:00:29 GMT
+# Mon, 04 May 2026 01:30:08 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Wed, 22 Apr 2026 05:00:29 GMT
+# Mon, 04 May 2026 01:30:08 GMT
 LABEL io.openshift.expose-services=""
-# Wed, 22 Apr 2026 05:00:29 GMT
+# Mon, 04 May 2026 01:30:08 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Wed, 22 Apr 2026 05:00:29 GMT
+# Mon, 04 May 2026 01:30:08 GMT
 ENV container oci
-# Wed, 22 Apr 2026 05:00:30 GMT
-COPY dir:5dfc5d431dcfd4937d8e6a4dd1184486112214c6f8d103a0640fb0f8231a0840 in /      
-# Wed, 22 Apr 2026 05:00:30 GMT
+# Mon, 04 May 2026 01:30:09 GMT
+COPY dir:5ad712b8248d48b2932fa5bdcc0ad50ec37c7d49fe231a7db1a1c2391217329a in /      
+# Mon, 04 May 2026 01:30:09 GMT
 COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Wed, 22 Apr 2026 05:00:30 GMT
+# Mon, 04 May 2026 01:30:09 GMT
 CMD ["/bin/bash"]
-# Wed, 22 Apr 2026 05:00:30 GMT
+# Mon, 04 May 2026 01:30:09 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      
-# Wed, 22 Apr 2026 05:00:30 GMT
+# Mon, 04 May 2026 01:30:09 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      
-# Wed, 22 Apr 2026 05:00:30 GMT
-COPY file:15cced1d80c5bc31ac720f4e201d7d85c034d443588a80d803a468e8714fc167 in /usr/share/buildinfo/labels.json      
-# Wed, 22 Apr 2026 05:00:30 GMT
-COPY file:15cced1d80c5bc31ac720f4e201d7d85c034d443588a80d803a468e8714fc167 in /root/buildinfo/labels.json      
-# Wed, 22 Apr 2026 05:00:31 GMT
-LABEL "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="5bb1e5f6eb0dd42dce5d2f21f64a3a9feec995f1" "org.opencontainers.image.revision"="5bb1e5f6eb0dd42dce5d2f21f64a3a9feec995f1" "build-date"="2026-04-22T05:00:16Z" "org.opencontainers.image.created"="2026-04-22T05:00:16Z" "release"="1776833838"org.opencontainers.image.revision=5bb1e5f6eb0dd42dce5d2f21f64a3a9feec995f1,org.opencontainers.image.created=2026-04-22T05:00:16Z
-# Tue, 05 May 2026 18:58:36 GMT
+# Mon, 04 May 2026 01:30:09 GMT
+COPY file:11a91ebd5ef22e4f28676b4a9dc8447f7af7f01609b0311ebd76ca9c6631f340 in /usr/share/buildinfo/labels.json      
+# Mon, 04 May 2026 01:30:10 GMT
+COPY file:11a91ebd5ef22e4f28676b4a9dc8447f7af7f01609b0311ebd76ca9c6631f340 in /root/buildinfo/labels.json      
+# Mon, 04 May 2026 01:30:10 GMT
+LABEL "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="dbf428e1775c5e4c4802b4c714d3b50b652d0c8a" "org.opencontainers.image.revision"="dbf428e1775c5e4c4802b4c714d3b50b652d0c8a" "build-date"="2026-05-04T01:29:56Z" "org.opencontainers.image.created"="2026-05-04T01:29:56Z" "release"="1777857961"org.opencontainers.image.revision=dbf428e1775c5e4c4802b4c714d3b50b652d0c8a,org.opencontainers.image.created=2026-05-04T01:29:56Z
+# Tue, 05 May 2026 23:09:04 GMT
 EXPOSE map[5601/tcp:{}]
-# Tue, 05 May 2026 18:58:36 GMT
+# Tue, 05 May 2026 23:09:04 GMT
 RUN microdnf install --setopt=tsflags=nodocs -y       fontconfig liberation-fonts-common freetype shadow-utils nss findutils &&       microdnf clean all # buildkit
-# Tue, 05 May 2026 19:06:47 GMT
+# Tue, 05 May 2026 23:17:35 GMT
 COPY --chown=1000:0 /usr/share/kibana /usr/share/kibana # buildkit
-# Tue, 05 May 2026 19:06:48 GMT
+# Tue, 05 May 2026 23:17:36 GMT
 COPY --chown=0:0 /bin/tini /bin/tini # buildkit
-# Tue, 05 May 2026 19:06:48 GMT
+# Tue, 05 May 2026 23:17:36 GMT
 COPY --chown=0:0 /usr/share/fonts/local/NotoSansCJK-Regular.ttc /usr/share/fonts/local/NotoSansCJK-Regular.ttc # buildkit
-# Tue, 05 May 2026 19:06:48 GMT
+# Tue, 05 May 2026 23:17:36 GMT
 RUN fc-cache -v # buildkit
-# Tue, 05 May 2026 19:06:48 GMT
+# Tue, 05 May 2026 23:17:36 GMT
 WORKDIR /usr/share/kibana
-# Tue, 05 May 2026 19:06:48 GMT
+# Tue, 05 May 2026 23:17:36 GMT
 RUN ln -s /usr/share/kibana /opt/kibana # buildkit
-# Tue, 05 May 2026 19:06:48 GMT
+# Tue, 05 May 2026 23:17:36 GMT
 ENV ELASTIC_CONTAINER=true
-# Tue, 05 May 2026 19:06:48 GMT
+# Tue, 05 May 2026 23:17:36 GMT
 ENV PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 05 May 2026 19:06:48 GMT
+# Tue, 05 May 2026 23:17:36 GMT
 COPY --chown=1000:0 config/kibana.yml /usr/share/kibana/config/kibana.yml # buildkit
-# Tue, 05 May 2026 19:06:48 GMT
+# Tue, 05 May 2026 23:17:36 GMT
 COPY bin/kibana-docker /usr/local/bin/ # buildkit
-# Tue, 05 May 2026 19:06:49 GMT
+# Tue, 05 May 2026 23:17:37 GMT
 RUN chmod g+ws /usr/share/kibana &&     find /usr/share/kibana -gid 0 -and -not -perm /g+w -exec chmod g+w {} \; # buildkit
-# Tue, 05 May 2026 19:06:50 GMT
+# Tue, 05 May 2026 23:17:38 GMT
 RUN find / -xdev -perm -4000 -exec chmod u-s {} + # buildkit
-# Tue, 05 May 2026 19:06:51 GMT
+# Tue, 05 May 2026 23:17:38 GMT
 RUN groupadd --gid 1000 kibana &&     useradd --uid 1000 --gid 1000 -G 0       --home-dir /usr/share/kibana --no-create-home       kibana # buildkit
-# Tue, 05 May 2026 19:06:51 GMT
+# Tue, 05 May 2026 23:17:38 GMT
 LABEL org.label-schema.build-date=2026-04-30T16:38:11.955Z org.label-schema.license=Elastic License org.label-schema.name=Kibana org.label-schema.schema-version=1.0 org.label-schema.url=https://www.elastic.co/products/kibana org.label-schema.usage=https://www.elastic.co/guide/en/kibana/reference/index.html org.label-schema.vcs-ref=b2e39752e03b56f48f51943214475ddba1f8e974 org.label-schema.vcs-url=https://github.com/elastic/kibana org.label-schema.vendor=Elastic org.label-schema.version=9.4.0 org.opencontainers.image.created=2026-04-30T16:38:11.955Z org.opencontainers.image.documentation=https://www.elastic.co/guide/en/kibana/reference/index.html org.opencontainers.image.licenses=Elastic License org.opencontainers.image.revision=b2e39752e03b56f48f51943214475ddba1f8e974 org.opencontainers.image.source=https://github.com/elastic/kibana org.opencontainers.image.title=Kibana org.opencontainers.image.url=https://www.elastic.co/products/kibana org.opencontainers.image.vendor=Elastic org.opencontainers.image.version=9.4.0
-# Tue, 05 May 2026 19:06:51 GMT
+# Tue, 05 May 2026 23:17:38 GMT
 LABEL name=Kibana maintainer=infra@elastic.co vendor=Elastic version=9.4.0 release=1 summary=Kibana description=Your window into the Elastic Stack.
-# Tue, 05 May 2026 19:06:51 GMT
+# Tue, 05 May 2026 23:17:38 GMT
 RUN mkdir /licenses && ln LICENSE.txt /licenses/LICENSE # buildkit
-# Tue, 05 May 2026 19:06:51 GMT
+# Tue, 05 May 2026 23:17:38 GMT
 ENTRYPOINT ["/bin/tini" "--"]
-# Tue, 05 May 2026 19:06:51 GMT
+# Tue, 05 May 2026 23:17:38 GMT
 CMD ["/usr/local/bin/kibana-docker"]
-# Tue, 05 May 2026 19:06:51 GMT
+# Tue, 05 May 2026 23:17:38 GMT
 USER 1000
 ```
 
 -	Layers:
-	-	`sha256:c57a97b2502dbf8d905aa782f6a2be8f57c8774e28f6d2ddf6a9a866fcc5fd8b`  
-		Last Modified: Wed, 22 Apr 2026 06:11:08 GMT  
-		Size: 38.2 MB (38204491 bytes)  
+	-	`sha256:eae0b4c39ea6d65927abe502bd11bbd574acc09733cb468c989628c5b204a24b`  
+		Last Modified: Mon, 04 May 2026 05:13:02 GMT  
+		Size: 38.2 MB (38205818 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ac708ac2794b5d2b8b5ec40f25390befc0efd69d5035d95fc000acaf90a948e`  
-		Last Modified: Tue, 05 May 2026 19:08:11 GMT  
-		Size: 19.5 MB (19470380 bytes)  
+	-	`sha256:1ab7e141b69b3ab658a86b9ddf8be62257b17830385c23aabb80ab173cf24277`  
+		Last Modified: Tue, 05 May 2026 23:18:57 GMT  
+		Size: 19.5 MB (19468922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22f9e6a4cb71e5fec00d40e37b1a9bb2100c171f16f7936301bcfcdce60fb07f`  
-		Last Modified: Tue, 05 May 2026 19:08:20 GMT  
-		Size: 465.0 MB (465017230 bytes)  
+	-	`sha256:c044c94f76d517ca05966dc86e23214019ac0deb64090504ff3d52272795952f`  
+		Last Modified: Tue, 05 May 2026 23:19:06 GMT  
+		Size: 465.0 MB (465019713 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2512d29b2907fcef80faa70adea36489255a0ef1f8f131d574aa721fc5a41cc`  
-		Last Modified: Tue, 05 May 2026 19:08:10 GMT  
+	-	`sha256:af04909283ccae903ad30aa89c8763bfd63e99df785f01692acbf35ee4a572ea`  
+		Last Modified: Tue, 05 May 2026 23:18:56 GMT  
 		Size: 9.1 KB (9103 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5dbeef73543a4179d332b51da981a2afb4fb6abce5ddf7bb87ed1927c3219cd`  
-		Last Modified: Tue, 05 May 2026 19:08:12 GMT  
-		Size: 16.5 MB (16460488 bytes)  
+	-	`sha256:be757d5351709a65436c3f3f49a2141e6a31842c616bc528bf572767b3ad2123`  
+		Last Modified: Tue, 05 May 2026 23:18:57 GMT  
+		Size: 16.5 MB (16460486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5db34b53619ff7b4057c368da81f3981b39d4c587f1ee887c6408207ee38ad0a`  
-		Last Modified: Tue, 05 May 2026 19:08:11 GMT  
-		Size: 5.2 KB (5223 bytes)  
+	-	`sha256:d2537d14eae15bb0355533bfe57d2e11cb9ae4e2d702e33f442e421ac937f6cf`  
+		Last Modified: Tue, 05 May 2026 23:18:57 GMT  
+		Size: 5.2 KB (5225 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2591781f544558acfe80bcf65ecbf7d81b1fcf4c375444778b84e33cc0df8ce`  
-		Last Modified: Tue, 05 May 2026 19:08:13 GMT  
+	-	`sha256:64b5f423fa4af8b0c4a3971b961428d83102b5f395202f32dacf9b7a792cf233`  
+		Last Modified: Tue, 05 May 2026 23:18:58 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a42ab8a50b202ea495e763976c0f6a27497046f9afb2941ce9f3d91994f1ecd`  
-		Last Modified: Tue, 05 May 2026 19:08:13 GMT  
+	-	`sha256:0768411e4d245a67a4ab57ed8b98bbee79d71f1fe3e5e11a7d051b62062186de`  
+		Last Modified: Tue, 05 May 2026 23:18:59 GMT  
 		Size: 396.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba4fa988a88763a81d643c2cde2c50c826d4042068fe7acb75ceb63b17577801`  
-		Last Modified: Tue, 05 May 2026 19:08:14 GMT  
-		Size: 4.9 KB (4920 bytes)  
+	-	`sha256:358979a65ca2f65004e8b00840638719dc80fe181e234e31fd65ffa423d6a58c`  
+		Last Modified: Tue, 05 May 2026 23:18:59 GMT  
+		Size: 4.9 KB (4919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:82a3b5c8cdb2ac0a03e3f43726ed6d33e5da41d273f806c56b35febbf62ad84d`  
-		Last Modified: Tue, 05 May 2026 19:08:14 GMT  
+	-	`sha256:2e1b6d7a3ea4dd8de96e45e650588a80ecc1dcfd925a7ee0428a2fbd639aeb4b`  
+		Last Modified: Tue, 05 May 2026 23:19:00 GMT  
 		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:201090fd8f31aee0a61c8943b0e16a4b251f55a57ad193de8291f36b594eca3c`  
-		Last Modified: Tue, 05 May 2026 19:08:14 GMT  
-		Size: 73.5 KB (73450 bytes)  
+	-	`sha256:4499b133925355a6ed52846dc3b2f55c6b41bef5361eb2b20581501e9141c8b4`  
+		Last Modified: Tue, 05 May 2026 23:19:00 GMT  
+		Size: 73.5 KB (73452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ae1b281277acda727827e7c3e2063328ea203035415c3aeecd53dbe1fedb361`  
-		Last Modified: Tue, 05 May 2026 19:08:15 GMT  
-		Size: 1.0 KB (1045 bytes)  
+	-	`sha256:e56bb14e41549cc144c446d779d7e76e815303bc058a9035ff65ccd89d19cd5e`  
+		Last Modified: Tue, 05 May 2026 23:19:00 GMT  
+		Size: 1.0 KB (1048 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:914f8fc6e06a1af913067414df6a1281d2f0f108ff4dca263aa94893e34d4887`  
-		Last Modified: Tue, 05 May 2026 19:08:15 GMT  
-		Size: 1.7 KB (1708 bytes)  
+	-	`sha256:d940e3fa87fa87dbaae82d76a94a52be45ded143cbce32963670d6ef1477f397`  
+		Last Modified: Tue, 05 May 2026 23:19:01 GMT  
+		Size: 1.7 KB (1707 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `kibana:9.4.0` - unknown; unknown
 
 ```console
-$ docker pull kibana@sha256:e56b1624a3f2a8d1d365f51bf9050ec51f7b065111636b9d277f091034d94e43
+$ docker pull kibana@sha256:58bfac702cd76cfbc6e15a534dbae7ccebaa6a562c6fba574b9e796b5598a645
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5926565 bytes)**  
+-	Total Size: **5.9 MB (5926573 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d17fb1076e0f6353199738c32be12417cf8592d10955dd1b5507df152f28140`
+-	Image ID: `sha256:0bd03961722af79c7182a23f1a550dabab49f32f2a7963bbf62efec6f5ef7308`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0d7233f6ece76ba17801ebbdfb9b5ab06ed4e8c947b931103c5cd7b8587e4651`  
-		Last Modified: Tue, 05 May 2026 19:08:10 GMT  
-		Size: 5.9 MB (5883082 bytes)  
+	-	`sha256:71947d0ad8e8ed24ba1662d804e2648493af72a705cdbfc169acd82a0a387857`  
+		Last Modified: Tue, 05 May 2026 23:18:57 GMT  
+		Size: 5.9 MB (5883090 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b76491fe0cabd908f6e05ce522341f9f4969702fce6b42d88d4601c146979e3e`  
-		Last Modified: Tue, 05 May 2026 19:08:10 GMT  
+	-	`sha256:b1903c618cfef2fc8c86b5dc8adf6b5ef4995dc2c9e04901819ab39cb5839e16`  
+		Last Modified: Tue, 05 May 2026 23:18:56 GMT  
 		Size: 43.5 KB (43483 bytes)  
 		MIME: application/vnd.in-toto+json
