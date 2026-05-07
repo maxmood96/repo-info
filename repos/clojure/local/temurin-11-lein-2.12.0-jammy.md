@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6ae063a4ef3d3adf73b66eb3b167d7fc998d31b9f0c460fb8e3ade685cf561cc`
-- Created: `2026-04-15T22:02:32.57179394Z`
-- Virtual Size: ~ 422.62 Mb  
+- Image ID: `sha256:36c7f3ccd890e708b14d3aa242d09f1438dd18e70abbc08a1062651ea8e3863f`
+- Created: `2026-04-29T23:14:51.57662989Z`
+- Virtual Size: ~ 422.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.30+7`
+  - `JAVA_VERSION=jdk-11.0.31+11`
   - `LEIN_VERSION=2.12.0`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
@@ -298,15 +298,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.23
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA256:ac8e1087711084548d788ef18b9b732c8de887457b81f616fc681d1044b32f98
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA256:e0f0053bef0afd5c8bed7973f94f92a731c91b9152d64ce9c55fd3bb633aa735
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.23.debian.tar.xz' curl_7.81.0-1ubuntu1.23.debian.tar.xz 86808 SHA256:8fdde069f16df09e86ff078963f253bc3005fe06ee9fba0dd2424c6e0179eaa9
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.23.dsc' curl_7.81.0-1ubuntu1.23.dsc 3143 SHA256:248479dc73bab849293f0e0a5f97ac87cf411335beda5633f5e96dc8bacff1c4
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -1455,14 +1449,9 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.43.0-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0.orig.tar.bz2' nghttp2_1.43.0.orig.tar.bz2 4521786 SHA256:556f24653397c71ebb8270b3c5e5507f0893e6eac2c6eeda6be2ecf6e1f50f62
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.2.debian.tar.xz' nghttp2_1.43.0-1ubuntu0.2.debian.tar.xz 23788 SHA256:4517ea82d0a218a4a4c870724f9498b88bf3d8971113ebc746bf24a0df12af22
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.2.dsc' nghttp2_1.43.0-1ubuntu0.2.dsc 2679 SHA256:44f56bd7ce62011d772fecdc39f0513e28bb8ac00fe8068e1f3a154e9bfd6c5b
-```
 
 ### `dpkg` source package: `openldap=2.5.20+dfsg-0ubuntu0.22.04.1`
 

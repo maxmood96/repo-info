@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:576b098f773d91c592f4112790c719568496b17b8dbe299e5593fcf50d876b21`
-- Created: `2026-04-15T22:03:08.389362755Z`
-- Virtual Size: ~ 519.45 Mb  
+- Image ID: `sha256:4e72813355bc3f4fc37927b7d620544a15ab39c4db68431f5513156454baafc1`
+- Created: `2026-04-29T23:15:27.403534556Z`
+- Virtual Size: ~ 519.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.30+7`
+  - `JAVA_VERSION=jdk-11.0.31+11`
   - `CLOJURE_VERSION=1.12.4.1618`
 - Labels:
   - `org.opencontainers.image.version=22.04`
@@ -297,15 +297,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.23
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA256:ac8e1087711084548d788ef18b9b732c8de887457b81f616fc681d1044b32f98
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA256:e0f0053bef0afd5c8bed7973f94f92a731c91b9152d64ce9c55fd3bb633aa735
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.23.debian.tar.xz' curl_7.81.0-1ubuntu1.23.debian.tar.xz 86808 SHA256:8fdde069f16df09e86ff078963f253bc3005fe06ee9fba0dd2424c6e0179eaa9
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.23.dsc' curl_7.81.0-1ubuntu1.23.dsc 3143 SHA256:248479dc73bab849293f0e0a5f97ac87cf411335beda5633f5e96dc8bacff1c4
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -1916,14 +1910,9 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.43.0-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0.orig.tar.bz2' nghttp2_1.43.0.orig.tar.bz2 4521786 SHA256:556f24653397c71ebb8270b3c5e5507f0893e6eac2c6eeda6be2ecf6e1f50f62
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.2.debian.tar.xz' nghttp2_1.43.0-1ubuntu0.2.debian.tar.xz 23788 SHA256:4517ea82d0a218a4a4c870724f9498b88bf3d8971113ebc746bf24a0df12af22
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.2.dsc' nghttp2_1.43.0-1ubuntu0.2.dsc 2679 SHA256:44f56bd7ce62011d772fecdc39f0513e28bb8ac00fe8068e1f3a154e9bfd6c5b
-```
 
 ### `dpkg` source package: `npth=1.6-3build2`
 
@@ -1964,11 +1953,11 @@ $ apt-get source -qq --print-uris openldap=2.5.20+dfsg-0ubuntu0.22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.20%2bdfsg-0ubuntu0.22.04.1.dsc' openldap_2.5.20+dfsg-0ubuntu0.22.04.1.dsc 3473 SHA256:e9eaccd861fbbe1671f408deddf02f4658ac5c98cd04a755fcd41f9860609da0
 ```
 
-### `dpkg` source package: `openssh=1:8.9p1-3ubuntu0.14`
+### `dpkg` source package: `openssh=1:8.9p1-3ubuntu0.15`
 
 Binary Packages:
 
-- `openssh-client=1:8.9p1-3ubuntu0.14`
+- `openssh-client=1:8.9p1-3ubuntu0.15`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1980,9 +1969,15 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssh=1:8.9p1-3ubuntu0.15
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz' openssh_8.9p1.orig.tar.gz 1820282 SHA512:04bd38ea6fe4be31acc8c4e83de7d3dda66fb7207be2e4ba25d3b8118d13d098a283769da9e8ce1fc4fba7edf739c14efcc6c9137132919261a7f882314b0f6b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz.asc' openssh_8.9p1.orig.tar.gz.asc 833 SHA512:fd0bbd285ff2f8791f5a512f087f32bce026b716d5ac213cd4ef28f08722601fb943514bee71b2ac4b9f9363e2f120ce6c60fed952d1d8e53dbcf2a6fe2e706b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.15.debian.tar.xz' openssh_8.9p1-3ubuntu0.15.debian.tar.xz 206016 SHA512:2cf4e25465e770d821d9fc5f11247d37ccccb43e128efff00017cfbac138bcf21a1801de98d056036bb57a78e69c3a8c6c44e9ab8b903b63c2326a38fcecc66a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.15.dsc' openssh_8.9p1-3ubuntu0.15.dsc 3380 SHA512:5491200e76e3ba15a2157f019279180fd7dec9d8fe5a9b142393274e8e54aa3f5c9813c27bc9a22133d38c3f345280b74aab6ad8f9a2a649844d95e969a70fca
+```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.23`
 
