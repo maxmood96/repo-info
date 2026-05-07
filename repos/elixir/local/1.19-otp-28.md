@@ -2,21 +2,21 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3d7715205220b826603aaa965ca0a6f6a83b2766c22bfaa66f54bd5ca1041a22`
-- Created: `2026-04-22T07:34:02.847801926Z`
-- Virtual Size: ~ 1.81 Gb  
+- Image ID: `sha256:ca98c29a29b3ff9522d68dba27479137fe97a5e16842fde87e89b7dc1f1b3dbb`
+- Created: `2026-05-04T20:55:39.809600798Z`
+- Virtual Size: ~ 1.82 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=28.4.2`
+  - `OTP_VERSION=28.5`
   - `REBAR3_VERSION=3.26.0`
   - `REBAR_VERSION=2.6.4`
   - `ELIXIR_VERSION=v1.19.5`
   - `LANG=C.UTF-8`
 - Labels:
-  - `org.opencontainers.image.version=28.4.2`
+  - `org.opencontainers.image.version=28.5`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -8794,12 +8794,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/wayland/1.23.1-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/wayland/1.23.1-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `webkit2gtk=2.50.6-1~deb13u1`
+### `dpkg` source package: `webkit2gtk=2.52.3-2~deb13u1`
 
 Binary Packages:
 
-- `libjavascriptcoregtk-4.1-0:amd64=2.50.6-1~deb13u1`
-- `libwebkit2gtk-4.1-0:amd64=2.50.6-1~deb13u1`
+- `libjavascriptcoregtk-4.1-0:amd64=2.52.3-2~deb13u1`
+- `libwebkit2gtk-4.1-0:amd64=2.52.3-2~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.1-0/copyright`, `/usr/share/doc/libwebkit2gtk-4.1-0/copyright`)
 
@@ -8835,13 +8835,21 @@ Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.1-0/copyright`, `
 - `MPL-1.1`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris webkit2gtk=2.52.3-2~deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.52.3-2%7edeb13u1.dsc' webkit2gtk_2.52.3-2~deb13u1.dsc 4957 SHA256:c17660c55df4b1cb22b350c9b62ea0534d67fe67bb16dd45381a810016719b40
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.52.3.orig.tar.xz' webkit2gtk_2.52.3.orig.tar.xz 65052268 SHA256:5b3e0d174e63dcc28848b1194e0e7448d5948c3c2427ecd931c2c5be5261aebb
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.52.3.orig.tar.xz.asc' webkit2gtk_2.52.3.orig.tar.xz.asc 195 SHA256:b8c97ba40f1da5bd04f6812239d2506cbf44ab580151096d01e2d385b8e65993
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.52.3-2%7edeb13u1.debian.tar.xz' webkit2gtk_2.52.3-2~deb13u1.debian.tar.xz 94128 SHA256:e85232d9b552aa9fc59d953b6a03b88d33e7261a7f4b982d9b63c9c7c1133e7a
+```
 
-- http://snapshot.debian.org/package/webkit2gtk/2.50.6-1~deb13u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/webkit2gtk/2.52.3-2~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/webkit2gtk/2.52.3-2~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/webkit2gtk/2.52.3-2~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
@@ -8869,31 +8877,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/wget/1.25.0-2/ (for browsing the source)
 - https://sources.debian.net/src/wget/1.25.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/wget/1.25.0-2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `woff2=1.0.2-2`
-
-Binary Packages:
-
-- `libwoff1:amd64=1.0.2-2+b2`
-
-Licenses: (parsed from: `/usr/share/doc/libwoff1/copyright`)
-
-- `Expat`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris woff2=1.0.2-2
-'http://deb.debian.org/debian/pool/main/w/woff2/woff2_1.0.2-2.dsc' woff2_1.0.2-2.dsc 2007 SHA256:19a495ecd8a1f67cd08aca45c8adf2a56fd1da559fe59f303ca13f5c5f641f62
-'http://deb.debian.org/debian/pool/main/w/woff2/woff2_1.0.2.orig.tar.gz' woff2_1.0.2.orig.tar.gz 38934 SHA256:add272bb09e6384a4833ffca4896350fdb16e0ca22df68c0384773c67a175594
-'http://deb.debian.org/debian/pool/main/w/woff2/woff2_1.0.2-2.debian.tar.xz' woff2_1.0.2-2.debian.tar.xz 3348 SHA256:93314b9bc7db8fc421de3b93588fdc01c87fc8491e5895b5494658092eee1c6f
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/woff2/1.0.2-2/ (for browsing the source)
-- https://sources.debian.net/src/woff2/1.0.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/woff2/1.0.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wxwidgets3.2=3.2.8+dfsg-2`
 

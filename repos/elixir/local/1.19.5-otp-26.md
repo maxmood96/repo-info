@@ -2,21 +2,21 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f2b9c81c6a1eb95e33b00dc63a79d31a68b5e5f5e0c4a83f4fdff0df6ac212f`
-- Created: `2026-04-22T08:12:45.402601157Z`
+- Image ID: `sha256:f5faa69b9b071240ed8731996af1a89f3c4c191b064e27ecfee2a99baff9ee35`
+- Created: `2026-05-04T22:05:35.365949687Z`
 - Virtual Size: ~ 1.63 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=26.2.5.19`
+  - `OTP_VERSION=26.2.5.20`
   - `REBAR3_VERSION=3.26.0`
   - `REBAR_VERSION=2.6.4`
   - `ELIXIR_VERSION=v1.19.5`
   - `LANG=C.UTF-8`
 - Labels:
-  - `org.opencontainers.image.version=26.2.5.19`
+  - `org.opencontainers.image.version=26.2.5.20`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -8722,11 +8722,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/x265/3.5-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/x265/3.5-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `xdg-dbus-proxy=0.1.4-3`
+### `dpkg` source package: `xdg-dbus-proxy=0.1.4-3+deb12u1`
 
 Binary Packages:
 
-- `xdg-dbus-proxy=0.1.4-3`
+- `xdg-dbus-proxy=0.1.4-3+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/xdg-dbus-proxy/copyright`)
 
@@ -8737,17 +8737,17 @@ Licenses: (parsed from: `/usr/share/doc/xdg-dbus-proxy/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris xdg-dbus-proxy=0.1.4-3
-'http://deb.debian.org/debian/pool/main/x/xdg-dbus-proxy/xdg-dbus-proxy_0.1.4-3.dsc' xdg-dbus-proxy_0.1.4-3.dsc 2319 SHA256:ecb3d589667669389db0d4bf240b62c7078307fcaca4d84269367e045ee3c799
-'http://deb.debian.org/debian/pool/main/x/xdg-dbus-proxy/xdg-dbus-proxy_0.1.4.orig.tar.xz' xdg-dbus-proxy_0.1.4.orig.tar.xz 122112 SHA256:1ec0eab53d1e49966d722352bcfd51ac402dce5190baedc749a8541e761670ab
-'http://deb.debian.org/debian/pool/main/x/xdg-dbus-proxy/xdg-dbus-proxy_0.1.4-3.debian.tar.xz' xdg-dbus-proxy_0.1.4-3.debian.tar.xz 4880 SHA256:f2e9f91816f137916128c2bde2acb9f882d395257610f5b64e5a04daa1f50566
+$ apt-get source -qq --print-uris xdg-dbus-proxy=0.1.4-3+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/x/xdg-dbus-proxy/xdg-dbus-proxy_0.1.4-3%2bdeb12u1.dsc' xdg-dbus-proxy_0.1.4-3+deb12u1.dsc 2232 SHA256:5e4de92871f60585ef9c23241476ab8d651f3af169fb82c095f3e3f82e28b9cf
+'http://deb.debian.org/debian-security/pool/updates/main/x/xdg-dbus-proxy/xdg-dbus-proxy_0.1.4.orig.tar.xz' xdg-dbus-proxy_0.1.4.orig.tar.xz 122112 SHA256:1ec0eab53d1e49966d722352bcfd51ac402dce5190baedc749a8541e761670ab
+'http://deb.debian.org/debian-security/pool/updates/main/x/xdg-dbus-proxy/xdg-dbus-proxy_0.1.4-3%2bdeb12u1.debian.tar.xz' xdg-dbus-proxy_0.1.4-3+deb12u1.debian.tar.xz 6984 SHA256:40d561da6af2b94cffcf99bbcde771231a1fbdaf724d52fe2a5ae778d43b6fdb
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/xdg-dbus-proxy/0.1.4-3/ (for browsing the source)
-- https://sources.debian.net/src/xdg-dbus-proxy/0.1.4-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xdg-dbus-proxy/0.1.4-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/xdg-dbus-proxy/0.1.4-3+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/xdg-dbus-proxy/0.1.4-3+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xdg-dbus-proxy/0.1.4-3+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xkeyboard-config=2.35.1-1`
 
