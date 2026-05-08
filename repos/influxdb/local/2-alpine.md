@@ -2,19 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:619efccec88d0d48782c928996db6c574990252fbf53b9fd930c5087bf49b7b3`
-- Created: `2026-05-04T19:24:59.269923893Z`
-- Virtual Size: ~ 190.95 Mb  
+- Image ID: `sha256:c303fd4fda03370b1c11f52e97e341b8ca80b8179a8a9fccecb91d61c1b96a7c`
+- Created: `2026-05-06T21:40:05.531659222Z`
+- Virtual Size: ~ 210.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["influxd"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `INFLUXDB_VERSION=2.8.0`
-  - `INFLUXDB_PR=-2`
-  - `INFLUXDB_PV=2.8.0-2`
-  - `INFLUX_CLI_VERSION=2.7.5`
+  - `INFLUXDB_VERSION=2.9.0`
+  - `INFLUX_CLI_VERSION=2.8.0`
   - `INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs`
   - `INFLUXD_INIT_PORT=9999`
   - `INFLUXD_INIT_PING_ATTEMPTS=600`
@@ -532,6 +530,23 @@ bzip2-1.0.6
 
 ```
 
+### `apk` package: `libcap-ng`
+
+```console
+libcap-ng-0.8.5-r0 description:
+POSIX capabilities library
+
+libcap-ng-0.8.5-r0 webpage:
+https://people.redhat.com/sgrubb/libcap-ng/index.html
+
+libcap-ng-0.8.5-r0 installed size:
+39 KiB
+
+libcap-ng-0.8.5-r0 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
+
+```
+
 ### `apk` package: `libcrypto3`
 
 ```console
@@ -974,6 +989,23 @@ GPL-2.0-only
 
 ```
 
+### `apk` package: `setpriv`
+
+```console
+setpriv-2.41.4-r0 description:
+Run a program with different Linux privilege settings
+
+setpriv-2.41.4-r0 webpage:
+https://git.kernel.org/cgit/utils/util-linux/util-linux.git
+
+setpriv-2.41.4-r0 installed size:
+33 KiB
+
+setpriv-2.41.4-r0 license:
+GPL-2.0-or-later
+
+```
+
 ### `apk` package: `sqlite-libs`
 
 ```console
@@ -1005,23 +1037,6 @@ ssl_client-1.37.0-r30 installed size:
 
 ssl_client-1.37.0-r30 license:
 GPL-2.0-only
-
-```
-
-### `apk` package: `su-exec`
-
-```console
-su-exec-0.3-r0 description:
-switch user and group id, setgroups and exec
-
-su-exec-0.3-r0 webpage:
-https://github.com/ncopa/su-exec
-
-su-exec-0.3-r0 installed size:
-13 KiB
-
-su-exec-0.3-r0 license:
-MIT
 
 ```
 
