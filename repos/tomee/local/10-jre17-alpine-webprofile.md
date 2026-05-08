@@ -1,10 +1,10 @@
-# `tomee:10.1.4-jre17-Temurin-alpine-webprofile`
+# `tomee:10.1.5-jre17-Temurin-alpine-webprofile`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1e94974ec71a00be4c917562777495a5b45d453f82cd74ada6ea87804b775f23`
-- Created: `2026-04-15T21:58:59.069284815Z`
-- Virtual Size: ~ 254.44 Mb  
+- Image ID: `sha256:8074716faf977e514a3d378e89ad5e2466ad1d954b920dec3578aaa117f0a917`
+- Created: `2026-05-08T00:06:00.741921179Z`
+- Virtual Size: ~ 257.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,8 +15,8 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.18+8`
-  - `TOMEE_VER=10.1.4`
+  - `JAVA_VERSION=jdk-17.0.19+10`
+  - `TOMEE_VER=10.1.5`
   - `TOMEE_BUILD=webprofile`
 
 ## `apk` (`.apk`-based packages)
@@ -517,16 +517,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.12-r0 description:
+gnutls-3.8.13-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.12-r0 webpage:
+gnutls-3.8.13-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.12-r0 installed size:
-1920 KiB
+gnutls-3.8.13-r0 installed size:
+2012 KiB
 
-gnutls-3.8.12-r0 license:
+gnutls-3.8.13-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1112,16 +1112,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.68.0-r0 description:
+nghttp2-libs-1.69.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.68.0-r0 webpage:
+nghttp2-libs-1.69.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.68.0-r0 installed size:
+nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.68.0-r0 license:
+nghttp2-libs-1.69.0-r0 license:
 MIT
 
 ```
@@ -1299,16 +1299,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026a-r0 description:
+tzdata-2026b-r0 description:
 Timezone data
 
-tzdata-2026a-r0 webpage:
+tzdata-2026b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026a-r0 installed size:
+tzdata-2026b-r0 installed size:
 436 KiB
 
-tzdata-2026a-r0 license:
+tzdata-2026b-r0 license:
 Public-Domain
 
 ```

@@ -1,10 +1,10 @@
-# `tomee:10.1.4-jre21-Temurin-alpine-plume`
+# `tomee:10.1.5-jre21-Temurin-alpine-plume`
 
 ## Docker Metadata
 
-- Image ID: `sha256:361910fabb88a4c34f912aee9e4cba1765f271b4735170c08278767e520b80c7`
-- Created: `2026-04-15T21:57:52.308356944Z`
-- Virtual Size: ~ 304.21 Mb  
+- Image ID: `sha256:cfa6059ad2becc77d5f051bf569665a31b18a37e64caffadbda2b4a33df5e657`
+- Created: `2026-05-05T19:15:37.89560324Z`
+- Virtual Size: ~ 306.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.10+7`
-  - `TOMEE_VER=10.1.4`
+  - `TOMEE_VER=10.1.5`
   - `TOMEE_BUILD=plume`
 
 ## `apk` (`.apk`-based packages)
@@ -1112,16 +1112,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.68.0-r0 description:
+nghttp2-libs-1.69.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.68.0-r0 webpage:
+nghttp2-libs-1.69.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.68.0-r0 installed size:
+nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.68.0-r0 license:
+nghttp2-libs-1.69.0-r0 license:
 MIT
 
 ```

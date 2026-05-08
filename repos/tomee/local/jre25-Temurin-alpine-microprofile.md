@@ -1,10 +1,10 @@
-# `tomee:10.1.4-jre25-Temurin-alpine-microprofile`
+# `tomee:10.1.5-jre25-Temurin-alpine-microprofile`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7de653c5b9c1cca247f888221a2d9ddd353e9664f135d586af45d330d39251a2`
-- Created: `2026-04-30T23:52:41.928914812Z`
-- Virtual Size: ~ 321.91 Mb  
+- Image ID: `sha256:388aa20045a574142056dddb6427edf5bdb2205995fa31d6029f2a4f40d7e2d0`
+- Created: `2026-05-05T19:14:59.203364607Z`
+- Virtual Size: ~ 324.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-25.0.3+9`
-  - `TOMEE_VER=10.1.4`
+  - `TOMEE_VER=10.1.5`
   - `TOMEE_BUILD=microprofile`
 
 ## `apk` (`.apk`-based packages)
@@ -466,16 +466,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.12-r0 description:
+gnutls-3.8.13-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.12-r0 webpage:
+gnutls-3.8.13-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.12-r0 installed size:
-1920 KiB
+gnutls-3.8.13-r0 installed size:
+2012 KiB
 
-gnutls-3.8.12-r0 license:
+gnutls-3.8.13-r0 license:
 LGPL-2.1-or-later
 
 ```

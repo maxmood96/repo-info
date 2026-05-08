@@ -1,10 +1,10 @@
-# `tomee:10.1.4-jre25-Semeru-ubuntu-plus`
+# `tomee:10.1.5-jre25-Semeru-ubuntu-plus`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b16b9cf46a38683bf2f11101dd2a3cdcfe4f7d344682c70f06c704564d16c743`
-- Created: `2026-05-01T00:16:01.398967498Z`
-- Virtual Size: ~ 404.86 Mb  
+- Image ID: `sha256:94893bae3ddca41277f4f116f0a278eb57b352c97f19121fb408707c53dd3bd3`
+- Created: `2026-05-05T19:15:10.79907903Z`
+- Virtual Size: ~ 407.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -16,7 +16,7 @@
   - `JAVA_VERSION=25.0.3.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
-  - `TOMEE_VER=10.1.4`
+  - `TOMEE_VER=10.1.5`
   - `TOMEE_BUILD=plus`
 - Labels:
   - `org.opencontainers.image.version=22.04`
@@ -1098,14 +1098,9 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.37-3ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37.orig.tar.gz' libpng1.6_1.6.37.orig.tar.gz 1508805 SHA256:ca74a0dace179a8422187671aee97dd3892b53e168627145271cad5b5ac81307
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.4.debian.tar.xz' libpng1.6_1.6.37-3ubuntu0.4.debian.tar.xz 40160 SHA256:11dc3b351ccfe56c336dd3794d870453fce1c3cde0131e6ad4c6fdc6c4f655be
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.4.dsc' libpng1.6_1.6.37-3ubuntu0.4.dsc 2340 SHA256:74492c0a2d4b08be8592eb27aa021093b2eedf7276a326d7a5cf5106ce9a775a
-```
 
 ### `dpkg` source package: `libpsl=0.21.0-1.2build2`
 
@@ -1484,14 +1479,9 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.43.0-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0.orig.tar.bz2' nghttp2_1.43.0.orig.tar.bz2 4521786 SHA256:556f24653397c71ebb8270b3c5e5507f0893e6eac2c6eeda6be2ecf6e1f50f62
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.2.debian.tar.xz' nghttp2_1.43.0-1ubuntu0.2.debian.tar.xz 23788 SHA256:4517ea82d0a218a4a4c870724f9498b88bf3d8971113ebc746bf24a0df12af22
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.2.dsc' nghttp2_1.43.0-1ubuntu0.2.dsc 2679 SHA256:44f56bd7ce62011d772fecdc39f0513e28bb8ac00fe8068e1f3a154e9bfd6c5b
-```
 
 ### `dpkg` source package: `npth=1.6-3build2`
 
