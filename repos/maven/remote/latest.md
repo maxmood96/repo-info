@@ -1,7 +1,7 @@
 ## `maven:latest`
 
 ```console
-$ docker pull maven@sha256:2afabfe1611261e4cc04d49c7819309c07653997b78157f44d86acc200a414f1
+$ docker pull maven@sha256:23053b8f354931739ccd295c0617158ecc0360f25897e0b761dcaeac991af999
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -154,13 +154,13 @@ $ docker pull maven@sha256:10a35c8bdd521bc7092d391801a69735f0d088d0d7fe84c05c4f1
 ### `maven:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:c8ad1bbbdc1751a9577978b3056df6351cc32bd514eebaed53775ad4be47387f
+$ docker pull maven@sha256:28e6c67fd2da39bec8dda85e9734d422825476393b65a2f6268960f3a4962bb5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **175.0 MB (174981747 bytes)**  
+-	Total Size: **175.0 MB (174981715 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3154826604770c9b57ddedb6ba6748db9eec27f2c2cdeb76e07f2cbe2b1f91a2`
+-	Image ID: `sha256:7eee45b52a8453c72dbc2a4af68c4e99c0e0f7d75e5d663f7191b0b35c99b733`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -195,31 +195,31 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 15 Apr 2026 20:35:34 GMT
 CMD ["jshell"]
-# Tue, 21 Apr 2026 18:11:11 GMT
+# Fri, 08 May 2026 00:28:34 GMT
 RUN apt-get update   && apt-get install -y ca-certificates curl git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 21 Apr 2026 18:11:11 GMT
+# Fri, 08 May 2026 00:28:34 GMT
 LABEL org.opencontainers.image.title=Apache Maven
-# Tue, 21 Apr 2026 18:11:11 GMT
+# Fri, 08 May 2026 00:28:34 GMT
 LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
-# Tue, 21 Apr 2026 18:11:11 GMT
+# Fri, 08 May 2026 00:28:34 GMT
 LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
-# Tue, 21 Apr 2026 18:11:11 GMT
+# Fri, 08 May 2026 00:28:34 GMT
 LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
-# Tue, 21 Apr 2026 18:11:11 GMT
+# Fri, 08 May 2026 00:28:34 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Tue, 21 Apr 2026 18:11:11 GMT
+# Fri, 08 May 2026 00:28:34 GMT
 COPY /usr/share/maven /usr/share/maven # buildkit
-# Tue, 21 Apr 2026 18:11:11 GMT
+# Fri, 08 May 2026 00:28:34 GMT
 COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Tue, 21 Apr 2026 18:11:12 GMT
+# Fri, 08 May 2026 00:28:34 GMT
 RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Tue, 21 Apr 2026 18:11:12 GMT
+# Fri, 08 May 2026 00:28:34 GMT
 ARG USER_HOME_DIR=/root
-# Tue, 21 Apr 2026 18:11:12 GMT
+# Fri, 08 May 2026 00:28:34 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Tue, 21 Apr 2026 18:11:12 GMT
+# Fri, 08 May 2026 00:28:34 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Tue, 21 Apr 2026 18:11:12 GMT
+# Fri, 08 May 2026 00:28:34 GMT
 CMD ["mvn"]
 ```
 
@@ -244,45 +244,45 @@ CMD ["mvn"]
 		Last Modified: Wed, 15 Apr 2026 20:35:32 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57827cab1f0aab9aac7e1c246d9d78f6d7aa4f98f5a14685eac93e56b3aad44b`  
-		Last Modified: Tue, 21 Apr 2026 18:11:25 GMT  
-		Size: 24.6 MB (24611363 bytes)  
+	-	`sha256:18535f05c0bf20e6689816b6b99ab4ee6920d20503104ac5b30177679745c416`  
+		Last Modified: Fri, 08 May 2026 00:28:48 GMT  
+		Size: 24.6 MB (24611333 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0dc4313f9fcca1cceb79d45ffc603e834a8cda3ff6e257544b8eefa207c4f2ca`  
-		Last Modified: Tue, 21 Apr 2026 18:11:25 GMT  
-		Size: 9.3 MB (9312253 bytes)  
+	-	`sha256:e774b3c0bb94068a48261b97d61a7a5c55809c4ee3d671b2e892d60af67f6377`  
+		Last Modified: Fri, 08 May 2026 00:28:48 GMT  
+		Size: 9.3 MB (9312255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:040eb9ae774e3e8e35a95f6f38dac1fd88d72f01dbf5db50a1d4506572391477`  
-		Last Modified: Tue, 21 Apr 2026 18:11:24 GMT  
-		Size: 852.0 B  
+	-	`sha256:25d2cc13474c4caef8f0569123b87330f5adab8db29bfd72de3f4a9ddd0acae6`  
+		Last Modified: Fri, 08 May 2026 00:28:46 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e029c364a8b40f482aafbee889892b9534b84294b353f4903859e7bd28798b4`  
-		Last Modified: Tue, 21 Apr 2026 18:11:24 GMT  
-		Size: 156.0 B  
+	-	`sha256:56f2824a6ec7f3c16928f5a927ec22ab8f47da03d862224ac57b38427a81453a`  
+		Last Modified: Fri, 08 May 2026 00:28:47 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:latest` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:5f41020f5a2b7535272bc21caac2fa6f6ba5ea36bfca5b0d6151b3214188680a
+$ docker pull maven@sha256:e7ffcf82608fed7fe17acef1ab5069edf68cb3943aa12f4e9f718529560f2827
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (5038561 bytes)**  
+-	Total Size: **5.0 MB (5038715 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a705b1e59e106c74b78c476fa2fce9a1154553af4b2c58142b018c13e77801b6`
+-	Image ID: `sha256:92d32023aa655af28731eb0af5741c51ddcf20100d00bd217a4a7c68ea48fb42`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:56d27e3f3981c8f5593853c4e0a13cc5d6b0b06b21b77638855e161176bf2083`  
-		Last Modified: Tue, 21 Apr 2026 18:11:24 GMT  
+	-	`sha256:adb5d335f281048911a2bf1feb462cf4e74128ae80888fd4a078aa637ea9a8e3`  
+		Last Modified: Fri, 08 May 2026 00:28:47 GMT  
 		Size: 5.0 MB (5017482 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1f1392600ddcf3bede9881b9bc2992f7e656d2a8ae45ee02d76655501bf686d2`  
-		Last Modified: Tue, 21 Apr 2026 18:11:24 GMT  
-		Size: 21.1 KB (21079 bytes)  
+	-	`sha256:e9fb956a80d20f9ccb69248b9a6fe9e9e85373780de7dcda6c57ac941432ff67`  
+		Last Modified: Fri, 08 May 2026 00:28:46 GMT  
+		Size: 21.2 KB (21233 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:latest` - linux; ppc64le

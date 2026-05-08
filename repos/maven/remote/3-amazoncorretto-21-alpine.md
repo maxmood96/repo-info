@@ -1,7 +1,7 @@
 ## `maven:3-amazoncorretto-21-alpine`
 
 ```console
-$ docker pull maven@sha256:9d441190ff6efd60ad4861db9518af3007bfcf2a642227be2d8f9dab207fc8a1
+$ docker pull maven@sha256:7e93db7836f6bcf849116541e721268a48b37ea66769ba9f58a78c42692309f1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -121,13 +121,13 @@ $ docker pull maven@sha256:69c54bb3b93e4b3e8f8f11c9e8b4e97a6b1eaf607363966c40bff
 ### `maven:3-amazoncorretto-21-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:427e825418badddab78bad548b62433a11fb25b8582a62ece571aa531fb2008a
+$ docker pull maven@sha256:353bb0d37d450b0724e1027f3ebdd3ab8e5491fbe9f1bb0c0e8c73d4077e9e40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **175.8 MB (175802835 bytes)**  
+-	Total Size: **175.8 MB (175802789 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8859efc2aba1eb5663c79c92f0f0a3e08193cfb995307cc41fb7a666fe5dac67`
+-	Image ID: `sha256:663393af4ac6b930fdad42e0a0af464d7fd420740425f500b5023ada9955cd67`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -147,31 +147,31 @@ ENV LANG=C.UTF-8
 ENV JAVA_HOME=/usr/lib/jvm/default-jvm
 # Wed, 22 Apr 2026 21:34:45 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/default-jvm/bin
-# Wed, 22 Apr 2026 22:14:57 GMT
+# Fri, 08 May 2026 00:29:40 GMT
 RUN apk add --no-cache bash openssh-client # buildkit
-# Wed, 22 Apr 2026 22:14:57 GMT
+# Fri, 08 May 2026 00:29:40 GMT
 LABEL org.opencontainers.image.title=Apache Maven
-# Wed, 22 Apr 2026 22:14:57 GMT
+# Fri, 08 May 2026 00:29:40 GMT
 LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
-# Wed, 22 Apr 2026 22:14:57 GMT
+# Fri, 08 May 2026 00:29:40 GMT
 LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
-# Wed, 22 Apr 2026 22:14:57 GMT
+# Fri, 08 May 2026 00:29:40 GMT
 LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
-# Wed, 22 Apr 2026 22:14:57 GMT
+# Fri, 08 May 2026 00:29:40 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Wed, 22 Apr 2026 22:14:57 GMT
+# Fri, 08 May 2026 00:29:40 GMT
 COPY /usr/share/maven /usr/share/maven # buildkit
-# Wed, 22 Apr 2026 22:14:57 GMT
+# Fri, 08 May 2026 00:29:40 GMT
 COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Wed, 22 Apr 2026 22:14:57 GMT
+# Fri, 08 May 2026 00:29:40 GMT
 RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Wed, 22 Apr 2026 22:14:57 GMT
+# Fri, 08 May 2026 00:29:40 GMT
 ARG USER_HOME_DIR=/root
-# Wed, 22 Apr 2026 22:14:57 GMT
+# Fri, 08 May 2026 00:29:40 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Wed, 22 Apr 2026 22:14:57 GMT
+# Fri, 08 May 2026 00:29:40 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Wed, 22 Apr 2026 22:14:57 GMT
+# Fri, 08 May 2026 00:29:40 GMT
 CMD ["mvn"]
 ```
 
@@ -184,43 +184,43 @@ CMD ["mvn"]
 		Last Modified: Wed, 22 Apr 2026 21:35:04 GMT  
 		Size: 159.8 MB (159828502 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5759911871b09005318761025d78a31beb1376916a4784686a211d558ddc1444`  
-		Last Modified: Wed, 22 Apr 2026 22:15:05 GMT  
-		Size: 2.5 MB (2461192 bytes)  
+	-	`sha256:1cfa2768d7dc17cb0a5d98095aa0875b4564367bd536e806cf1ab16e73615c7c`  
+		Last Modified: Fri, 08 May 2026 00:29:49 GMT  
+		Size: 2.5 MB (2461180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:78c10c5234b689a5d5b4df0395959cc627dcc7bd747fdd649ffdfbde5fc7fd28`  
-		Last Modified: Wed, 22 Apr 2026 22:15:05 GMT  
-		Size: 9.3 MB (9312261 bytes)  
+	-	`sha256:dfd28e738a1106e9d61e6e074fabbe28f31aa09642d2d426e3ccc70790b0868b`  
+		Last Modified: Fri, 08 May 2026 00:29:49 GMT  
+		Size: 9.3 MB (9312231 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0da2e05deca0bd0ad8556110256988f7c7db22ae3fca2ddcfcf4c98917c3499b`  
-		Last Modified: Wed, 22 Apr 2026 22:15:05 GMT  
-		Size: 854.0 B  
+	-	`sha256:618cf1abdb5e80aba84e52b91204fe1cb6ce6b3590403f41bfa70b6364a76304`  
+		Last Modified: Fri, 08 May 2026 00:29:49 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67daf5ce288e0cceb057a21b5b9c1c99673bec2f881fce067ba806dd8c28fb13`  
-		Last Modified: Wed, 22 Apr 2026 22:15:05 GMT  
-		Size: 156.0 B  
+	-	`sha256:1d774dbb5f3c20cb813a2b732cbaef89f6351c0aaa038978f4672cb885fb4bbf`  
+		Last Modified: Fri, 08 May 2026 00:29:49 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-21-alpine` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:7ee5bc1b551ad557283b8928c75fa68bfea39e35c4dfadbe3063696ae3cc0716
+$ docker pull maven@sha256:e1624af94a9fc2c98fc447e76502f5e0471ef102a3e8b0a65fd73b45f1a82009
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **741.7 KB (741705 bytes)**  
+-	Total Size: **741.9 KB (741859 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:251fe0812c6e2a206ce932adaf90c032cad32b9c8cda092062508e1520b34cce`
+-	Image ID: `sha256:a87ef50301aa0e4b77c5fc78a8d46e96cbc3a5016d8aaa6f811220f706b90dfa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f1e09ece39c3c1bc760ee4ff9ec0f018ada55e27825b9ab405ab1ec56bf7ae36`  
-		Last Modified: Wed, 22 Apr 2026 22:15:05 GMT  
+	-	`sha256:33847af65da19328f7f3d938f3a77d94c038625bb5d0a806ea75a54fd22523b9`  
+		Last Modified: Fri, 08 May 2026 00:29:49 GMT  
 		Size: 727.0 KB (727046 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5fe5fa861f603a69e760100bc5295d9b5781faff309f8c0874bb894e68c44c68`  
-		Last Modified: Wed, 22 Apr 2026 22:15:05 GMT  
-		Size: 14.7 KB (14659 bytes)  
+	-	`sha256:5ea316461f2df1f92ff974478914d0afa96f3e6c4135e0a580a5657931cebe93`  
+		Last Modified: Fri, 08 May 2026 00:29:49 GMT  
+		Size: 14.8 KB (14813 bytes)  
 		MIME: application/vnd.in-toto+json
