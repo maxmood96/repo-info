@@ -1,7 +1,7 @@
 ## `maven:3-amazoncorretto-8-alpine`
 
 ```console
-$ docker pull maven@sha256:6e4b5906cc7b04cbcb16bc0f3a72efb999923f67f561331fabf5def103b74c27
+$ docker pull maven@sha256:e38e6b55e3543318e2b6bc501eddaebbd602898818b3adac237b81d8dd57ccd9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull maven@sha256:6e4b5906cc7b04cbcb16bc0f3a72efb999923f67f561331fabf5d
 ### `maven:3-amazoncorretto-8-alpine` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:ac616c3a47d265931ba4ca25aea7617df7068359bbc812faea901862f93d3957
+$ docker pull maven@sha256:791be38ffb28ba1b26c5b055e09c05caf71d2cee73725872dd73109344c5b7e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **116.4 MB (116370767 bytes)**  
+-	Total Size: **116.4 MB (116370841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07e3639ab550d441318d9f63d91b5dba8b095096af07434440129660f70a7e87`
+-	Image ID: `sha256:9401211cc4c34e1504c767c1f79058d370382129b120b2d24fe15a7c4a015c51`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -40,31 +40,31 @@ ENV LANG=C.UTF-8
 ENV JAVA_HOME=/usr/lib/jvm/default-jvm
 # Wed, 22 Apr 2026 21:33:09 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/jvm/default-jvm/bin
-# Wed, 22 Apr 2026 22:15:50 GMT
+# Fri, 08 May 2026 00:31:59 GMT
 RUN apk add --no-cache bash openssh-client # buildkit
-# Wed, 22 Apr 2026 22:15:50 GMT
+# Fri, 08 May 2026 00:31:59 GMT
 LABEL org.opencontainers.image.title=Apache Maven
-# Wed, 22 Apr 2026 22:15:50 GMT
+# Fri, 08 May 2026 00:31:59 GMT
 LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
-# Wed, 22 Apr 2026 22:15:50 GMT
+# Fri, 08 May 2026 00:31:59 GMT
 LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
-# Wed, 22 Apr 2026 22:15:50 GMT
+# Fri, 08 May 2026 00:31:59 GMT
 LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
-# Wed, 22 Apr 2026 22:15:50 GMT
+# Fri, 08 May 2026 00:31:59 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Wed, 22 Apr 2026 22:15:50 GMT
+# Fri, 08 May 2026 00:31:59 GMT
 COPY /usr/share/maven /usr/share/maven # buildkit
-# Wed, 22 Apr 2026 22:15:50 GMT
+# Fri, 08 May 2026 00:31:59 GMT
 COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Wed, 22 Apr 2026 22:15:50 GMT
+# Fri, 08 May 2026 00:31:59 GMT
 RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Wed, 22 Apr 2026 22:15:50 GMT
+# Fri, 08 May 2026 00:31:59 GMT
 ARG USER_HOME_DIR=/root
-# Wed, 22 Apr 2026 22:15:50 GMT
+# Fri, 08 May 2026 00:31:59 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Wed, 22 Apr 2026 22:15:50 GMT
+# Fri, 08 May 2026 00:31:59 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Wed, 22 Apr 2026 22:15:50 GMT
+# Fri, 08 May 2026 00:31:59 GMT
 CMD ["mvn"]
 ```
 
@@ -77,45 +77,45 @@ CMD ["mvn"]
 		Last Modified: Wed, 22 Apr 2026 21:33:25 GMT  
 		Size: 100.8 MB (100787224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f161cadca173a211469cdee9e4214806027b4416f3041c1f0ead74035751e52b`  
-		Last Modified: Wed, 22 Apr 2026 22:15:57 GMT  
-		Size: 2.4 MB (2406143 bytes)  
+	-	`sha256:c9dc470d90db8074073fe1c7137157096b5ce054cad3ac0da0ec961dbcaa7e9b`  
+		Last Modified: Fri, 08 May 2026 00:32:08 GMT  
+		Size: 2.4 MB (2406167 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d8e1cf63adcf2d140aa27bf25ceb43afca0226c6d9edbb17c24600dbfd1248e`  
-		Last Modified: Wed, 22 Apr 2026 22:15:57 GMT  
-		Size: 9.3 MB (9312202 bytes)  
+	-	`sha256:88742acfc4b97b299eccb0f33c2df39ad4e8ca1fb08d087b4ac2f5a3483de7f8`  
+		Last Modified: Fri, 08 May 2026 00:32:08 GMT  
+		Size: 9.3 MB (9312253 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c3d1edccc53726da1c8c36fc3b6ea8005fe38a6e9a60166b24e498e4e6d2223`  
-		Last Modified: Wed, 22 Apr 2026 22:15:57 GMT  
-		Size: 853.0 B  
+	-	`sha256:af45e80d8842d27fc181477b07cc56aba7bf84d178fc212b52abf4ec71fd069e`  
+		Last Modified: Fri, 08 May 2026 00:32:07 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a900b2c34e0ed4b61979f13a8f8956bb0b5ff482365ed33923c57f3437dc07e`  
-		Last Modified: Wed, 22 Apr 2026 22:15:57 GMT  
+	-	`sha256:5946b43d6297aab16645dc28a0e0c19212a894a522791997c4bb88e9aaac7b12`  
+		Last Modified: Fri, 08 May 2026 00:32:07 GMT  
 		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-8-alpine` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:33a6c7d8f644e3f60dd4bf088e7d769a5f4b8ca2edede76a1aa1d78be29adb42
+$ docker pull maven@sha256:e8c9e80f21a62305d7e3963c2593b05828c9ff7ecce78777f7358e07313e36f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **406.8 KB (406795 bytes)**  
+-	Total Size: **406.9 KB (406949 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c6430630e9b964e19401c9730275f8affb4833a6baf44284c0e2b66ea2e84ee0`
+-	Image ID: `sha256:f98bfeb721962f4b4c94593ccb294b4d492dba7f19e3c1dae7557f9a8cb57969`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:adcae60c5332aa7bc10076f7a5c54d26e9745b012f4c7fc013122d54caedf199`  
-		Last Modified: Wed, 22 Apr 2026 22:15:57 GMT  
+	-	`sha256:d920aa2a4ad9909277e0bb0ffe2ef84f1dac964f12a6cc03b28328422094838c`  
+		Last Modified: Fri, 08 May 2026 00:32:07 GMT  
 		Size: 392.3 KB (392282 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e3b5c41e8718593e4f70f2d4bafe13528a409dda91ef78ec4069540e418b4c18`  
-		Last Modified: Wed, 22 Apr 2026 22:15:57 GMT  
-		Size: 14.5 KB (14513 bytes)  
+	-	`sha256:444bbf4fcee5138ccfe1fee71897b9883c9b566db6eea4e7ea1d9531e7bbd0e5`  
+		Last Modified: Fri, 08 May 2026 00:32:07 GMT  
+		Size: 14.7 KB (14667 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-amazoncorretto-8-alpine` - linux; arm64 variant v8
