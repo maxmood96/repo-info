@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5724cab1ad67c0eefd238cd10aff0b43c16fcb41b658acc33da93f1b90102855`
-- Created: `2026-05-01T08:39:02.67468185Z`
+- Image ID: `sha256:72bcef4244d70d22fac38b125837a08773b1fdd6334669e62c6f46d2e5f2a2a8`
+- Created: `2026-05-07T17:32:33.819976071Z`
 - Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.20`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.20.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.20.tar.xz.asc`
-  - `PHP_SHA256=e454c6f7c89a42f41ebb06dc5c3578e8c8b5f1a3f0da6675665affab04e221f7`
+  - `PHP_VERSION=8.4.21`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.21.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.21.tar.xz.asc`
+  - `PHP_SHA256=7cf5d8ab12c3b2016875bcfaec71bef1ef0b07bed6148f2c447577074431f984`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
@@ -524,16 +524,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.12-r0 description:
+gnutls-3.8.13-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.12-r0 webpage:
+gnutls-3.8.13-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.12-r0 installed size:
-1920 KiB
+gnutls-3.8.13-r0 installed size:
+2012 KiB
 
-gnutls-3.8.12-r0 license:
+gnutls-3.8.13-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1816,16 +1816,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.68.0-r0 description:
+nghttp2-libs-1.69.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.68.0-r0 webpage:
+nghttp2-libs-1.69.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.68.0-r0 installed size:
+nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.68.0-r0 license:
+nghttp2-libs-1.69.0-r0 license:
 MIT
 
 ```
