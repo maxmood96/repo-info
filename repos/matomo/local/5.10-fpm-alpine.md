@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6ad31cea07da12198594f30e6e9551baa0df0d370653194fc6b33a6c9a2370bc`
-- Created: `2026-05-04T22:05:33.684781918Z`
-- Virtual Size: ~ 170.01 Mb  
+- Image ID: `sha256:a07407c2d982a3b4a0d0ccaf502a5b4774c52e5fc57ee7c838140ae2a55d3bbf`
+- Created: `2026-05-07T17:27:14.636418653Z`
+- Virtual Size: ~ 169.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.20`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.20.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.20.tar.xz.asc`
-  - `PHP_SHA256=e454c6f7c89a42f41ebb06dc5c3578e8c8b5f1a3f0da6675665affab04e221f7`
+  - `PHP_VERSION=8.4.21`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.21.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.21.tar.xz.asc`
+  - `PHP_SHA256=7cf5d8ab12c3b2016875bcfaec71bef1ef0b07bed6148f2c447577074431f984`
   - `PHP_MEMORY_LIMIT=256M`
   - `MATOMO_VERSION=5.10.0`
 
@@ -658,16 +658,16 @@ X11
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.68.0-r0 description:
+nghttp2-libs-1.69.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.68.0-r0 webpage:
+nghttp2-libs-1.69.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.68.0-r0 installed size:
+nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.68.0-r0 license:
+nghttp2-libs-1.69.0-r0 license:
 MIT
 
 ```
