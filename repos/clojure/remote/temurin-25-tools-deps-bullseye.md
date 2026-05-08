@@ -1,7 +1,7 @@
 ## `clojure:temurin-25-tools-deps-bullseye`
 
 ```console
-$ docker pull clojure@sha256:716bb4a366ecb8a85da4bcbab0fbd16a4aa338d7ae4371a2da222d6843030395
+$ docker pull clojure@sha256:136f5dc25a39edcbfd450ebc7ed40ae77538d61a2d8028fa54bf26c188e36714
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -102,38 +102,38 @@ $ docker pull clojure@sha256:db5382d165d5181ddc641aaeb1779a95c9a226f777ac30ced95
 ### `clojure:temurin-25-tools-deps-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:0389533ba705b7f146ce6c642374f392e033b7dd2012413689be2fa167a5e2f5
+$ docker pull clojure@sha256:c6e967fecc52877b38f03dea72fca4f2f9a138a06b24860af04b24eb37a3a6ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **213.5 MB (213534955 bytes)**  
+-	Total Size: **213.5 MB (213534815 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87f06798c03b7c68a2ea62332b668e1fb8fdb3082efbc552778260f04dd66af7`
+-	Image ID: `sha256:c70750c5529a79450b4487b9b0ab302835fe11c411087386d79ee361c8d6d037`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
 # Tue, 21 Apr 2026 00:00:00 GMT
 RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1776729600'
-# Thu, 30 Apr 2026 23:53:16 GMT
+# Fri, 08 May 2026 00:27:40 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 30 Apr 2026 23:53:16 GMT
+# Fri, 08 May 2026 00:27:40 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Thu, 30 Apr 2026 23:53:16 GMT
+# Fri, 08 May 2026 00:27:40 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 30 Apr 2026 23:53:16 GMT
+# Fri, 08 May 2026 00:27:40 GMT
 ENV CLOJURE_VERSION=1.12.4.1618
-# Thu, 30 Apr 2026 23:53:16 GMT
+# Fri, 08 May 2026 00:27:40 GMT
 WORKDIR /tmp
-# Thu, 30 Apr 2026 23:53:30 GMT
+# Fri, 08 May 2026 00:27:54 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "8a49ab11a639ce1d49e5459a7bfa8fcc74684ad3bc9acd181e3adc7a662918cf *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" && apt-get purge -y --auto-remove curl # buildkit
-# Thu, 30 Apr 2026 23:53:30 GMT
+# Fri, 08 May 2026 00:27:54 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Thu, 30 Apr 2026 23:53:30 GMT
+# Fri, 08 May 2026 00:27:54 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Thu, 30 Apr 2026 23:53:30 GMT
+# Fri, 08 May 2026 00:27:54 GMT
 ENTRYPOINT ["entrypoint"]
-# Thu, 30 Apr 2026 23:53:30 GMT
+# Fri, 08 May 2026 00:27:54 GMT
 CMD ["-M" "--repl"]
 ```
 
@@ -142,47 +142,47 @@ CMD ["-M" "--repl"]
 		Last Modified: Wed, 22 Apr 2026 00:16:07 GMT  
 		Size: 52.3 MB (52253001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0522a9f580b2bdb7623aacdfb52d57b30595e9b585908688fa5718d7b637622d`  
-		Last Modified: Thu, 30 Apr 2026 23:53:52 GMT  
-		Size: 91.5 MB (91542288 bytes)  
+	-	`sha256:5344866c8ac687a28040c00d8bd15d6f6eb85e6470fbf5064a9c0f10e49391bb`  
+		Last Modified: Fri, 08 May 2026 00:28:15 GMT  
+		Size: 91.5 MB (91542292 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a5fd4b92dd110c8f6e5c2bca1e4400a6eb41404186e4a66252044d6ce5f7dee`  
-		Last Modified: Thu, 30 Apr 2026 23:53:52 GMT  
-		Size: 69.7 MB (69738628 bytes)  
+	-	`sha256:081bd10db25731ef1df7ac017c96abf26f3af8067175f335074c4815d985b153`  
+		Last Modified: Fri, 08 May 2026 00:28:15 GMT  
+		Size: 69.7 MB (69738477 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ab24f32b915d1312231c45f3ddd8987a1f6602a21f88cf86946aa3f61144054`  
-		Last Modified: Thu, 30 Apr 2026 23:53:49 GMT  
-		Size: 611.0 B  
+	-	`sha256:e73f6bfdb23ee1d9f987144a173c268e085a052dbfbb315f4fe9d510e0775718`  
+		Last Modified: Fri, 08 May 2026 00:28:12 GMT  
+		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1b8e1e5fccc961f9e5cf9c8e5343c5808c60fa32b36500471974aac5389c741`  
-		Last Modified: Thu, 30 Apr 2026 23:53:49 GMT  
-		Size: 395.0 B  
+	-	`sha256:7e8f9035b9b17ee934ae7716989e58d4f6749111b2014806d7f9d4c1c8a2427a`  
+		Last Modified: Fri, 08 May 2026 00:28:12 GMT  
+		Size: 398.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-25-tools-deps-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:8a127422f43fc678a37eea7f428c61e7bea29b9c0cd6c366072b055caf7df4e3
+$ docker pull clojure@sha256:c8f0423329b82c8dcba0dd782a717789cfec63e3797256b0e5d97af344a51991
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.4 MB (7398059 bytes)**  
+-	Total Size: **7.4 MB (7398213 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cabd245e50a8444426ee77c5083f638edc646c4f0b09603b8f534dc961181e0d`
+-	Image ID: `sha256:071f23410dce57bdef6bf996fb631ce9a52aa4fea0f176fb1159be5f47825319`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4fb5efaf81f24883b22ab699fac62d3f06d4b9a169d36803f520bd8ecc8378c4`  
-		Last Modified: Thu, 30 Apr 2026 23:53:49 GMT  
+	-	`sha256:516a6877d7e855a505f6e0272b5ac27c76fcc21137ccfedd2e419a5c8f3e6013`  
+		Last Modified: Fri, 08 May 2026 00:28:13 GMT  
 		Size: 7.4 MB (7381470 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8a624e657bb8990b4a4c755590ce0c06831461e1c14b2f6e693e8e2b0cf52c67`  
-		Last Modified: Thu, 30 Apr 2026 23:53:48 GMT  
-		Size: 16.6 KB (16589 bytes)  
+	-	`sha256:7128f643edbca1a06be66f9a87a136c522e9872d62cbbb7c889a9efa6e43c122`  
+		Last Modified: Fri, 08 May 2026 00:28:13 GMT  
+		Size: 16.7 KB (16743 bytes)  
 		MIME: application/vnd.in-toto+json
