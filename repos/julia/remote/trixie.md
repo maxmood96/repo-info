@@ -1,7 +1,7 @@
 ## `julia:trixie`
 
 ```console
-$ docker pull julia@sha256:8fb0052ccc5b512e737c1e095ddc3dbb2196a8477a393e343d5a3ae33cda5b37
+$ docker pull julia@sha256:b394a59b16c304713ae5b36b3ef6960c0afb19e7967fb88014f53c4e84bce003
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,156 +16,156 @@ $ docker pull julia@sha256:8fb0052ccc5b512e737c1e095ddc3dbb2196a8477a393e343d5a3
 ### `julia:trixie` - linux; amd64
 
 ```console
-$ docker pull julia@sha256:1fe2de94c55ef259658fdf3fd572cfd97a27a97de4a0aaa804eecc9082fab2dd
+$ docker pull julia@sha256:a0fbf4cdf4ff3184632c18fe22ddfef50add9fe267b2e2b5fcc11bcd6417b2e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **329.6 MB (329624456 bytes)**  
+-	Total Size: **329.6 MB (329624537 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5f4e27ad227495b7be51cc9c82f03c1cd47cc91eb4c692a9b63dbd3ec963c73`
+-	Image ID: `sha256:abd1abbc99ad9330a88101f00e0d87e3e7a42c7fb336dc40cd2df7c96af141c0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["julia"]`
 
 ```dockerfile
-# Tue, 21 Apr 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1776729600'
-# Wed, 22 Apr 2026 01:20:24 GMT
+# Tue, 05 May 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1777939200'
+# Fri, 08 May 2026 19:21:08 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 22 Apr 2026 01:20:46 GMT
+# Fri, 08 May 2026 19:21:30 GMT
 ENV JULIA_PATH=/usr/local/julia
-# Wed, 22 Apr 2026 01:20:46 GMT
+# Fri, 08 May 2026 19:21:30 GMT
 ENV PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Apr 2026 01:20:46 GMT
+# Fri, 08 May 2026 19:21:30 GMT
 ENV JULIA_GPG=3673DF529D9049477F76B37566E3C7DC03D6E495
-# Wed, 22 Apr 2026 01:20:46 GMT
+# Fri, 08 May 2026 19:21:30 GMT
 ENV JULIA_VERSION=1.12.6
-# Wed, 22 Apr 2026 01:20:46 GMT
+# Fri, 08 May 2026 19:21:30 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 	; 	rm -rf /var/lib/apt/lists/*; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			url='https://julialang-s3.julialang.org/bin/linux/x64/1.12/julia-1.12.6-linux-x86_64.tar.gz'; 			sha256='bbabf3bef19421a9dbd24a767d807606ab85e444323b5a1c73ffe293fa3d079a'; 			;; 		'i386') 			url='https://julialang-s3.julialang.org/bin/linux/x86/1.12/julia-1.12.6-linux-i686.tar.gz'; 			sha256='2ab43d56adfe96c7b0b9ddab0e049f54f49df24049ec8b482c26737c42af28cd'; 			;; 		'arm64') 			url='https://julialang-s3.julialang.org/bin/linux/aarch64/1.12/julia-1.12.6-linux-aarch64.tar.gz'; 			sha256='029b93b857bd0ffd627f9a8580d3bbaa63daf008d7b7aed02fbceb8fd57c4899'; 			;; 		*) 			echo >&2 "error: current architecture ($arch) does not have a corresponding Julia binary release"; 			exit 1; 			;; 	esac; 		curl -fL -o julia.tar.gz.asc "$url.asc"; 	curl -fL -o julia.tar.gz "$url"; 		echo "$sha256 *julia.tar.gz" | sha256sum --strict --check -; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$JULIA_GPG"; 	gpg --batch --verify julia.tar.gz.asc julia.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" julia.tar.gz.asc; 		mkdir "$JULIA_PATH"; 	tar -xzf julia.tar.gz -C "$JULIA_PATH" --strip-components 1; 	rm julia.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		julia --version # buildkit
-# Wed, 22 Apr 2026 01:20:46 GMT
+# Fri, 08 May 2026 19:21:30 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 22 Apr 2026 01:20:46 GMT
+# Fri, 08 May 2026 19:21:30 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 22 Apr 2026 01:20:46 GMT
+# Fri, 08 May 2026 19:21:30 GMT
 CMD ["julia"]
 ```
 
 -	Layers:
-	-	`sha256:3531af2bc2a9c8883754652783cf96207d53189db279c9637b7157d034de7ecd`  
-		Last Modified: Wed, 22 Apr 2026 00:17:32 GMT  
-		Size: 29.8 MB (29780174 bytes)  
+	-	`sha256:57fb71246055257a374deb7564ceca10f43c2352572b501efc08add5d24ebb61`  
+		Last Modified: Fri, 08 May 2026 18:24:13 GMT  
+		Size: 29.8 MB (29780226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70ce9ed6a2834a7febc7c6a6d0c4ad5fbfd4baf54d7160fb8160b6d7fdfe4c5a`  
-		Last Modified: Wed, 22 Apr 2026 01:21:30 GMT  
-		Size: 6.2 MB (6247034 bytes)  
+	-	`sha256:f8d67c3129f700523e596b6c754a866026406fd861442ccbf67c66acaaf7c024`  
+		Last Modified: Fri, 08 May 2026 19:22:14 GMT  
+		Size: 6.2 MB (6247072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b6862e94e4620368ab3cea2ff4cf1c2c3a1c437ea50674f5920aeb8c9100d97`  
-		Last Modified: Wed, 22 Apr 2026 01:21:36 GMT  
-		Size: 293.6 MB (293596877 bytes)  
+	-	`sha256:caf92aae416475eacf152b7d34265d6ddef9da0896b502279c85fba49db282e7`  
+		Last Modified: Fri, 08 May 2026 19:22:20 GMT  
+		Size: 293.6 MB (293596871 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:899ffa6136c895828457051d099f116d45238ca41225d537407212870c2d25db`  
-		Last Modified: Wed, 22 Apr 2026 01:21:30 GMT  
-		Size: 371.0 B  
+	-	`sha256:d17eead86f6917ca94e032e46d70450f029f42f55f4ab3444a60dcd32cbea98e`  
+		Last Modified: Fri, 08 May 2026 19:22:14 GMT  
+		Size: 368.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `julia:trixie` - unknown; unknown
 
 ```console
-$ docker pull julia@sha256:2a6c2ca49639dc4f6a2ed8bd283f1b7a1e2218092177a3a597aa2693623f4e95
+$ docker pull julia@sha256:130d13e859e6d1595387d9833bb67e89541962bdfae2aa5eccf29a9ae5769992
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2257947 bytes)**  
+-	Total Size: **2.3 MB (2257948 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2c01566ec2bc40e1dc4e14223bbf0a32fcad1cafee7f12a11cb47dac1f6368f`
+-	Image ID: `sha256:27caf87af4f6a3335e187b3dd0b40215417953ea9c5c39fc4745479d46e16d86`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:110e30a7729259d579190eb3809e909d9aecc1e9c97cac78ef4654acf800c286`  
-		Last Modified: Wed, 22 Apr 2026 01:21:30 GMT  
+	-	`sha256:6ef4717d69b584bd58169fdd8770a28e67da29684450a60b56cc84d43451a096`  
+		Last Modified: Fri, 08 May 2026 19:22:14 GMT  
 		Size: 2.2 MB (2240259 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:77a48d77222a6af400c0324b2156684a712fcd4713c47304efb1137cd0189276`  
-		Last Modified: Wed, 22 Apr 2026 01:21:30 GMT  
-		Size: 17.7 KB (17688 bytes)  
+	-	`sha256:2e61f6f3487dda2fecad97226b75b297768411aee4224d26fe9a97ef7bc68bc9`  
+		Last Modified: Fri, 08 May 2026 19:22:14 GMT  
+		Size: 17.7 KB (17689 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `julia:trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull julia@sha256:fd27fc5dbe5ab3d0371f309939073fb41f47c4fa39e205c3eabe118c9895b7f3
+$ docker pull julia@sha256:4ca77a721c915f69b65bd25077aa1a89c9ba4646b1906ec88ffde28e3148cf00
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **350.6 MB (350584553 bytes)**  
+-	Total Size: **350.6 MB (350584649 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:66877598217f939145c834aaf27f697b959ea0c1991b277a71a1477a236edefc`
+-	Image ID: `sha256:06e17938264725df3908c1a18ab17a19f752e67d991eb0dc5e275ebad68954d2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["julia"]`
 
 ```dockerfile
-# Tue, 21 Apr 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1776729600'
-# Wed, 22 Apr 2026 01:20:38 GMT
+# Tue, 05 May 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1777939200'
+# Fri, 08 May 2026 19:19:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 22 Apr 2026 01:21:07 GMT
+# Fri, 08 May 2026 19:20:07 GMT
 ENV JULIA_PATH=/usr/local/julia
-# Wed, 22 Apr 2026 01:21:07 GMT
+# Fri, 08 May 2026 19:20:07 GMT
 ENV PATH=/usr/local/julia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Apr 2026 01:21:07 GMT
+# Fri, 08 May 2026 19:20:07 GMT
 ENV JULIA_GPG=3673DF529D9049477F76B37566E3C7DC03D6E495
-# Wed, 22 Apr 2026 01:21:07 GMT
+# Fri, 08 May 2026 19:20:07 GMT
 ENV JULIA_VERSION=1.12.6
-# Wed, 22 Apr 2026 01:21:07 GMT
+# Fri, 08 May 2026 19:20:07 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		gnupg 	; 	rm -rf /var/lib/apt/lists/*; 		arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') 			url='https://julialang-s3.julialang.org/bin/linux/x64/1.12/julia-1.12.6-linux-x86_64.tar.gz'; 			sha256='bbabf3bef19421a9dbd24a767d807606ab85e444323b5a1c73ffe293fa3d079a'; 			;; 		'i386') 			url='https://julialang-s3.julialang.org/bin/linux/x86/1.12/julia-1.12.6-linux-i686.tar.gz'; 			sha256='2ab43d56adfe96c7b0b9ddab0e049f54f49df24049ec8b482c26737c42af28cd'; 			;; 		'arm64') 			url='https://julialang-s3.julialang.org/bin/linux/aarch64/1.12/julia-1.12.6-linux-aarch64.tar.gz'; 			sha256='029b93b857bd0ffd627f9a8580d3bbaa63daf008d7b7aed02fbceb8fd57c4899'; 			;; 		*) 			echo >&2 "error: current architecture ($arch) does not have a corresponding Julia binary release"; 			exit 1; 			;; 	esac; 		curl -fL -o julia.tar.gz.asc "$url.asc"; 	curl -fL -o julia.tar.gz "$url"; 		echo "$sha256 *julia.tar.gz" | sha256sum --strict --check -; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$JULIA_GPG"; 	gpg --batch --verify julia.tar.gz.asc julia.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" julia.tar.gz.asc; 		mkdir "$JULIA_PATH"; 	tar -xzf julia.tar.gz -C "$JULIA_PATH" --strip-components 1; 	rm julia.tar.gz; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		julia --version # buildkit
-# Wed, 22 Apr 2026 01:21:07 GMT
+# Fri, 08 May 2026 19:20:07 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 22 Apr 2026 01:21:07 GMT
+# Fri, 08 May 2026 19:20:07 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 22 Apr 2026 01:21:07 GMT
+# Fri, 08 May 2026 19:20:07 GMT
 CMD ["julia"]
 ```
 
 -	Layers:
-	-	`sha256:e4fb5f1cd4d4ee56da574ef5ed88a5c74f100ba98caacf6c5ef26cee66525179`  
-		Last Modified: Wed, 22 Apr 2026 00:16:43 GMT  
-		Size: 30.1 MB (30143606 bytes)  
+	-	`sha256:9ebf9a1d0c9ca1bcb377e9dba38a3fdd3e89cf37164f4245286c24f8cd50a39e`  
+		Last Modified: Fri, 08 May 2026 18:26:50 GMT  
+		Size: 30.1 MB (30143642 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4902e5a1f8480c02eed3f4ae1f3455dfa6665a3afa6cf27f5401c59271c50dd`  
-		Last Modified: Wed, 22 Apr 2026 01:21:54 GMT  
-		Size: 6.2 MB (6154442 bytes)  
+	-	`sha256:aaf639e80263b13ae13bc4bbe328f590fec3e3659c582609f58a015df8c38fa6`  
+		Last Modified: Fri, 08 May 2026 19:20:53 GMT  
+		Size: 6.2 MB (6154445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f51c9360275a0084377e557692f646df27fecbdd05f27a658bb363cd2955fe51`  
-		Last Modified: Wed, 22 Apr 2026 01:22:00 GMT  
-		Size: 314.3 MB (314286133 bytes)  
+	-	`sha256:cb0a6e458a2fe53b4ec8d2dcc03111931594e4adf7a5db0f0ee92aaf98d882f7`  
+		Last Modified: Fri, 08 May 2026 19:20:59 GMT  
+		Size: 314.3 MB (314286193 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f69df51b8833276854800fab164483dd9479feda4f298d665eecd399e7f4cd60`  
-		Last Modified: Wed, 22 Apr 2026 01:21:54 GMT  
-		Size: 372.0 B  
+	-	`sha256:6218ff8d118ff5f8274b529edb2cac15752776996af7d2b58a48ed75e47b5190`  
+		Last Modified: Fri, 08 May 2026 19:20:53 GMT  
+		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `julia:trixie` - unknown; unknown
 
 ```console
-$ docker pull julia@sha256:69c7f328b47e52eaa15b0c2192bd2c4b47552c87a6da1bec063cd16a9b69752e
+$ docker pull julia@sha256:ec9ace4c9f9812c1aafc64d8b1b8f7fba8abc9aaf9aa7af0ab45f398684c5f4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.3 MB (2258447 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:344ff187430d5ba441fcd08133ab22a5c8e0e4cd759a94e11ccc8aaccde03cc4`
+-	Image ID: `sha256:77a827a6f407d216aa958be9cdf1db8ed7ed1838a72fbf7c18e63dc6fb645205`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c1a9adcad1efbae9200d0166f4b7328783fd9acbf97d21c5d11999366d3c54ef`  
-		Last Modified: Wed, 22 Apr 2026 01:21:54 GMT  
+	-	`sha256:c55fb3b6754667b484c9e0e14ca14e554926a86ce083c41f07e7fa5ab75df25b`  
+		Last Modified: Fri, 08 May 2026 19:20:53 GMT  
 		Size: 2.2 MB (2240591 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:092d9da7a15e2c6f548ec3789f63c32453e9bec03534ea11924506632ba38f21`  
-		Last Modified: Wed, 22 Apr 2026 01:21:54 GMT  
+	-	`sha256:829a34621c91a235caed0462ec4e1832b63a93e111c51c6f167d8c6d4791a6ff`  
+		Last Modified: Fri, 08 May 2026 19:20:53 GMT  
 		Size: 17.9 KB (17856 bytes)  
 		MIME: application/vnd.in-toto+json
 
