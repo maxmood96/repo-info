@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ae07bb6e3902a8bd0ceb07f8769f417d06666872ed6bff03edec59c650edb94`
-- Created: `2026-04-23T17:25:32.377719984Z`
-- Virtual Size: ~ 250.45 Mb  
+- Image ID: `sha256:557420db23a2bb4a89295d478d8e37d717a4daf1ce4883f8f8cd84005f5e7fdd`
+- Created: `2026-05-05T23:12:00.433847796Z`
+- Virtual Size: ~ 250.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -428,13 +428,9 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.22.6ubuntu6.5
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.5.tar.xz' dpkg_1.22.6ubuntu6.5.tar.xz 5547360 SHA256:a70af49fb54dff0a34cdb194b1aafb4c844c445ad3769dec30cb45939432a185
-'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.5.dsc' dpkg_1.22.6ubuntu6.5.dsc 3156 SHA256:ea558d3274f841093bb59fd86492488341ead15fc5aa9600bb7961fd20816c7d
-```
 
 ### `dpkg` source package: `e2fsprogs=1.47.0-2.4~exp1ubuntu4.1`
 
