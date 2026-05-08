@@ -316,7 +316,7 @@ $ docker pull logstash@sha256:38a1bafb55be938f1b5ba08bc1fde46169a43bb201691d83c2
 ## `logstash:9.3.4`
 
 ```console
-$ docker pull logstash@sha256:28a143ed4e72dcda671adc4d8a8ff3be5a8f9ae4fb888a3f01255f6305fa2e71
+$ docker pull logstash@sha256:956096357725d470096c23b72eafc5ce0f76fb209c9d1beb0047c43303ebe346
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -329,302 +329,137 @@ $ docker pull logstash@sha256:28a143ed4e72dcda671adc4d8a8ff3be5a8f9ae4fb888a3f01
 ### `logstash:9.3.4` - linux; amd64
 
 ```console
-$ docker pull logstash@sha256:55151a4ec1d02a20cc6b773f695bce21d65a9ad2acccf6f9b8cfdfa6e6ae84d6
+$ docker pull logstash@sha256:e48bcc2f1b5353e1da00ecf5b1f9cf1b687c4ac39c918cd17c7eb27d7598bbd8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **516.5 MB (516529120 bytes)**  
+-	Total Size: **516.5 MB (516506342 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:61618f00236576612892d4c07a82fddd27ceabe488c659a1a69c7caa2c468266`
+-	Image ID: `sha256:f340e0680186995890f92b776be1831c426d41ff14c233f82fc2eb1d2fef3dd8`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint"]`
 
 ```dockerfile
-# Mon, 04 May 2026 01:27:16 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL maintainer="Red Hat, Inc."
-# Mon, 04 May 2026 01:27:16 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL vendor="Red Hat, Inc."
-# Mon, 04 May 2026 01:27:16 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Mon, 04 May 2026 01:27:16 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.7"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Mon, 04 May 2026 01:27:16 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Mon, 04 May 2026 01:27:16 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL io.openshift.expose-services=""
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 ENV container oci
-# Mon, 04 May 2026 01:27:17 GMT
-COPY dir:65829633e0a732ee03a3da731062eca14df67dc0e6bab86d02002ef9d123d97c in /      
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:14 GMT
+COPY dir:4c4996e917f33023b976824d7cb68c72b897d6d36b90e718143d5c6b6644b5f2 in /      
+# Wed, 06 May 2026 12:56:15 GMT
 COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:15 GMT
 CMD ["/bin/bash"]
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:15 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:15 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      
-# Mon, 04 May 2026 01:27:18 GMT
-COPY file:c2149fceb878782b97b2875047824d21e0e5ecd57a50bf8e1dd5d47550f18358 in /usr/share/buildinfo/labels.json      
-# Mon, 04 May 2026 01:27:18 GMT
-COPY file:c2149fceb878782b97b2875047824d21e0e5ecd57a50bf8e1dd5d47550f18358 in /root/buildinfo/labels.json      
-# Mon, 04 May 2026 01:27:18 GMT
-LABEL "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="dbf428e1775c5e4c4802b4c714d3b50b652d0c8a" "org.opencontainers.image.revision"="dbf428e1775c5e4c4802b4c714d3b50b652d0c8a" "build-date"="2026-05-04T01:27:05Z" "org.opencontainers.image.created"="2026-05-04T01:27:05Z" "release"="1777857961"org.opencontainers.image.revision=dbf428e1775c5e4c4802b4c714d3b50b652d0c8a,org.opencontainers.image.created=2026-05-04T01:27:05Z
-# Tue, 05 May 2026 23:09:19 GMT
+# Wed, 06 May 2026 12:56:15 GMT
+COPY file:9d5fe0edb9a65123afda28f8a8cf6e139537dee71d7b2bc90f9c46d89a207386 in /usr/share/buildinfo/labels.json      
+# Wed, 06 May 2026 12:56:15 GMT
+COPY file:9d5fe0edb9a65123afda28f8a8cf6e139537dee71d7b2bc90f9c46d89a207386 in /root/buildinfo/labels.json      
+# Wed, 06 May 2026 12:56:15 GMT
+LABEL "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="8def05a6f0dfabdc25ea20a79b0d11f8f9b12c5c" "org.opencontainers.image.revision"="8def05a6f0dfabdc25ea20a79b0d11f8f9b12c5c" "build-date"="2026-05-06T12:56:03Z" "org.opencontainers.image.created"="2026-05-06T12:56:03Z" "release"="1778072020"org.opencontainers.image.revision=8def05a6f0dfabdc25ea20a79b0d11f8f9b12c5c,org.opencontainers.image.created=2026-05-06T12:56:03Z
+# Fri, 08 May 2026 16:21:47 GMT
 ENV ELASTIC_CONTAINER=true
-# Tue, 05 May 2026 23:09:19 GMT
+# Fri, 08 May 2026 16:21:47 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 05 May 2026 23:09:19 GMT
+# Fri, 08 May 2026 16:21:47 GMT
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
-# Tue, 05 May 2026 23:09:19 GMT
+# Fri, 08 May 2026 16:21:47 GMT
 WORKDIR /usr/share
-# Tue, 05 May 2026 23:09:22 GMT
+# Fri, 08 May 2026 16:21:49 GMT
 RUN microdnf install -y procps findutils tar gzip &&   microdnf install -y openssl &&   microdnf install -y which shadow-utils &&   microdnf clean all # buildkit
-# Tue, 05 May 2026 23:09:43 GMT
+# Fri, 08 May 2026 16:22:08 GMT
 RUN groupadd --gid 1000 logstash &&   adduser --uid 1000 --gid 1000   --home "/usr/share/logstash"   --no-create-home   logstash &&   arch="$(rpm --query --queryformat='%{ARCH}' rpm)" &&   curl --fail --location --output logstash.tar.gz https://artifacts.elastic.co/downloads/logstash/logstash-9.3.4-linux-${arch}.tar.gz &&   tar -zxf logstash.tar.gz -C /usr/share &&   rm logstash.tar.gz &&   mv /usr/share/logstash-9.3.4 /usr/share/logstash &&   chown -R logstash:root /usr/share/logstash &&   chmod -R g=u /usr/share/logstash &&   mkdir /licenses &&   mv /usr/share/logstash/NOTICE.TXT /licenses/NOTICE.TXT &&   mv /usr/share/logstash/LICENSE.txt /licenses/LICENSE.txt &&   find /usr/share/logstash -type d -exec chmod g+s {} \; &&   ln -s /usr/share/logstash /opt/logstash # buildkit
-# Tue, 05 May 2026 23:09:43 GMT
+# Fri, 08 May 2026 16:22:08 GMT
 COPY --chown=logstash:root env2yaml/classes /usr/share/logstash/env2yaml/classes/ # buildkit
-# Tue, 05 May 2026 23:09:43 GMT
+# Fri, 08 May 2026 16:22:08 GMT
 COPY --chown=logstash:root env2yaml/lib /usr/share/logstash/env2yaml/lib/ # buildkit
-# Tue, 05 May 2026 23:09:43 GMT
+# Fri, 08 May 2026 16:22:08 GMT
 COPY --chmod=0755 env2yaml/env2yaml /usr/local/bin/env2yaml # buildkit
-# Tue, 05 May 2026 23:09:43 GMT
+# Fri, 08 May 2026 16:22:08 GMT
 COPY --chown=logstash:root config/pipelines.yml config/log4j2.properties config/log4j2.file.properties /usr/share/logstash/config/ # buildkit
-# Tue, 05 May 2026 23:09:43 GMT
+# Fri, 08 May 2026 16:22:08 GMT
 COPY --chown=logstash:root config/logstash-full.yml /usr/share/logstash/config/logstash.yml # buildkit
-# Tue, 05 May 2026 23:09:43 GMT
+# Fri, 08 May 2026 16:22:08 GMT
 COPY --chown=logstash:root pipeline/default.conf /usr/share/logstash/pipeline/logstash.conf # buildkit
-# Tue, 05 May 2026 23:09:44 GMT
+# Fri, 08 May 2026 16:22:08 GMT
 COPY --chmod=0755 bin/docker-entrypoint /usr/local/bin/ # buildkit
-# Tue, 05 May 2026 23:09:44 GMT
+# Fri, 08 May 2026 16:22:08 GMT
 WORKDIR /usr/share/logstash
-# Tue, 05 May 2026 23:09:44 GMT
+# Fri, 08 May 2026 16:22:08 GMT
 USER 1000
-# Tue, 05 May 2026 23:09:44 GMT
+# Fri, 08 May 2026 16:22:08 GMT
 EXPOSE map[5044/tcp:{} 9600/tcp:{}]
-# Tue, 05 May 2026 23:09:44 GMT
+# Fri, 08 May 2026 16:22:08 GMT
 LABEL org.label-schema.build-date=2026-04-21T19:45:55+00:00 org.label-schema.license=Elastic License org.label-schema.name=logstash org.label-schema.schema-version=1.0 org.label-schema.url=https://www.elastic.co/products/logstash org.label-schema.vcs-url=https://github.com/elastic/logstash org.label-schema.vendor=Elastic org.label-schema.version=9.3.4 org.opencontainers.image.created=2026-04-21T19:45:55+00:00 org.opencontainers.image.description=Logstash is a free and open server-side data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to your favorite 'stash.' org.opencontainers.image.licenses=Elastic License org.opencontainers.image.title=logstash org.opencontainers.image.vendor=Elastic org.opencontainers.image.version=9.3.4 description=Logstash is a free and open server-side data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to your favorite 'stash.' license=Elastic License maintainer=info@elastic.co name=logstash summary=Logstash is a free and open server-side data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to your favorite 'stash.' vendor=Elastic
-# Tue, 05 May 2026 23:09:44 GMT
+# Fri, 08 May 2026 16:22:08 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 ```
 
 -	Layers:
-	-	`sha256:cd8d59cb7a894fbcbefe70d3cdbc433492e715351e24e77b24a441609ab2de47`  
-		Last Modified: Mon, 04 May 2026 03:52:20 GMT  
-		Size: 40.0 MB (40019116 bytes)  
+	-	`sha256:df0edd575569e5cb7e2e34f252e4cf36c13679e9633d7c97be861b8b247c70bc`  
+		Last Modified: Wed, 06 May 2026 13:26:44 GMT  
+		Size: 40.0 MB (39994775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5da59cc81d8e7f4b8082ba37de7d30dfcd0a9e919a99d2d181bd3f5470ca8d99`  
-		Last Modified: Tue, 05 May 2026 23:10:20 GMT  
-		Size: 5.1 MB (5148606 bytes)  
+	-	`sha256:36218eb223c61ac82ff82eb08675499c85556bffe25ebc85e44630c4283361fc`  
+		Last Modified: Fri, 08 May 2026 16:22:45 GMT  
+		Size: 5.1 MB (5149394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd4202a0696d72c9fc9853b4f0c475b85092d3ddf94298bdf624fde783565e51`  
-		Last Modified: Tue, 05 May 2026 23:10:34 GMT  
-		Size: 471.1 MB (471096676 bytes)  
+	-	`sha256:a5324f464cb65857c8a0fa20ee5d6b1c742c65f49c9aa7d45367c25971ddc9c2`  
+		Last Modified: Fri, 08 May 2026 16:22:54 GMT  
+		Size: 471.1 MB (471097447 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ca66302b4e721a0ef2e32b2e2dac1635d8c2d4aaf3726ae147e187349f09792`  
-		Last Modified: Tue, 05 May 2026 23:10:20 GMT  
-		Size: 6.3 KB (6291 bytes)  
+	-	`sha256:4c910d8caeaf5de4ca7c05af246014d15576a6834dc4316b462add49557e3382`  
+		Last Modified: Fri, 08 May 2026 16:22:44 GMT  
+		Size: 6.3 KB (6293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8fd212a0cc8d6421374227431f8890eba95d3109932b012650651f9cf1f3aaf`  
-		Last Modified: Tue, 05 May 2026 23:10:20 GMT  
-		Size: 255.2 KB (255182 bytes)  
+	-	`sha256:1bc01649071854e306c7a19221a9c87ed722b6f9781c24a5cfe012fb66c7c46b`  
+		Last Modified: Fri, 08 May 2026 16:22:44 GMT  
+		Size: 255.2 KB (255180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c3e77980cfcdace6cb112cc2eb84d6de6e3c4626ca5b82c62a6c763a184652e`  
-		Last Modified: Tue, 05 May 2026 23:10:21 GMT  
-		Size: 352.0 B  
+	-	`sha256:a45d55806b320c1099f0e37e3fd557f1fbab85caf8e7731f7696dd8bcbe51f5e`  
+		Last Modified: Fri, 08 May 2026 16:22:46 GMT  
+		Size: 354.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af78bf23951f955eb9ccb63517a587cf262b783a0512fcbc13dbc7d609570f2b`  
-		Last Modified: Tue, 05 May 2026 23:10:21 GMT  
-		Size: 1.6 KB (1575 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:324527535fc0c99c73011834ce7ba1af527effd4373ad85c0b65a1a455ab8ff4`  
-		Last Modified: Tue, 05 May 2026 23:10:22 GMT  
-		Size: 276.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:27abf208feffec3fb8ad04eaa41b15e7347a15e61b9d566862290a2b8218728e`  
-		Last Modified: Tue, 05 May 2026 23:10:23 GMT  
-		Size: 275.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d180cefaca3c089cc4d9e0931c20c5caaf01ab6de6756bf341e9e6d1d7b5143`  
-		Last Modified: Tue, 05 May 2026 23:10:23 GMT  
-		Size: 707.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `logstash:9.3.4` - unknown; unknown
-
-```console
-$ docker pull logstash@sha256:7894bd087b4d17e50dae1856385cb8e97087337e9fcfdc472ab873b1e54c3a4f
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 MB (2149472 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:feccbd5aeff1791089922f50102e306139673ab8bd242a1eb25d41530f8a082b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:58d4b37930d6ab4208b50a0c6d44c7ac70e4a9a9257139ca502d033fb8eef1fe`  
-		Last Modified: Tue, 05 May 2026 23:10:20 GMT  
-		Size: 2.1 MB (2119272 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:c3de1603aa9950e01526151389a324664513bae17b92e0d3f491f477383942ce`  
-		Last Modified: Tue, 05 May 2026 23:10:20 GMT  
-		Size: 30.2 KB (30200 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `logstash:9.3.4` - linux; arm64 variant v8
-
-```console
-$ docker pull logstash@sha256:83c205b9e1b93a853d22b556b4c220130fab49ca1567f4bdccc654be609e0e1c
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **513.0 MB (512977570 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5988fd8c47722a1362012c1417fa2f787d50be0d837925f93c92c89435647878`
--	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint"]`
-
-```dockerfile
-# Mon, 04 May 2026 01:30:08 GMT
-LABEL maintainer="Red Hat, Inc."
-# Mon, 04 May 2026 01:30:08 GMT
-LABEL vendor="Red Hat, Inc."
-# Mon, 04 May 2026 01:30:08 GMT
-LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Mon, 04 May 2026 01:30:08 GMT
-LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.7"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Mon, 04 May 2026 01:30:08 GMT
-LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Mon, 04 May 2026 01:30:08 GMT
-LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Mon, 04 May 2026 01:30:08 GMT
-LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 04 May 2026 01:30:08 GMT
-LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 04 May 2026 01:30:08 GMT
-LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Mon, 04 May 2026 01:30:08 GMT
-LABEL io.openshift.expose-services=""
-# Mon, 04 May 2026 01:30:08 GMT
-LABEL io.openshift.tags="minimal rhel9"
-# Mon, 04 May 2026 01:30:08 GMT
-ENV container oci
-# Mon, 04 May 2026 01:30:09 GMT
-COPY dir:5ad712b8248d48b2932fa5bdcc0ad50ec37c7d49fe231a7db1a1c2391217329a in /      
-# Mon, 04 May 2026 01:30:09 GMT
-COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Mon, 04 May 2026 01:30:09 GMT
-CMD ["/bin/bash"]
-# Mon, 04 May 2026 01:30:09 GMT
-COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      
-# Mon, 04 May 2026 01:30:09 GMT
-COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      
-# Mon, 04 May 2026 01:30:09 GMT
-COPY file:11a91ebd5ef22e4f28676b4a9dc8447f7af7f01609b0311ebd76ca9c6631f340 in /usr/share/buildinfo/labels.json      
-# Mon, 04 May 2026 01:30:10 GMT
-COPY file:11a91ebd5ef22e4f28676b4a9dc8447f7af7f01609b0311ebd76ca9c6631f340 in /root/buildinfo/labels.json      
-# Mon, 04 May 2026 01:30:10 GMT
-LABEL "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="dbf428e1775c5e4c4802b4c714d3b50b652d0c8a" "org.opencontainers.image.revision"="dbf428e1775c5e4c4802b4c714d3b50b652d0c8a" "build-date"="2026-05-04T01:29:56Z" "org.opencontainers.image.created"="2026-05-04T01:29:56Z" "release"="1777857961"org.opencontainers.image.revision=dbf428e1775c5e4c4802b4c714d3b50b652d0c8a,org.opencontainers.image.created=2026-05-04T01:29:56Z
-# Tue, 05 May 2026 23:09:00 GMT
-ENV ELASTIC_CONTAINER=true
-# Tue, 05 May 2026 23:09:00 GMT
-ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 05 May 2026 23:09:00 GMT
-ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
-# Tue, 05 May 2026 23:09:00 GMT
-WORKDIR /usr/share
-# Tue, 05 May 2026 23:09:02 GMT
-RUN microdnf install -y procps findutils tar gzip &&   microdnf install -y openssl &&   microdnf install -y which shadow-utils &&   microdnf clean all # buildkit
-# Tue, 05 May 2026 23:09:54 GMT
-RUN groupadd --gid 1000 logstash &&   adduser --uid 1000 --gid 1000   --home "/usr/share/logstash"   --no-create-home   logstash &&   arch="$(rpm --query --queryformat='%{ARCH}' rpm)" &&   curl --fail --location --output logstash.tar.gz https://artifacts.elastic.co/downloads/logstash/logstash-9.3.4-linux-${arch}.tar.gz &&   tar -zxf logstash.tar.gz -C /usr/share &&   rm logstash.tar.gz &&   mv /usr/share/logstash-9.3.4 /usr/share/logstash &&   chown -R logstash:root /usr/share/logstash &&   chmod -R g=u /usr/share/logstash &&   mkdir /licenses &&   mv /usr/share/logstash/NOTICE.TXT /licenses/NOTICE.TXT &&   mv /usr/share/logstash/LICENSE.txt /licenses/LICENSE.txt &&   find /usr/share/logstash -type d -exec chmod g+s {} \; &&   ln -s /usr/share/logstash /opt/logstash # buildkit
-# Tue, 05 May 2026 23:09:55 GMT
-COPY --chown=logstash:root env2yaml/classes /usr/share/logstash/env2yaml/classes/ # buildkit
-# Tue, 05 May 2026 23:09:55 GMT
-COPY --chown=logstash:root env2yaml/lib /usr/share/logstash/env2yaml/lib/ # buildkit
-# Tue, 05 May 2026 23:09:55 GMT
-COPY --chmod=0755 env2yaml/env2yaml /usr/local/bin/env2yaml # buildkit
-# Tue, 05 May 2026 23:09:55 GMT
-COPY --chown=logstash:root config/pipelines.yml config/log4j2.properties config/log4j2.file.properties /usr/share/logstash/config/ # buildkit
-# Tue, 05 May 2026 23:09:55 GMT
-COPY --chown=logstash:root config/logstash-full.yml /usr/share/logstash/config/logstash.yml # buildkit
-# Tue, 05 May 2026 23:09:55 GMT
-COPY --chown=logstash:root pipeline/default.conf /usr/share/logstash/pipeline/logstash.conf # buildkit
-# Tue, 05 May 2026 23:09:55 GMT
-COPY --chmod=0755 bin/docker-entrypoint /usr/local/bin/ # buildkit
-# Tue, 05 May 2026 23:09:55 GMT
-WORKDIR /usr/share/logstash
-# Tue, 05 May 2026 23:09:55 GMT
-USER 1000
-# Tue, 05 May 2026 23:09:55 GMT
-EXPOSE map[5044/tcp:{} 9600/tcp:{}]
-# Tue, 05 May 2026 23:09:55 GMT
-LABEL org.label-schema.build-date=2026-04-21T19:45:55+00:00 org.label-schema.license=Elastic License org.label-schema.name=logstash org.label-schema.schema-version=1.0 org.label-schema.url=https://www.elastic.co/products/logstash org.label-schema.vcs-url=https://github.com/elastic/logstash org.label-schema.vendor=Elastic org.label-schema.version=9.3.4 org.opencontainers.image.created=2026-04-21T19:45:55+00:00 org.opencontainers.image.description=Logstash is a free and open server-side data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to your favorite 'stash.' org.opencontainers.image.licenses=Elastic License org.opencontainers.image.title=logstash org.opencontainers.image.vendor=Elastic org.opencontainers.image.version=9.3.4 description=Logstash is a free and open server-side data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to your favorite 'stash.' license=Elastic License maintainer=info@elastic.co name=logstash summary=Logstash is a free and open server-side data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to your favorite 'stash.' vendor=Elastic
-# Tue, 05 May 2026 23:09:55 GMT
-ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
-```
-
--	Layers:
-	-	`sha256:eae0b4c39ea6d65927abe502bd11bbd574acc09733cb468c989628c5b204a24b`  
-		Last Modified: Mon, 04 May 2026 05:13:02 GMT  
-		Size: 38.2 MB (38205818 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:176b065554ef025ae11e6b5b642867d2d1be2033da3168605f2c6a3a91ec21b3`  
-		Last Modified: Tue, 05 May 2026 23:10:33 GMT  
-		Size: 5.1 MB (5147563 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43af4e29ede8aaae31fd2845bfa54eda3abe67ab3279c092f8a637e8650ee775`  
-		Last Modified: Tue, 05 May 2026 23:10:43 GMT  
-		Size: 469.4 MB (469359449 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac87f7fa2e96e80391159707452bb8c500d0749b6058d8dcbc3d587c90586d47`  
-		Last Modified: Tue, 05 May 2026 23:10:33 GMT  
-		Size: 6.3 KB (6297 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b7b14b5431c4c904334253ed1c2686b99a59a3df68da26cefd2501e0c76789d`  
-		Last Modified: Tue, 05 May 2026 23:10:33 GMT  
-		Size: 255.2 KB (255185 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f7bba4e0c5d5ce95904c0035c13f2743cb8ae223794316d7de7dc86c448536c`  
-		Last Modified: Tue, 05 May 2026 23:10:34 GMT  
-		Size: 355.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9958d504c350c206fc14d1cba4816976125588e5661637fff62580939db94769`  
-		Last Modified: Tue, 05 May 2026 23:10:34 GMT  
+	-	`sha256:d87fb2f28819d8291a5a010827fa2e77bfd46a7ff3daa37dd4df2284cf603215`  
+		Last Modified: Fri, 08 May 2026 16:22:46 GMT  
 		Size: 1.6 KB (1576 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c8579ec3c3d60d1ae4cf09160496fcc22fd01d3cc336ce1ba4f39ccdb2aa65b`  
-		Last Modified: Tue, 05 May 2026 23:10:34 GMT  
-		Size: 276.0 B  
+	-	`sha256:3108a368009d9d23cb6c401e00ed03c88c5c29ed12f3d61577b501f7e516eeb1`  
+		Last Modified: Fri, 08 May 2026 16:22:46 GMT  
+		Size: 273.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:add7ac8a336f4548d9d98e4387f2f4500ec57f6c14a47600747650f1186397e8`  
-		Last Modified: Tue, 05 May 2026 23:10:35 GMT  
-		Size: 275.0 B  
+	-	`sha256:f1b7cabee91724d72b77095dab5354855aa8c2ba9d65c7599744ae67c321ae8e`  
+		Last Modified: Fri, 08 May 2026 16:22:47 GMT  
+		Size: 274.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7091409dad7a7a46d0cd6eadd807dc076b47ecdf7e8fdf60a258336b3bc381fb`  
-		Last Modified: Tue, 05 May 2026 23:10:35 GMT  
+	-	`sha256:cfbc291c3d1b2e8f3edcaf9aa7935fe1763bd600872cff8dca44de416c4ffbd6`  
+		Last Modified: Fri, 08 May 2026 16:22:47 GMT  
 		Size: 712.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -635,31 +470,196 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 ### `logstash:9.3.4` - unknown; unknown
 
 ```console
-$ docker pull logstash@sha256:3550e4d48987486085da130b8bacc1df44344b09dbaf3f68d050dc06e6733148
+$ docker pull logstash@sha256:e9a127bd42dafe3a76c38830765f39fc0abb7795c4fa1aca903004214715c1f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 MB (2150119 bytes)**  
+-	Total Size: **2.1 MB (2149472 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2fd67f7a2194df3adc3b2b57c7ec6ccbc503fcc3c78a79e5ce5b15d8865bb85`
+-	Image ID: `sha256:a3c62d9875a17a0b24547b1f2188bb2dd6c48204f907bd8e3b01fc306c7a19b8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7026ef58ae850b4bcc0b3201672f137c19b98f2e88b47b6ea3073a897d047f40`  
-		Last Modified: Tue, 05 May 2026 23:10:33 GMT  
+	-	`sha256:8135b7a97ef8100e980ef9997d5a2764baaae08a3b76baf480eba3b9c79b0e39`  
+		Last Modified: Fri, 08 May 2026 16:22:44 GMT  
+		Size: 2.1 MB (2119272 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:4b6adc0d27db069bbad0154c343b319a4a2012a5f5eda094df078f37cca667b8`  
+		Last Modified: Fri, 08 May 2026 16:22:44 GMT  
+		Size: 30.2 KB (30200 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `logstash:9.3.4` - linux; arm64 variant v8
+
+```console
+$ docker pull logstash@sha256:aecd4079888b58187e33b491716b58ed996694dbce8cc939dbb3552aef877a11
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **513.0 MB (512975220 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4edfc1ddd708c8f81272f41ebaba65a11dcd74cc08cb2e85e18dc4936d9c1e6c`
+-	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint"]`
+
+```dockerfile
+# Wed, 06 May 2026 12:57:02 GMT
+LABEL maintainer="Red Hat, Inc."
+# Wed, 06 May 2026 12:57:02 GMT
+LABEL vendor="Red Hat, Inc."
+# Wed, 06 May 2026 12:57:02 GMT
+LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
+# Wed, 06 May 2026 12:57:02 GMT
+LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.7"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
+# Wed, 06 May 2026 12:57:02 GMT
+LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
+# Wed, 06 May 2026 12:57:02 GMT
+LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
+# Wed, 06 May 2026 12:57:02 GMT
+LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
+# Wed, 06 May 2026 12:57:02 GMT
+LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
+# Wed, 06 May 2026 12:57:02 GMT
+LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
+# Wed, 06 May 2026 12:57:02 GMT
+LABEL io.openshift.expose-services=""
+# Wed, 06 May 2026 12:57:02 GMT
+LABEL io.openshift.tags="minimal rhel9"
+# Wed, 06 May 2026 12:57:02 GMT
+ENV container oci
+# Wed, 06 May 2026 12:57:03 GMT
+COPY dir:658522d0a080af3309d9cd140f39d4866e8d82f0dbb45a592dba1356f2d8aac5 in /      
+# Wed, 06 May 2026 12:57:03 GMT
+COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
+# Wed, 06 May 2026 12:57:03 GMT
+CMD ["/bin/bash"]
+# Wed, 06 May 2026 12:57:04 GMT
+COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      
+# Wed, 06 May 2026 12:57:04 GMT
+COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      
+# Wed, 06 May 2026 12:57:04 GMT
+COPY file:d64d419d706e46f4d286cf24b8afd9f437d1a94efd91154dd762c8135440b692 in /usr/share/buildinfo/labels.json      
+# Wed, 06 May 2026 12:57:04 GMT
+COPY file:d64d419d706e46f4d286cf24b8afd9f437d1a94efd91154dd762c8135440b692 in /root/buildinfo/labels.json      
+# Wed, 06 May 2026 12:57:04 GMT
+LABEL "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="8def05a6f0dfabdc25ea20a79b0d11f8f9b12c5c" "org.opencontainers.image.revision"="8def05a6f0dfabdc25ea20a79b0d11f8f9b12c5c" "build-date"="2026-05-06T12:56:50Z" "org.opencontainers.image.created"="2026-05-06T12:56:50Z" "release"="1778072020"org.opencontainers.image.revision=8def05a6f0dfabdc25ea20a79b0d11f8f9b12c5c,org.opencontainers.image.created=2026-05-06T12:56:50Z
+# Fri, 08 May 2026 16:21:28 GMT
+ENV ELASTIC_CONTAINER=true
+# Fri, 08 May 2026 16:21:28 GMT
+ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Fri, 08 May 2026 16:21:28 GMT
+ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
+# Fri, 08 May 2026 16:21:28 GMT
+WORKDIR /usr/share
+# Fri, 08 May 2026 16:21:30 GMT
+RUN microdnf install -y procps findutils tar gzip &&   microdnf install -y openssl &&   microdnf install -y which shadow-utils &&   microdnf clean all # buildkit
+# Fri, 08 May 2026 16:22:00 GMT
+RUN groupadd --gid 1000 logstash &&   adduser --uid 1000 --gid 1000   --home "/usr/share/logstash"   --no-create-home   logstash &&   arch="$(rpm --query --queryformat='%{ARCH}' rpm)" &&   curl --fail --location --output logstash.tar.gz https://artifacts.elastic.co/downloads/logstash/logstash-9.3.4-linux-${arch}.tar.gz &&   tar -zxf logstash.tar.gz -C /usr/share &&   rm logstash.tar.gz &&   mv /usr/share/logstash-9.3.4 /usr/share/logstash &&   chown -R logstash:root /usr/share/logstash &&   chmod -R g=u /usr/share/logstash &&   mkdir /licenses &&   mv /usr/share/logstash/NOTICE.TXT /licenses/NOTICE.TXT &&   mv /usr/share/logstash/LICENSE.txt /licenses/LICENSE.txt &&   find /usr/share/logstash -type d -exec chmod g+s {} \; &&   ln -s /usr/share/logstash /opt/logstash # buildkit
+# Fri, 08 May 2026 16:22:00 GMT
+COPY --chown=logstash:root env2yaml/classes /usr/share/logstash/env2yaml/classes/ # buildkit
+# Fri, 08 May 2026 16:22:00 GMT
+COPY --chown=logstash:root env2yaml/lib /usr/share/logstash/env2yaml/lib/ # buildkit
+# Fri, 08 May 2026 16:22:00 GMT
+COPY --chmod=0755 env2yaml/env2yaml /usr/local/bin/env2yaml # buildkit
+# Fri, 08 May 2026 16:22:00 GMT
+COPY --chown=logstash:root config/pipelines.yml config/log4j2.properties config/log4j2.file.properties /usr/share/logstash/config/ # buildkit
+# Fri, 08 May 2026 16:22:00 GMT
+COPY --chown=logstash:root config/logstash-full.yml /usr/share/logstash/config/logstash.yml # buildkit
+# Fri, 08 May 2026 16:22:00 GMT
+COPY --chown=logstash:root pipeline/default.conf /usr/share/logstash/pipeline/logstash.conf # buildkit
+# Fri, 08 May 2026 16:22:00 GMT
+COPY --chmod=0755 bin/docker-entrypoint /usr/local/bin/ # buildkit
+# Fri, 08 May 2026 16:22:00 GMT
+WORKDIR /usr/share/logstash
+# Fri, 08 May 2026 16:22:00 GMT
+USER 1000
+# Fri, 08 May 2026 16:22:00 GMT
+EXPOSE map[5044/tcp:{} 9600/tcp:{}]
+# Fri, 08 May 2026 16:22:00 GMT
+LABEL org.label-schema.build-date=2026-04-21T19:45:55+00:00 org.label-schema.license=Elastic License org.label-schema.name=logstash org.label-schema.schema-version=1.0 org.label-schema.url=https://www.elastic.co/products/logstash org.label-schema.vcs-url=https://github.com/elastic/logstash org.label-schema.vendor=Elastic org.label-schema.version=9.3.4 org.opencontainers.image.created=2026-04-21T19:45:55+00:00 org.opencontainers.image.description=Logstash is a free and open server-side data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to your favorite 'stash.' org.opencontainers.image.licenses=Elastic License org.opencontainers.image.title=logstash org.opencontainers.image.vendor=Elastic org.opencontainers.image.version=9.3.4 description=Logstash is a free and open server-side data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to your favorite 'stash.' license=Elastic License maintainer=info@elastic.co name=logstash summary=Logstash is a free and open server-side data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to your favorite 'stash.' vendor=Elastic
+# Fri, 08 May 2026 16:22:00 GMT
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
+```
+
+-	Layers:
+	-	`sha256:4432ba7926545d58c5c1a534c052b34ad23c14c54c95de1caf5071ea5ef8f194`  
+		Last Modified: Wed, 06 May 2026 13:31:32 GMT  
+		Size: 38.2 MB (38205674 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:92d3a6f295a5102e8cf1b3ce31aebd17d7de769507a25814abcafb83ce08867b`  
+		Last Modified: Fri, 08 May 2026 16:22:38 GMT  
+		Size: 5.1 MB (5145180 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fc7967625a19111b3b6b21610363db6cf9962fd5c1c67f500a56944e538ef8b9`  
+		Last Modified: Fri, 08 May 2026 16:22:47 GMT  
+		Size: 469.4 MB (469359639 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:84de457aaf1dc4a735ea4d9eac012ef4b8429ae3fe277d5167d6ea871491164b`  
+		Last Modified: Fri, 08 May 2026 16:22:38 GMT  
+		Size: 6.3 KB (6293 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bf4c5dc81176d808bc33dc3bab6b7d1fa113069e4be80c9c927a7d255bf69dcc`  
+		Last Modified: Fri, 08 May 2026 16:22:38 GMT  
+		Size: 255.2 KB (255184 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4e71840d58c8392214a6d2f221f35c8fe22572e13bf108d52f3fdf86d42f3770`  
+		Last Modified: Fri, 08 May 2026 16:22:39 GMT  
+		Size: 351.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:041443213cc9339a09b68f726bd000fe02203fbd240d861d4bbfe8cecad755d2`  
+		Last Modified: Fri, 08 May 2026 16:22:39 GMT  
+		Size: 1.6 KB (1576 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f69cb2306cb9e95c12263d3bdf40bb0d55c582c23a6317edfd71368ec860ae08`  
+		Last Modified: Fri, 08 May 2026 16:22:40 GMT  
+		Size: 274.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:555beaaefa0a7330a5d16d9f873f14997f885dcfacf3dcd5f952ecd5d0379c08`  
+		Last Modified: Fri, 08 May 2026 16:22:41 GMT  
+		Size: 273.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e98247cbeca46700aa29d67297cd3689ccb88ba975e4f9737694f09fcb813d03`  
+		Last Modified: Fri, 08 May 2026 16:22:41 GMT  
+		Size: 712.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `logstash:9.3.4` - unknown; unknown
+
+```console
+$ docker pull logstash@sha256:1c87d87be8f31bab936fba360277025217caa92c63b4ffe61427cafdd0d77b21
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.2 MB (2150119 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ae86f1212c2fc884dc89d3832b9d9f6edd72ed860ec529b393e37e901821caa7`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:ccba3cd86b0064983863500e5e259be2c0b632cb76d8c0ca3a7530c7243ccc04`  
+		Last Modified: Fri, 08 May 2026 16:22:38 GMT  
 		Size: 2.1 MB (2119842 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:09c1ba583ed2a4f4722962405f97d1ae0dab6e9d21942b0cfdca50491a7edc25`  
-		Last Modified: Tue, 05 May 2026 23:10:33 GMT  
+	-	`sha256:f2bcc44978f4d751f93fd1087a2cb7a2f546820af413c19534a359f349d440e8`  
+		Last Modified: Fri, 08 May 2026 16:22:38 GMT  
 		Size: 30.3 KB (30277 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `logstash:9.4.0`
 
 ```console
-$ docker pull logstash@sha256:0e038a2fadfdc38496c52b708a64b8989513dc521a8965d0a674403eb36b62a7
+$ docker pull logstash@sha256:149638ad5446895a72d5f0a7780ce16b2808d1b414925c63f75520c31ab9b53a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -672,138 +672,138 @@ $ docker pull logstash@sha256:0e038a2fadfdc38496c52b708a64b8989513dc521a8965d0a6
 ### `logstash:9.4.0` - linux; amd64
 
 ```console
-$ docker pull logstash@sha256:bac72e3eafeb9cdeff5d626634ede87b918114a075d1dd587fa194a3b673b0e8
+$ docker pull logstash@sha256:2d2c299c45cf4cbe4b9b135e8188597e5a33fd1beee61ddb8ca811ba0ac3d68f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **523.0 MB (523047151 bytes)**  
+-	Total Size: **523.0 MB (523023113 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c577afacca5caf0892e9dd884187ebf83fe7718377af4487eb8e9d15825a7681`
+-	Image ID: `sha256:68691fe50c220624687d331cc724d54653a5e1bf6412b31c37bca1a3bea7c91e`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint"]`
 
 ```dockerfile
-# Mon, 04 May 2026 01:27:16 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL maintainer="Red Hat, Inc."
-# Mon, 04 May 2026 01:27:16 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL vendor="Red Hat, Inc."
-# Mon, 04 May 2026 01:27:16 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Mon, 04 May 2026 01:27:16 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.7"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Mon, 04 May 2026 01:27:16 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Mon, 04 May 2026 01:27:16 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL io.openshift.expose-services=""
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:14 GMT
 ENV container oci
-# Mon, 04 May 2026 01:27:17 GMT
-COPY dir:65829633e0a732ee03a3da731062eca14df67dc0e6bab86d02002ef9d123d97c in /      
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:14 GMT
+COPY dir:4c4996e917f33023b976824d7cb68c72b897d6d36b90e718143d5c6b6644b5f2 in /      
+# Wed, 06 May 2026 12:56:15 GMT
 COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:15 GMT
 CMD ["/bin/bash"]
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:15 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      
-# Mon, 04 May 2026 01:27:17 GMT
+# Wed, 06 May 2026 12:56:15 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      
-# Mon, 04 May 2026 01:27:18 GMT
-COPY file:c2149fceb878782b97b2875047824d21e0e5ecd57a50bf8e1dd5d47550f18358 in /usr/share/buildinfo/labels.json      
-# Mon, 04 May 2026 01:27:18 GMT
-COPY file:c2149fceb878782b97b2875047824d21e0e5ecd57a50bf8e1dd5d47550f18358 in /root/buildinfo/labels.json      
-# Mon, 04 May 2026 01:27:18 GMT
-LABEL "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="dbf428e1775c5e4c4802b4c714d3b50b652d0c8a" "org.opencontainers.image.revision"="dbf428e1775c5e4c4802b4c714d3b50b652d0c8a" "build-date"="2026-05-04T01:27:05Z" "org.opencontainers.image.created"="2026-05-04T01:27:05Z" "release"="1777857961"org.opencontainers.image.revision=dbf428e1775c5e4c4802b4c714d3b50b652d0c8a,org.opencontainers.image.created=2026-05-04T01:27:05Z
-# Tue, 05 May 2026 23:09:23 GMT
+# Wed, 06 May 2026 12:56:15 GMT
+COPY file:9d5fe0edb9a65123afda28f8a8cf6e139537dee71d7b2bc90f9c46d89a207386 in /usr/share/buildinfo/labels.json      
+# Wed, 06 May 2026 12:56:15 GMT
+COPY file:9d5fe0edb9a65123afda28f8a8cf6e139537dee71d7b2bc90f9c46d89a207386 in /root/buildinfo/labels.json      
+# Wed, 06 May 2026 12:56:15 GMT
+LABEL "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="8def05a6f0dfabdc25ea20a79b0d11f8f9b12c5c" "org.opencontainers.image.revision"="8def05a6f0dfabdc25ea20a79b0d11f8f9b12c5c" "build-date"="2026-05-06T12:56:03Z" "org.opencontainers.image.created"="2026-05-06T12:56:03Z" "release"="1778072020"org.opencontainers.image.revision=8def05a6f0dfabdc25ea20a79b0d11f8f9b12c5c,org.opencontainers.image.created=2026-05-06T12:56:03Z
+# Fri, 08 May 2026 16:21:47 GMT
 ENV ELASTIC_CONTAINER=true
-# Tue, 05 May 2026 23:09:23 GMT
+# Fri, 08 May 2026 16:21:47 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 05 May 2026 23:09:23 GMT
+# Fri, 08 May 2026 16:21:47 GMT
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
-# Tue, 05 May 2026 23:09:23 GMT
+# Fri, 08 May 2026 16:21:47 GMT
 WORKDIR /usr/share
-# Tue, 05 May 2026 23:09:25 GMT
+# Fri, 08 May 2026 16:21:49 GMT
 RUN microdnf install -y procps findutils tar gzip &&   microdnf install -y openssl &&   microdnf install -y which shadow-utils &&   microdnf clean all # buildkit
-# Tue, 05 May 2026 23:10:20 GMT
+# Fri, 08 May 2026 16:22:41 GMT
 RUN groupadd --gid 1000 logstash &&   adduser --uid 1000 --gid 1000   --home "/usr/share/logstash"   --no-create-home   logstash &&   arch="$(rpm --query --queryformat='%{ARCH}' rpm)" &&   curl --fail --location --output logstash.tar.gz https://artifacts.elastic.co/downloads/logstash/logstash-9.4.0-linux-${arch}.tar.gz &&   tar -zxf logstash.tar.gz -C /usr/share &&   rm logstash.tar.gz &&   mv /usr/share/logstash-9.4.0 /usr/share/logstash &&   chown -R logstash:root /usr/share/logstash &&   chmod -R g=u /usr/share/logstash &&   mkdir /licenses &&   mv /usr/share/logstash/NOTICE.TXT /licenses/NOTICE.TXT &&   mv /usr/share/logstash/LICENSE.txt /licenses/LICENSE.txt &&   find /usr/share/logstash -type d -exec chmod g+s {} \; &&   ln -s /usr/share/logstash /opt/logstash # buildkit
-# Tue, 05 May 2026 23:10:20 GMT
+# Fri, 08 May 2026 16:22:41 GMT
 COPY --chown=logstash:root env2yaml/classes /usr/share/logstash/env2yaml/classes/ # buildkit
-# Tue, 05 May 2026 23:10:20 GMT
+# Fri, 08 May 2026 16:22:41 GMT
 COPY --chown=logstash:root env2yaml/lib /usr/share/logstash/env2yaml/lib/ # buildkit
-# Tue, 05 May 2026 23:10:20 GMT
+# Fri, 08 May 2026 16:22:41 GMT
 COPY --chmod=0755 env2yaml/env2yaml /usr/local/bin/env2yaml # buildkit
-# Tue, 05 May 2026 23:10:20 GMT
+# Fri, 08 May 2026 16:22:41 GMT
 COPY --chown=logstash:root config/pipelines.yml config/log4j2.properties config/log4j2.file.properties /usr/share/logstash/config/ # buildkit
-# Tue, 05 May 2026 23:10:20 GMT
+# Fri, 08 May 2026 16:22:42 GMT
 COPY --chown=logstash:root config/logstash-full.yml /usr/share/logstash/config/logstash.yml # buildkit
-# Tue, 05 May 2026 23:10:20 GMT
+# Fri, 08 May 2026 16:22:42 GMT
 COPY --chown=logstash:root pipeline/default.conf /usr/share/logstash/pipeline/logstash.conf # buildkit
-# Tue, 05 May 2026 23:10:20 GMT
+# Fri, 08 May 2026 16:22:42 GMT
 COPY --chmod=0755 bin/docker-entrypoint /usr/local/bin/ # buildkit
-# Tue, 05 May 2026 23:10:20 GMT
+# Fri, 08 May 2026 16:22:42 GMT
 WORKDIR /usr/share/logstash
-# Tue, 05 May 2026 23:10:20 GMT
+# Fri, 08 May 2026 16:22:42 GMT
 USER 1000
-# Tue, 05 May 2026 23:10:20 GMT
+# Fri, 08 May 2026 16:22:42 GMT
 EXPOSE map[5044/tcp:{} 9600/tcp:{}]
-# Tue, 05 May 2026 23:10:20 GMT
+# Fri, 08 May 2026 16:22:42 GMT
 LABEL org.label-schema.build-date=2026-04-28T15:43:16+00:00 org.label-schema.license=Elastic License org.label-schema.name=logstash org.label-schema.schema-version=1.0 org.label-schema.url=https://www.elastic.co/products/logstash org.label-schema.vcs-url=https://github.com/elastic/logstash org.label-schema.vendor=Elastic org.label-schema.version=9.4.0 org.opencontainers.image.created=2026-04-28T15:43:16+00:00 org.opencontainers.image.description=Logstash is a free and open server-side data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to your favorite 'stash.' org.opencontainers.image.licenses=Elastic License org.opencontainers.image.title=logstash org.opencontainers.image.vendor=Elastic org.opencontainers.image.version=9.4.0 description=Logstash is a free and open server-side data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to your favorite 'stash.' license=Elastic License maintainer=info@elastic.co name=logstash summary=Logstash is a free and open server-side data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to your favorite 'stash.' vendor=Elastic
-# Tue, 05 May 2026 23:10:20 GMT
+# Fri, 08 May 2026 16:22:42 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 ```
 
 -	Layers:
-	-	`sha256:cd8d59cb7a894fbcbefe70d3cdbc433492e715351e24e77b24a441609ab2de47`  
-		Last Modified: Mon, 04 May 2026 03:52:20 GMT  
-		Size: 40.0 MB (40019116 bytes)  
+	-	`sha256:df0edd575569e5cb7e2e34f252e4cf36c13679e9633d7c97be861b8b247c70bc`  
+		Last Modified: Wed, 06 May 2026 13:26:44 GMT  
+		Size: 40.0 MB (39994775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:56b9d2270881f502145bd5a89b5332b1e5f2ec5dd0b93dfefc4d374bfdf0696f`  
-		Last Modified: Tue, 05 May 2026 23:10:59 GMT  
-		Size: 5.1 MB (5148533 bytes)  
+	-	`sha256:49b1b905f0c9c4d977e71657ccc18908380215b6d28baf4bb55cd1da2392f4e6`  
+		Last Modified: Fri, 08 May 2026 16:23:20 GMT  
+		Size: 5.1 MB (5149424 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:27e4e04a95da2b88d168094aee6d383e74c05a11e46edafceb95084c23d0e98d`  
-		Last Modified: Tue, 05 May 2026 23:11:09 GMT  
-		Size: 477.6 MB (477614702 bytes)  
+	-	`sha256:ef404a6d2a3af537fc6f595f23a3dd1bad5f2c5a66f7a9ea4bb53421d59bb134`  
+		Last Modified: Fri, 08 May 2026 16:23:32 GMT  
+		Size: 477.6 MB (477614100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28ba9bd28092eb2301b605f976093b816b4d6bbed224afaaad9174f63fc64938`  
-		Last Modified: Tue, 05 May 2026 23:10:59 GMT  
-		Size: 6.4 KB (6364 bytes)  
+	-	`sha256:f45ee14043499853619a48624bbc3c6f7d114658aef359bca084cd9dfb9dece6`  
+		Last Modified: Fri, 08 May 2026 16:23:19 GMT  
+		Size: 6.4 KB (6366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51111dd92b160837c92c090a7457edd6e79a83124502c15f67fde3016e023801`  
-		Last Modified: Tue, 05 May 2026 23:10:59 GMT  
-		Size: 255.2 KB (255184 bytes)  
+	-	`sha256:2de69823116722814b186e0f89d1cf3ed300804454106379a532779aacf57949`  
+		Last Modified: Fri, 08 May 2026 16:23:19 GMT  
+		Size: 255.2 KB (255182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9079fd4446a4debda7bed2f45105178922c3798df68df04a5dd6c1ceada158ee`  
-		Last Modified: Tue, 05 May 2026 23:11:00 GMT  
-		Size: 351.0 B  
+	-	`sha256:1b8ae35a292d05e3a790411cba668c12eb25d1ffb3d5c4132543b666cca8e39b`  
+		Last Modified: Fri, 08 May 2026 16:23:21 GMT  
+		Size: 356.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f6300503e615cece5658b688c9f65a45c0f58c5a63a1a2397222aa06e1d06a6a`  
-		Last Modified: Tue, 05 May 2026 23:11:00 GMT  
-		Size: 1.6 KB (1576 bytes)  
+	-	`sha256:f8e6695d303f462f5f4d7ae917c4aaed5d1f1db136909f6587649d60c0ec9b21`  
+		Last Modified: Fri, 08 May 2026 16:23:21 GMT  
+		Size: 1.6 KB (1578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d126bb23054f75af17bc135eb1344ad487b7ee1eae0cd07fc043075cd21a1a6`  
-		Last Modified: Tue, 05 May 2026 23:11:01 GMT  
-		Size: 278.0 B  
+	-	`sha256:30b842c47c37423ab752b2863fc59aeef48ec44863ef0991501d48b23695c9a6`  
+		Last Modified: Fri, 08 May 2026 16:23:21 GMT  
+		Size: 281.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:30cf263a6fe1ead15e909356c1ba51519be877cf9ec8268ce86ed6c8427e6991`  
-		Last Modified: Tue, 05 May 2026 23:11:02 GMT  
-		Size: 275.0 B  
+	-	`sha256:62b7cea1a6915cfda7d7d3c5ea037ee407b79efca6e7e94e9aed2e5209fe4a4a`  
+		Last Modified: Fri, 08 May 2026 16:23:22 GMT  
+		Size: 276.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:591ad2438d6f9d160610eae6b991a8422c070a335f0fb7bd9dfe2ffc40c80af3`  
-		Last Modified: Tue, 05 May 2026 23:11:02 GMT  
-		Size: 708.0 B  
+	-	`sha256:b01c345fed6194304ef476ebe957f6b4604aeb9eb14c5540716d93e490c5fae5`  
+		Last Modified: Fri, 08 May 2026 16:23:22 GMT  
+		Size: 711.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -813,162 +813,162 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 ### `logstash:9.4.0` - unknown; unknown
 
 ```console
-$ docker pull logstash@sha256:831573e615299ddd563773af5d1d89fd11a75da33294f50ac6d52b7e11e21b99
+$ docker pull logstash@sha256:4b875df8d598797028adbd4bae37da67f71707489cf5eb77d2e4f85108486323
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.2 MB (2153990 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c308806e1e226ed27f71df696914accc1256a1ff50070110503fa36af25f9fb2`
+-	Image ID: `sha256:b4e370dfe42fb4a4d5ab0b63454bf9333ca4bd2dfc351349117e2f03c176aa28`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c8055507d4ec01ec71ca900aa618f66ca6b0b24b650307880537d48d9db091cd`  
-		Last Modified: Tue, 05 May 2026 23:10:59 GMT  
+	-	`sha256:ade50f1210e5dd67f7fc896e2301764cfc528cc329d1be374d3dcf33bf553b44`  
+		Last Modified: Fri, 08 May 2026 16:23:19 GMT  
 		Size: 2.1 MB (2123790 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2ec3bdb79799f9de4b5996f5bd268da7bd51c04a8db288e57547cd032615341c`  
-		Last Modified: Tue, 05 May 2026 23:10:59 GMT  
+	-	`sha256:9ba0da79e569faad9520d25aca73145bc6bb88ff025e02596c4187e1e3d9bf90`  
+		Last Modified: Fri, 08 May 2026 16:23:19 GMT  
 		Size: 30.2 KB (30200 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `logstash:9.4.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull logstash@sha256:5b83ffa0716252b60e2c0575229356a96d737a2792a4bcf87773424650bdf577
+$ docker pull logstash@sha256:7be12bcefb38cf1b5bd97cb7b2befee3367a6ffa0e96845909fdbd5e96b6797b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **519.5 MB (519517416 bytes)**  
+-	Total Size: **519.5 MB (519514977 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f623fd04070ec63f4d29c84057aa8edc7b125b9cb262c018d4c7da949a644e13`
+-	Image ID: `sha256:780c86b6cb75b38c86661a760d9be540251fe6f5114206e4275f367dbaed00d6`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint"]`
 
 ```dockerfile
-# Mon, 04 May 2026 01:30:08 GMT
+# Wed, 06 May 2026 12:57:02 GMT
 LABEL maintainer="Red Hat, Inc."
-# Mon, 04 May 2026 01:30:08 GMT
+# Wed, 06 May 2026 12:57:02 GMT
 LABEL vendor="Red Hat, Inc."
-# Mon, 04 May 2026 01:30:08 GMT
+# Wed, 06 May 2026 12:57:02 GMT
 LABEL url="https://catalog.redhat.com/en/search?searchType=containers"
-# Mon, 04 May 2026 01:30:08 GMT
+# Wed, 06 May 2026 12:57:02 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9/ubi-minimal"       version="9.7"       cpe="cpe:/a:redhat:enterprise_linux:9::appstream"       distribution-scope="public"
-# Mon, 04 May 2026 01:30:08 GMT
+# Wed, 06 May 2026 12:57:02 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Mon, 04 May 2026 01:30:08 GMT
+# Wed, 06 May 2026 12:57:02 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Mon, 04 May 2026 01:30:08 GMT
+# Wed, 06 May 2026 12:57:02 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 04 May 2026 01:30:08 GMT
+# Wed, 06 May 2026 12:57:02 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 04 May 2026 01:30:08 GMT
+# Wed, 06 May 2026 12:57:02 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Mon, 04 May 2026 01:30:08 GMT
+# Wed, 06 May 2026 12:57:02 GMT
 LABEL io.openshift.expose-services=""
-# Mon, 04 May 2026 01:30:08 GMT
+# Wed, 06 May 2026 12:57:02 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Mon, 04 May 2026 01:30:08 GMT
+# Wed, 06 May 2026 12:57:02 GMT
 ENV container oci
-# Mon, 04 May 2026 01:30:09 GMT
-COPY dir:5ad712b8248d48b2932fa5bdcc0ad50ec37c7d49fe231a7db1a1c2391217329a in /      
-# Mon, 04 May 2026 01:30:09 GMT
+# Wed, 06 May 2026 12:57:03 GMT
+COPY dir:658522d0a080af3309d9cd140f39d4866e8d82f0dbb45a592dba1356f2d8aac5 in /      
+# Wed, 06 May 2026 12:57:03 GMT
 COPY file:1376702515d596f414e3aa494e0daa6d408a6d2475c4aeca96bf9392f5287f69 in /etc/yum.repos.d/.      
-# Mon, 04 May 2026 01:30:09 GMT
+# Wed, 06 May 2026 12:57:03 GMT
 CMD ["/bin/bash"]
-# Mon, 04 May 2026 01:30:09 GMT
+# Wed, 06 May 2026 12:57:04 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /usr/share/buildinfo/content-sets.json      
-# Mon, 04 May 2026 01:30:09 GMT
+# Wed, 06 May 2026 12:57:04 GMT
 COPY file:93583a9ebbaeff1e36b48820b647eea1eef523f6627dacfb0b21af79f5a41b35 in /root/buildinfo/content_manifests/content-sets.json      
-# Mon, 04 May 2026 01:30:09 GMT
-COPY file:11a91ebd5ef22e4f28676b4a9dc8447f7af7f01609b0311ebd76ca9c6631f340 in /usr/share/buildinfo/labels.json      
-# Mon, 04 May 2026 01:30:10 GMT
-COPY file:11a91ebd5ef22e4f28676b4a9dc8447f7af7f01609b0311ebd76ca9c6631f340 in /root/buildinfo/labels.json      
-# Mon, 04 May 2026 01:30:10 GMT
-LABEL "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="dbf428e1775c5e4c4802b4c714d3b50b652d0c8a" "org.opencontainers.image.revision"="dbf428e1775c5e4c4802b4c714d3b50b652d0c8a" "build-date"="2026-05-04T01:29:56Z" "org.opencontainers.image.created"="2026-05-04T01:29:56Z" "release"="1777857961"org.opencontainers.image.revision=dbf428e1775c5e4c4802b4c714d3b50b652d0c8a,org.opencontainers.image.created=2026-05-04T01:29:56Z
-# Tue, 05 May 2026 23:09:06 GMT
+# Wed, 06 May 2026 12:57:04 GMT
+COPY file:d64d419d706e46f4d286cf24b8afd9f437d1a94efd91154dd762c8135440b692 in /usr/share/buildinfo/labels.json      
+# Wed, 06 May 2026 12:57:04 GMT
+COPY file:d64d419d706e46f4d286cf24b8afd9f437d1a94efd91154dd762c8135440b692 in /root/buildinfo/labels.json      
+# Wed, 06 May 2026 12:57:04 GMT
+LABEL "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="8def05a6f0dfabdc25ea20a79b0d11f8f9b12c5c" "org.opencontainers.image.revision"="8def05a6f0dfabdc25ea20a79b0d11f8f9b12c5c" "build-date"="2026-05-06T12:56:50Z" "org.opencontainers.image.created"="2026-05-06T12:56:50Z" "release"="1778072020"org.opencontainers.image.revision=8def05a6f0dfabdc25ea20a79b0d11f8f9b12c5c,org.opencontainers.image.created=2026-05-06T12:56:50Z
+# Fri, 08 May 2026 16:21:34 GMT
 ENV ELASTIC_CONTAINER=true
-# Tue, 05 May 2026 23:09:06 GMT
+# Fri, 08 May 2026 16:21:34 GMT
 ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 05 May 2026 23:09:06 GMT
+# Fri, 08 May 2026 16:21:34 GMT
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
-# Tue, 05 May 2026 23:09:06 GMT
+# Fri, 08 May 2026 16:21:34 GMT
 WORKDIR /usr/share
-# Tue, 05 May 2026 23:09:08 GMT
+# Fri, 08 May 2026 16:21:36 GMT
 RUN microdnf install -y procps findutils tar gzip &&   microdnf install -y openssl &&   microdnf install -y which shadow-utils &&   microdnf clean all # buildkit
-# Tue, 05 May 2026 23:10:02 GMT
+# Fri, 08 May 2026 16:21:57 GMT
 RUN groupadd --gid 1000 logstash &&   adduser --uid 1000 --gid 1000   --home "/usr/share/logstash"   --no-create-home   logstash &&   arch="$(rpm --query --queryformat='%{ARCH}' rpm)" &&   curl --fail --location --output logstash.tar.gz https://artifacts.elastic.co/downloads/logstash/logstash-9.4.0-linux-${arch}.tar.gz &&   tar -zxf logstash.tar.gz -C /usr/share &&   rm logstash.tar.gz &&   mv /usr/share/logstash-9.4.0 /usr/share/logstash &&   chown -R logstash:root /usr/share/logstash &&   chmod -R g=u /usr/share/logstash &&   mkdir /licenses &&   mv /usr/share/logstash/NOTICE.TXT /licenses/NOTICE.TXT &&   mv /usr/share/logstash/LICENSE.txt /licenses/LICENSE.txt &&   find /usr/share/logstash -type d -exec chmod g+s {} \; &&   ln -s /usr/share/logstash /opt/logstash # buildkit
-# Tue, 05 May 2026 23:10:02 GMT
+# Fri, 08 May 2026 16:21:58 GMT
 COPY --chown=logstash:root env2yaml/classes /usr/share/logstash/env2yaml/classes/ # buildkit
-# Tue, 05 May 2026 23:10:02 GMT
+# Fri, 08 May 2026 16:21:58 GMT
 COPY --chown=logstash:root env2yaml/lib /usr/share/logstash/env2yaml/lib/ # buildkit
-# Tue, 05 May 2026 23:10:02 GMT
+# Fri, 08 May 2026 16:21:58 GMT
 COPY --chmod=0755 env2yaml/env2yaml /usr/local/bin/env2yaml # buildkit
-# Tue, 05 May 2026 23:10:02 GMT
+# Fri, 08 May 2026 16:21:58 GMT
 COPY --chown=logstash:root config/pipelines.yml config/log4j2.properties config/log4j2.file.properties /usr/share/logstash/config/ # buildkit
-# Tue, 05 May 2026 23:10:02 GMT
+# Fri, 08 May 2026 16:21:58 GMT
 COPY --chown=logstash:root config/logstash-full.yml /usr/share/logstash/config/logstash.yml # buildkit
-# Tue, 05 May 2026 23:10:02 GMT
+# Fri, 08 May 2026 16:21:58 GMT
 COPY --chown=logstash:root pipeline/default.conf /usr/share/logstash/pipeline/logstash.conf # buildkit
-# Tue, 05 May 2026 23:10:02 GMT
+# Fri, 08 May 2026 16:21:58 GMT
 COPY --chmod=0755 bin/docker-entrypoint /usr/local/bin/ # buildkit
-# Tue, 05 May 2026 23:10:02 GMT
+# Fri, 08 May 2026 16:21:58 GMT
 WORKDIR /usr/share/logstash
-# Tue, 05 May 2026 23:10:02 GMT
+# Fri, 08 May 2026 16:21:58 GMT
 USER 1000
-# Tue, 05 May 2026 23:10:02 GMT
+# Fri, 08 May 2026 16:21:58 GMT
 EXPOSE map[5044/tcp:{} 9600/tcp:{}]
-# Tue, 05 May 2026 23:10:02 GMT
+# Fri, 08 May 2026 16:21:58 GMT
 LABEL org.label-schema.build-date=2026-04-28T15:43:16+00:00 org.label-schema.license=Elastic License org.label-schema.name=logstash org.label-schema.schema-version=1.0 org.label-schema.url=https://www.elastic.co/products/logstash org.label-schema.vcs-url=https://github.com/elastic/logstash org.label-schema.vendor=Elastic org.label-schema.version=9.4.0 org.opencontainers.image.created=2026-04-28T15:43:16+00:00 org.opencontainers.image.description=Logstash is a free and open server-side data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to your favorite 'stash.' org.opencontainers.image.licenses=Elastic License org.opencontainers.image.title=logstash org.opencontainers.image.vendor=Elastic org.opencontainers.image.version=9.4.0 description=Logstash is a free and open server-side data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to your favorite 'stash.' license=Elastic License maintainer=info@elastic.co name=logstash summary=Logstash is a free and open server-side data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to your favorite 'stash.' vendor=Elastic
-# Tue, 05 May 2026 23:10:02 GMT
+# Fri, 08 May 2026 16:21:58 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 ```
 
 -	Layers:
-	-	`sha256:eae0b4c39ea6d65927abe502bd11bbd574acc09733cb468c989628c5b204a24b`  
-		Last Modified: Mon, 04 May 2026 05:13:02 GMT  
-		Size: 38.2 MB (38205818 bytes)  
+	-	`sha256:4432ba7926545d58c5c1a534c052b34ad23c14c54c95de1caf5071ea5ef8f194`  
+		Last Modified: Wed, 06 May 2026 13:31:32 GMT  
+		Size: 38.2 MB (38205674 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fad64800f6d258ff13f849f0b303fbb682ceeaadc6c21edf03fb5665006dd6d0`  
-		Last Modified: Tue, 05 May 2026 23:10:43 GMT  
-		Size: 5.1 MB (5147539 bytes)  
+	-	`sha256:152fa3077c39b2fa3a23653fbd9c859988e1411fd8f4a846c872bf62064878b6`  
+		Last Modified: Fri, 08 May 2026 16:22:38 GMT  
+		Size: 5.1 MB (5145186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aad9aa91132dd944dd6e2b84bd8b425444991a3174349daf3ab0889f704b7bea`  
-		Last Modified: Tue, 05 May 2026 23:10:52 GMT  
-		Size: 475.9 MB (475899239 bytes)  
+	-	`sha256:fd403b0fc70d6b7c9cf326d1a83fab810c6ab050f747acfeab6979630d4e7fc6`  
+		Last Modified: Fri, 08 May 2026 16:22:47 GMT  
+		Size: 475.9 MB (475899316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:86d2dbeab1b361f981bd1493e43afbae0e285b525587bf2d49979af494a46569`  
-		Last Modified: Tue, 05 May 2026 23:10:43 GMT  
-		Size: 6.4 KB (6369 bytes)  
+	-	`sha256:6460309424c7138c82a2d9878f4f65cd681bb32ff2eb1d3b0131a53be99cd285`  
+		Last Modified: Fri, 08 May 2026 16:22:38 GMT  
+		Size: 6.4 KB (6366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c77ab77ec3dfeb06d9e5805355b2549071b7f6507960edfd6e7f32ca702d8aac`  
-		Last Modified: Tue, 05 May 2026 23:10:43 GMT  
-		Size: 255.2 KB (255186 bytes)  
+	-	`sha256:370facb07539697eeccb7e18aec73606af30ce7c0132b7f2f943b9a4ab000970`  
+		Last Modified: Fri, 08 May 2026 16:22:38 GMT  
+		Size: 255.2 KB (255181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0b5f70666fb635e7830d70b97950bff2187fca96987f8ac5bd70f64ed5cd083`  
-		Last Modified: Tue, 05 May 2026 23:10:44 GMT  
-		Size: 355.0 B  
+	-	`sha256:c4faedbe4e1655c7797aace87bb0077e069d6546fa6e742d71740565672f70cc`  
+		Last Modified: Fri, 08 May 2026 16:22:39 GMT  
+		Size: 352.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:760052120e21e061a4132c34689972eb5aeb08503927d0465d2a119141ea0a9a`  
-		Last Modified: Tue, 05 May 2026 23:10:44 GMT  
+	-	`sha256:1d3758e24b9c536b9ec51df30e487ff428be6ee7e4b6982ab58c35411ec71ee4`  
+		Last Modified: Fri, 08 May 2026 16:22:39 GMT  
 		Size: 1.6 KB (1578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:047919fd4849cb66b134864f010ed0cb1c3ee6da1daaea22e493ebb31bb51500`  
-		Last Modified: Tue, 05 May 2026 23:10:44 GMT  
-		Size: 278.0 B  
+	-	`sha256:fd8f06eef77a28017da2c8a7f175c524f40d4334c8a6d2fd34a38cdcd8cae234`  
+		Last Modified: Fri, 08 May 2026 16:22:39 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d2f967ade452905805b0c277320b91d9825fecde28c786c254b43c3dd246a0b`  
-		Last Modified: Tue, 05 May 2026 23:10:45 GMT  
-		Size: 277.0 B  
+	-	`sha256:6797bc385c7a308f52b8914988936f842eaf064c5e492b27fb6b745c1e8e37f7`  
+		Last Modified: Fri, 08 May 2026 16:22:40 GMT  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c224841cc5406809ea33d3bda7bab6640441c6138e990673f41a32c5061af600`  
-		Last Modified: Tue, 05 May 2026 23:10:46 GMT  
-		Size: 713.0 B  
+	-	`sha256:85bbafab9cf2be4aa6baf98de55a114c19620e04a2e3f5d366040f9a88700fd3`  
+		Last Modified: Fri, 08 May 2026 16:22:40 GMT  
+		Size: 710.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -978,23 +978,23 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 ### `logstash:9.4.0` - unknown; unknown
 
 ```console
-$ docker pull logstash@sha256:ec5d26af294cabf726e70ae11ef1a9672766d30fc09932c89f99dff12d7ba863
+$ docker pull logstash@sha256:3a98342b96702ef770fad5c6820b9b862dce5de1ae2f205b9307e64cbadaa844
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.2 MB (2154637 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dfa60fd5d72c6822b42f916e86a54107e608af3c777db0c62725a0f954c722de`
+-	Image ID: `sha256:04562d94645c54fe08e3f64b6e79b4eaede54b5a8f0e66683f8bddd516fd0cbd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8eff9cb3f3c8622f1f3e86fb4a3da14f45af3c75bf10f00bd92c7eb0e8dc1792`  
-		Last Modified: Tue, 05 May 2026 23:10:43 GMT  
+	-	`sha256:fb8e22aa14f328d00375fc8c80073468b99db8e1238bc185718cdc5add98b0cf`  
+		Last Modified: Fri, 08 May 2026 16:22:38 GMT  
 		Size: 2.1 MB (2124360 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0ad78cbfed8ec0dff0cf8673d8888a6802845802e16116516c80ecad6efcd921`  
-		Last Modified: Tue, 05 May 2026 23:10:42 GMT  
+	-	`sha256:47ac24b05dc09dab9e0776f36c3d32ceac578ae606bac2fc1354d8e5ddf29d1a`  
+		Last Modified: Fri, 08 May 2026 16:22:37 GMT  
 		Size: 30.3 KB (30277 bytes)  
 		MIME: application/vnd.in-toto+json
