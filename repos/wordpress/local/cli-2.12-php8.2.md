@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fb92f8674a453073df6e1fa8de6c7cfb01e3d2330af7481c8120d5124ed1b1b3`
-- Created: `2026-04-15T21:21:10.589240319Z`
-- Virtual Size: ~ 198.80 Mb  
+- Image ID: `sha256:36af83d1fcf251da80a118db34980e2890041a2ea6253d94183c942d84dae852`
+- Created: `2026-05-07T17:15:31.721988674Z`
+- Virtual Size: ~ 198.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.30`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.30.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.30.tar.xz.asc`
-  - `PHP_SHA256=bc90523e17af4db46157e75d0c9ef0b9d0030b0514e62c26ba7b513b8c4eb015`
+  - `PHP_VERSION=8.2.31`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.31.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.31.tar.xz.asc`
+  - `PHP_SHA256=95eae411d594fe6f6e5678b76645dc13ae47d3c0a5325c1d969b58dea56ee45a`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.12.0`
   - `WORDPRESS_CLI_SHA512=be928f6b8ca1e8dfb9d2f4b75a13aa4aee0896f8a9a0a1c45cd5d2c98605e6172e6d014dda2e27f88c98befc16c040cbb2bd1bfa121510ea5cdf5f6a30fe8832`
@@ -472,16 +472,16 @@ ICU
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.17-r0 description:
+imagemagick-libs-7.1.2.19-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.17-r0 webpage:
+imagemagick-libs-7.1.2.19-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.17-r0 installed size:
+imagemagick-libs-7.1.2.19-r0 installed size:
 4257 KiB
 
-imagemagick-libs-7.1.2.17-r0 license:
+imagemagick-libs-7.1.2.19-r0 license:
 ImageMagick
 
 ```
@@ -489,16 +489,16 @@ ImageMagick
 ### `apk` package: `lcms2`
 
 ```console
-lcms2-2.17-r0 description:
+lcms2-2.19-r0 description:
 Color Management Engine
 
-lcms2-2.17-r0 webpage:
+lcms2-2.19-r0 webpage:
 https://www.littlecms.com
 
-lcms2-2.17-r0 installed size:
-328 KiB
+lcms2-2.19-r0 installed size:
+332 KiB
 
-lcms2-2.17-r0 license:
+lcms2-2.19-r0 license:
 MIT
 
 ```
@@ -1152,16 +1152,16 @@ BSD-3-Clause
 ### `apk` package: `mariadb-client`
 
 ```console
-mariadb-client-11.4.9-r0 description:
+mariadb-client-11.4.10-r0 description:
 Client for the MariaDB database
 
-mariadb-client-11.4.9-r0 webpage:
+mariadb-client-11.4.10-r0 webpage:
 https://www.mariadb.org/
 
-mariadb-client-11.4.9-r0 installed size:
+mariadb-client-11.4.10-r0 installed size:
 36 MiB
 
-mariadb-client-11.4.9-r0 license:
+mariadb-client-11.4.10-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1169,16 +1169,16 @@ GPL-2.0-or-later
 ### `apk` package: `mariadb-common`
 
 ```console
-mariadb-common-11.4.9-r0 description:
+mariadb-common-11.4.10-r0 description:
 MariaDB common files for both server and client
 
-mariadb-common-11.4.9-r0 webpage:
+mariadb-common-11.4.10-r0 webpage:
 https://www.mariadb.org/
 
-mariadb-common-11.4.9-r0 installed size:
+mariadb-common-11.4.10-r0 installed size:
 2051 KiB
 
-mariadb-common-11.4.9-r0 license:
+mariadb-common-11.4.10-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1220,16 +1220,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `mysql-client`
 
 ```console
-mysql-client-11.4.9-r0 description:
+mysql-client-11.4.10-r0 description:
 Dummy package for mysql-client migration
 
-mysql-client-11.4.9-r0 webpage:
+mysql-client-11.4.10-r0 webpage:
 https://www.mariadb.org/
 
-mysql-client-11.4.9-r0 installed size:
+mysql-client-11.4.10-r0 installed size:
 0 B
 
-mysql-client-11.4.9-r0 license:
+mysql-client-11.4.10-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1254,16 +1254,16 @@ X11
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.68.0-r0 description:
+nghttp2-libs-1.69.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.68.0-r0 webpage:
+nghttp2-libs-1.69.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.68.0-r0 installed size:
+nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.68.0-r0 license:
+nghttp2-libs-1.69.0-r0 license:
 MIT
 
 ```
@@ -1424,16 +1424,16 @@ GPL-3.0-or-later
 ### `apk` package: `xz`
 
 ```console
-xz-5.8.2-r0 description:
+xz-5.8.3-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.8.2-r0 webpage:
+xz-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
-xz-5.8.2-r0 installed size:
+xz-5.8.3-r0 installed size:
 162 KiB
 
-xz-5.8.2-r0 license:
+xz-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -1441,16 +1441,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.2-r0 description:
+xz-libs-5.8.3-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.2-r0 webpage:
+xz-libs-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.2-r0 installed size:
+xz-libs-5.8.3-r0 installed size:
 221 KiB
 
-xz-libs-5.8.2-r0 license:
+xz-libs-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```

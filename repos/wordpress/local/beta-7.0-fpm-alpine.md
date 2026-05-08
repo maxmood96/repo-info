@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac068e8cb142e0165626a46adbd6a366fbc9e71ce1f4169c6027c4cf658dde02`
-- Created: `2026-04-15T21:21:45.880076044Z`
-- Virtual Size: ~ 299.90 Mb  
+- Image ID: `sha256:24ffc75bb490de176edcb7264e02ca17d4cc292503ea1d037f33e500c4d1db23`
+- Created: `2026-05-07T17:16:54.647192519Z`
+- Virtual Size: ~ 300.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.30`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.30.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.30.tar.xz.asc`
-  - `PHP_SHA256=67f084d36852daab6809561a7c8023d130ca07fc6af8fb040684dd1414934d48`
+  - `PHP_VERSION=8.3.31`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.31.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.31.tar.xz.asc`
+  - `PHP_SHA256=66410cee07f4b2baeb0843140bb2a2b52ef930b5cf9b3d6e6d158b33aae8fa37`
 
 ## `apk` (`.apk`-based packages)
 
@@ -299,16 +299,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `cups-libs`
 
 ```console
-cups-libs-2.4.16-r0 description:
+cups-libs-2.4.18-r0 description:
 CUPS libraries
 
-cups-libs-2.4.16-r0 webpage:
+cups-libs-2.4.18-r0 webpage:
 https://github.com/OpenPrinting/cups/
 
-cups-libs-2.4.16-r0 installed size:
+cups-libs-2.4.18-r0 installed size:
 559 KiB
 
-cups-libs-2.4.16-r0 license:
+cups-libs-2.4.18-r0 license:
 Apache-2.0
 
 ```
@@ -486,16 +486,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.12-r0 description:
+gnutls-3.8.13-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.12-r0 webpage:
+gnutls-3.8.13-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.12-r0 installed size:
-1920 KiB
+gnutls-3.8.13-r0 installed size:
+2012 KiB
 
-gnutls-3.8.12-r0 license:
+gnutls-3.8.13-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -571,16 +571,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.17-r0 description:
+imagemagick-7.1.2.19-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.17-r0 webpage:
+imagemagick-7.1.2.19-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.17-r0 installed size:
-3687 KiB
+imagemagick-7.1.2.19-r0 installed size:
+3691 KiB
 
-imagemagick-7.1.2.17-r0 license:
+imagemagick-7.1.2.19-r0 license:
 ImageMagick
 
 ```
@@ -588,16 +588,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jp2`
 
 ```console
-imagemagick-jp2-7.1.2.17-r0 description:
+imagemagick-jp2-7.1.2.19-r0 description:
 Collection of tools and libraries for many image formats (JPEG2000 support modules)
 
-imagemagick-jp2-7.1.2.17-r0 webpage:
+imagemagick-jp2-7.1.2.19-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jp2-7.1.2.17-r0 installed size:
+imagemagick-jp2-7.1.2.19-r0 installed size:
 26 KiB
 
-imagemagick-jp2-7.1.2.17-r0 license:
+imagemagick-jp2-7.1.2.19-r0 license:
 ImageMagick
 
 ```
@@ -605,16 +605,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.17-r0 description:
+imagemagick-jpeg-7.1.2.19-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.17-r0 webpage:
+imagemagick-jpeg-7.1.2.19-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.17-r0 installed size:
+imagemagick-jpeg-7.1.2.19-r0 installed size:
 62 KiB
 
-imagemagick-jpeg-7.1.2.17-r0 license:
+imagemagick-jpeg-7.1.2.19-r0 license:
 ImageMagick
 
 ```
@@ -622,16 +622,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.17-r0 description:
+imagemagick-libs-7.1.2.19-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.17-r0 webpage:
+imagemagick-libs-7.1.2.19-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.17-r0 installed size:
+imagemagick-libs-7.1.2.19-r0 installed size:
 4257 KiB
 
-imagemagick-libs-7.1.2.17-r0 license:
+imagemagick-libs-7.1.2.19-r0 license:
 ImageMagick
 
 ```
@@ -639,16 +639,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.17-r0 description:
+imagemagick-pdf-7.1.2.19-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.17-r0 webpage:
+imagemagick-pdf-7.1.2.19-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.17-r0 installed size:
+imagemagick-pdf-7.1.2.19-r0 installed size:
 121 KiB
 
-imagemagick-pdf-7.1.2.17-r0 license:
+imagemagick-pdf-7.1.2.19-r0 license:
 ImageMagick
 
 ```
@@ -656,16 +656,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.17-r0 description:
+imagemagick-tiff-7.1.2.19-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.17-r0 webpage:
+imagemagick-tiff-7.1.2.19-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.17-r0 installed size:
+imagemagick-tiff-7.1.2.19-r0 installed size:
 115 KiB
 
-imagemagick-tiff-7.1.2.17-r0 license:
+imagemagick-tiff-7.1.2.19-r0 license:
 ImageMagick
 
 ```
@@ -673,16 +673,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.17-r0 description:
+imagemagick-webp-7.1.2.19-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.17-r0 webpage:
+imagemagick-webp-7.1.2.19-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.17-r0 installed size:
+imagemagick-webp-7.1.2.19-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.17-r0 license:
+imagemagick-webp-7.1.2.19-r0 license:
 ImageMagick
 
 ```
@@ -707,16 +707,16 @@ AGPL-3.0-or-later
 ### `apk` package: `lcms2`
 
 ```console
-lcms2-2.17-r0 description:
+lcms2-2.19-r0 description:
 Color Management Engine
 
-lcms2-2.17-r0 webpage:
+lcms2-2.19-r0 webpage:
 https://www.littlecms.com
 
-lcms2-2.17-r0 installed size:
-328 KiB
+lcms2-2.19-r0 installed size:
+332 KiB
 
-lcms2-2.17-r0 license:
+lcms2-2.19-r0 license:
 MIT
 
 ```
@@ -1540,16 +1540,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.68.0-r0 description:
+nghttp2-libs-1.69.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.68.0-r0 webpage:
+nghttp2-libs-1.69.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.68.0-r0 installed size:
+nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.68.0-r0 license:
+nghttp2-libs-1.69.0-r0 license:
 MIT
 
 ```
@@ -1761,16 +1761,16 @@ libtiff
 ### `apk` package: `xz`
 
 ```console
-xz-5.8.2-r0 description:
+xz-5.8.3-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.8.2-r0 webpage:
+xz-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
-xz-5.8.2-r0 installed size:
+xz-5.8.3-r0 installed size:
 162 KiB
 
-xz-5.8.2-r0 license:
+xz-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -1778,16 +1778,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.2-r0 description:
+xz-libs-5.8.3-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.2-r0 webpage:
+xz-libs-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.2-r0 installed size:
+xz-libs-5.8.3-r0 installed size:
 221 KiB
 
-xz-libs-5.8.2-r0 license:
+xz-libs-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
