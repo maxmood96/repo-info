@@ -1821,14 +1821,9 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`, `/usr/share/doc/l
 - `IJG`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lcms2=2.17-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.17.orig.tar.gz' lcms2_2.17.orig.tar.gz 5245319 SHA512:81885c70fb26a9b7d37a398f43ccb0d1d3ab8f43de7da8f760b26d053a0d7e0543e7d3b0cdcaf9b3b681a1b88f032134c5a3c1a6774a9abc66a8a3f10ba64398
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.17-1ubuntu0.1.debian.tar.xz' lcms2_2.17-1ubuntu0.1.debian.tar.xz 12504 SHA512:814b7a6d55b7c90bffad530901e5d6d666a7b593d63654c1c81341731519a7194856bc4a2585196986c45dd0c71810eb449354e0d15fcf25edc8a9eddf72e7ff
-'http://archive.ubuntu.com/ubuntu/pool/main/l/lcms2/lcms2_2.17-1ubuntu0.1.dsc' lcms2_2.17-1ubuntu0.1.dsc 2158 SHA512:7550a6ca12ce7c50262d9166c8b913b9a8fa2b211cfdd13db8655d83739de65395a51103e6c5bfe8d5deca756b48b05511296b27f2c3081a72f5eab31b6e32da
-```
 
 ### `dpkg` source package: `lerc=4.0.0+ds-5ubuntu2`
 
