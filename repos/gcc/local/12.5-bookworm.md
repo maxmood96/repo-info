@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:aa951478f8234cd0eca8c5ecb6bd668f5e31bcb43f3f7cfba732381e42656bfc`
-- Created: `2026-04-22T07:49:41.224575837Z`
+- Image ID: `sha256:f48161df51f5e3c20290918120f737714451c75633fa7255bf268854e35c1b1d`
+- Created: `2026-05-08T23:47:53.44712724Z`
 - Virtual Size: ~ 1.38 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1979,23 +1979,23 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/icu/72.1-3+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/icu/72.1-3+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u8`
+### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u9`
 
 Binary Packages:
 
-- `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u8`
-- `imagemagick-6-common=8:6.9.11.60+dfsg-1.6+deb12u8`
-- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.6+deb12u8`
-- `libmagickcore-6-arch-config:amd64=8:6.9.11.60+dfsg-1.6+deb12u8`
-- `libmagickcore-6-headers=8:6.9.11.60+dfsg-1.6+deb12u8`
-- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u8`
-- `libmagickcore-6.q16-6-extra:amd64=8:6.9.11.60+dfsg-1.6+deb12u8`
-- `libmagickcore-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.6+deb12u8`
-- `libmagickcore-dev=8:6.9.11.60+dfsg-1.6+deb12u8`
-- `libmagickwand-6-headers=8:6.9.11.60+dfsg-1.6+deb12u8`
-- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u8`
-- `libmagickwand-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.6+deb12u8`
-- `libmagickwand-dev=8:6.9.11.60+dfsg-1.6+deb12u8`
+- `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u9`
+- `imagemagick-6-common=8:6.9.11.60+dfsg-1.6+deb12u9`
+- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.6+deb12u9`
+- `libmagickcore-6-arch-config:amd64=8:6.9.11.60+dfsg-1.6+deb12u9`
+- `libmagickcore-6-headers=8:6.9.11.60+dfsg-1.6+deb12u9`
+- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u9`
+- `libmagickcore-6.q16-6-extra:amd64=8:6.9.11.60+dfsg-1.6+deb12u9`
+- `libmagickcore-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.6+deb12u9`
+- `libmagickcore-dev=8:6.9.11.60+dfsg-1.6+deb12u9`
+- `libmagickwand-6-headers=8:6.9.11.60+dfsg-1.6+deb12u9`
+- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u9`
+- `libmagickwand-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.6+deb12u9`
+- `libmagickwand-dev=8:6.9.11.60+dfsg-1.6+deb12u9`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6-common/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/libmagickcore-6-arch-config/copyright`, `/usr/share/doc/libmagickcore-6-headers/copyright`, `/usr/share/doc/libmagickcore-6.q16-6/copyright`, `/usr/share/doc/libmagickcore-6.q16-6-extra/copyright`, `/usr/share/doc/libmagickcore-6.q16-dev/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickwand-6-headers/copyright`, `/usr/share/doc/libmagickwand-6.q16-6/copyright`, `/usr/share/doc/libmagickwand-6.q16-dev/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`)
 
@@ -2026,13 +2026,20 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.6+deb12u9
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u9.dsc' imagemagick_6.9.11.60+dfsg-1.6+deb12u9.dsc 5105 SHA256:5dec0ef2e65a0ec5c2a68915def537296c53a3906e6eb01c1174d6c531da749c
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA256:472fb516df842ee9c819ed80099c188463b9e961303511c36ae24d0eaa8959c4
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u9.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.6+deb12u9.debian.tar.xz 324340 SHA256:f6f3ae9f565fc3e4af376653d5b1750194d4734b12af1ca417f8303791b61b07
+```
 
-- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u8/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u9/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.6-1`
 
@@ -3934,11 +3941,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.164-1`
+### `dpkg` source package: `linux=6.1.170-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.164-1`
+- `linux-libc-dev:amd64=6.1.170-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3953,17 +3960,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.164-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.164-1.dsc' linux_6.1.164-1.dsc 399396 SHA256:a16375d86e1ec7fcb7e16e3d6dbcb08cab098aca04bfb7510b10befaf7e13e26
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.164.orig.tar.xz' linux_6.1.164.orig.tar.xz 137862600 SHA256:d2971cca3c00dbaa0da62660790ff9ef77b271afc42df468a182d3852d8c1c47
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.164-1.debian.tar.xz' linux_6.1.164-1.debian.tar.xz 1830072 SHA256:7eceed389147fe334a6df3071e2f6b7963b9ac2ec3b6387fd34a26aae0e8fda7
+$ apt-get source -qq --print-uris linux=6.1.170-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.170-1.dsc' linux_6.1.170-1.dsc 399396 SHA256:3586ec318f1247d81ca466fcf9c11a0ef90a22919ed6b0668a44cb8bf0f1c7d3
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.170.orig.tar.xz' linux_6.1.170.orig.tar.xz 137897868 SHA256:d97c2b2683633677fa1f41bf5cc58cfac7664b84ca885ce6546d40fee87ba7fe
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.170-1.debian.tar.xz' linux_6.1.170-1.debian.tar.xz 1837236 SHA256:9587d682bfa15f20635ffb78a6cff7b7e66b14981dc1323911bb894759ab8d3b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.164-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.164-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.164-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.170-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.170-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.170-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 

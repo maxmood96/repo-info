@@ -1,10 +1,10 @@
-# `gcc:15.2.0`
+# `gcc:16.1.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:39b143cd1af9f4fe00885c1090e36efe995f02c80d5be3ee4838a04688456766`
-- Created: `2026-04-22T07:04:15.083403097Z`
-- Virtual Size: ~ 1.54 Gb  
+- Image ID: `sha256:08cd4b270d95163b2a9750b63016fa6fa02fee8451bed6c80504fd0ef52c708d`
+- Created: `2026-05-09T00:11:09.385133937Z`
+- Virtual Size: ~ 1.56 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GPG_KEYS=B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62`
   - `GCC_MIRRORS=https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		https://sourceware.org/pub/gcc/releases 		ftp://ftp.gnu.org/gnu/gcc`
-  - `GCC_VERSION=15.2.0`
+  - `GCC_VERSION=16.1.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2033,23 +2033,23 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/icu/76.1-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/icu/76.1-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:7.1.1.43+dfsg1-1+deb13u7`
+### `dpkg` source package: `imagemagick=8:7.1.1.43+dfsg1-1+deb13u8`
 
 Binary Packages:
 
-- `imagemagick=8:7.1.1.43+dfsg1-1+deb13u7`
-- `imagemagick-7-common=8:7.1.1.43+dfsg1-1+deb13u7`
-- `imagemagick-7.q16=8:7.1.1.43+dfsg1-1+deb13u7`
-- `libmagickcore-7-arch-config:amd64=8:7.1.1.43+dfsg1-1+deb13u7`
-- `libmagickcore-7-headers=8:7.1.1.43+dfsg1-1+deb13u7`
-- `libmagickcore-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u7`
-- `libmagickcore-7.q16-10-extra:amd64=8:7.1.1.43+dfsg1-1+deb13u7`
-- `libmagickcore-7.q16-dev:amd64=8:7.1.1.43+dfsg1-1+deb13u7`
-- `libmagickcore-dev=8:7.1.1.43+dfsg1-1+deb13u7`
-- `libmagickwand-7-headers=8:7.1.1.43+dfsg1-1+deb13u7`
-- `libmagickwand-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u7`
-- `libmagickwand-7.q16-dev:amd64=8:7.1.1.43+dfsg1-1+deb13u7`
-- `libmagickwand-dev=8:7.1.1.43+dfsg1-1+deb13u7`
+- `imagemagick=8:7.1.1.43+dfsg1-1+deb13u8`
+- `imagemagick-7-common=8:7.1.1.43+dfsg1-1+deb13u8`
+- `imagemagick-7.q16=8:7.1.1.43+dfsg1-1+deb13u8`
+- `libmagickcore-7-arch-config:amd64=8:7.1.1.43+dfsg1-1+deb13u8`
+- `libmagickcore-7-headers=8:7.1.1.43+dfsg1-1+deb13u8`
+- `libmagickcore-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u8`
+- `libmagickcore-7.q16-10-extra:amd64=8:7.1.1.43+dfsg1-1+deb13u8`
+- `libmagickcore-7.q16-dev:amd64=8:7.1.1.43+dfsg1-1+deb13u8`
+- `libmagickcore-dev=8:7.1.1.43+dfsg1-1+deb13u8`
+- `libmagickwand-7-headers=8:7.1.1.43+dfsg1-1+deb13u8`
+- `libmagickwand-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u8`
+- `libmagickwand-7.q16-dev:amd64=8:7.1.1.43+dfsg1-1+deb13u8`
+- `libmagickwand-dev=8:7.1.1.43+dfsg1-1+deb13u8`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-7-common/copyright`, `/usr/share/doc/imagemagick-7.q16/copyright`, `/usr/share/doc/libmagickcore-7-arch-config/copyright`, `/usr/share/doc/libmagickcore-7-headers/copyright`, `/usr/share/doc/libmagickcore-7.q16-10/copyright`, `/usr/share/doc/libmagickcore-7.q16-10-extra/copyright`, `/usr/share/doc/libmagickcore-7.q16-dev/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickwand-7-headers/copyright`, `/usr/share/doc/libmagickwand-7.q16-10/copyright`, `/usr/share/doc/libmagickwand-7.q16-dev/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`)
 
@@ -2079,13 +2079,20 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris imagemagick=8:7.1.1.43+dfsg1-1+deb13u8
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u8.dsc' imagemagick_7.1.1.43+dfsg1-1+deb13u8.dsc 5136 SHA256:78093fc2c18a42764bfe4305540320b511a1a20990a9ca9353a56aac9cc6f463
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1.orig.tar.xz' imagemagick_7.1.1.43+dfsg1.orig.tar.xz 10501740 SHA256:bcb4f3c78a930a608fa4889f889edbcb384974246ad9407fce1858f2c0607bfe
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u8.debian.tar.xz' imagemagick_7.1.1.43+dfsg1-1+deb13u8.debian.tar.xz 335096 SHA256:e3ab896e0d5c12fb38ad0d0d330456ed31b7d722ac40f6dbbe8115bc8f7fcbba
+```
 
-- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u7/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u8/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.12-1`
 
@@ -4070,11 +4077,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.74-2`
+### `dpkg` source package: `linux=6.12.86-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.74-2`
+- `linux-libc-dev=6.12.86-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -4088,17 +4095,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.74-2
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.74-2.dsc' linux_6.12.74-2.dsc 292516 SHA256:a7f32f062d9285c776112af5c8fa90a3f745a3429ede7115867f3e89eb95f8e6
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.74.orig.tar.xz' linux_6.12.74.orig.tar.xz 151185392 SHA256:b12440d62ef47193c3c8ae5b8dbb76cfcd1084bbb54d6c64a485aed07ecec708
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.74-2.debian.tar.xz' linux_6.12.74-2.debian.tar.xz 1783784 SHA256:0c62402e33df8569a56f7cab7c376eb359ba1f0062872af816d3634a29277f9e
+$ apt-get source -qq --print-uris linux=6.12.86-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.86-1.dsc' linux_6.12.86-1.dsc 288306 SHA256:fc5315f4946bc6749aa0bf1df9bf0901b3fe0344876e1e08e0bdf67556aeb106
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.86.orig.tar.xz' linux_6.12.86.orig.tar.xz 151247248 SHA256:74ae12a1a62311e096d05a0b006c8447d9007809b0b7604a643293914871982b
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.86-1.debian.tar.xz' linux_6.12.86-1.debian.tar.xz 1812972 SHA256:81d68f571ad15a2d4697a6552f2d8ac16b0b6942e453138a8ec58cc927d3673e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.74-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.74-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.74-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.86-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.86-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.86-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
