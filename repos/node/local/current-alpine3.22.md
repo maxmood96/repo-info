@@ -1,18 +1,17 @@
-# `node:25-alpine3.22`
+# `node:26-alpine3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:392a2908f851ee4fdb186b98655292e893c7062c0397b167f2a019c2813c707f`
-- Created: `2026-04-17T00:30:30.463852745Z`
-- Virtual Size: ~ 170.00 Mb  
+- Image ID: `sha256:684f2d089758a3c453039468afbb0ec68a2a48e377631780904d36b049ea681d`
+- Created: `2026-05-07T17:57:34.824144793Z`
+- Virtual Size: ~ 176.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=25.9.0`
-  - `YARN_VERSION=1.22.22`
+  - `NODE_VERSION=26.1.0`
 
 ## `apk` (`.apk`-based packages)
 

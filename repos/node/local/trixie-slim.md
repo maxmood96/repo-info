@@ -1,18 +1,17 @@
-# `node:25-trixie-slim`
+# `node:26-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ed3f991fa45b6a6f87cf53343acd48e6c9cf0a43a35a6753071fae504f18187a`
-- Created: `2026-04-22T01:45:18.381395306Z`
-- Virtual Size: ~ 233.44 Mb  
+- Image ID: `sha256:5d5a8f2f455614ab6fe9a8c58442c1cfdfe7da7c7ba61dedabf0bd0a386ecfcd`
+- Created: `2026-05-08T19:45:26.598412055Z`
+- Virtual Size: ~ 245.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=25.9.0`
-  - `YARN_VERSION=1.22.22`
+  - `NODE_VERSION=26.1.0`
 
 ## `dpkg` (`.deb`-based packages)
 
