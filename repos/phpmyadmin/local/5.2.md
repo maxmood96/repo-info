@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9265bc2b913eb30b5b231e2d274f15353771f4697b3ffc367d516c3fc804d110`
-- Created: `2026-04-22T04:42:15.497871215Z`
-- Virtual Size: ~ 574.95 Mb  
+- Image ID: `sha256:0de7ee7345e21364ba48598ef7fe1e4f9745603e85c9bfd1b63ef945cbf0beea`
+- Created: `2026-05-08T20:24:07.394680178Z`
+- Virtual Size: ~ 574.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.30`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.30.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.30.tar.xz.asc`
-  - `PHP_SHA256=67f084d36852daab6809561a7c8023d130ca07fc6af8fb040684dd1414934d48`
+  - `PHP_VERSION=8.3.31`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.31.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.31.tar.xz.asc`
+  - `PHP_SHA256=66410cee07f4b2baeb0843140bb2a2b52ef930b5cf9b3d6e6d158b33aae8fa37`
   - `UPLOAD_PROGRESS_EXT_URL=https://github.com/php/pecl-php-uploadprogress/archive/refs/tags/uploadprogress-2.0.2.tar.gz`
   - `UPLOAD_PROGRESS_SHA256=fe3f6cdfcedad563c970c4fd1cda31e422cfc0df5cc9a217d8c80ed3c8d137f5`
   - `PMA_SSL_DIR=/etc/phpmyadmin/ssl`
@@ -101,14 +101,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.152/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.152/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apache2=2.4.66-1~deb13u2`
+### `dpkg` source package: `apache2=2.4.67-1~deb13u2`
 
 Binary Packages:
 
-- `apache2=2.4.66-1~deb13u2`
-- `apache2-bin=2.4.66-1~deb13u2`
-- `apache2-data=2.4.66-1~deb13u2`
-- `apache2-utils=2.4.66-1~deb13u2`
+- `apache2=2.4.67-1~deb13u2`
+- `apache2-bin=2.4.67-1~deb13u2`
+- `apache2-data=2.4.67-1~deb13u2`
+- `apache2-utils=2.4.67-1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apache2-bin/copyright`, `/usr/share/doc/apache2-data/copyright`, `/usr/share/doc/apache2-utils/copyright`)
 
@@ -131,18 +131,18 @@ Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apac
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apache2=2.4.66-1~deb13u2
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.66-1%7edeb13u2.dsc' apache2_2.4.66-1~deb13u2.dsc 3526 SHA256:e99df9a2ad1115f3c9255d92439a072b6fff0266cbedeeead692e3f2c1ec70a4
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.66.orig.tar.gz' apache2_2.4.66.orig.tar.gz 9828043 SHA256:442184763b60936471b88a91275f79d2407733b7aac27e345f270e8bc31c3d49
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.66.orig.tar.gz.asc' apache2_2.4.66.orig.tar.gz.asc 833 SHA256:d39cdcb8d723e3c5bd4edc1e248d52c4fd352fb10eeda91cae973b12325605bc
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.66-1%7edeb13u2.debian.tar.xz' apache2_2.4.66-1~deb13u2.debian.tar.xz 830724 SHA256:60a843160b41848d47c9cd25cfd3d043e41ec357eb9b6e5ff29941f073334298
+$ apt-get source -qq --print-uris apache2=2.4.67-1~deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.67-1%7edeb13u2.dsc' apache2_2.4.67-1~deb13u2.dsc 3526 SHA256:d12186d4b2c632f8c2c789a0832469099e1f17e8d94312e61c585fc7ade2f573
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.67.orig.tar.gz' apache2_2.4.67.orig.tar.gz 9714011 SHA256:10a578d199c3930250534fac629995f34ef7571709a7c88c45239e1fdc88cf77
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.67.orig.tar.gz.asc' apache2_2.4.67.orig.tar.gz.asc 870 SHA256:d8a6e18c2f892aa901121d14852717bddf42e430b0f48f853a4effce7b89f348
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.67-1%7edeb13u2.debian.tar.xz' apache2_2.4.67-1~deb13u2.debian.tar.xz 827744 SHA256:7dfc781d8b04d9c4663bb72a919ab636d0b84d3b3143df9cb0c23985d535fc47
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apache2/2.4.66-1~deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/apache2/2.4.66-1~deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apache2/2.4.66-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apache2/2.4.67-1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/apache2/2.4.67-1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apache2/2.4.67-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.3-3`
 
@@ -2537,11 +2537,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.74-2`
+### `dpkg` source package: `linux=6.12.86-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.74-2`
+- `linux-libc-dev=6.12.86-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2555,17 +2555,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.74-2
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.74-2.dsc' linux_6.12.74-2.dsc 292516 SHA256:a7f32f062d9285c776112af5c8fa90a3f745a3429ede7115867f3e89eb95f8e6
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.74.orig.tar.xz' linux_6.12.74.orig.tar.xz 151185392 SHA256:b12440d62ef47193c3c8ae5b8dbb76cfcd1084bbb54d6c64a485aed07ecec708
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.74-2.debian.tar.xz' linux_6.12.74-2.debian.tar.xz 1783784 SHA256:0c62402e33df8569a56f7cab7c376eb359ba1f0062872af816d3634a29277f9e
+$ apt-get source -qq --print-uris linux=6.12.86-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.86-1.dsc' linux_6.12.86-1.dsc 288306 SHA256:fc5315f4946bc6749aa0bf1df9bf0901b3fe0344876e1e08e0bdf67556aeb106
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.86.orig.tar.xz' linux_6.12.86.orig.tar.xz 151247248 SHA256:74ae12a1a62311e096d05a0b006c8447d9007809b0b7604a643293914871982b
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.86-1.debian.tar.xz' linux_6.12.86-1.debian.tar.xz 1812972 SHA256:81d68f571ad15a2d4697a6552f2d8ac16b0b6942e453138a8ec58cc927d3673e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.74-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.74-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.74-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.86-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.86-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.86-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lua5.4=5.4.7-1`
 

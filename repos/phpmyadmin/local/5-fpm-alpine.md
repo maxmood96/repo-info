@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:730b67034e23e4f6ea401817bbe0b5e47e2d15846b6ce8d0aad207908372960c`
-- Created: `2026-04-15T21:19:55.048592156Z`
-- Virtual Size: ~ 165.23 Mb  
+- Image ID: `sha256:feacc8eb69aaafc1800c2f3dc2b69c655b6884ba717a6da2dbe6be5c64ac4410`
+- Created: `2026-05-07T17:14:26.991332359Z`
+- Virtual Size: ~ 165.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.30`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.30.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.30.tar.xz.asc`
-  - `PHP_SHA256=67f084d36852daab6809561a7c8023d130ca07fc6af8fb040684dd1414934d48`
+  - `PHP_VERSION=8.3.31`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.31.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.31.tar.xz.asc`
+  - `PHP_SHA256=66410cee07f4b2baeb0843140bb2a2b52ef930b5cf9b3d6e6d158b33aae8fa37`
   - `UPLOAD_PROGRESS_EXT_URL=https://github.com/php/pecl-php-uploadprogress/archive/refs/tags/uploadprogress-2.0.2.tar.gz`
   - `UPLOAD_PROGRESS_SHA256=fe3f6cdfcedad563c970c4fd1cda31e422cfc0df5cc9a217d8c80ed3c8d137f5`
   - `PMA_SSL_DIR=/etc/phpmyadmin/ssl`
@@ -473,16 +473,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.12-r0 description:
+gnutls-3.8.13-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.12-r0 webpage:
+gnutls-3.8.13-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.12-r0 installed size:
-1920 KiB
+gnutls-3.8.13-r0 installed size:
+2012 KiB
 
-gnutls-3.8.12-r0 license:
+gnutls-3.8.13-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1153,16 +1153,16 @@ MIT
 ### `apk` package: `libxpm`
 
 ```console
-libxpm-3.5.17-r0 description:
+libxpm-3.5.19-r0 description:
 X11 pixmap library
 
-libxpm-3.5.17-r0 webpage:
+libxpm-3.5.19-r0 webpage:
 https://xorg.freedesktop.org/
 
-libxpm-3.5.17-r0 installed size:
+libxpm-3.5.19-r0 installed size:
 106 KiB
 
-libxpm-3.5.17-r0 license:
+libxpm-3.5.19-r0 license:
 X11
 
 ```
@@ -1272,16 +1272,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.68.0-r0 description:
+nghttp2-libs-1.69.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.68.0-r0 webpage:
+nghttp2-libs-1.69.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.68.0-r0 installed size:
+nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.68.0-r0 license:
+nghttp2-libs-1.69.0-r0 license:
 MIT
 
 ```
@@ -1476,16 +1476,16 @@ GPL-3.0-or-later
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026a-r0 description:
+tzdata-2026b-r0 description:
 Timezone data
 
-tzdata-2026a-r0 webpage:
+tzdata-2026b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026a-r0 installed size:
+tzdata-2026b-r0 installed size:
 436 KiB
 
-tzdata-2026a-r0 license:
+tzdata-2026b-r0 license:
 Public-Domain
 
 ```
@@ -1493,16 +1493,16 @@ Public-Domain
 ### `apk` package: `xz`
 
 ```console
-xz-5.8.2-r0 description:
+xz-5.8.3-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.8.2-r0 webpage:
+xz-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
-xz-5.8.2-r0 installed size:
+xz-5.8.3-r0 installed size:
 162 KiB
 
-xz-5.8.2-r0 license:
+xz-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -1510,16 +1510,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.2-r0 description:
+xz-libs-5.8.3-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.2-r0 webpage:
+xz-libs-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.2-r0 installed size:
+xz-libs-5.8.3-r0 installed size:
 221 KiB
 
-xz-libs-5.8.2-r0 license:
+xz-libs-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
