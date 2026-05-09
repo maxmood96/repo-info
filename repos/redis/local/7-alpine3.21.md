@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f16dc869bf201a80a8e2106317fe3d7d39396cdb5bc9465a81025a2c3b89cd1`
-- Created: `2026-05-05T17:56:31.950856009Z`
+- Image ID: `sha256:487efc0616382465781b8fdc3d6d1db449e6fd80ae23bf48432a2da6b6929908`
+- Created: `2026-05-07T17:34:49.043581139Z`
 - Virtual Size: ~ 39.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,6 +11,7 @@
 - Command: `["redis-server"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `REDIS_VERSION=7.4.9`
 
 ## `apk` (`.apk`-based packages)
 

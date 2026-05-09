@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ba5e0c2e51b76e50ecf027799a2d3e2d957543874f76cfdec73947c1b3fa19a2`
-- Created: `2026-05-05T17:56:52.810859311Z`
+- Image ID: `sha256:70125e3902bec6b175663659b9e5770956501a04a7f2a3c0918d1744615fbc6c`
+- Created: `2026-05-08T19:35:25.717214933Z`
 - Virtual Size: ~ 112.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,6 +11,7 @@
 - Command: `["redis-server"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
+  - `REDIS_VERSION=7.4.9`
 
 ## `dpkg` (`.deb`-based packages)
 
