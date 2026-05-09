@@ -1,7 +1,7 @@
 ## `python:bookworm`
 
 ```console
-$ docker pull python@sha256:ab9db4750106e5fa461716186c32d9cbcabb92ed0087dc3cb99e9b4c4b1a30cd
+$ docker pull python@sha256:1327ba953d9f7083ac4f7cbc813ddbd963a74b082bc35254535e6fcb65c9ce90
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -570,90 +570,90 @@ $ docker pull python@sha256:d6a908a2b114687d73cea3c59bf72267d403ad33b5fe7d354db1
 ### `python:bookworm` - linux; s390x
 
 ```console
-$ docker pull python@sha256:2bf79f5333c71d29c46a94e62cb3a3a406be2bf2a37611215f8391f1501a930a
+$ docker pull python@sha256:b415cb51342ea6d6c9bdaa4c3618a4182eae5bb3f722de9fa6837b55dc213f67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **353.1 MB (353072470 bytes)**  
+-	Total Size: **353.1 MB (353114725 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fa65595d7faf7a4321846cacc7baabc005da987d96e787137b06c9812fb79b04`
+-	Image ID: `sha256:a3c4a6e4022d1d8994d5566c945c45886bdb81e5ea47470ead864d3a0f86528e`
 -	Default Command: `["python3"]`
 
 ```dockerfile
-# Tue, 21 Apr 2026 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1776729600'
-# Wed, 22 Apr 2026 02:31:48 GMT
+# Tue, 05 May 2026 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1777939200'
+# Fri, 08 May 2026 20:52:30 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 22 Apr 2026 04:20:12 GMT
+# Fri, 08 May 2026 22:33:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 22 Apr 2026 05:13:20 GMT
+# Sat, 09 May 2026 00:14:20 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 22 Apr 2026 08:58:18 GMT
+# Sat, 09 May 2026 03:28:08 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Apr 2026 08:58:18 GMT
+# Sat, 09 May 2026 03:28:08 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libbluetooth-dev 		tk-dev 		uuid-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 22 Apr 2026 08:58:18 GMT
+# Sat, 09 May 2026 03:28:08 GMT
 ENV PYTHON_VERSION=3.14.4
-# Wed, 22 Apr 2026 08:58:18 GMT
+# Sat, 09 May 2026 03:28:08 GMT
 ENV PYTHON_SHA256=d923c51303e38e249136fc1bdf3568d56ecb03214efdef48516176d3d7faaef8
-# Wed, 22 Apr 2026 09:19:06 GMT
+# Sat, 09 May 2026 03:41:47 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libzstd-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	echo "$PYTHON_SHA256 *python.tar.xz" | sha256sum -c -; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		$(test "${gnuArch%%-*}" != 'riscv64' && echo '--with-lto') 		--with-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="$(dpkg-buildflags --get CFLAGS)"; 	LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"; 	arch="$(dpkg --print-architecture)"; arch="${arch##*-}"; 	case "$arch" in 		amd64|arm64) 			EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"; 			;; 		i386) 			;; 		*) 			EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer"; 			;; 	esac; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-} -Wl,-rpath='\$\$ORIGIN/../lib'" 		python 	; 	make install; 		bin="$(readlink -ve /usr/local/bin/python3)"; 	dir="$(dirname "$bin")"; 	mkdir -p "/usr/share/gdb/auto-load/$dir"; 	cp -vL Tools/gdb/libpython.py "/usr/share/gdb/auto-load/$bin-gdb.py"; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		export PYTHONDONTWRITEBYTECODE=1; 	python3 --version; 	pip3 --version # buildkit
-# Wed, 22 Apr 2026 09:19:06 GMT
+# Sat, 09 May 2026 03:41:48 GMT
 RUN set -eux; 	for src in idle3 pip3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
-# Wed, 22 Apr 2026 09:19:06 GMT
+# Sat, 09 May 2026 03:41:48 GMT
 CMD ["python3"]
 ```
 
 -	Layers:
-	-	`sha256:65a8acd2327b0f3316fe8707ebd5c99b15e79306d4eca71f3e635588795ae2bb`  
-		Last Modified: Wed, 22 Apr 2026 00:15:31 GMT  
-		Size: 47.1 MB (47147970 bytes)  
+	-	`sha256:124dbe049873037f973f01d877ec004bf4cd3ce5723d0b8f2067c58ad98137d6`  
+		Last Modified: Fri, 08 May 2026 18:27:29 GMT  
+		Size: 47.1 MB (47148023 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac385f32c2d6e9209dd9f8ada378863aba00921ac3815f399e84f802ea5ce36e`  
-		Last Modified: Wed, 22 Apr 2026 02:32:03 GMT  
-		Size: 24.0 MB (24036363 bytes)  
+	-	`sha256:84ff8edb12d0e4a9c32ee4c3e2a16590b1236e70a297fedfff3debbb7297bb6e`  
+		Last Modified: Fri, 08 May 2026 20:52:47 GMT  
+		Size: 24.0 MB (24036421 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8df5494ce4223646f47cc2e95923748571f15dc98fdcd0c46696a358fa2128f`  
-		Last Modified: Wed, 22 Apr 2026 04:20:41 GMT  
-		Size: 63.5 MB (63500148 bytes)  
+	-	`sha256:1e8415cd4e27961a67eff09b7f658209a310ebce2d9bf3e1cf2773aa7e405d5e`  
+		Last Modified: Fri, 08 May 2026 22:33:37 GMT  
+		Size: 63.5 MB (63500120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f897cf0b1d07756a3ff6dc04beacb6e6510a8778c56dc69d1a9dd01701400550`  
-		Last Modified: Wed, 22 Apr 2026 05:14:17 GMT  
-		Size: 183.6 MB (183571818 bytes)  
+	-	`sha256:c973d71f8536024e529789a22bf066132812f13bad4854487264ff3c8974489b`  
+		Last Modified: Sat, 09 May 2026 00:15:11 GMT  
+		Size: 183.6 MB (183613180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26d4a3ff52092ab6a3496bef7a30eaf696837e56762d6d9d235aaec2f9e6316d`  
-		Last Modified: Wed, 22 Apr 2026 09:16:00 GMT  
-		Size: 6.1 MB (6071012 bytes)  
+	-	`sha256:e602cdf0c3041904c4b125f1086bc48917741b1fff7eb9aa386c4f9cb4b4ef54`  
+		Last Modified: Sat, 09 May 2026 03:42:19 GMT  
+		Size: 6.1 MB (6070966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60575daffaa82bfca8157711a98cda7bd4f842fb83102f317792e10f3316cf3f`  
-		Last Modified: Wed, 22 Apr 2026 09:19:40 GMT  
-		Size: 28.7 MB (28744910 bytes)  
+	-	`sha256:d0be3d950c504b1d0211e9286b1d70ffabc690ecb9a5161717ec1e12af93719a`  
+		Last Modified: Sat, 09 May 2026 03:42:19 GMT  
+		Size: 28.7 MB (28745764 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bafb57da485f61187cbf711ee84d486a48319d19013786712350b8a1081b2e0c`  
-		Last Modified: Wed, 22 Apr 2026 09:19:40 GMT  
-		Size: 249.0 B  
+	-	`sha256:244179bc61dc9f82095b3bf3a1679a80b497e62780683977dc8f9439bff1a335`  
+		Last Modified: Sat, 09 May 2026 03:42:19 GMT  
+		Size: 251.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `python:bookworm` - unknown; unknown
 
 ```console
-$ docker pull python@sha256:ec2640a0ae65622f293abf00c445aac3e5606f5494c8886e4834c750b4f6434c
+$ docker pull python@sha256:a1da60e39497774b1252ba6cb70b40bc963e2b18f81356327e2f13cba7dffcdc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **16.2 MB (16196115 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1210367f42760c7c1b5b5ae7cd8926c6a2d8f7f906f38d0cd55cd293ba9705c0`
+-	Image ID: `sha256:42145ba75a1954062d080b152019fd72fe3709ab2272db134430a13e7ea23706`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f2546927d9a545bfd266df7e43f620ddb61e738a092901a171b139151f3eee2f`  
-		Last Modified: Wed, 22 Apr 2026 09:19:40 GMT  
+	-	`sha256:9042620a363aa589a1df40902d57b341fd05f30a864c0275630f0f1090257393`  
+		Last Modified: Sat, 09 May 2026 03:42:19 GMT  
 		Size: 16.2 MB (16172352 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ddbb52569db0aba688afc65417e3cc80ec548f7d5fb418d68ba485a3d16d8678`  
-		Last Modified: Wed, 22 Apr 2026 09:19:40 GMT  
+	-	`sha256:0285d871f99f4bfe992e11665f5d477131c036a8ef67a50f4708dce5e7d43ca1`  
+		Last Modified: Sat, 09 May 2026 03:42:19 GMT  
 		Size: 23.8 KB (23763 bytes)  
 		MIME: application/vnd.in-toto+json
