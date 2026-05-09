@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bb41b25257d6880d13c6f7a91beef077f7d12960ed08dbf4d107d6e8c451e29f`
-- Created: `2026-04-15T21:23:31.610154132Z`
-- Virtual Size: ~ 96.91 Mb  
+- Image ID: `sha256:221779179a996af6f2e170ba0ce9f517a7a3e309e1bf33691ee0772e03341d98`
+- Created: `2026-05-07T17:17:19.543710303Z`
+- Virtual Size: ~ 96.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.20`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.20.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.20.tar.xz.asc`
-  - `PHP_SHA256=e454c6f7c89a42f41ebb06dc5c3578e8c8b5f1a3f0da6675665affab04e221f7`
+  - `PHP_VERSION=8.4.21`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.21.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.21.tar.xz.asc`
+  - `PHP_SHA256=7cf5d8ab12c3b2016875bcfaec71bef1ef0b07bed6148f2c447577074431f984`
   - `ADMINER_VERSION=4.17.1`
   - `ADMINER_DOWNLOAD_SHA256=58956bc021b6b260b1a2ef32d03517f6f88f5ad4aa03ff2d0092c6f509e26d0a`
   - `ADMINER_SRC_DOWNLOAD_SHA256=6e006c514a3f189dd14ee10fa98977141a00fe79beb2a515966c98f0914cbdd0`
@@ -557,16 +557,16 @@ X11
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.68.0-r0 description:
+nghttp2-libs-1.69.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.68.0-r0 webpage:
+nghttp2-libs-1.69.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.68.0-r0 installed size:
+nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.68.0-r0 license:
+nghttp2-libs-1.69.0-r0 license:
 MIT
 
 ```
@@ -727,16 +727,16 @@ LGPL-2.0-or-later
 ### `apk` package: `xz`
 
 ```console
-xz-5.8.2-r0 description:
+xz-5.8.3-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.8.2-r0 webpage:
+xz-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
-xz-5.8.2-r0 installed size:
+xz-5.8.3-r0 installed size:
 162 KiB
 
-xz-5.8.2-r0 license:
+xz-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -744,16 +744,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.2-r0 description:
+xz-libs-5.8.3-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.2-r0 webpage:
+xz-libs-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.2-r0 installed size:
+xz-libs-5.8.3-r0 installed size:
 221 KiB
 
-xz-libs-5.8.2-r0 license:
+xz-libs-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
