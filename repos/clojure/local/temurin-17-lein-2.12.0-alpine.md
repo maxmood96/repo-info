@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:692ea4e35660b9304ad5b0c00ec320e6068ae4c0565ebba99dff5c2c3760ceb5`
-- Created: `2026-04-15T22:03:33.219116637Z`
-- Virtual Size: ~ 358.66 Mb  
+- Image ID: `sha256:ca151323272ab208bcdf0efc892c0fa06a296ddd9b9770bb479aa90d134b64ce`
+- Created: `2026-05-08T00:07:06.877377105Z`
+- Virtual Size: ~ 359.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.18+8`
+  - `JAVA_VERSION=jdk-17.0.19+10`
   - `LEIN_VERSION=2.12.0`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
@@ -824,16 +824,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026a-r0 description:
+tzdata-2026b-r0 description:
 Timezone data
 
-tzdata-2026a-r0 webpage:
+tzdata-2026b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026a-r0 installed size:
+tzdata-2026b-r0 installed size:
 436 KiB
 
-tzdata-2026a-r0 license:
+tzdata-2026b-r0 license:
 Public-Domain
 
 ```
