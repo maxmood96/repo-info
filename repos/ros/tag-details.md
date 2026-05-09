@@ -24,6 +24,13 @@
 -	[`ros:kilted-ros-core`](#roskilted-ros-core)
 -	[`ros:kilted-ros-core-noble`](#roskilted-ros-core-noble)
 -	[`ros:latest`](#roslatest)
+-	[`ros:lyrical`](#roslyrical)
+-	[`ros:lyrical-perception`](#roslyrical-perception)
+-	[`ros:lyrical-perception-resolute`](#roslyrical-perception-resolute)
+-	[`ros:lyrical-ros-base`](#roslyrical-ros-base)
+-	[`ros:lyrical-ros-base-resolute`](#roslyrical-ros-base-resolute)
+-	[`ros:lyrical-ros-core`](#roslyrical-ros-core)
+-	[`ros:lyrical-ros-core-resolute`](#roslyrical-ros-core-resolute)
 -	[`ros:rolling`](#rosrolling)
 -	[`ros:rolling-perception`](#rosrolling-perception)
 -	[`ros:rolling-perception-noble`](#rosrolling-perception-noble)
@@ -5381,6 +5388,34 @@ $ docker pull ros@sha256:2842848376e0b5ae10b35caa0c4bd0f000c55c92fa8ad83d98caa6e
 		Last Modified: Wed, 15 Apr 2026 21:59:28 GMT  
 		Size: 16.8 KB (16770 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `ros:lyrical`
+
+**does not exist** (yet?)
+
+## `ros:lyrical-perception`
+
+**does not exist** (yet?)
+
+## `ros:lyrical-perception-resolute`
+
+**does not exist** (yet?)
+
+## `ros:lyrical-ros-base`
+
+**does not exist** (yet?)
+
+## `ros:lyrical-ros-base-resolute`
+
+**does not exist** (yet?)
+
+## `ros:lyrical-ros-core`
+
+**does not exist** (yet?)
+
+## `ros:lyrical-ros-core-resolute`
+
+**does not exist** (yet?)
 
 ## `ros:rolling`
 
