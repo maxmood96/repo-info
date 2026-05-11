@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a588fb234a9ac7ef4c134538980a7c418350173a5ba5476f1aa8b1ede4050420`
-- Created: `2026-05-05T23:08:16.824479172Z`
+- Image ID: `sha256:70131ba6f80b592c164055b16d6ea2181d0e02048f4b0e5429be55df9c06096e`
+- Created: `2026-05-08T16:20:38.843503851Z`
 - Virtual Size: ~ 1.55 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -25,7 +25,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-05-04T01:27:05Z`
+  - `build-date=2026-05-06T12:56:03Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -39,12 +39,12 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.created=2026-05-04T01:27:05Z`
-  - `org.opencontainers.image.revision=dbf428e1775c5e4c4802b4c714d3b50b652d0c8a`
-  - `release=1777857961`
+  - `org.opencontainers.image.created=2026-05-06T12:56:03Z`
+  - `org.opencontainers.image.revision=8def05a6f0dfabdc25ea20a79b0d11f8f9b12c5c`
+  - `release=1778072020`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=dbf428e1775c5e4c4802b4c714d3b50b652d0c8a`
+  - `vcs-ref=8def05a6f0dfabdc25ea20a79b0d11f8f9b12c5c`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -2236,12 +2236,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): GPLv2
 
-Source:
-
-```console
-$ dnf --quiet download --source --url redhat-release-9.7-0.7.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/redhat-release-9.7-0.7.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `rootfiles-8.1-35.el9.noarch`
 

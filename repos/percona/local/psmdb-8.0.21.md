@@ -1,9 +1,9 @@
-# `percona:psmdb-8.0.20`
+# `percona:psmdb-8.0.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e0c2b4f2f3e3ab5859ca59639281462fc49f8c592101faebc04a760e80b3563`
-- Created: `2026-05-05T23:08:00.130490741Z`
+- Image ID: `sha256:d14b12434e0695b611ebc1cb72075fd1b6f956a0f23ed56c24bb481ad6da6713`
+- Created: `2026-05-08T16:20:10.173290564Z`
 - Virtual Size: ~ 1.02 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `PSMDB_VERSION=8.0.20-8`
+  - `PSMDB_VERSION=8.0.21-9`
   - `OS_VER=el9`
-  - `FULL_PERCONA_VERSION=8.0.20-8.el9`
+  - `FULL_PERCONA_VERSION=8.0.21-9.el9`
   - `K8S_TOOLS_VERSION=0.5.0`
   - `PSMDB_REPO=testing`
   - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
@@ -24,7 +24,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-05-04T01:27:05Z`
+  - `build-date=2026-05-06T12:56:03Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -38,12 +38,12 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.created=2026-05-04T01:27:05Z`
-  - `org.opencontainers.image.revision=dbf428e1775c5e4c4802b4c714d3b50b652d0c8a`
-  - `release=1777857961`
+  - `org.opencontainers.image.created=2026-05-06T12:56:03Z`
+  - `org.opencontainers.image.revision=8def05a6f0dfabdc25ea20a79b0d11f8f9b12c5c`
+  - `release=1778072020`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=dbf428e1775c5e4c4802b4c714d3b50b652d0c8a`
+  - `vcs-ref=8def05a6f0dfabdc25ea20a79b0d11f8f9b12c5c`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -1396,19 +1396,19 @@ Licenses (from `rpm --query`): GPL-3.0+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-mongos-8.0.20-8.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-mongos-8.0.21-9.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-server-8.0.20-8.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-server-8.0.21-9.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-tools-8.0.20-8.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-tools-8.0.21-9.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
@@ -1468,12 +1468,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): GPLv2
 
-Source:
-
-```console
-$ dnf --quiet download --source --url redhat-release-9.7-0.7.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/redhat-release-9.7-0.7.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `rootfiles-8.1-35.el9.noarch`
 
