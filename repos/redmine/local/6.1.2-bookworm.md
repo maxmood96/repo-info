@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4e14dfae83e26f67c2b3c04964f6d588952a3a01b42e93f05cdb22307ddcedfc`
-- Created: `2026-04-22T05:01:57.354735111Z`
-- Virtual Size: ~ 649.52 Mb  
+- Image ID: `sha256:8d26e5fd7037a39f4f371eacfaf43df41793ba13047e53280ebc9053f5c5e546`
+- Created: `2026-05-08T20:45:00.319853054Z`
+- Virtual Size: ~ 649.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -1777,15 +1777,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ijs/0.35-15/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ijs/0.35-15/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u8`
+### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u9`
 
 Binary Packages:
 
-- `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u8`
-- `imagemagick-6-common=8:6.9.11.60+dfsg-1.6+deb12u8`
-- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.6+deb12u8`
-- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u8`
-- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u8`
+- `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u9`
+- `imagemagick-6-common=8:6.9.11.60+dfsg-1.6+deb12u9`
+- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.6+deb12u9`
+- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u9`
+- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u9`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6-common/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/libmagickcore-6.q16-6/copyright`, `/usr/share/doc/libmagickwand-6.q16-6/copyright`)
 
@@ -1816,13 +1816,20 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.6+deb12u9
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u9.dsc' imagemagick_6.9.11.60+dfsg-1.6+deb12u9.dsc 5105 SHA256:5dec0ef2e65a0ec5c2a68915def537296c53a3906e6eb01c1174d6c531da749c
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA256:472fb516df842ee9c819ed80099c188463b9e961303511c36ae24d0eaa8959c4
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u9.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.6+deb12u9.debian.tar.xz 324340 SHA256:f6f3ae9f565fc3e4af376653d5b1750194d4734b12af1ca417f8303791b61b07
+```
 
-- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u8/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u9/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.65.2+deb12u1`
 
@@ -2687,20 +2694,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.39-2+deb12u4
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u4.dsc' libpng1.6_1.6.39-2+deb12u4.dsc 2273 SHA256:791697954364ff0f47ae987c8184f715c913a768d15c46e84dea0d1863e68f03
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39.orig.tar.gz' libpng1.6_1.6.39.orig.tar.gz 1519415 SHA256:a00e9d2f2f664186e4202db9299397f851aea71b36a35e74910b8820e380d441
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u4.debian.tar.xz' libpng1.6_1.6.39-2+deb12u4.debian.tar.xz 43828 SHA256:5cd2cc6e94aa3a876a1890b9ddfefb266f7a51dd644bebf0c387d3e57181d573
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpng1.6/1.6.39-2+deb12u4/
 
-- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u4/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.39-2+deb12u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1`
 
