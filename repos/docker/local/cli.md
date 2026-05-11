@@ -1,9 +1,9 @@
-# `docker:29.4.1-cli`
+# `docker:29.4.3-cli`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3b2596d6d85c20a8881389ccdca1db9b5bfdd2acbf2c9de29f2c5d68c5b7865e`
-- Created: `2026-04-20T23:18:10.818194513Z`
+- Image ID: `sha256:b84c9c005f1015809c1a270f4197d6ccbee67bf385237434b0b5cf6b0122ff5c`
+- Created: `2026-05-08T16:32:44.18573211Z`
 - Virtual Size: ~ 165.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.4.1`
+  - `DOCKER_VERSION=29.4.3`
   - `DOCKER_BUILDX_VERSION=0.33.0`
   - `DOCKER_COMPOSE_VERSION=5.1.3`
   - `DOCKER_TLS_CERTDIR=/certs`
@@ -463,16 +463,16 @@ X11
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.68.0-r0 description:
+nghttp2-libs-1.69.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.68.0-r0 webpage:
+nghttp2-libs-1.69.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.68.0-r0 installed size:
+nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.68.0-r0 license:
+nghttp2-libs-1.69.0-r0 license:
 MIT
 
 ```
