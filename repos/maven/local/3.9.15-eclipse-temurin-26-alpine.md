@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7219fc9aab37a7c5a91272f2e8415a2a817ffa591a19f8580f1b5b7861e6b529`
-- Created: `2026-04-21T18:11:10.320491367Z`
+- Image ID: `sha256:12b08b0a76a705911064fdbbe0143e86b098e2b53dce116c656bf82c55442af8`
+- Created: `2026-05-08T00:29:08.071006402Z`
 - Virtual Size: ~ 330.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -879,16 +879,16 @@ X11
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.68.0-r0 description:
+nghttp2-libs-1.69.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.68.0-r0 webpage:
+nghttp2-libs-1.69.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.68.0-r0 installed size:
+nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.68.0-r0 license:
+nghttp2-libs-1.69.0-r0 license:
 MIT
 
 ```
