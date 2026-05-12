@@ -1,10 +1,10 @@
-# `gradle:8.14.4-jdk11`
+# `gradle:8.14.5-jdk11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:23d395b4011295ce8405cbe78964ec22d25dccefe1aeec078aecc52b5a054e2a`
-- Created: `2026-04-29T23:11:32.306624017Z`
-- Virtual Size: ~ 709.49 Mb  
+- Image ID: `sha256:2c588283eb4a5f5901470ae33ece2eb9593bd92de77caed546d4a645fd3a0251`
+- Created: `2026-05-08T17:47:49.091513425Z`
+- Virtual Size: ~ 711.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.31+11`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.14.4`
+  - `GRADLE_VERSION=8.14.5`
 - Labels:
   - `org.opencontainers.image.version=22.04`
 
@@ -361,13 +361,13 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.3
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.3.dsc' coreutils_8.32-4.1ubuntu1.3.dsc 2027 SHA256:26959de3887a535d7929e5f3ac18eab6eaba5f221cdcf3b4cf7b43c68d32f92b
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.23`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.24`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.23`
-- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.23`
-- `libcurl4:amd64=7.81.0-1ubuntu1.23`
+- `curl=7.81.0-1ubuntu1.24`
+- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.24`
+- `libcurl4:amd64=7.81.0-1ubuntu1.24`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -378,9 +378,15 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.24
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.24.debian.tar.xz' curl_7.81.0-1ubuntu1.24.debian.tar.xz 94252 SHA512:d5fd71580f1a2a4b56cf992df3d5e47b0a15b32c0e4f4961f2e79c83e18e338cea68d3d8567d273a3a31e4fa5e39089334f59af90194182c20fec101fef16b8b
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.24.dsc' curl_7.81.0-1ubuntu1.24.dsc 3143 SHA512:74fc1db520f8e9c89d7cefbfa3675775f0ea2976c7d80e4501c9a073a3fa5194af07120e231d47e540fb5952feedb77404bca14de91c661dbada00ef0871e80c
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 

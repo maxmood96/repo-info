@@ -1,10 +1,10 @@
-# `gradle:8.14.4-jdk21-alpine`
+# `gradle:8.14.5-jdk21-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f48371b953a8c27ecb52aa6e7e2e742e8de87a9b35671e118985c14cc7459917`
-- Created: `2026-05-08T00:13:35.278845829Z`
-- Virtual Size: ~ 631.82 Mb  
+- Image ID: `sha256:9ff4bb764387e75f8ec59dec7126436b3b96ec406c9966f753e6eac5481d4f07`
+- Created: `2026-05-08T17:46:42.988289993Z`
+- Virtual Size: ~ 633.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.11+10`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.14.4`
+  - `GRADLE_VERSION=8.14.5`
 
 ## `apk` (`.apk`-based packages)
 
@@ -2061,6 +2061,23 @@ Apache-2.0 AND BSD-2-Clause
 
 ```
 
+### `apk` package: `tar`
+
+```console
+tar-1.35-r4 description:
+Utility used to store, backup, and transport files
+
+tar-1.35-r4 webpage:
+https://www.gnu.org/software/tar/
+
+tar-1.35-r4 installed size:
+399 KiB
+
+tar-1.35-r4 license:
+GPL-3.0-or-later
+
+```
+
 ### `apk` package: `tzdata`
 
 ```console
@@ -2092,6 +2109,23 @@ utmps-libs-0.1.3.1-r0 installed size:
 
 utmps-libs-0.1.3.1-r0 license:
 ISC
+
+```
+
+### `apk` package: `wget`
+
+```console
+wget-1.25.0-r2 description:
+Network utility to retrieve files from the Web
+
+wget-1.25.0-r2 webpage:
+https://www.gnu.org/software/wget/wget.html
+
+wget-1.25.0-r2 installed size:
+407 KiB
+
+wget-1.25.0-r2 license:
+GPL-3.0-or-later WITH OpenSSL-Exception
 
 ```
 

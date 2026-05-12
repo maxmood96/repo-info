@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a03b9b3d41cb6548f9c2683d43d0459af6bea932638db69a0c3656c1c1297ea7`
-- Created: `2026-05-06T00:12:32.563755147Z`
-- Virtual Size: ~ 707.86 Mb  
+- Image ID: `sha256:63e1c504176eea5db26b6cad39676ce0018c769c170c0c926f10b46783a38f80`
+- Created: `2026-05-12T00:19:19.783134924Z`
+- Virtual Size: ~ 707.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -21,7 +21,7 @@
   - `GRADLE_VERSION=7.6.6`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-05-04T01:27:05Z`
+  - `build-date=2026-05-11T01:07:39Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -34,12 +34,12 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
-  - `org.opencontainers.image.created=2026-05-04T01:27:05Z`
-  - `org.opencontainers.image.revision=dbf428e1775c5e4c4802b4c714d3b50b652d0c8a`
-  - `release=1777857961`
+  - `org.opencontainers.image.created=2026-05-11T01:07:39Z`
+  - `org.opencontainers.image.revision=15c06b7b1c40ffa5f97dc04e88d2d76dc1a15bc1`
+  - `release=1778461551`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=dbf428e1775c5e4c4802b4c714d3b50b652d0c8a`
+  - `vcs-ref=15c06b7b1c40ffa5f97dc04e88d2d76dc1a15bc1`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -497,22 +497,22 @@ $ dnf --quiet download --source --url git-core-doc-2.47.3-1.el9_6.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-2.47.3-1.el9_6.src.rpm
 ```
 
-### `rpm` package: `git-lfs-3.6.1-8.el9_7.x86_64`
+### `rpm` package: `git-lfs-3.6.1-8.el9_7.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url git-lfs-3.6.1-8.el9_7.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/g/git-lfs-3.6.1-8.el9_7.1.src.rpm
+```
 
 ### `rpm` package: `glib2-2.68.4-18.el9_7.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url glib2-2.68.4-18.el9_7.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-18.el9_7.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `glibc-2.34-231.el9_7.10.x86_64`
 
@@ -1087,11 +1087,16 @@ $ dnf --quiet download --source --url libpeas-1.30.0-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libpeas-1.30.0-4.el9.src.rpm
 ```
 
-### `rpm` package: `libpng-1.6.37-12.el9_7.2.x86_64`
+### `rpm` package: `libpng-1.6.37-12.el9_7.3.x86_64`
 
 Licenses (from `rpm --query`): zlib
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libpng-1.6.37-12.el9_7.3
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libpng-1.6.37-12.el9_7.3.src.rpm
+```
 
 ### `rpm` package: `libpsl-0.21.1-5.el9.x86_64`
 
@@ -2347,11 +2352,16 @@ $ dnf --quiet download --source --url readline-8.1-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/readline-8.1-4.el9.src.rpm
 ```
 
-### `rpm` package: `redhat-release-9.7-0.7.el9.x86_64`
+### `rpm` package: `redhat-release-9.7-0.10.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url redhat-release-9.7-0.10.el9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/redhat-release-9.7-0.10.el9.src.rpm
+```
 
 ### `rpm` package: `rootfiles-8.1-35.el9.noarch`
 
