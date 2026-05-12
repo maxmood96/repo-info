@@ -1,17 +1,17 @@
-# `python:3.14.4-alpine3.23`
+# `python:3.14.5-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6fd6468aeb25b2aec5ed461a3d0fd207026cbf3c00687f61656599e3a8437b15`
-- Created: `2026-04-15T20:49:28.682252442Z`
-- Virtual Size: ~ 47.52 Mb  
+- Image ID: `sha256:c3e9c8eaf03737ce78f0e860d4bbf142e6eebebd56244d01b276aebf50d059fe`
+- Created: `2026-05-11T23:09:35.454585782Z`
+- Virtual Size: ~ 47.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `PYTHON_VERSION=3.14.4`
-  - `PYTHON_SHA256=d923c51303e38e249136fc1bdf3568d56ecb03214efdef48516176d3d7faaef8`
+  - `PYTHON_VERSION=3.14.5`
+  - `PYTHON_SHA256=7e32597b99e5d9a39abed35de4693fa169df3e5850d4c334337ffd6a19a36db6`
 
 ## `apk` (`.apk`-based packages)
 
@@ -443,16 +443,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026a-r0 description:
+tzdata-2026b-r0 description:
 Timezone data
 
-tzdata-2026a-r0 webpage:
+tzdata-2026b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026a-r0 installed size:
+tzdata-2026b-r0 installed size:
 436 KiB
 
-tzdata-2026a-r0 license:
+tzdata-2026b-r0 license:
 Public-Domain
 
 ```
@@ -460,16 +460,16 @@ Public-Domain
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.2-r0 description:
+xz-libs-5.8.3-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.2-r0 webpage:
+xz-libs-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.2-r0 installed size:
+xz-libs-5.8.3-r0 installed size:
 221 KiB
 
-xz-libs-5.8.2-r0 license:
+xz-libs-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
