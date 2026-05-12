@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4579b184b381596f080666f61effd13b8bfff5b4c31678cd0cfc296be40dd0f4`
-- Created: `2026-05-01T00:17:08.146372395Z`
-- Virtual Size: ~ 637.78 Mb  
+- Image ID: `sha256:77f15d915d2f6f5f4e5bfe932e1b527d3781e1f9b216a5fca8f4483084722f38`
+- Created: `2026-05-11T23:28:50.878511732Z`
+- Virtual Size: ~ 638.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -20,8 +20,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.117`
-  - `TOMCAT_SHA512=82b15278a7bfa2685c80e07963c43246df4fd742d574b608a68f5ce67c6ffde0eff3e224cc9809925cc6bf7002a190c3bf420f50c0e4052467d3e665efc84a54`
+  - `TOMCAT_VERSION=9.0.118`
+  - `TOMCAT_SHA512=737367433486757ccd687329d99b1188506cdec57a53a29b415173909c38cdf9da4fc9fd73b8cd17cd0a8def8610ad43bab8e84393dc904a0bd1121da8cab2fc`
   - `SWT_GTK3=0`
   - `CONVERTIGO_VERSION=8.4.2`
   - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.4.2/convertigo-8.4.2.war`
@@ -382,12 +382,12 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.2.dsc' coreutils_9.4-3ubuntu6.2.dsc 2030 SHA256:a16ffb435f38507bea51474f5e40a26e4c8191d2190da8770e8e4726c18e37ba
 ```
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.8`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.9`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.8`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.8`
+- `curl=8.5.0-2ubuntu10.9`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.9`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -404,9 +404,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.9
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.9.debian.tar.xz' curl_8.5.0-2ubuntu10.9.debian.tar.xz 76576 SHA512:e2758617da044745e488a26b65c245e236d02442486dc20bb281b0fd8eb3258d736b339caac26b1584a30235b321f58b4f88827dfc659be5559ef5da3703016d
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.9.dsc' curl_8.5.0-2ubuntu10.9.dsc 3051 SHA512:0c23074297e3c67ac1ecabd4598036fbee147d8b336c8cb9c787a350567d1f0320b0f93e5c4bca4a9153221604bf5f7598b5329f075da015feb710f79aca6e29
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
 
@@ -571,11 +576,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.10-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.10-1build1.debian.tar.xz' diffutils_3.10-1build1.debian.tar.xz 14068 SHA512:36cb15f987cfd57dbe5bfe347a990887ffe52f8ba3756c4f806e78ba702d2b1acc2f316292bf1096a1a7db158358b4cd6261cabe70a77fd292945e07d5808cb5
 ```
 
-### `dpkg` source package: `dpkg=1.22.6ubuntu6.5`
+### `dpkg` source package: `dpkg=1.22.6ubuntu6.6`
 
 Binary Packages:
 
-- `dpkg=1.22.6ubuntu6.5`
+- `dpkg=1.22.6ubuntu6.6`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -583,9 +588,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris dpkg=1.22.6ubuntu6.6
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.6.tar.xz' dpkg_1.22.6ubuntu6.6.tar.xz 5548716 SHA512:e934e50a46a65b015982ad69dc4eca8bd514fbbd48aeeb5a84a66ab93c1e64b6d4d9429d08c2d8097ba0a3e96e27c205ab2142bb6e33659c96e32bdee477b6c3
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.6.dsc' dpkg_1.22.6ubuntu6.6.dsc 3156 SHA512:99f857ee029f720f79414a3ae85d857d06f30f57ff6ce259710a33d1de2a02d9398e511af46b689d4b9819b4c3f76d877d50d8da961fb7b6b9ecae621d1c562c
+```
 
 ### `dpkg` source package: `e2fsprogs=1.47.0-2.4~exp1ubuntu4.1`
 
@@ -1502,11 +1511,11 @@ $ apt-get source -qq --print-uris nettle=3.9.1-2.2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.9.1-2.2build1.1.dsc' nettle_3.9.1-2.2build1.1.dsc 2325 SHA256:db439554d51174b657660a2a47d3d4128838e063f3c9c7da67bb3fe91931d1d2
 ```
 
-### `dpkg` source package: `nghttp2=1.59.0-1ubuntu0.2`
+### `dpkg` source package: `nghttp2=1.59.0-1ubuntu0.3`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.59.0-1ubuntu0.2`
+- `libnghttp2-14:amd64=1.59.0-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -1517,9 +1526,14 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nghttp2=1.59.0-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.59.0.orig.tar.gz' nghttp2_1.59.0.orig.tar.gz 1055492 SHA512:bcb53ff45afae003f11a9feaa21dd80a3abfcde9b3a7fd1f04fc4382d71b5d4430e2d015765a7ae8d68454fcf06e4560c4cb585133aefb237d6ea526f61a8ebd
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.59.0-1ubuntu0.3.debian.tar.xz' nghttp2_1.59.0-1ubuntu0.3.debian.tar.xz 16364 SHA512:39fba28ed20aaf596fa199332afdd1bafe7de6f9da882cb0da781f9873bf6e86aa0cc66473182838918e48efeff9bf8ea48ea88df8d64fafbfdf15e160fe606c
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.59.0-1ubuntu0.3.dsc' nghttp2_1.59.0-1ubuntu0.3.dsc 2669 SHA512:13a4071d87fe9679a1b0502accf220b0cec3b5a6c3e3c95e0d8aaa2843fd11dcc88dd0e16a0e667478a7a0b9ac8484a1110135a158ef75e4354bb18fb1518637
+```
 
 ### `dpkg` source package: `npth=1.6-3.1build1`
 
