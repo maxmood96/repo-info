@@ -1,10 +1,10 @@
-# `wordpress:beta-7.0-RC2-apache`
+# `wordpress:beta-7.0-RC3-php8.2-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ee9ce4cdbe914867f62e8dd6c431d53c5793cf2c100232bd6e7b219967aec782`
-- Created: `2026-05-07T17:17:19.245276236Z`
-- Virtual Size: ~ 761.57 Mb  
+- Image ID: `sha256:e6caefd0d1461425e0d9b5e3c8ccb981990e86de3715af774eef29b6cbb5404a`
+- Created: `2026-05-09T01:17:25.046469046Z`
+- Virtual Size: ~ 758.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -18,11 +18,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.31`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.31.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.31.tar.xz.asc`
-  - `PHP_SHA256=66410cee07f4b2baeb0843140bb2a2b52ef930b5cf9b3d6e6d158b33aae8fa37`
+  - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
+  - `PHP_VERSION=8.2.31`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.31.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.31.tar.xz.asc`
+  - `PHP_SHA256=95eae411d594fe6f6e5678b76645dc13ae47d3c0a5325c1d969b58dea56ee45a`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2672,20 +2672,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.48-1+deb13u4
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u4.dsc' libpng1.6_1.6.48-1+deb13u4.dsc 2286 SHA256:b220c572561d36d334d755c189390fde61291d833828761d82454b512b2d61bc
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48.orig.tar.gz' libpng1.6_1.6.48.orig.tar.gz 1572923 SHA256:b17e99026055727e8cba99160c3a9a7f9af788e9f786daeadded5a42243f1dd0
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u4.debian.tar.xz' libpng1.6_1.6.48-1+deb13u4.debian.tar.xz 46420 SHA256:dd9b025d82ba032d544ba56e301b05601f20104e7d36fcb2006082b104b50a3c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpng1.6/1.6.48-1+deb13u4/
 
-- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u4/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.48-1+deb13u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -3365,11 +3358,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.85-1`
+### `dpkg` source package: `linux=6.12.86-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.85-1`
+- `linux-libc-dev=6.12.86-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3383,17 +3376,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.85-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.85-1.dsc' linux_6.12.85-1.dsc 288306 SHA256:e7ae8f2035318e1ba23524842378d0b9b4a42bf96391e81dc8da1b3e7307d595
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.85.orig.tar.xz' linux_6.12.85.orig.tar.xz 151249536 SHA256:73804f04cf5be865389d4d13bdae06a87b2e6675f0ff31e93804e20d091736e2
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.85-1.debian.tar.xz' linux_6.12.85-1.debian.tar.xz 1806504 SHA256:ba2d2e1f8df6583992565aa5ca1db95c1af06da765fae440e1f86d6f12c61e89
+$ apt-get source -qq --print-uris linux=6.12.86-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.86-1.dsc' linux_6.12.86-1.dsc 288306 SHA256:fc5315f4946bc6749aa0bf1df9bf0901b3fe0344876e1e08e0bdf67556aeb106
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.86.orig.tar.xz' linux_6.12.86.orig.tar.xz 151247248 SHA256:74ae12a1a62311e096d05a0b006c8447d9007809b0b7604a643293914871982b
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.86-1.debian.tar.xz' linux_6.12.86-1.debian.tar.xz 1812972 SHA256:81d68f571ad15a2d4697a6552f2d8ac16b0b6942e453138a8ec58cc927d3673e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.85-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.85-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.85-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.86-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.86-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.86-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lua5.4=5.4.7-1`
 
