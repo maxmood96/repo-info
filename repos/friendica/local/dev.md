@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:81803aa023a296bcf4a1fd7bd80bf167b697debb6ee597397afe588cd2809219`
-- Created: `2026-05-07T17:23:58.195883251Z`
-- Virtual Size: ~ 701.52 Mb  
+- Image ID: `sha256:ec1bee13ca8f73f114abf6786b4daff7760b5828c79b0e50becd917e205e66a7`
+- Created: `2026-05-12T17:48:25.511238618Z`
+- Virtual Size: ~ 701.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -1936,11 +1936,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/krb5/1.21.3-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/krb5/1.21.3-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `lcms2=2.16-2`
+### `dpkg` source package: `lcms2=2.16-2+deb13u2`
 
 Binary Packages:
 
-- `liblcms2-2:amd64=2.16-2`
+- `liblcms2-2:amd64=2.16-2+deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 
@@ -1953,17 +1953,17 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris lcms2=2.16-2
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.16-2.dsc' lcms2_2.16-2.dsc 1972 SHA256:3e5796b630090628b5a5662f002d4a9909592963626514241dd201e45e7b1d1c
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.16.orig.tar.gz' lcms2_2.16.orig.tar.gz 7632822 SHA256:d873d34ad8b9b4cea010631f1a6228d2087475e4dc5e763eb81acc23d9d45a51
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.16-2.debian.tar.xz' lcms2_2.16-2.debian.tar.xz 11908 SHA256:5475f5d85514c3004a33a2c103a01a7f6a8ed4fcb41d53518d098fb927b4f916
+$ apt-get source -qq --print-uris lcms2=2.16-2+deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/l/lcms2/lcms2_2.16-2%2bdeb13u2.dsc' lcms2_2.16-2+deb13u2.dsc 2004 SHA256:8ff22453843eed5ef7bfb76b4cb2cfe490613337cb197141db658e5195ead9fc
+'http://deb.debian.org/debian-security/pool/updates/main/l/lcms2/lcms2_2.16.orig.tar.gz' lcms2_2.16.orig.tar.gz 7632822 SHA256:d873d34ad8b9b4cea010631f1a6228d2087475e4dc5e763eb81acc23d9d45a51
+'http://deb.debian.org/debian-security/pool/updates/main/l/lcms2/lcms2_2.16-2%2bdeb13u2.debian.tar.xz' lcms2_2.16-2+deb13u2.debian.tar.xz 12744 SHA256:bb72de5dc4164e1023a6d124c57789b6abee866d3b76c878d0771b86fb720de9
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/lcms2/2.16-2/ (for browsing the source)
-- https://sources.debian.net/src/lcms2/2.16-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lcms2/2.16-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/lcms2/2.16-2+deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/lcms2/2.16-2+deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/lcms2/2.16-2+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lerc=4.0.0+ds-5`
 
@@ -2610,11 +2610,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libonig/6.9.9-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libonig/6.9.9-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libpng1.6=1.6.48-1+deb13u4`
+### `dpkg` source package: `libpng1.6=1.6.48-1+deb13u5`
 
 Binary Packages:
 
-- `libpng16-16t64:amd64=1.6.48-1+deb13u4`
+- `libpng16-16t64:amd64=1.6.48-1+deb13u5`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 
@@ -2630,17 +2630,17 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.48-1+deb13u4
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u4.dsc' libpng1.6_1.6.48-1+deb13u4.dsc 2286 SHA256:b220c572561d36d334d755c189390fde61291d833828761d82454b512b2d61bc
+$ apt-get source -qq --print-uris libpng1.6=1.6.48-1+deb13u5
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u5.dsc' libpng1.6_1.6.48-1+deb13u5.dsc 2305 SHA256:746ec351ac044becb16725b903aee2c53815da9f89630767b6edbb317a50f98e
 'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48.orig.tar.gz' libpng1.6_1.6.48.orig.tar.gz 1572923 SHA256:b17e99026055727e8cba99160c3a9a7f9af788e9f786daeadded5a42243f1dd0
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u4.debian.tar.xz' libpng1.6_1.6.48-1+deb13u4.debian.tar.xz 46420 SHA256:dd9b025d82ba032d544ba56e301b05601f20104e7d36fcb2006082b104b50a3c
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u5.debian.tar.xz' libpng1.6_1.6.48-1+deb13u5.debian.tar.xz 52468 SHA256:b38d5929b9a6139f2ce02a0e831d0f3f5365410b050dc429ea079a73253fe97a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u4/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.48-1+deb13u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u5/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.48-1+deb13u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -3328,11 +3328,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.85-1`
+### `dpkg` source package: `linux=6.12.86-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.85-1`
+- `linux-libc-dev=6.12.86-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3346,17 +3346,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.85-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.85-1.dsc' linux_6.12.85-1.dsc 288306 SHA256:e7ae8f2035318e1ba23524842378d0b9b4a42bf96391e81dc8da1b3e7307d595
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.85.orig.tar.xz' linux_6.12.85.orig.tar.xz 151249536 SHA256:73804f04cf5be865389d4d13bdae06a87b2e6675f0ff31e93804e20d091736e2
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.85-1.debian.tar.xz' linux_6.12.85-1.debian.tar.xz 1806504 SHA256:ba2d2e1f8df6583992565aa5ca1db95c1af06da765fae440e1f86d6f12c61e89
+$ apt-get source -qq --print-uris linux=6.12.86-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.86-1.dsc' linux_6.12.86-1.dsc 288306 SHA256:fc5315f4946bc6749aa0bf1df9bf0901b3fe0344876e1e08e0bdf67556aeb106
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.86.orig.tar.xz' linux_6.12.86.orig.tar.xz 151247248 SHA256:74ae12a1a62311e096d05a0b006c8447d9007809b0b7604a643293914871982b
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.86-1.debian.tar.xz' linux_6.12.86-1.debian.tar.xz 1812972 SHA256:81d68f571ad15a2d4697a6552f2d8ac16b0b6942e453138a8ec58cc927d3673e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.85-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.85-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.85-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.86-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.86-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.86-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lua5.4=5.4.7-1`
 
