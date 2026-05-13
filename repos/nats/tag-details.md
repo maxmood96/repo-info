@@ -2319,24 +2319,24 @@ $ docker pull nats@sha256:ff392c940bafbd3cb3b74113b5c1e489c15df878b322dfcc20b223
 ## `nats:2-windowsservercore`
 
 ```console
-$ docker pull nats@sha256:90fb004a8ffd930843f250b2ab8b77f2f937b8e038c008cac47b31a190616a59
+$ docker pull nats@sha256:9b61497122cf4b3a8c30fc687c66344968c0fda6bbfe4a1b60d4361d9120229b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5020; amd64
+	-	windows version 10.0.20348.5139; amd64
 
-### `nats:2-windowsservercore` - windows version 10.0.20348.5020; amd64
+### `nats:2-windowsservercore` - windows version 10.0.20348.5139; amd64
 
 ```console
-$ docker pull nats@sha256:ac581d12329f31124a42c0d14d571af4404ddb6c1dd6b3e888440d2d442e6914
+$ docker pull nats@sha256:8ac046d6c8660a1941079c55460e369623171da1242db0212c4e4e1ea04a7265
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2078093789 bytes)**  
+-	Total Size: **2.1 GB (2130301845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13a836a3c9902d8a685ab79cdb61414b28913494656f28dd9579c93a64a9298a`
+-	Image ID: `sha256:d23f8c7306fbc93a9072eae8b2e82245da9da5581b928cf98f6a43f3a5bb18c8`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -2344,31 +2344,31 @@ $ docker pull nats@sha256:ac581d12329f31124a42c0d14d571af4404ddb6c1dd6b3e888440d
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 13 Apr 2026 03:24:09 GMT
-RUN Install update 10.0.20348.5020
-# Thu, 30 Apr 2026 23:49:01 GMT
+# Thu, 07 May 2026 03:49:54 GMT
+RUN Install update 10.0.20348.5139
+# Tue, 12 May 2026 23:46:34 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Thu, 30 Apr 2026 23:49:01 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_DOCKERIZED=1
-# Thu, 30 Apr 2026 23:49:02 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_SERVER=2.14.0
-# Thu, 30 Apr 2026 23:49:04 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.14.0
-# Thu, 30 Apr 2026 23:49:05 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.14.0/nats-server-v2.14.0-windows-amd64.zip
-# Thu, 30 Apr 2026 23:49:06 GMT
+# Tue, 12 May 2026 23:46:37 GMT
 ENV NATS_SERVER_SHASUM=09ba382669cc4df390f97f16f08481f040eef0bb17ca5f2d71104b4be4cd613a
-# Thu, 30 Apr 2026 23:49:12 GMT
+# Tue, 12 May 2026 23:46:42 GMT
 RUN Set-PSDebug -Trace 2
-# Thu, 30 Apr 2026 23:49:29 GMT
+# Tue, 12 May 2026 23:46:57 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Thu, 30 Apr 2026 23:49:30 GMT
+# Tue, 12 May 2026 23:46:58 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Thu, 30 Apr 2026 23:49:31 GMT
+# Tue, 12 May 2026 23:46:58 GMT
 EXPOSE 4222 6222 8222
-# Thu, 30 Apr 2026 23:49:31 GMT
+# Tue, 12 May 2026 23:46:59 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Thu, 30 Apr 2026 23:49:32 GMT
+# Tue, 12 May 2026 23:47:00 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -2377,80 +2377,80 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7111ae68f8961455d230dc12d44c2193d29b7c981e35417323613a0c1aa06384`  
-		Last Modified: Tue, 14 Apr 2026 17:31:38 GMT  
-		Size: 581.2 MB (581192160 bytes)  
+	-	`sha256:857865ad3eca4da109d969134a9cab7225d9de49597914ae325d43661900f513`  
+		Last Modified: Tue, 12 May 2026 17:34:16 GMT  
+		Size: 633.4 MB (633401492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f58f739004aaffcce3059990cddc67d1ea5502bffed0d3ccc89fc876d808a5f`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff656db9d979af96cc6ae2d97615d67e56112751aead0385026c4197bb53643e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1327 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2bcc9579b6e0a4565853c7fd0d40941759e24befa7010f7aa5e67e01b71c46b`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1336 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce34548b393192bcfb6b43dcd4fa9f22cc9c8af2f376479e6a4f0b0aacee765c`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
-		Size: 1.3 KB (1332 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:876398f4f8f03cad8f838c575b80d65658e23044318c31f8251857b7dafe8c0f`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
-		Size: 1.3 KB (1336 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9823fd0d8c8b851233b4b38a990231f99885dc48e28253d76bb4da9b6c533a01`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
+	-	`sha256:a023c5625d2ee5d4db03516e4189696fe76d51e9b025badea7507457ee0ec780`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:333dab383d3c86b9b3b3e17b02bbea6d9aa6f30b6444a65ee8822b045834903a`  
-		Last Modified: Thu, 30 Apr 2026 23:49:38 GMT  
-		Size: 480.4 KB (480412 bytes)  
+	-	`sha256:347d3b4fd74d9cea43b61086e3be13f8fd68aaf7dcbed8869eb7654b13022210`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb7f13df87a6fe7ad19e8d11a006d3947b7cc8188c948947be382545effadc32`  
-		Last Modified: Thu, 30 Apr 2026 23:49:41 GMT  
-		Size: 7.4 MB (7388354 bytes)  
+	-	`sha256:9ef61b238d44d24f9216b2e1eaaa99046523561ff4f907e645d7893a7d29e400`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f97f1eff21017eaf3e22d485c507bd0284d2cf49e7ed4f9f111a705878805f5b`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.9 KB (1900 bytes)  
+	-	`sha256:ea1308c0e658293e66b16726765790666ac8d0da20ba6ac45c4b5bf07e871e7e`  
+		Last Modified: Tue, 12 May 2026 23:47:05 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ad9b1988e28082dfa6115ac90e1af603f0e980cd1430d02a6f60a3c2aef303e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:c10dbe3d84a9d708da963fba429a9d97b30ad3d3f55cf2b215db3226cef086cd`  
+		Last Modified: Tue, 12 May 2026 23:47:06 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6efccd2c209df2079143658594171d09f629479ff39e48cef0311cc764b9f3a5`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.3 KB (1323 bytes)  
+	-	`sha256:70eb792b599093b403901940e5a5809475ebdca2d28b347159b0ccd4fe52c402`  
+		Last Modified: Tue, 12 May 2026 23:47:05 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf825c06a4d4082c24c136ddfe04fa1bb7ebbb2224cdc24c4db83cb12a63e52e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
+	-	`sha256:6c94b5c81292e032d68bd1ba5bd819b3390645f9e9b43e5f30b714c0fd65c469`  
+		Last Modified: Tue, 12 May 2026 23:47:06 GMT  
+		Size: 480.0 KB (479956 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6159ce96c550fe0e2723ad3256060f48ed487a7021d8036f0e6ae4fb1cee9618`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 7.4 MB (7387702 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1fa8177fcaa7207011be892ae542dcc77b7bc62eea167a839cc7da6d2d1ac9a5`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.9 KB (1893 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d4971bfb6dede78606066a89134eecb700883a65fe50996cd78914085969b4c3`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.3 KB (1340 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3cff0aa25bd3783b982c3d8cbb8c921e7850bdea723a6759a7caf9cb0664baca`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
 		Size: 1.3 KB (1299 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1bbf4adc2716b36dbfba894764c1c3cd1f07280637c15aa87c0c6fd22518d5d3`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:2-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull nats@sha256:90fb004a8ffd930843f250b2ab8b77f2f937b8e038c008cac47b31a190616a59
+$ docker pull nats@sha256:9b61497122cf4b3a8c30fc687c66344968c0fda6bbfe4a1b60d4361d9120229b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5020; amd64
+	-	windows version 10.0.20348.5139; amd64
 
-### `nats:2-windowsservercore-ltsc2022` - windows version 10.0.20348.5020; amd64
+### `nats:2-windowsservercore-ltsc2022` - windows version 10.0.20348.5139; amd64
 
 ```console
-$ docker pull nats@sha256:ac581d12329f31124a42c0d14d571af4404ddb6c1dd6b3e888440d2d442e6914
+$ docker pull nats@sha256:8ac046d6c8660a1941079c55460e369623171da1242db0212c4e4e1ea04a7265
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2078093789 bytes)**  
+-	Total Size: **2.1 GB (2130301845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13a836a3c9902d8a685ab79cdb61414b28913494656f28dd9579c93a64a9298a`
+-	Image ID: `sha256:d23f8c7306fbc93a9072eae8b2e82245da9da5581b928cf98f6a43f3a5bb18c8`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -2458,31 +2458,31 @@ $ docker pull nats@sha256:ac581d12329f31124a42c0d14d571af4404ddb6c1dd6b3e888440d
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 13 Apr 2026 03:24:09 GMT
-RUN Install update 10.0.20348.5020
-# Thu, 30 Apr 2026 23:49:01 GMT
+# Thu, 07 May 2026 03:49:54 GMT
+RUN Install update 10.0.20348.5139
+# Tue, 12 May 2026 23:46:34 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Thu, 30 Apr 2026 23:49:01 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_DOCKERIZED=1
-# Thu, 30 Apr 2026 23:49:02 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_SERVER=2.14.0
-# Thu, 30 Apr 2026 23:49:04 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.14.0
-# Thu, 30 Apr 2026 23:49:05 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.14.0/nats-server-v2.14.0-windows-amd64.zip
-# Thu, 30 Apr 2026 23:49:06 GMT
+# Tue, 12 May 2026 23:46:37 GMT
 ENV NATS_SERVER_SHASUM=09ba382669cc4df390f97f16f08481f040eef0bb17ca5f2d71104b4be4cd613a
-# Thu, 30 Apr 2026 23:49:12 GMT
+# Tue, 12 May 2026 23:46:42 GMT
 RUN Set-PSDebug -Trace 2
-# Thu, 30 Apr 2026 23:49:29 GMT
+# Tue, 12 May 2026 23:46:57 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Thu, 30 Apr 2026 23:49:30 GMT
+# Tue, 12 May 2026 23:46:58 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Thu, 30 Apr 2026 23:49:31 GMT
+# Tue, 12 May 2026 23:46:58 GMT
 EXPOSE 4222 6222 8222
-# Thu, 30 Apr 2026 23:49:31 GMT
+# Tue, 12 May 2026 23:46:59 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Thu, 30 Apr 2026 23:49:32 GMT
+# Tue, 12 May 2026 23:47:00 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -2491,57 +2491,57 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7111ae68f8961455d230dc12d44c2193d29b7c981e35417323613a0c1aa06384`  
-		Last Modified: Tue, 14 Apr 2026 17:31:38 GMT  
-		Size: 581.2 MB (581192160 bytes)  
+	-	`sha256:857865ad3eca4da109d969134a9cab7225d9de49597914ae325d43661900f513`  
+		Last Modified: Tue, 12 May 2026 17:34:16 GMT  
+		Size: 633.4 MB (633401492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f58f739004aaffcce3059990cddc67d1ea5502bffed0d3ccc89fc876d808a5f`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff656db9d979af96cc6ae2d97615d67e56112751aead0385026c4197bb53643e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1327 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2bcc9579b6e0a4565853c7fd0d40941759e24befa7010f7aa5e67e01b71c46b`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1336 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce34548b393192bcfb6b43dcd4fa9f22cc9c8af2f376479e6a4f0b0aacee765c`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
-		Size: 1.3 KB (1332 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:876398f4f8f03cad8f838c575b80d65658e23044318c31f8251857b7dafe8c0f`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
-		Size: 1.3 KB (1336 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9823fd0d8c8b851233b4b38a990231f99885dc48e28253d76bb4da9b6c533a01`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
+	-	`sha256:a023c5625d2ee5d4db03516e4189696fe76d51e9b025badea7507457ee0ec780`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:333dab383d3c86b9b3b3e17b02bbea6d9aa6f30b6444a65ee8822b045834903a`  
-		Last Modified: Thu, 30 Apr 2026 23:49:38 GMT  
-		Size: 480.4 KB (480412 bytes)  
+	-	`sha256:347d3b4fd74d9cea43b61086e3be13f8fd68aaf7dcbed8869eb7654b13022210`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb7f13df87a6fe7ad19e8d11a006d3947b7cc8188c948947be382545effadc32`  
-		Last Modified: Thu, 30 Apr 2026 23:49:41 GMT  
-		Size: 7.4 MB (7388354 bytes)  
+	-	`sha256:9ef61b238d44d24f9216b2e1eaaa99046523561ff4f907e645d7893a7d29e400`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f97f1eff21017eaf3e22d485c507bd0284d2cf49e7ed4f9f111a705878805f5b`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.9 KB (1900 bytes)  
+	-	`sha256:ea1308c0e658293e66b16726765790666ac8d0da20ba6ac45c4b5bf07e871e7e`  
+		Last Modified: Tue, 12 May 2026 23:47:05 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ad9b1988e28082dfa6115ac90e1af603f0e980cd1430d02a6f60a3c2aef303e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:c10dbe3d84a9d708da963fba429a9d97b30ad3d3f55cf2b215db3226cef086cd`  
+		Last Modified: Tue, 12 May 2026 23:47:06 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6efccd2c209df2079143658594171d09f629479ff39e48cef0311cc764b9f3a5`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.3 KB (1323 bytes)  
+	-	`sha256:70eb792b599093b403901940e5a5809475ebdca2d28b347159b0ccd4fe52c402`  
+		Last Modified: Tue, 12 May 2026 23:47:05 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf825c06a4d4082c24c136ddfe04fa1bb7ebbb2224cdc24c4db83cb12a63e52e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
+	-	`sha256:6c94b5c81292e032d68bd1ba5bd819b3390645f9e9b43e5f30b714c0fd65c469`  
+		Last Modified: Tue, 12 May 2026 23:47:06 GMT  
+		Size: 480.0 KB (479956 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6159ce96c550fe0e2723ad3256060f48ed487a7021d8036f0e6ae4fb1cee9618`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 7.4 MB (7387702 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1fa8177fcaa7207011be892ae542dcc77b7bc62eea167a839cc7da6d2d1ac9a5`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.9 KB (1893 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d4971bfb6dede78606066a89134eecb700883a65fe50996cd78914085969b4c3`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.3 KB (1340 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3cff0aa25bd3783b982c3d8cbb8c921e7850bdea723a6759a7caf9cb0664baca`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
 		Size: 1.3 KB (1299 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1bbf4adc2716b36dbfba894764c1c3cd1f07280637c15aa87c0c6fd22518d5d3`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:2.11`
@@ -4788,24 +4788,24 @@ $ docker pull nats@sha256:44597648f4f1beed5bd7670f82559a136701e73c8e1d9c88f9ec6a
 ## `nats:2.11-windowsservercore`
 
 ```console
-$ docker pull nats@sha256:ee80356953306ec6fad75bab7c04975f5ccbe8ca3a0e261f3441e6613c57d6a6
+$ docker pull nats@sha256:c22fc89f6f6ef94d602c6884190cac4e0d9cb571cbb4ac583716b146e3e919a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5020; amd64
+	-	windows version 10.0.20348.5139; amd64
 
-### `nats:2.11-windowsservercore` - windows version 10.0.20348.5020; amd64
+### `nats:2.11-windowsservercore` - windows version 10.0.20348.5139; amd64
 
 ```console
-$ docker pull nats@sha256:18513bc49c5a5956ff3c90bc08b3dd1ce25ccbea36e6c833eed196162ba15069
+$ docker pull nats@sha256:4b176fcea0e04dc2630d3c49163718ccdab4781b6ccd03608d94767c335b6039
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2077766932 bytes)**  
+-	Total Size: **2.1 GB (2129942390 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:04438768b61ba1d4486dba86ec22b4f3972967ef3d61bd363b40fc36f0da5e0c`
+-	Image ID: `sha256:af93fcb0212486e13b84466255cd808270e524ec9358caf515e054ce4e63cc55`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -4813,31 +4813,31 @@ $ docker pull nats@sha256:18513bc49c5a5956ff3c90bc08b3dd1ce25ccbea36e6c833eed196
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 13 Apr 2026 03:24:09 GMT
-RUN Install update 10.0.20348.5020
-# Tue, 28 Apr 2026 00:27:40 GMT
+# Thu, 07 May 2026 03:49:54 GMT
+RUN Install update 10.0.20348.5139
+# Tue, 12 May 2026 23:46:39 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 28 Apr 2026 00:27:41 GMT
+# Tue, 12 May 2026 23:46:40 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 28 Apr 2026 00:27:41 GMT
+# Tue, 12 May 2026 23:46:40 GMT
 ENV NATS_SERVER=2.11.17
-# Tue, 28 Apr 2026 00:27:42 GMT
+# Tue, 12 May 2026 23:46:41 GMT
 LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.17
-# Tue, 28 Apr 2026 00:27:42 GMT
+# Tue, 12 May 2026 23:46:41 GMT
 ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.11.17/nats-server-v2.11.17-windows-amd64.zip
-# Tue, 28 Apr 2026 00:27:43 GMT
+# Tue, 12 May 2026 23:46:42 GMT
 ENV NATS_SERVER_SHASUM=45c6a61420c87afaa31edf89372b3cfb4335ac12838fc8c593967a4d8b503f5a
-# Tue, 28 Apr 2026 00:28:33 GMT
+# Tue, 12 May 2026 23:46:46 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 28 Apr 2026 00:28:54 GMT
+# Tue, 12 May 2026 23:47:02 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 28 Apr 2026 00:28:55 GMT
+# Tue, 12 May 2026 23:47:03 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 28 Apr 2026 00:28:55 GMT
+# Tue, 12 May 2026 23:47:03 GMT
 EXPOSE 4222 6222 8222
-# Tue, 28 Apr 2026 00:28:56 GMT
+# Tue, 12 May 2026 23:47:04 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 28 Apr 2026 00:28:56 GMT
+# Tue, 12 May 2026 23:47:04 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -4846,80 +4846,80 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7111ae68f8961455d230dc12d44c2193d29b7c981e35417323613a0c1aa06384`  
-		Last Modified: Tue, 14 Apr 2026 17:31:38 GMT  
-		Size: 581.2 MB (581192160 bytes)  
+	-	`sha256:857865ad3eca4da109d969134a9cab7225d9de49597914ae325d43661900f513`  
+		Last Modified: Tue, 12 May 2026 17:34:16 GMT  
+		Size: 633.4 MB (633401492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa39b5520a569dcca74cc87b71474f103bd609085e86cd3a8d864b2c2eeee0f5`  
-		Last Modified: Tue, 28 Apr 2026 00:29:04 GMT  
-		Size: 1.3 KB (1332 bytes)  
+	-	`sha256:035b5e8417e640b2f6485083912f09cb265e121a7738e800f18f5ee557c17cb1`  
+		Last Modified: Tue, 12 May 2026 23:47:11 GMT  
+		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd6f16e3219763e73943ff08622645258ae0dceb86c1f11548029542ef8c4bb6`  
-		Last Modified: Tue, 28 Apr 2026 00:29:04 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:4b6dded9826998bfe6973b87b3c1bad707215cc9b831bd16f639ed064b9b1f13`  
+		Last Modified: Tue, 12 May 2026 23:47:11 GMT  
+		Size: 1.3 KB (1330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59c5744f3bca141af630b109e9e2e6ad0f0cc3b26a88e8b639aa978e664c7391`  
-		Last Modified: Tue, 28 Apr 2026 00:29:04 GMT  
-		Size: 1.3 KB (1334 bytes)  
+	-	`sha256:c8b59cf83a3659a1723a13a03dc57526c2487ba27b8315777ec9e121415675a0`  
+		Last Modified: Tue, 12 May 2026 23:47:11 GMT  
+		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38cc8954c56aae3cf50b57bfbee1b5a42c34bcb67fa5daaa172df290665bd6be`  
-		Last Modified: Tue, 28 Apr 2026 00:29:02 GMT  
-		Size: 1.3 KB (1317 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f6b23b278723665c620bf48065b45297c89fd59c644f527a96f095a16f42ca6`  
-		Last Modified: Tue, 28 Apr 2026 00:29:02 GMT  
-		Size: 1.3 KB (1331 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13a4aef486a946e37a9891f7f0e06329bdb3eee03b6e116d0400be3515ce33f2`  
-		Last Modified: Tue, 28 Apr 2026 00:29:02 GMT  
-		Size: 1.3 KB (1296 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d361404222ce7f8a02d1feb2fc47a604fd08de211389453544d90f2b895aa9e4`  
-		Last Modified: Tue, 28 Apr 2026 00:29:03 GMT  
-		Size: 498.5 KB (498491 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58ba63cb15569ff45ec09d133e5eb4855fdd9e8928ffcb904e40c0f17225a951`  
-		Last Modified: Tue, 28 Apr 2026 00:29:06 GMT  
-		Size: 7.0 MB (7043445 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f73db759e9cbcb5bc653d1c210aac02c7c6e386e66c88e972f0eeb18dd44295`  
-		Last Modified: Tue, 28 Apr 2026 00:29:00 GMT  
-		Size: 1.9 KB (1864 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:958115d1e45d1edfedb763d7e3a007e163deb4e8d9321a7da226782199c964d4`  
-		Last Modified: Tue, 28 Apr 2026 00:29:00 GMT  
-		Size: 1.3 KB (1316 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fec7ed809f943aa373fd52f59d8e7b82e6feae266e3634ef8016c4937c50e9e5`  
-		Last Modified: Tue, 28 Apr 2026 00:29:01 GMT  
-		Size: 1.3 KB (1314 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:00b41e57bbe7114127ed66d10456ab29e89cc2b0c1edd5940c59957cf12f3738`  
-		Last Modified: Tue, 28 Apr 2026 00:29:01 GMT  
+	-	`sha256:b238bb35d1e64194a5a23061a96ae79542bd2121bb6075b4d1820715c6a7b4b9`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
 		Size: 1.3 KB (1327 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9923c821f86de8a944a1ad857f63e8ca58cc273fb793c537007b870a03a45448`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7f4d68f6c918ee26aa6f462829d0182f0b4260869130811f37fe63fa5e51afac`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1297 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5cc1b0d1dfff59af8db6eecae5863ed48527a50fddb50ed89dff2524c58b9a9d`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 480.2 KB (480176 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:934ac94857336d623f4ee89a895bed95735818ab8441c0a142bd6d76e9de8476`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 7.0 MB (7027967 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f3aae67d972201efa8b1adb054a25e8bf8ae5417479adfce8e36513b3058dc1f`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 1.9 KB (1890 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:344a9bd3ffba222b0f7fef8c080d19f7a497fd33404d9ecd80982e2be8ae0d89`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 1.3 KB (1322 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:79139790259fd299b5dc3f872dba2686da178ef38ac0f5651937f92105911d9c`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 1.3 KB (1294 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7c9ad20456a1231a6868d66ffcf6f8f38de909629079fbccaff7c157cda170ca`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:2.11-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull nats@sha256:ee80356953306ec6fad75bab7c04975f5ccbe8ca3a0e261f3441e6613c57d6a6
+$ docker pull nats@sha256:c22fc89f6f6ef94d602c6884190cac4e0d9cb571cbb4ac583716b146e3e919a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5020; amd64
+	-	windows version 10.0.20348.5139; amd64
 
-### `nats:2.11-windowsservercore-ltsc2022` - windows version 10.0.20348.5020; amd64
+### `nats:2.11-windowsservercore-ltsc2022` - windows version 10.0.20348.5139; amd64
 
 ```console
-$ docker pull nats@sha256:18513bc49c5a5956ff3c90bc08b3dd1ce25ccbea36e6c833eed196162ba15069
+$ docker pull nats@sha256:4b176fcea0e04dc2630d3c49163718ccdab4781b6ccd03608d94767c335b6039
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2077766932 bytes)**  
+-	Total Size: **2.1 GB (2129942390 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:04438768b61ba1d4486dba86ec22b4f3972967ef3d61bd363b40fc36f0da5e0c`
+-	Image ID: `sha256:af93fcb0212486e13b84466255cd808270e524ec9358caf515e054ce4e63cc55`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -4927,31 +4927,31 @@ $ docker pull nats@sha256:18513bc49c5a5956ff3c90bc08b3dd1ce25ccbea36e6c833eed196
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 13 Apr 2026 03:24:09 GMT
-RUN Install update 10.0.20348.5020
-# Tue, 28 Apr 2026 00:27:40 GMT
+# Thu, 07 May 2026 03:49:54 GMT
+RUN Install update 10.0.20348.5139
+# Tue, 12 May 2026 23:46:39 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 28 Apr 2026 00:27:41 GMT
+# Tue, 12 May 2026 23:46:40 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 28 Apr 2026 00:27:41 GMT
+# Tue, 12 May 2026 23:46:40 GMT
 ENV NATS_SERVER=2.11.17
-# Tue, 28 Apr 2026 00:27:42 GMT
+# Tue, 12 May 2026 23:46:41 GMT
 LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.17
-# Tue, 28 Apr 2026 00:27:42 GMT
+# Tue, 12 May 2026 23:46:41 GMT
 ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.11.17/nats-server-v2.11.17-windows-amd64.zip
-# Tue, 28 Apr 2026 00:27:43 GMT
+# Tue, 12 May 2026 23:46:42 GMT
 ENV NATS_SERVER_SHASUM=45c6a61420c87afaa31edf89372b3cfb4335ac12838fc8c593967a4d8b503f5a
-# Tue, 28 Apr 2026 00:28:33 GMT
+# Tue, 12 May 2026 23:46:46 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 28 Apr 2026 00:28:54 GMT
+# Tue, 12 May 2026 23:47:02 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 28 Apr 2026 00:28:55 GMT
+# Tue, 12 May 2026 23:47:03 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 28 Apr 2026 00:28:55 GMT
+# Tue, 12 May 2026 23:47:03 GMT
 EXPOSE 4222 6222 8222
-# Tue, 28 Apr 2026 00:28:56 GMT
+# Tue, 12 May 2026 23:47:04 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 28 Apr 2026 00:28:56 GMT
+# Tue, 12 May 2026 23:47:04 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -4960,57 +4960,57 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7111ae68f8961455d230dc12d44c2193d29b7c981e35417323613a0c1aa06384`  
-		Last Modified: Tue, 14 Apr 2026 17:31:38 GMT  
-		Size: 581.2 MB (581192160 bytes)  
+	-	`sha256:857865ad3eca4da109d969134a9cab7225d9de49597914ae325d43661900f513`  
+		Last Modified: Tue, 12 May 2026 17:34:16 GMT  
+		Size: 633.4 MB (633401492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa39b5520a569dcca74cc87b71474f103bd609085e86cd3a8d864b2c2eeee0f5`  
-		Last Modified: Tue, 28 Apr 2026 00:29:04 GMT  
-		Size: 1.3 KB (1332 bytes)  
+	-	`sha256:035b5e8417e640b2f6485083912f09cb265e121a7738e800f18f5ee557c17cb1`  
+		Last Modified: Tue, 12 May 2026 23:47:11 GMT  
+		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd6f16e3219763e73943ff08622645258ae0dceb86c1f11548029542ef8c4bb6`  
-		Last Modified: Tue, 28 Apr 2026 00:29:04 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:4b6dded9826998bfe6973b87b3c1bad707215cc9b831bd16f639ed064b9b1f13`  
+		Last Modified: Tue, 12 May 2026 23:47:11 GMT  
+		Size: 1.3 KB (1330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59c5744f3bca141af630b109e9e2e6ad0f0cc3b26a88e8b639aa978e664c7391`  
-		Last Modified: Tue, 28 Apr 2026 00:29:04 GMT  
-		Size: 1.3 KB (1334 bytes)  
+	-	`sha256:c8b59cf83a3659a1723a13a03dc57526c2487ba27b8315777ec9e121415675a0`  
+		Last Modified: Tue, 12 May 2026 23:47:11 GMT  
+		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38cc8954c56aae3cf50b57bfbee1b5a42c34bcb67fa5daaa172df290665bd6be`  
-		Last Modified: Tue, 28 Apr 2026 00:29:02 GMT  
-		Size: 1.3 KB (1317 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f6b23b278723665c620bf48065b45297c89fd59c644f527a96f095a16f42ca6`  
-		Last Modified: Tue, 28 Apr 2026 00:29:02 GMT  
-		Size: 1.3 KB (1331 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13a4aef486a946e37a9891f7f0e06329bdb3eee03b6e116d0400be3515ce33f2`  
-		Last Modified: Tue, 28 Apr 2026 00:29:02 GMT  
-		Size: 1.3 KB (1296 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d361404222ce7f8a02d1feb2fc47a604fd08de211389453544d90f2b895aa9e4`  
-		Last Modified: Tue, 28 Apr 2026 00:29:03 GMT  
-		Size: 498.5 KB (498491 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58ba63cb15569ff45ec09d133e5eb4855fdd9e8928ffcb904e40c0f17225a951`  
-		Last Modified: Tue, 28 Apr 2026 00:29:06 GMT  
-		Size: 7.0 MB (7043445 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f73db759e9cbcb5bc653d1c210aac02c7c6e386e66c88e972f0eeb18dd44295`  
-		Last Modified: Tue, 28 Apr 2026 00:29:00 GMT  
-		Size: 1.9 KB (1864 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:958115d1e45d1edfedb763d7e3a007e163deb4e8d9321a7da226782199c964d4`  
-		Last Modified: Tue, 28 Apr 2026 00:29:00 GMT  
-		Size: 1.3 KB (1316 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fec7ed809f943aa373fd52f59d8e7b82e6feae266e3634ef8016c4937c50e9e5`  
-		Last Modified: Tue, 28 Apr 2026 00:29:01 GMT  
-		Size: 1.3 KB (1314 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:00b41e57bbe7114127ed66d10456ab29e89cc2b0c1edd5940c59957cf12f3738`  
-		Last Modified: Tue, 28 Apr 2026 00:29:01 GMT  
+	-	`sha256:b238bb35d1e64194a5a23061a96ae79542bd2121bb6075b4d1820715c6a7b4b9`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
 		Size: 1.3 KB (1327 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9923c821f86de8a944a1ad857f63e8ca58cc273fb793c537007b870a03a45448`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7f4d68f6c918ee26aa6f462829d0182f0b4260869130811f37fe63fa5e51afac`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1297 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5cc1b0d1dfff59af8db6eecae5863ed48527a50fddb50ed89dff2524c58b9a9d`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 480.2 KB (480176 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:934ac94857336d623f4ee89a895bed95735818ab8441c0a142bd6d76e9de8476`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 7.0 MB (7027967 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f3aae67d972201efa8b1adb054a25e8bf8ae5417479adfce8e36513b3058dc1f`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 1.9 KB (1890 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:344a9bd3ffba222b0f7fef8c080d19f7a497fd33404d9ecd80982e2be8ae0d89`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 1.3 KB (1322 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:79139790259fd299b5dc3f872dba2686da178ef38ac0f5651937f92105911d9c`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 1.3 KB (1294 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7c9ad20456a1231a6868d66ffcf6f8f38de909629079fbccaff7c157cda170ca`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:2.11.17`
@@ -7257,24 +7257,24 @@ $ docker pull nats@sha256:44597648f4f1beed5bd7670f82559a136701e73c8e1d9c88f9ec6a
 ## `nats:2.11.17-windowsservercore`
 
 ```console
-$ docker pull nats@sha256:ee80356953306ec6fad75bab7c04975f5ccbe8ca3a0e261f3441e6613c57d6a6
+$ docker pull nats@sha256:c22fc89f6f6ef94d602c6884190cac4e0d9cb571cbb4ac583716b146e3e919a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5020; amd64
+	-	windows version 10.0.20348.5139; amd64
 
-### `nats:2.11.17-windowsservercore` - windows version 10.0.20348.5020; amd64
+### `nats:2.11.17-windowsservercore` - windows version 10.0.20348.5139; amd64
 
 ```console
-$ docker pull nats@sha256:18513bc49c5a5956ff3c90bc08b3dd1ce25ccbea36e6c833eed196162ba15069
+$ docker pull nats@sha256:4b176fcea0e04dc2630d3c49163718ccdab4781b6ccd03608d94767c335b6039
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2077766932 bytes)**  
+-	Total Size: **2.1 GB (2129942390 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:04438768b61ba1d4486dba86ec22b4f3972967ef3d61bd363b40fc36f0da5e0c`
+-	Image ID: `sha256:af93fcb0212486e13b84466255cd808270e524ec9358caf515e054ce4e63cc55`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -7282,31 +7282,31 @@ $ docker pull nats@sha256:18513bc49c5a5956ff3c90bc08b3dd1ce25ccbea36e6c833eed196
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 13 Apr 2026 03:24:09 GMT
-RUN Install update 10.0.20348.5020
-# Tue, 28 Apr 2026 00:27:40 GMT
+# Thu, 07 May 2026 03:49:54 GMT
+RUN Install update 10.0.20348.5139
+# Tue, 12 May 2026 23:46:39 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 28 Apr 2026 00:27:41 GMT
+# Tue, 12 May 2026 23:46:40 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 28 Apr 2026 00:27:41 GMT
+# Tue, 12 May 2026 23:46:40 GMT
 ENV NATS_SERVER=2.11.17
-# Tue, 28 Apr 2026 00:27:42 GMT
+# Tue, 12 May 2026 23:46:41 GMT
 LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.17
-# Tue, 28 Apr 2026 00:27:42 GMT
+# Tue, 12 May 2026 23:46:41 GMT
 ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.11.17/nats-server-v2.11.17-windows-amd64.zip
-# Tue, 28 Apr 2026 00:27:43 GMT
+# Tue, 12 May 2026 23:46:42 GMT
 ENV NATS_SERVER_SHASUM=45c6a61420c87afaa31edf89372b3cfb4335ac12838fc8c593967a4d8b503f5a
-# Tue, 28 Apr 2026 00:28:33 GMT
+# Tue, 12 May 2026 23:46:46 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 28 Apr 2026 00:28:54 GMT
+# Tue, 12 May 2026 23:47:02 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 28 Apr 2026 00:28:55 GMT
+# Tue, 12 May 2026 23:47:03 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 28 Apr 2026 00:28:55 GMT
+# Tue, 12 May 2026 23:47:03 GMT
 EXPOSE 4222 6222 8222
-# Tue, 28 Apr 2026 00:28:56 GMT
+# Tue, 12 May 2026 23:47:04 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 28 Apr 2026 00:28:56 GMT
+# Tue, 12 May 2026 23:47:04 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -7315,80 +7315,80 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7111ae68f8961455d230dc12d44c2193d29b7c981e35417323613a0c1aa06384`  
-		Last Modified: Tue, 14 Apr 2026 17:31:38 GMT  
-		Size: 581.2 MB (581192160 bytes)  
+	-	`sha256:857865ad3eca4da109d969134a9cab7225d9de49597914ae325d43661900f513`  
+		Last Modified: Tue, 12 May 2026 17:34:16 GMT  
+		Size: 633.4 MB (633401492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa39b5520a569dcca74cc87b71474f103bd609085e86cd3a8d864b2c2eeee0f5`  
-		Last Modified: Tue, 28 Apr 2026 00:29:04 GMT  
-		Size: 1.3 KB (1332 bytes)  
+	-	`sha256:035b5e8417e640b2f6485083912f09cb265e121a7738e800f18f5ee557c17cb1`  
+		Last Modified: Tue, 12 May 2026 23:47:11 GMT  
+		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd6f16e3219763e73943ff08622645258ae0dceb86c1f11548029542ef8c4bb6`  
-		Last Modified: Tue, 28 Apr 2026 00:29:04 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:4b6dded9826998bfe6973b87b3c1bad707215cc9b831bd16f639ed064b9b1f13`  
+		Last Modified: Tue, 12 May 2026 23:47:11 GMT  
+		Size: 1.3 KB (1330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59c5744f3bca141af630b109e9e2e6ad0f0cc3b26a88e8b639aa978e664c7391`  
-		Last Modified: Tue, 28 Apr 2026 00:29:04 GMT  
-		Size: 1.3 KB (1334 bytes)  
+	-	`sha256:c8b59cf83a3659a1723a13a03dc57526c2487ba27b8315777ec9e121415675a0`  
+		Last Modified: Tue, 12 May 2026 23:47:11 GMT  
+		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38cc8954c56aae3cf50b57bfbee1b5a42c34bcb67fa5daaa172df290665bd6be`  
-		Last Modified: Tue, 28 Apr 2026 00:29:02 GMT  
-		Size: 1.3 KB (1317 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f6b23b278723665c620bf48065b45297c89fd59c644f527a96f095a16f42ca6`  
-		Last Modified: Tue, 28 Apr 2026 00:29:02 GMT  
-		Size: 1.3 KB (1331 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13a4aef486a946e37a9891f7f0e06329bdb3eee03b6e116d0400be3515ce33f2`  
-		Last Modified: Tue, 28 Apr 2026 00:29:02 GMT  
-		Size: 1.3 KB (1296 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d361404222ce7f8a02d1feb2fc47a604fd08de211389453544d90f2b895aa9e4`  
-		Last Modified: Tue, 28 Apr 2026 00:29:03 GMT  
-		Size: 498.5 KB (498491 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58ba63cb15569ff45ec09d133e5eb4855fdd9e8928ffcb904e40c0f17225a951`  
-		Last Modified: Tue, 28 Apr 2026 00:29:06 GMT  
-		Size: 7.0 MB (7043445 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f73db759e9cbcb5bc653d1c210aac02c7c6e386e66c88e972f0eeb18dd44295`  
-		Last Modified: Tue, 28 Apr 2026 00:29:00 GMT  
-		Size: 1.9 KB (1864 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:958115d1e45d1edfedb763d7e3a007e163deb4e8d9321a7da226782199c964d4`  
-		Last Modified: Tue, 28 Apr 2026 00:29:00 GMT  
-		Size: 1.3 KB (1316 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fec7ed809f943aa373fd52f59d8e7b82e6feae266e3634ef8016c4937c50e9e5`  
-		Last Modified: Tue, 28 Apr 2026 00:29:01 GMT  
-		Size: 1.3 KB (1314 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:00b41e57bbe7114127ed66d10456ab29e89cc2b0c1edd5940c59957cf12f3738`  
-		Last Modified: Tue, 28 Apr 2026 00:29:01 GMT  
+	-	`sha256:b238bb35d1e64194a5a23061a96ae79542bd2121bb6075b4d1820715c6a7b4b9`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
 		Size: 1.3 KB (1327 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9923c821f86de8a944a1ad857f63e8ca58cc273fb793c537007b870a03a45448`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7f4d68f6c918ee26aa6f462829d0182f0b4260869130811f37fe63fa5e51afac`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1297 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5cc1b0d1dfff59af8db6eecae5863ed48527a50fddb50ed89dff2524c58b9a9d`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 480.2 KB (480176 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:934ac94857336d623f4ee89a895bed95735818ab8441c0a142bd6d76e9de8476`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 7.0 MB (7027967 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f3aae67d972201efa8b1adb054a25e8bf8ae5417479adfce8e36513b3058dc1f`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 1.9 KB (1890 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:344a9bd3ffba222b0f7fef8c080d19f7a497fd33404d9ecd80982e2be8ae0d89`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 1.3 KB (1322 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:79139790259fd299b5dc3f872dba2686da178ef38ac0f5651937f92105911d9c`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 1.3 KB (1294 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7c9ad20456a1231a6868d66ffcf6f8f38de909629079fbccaff7c157cda170ca`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:2.11.17-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull nats@sha256:ee80356953306ec6fad75bab7c04975f5ccbe8ca3a0e261f3441e6613c57d6a6
+$ docker pull nats@sha256:c22fc89f6f6ef94d602c6884190cac4e0d9cb571cbb4ac583716b146e3e919a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5020; amd64
+	-	windows version 10.0.20348.5139; amd64
 
-### `nats:2.11.17-windowsservercore-ltsc2022` - windows version 10.0.20348.5020; amd64
+### `nats:2.11.17-windowsservercore-ltsc2022` - windows version 10.0.20348.5139; amd64
 
 ```console
-$ docker pull nats@sha256:18513bc49c5a5956ff3c90bc08b3dd1ce25ccbea36e6c833eed196162ba15069
+$ docker pull nats@sha256:4b176fcea0e04dc2630d3c49163718ccdab4781b6ccd03608d94767c335b6039
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2077766932 bytes)**  
+-	Total Size: **2.1 GB (2129942390 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:04438768b61ba1d4486dba86ec22b4f3972967ef3d61bd363b40fc36f0da5e0c`
+-	Image ID: `sha256:af93fcb0212486e13b84466255cd808270e524ec9358caf515e054ce4e63cc55`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -7396,31 +7396,31 @@ $ docker pull nats@sha256:18513bc49c5a5956ff3c90bc08b3dd1ce25ccbea36e6c833eed196
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 13 Apr 2026 03:24:09 GMT
-RUN Install update 10.0.20348.5020
-# Tue, 28 Apr 2026 00:27:40 GMT
+# Thu, 07 May 2026 03:49:54 GMT
+RUN Install update 10.0.20348.5139
+# Tue, 12 May 2026 23:46:39 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 28 Apr 2026 00:27:41 GMT
+# Tue, 12 May 2026 23:46:40 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 28 Apr 2026 00:27:41 GMT
+# Tue, 12 May 2026 23:46:40 GMT
 ENV NATS_SERVER=2.11.17
-# Tue, 28 Apr 2026 00:27:42 GMT
+# Tue, 12 May 2026 23:46:41 GMT
 LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.11.17
-# Tue, 28 Apr 2026 00:27:42 GMT
+# Tue, 12 May 2026 23:46:41 GMT
 ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.11.17/nats-server-v2.11.17-windows-amd64.zip
-# Tue, 28 Apr 2026 00:27:43 GMT
+# Tue, 12 May 2026 23:46:42 GMT
 ENV NATS_SERVER_SHASUM=45c6a61420c87afaa31edf89372b3cfb4335ac12838fc8c593967a4d8b503f5a
-# Tue, 28 Apr 2026 00:28:33 GMT
+# Tue, 12 May 2026 23:46:46 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 28 Apr 2026 00:28:54 GMT
+# Tue, 12 May 2026 23:47:02 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 28 Apr 2026 00:28:55 GMT
+# Tue, 12 May 2026 23:47:03 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 28 Apr 2026 00:28:55 GMT
+# Tue, 12 May 2026 23:47:03 GMT
 EXPOSE 4222 6222 8222
-# Tue, 28 Apr 2026 00:28:56 GMT
+# Tue, 12 May 2026 23:47:04 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 28 Apr 2026 00:28:56 GMT
+# Tue, 12 May 2026 23:47:04 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -7429,57 +7429,57 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7111ae68f8961455d230dc12d44c2193d29b7c981e35417323613a0c1aa06384`  
-		Last Modified: Tue, 14 Apr 2026 17:31:38 GMT  
-		Size: 581.2 MB (581192160 bytes)  
+	-	`sha256:857865ad3eca4da109d969134a9cab7225d9de49597914ae325d43661900f513`  
+		Last Modified: Tue, 12 May 2026 17:34:16 GMT  
+		Size: 633.4 MB (633401492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:aa39b5520a569dcca74cc87b71474f103bd609085e86cd3a8d864b2c2eeee0f5`  
-		Last Modified: Tue, 28 Apr 2026 00:29:04 GMT  
-		Size: 1.3 KB (1332 bytes)  
+	-	`sha256:035b5e8417e640b2f6485083912f09cb265e121a7738e800f18f5ee557c17cb1`  
+		Last Modified: Tue, 12 May 2026 23:47:11 GMT  
+		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:dd6f16e3219763e73943ff08622645258ae0dceb86c1f11548029542ef8c4bb6`  
-		Last Modified: Tue, 28 Apr 2026 00:29:04 GMT  
-		Size: 1.3 KB (1329 bytes)  
+	-	`sha256:4b6dded9826998bfe6973b87b3c1bad707215cc9b831bd16f639ed064b9b1f13`  
+		Last Modified: Tue, 12 May 2026 23:47:11 GMT  
+		Size: 1.3 KB (1330 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:59c5744f3bca141af630b109e9e2e6ad0f0cc3b26a88e8b639aa978e664c7391`  
-		Last Modified: Tue, 28 Apr 2026 00:29:04 GMT  
-		Size: 1.3 KB (1334 bytes)  
+	-	`sha256:c8b59cf83a3659a1723a13a03dc57526c2487ba27b8315777ec9e121415675a0`  
+		Last Modified: Tue, 12 May 2026 23:47:11 GMT  
+		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:38cc8954c56aae3cf50b57bfbee1b5a42c34bcb67fa5daaa172df290665bd6be`  
-		Last Modified: Tue, 28 Apr 2026 00:29:02 GMT  
-		Size: 1.3 KB (1317 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3f6b23b278723665c620bf48065b45297c89fd59c644f527a96f095a16f42ca6`  
-		Last Modified: Tue, 28 Apr 2026 00:29:02 GMT  
-		Size: 1.3 KB (1331 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13a4aef486a946e37a9891f7f0e06329bdb3eee03b6e116d0400be3515ce33f2`  
-		Last Modified: Tue, 28 Apr 2026 00:29:02 GMT  
-		Size: 1.3 KB (1296 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d361404222ce7f8a02d1feb2fc47a604fd08de211389453544d90f2b895aa9e4`  
-		Last Modified: Tue, 28 Apr 2026 00:29:03 GMT  
-		Size: 498.5 KB (498491 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:58ba63cb15569ff45ec09d133e5eb4855fdd9e8928ffcb904e40c0f17225a951`  
-		Last Modified: Tue, 28 Apr 2026 00:29:06 GMT  
-		Size: 7.0 MB (7043445 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f73db759e9cbcb5bc653d1c210aac02c7c6e386e66c88e972f0eeb18dd44295`  
-		Last Modified: Tue, 28 Apr 2026 00:29:00 GMT  
-		Size: 1.9 KB (1864 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:958115d1e45d1edfedb763d7e3a007e163deb4e8d9321a7da226782199c964d4`  
-		Last Modified: Tue, 28 Apr 2026 00:29:00 GMT  
-		Size: 1.3 KB (1316 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fec7ed809f943aa373fd52f59d8e7b82e6feae266e3634ef8016c4937c50e9e5`  
-		Last Modified: Tue, 28 Apr 2026 00:29:01 GMT  
-		Size: 1.3 KB (1314 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:00b41e57bbe7114127ed66d10456ab29e89cc2b0c1edd5940c59957cf12f3738`  
-		Last Modified: Tue, 28 Apr 2026 00:29:01 GMT  
+	-	`sha256:b238bb35d1e64194a5a23061a96ae79542bd2121bb6075b4d1820715c6a7b4b9`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
 		Size: 1.3 KB (1327 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9923c821f86de8a944a1ad857f63e8ca58cc273fb793c537007b870a03a45448`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1338 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7f4d68f6c918ee26aa6f462829d0182f0b4260869130811f37fe63fa5e51afac`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1297 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5cc1b0d1dfff59af8db6eecae5863ed48527a50fddb50ed89dff2524c58b9a9d`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 480.2 KB (480176 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:934ac94857336d623f4ee89a895bed95735818ab8441c0a142bd6d76e9de8476`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 7.0 MB (7027967 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f3aae67d972201efa8b1adb054a25e8bf8ae5417479adfce8e36513b3058dc1f`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 1.9 KB (1890 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:344a9bd3ffba222b0f7fef8c080d19f7a497fd33404d9ecd80982e2be8ae0d89`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 1.3 KB (1322 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:79139790259fd299b5dc3f872dba2686da178ef38ac0f5651937f92105911d9c`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 1.3 KB (1294 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7c9ad20456a1231a6868d66ffcf6f8f38de909629079fbccaff7c157cda170ca`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:2.12`
@@ -9726,24 +9726,24 @@ $ docker pull nats@sha256:0c5977840a5d6298d8a0d4b45547b2d4ff563ac1529a331b0a9716
 ## `nats:2.12-windowsservercore`
 
 ```console
-$ docker pull nats@sha256:7be687bd0fcf28c0ff569af5d07b5586400ddc2e656ed5059fa069a1861d5310
+$ docker pull nats@sha256:87893863e742226f3316afb031314820d1b8973ba30c1e1a75b1f00c86a89d5c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5020; amd64
+	-	windows version 10.0.20348.5139; amd64
 
-### `nats:2.12-windowsservercore` - windows version 10.0.20348.5020; amd64
+### `nats:2.12-windowsservercore` - windows version 10.0.20348.5139; amd64
 
 ```console
-$ docker pull nats@sha256:513908e15de358856596ba7150e84b831f6f711b57c69bff1dab9e0f2334ccc1
+$ docker pull nats@sha256:3fb6f659c8dbdaeef131ca3140a6b4937b6771133cec2c89cf60c617ed37e4f3
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2077910518 bytes)**  
+-	Total Size: **2.1 GB (2130102262 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da5993871186ecfe774a9cf8a2b3de0621e6afaf3fd93f99cbbaff6fffc782a8`
+-	Image ID: `sha256:aee00c85b850ab103ef7e30b0d050a957da1faac84e62a08fcb037cabdc18a8e`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -9751,31 +9751,31 @@ $ docker pull nats@sha256:513908e15de358856596ba7150e84b831f6f711b57c69bff1dab9e
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 13 Apr 2026 03:24:09 GMT
-RUN Install update 10.0.20348.5020
-# Tue, 28 Apr 2026 00:22:17 GMT
+# Thu, 07 May 2026 03:49:54 GMT
+RUN Install update 10.0.20348.5139
+# Tue, 12 May 2026 23:46:35 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 28 Apr 2026 00:22:20 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 28 Apr 2026 00:22:21 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 ENV NATS_SERVER=2.12.8
-# Tue, 28 Apr 2026 00:22:22 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.8
-# Tue, 28 Apr 2026 00:22:23 GMT
+# Tue, 12 May 2026 23:46:37 GMT
 ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.8/nats-server-v2.12.8-windows-amd64.zip
-# Tue, 28 Apr 2026 00:22:24 GMT
+# Tue, 12 May 2026 23:46:38 GMT
 ENV NATS_SERVER_SHASUM=61836ff8d0cecbb773faf7daa22f5212b7ed3ab5a0c58c12b013d67d64edd6cc
-# Tue, 28 Apr 2026 00:23:39 GMT
+# Tue, 12 May 2026 23:46:44 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 28 Apr 2026 00:24:04 GMT
+# Tue, 12 May 2026 23:47:00 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 28 Apr 2026 00:24:04 GMT
+# Tue, 12 May 2026 23:47:01 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 28 Apr 2026 00:24:05 GMT
+# Tue, 12 May 2026 23:47:02 GMT
 EXPOSE 4222 6222 8222
-# Tue, 28 Apr 2026 00:24:05 GMT
+# Tue, 12 May 2026 23:47:03 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 28 Apr 2026 00:24:06 GMT
+# Tue, 12 May 2026 23:47:03 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -9784,80 +9784,80 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7111ae68f8961455d230dc12d44c2193d29b7c981e35417323613a0c1aa06384`  
-		Last Modified: Tue, 14 Apr 2026 17:31:38 GMT  
-		Size: 581.2 MB (581192160 bytes)  
+	-	`sha256:857865ad3eca4da109d969134a9cab7225d9de49597914ae325d43661900f513`  
+		Last Modified: Tue, 12 May 2026 17:34:16 GMT  
+		Size: 633.4 MB (633401492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f06ffdad23a2259ee9605b07af3b8756afac669d72d7f4df289af5e1bfa765df`  
-		Last Modified: Tue, 28 Apr 2026 00:24:14 GMT  
-		Size: 1.3 KB (1291 bytes)  
+	-	`sha256:90afc8fac618acea85025416d5c796cadc00fc70c25d63769a357427f3930150`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:349750824325190c58f7211d2a32fac8867324987e4912f6187dc9d6f9fb4ae8`  
-		Last Modified: Tue, 28 Apr 2026 00:24:14 GMT  
-		Size: 1.3 KB (1328 bytes)  
+	-	`sha256:302e2335d581f68b42e1acb4b0e8994e851657c270218296525a0465ff17e5ac`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13e65ce208cc089d5d84714aa1b4c702e6514a37bc1a25a9e317e5484c4b6770`  
-		Last Modified: Tue, 28 Apr 2026 00:24:13 GMT  
-		Size: 1.3 KB (1318 bytes)  
+	-	`sha256:3e4d18df94ec15b5e6320e68b43be0a558a420fc8347b5f54a4fe14649307d12`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1303 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fefac29241015b39520060d922c7fb6054787dd9dd417b2cabd03743d7bda5f`  
-		Last Modified: Tue, 28 Apr 2026 00:24:12 GMT  
-		Size: 1.3 KB (1313 bytes)  
+	-	`sha256:f61d55ef458fd472061f34dbd4286cb8ef2de111dbb1aa9b560e10b762ec4908`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 1.3 KB (1312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fe557d93a73db69714369a258c20de37e40d04268b2f4804c92e12e16976bdd`  
-		Last Modified: Tue, 28 Apr 2026 00:24:12 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:b53f2338143924ca83eb935bda452456f612172e267913bd2a8e79091f7ff053`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 1.3 KB (1317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3130aba43c6a9d55589835a86638de2d3125fa2366b684015a8ac9fc1c818d`  
-		Last Modified: Tue, 28 Apr 2026 00:24:12 GMT  
-		Size: 1.3 KB (1291 bytes)  
+	-	`sha256:a2ff9b2dcaa7872875ebd54907e5600ddf0af31ce4900d7b279fd6e87b7ae21d`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d19f58f4c90bd0a1c10a151c0165e6d1660f82cb62c97e4a3e1ec5be69c14d0`  
-		Last Modified: Tue, 28 Apr 2026 00:24:12 GMT  
-		Size: 507.2 KB (507220 bytes)  
+	-	`sha256:5a78bc650abccc33a98a6f67b91e9ab62582efe3bd1defafbfa03c78a71407e1`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 481.5 KB (481485 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b029516bfa850bb0dc8d626d1e3a9cda785c0b6ff3e1ac8797afb2adf5f0ed3`  
-		Last Modified: Tue, 28 Apr 2026 00:24:15 GMT  
-		Size: 7.2 MB (7178445 bytes)  
+	-	`sha256:22d1bbf3c5c71237ca6d7d69fe9e2576f4211d71403b32eefdd7b8683c9c7c05`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 7.2 MB (7186516 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4e8a07055de8fc46e4e8f02f1a81c1872033e0a3dda665ba7f3a7cdba7cd203`  
-		Last Modified: Tue, 28 Apr 2026 00:24:10 GMT  
-		Size: 1.9 KB (1899 bytes)  
+	-	`sha256:0c1ff8131266b0b3700edcc696086427d834a345dd22fc9c6c0974e9904189ec`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.9 KB (1862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3d2e16a4341e7b5618098955dbd5110c7fc4e24810d6e25bb7cd53e768b4539`  
-		Last Modified: Tue, 28 Apr 2026 00:24:10 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:ab3b8362fb7a76b9b960350dba68764f61a5741abb6f2b08acb51537f31d6cd6`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b5a737b9ff5aae65f741d22ddd5e6e1c210d6f45528f4778fcb53b923c0e903`  
-		Last Modified: Tue, 28 Apr 2026 00:24:10 GMT  
-		Size: 1.3 KB (1311 bytes)  
+	-	`sha256:e78a1a3f986533d642ddd69fcc9db90739a50a9c11e2a9212a504c814e32010b`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bdbeaf674140e140a6e0cb9b0b83df4612f9ab45bc55e9507b8d32bb2be05e1`  
-		Last Modified: Tue, 28 Apr 2026 00:24:10 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:ccac0d0833c9776bea08fc241398796a780029b3cf0e9ee5004e337e023241e3`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:2.12-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull nats@sha256:7be687bd0fcf28c0ff569af5d07b5586400ddc2e656ed5059fa069a1861d5310
+$ docker pull nats@sha256:87893863e742226f3316afb031314820d1b8973ba30c1e1a75b1f00c86a89d5c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5020; amd64
+	-	windows version 10.0.20348.5139; amd64
 
-### `nats:2.12-windowsservercore-ltsc2022` - windows version 10.0.20348.5020; amd64
+### `nats:2.12-windowsservercore-ltsc2022` - windows version 10.0.20348.5139; amd64
 
 ```console
-$ docker pull nats@sha256:513908e15de358856596ba7150e84b831f6f711b57c69bff1dab9e0f2334ccc1
+$ docker pull nats@sha256:3fb6f659c8dbdaeef131ca3140a6b4937b6771133cec2c89cf60c617ed37e4f3
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2077910518 bytes)**  
+-	Total Size: **2.1 GB (2130102262 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da5993871186ecfe774a9cf8a2b3de0621e6afaf3fd93f99cbbaff6fffc782a8`
+-	Image ID: `sha256:aee00c85b850ab103ef7e30b0d050a957da1faac84e62a08fcb037cabdc18a8e`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -9865,31 +9865,31 @@ $ docker pull nats@sha256:513908e15de358856596ba7150e84b831f6f711b57c69bff1dab9e
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 13 Apr 2026 03:24:09 GMT
-RUN Install update 10.0.20348.5020
-# Tue, 28 Apr 2026 00:22:17 GMT
+# Thu, 07 May 2026 03:49:54 GMT
+RUN Install update 10.0.20348.5139
+# Tue, 12 May 2026 23:46:35 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 28 Apr 2026 00:22:20 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 28 Apr 2026 00:22:21 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 ENV NATS_SERVER=2.12.8
-# Tue, 28 Apr 2026 00:22:22 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.8
-# Tue, 28 Apr 2026 00:22:23 GMT
+# Tue, 12 May 2026 23:46:37 GMT
 ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.8/nats-server-v2.12.8-windows-amd64.zip
-# Tue, 28 Apr 2026 00:22:24 GMT
+# Tue, 12 May 2026 23:46:38 GMT
 ENV NATS_SERVER_SHASUM=61836ff8d0cecbb773faf7daa22f5212b7ed3ab5a0c58c12b013d67d64edd6cc
-# Tue, 28 Apr 2026 00:23:39 GMT
+# Tue, 12 May 2026 23:46:44 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 28 Apr 2026 00:24:04 GMT
+# Tue, 12 May 2026 23:47:00 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 28 Apr 2026 00:24:04 GMT
+# Tue, 12 May 2026 23:47:01 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 28 Apr 2026 00:24:05 GMT
+# Tue, 12 May 2026 23:47:02 GMT
 EXPOSE 4222 6222 8222
-# Tue, 28 Apr 2026 00:24:05 GMT
+# Tue, 12 May 2026 23:47:03 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 28 Apr 2026 00:24:06 GMT
+# Tue, 12 May 2026 23:47:03 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -9898,57 +9898,57 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7111ae68f8961455d230dc12d44c2193d29b7c981e35417323613a0c1aa06384`  
-		Last Modified: Tue, 14 Apr 2026 17:31:38 GMT  
-		Size: 581.2 MB (581192160 bytes)  
+	-	`sha256:857865ad3eca4da109d969134a9cab7225d9de49597914ae325d43661900f513`  
+		Last Modified: Tue, 12 May 2026 17:34:16 GMT  
+		Size: 633.4 MB (633401492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f06ffdad23a2259ee9605b07af3b8756afac669d72d7f4df289af5e1bfa765df`  
-		Last Modified: Tue, 28 Apr 2026 00:24:14 GMT  
-		Size: 1.3 KB (1291 bytes)  
+	-	`sha256:90afc8fac618acea85025416d5c796cadc00fc70c25d63769a357427f3930150`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:349750824325190c58f7211d2a32fac8867324987e4912f6187dc9d6f9fb4ae8`  
-		Last Modified: Tue, 28 Apr 2026 00:24:14 GMT  
-		Size: 1.3 KB (1328 bytes)  
+	-	`sha256:302e2335d581f68b42e1acb4b0e8994e851657c270218296525a0465ff17e5ac`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13e65ce208cc089d5d84714aa1b4c702e6514a37bc1a25a9e317e5484c4b6770`  
-		Last Modified: Tue, 28 Apr 2026 00:24:13 GMT  
-		Size: 1.3 KB (1318 bytes)  
+	-	`sha256:3e4d18df94ec15b5e6320e68b43be0a558a420fc8347b5f54a4fe14649307d12`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1303 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fefac29241015b39520060d922c7fb6054787dd9dd417b2cabd03743d7bda5f`  
-		Last Modified: Tue, 28 Apr 2026 00:24:12 GMT  
-		Size: 1.3 KB (1313 bytes)  
+	-	`sha256:f61d55ef458fd472061f34dbd4286cb8ef2de111dbb1aa9b560e10b762ec4908`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 1.3 KB (1312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fe557d93a73db69714369a258c20de37e40d04268b2f4804c92e12e16976bdd`  
-		Last Modified: Tue, 28 Apr 2026 00:24:12 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:b53f2338143924ca83eb935bda452456f612172e267913bd2a8e79091f7ff053`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 1.3 KB (1317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3130aba43c6a9d55589835a86638de2d3125fa2366b684015a8ac9fc1c818d`  
-		Last Modified: Tue, 28 Apr 2026 00:24:12 GMT  
-		Size: 1.3 KB (1291 bytes)  
+	-	`sha256:a2ff9b2dcaa7872875ebd54907e5600ddf0af31ce4900d7b279fd6e87b7ae21d`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d19f58f4c90bd0a1c10a151c0165e6d1660f82cb62c97e4a3e1ec5be69c14d0`  
-		Last Modified: Tue, 28 Apr 2026 00:24:12 GMT  
-		Size: 507.2 KB (507220 bytes)  
+	-	`sha256:5a78bc650abccc33a98a6f67b91e9ab62582efe3bd1defafbfa03c78a71407e1`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 481.5 KB (481485 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b029516bfa850bb0dc8d626d1e3a9cda785c0b6ff3e1ac8797afb2adf5f0ed3`  
-		Last Modified: Tue, 28 Apr 2026 00:24:15 GMT  
-		Size: 7.2 MB (7178445 bytes)  
+	-	`sha256:22d1bbf3c5c71237ca6d7d69fe9e2576f4211d71403b32eefdd7b8683c9c7c05`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 7.2 MB (7186516 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4e8a07055de8fc46e4e8f02f1a81c1872033e0a3dda665ba7f3a7cdba7cd203`  
-		Last Modified: Tue, 28 Apr 2026 00:24:10 GMT  
-		Size: 1.9 KB (1899 bytes)  
+	-	`sha256:0c1ff8131266b0b3700edcc696086427d834a345dd22fc9c6c0974e9904189ec`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.9 KB (1862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3d2e16a4341e7b5618098955dbd5110c7fc4e24810d6e25bb7cd53e768b4539`  
-		Last Modified: Tue, 28 Apr 2026 00:24:10 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:ab3b8362fb7a76b9b960350dba68764f61a5741abb6f2b08acb51537f31d6cd6`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b5a737b9ff5aae65f741d22ddd5e6e1c210d6f45528f4778fcb53b923c0e903`  
-		Last Modified: Tue, 28 Apr 2026 00:24:10 GMT  
-		Size: 1.3 KB (1311 bytes)  
+	-	`sha256:e78a1a3f986533d642ddd69fcc9db90739a50a9c11e2a9212a504c814e32010b`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bdbeaf674140e140a6e0cb9b0b83df4612f9ab45bc55e9507b8d32bb2be05e1`  
-		Last Modified: Tue, 28 Apr 2026 00:24:10 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:ccac0d0833c9776bea08fc241398796a780029b3cf0e9ee5004e337e023241e3`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:2.12.8`
@@ -12195,24 +12195,24 @@ $ docker pull nats@sha256:0c5977840a5d6298d8a0d4b45547b2d4ff563ac1529a331b0a9716
 ## `nats:2.12.8-windowsservercore`
 
 ```console
-$ docker pull nats@sha256:7be687bd0fcf28c0ff569af5d07b5586400ddc2e656ed5059fa069a1861d5310
+$ docker pull nats@sha256:87893863e742226f3316afb031314820d1b8973ba30c1e1a75b1f00c86a89d5c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5020; amd64
+	-	windows version 10.0.20348.5139; amd64
 
-### `nats:2.12.8-windowsservercore` - windows version 10.0.20348.5020; amd64
+### `nats:2.12.8-windowsservercore` - windows version 10.0.20348.5139; amd64
 
 ```console
-$ docker pull nats@sha256:513908e15de358856596ba7150e84b831f6f711b57c69bff1dab9e0f2334ccc1
+$ docker pull nats@sha256:3fb6f659c8dbdaeef131ca3140a6b4937b6771133cec2c89cf60c617ed37e4f3
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2077910518 bytes)**  
+-	Total Size: **2.1 GB (2130102262 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da5993871186ecfe774a9cf8a2b3de0621e6afaf3fd93f99cbbaff6fffc782a8`
+-	Image ID: `sha256:aee00c85b850ab103ef7e30b0d050a957da1faac84e62a08fcb037cabdc18a8e`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -12220,31 +12220,31 @@ $ docker pull nats@sha256:513908e15de358856596ba7150e84b831f6f711b57c69bff1dab9e
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 13 Apr 2026 03:24:09 GMT
-RUN Install update 10.0.20348.5020
-# Tue, 28 Apr 2026 00:22:17 GMT
+# Thu, 07 May 2026 03:49:54 GMT
+RUN Install update 10.0.20348.5139
+# Tue, 12 May 2026 23:46:35 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 28 Apr 2026 00:22:20 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 28 Apr 2026 00:22:21 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 ENV NATS_SERVER=2.12.8
-# Tue, 28 Apr 2026 00:22:22 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.8
-# Tue, 28 Apr 2026 00:22:23 GMT
+# Tue, 12 May 2026 23:46:37 GMT
 ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.8/nats-server-v2.12.8-windows-amd64.zip
-# Tue, 28 Apr 2026 00:22:24 GMT
+# Tue, 12 May 2026 23:46:38 GMT
 ENV NATS_SERVER_SHASUM=61836ff8d0cecbb773faf7daa22f5212b7ed3ab5a0c58c12b013d67d64edd6cc
-# Tue, 28 Apr 2026 00:23:39 GMT
+# Tue, 12 May 2026 23:46:44 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 28 Apr 2026 00:24:04 GMT
+# Tue, 12 May 2026 23:47:00 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 28 Apr 2026 00:24:04 GMT
+# Tue, 12 May 2026 23:47:01 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 28 Apr 2026 00:24:05 GMT
+# Tue, 12 May 2026 23:47:02 GMT
 EXPOSE 4222 6222 8222
-# Tue, 28 Apr 2026 00:24:05 GMT
+# Tue, 12 May 2026 23:47:03 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 28 Apr 2026 00:24:06 GMT
+# Tue, 12 May 2026 23:47:03 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -12253,80 +12253,80 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7111ae68f8961455d230dc12d44c2193d29b7c981e35417323613a0c1aa06384`  
-		Last Modified: Tue, 14 Apr 2026 17:31:38 GMT  
-		Size: 581.2 MB (581192160 bytes)  
+	-	`sha256:857865ad3eca4da109d969134a9cab7225d9de49597914ae325d43661900f513`  
+		Last Modified: Tue, 12 May 2026 17:34:16 GMT  
+		Size: 633.4 MB (633401492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f06ffdad23a2259ee9605b07af3b8756afac669d72d7f4df289af5e1bfa765df`  
-		Last Modified: Tue, 28 Apr 2026 00:24:14 GMT  
-		Size: 1.3 KB (1291 bytes)  
+	-	`sha256:90afc8fac618acea85025416d5c796cadc00fc70c25d63769a357427f3930150`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:349750824325190c58f7211d2a32fac8867324987e4912f6187dc9d6f9fb4ae8`  
-		Last Modified: Tue, 28 Apr 2026 00:24:14 GMT  
-		Size: 1.3 KB (1328 bytes)  
+	-	`sha256:302e2335d581f68b42e1acb4b0e8994e851657c270218296525a0465ff17e5ac`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13e65ce208cc089d5d84714aa1b4c702e6514a37bc1a25a9e317e5484c4b6770`  
-		Last Modified: Tue, 28 Apr 2026 00:24:13 GMT  
-		Size: 1.3 KB (1318 bytes)  
+	-	`sha256:3e4d18df94ec15b5e6320e68b43be0a558a420fc8347b5f54a4fe14649307d12`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1303 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fefac29241015b39520060d922c7fb6054787dd9dd417b2cabd03743d7bda5f`  
-		Last Modified: Tue, 28 Apr 2026 00:24:12 GMT  
-		Size: 1.3 KB (1313 bytes)  
+	-	`sha256:f61d55ef458fd472061f34dbd4286cb8ef2de111dbb1aa9b560e10b762ec4908`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 1.3 KB (1312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fe557d93a73db69714369a258c20de37e40d04268b2f4804c92e12e16976bdd`  
-		Last Modified: Tue, 28 Apr 2026 00:24:12 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:b53f2338143924ca83eb935bda452456f612172e267913bd2a8e79091f7ff053`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 1.3 KB (1317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3130aba43c6a9d55589835a86638de2d3125fa2366b684015a8ac9fc1c818d`  
-		Last Modified: Tue, 28 Apr 2026 00:24:12 GMT  
-		Size: 1.3 KB (1291 bytes)  
+	-	`sha256:a2ff9b2dcaa7872875ebd54907e5600ddf0af31ce4900d7b279fd6e87b7ae21d`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d19f58f4c90bd0a1c10a151c0165e6d1660f82cb62c97e4a3e1ec5be69c14d0`  
-		Last Modified: Tue, 28 Apr 2026 00:24:12 GMT  
-		Size: 507.2 KB (507220 bytes)  
+	-	`sha256:5a78bc650abccc33a98a6f67b91e9ab62582efe3bd1defafbfa03c78a71407e1`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 481.5 KB (481485 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b029516bfa850bb0dc8d626d1e3a9cda785c0b6ff3e1ac8797afb2adf5f0ed3`  
-		Last Modified: Tue, 28 Apr 2026 00:24:15 GMT  
-		Size: 7.2 MB (7178445 bytes)  
+	-	`sha256:22d1bbf3c5c71237ca6d7d69fe9e2576f4211d71403b32eefdd7b8683c9c7c05`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 7.2 MB (7186516 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4e8a07055de8fc46e4e8f02f1a81c1872033e0a3dda665ba7f3a7cdba7cd203`  
-		Last Modified: Tue, 28 Apr 2026 00:24:10 GMT  
-		Size: 1.9 KB (1899 bytes)  
+	-	`sha256:0c1ff8131266b0b3700edcc696086427d834a345dd22fc9c6c0974e9904189ec`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.9 KB (1862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3d2e16a4341e7b5618098955dbd5110c7fc4e24810d6e25bb7cd53e768b4539`  
-		Last Modified: Tue, 28 Apr 2026 00:24:10 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:ab3b8362fb7a76b9b960350dba68764f61a5741abb6f2b08acb51537f31d6cd6`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b5a737b9ff5aae65f741d22ddd5e6e1c210d6f45528f4778fcb53b923c0e903`  
-		Last Modified: Tue, 28 Apr 2026 00:24:10 GMT  
-		Size: 1.3 KB (1311 bytes)  
+	-	`sha256:e78a1a3f986533d642ddd69fcc9db90739a50a9c11e2a9212a504c814e32010b`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bdbeaf674140e140a6e0cb9b0b83df4612f9ab45bc55e9507b8d32bb2be05e1`  
-		Last Modified: Tue, 28 Apr 2026 00:24:10 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:ccac0d0833c9776bea08fc241398796a780029b3cf0e9ee5004e337e023241e3`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:2.12.8-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull nats@sha256:7be687bd0fcf28c0ff569af5d07b5586400ddc2e656ed5059fa069a1861d5310
+$ docker pull nats@sha256:87893863e742226f3316afb031314820d1b8973ba30c1e1a75b1f00c86a89d5c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5020; amd64
+	-	windows version 10.0.20348.5139; amd64
 
-### `nats:2.12.8-windowsservercore-ltsc2022` - windows version 10.0.20348.5020; amd64
+### `nats:2.12.8-windowsservercore-ltsc2022` - windows version 10.0.20348.5139; amd64
 
 ```console
-$ docker pull nats@sha256:513908e15de358856596ba7150e84b831f6f711b57c69bff1dab9e0f2334ccc1
+$ docker pull nats@sha256:3fb6f659c8dbdaeef131ca3140a6b4937b6771133cec2c89cf60c617ed37e4f3
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2077910518 bytes)**  
+-	Total Size: **2.1 GB (2130102262 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da5993871186ecfe774a9cf8a2b3de0621e6afaf3fd93f99cbbaff6fffc782a8`
+-	Image ID: `sha256:aee00c85b850ab103ef7e30b0d050a957da1faac84e62a08fcb037cabdc18a8e`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -12334,31 +12334,31 @@ $ docker pull nats@sha256:513908e15de358856596ba7150e84b831f6f711b57c69bff1dab9e
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 13 Apr 2026 03:24:09 GMT
-RUN Install update 10.0.20348.5020
-# Tue, 28 Apr 2026 00:22:17 GMT
+# Thu, 07 May 2026 03:49:54 GMT
+RUN Install update 10.0.20348.5139
+# Tue, 12 May 2026 23:46:35 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Tue, 28 Apr 2026 00:22:20 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_DOCKERIZED=1
-# Tue, 28 Apr 2026 00:22:21 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 ENV NATS_SERVER=2.12.8
-# Tue, 28 Apr 2026 00:22:22 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.12.8
-# Tue, 28 Apr 2026 00:22:23 GMT
+# Tue, 12 May 2026 23:46:37 GMT
 ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.12.8/nats-server-v2.12.8-windows-amd64.zip
-# Tue, 28 Apr 2026 00:22:24 GMT
+# Tue, 12 May 2026 23:46:38 GMT
 ENV NATS_SERVER_SHASUM=61836ff8d0cecbb773faf7daa22f5212b7ed3ab5a0c58c12b013d67d64edd6cc
-# Tue, 28 Apr 2026 00:23:39 GMT
+# Tue, 12 May 2026 23:46:44 GMT
 RUN Set-PSDebug -Trace 2
-# Tue, 28 Apr 2026 00:24:04 GMT
+# Tue, 12 May 2026 23:47:00 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Tue, 28 Apr 2026 00:24:04 GMT
+# Tue, 12 May 2026 23:47:01 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Tue, 28 Apr 2026 00:24:05 GMT
+# Tue, 12 May 2026 23:47:02 GMT
 EXPOSE 4222 6222 8222
-# Tue, 28 Apr 2026 00:24:05 GMT
+# Tue, 12 May 2026 23:47:03 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Tue, 28 Apr 2026 00:24:06 GMT
+# Tue, 12 May 2026 23:47:03 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -12367,57 +12367,57 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7111ae68f8961455d230dc12d44c2193d29b7c981e35417323613a0c1aa06384`  
-		Last Modified: Tue, 14 Apr 2026 17:31:38 GMT  
-		Size: 581.2 MB (581192160 bytes)  
+	-	`sha256:857865ad3eca4da109d969134a9cab7225d9de49597914ae325d43661900f513`  
+		Last Modified: Tue, 12 May 2026 17:34:16 GMT  
+		Size: 633.4 MB (633401492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f06ffdad23a2259ee9605b07af3b8756afac669d72d7f4df289af5e1bfa765df`  
-		Last Modified: Tue, 28 Apr 2026 00:24:14 GMT  
-		Size: 1.3 KB (1291 bytes)  
+	-	`sha256:90afc8fac618acea85025416d5c796cadc00fc70c25d63769a357427f3930150`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1322 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:349750824325190c58f7211d2a32fac8867324987e4912f6187dc9d6f9fb4ae8`  
-		Last Modified: Tue, 28 Apr 2026 00:24:14 GMT  
-		Size: 1.3 KB (1328 bytes)  
+	-	`sha256:302e2335d581f68b42e1acb4b0e8994e851657c270218296525a0465ff17e5ac`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1334 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:13e65ce208cc089d5d84714aa1b4c702e6514a37bc1a25a9e317e5484c4b6770`  
-		Last Modified: Tue, 28 Apr 2026 00:24:13 GMT  
-		Size: 1.3 KB (1318 bytes)  
+	-	`sha256:3e4d18df94ec15b5e6320e68b43be0a558a420fc8347b5f54a4fe14649307d12`  
+		Last Modified: Tue, 12 May 2026 23:47:10 GMT  
+		Size: 1.3 KB (1303 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8fefac29241015b39520060d922c7fb6054787dd9dd417b2cabd03743d7bda5f`  
-		Last Modified: Tue, 28 Apr 2026 00:24:12 GMT  
-		Size: 1.3 KB (1313 bytes)  
+	-	`sha256:f61d55ef458fd472061f34dbd4286cb8ef2de111dbb1aa9b560e10b762ec4908`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 1.3 KB (1312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5fe557d93a73db69714369a258c20de37e40d04268b2f4804c92e12e16976bdd`  
-		Last Modified: Tue, 28 Apr 2026 00:24:12 GMT  
-		Size: 1.3 KB (1289 bytes)  
+	-	`sha256:b53f2338143924ca83eb935bda452456f612172e267913bd2a8e79091f7ff053`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 1.3 KB (1317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3130aba43c6a9d55589835a86638de2d3125fa2366b684015a8ac9fc1c818d`  
-		Last Modified: Tue, 28 Apr 2026 00:24:12 GMT  
-		Size: 1.3 KB (1291 bytes)  
+	-	`sha256:a2ff9b2dcaa7872875ebd54907e5600ddf0af31ce4900d7b279fd6e87b7ae21d`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d19f58f4c90bd0a1c10a151c0165e6d1660f82cb62c97e4a3e1ec5be69c14d0`  
-		Last Modified: Tue, 28 Apr 2026 00:24:12 GMT  
-		Size: 507.2 KB (507220 bytes)  
+	-	`sha256:5a78bc650abccc33a98a6f67b91e9ab62582efe3bd1defafbfa03c78a71407e1`  
+		Last Modified: Tue, 12 May 2026 23:47:09 GMT  
+		Size: 481.5 KB (481485 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9b029516bfa850bb0dc8d626d1e3a9cda785c0b6ff3e1ac8797afb2adf5f0ed3`  
-		Last Modified: Tue, 28 Apr 2026 00:24:15 GMT  
-		Size: 7.2 MB (7178445 bytes)  
+	-	`sha256:22d1bbf3c5c71237ca6d7d69fe9e2576f4211d71403b32eefdd7b8683c9c7c05`  
+		Last Modified: Tue, 12 May 2026 23:47:08 GMT  
+		Size: 7.2 MB (7186516 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4e8a07055de8fc46e4e8f02f1a81c1872033e0a3dda665ba7f3a7cdba7cd203`  
-		Last Modified: Tue, 28 Apr 2026 00:24:10 GMT  
-		Size: 1.9 KB (1899 bytes)  
+	-	`sha256:0c1ff8131266b0b3700edcc696086427d834a345dd22fc9c6c0974e9904189ec`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.9 KB (1862 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e3d2e16a4341e7b5618098955dbd5110c7fc4e24810d6e25bb7cd53e768b4539`  
-		Last Modified: Tue, 28 Apr 2026 00:24:10 GMT  
-		Size: 1.3 KB (1290 bytes)  
+	-	`sha256:ab3b8362fb7a76b9b960350dba68764f61a5741abb6f2b08acb51537f31d6cd6`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1325 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2b5a737b9ff5aae65f741d22ddd5e6e1c210d6f45528f4778fcb53b923c0e903`  
-		Last Modified: Tue, 28 Apr 2026 00:24:10 GMT  
-		Size: 1.3 KB (1311 bytes)  
+	-	`sha256:e78a1a3f986533d642ddd69fcc9db90739a50a9c11e2a9212a504c814e32010b`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1273 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2bdbeaf674140e140a6e0cb9b0b83df4612f9ab45bc55e9507b8d32bb2be05e1`  
-		Last Modified: Tue, 28 Apr 2026 00:24:10 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:ccac0d0833c9776bea08fc241398796a780029b3cf0e9ee5004e337e023241e3`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1326 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:2.14`
@@ -14664,24 +14664,24 @@ $ docker pull nats@sha256:ff392c940bafbd3cb3b74113b5c1e489c15df878b322dfcc20b223
 ## `nats:2.14-windowsservercore`
 
 ```console
-$ docker pull nats@sha256:90fb004a8ffd930843f250b2ab8b77f2f937b8e038c008cac47b31a190616a59
+$ docker pull nats@sha256:9b61497122cf4b3a8c30fc687c66344968c0fda6bbfe4a1b60d4361d9120229b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5020; amd64
+	-	windows version 10.0.20348.5139; amd64
 
-### `nats:2.14-windowsservercore` - windows version 10.0.20348.5020; amd64
+### `nats:2.14-windowsservercore` - windows version 10.0.20348.5139; amd64
 
 ```console
-$ docker pull nats@sha256:ac581d12329f31124a42c0d14d571af4404ddb6c1dd6b3e888440d2d442e6914
+$ docker pull nats@sha256:8ac046d6c8660a1941079c55460e369623171da1242db0212c4e4e1ea04a7265
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2078093789 bytes)**  
+-	Total Size: **2.1 GB (2130301845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13a836a3c9902d8a685ab79cdb61414b28913494656f28dd9579c93a64a9298a`
+-	Image ID: `sha256:d23f8c7306fbc93a9072eae8b2e82245da9da5581b928cf98f6a43f3a5bb18c8`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -14689,31 +14689,31 @@ $ docker pull nats@sha256:ac581d12329f31124a42c0d14d571af4404ddb6c1dd6b3e888440d
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 13 Apr 2026 03:24:09 GMT
-RUN Install update 10.0.20348.5020
-# Thu, 30 Apr 2026 23:49:01 GMT
+# Thu, 07 May 2026 03:49:54 GMT
+RUN Install update 10.0.20348.5139
+# Tue, 12 May 2026 23:46:34 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Thu, 30 Apr 2026 23:49:01 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_DOCKERIZED=1
-# Thu, 30 Apr 2026 23:49:02 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_SERVER=2.14.0
-# Thu, 30 Apr 2026 23:49:04 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.14.0
-# Thu, 30 Apr 2026 23:49:05 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.14.0/nats-server-v2.14.0-windows-amd64.zip
-# Thu, 30 Apr 2026 23:49:06 GMT
+# Tue, 12 May 2026 23:46:37 GMT
 ENV NATS_SERVER_SHASUM=09ba382669cc4df390f97f16f08481f040eef0bb17ca5f2d71104b4be4cd613a
-# Thu, 30 Apr 2026 23:49:12 GMT
+# Tue, 12 May 2026 23:46:42 GMT
 RUN Set-PSDebug -Trace 2
-# Thu, 30 Apr 2026 23:49:29 GMT
+# Tue, 12 May 2026 23:46:57 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Thu, 30 Apr 2026 23:49:30 GMT
+# Tue, 12 May 2026 23:46:58 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Thu, 30 Apr 2026 23:49:31 GMT
+# Tue, 12 May 2026 23:46:58 GMT
 EXPOSE 4222 6222 8222
-# Thu, 30 Apr 2026 23:49:31 GMT
+# Tue, 12 May 2026 23:46:59 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Thu, 30 Apr 2026 23:49:32 GMT
+# Tue, 12 May 2026 23:47:00 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -14722,80 +14722,80 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7111ae68f8961455d230dc12d44c2193d29b7c981e35417323613a0c1aa06384`  
-		Last Modified: Tue, 14 Apr 2026 17:31:38 GMT  
-		Size: 581.2 MB (581192160 bytes)  
+	-	`sha256:857865ad3eca4da109d969134a9cab7225d9de49597914ae325d43661900f513`  
+		Last Modified: Tue, 12 May 2026 17:34:16 GMT  
+		Size: 633.4 MB (633401492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f58f739004aaffcce3059990cddc67d1ea5502bffed0d3ccc89fc876d808a5f`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff656db9d979af96cc6ae2d97615d67e56112751aead0385026c4197bb53643e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1327 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2bcc9579b6e0a4565853c7fd0d40941759e24befa7010f7aa5e67e01b71c46b`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1336 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce34548b393192bcfb6b43dcd4fa9f22cc9c8af2f376479e6a4f0b0aacee765c`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
-		Size: 1.3 KB (1332 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:876398f4f8f03cad8f838c575b80d65658e23044318c31f8251857b7dafe8c0f`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
-		Size: 1.3 KB (1336 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9823fd0d8c8b851233b4b38a990231f99885dc48e28253d76bb4da9b6c533a01`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
+	-	`sha256:a023c5625d2ee5d4db03516e4189696fe76d51e9b025badea7507457ee0ec780`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:333dab383d3c86b9b3b3e17b02bbea6d9aa6f30b6444a65ee8822b045834903a`  
-		Last Modified: Thu, 30 Apr 2026 23:49:38 GMT  
-		Size: 480.4 KB (480412 bytes)  
+	-	`sha256:347d3b4fd74d9cea43b61086e3be13f8fd68aaf7dcbed8869eb7654b13022210`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb7f13df87a6fe7ad19e8d11a006d3947b7cc8188c948947be382545effadc32`  
-		Last Modified: Thu, 30 Apr 2026 23:49:41 GMT  
-		Size: 7.4 MB (7388354 bytes)  
+	-	`sha256:9ef61b238d44d24f9216b2e1eaaa99046523561ff4f907e645d7893a7d29e400`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f97f1eff21017eaf3e22d485c507bd0284d2cf49e7ed4f9f111a705878805f5b`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.9 KB (1900 bytes)  
+	-	`sha256:ea1308c0e658293e66b16726765790666ac8d0da20ba6ac45c4b5bf07e871e7e`  
+		Last Modified: Tue, 12 May 2026 23:47:05 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ad9b1988e28082dfa6115ac90e1af603f0e980cd1430d02a6f60a3c2aef303e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:c10dbe3d84a9d708da963fba429a9d97b30ad3d3f55cf2b215db3226cef086cd`  
+		Last Modified: Tue, 12 May 2026 23:47:06 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6efccd2c209df2079143658594171d09f629479ff39e48cef0311cc764b9f3a5`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.3 KB (1323 bytes)  
+	-	`sha256:70eb792b599093b403901940e5a5809475ebdca2d28b347159b0ccd4fe52c402`  
+		Last Modified: Tue, 12 May 2026 23:47:05 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf825c06a4d4082c24c136ddfe04fa1bb7ebbb2224cdc24c4db83cb12a63e52e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
+	-	`sha256:6c94b5c81292e032d68bd1ba5bd819b3390645f9e9b43e5f30b714c0fd65c469`  
+		Last Modified: Tue, 12 May 2026 23:47:06 GMT  
+		Size: 480.0 KB (479956 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6159ce96c550fe0e2723ad3256060f48ed487a7021d8036f0e6ae4fb1cee9618`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 7.4 MB (7387702 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1fa8177fcaa7207011be892ae542dcc77b7bc62eea167a839cc7da6d2d1ac9a5`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.9 KB (1893 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d4971bfb6dede78606066a89134eecb700883a65fe50996cd78914085969b4c3`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.3 KB (1340 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3cff0aa25bd3783b982c3d8cbb8c921e7850bdea723a6759a7caf9cb0664baca`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
 		Size: 1.3 KB (1299 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1bbf4adc2716b36dbfba894764c1c3cd1f07280637c15aa87c0c6fd22518d5d3`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:2.14-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull nats@sha256:90fb004a8ffd930843f250b2ab8b77f2f937b8e038c008cac47b31a190616a59
+$ docker pull nats@sha256:9b61497122cf4b3a8c30fc687c66344968c0fda6bbfe4a1b60d4361d9120229b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5020; amd64
+	-	windows version 10.0.20348.5139; amd64
 
-### `nats:2.14-windowsservercore-ltsc2022` - windows version 10.0.20348.5020; amd64
+### `nats:2.14-windowsservercore-ltsc2022` - windows version 10.0.20348.5139; amd64
 
 ```console
-$ docker pull nats@sha256:ac581d12329f31124a42c0d14d571af4404ddb6c1dd6b3e888440d2d442e6914
+$ docker pull nats@sha256:8ac046d6c8660a1941079c55460e369623171da1242db0212c4e4e1ea04a7265
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2078093789 bytes)**  
+-	Total Size: **2.1 GB (2130301845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13a836a3c9902d8a685ab79cdb61414b28913494656f28dd9579c93a64a9298a`
+-	Image ID: `sha256:d23f8c7306fbc93a9072eae8b2e82245da9da5581b928cf98f6a43f3a5bb18c8`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -14803,31 +14803,31 @@ $ docker pull nats@sha256:ac581d12329f31124a42c0d14d571af4404ddb6c1dd6b3e888440d
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 13 Apr 2026 03:24:09 GMT
-RUN Install update 10.0.20348.5020
-# Thu, 30 Apr 2026 23:49:01 GMT
+# Thu, 07 May 2026 03:49:54 GMT
+RUN Install update 10.0.20348.5139
+# Tue, 12 May 2026 23:46:34 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Thu, 30 Apr 2026 23:49:01 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_DOCKERIZED=1
-# Thu, 30 Apr 2026 23:49:02 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_SERVER=2.14.0
-# Thu, 30 Apr 2026 23:49:04 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.14.0
-# Thu, 30 Apr 2026 23:49:05 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.14.0/nats-server-v2.14.0-windows-amd64.zip
-# Thu, 30 Apr 2026 23:49:06 GMT
+# Tue, 12 May 2026 23:46:37 GMT
 ENV NATS_SERVER_SHASUM=09ba382669cc4df390f97f16f08481f040eef0bb17ca5f2d71104b4be4cd613a
-# Thu, 30 Apr 2026 23:49:12 GMT
+# Tue, 12 May 2026 23:46:42 GMT
 RUN Set-PSDebug -Trace 2
-# Thu, 30 Apr 2026 23:49:29 GMT
+# Tue, 12 May 2026 23:46:57 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Thu, 30 Apr 2026 23:49:30 GMT
+# Tue, 12 May 2026 23:46:58 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Thu, 30 Apr 2026 23:49:31 GMT
+# Tue, 12 May 2026 23:46:58 GMT
 EXPOSE 4222 6222 8222
-# Thu, 30 Apr 2026 23:49:31 GMT
+# Tue, 12 May 2026 23:46:59 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Thu, 30 Apr 2026 23:49:32 GMT
+# Tue, 12 May 2026 23:47:00 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -14836,57 +14836,57 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7111ae68f8961455d230dc12d44c2193d29b7c981e35417323613a0c1aa06384`  
-		Last Modified: Tue, 14 Apr 2026 17:31:38 GMT  
-		Size: 581.2 MB (581192160 bytes)  
+	-	`sha256:857865ad3eca4da109d969134a9cab7225d9de49597914ae325d43661900f513`  
+		Last Modified: Tue, 12 May 2026 17:34:16 GMT  
+		Size: 633.4 MB (633401492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f58f739004aaffcce3059990cddc67d1ea5502bffed0d3ccc89fc876d808a5f`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff656db9d979af96cc6ae2d97615d67e56112751aead0385026c4197bb53643e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1327 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2bcc9579b6e0a4565853c7fd0d40941759e24befa7010f7aa5e67e01b71c46b`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1336 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce34548b393192bcfb6b43dcd4fa9f22cc9c8af2f376479e6a4f0b0aacee765c`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
-		Size: 1.3 KB (1332 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:876398f4f8f03cad8f838c575b80d65658e23044318c31f8251857b7dafe8c0f`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
-		Size: 1.3 KB (1336 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9823fd0d8c8b851233b4b38a990231f99885dc48e28253d76bb4da9b6c533a01`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
+	-	`sha256:a023c5625d2ee5d4db03516e4189696fe76d51e9b025badea7507457ee0ec780`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:333dab383d3c86b9b3b3e17b02bbea6d9aa6f30b6444a65ee8822b045834903a`  
-		Last Modified: Thu, 30 Apr 2026 23:49:38 GMT  
-		Size: 480.4 KB (480412 bytes)  
+	-	`sha256:347d3b4fd74d9cea43b61086e3be13f8fd68aaf7dcbed8869eb7654b13022210`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb7f13df87a6fe7ad19e8d11a006d3947b7cc8188c948947be382545effadc32`  
-		Last Modified: Thu, 30 Apr 2026 23:49:41 GMT  
-		Size: 7.4 MB (7388354 bytes)  
+	-	`sha256:9ef61b238d44d24f9216b2e1eaaa99046523561ff4f907e645d7893a7d29e400`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f97f1eff21017eaf3e22d485c507bd0284d2cf49e7ed4f9f111a705878805f5b`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.9 KB (1900 bytes)  
+	-	`sha256:ea1308c0e658293e66b16726765790666ac8d0da20ba6ac45c4b5bf07e871e7e`  
+		Last Modified: Tue, 12 May 2026 23:47:05 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ad9b1988e28082dfa6115ac90e1af603f0e980cd1430d02a6f60a3c2aef303e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:c10dbe3d84a9d708da963fba429a9d97b30ad3d3f55cf2b215db3226cef086cd`  
+		Last Modified: Tue, 12 May 2026 23:47:06 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6efccd2c209df2079143658594171d09f629479ff39e48cef0311cc764b9f3a5`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.3 KB (1323 bytes)  
+	-	`sha256:70eb792b599093b403901940e5a5809475ebdca2d28b347159b0ccd4fe52c402`  
+		Last Modified: Tue, 12 May 2026 23:47:05 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf825c06a4d4082c24c136ddfe04fa1bb7ebbb2224cdc24c4db83cb12a63e52e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
+	-	`sha256:6c94b5c81292e032d68bd1ba5bd819b3390645f9e9b43e5f30b714c0fd65c469`  
+		Last Modified: Tue, 12 May 2026 23:47:06 GMT  
+		Size: 480.0 KB (479956 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6159ce96c550fe0e2723ad3256060f48ed487a7021d8036f0e6ae4fb1cee9618`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 7.4 MB (7387702 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1fa8177fcaa7207011be892ae542dcc77b7bc62eea167a839cc7da6d2d1ac9a5`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.9 KB (1893 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d4971bfb6dede78606066a89134eecb700883a65fe50996cd78914085969b4c3`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.3 KB (1340 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3cff0aa25bd3783b982c3d8cbb8c921e7850bdea723a6759a7caf9cb0664baca`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
 		Size: 1.3 KB (1299 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1bbf4adc2716b36dbfba894764c1c3cd1f07280637c15aa87c0c6fd22518d5d3`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:2.14.0`
@@ -17133,24 +17133,24 @@ $ docker pull nats@sha256:ff392c940bafbd3cb3b74113b5c1e489c15df878b322dfcc20b223
 ## `nats:2.14.0-windowsservercore`
 
 ```console
-$ docker pull nats@sha256:90fb004a8ffd930843f250b2ab8b77f2f937b8e038c008cac47b31a190616a59
+$ docker pull nats@sha256:9b61497122cf4b3a8c30fc687c66344968c0fda6bbfe4a1b60d4361d9120229b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5020; amd64
+	-	windows version 10.0.20348.5139; amd64
 
-### `nats:2.14.0-windowsservercore` - windows version 10.0.20348.5020; amd64
+### `nats:2.14.0-windowsservercore` - windows version 10.0.20348.5139; amd64
 
 ```console
-$ docker pull nats@sha256:ac581d12329f31124a42c0d14d571af4404ddb6c1dd6b3e888440d2d442e6914
+$ docker pull nats@sha256:8ac046d6c8660a1941079c55460e369623171da1242db0212c4e4e1ea04a7265
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2078093789 bytes)**  
+-	Total Size: **2.1 GB (2130301845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13a836a3c9902d8a685ab79cdb61414b28913494656f28dd9579c93a64a9298a`
+-	Image ID: `sha256:d23f8c7306fbc93a9072eae8b2e82245da9da5581b928cf98f6a43f3a5bb18c8`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -17158,31 +17158,31 @@ $ docker pull nats@sha256:ac581d12329f31124a42c0d14d571af4404ddb6c1dd6b3e888440d
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 13 Apr 2026 03:24:09 GMT
-RUN Install update 10.0.20348.5020
-# Thu, 30 Apr 2026 23:49:01 GMT
+# Thu, 07 May 2026 03:49:54 GMT
+RUN Install update 10.0.20348.5139
+# Tue, 12 May 2026 23:46:34 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Thu, 30 Apr 2026 23:49:01 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_DOCKERIZED=1
-# Thu, 30 Apr 2026 23:49:02 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_SERVER=2.14.0
-# Thu, 30 Apr 2026 23:49:04 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.14.0
-# Thu, 30 Apr 2026 23:49:05 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.14.0/nats-server-v2.14.0-windows-amd64.zip
-# Thu, 30 Apr 2026 23:49:06 GMT
+# Tue, 12 May 2026 23:46:37 GMT
 ENV NATS_SERVER_SHASUM=09ba382669cc4df390f97f16f08481f040eef0bb17ca5f2d71104b4be4cd613a
-# Thu, 30 Apr 2026 23:49:12 GMT
+# Tue, 12 May 2026 23:46:42 GMT
 RUN Set-PSDebug -Trace 2
-# Thu, 30 Apr 2026 23:49:29 GMT
+# Tue, 12 May 2026 23:46:57 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Thu, 30 Apr 2026 23:49:30 GMT
+# Tue, 12 May 2026 23:46:58 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Thu, 30 Apr 2026 23:49:31 GMT
+# Tue, 12 May 2026 23:46:58 GMT
 EXPOSE 4222 6222 8222
-# Thu, 30 Apr 2026 23:49:31 GMT
+# Tue, 12 May 2026 23:46:59 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Thu, 30 Apr 2026 23:49:32 GMT
+# Tue, 12 May 2026 23:47:00 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -17191,80 +17191,80 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7111ae68f8961455d230dc12d44c2193d29b7c981e35417323613a0c1aa06384`  
-		Last Modified: Tue, 14 Apr 2026 17:31:38 GMT  
-		Size: 581.2 MB (581192160 bytes)  
+	-	`sha256:857865ad3eca4da109d969134a9cab7225d9de49597914ae325d43661900f513`  
+		Last Modified: Tue, 12 May 2026 17:34:16 GMT  
+		Size: 633.4 MB (633401492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f58f739004aaffcce3059990cddc67d1ea5502bffed0d3ccc89fc876d808a5f`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff656db9d979af96cc6ae2d97615d67e56112751aead0385026c4197bb53643e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1327 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2bcc9579b6e0a4565853c7fd0d40941759e24befa7010f7aa5e67e01b71c46b`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1336 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce34548b393192bcfb6b43dcd4fa9f22cc9c8af2f376479e6a4f0b0aacee765c`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
-		Size: 1.3 KB (1332 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:876398f4f8f03cad8f838c575b80d65658e23044318c31f8251857b7dafe8c0f`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
-		Size: 1.3 KB (1336 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9823fd0d8c8b851233b4b38a990231f99885dc48e28253d76bb4da9b6c533a01`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
+	-	`sha256:a023c5625d2ee5d4db03516e4189696fe76d51e9b025badea7507457ee0ec780`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:333dab383d3c86b9b3b3e17b02bbea6d9aa6f30b6444a65ee8822b045834903a`  
-		Last Modified: Thu, 30 Apr 2026 23:49:38 GMT  
-		Size: 480.4 KB (480412 bytes)  
+	-	`sha256:347d3b4fd74d9cea43b61086e3be13f8fd68aaf7dcbed8869eb7654b13022210`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb7f13df87a6fe7ad19e8d11a006d3947b7cc8188c948947be382545effadc32`  
-		Last Modified: Thu, 30 Apr 2026 23:49:41 GMT  
-		Size: 7.4 MB (7388354 bytes)  
+	-	`sha256:9ef61b238d44d24f9216b2e1eaaa99046523561ff4f907e645d7893a7d29e400`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f97f1eff21017eaf3e22d485c507bd0284d2cf49e7ed4f9f111a705878805f5b`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.9 KB (1900 bytes)  
+	-	`sha256:ea1308c0e658293e66b16726765790666ac8d0da20ba6ac45c4b5bf07e871e7e`  
+		Last Modified: Tue, 12 May 2026 23:47:05 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ad9b1988e28082dfa6115ac90e1af603f0e980cd1430d02a6f60a3c2aef303e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:c10dbe3d84a9d708da963fba429a9d97b30ad3d3f55cf2b215db3226cef086cd`  
+		Last Modified: Tue, 12 May 2026 23:47:06 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6efccd2c209df2079143658594171d09f629479ff39e48cef0311cc764b9f3a5`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.3 KB (1323 bytes)  
+	-	`sha256:70eb792b599093b403901940e5a5809475ebdca2d28b347159b0ccd4fe52c402`  
+		Last Modified: Tue, 12 May 2026 23:47:05 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf825c06a4d4082c24c136ddfe04fa1bb7ebbb2224cdc24c4db83cb12a63e52e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
+	-	`sha256:6c94b5c81292e032d68bd1ba5bd819b3390645f9e9b43e5f30b714c0fd65c469`  
+		Last Modified: Tue, 12 May 2026 23:47:06 GMT  
+		Size: 480.0 KB (479956 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6159ce96c550fe0e2723ad3256060f48ed487a7021d8036f0e6ae4fb1cee9618`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 7.4 MB (7387702 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1fa8177fcaa7207011be892ae542dcc77b7bc62eea167a839cc7da6d2d1ac9a5`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.9 KB (1893 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d4971bfb6dede78606066a89134eecb700883a65fe50996cd78914085969b4c3`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.3 KB (1340 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3cff0aa25bd3783b982c3d8cbb8c921e7850bdea723a6759a7caf9cb0664baca`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
 		Size: 1.3 KB (1299 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1bbf4adc2716b36dbfba894764c1c3cd1f07280637c15aa87c0c6fd22518d5d3`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:2.14.0-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull nats@sha256:90fb004a8ffd930843f250b2ab8b77f2f937b8e038c008cac47b31a190616a59
+$ docker pull nats@sha256:9b61497122cf4b3a8c30fc687c66344968c0fda6bbfe4a1b60d4361d9120229b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5020; amd64
+	-	windows version 10.0.20348.5139; amd64
 
-### `nats:2.14.0-windowsservercore-ltsc2022` - windows version 10.0.20348.5020; amd64
+### `nats:2.14.0-windowsservercore-ltsc2022` - windows version 10.0.20348.5139; amd64
 
 ```console
-$ docker pull nats@sha256:ac581d12329f31124a42c0d14d571af4404ddb6c1dd6b3e888440d2d442e6914
+$ docker pull nats@sha256:8ac046d6c8660a1941079c55460e369623171da1242db0212c4e4e1ea04a7265
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2078093789 bytes)**  
+-	Total Size: **2.1 GB (2130301845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13a836a3c9902d8a685ab79cdb61414b28913494656f28dd9579c93a64a9298a`
+-	Image ID: `sha256:d23f8c7306fbc93a9072eae8b2e82245da9da5581b928cf98f6a43f3a5bb18c8`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -17272,31 +17272,31 @@ $ docker pull nats@sha256:ac581d12329f31124a42c0d14d571af4404ddb6c1dd6b3e888440d
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 13 Apr 2026 03:24:09 GMT
-RUN Install update 10.0.20348.5020
-# Thu, 30 Apr 2026 23:49:01 GMT
+# Thu, 07 May 2026 03:49:54 GMT
+RUN Install update 10.0.20348.5139
+# Tue, 12 May 2026 23:46:34 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Thu, 30 Apr 2026 23:49:01 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_DOCKERIZED=1
-# Thu, 30 Apr 2026 23:49:02 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_SERVER=2.14.0
-# Thu, 30 Apr 2026 23:49:04 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.14.0
-# Thu, 30 Apr 2026 23:49:05 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.14.0/nats-server-v2.14.0-windows-amd64.zip
-# Thu, 30 Apr 2026 23:49:06 GMT
+# Tue, 12 May 2026 23:46:37 GMT
 ENV NATS_SERVER_SHASUM=09ba382669cc4df390f97f16f08481f040eef0bb17ca5f2d71104b4be4cd613a
-# Thu, 30 Apr 2026 23:49:12 GMT
+# Tue, 12 May 2026 23:46:42 GMT
 RUN Set-PSDebug -Trace 2
-# Thu, 30 Apr 2026 23:49:29 GMT
+# Tue, 12 May 2026 23:46:57 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Thu, 30 Apr 2026 23:49:30 GMT
+# Tue, 12 May 2026 23:46:58 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Thu, 30 Apr 2026 23:49:31 GMT
+# Tue, 12 May 2026 23:46:58 GMT
 EXPOSE 4222 6222 8222
-# Thu, 30 Apr 2026 23:49:31 GMT
+# Tue, 12 May 2026 23:46:59 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Thu, 30 Apr 2026 23:49:32 GMT
+# Tue, 12 May 2026 23:47:00 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -17305,57 +17305,57 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7111ae68f8961455d230dc12d44c2193d29b7c981e35417323613a0c1aa06384`  
-		Last Modified: Tue, 14 Apr 2026 17:31:38 GMT  
-		Size: 581.2 MB (581192160 bytes)  
+	-	`sha256:857865ad3eca4da109d969134a9cab7225d9de49597914ae325d43661900f513`  
+		Last Modified: Tue, 12 May 2026 17:34:16 GMT  
+		Size: 633.4 MB (633401492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f58f739004aaffcce3059990cddc67d1ea5502bffed0d3ccc89fc876d808a5f`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff656db9d979af96cc6ae2d97615d67e56112751aead0385026c4197bb53643e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1327 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2bcc9579b6e0a4565853c7fd0d40941759e24befa7010f7aa5e67e01b71c46b`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1336 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce34548b393192bcfb6b43dcd4fa9f22cc9c8af2f376479e6a4f0b0aacee765c`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
-		Size: 1.3 KB (1332 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:876398f4f8f03cad8f838c575b80d65658e23044318c31f8251857b7dafe8c0f`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
-		Size: 1.3 KB (1336 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9823fd0d8c8b851233b4b38a990231f99885dc48e28253d76bb4da9b6c533a01`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
+	-	`sha256:a023c5625d2ee5d4db03516e4189696fe76d51e9b025badea7507457ee0ec780`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:333dab383d3c86b9b3b3e17b02bbea6d9aa6f30b6444a65ee8822b045834903a`  
-		Last Modified: Thu, 30 Apr 2026 23:49:38 GMT  
-		Size: 480.4 KB (480412 bytes)  
+	-	`sha256:347d3b4fd74d9cea43b61086e3be13f8fd68aaf7dcbed8869eb7654b13022210`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb7f13df87a6fe7ad19e8d11a006d3947b7cc8188c948947be382545effadc32`  
-		Last Modified: Thu, 30 Apr 2026 23:49:41 GMT  
-		Size: 7.4 MB (7388354 bytes)  
+	-	`sha256:9ef61b238d44d24f9216b2e1eaaa99046523561ff4f907e645d7893a7d29e400`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f97f1eff21017eaf3e22d485c507bd0284d2cf49e7ed4f9f111a705878805f5b`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.9 KB (1900 bytes)  
+	-	`sha256:ea1308c0e658293e66b16726765790666ac8d0da20ba6ac45c4b5bf07e871e7e`  
+		Last Modified: Tue, 12 May 2026 23:47:05 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ad9b1988e28082dfa6115ac90e1af603f0e980cd1430d02a6f60a3c2aef303e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:c10dbe3d84a9d708da963fba429a9d97b30ad3d3f55cf2b215db3226cef086cd`  
+		Last Modified: Tue, 12 May 2026 23:47:06 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6efccd2c209df2079143658594171d09f629479ff39e48cef0311cc764b9f3a5`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.3 KB (1323 bytes)  
+	-	`sha256:70eb792b599093b403901940e5a5809475ebdca2d28b347159b0ccd4fe52c402`  
+		Last Modified: Tue, 12 May 2026 23:47:05 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf825c06a4d4082c24c136ddfe04fa1bb7ebbb2224cdc24c4db83cb12a63e52e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
+	-	`sha256:6c94b5c81292e032d68bd1ba5bd819b3390645f9e9b43e5f30b714c0fd65c469`  
+		Last Modified: Tue, 12 May 2026 23:47:06 GMT  
+		Size: 480.0 KB (479956 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6159ce96c550fe0e2723ad3256060f48ed487a7021d8036f0e6ae4fb1cee9618`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 7.4 MB (7387702 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1fa8177fcaa7207011be892ae542dcc77b7bc62eea167a839cc7da6d2d1ac9a5`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.9 KB (1893 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d4971bfb6dede78606066a89134eecb700883a65fe50996cd78914085969b4c3`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.3 KB (1340 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3cff0aa25bd3783b982c3d8cbb8c921e7850bdea723a6759a7caf9cb0664baca`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
 		Size: 1.3 KB (1299 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1bbf4adc2716b36dbfba894764c1c3cd1f07280637c15aa87c0c6fd22518d5d3`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:alpine`
@@ -19602,24 +19602,24 @@ $ docker pull nats@sha256:ff392c940bafbd3cb3b74113b5c1e489c15df878b322dfcc20b223
 ## `nats:windowsservercore`
 
 ```console
-$ docker pull nats@sha256:90fb004a8ffd930843f250b2ab8b77f2f937b8e038c008cac47b31a190616a59
+$ docker pull nats@sha256:9b61497122cf4b3a8c30fc687c66344968c0fda6bbfe4a1b60d4361d9120229b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5020; amd64
+	-	windows version 10.0.20348.5139; amd64
 
-### `nats:windowsservercore` - windows version 10.0.20348.5020; amd64
+### `nats:windowsservercore` - windows version 10.0.20348.5139; amd64
 
 ```console
-$ docker pull nats@sha256:ac581d12329f31124a42c0d14d571af4404ddb6c1dd6b3e888440d2d442e6914
+$ docker pull nats@sha256:8ac046d6c8660a1941079c55460e369623171da1242db0212c4e4e1ea04a7265
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2078093789 bytes)**  
+-	Total Size: **2.1 GB (2130301845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13a836a3c9902d8a685ab79cdb61414b28913494656f28dd9579c93a64a9298a`
+-	Image ID: `sha256:d23f8c7306fbc93a9072eae8b2e82245da9da5581b928cf98f6a43f3a5bb18c8`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -19627,31 +19627,31 @@ $ docker pull nats@sha256:ac581d12329f31124a42c0d14d571af4404ddb6c1dd6b3e888440d
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 13 Apr 2026 03:24:09 GMT
-RUN Install update 10.0.20348.5020
-# Thu, 30 Apr 2026 23:49:01 GMT
+# Thu, 07 May 2026 03:49:54 GMT
+RUN Install update 10.0.20348.5139
+# Tue, 12 May 2026 23:46:34 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Thu, 30 Apr 2026 23:49:01 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_DOCKERIZED=1
-# Thu, 30 Apr 2026 23:49:02 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_SERVER=2.14.0
-# Thu, 30 Apr 2026 23:49:04 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.14.0
-# Thu, 30 Apr 2026 23:49:05 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.14.0/nats-server-v2.14.0-windows-amd64.zip
-# Thu, 30 Apr 2026 23:49:06 GMT
+# Tue, 12 May 2026 23:46:37 GMT
 ENV NATS_SERVER_SHASUM=09ba382669cc4df390f97f16f08481f040eef0bb17ca5f2d71104b4be4cd613a
-# Thu, 30 Apr 2026 23:49:12 GMT
+# Tue, 12 May 2026 23:46:42 GMT
 RUN Set-PSDebug -Trace 2
-# Thu, 30 Apr 2026 23:49:29 GMT
+# Tue, 12 May 2026 23:46:57 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Thu, 30 Apr 2026 23:49:30 GMT
+# Tue, 12 May 2026 23:46:58 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Thu, 30 Apr 2026 23:49:31 GMT
+# Tue, 12 May 2026 23:46:58 GMT
 EXPOSE 4222 6222 8222
-# Thu, 30 Apr 2026 23:49:31 GMT
+# Tue, 12 May 2026 23:46:59 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Thu, 30 Apr 2026 23:49:32 GMT
+# Tue, 12 May 2026 23:47:00 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -19660,80 +19660,80 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7111ae68f8961455d230dc12d44c2193d29b7c981e35417323613a0c1aa06384`  
-		Last Modified: Tue, 14 Apr 2026 17:31:38 GMT  
-		Size: 581.2 MB (581192160 bytes)  
+	-	`sha256:857865ad3eca4da109d969134a9cab7225d9de49597914ae325d43661900f513`  
+		Last Modified: Tue, 12 May 2026 17:34:16 GMT  
+		Size: 633.4 MB (633401492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f58f739004aaffcce3059990cddc67d1ea5502bffed0d3ccc89fc876d808a5f`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff656db9d979af96cc6ae2d97615d67e56112751aead0385026c4197bb53643e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1327 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2bcc9579b6e0a4565853c7fd0d40941759e24befa7010f7aa5e67e01b71c46b`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1336 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce34548b393192bcfb6b43dcd4fa9f22cc9c8af2f376479e6a4f0b0aacee765c`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
-		Size: 1.3 KB (1332 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:876398f4f8f03cad8f838c575b80d65658e23044318c31f8251857b7dafe8c0f`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
-		Size: 1.3 KB (1336 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9823fd0d8c8b851233b4b38a990231f99885dc48e28253d76bb4da9b6c533a01`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
+	-	`sha256:a023c5625d2ee5d4db03516e4189696fe76d51e9b025badea7507457ee0ec780`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:333dab383d3c86b9b3b3e17b02bbea6d9aa6f30b6444a65ee8822b045834903a`  
-		Last Modified: Thu, 30 Apr 2026 23:49:38 GMT  
-		Size: 480.4 KB (480412 bytes)  
+	-	`sha256:347d3b4fd74d9cea43b61086e3be13f8fd68aaf7dcbed8869eb7654b13022210`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb7f13df87a6fe7ad19e8d11a006d3947b7cc8188c948947be382545effadc32`  
-		Last Modified: Thu, 30 Apr 2026 23:49:41 GMT  
-		Size: 7.4 MB (7388354 bytes)  
+	-	`sha256:9ef61b238d44d24f9216b2e1eaaa99046523561ff4f907e645d7893a7d29e400`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f97f1eff21017eaf3e22d485c507bd0284d2cf49e7ed4f9f111a705878805f5b`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.9 KB (1900 bytes)  
+	-	`sha256:ea1308c0e658293e66b16726765790666ac8d0da20ba6ac45c4b5bf07e871e7e`  
+		Last Modified: Tue, 12 May 2026 23:47:05 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ad9b1988e28082dfa6115ac90e1af603f0e980cd1430d02a6f60a3c2aef303e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:c10dbe3d84a9d708da963fba429a9d97b30ad3d3f55cf2b215db3226cef086cd`  
+		Last Modified: Tue, 12 May 2026 23:47:06 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6efccd2c209df2079143658594171d09f629479ff39e48cef0311cc764b9f3a5`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.3 KB (1323 bytes)  
+	-	`sha256:70eb792b599093b403901940e5a5809475ebdca2d28b347159b0ccd4fe52c402`  
+		Last Modified: Tue, 12 May 2026 23:47:05 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf825c06a4d4082c24c136ddfe04fa1bb7ebbb2224cdc24c4db83cb12a63e52e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
+	-	`sha256:6c94b5c81292e032d68bd1ba5bd819b3390645f9e9b43e5f30b714c0fd65c469`  
+		Last Modified: Tue, 12 May 2026 23:47:06 GMT  
+		Size: 480.0 KB (479956 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6159ce96c550fe0e2723ad3256060f48ed487a7021d8036f0e6ae4fb1cee9618`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 7.4 MB (7387702 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1fa8177fcaa7207011be892ae542dcc77b7bc62eea167a839cc7da6d2d1ac9a5`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.9 KB (1893 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d4971bfb6dede78606066a89134eecb700883a65fe50996cd78914085969b4c3`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.3 KB (1340 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3cff0aa25bd3783b982c3d8cbb8c921e7850bdea723a6759a7caf9cb0664baca`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
 		Size: 1.3 KB (1299 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1bbf4adc2716b36dbfba894764c1c3cd1f07280637c15aa87c0c6fd22518d5d3`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `nats:windowsservercore-ltsc2022`
 
 ```console
-$ docker pull nats@sha256:90fb004a8ffd930843f250b2ab8b77f2f937b8e038c008cac47b31a190616a59
+$ docker pull nats@sha256:9b61497122cf4b3a8c30fc687c66344968c0fda6bbfe4a1b60d4361d9120229b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.20348.5020; amd64
+	-	windows version 10.0.20348.5139; amd64
 
-### `nats:windowsservercore-ltsc2022` - windows version 10.0.20348.5020; amd64
+### `nats:windowsservercore-ltsc2022` - windows version 10.0.20348.5139; amd64
 
 ```console
-$ docker pull nats@sha256:ac581d12329f31124a42c0d14d571af4404ddb6c1dd6b3e888440d2d442e6914
+$ docker pull nats@sha256:8ac046d6c8660a1941079c55460e369623171da1242db0212c4e4e1ea04a7265
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2078093789 bytes)**  
+-	Total Size: **2.1 GB (2130301845 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:13a836a3c9902d8a685ab79cdb61414b28913494656f28dd9579c93a64a9298a`
+-	Image ID: `sha256:d23f8c7306fbc93a9072eae8b2e82245da9da5581b928cf98f6a43f3a5bb18c8`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -19741,31 +19741,31 @@ $ docker pull nats@sha256:ac581d12329f31124a42c0d14d571af4404ddb6c1dd6b3e888440d
 ```dockerfile
 # Thu, 09 Oct 2025 07:51:18 GMT
 RUN Apply image 10.0.20348.4294
-# Mon, 13 Apr 2026 03:24:09 GMT
-RUN Install update 10.0.20348.5020
-# Thu, 30 Apr 2026 23:49:01 GMT
+# Thu, 07 May 2026 03:49:54 GMT
+RUN Install update 10.0.20348.5139
+# Tue, 12 May 2026 23:46:34 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Thu, 30 Apr 2026 23:49:01 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_DOCKERIZED=1
-# Thu, 30 Apr 2026 23:49:02 GMT
+# Tue, 12 May 2026 23:46:35 GMT
 ENV NATS_SERVER=2.14.0
-# Thu, 30 Apr 2026 23:49:04 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 LABEL org.opencontainers.image.title=NATS Server org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system. org.opencontainers.image.url=https://nats.io org.opencontainers.image.documentation=https://docs.nats.io org.opencontainers.image.source=https://github.com/nats-io/nats-docker org.opencontainers.image.vendor=NATS.io org.opencontainers.image.licenses=Apache-2.0 org.opencontainers.image.version=2.14.0
-# Thu, 30 Apr 2026 23:49:05 GMT
+# Tue, 12 May 2026 23:46:36 GMT
 ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.14.0/nats-server-v2.14.0-windows-amd64.zip
-# Thu, 30 Apr 2026 23:49:06 GMT
+# Tue, 12 May 2026 23:46:37 GMT
 ENV NATS_SERVER_SHASUM=09ba382669cc4df390f97f16f08481f040eef0bb17ca5f2d71104b4be4cd613a
-# Thu, 30 Apr 2026 23:49:12 GMT
+# Tue, 12 May 2026 23:46:42 GMT
 RUN Set-PSDebug -Trace 2
-# Thu, 30 Apr 2026 23:49:29 GMT
+# Tue, 12 May 2026 23:46:57 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Thu, 30 Apr 2026 23:49:30 GMT
+# Tue, 12 May 2026 23:46:58 GMT
 COPY file:955816fff9b6400a43d9954c1d8f3dc8ab654bfbdf5936157955e3e678752b7b in C:\nats-server.conf 
-# Thu, 30 Apr 2026 23:49:31 GMT
+# Tue, 12 May 2026 23:46:58 GMT
 EXPOSE 4222 6222 8222
-# Thu, 30 Apr 2026 23:49:31 GMT
+# Tue, 12 May 2026 23:46:59 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Thu, 30 Apr 2026 23:49:32 GMT
+# Tue, 12 May 2026 23:47:00 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -19774,55 +19774,55 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 14 Oct 2025 18:58:34 GMT  
 		Size: 1.5 GB (1489019076 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7111ae68f8961455d230dc12d44c2193d29b7c981e35417323613a0c1aa06384`  
-		Last Modified: Tue, 14 Apr 2026 17:31:38 GMT  
-		Size: 581.2 MB (581192160 bytes)  
+	-	`sha256:857865ad3eca4da109d969134a9cab7225d9de49597914ae325d43661900f513`  
+		Last Modified: Tue, 12 May 2026 17:34:16 GMT  
+		Size: 633.4 MB (633401492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f58f739004aaffcce3059990cddc67d1ea5502bffed0d3ccc89fc876d808a5f`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1320 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ff656db9d979af96cc6ae2d97615d67e56112751aead0385026c4197bb53643e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1327 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d2bcc9579b6e0a4565853c7fd0d40941759e24befa7010f7aa5e67e01b71c46b`  
-		Last Modified: Thu, 30 Apr 2026 23:49:39 GMT  
-		Size: 1.3 KB (1336 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ce34548b393192bcfb6b43dcd4fa9f22cc9c8af2f376479e6a4f0b0aacee765c`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
-		Size: 1.3 KB (1332 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:876398f4f8f03cad8f838c575b80d65658e23044318c31f8251857b7dafe8c0f`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
-		Size: 1.3 KB (1336 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9823fd0d8c8b851233b4b38a990231f99885dc48e28253d76bb4da9b6c533a01`  
-		Last Modified: Thu, 30 Apr 2026 23:49:37 GMT  
+	-	`sha256:a023c5625d2ee5d4db03516e4189696fe76d51e9b025badea7507457ee0ec780`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:333dab383d3c86b9b3b3e17b02bbea6d9aa6f30b6444a65ee8822b045834903a`  
-		Last Modified: Thu, 30 Apr 2026 23:49:38 GMT  
-		Size: 480.4 KB (480412 bytes)  
+	-	`sha256:347d3b4fd74d9cea43b61086e3be13f8fd68aaf7dcbed8869eb7654b13022210`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eb7f13df87a6fe7ad19e8d11a006d3947b7cc8188c948947be382545effadc32`  
-		Last Modified: Thu, 30 Apr 2026 23:49:41 GMT  
-		Size: 7.4 MB (7388354 bytes)  
+	-	`sha256:9ef61b238d44d24f9216b2e1eaaa99046523561ff4f907e645d7893a7d29e400`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 1.3 KB (1317 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f97f1eff21017eaf3e22d485c507bd0284d2cf49e7ed4f9f111a705878805f5b`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.9 KB (1900 bytes)  
+	-	`sha256:ea1308c0e658293e66b16726765790666ac8d0da20ba6ac45c4b5bf07e871e7e`  
+		Last Modified: Tue, 12 May 2026 23:47:05 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5ad9b1988e28082dfa6115ac90e1af603f0e980cd1430d02a6f60a3c2aef303e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:c10dbe3d84a9d708da963fba429a9d97b30ad3d3f55cf2b215db3226cef086cd`  
+		Last Modified: Tue, 12 May 2026 23:47:06 GMT  
+		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6efccd2c209df2079143658594171d09f629479ff39e48cef0311cc764b9f3a5`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
-		Size: 1.3 KB (1323 bytes)  
+	-	`sha256:70eb792b599093b403901940e5a5809475ebdca2d28b347159b0ccd4fe52c402`  
+		Last Modified: Tue, 12 May 2026 23:47:05 GMT  
+		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf825c06a4d4082c24c136ddfe04fa1bb7ebbb2224cdc24c4db83cb12a63e52e`  
-		Last Modified: Thu, 30 Apr 2026 23:49:36 GMT  
+	-	`sha256:6c94b5c81292e032d68bd1ba5bd819b3390645f9e9b43e5f30b714c0fd65c469`  
+		Last Modified: Tue, 12 May 2026 23:47:06 GMT  
+		Size: 480.0 KB (479956 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6159ce96c550fe0e2723ad3256060f48ed487a7021d8036f0e6ae4fb1cee9618`  
+		Last Modified: Tue, 12 May 2026 23:47:07 GMT  
+		Size: 7.4 MB (7387702 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1fa8177fcaa7207011be892ae542dcc77b7bc62eea167a839cc7da6d2d1ac9a5`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.9 KB (1893 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d4971bfb6dede78606066a89134eecb700883a65fe50996cd78914085969b4c3`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.3 KB (1340 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3cff0aa25bd3783b982c3d8cbb8c921e7850bdea723a6759a7caf9cb0664baca`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
 		Size: 1.3 KB (1299 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1bbf4adc2716b36dbfba894764c1c3cd1f07280637c15aa87c0c6fd22518d5d3`  
+		Last Modified: Tue, 12 May 2026 23:47:04 GMT  
+		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
