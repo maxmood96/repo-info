@@ -1,10 +1,10 @@
-# `eclipse-temurin:8u482-b08-jdk-alpine-3.21`
+# `eclipse-temurin:8u492-b09-jdk-alpine-3.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:37e71d13fccc544b10f65cd6c9c93a3ec96a6e44d6cafc4561c842d6b4f7d023`
-- Created: `2026-04-17T00:23:46.67723912Z`
-- Virtual Size: ~ 191.42 Mb  
+- Image ID: `sha256:d0c42a23eac0eab8342cd1ada2bc882f20b057284b96e7c719dade7d8a98a45a`
+- Created: `2026-05-12T21:25:30.061334831Z`
+- Virtual Size: ~ 191.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u482-b08`
+  - `JAVA_VERSION=jdk8u492-b09`
 
 ## `apk` (`.apk`-based packages)
 
@@ -480,16 +480,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.12-r0 description:
+gnutls-3.8.13-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.12-r0 webpage:
+gnutls-3.8.13-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.12-r0 installed size:
-1916 KiB
+gnutls-3.8.13-r0 installed size:
+2012 KiB
 
-gnutls-3.8.12-r0 license:
+gnutls-3.8.13-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1177,16 +1177,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026a-r0 description:
+tzdata-2026b-r0 description:
 Timezone data
 
-tzdata-2026a-r0 webpage:
+tzdata-2026b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026a-r0 installed size:
+tzdata-2026b-r0 installed size:
 436 KiB
 
-tzdata-2026a-r0 license:
+tzdata-2026b-r0 license:
 Public-Domain
 
 ```
