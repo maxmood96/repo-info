@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e47bfe92113ac4a7aa968cfcc6b202e0917e3aba076ed34fb909ba43d0145a1`
-- Created: `2026-05-04T20:41:21.372963563Z`
-- Virtual Size: ~ 93.23 Mb  
+- Image ID: `sha256:bc68d4827ce26a8f221534534db9311f99155baf48c270f85202466e883b01ca`
+- Created: `2026-05-11T16:40:49.965308367Z`
+- Virtual Size: ~ 93.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1086,15 +1086,15 @@ $ dnf --quiet download --source --url sqlite-libs-3.34.1-9.el9_7
 http://vault.almalinux.org/9.7/BaseOS/Source/Packages/sqlite-3.34.1-9.el9_7.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-252-55.el9_7.8.alma.1.x86_64`
+### `rpm` package: `systemd-libs-252-55.el9_7.9.alma.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-libs-252-55.el9_7.8.alma.1
-http://vault.almalinux.org/9.7/BaseOS/Source/Packages/systemd-252-55.el9_7.8.alma.1.src.rpm
+$ dnf --quiet download --source --url systemd-libs-252-55.el9_7.9.alma.1
+http://vault.almalinux.org/9.7/BaseOS/Source/Packages/systemd-252-55.el9_7.9.alma.1.src.rpm
 ```
 
 ### `rpm` package: `tzdata-2026a-1.el9.noarch`
