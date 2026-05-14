@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:091ef4c365be5058d4e49f80a42fe134b26ec9a0e694dec0fce5ed8ffafc5178`
-- Created: `2026-05-08T16:20:10.266011201Z`
+- Image ID: `sha256:474eca4f5bb0b5b7df32e05e092f2e3ecf7a57b62939e46436c4b595e42a7ae9`
+- Created: `2026-05-12T23:33:16.038200058Z`
 - Virtual Size: ~ 926.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -23,7 +23,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-05-06T12:56:03Z`
+  - `build-date=2026-05-12T05:07:12Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
@@ -37,12 +37,12 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9/ubi-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `org.opencontainers.image.created=2026-05-06T12:56:03Z`
-  - `org.opencontainers.image.revision=8def05a6f0dfabdc25ea20a79b0d11f8f9b12c5c`
-  - `release=1778072020`
+  - `org.opencontainers.image.created=2026-05-12T05:07:12Z`
+  - `org.opencontainers.image.revision=cbebc1cfad3d894eb79709424b198d17236aaba5`
+  - `release=1778562320`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=8def05a6f0dfabdc25ea20a79b0d11f8f9b12c5c`
+  - `vcs-ref=cbebc1cfad3d894eb79709424b198d17236aaba5`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.7`
@@ -352,15 +352,15 @@ $ dnf --quiet download --source --url gdbm-libs-1.23-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gdbm-1.23-1.el9.src.rpm
 ```
 
-### `rpm` package: `glib2-2.68.4-18.el9_7.1.x86_64`
+### `rpm` package: `glib2-2.68.4-18.el9_7.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glib2-2.68.4-18.el9_7.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-18.el9_7.1.src.rpm
+$ dnf --quiet download --source --url glib2-2.68.4-18.el9_7.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-18.el9_7.2.src.rpm
 ```
 
 ### `rpm` package: `glibc-2.34-231.el9_7.10.x86_64`
@@ -507,12 +507,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT and ASL 2.0 and CC-BY and GPLv3
 
-Source:
-
-```console
-$ dnf --quiet download --source --url jq-1.6-19.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/j/jq-1.6-19.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
 
@@ -1463,11 +1458,16 @@ $ dnf --quiet download --source --url readline-8.1-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/readline-8.1-4.el9.src.rpm
 ```
 
-### `rpm` package: `redhat-release-9.7-0.7.el9.x86_64`
+### `rpm` package: `redhat-release-9.7-0.10.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url redhat-release-9.7-0.10.el9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/redhat-release-9.7-0.10.el9.src.rpm
+```
 
 ### `rpm` package: `rootfiles-8.1-35.el9.noarch`
 
