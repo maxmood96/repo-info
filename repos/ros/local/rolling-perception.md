@@ -438,14 +438,9 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris avahi=0.8-13ubuntu6.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8.orig.tar.gz' avahi_0.8.orig.tar.gz 1591458 SHA256:060309d7a333d38d951bc27598c677af1796934dbd98e1024e7ad8de798fedda
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-13ubuntu6.1.debian.tar.xz' avahi_0.8-13ubuntu6.1.debian.tar.xz 50612 SHA256:83edf463ecf4fd51ef0f601f116e61c241a9ecf93ba057572f4eb0e5077baab9
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-13ubuntu6.1.dsc' avahi_0.8-13ubuntu6.1.dsc 4203 SHA256:e58f49b9c8f420396a46cb145e4c452d019e708526d15a3851735cf804eead32
-```
 
 ### `dpkg` source package: `base-files=13ubuntu10.4`
 

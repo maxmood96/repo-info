@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:26241c9bcab8ee0d629bd9279ed24e4fd0fafc381bbd07a620966a6761ae0a0c`
-- Created: `2026-04-15T20:54:56.685215745Z`
-- Virtual Size: ~ 490.15 Mb  
+- Image ID: `sha256:e6d68c353f6974f34f875d2fc4bfba8ebcbefa6f8499ecb44ebed59c439d01fb`
+- Created: `2026-05-11T19:01:15.825566104Z`
+- Virtual Size: ~ 490.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/ros_entrypoint.sh"]`
@@ -396,12 +396,12 @@ $ apt-get source -qq --print-uris cppcheck=2.13.0-2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/cppcheck/cppcheck_2.13.0-2ubuntu3.debian.tar.xz' cppcheck_2.13.0-2ubuntu3.debian.tar.xz 12456 SHA512:477f15007fc31af8b54ddf35af4c704eb5badcf51451d604c8d232cba76bc7dad6d9e84f6e78db249aa1e1f8ca764b8a9bcb6eec06357666e8466e54f05c15b6
 ```
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.8`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.9`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.8`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.8`
+- `curl=8.5.0-2ubuntu10.9`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.9`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -418,9 +418,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.9
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.9.debian.tar.xz' curl_8.5.0-2ubuntu10.9.debian.tar.xz 76576 SHA512:e2758617da044745e488a26b65c245e236d02442486dc20bb281b0fd8eb3258d736b339caac26b1584a30235b321f58b4f88827dfc659be5559ef5da3703016d
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.9.dsc' curl_8.5.0-2ubuntu10.9.dsc 3051 SHA512:0c23074297e3c67ac1ecabd4598036fbee147d8b336c8cb9c787a350567d1f0320b0f93e5c4bca4a9153221604bf5f7598b5329f075da015feb710f79aca6e29
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
 
@@ -1135,11 +1140,11 @@ $ apt-get source -qq --print-uris keyutils=1.6.3-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.3-3build1.debian.tar.xz' keyutils_1.6.3-3build1.debian.tar.xz 13456 SHA512:ef729447f8f4adebdb986d115e227bd908b346e26115eb7a0385a084ad69f6772c914744d8c24928587247cd5fc329ed1305e9b006db276d0445b9614f20603f
 ```
 
-### `dpkg` source package: `kmod=31+20240202-2ubuntu7.1`
+### `dpkg` source package: `kmod=31+20240202-2ubuntu7.2`
 
 Binary Packages:
 
-- `libkmod2:amd64=31+20240202-2ubuntu7.1`
+- `libkmod2:amd64=31+20240202-2ubuntu7.2`
 
 Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 
@@ -1148,9 +1153,14 @@ Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris kmod=31+20240202-2ubuntu7.2
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_31%2b20240202.orig.tar.xz' kmod_31+20240202.orig.tar.xz 253852 SHA512:9f9f344fbbcde8d3d479ff0c48adabb96442ccdf4190dcfde1c5ee797e2e85c6518b4a9d9451ebb0cf6d36364cd3e6a8f4301f87659b6b9b0b0cb0c7d3535a93
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_31%2b20240202-2ubuntu7.2.debian.tar.xz' kmod_31+20240202-2ubuntu7.2.debian.tar.xz 15332 SHA512:b79d51d013c06629f14ae5655f703498936dc7f5335cca7938152798825db91c148fd3201ec308b48357b35225675334d9bfd54b425a0aadd991f375626bd4d6
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_31%2b20240202-2ubuntu7.2.dsc' kmod_31+20240202-2ubuntu7.2.dsc 2288 SHA512:b9330c384f8f6c0e43145f216d7603c37a6775b3808691e7e211f59c4648c2ccc610df5c10bf59e2e9dc3e65c3b73a965e0a6e0aa8e62b0e720d6f935ffb7610
+```
 
 ### `dpkg` source package: `krb5=1.20.1-6ubuntu2.6`
 
@@ -1811,19 +1821,24 @@ $ apt-get source -qq --print-uris libzstd=1.5.5+dfsg2-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.5%2bdfsg2-2build1.1.dsc' libzstd_1.5.5+dfsg2-2build1.1.dsc 2485 SHA256:c190a5dff9e7c5b5b1399f0d701bb2c173bc7cbdf14d5e05970f5ac066c25570
 ```
 
-### `dpkg` source package: `linux=6.8.0-110.110`
+### `dpkg` source package: `linux=6.8.0-111.111`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-110.110`
+- `linux-libc-dev:amd64=6.8.0-111.111`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=6.8.0-111.111
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-111.111.diff.gz' linux_6.8.0-111.111.diff.gz 7804315 SHA512:092b2bd57247988b5e70e782b7523704822c9a83b71709bf8edb9212ef964f324a06d15895f14c92d4634c439cbc3e132e68e83bbbdd66e987fa959d239f2766
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-111.111.dsc' linux_6.8.0-111.111.dsc 9448 SHA512:c9812a7d908a5d1bd96829d248c8e07ee593b279c823222bd7f7394c6887e1b3c37917842754cff558586c1662c01a21d22d0654e3f01ea9220e9ec8e8f6ce37
+```
 
 ### `dpkg` source package: `lsb-release-minimal=12.0-2`
 
@@ -2048,11 +2063,11 @@ $ apt-get source -qq --print-uris nettle=3.9.1-2.2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.9.1-2.2build1.1.dsc' nettle_3.9.1-2.2build1.1.dsc 2325 SHA256:db439554d51174b657660a2a47d3d4128838e063f3c9c7da67bb3fe91931d1d2
 ```
 
-### `dpkg` source package: `nghttp2=1.59.0-1ubuntu0.2`
+### `dpkg` source package: `nghttp2=1.59.0-1ubuntu0.3`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.59.0-1ubuntu0.2`
+- `libnghttp2-14:amd64=1.59.0-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -2063,9 +2078,14 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nghttp2=1.59.0-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.59.0.orig.tar.gz' nghttp2_1.59.0.orig.tar.gz 1055492 SHA512:bcb53ff45afae003f11a9feaa21dd80a3abfcde9b3a7fd1f04fc4382d71b5d4430e2d015765a7ae8d68454fcf06e4560c4cb585133aefb237d6ea526f61a8ebd
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.59.0-1ubuntu0.3.debian.tar.xz' nghttp2_1.59.0-1ubuntu0.3.debian.tar.xz 16364 SHA512:39fba28ed20aaf596fa199332afdd1bafe7de6f9da882cb0da781f9873bf6e86aa0cc66473182838918e48efeff9bf8ea48ea88df8d64fafbfdf15e160fe606c
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.59.0-1ubuntu0.3.dsc' nghttp2_1.59.0-1ubuntu0.3.dsc 2669 SHA512:13a4071d87fe9679a1b0502accf220b0cec3b5a6c3e3c95e0d8aaa2843fd11dcc88dd0e16a0e667478a7a0b9ac8484a1110135a158ef75e4354bb18fb1518637
+```
 
 ### `dpkg` source package: `node-jquery=3.6.1+dfsg+~3.5.14-1`
 
@@ -2948,17 +2968,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.12`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.13`
 
 Binary Packages:
 
-- `libpython3.12-dev:amd64=3.12.3-1ubuntu0.12`
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.12`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.12`
-- `libpython3.12t64:amd64=3.12.3-1ubuntu0.12`
-- `python3.12=3.12.3-1ubuntu0.12`
-- `python3.12-dev=3.12.3-1ubuntu0.12`
-- `python3.12-minimal=3.12.3-1ubuntu0.12`
+- `libpython3.12-dev:amd64=3.12.3-1ubuntu0.13`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.13`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.13`
+- `libpython3.12t64:amd64=3.12.3-1ubuntu0.13`
+- `python3.12=3.12.3-1ubuntu0.13`
+- `python3.12-dev=3.12.3-1ubuntu0.13`
+- `python3.12-minimal=3.12.3-1ubuntu0.13`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-dev/copyright`, `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/libpython3.12t64/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-dev/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -2980,9 +3000,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-dev/copyright`, `/usr/shar
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.13
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA256:56bfef1fdfc1221ce6720e43a661e3eb41785dd914ce99698d8c7896af4bdaa1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.13.debian.tar.xz' python3.12_3.12.3-1ubuntu0.13.debian.tar.xz 271684 SHA256:c29d3713afdaadbeb910f01df96877a81c3deb114876be42a47ce8e7172a2b91
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.13.dsc' python3.12_3.12.3-1ubuntu0.13.dsc 3879 SHA256:c9dac8ff007c2b12b917cae256b2477cd1662de3fd3d02171ba3ebe98bbd7b30
+```
 
 ### `dpkg` source package: `pyyaml=6.0.1-2build2`
 
@@ -3049,11 +3074,11 @@ $ apt-get source -qq --print-uris rhash=1.4.3-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rhash/rhash_1.4.3-3build1.debian.tar.xz' rhash_1.4.3-3build1.debian.tar.xz 16540 SHA512:956306a134452d0c31259f895094b7a4edd741277b35e107596aaed2c084f65a9143bd5712e8cc7f006a0e00cd3fb453f6cceaf0231311e17013e86e1acdf2c0
 ```
 
-### `dpkg` source package: `ros-apt-source=1.1.0~noble`
+### `dpkg` source package: `ros-apt-source=1.2.0~noble`
 
 Binary Packages:
 
-- `ros2-apt-source=1.1.0~noble`
+- `ros2-apt-source=1.2.0~noble`
 
 Licenses: (parsed from: `/usr/share/doc/ros2-apt-source/copyright`)
 

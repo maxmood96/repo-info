@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dc22507e1d9fb4156c141d0eab84bda63cdf2630ba2dae795bc0f03b599a526e`
-- Created: `2026-04-15T21:46:11.181394465Z`
+- Image ID: `sha256:ad7dd42b2c3e9b66ad0b0570416732258044ccc27299addab206174fe92a148b`
+- Created: `2026-05-11T19:11:04.198277575Z`
 - Virtual Size: ~ 756.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -488,13 +488,13 @@ $ apt-get source -qq --print-uris cppcheck=2.7-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/c/cppcheck/cppcheck_2.7-1.debian.tar.xz' cppcheck_2.7-1.debian.tar.xz 11868 SHA512:302c38afba279b636be1cdc7ce2a13612fe71a9e56a2e50cf6fa86d6596de17fa0d8132752c98a3e894ea47271f6a92817433c8d432bd6486bd0a77aecbdfa2d
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.23`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.24`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.23`
-- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.23`
-- `libcurl4:amd64=7.81.0-1ubuntu1.23`
+- `curl=7.81.0-1ubuntu1.24`
+- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.24`
+- `libcurl4:amd64=7.81.0-1ubuntu1.24`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -505,9 +505,15 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.24
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.24.debian.tar.xz' curl_7.81.0-1ubuntu1.24.debian.tar.xz 94252 SHA512:d5fd71580f1a2a4b56cf992df3d5e47b0a15b32c0e4f4961f2e79c83e18e338cea68d3d8567d273a3a31e4fa5e39089334f59af90194182c20fec101fef16b8b
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.24.dsc' curl_7.81.0-1ubuntu1.24.dsc 3143 SHA512:74fc1db520f8e9c89d7cefbfa3675775f0ea2976c7d80e4501c9a073a3fa5194af07120e231d47e540fb5952feedb77404bca14de91c661dbada00ef0871e80c
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -739,19 +745,23 @@ $ apt-get source -qq --print-uris distlib=0.3.4-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/d/distlib/distlib_0.3.4-1.debian.tar.xz' distlib_0.3.4-1.debian.tar.xz 6296 SHA512:8c6d132d712b26ec79bbbaee349901456e14fc5a921e0da4dc32d98595384ce05ba78cae9450b5289cc35ea60fcd21991a6a98cb3571a7dbd8d79aae57f6f27a
 ```
 
-### `dpkg` source package: `distro-info-data=0.52ubuntu0.11`
+### `dpkg` source package: `distro-info-data=0.52ubuntu0.12`
 
 Binary Packages:
 
-- `distro-info-data=0.52ubuntu0.11`
+- `distro-info-data=0.52ubuntu0.12`
 
 Licenses: (parsed from: `/usr/share/doc/distro-info-data/copyright`)
 
 - `ISC`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris distro-info-data=0.52ubuntu0.12
+'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.52ubuntu0.12.tar.xz' distro-info-data_0.52ubuntu0.12.tar.xz 10424 SHA512:d3877bfe0b4f5f9bc4d8f9a82b63049b4f7b25ac7258950eb88a0faefcbe6c5924fb1239fc35bc63256b1e25d1441db7377674e4afc795d64b45349508146284
+'http://archive.ubuntu.com/ubuntu/pool/main/d/distro-info-data/distro-info-data_0.52ubuntu0.12.dsc' distro-info-data_0.52ubuntu0.12.dsc 1800 SHA512:4a83e96f7d04bf74f5f5098e1537f015994957f049c7316e884ee44ef90cc2eea77509c56856858174e20fb86a84f09a580c38eefd914f14c91b98cd39d61685
+```
 
 ### `dpkg` source package: `dpkg=1.21.1ubuntu2.6`
 
@@ -2112,11 +2122,11 @@ $ apt-get source -qq --print-uris libnsl=1.3.0-2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libn/libnsl/libnsl_1.3.0-2build2.debian.tar.xz' libnsl_1.3.0-2build2.debian.tar.xz 4868 SHA512:367904106ba925eaa667cc273b37afd052ba795b7ed004cdb501c13dd26b469df971ac10acec2bf57d91fa4839f356c7dcbcd4969914891152588365844ced9a
 ```
 
-### `dpkg` source package: `libpng1.6=1.6.37-3ubuntu0.4`
+### `dpkg` source package: `libpng1.6=1.6.37-3ubuntu0.5`
 
 Binary Packages:
 
-- `libpng16-16:amd64=1.6.37-3ubuntu0.4`
+- `libpng16-16:amd64=1.6.37-3ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 
@@ -2129,9 +2139,14 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libpng1.6=1.6.37-3ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37.orig.tar.gz' libpng1.6_1.6.37.orig.tar.gz 1508805 SHA512:ccb3705c23b2724e86d072e2ac8cfc380f41fadfd6977a248d588a8ad57b6abe0e4155e525243011f245e98d9b7afbe2e8cc7fd4ff7d82fcefb40c0f48f88918
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.5.debian.tar.xz' libpng1.6_1.6.37-3ubuntu0.5.debian.tar.xz 50892 SHA512:fc9aa6035ac3e69d59fcdc58a1eef2eda4ad2f4ceba4bee2f6ff59f911f4ad4ed7b0e5ddac8c66a8abe2145305990fb7dd18f784949527c16f976f4d74405747
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.37-3ubuntu0.5.dsc' libpng1.6_1.6.37-3ubuntu0.5.dsc 2340 SHA512:ffe74706fa8dc41283f30496bc18d33d7644aa2e705efb798fedae4f27f9af3c0235e8f6f063728db32b19ff1b3603e639b67266da0dfb9f862640ca2cf49b98
+```
 
 ### `dpkg` source package: `libpsl=0.21.0-1.2build2`
 
@@ -2748,19 +2763,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-174.184`
+### `dpkg` source package: `linux=5.15.0-177.187`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-174.184`
+- `linux-libc-dev:amd64=5.15.0-177.187`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.15.0-177.187
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-177.187.diff.gz' linux_5.15.0-177.187.diff.gz 12780484 SHA512:f9958972160abc81e30bf1e03f01bd6635b3d68261171757ef44c9ee66bdae2884fd4fe43e058c094947ce40a80aa2cab3ab93cd5c7b2278da163aebfd7f576c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-177.187.dsc' linux_5.15.0-177.187.dsc 7799 SHA512:44735239f356583ec9f0e7f9abf84050b8e383c754babe6aa2ff7aa18ea4839ca88d273877c7d0c31308647a78b4e1a91ed88f76834fa0251c07446997743fbd
+```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
 
@@ -3055,11 +3075,11 @@ $ apt-get source -qq --print-uris nettle=3.7.3-1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.7.3-1build2.debian.tar.xz' nettle_3.7.3-1build2.debian.tar.xz 22100 SHA512:c1935d35e9f04798273053ab92c7405ec225a5d72ba6c2869b0f2bf54b459ac428e113bc149796e91834a8b56082f8bbfbb906a6cd6787142b8932bd1dd83cec
 ```
 
-### `dpkg` source package: `nghttp2=1.43.0-1ubuntu0.2`
+### `dpkg` source package: `nghttp2=1.43.0-1ubuntu0.3`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.43.0-1ubuntu0.2`
+- `libnghttp2-14:amd64=1.43.0-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -3071,9 +3091,14 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nghttp2=1.43.0-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0.orig.tar.bz2' nghttp2_1.43.0.orig.tar.bz2 4521786 SHA512:f2e6665ad6c73f0a1a8c7b34ca821a905868d41dafca913e6a054eb5afb534a85ae91618c1a4b098e43f350ca3703fd1ece7848f0a771e8393a3eb0581ceaf59
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.3.debian.tar.xz' nghttp2_1.43.0-1ubuntu0.3.debian.tar.xz 25736 SHA512:59d299db7e2eed3d067d0fee4cf6e75e2dafa5c6313e60abaf0825c4d628b7daeb502d32fca718248e3847390b5254002ec4c893d9c31523b61b391c3c794b30
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.43.0-1ubuntu0.3.dsc' nghttp2_1.43.0-1ubuntu0.3.dsc 2683 SHA512:193c4d4da994db3cd66fa6d6a07fcbb4cb6932f4da842e3bcba0d1942f5ad43824b5ae7fd60a99e4a86f6a9948b7448dcbcf75ca5571822f415a300dd0c0c855
+```
 
 ### `dpkg` source package: `node-jquery=3.6.0+dfsg+~3.5.13-1`
 
@@ -4584,11 +4609,11 @@ $ apt-get source -qq --print-uris rhash=1.4.2-1ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rhash/rhash_1.4.2-1ubuntu1.debian.tar.xz' rhash_1.4.2-1ubuntu1.debian.tar.xz 10332 SHA512:4d6bfaf2230a60ed0b1f7dab538d4e90bf40fcd35b1056e6ba386ae8d92225337fbf0c9ee4e04d8b3bcb51b702d24a4405cb1f461ca5a879943b7c772f1bc13d
 ```
 
-### `dpkg` source package: `ros-apt-source=1.1.0~jammy`
+### `dpkg` source package: `ros-apt-source=1.2.0~jammy`
 
 Binary Packages:
 
-- `ros2-apt-source=1.1.0~jammy`
+- `ros2-apt-source=1.2.0~jammy`
 
 Licenses: (parsed from: `/usr/share/doc/ros2-apt-source/copyright`)
 

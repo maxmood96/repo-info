@@ -438,14 +438,9 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris avahi=0.8-13ubuntu6.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8.orig.tar.gz' avahi_0.8.orig.tar.gz 1591458 SHA256:060309d7a333d38d951bc27598c677af1796934dbd98e1024e7ad8de798fedda
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-13ubuntu6.1.debian.tar.xz' avahi_0.8-13ubuntu6.1.debian.tar.xz 50612 SHA256:83edf463ecf4fd51ef0f601f116e61c241a9ecf93ba057572f4eb0e5077baab9
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-13ubuntu6.1.dsc' avahi_0.8-13ubuntu6.1.dsc 4203 SHA256:e58f49b9c8f420396a46cb145e4c452d019e708526d15a3851735cf804eead32
-```
 
 ### `dpkg` source package: `base-files=13ubuntu10.4`
 
@@ -6069,9 +6064,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=6.8.0-111.111
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-111.111.diff.gz' linux_6.8.0-111.111.diff.gz 7804315 SHA512:092b2bd57247988b5e70e782b7523704822c9a83b71709bf8edb9212ef964f324a06d15895f14c92d4634c439cbc3e132e68e83bbbdd66e987fa959d239f2766
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-111.111.dsc' linux_6.8.0-111.111.dsc 9448 SHA512:c9812a7d908a5d1bd96829d248c8e07ee593b279c823222bd7f7394c6887e1b3c37917842754cff558586c1662c01a21d22d0654e3f01ea9220e9ec8e8f6ce37
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-111.111.diff.gz' linux_6.8.0-111.111.diff.gz 7804315 SHA512:092b2bd57247988b5e70e782b7523704822c9a83b71709bf8edb9212ef964f324a06d15895f14c92d4634c439cbc3e132e68e83bbbdd66e987fa959d239f2766
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-111.111.dsc' linux_6.8.0-111.111.dsc 9448 SHA512:c9812a7d908a5d1bd96829d248c8e07ee593b279c823222bd7f7394c6887e1b3c37917842754cff558586c1662c01a21d22d0654e3f01ea9220e9ec8e8f6ce37
 ```
 
 ### `dpkg` source package: `llvm-toolchain-15=1:15.0.7-14build3`
