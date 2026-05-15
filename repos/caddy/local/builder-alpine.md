@@ -1,9 +1,9 @@
-# `caddy:2.11.2-builder-alpine`
+# `caddy:2.11.3-builder-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:78bb31f8bd0754f3bda2e78aece79e90cc7c8659600a671f36d4ff9ea479604a`
-- Created: `2026-05-07T17:43:53.789198852Z`
+- Image ID: `sha256:d9febe5e3c1e075eef045b84aaf187cb8b00be3fa82ce85dc0b4424733c79a7b`
+- Created: `2026-05-12T21:45:18.356466858Z`
 - Virtual Size: ~ 259.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,7 +14,7 @@
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
   - `XCADDY_VERSION=v0.4.5`
-  - `CADDY_VERSION=v2.11.2`
+  - `CADDY_VERSION=v2.11.3`
   - `XCADDY_SKIP_CLEANUP=1`
   - `XCADDY_SETCAP=1`
 

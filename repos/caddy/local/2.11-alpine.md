@@ -1,16 +1,16 @@
-# `caddy:2.11.2-alpine`
+# `caddy:2.11.3-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2ad4f81b9a44d531eff80b8d8c65c495c8a867648dc9a3e3720224d7418b3f90`
-- Created: `2026-04-15T21:05:30.516733564Z`
-- Virtual Size: ~ 62.11 Mb  
+- Image ID: `sha256:5190456911cee510988a5fb9996188ef866fbcca3235cad19bf05f5f8f33386f`
+- Created: `2026-05-12T21:45:14.04652884Z`
+- Virtual Size: ~ 62.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["caddy","run","--config","/etc/caddy/Caddyfile","--adapter","caddyfile"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `CADDY_VERSION=v2.11.2`
+  - `CADDY_VERSION=v2.11.3`
   - `XDG_CONFIG_HOME=/config`
   - `XDG_DATA_HOME=/data`
 - Labels:
@@ -21,7 +21,7 @@
   - `org.opencontainers.image.title=Caddy`
   - `org.opencontainers.image.url=https://caddyserver.com`
   - `org.opencontainers.image.vendor=Light Code Labs`
-  - `org.opencontainers.image.version=v2.11.2`
+  - `org.opencontainers.image.version=v2.11.3`
 
 ## `apk` (`.apk`-based packages)
 
@@ -487,16 +487,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.68.0-r0 description:
+nghttp2-libs-1.69.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.68.0-r0 webpage:
+nghttp2-libs-1.69.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.68.0-r0 installed size:
+nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.68.0-r0 license:
+nghttp2-libs-1.69.0-r0 license:
 MIT
 
 ```
