@@ -1,19 +1,19 @@
-# `erlang:28.5.0.0-alpine`
+# `erlang:29.0.0.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:16f559c70402a97bc7823ba3bc058e511b67f24b11b5a5735c80b1860c116ce1`
-- Created: `2026-05-04T20:48:21.226470602Z`
-- Virtual Size: ~ 89.12 Mb  
+- Image ID: `sha256:9e17996dcb9aef6edc742a5caecd3b4041c92b310b9732471f95c7a7a9daf5c5`
+- Created: `2026-05-14T16:55:16.373975634Z`
+- Virtual Size: ~ 89.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=28.5`
-  - `REBAR3_VERSION=3.26.0`
+  - `OTP_VERSION=29.0`
+  - `REBAR3_VERSION=3.27.0`
 - Labels:
-  - `org.opencontainers.image.version=28.5`
+  - `org.opencontainers.image.version=29.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -357,23 +357,6 @@ X11
 
 ```
 
-### `apk` package: `readline`
-
-```console
-readline-8.3.1-r0 description:
-GNU readline library
-
-readline-8.3.1-r0 webpage:
-https://tiswww.cwru.edu/php/chet/readline/rltop.html
-
-readline-8.3.1-r0 installed size:
-292 KiB
-
-readline-8.3.1-r0 license:
-GPL-3.0-or-later
-
-```
-
 ### `apk` package: `scanelf`
 
 ```console
@@ -405,23 +388,6 @@ ssl_client-1.37.0-r30 installed size:
 
 ssl_client-1.37.0-r30 license:
 GPL-2.0-only
-
-```
-
-### `apk` package: `unixodbc`
-
-```console
-unixodbc-2.3.14-r0 description:
-Unix Open DataBase Connectivity sub-system and SDK
-
-unixodbc-2.3.14-r0 webpage:
-https://www.unixodbc.org/
-
-unixodbc-2.3.14-r0 installed size:
-651 KiB
-
-unixodbc-2.3.14-r0 license:
-LGPL-2.0-or-later
 
 ```
 
