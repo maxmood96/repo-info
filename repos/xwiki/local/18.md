@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:114908190cbfabb934cc40b1929bcd433e988d8ab0b382eb16713c957e723468`
-- Created: `2026-05-08T02:11:33.463916756Z`
+- Image ID: `sha256:bd90d13431c0b701f9a623b86bef596acd4c2b4999aecd22092ea33908bd14d8`
+- Created: `2026-05-13T00:14:39.627468053Z`
 - Virtual Size: ~ 1.33 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -20,8 +20,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=10`
-  - `TOMCAT_VERSION=10.1.54`
-  - `TOMCAT_SHA512=8694b94324cf6f62ab032fa2438d7334518dcfcbf7878361b147246c46eb1e558c327f32c05fb4b7705c01fcca92fde392ce320934410f1169ff4ab36a1c7139`
+  - `TOMCAT_VERSION=10.1.55`
+  - `TOMCAT_SHA512=f36af12391a277e5c3a802a8e1a2a1e4354cd461b547d2e1a33ac0ab88d707d3fb2591e034a17b7d3a6b965a4c977a97dbf29bb81a3867e85aeec3d8d189e22e`
   - `XWIKI_VERSION=18.3.0`
   - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.3.0`
   - `XWIKI_DOWNLOAD_SHA256=3a0594e4260bc832c8a42f9ea1d6f47d9da7c8ffb7bbe65b7c363e7e8308051a`
@@ -209,13 +209,13 @@ $ apt-get source -qq --print-uris audit=1:3.1.2-2.1build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.1.2-2.1build1.1.dsc' audit_3.1.2-2.1build1.1.dsc 2848 SHA256:3df86dee4b6d645173901fad492776add35f82c4e7c58cd8a4f82931a2588324
 ```
 
-### `dpkg` source package: `avahi=0.8-13ubuntu6.1`
+### `dpkg` source package: `avahi=0.8-13ubuntu6.2`
 
 Binary Packages:
 
-- `libavahi-client3:amd64=0.8-13ubuntu6.1`
-- `libavahi-common-data:amd64=0.8-13ubuntu6.1`
-- `libavahi-common3:amd64=0.8-13ubuntu6.1`
+- `libavahi-client3:amd64=0.8-13ubuntu6.2`
+- `libavahi-common-data:amd64=0.8-13ubuntu6.2`
+- `libavahi-common3:amd64=0.8-13ubuntu6.2`
 
 Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share/doc/libavahi-common-data/copyright`, `/usr/share/doc/libavahi-common3/copyright`)
 
@@ -226,10 +226,10 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris avahi=0.8-13ubuntu6.1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8.orig.tar.gz' avahi_0.8.orig.tar.gz 1591458 SHA256:060309d7a333d38d951bc27598c677af1796934dbd98e1024e7ad8de798fedda
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-13ubuntu6.1.debian.tar.xz' avahi_0.8-13ubuntu6.1.debian.tar.xz 50612 SHA256:83edf463ecf4fd51ef0f601f116e61c241a9ecf93ba057572f4eb0e5077baab9
-'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-13ubuntu6.1.dsc' avahi_0.8-13ubuntu6.1.dsc 4203 SHA256:e58f49b9c8f420396a46cb145e4c452d019e708526d15a3851735cf804eead32
+$ apt-get source -qq --print-uris avahi=0.8-13ubuntu6.2
+'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8.orig.tar.gz' avahi_0.8.orig.tar.gz 1591458 SHA512:c6ba76feb6e92f70289f94b3bf12e5f5c66c11628ce0aeb3cadfb72c13a5d1a9bd56d71bdf3072627a76cd103b9b056d9131aa49ffe11fa334c24ab3b596c7de
+'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-13ubuntu6.2.debian.tar.xz' avahi_0.8-13ubuntu6.2.debian.tar.xz 52976 SHA512:91bb304e4796ff40670283194b31582d0009e8ae7b4a40bf1b2ac4884a84b7bf4c192576fd414e62ca58f540ad59c7b1f0c4e03dae94df0fe99ee755c8eec135
+'http://archive.ubuntu.com/ubuntu/pool/main/a/avahi/avahi_0.8-13ubuntu6.2.dsc' avahi_0.8-13ubuntu6.2.dsc 4231 SHA512:8d33efa977c297b1aea7e2ad27f6362c2f2c149371e040e0e992959ba9472cf356a0257c05c123f15639c6795892f7a7b66243f3a9a6d09c8dd810ca40a9ae82
 ```
 
 ### `dpkg` source package: `base-files=13ubuntu10.4`
