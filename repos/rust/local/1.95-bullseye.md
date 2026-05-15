@@ -4190,20 +4190,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.43.0-1+deb11u2
-'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.43.0-1%2bdeb11u2.dsc' nghttp2_1.43.0-1+deb11u2.dsc 2555 SHA256:13ad116ef14dc9e3da1b3aa3b1f2645e2dcf44e153564a5ec26f5df5d91cd854
-'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.43.0.orig.tar.bz2' nghttp2_1.43.0.orig.tar.bz2 4521786 SHA256:556f24653397c71ebb8270b3c5e5507f0893e6eac2c6eeda6be2ecf6e1f50f62
-'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.43.0-1%2bdeb11u2.debian.tar.xz' nghttp2_1.43.0-1+deb11u2.debian.tar.xz 23484 SHA256:52cd263f1db0a02edf21322251d7a444eb2fce158bbcaf23e26bf25c6051fd83
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.43.0-1+deb11u2/
 
-- https://sources.debian.net/src/nghttp2/1.43.0-1+deb11u2/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.43.0-1+deb11u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.43.0-1+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-3`
 
