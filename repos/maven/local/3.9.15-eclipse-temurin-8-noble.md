@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f825253fcb9d634fa437d323a539a3dddfa0d890fa9e53a30ad48a4bb1311fe2`
-- Created: `2026-05-08T00:29:25.111636082Z`
-- Virtual Size: ~ 359.02 Mb  
+- Image ID: `sha256:00a0fcf0b91295d0fcf8b9fb7c4d276639f6b0764b498183db39e5996eba12a4`
+- Created: `2026-05-12T21:46:29.124272026Z`
+- Virtual Size: ~ 357.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u482-b08`
+  - `JAVA_VERSION=jdk8u492-b09`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 - Labels:
@@ -1362,11 +1362,11 @@ $ apt-get source -qq --print-uris libmd=1.1.0-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libm/libmd/libmd_1.1.0-2build1.1.dsc' libmd_1.1.0-2build1.1.dsc 2391 SHA256:11dfd22bba97a4c4ca6c09f34743ac6c72a34eb81344e3a1681c45e2d60ce239
 ```
 
-### `dpkg` source package: `libpng1.6=1.6.43-5ubuntu0.5`
+### `dpkg` source package: `libpng1.6=1.6.43-5ubuntu0.6`
 
 Binary Packages:
 
-- `libpng16-16t64:amd64=1.6.43-5ubuntu0.5`
+- `libpng16-16t64:amd64=1.6.43-5ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 
@@ -1379,9 +1379,14 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libpng1.6=1.6.43-5ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43.orig.tar.gz' libpng1.6_1.6.43.orig.tar.gz 1554715 SHA512:3bb2a7b73113be42b09c2116e6c6f5a7ddb4e2ab06e0b13e10b7314acdccc4bb624ff602e16140c0484f6cde80efa190296226be3da195c6926819f07c723c12
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43-5ubuntu0.6.debian.tar.xz' libpng1.6_1.6.43-5ubuntu0.6.debian.tar.xz 50432 SHA512:ae0b6ce1f99d1c5a9d5ab5c1aa75f48f657796938b14733410c824242cc1ffcb40b50fcdb57d7a84ad9c5392388417746ea9110d4e2d2f67e6c111c26ab9915e
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43-5ubuntu0.6.dsc' libpng1.6_1.6.43-5ubuntu0.6.dsc 2384 SHA512:1874607dce51f4d068e883e8ef95689e116e03bfa7a80809936b3825818b08850127b77fbdee36db5cd933cfd51713a2f528dff41156c2bb9602dcd1ce88cfa6
+```
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1build1`
 
@@ -1711,11 +1716,11 @@ $ apt-get source -qq --print-uris nettle=3.9.1-2.2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.9.1-2.2build1.1.dsc' nettle_3.9.1-2.2build1.1.dsc 2325 SHA256:db439554d51174b657660a2a47d3d4128838e063f3c9c7da67bb3fe91931d1d2
 ```
 
-### `dpkg` source package: `nghttp2=1.59.0-1ubuntu0.2`
+### `dpkg` source package: `nghttp2=1.59.0-1ubuntu0.3`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.59.0-1ubuntu0.2`
+- `libnghttp2-14:amd64=1.59.0-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -1726,9 +1731,14 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nghttp2=1.59.0-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.59.0.orig.tar.gz' nghttp2_1.59.0.orig.tar.gz 1055492 SHA512:bcb53ff45afae003f11a9feaa21dd80a3abfcde9b3a7fd1f04fc4382d71b5d4430e2d015765a7ae8d68454fcf06e4560c4cb585133aefb237d6ea526f61a8ebd
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.59.0-1ubuntu0.3.debian.tar.xz' nghttp2_1.59.0-1ubuntu0.3.debian.tar.xz 16364 SHA512:39fba28ed20aaf596fa199332afdd1bafe7de6f9da882cb0da781f9873bf6e86aa0cc66473182838918e48efeff9bf8ea48ea88df8d64fafbfdf15e160fe606c
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.59.0-1ubuntu0.3.dsc' nghttp2_1.59.0-1ubuntu0.3.dsc 2669 SHA512:13a4071d87fe9679a1b0502accf220b0cec3b5a6c3e3c95e0d8aaa2843fd11dcc88dd0e16a0e667478a7a0b9ac8484a1110135a158ef75e4354bb18fb1518637
+```
 
 ### `dpkg` source package: `npth=1.6-3.1build1`
 
