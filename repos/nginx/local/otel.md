@@ -1,20 +1,20 @@
-# `nginx:1.29.8-otel`
+# `nginx:1.31.0-otel`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e738a963624c986e62bec4cce78e73a41a55821937b4fd9bacb234a4195cd68`
-- Created: `2026-05-08T20:22:47.348100332Z`
-- Virtual Size: ~ 169.44 Mb  
+- Image ID: `sha256:fbcb6f626a986f87d84923d17dd122f482a82d10c03362585083614350d5b59b`
+- Created: `2026-05-13T19:06:58.399005003Z`
+- Virtual Size: ~ 169.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.29.8`
-  - `NJS_VERSION=0.9.6`
+  - `NGINX_VERSION=1.31.0`
+  - `NJS_VERSION=0.9.8`
   - `NJS_RELEASE=1~trixie`
-  - `ACME_VERSION=0.3.1`
+  - `ACME_VERSION=0.4.1`
   - `PKG_RELEASE=1~trixie`
   - `DYNPKG_RELEASE=1~trixie`
   - `OTEL_VERSION=0.1.2`
@@ -1932,11 +1932,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libmd/1.1.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libmd/1.1.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libpng1.6=1.6.48-1+deb13u4`
+### `dpkg` source package: `libpng1.6=1.6.48-1+deb13u5`
 
 Binary Packages:
 
-- `libpng16-16t64:amd64=1.6.48-1+deb13u4`
+- `libpng16-16t64:amd64=1.6.48-1+deb13u5`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 
@@ -1949,13 +1949,20 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libpng1.6=1.6.48-1+deb13u5
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u5.dsc' libpng1.6_1.6.48-1+deb13u5.dsc 2305 SHA256:746ec351ac044becb16725b903aee2c53815da9f89630767b6edbb317a50f98e
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48.orig.tar.gz' libpng1.6_1.6.48.orig.tar.gz 1572923 SHA256:b17e99026055727e8cba99160c3a9a7f9af788e9f786daeadded5a42243f1dd0
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.48-1%2bdeb13u5.debian.tar.xz' libpng1.6_1.6.48-1+deb13u5.debian.tar.xz 52468 SHA256:b38d5929b9a6139f2ce02a0e831d0f3f5365410b050dc429ea079a73253fe97a
+```
 
-- http://snapshot.debian.org/package/libpng1.6/1.6.48-1+deb13u4/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u5/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.48-1+deb13u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.48-1+deb13u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -2677,11 +2684,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nghttp3/1.8.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nghttp3/1.8.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nginx-module-acme=1.29.8+0.3.1-1~trixie`
+### `dpkg` source package: `nginx-module-acme=1.31.0+0.4.1-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-acme=1.29.8+0.3.1-1~trixie`
+- `nginx-module-acme=1.31.0+0.4.1-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2691,11 +2698,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-geoip=1.29.8-1~trixie`
+### `dpkg` source package: `nginx-module-geoip=1.31.0-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-geoip=1.29.8-1~trixie`
+- `nginx-module-geoip=1.31.0-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2705,11 +2712,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-image-filter=1.29.8-1~trixie`
+### `dpkg` source package: `nginx-module-image-filter=1.31.0-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-image-filter=1.29.8-1~trixie`
+- `nginx-module-image-filter=1.31.0-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2719,11 +2726,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-njs=1.29.8+0.9.6-1~trixie`
+### `dpkg` source package: `nginx-module-njs=1.31.0+0.9.8-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-njs=1.29.8+0.9.6-1~trixie`
+- `nginx-module-njs=1.31.0+0.9.8-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2733,11 +2740,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-otel=1.29.8+0.1.2-1~trixie`
+### `dpkg` source package: `nginx-module-otel=1.31.0+0.1.2-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-otel=1.29.8+0.1.2-1~trixie`
+- `nginx-module-otel=1.31.0+0.1.2-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2747,11 +2754,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx-module-xslt=1.29.8-1~trixie`
+### `dpkg` source package: `nginx-module-xslt=1.31.0-1~trixie`
 
 Binary Packages:
 
-- `nginx-module-xslt=1.29.8-1~trixie`
+- `nginx-module-xslt=1.31.0-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2761,11 +2768,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nginx=1.29.8-1~trixie`
+### `dpkg` source package: `nginx=1.31.0-1~trixie`
 
 Binary Packages:
 
-- `nginx=1.29.8-1~trixie`
+- `nginx=1.31.0-1~trixie`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.

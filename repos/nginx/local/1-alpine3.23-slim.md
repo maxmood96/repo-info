@@ -1,17 +1,17 @@
-# `nginx:1.29.8-alpine-slim`
+# `nginx:1.31.0-alpine-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ec9cbca6280426f865173d65d3ebcba6e25a235a6f637e549b29515152fbfa15`
-- Created: `2026-04-15T20:17:53.108651517Z`
-- Virtual Size: ~ 12.74 Mb  
+- Image ID: `sha256:9cb96e3e9a520d633e37afd1734d0ea4c619d8fb0756d5407db6d1302e9fee77`
+- Created: `2026-05-13T19:05:56.127076783Z`
+- Virtual Size: ~ 12.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.29.8`
+  - `NGINX_VERSION=1.31.0`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
 - Labels:
@@ -277,16 +277,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.29.8-r1 description:
+nginx-1.31.0-r1 description:
 High performance web server
 
-nginx-1.29.8-r1 webpage:
+nginx-1.31.0-r1 webpage:
 https://nginx.org/
 
-nginx-1.29.8-r1 installed size:
-2732 KiB
+nginx-1.31.0-r1 installed size:
+2769 KiB
 
-nginx-1.29.8-r1 license:
+nginx-1.31.0-r1 license:
 2-clause BSD-like license
 
 ```
@@ -345,16 +345,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026a-r0 description:
+tzdata-2026b-r0 description:
 Timezone data
 
-tzdata-2026a-r0 webpage:
+tzdata-2026b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026a-r0 installed size:
+tzdata-2026b-r0 installed size:
 436 KiB
 
-tzdata-2026a-r0 license:
+tzdata-2026b-r0 license:
 Public-Domain
 
 ```

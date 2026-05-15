@@ -1,22 +1,22 @@
-# `nginx:1.30.0-alpine`
+# `nginx:1.30.1-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ad05a90bca027d1782da78c79e36b75aae3a5f052588c3623d6bf8f61b805667`
-- Created: `2026-04-15T21:19:05.428001835Z`
-- Virtual Size: ~ 62.18 Mb  
+- Image ID: `sha256:954f0a6530c8064381b2d8d9713f39ab75f2ae9b99876ecc617458d2a6eba14b`
+- Created: `2026-05-13T20:10:54.626364947Z`
+- Virtual Size: ~ 62.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.30.0`
+  - `NGINX_VERSION=1.30.1`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
-  - `NJS_VERSION=0.9.6`
+  - `NJS_VERSION=0.9.8`
   - `NJS_RELEASE=1`
-  - `ACME_VERSION=0.3.1`
+  - `ACME_VERSION=0.4.1`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
 
@@ -858,16 +858,16 @@ MIT
 ### `apk` package: `libxpm`
 
 ```console
-libxpm-3.5.17-r0 description:
+libxpm-3.5.19-r0 description:
 X11 pixmap library
 
-libxpm-3.5.17-r0 webpage:
+libxpm-3.5.19-r0 webpage:
 https://xorg.freedesktop.org/
 
-libxpm-3.5.17-r0 installed size:
+libxpm-3.5.19-r0 installed size:
 106 KiB
 
-libxpm-3.5.17-r0 license:
+libxpm-3.5.19-r0 license:
 X11
 
 ```
@@ -977,16 +977,16 @@ X11
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.68.0-r0 description:
+nghttp2-libs-1.69.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.68.0-r0 webpage:
+nghttp2-libs-1.69.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.68.0-r0 installed size:
+nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
-nghttp2-libs-1.68.0-r0 license:
+nghttp2-libs-1.69.0-r0 license:
 MIT
 
 ```
@@ -1011,16 +1011,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.30.0-r1 description:
+nginx-1.30.1-r1 description:
 High performance web server
 
-nginx-1.30.0-r1 webpage:
+nginx-1.30.1-r1 webpage:
 https://nginx.org/
 
-nginx-1.30.0-r1 installed size:
+nginx-1.30.1-r1 installed size:
 2732 KiB
 
-nginx-1.30.0-r1 license:
+nginx-1.30.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1028,16 +1028,16 @@ nginx-1.30.0-r1 license:
 ### `apk` package: `nginx-module-acme`
 
 ```console
-nginx-module-acme-1.30.0.0.3.1-r1 description:
+nginx-module-acme-1.30.1.0.4.1-r1 description:
 nginx nginx-acme
 
-nginx-module-acme-1.30.0.0.3.1-r1 webpage:
+nginx-module-acme-1.30.1.0.4.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-acme-1.30.0.0.3.1-r1 installed size:
-7959 KiB
+nginx-module-acme-1.30.1.0.4.1-r1 installed size:
+8167 KiB
 
-nginx-module-acme-1.30.0.0.3.1-r1 license:
+nginx-module-acme-1.30.1.0.4.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1045,16 +1045,16 @@ nginx-module-acme-1.30.0.0.3.1-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.30.0-r1 description:
+nginx-module-geoip-1.30.1-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.30.0-r1 webpage:
+nginx-module-geoip-1.30.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.30.0-r1 installed size:
+nginx-module-geoip-1.30.1-r1 installed size:
 62 KiB
 
-nginx-module-geoip-1.30.0-r1 license:
+nginx-module-geoip-1.30.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1062,16 +1062,16 @@ nginx-module-geoip-1.30.0-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.30.0-r1 description:
+nginx-module-image-filter-1.30.1-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.30.0-r1 webpage:
+nginx-module-image-filter-1.30.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.30.0-r1 installed size:
+nginx-module-image-filter-1.30.1-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.30.0-r1 license:
+nginx-module-image-filter-1.30.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1079,16 +1079,16 @@ nginx-module-image-filter-1.30.0-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.30.0.0.9.6-r1 description:
+nginx-module-njs-1.30.1.0.9.8-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.30.0.0.9.6-r1 webpage:
+nginx-module-njs-1.30.1.0.9.8-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.30.0.0.9.6-r1 installed size:
-9367 KiB
+nginx-module-njs-1.30.1.0.9.8-r1 installed size:
+9340 KiB
 
-nginx-module-njs-1.30.0.0.9.6-r1 license:
+nginx-module-njs-1.30.1.0.9.8-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1096,16 +1096,16 @@ nginx-module-njs-1.30.0.0.9.6-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.30.0-r1 description:
+nginx-module-xslt-1.30.1-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.30.0-r1 webpage:
+nginx-module-xslt-1.30.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.30.0-r1 installed size:
+nginx-module-xslt-1.30.1-r1 installed size:
 46 KiB
 
-nginx-module-xslt-1.30.0-r1 license:
+nginx-module-xslt-1.30.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1181,16 +1181,16 @@ libtiff
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026a-r0 description:
+tzdata-2026b-r0 description:
 Timezone data
 
-tzdata-2026a-r0 webpage:
+tzdata-2026b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026a-r0 installed size:
+tzdata-2026b-r0 installed size:
 436 KiB
 
-tzdata-2026a-r0 license:
+tzdata-2026b-r0 license:
 Public-Domain
 
 ```
@@ -1198,16 +1198,16 @@ Public-Domain
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.2-r0 description:
+xz-libs-5.8.3-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.2-r0 webpage:
+xz-libs-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.2-r0 installed size:
+xz-libs-5.8.3-r0 installed size:
 221 KiB
 
-xz-libs-5.8.2-r0 license:
+xz-libs-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```

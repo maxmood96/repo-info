@@ -1,9 +1,9 @@
-# `nginx:1.30.0-alpine-slim`
+# `nginx:1.30.1-alpine-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9414817d1de7cf4df21eecce305dde69e08cdd8699f546f502a83ed129fedefb`
-- Created: `2026-04-15T20:17:53.405713721Z`
+- Image ID: `sha256:da9dabca3a7c8383d4c2e5462d933b160f7fab646a8f97541718218efd7d1813`
+- Created: `2026-05-13T19:06:11.455209041Z`
 - Virtual Size: ~ 12.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.30.0`
+  - `NGINX_VERSION=1.30.1`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
 - Labels:
@@ -277,16 +277,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.30.0-r1 description:
+nginx-1.30.1-r1 description:
 High performance web server
 
-nginx-1.30.0-r1 webpage:
+nginx-1.30.1-r1 webpage:
 https://nginx.org/
 
-nginx-1.30.0-r1 installed size:
+nginx-1.30.1-r1 installed size:
 2732 KiB
 
-nginx-1.30.0-r1 license:
+nginx-1.30.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -345,16 +345,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026a-r0 description:
+tzdata-2026b-r0 description:
 Timezone data
 
-tzdata-2026a-r0 webpage:
+tzdata-2026b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026a-r0 installed size:
+tzdata-2026b-r0 installed size:
 436 KiB
 
-tzdata-2026a-r0 license:
+tzdata-2026b-r0 license:
 Public-Domain
 
 ```
