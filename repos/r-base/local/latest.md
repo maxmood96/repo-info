@@ -1372,21 +1372,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `MIT OR Unlicense`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.12-3
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.12-3.dsc' gnutls28_3.8.12-3.dsc 3067 SHA256:49816fe7e27ac71df2a3c629c0834daa72da22a08821e1c9c95d18e99fd0d0a1
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.12.orig.tar.xz' gnutls28_3.8.12.orig.tar.xz 6949604 SHA256:a7b341421bfd459acf7a374ca4af3b9e06608dcd7bd792b2bf470bea012b8e51
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.12.orig.tar.xz.asc' gnutls28_3.8.12.orig.tar.xz.asc 996 SHA256:7a70d4071502974666f2f661e4ab06ba06076efd20468e4198f5f09c7ace41e2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.12-3.debian.tar.xz' gnutls28_3.8.12-3.debian.tar.xz 173324 SHA256:b331186c32e99ec8fc6fbd29b26f8bbae73863fad3efc8dbec9c83a21a748eb8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.12-3/
 
-- https://sources.debian.net/src/gnutls28/3.8.12-3/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.12-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.12-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-13`
 
@@ -4565,20 +4557,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:9.2.0355-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.2.0355-1.dsc' vim_9.2.0355-1.dsc 3195 SHA256:ef8ada1a354e0ce52bb02d9dae806aa4e871a54b2d85ec74d563070a0345a28b
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.2.0355.orig.tar.xz' vim_9.2.0355.orig.tar.xz 13400652 SHA256:5a7b8da9e9b6d055fa86baf5fe78241de809e00028d33776e5f7a7778fbe49c1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.2.0355-1.debian.tar.xz' vim_9.2.0355-1.debian.tar.xz 162544 SHA256:df0b6b2edb29fe451d0c8ddd304fe58a8dadc9bcee7734ab2bf67ae9bffe4511
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/vim/2:9.2.0355-1/
 
-- https://sources.debian.net/src/vim/2:9.2.0355-1/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:9.2.0355-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:9.2.0355-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
