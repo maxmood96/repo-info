@@ -1,10 +1,10 @@
-# `gradle:9.5.0-jdk17-jammy`
+# `gradle:9.5.1-jdk17-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9583b4d9940c36b9dfe52cf677519cb2f36b733d4531b3b6f571097c61b35dc3`
-- Created: `2026-05-08T00:02:33.85659208Z`
-- Virtual Size: ~ 728.85 Mb  
+- Image ID: `sha256:ec72e3e7a24e2dd2153eb79ed04fd25e57c74f48b66713f81b470f97ed73fb95`
+- Created: `2026-05-12T20:48:50.402355112Z`
+- Virtual Size: ~ 728.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.19+10`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.5.0`
+  - `GRADLE_VERSION=9.5.1`
 - Labels:
   - `org.opencontainers.image.version=22.04`
 

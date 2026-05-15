@@ -1749,9 +1749,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=5.15.0-177.187
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-177.187.diff.gz' linux_5.15.0-177.187.diff.gz 12780484 SHA512:f9958972160abc81e30bf1e03f01bd6635b3d68261171757ef44c9ee66bdae2884fd4fe43e058c094947ce40a80aa2cab3ab93cd5c7b2278da163aebfd7f576c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-177.187.dsc' linux_5.15.0-177.187.dsc 7799 SHA512:44735239f356583ec9f0e7f9abf84050b8e383c754babe6aa2ff7aa18ea4839ca88d273877c7d0c31308647a78b4e1a91ed88f76834fa0251c07446997743fbd
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-177.187.diff.gz' linux_5.15.0-177.187.diff.gz 12780484 SHA512:f9958972160abc81e30bf1e03f01bd6635b3d68261171757ef44c9ee66bdae2884fd4fe43e058c094947ce40a80aa2cab3ab93cd5c7b2278da163aebfd7f576c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-177.187.dsc' linux_5.15.0-177.187.dsc 7799 SHA512:44735239f356583ec9f0e7f9abf84050b8e383c754babe6aa2ff7aa18ea4839ca88d273877c7d0c31308647a78b4e1a91ed88f76834fa0251c07446997743fbd
 ```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
