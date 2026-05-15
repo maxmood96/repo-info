@@ -1,10 +1,10 @@
-# `wordpress:beta-7.0-RC3-php8.4-fpm-alpine`
+# `wordpress:beta-7.0-RC4-php8.4-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6889ff3dcbbbc0e74f6c8cb8cedff50b7ffbf73f64350310e59740c783bcf1a7`
-- Created: `2026-05-09T01:19:23.835811273Z`
-- Virtual Size: ~ 304.12 Mb  
+- Image ID: `sha256:9439f45baeb019994a39a48e56e99910023bcd2a3690422563438023e53b5a45`
+- Created: `2026-05-14T23:58:19.720200673Z`
+- Virtual Size: ~ 304.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -571,16 +571,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.19-r0 description:
+imagemagick-7.1.2.22-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.19-r0 webpage:
+imagemagick-7.1.2.22-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.19-r0 installed size:
+imagemagick-7.1.2.22-r0 installed size:
 3691 KiB
 
-imagemagick-7.1.2.19-r0 license:
+imagemagick-7.1.2.22-r0 license:
 ImageMagick
 
 ```
@@ -588,16 +588,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jp2`
 
 ```console
-imagemagick-jp2-7.1.2.19-r0 description:
+imagemagick-jp2-7.1.2.22-r0 description:
 Collection of tools and libraries for many image formats (JPEG2000 support modules)
 
-imagemagick-jp2-7.1.2.19-r0 webpage:
+imagemagick-jp2-7.1.2.22-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jp2-7.1.2.19-r0 installed size:
+imagemagick-jp2-7.1.2.22-r0 installed size:
 26 KiB
 
-imagemagick-jp2-7.1.2.19-r0 license:
+imagemagick-jp2-7.1.2.22-r0 license:
 ImageMagick
 
 ```
@@ -605,16 +605,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.19-r0 description:
+imagemagick-jpeg-7.1.2.22-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.19-r0 webpage:
+imagemagick-jpeg-7.1.2.22-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.19-r0 installed size:
+imagemagick-jpeg-7.1.2.22-r0 installed size:
 62 KiB
 
-imagemagick-jpeg-7.1.2.19-r0 license:
+imagemagick-jpeg-7.1.2.22-r0 license:
 ImageMagick
 
 ```
@@ -622,16 +622,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.19-r0 description:
+imagemagick-libs-7.1.2.22-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.19-r0 webpage:
+imagemagick-libs-7.1.2.22-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.19-r0 installed size:
-4257 KiB
+imagemagick-libs-7.1.2.22-r0 installed size:
+4261 KiB
 
-imagemagick-libs-7.1.2.19-r0 license:
+imagemagick-libs-7.1.2.22-r0 license:
 ImageMagick
 
 ```
@@ -639,16 +639,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.19-r0 description:
+imagemagick-pdf-7.1.2.22-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.19-r0 webpage:
+imagemagick-pdf-7.1.2.22-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.19-r0 installed size:
+imagemagick-pdf-7.1.2.22-r0 installed size:
 121 KiB
 
-imagemagick-pdf-7.1.2.19-r0 license:
+imagemagick-pdf-7.1.2.22-r0 license:
 ImageMagick
 
 ```
@@ -656,16 +656,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.19-r0 description:
+imagemagick-tiff-7.1.2.22-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.19-r0 webpage:
+imagemagick-tiff-7.1.2.22-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.19-r0 installed size:
+imagemagick-tiff-7.1.2.22-r0 installed size:
 115 KiB
 
-imagemagick-tiff-7.1.2.19-r0 license:
+imagemagick-tiff-7.1.2.22-r0 license:
 ImageMagick
 
 ```
@@ -673,16 +673,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.19-r0 description:
+imagemagick-webp-7.1.2.22-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.19-r0 webpage:
+imagemagick-webp-7.1.2.22-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.19-r0 installed size:
+imagemagick-webp-7.1.2.22-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.19-r0 license:
+imagemagick-webp-7.1.2.22-r0 license:
 ImageMagick
 
 ```
