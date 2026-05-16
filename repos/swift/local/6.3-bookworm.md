@@ -1,9 +1,9 @@
-# `swift:6.3.1-bookworm`
+# `swift:6.3.2-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e49c91f87f7cb8802808369b2bf0ab2f6fd0aeac65aaac32e56f3af6a2d3732c`
-- Created: `2026-04-22T02:13:47.986091818Z`
+- Image ID: `sha256:f323d678e4162e8eb76c91c537745a5b9045fa2cce7f16a2de95d66b3894ceb1`
+- Created: `2026-05-13T18:16:30.224625198Z`
 - Virtual Size: ~ 4.19 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=debian12`
-  - `SWIFT_BRANCH=swift-6.3.1-release`
-  - `SWIFT_VERSION=swift-6.3.1-RELEASE`
+  - `SWIFT_BRANCH=swift-6.3.2-release`
+  - `SWIFT_VERSION=swift-6.3.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -2243,11 +2243,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libnsl/1.3.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libnsl/1.3.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libpng1.6=1.6.39-2+deb12u4`
+### `dpkg` source package: `libpng1.6=1.6.39-2+deb12u5`
 
 Binary Packages:
 
-- `libpng16-16:amd64=1.6.39-2+deb12u4`
+- `libpng16-16:amd64=1.6.39-2+deb12u5`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 
@@ -2263,17 +2263,17 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.39-2+deb12u4
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u4.dsc' libpng1.6_1.6.39-2+deb12u4.dsc 2273 SHA256:791697954364ff0f47ae987c8184f715c913a768d15c46e84dea0d1863e68f03
+$ apt-get source -qq --print-uris libpng1.6=1.6.39-2+deb12u5
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u5.dsc' libpng1.6_1.6.39-2+deb12u5.dsc 2292 SHA256:7b86211030a34deb6b0a2cd7e1d9db0fe92443fd30cab537fb89b1e7f7c9f188
 'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39.orig.tar.gz' libpng1.6_1.6.39.orig.tar.gz 1519415 SHA256:a00e9d2f2f664186e4202db9299397f851aea71b36a35e74910b8820e380d441
-'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u4.debian.tar.xz' libpng1.6_1.6.39-2+deb12u4.debian.tar.xz 43828 SHA256:5cd2cc6e94aa3a876a1890b9ddfefb266f7a51dd644bebf0c387d3e57181d573
+'http://deb.debian.org/debian-security/pool/updates/main/libp/libpng1.6/libpng1.6_1.6.39-2%2bdeb12u5.debian.tar.xz' libpng1.6_1.6.39-2+deb12u5.debian.tar.xz 49904 SHA256:ab14906eda9fddf14cbb1e589b9ba7439c22e233dc3c5e3cf9356c9625565a82
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u4/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.39-2+deb12u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u5/ (for browsing the source)
+- https://sources.debian.net/src/libpng1.6/1.6.39-2+deb12u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libpng1.6/1.6.39-2+deb12u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1`
 
@@ -2850,11 +2850,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.164-1`
+### `dpkg` source package: `linux=6.1.170-3`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.164-1`
+- `linux-libc-dev:amd64=6.1.170-3`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2869,17 +2869,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.164-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.164-1.dsc' linux_6.1.164-1.dsc 399396 SHA256:a16375d86e1ec7fcb7e16e3d6dbcb08cab098aca04bfb7510b10befaf7e13e26
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.164.orig.tar.xz' linux_6.1.164.orig.tar.xz 137862600 SHA256:d2971cca3c00dbaa0da62660790ff9ef77b271afc42df468a182d3852d8c1c47
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.164-1.debian.tar.xz' linux_6.1.164-1.debian.tar.xz 1830072 SHA256:7eceed389147fe334a6df3071e2f6b7963b9ac2ec3b6387fd34a26aae0e8fda7
+$ apt-get source -qq --print-uris linux=6.1.170-3
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.170-3.dsc' linux_6.1.170-3.dsc 399396 SHA256:03fb7bff881839fa29297adeade96dd8d7cd1edaaf2d03669220146d7a175478
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.170.orig.tar.xz' linux_6.1.170.orig.tar.xz 137897868 SHA256:d97c2b2683633677fa1f41bf5cc58cfac7664b84ca885ce6546d40fee87ba7fe
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.170-3.debian.tar.xz' linux_6.1.170-3.debian.tar.xz 1841740 SHA256:25805b356526715f569ee3f0e123a567ff0791d68f097036b2dc7587f7c41c19
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.164-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.164-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.164-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.170-3/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.170-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.170-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
