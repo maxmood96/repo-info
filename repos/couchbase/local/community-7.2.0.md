@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6adcfde4d1262bb959e7f8505d5b103f7b5cf288f6842392caa7ff4fde6db0dd`
-- Created: `2026-04-15T20:32:29.164090033Z`
+- Image ID: `sha256:caa6575bca67db52d64c36d725c8eaece220bdfb1838c5a889f430fccbca738e`
+- Created: `2026-05-15T21:15:20.942946929Z`
 - Virtual Size: ~ 1.00 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -930,11 +930,11 @@ $ apt-get source -qq --print-uris keyutils=1.6.1-2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.1-2ubuntu3.debian.tar.xz' keyutils_1.6.1-2ubuntu3.debian.tar.xz 18936 SHA512:16f390f0fc3154a77c8ca3666d44881a6ca2f0d11cfe0398cd82b57b6f552af85c156de358d0b87e39f301331897d72de058050e3cb53720a76b5b5ebf07aa3d
 ```
 
-### `dpkg` source package: `kmod=29-1ubuntu1`
+### `dpkg` source package: `kmod=29-1ubuntu1.1`
 
 Binary Packages:
 
-- `libkmod2:amd64=29-1ubuntu1`
+- `libkmod2:amd64=29-1ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 
@@ -944,10 +944,10 @@ Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris kmod=29-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_29-1ubuntu1.dsc' kmod_29-1ubuntu1.dsc 2182 SHA512:fc9efc6a77cafbb410a6512b1295f4dae31062726087e76399b6f59bdd58837200276daa9ecbd6cd50ec3c1937a9b848b62a469ffacc59e5553fc758f1c06df4
+$ apt-get source -qq --print-uris kmod=29-1ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_29.orig.tar.xz' kmod_29.orig.tar.xz 252492 SHA512:98f9662294326ace03fe36e35a3dc5473e59acf8d3f42f5c3c243601471e3c121c1a84e57094ba6439f71eed75b27ee759de4f9e014f73dee74c5c7baeeeb82c
-'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_29-1ubuntu1.debian.tar.xz' kmod_29-1ubuntu1.debian.tar.xz 13544 SHA512:c5f867e01479a75ee7da2400f39aa8bead6a745b59f98241db834edc2730ac2316bfb165ec42638cfcb855e7a424f35a0bb7947868ef2f3affb36d56465a3c70
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_29-1ubuntu1.1.debian.tar.xz' kmod_29-1ubuntu1.1.debian.tar.xz 13792 SHA512:8b220edd1cfc361fd14a667bb5ad6a5c45995fb148ef4950d8ddd76085714311acc685d53586393df618df2e5c5ad80c28dc1b4abb7e9b428096735473efe9d6
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_29-1ubuntu1.1.dsc' kmod_29-1ubuntu1.1.dsc 2190 SHA512:fcb37e66cf8cab2304d9219daf8640999a4c23fc78915e73b98f2ceb7095caae1b43320275c4e6fa31308b233fdd1d78bdd94e6a00be427e501b6d64e0f3cde6
 ```
 
 ### `dpkg` source package: `krb5=1.19.2-2ubuntu0.7`
@@ -993,11 +993,11 @@ $ apt-get source -qq --print-uris libcap-ng=0.7.9-2.2build3
 'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.7.9-2.2build3.debian.tar.xz' libcap-ng_0.7.9-2.2build3.debian.tar.xz 6432 SHA512:9ce3f52dc0c89739f0117ba7c1b8fdfcdb51ceb7cea7c00aa55522ba733efdb7a37a7f21a9bfd106e453a8477a759af0aaf4688e4b18c3c9cc659657aeb2c0bb
 ```
 
-### `dpkg` source package: `libcap2=1:2.44-1ubuntu0.22.04.2`
+### `dpkg` source package: `libcap2=1:2.44-1ubuntu0.22.04.3`
 
 Binary Packages:
 
-- `libcap2:amd64=1:2.44-1ubuntu0.22.04.2`
+- `libcap2:amd64=1:2.44-1ubuntu0.22.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 
@@ -1005,9 +1005,14 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libcap2=1:2.44-1ubuntu0.22.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.44.orig.tar.xz' libcap2_2.44.orig.tar.xz 125568 SHA512:1bb323ca362923bd6bd0e2e4639cf8726975165a620a243b31e797056439eb7efb2bfbc8e5521636783a86c7415b2037b1638c98747b79183ca7d3d42a04ff20
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.44-1ubuntu0.22.04.3.debian.tar.xz' libcap2_2.44-1ubuntu0.22.04.3.debian.tar.xz 24880 SHA512:203d0b8e88640d809d1a5436cf21781dfa12731891b6b494c83bb872df1643050a9e1205916f4125e9c3a773daaaff23b26232b1c5eecfac1105ac4e04732e21
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.44-1ubuntu0.22.04.3.dsc' libcap2_2.44-1ubuntu0.22.04.3.dsc 2318 SHA512:40430604b718fe1359a0cc1d7f880464b0d5d89b16f05be730061164f4e275f90570f281ee656b35f320b66aa43545e592c6c9f5fa569620d1da5fafefe30001
+```
 
 ### `dpkg` source package: `libffi=3.4.2-4`
 
@@ -2002,11 +2007,11 @@ $ apt-get source -qq --print-uris readline=8.1.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.1.2-1.debian.tar.xz' readline_8.1.2-1.debian.tar.xz 29292 SHA512:a64621c93975bc42ba171c9298c932f9515025513911e744183092e0ef9873db474c4ec27a21f310f40e7b970ba6300edb057552f7e90fc469897ffa2eb706f0
 ```
 
-### `dpkg` source package: `sed=4.8-1ubuntu2`
+### `dpkg` source package: `sed=4.8-1ubuntu2.1`
 
 Binary Packages:
 
-- `sed=4.8-1ubuntu2`
+- `sed=4.8-1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
@@ -2015,11 +2020,11 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sed=4.8-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.8-1ubuntu2.dsc' sed_4.8-1ubuntu2.dsc 2217 SHA512:310ccdf0bac73d16c8898fd600acbeceb534a1be53c795fc6f6059eccb431b45ef9ebcde147c150f9fd5e0d33161269f53e191bb26a095b45339a28b1c3381b2
+$ apt-get source -qq --print-uris sed=4.8-1ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.8.orig.tar.xz' sed_4.8.orig.tar.xz 1348048 SHA512:7de25d9bc2981c63321c2223f3fbcab61d7b0df4fcf7d4394b72400b91993e1288d8bf53948ed5fffcf5a98c75265726a68ad4fb98e1d571bf768603a108c1c8
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.8.orig.tar.xz.asc' sed_4.8.orig.tar.xz.asc 833 SHA512:9b886bdbd18ee2d60608cee3fd2b4193a1b6c3309d887ee05828c14b89b7b515dbf042a9e0ebdd13e6ccfa42e3cd217a408c796d68c4ebedaaa64f795000f095
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.8-1ubuntu2.debian.tar.xz' sed_4.8-1ubuntu2.debian.tar.xz 60936 SHA512:c4f0c5b3f75acbcb213e78f5696129e83bc721031be3c756150e84b7aa7e725ac0d5afacbe18e91d39bc2b7892986d92e1e21db89601ccf2bccb8ac088482180
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.8-1ubuntu2.1.debian.tar.xz' sed_4.8-1ubuntu2.1.debian.tar.xz 61312 SHA512:f99f3eb1f1121ae234afdd189b6795c4c6e0fcd8c7c25db280f20c4e99e7dd464c6d93306d8b64e9956b03aeb653fb2a4a5d4e5548b87e3d7ec2b1ed88904502
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.8-1ubuntu2.1.dsc' sed_4.8-1ubuntu2.1.dsc 2196 SHA512:d62a76d7256b4c2a95541a3bbba904129129d33a2b70e563c98913770208bad64e056470bcda33b455439bfed1ec7bedc28e1d4d00ad9f7227b30a528920bd29
 ```
 
 ### `dpkg` source package: `sensible-utils=0.0.17`
