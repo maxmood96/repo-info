@@ -1,10 +1,10 @@
-# `eclipse-temurin:26_35-jdk-noble`
+# `eclipse-temurin:26.0.1_8-jdk-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4a79f7c7f9e4367b6f8f7547fa2d40ed3331bdc198f5ea81e9f551b36a3dc214`
-- Created: `2026-04-15T20:35:13.827590148Z`
-- Virtual Size: ~ 398.55 Mb  
+- Image ID: `sha256:6f22b017904eb1b17624802307c24ef0695e3823cf8c0ec6fbcc3685e78d6573`
+- Created: `2026-05-15T20:31:04.633051928Z`
+- Virtual Size: ~ 398.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-26+35`
+  - `JAVA_VERSION=jdk-26.0.1+8`
 - Labels:
   - `org.opencontainers.image.version=24.04`
 
@@ -1083,11 +1083,11 @@ $ apt-get source -qq --print-uris libmd=1.1.0-2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libm/libmd/libmd_1.1.0-2build1.1.dsc' libmd_1.1.0-2build1.1.dsc 2391 SHA256:11dfd22bba97a4c4ca6c09f34743ac6c72a34eb81344e3a1681c45e2d60ce239
 ```
 
-### `dpkg` source package: `libpng1.6=1.6.43-5ubuntu0.5`
+### `dpkg` source package: `libpng1.6=1.6.43-5ubuntu0.6`
 
 Binary Packages:
 
-- `libpng16-16t64:amd64=1.6.43-5ubuntu0.5`
+- `libpng16-16t64:amd64=1.6.43-5ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 
@@ -1100,9 +1100,14 @@ Licenses: (parsed from: `/usr/share/doc/libpng16-16t64/copyright`)
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libpng1.6=1.6.43-5ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43.orig.tar.gz' libpng1.6_1.6.43.orig.tar.gz 1554715 SHA512:3bb2a7b73113be42b09c2116e6c6f5a7ddb4e2ab06e0b13e10b7314acdccc4bb624ff602e16140c0484f6cde80efa190296226be3da195c6926819f07c723c12
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43-5ubuntu0.6.debian.tar.xz' libpng1.6_1.6.43-5ubuntu0.6.debian.tar.xz 50432 SHA512:ae0b6ce1f99d1c5a9d5ab5c1aa75f48f657796938b14733410c824242cc1ffcb40b50fcdb57d7a84ad9c5392388417746ea9110d4e2d2f67e6c111c26ab9915e
+'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.43-5ubuntu0.6.dsc' libpng1.6_1.6.43-5ubuntu0.6.dsc 2384 SHA512:1874607dce51f4d068e883e8ef95689e116e03bfa7a80809936b3825818b08850127b77fbdee36db5cd933cfd51713a2f528dff41156c2bb9602dcd1ce88cfa6
+```
 
 ### `dpkg` source package: `libseccomp=2.5.5-1ubuntu3.1`
 
