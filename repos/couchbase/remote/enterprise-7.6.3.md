@@ -1,7 +1,7 @@
 ## `couchbase:enterprise-7.6.3`
 
 ```console
-$ docker pull couchbase@sha256:21e48f2ce95ca886e2dceffbef07d6f857a69cd1e7b50614cefe0ca0536c94f8
+$ docker pull couchbase@sha256:943679e5b9751d3448ff20c4e96ae005e445d0ec219a823fd207b90c3b37a492
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,295 +14,295 @@ $ docker pull couchbase@sha256:21e48f2ce95ca886e2dceffbef07d6f857a69cd1e7b50614c
 ### `couchbase:enterprise-7.6.3` - linux; amd64
 
 ```console
-$ docker pull couchbase@sha256:afd840352c924f3b6e8fc95fb85ca7a9af8375e157a09a8d21cf5983bb11c89c
+$ docker pull couchbase@sha256:e58978e092c912ef756f5dc5c473b42c2c01e1221d8650a7c6fbf13c87c83bdf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **769.2 MB (769156219 bytes)**  
+-	Total Size: **769.2 MB (769158358 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7bba56d3646f29f54ce0b35e91557c8f4f9f2ca19ccf52baa2f32736a98e04e1`
+-	Image ID: `sha256:e7a34ab64425c30d37e6cc13283112cbb2ed4676a7520814300e628b354643d1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["couchbase-server"]`
 
 ```dockerfile
-# Fri, 10 Apr 2026 09:47:41 GMT
+# Sat, 09 May 2026 04:49:21 GMT
 ARG RELEASE
-# Fri, 10 Apr 2026 09:47:41 GMT
+# Sat, 09 May 2026 04:49:21 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 10 Apr 2026 09:47:41 GMT
+# Sat, 09 May 2026 04:49:21 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 10 Apr 2026 09:47:43 GMT
-ADD file:da2cd86408d9354e8bd817c8a4b8635a1d788cd20d0d70061ce02a173e8cf902 in / 
-# Fri, 10 Apr 2026 09:47:44 GMT
+# Sat, 09 May 2026 04:49:23 GMT
+ADD file:14c8897ef5107db11b35f5a0c05bdcb883c0a6daa83d07d4439865541f08514c in / 
+# Sat, 09 May 2026 04:49:23 GMT
 CMD ["/bin/bash"]
-# Wed, 15 Apr 2026 20:16:38 GMT
+# Fri, 15 May 2026 21:12:01 GMT
 LABEL maintainer=docker@couchbase.com
-# Wed, 15 Apr 2026 20:16:38 GMT
+# Fri, 15 May 2026 21:12:01 GMT
 ARG UPDATE_COMMAND=apt-get update -y -q
-# Wed, 15 Apr 2026 20:16:38 GMT
+# Fri, 15 May 2026 21:12:01 GMT
 ARG CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-# Wed, 15 Apr 2026 20:16:38 GMT
+# Fri, 15 May 2026 21:12:01 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN set -x     && ${UPDATE_COMMAND}     && apt-get install -y -q wget tzdata       lsof lshw sysstat net-tools numactl bzip2     && ${CLEANUP_COMMAND} # buildkit
-# Wed, 15 Apr 2026 20:17:04 GMT
+# Fri, 15 May 2026 21:12:21 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN set -x     && apt-get update     && apt-get install -y gcc git make     && cd /usr/src     && git clone https://github.com/couchbasedeps/runit     && cd runit     && git checkout edb631449d89d5b452a5992c6ffaa1e384fea697     && ./package/compile     && cp ./command/* /sbin/     && apt-get purge -y --autoremove gcc git make     && apt-get clean     && rm -rf /var/lib/apt/lists/* /usr/src/runit # buildkit
-# Wed, 15 Apr 2026 20:17:04 GMT
+# Fri, 15 May 2026 21:12:21 GMT
 ARG CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3
-# Wed, 15 Apr 2026 20:17:04 GMT
+# Fri, 15 May 2026 21:12:21 GMT
 ARG CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb
-# Wed, 15 Apr 2026 20:17:04 GMT
+# Fri, 15 May 2026 21:12:21 GMT
 ARG CB_SKIP_CHECKSUM=false
-# Wed, 15 Apr 2026 20:17:04 GMT
+# Fri, 15 May 2026 21:12:21 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/couchbase/bin:/opt/couchbase/bin/tools:/opt/couchbase/bin/install
-# Wed, 15 Apr 2026 20:17:04 GMT
+# Fri, 15 May 2026 21:12:21 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3 CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
 RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M # buildkit
-# Wed, 15 Apr 2026 20:18:16 GMT
+# Fri, 15 May 2026 21:13:32 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3 CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
 RUN set -x     && ${UPDATE_COMMAND}     && export INSTALL_DONT_START_SERVER=1     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch}" in          'arm64')            CB_SHA256=24c783f316cb6cb368da2a80d657a652b1efb4d03e30b8ea540481008cf68191            ;;          'amd64')            CB_SHA256=882df2178c657ddbfdc7e532d32252ee5367403b0472aec2699433634a98b88c            ;;        esac     && CB_PACKAGE=$(echo ${CB_PACKAGE} | sed -e "s/@@ARCH@@/${dpkgArch}/")     && wget -N --no-verbose $CB_RELEASE_URL/$CB_PACKAGE     && { ${CB_SKIP_CHECKSUM} || echo "$CB_SHA256  $CB_PACKAGE" | sha256sum -c - ; }     && apt-get install -y ./$CB_PACKAGE     && rm -f ./$CB_PACKAGE     && ${CLEANUP_COMMAND}     && rm -rf /tmp/* /var/tmp/* # buildkit
-# Wed, 15 Apr 2026 20:18:16 GMT
+# Fri, 15 May 2026 21:13:32 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3 CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
 RUN sed -i -e '1 s/$/\/docker/' /opt/couchbase/VARIANT.txt # buildkit
-# Wed, 15 Apr 2026 20:18:16 GMT
+# Fri, 15 May 2026 21:13:32 GMT
 COPY scripts/run /etc/service/couchbase-server/run # buildkit
-# Wed, 15 Apr 2026 20:18:16 GMT
+# Fri, 15 May 2026 21:13:32 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3 CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
 RUN set -x     && mkdir -p /etc/service/couchbase-server/supervise     && chown -R couchbase:couchbase                 /etc/service                 /etc/service/couchbase-server/supervise # buildkit
-# Wed, 15 Apr 2026 20:18:16 GMT
+# Fri, 15 May 2026 21:13:32 GMT
 COPY scripts/dummy.sh /usr/local/bin/ # buildkit
-# Wed, 15 Apr 2026 20:18:16 GMT
+# Fri, 15 May 2026 21:13:32 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3 CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
 RUN set -x     && ln -s dummy.sh /usr/local/bin/iptables-save     && ln -s dummy.sh /usr/local/bin/lvdisplay     && ln -s dummy.sh /usr/local/bin/vgdisplay     && ln -s dummy.sh /usr/local/bin/pvdisplay # buildkit
-# Wed, 15 Apr 2026 20:18:17 GMT
+# Fri, 15 May 2026 21:13:32 GMT
 # ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3 CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
 RUN set -ex     &&  if [ ! -e /opt/couchbase/bin/curl.real ]; then             ${UPDATE_COMMAND};             apt-get install -y chrpath;             chrpath -r '$ORIGIN/../lib' /opt/couchbase/bin/curl;             apt-get remove -y chrpath;             apt-get autoremove -y;             ${CLEANUP_COMMAND};         fi # buildkit
-# Wed, 15 Apr 2026 20:18:17 GMT
+# Fri, 15 May 2026 21:13:32 GMT
 COPY scripts/entrypoint.sh / # buildkit
-# Wed, 15 Apr 2026 20:18:17 GMT
+# Fri, 15 May 2026 21:13:32 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 15 Apr 2026 20:18:17 GMT
+# Fri, 15 May 2026 21:13:32 GMT
 CMD ["couchbase-server"]
-# Wed, 15 Apr 2026 20:18:17 GMT
+# Fri, 15 May 2026 21:13:32 GMT
 EXPOSE map[11207/tcp:{} 11210/tcp:{} 11280/tcp:{} 18091/tcp:{} 18092/tcp:{} 18093/tcp:{} 18094/tcp:{} 18095/tcp:{} 18096/tcp:{} 18097/tcp:{} 8091/tcp:{} 8092/tcp:{} 8093/tcp:{} 8094/tcp:{} 8095/tcp:{} 8096/tcp:{} 8097/tcp:{} 9123/tcp:{}]
-# Wed, 15 Apr 2026 20:18:17 GMT
+# Fri, 15 May 2026 21:13:32 GMT
 VOLUME [/opt/couchbase/var]
 ```
 
 -	Layers:
-	-	`sha256:f63eb04151bcac21ad049f8d781b97b219aba392c5457907f8f3e88e43eb48ec`  
-		Last Modified: Fri, 10 Apr 2026 11:00:47 GMT  
-		Size: 29.7 MB (29736498 bytes)  
+	-	`sha256:40d16f30db405106ef8074779bdf41f012465c2a785bbeaa2eab9f2081099b47`  
+		Last Modified: Sat, 09 May 2026 05:24:51 GMT  
+		Size: 29.7 MB (29736684 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c9e1915bd87a43c47f07271352de486a18a2a8d1456e97793a014d8ee60113e`  
-		Last Modified: Wed, 15 Apr 2026 20:19:09 GMT  
-		Size: 39.3 MB (39306764 bytes)  
+	-	`sha256:aed0d454f3b629f480e75d6116710c6d226190d5398249d0207a4d4bacc91182`  
+		Last Modified: Fri, 15 May 2026 21:14:25 GMT  
+		Size: 39.3 MB (39307268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbb47c8bed4c54e629df4c36533ed058f2aeb0cd462aae5ac042c07932dabd33`  
-		Last Modified: Wed, 15 Apr 2026 20:19:07 GMT  
-		Size: 926.7 KB (926694 bytes)  
+	-	`sha256:50f438772427bd1e37be410536d6dd383a0e55356d5c1b9a6d4f8aa425a906fa`  
+		Last Modified: Fri, 15 May 2026 21:14:23 GMT  
+		Size: 926.8 KB (926781 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0f32d49d4861201135198cd39bd7b77e5882f56c0d4e552b4a9b0c2468d7760`  
-		Last Modified: Wed, 15 Apr 2026 20:19:07 GMT  
-		Size: 2.0 KB (1991 bytes)  
+	-	`sha256:44bd0a68e083db5f182d3706c69c5c1d964a3e8a78e31a48334a9491268ad7b8`  
+		Last Modified: Fri, 15 May 2026 21:14:23 GMT  
+		Size: 2.0 KB (1992 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c75533787007432e36849644e7968185d2a5f73b76443922171ffed37d4c0fb`  
-		Last Modified: Wed, 15 Apr 2026 20:19:22 GMT  
-		Size: 699.2 MB (699181086 bytes)  
+	-	`sha256:87f64380e07afdaa538ad20758d5daa465e2fc17f035caa36353f62cb9bfcfa2`  
+		Last Modified: Fri, 15 May 2026 21:14:38 GMT  
+		Size: 699.2 MB (699182448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bab04fd991159edca12334fead63627957788553abf36ca18cdfb3ec462b02c8`  
-		Last Modified: Wed, 15 Apr 2026 20:19:09 GMT  
-		Size: 186.0 B  
+	-	`sha256:980d3d0a62388fa5897a42ca2f63516fa17edd2401a70d19d6b8065d9f93361e`  
+		Last Modified: Fri, 15 May 2026 21:14:24 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3cc62aa8ed217b79a0a77a962d53287b029091f6c5a726fbf991f2855075606`  
-		Last Modified: Wed, 15 Apr 2026 20:19:09 GMT  
+	-	`sha256:e2b0ecc99d68a96c5dd681b4d7e5ff17f6db2e37e091653a56bc3f2c940cb757`  
+		Last Modified: Fri, 15 May 2026 21:14:25 GMT  
 		Size: 817.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfa835252b4c83def20218ba9ec2357cfcfdc44ef4a8dbf3eb17df0db597dd82`  
-		Last Modified: Wed, 15 Apr 2026 20:19:10 GMT  
+	-	`sha256:4fbeed36a6870e2e52b3a68a98a1df71bd360b0b39dd14e145ce550fc8b779db`  
+		Last Modified: Fri, 15 May 2026 21:14:26 GMT  
 		Size: 848.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68c1cc76b5a9332ec0092827461ed09930dfc7f43b49b4db2392f56cb0a40e0f`  
-		Last Modified: Wed, 15 Apr 2026 20:19:10 GMT  
-		Size: 231.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ca2f336a712df06f5b01efcd517746e67d1106cdf6fbe5243b86ab46c9ced9f`  
-		Last Modified: Wed, 15 Apr 2026 20:19:11 GMT  
-		Size: 217.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:207ce30f912c2669371ca57b553bf689fa6768b819005c5783fcd7a5dca3a352`  
-		Last Modified: Wed, 15 Apr 2026 20:19:11 GMT  
-		Size: 855.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `couchbase:enterprise-7.6.3` - unknown; unknown
-
-```console
-$ docker pull couchbase@sha256:22429c6198a2b12aaa3d22107a7de7b28fc0529eeea2e0add11aaf3a6ae9745f
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.8 KB (35773 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:83a7f1e88925d711268e6cfb0ea8d0b5146d2fc690a9d2d459292fb8a20d55d2`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:21c71d6bfd1ee89346e4653f094e286149d1bb6f6ab28fc286752a1f7023ce54`  
-		Last Modified: Wed, 15 Apr 2026 20:19:07 GMT  
-		Size: 35.8 KB (35773 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `couchbase:enterprise-7.6.3` - linux; arm64 variant v8
-
-```console
-$ docker pull couchbase@sha256:c2b8697c483364139434ba2dfe2dc7f24834e230187aa87689d0e6b4c4c722a4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **740.5 MB (740544357 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:62ecf196902cdd9323143f29fbca873090d1add3e27d664251f50487b062ddd5`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["couchbase-server"]`
-
-```dockerfile
-# Fri, 10 Apr 2026 09:49:11 GMT
-ARG RELEASE
-# Fri, 10 Apr 2026 09:49:11 GMT
-ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 10 Apr 2026 09:49:11 GMT
-LABEL org.opencontainers.image.version=22.04
-# Fri, 10 Apr 2026 09:49:13 GMT
-ADD file:94ca084e2c34d90b4443d18fa6a7d983767fa1575d4bd2c06f6e31adfea270da in / 
-# Fri, 10 Apr 2026 09:49:13 GMT
-CMD ["/bin/bash"]
-# Wed, 15 Apr 2026 20:27:13 GMT
-LABEL maintainer=docker@couchbase.com
-# Wed, 15 Apr 2026 20:27:13 GMT
-ARG UPDATE_COMMAND=apt-get update -y -q
-# Wed, 15 Apr 2026 20:27:13 GMT
-ARG CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-# Wed, 15 Apr 2026 20:27:13 GMT
-# ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-RUN set -x     && ${UPDATE_COMMAND}     && apt-get install -y -q wget tzdata       lsof lshw sysstat net-tools numactl bzip2     && ${CLEANUP_COMMAND} # buildkit
-# Wed, 15 Apr 2026 20:27:40 GMT
-# ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-RUN set -x     && apt-get update     && apt-get install -y gcc git make     && cd /usr/src     && git clone https://github.com/couchbasedeps/runit     && cd runit     && git checkout edb631449d89d5b452a5992c6ffaa1e384fea697     && ./package/compile     && cp ./command/* /sbin/     && apt-get purge -y --autoremove gcc git make     && apt-get clean     && rm -rf /var/lib/apt/lists/* /usr/src/runit # buildkit
-# Wed, 15 Apr 2026 20:27:40 GMT
-ARG CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3
-# Wed, 15 Apr 2026 20:27:40 GMT
-ARG CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb
-# Wed, 15 Apr 2026 20:27:40 GMT
-ARG CB_SKIP_CHECKSUM=false
-# Wed, 15 Apr 2026 20:27:40 GMT
-ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/couchbase/bin:/opt/couchbase/bin/tools:/opt/couchbase/bin/install
-# Wed, 15 Apr 2026 20:27:41 GMT
-# ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3 CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
-RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M # buildkit
-# Wed, 15 Apr 2026 20:28:48 GMT
-# ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3 CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
-RUN set -x     && ${UPDATE_COMMAND}     && export INSTALL_DONT_START_SERVER=1     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch}" in          'arm64')            CB_SHA256=24c783f316cb6cb368da2a80d657a652b1efb4d03e30b8ea540481008cf68191            ;;          'amd64')            CB_SHA256=882df2178c657ddbfdc7e532d32252ee5367403b0472aec2699433634a98b88c            ;;        esac     && CB_PACKAGE=$(echo ${CB_PACKAGE} | sed -e "s/@@ARCH@@/${dpkgArch}/")     && wget -N --no-verbose $CB_RELEASE_URL/$CB_PACKAGE     && { ${CB_SKIP_CHECKSUM} || echo "$CB_SHA256  $CB_PACKAGE" | sha256sum -c - ; }     && apt-get install -y ./$CB_PACKAGE     && rm -f ./$CB_PACKAGE     && ${CLEANUP_COMMAND}     && rm -rf /tmp/* /var/tmp/* # buildkit
-# Wed, 15 Apr 2026 20:28:48 GMT
-# ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3 CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
-RUN sed -i -e '1 s/$/\/docker/' /opt/couchbase/VARIANT.txt # buildkit
-# Wed, 15 Apr 2026 20:28:48 GMT
-COPY scripts/run /etc/service/couchbase-server/run # buildkit
-# Wed, 15 Apr 2026 20:28:48 GMT
-# ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3 CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
-RUN set -x     && mkdir -p /etc/service/couchbase-server/supervise     && chown -R couchbase:couchbase                 /etc/service                 /etc/service/couchbase-server/supervise # buildkit
-# Wed, 15 Apr 2026 20:28:48 GMT
-COPY scripts/dummy.sh /usr/local/bin/ # buildkit
-# Wed, 15 Apr 2026 20:28:48 GMT
-# ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3 CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
-RUN set -x     && ln -s dummy.sh /usr/local/bin/iptables-save     && ln -s dummy.sh /usr/local/bin/lvdisplay     && ln -s dummy.sh /usr/local/bin/vgdisplay     && ln -s dummy.sh /usr/local/bin/pvdisplay # buildkit
-# Wed, 15 Apr 2026 20:28:48 GMT
-# ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3 CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
-RUN set -ex     &&  if [ ! -e /opt/couchbase/bin/curl.real ]; then             ${UPDATE_COMMAND};             apt-get install -y chrpath;             chrpath -r '$ORIGIN/../lib' /opt/couchbase/bin/curl;             apt-get remove -y chrpath;             apt-get autoremove -y;             ${CLEANUP_COMMAND};         fi # buildkit
-# Wed, 15 Apr 2026 20:28:48 GMT
-COPY scripts/entrypoint.sh / # buildkit
-# Wed, 15 Apr 2026 20:28:48 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 15 Apr 2026 20:28:48 GMT
-CMD ["couchbase-server"]
-# Wed, 15 Apr 2026 20:28:48 GMT
-EXPOSE map[11207/tcp:{} 11210/tcp:{} 11280/tcp:{} 18091/tcp:{} 18092/tcp:{} 18093/tcp:{} 18094/tcp:{} 18095/tcp:{} 18096/tcp:{} 18097/tcp:{} 8091/tcp:{} 8092/tcp:{} 8093/tcp:{} 8094/tcp:{} 8095/tcp:{} 8096/tcp:{} 8097/tcp:{} 9123/tcp:{}]
-# Wed, 15 Apr 2026 20:28:48 GMT
-VOLUME [/opt/couchbase/var]
-```
-
--	Layers:
-	-	`sha256:6edbc812af48552062d74659cf0a08b413dbfdbacdd5aac73329d889d9b3b44a`  
-		Last Modified: Fri, 10 Apr 2026 11:00:55 GMT  
-		Size: 27.6 MB (27606543 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e28e29644e557f2e142c9a477e065f17aac8cf4218c9e9a01179d7572e1c410a`  
-		Last Modified: Wed, 15 Apr 2026 20:29:40 GMT  
-		Size: 38.9 MB (38866466 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53e3703215cc83bc09e02dacb150c0faa6742cac708ac0dee6801b6c0e18eb42`  
-		Last Modified: Wed, 15 Apr 2026 20:29:39 GMT  
-		Size: 775.3 KB (775272 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36a2eb5b0e346f9eea631cc450a28cf4b1c706d4e4c091e277a167dfbb2e9282`  
-		Last Modified: Wed, 15 Apr 2026 20:29:39 GMT  
-		Size: 2.0 KB (1998 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e1a9e5aad2efee1994603e795f9dcabde9f5e188feaa8883f888e956bb5cfda`  
-		Last Modified: Wed, 15 Apr 2026 20:29:52 GMT  
-		Size: 673.3 MB (673290888 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4983cfeb83df3c0e5abd67d022d5bf9a289a485f9295b0972996b297eb3d00f9`  
-		Last Modified: Wed, 15 Apr 2026 20:29:40 GMT  
-		Size: 187.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f987460dab44b4c0d8f04ce2867a5bff6f5d4ded0356c618e9f3b3a9150a4b1`  
-		Last Modified: Wed, 15 Apr 2026 20:29:40 GMT  
-		Size: 817.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:910b795112f3210bca33e67b54c47365303db977bd9ffc2bb2857847e3c773d7`  
-		Last Modified: Wed, 15 Apr 2026 20:29:41 GMT  
-		Size: 847.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a35bb46febf2665f475e126f717726cacb8d20b727d4b988b384821933b08b4`  
-		Last Modified: Wed, 15 Apr 2026 20:29:42 GMT  
+	-	`sha256:04990b87071decff6bffcdd6c6c019adf64e9689e4f0536c5ae07af36ae8b46d`  
+		Last Modified: Fri, 15 May 2026 21:14:26 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e6bca6dbe616d6274af77a3e2ca46d50eb045c9acf1484a86ec47f45794af8b`  
-		Last Modified: Wed, 15 Apr 2026 20:29:42 GMT  
+	-	`sha256:907b0f950b9d108070053dfcae333f0c31453d7ba18225a68ab02c9d7cac224b`  
+		Last Modified: Fri, 15 May 2026 21:14:27 GMT  
 		Size: 218.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:756d160c0985a813cb936d56708bfaa4e47dc353b01d500ca62e50812d254b18`  
-		Last Modified: Wed, 15 Apr 2026 20:29:43 GMT  
-		Size: 856.0 B  
+	-	`sha256:8d0e3985b3ca8f88641491907b502265b58390e126dd1f5d69917244005be5d1`  
+		Last Modified: Fri, 15 May 2026 21:14:27 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `couchbase:enterprise-7.6.3` - unknown; unknown
 
 ```console
-$ docker pull couchbase@sha256:9a988b259443b446e15d8bda478cfa6a75466591e2b3ea59bd7cc527a42dca62
+$ docker pull couchbase@sha256:a0823747bf4da78752d3a705eb82d1a310b722507e9e1caef956fd696e42c49a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **36.0 KB (35958 bytes)**  
+-	Total Size: **35.8 KB (35773 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8dbf557edfe8f9f36e9719bd181ae79b16ce00fbf35e858932bd6380cf863f07`
+-	Image ID: `sha256:e80e422e846d179c07056801ed9ddcd8f388b8c2db0a717c2570ac2be8cf1d78`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:89a505c877277435a0cbe0309a7007bf6e8653333c68e0f816f6c9aae50c8341`  
-		Last Modified: Wed, 15 Apr 2026 20:29:39 GMT  
-		Size: 36.0 KB (35958 bytes)  
+	-	`sha256:db6c5b4fca4e636d14b91030aefb89e5839056880c5a9d81d142d1993451ba79`  
+		Last Modified: Fri, 15 May 2026 21:14:23 GMT  
+		Size: 35.8 KB (35773 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `couchbase:enterprise-7.6.3` - linux; arm64 variant v8
+
+```console
+$ docker pull couchbase@sha256:ed163992b38a4b99ce693e395a6fd95cacfa17ff03ac41838fe484c8f580e73e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **740.5 MB (740545093 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5bffe51d928b2cca589fca829052cc54b490c1fb3703ec66e391da66b216ead7`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["couchbase-server"]`
+
+```dockerfile
+# Sat, 09 May 2026 04:50:55 GMT
+ARG RELEASE
+# Sat, 09 May 2026 04:50:55 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Sat, 09 May 2026 04:50:55 GMT
+LABEL org.opencontainers.image.version=22.04
+# Sat, 09 May 2026 04:50:57 GMT
+ADD file:a8d1411696ccaba92b4557162d508331f7cb7973e559947ad40c3f25d9402b10 in / 
+# Sat, 09 May 2026 04:50:57 GMT
+CMD ["/bin/bash"]
+# Fri, 15 May 2026 21:11:48 GMT
+LABEL maintainer=docker@couchbase.com
+# Fri, 15 May 2026 21:11:48 GMT
+ARG UPDATE_COMMAND=apt-get update -y -q
+# Fri, 15 May 2026 21:11:48 GMT
+ARG CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+# Fri, 15 May 2026 21:11:48 GMT
+# ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN set -x     && ${UPDATE_COMMAND}     && apt-get install -y -q wget tzdata       lsof lshw sysstat net-tools numactl bzip2     && ${CLEANUP_COMMAND} # buildkit
+# Fri, 15 May 2026 21:12:17 GMT
+# ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN set -x     && apt-get update     && apt-get install -y gcc git make     && cd /usr/src     && git clone https://github.com/couchbasedeps/runit     && cd runit     && git checkout edb631449d89d5b452a5992c6ffaa1e384fea697     && ./package/compile     && cp ./command/* /sbin/     && apt-get purge -y --autoremove gcc git make     && apt-get clean     && rm -rf /var/lib/apt/lists/* /usr/src/runit # buildkit
+# Fri, 15 May 2026 21:12:17 GMT
+ARG CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3
+# Fri, 15 May 2026 21:12:17 GMT
+ARG CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb
+# Fri, 15 May 2026 21:12:17 GMT
+ARG CB_SKIP_CHECKSUM=false
+# Fri, 15 May 2026 21:12:17 GMT
+ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/couchbase/bin:/opt/couchbase/bin/tools:/opt/couchbase/bin/install
+# Fri, 15 May 2026 21:12:17 GMT
+# ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3 CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
+RUN groupadd -g 1000 couchbase && useradd couchbase -u 1000 -g couchbase -M # buildkit
+# Fri, 15 May 2026 21:13:22 GMT
+# ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3 CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
+RUN set -x     && ${UPDATE_COMMAND}     && export INSTALL_DONT_START_SERVER=1     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch}" in          'arm64')            CB_SHA256=24c783f316cb6cb368da2a80d657a652b1efb4d03e30b8ea540481008cf68191            ;;          'amd64')            CB_SHA256=882df2178c657ddbfdc7e532d32252ee5367403b0472aec2699433634a98b88c            ;;        esac     && CB_PACKAGE=$(echo ${CB_PACKAGE} | sed -e "s/@@ARCH@@/${dpkgArch}/")     && wget -N --no-verbose $CB_RELEASE_URL/$CB_PACKAGE     && { ${CB_SKIP_CHECKSUM} || echo "$CB_SHA256  $CB_PACKAGE" | sha256sum -c - ; }     && apt-get install -y ./$CB_PACKAGE     && rm -f ./$CB_PACKAGE     && ${CLEANUP_COMMAND}     && rm -rf /tmp/* /var/tmp/* # buildkit
+# Fri, 15 May 2026 21:13:22 GMT
+# ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3 CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
+RUN sed -i -e '1 s/$/\/docker/' /opt/couchbase/VARIANT.txt # buildkit
+# Fri, 15 May 2026 21:13:22 GMT
+COPY scripts/run /etc/service/couchbase-server/run # buildkit
+# Fri, 15 May 2026 21:13:22 GMT
+# ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3 CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
+RUN set -x     && mkdir -p /etc/service/couchbase-server/supervise     && chown -R couchbase:couchbase                 /etc/service                 /etc/service/couchbase-server/supervise # buildkit
+# Fri, 15 May 2026 21:13:22 GMT
+COPY scripts/dummy.sh /usr/local/bin/ # buildkit
+# Fri, 15 May 2026 21:13:23 GMT
+# ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3 CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
+RUN set -x     && ln -s dummy.sh /usr/local/bin/iptables-save     && ln -s dummy.sh /usr/local/bin/lvdisplay     && ln -s dummy.sh /usr/local/bin/vgdisplay     && ln -s dummy.sh /usr/local/bin/pvdisplay # buildkit
+# Fri, 15 May 2026 21:13:23 GMT
+# ARGS: UPDATE_COMMAND=apt-get update -y -q CLEANUP_COMMAND=rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* CB_RELEASE_URL=https://packages.couchbase.com/releases/7.6.3 CB_PACKAGE=couchbase-server-enterprise_7.6.3-linux_@@ARCH@@.deb CB_SKIP_CHECKSUM=false
+RUN set -ex     &&  if [ ! -e /opt/couchbase/bin/curl.real ]; then             ${UPDATE_COMMAND};             apt-get install -y chrpath;             chrpath -r '$ORIGIN/../lib' /opt/couchbase/bin/curl;             apt-get remove -y chrpath;             apt-get autoremove -y;             ${CLEANUP_COMMAND};         fi # buildkit
+# Fri, 15 May 2026 21:13:23 GMT
+COPY scripts/entrypoint.sh / # buildkit
+# Fri, 15 May 2026 21:13:23 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Fri, 15 May 2026 21:13:23 GMT
+CMD ["couchbase-server"]
+# Fri, 15 May 2026 21:13:23 GMT
+EXPOSE map[11207/tcp:{} 11210/tcp:{} 11280/tcp:{} 18091/tcp:{} 18092/tcp:{} 18093/tcp:{} 18094/tcp:{} 18095/tcp:{} 18096/tcp:{} 18097/tcp:{} 8091/tcp:{} 8092/tcp:{} 8093/tcp:{} 8094/tcp:{} 8095/tcp:{} 8096/tcp:{} 8097/tcp:{} 9123/tcp:{}]
+# Fri, 15 May 2026 21:13:23 GMT
+VOLUME [/opt/couchbase/var]
+```
+
+-	Layers:
+	-	`sha256:99267111abcc4caf5e9b6f06fd8b9ca7ae7bff04ce06b24ca352c6007daaa73e`  
+		Last Modified: Sat, 09 May 2026 05:24:57 GMT  
+		Size: 27.6 MB (27606623 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:48fe5333c42eb2a863028c8d78dfeb1ccaaa0f3f0693776f9521e20b7b519ea8`  
+		Last Modified: Fri, 15 May 2026 21:14:15 GMT  
+		Size: 38.9 MB (38866852 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:558ac147992769dd9fa7f393b3fa7ba81bd5318efdffea08cfdf3790e39aed42`  
+		Last Modified: Fri, 15 May 2026 21:14:13 GMT  
+		Size: 775.3 KB (775312 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b972cae247a45aba966c5a88cb498e99ce9079d15bde3d40a2ed6b911d5b609c`  
+		Last Modified: Fri, 15 May 2026 21:14:13 GMT  
+		Size: 2.0 KB (1994 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:48437f90eb3ae5c0497932cec98d419fbaaa6662005ee031f91996585aa2e3de`  
+		Last Modified: Fri, 15 May 2026 21:14:27 GMT  
+		Size: 673.3 MB (673291130 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a23b5a4985df05b807c402346e952bdb35132f91439c4ce1e0ad336629360529`  
+		Last Modified: Fri, 15 May 2026 21:14:14 GMT  
+		Size: 186.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d02af0b9fbad765fd9626d2b0295551a8b2ac91374f2c94a0629b99ee1b32d04`  
+		Last Modified: Fri, 15 May 2026 21:14:15 GMT  
+		Size: 815.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1886e39ea0500840f58f4718b5dc524cc9c8d1e0fdc316f4f2522f7ade180980`  
+		Last Modified: Fri, 15 May 2026 21:14:15 GMT  
+		Size: 845.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f308e9ca33152bc8d6dd59a27a79ae8b059ad592216b30b2a1d645aac39aa788`  
+		Last Modified: Fri, 15 May 2026 21:14:16 GMT  
+		Size: 233.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f679a7883f3ea3a6244be5deaa3f952350fcfa71383b5d4106338e830d5713ca`  
+		Last Modified: Fri, 15 May 2026 21:14:16 GMT  
+		Size: 219.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0f2a396468690184da548dc99120cc21deedd8f632c07a889817a6434301bd9b`  
+		Last Modified: Fri, 15 May 2026 21:14:17 GMT  
+		Size: 852.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `couchbase:enterprise-7.6.3` - unknown; unknown
+
+```console
+$ docker pull couchbase@sha256:64394d144ccfd75c3bcef980efd8c4b5000b6bc8e37679604111865c1cdc667f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **36.0 KB (35957 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0725c078d4599f46ccb301cd2fc00d4882e3161d7f9ba8d798cca89e1b18a5cf`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d34762f30083e6bb1bfa40fb009681390a1d58c69878b46c740ceb16d4e6d9c0`  
+		Last Modified: Fri, 15 May 2026 21:14:13 GMT  
+		Size: 36.0 KB (35957 bytes)  
 		MIME: application/vnd.in-toto+json
