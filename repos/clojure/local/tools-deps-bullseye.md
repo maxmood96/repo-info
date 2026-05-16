@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ebf1992d2eb87aa26007153e1886afff9ecf918d179c4b08e35bf1995bd05ea9`
-- Created: `2026-05-08T20:19:40.555096065Z`
-- Virtual Size: ~ 542.26 Mb  
+- Image ID: `sha256:6f013d2acf90cfd395d23a19d5be39eb0216c6836262c76a75d633ddc41bfee7`
+- Created: `2026-05-15T20:16:14.879556804Z`
+- Virtual Size: ~ 542.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `CLOJURE_VERSION=1.12.4.1618`
+  - `CLOJURE_VERSION=1.12.5.1645`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2227,11 +2227,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.7.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.7.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nghttp2=1.43.0-1+deb11u2`
+### `dpkg` source package: `nghttp2=1.43.0-1+deb11u3`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.43.0-1+deb11u2`
+- `libnghttp2-14:amd64=1.43.0-1+deb11u3`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -2246,17 +2246,17 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nghttp2=1.43.0-1+deb11u2
-'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.43.0-1%2bdeb11u2.dsc' nghttp2_1.43.0-1+deb11u2.dsc 2555 SHA256:13ad116ef14dc9e3da1b3aa3b1f2645e2dcf44e153564a5ec26f5df5d91cd854
+$ apt-get source -qq --print-uris nghttp2=1.43.0-1+deb11u3
+'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.43.0-1%2bdeb11u3.dsc' nghttp2_1.43.0-1+deb11u3.dsc 2574 SHA256:60ec7decf7fa548fb56f2079c282e163e5b939b392b5da2450dd9a57c3647952
 'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.43.0.orig.tar.bz2' nghttp2_1.43.0.orig.tar.bz2 4521786 SHA256:556f24653397c71ebb8270b3c5e5507f0893e6eac2c6eeda6be2ecf6e1f50f62
-'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.43.0-1%2bdeb11u2.debian.tar.xz' nghttp2_1.43.0-1+deb11u2.debian.tar.xz 23484 SHA256:52cd263f1db0a02edf21322251d7a444eb2fce158bbcaf23e26bf25c6051fd83
+'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.43.0-1%2bdeb11u3.debian.tar.xz' nghttp2_1.43.0-1+deb11u3.debian.tar.xz 25252 SHA256:2e5c0d70838b1349d000102f84c2fc6535801b3be82fbb25c226ca031d7a82ab
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/nghttp2/1.43.0-1+deb11u2/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.43.0-1+deb11u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.43.0-1+deb11u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/nghttp2/1.43.0-1+deb11u3/ (for browsing the source)
+- https://sources.debian.net/src/nghttp2/1.43.0-1+deb11u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nghttp2/1.43.0-1+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.57+dfsg-3+deb11u1`
 
@@ -2284,11 +2284,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.4.57+dfsg-3+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.4.57+dfsg-3+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssh=1:8.4p1-5+deb11u6`
+### `dpkg` source package: `openssh=1:8.4p1-5+deb11u7`
 
 Binary Packages:
 
-- `openssh-client=1:8.4p1-5+deb11u6`
+- `openssh-client=1:8.4p1-5+deb11u7`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -2304,18 +2304,18 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:8.4p1-5+deb11u6
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1-5%2bdeb11u6.dsc' openssh_8.4p1-5+deb11u6.dsc 3339 SHA256:22e8618e9c336cbff69aa50f33596f4f253fcb50311e58545acb01f675cf403e
+$ apt-get source -qq --print-uris openssh=1:8.4p1-5+deb11u7
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1-5%2bdeb11u7.dsc' openssh_8.4p1-5+deb11u7.dsc 2734 SHA256:f5379af4233695600b4543f0d6fa037bd94ee71e23454cb80c397ab78b3db12a
 'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1.orig.tar.gz' openssh_8.4p1.orig.tar.gz 1742201 SHA256:5a01d22e407eb1c05ba8a8f7c654d388a13e9f226e4ed33bd38748dafa1d2b24
 'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1.orig.tar.gz.asc' openssh_8.4p1.orig.tar.gz.asc 683 SHA256:ccd9dd484651ce4cc926228f6e1b46afaf0c5ab98a866217fa0ef1074370ea2b
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1-5%2bdeb11u6.debian.tar.xz' openssh_8.4p1-5+deb11u6.debian.tar.xz 188332 SHA256:b4870c3a5dda5901b987a5ceae673fbe0896bbae5ef1932ca7684ce23e861abb
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1-5%2bdeb11u7.debian.tar.xz' openssh_8.4p1-5+deb11u7.debian.tar.xz 195772 SHA256:224924f0f9cdb4ab682808e9e547bdb9fae9e5ebffe95b861d352a0b877d9b94
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u6/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:8.4p1-5+deb11u6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u7/ (for browsing the source)
+- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssh/1:8.4p1-5+deb11u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1w-0+deb11u5`
 
@@ -2584,14 +2584,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python3-defaults/3.9.2-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python3-defaults/3.9.2-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python3.9=3.9.2-1+deb11u6`
+### `dpkg` source package: `python3.9=3.9.2-1+deb11u7`
 
 Binary Packages:
 
-- `libpython3.9-minimal:amd64=3.9.2-1+deb11u6`
-- `libpython3.9-stdlib:amd64=3.9.2-1+deb11u6`
-- `python3.9=3.9.2-1+deb11u6`
-- `python3.9-minimal=3.9.2-1+deb11u6`
+- `libpython3.9-minimal:amd64=3.9.2-1+deb11u7`
+- `libpython3.9-stdlib:amd64=3.9.2-1+deb11u7`
+- `python3.9=3.9.2-1+deb11u7`
+- `python3.9-minimal=3.9.2-1+deb11u7`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.9-minimal/copyright`, `/usr/share/doc/libpython3.9-stdlib/copyright`, `/usr/share/doc/python3.9/copyright`, `/usr/share/doc/python3.9-minimal/copyright`)
 
@@ -2616,17 +2616,17 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.9-minimal/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.9=3.9.2-1+deb11u6
-'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2-1%2bdeb11u6.dsc' python3.9_3.9.2-1+deb11u6.dsc 3641 SHA256:edf7deac304a1c6d1aa5840086e3ce3d4740a6a4fe81b08c71396dc78bd37976
+$ apt-get source -qq --print-uris python3.9=3.9.2-1+deb11u7
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2-1%2bdeb11u7.dsc' python3.9_3.9.2-1+deb11u7.dsc 3641 SHA256:dae824dd38ae9524f4d715c0cb2e144c9de20bb4f077194a132eac1475ebae85
 'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2.orig.tar.xz' python3.9_3.9.2.orig.tar.xz 18889164 SHA256:3c2034c54f811448f516668dce09d24008a0716c3a794dd8639b5388cbde247d
-'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2-1%2bdeb11u6.debian.tar.xz' python3.9_3.9.2-1+deb11u6.debian.tar.xz 301892 SHA256:0908a871b76cd13febe8eb03737e1df8fd6ffdf46acd7c9ed7bc252b9d4006be
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2-1%2bdeb11u7.debian.tar.xz' python3.9_3.9.2-1+deb11u7.debian.tar.xz 324084 SHA256:ee2581147074d1eb494adfb8223833eeaf1c6d04cf5c0593e93bec28194bc86d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python3.9/3.9.2-1+deb11u6/ (for browsing the source)
-- https://sources.debian.net/src/python3.9/3.9.2-1+deb11u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.9/3.9.2-1+deb11u6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python3.9/3.9.2-1+deb11u7/ (for browsing the source)
+- https://sources.debian.net/src/python3.9/3.9.2-1+deb11u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python3.9/3.9.2-1+deb11u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.1-1`
 
