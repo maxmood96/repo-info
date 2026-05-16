@@ -1,7 +1,7 @@
 ## `eclipse-temurin:26-jdk-noble`
 
 ```console
-$ docker pull eclipse-temurin@sha256:7818cafa3d83c86be8035a61c1bd3c40c2af2e27069eacf2f9ad2b2a9bbb55c3
+$ docker pull eclipse-temurin@sha256:95c92b4b86335878b61306907418f20d103413953f95cf49bed1912a404097db
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20,13 +20,13 @@ $ docker pull eclipse-temurin@sha256:7818cafa3d83c86be8035a61c1bd3c40c2af2e27069
 ### `eclipse-temurin:26-jdk-noble` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:845db672d8d325e0068c11768284ca2f98a7fc6592df22b227492051fd8f0df1
+$ docker pull eclipse-temurin@sha256:540e3b1cfb22fe9f0af3574cebd32f4a1b179bb8a8f5ab77e3a14052ea1f7dad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.8 MB (141787322 bytes)**  
+-	Total Size: **141.9 MB (141852494 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a79f7c7f9e4367b6f8f7547fa2d40ed3331bdc198f5ea81e9f551b36a3dc214`
+-	Image ID: `sha256:6f22b017904eb1b17624802307c24ef0695e3823cf8c0ec6fbcc3685e78d6573`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
@@ -41,25 +41,25 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:8ce1caf246e7c778bca84c516d02fd4e83766bb2c530a0fffa8a351b560a2728 in / 
 # Fri, 10 Apr 2026 06:49:18 GMT
 CMD ["/bin/bash"]
-# Wed, 15 Apr 2026 20:34:54 GMT
+# Fri, 15 May 2026 20:30:46 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 15 Apr 2026 20:34:54 GMT
+# Fri, 15 May 2026 20:30:46 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 15 Apr 2026 20:34:54 GMT
+# Fri, 15 May 2026 20:30:46 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 15 Apr 2026 20:34:54 GMT
+# Fri, 15 May 2026 20:30:46 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 15 Apr 2026 20:34:54 GMT
-ENV JAVA_VERSION=jdk-26+35
-# Wed, 15 Apr 2026 20:35:12 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='68e19ba53b7f1f74635c13f809e5db36cebccf3ae9e752423dd92d2ad7d831ef';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_x64_linux_hotspot_26_35.tar.gz';          ;;        arm64)          ESUM='e8ff1f23c5acef74d1b4937dadd67286d67be06758f5d9dca5478c35bf404e83';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_aarch64_linux_hotspot_26_35.tar.gz';          ;;        ppc64el)          ESUM='7396fc32c311429c4b1573ebfc98eca6b82c2735f9f0e23acbccdcb43e0edee9';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_ppc64le_linux_hotspot_26_35.tar.gz';          ;;        riscv64)          ESUM='044cd107152425e189c7094b0f1c566afddf255149c56a7758e300481923fec6';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_riscv64_linux_hotspot_26_35.tar.gz';          ;;        s390x)          ESUM='87fcdbbfd0adfd458922d8f8019eda23755aba597e386de2397f84cdf1b58808';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_s390x_linux_hotspot_26_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 15 Apr 2026 20:35:13 GMT
+# Fri, 15 May 2026 20:30:46 GMT
+ENV JAVA_VERSION=jdk-26.0.1+8
+# Fri, 15 May 2026 20:31:03 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8e512f13e575a43655fc92319436c94890c137b9035cc6bd6f9cf24239704d3a';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_x64_linux_hotspot_26.0.1_8.tar.gz';          ;;        arm64)          ESUM='613f9b2861dea937b24d5eca745ef8567733b377d0bb612195acaad0e3f61360';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_aarch64_linux_hotspot_26.0.1_8.tar.gz';          ;;        ppc64el)          ESUM='60e016faf4177840430035d948f83f2887d556fe512b78c1d43b320322fe6685';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_ppc64le_linux_hotspot_26.0.1_8.tar.gz';          ;;        riscv64)          ESUM='f1b762d6d86599627983df200f215bc970444a697159ca3fae93208756b44715';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_riscv64_linux_hotspot_26.0.1_8.tar.gz';          ;;        s390x)          ESUM='942de7ded1427592a2a4b6dbea4083b2d0891de2626c7863e970de3e2819a93f';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_s390x_linux_hotspot_26.0.1_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Fri, 15 May 2026 20:31:04 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 15 Apr 2026 20:35:13 GMT
+# Fri, 15 May 2026 20:31:04 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 15 Apr 2026 20:35:13 GMT
+# Fri, 15 May 2026 20:31:04 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 15 Apr 2026 20:35:13 GMT
+# Fri, 15 May 2026 20:31:04 GMT
 CMD ["jshell"]
 ```
 
@@ -68,57 +68,57 @@ CMD ["jshell"]
 		Last Modified: Fri, 10 Apr 2026 09:34:17 GMT  
 		Size: 29.7 MB (29732978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29a167e84295074893c434c29150c72c5d69210e879ee47c16e09d27ae64e2b4`  
-		Last Modified: Wed, 15 Apr 2026 20:35:30 GMT  
-		Size: 17.5 MB (17462588 bytes)  
+	-	`sha256:c4ef737049200b58c09172e361cf60386cdd8c938adec09d6d83376ab98a8687`  
+		Last Modified: Fri, 15 May 2026 20:31:21 GMT  
+		Size: 17.5 MB (17463724 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a51616413294332dca8e6d41863e7ae2d32068e447140af6d897b80475b59b5b`  
-		Last Modified: Wed, 15 Apr 2026 20:35:31 GMT  
-		Size: 94.6 MB (94589442 bytes)  
+	-	`sha256:d0996496dfcb7ff04a679d9bf70c3c1d4dc71a4784267ca76fd0b5e08dd95ac3`  
+		Last Modified: Fri, 15 May 2026 20:31:23 GMT  
+		Size: 94.7 MB (94653297 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:505f0dc6cfff1b21505dc1f246efd419413711cbad091c260abdbe9fb97abde2`  
-		Last Modified: Wed, 15 Apr 2026 20:35:28 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:65d0e6c50e3be3ffcf0f38eddb8d53dd641b59ab0d78eece5716dfacfad9bc7f`  
+		Last Modified: Fri, 15 May 2026 20:31:20 GMT  
+		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-temurin:26-jdk-noble` - unknown; unknown
 
 ```console
-$ docker pull eclipse-temurin@sha256:2a0d27c285a374c70e88cecd2890ab0cbb1025a89a5706882a2b11145bc5fd50
+$ docker pull eclipse-temurin@sha256:baf5a039cc41c05829e31b1c4ba0c5d622542142e82df509df97240bb6141dfe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3286220 bytes)**  
+-	Total Size: **3.3 MB (3284434 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5acf49ace9acb02155f968945ff8d00e6f272c79874693402585d1ce029a6fe`
+-	Image ID: `sha256:fc3b18a8fca854361777b5c0885cce9d610a51f85e011c284f8f99de1d5ee9a7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e265a66d1a2fecd1f7e926be91bce2265d2af0722ad07af5a462fefb27a3fe76`  
-		Last Modified: Wed, 15 Apr 2026 20:35:29 GMT  
-		Size: 3.3 MB (3260933 bytes)  
+	-	`sha256:ba097ca107ab11078883f4a3657a844712411f121644e1cf76b690a5174712c8`  
+		Last Modified: Fri, 15 May 2026 20:31:20 GMT  
+		Size: 3.3 MB (3260007 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ca8da4328b4578361df727b0f0126e36950f003a6f7e095497b810aa405f9bec`  
-		Last Modified: Wed, 15 Apr 2026 20:35:29 GMT  
-		Size: 25.3 KB (25287 bytes)  
+	-	`sha256:c56d750b1f5d47a2e22e5dfe21559b3511df06e5770fc63e00771ead7bb46a79`  
+		Last Modified: Fri, 15 May 2026 20:31:20 GMT  
+		Size: 24.4 KB (24427 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `eclipse-temurin:26-jdk-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:c9e609b119ecd99daec56b7fb918d1023fbae0d3d9198ce53906e1a88f7c2ffc
+$ docker pull eclipse-temurin@sha256:5d4fca2791267c31285abbd79e0d76a82660a7b81b46d42d99c8bc0797cd949d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **141.1 MB (141057123 bytes)**  
+-	Total Size: **141.2 MB (141164968 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a536a12bc908b8e79578bbe1100ac7ab148e3b0b6f66c512872774d62003b7e0`
+-	Image ID: `sha256:b1981734f817b0882a3833a037b468199ac8ad8f49e628db59f4ed0504dc3d0c`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
@@ -133,25 +133,25 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:c98b7645109cdf61ab97492b90629581b1b7cb925b9d58a5787a4aaeb719f2be in / 
 # Fri, 10 Apr 2026 06:56:54 GMT
 CMD ["/bin/bash"]
-# Wed, 15 Apr 2026 20:35:09 GMT
+# Fri, 15 May 2026 20:30:25 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 15 Apr 2026 20:35:09 GMT
+# Fri, 15 May 2026 20:30:25 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 15 Apr 2026 20:35:09 GMT
+# Fri, 15 May 2026 20:30:25 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 15 Apr 2026 20:35:09 GMT
+# Fri, 15 May 2026 20:30:25 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 15 Apr 2026 20:35:09 GMT
-ENV JAVA_VERSION=jdk-26+35
-# Wed, 15 Apr 2026 20:35:32 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='68e19ba53b7f1f74635c13f809e5db36cebccf3ae9e752423dd92d2ad7d831ef';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_x64_linux_hotspot_26_35.tar.gz';          ;;        arm64)          ESUM='e8ff1f23c5acef74d1b4937dadd67286d67be06758f5d9dca5478c35bf404e83';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_aarch64_linux_hotspot_26_35.tar.gz';          ;;        ppc64el)          ESUM='7396fc32c311429c4b1573ebfc98eca6b82c2735f9f0e23acbccdcb43e0edee9';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_ppc64le_linux_hotspot_26_35.tar.gz';          ;;        riscv64)          ESUM='044cd107152425e189c7094b0f1c566afddf255149c56a7758e300481923fec6';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_riscv64_linux_hotspot_26_35.tar.gz';          ;;        s390x)          ESUM='87fcdbbfd0adfd458922d8f8019eda23755aba597e386de2397f84cdf1b58808';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_s390x_linux_hotspot_26_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 15 Apr 2026 20:35:34 GMT
+# Fri, 15 May 2026 20:30:25 GMT
+ENV JAVA_VERSION=jdk-26.0.1+8
+# Fri, 15 May 2026 20:30:45 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8e512f13e575a43655fc92319436c94890c137b9035cc6bd6f9cf24239704d3a';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_x64_linux_hotspot_26.0.1_8.tar.gz';          ;;        arm64)          ESUM='613f9b2861dea937b24d5eca745ef8567733b377d0bb612195acaad0e3f61360';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_aarch64_linux_hotspot_26.0.1_8.tar.gz';          ;;        ppc64el)          ESUM='60e016faf4177840430035d948f83f2887d556fe512b78c1d43b320322fe6685';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_ppc64le_linux_hotspot_26.0.1_8.tar.gz';          ;;        riscv64)          ESUM='f1b762d6d86599627983df200f215bc970444a697159ca3fae93208756b44715';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_riscv64_linux_hotspot_26.0.1_8.tar.gz';          ;;        s390x)          ESUM='942de7ded1427592a2a4b6dbea4083b2d0891de2626c7863e970de3e2819a93f';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_s390x_linux_hotspot_26.0.1_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Fri, 15 May 2026 20:30:46 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 15 Apr 2026 20:35:34 GMT
+# Fri, 15 May 2026 20:30:46 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 15 Apr 2026 20:35:34 GMT
+# Fri, 15 May 2026 20:30:46 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 15 Apr 2026 20:35:34 GMT
+# Fri, 15 May 2026 20:30:46 GMT
 CMD ["jshell"]
 ```
 
@@ -160,57 +160,57 @@ CMD ["jshell"]
 		Last Modified: Fri, 10 Apr 2026 09:34:24 GMT  
 		Size: 28.9 MB (28875785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80c8f2978230fc296e1d311bea13b7c660e71b97468d586fcdccb17d9c42d090`  
-		Last Modified: Wed, 15 Apr 2026 20:35:50 GMT  
-		Size: 18.7 MB (18654852 bytes)  
+	-	`sha256:11de4cb160efd91c1c888707dda9c7c6af5d68940d34d678a69730094134164b`  
+		Last Modified: Fri, 15 May 2026 20:31:04 GMT  
+		Size: 18.7 MB (18656689 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee1e5f907fe8743a76530cc2e814d7676c28f662750bb1e397c28f176b67da9f`  
-		Last Modified: Wed, 15 Apr 2026 20:35:52 GMT  
-		Size: 93.5 MB (93524172 bytes)  
+	-	`sha256:1779ea8747e4d329b6f0835fe1b9b561a6eb433f4d4cf4bad9f02106b0ee669e`  
+		Last Modified: Fri, 15 May 2026 20:31:07 GMT  
+		Size: 93.6 MB (93630000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43a291c7f6e88062923e48a58e44d487d33a7328f715c26c057f077c1d91b2c5`  
-		Last Modified: Wed, 15 Apr 2026 20:35:32 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:8dbffe64e4aced20824f4ab65a3bce4c00ad5453412a36d8c0e71e93f6d53fd6`  
+		Last Modified: Fri, 15 May 2026 20:31:03 GMT  
+		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-temurin:26-jdk-noble` - unknown; unknown
 
 ```console
-$ docker pull eclipse-temurin@sha256:7729b308ec7ddf29b0e0ac16b2b2e43901ec2073b657475ca76cd99e5e8febb8
+$ docker pull eclipse-temurin@sha256:29f9d1eda93676781c41a3cdcb46de6a3a84abba0d3051a4958e3102c07ac11a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3417901 bytes)**  
+-	Total Size: **3.4 MB (3416043 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f805bead465a7e34f0db78410e98d9105c3995a35e5f752b64b74dbb5c1bca9`
+-	Image ID: `sha256:63efa62f8460006b010aa603ffd23b78b0781d071ee392fb060511c6fdcb8f91`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:91024a43f723aafb84b2a16ea1899785bd796e8255f5445e513cda929af1f513`  
-		Last Modified: Wed, 15 Apr 2026 20:35:50 GMT  
-		Size: 3.4 MB (3392456 bytes)  
+	-	`sha256:19f66c58f757186b360e99d6990a0dddee2b2f566cd5656e87806bcd43f642d9`  
+		Last Modified: Fri, 15 May 2026 20:31:03 GMT  
+		Size: 3.4 MB (3391494 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e1bda828f4a091a096ef7b60105ba2b79439c9e7db55d220a2a7941d9ab50811`  
-		Last Modified: Wed, 15 Apr 2026 20:35:49 GMT  
-		Size: 25.4 KB (25445 bytes)  
+	-	`sha256:77f8991c2df8d70784ee65f9d9d89c82ef7f01ffd7f98deae6cedd607a203e0a`  
+		Last Modified: Fri, 15 May 2026 20:31:03 GMT  
+		Size: 24.5 KB (24549 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `eclipse-temurin:26-jdk-noble` - linux; ppc64le
 
 ```console
-$ docker pull eclipse-temurin@sha256:93f43796145ecb75ed7a649bc5862b747bade213ce1cd99f1e0c888434ce0e92
+$ docker pull eclipse-temurin@sha256:5c198a4f61dd2b7e1f3956a7da3945a5a3a16a65e665891f5ec51cf104e64405
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **145.6 MB (145560001 bytes)**  
+-	Total Size: **145.7 MB (145676406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e7baa4f779b2cc49b89335d2e7530ebcc6b217bdd9a3090dc9f93a255614f12`
+-	Image ID: `sha256:6a3645722502aba1262cadab6fc3f89865157eec0cf1f243b274dabef5d8c9c1`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
@@ -225,25 +225,25 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:6c2e3684306335751e9b4f6c791c789b8a34813a48130b98adb259dbddc23bfb in / 
 # Fri, 10 Apr 2026 06:58:43 GMT
 CMD ["/bin/bash"]
-# Wed, 15 Apr 2026 21:23:17 GMT
+# Fri, 15 May 2026 20:36:54 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 15 Apr 2026 21:23:17 GMT
+# Fri, 15 May 2026 20:36:54 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 15 Apr 2026 21:23:17 GMT
+# Fri, 15 May 2026 20:36:54 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 15 Apr 2026 21:23:17 GMT
+# Fri, 15 May 2026 20:36:54 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 15 Apr 2026 21:23:17 GMT
-ENV JAVA_VERSION=jdk-26+35
-# Wed, 15 Apr 2026 21:28:01 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='68e19ba53b7f1f74635c13f809e5db36cebccf3ae9e752423dd92d2ad7d831ef';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_x64_linux_hotspot_26_35.tar.gz';          ;;        arm64)          ESUM='e8ff1f23c5acef74d1b4937dadd67286d67be06758f5d9dca5478c35bf404e83';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_aarch64_linux_hotspot_26_35.tar.gz';          ;;        ppc64el)          ESUM='7396fc32c311429c4b1573ebfc98eca6b82c2735f9f0e23acbccdcb43e0edee9';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_ppc64le_linux_hotspot_26_35.tar.gz';          ;;        riscv64)          ESUM='044cd107152425e189c7094b0f1c566afddf255149c56a7758e300481923fec6';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_riscv64_linux_hotspot_26_35.tar.gz';          ;;        s390x)          ESUM='87fcdbbfd0adfd458922d8f8019eda23755aba597e386de2397f84cdf1b58808';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_s390x_linux_hotspot_26_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 15 Apr 2026 21:28:06 GMT
+# Fri, 15 May 2026 20:36:54 GMT
+ENV JAVA_VERSION=jdk-26.0.1+8
+# Fri, 15 May 2026 20:37:32 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8e512f13e575a43655fc92319436c94890c137b9035cc6bd6f9cf24239704d3a';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_x64_linux_hotspot_26.0.1_8.tar.gz';          ;;        arm64)          ESUM='613f9b2861dea937b24d5eca745ef8567733b377d0bb612195acaad0e3f61360';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_aarch64_linux_hotspot_26.0.1_8.tar.gz';          ;;        ppc64el)          ESUM='60e016faf4177840430035d948f83f2887d556fe512b78c1d43b320322fe6685';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_ppc64le_linux_hotspot_26.0.1_8.tar.gz';          ;;        riscv64)          ESUM='f1b762d6d86599627983df200f215bc970444a697159ca3fae93208756b44715';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_riscv64_linux_hotspot_26.0.1_8.tar.gz';          ;;        s390x)          ESUM='942de7ded1427592a2a4b6dbea4083b2d0891de2626c7863e970de3e2819a93f';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_s390x_linux_hotspot_26.0.1_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Fri, 15 May 2026 20:37:35 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 15 Apr 2026 21:28:07 GMT
+# Fri, 15 May 2026 20:37:36 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 15 Apr 2026 21:28:07 GMT
+# Fri, 15 May 2026 20:37:36 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 15 Apr 2026 21:28:07 GMT
+# Fri, 15 May 2026 20:37:36 GMT
 CMD ["jshell"]
 ```
 
@@ -252,45 +252,45 @@ CMD ["jshell"]
 		Last Modified: Fri, 10 Apr 2026 09:34:38 GMT  
 		Size: 34.3 MB (34314178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07e58bb41e4edbeb34c365caaecd193fe9139b7eb17a5567d506790db84c8c38`  
-		Last Modified: Wed, 15 Apr 2026 21:24:42 GMT  
-		Size: 17.3 MB (17329160 bytes)  
+	-	`sha256:6aee1bd7b51ec75c2c26babd5af5d56313a72d9220e0eb781c4c9e9c591b2378`  
+		Last Modified: Fri, 15 May 2026 20:38:06 GMT  
+		Size: 17.3 MB (17330494 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e62bb8fc011bdaf3d79e1bce3086ab801b6dd2b86f342d7469097f506490970c`  
-		Last Modified: Wed, 15 Apr 2026 21:28:46 GMT  
-		Size: 93.9 MB (93914353 bytes)  
+	-	`sha256:9f323e0d3f2f0928371d72cb916319bde0825d5e580231d61e8b0dd8a86826d4`  
+		Last Modified: Fri, 15 May 2026 20:38:08 GMT  
+		Size: 94.0 MB (94029237 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f2a4b19086d046847eb180d9306ec61a8a70df97df6d32ef379b0993a2ff71c`  
-		Last Modified: Wed, 15 Apr 2026 21:28:43 GMT  
-		Size: 2.3 KB (2278 bytes)  
+	-	`sha256:61e28849b8d132872e5e28377511334bffefe3dcdc8464142e5d22f11f86aed9`  
+		Last Modified: Fri, 15 May 2026 20:38:06 GMT  
+		Size: 2.5 KB (2465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-temurin:26-jdk-noble` - unknown; unknown
 
 ```console
-$ docker pull eclipse-temurin@sha256:a9e52e48fc504d9f7f0465ddac1bf9b71c090464fe35eabd8609d1e69bf4a89c
+$ docker pull eclipse-temurin@sha256:eb01bf28ee416a73e6dd9dbd1b2ab01705344bd15bc10255244ab5edeb755be1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3317841 bytes)**  
+-	Total Size: **3.3 MB (3316019 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0214e354ab41ce7b2061d82a50fcba6f765526f9563a054df8c6fe56b1fb923f`
+-	Image ID: `sha256:8fcb587d00d4d51f42868e532aece4e1db8238745200d2c931633df45bbf2687`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:54cbb81b4bcd599ac01d5ff86778b7134965ecdadfb2646f12ed2ee3ffc1aaa4`  
-		Last Modified: Wed, 15 Apr 2026 21:28:44 GMT  
-		Size: 3.3 MB (3292494 bytes)  
+	-	`sha256:638a9fa7ecece39ecfac488f85c0fe77365583ab8d1d0c293ec76e727b92963b`  
+		Last Modified: Fri, 15 May 2026 20:38:06 GMT  
+		Size: 3.3 MB (3291550 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:338909e332c521ae225d1e7883101289d679145fdc9418813336af54eb194739`  
-		Last Modified: Wed, 15 Apr 2026 21:28:44 GMT  
-		Size: 25.3 KB (25347 bytes)  
+	-	`sha256:ea3998b57c77b512c1a4dbd6560dfb64c224c07bc5f3d902b01e2cd110543f2a`  
+		Last Modified: Fri, 15 May 2026 20:38:06 GMT  
+		Size: 24.5 KB (24469 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `eclipse-temurin:26-jdk-noble` - linux; riscv64
@@ -388,13 +388,13 @@ $ docker pull eclipse-temurin@sha256:db3ee6050bab0ee5375437a4b1ddc466bd266b9941d
 ### `eclipse-temurin:26-jdk-noble` - linux; s390x
 
 ```console
-$ docker pull eclipse-temurin@sha256:b1c4ca93d2d0e4ed3bdfe5ba868ed3b293f4fcbc2ba5f7797463cc6224fd2a6d
+$ docker pull eclipse-temurin@sha256:31d8fb16156b254c5ef4dbc0ac75b4eb05cd9d417f4331a2830ff764f1be54bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.9 MB (136903321 bytes)**  
+-	Total Size: **136.9 MB (136892717 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b30eada3fa3f2f719ee2c7114537fb34ab9ca185dc664c7635d621d51cd2ec18`
+-	Image ID: `sha256:744d861e781e3d5a97f670a4d1c9f53cd6591209b775f72cdf38dbc61a95b619`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
@@ -409,25 +409,25 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:41defd98c44eed6fc946fd94496a94164879f2ad4f63d66a5c1e213cc2259ad1 in / 
 # Fri, 10 Apr 2026 06:50:29 GMT
 CMD ["/bin/bash"]
-# Wed, 15 Apr 2026 20:46:45 GMT
+# Fri, 15 May 2026 20:39:56 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 15 Apr 2026 20:46:45 GMT
+# Fri, 15 May 2026 20:39:56 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 15 Apr 2026 20:46:45 GMT
+# Fri, 15 May 2026 20:39:56 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 15 Apr 2026 20:46:45 GMT
+# Fri, 15 May 2026 20:39:56 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         fontconfig         ca-certificates p11-kit         binutils         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 15 Apr 2026 20:46:45 GMT
-ENV JAVA_VERSION=jdk-26+35
-# Wed, 15 Apr 2026 20:48:03 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='68e19ba53b7f1f74635c13f809e5db36cebccf3ae9e752423dd92d2ad7d831ef';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_x64_linux_hotspot_26_35.tar.gz';          ;;        arm64)          ESUM='e8ff1f23c5acef74d1b4937dadd67286d67be06758f5d9dca5478c35bf404e83';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_aarch64_linux_hotspot_26_35.tar.gz';          ;;        ppc64el)          ESUM='7396fc32c311429c4b1573ebfc98eca6b82c2735f9f0e23acbccdcb43e0edee9';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_ppc64le_linux_hotspot_26_35.tar.gz';          ;;        riscv64)          ESUM='044cd107152425e189c7094b0f1c566afddf255149c56a7758e300481923fec6';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_riscv64_linux_hotspot_26_35.tar.gz';          ;;        s390x)          ESUM='87fcdbbfd0adfd458922d8f8019eda23755aba597e386de2397f84cdf1b58808';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_s390x_linux_hotspot_26_35.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Wed, 15 Apr 2026 20:48:05 GMT
+# Fri, 15 May 2026 20:39:56 GMT
+ENV JAVA_VERSION=jdk-26.0.1+8
+# Fri, 15 May 2026 20:41:30 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='8e512f13e575a43655fc92319436c94890c137b9035cc6bd6f9cf24239704d3a';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_x64_linux_hotspot_26.0.1_8.tar.gz';          ;;        arm64)          ESUM='613f9b2861dea937b24d5eca745ef8567733b377d0bb612195acaad0e3f61360';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_aarch64_linux_hotspot_26.0.1_8.tar.gz';          ;;        ppc64el)          ESUM='60e016faf4177840430035d948f83f2887d556fe512b78c1d43b320322fe6685';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_ppc64le_linux_hotspot_26.0.1_8.tar.gz';          ;;        riscv64)          ESUM='f1b762d6d86599627983df200f215bc970444a697159ca3fae93208756b44715';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_riscv64_linux_hotspot_26.0.1_8.tar.gz';          ;;        s390x)          ESUM='942de7ded1427592a2a4b6dbea4083b2d0891de2626c7863e970de3e2819a93f';          BINARY_URL='https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_s390x_linux_hotspot_26.0.1_8.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     savedAptMark="$(apt-mark showmanual)";     apt-get update;     apt-get install -y --no-install-recommends wget gnupg;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark > /dev/null;     apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/*;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Fri, 15 May 2026 20:41:34 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Wed, 15 Apr 2026 20:48:05 GMT
+# Fri, 15 May 2026 20:41:35 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 15 Apr 2026 20:48:05 GMT
+# Fri, 15 May 2026 20:41:35 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Wed, 15 Apr 2026 20:48:05 GMT
+# Fri, 15 May 2026 20:41:35 GMT
 CMD ["jshell"]
 ```
 
@@ -436,43 +436,43 @@ CMD ["jshell"]
 		Last Modified: Fri, 10 Apr 2026 09:34:53 GMT  
 		Size: 29.9 MB (29912147 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92fdffb4b8be9329fc8e55398dbf1e46076dfc2dbfd017d977bf741df531d683`  
-		Last Modified: Wed, 15 Apr 2026 20:47:28 GMT  
-		Size: 16.3 MB (16310154 bytes)  
+	-	`sha256:60074ca11d35136b349e276a506cf1bd890b5262b124fc2d3913e6778b019695`  
+		Last Modified: Fri, 15 May 2026 20:42:27 GMT  
+		Size: 16.3 MB (16312295 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f4b37e0cf3a63173f040bf1a85051e716e0d4a2cb2a69c5d117a31ae406b545`  
-		Last Modified: Wed, 15 Apr 2026 20:48:31 GMT  
-		Size: 90.7 MB (90678704 bytes)  
+	-	`sha256:cf1f26149fc1bd82f6c4eb9ee765c4167ed7b77c521dd91f915757e848b12e43`  
+		Last Modified: Fri, 15 May 2026 20:42:29 GMT  
+		Size: 90.7 MB (90665780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cac0d5cb863e6e9e12823ebb5b3b3153b2b740f20a859ba7d6c754209b13b640`  
-		Last Modified: Wed, 15 Apr 2026 20:48:29 GMT  
-		Size: 2.3 KB (2284 bytes)  
+	-	`sha256:c3643a0b948d9d6dcb0002481cad69416025a04a43a5de9464ac13836330e874`  
+		Last Modified: Fri, 15 May 2026 20:42:26 GMT  
+		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-temurin:26-jdk-noble` - unknown; unknown
 
 ```console
-$ docker pull eclipse-temurin@sha256:fd59b0d66177677f743ace36baa7c7cb3dd16005e45702441b5c3a1fdfa4c46c
+$ docker pull eclipse-temurin@sha256:6d50f8b2a29bfce5a345e3676541a9060e9daf6763025aae7c4ce3768ea2696b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3217236 bytes)**  
+-	Total Size: **3.2 MB (3215449 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5048d0b1701f41ebf1af5e285869df5d47c60b60bdd4e06a8952321122bcc194`
+-	Image ID: `sha256:3e015d9c16f39ae63701eb2e3b631f7aa057bb5df2bec899e4fe66dd750ce2d8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6a15c181e85adc39e7576b70af6c4b87ee6fcf3640d4ca6fbca1a04e5b4085df`  
-		Last Modified: Wed, 15 Apr 2026 20:48:29 GMT  
-		Size: 3.2 MB (3191949 bytes)  
+	-	`sha256:3ef122176c7bc953c2ad4f254bd0b968cb8dafaa02b6e1f8dda99810dce66f5b`  
+		Last Modified: Fri, 15 May 2026 20:42:26 GMT  
+		Size: 3.2 MB (3191023 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c9d62cf37ac3acbe407c405f14894ea55de2645895da96da7f079bd7188453fa`  
-		Last Modified: Wed, 15 Apr 2026 20:48:29 GMT  
-		Size: 25.3 KB (25287 bytes)  
+	-	`sha256:03413ef2f18c170d46d5c62a4cd50a447a1de85b330b5d48a5c8ac5166527074`  
+		Last Modified: Fri, 15 May 2026 20:42:26 GMT  
+		Size: 24.4 KB (24426 bytes)  
 		MIME: application/vnd.in-toto+json
