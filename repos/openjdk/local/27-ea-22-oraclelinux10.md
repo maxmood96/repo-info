@@ -1,10 +1,10 @@
-# `openjdk:27-ea-21-jdk-oraclelinux10`
+# `openjdk:27-ea-22-jdk-oraclelinux10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cb8e55006ab5d1d1db2c010a8d413ac7eb81c1a4457a337d4f6a1622417fc40b`
-- Created: `2026-05-12T19:11:42.565152446Z`
-- Virtual Size: ~ 600.21 Mb  
+- Image ID: `sha256:c4190ab05ae216f5b9aa05e6775f2a86e8ffd8911b47ef12af276ca13ad7c7f2`
+- Created: `2026-05-15T20:18:39.786624772Z`
+- Virtual Size: ~ 600.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,4 +12,4 @@
   - `PATH=/usr/java/openjdk-27/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-27`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=27-ea+21`
+  - `JAVA_VERSION=27-ea+22`
