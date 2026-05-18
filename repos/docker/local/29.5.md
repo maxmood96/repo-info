@@ -1,17 +1,17 @@
-# `docker:29.4.3-dind`
+# `docker:29.5.0-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5ea33d291cd16aa9237cff27775bd3a31198819d8e70c07f3b335fdd4d8c6131`
-- Created: `2026-05-08T16:41:42.122615971Z`
-- Virtual Size: ~ 376.13 Mb  
+- Image ID: `sha256:71837a59b95c3653383ca90ce81fbcee4f34adb0fbbf8b357e75da9affc77579`
+- Created: `2026-05-15T22:45:55.956006066Z`
+- Virtual Size: ~ 378.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.4.3`
-  - `DOCKER_BUILDX_VERSION=0.33.0`
+  - `DOCKER_VERSION=29.5.0`
+  - `DOCKER_BUILDX_VERSION=0.34.0`
   - `DOCKER_COMPOSE_VERSION=5.1.3`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
@@ -514,16 +514,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.17.0-r1 description:
+libcurl-8.19.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.17.0-r1 webpage:
+libcurl-8.19.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.17.0-r1 installed size:
-721 KiB
+libcurl-8.19.0-r0 installed size:
+697 KiB
 
-libcurl-8.17.0-r1 license:
+libcurl-8.19.0-r0 license:
 curl
 
 ```
@@ -949,23 +949,6 @@ nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
 nghttp2-libs-1.69.0-r0 license:
-MIT
-
-```
-
-### `apk` package: `nghttp3`
-
-```console
-nghttp3-1.13.1-r0 description:
-HTTP/3 library written in C
-
-nghttp3-1.13.1-r0 webpage:
-https://github.com/ngtcp2/nghttp3
-
-nghttp3-1.13.1-r0 installed size:
-140 KiB
-
-nghttp3-1.13.1-r0 license:
 MIT
 
 ```
