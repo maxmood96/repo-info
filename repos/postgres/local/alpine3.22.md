@@ -1,10 +1,10 @@
-# `postgres:18.3-alpine3.22`
+# `postgres:18.4-alpine3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8293df341bf0d11cd9af7ae48832f607c3386243d3410f9e5ced4672341b9f86`
-- Created: `2026-04-21T23:09:17.739669889Z`
-- Virtual Size: ~ 284.68 Mb  
+- Image ID: `sha256:646c746f3bfbad9bba5cd22c10a43e0cf5b219adfadab09fabc6432a9e961bc0`
+- Created: `2026-05-14T19:03:23.537607431Z`
+- Virtual Size: ~ 284.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,8 +14,8 @@
   - `GOSU_VERSION=1.19`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=18`
-  - `PG_VERSION=18.3`
-  - `PG_SHA256=d95663fbbf3a80f81a9d98d895266bdcb74ba274bcc04ef6d76630a72dee016f`
+  - `PG_VERSION=18.4`
+  - `PG_SHA256=81a81ec695fb0c7901407defaa1d2f7973617154cf27ba74e3a7ab8e64436094`
   - `DOCKER_PG_LLVM_DEPS=llvm19-dev 		clang19`
   - `PGDATA=/var/lib/postgresql/18/docker`
 
@@ -738,16 +738,16 @@ X11
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.65.0-r0 description:
+nghttp2-libs-1.69.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.65.0-r0 webpage:
+nghttp2-libs-1.69.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.65.0-r0 installed size:
-129 KiB
+nghttp2-libs-1.69.0-r0 installed size:
+133 KiB
 
-nghttp2-libs-1.65.0-r0 license:
+nghttp2-libs-1.69.0-r0 license:
 MIT
 
 ```
@@ -823,16 +823,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026a-r0 description:
+tzdata-2026b-r0 description:
 Timezone data
 
-tzdata-2026a-r0 webpage:
+tzdata-2026b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026a-r0 installed size:
+tzdata-2026b-r0 installed size:
 436 KiB
 
-tzdata-2026a-r0 license:
+tzdata-2026b-r0 license:
 Public-Domain
 
 ```
@@ -840,16 +840,16 @@ Public-Domain
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.1-r0 description:
+xz-libs-5.8.3-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.1-r0 webpage:
+xz-libs-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.1-r0 installed size:
+xz-libs-5.8.3-r0 installed size:
 225 KiB
 
-xz-libs-5.8.1-r0 license:
+xz-libs-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```

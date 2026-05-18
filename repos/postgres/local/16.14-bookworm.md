@@ -1,10 +1,10 @@
-# `postgres:16.13-bookworm`
+# `postgres:16.14-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c0a399de9424c2e689fa7c7e89620b83cc37b6c7a9e19eda8883df623ccb26be`
-- Created: `2026-05-08T19:33:52.797027974Z`
-- Virtual Size: ~ 435.16 Mb  
+- Image ID: `sha256:7cc744be48f1edea9696a2d59a039caf8e359c53a19369356f2b97a852b7b6ef`
+- Created: `2026-05-14T19:01:50.237886538Z`
+- Virtual Size: ~ 435.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,5 +14,5 @@
   - `GOSU_VERSION=1.19`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=16`
-  - `PG_VERSION=16.13-1.pgdg12+1`
+  - `PG_VERSION=16.14-1.pgdg12+1`
   - `PGDATA=/var/lib/postgresql/data`
