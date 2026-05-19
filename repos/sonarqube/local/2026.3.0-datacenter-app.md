@@ -1,10 +1,10 @@
-# `sonarqube:2026.2.1-datacenter-app`
+# `sonarqube:2026.3.0-datacenter-app`
 
 ## Docker Metadata
 
-- Image ID: `sha256:eafdae178526862f74bab11b19af4cfd81e87e5449cefa97552aaa0427fa5c2a`
-- Created: `2026-04-30T23:51:08.663924131Z`
-- Virtual Size: ~ 2.00 Gb  
+- Image ID: `sha256:3d4bf3ecd13c5d3b336814df6effbf0f6973347b45d1044eb2b1df40242e397b`
+- Created: `2026-05-18T22:40:09.564868628Z`
+- Virtual Size: ~ 1.93 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/sonarqube/docker/run.sh"]`
@@ -18,7 +18,7 @@
   - `JAVA_VERSION=jdk-25.0.3+9`
   - `DOCKER_RUNNING=true`
   - `SONARQUBE_HOME=/opt/sonarqube`
-  - `SONAR_VERSION=2026.2.1.121354`
+  - `SONAR_VERSION=2026.3.0.123014`
   - `SQ_DATA_DIR=/opt/sonarqube/data`
   - `SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions`
   - `SQ_LOGS_DIR=/opt/sonarqube/logs`
@@ -344,12 +344,12 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.2.dsc' coreutils_9.4-3ubuntu6.2.dsc 2030 SHA256:a16ffb435f38507bea51474f5e40a26e4c8191d2190da8770e8e4726c18e37ba
 ```
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.8`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.9`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.8`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.8`
+- `curl=8.5.0-2ubuntu10.9`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.9`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -366,9 +366,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=8.5.0-2ubuntu10.9
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0.orig.tar.gz' curl_8.5.0.orig.tar.gz 4372979 SHA512:1ff70e8fd5f233b373dea2a031d46698c03ed35f384c2eacbe9368f9daed65e91d7f45ade350c3ac3dd3d662c913b17cdc8702a0c23879b0c78fbd396fd0b926
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.9.debian.tar.xz' curl_8.5.0-2ubuntu10.9.debian.tar.xz 76576 SHA512:e2758617da044745e488a26b65c245e236d02442486dc20bb281b0fd8eb3258d736b339caac26b1584a30235b321f58b4f88827dfc659be5559ef5da3703016d
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.5.0-2ubuntu10.9.dsc' curl_8.5.0-2ubuntu10.9.dsc 3051 SHA512:0c23074297e3c67ac1ecabd4598036fbee147d8b336c8cb9c787a350567d1f0320b0f93e5c4bca4a9153221604bf5f7598b5329f075da015feb710f79aca6e29
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
 
@@ -1709,11 +1714,11 @@ $ apt-get source -qq --print-uris nettle=3.9.1-2.2build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nettle/nettle_3.9.1-2.2build1.1.dsc' nettle_3.9.1-2.2build1.1.dsc 2325 SHA256:db439554d51174b657660a2a47d3d4128838e063f3c9c7da67bb3fe91931d1d2
 ```
 
-### `dpkg` source package: `nghttp2=1.59.0-1ubuntu0.2`
+### `dpkg` source package: `nghttp2=1.59.0-1ubuntu0.3`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.59.0-1ubuntu0.2`
+- `libnghttp2-14:amd64=1.59.0-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -1724,9 +1729,14 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris nghttp2=1.59.0-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.59.0.orig.tar.gz' nghttp2_1.59.0.orig.tar.gz 1055492 SHA512:bcb53ff45afae003f11a9feaa21dd80a3abfcde9b3a7fd1f04fc4382d71b5d4430e2d015765a7ae8d68454fcf06e4560c4cb585133aefb237d6ea526f61a8ebd
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.59.0-1ubuntu0.3.debian.tar.xz' nghttp2_1.59.0-1ubuntu0.3.debian.tar.xz 16364 SHA512:39fba28ed20aaf596fa199332afdd1bafe7de6f9da882cb0da781f9873bf6e86aa0cc66473182838918e48efeff9bf8ea48ea88df8d64fafbfdf15e160fe606c
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.59.0-1ubuntu0.3.dsc' nghttp2_1.59.0-1ubuntu0.3.dsc 2669 SHA512:13a4071d87fe9679a1b0502accf220b0cec3b5a6c3e3c95e0d8aaa2843fd11dcc88dd0e16a0e667478a7a0b9ac8484a1110135a158ef75e4354bb18fb1518637
+```
 
 ### `dpkg` source package: `npth=1.6-3.1build1`
 
