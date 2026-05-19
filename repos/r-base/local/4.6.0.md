@@ -147,19 +147,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=14
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_14.dsc' base-files_14.dsc 1207 SHA256:5cdce966268b529d7897b088f28d022093f390970eb63541f5e3753ca521c23b
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_14.tar.xz' base-files_14.tar.xz 68388 SHA256:dbb9ebd9278b0507d82c29dff894caf9dfc2b46d35e33a4a1505c96c6c6e54d8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/14/
 
-- https://sources.debian.net/src/base-files/14/ (for browsing the source)
-- https://sources.debian.net/src/base-files/14/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/14/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.8`
 
@@ -2403,21 +2397,13 @@ Licenses: (parsed from: `/usr/share/doc/libssh2-1t64/copyright`)
 - `BSD3`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libssh2=1.11.1-2
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1-2.dsc' libssh2_1.11.1-2.dsc 2329 SHA256:c3e8f28994a2c5607bce880a4ab00ff4bdc1b1004e70dda24e201c0c991dc3b4
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz' libssh2_1.11.1.orig.tar.gz 1093012 SHA256:d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1.orig.tar.gz.asc' libssh2_1.11.1.orig.tar.gz.asc 488 SHA256:f5618c9356a1d5a8059d6cf64015d86547f06b2b8b1f542fbbaf381a736c8075
-'http://deb.debian.org/debian/pool/main/libs/libssh2/libssh2_1.11.1-2.debian.tar.xz' libssh2_1.11.1-2.debian.tar.xz 17256 SHA256:98bc79ca01f308924f78e90b47e53d2ce7df1a0e19208d710730f4dfeadea5c5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libssh2/1.11.1-2/
 
-- https://sources.debian.net/src/libssh2/1.11.1-2/ (for browsing the source)
-- https://sources.debian.net/src/libssh2/1.11.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libssh2/1.11.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtasn1-6=4.21.0-2`
 
@@ -3790,20 +3776,13 @@ Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-bas
 - `LGPL-2.1`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-base=4.6.0-3
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.6.0-3.dsc' r-base_4.6.0-3.dsc 2848 SHA256:5e6526ff267ed71e07868f65124489a907a29316d8f50e7ab39b6e2fd8f0c4aa
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.6.0.orig.tar.gz' r-base_4.6.0.orig.tar.gz 40916004 SHA256:b8dc9b4543660c7b596b87938df532394350360976527d344228ee0ed12e45ec
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.6.0-3.debian.tar.xz' r-base_4.6.0-3.debian.tar.xz 102024 SHA256:8ddeeed3f828473f51a4d4e9f78535b84e1cbbcacab95f78185a47b8d264f397
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-base/4.6.0-3/
 
-- https://sources.debian.net/src/r-base/4.6.0-3/ (for browsing the source)
-- https://sources.debian.net/src/r-base/4.6.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-base/4.6.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-class=7.3-23-1`
 
