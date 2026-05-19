@@ -1,10 +1,10 @@
-# `maven:3.9.15-amazoncorretto-21-debian`
+# `maven:3.9.16-amazoncorretto-21-debian`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c99118a42ebfa2f59f7722b7b22026532dce4bac9578a3c36b26653936dab8e2`
-- Created: `2026-05-08T20:21:33.35560928Z`
-- Virtual Size: ~ 471.59 Mb  
+- Image ID: `sha256:467f08efa5381899b50f7fedfcf7d1a07f08acc1f47eea1b44bb17d17516da3b`
+- Created: `2026-05-18T22:41:51.879109611Z`
+- Virtual Size: ~ 479.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -175,19 +175,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.8+deb13u4
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u4.dsc' base-files_13.8+deb13u4.dsc 1247 SHA256:0db14eaf7f4ec13e8cd79e899f0279885e4c55e59ff80eaa0b3dafb3c60207e5
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.8%2bdeb13u4.tar.xz' base-files_13.8+deb13u4.tar.xz 68656 SHA256:6e4f61bac65904c648e004229388178cf4f4a4fa3f9b35dd23d9ffa688320955
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/13.8+deb13u4/
 
-- https://sources.debian.net/src/base-files/13.8+deb13u4/ (for browsing the source)
-- https://sources.debian.net/src/base-files/13.8+deb13u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/13.8+deb13u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.7`
 
@@ -598,7 +592,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libcom-err2:amd64=1.47.2-3+b10`
+- `libcom-err2:amd64=1.47.2-3+b11`
 
 Licenses: (parsed from: `/usr/share/doc/libcom-err2/copyright`)
 
@@ -761,9 +755,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glibc=2.41-12+deb13u2
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-12%2bdeb13u2.dsc' glibc_2.41-12+deb13u2.dsc 7576 SHA256:f98b6ede834c35af07c543370af25b27126245049395e9a83dbbf548f5dc6d93
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41.orig.tar.xz' glibc_2.41.orig.tar.xz 20323540 SHA256:f24aa441021121a79266f0d75242706cab8843a47901fefe74527491807f1998
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-12%2bdeb13u2.debian.tar.xz' glibc_2.41-12+deb13u2.debian.tar.xz 485960 SHA256:30370dc7ebf973c51465b924d3f1637a0177708aa2bf05bf295ab1427fb8813a
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.41-12%2bdeb13u2.dsc' glibc_2.41-12+deb13u2.dsc 7576 SHA256:f98b6ede834c35af07c543370af25b27126245049395e9a83dbbf548f5dc6d93
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.41.orig.tar.xz' glibc_2.41.orig.tar.xz 20323540 SHA256:f24aa441021121a79266f0d75242706cab8843a47901fefe74527491807f1998
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.41-12%2bdeb13u2.debian.tar.xz' glibc_2.41-12+deb13u2.debian.tar.xz 485960 SHA256:30370dc7ebf973c51465b924d3f1637a0177708aa2bf05bf295ab1427fb8813a
 ```
 
 Other potentially useful URLs:
@@ -1091,10 +1085,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libcap2=1:2.75-10
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75-10.dsc' libcap2_2.75-10.dsc 2703 SHA256:b7a692cecf4d1975991073b77e7a5e45106d62f428f010284fc44f323f1acce7
+'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75-10%2bdeb13u1.dsc' libcap2_2.75-10+deb13u1.dsc 2714 SHA256:cb6af220de216655ec55bb1f5abf3fa8f03e82c9956f120b313056e895c02ea6
 'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75.orig.tar.xz' libcap2_2.75.orig.tar.xz 197868 SHA256:de4e7e064c9ba451d5234dd46e897d7c71c96a9ebf9a0c445bc04f4742d83632
 'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75.orig.tar.xz.asc' libcap2_2.75.orig.tar.xz.asc 833 SHA256:c71b593e7c3160fd7f406641074d93462bbc4906c9243937a0e232f42d5c54d2
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75-10.debian.tar.xz' libcap2_2.75-10.debian.tar.xz 22964 SHA256:b1eb36e050fa1d03e83df78f35ef8538f05cd3ad96a7362cb4113b2541a390ce
+'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75-10%2bdeb13u1.debian.tar.xz' libcap2_2.75-10+deb13u1.debian.tar.xz 24628 SHA256:d375de2f743f112835fc0eef2a9c305c1109371954cf53e109b7f046fe58c1bc
 ```
 
 Other potentially useful URLs:
@@ -1739,11 +1733,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.10.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.10.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssh=1:10.0p1-7+deb13u2`
+### `dpkg` source package: `openssh=1:10.0p1-7+deb13u4`
 
 Binary Packages:
 
-- `openssh-client=1:10.0p1-7+deb13u2`
+- `openssh-client=1:10.0p1-7+deb13u4`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1758,26 +1752,26 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:10.0p1-7+deb13u2
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_10.0p1-7%2bdeb13u2.dsc' openssh_10.0p1-7+deb13u2.dsc 3485 SHA256:cd9639100e7c59d9544519292e170d914bde5d3b020b35dd39b1bee03e199401
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_10.0p1.orig.tar.gz' openssh_10.0p1.orig.tar.gz 1972675 SHA256:021a2e709a0edf4250b1256bd5a9e500411a90dddabea830ed59cef90eb9d85c
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_10.0p1.orig.tar.gz.asc' openssh_10.0p1.orig.tar.gz.asc 833 SHA256:f71cf3240516ce59c2240532143982fcd97e2e286e6eb1eb6c3080a1ec012a04
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_10.0p1-7%2bdeb13u2.debian.tar.xz' openssh_10.0p1-7+deb13u2.debian.tar.xz 202740 SHA256:dcf91abb8173cebfee4db62b7b8c9b883fe308e9d25876016e135bd0cdd6fe27
+$ apt-get source -qq --print-uris openssh=1:10.0p1-7+deb13u4
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1-7%2bdeb13u4.dsc' openssh_10.0p1-7+deb13u4.dsc 3763 SHA256:73fed3fd77d60925ed342bcb0afd3c037e4ea0d39333107bf617aa90f859910f
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz' openssh_10.0p1.orig.tar.gz 1972675 SHA256:021a2e709a0edf4250b1256bd5a9e500411a90dddabea830ed59cef90eb9d85c
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1.orig.tar.gz.asc' openssh_10.0p1.orig.tar.gz.asc 833 SHA256:f71cf3240516ce59c2240532143982fcd97e2e286e6eb1eb6c3080a1ec012a04
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_10.0p1-7%2bdeb13u4.debian.tar.xz' openssh_10.0p1-7+deb13u4.debian.tar.xz 215600 SHA256:102e1065030c6002acabd7f896eeba1462bf54b4d7393bac34b0308312868ec6
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssh/1:10.0p1-7+deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:10.0p1-7+deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:10.0p1-7+deb13u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssh/1:10.0p1-7+deb13u4/ (for browsing the source)
+- https://sources.debian.net/src/openssh/1:10.0p1-7+deb13u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssh/1:10.0p1-7+deb13u4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.5.5-1~deb13u2`
+### `dpkg` source package: `openssl=3.5.6-1~deb13u1`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.5.5-1~deb13u2`
-- `openssl=3.5.5-1~deb13u2`
-- `openssl-provider-legacy=3.5.5-1~deb13u2`
+- `libssl3t64:amd64=3.5.6-1~deb13u1`
+- `openssl=3.5.6-1~deb13u1`
+- `openssl-provider-legacy=3.5.6-1~deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -1789,18 +1783,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.5.5-1~deb13u2
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5-1%7edeb13u2.dsc' openssl_3.5.5-1~deb13u2.dsc 2707 SHA256:2cba43d38a2f4ca1ef09a89ccc348fc63a5a43a58850a913bca46c6ceeb007ed
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5.orig.tar.gz' openssl_3.5.5.orig.tar.gz 53104821 SHA256:b28c91532a8b65a1f983b4c28b7488174e4a01008e29ce8e69bd789f28bc2a89
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5.orig.tar.gz.asc' openssl_3.5.5.orig.tar.gz.asc 833 SHA256:eaef5b1054b84b8d1e6c61c9fc8867828be5ce686d0221580faf8bdc16489da9
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.5-1%7edeb13u2.debian.tar.xz' openssl_3.5.5-1~deb13u2.debian.tar.xz 68136 SHA256:92355f8cd5112cb4d49b9487c30507e5f85fc5497ad85223aecf661566f5ad8e
+$ apt-get source -qq --print-uris openssl=3.5.6-1~deb13u1
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6-1%7edeb13u1.dsc' openssl_3.5.6-1~deb13u1.dsc 2707 SHA256:e80c41b4a11930ff4ab52be1bd63d47c3657f0e129cb2f3ab1f086e5ad9596c6
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6.orig.tar.gz' openssl_3.5.6.orig.tar.gz 53121812 SHA256:deae7c80cba99c4b4f940ecadb3c3338b13cb77418409238e57d7f31f2a3b736
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6.orig.tar.gz.asc' openssl_3.5.6.orig.tar.gz.asc 833 SHA256:581c536bd4c5bf7e325feaa90d6ce01c3da297737b5be3213c4e8087323fb623
+'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6-1%7edeb13u1.debian.tar.xz' openssl_3.5.6-1~deb13u1.debian.tar.xz 52364 SHA256:ce467b7e373870add5e85fc5e591240557f536424c839a7b2678f20c4227030f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.5.5-1~deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.5.5-1~deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.5.5-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.5.6-1~deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.5.6-1~deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.5.6-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.7.0-5`
 
@@ -1965,20 +1959,13 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 - `X11`
 - `pcre`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sed=4.9-2
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.9-2.dsc' sed_4.9-2.dsc 1860 SHA256:17f10deac1b327cb2a623352cdc33444ac9c109359a0caa46b3980b0e415f671
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.9.orig.tar.xz' sed_4.9.orig.tar.xz 1397092 SHA256:6e226b732e1cd739464ad6862bd1a1aba42d7982922da7a53519631d24975181
-'http://deb.debian.org/debian/pool/main/s/sed/sed_4.9-2.debian.tar.xz' sed_4.9-2.debian.tar.xz 62756 SHA256:549fa5cec6eb4fde8cc74ca263b8bf42f947ede677e39d2afeedf661da1d4e52
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sed/4.9-2/
 
-- https://sources.debian.net/src/sed/4.9-2/ (for browsing the source)
-- https://sources.debian.net/src/sed/4.9-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sed/4.9-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `shadow=1:4.17.4-2`
 
@@ -2056,20 +2043,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.9-1~deb13u1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.9-1%7edeb13u1.dsc' systemd_257.9-1~deb13u1.dsc 8617 SHA256:c2b85246a8c0be8e7beed9e2ff482b4adef74d5a8b4fed412e35fa9bd2f0081f
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.9.orig.tar.gz' systemd_257.9.orig.tar.gz 16401765 SHA256:b27dcc100a738b4b5b81f7c5174c1239a6495f5bdf3d3caa94a17b8373e6a1ca
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.9-1%7edeb13u1.debian.tar.xz' systemd_257.9-1~deb13u1.debian.tar.xz 182860 SHA256:5f98f2b17fe7baa7954cbfa7b4eaa4b060131eceda106cbffb4071ebbc50a54a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257.9-1~deb13u1/
 
-- https://sources.debian.net/src/systemd/257.9-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.9-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.9-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 
@@ -2145,21 +2125,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2026a-0+deb13u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026a-0%2bdeb13u1.dsc' tzdata_2026a-0+deb13u1.dsc 2466 SHA256:5082837c384c170948317854815b7bdf7e85114861c1d4311d1a88675f237654
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz' tzdata_2026a.orig.tar.gz 471812 SHA256:77b541725937bb53bd92bd484c0b43bec8545e2d3431ee01f04ef8f2203ba2b7
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026a.orig.tar.gz.asc' tzdata_2026a.orig.tar.gz.asc 833 SHA256:39525413908f3c28cd80dff718fc3a47a563871fd26ca3b526db2b5f700de3cb
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2026a-0%2bdeb13u1.debian.tar.xz' tzdata_2026a-0+deb13u1.debian.tar.xz 127076 SHA256:6391c18aeeb842d165d2bcea05e14457d71b3df26c10c68791ace289104891e0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2026a-0+deb13u1/
 
-- https://sources.debian.net/src/tzdata/2026a-0+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2026a-0+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2026a-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.41-5`
 

@@ -1,10 +1,10 @@
-# `maven:3.9.15-eclipse-temurin-11-noble`
+# `maven:3.9.16-eclipse-temurin-11-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f5380ca89be3288b533d8b195b07a4ffec526a98e912599d17bdc2ebde951c4`
-- Created: `2026-05-08T00:33:10.662524228Z`
-- Virtual Size: ~ 485.35 Mb  
+- Image ID: `sha256:8337403fdee81fdad37c8ef4b03344ed202da8bf2b7f887bc56753925e844241`
+- Created: `2026-05-18T22:42:47.536355795Z`
+- Virtual Size: ~ 485.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
