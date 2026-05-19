@@ -109,19 +109,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.3.0
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.3.0.dsc' apt_3.3.0.dsc 3132 SHA256:cb30e1e31e860ea1787e1ff0db1dcab7c4785b5e63dae1ac562a928049e42c99
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.3.0.tar.xz' apt_3.3.0.tar.xz 2477648 SHA256:23b47c69b1ca028f09d7e0fad53442096aec1c1f38595b9484baef18ae296345
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.3.0/
 
-- https://sources.debian.net/src/apt/3.3.0/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.3.0/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.3.0/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `architecture-properties=0.2.6`
 
