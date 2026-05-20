@@ -1,10 +1,10 @@
-# `golang:tip-20260510-bookworm`
+# `golang:tip-20260517-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:af11a9c5d09a3706ed699eb31c143c79ec1b46a38370d4184286f960c4b71e22`
-- Created: `2026-05-11T23:23:41.981634624Z`
-- Virtual Size: ~ 862.55 Mb  
+- Image ID: `sha256:cabebce39e80a5e547186d326a28653e5c8ec38dea34dd17dedd84ea1704faff`
+- Created: `2026-05-19T18:46:22.953025317Z`
+- Virtual Size: ~ 879.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1000,27 +1000,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/git/1:2.39.5-0+deb12u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/git/1:2.39.5-0+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.36-9+deb12u13`
+### `dpkg` source package: `glibc=2.36-9+deb12u14`
 
 Binary Packages:
 
-- `libc-bin=2.36-9+deb12u13`
-- `libc-dev-bin=2.36-9+deb12u13`
-- `libc6:amd64=2.36-9+deb12u13`
-- `libc6-dev:amd64=2.36-9+deb12u13`
+- `libc-bin=2.36-9+deb12u14`
+- `libc-dev-bin=2.36-9+deb12u14`
+- `libc6:amd64=2.36-9+deb12u14`
+- `libc6-dev:amd64=2.36-9+deb12u14`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris glibc=2.36-9+deb12u14
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36-9%2bdeb12u14.dsc' glibc_2.36-9+deb12u14.dsc 9765 SHA256:cfe1f0b8dc1fa211ce5a45b3725cc38b29f88667f1140ebdca6de35cf9c6f1fd
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36.orig.tar.xz' glibc_2.36.orig.tar.xz 19363988 SHA256:a543c02070d46ccaf866957efd13f10c924daa74c86a90a0254db09a92a708ee
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.36-9%2bdeb12u14.debian.tar.xz' glibc_2.36-9+deb12u14.debian.tar.xz 918488 SHA256:cf4ac9cd98185452cae3ef34e2e4ee12753e3d93fd0c62c61396d4a47eec902f
+```
 
-- http://snapshot.debian.org/package/glibc/2.36-9+deb12u13/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/glibc/2.36-9+deb12u14/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.36-9+deb12u14/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.36-9+deb12u14/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg1-1.1`
 
@@ -2134,11 +2141,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.170-3`
+### `dpkg` source package: `linux=6.1.172-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.170-3`
+- `linux-libc-dev:amd64=6.1.172-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2153,17 +2160,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.170-3
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.170-3.dsc' linux_6.1.170-3.dsc 399396 SHA256:03fb7bff881839fa29297adeade96dd8d7cd1edaaf2d03669220146d7a175478
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.170.orig.tar.xz' linux_6.1.170.orig.tar.xz 137897868 SHA256:d97c2b2683633677fa1f41bf5cc58cfac7664b84ca885ce6546d40fee87ba7fe
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.170-3.debian.tar.xz' linux_6.1.170-3.debian.tar.xz 1841740 SHA256:25805b356526715f569ee3f0e123a567ff0791d68f097036b2dc7587f7c41c19
+$ apt-get source -qq --print-uris linux=6.1.172-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.172-1.dsc' linux_6.1.172-1.dsc 399396 SHA256:e3db5792430cc74993ae4ac610e557c44f8f12bb3ba0017872bb24c7be68f138
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.172.orig.tar.xz' linux_6.1.172.orig.tar.xz 137908588 SHA256:64a5e512fbc9e0aeba50208e966be2e1452979e0efb2373c5c69996b564d9c32
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.172-1.debian.tar.xz' linux_6.1.172-1.debian.tar.xz 1841724 SHA256:067d29c785c6e9dae028b490646945db842e652beb0ebbd0f30fe85af48ae17e
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.170-3/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.170-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.170-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.172-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.172-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.172-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 

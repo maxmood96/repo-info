@@ -1,10 +1,10 @@
-# `golang:tip-20260510-trixie`
+# `golang:tip-20260517-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fc768fff7efb869c17e436f200f324c807df2f5c09e80a5fe060902579ddb25d`
-- Created: `2026-05-11T23:23:42.424560671Z`
-- Virtual Size: ~ 902.84 Mb  
+- Image ID: `sha256:b7ae152747bcbacd0baff2b2ed4baa3b2a7e1517700b63e329b042bd5c352d31`
+- Created: `2026-05-19T18:46:11.750124855Z`
+- Virtual Size: ~ 920.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1005,14 +1005,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/git/1:2.47.3-0+deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/git/1:2.47.3-0+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.41-12+deb13u2`
+### `dpkg` source package: `glibc=2.41-12+deb13u3`
 
 Binary Packages:
 
-- `libc-bin=2.41-12+deb13u2`
-- `libc-dev-bin=2.41-12+deb13u2`
-- `libc6:amd64=2.41-12+deb13u2`
-- `libc6-dev:amd64=2.41-12+deb13u2`
+- `libc-bin=2.41-12+deb13u3`
+- `libc-dev-bin=2.41-12+deb13u3`
+- `libc6:amd64=2.41-12+deb13u3`
+- `libc6-dev:amd64=2.41-12+deb13u3`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
@@ -1052,17 +1052,17 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris glibc=2.41-12+deb13u2
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.41-12%2bdeb13u2.dsc' glibc_2.41-12+deb13u2.dsc 7576 SHA256:f98b6ede834c35af07c543370af25b27126245049395e9a83dbbf548f5dc6d93
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.41.orig.tar.xz' glibc_2.41.orig.tar.xz 20323540 SHA256:f24aa441021121a79266f0d75242706cab8843a47901fefe74527491807f1998
-'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.41-12%2bdeb13u2.debian.tar.xz' glibc_2.41-12+deb13u2.debian.tar.xz 485960 SHA256:30370dc7ebf973c51465b924d3f1637a0177708aa2bf05bf295ab1427fb8813a
+$ apt-get source -qq --print-uris glibc=2.41-12+deb13u3
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-12%2bdeb13u3.dsc' glibc_2.41-12+deb13u3.dsc 7576 SHA256:aa1ab10010fcf169454a5c6a123094a3997392922593d86a3a5adc180a07ca40
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41.orig.tar.xz' glibc_2.41.orig.tar.xz 20323540 SHA256:f24aa441021121a79266f0d75242706cab8843a47901fefe74527491807f1998
+'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-12%2bdeb13u3.debian.tar.xz' glibc_2.41-12+deb13u3.debian.tar.xz 494644 SHA256:de7d715bf7e559b78baebac4115122641842f65faf0a5080a55954877a55cebe
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/glibc/2.41-12+deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.41-12+deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.41-12+deb13u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/glibc/2.41-12+deb13u3/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.41-12+deb13u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.41-12+deb13u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-3`
 
@@ -1163,21 +1163,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.9-3+deb13u2
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.8.9-3%2bdeb13u2.dsc' gnutls28_3.8.9-3+deb13u2.dsc 3271 SHA256:b7aeed97b22870fae0587f531561d78cd8093ed5f432f30cd79a37ac94be10b0
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.8.9.orig.tar.xz' gnutls28_3.8.9.orig.tar.xz 6847364 SHA256:69e113d802d1670c4d5ac1b99040b1f2d5c7c05daec5003813c049b5184820ed
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.8.9.orig.tar.xz.asc' gnutls28_3.8.9.orig.tar.xz.asc 833 SHA256:7631d47762865d4ef494492cca794cf0fe6a8be892a4aa02f362ae29006d3054
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.8.9-3%2bdeb13u2.debian.tar.xz' gnutls28_3.8.9-3+deb13u2.debian.tar.xz 102436 SHA256:e61d47849b1d5ce7e7bbfe8f9dc82e6b48479dfc8b78248d4daa0038307a0d26
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.9-3+deb13u2/
 
-- https://sources.debian.net/src/gnutls28/3.8.9-3+deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.9-3+deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.9-3+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.11-4`
 
@@ -2175,11 +2167,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.86-1`
+### `dpkg` source package: `linux=6.12.88-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.86-1`
+- `linux-libc-dev=6.12.88-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2193,17 +2185,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.86-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.86-1.dsc' linux_6.12.86-1.dsc 288306 SHA256:fc5315f4946bc6749aa0bf1df9bf0901b3fe0344876e1e08e0bdf67556aeb106
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.86.orig.tar.xz' linux_6.12.86.orig.tar.xz 151247248 SHA256:74ae12a1a62311e096d05a0b006c8447d9007809b0b7604a643293914871982b
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.86-1.debian.tar.xz' linux_6.12.86-1.debian.tar.xz 1812972 SHA256:81d68f571ad15a2d4697a6552f2d8ac16b0b6942e453138a8ec58cc927d3673e
+$ apt-get source -qq --print-uris linux=6.12.88-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.88-1.dsc' linux_6.12.88-1.dsc 288306 SHA256:741aae72868c1a0c637322618bd2c698d5a76a35fd269f58e988844107a95c9e
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.88.orig.tar.xz' linux_6.12.88.orig.tar.xz 151267944 SHA256:4181175d5c45476060292e8150687e088cf3f6cc0c4db5166587e79547bb883e
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.88-1.debian.tar.xz' linux_6.12.88-1.debian.tar.xz 1814308 SHA256:5d499f004da3c0d8e715cc24a873b3068b040ebe68a653325ea0fc4a71fe3b7f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.86-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.86-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.86-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.88-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.88-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.88-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 
