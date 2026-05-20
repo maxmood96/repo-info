@@ -1,7 +1,7 @@
 ## `elixir:otp-27`
 
 ```console
-$ docker pull elixir@sha256:6fdee62cfd43352ca94dbf8870ed0cb7155468c2cd14556827635a9bb5734169
+$ docker pull elixir@sha256:23f0e1c2143284043fd0866c41c8c21871ab63841cb1fea9572a78057653d591
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -123,102 +123,102 @@ $ docker pull elixir@sha256:789467aa368f5076e8d8c6128d448602570c906dcd504e92e31e
 ### `elixir:otp-27` - linux; arm variant v7
 
 ```console
-$ docker pull elixir@sha256:2ed25c7374b43e3e2d0a14114a5b1f18e7203483a6136e27f911b2a5f2b7c1ba
+$ docker pull elixir@sha256:f7389ddf568d51931e05b60eb6f074b77c82d912aeb7b4ab6f8886611b1c29dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **549.3 MB (549321928 bytes)**  
+-	Total Size: **549.3 MB (549341093 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:524da59905f8cf99932285d443cc4cf6d6c2d863f9dd3918bb3c50d81df3b745`
+-	Image ID: `sha256:0bb264833b191249e0980a17625d5446fcc8278ca9a4073a82ffb1a5eeddc889`
 -	Default Command: `["iex"]`
 
 ```dockerfile
-# Tue, 05 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1777939200'
-# Fri, 08 May 2026 19:44:30 GMT
+# Mon, 18 May 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1779062400'
+# Wed, 20 May 2026 00:02:02 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 May 2026 21:34:50 GMT
+# Wed, 20 May 2026 01:33:54 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 May 2026 22:12:47 GMT
+# Wed, 20 May 2026 02:14:08 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 May 2026 22:56:33 GMT
+# Wed, 20 May 2026 03:16:36 GMT
 ENV OTP_VERSION=27.3.4.11 REBAR3_VERSION=3.26.0
-# Fri, 08 May 2026 22:56:33 GMT
+# Wed, 20 May 2026 03:16:36 GMT
 LABEL org.opencontainers.image.version=27.3.4.11
-# Fri, 08 May 2026 22:56:33 GMT
+# Wed, 20 May 2026 03:16:36 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/releases/download/OTP-${OTP_VERSION}/otp_src_${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="9d63382d3e7707c058dabe338114e09ff8228d54d29df794d907d3c8dddde5f9" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2 			libwxgtk-webview3.2-dev  ' 	&& buildDeps='unixodbc-dev 			libsctp-dev ' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
-# Fri, 08 May 2026 22:56:33 GMT
+# Wed, 20 May 2026 03:16:36 GMT
 CMD ["erl"]
-# Fri, 08 May 2026 22:56:33 GMT
+# Wed, 20 May 2026 03:16:36 GMT
 ENV REBAR_VERSION=2.6.4
-# Fri, 08 May 2026 22:56:37 GMT
+# Wed, 20 May 2026 03:16:40 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src # buildkit
-# Fri, 08 May 2026 22:57:00 GMT
+# Wed, 20 May 2026 03:17:03 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="a151dc4a07805490e9f217a099e597ac9774814875f55da2c66545c333fdff64" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src # buildkit
-# Sat, 09 May 2026 00:23:16 GMT
+# Wed, 20 May 2026 05:32:15 GMT
 ENV ELIXIR_VERSION=v1.19.5 LANG=C.UTF-8
-# Sat, 09 May 2026 00:23:16 GMT
+# Wed, 20 May 2026 05:32:15 GMT
 RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/archive/${ELIXIR_VERSION}.tar.gz" 	&& ELIXIR_DOWNLOAD_SHA256="10750b8bd74b10ac1e25afab6df03e3d86999890fa359b5f02aa81de18a78e36" 	&& curl -fSL -o elixir-src.tar.gz $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256  elixir-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/local/src/elixir 	&& tar -xzC /usr/local/src/elixir --strip-components=1 -f elixir-src.tar.gz 	&& rm elixir-src.tar.gz 	&& cd /usr/local/src/elixir 	&& make install clean 	&& find /usr/local/src/elixir/ -type f -not -regex "/usr/local/src/elixir/lib/[^\/]*/lib.*" -exec rm -rf {} + 	&& find /usr/local/src/elixir/ -type d -depth -empty -delete # buildkit
-# Sat, 09 May 2026 00:23:16 GMT
+# Wed, 20 May 2026 05:32:15 GMT
 CMD ["iex"]
 ```
 
 -	Layers:
-	-	`sha256:752ba895535a5b96e621b623e0a11ff696fe28fb2110ab16de49e150423d0a89`  
-		Last Modified: Fri, 08 May 2026 18:36:54 GMT  
-		Size: 44.2 MB (44207696 bytes)  
+	-	`sha256:1af0b8b84389f4347663cc563bc1f6d59fe6d6f21081f428bafa1a09f6a276ce`  
+		Last Modified: Tue, 19 May 2026 22:35:59 GMT  
+		Size: 44.2 MB (44209154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b0504388ca2bf72a5fec3556b58015e5dce736337a948976b22cd4cce283cb0`  
-		Last Modified: Fri, 08 May 2026 19:44:39 GMT  
-		Size: 21.9 MB (21946392 bytes)  
+	-	`sha256:a61246c0a5a0fe9fe8cdc1bfde0fdfa49ffafcc94cba31f4aecc0c34bc346064`  
+		Last Modified: Wed, 20 May 2026 00:02:11 GMT  
+		Size: 22.0 MB (21950133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dbef2e4eed112ac2d8730e2603fe97cab1d0ce708d52061992fd2f72e1db7e12`  
-		Last Modified: Fri, 08 May 2026 21:35:07 GMT  
-		Size: 59.7 MB (59653543 bytes)  
+	-	`sha256:c56a54e4354794da97ac9fe5173f689d775d13afa792e8b390e49425c3caa6b5`  
+		Last Modified: Wed, 20 May 2026 01:34:11 GMT  
+		Size: 59.7 MB (59661818 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d7eff5eea100df13a745e92b9a950fdfe28a9d8d117e60044d04691c9f2792e`  
-		Last Modified: Fri, 08 May 2026 22:13:22 GMT  
-		Size: 175.5 MB (175482472 bytes)  
+	-	`sha256:ecbb20c1c60a86ae411bb83f6d747db8cc17ad624e0758e9f4f2fbd1fc3d580a`  
+		Last Modified: Wed, 20 May 2026 02:14:43 GMT  
+		Size: 175.5 MB (175487840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:842b5463fd70c0892bccd0027435e56d7184d29caf6355c4d75ac1e4908ed105`  
-		Last Modified: Fri, 08 May 2026 22:57:52 GMT  
-		Size: 239.2 MB (239235979 bytes)  
+	-	`sha256:30779c6a627282086b79618eb9cc0610f4051371453f79330cbe03167305596b`  
+		Last Modified: Wed, 20 May 2026 03:17:55 GMT  
+		Size: 239.2 MB (239236341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ca124912b6457a6decb7f7d5730595942988c50af7af7de3db4f23f6708ec37`  
-		Last Modified: Fri, 08 May 2026 22:57:47 GMT  
-		Size: 195.7 KB (195712 bytes)  
+	-	`sha256:55d22990250ce39d3e4d42238473189b64619d7408256e9ad69e2efedc5d0448`  
+		Last Modified: Wed, 20 May 2026 03:17:50 GMT  
+		Size: 195.7 KB (195693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aeec97ecaefd65f32cde15ac486f3e026412238872d259642e213a24ccf422dd`  
-		Last Modified: Fri, 08 May 2026 22:57:47 GMT  
+	-	`sha256:0075ea3b0df3a14870f0e008fd996846ddfd4cd400757811809d626ba67e6a9c`  
+		Last Modified: Wed, 20 May 2026 03:17:50 GMT  
 		Size: 824.6 KB (824637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:672a422793a413df7f03c1d68d4d4b0c1879ecc1307fa9cbda52c80977980144`  
-		Last Modified: Sat, 09 May 2026 00:23:54 GMT  
-		Size: 7.8 MB (7775497 bytes)  
+	-	`sha256:891c22e537786c4a2832961fd190094eba464a68759b127cab9c504937dce385`  
+		Last Modified: Wed, 20 May 2026 05:32:44 GMT  
+		Size: 7.8 MB (7775477 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elixir:otp-27` - unknown; unknown
 
 ```console
-$ docker pull elixir@sha256:4bd301bdd47310a26ba568405762c90f939c28096ad6c971fe2fa55c8a479cfe
+$ docker pull elixir@sha256:599ba8b907c29fcea2cce0499b6bc6a413243c3a88d3760e61d10a63ea9d1b31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.6 MB (23601537 bytes)**  
+-	Total Size: **23.6 MB (23600096 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c6c1e24a4f5349d0f5f84f510f7fdaf5809650cec2abbf07bcc832108ffe8e7`
+-	Image ID: `sha256:ffc13c08533d942dd7da9dac1128f4eb4e7374630f9c23ee1e0c532c988db784`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:322679d3485fab7c2a2040817084c3b4470730a987bf4c2bac3de63fe5e8949e`  
-		Last Modified: Sat, 09 May 2026 00:23:54 GMT  
-		Size: 23.6 MB (23591087 bytes)  
+	-	`sha256:55895fbce987e687fbf4712a2ef0bb4b563b5f84679b6d4568ee757b2fe54707`  
+		Last Modified: Wed, 20 May 2026 05:32:45 GMT  
+		Size: 23.6 MB (23589647 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1b5d5f8babe59cd75ca0782980ca137fe344251fd0abffcae277fd72252a4cc8`  
-		Last Modified: Sat, 09 May 2026 00:23:53 GMT  
-		Size: 10.4 KB (10450 bytes)  
+	-	`sha256:d51ce224599285c54192de2eb2ad115e3e15b248ba6dd74457301080edb43ebd`  
+		Last Modified: Wed, 20 May 2026 05:32:44 GMT  
+		Size: 10.4 KB (10449 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `elixir:otp-27` - linux; arm64 variant v8
@@ -527,100 +527,100 @@ $ docker pull elixir@sha256:d1594f85f1c4f1380ca3f5dc7fd805fafe10f4644382055b9fd5
 ### `elixir:otp-27` - linux; s390x
 
 ```console
-$ docker pull elixir@sha256:9f1f705a4523c7cd3fa2c92697e2aef111a1b31bff8f6a8eeeda81982462684c
+$ docker pull elixir@sha256:6423de756f601b1581b8ca45df8e52dfe8eb9467e825c6b09b4243902fb6c9f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **587.9 MB (587939289 bytes)**  
+-	Total Size: **587.9 MB (587947240 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:26579c0f98925ef612104c5f5d57bf9e86a5bcdcf98b7bfbfb4612d27a1e935f`
+-	Image ID: `sha256:a8717ea8d778ab9881149e51da7d034315143ccd590fc81d0214e079b7567bc5`
 -	Default Command: `["iex"]`
 
 ```dockerfile
-# Tue, 05 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1777939200'
-# Fri, 08 May 2026 20:52:30 GMT
+# Mon, 18 May 2026 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1779062400'
+# Wed, 20 May 2026 00:17:57 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 08 May 2026 22:33:13 GMT
+# Wed, 20 May 2026 02:05:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 09 May 2026 00:14:20 GMT
+# Wed, 20 May 2026 02:44:55 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 09 May 2026 00:26:48 GMT
+# Wed, 20 May 2026 03:15:42 GMT
 ENV OTP_VERSION=27.3.4.11 REBAR3_VERSION=3.26.0
-# Sat, 09 May 2026 00:26:48 GMT
+# Wed, 20 May 2026 03:15:42 GMT
 LABEL org.opencontainers.image.version=27.3.4.11
-# Sat, 09 May 2026 00:26:48 GMT
+# Wed, 20 May 2026 03:15:42 GMT
 RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/releases/download/OTP-${OTP_VERSION}/otp_src_${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="9d63382d3e7707c058dabe338114e09ff8228d54d29df794d907d3c8dddde5f9" 	&& runtimeDeps='libodbc1 			libsctp1 			libwxgtk3.2 			libwxgtk-webview3.2-dev  ' 	&& buildDeps='unixodbc-dev 			libsctp-dev ' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make -j$(nproc) docs DOC_TARGETS=chunks 	  && make install install-docs DOC_TARGETS=chunks ) 	&& find /usr/local -name examples | xargs rm -rf 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
-# Sat, 09 May 2026 00:26:48 GMT
+# Wed, 20 May 2026 03:15:42 GMT
 CMD ["erl"]
-# Sat, 09 May 2026 00:26:48 GMT
+# Wed, 20 May 2026 03:15:42 GMT
 ENV REBAR_VERSION=2.6.4
-# Sat, 09 May 2026 00:26:52 GMT
+# Wed, 20 May 2026 03:15:47 GMT
 RUN set -xe 	&& REBAR_DOWNLOAD_URL="https://github.com/rebar/rebar/archive/${REBAR_VERSION}.tar.gz" 	&& REBAR_DOWNLOAD_SHA256="577246bafa2eb2b2c3f1d0c157408650446884555bf87901508ce71d5cc0bd07" 	&& mkdir -p /usr/src/rebar-src 	&& curl -fSL -o rebar-src.tar.gz "$REBAR_DOWNLOAD_URL" 	&& echo "$REBAR_DOWNLOAD_SHA256 rebar-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar-src.tar.gz -C /usr/src/rebar-src --strip-components=1 	&& rm rebar-src.tar.gz 	&& cd /usr/src/rebar-src 	&& ./bootstrap 	&& install -v ./rebar /usr/local/bin/ 	&& rm -rf /usr/src/rebar-src # buildkit
-# Sat, 09 May 2026 00:27:16 GMT
+# Wed, 20 May 2026 03:16:13 GMT
 RUN set -xe 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="a151dc4a07805490e9f217a099e597ac9774814875f55da2c66545c333fdff64" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src # buildkit
-# Sat, 09 May 2026 04:22:05 GMT
+# Wed, 20 May 2026 06:59:55 GMT
 ENV ELIXIR_VERSION=v1.19.5 LANG=C.UTF-8
-# Sat, 09 May 2026 04:22:05 GMT
+# Wed, 20 May 2026 06:59:55 GMT
 RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/archive/${ELIXIR_VERSION}.tar.gz" 	&& ELIXIR_DOWNLOAD_SHA256="10750b8bd74b10ac1e25afab6df03e3d86999890fa359b5f02aa81de18a78e36" 	&& curl -fSL -o elixir-src.tar.gz $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256  elixir-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/local/src/elixir 	&& tar -xzC /usr/local/src/elixir --strip-components=1 -f elixir-src.tar.gz 	&& rm elixir-src.tar.gz 	&& cd /usr/local/src/elixir 	&& make install clean 	&& find /usr/local/src/elixir/ -type f -not -regex "/usr/local/src/elixir/lib/[^\/]*/lib.*" -exec rm -rf {} + 	&& find /usr/local/src/elixir/ -type d -depth -empty -delete # buildkit
-# Sat, 09 May 2026 04:22:05 GMT
+# Wed, 20 May 2026 06:59:55 GMT
 CMD ["iex"]
 ```
 
 -	Layers:
-	-	`sha256:124dbe049873037f973f01d877ec004bf4cd3ce5723d0b8f2067c58ad98137d6`  
-		Last Modified: Fri, 08 May 2026 18:27:29 GMT  
-		Size: 47.1 MB (47148023 bytes)  
+	-	`sha256:e0fc2c7a6bb12f7a9b333cc117b6ea5fa5cf251c5fa4dd298303beee01028f59`  
+		Last Modified: Tue, 19 May 2026 22:35:39 GMT  
+		Size: 47.2 MB (47155589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84ff8edb12d0e4a9c32ee4c3e2a16590b1236e70a297fedfff3debbb7297bb6e`  
-		Last Modified: Fri, 08 May 2026 20:52:47 GMT  
-		Size: 24.0 MB (24036421 bytes)  
+	-	`sha256:d79feab17202415ba0b431eca0e903b1c895e662e755c4c9f1b5678ad8eb605f`  
+		Last Modified: Wed, 20 May 2026 00:18:12 GMT  
+		Size: 24.0 MB (24039201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e8415cd4e27961a67eff09b7f658209a310ebce2d9bf3e1cf2773aa7e405d5e`  
-		Last Modified: Fri, 08 May 2026 22:33:37 GMT  
-		Size: 63.5 MB (63500120 bytes)  
+	-	`sha256:511ade0407a6db3c4a6853a735563e5fb22577aaaa32942a9458cc0c09942583`  
+		Last Modified: Wed, 20 May 2026 02:05:37 GMT  
+		Size: 63.5 MB (63498321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c973d71f8536024e529789a22bf066132812f13bad4854487264ff3c8974489b`  
-		Last Modified: Sat, 09 May 2026 00:15:11 GMT  
-		Size: 183.6 MB (183613180 bytes)  
+	-	`sha256:caaa6dc17afbecf60ca3315d2c4ad18f3028bcf8091ccde763daf04c218092a7`  
+		Last Modified: Wed, 20 May 2026 02:45:53 GMT  
+		Size: 183.6 MB (183603631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbf1cf774bb2f43e9b7c664e2adc511e04289602edffae80165a2f534c4db5f0`  
-		Last Modified: Sat, 09 May 2026 00:28:39 GMT  
-		Size: 260.8 MB (260845795 bytes)  
+	-	`sha256:c387e19a7e3bbcac16880f4ea89e008900ea6bae1216298925fc5537d08bff41`  
+		Last Modified: Wed, 20 May 2026 03:17:38 GMT  
+		Size: 260.9 MB (260854695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e498dc741510d28c27b31d62caf674ba8faf04daa0c115c801df7431b355d67`  
-		Last Modified: Sat, 09 May 2026 00:28:35 GMT  
-		Size: 195.6 KB (195580 bytes)  
+	-	`sha256:4333fa140cf793552c6a4420ae32072b722775ae8610e5b6f9ee56f48b97edf0`  
+		Last Modified: Wed, 20 May 2026 03:17:33 GMT  
+		Size: 195.7 KB (195676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51119868c131de3f193467edd127cc4bfe1e2aa0a300136dd72b5f72c0a3ef78`  
-		Last Modified: Sat, 09 May 2026 00:28:35 GMT  
+	-	`sha256:fb341f924bab48c4065cbc03499b642ef6fe66efbcfc045f440fbb76563db84e`  
+		Last Modified: Wed, 20 May 2026 03:17:33 GMT  
 		Size: 824.6 KB (824637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e5955be9f32fa832c0acf4ad45464776c1ab44c4eb06545904319a4d4eb178b`  
-		Last Modified: Sat, 09 May 2026 04:22:51 GMT  
-		Size: 7.8 MB (7775533 bytes)  
+	-	`sha256:4d374f1c048d64d8c82877e476c163beb6cccbd3879b1d3ff5b3162a470ce702`  
+		Last Modified: Wed, 20 May 2026 07:00:52 GMT  
+		Size: 7.8 MB (7775490 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elixir:otp-27` - unknown; unknown
 
 ```console
-$ docker pull elixir@sha256:96ba1992fd6b6e40d57f98285fd91af2b4f24c8c24b8c931e81d865dd5711f0f
+$ docker pull elixir@sha256:59b6d647c623a36fc0c63a158364ca34275a710ec5fcafedbd1caafbbadd46e1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.6 MB (23555965 bytes)**  
+-	Total Size: **23.6 MB (23554525 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6412bda688702e563606d47ecad0622a55ce2f647aee9e5479ee862a410cf9d2`
+-	Image ID: `sha256:00960495403f7655467bbe964fe8a8fe6cd702808651979ef076342e23fde3d9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4491583f8baaf3c294ab6e52a2b7401c72284002f9f386ac8268db400227a840`  
-		Last Modified: Sat, 09 May 2026 04:22:51 GMT  
-		Size: 23.5 MB (23545587 bytes)  
+	-	`sha256:6e4714711abd3e6d699c635d3973bc5566bd2b018abb415e19e13faf8b561be3`  
+		Last Modified: Wed, 20 May 2026 07:00:50 GMT  
+		Size: 23.5 MB (23544147 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4faafa31539fe2663164226871695b0c716d2bbb6886ffe1ecd91a7b3899eae2`  
-		Last Modified: Sat, 09 May 2026 04:22:51 GMT  
+	-	`sha256:4eda0718037bd7b030f1599ae7a7d01d9d31a842ce7dea6e95162b0367bb3c5e`  
+		Last Modified: Wed, 20 May 2026 07:00:49 GMT  
 		Size: 10.4 KB (10378 bytes)  
 		MIME: application/vnd.in-toto+json
