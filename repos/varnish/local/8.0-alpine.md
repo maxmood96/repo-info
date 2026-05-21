@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:791bb19331c2b2bdffebd848babfd121a6021d9427e2c6f475f99a072a619ee8`
-- Created: `2026-04-15T20:24:24.034733859Z`
-- Virtual Size: ~ 227.73 Mb  
+- Image ID: `sha256:01ea455493f4db66379e0f72bf70d9dded0fe1a84a6bc380c4a82f34325b7033`
+- Created: `2026-05-19T16:51:32.468446691Z`
+- Virtual Size: ~ 229.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-varnish-entrypoint"]`
@@ -580,16 +580,16 @@ GPL-2.0-only
 ### `apk` package: `varnish`
 
 ```console
-varnish-8.0.1-r1 description:
+varnish-8.0.2-r1 description:
 High-performance HTTP accelerator
 
-varnish-8.0.1-r1 webpage:
+varnish-8.0.2-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-8.0.1-r1 installed size:
-2333 KiB
+varnish-8.0.2-r1 installed size:
+2350 KiB
 
-varnish-8.0.1-r1 license:
+varnish-8.0.2-r1 license:
 BSD
 
 ```
@@ -597,16 +597,16 @@ BSD
 ### `apk` package: `varnish-dbg`
 
 ```console
-varnish-dbg-8.0.1-r1 description:
+varnish-dbg-8.0.2-r1 description:
 High-performance HTTP accelerator (debug symbols)
 
-varnish-dbg-8.0.1-r1 webpage:
+varnish-dbg-8.0.2-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-dbg-8.0.1-r1 installed size:
-5506 KiB
+varnish-dbg-8.0.2-r1 installed size:
+5514 KiB
 
-varnish-dbg-8.0.1-r1 license:
+varnish-dbg-8.0.2-r1 license:
 BSD
 
 ```
@@ -614,16 +614,16 @@ BSD
 ### `apk` package: `varnish-dev`
 
 ```console
-varnish-dev-8.0.1-r1 description:
+varnish-dev-8.0.2-r1 description:
 High-performance HTTP accelerator (development files)
 
-varnish-dev-8.0.1-r1 webpage:
+varnish-dev-8.0.2-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-dev-8.0.1-r1 installed size:
+varnish-dev-8.0.2-r1 installed size:
 491 KiB
 
-varnish-dev-8.0.1-r1 license:
+varnish-dev-8.0.2-r1 license:
 BSD
 
 ```
@@ -631,16 +631,16 @@ BSD
 ### `apk` package: `varnish-doc`
 
 ```console
-varnish-doc-8.0.1-r1 description:
+varnish-doc-8.0.2-r1 description:
 High-performance HTTP accelerator (documentation)
 
-varnish-doc-8.0.1-r1 webpage:
+varnish-doc-8.0.2-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-doc-8.0.1-r1 installed size:
+varnish-doc-8.0.2-r1 installed size:
 155 KiB
 
-varnish-doc-8.0.1-r1 license:
+varnish-doc-8.0.2-r1 license:
 BSD
 
 ```
@@ -648,16 +648,16 @@ BSD
 ### `apk` package: `varnish-libs`
 
 ```console
-varnish-libs-8.0.1-r1 description:
+varnish-libs-8.0.2-r1 description:
 High-performance HTTP accelerator (libraries)
 
-varnish-libs-8.0.1-r1 webpage:
+varnish-libs-8.0.2-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-libs-8.0.1-r1 installed size:
+varnish-libs-8.0.2-r1 installed size:
 194 KiB
 
-varnish-libs-8.0.1-r1 license:
+varnish-libs-8.0.2-r1 license:
 BSD
 
 ```
@@ -665,16 +665,16 @@ BSD
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.2-r0 description:
+xz-libs-5.8.3-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.2-r0 webpage:
+xz-libs-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.2-r0 installed size:
+xz-libs-5.8.3-r0 installed size:
 221 KiB
 
-xz-libs-5.8.2-r0 license:
+xz-libs-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
