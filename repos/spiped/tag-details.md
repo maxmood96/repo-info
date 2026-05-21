@@ -14,7 +14,7 @@
 ## `spiped:1`
 
 ```console
-$ docker pull spiped@sha256:6a4d0d7497c3b4bdf4d7521246b06be3d530b99eeb37070cb6150e457276b84f
+$ docker pull spiped@sha256:0f60e5942be09ebd28d69478b060404c299a3df492d0016eadd250cb2c3da71b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -555,86 +555,86 @@ $ docker pull spiped@sha256:2bd51c169e48cb9147517fd8e1e86eb52610dbbdd141f744888a
 ### `spiped:1` - linux; riscv64
 
 ```console
-$ docker pull spiped@sha256:90180d65027b73c0fd5d78bf62472f7f9ec9d403dccbb62a4d00418be9e4370a
+$ docker pull spiped@sha256:c0dd914c82e232d073726e0ca78e133612a6fe6a408488c59c4e6011b2311a18
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.6 MB (37638760 bytes)**  
+-	Total Size: **37.6 MB (37635771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffb4f99d442e4d5562770ad3396e47716c5321a6ceafc2b8844e4dafb807dc5a`
+-	Image ID: `sha256:ea12b588a29e2fb3783a477323ec17c56795c23fe4457e93afbdc19713146697`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["spiped"]`
 
 ```dockerfile
-# Tue, 05 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1777939200'
-# Sun, 10 May 2026 23:35:56 GMT
+# Mon, 18 May 2026 00:00:00 GMT
+RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1779062400'
+# Thu, 21 May 2026 13:47:35 GMT
 RUN set -x &&	groupadd -r spiped &&	useradd -r -g spiped spiped # buildkit
-# Sun, 10 May 2026 23:36:26 GMT
+# Thu, 21 May 2026 13:48:05 GMT
 RUN export DEBIAN_FRONTEND="noninteractive" &&	set -x &&	apt-get update &&	apt-get install -y libssl3t64 --no-install-recommends &&	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 May 2026 23:39:31 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 ENV SPIPED_VERSION=1.6.4 SPIPED_DOWNLOAD_SHA256=424fb4d3769d912b04de43d21cc32748cdfd3121c4f1d26d549992a54678e06a
-# Sun, 10 May 2026 23:39:31 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 RUN export DEBIAN_FRONTEND="noninteractive" &&	set -x &&	buildDeps='libssl-dev libc-dev gcc make curl ca-certificates' &&	apt-get update &&	apt-get install -y $buildDeps --no-install-recommends &&	rm -rf /var/lib/apt/lists/* &&	curl -fsSL "https://www.tarsnap.com/spiped/spiped-$SPIPED_VERSION.tgz" -o spiped.tar.gz &&	echo "$SPIPED_DOWNLOAD_SHA256 *spiped.tar.gz" |sha256sum -c - &&	mkdir -p /usr/local/src/spiped &&	tar xzf "spiped.tar.gz" -C /usr/local/src/spiped --strip-components=1 &&	rm "spiped.tar.gz" &&	CC=gcc make -C /usr/local/src/spiped &&	make -C /usr/local/src/spiped install &&	rm -rf /usr/local/src/spiped &&	apt-get purge -y --auto-remove $buildDeps # buildkit
-# Sun, 10 May 2026 23:39:31 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 VOLUME [/spiped]
-# Sun, 10 May 2026 23:39:31 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 WORKDIR /spiped
-# Sun, 10 May 2026 23:39:32 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 COPY *.sh /usr/local/bin/ # buildkit
-# Sun, 10 May 2026 23:39:32 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sun, 10 May 2026 23:39:32 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 CMD ["spiped"]
 ```
 
 -	Layers:
-	-	`sha256:1e9edef871271ebe58c5a713c7c062e88ff414be0976a2c7baf0aba83823c954`  
-		Last Modified: Fri, 08 May 2026 20:38:39 GMT  
-		Size: 28.3 MB (28280232 bytes)  
+	-	`sha256:58bbe80817efb8a686096088d2ce9bfdbe0120904c9ea14d905c0e6d847d3ffd`  
+		Last Modified: Tue, 19 May 2026 23:51:26 GMT  
+		Size: 28.3 MB (28277598 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1f82137ea422cd6082e447af165202e10929ef6b4fdc87f33500927e1699b8d`  
-		Last Modified: Sun, 10 May 2026 23:40:44 GMT  
-		Size: 1.1 KB (1110 bytes)  
+	-	`sha256:7c0d759dc945cb64b5d198942cb84603d5eeabacdb7305831a9b664f22a64bcf`  
+		Last Modified: Thu, 21 May 2026 13:52:23 GMT  
+		Size: 1.1 KB (1107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e92e44c5d8f49e0a362d0d38bf560472fa5002401c14f6cf7e1181aa7cc9703f`  
-		Last Modified: Sun, 10 May 2026 23:40:44 GMT  
-		Size: 826.0 B  
+	-	`sha256:552b6c174b8b91b3f2d11f01af83cf00a24b53858a06a2608db1f3463763c06f`  
+		Last Modified: Thu, 21 May 2026 13:52:23 GMT  
+		Size: 821.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:993b558da9b151d4ff1f162b2abd3c467a1d72f11360395a6823556182f0c2a1`  
-		Last Modified: Sun, 10 May 2026 23:40:46 GMT  
-		Size: 9.4 MB (9356155 bytes)  
+	-	`sha256:03e34ce66007b893eef9e87e4fae3b1b123924570f9405295e1693cbd5af4d1b`  
+		Last Modified: Thu, 21 May 2026 13:52:24 GMT  
+		Size: 9.4 MB (9355811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ed8744f9372572283e03c3d977f57335707916b2947126043d5d7a2818c6b1c`  
-		Last Modified: Sun, 10 May 2026 23:40:44 GMT  
+	-	`sha256:137890eabe046f8b6920192b2d61264806264e6fa78791c648f973d145ec2586`  
+		Last Modified: Thu, 21 May 2026 13:52:23 GMT  
 		Size: 96.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac1d4d5b8e0a24dbb053e3acf7bd5ad572642633abf73aef59f9f96dd4afa3aa`  
-		Last Modified: Sun, 10 May 2026 23:40:46 GMT  
-		Size: 341.0 B  
+	-	`sha256:2b913c1cc7d40f0c85e8007c95750f54b4ff2252d9b628af9105f1a3055b3694`  
+		Last Modified: Thu, 21 May 2026 13:52:24 GMT  
+		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `spiped:1` - unknown; unknown
 
 ```console
-$ docker pull spiped@sha256:9349aacf72c6de98278a51cc37ea38939613c570bd4c1c89f9594022f09a515e
+$ docker pull spiped@sha256:991ccea4611beadc1f761955a56087a9f544df058ab92ab0d0712e0962fcecfb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3628433 bytes)**  
+-	Total Size: **3.6 MB (3628475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:deda3f9d5e84193498a9929e6850e98e14cb8e99b13d1269f84b18da5d73231c`
+-	Image ID: `sha256:c2407ea2dfb4fb62fa298d9db85dcff61990e81fa94f3c53419c0521d4870814`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c549c092f97c0f9b550dd60f4f94b4e2caa78a25c6428178d2f78f491a05beef`  
-		Last Modified: Sun, 10 May 2026 23:40:45 GMT  
-		Size: 3.6 MB (3613403 bytes)  
+	-	`sha256:bfbac7e48ba4d5cf7d15329157e8ff7353b85390ee7b212ea65f2f38d8dd1f31`  
+		Last Modified: Thu, 21 May 2026 13:52:23 GMT  
+		Size: 3.6 MB (3613445 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:672f0a8c45ca69150656fe87537b96e929e4761242e8a08e1d3bc394cba09510`  
-		Last Modified: Sun, 10 May 2026 23:40:44 GMT  
+	-	`sha256:081089415d9fe2decd69544e5cf3d92398941be3787656a5a6eff09cccebfc63`  
+		Last Modified: Thu, 21 May 2026 13:52:22 GMT  
 		Size: 15.0 KB (15030 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1452,7 +1452,7 @@ $ docker pull spiped@sha256:3a63421a60ad516e8ae99df7c008ce97158220da99f3e592d909
 ## `spiped:1.6`
 
 ```console
-$ docker pull spiped@sha256:6a4d0d7497c3b4bdf4d7521246b06be3d530b99eeb37070cb6150e457276b84f
+$ docker pull spiped@sha256:0f60e5942be09ebd28d69478b060404c299a3df492d0016eadd250cb2c3da71b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1993,86 +1993,86 @@ $ docker pull spiped@sha256:2bd51c169e48cb9147517fd8e1e86eb52610dbbdd141f744888a
 ### `spiped:1.6` - linux; riscv64
 
 ```console
-$ docker pull spiped@sha256:90180d65027b73c0fd5d78bf62472f7f9ec9d403dccbb62a4d00418be9e4370a
+$ docker pull spiped@sha256:c0dd914c82e232d073726e0ca78e133612a6fe6a408488c59c4e6011b2311a18
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.6 MB (37638760 bytes)**  
+-	Total Size: **37.6 MB (37635771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffb4f99d442e4d5562770ad3396e47716c5321a6ceafc2b8844e4dafb807dc5a`
+-	Image ID: `sha256:ea12b588a29e2fb3783a477323ec17c56795c23fe4457e93afbdc19713146697`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["spiped"]`
 
 ```dockerfile
-# Tue, 05 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1777939200'
-# Sun, 10 May 2026 23:35:56 GMT
+# Mon, 18 May 2026 00:00:00 GMT
+RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1779062400'
+# Thu, 21 May 2026 13:47:35 GMT
 RUN set -x &&	groupadd -r spiped &&	useradd -r -g spiped spiped # buildkit
-# Sun, 10 May 2026 23:36:26 GMT
+# Thu, 21 May 2026 13:48:05 GMT
 RUN export DEBIAN_FRONTEND="noninteractive" &&	set -x &&	apt-get update &&	apt-get install -y libssl3t64 --no-install-recommends &&	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 May 2026 23:39:31 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 ENV SPIPED_VERSION=1.6.4 SPIPED_DOWNLOAD_SHA256=424fb4d3769d912b04de43d21cc32748cdfd3121c4f1d26d549992a54678e06a
-# Sun, 10 May 2026 23:39:31 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 RUN export DEBIAN_FRONTEND="noninteractive" &&	set -x &&	buildDeps='libssl-dev libc-dev gcc make curl ca-certificates' &&	apt-get update &&	apt-get install -y $buildDeps --no-install-recommends &&	rm -rf /var/lib/apt/lists/* &&	curl -fsSL "https://www.tarsnap.com/spiped/spiped-$SPIPED_VERSION.tgz" -o spiped.tar.gz &&	echo "$SPIPED_DOWNLOAD_SHA256 *spiped.tar.gz" |sha256sum -c - &&	mkdir -p /usr/local/src/spiped &&	tar xzf "spiped.tar.gz" -C /usr/local/src/spiped --strip-components=1 &&	rm "spiped.tar.gz" &&	CC=gcc make -C /usr/local/src/spiped &&	make -C /usr/local/src/spiped install &&	rm -rf /usr/local/src/spiped &&	apt-get purge -y --auto-remove $buildDeps # buildkit
-# Sun, 10 May 2026 23:39:31 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 VOLUME [/spiped]
-# Sun, 10 May 2026 23:39:31 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 WORKDIR /spiped
-# Sun, 10 May 2026 23:39:32 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 COPY *.sh /usr/local/bin/ # buildkit
-# Sun, 10 May 2026 23:39:32 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sun, 10 May 2026 23:39:32 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 CMD ["spiped"]
 ```
 
 -	Layers:
-	-	`sha256:1e9edef871271ebe58c5a713c7c062e88ff414be0976a2c7baf0aba83823c954`  
-		Last Modified: Fri, 08 May 2026 20:38:39 GMT  
-		Size: 28.3 MB (28280232 bytes)  
+	-	`sha256:58bbe80817efb8a686096088d2ce9bfdbe0120904c9ea14d905c0e6d847d3ffd`  
+		Last Modified: Tue, 19 May 2026 23:51:26 GMT  
+		Size: 28.3 MB (28277598 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1f82137ea422cd6082e447af165202e10929ef6b4fdc87f33500927e1699b8d`  
-		Last Modified: Sun, 10 May 2026 23:40:44 GMT  
-		Size: 1.1 KB (1110 bytes)  
+	-	`sha256:7c0d759dc945cb64b5d198942cb84603d5eeabacdb7305831a9b664f22a64bcf`  
+		Last Modified: Thu, 21 May 2026 13:52:23 GMT  
+		Size: 1.1 KB (1107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e92e44c5d8f49e0a362d0d38bf560472fa5002401c14f6cf7e1181aa7cc9703f`  
-		Last Modified: Sun, 10 May 2026 23:40:44 GMT  
-		Size: 826.0 B  
+	-	`sha256:552b6c174b8b91b3f2d11f01af83cf00a24b53858a06a2608db1f3463763c06f`  
+		Last Modified: Thu, 21 May 2026 13:52:23 GMT  
+		Size: 821.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:993b558da9b151d4ff1f162b2abd3c467a1d72f11360395a6823556182f0c2a1`  
-		Last Modified: Sun, 10 May 2026 23:40:46 GMT  
-		Size: 9.4 MB (9356155 bytes)  
+	-	`sha256:03e34ce66007b893eef9e87e4fae3b1b123924570f9405295e1693cbd5af4d1b`  
+		Last Modified: Thu, 21 May 2026 13:52:24 GMT  
+		Size: 9.4 MB (9355811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ed8744f9372572283e03c3d977f57335707916b2947126043d5d7a2818c6b1c`  
-		Last Modified: Sun, 10 May 2026 23:40:44 GMT  
+	-	`sha256:137890eabe046f8b6920192b2d61264806264e6fa78791c648f973d145ec2586`  
+		Last Modified: Thu, 21 May 2026 13:52:23 GMT  
 		Size: 96.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac1d4d5b8e0a24dbb053e3acf7bd5ad572642633abf73aef59f9f96dd4afa3aa`  
-		Last Modified: Sun, 10 May 2026 23:40:46 GMT  
-		Size: 341.0 B  
+	-	`sha256:2b913c1cc7d40f0c85e8007c95750f54b4ff2252d9b628af9105f1a3055b3694`  
+		Last Modified: Thu, 21 May 2026 13:52:24 GMT  
+		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `spiped:1.6` - unknown; unknown
 
 ```console
-$ docker pull spiped@sha256:9349aacf72c6de98278a51cc37ea38939613c570bd4c1c89f9594022f09a515e
+$ docker pull spiped@sha256:991ccea4611beadc1f761955a56087a9f544df058ab92ab0d0712e0962fcecfb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3628433 bytes)**  
+-	Total Size: **3.6 MB (3628475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:deda3f9d5e84193498a9929e6850e98e14cb8e99b13d1269f84b18da5d73231c`
+-	Image ID: `sha256:c2407ea2dfb4fb62fa298d9db85dcff61990e81fa94f3c53419c0521d4870814`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c549c092f97c0f9b550dd60f4f94b4e2caa78a25c6428178d2f78f491a05beef`  
-		Last Modified: Sun, 10 May 2026 23:40:45 GMT  
-		Size: 3.6 MB (3613403 bytes)  
+	-	`sha256:bfbac7e48ba4d5cf7d15329157e8ff7353b85390ee7b212ea65f2f38d8dd1f31`  
+		Last Modified: Thu, 21 May 2026 13:52:23 GMT  
+		Size: 3.6 MB (3613445 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:672f0a8c45ca69150656fe87537b96e929e4761242e8a08e1d3bc394cba09510`  
-		Last Modified: Sun, 10 May 2026 23:40:44 GMT  
+	-	`sha256:081089415d9fe2decd69544e5cf3d92398941be3787656a5a6eff09cccebfc63`  
+		Last Modified: Thu, 21 May 2026 13:52:22 GMT  
 		Size: 15.0 KB (15030 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2890,7 +2890,7 @@ $ docker pull spiped@sha256:3a63421a60ad516e8ae99df7c008ce97158220da99f3e592d909
 ## `spiped:1.6.4`
 
 ```console
-$ docker pull spiped@sha256:6a4d0d7497c3b4bdf4d7521246b06be3d530b99eeb37070cb6150e457276b84f
+$ docker pull spiped@sha256:0f60e5942be09ebd28d69478b060404c299a3df492d0016eadd250cb2c3da71b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3431,86 +3431,86 @@ $ docker pull spiped@sha256:2bd51c169e48cb9147517fd8e1e86eb52610dbbdd141f744888a
 ### `spiped:1.6.4` - linux; riscv64
 
 ```console
-$ docker pull spiped@sha256:90180d65027b73c0fd5d78bf62472f7f9ec9d403dccbb62a4d00418be9e4370a
+$ docker pull spiped@sha256:c0dd914c82e232d073726e0ca78e133612a6fe6a408488c59c4e6011b2311a18
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.6 MB (37638760 bytes)**  
+-	Total Size: **37.6 MB (37635771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffb4f99d442e4d5562770ad3396e47716c5321a6ceafc2b8844e4dafb807dc5a`
+-	Image ID: `sha256:ea12b588a29e2fb3783a477323ec17c56795c23fe4457e93afbdc19713146697`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["spiped"]`
 
 ```dockerfile
-# Tue, 05 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1777939200'
-# Sun, 10 May 2026 23:35:56 GMT
+# Mon, 18 May 2026 00:00:00 GMT
+RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1779062400'
+# Thu, 21 May 2026 13:47:35 GMT
 RUN set -x &&	groupadd -r spiped &&	useradd -r -g spiped spiped # buildkit
-# Sun, 10 May 2026 23:36:26 GMT
+# Thu, 21 May 2026 13:48:05 GMT
 RUN export DEBIAN_FRONTEND="noninteractive" &&	set -x &&	apt-get update &&	apt-get install -y libssl3t64 --no-install-recommends &&	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 May 2026 23:39:31 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 ENV SPIPED_VERSION=1.6.4 SPIPED_DOWNLOAD_SHA256=424fb4d3769d912b04de43d21cc32748cdfd3121c4f1d26d549992a54678e06a
-# Sun, 10 May 2026 23:39:31 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 RUN export DEBIAN_FRONTEND="noninteractive" &&	set -x &&	buildDeps='libssl-dev libc-dev gcc make curl ca-certificates' &&	apt-get update &&	apt-get install -y $buildDeps --no-install-recommends &&	rm -rf /var/lib/apt/lists/* &&	curl -fsSL "https://www.tarsnap.com/spiped/spiped-$SPIPED_VERSION.tgz" -o spiped.tar.gz &&	echo "$SPIPED_DOWNLOAD_SHA256 *spiped.tar.gz" |sha256sum -c - &&	mkdir -p /usr/local/src/spiped &&	tar xzf "spiped.tar.gz" -C /usr/local/src/spiped --strip-components=1 &&	rm "spiped.tar.gz" &&	CC=gcc make -C /usr/local/src/spiped &&	make -C /usr/local/src/spiped install &&	rm -rf /usr/local/src/spiped &&	apt-get purge -y --auto-remove $buildDeps # buildkit
-# Sun, 10 May 2026 23:39:31 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 VOLUME [/spiped]
-# Sun, 10 May 2026 23:39:31 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 WORKDIR /spiped
-# Sun, 10 May 2026 23:39:32 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 COPY *.sh /usr/local/bin/ # buildkit
-# Sun, 10 May 2026 23:39:32 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sun, 10 May 2026 23:39:32 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 CMD ["spiped"]
 ```
 
 -	Layers:
-	-	`sha256:1e9edef871271ebe58c5a713c7c062e88ff414be0976a2c7baf0aba83823c954`  
-		Last Modified: Fri, 08 May 2026 20:38:39 GMT  
-		Size: 28.3 MB (28280232 bytes)  
+	-	`sha256:58bbe80817efb8a686096088d2ce9bfdbe0120904c9ea14d905c0e6d847d3ffd`  
+		Last Modified: Tue, 19 May 2026 23:51:26 GMT  
+		Size: 28.3 MB (28277598 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1f82137ea422cd6082e447af165202e10929ef6b4fdc87f33500927e1699b8d`  
-		Last Modified: Sun, 10 May 2026 23:40:44 GMT  
-		Size: 1.1 KB (1110 bytes)  
+	-	`sha256:7c0d759dc945cb64b5d198942cb84603d5eeabacdb7305831a9b664f22a64bcf`  
+		Last Modified: Thu, 21 May 2026 13:52:23 GMT  
+		Size: 1.1 KB (1107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e92e44c5d8f49e0a362d0d38bf560472fa5002401c14f6cf7e1181aa7cc9703f`  
-		Last Modified: Sun, 10 May 2026 23:40:44 GMT  
-		Size: 826.0 B  
+	-	`sha256:552b6c174b8b91b3f2d11f01af83cf00a24b53858a06a2608db1f3463763c06f`  
+		Last Modified: Thu, 21 May 2026 13:52:23 GMT  
+		Size: 821.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:993b558da9b151d4ff1f162b2abd3c467a1d72f11360395a6823556182f0c2a1`  
-		Last Modified: Sun, 10 May 2026 23:40:46 GMT  
-		Size: 9.4 MB (9356155 bytes)  
+	-	`sha256:03e34ce66007b893eef9e87e4fae3b1b123924570f9405295e1693cbd5af4d1b`  
+		Last Modified: Thu, 21 May 2026 13:52:24 GMT  
+		Size: 9.4 MB (9355811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ed8744f9372572283e03c3d977f57335707916b2947126043d5d7a2818c6b1c`  
-		Last Modified: Sun, 10 May 2026 23:40:44 GMT  
+	-	`sha256:137890eabe046f8b6920192b2d61264806264e6fa78791c648f973d145ec2586`  
+		Last Modified: Thu, 21 May 2026 13:52:23 GMT  
 		Size: 96.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac1d4d5b8e0a24dbb053e3acf7bd5ad572642633abf73aef59f9f96dd4afa3aa`  
-		Last Modified: Sun, 10 May 2026 23:40:46 GMT  
-		Size: 341.0 B  
+	-	`sha256:2b913c1cc7d40f0c85e8007c95750f54b4ff2252d9b628af9105f1a3055b3694`  
+		Last Modified: Thu, 21 May 2026 13:52:24 GMT  
+		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `spiped:1.6.4` - unknown; unknown
 
 ```console
-$ docker pull spiped@sha256:9349aacf72c6de98278a51cc37ea38939613c570bd4c1c89f9594022f09a515e
+$ docker pull spiped@sha256:991ccea4611beadc1f761955a56087a9f544df058ab92ab0d0712e0962fcecfb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3628433 bytes)**  
+-	Total Size: **3.6 MB (3628475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:deda3f9d5e84193498a9929e6850e98e14cb8e99b13d1269f84b18da5d73231c`
+-	Image ID: `sha256:c2407ea2dfb4fb62fa298d9db85dcff61990e81fa94f3c53419c0521d4870814`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c549c092f97c0f9b550dd60f4f94b4e2caa78a25c6428178d2f78f491a05beef`  
-		Last Modified: Sun, 10 May 2026 23:40:45 GMT  
-		Size: 3.6 MB (3613403 bytes)  
+	-	`sha256:bfbac7e48ba4d5cf7d15329157e8ff7353b85390ee7b212ea65f2f38d8dd1f31`  
+		Last Modified: Thu, 21 May 2026 13:52:23 GMT  
+		Size: 3.6 MB (3613445 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:672f0a8c45ca69150656fe87537b96e929e4761242e8a08e1d3bc394cba09510`  
-		Last Modified: Sun, 10 May 2026 23:40:44 GMT  
+	-	`sha256:081089415d9fe2decd69544e5cf3d92398941be3787656a5a6eff09cccebfc63`  
+		Last Modified: Thu, 21 May 2026 13:52:22 GMT  
 		Size: 15.0 KB (15030 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5053,7 +5053,7 @@ $ docker pull spiped@sha256:3a63421a60ad516e8ae99df7c008ce97158220da99f3e592d909
 ## `spiped:latest`
 
 ```console
-$ docker pull spiped@sha256:6a4d0d7497c3b4bdf4d7521246b06be3d530b99eeb37070cb6150e457276b84f
+$ docker pull spiped@sha256:0f60e5942be09ebd28d69478b060404c299a3df492d0016eadd250cb2c3da71b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5594,86 +5594,86 @@ $ docker pull spiped@sha256:2bd51c169e48cb9147517fd8e1e86eb52610dbbdd141f744888a
 ### `spiped:latest` - linux; riscv64
 
 ```console
-$ docker pull spiped@sha256:90180d65027b73c0fd5d78bf62472f7f9ec9d403dccbb62a4d00418be9e4370a
+$ docker pull spiped@sha256:c0dd914c82e232d073726e0ca78e133612a6fe6a408488c59c4e6011b2311a18
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.6 MB (37638760 bytes)**  
+-	Total Size: **37.6 MB (37635771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffb4f99d442e4d5562770ad3396e47716c5321a6ceafc2b8844e4dafb807dc5a`
+-	Image ID: `sha256:ea12b588a29e2fb3783a477323ec17c56795c23fe4457e93afbdc19713146697`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["spiped"]`
 
 ```dockerfile
-# Tue, 05 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1777939200'
-# Sun, 10 May 2026 23:35:56 GMT
+# Mon, 18 May 2026 00:00:00 GMT
+RUN # debian.sh --arch 'riscv64' out/ 'trixie' '@1779062400'
+# Thu, 21 May 2026 13:47:35 GMT
 RUN set -x &&	groupadd -r spiped &&	useradd -r -g spiped spiped # buildkit
-# Sun, 10 May 2026 23:36:26 GMT
+# Thu, 21 May 2026 13:48:05 GMT
 RUN export DEBIAN_FRONTEND="noninteractive" &&	set -x &&	apt-get update &&	apt-get install -y libssl3t64 --no-install-recommends &&	rm -rf /var/lib/apt/lists/* # buildkit
-# Sun, 10 May 2026 23:39:31 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 ENV SPIPED_VERSION=1.6.4 SPIPED_DOWNLOAD_SHA256=424fb4d3769d912b04de43d21cc32748cdfd3121c4f1d26d549992a54678e06a
-# Sun, 10 May 2026 23:39:31 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 RUN export DEBIAN_FRONTEND="noninteractive" &&	set -x &&	buildDeps='libssl-dev libc-dev gcc make curl ca-certificates' &&	apt-get update &&	apt-get install -y $buildDeps --no-install-recommends &&	rm -rf /var/lib/apt/lists/* &&	curl -fsSL "https://www.tarsnap.com/spiped/spiped-$SPIPED_VERSION.tgz" -o spiped.tar.gz &&	echo "$SPIPED_DOWNLOAD_SHA256 *spiped.tar.gz" |sha256sum -c - &&	mkdir -p /usr/local/src/spiped &&	tar xzf "spiped.tar.gz" -C /usr/local/src/spiped --strip-components=1 &&	rm "spiped.tar.gz" &&	CC=gcc make -C /usr/local/src/spiped &&	make -C /usr/local/src/spiped install &&	rm -rf /usr/local/src/spiped &&	apt-get purge -y --auto-remove $buildDeps # buildkit
-# Sun, 10 May 2026 23:39:31 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 VOLUME [/spiped]
-# Sun, 10 May 2026 23:39:31 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 WORKDIR /spiped
-# Sun, 10 May 2026 23:39:32 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 COPY *.sh /usr/local/bin/ # buildkit
-# Sun, 10 May 2026 23:39:32 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sun, 10 May 2026 23:39:32 GMT
+# Thu, 21 May 2026 13:51:10 GMT
 CMD ["spiped"]
 ```
 
 -	Layers:
-	-	`sha256:1e9edef871271ebe58c5a713c7c062e88ff414be0976a2c7baf0aba83823c954`  
-		Last Modified: Fri, 08 May 2026 20:38:39 GMT  
-		Size: 28.3 MB (28280232 bytes)  
+	-	`sha256:58bbe80817efb8a686096088d2ce9bfdbe0120904c9ea14d905c0e6d847d3ffd`  
+		Last Modified: Tue, 19 May 2026 23:51:26 GMT  
+		Size: 28.3 MB (28277598 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1f82137ea422cd6082e447af165202e10929ef6b4fdc87f33500927e1699b8d`  
-		Last Modified: Sun, 10 May 2026 23:40:44 GMT  
-		Size: 1.1 KB (1110 bytes)  
+	-	`sha256:7c0d759dc945cb64b5d198942cb84603d5eeabacdb7305831a9b664f22a64bcf`  
+		Last Modified: Thu, 21 May 2026 13:52:23 GMT  
+		Size: 1.1 KB (1107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e92e44c5d8f49e0a362d0d38bf560472fa5002401c14f6cf7e1181aa7cc9703f`  
-		Last Modified: Sun, 10 May 2026 23:40:44 GMT  
-		Size: 826.0 B  
+	-	`sha256:552b6c174b8b91b3f2d11f01af83cf00a24b53858a06a2608db1f3463763c06f`  
+		Last Modified: Thu, 21 May 2026 13:52:23 GMT  
+		Size: 821.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:993b558da9b151d4ff1f162b2abd3c467a1d72f11360395a6823556182f0c2a1`  
-		Last Modified: Sun, 10 May 2026 23:40:46 GMT  
-		Size: 9.4 MB (9356155 bytes)  
+	-	`sha256:03e34ce66007b893eef9e87e4fae3b1b123924570f9405295e1693cbd5af4d1b`  
+		Last Modified: Thu, 21 May 2026 13:52:24 GMT  
+		Size: 9.4 MB (9355811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ed8744f9372572283e03c3d977f57335707916b2947126043d5d7a2818c6b1c`  
-		Last Modified: Sun, 10 May 2026 23:40:44 GMT  
+	-	`sha256:137890eabe046f8b6920192b2d61264806264e6fa78791c648f973d145ec2586`  
+		Last Modified: Thu, 21 May 2026 13:52:23 GMT  
 		Size: 96.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac1d4d5b8e0a24dbb053e3acf7bd5ad572642633abf73aef59f9f96dd4afa3aa`  
-		Last Modified: Sun, 10 May 2026 23:40:46 GMT  
-		Size: 341.0 B  
+	-	`sha256:2b913c1cc7d40f0c85e8007c95750f54b4ff2252d9b628af9105f1a3055b3694`  
+		Last Modified: Thu, 21 May 2026 13:52:24 GMT  
+		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `spiped:latest` - unknown; unknown
 
 ```console
-$ docker pull spiped@sha256:9349aacf72c6de98278a51cc37ea38939613c570bd4c1c89f9594022f09a515e
+$ docker pull spiped@sha256:991ccea4611beadc1f761955a56087a9f544df058ab92ab0d0712e0962fcecfb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3628433 bytes)**  
+-	Total Size: **3.6 MB (3628475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:deda3f9d5e84193498a9929e6850e98e14cb8e99b13d1269f84b18da5d73231c`
+-	Image ID: `sha256:c2407ea2dfb4fb62fa298d9db85dcff61990e81fa94f3c53419c0521d4870814`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c549c092f97c0f9b550dd60f4f94b4e2caa78a25c6428178d2f78f491a05beef`  
-		Last Modified: Sun, 10 May 2026 23:40:45 GMT  
-		Size: 3.6 MB (3613403 bytes)  
+	-	`sha256:bfbac7e48ba4d5cf7d15329157e8ff7353b85390ee7b212ea65f2f38d8dd1f31`  
+		Last Modified: Thu, 21 May 2026 13:52:23 GMT  
+		Size: 3.6 MB (3613445 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:672f0a8c45ca69150656fe87537b96e929e4761242e8a08e1d3bc394cba09510`  
-		Last Modified: Sun, 10 May 2026 23:40:44 GMT  
+	-	`sha256:081089415d9fe2decd69544e5cf3d92398941be3787656a5a6eff09cccebfc63`  
+		Last Modified: Thu, 21 May 2026 13:52:22 GMT  
 		Size: 15.0 KB (15030 bytes)  
 		MIME: application/vnd.in-toto+json
 
