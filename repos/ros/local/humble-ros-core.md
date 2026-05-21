@@ -866,15 +866,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.7.3-4ubuntu1.8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz' gnutls28_3.7.3.orig.tar.xz 6119292 SHA256:fc59c43bc31ab20a6977ff083029277a31935b8355ce387b634fa433f8f6c49a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz.asc' gnutls28_3.7.3.orig.tar.xz.asc 833 SHA256:a2f95ac5d7dd951bddef01ec9930616dd1a5226173b3dc7896b3bed411c91d9a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.8.debian.tar.xz' gnutls28_3.7.3-4ubuntu1.8.debian.tar.xz 109652 SHA256:c93f629fea192f758e8f28dd664310eedd5c926a5617278251e6428297c53a1e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.8.dsc' gnutls28_3.7.3-4ubuntu1.8.dsc 3575 SHA256:96c27046146d8e3d4641d161126f53cc62f330e8234ac8efa8fcb90747356772
-```
 
 ### `dpkg` source package: `googletest=1.11.0-3`
 
@@ -1085,15 +1079,9 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13/copyright`)
 - `Expat`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.6.0-1ubuntu1.6
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0.orig.tar.xz' libarchive_3.6.0.orig.tar.xz 6400620 SHA512:eeffec08a632cdf55d46b0f4b8261de20128163c39f63422aa5af081c9c5159a9445bca5f89ebaff984d9d5387b5c6901166949df09a2e46fe5adec31bfad0e5
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0.orig.tar.xz.asc' libarchive_3.6.0.orig.tar.xz.asc 833 SHA512:be03f9376eaafa77379ccbbc396602039ba7ac79bf496a5a7f60c847296b8425579d267dc6a96a23c07a65a1a8a8d1cc77fae6deb9dcd3fc2bdfa259b623a8d0
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0-1ubuntu1.6.debian.tar.xz' libarchive_3.6.0-1ubuntu1.6.debian.tar.xz 35832 SHA512:28784797cf1f17b73a6af97f0b8489bf0830170ceae1d02177ce216e702224bd9b237d8e027a5a430ee299fd70236f39e72fa7df6577bc3c4a6807aee95cbdb0
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.6.0-1ubuntu1.6.dsc' libarchive_3.6.0-1ubuntu1.6.dsc 2668 SHA512:d2a09d5fd4fc688215ef1003c0bc6fd53db46e1d1d748bd35528075953263c0b15030a5a039f8e7eb86aae334d8171fb8c93c353b1dfd2ba2a4b24d3201806d1
-```
 
 ### `dpkg` source package: `libassuan=2.5.5-1build1`
 

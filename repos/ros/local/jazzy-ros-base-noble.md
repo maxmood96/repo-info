@@ -1522,15 +1522,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.3-1.1ubuntu3.5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3.orig.tar.xz' gnutls28_3.8.3.orig.tar.xz 6463720 SHA256:f74fc5954b27d4ec6dfbb11dea987888b5b124289a3703afcada0ee520f4173e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3.orig.tar.xz.asc' gnutls28_3.8.3.orig.tar.xz.asc 854 SHA256:b2b90d225728890b0e2aa7c05e5f25f8ba1282821b46e72cd99f0c732b639cef
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3-1.1ubuntu3.5.debian.tar.xz' gnutls28_3.8.3-1.1ubuntu3.5.debian.tar.xz 109884 SHA256:d3ae87f0d815bed4f8f5547b8e38d97d8e875759d18ccc0cd65f1c97161d997d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3-1.1ubuntu3.5.dsc' gnutls28_3.8.3-1.1ubuntu3.5.dsc 3397 SHA256:6b041109100adb6b1a2acaa0bc5727b4fd2c95b980a885db5ae29c761c10cec4
-```
 
 ### `dpkg` source package: `googletest=1.14.0-1`
 
@@ -1959,15 +1953,9 @@ Licenses: (parsed from: `/usr/share/doc/libarchive13t64/copyright`)
 - `OpenSSL+SSLeay`
 - `PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libarchive=3.7.2-2ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2.orig.tar.xz' libarchive_3.7.2.orig.tar.xz 5237056 SHA512:a21bebb27b808cb7d2ed13a70739904a1b7b55661d8dea83c9897a0129cf71e20c962f13666c571782ff0f4f753ca885619c2097d9e7691c2dee4e6e4b9a2971
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2.orig.tar.xz.asc' libarchive_3.7.2.orig.tar.xz.asc 659 SHA512:c2ce850088245d7723720737d74d1cc1819984d01b3f9e4ed96b0757f4c6d6d511b78792181a12400c563632d74edcd0c2c3a4b7527cba40ada7ef74488078fc
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2-2ubuntu0.6.debian.tar.xz' libarchive_3.7.2-2ubuntu0.6.debian.tar.xz 38028 SHA512:61ad04e7c320b27130bc8cbd930e43e6874028b13ae059e1580461a4e7f904d58c2d800221f57d81a2fe956579e87a9b3045f79bc4ab44eb944f440ece06283e
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libarchive/libarchive_3.7.2-2ubuntu0.6.dsc' libarchive_3.7.2-2ubuntu0.6.dsc 2733 SHA512:1391a0262aace597c13c9ca49ab66bf962edc2a119a726271a9d11d3469cd664881b8e5e18ab3e0a0368f2b44e12ebc3a80a417530bf37ab86f142afb71b08cf
-```
 
 ### `dpkg` source package: `libassuan=2.5.6-1build1`
 
@@ -3087,14 +3075,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.8.0-111.111
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-111.111.diff.gz' linux_6.8.0-111.111.diff.gz 7804315 SHA512:092b2bd57247988b5e70e782b7523704822c9a83b71709bf8edb9212ef964f324a06d15895f14c92d4634c439cbc3e132e68e83bbbdd66e987fa959d239f2766
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-111.111.dsc' linux_6.8.0-111.111.dsc 9448 SHA512:c9812a7d908a5d1bd96829d248c8e07ee593b279c823222bd7f7394c6887e1b3c37917842754cff558586c1662c01a21d22d0654e3f01ea9220e9ec8e8f6ce37
-```
 
 ### `dpkg` source package: `lsb-release-minimal=12.0-2`
 
