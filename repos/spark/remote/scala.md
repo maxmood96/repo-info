@@ -1,7 +1,7 @@
 ## `spark:scala`
 
 ```console
-$ docker pull spark@sha256:a5fbe1182f959fa749a5e07cb622947a2faa5b73672ae804ad1dac98bf5912e9
+$ docker pull spark@sha256:7fdccdd28548b3754319cbcac88f43475b900fc4af0264a2676af461c238baec
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull spark@sha256:a5fbe1182f959fa749a5e07cb622947a2faa5b73672ae804ad1da
 ### `spark:scala` - linux; amd64
 
 ```console
-$ docker pull spark@sha256:b052a172259fce908ed4cf43cb06ea0117c1307c9d59e72ce03fe0d8fbc88eb4
+$ docker pull spark@sha256:cbd82a91b1e79bd0e1f0072e89c2177a1233dbdc858b8debf6b5f13d9051110b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **681.1 MB (681131071 bytes)**  
+-	Total Size: **681.2 MB (681204749 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d3e81a1110831373bb7b6da156ca28965ff18c61f41c3ff8d2a2636f9245967`
+-	Image ID: `sha256:5dfcd88d01f07f33560ddf290f3469494bcac0dc9db5ca0f90366d29baff5c84`
 -	Entrypoint: `["\/opt\/entrypoint.sh"]`
 
 ```dockerfile
@@ -54,28 +54,28 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 15 May 2026 21:15:55 GMT
 CMD ["jshell"]
-# Fri, 15 May 2026 21:47:40 GMT
+# Fri, 22 May 2026 18:26:37 GMT
 ARG spark_uid=185
-# Fri, 15 May 2026 21:47:40 GMT
+# Fri, 22 May 2026 18:26:37 GMT
 # ARGS: spark_uid=185
 RUN groupadd --system --gid=${spark_uid} spark &&     useradd --system --uid=${spark_uid} --gid=spark -d /nonexistent spark # buildkit
-# Fri, 15 May 2026 21:47:47 GMT
+# Fri, 22 May 2026 18:26:43 GMT
 # ARGS: spark_uid=185
 RUN set -ex;     apt-get update;     apt-get install -y gnupg2 wget bash tini libc6 libpam-modules krb5-user libnss3 procps net-tools gosu libnss-wrapper;     mkdir -p /opt/spark;     mkdir /opt/spark/python;     mkdir -p /opt/spark/examples;     mkdir -p /opt/spark/work-dir;     chmod g+w /opt/spark/work-dir;     touch /opt/spark/RELEASE;     chown -R spark:spark /opt/spark;     echo "auth required pam_wheel.so use_uid" >> /etc/pam.d/su;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 15 May 2026 21:47:47 GMT
-ENV SPARK_TGZ_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.1.1/spark-4.1.1-bin-hadoop3.tgz?action=download SPARK_TGZ_ASC_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.1.1/spark-4.1.1-bin-hadoop3.tgz.asc?action=download GPG_KEY=0FE4571297AB84440673665669600C8338F65970
-# Fri, 15 May 2026 21:48:30 GMT
+# Fri, 22 May 2026 18:26:43 GMT
+ENV SPARK_TGZ_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.1.2/spark-4.1.2-bin-hadoop3.tgz?action=download SPARK_TGZ_ASC_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.1.2/spark-4.1.2-bin-hadoop3.tgz.asc?action=download GPG_KEY=564CA14951C29266889F9C5B90E2BA86F7A9B307
+# Fri, 22 May 2026 18:27:07 GMT
 # ARGS: spark_uid=185
 RUN set -ex;     export SPARK_TMP="$(mktemp -d)";     cd $SPARK_TMP;     wget -nv -O spark.tgz "$SPARK_TGZ_URL";     wget -nv -O spark.tgz.asc "$SPARK_TGZ_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkps://keys.openpgp.org --recv-key "$GPG_KEY" ||     gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY";     gpg --batch --verify spark.tgz.asc spark.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" spark.tgz.asc;         tar -xf spark.tgz --strip-components=1;     chown -R spark:spark .;     mv jars /opt/spark/;     mv RELEASE /opt/spark/;     mv bin /opt/spark/;     mv sbin /opt/spark/;     mv kubernetes/dockerfiles/spark/decom.sh /opt/;     mv examples /opt/spark/;     ln -s "$(basename /opt/spark/examples/jars/spark-examples_*.jar)" /opt/spark/examples/jars/spark-examples.jar;     mv kubernetes/tests /opt/spark/;     mv data /opt/spark/;     mv python/pyspark /opt/spark/python/pyspark/;     mv python/lib /opt/spark/python/lib/;     mv R /opt/spark/;     chmod a+x /opt/decom.sh;     cd ..;     rm -rf "$SPARK_TMP"; # buildkit
-# Fri, 15 May 2026 21:48:30 GMT
+# Fri, 22 May 2026 18:27:07 GMT
 COPY entrypoint.sh /opt/ # buildkit
-# Fri, 15 May 2026 21:48:30 GMT
+# Fri, 22 May 2026 18:27:07 GMT
 ENV SPARK_HOME=/opt/spark
-# Fri, 15 May 2026 21:48:30 GMT
+# Fri, 22 May 2026 18:27:07 GMT
 WORKDIR /opt/spark/work-dir
-# Fri, 15 May 2026 21:48:30 GMT
+# Fri, 22 May 2026 18:27:07 GMT
 USER spark
-# Fri, 15 May 2026 21:48:30 GMT
+# Fri, 22 May 2026 18:27:07 GMT
 ENTRYPOINT ["/opt/entrypoint.sh"]
 ```
 
@@ -100,21 +100,21 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 		Last Modified: Fri, 15 May 2026 21:16:09 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4a37cbf700b3a8fd0f29a0b8de4eb4c61265cba7cefc9e2ec1b7ed0d4e0c090c`  
-		Last Modified: Fri, 15 May 2026 21:48:57 GMT  
-		Size: 1.4 KB (1427 bytes)  
+	-	`sha256:aeee73b8e75022f09e5f4962ea0564301b44d8b849f95d9879a7c1422b69357b`  
+		Last Modified: Fri, 22 May 2026 18:27:36 GMT  
+		Size: 1.4 KB (1426 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bef2ee9043b9f671084f4d62c5e1272f5e4d4ffd9a9375cf2ea623f0877d901a`  
-		Last Modified: Fri, 15 May 2026 21:48:58 GMT  
-		Size: 21.9 MB (21853570 bytes)  
+	-	`sha256:2cb11a41828fbb096907dfd45723d033e12f2dec0e41d2735260bbf17d6574f2`  
+		Last Modified: Fri, 22 May 2026 18:27:37 GMT  
+		Size: 21.9 MB (21853700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee6374c52855714047bec0966922a2d5168bc8b819551f4f642341f7d958b100`  
-		Last Modified: Fri, 15 May 2026 21:49:05 GMT  
-		Size: 462.9 MB (462925479 bytes)  
+	-	`sha256:bdc45223fdd682925d98e4ea715714ac08b8594e39093bd45495d58c02e1d9e5`  
+		Last Modified: Fri, 22 May 2026 18:27:46 GMT  
+		Size: 463.0 MB (462999031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c35dcb5db405494ff7249a1b2c387c4bc4dc5aeccd622669369a9074128ccfa7`  
-		Last Modified: Fri, 15 May 2026 21:48:57 GMT  
-		Size: 2.1 KB (2137 bytes)  
+	-	`sha256:7d8f45d4142b5165bc693648e6a752f94a6526f180bb942735b95065e4a0ffcc`  
+		Last Modified: Fri, 22 May 2026 18:27:36 GMT  
+		Size: 2.1 KB (2134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -124,37 +124,37 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 ### `spark:scala` - unknown; unknown
 
 ```console
-$ docker pull spark@sha256:f2d32812feac636ff54c677b867d667c5c404a55ad62e861fe631efab4cedbce
+$ docker pull spark@sha256:5e0e476c108e73c8e52f92e33fb914027c688b1ec7c93dcbc008c2876ce58066
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (4997220 bytes)**  
+-	Total Size: **5.0 MB (4998475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87c04ee186626ade31981eaf81f376ffcfd0bfedd4bf6d5288fe3c9f5daf8f6d`
+-	Image ID: `sha256:da7dee14978f479f49961c19e40d09add3ee4834022d7b2052f79ceb44ddc15d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:902f7aa0c59768ae30a06d1b609f184e2f7e06ee6c9436d1a17fe93ee61a73a1`  
-		Last Modified: Fri, 15 May 2026 21:48:57 GMT  
-		Size: 5.0 MB (4973974 bytes)  
+	-	`sha256:c09ad0ff56915e4bfba996faa883f3c1cff509c37050be7f7507fdb41986f07a`  
+		Last Modified: Fri, 22 May 2026 18:27:36 GMT  
+		Size: 5.0 MB (4974602 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9da5fb86499bd1b6e751081350997b8c0b01dada2a0418229a487e1c9450d965`  
-		Last Modified: Fri, 15 May 2026 21:48:57 GMT  
-		Size: 23.2 KB (23246 bytes)  
+	-	`sha256:5402a5810a2dcf3b8b6e2782af3693f926fded723476ff15de997292ef346765`  
+		Last Modified: Fri, 22 May 2026 18:27:36 GMT  
+		Size: 23.9 KB (23873 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `spark:scala` - linux; arm64 variant v8
 
 ```console
-$ docker pull spark@sha256:d84ed44696d832b3ecf96f2294e6daedd3aea0bba39065d3b3989346efd2aa6b
+$ docker pull spark@sha256:1cf6c3207016d3361fc3627e9f479c35c3b90cb9851500d55b830b8f95953947
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **678.9 MB (678924911 bytes)**  
+-	Total Size: **679.0 MB (678999558 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ade7dc7ca5cdfb81b2c6342d38e96ecae3d58752025e17a1d148c8c94a78c3ec`
+-	Image ID: `sha256:9f3ac36fe61803f7ed168b6085132198ec7c15d0a4a0d2c9d9afb878f5bda3d6`
 -	Entrypoint: `["\/opt\/entrypoint.sh"]`
 
 ```dockerfile
@@ -188,28 +188,28 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Fri, 15 May 2026 21:16:29 GMT
 CMD ["jshell"]
-# Fri, 15 May 2026 21:48:53 GMT
+# Fri, 22 May 2026 18:26:40 GMT
 ARG spark_uid=185
-# Fri, 15 May 2026 21:48:53 GMT
+# Fri, 22 May 2026 18:26:40 GMT
 # ARGS: spark_uid=185
 RUN groupadd --system --gid=${spark_uid} spark &&     useradd --system --uid=${spark_uid} --gid=spark -d /nonexistent spark # buildkit
-# Fri, 15 May 2026 21:49:04 GMT
+# Fri, 22 May 2026 18:26:46 GMT
 # ARGS: spark_uid=185
 RUN set -ex;     apt-get update;     apt-get install -y gnupg2 wget bash tini libc6 libpam-modules krb5-user libnss3 procps net-tools gosu libnss-wrapper;     mkdir -p /opt/spark;     mkdir /opt/spark/python;     mkdir -p /opt/spark/examples;     mkdir -p /opt/spark/work-dir;     chmod g+w /opt/spark/work-dir;     touch /opt/spark/RELEASE;     chown -R spark:spark /opt/spark;     echo "auth required pam_wheel.so use_uid" >> /etc/pam.d/su;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 15 May 2026 21:49:04 GMT
-ENV SPARK_TGZ_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.1.1/spark-4.1.1-bin-hadoop3.tgz?action=download SPARK_TGZ_ASC_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.1.1/spark-4.1.1-bin-hadoop3.tgz.asc?action=download GPG_KEY=0FE4571297AB84440673665669600C8338F65970
-# Fri, 15 May 2026 21:49:17 GMT
+# Fri, 22 May 2026 18:26:46 GMT
+ENV SPARK_TGZ_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.1.2/spark-4.1.2-bin-hadoop3.tgz?action=download SPARK_TGZ_ASC_URL=https://www.apache.org/dyn/closer.lua/spark/spark-4.1.2/spark-4.1.2-bin-hadoop3.tgz.asc?action=download GPG_KEY=564CA14951C29266889F9C5B90E2BA86F7A9B307
+# Fri, 22 May 2026 18:27:07 GMT
 # ARGS: spark_uid=185
 RUN set -ex;     export SPARK_TMP="$(mktemp -d)";     cd $SPARK_TMP;     wget -nv -O spark.tgz "$SPARK_TGZ_URL";     wget -nv -O spark.tgz.asc "$SPARK_TGZ_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver hkps://keys.openpgp.org --recv-key "$GPG_KEY" ||     gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys "$GPG_KEY";     gpg --batch --verify spark.tgz.asc spark.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" spark.tgz.asc;         tar -xf spark.tgz --strip-components=1;     chown -R spark:spark .;     mv jars /opt/spark/;     mv RELEASE /opt/spark/;     mv bin /opt/spark/;     mv sbin /opt/spark/;     mv kubernetes/dockerfiles/spark/decom.sh /opt/;     mv examples /opt/spark/;     ln -s "$(basename /opt/spark/examples/jars/spark-examples_*.jar)" /opt/spark/examples/jars/spark-examples.jar;     mv kubernetes/tests /opt/spark/;     mv data /opt/spark/;     mv python/pyspark /opt/spark/python/pyspark/;     mv python/lib /opt/spark/python/lib/;     mv R /opt/spark/;     chmod a+x /opt/decom.sh;     cd ..;     rm -rf "$SPARK_TMP"; # buildkit
-# Fri, 15 May 2026 21:49:17 GMT
+# Fri, 22 May 2026 18:27:07 GMT
 COPY entrypoint.sh /opt/ # buildkit
-# Fri, 15 May 2026 21:49:17 GMT
+# Fri, 22 May 2026 18:27:07 GMT
 ENV SPARK_HOME=/opt/spark
-# Fri, 15 May 2026 21:49:17 GMT
+# Fri, 22 May 2026 18:27:07 GMT
 WORKDIR /opt/spark/work-dir
-# Fri, 15 May 2026 21:49:17 GMT
+# Fri, 22 May 2026 18:27:07 GMT
 USER spark
-# Fri, 15 May 2026 21:49:17 GMT
+# Fri, 22 May 2026 18:27:07 GMT
 ENTRYPOINT ["/opt/entrypoint.sh"]
 ```
 
@@ -234,21 +234,21 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 		Last Modified: Fri, 15 May 2026 21:16:46 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dbb2a595b49bb1878b19dc7217637ccf07a5e0e3cacb806903aa18037342d27c`  
-		Last Modified: Fri, 15 May 2026 21:49:45 GMT  
-		Size: 1.4 KB (1426 bytes)  
+	-	`sha256:d50d6b1fd8610a6315142ce0a35c5a44548e784798e1aab86ed198f653d8f30a`  
+		Last Modified: Fri, 22 May 2026 18:27:37 GMT  
+		Size: 1.4 KB (1425 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b98a8a37193db04ec2e9bd285b164c6ed339e21df2cf84cd4d46cb5fee4919e0`  
-		Last Modified: Fri, 15 May 2026 21:49:46 GMT  
-		Size: 21.5 MB (21534748 bytes)  
+	-	`sha256:75c81224802e098991a7dcec1c8c0c054be121f9b1a9398e537d1802300f3601`  
+		Last Modified: Fri, 22 May 2026 18:27:38 GMT  
+		Size: 21.5 MB (21535876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d8ca3b16c5ea6bf6b8fc9c1f39c5db39b9bad561d372042834d8dd5cac96860`  
-		Last Modified: Fri, 15 May 2026 21:49:55 GMT  
-		Size: 462.9 MB (462925509 bytes)  
+	-	`sha256:f4dc23adb23a0050d97620f6a35b552048cf7f7e1eeebccb0b22af274572fa68`  
+		Last Modified: Fri, 22 May 2026 18:27:49 GMT  
+		Size: 463.0 MB (462999030 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fa143181df815985415822321fc52c2c417235b8fbd6237f75a7804f09bb4bce`  
-		Last Modified: Fri, 15 May 2026 21:49:45 GMT  
-		Size: 2.1 KB (2133 bytes)  
+	-	`sha256:b86075219455487308580ba5795052f369a6dc1404bfa34907dc1644ba02bfee`  
+		Last Modified: Fri, 22 May 2026 18:27:37 GMT  
+		Size: 2.1 KB (2132 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -258,23 +258,23 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 ### `spark:scala` - unknown; unknown
 
 ```console
-$ docker pull spark@sha256:b9bf8170e875d4d20c5b4301844fb19b8d11fe29558d1f2538a33172a2316db5
+$ docker pull spark@sha256:a7632496e7206366d24f84eb4983d8b9960c9f9612cf6612249edf79ed5855cc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5092856 bytes)**  
+-	Total Size: **5.1 MB (5094161 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2dc8b6dfe3bc3a8e871b75dc4bc85797564459c6348e206a8fbec456ad9337a`
+-	Image ID: `sha256:babcc7b663d5dda2b84b0acf8d4d4169acc1972fbcff06d301d930652b9e9fde`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:11f8638938225f7ade8e20fa4cc6226c393240ad131724c5c6faa895d2c5388e`  
-		Last Modified: Fri, 15 May 2026 21:49:45 GMT  
-		Size: 5.1 MB (5069489 bytes)  
+	-	`sha256:702ed262d04f6d2b3b74660eaec0e1890a8b23fb1137042b7c2cc9aa29387e73`  
+		Last Modified: Fri, 22 May 2026 18:27:37 GMT  
+		Size: 5.1 MB (5070141 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:905630e53300f70d709591be404493ac0a70d5c15da5b945ca639f5eba6bb712`  
-		Last Modified: Fri, 15 May 2026 21:49:45 GMT  
-		Size: 23.4 KB (23367 bytes)  
+	-	`sha256:5dfec03fcaadfa27eec799063d50e28732f63dee4d2934e5a0db0d145c2d3ba6`  
+		Last Modified: Fri, 22 May 2026 18:27:37 GMT  
+		Size: 24.0 KB (24020 bytes)  
 		MIME: application/vnd.in-toto+json

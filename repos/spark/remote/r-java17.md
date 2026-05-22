@@ -1,7 +1,7 @@
-## `spark:python3-java17`
+## `spark:r-java17`
 
 ```console
-$ docker pull spark@sha256:81426a7660dd838285c91ea24cd06af9ae0c4978858047f79d10965259af349b
+$ docker pull spark@sha256:d59cff284fdaceb8880d2c2d9252887a40198ad4db5829c00d30dc30c7e15428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11,16 +11,16 @@ $ docker pull spark@sha256:81426a7660dd838285c91ea24cd06af9ae0c4978858047f79d109
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `spark:python3-java17` - linux; amd64
+### `spark:r-java17` - linux; amd64
 
 ```console
-$ docker pull spark@sha256:0382c04332a439d08fc7ea231e21a9ca083e9fbd925a167931d22f832e35c5ec
+$ docker pull spark@sha256:73175d5e26bf0934dac4ab952d3f1cd0bc44f1ef910bc892ade8f35d5eb32816
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **795.1 MB (795094121 bytes)**  
+-	Total Size: **1000.5 MB (1000511585 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c65527495dfb93bf6252a7b4ebc7da280be96108639c94bfe84088c0606bf941`
+-	Image ID: `sha256:d3f82fa0df527704a433e9ca1aaa00a4505d181928d38ea1ddce81772d3a55b2`
 -	Entrypoint: `["\/opt\/entrypoint.sh"]`
 
 ```dockerfile
@@ -77,11 +77,13 @@ WORKDIR /opt/spark/work-dir
 USER spark
 # Fri, 22 May 2026 18:27:07 GMT
 ENTRYPOINT ["/opt/entrypoint.sh"]
-# Fri, 22 May 2026 18:33:26 GMT
+# Fri, 22 May 2026 18:33:58 GMT
 USER root
-# Fri, 22 May 2026 18:33:26 GMT
-RUN set -ex;     apt-get update;     apt-get install -y python3 python3-pip;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 22 May 2026 18:33:26 GMT
+# Fri, 22 May 2026 18:33:58 GMT
+RUN set -ex;     apt-get update;     apt-get install -y r-base r-base-dev;     rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 22 May 2026 18:33:58 GMT
+ENV R_HOME=/usr/lib/R
+# Fri, 22 May 2026 18:33:58 GMT
 USER spark
 ```
 
@@ -126,45 +128,45 @@ USER spark
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dcc17935e2d57c1a16a7207835002b442dccaa693caeeedbedd593ba36d5ebb`  
-		Last Modified: Fri, 22 May 2026 18:33:54 GMT  
-		Size: 113.9 MB (113889372 bytes)  
+	-	`sha256:17aad6286c4e58bd14eb7223c98617fd9d4339d3a07157fab0e449677935179c`  
+		Last Modified: Fri, 22 May 2026 18:34:57 GMT  
+		Size: 319.3 MB (319306836 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `spark:python3-java17` - unknown; unknown
+### `spark:r-java17` - unknown; unknown
 
 ```console
-$ docker pull spark@sha256:83d97014b75209d4beb74ed39c5ff46f92b33c00c6f8ed1409bce055ed2f7500
+$ docker pull spark@sha256:37a6967c0609e4d0f0a51e04cdb0331a202f0657acc9ee556f99d12ad2ae1a80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 MB (10445522 bytes)**  
+-	Total Size: **18.6 MB (18634108 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2444bee7af70fef36d494385b9b6278660098ad2b245aeb36d743a5717ed6b4b`
+-	Image ID: `sha256:ea6319ce47f8b61e64633055a3c5a7c73baa64b6f851a9e0855b1a85b24fd0b5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:27d47db1ba577e74bead0e91e5a177c62705d49907293a2c19f531314c9287e3`  
-		Last Modified: Fri, 22 May 2026 18:33:52 GMT  
-		Size: 10.4 MB (10433928 bytes)  
+	-	`sha256:0d0d30e8f97a58443fe08a21f7dc20323c4a56a01c46999009888954a8c7f834`  
+		Last Modified: Fri, 22 May 2026 18:34:51 GMT  
+		Size: 18.6 MB (18622541 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:83a7b7d79215ed61832bfcafe172c0c67119ffc27c935336c06c1c0a3a813269`  
-		Last Modified: Fri, 22 May 2026 18:33:51 GMT  
-		Size: 11.6 KB (11594 bytes)  
+	-	`sha256:ee6d16b4cfcd58bfc8c4c9dd2bb8f85df1a353a230db6ff8185897b58574b99e`  
+		Last Modified: Fri, 22 May 2026 18:34:50 GMT  
+		Size: 11.6 KB (11567 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `spark:python3-java17` - linux; arm64 variant v8
+### `spark:r-java17` - linux; arm64 variant v8
 
 ```console
-$ docker pull spark@sha256:1538b3522a83cae3173c44a2735b384ba93ecd2ddc452cead553345948145dc6
+$ docker pull spark@sha256:cce513252e6cc58a10e4dc4634e9fe442a3f0ccf6c436c6dfe3320adaf3ecea4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **787.5 MB (787481570 bytes)**  
+-	Total Size: **981.6 MB (981586059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e37b41cea29f1508d5665874865826522f4a449c14a51f0e143265a0761252e7`
+-	Image ID: `sha256:68acc58555aab551d3e26af9d346fb7f1f1a4a49a0eb432dfe61630f7b356856`
 -	Entrypoint: `["\/opt\/entrypoint.sh"]`
 
 ```dockerfile
@@ -221,11 +223,13 @@ WORKDIR /opt/spark/work-dir
 USER spark
 # Fri, 22 May 2026 18:27:07 GMT
 ENTRYPOINT ["/opt/entrypoint.sh"]
-# Fri, 22 May 2026 18:33:06 GMT
+# Fri, 22 May 2026 18:34:04 GMT
 USER root
-# Fri, 22 May 2026 18:33:06 GMT
-RUN set -ex;     apt-get update;     apt-get install -y python3 python3-pip;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 22 May 2026 18:33:06 GMT
+# Fri, 22 May 2026 18:34:04 GMT
+RUN set -ex;     apt-get update;     apt-get install -y r-base r-base-dev;     rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 22 May 2026 18:34:04 GMT
+ENV R_HOME=/usr/lib/R
+# Fri, 22 May 2026 18:34:04 GMT
 USER spark
 ```
 
@@ -270,31 +274,31 @@ USER spark
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f75a5252dbe1d23f0cb94d92fec16d05fc27066edd59030e083e98d8b17af51f`  
-		Last Modified: Fri, 22 May 2026 18:33:35 GMT  
-		Size: 108.5 MB (108482012 bytes)  
+	-	`sha256:ce13ef33e418cff1cf3f9de7f733378566592da7cd4fe6e1e4b02d2ad448f28b`  
+		Last Modified: Fri, 22 May 2026 18:35:04 GMT  
+		Size: 302.6 MB (302586501 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `spark:python3-java17` - unknown; unknown
+### `spark:r-java17` - unknown; unknown
 
 ```console
-$ docker pull spark@sha256:e75f4a1593e4f7c8d9b7cf957e8b127d21853313da66c3640916e9334d3abfea
+$ docker pull spark@sha256:29123c520fc0ff3453e8eec84d13c1fa857ef94802480cf4b0631893f85a4d02
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 MB (10440110 bytes)**  
+-	Total Size: **18.6 MB (18598814 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93a6118493984ffee00deaecb75047e09772b748184415405c1ad1b11d644d75`
+-	Image ID: `sha256:0fa429772179e3e33e8c6c68797a9c9ef818518effbc07c31dc4aaa01a61e0e4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e90cfb3ae8088c7c56591f8dd1c6828b694af8151662ce54ecece901a4b14af7`  
-		Last Modified: Fri, 22 May 2026 18:33:33 GMT  
-		Size: 10.4 MB (10428400 bytes)  
+	-	`sha256:ecbf2a745ef75bdd060b36d0b3c480b3fb6ffbe98b36538676ee04c4a6304f20`  
+		Last Modified: Fri, 22 May 2026 18:34:59 GMT  
+		Size: 18.6 MB (18587130 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a9e4e99c2fdcdef5f75a73e53accbd5a793cc0ca5f1882adbb6665d7d5bcf8a8`  
-		Last Modified: Fri, 22 May 2026 18:33:32 GMT  
-		Size: 11.7 KB (11710 bytes)  
+	-	`sha256:0f512484dcc2c0272220582cca31f77692f0bbcee4c16830ba9e4ce133e23335`  
+		Last Modified: Fri, 22 May 2026 18:34:58 GMT  
+		Size: 11.7 KB (11684 bytes)  
 		MIME: application/vnd.in-toto+json
