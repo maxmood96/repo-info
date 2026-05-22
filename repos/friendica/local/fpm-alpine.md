@@ -1,10 +1,10 @@
-# `friendica:2026.01-fpm-alpine`
+# `friendica:2026.05-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e1fe0dd317852c7b4d89a948a6e982e9b8a9a94e3fba796444a7f2df331a97a4`
-- Created: `2026-05-07T17:23:13.156978165Z`
-- Virtual Size: ~ 282.63 Mb  
+- Image ID: `sha256:994e9df1348f40cc04b578279bc95cee14b2d844800399f9f22d61a17be6033f`
+- Created: `2026-05-21T18:17:19.470747506Z`
+- Virtual Size: ~ 282.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -25,8 +25,8 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `FRIENDICA_SYSLOG_FLAGS=39`
-  - `FRIENDICA_VERSION=2026.01`
-  - `FRIENDICA_DOWNLOAD_SHA256=d985715f368e106f070519e1e30240b023f31604b3d9e4cc09f23d4d5150147d`
+  - `FRIENDICA_VERSION=2026.05`
+  - `FRIENDICA_DOWNLOAD_SHA256=b0a1e218c4a5a30d25b8be5a66cb97a4f4f802b98e7cf3d0d34ce045b2714ab2`
 
 ## `apk` (`.apk`-based packages)
 
@@ -475,16 +475,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.19-r0 description:
+imagemagick-7.1.2.22-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.19-r0 webpage:
+imagemagick-7.1.2.22-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.19-r0 installed size:
+imagemagick-7.1.2.22-r0 installed size:
 3691 KiB
 
-imagemagick-7.1.2.19-r0 license:
+imagemagick-7.1.2.22-r0 license:
 ImageMagick
 
 ```
@@ -492,16 +492,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.19-r0 description:
+imagemagick-jpeg-7.1.2.22-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.19-r0 webpage:
+imagemagick-jpeg-7.1.2.22-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.19-r0 installed size:
+imagemagick-jpeg-7.1.2.22-r0 installed size:
 62 KiB
 
-imagemagick-jpeg-7.1.2.19-r0 license:
+imagemagick-jpeg-7.1.2.22-r0 license:
 ImageMagick
 
 ```
@@ -509,16 +509,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.19-r0 description:
+imagemagick-libs-7.1.2.22-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.19-r0 webpage:
+imagemagick-libs-7.1.2.22-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.19-r0 installed size:
-4257 KiB
+imagemagick-libs-7.1.2.22-r0 installed size:
+4261 KiB
 
-imagemagick-libs-7.1.2.19-r0 license:
+imagemagick-libs-7.1.2.22-r0 license:
 ImageMagick
 
 ```
@@ -526,16 +526,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.19-r0 description:
+imagemagick-webp-7.1.2.22-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.19-r0 webpage:
+imagemagick-webp-7.1.2.22-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.19-r0 installed size:
+imagemagick-webp-7.1.2.22-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.19-r0 license:
+imagemagick-webp-7.1.2.22-r0 license:
 ImageMagick
 
 ```
@@ -934,16 +934,16 @@ BSD-3-Clause AND IJG AND Zlib
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.10-r0 description:
+libldap-2.6.13-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.10-r0 webpage:
+libldap-2.6.13-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.10-r0 installed size:
+libldap-2.6.13-r0 installed size:
 365 KiB
 
-libldap-2.6.10-r0 license:
+libldap-2.6.13-r0 license:
 OLDAP-2.8
 
 ```
@@ -1036,16 +1036,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.57-r0 description:
+libpng-1.6.58-r1 description:
 Portable Network Graphics library
 
-libpng-1.6.57-r0 webpage:
+libpng-1.6.58-r1 webpage:
 http://www.libpng.org
 
-libpng-1.6.57-r0 installed size:
+libpng-1.6.58-r1 installed size:
 181 KiB
 
-libpng-1.6.57-r0 license:
+libpng-1.6.58-r1 license:
 Libpng
 
 ```
@@ -1631,16 +1631,16 @@ GPL-3.0-or-later
 ### `apk` package: `rsync`
 
 ```console
-rsync-3.4.2-r0 description:
+rsync-3.4.3-r0 description:
 A file transfer program to keep remote files in sync
 
-rsync-3.4.2-r0 webpage:
+rsync-3.4.3-r0 webpage:
 https://rsync.samba.org/
 
-rsync-3.4.2-r0 installed size:
-373 KiB
+rsync-3.4.3-r0 installed size:
+389 KiB
 
-rsync-3.4.2-r0 license:
+rsync-3.4.3-r0 license:
 GPL-3.0-or-later
 
 ```
