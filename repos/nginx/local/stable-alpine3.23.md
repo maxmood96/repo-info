@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:954f0a6530c8064381b2d8d9713f39ab75f2ae9b99876ecc617458d2a6eba14b`
-- Created: `2026-05-13T20:10:54.626364947Z`
-- Virtual Size: ~ 62.37 Mb  
+- Image ID: `sha256:a5e688db1e7424e08d0ff019d3c9962f2f6ceef71ca53227b06fe8ec7b47ed35`
+- Created: `2026-05-19T21:17:45.223455148Z`
+- Virtual Size: ~ 62.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `NGINX_VERSION=1.30.1`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
-  - `NJS_VERSION=0.9.8`
+  - `NJS_VERSION=0.9.9`
   - `NJS_RELEASE=1`
   - `ACME_VERSION=0.4.1`
 - Labels:
@@ -229,16 +229,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.17.0-r1 description:
+curl-8.19.0-r0 description:
 URL retrival utility and library
 
-curl-8.17.0-r1 webpage:
+curl-8.19.0-r0 webpage:
 https://curl.se/
 
-curl-8.17.0-r1 installed size:
-265 KiB
+curl-8.19.0-r0 installed size:
+273 KiB
 
-curl-8.17.0-r1 license:
+curl-8.19.0-r0 license:
 curl
 
 ```
@@ -399,16 +399,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.17.0-r1 description:
+libcurl-8.19.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.17.0-r1 webpage:
+libcurl-8.19.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.17.0-r1 installed size:
-721 KiB
+libcurl-8.19.0-r0 installed size:
+697 KiB
 
-libcurl-8.17.0-r1 license:
+libcurl-8.19.0-r0 license:
 curl
 
 ```
@@ -603,16 +603,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.57-r0 description:
+libpng-1.6.58-r1 description:
 Portable Network Graphics library
 
-libpng-1.6.57-r0 webpage:
+libpng-1.6.58-r1 webpage:
 http://www.libpng.org
 
-libpng-1.6.57-r0 installed size:
+libpng-1.6.58-r1 installed size:
 181 KiB
 
-libpng-1.6.57-r0 license:
+libpng-1.6.58-r1 license:
 Libpng
 
 ```
@@ -991,23 +991,6 @@ MIT
 
 ```
 
-### `apk` package: `nghttp3`
-
-```console
-nghttp3-1.13.1-r0 description:
-HTTP/3 library written in C
-
-nghttp3-1.13.1-r0 webpage:
-https://github.com/ngtcp2/nghttp3
-
-nghttp3-1.13.1-r0 installed size:
-140 KiB
-
-nghttp3-1.13.1-r0 license:
-MIT
-
-```
-
 ### `apk` package: `nginx`
 
 ```console
@@ -1079,16 +1062,16 @@ nginx-module-image-filter-1.30.1-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.30.1.0.9.8-r1 description:
+nginx-module-njs-1.30.1.0.9.9-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.30.1.0.9.8-r1 webpage:
+nginx-module-njs-1.30.1.0.9.9-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.30.1.0.9.8-r1 installed size:
-9340 KiB
+nginx-module-njs-1.30.1.0.9.9-r1 installed size:
+9392 KiB
 
-nginx-module-njs-1.30.1.0.9.8-r1 license:
+nginx-module-njs-1.30.1.0.9.9-r1 license:
 2-clause BSD-like license
 
 ```
