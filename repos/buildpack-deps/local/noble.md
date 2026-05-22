@@ -1383,15 +1383,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.3-1.1ubuntu3.5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3.orig.tar.xz' gnutls28_3.8.3.orig.tar.xz 6463720 SHA256:f74fc5954b27d4ec6dfbb11dea987888b5b124289a3703afcada0ee520f4173e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3.orig.tar.xz.asc' gnutls28_3.8.3.orig.tar.xz.asc 854 SHA256:b2b90d225728890b0e2aa7c05e5f25f8ba1282821b46e72cd99f0c732b639cef
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3-1.1ubuntu3.5.debian.tar.xz' gnutls28_3.8.3-1.1ubuntu3.5.debian.tar.xz 109884 SHA256:d3ae87f0d815bed4f8f5547b8e38d97d8e875759d18ccc0cd65f1c97161d997d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3-1.1ubuntu3.5.dsc' gnutls28_3.8.3-1.1ubuntu3.5.dsc 3397 SHA256:6b041109100adb6b1a2acaa0bc5727b4fd2c95b980a885db5ae29c761c10cec4
-```
 
 ### `dpkg` source package: `gobject-introspection=1.80.1-1`
 
@@ -3978,14 +3972,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-16=16.13-0ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.13.orig.tar.gz' postgresql-16_16.13.orig.tar.gz 32997122 SHA256:9b767d0dfd156424b0b8f02b65eebb4b6958ef6413ebf7c8349e28b0b91e6b09
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.13-0ubuntu0.24.04.1.debian.tar.xz' postgresql-16_16.13-0ubuntu0.24.04.1.debian.tar.xz 37940 SHA256:3526d434bf63c3c2ed20569cbe7ac6a85dc38d8bef92c731d6d3ee37d78d1644
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.13-0ubuntu0.24.04.1.dsc' postgresql-16_16.13-0ubuntu0.24.04.1.dsc 4336 SHA256:0ebbd5f932f38e4221cd7cae9262c2dd10324c94812ec870fab443ca92d81644
-```
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.2`
 

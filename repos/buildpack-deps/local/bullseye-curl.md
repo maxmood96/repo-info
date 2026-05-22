@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:877d605bf1ea3c6464dcd265246f5d852aa7f6ee2b0c0738a2bb2b569e915dfc`
-- Created: `2026-05-08T19:40:21.170690807Z`
-- Virtual Size: ~ 152.97 Mb  
+- Image ID: `sha256:31253fd5b2a8d7db323cf17fbc54b5cab8120231ae5bc0a58adc4794cc7d3fcb`
+- Created: `2026-05-19T23:23:04.841712503Z`
+- Virtual Size: ~ 152.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -1734,11 +1734,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.7.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.7.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nghttp2=1.43.0-1+deb11u2`
+### `dpkg` source package: `nghttp2=1.43.0-1+deb11u3`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.43.0-1+deb11u2`
+- `libnghttp2-14:amd64=1.43.0-1+deb11u3`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -1750,13 +1750,20 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `SIL-OFL-1.1`
 - `all-permissive`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris nghttp2=1.43.0-1+deb11u3
+'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.43.0-1%2bdeb11u3.dsc' nghttp2_1.43.0-1+deb11u3.dsc 2574 SHA256:60ec7decf7fa548fb56f2079c282e163e5b939b392b5da2450dd9a57c3647952
+'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.43.0.orig.tar.bz2' nghttp2_1.43.0.orig.tar.bz2 4521786 SHA256:556f24653397c71ebb8270b3c5e5507f0893e6eac2c6eeda6be2ecf6e1f50f62
+'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.43.0-1%2bdeb11u3.debian.tar.xz' nghttp2_1.43.0-1+deb11u3.debian.tar.xz 25252 SHA256:2e5c0d70838b1349d000102f84c2fc6535801b3be82fbb25c226ca031d7a82ab
+```
 
-- http://snapshot.debian.org/package/nghttp2/1.43.0-1+deb11u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/nghttp2/1.43.0-1+deb11u3/ (for browsing the source)
+- https://sources.debian.net/src/nghttp2/1.43.0-1+deb11u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nghttp2/1.43.0-1+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-3`
 
@@ -2243,23 +2250,30 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.34+dfsg-1+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.34+dfsg-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2025b-0+deb11u2`
+### `dpkg` source package: `tzdata=2026b-0+deb11u1`
 
 Binary Packages:
 
-- `tzdata=2025b-0+deb11u2`
+- `tzdata=2026b-0+deb11u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2026b-0+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026b-0%2bdeb11u1.dsc' tzdata_2026b-0+deb11u1.dsc 2028 SHA256:05a2feb010197c43fc786cc87b21384cbbac942e6a853ab224d752ad7fae90fc
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026b.orig.tar.gz' tzdata_2026b.orig.tar.gz 473703 SHA256:114543d9f19a6bfeb5bca43686aea173d38755a3db1f2eec112647ae92c6f544
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2026b-0%2bdeb11u1.debian.tar.xz' tzdata_2026b-0+deb11u1.debian.tar.xz 108804 SHA256:c8bdd36662b15f20543663adcd54b37d57142fe7609b3f41a9d9fb6c38dc7ccb
+```
 
-- http://snapshot.debian.org/package/tzdata/2025b-0+deb11u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2026b-0+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2026b-0+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2026b-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.36.1-8+deb11u2`
 
