@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8431e30f98d8c6e37655557914320bdc56eabdda0f18501fd31b4cfc9942d7ec`
-- Created: `2026-04-15T20:44:45.698662845Z`
-- Virtual Size: ~ 335.57 Mb  
+- Image ID: `sha256:f5d33f5426f2fb9c3fe1a26c59a66d22bb97df4be0f8af37692f81a0ddc28cee`
+- Created: `2026-05-20T18:34:53.286215438Z`
+- Virtual Size: ~ 335.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -733,15 +733,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.3-1.1ubuntu3.5
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3.orig.tar.xz' gnutls28_3.8.3.orig.tar.xz 6463720 SHA256:f74fc5954b27d4ec6dfbb11dea987888b5b124289a3703afcada0ee520f4173e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3.orig.tar.xz.asc' gnutls28_3.8.3.orig.tar.xz.asc 854 SHA256:b2b90d225728890b0e2aa7c05e5f25f8ba1282821b46e72cd99f0c732b639cef
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3-1.1ubuntu3.5.debian.tar.xz' gnutls28_3.8.3-1.1ubuntu3.5.debian.tar.xz 109884 SHA256:d3ae87f0d815bed4f8f5547b8e38d97d8e875759d18ccc0cd65f1c97161d997d
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3-1.1ubuntu3.5.dsc' gnutls28_3.8.3-1.1ubuntu3.5.dsc 3397 SHA256:6b041109100adb6b1a2acaa0bc5727b4fd2c95b980a885db5ae29c761c10cec4
-```
 
 ### `dpkg` source package: `google-perftools=2.15-3build1`
 
@@ -846,19 +840,24 @@ $ apt-get source -qq --print-uris init-system-helpers=1.66ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/i/init-system-helpers/init-system-helpers_1.66ubuntu1.tar.xz' init-system-helpers_1.66ubuntu1.tar.xz 45100 SHA512:222f73347b0ce9eb137c8ce5dc36e9fedbc8dc5ed3f1fde7fbf52258a5437d0a10d3d610ca1d1b206646bb92a5355d1061705440b2d22d9109b5de6d1cb92e98
 ```
 
-### `dpkg` source package: `iproute2=6.1.0-1ubuntu6.2`
+### `dpkg` source package: `iproute2=6.1.0-1ubuntu6.3`
 
 Binary Packages:
 
-- `iproute2=6.1.0-1ubuntu6.2`
+- `iproute2=6.1.0-1ubuntu6.3`
 
 Licenses: (parsed from: `/usr/share/doc/iproute2/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris iproute2=6.1.0-1ubuntu6.3
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_6.1.0.orig.tar.xz' iproute2_6.1.0.orig.tar.xz 905512 SHA256:5ce12a0fec6b212725ef218735941b2dab76244db7e72646a76021b0537b43ab
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_6.1.0-1ubuntu6.3.debian.tar.xz' iproute2_6.1.0-1ubuntu6.3.debian.tar.xz 45308 SHA256:bb027157a0fb37877e8632a54b21acff0ab4491101004a85f038ee8a0335028e
+'http://archive.ubuntu.com/ubuntu/pool/main/i/iproute2/iproute2_6.1.0-1ubuntu6.3.dsc' iproute2_6.1.0-1ubuntu6.3.dsc 2439 SHA256:e9388d8171e9129cf5db9a84198111dd861cd57498400f3691b5efd2f6170dc9
+```
 
 ### `dpkg` source package: `iptables=1.8.10-3ubuntu2`
 
@@ -1083,12 +1082,12 @@ $ apt-get source -qq --print-uris libcap-ng=0.8.4-2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.4-2build2.debian.tar.xz' libcap-ng_0.8.4-2build2.debian.tar.xz 7384 SHA512:c21cf4b7df670034773ab883e5149bc28606d11416a5f075c85106395a6d46ea529227e270f9342c910631059b8cf94a55dc5cfa5ec908a6f57d6a8c0a32277e
 ```
 
-### `dpkg` source package: `libcap2=1:2.66-5ubuntu2.2`
+### `dpkg` source package: `libcap2=1:2.66-5ubuntu2.4`
 
 Binary Packages:
 
-- `libcap2:amd64=1:2.66-5ubuntu2.2`
-- `libcap2-bin=1:2.66-5ubuntu2.2`
+- `libcap2:amd64=1:2.66-5ubuntu2.4`
+- `libcap2-bin=1:2.66-5ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`, `/usr/share/doc/libcap2-bin/copyright`)
 
@@ -1096,9 +1095,14 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`, `/usr/share/doc/libc
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libcap2=1:2.66-5ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66.orig.tar.xz' libcap2_2.66.orig.tar.xz 181592 SHA512:ac005b622f6e065f30ce282a5c87240e7b9da75366ee537aa4835bc501b44bc242c10a4ba4dc070e2415fc7f635d1c3c4e45fbeeaf962cf7973dda82bf6377f0
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-5ubuntu2.4.debian.tar.xz' libcap2_2.66-5ubuntu2.4.debian.tar.xz 24724 SHA512:d8e7c11b8457de7606d007d8e447c2569a43d937096153b95e7702c4adef8031b0adb89be6d534896c93cb2e9a469eafbd6681d02a5567c33ed35bd2f94b1762
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-5ubuntu2.4.dsc' libcap2_2.66-5ubuntu2.4.dsc 2319 SHA512:4792efe7caeecddd81aed675be95828fdc03140484303be3548b7f55f0ffcd2fe039c87b4b4cd0f5ef30222adb3bb1baedb8a38f6418b64bd9816f9a318d60c9
+```
 
 ### `dpkg` source package: `libconfig-inifiles-perl=3.000003-2`
 
@@ -2033,11 +2037,11 @@ $ apt-get source -qq --print-uris readline=8.2-4build1
 'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.2-4build1.debian.tar.xz' readline_8.2-4build1.debian.tar.xz 33816 SHA512:b8c92282e25f3d28acd02c1431088f5f29aa1398ce919c312de50813e8a0df07d973ffd49fccde51505538ed7e29f666d812931961746b12ebde219d16be914f
 ```
 
-### `dpkg` source package: `rsync=3.2.7-1ubuntu1.2`
+### `dpkg` source package: `rsync=3.2.7-1ubuntu1.4`
 
 Binary Packages:
 
-- `rsync=3.2.7-1ubuntu1.2`
+- `rsync=3.2.7-1ubuntu1.4`
 
 Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 
@@ -2046,11 +2050,11 @@ Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris rsync=3.2.7-1ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7.orig.tar.gz' rsync_3.2.7.orig.tar.gz 1149787 SHA256:4e7d9d3f6ed10878c58c5fb724a67dacf4b6aac7340b13e488fb2dc41346f2bb
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7.orig.tar.gz.asc' rsync_3.2.7.orig.tar.gz.asc 195 SHA256:8e054b8e852f371fbcb757de51f1a07de5621ae959ea766d3c3e5439d7b5f4ae
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7-1ubuntu1.2.debian.tar.xz' rsync_3.2.7-1ubuntu1.2.debian.tar.xz 36164 SHA256:6f6ded8f174fa8b3caf9e24f5dfced1be7b7f37bc15cb90685b966a548e6f2f4
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7-1ubuntu1.2.dsc' rsync_3.2.7-1ubuntu1.2.dsc 2446 SHA256:5c8c1e381723125f96f993bc204980a79a4e8cc68839bee77fb71d536dafdc8b
+$ apt-get source -qq --print-uris rsync=3.2.7-1ubuntu1.4
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7.orig.tar.gz' rsync_3.2.7.orig.tar.gz 1149787 SHA512:c2afba11a352fd88133f9e96e19d6df80eb864450c83eced13a7faa23df947bccf2ef093f2101df6ee30abff4cbbd39ac802e9aa5f726e42c9caff274fad8377
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7.orig.tar.gz.asc' rsync_3.2.7.orig.tar.gz.asc 195 SHA512:bad9f48e033966566c6abf8cd485d35c0d9cf130eafb0c5fff9bcb928882283bbcdd2375e7c2880cf71cf81496ba6b743b61adca3d4678421c32915a2464acc3
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7-1ubuntu1.4.debian.tar.xz' rsync_3.2.7-1ubuntu1.4.debian.tar.xz 101108 SHA512:ff574f7522610aa17b62aafbeb784bc1cec3995182d3ec533d0a045ae3ff1906a6025763e32bfead81758184886efd0b210a29c6d3b8b9ec9fe0cdff98bbb788
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7-1ubuntu1.4.dsc' rsync_3.2.7-1ubuntu1.4.dsc 2408 SHA512:8bc29aca30307d081f7958d8da6f1adcd896689d639ccb3f0e448cb3a1d14f9f8819ff3d1ad4d9b18abefa87e0e157c3e410f2235b6f8c227acfe1d7a4c8aea1
 ```
 
 ### `dpkg` source package: `sed=4.9-2build1`

@@ -1,10 +1,10 @@
-# `mariadb:10.11.16-jammy`
+# `mariadb:10.11.17-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b09758891b16de42b092ca908a62794165758b2563915bc41d570cc648e10d83`
-- Created: `2026-05-15T21:20:11.852336869Z`
-- Virtual Size: ~ 331.00 Mb  
+- Image ID: `sha256:74e4e99c5004ef3759ee7d0d9eb778cd82a004b5f9b61353440bd80c5531ed6d`
+- Created: `2026-05-20T18:36:07.599991735Z`
+- Virtual Size: ~ 326.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.19`
   - `LANG=C.UTF-8`
-  - `MARIADB_VERSION=1:10.11.16+maria~ubu2204`
+  - `MARIADB_VERSION=1:10.11.17+maria~ubu2204`
 - Labels:
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/library/ubuntu:jammy`
@@ -24,7 +24,7 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=10.11.16`
+  - `org.opencontainers.image.version=10.11.17`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -459,11 +459,11 @@ $ apt-get source -qq --print-uris findutils=4.8.0-1ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.8.0-1ubuntu3.debian.tar.xz' findutils_4.8.0-1ubuntu3.debian.tar.xz 27716 SHA512:f0ce8b61f4e0beabad3178424c804468dc4c57f37794887954df28c36227ce77f00383903274a1995a104f9def44270070b9e033eb46d52f5aaaedb1f5883587
 ```
 
-### `dpkg` source package: `galera-4=26.4.25-ubu2204`
+### `dpkg` source package: `galera-4=26.4.26-ubu2204`
 
 Binary Packages:
 
-- `galera-4=26.4.25-ubu2204`
+- `galera-4=26.4.26-ubu2204`
 
 Licenses: (parsed from: `/usr/share/doc/galera-4/copyright`)
 
@@ -647,15 +647,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.7.3-4ubuntu1.8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz' gnutls28_3.7.3.orig.tar.xz 6119292 SHA256:fc59c43bc31ab20a6977ff083029277a31935b8355ce387b634fa433f8f6c49a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3.orig.tar.xz.asc' gnutls28_3.7.3.orig.tar.xz.asc 833 SHA256:a2f95ac5d7dd951bddef01ec9930616dd1a5226173b3dc7896b3bed411c91d9a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.8.debian.tar.xz' gnutls28_3.7.3-4ubuntu1.8.debian.tar.xz 109652 SHA256:c93f629fea192f758e8f28dd664310eedd5c926a5617278251e6428297c53a1e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.8.dsc' gnutls28_3.7.3-4ubuntu1.8.dsc 3575 SHA256:96c27046146d8e3d4641d161126f53cc62f330e8234ac8efa8fcb90747356772
-```
 
 ### `dpkg` source package: `google-perftools=2.9.1-0ubuntu3`
 
@@ -1573,18 +1567,18 @@ $ apt-get source -qq --print-uris lz4=1.9.3-2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.9.3-2build2.debian.tar.xz' lz4_1.9.3-2build2.debian.tar.xz 14088 SHA512:9f61516a672186299a96aee5b7a71d9cb1ad3db2697fa10b802fef14a63587bb3459281f7300726711a116893c10858914f558aece1d224876e287020a23dde6
 ```
 
-### `dpkg` source package: `mariadb=1:10.11.16+maria~ubu2204`
+### `dpkg` source package: `mariadb=1:10.11.17+maria~ubu2204`
 
 Binary Packages:
 
-- `libmariadb3:amd64=1:10.11.16+maria~ubu2204`
-- `mariadb-backup=1:10.11.16+maria~ubu2204`
-- `mariadb-client=1:10.11.16+maria~ubu2204`
-- `mariadb-client-core=1:10.11.16+maria~ubu2204`
-- `mariadb-common=1:10.11.16+maria~ubu2204`
-- `mariadb-server=1:10.11.16+maria~ubu2204`
-- `mariadb-server-core=1:10.11.16+maria~ubu2204`
-- `mysql-common=1:10.11.16+maria~ubu2204`
+- `libmariadb3:amd64=1:10.11.17+maria~ubu2204`
+- `mariadb-backup=1:10.11.17+maria~ubu2204`
+- `mariadb-client=1:10.11.17+maria~ubu2204`
+- `mariadb-client-core=1:10.11.17+maria~ubu2204`
+- `mariadb-common=1:10.11.17+maria~ubu2204`
+- `mariadb-server=1:10.11.17+maria~ubu2204`
+- `mariadb-server-core=1:10.11.17+maria~ubu2204`
+- `mysql-common=1:10.11.17+maria~ubu2204`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1593,9 +1587,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb=1:10.11.16+maria~ubu2204
-'http://archive.mariadb.org/mariadb-10.11.16/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.16%2bmaria%7eubu2204.dsc' mariadb_10.11.16+maria~ubu2204.dsc 4305 SHA256:0b45ea6470ddfd06e4a240c2823478b24f2e8454d41f751bb39ec989dff84f9f
-'http://archive.mariadb.org/mariadb-10.11.16/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.16%2bmaria%7eubu2204.tar.xz' mariadb_10.11.16+maria~ubu2204.tar.xz 183111832 SHA256:8198b67a36a6ac5b41d10c5769bfc0ece53e335853d0006ae5cc1cb5e3219c53
+$ apt-get source -qq --print-uris mariadb=1:10.11.17+maria~ubu2204
+'http://archive.mariadb.org/mariadb-10.11.17/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.17%2bmaria%7eubu2204.dsc' mariadb_10.11.17+maria~ubu2204.dsc 4276 SHA256:15f30dc85036c9a98f37a4d23928754b748c9f23ba51b67a096501e078067c36
+'http://archive.mariadb.org/mariadb-10.11.17/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.17%2bmaria%7eubu2204.tar.xz' mariadb_10.11.17+maria~ubu2204.tar.xz 183851968 SHA256:1c1b86c1877596a9e1b0d8989d60d4de01e6c196cda73b91096056e3d796fa7f
 ```
 
 ### `dpkg` source package: `mawk=1.3.4.20200120-3`
@@ -1961,11 +1955,11 @@ $ apt-get source -qq --print-uris readline=8.1.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.1.2-1.debian.tar.xz' readline_8.1.2-1.debian.tar.xz 29292 SHA512:a64621c93975bc42ba171c9298c932f9515025513911e744183092e0ef9873db474c4ec27a21f310f40e7b970ba6300edb057552f7e90fc469897ffa2eb706f0
 ```
 
-### `dpkg` source package: `rsync=3.2.7-0ubuntu0.22.04.4`
+### `dpkg` source package: `rsync=3.2.7-0ubuntu0.22.04.6`
 
 Binary Packages:
 
-- `rsync=3.2.7-0ubuntu0.22.04.4`
+- `rsync=3.2.7-0ubuntu0.22.04.6`
 
 Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 
@@ -1974,11 +1968,11 @@ Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris rsync=3.2.7-0ubuntu0.22.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7.orig.tar.gz' rsync_3.2.7.orig.tar.gz 1149787 SHA256:4e7d9d3f6ed10878c58c5fb724a67dacf4b6aac7340b13e488fb2dc41346f2bb
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7.orig.tar.gz.asc' rsync_3.2.7.orig.tar.gz.asc 195 SHA256:8e054b8e852f371fbcb757de51f1a07de5621ae959ea766d3c3e5439d7b5f4ae
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7-0ubuntu0.22.04.4.debian.tar.xz' rsync_3.2.7-0ubuntu0.22.04.4.debian.tar.xz 34896 SHA256:fc8c961a286259528f40958060e0965cdaa213f711275afc37fd34be1b3827aa
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7-0ubuntu0.22.04.4.dsc' rsync_3.2.7-0ubuntu0.22.04.4.dsc 2440 SHA256:4d82b01726ce19d1d9729086bbadb96575e5aeb1c9615a25e892a4404b4df182
+$ apt-get source -qq --print-uris rsync=3.2.7-0ubuntu0.22.04.6
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7.orig.tar.gz' rsync_3.2.7.orig.tar.gz 1149787 SHA512:c2afba11a352fd88133f9e96e19d6df80eb864450c83eced13a7faa23df947bccf2ef093f2101df6ee30abff4cbbd39ac802e9aa5f726e42c9caff274fad8377
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7.orig.tar.gz.asc' rsync_3.2.7.orig.tar.gz.asc 195 SHA512:bad9f48e033966566c6abf8cd485d35c0d9cf130eafb0c5fff9bcb928882283bbcdd2375e7c2880cf71cf81496ba6b743b61adca3d4678421c32915a2464acc3
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7-0ubuntu0.22.04.6.debian.tar.xz' rsync_3.2.7-0ubuntu0.22.04.6.debian.tar.xz 100492 SHA512:cebbef4effb1f89c6854297b700adef5ec90b8f80d92b1960624a75af61e03dbc55f51f353a3ba6b280e1359c9fa57263c36e57f85081949751fe52ebe65c28a
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7-0ubuntu0.22.04.6.dsc' rsync_3.2.7-0ubuntu0.22.04.6.dsc 2402 SHA512:328bec46a237cbdfd32730784e5a52bd2fabdc0dc45d93067e9628c4c8adf0fa6b20f573a6ffafed55d746b85ac094872b144a9083ea61e9ca292b1e1f6b44e8
 ```
 
 ### `dpkg` source package: `sed=4.8-1ubuntu2.1`
