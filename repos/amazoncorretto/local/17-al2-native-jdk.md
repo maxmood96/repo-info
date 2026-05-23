@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:32f9cef6c3cc5d801bb19ad860a6830187bfb9426f6decd7b5793df00b5684a1`
-- Created: `2026-05-09T00:18:53.161858831Z`
-- Virtual Size: ~ 496.28 Mb  
+- Image ID: `sha256:40244544a98cf3730e7bb542e7403fd12353f0592a5f35bd05ce913e56405449`
+- Created: `2026-05-22T21:12:12.379972804Z`
+- Virtual Size: ~ 496.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1484,15 +1484,15 @@ $ dnf --quiet download --source --url pyliblzma-0.5.3-25.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a1cdfd1aca2a4489cea8cf2ac192113c7b8cd3bfed8ed7b56cf68d70fca4dcf1/../../../../../blobstore/860af43ebf61fc4b2c6c02ec914630e76e68197a77f6b7318b92f5059c7673d1/pyliblzma-0.5.3-25.amzn2.src.rpm
 ```
 
-### `rpm` package: `python-2.7.18-1.amzn2.0.18.x86_64`
+### `rpm` package: `python-2.7.18-1.amzn2.0.19.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-2.7.18-1.amzn2.0.18
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a1cdfd1aca2a4489cea8cf2ac192113c7b8cd3bfed8ed7b56cf68d70fca4dcf1/../../../../../blobstore/c3982e79b356b9afa5f56ffb068ae5c88becfa629ef0aa722c251260e517606d/python-2.7.18-1.amzn2.0.18.src.rpm
+$ dnf --quiet download --source --url python-2.7.18-1.amzn2.0.19
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a1cdfd1aca2a4489cea8cf2ac192113c7b8cd3bfed8ed7b56cf68d70fca4dcf1/../../../../../blobstore/ce0a1cde72ca08b33652e4c7e5b53ab99e25be67a395a44e89602e5f9bbfe5f0/python-2.7.18-1.amzn2.0.19.src.rpm
 ```
 
 ### `rpm` package: `python-iniparse-0.4-9.amzn2.noarch`
@@ -1517,26 +1517,26 @@ $ dnf --quiet download --source --url python-javapackages-3.4.1-11.amzn2.noarch
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a1cdfd1aca2a4489cea8cf2ac192113c7b8cd3bfed8ed7b56cf68d70fca4dcf1/../../../../../blobstore/7b279e73b80141266fc87abd9ae6866834807a43d5ab435092e97bf21c4dc1ca/javapackages-tools-3.4.1-11.amzn2.src.rpm
 ```
 
-### `rpm` package: `python-libs-2.7.18-1.amzn2.0.18.x86_64`
+### `rpm` package: `python-libs-2.7.18-1.amzn2.0.19.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-libs-2.7.18-1.amzn2.0.18
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a1cdfd1aca2a4489cea8cf2ac192113c7b8cd3bfed8ed7b56cf68d70fca4dcf1/../../../../../blobstore/c3982e79b356b9afa5f56ffb068ae5c88becfa629ef0aa722c251260e517606d/python-2.7.18-1.amzn2.0.18.src.rpm
+$ dnf --quiet download --source --url python-libs-2.7.18-1.amzn2.0.19
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a1cdfd1aca2a4489cea8cf2ac192113c7b8cd3bfed8ed7b56cf68d70fca4dcf1/../../../../../blobstore/ce0a1cde72ca08b33652e4c7e5b53ab99e25be67a395a44e89602e5f9bbfe5f0/python-2.7.18-1.amzn2.0.19.src.rpm
 ```
 
-### `rpm` package: `python-lxml-3.2.1-4.amzn2.0.7.x86_64`
+### `rpm` package: `python-lxml-3.2.1-4.amzn2.0.8.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-lxml-3.2.1-4.amzn2.0.7
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a1cdfd1aca2a4489cea8cf2ac192113c7b8cd3bfed8ed7b56cf68d70fca4dcf1/../../../../../blobstore/6123d6ea99633913ee0377da4fa5ff28c7a432b23ed61d680b790e1cde4cd9bd/python-lxml-3.2.1-4.amzn2.0.7.src.rpm
+$ dnf --quiet download --source --url python-lxml-3.2.1-4.amzn2.0.8
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a1cdfd1aca2a4489cea8cf2ac192113c7b8cd3bfed8ed7b56cf68d70fca4dcf1/../../../../../blobstore/3579c4dc23cc2e9baffb22b15bfff7911496306829e16c443b7bdf034eac7616/python-lxml-3.2.1-4.amzn2.0.8.src.rpm
 ```
 
 ### `rpm` package: `python-pycurl-7.19.0-19.amzn2.0.2.x86_64`
@@ -1682,37 +1682,37 @@ $ dnf --quiet download --source --url system-release-2-17.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a1cdfd1aca2a4489cea8cf2ac192113c7b8cd3bfed8ed7b56cf68d70fca4dcf1/../../../../../blobstore/3599cf903c2cf24f55b835d112c54dd1283447c2aeec26d6effcf2c8e28916fd/system-release-2-17.amzn2.src.rpm
 ```
 
-### `rpm` package: `tzdata-2026a-1.amzn2.0.1.noarch`
+### `rpm` package: `tzdata-2026b-1.amzn2.0.1.noarch`
 
 Licenses (from `rpm --query`): LicenseRef-Fedora-Public-Domain AND (GPL-2.0-only WITH ClassPath-exception-2.0)
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2026a-1.amzn2.0.1.noarch
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a1cdfd1aca2a4489cea8cf2ac192113c7b8cd3bfed8ed7b56cf68d70fca4dcf1/../../../../../blobstore/846cccc90714edef84ec46b81b9b33be3e9222428bc7201284ead03dc3143538/tzdata-2026a-1.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url tzdata-2026b-1.amzn2.0.1.noarch
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a1cdfd1aca2a4489cea8cf2ac192113c7b8cd3bfed8ed7b56cf68d70fca4dcf1/../../../../../blobstore/952e3b798bf4573bc37d4eaadbcd1f2c52e6102af6873393d919f3c78bb99eee/tzdata-2026b-1.amzn2.0.1.src.rpm
 ```
 
-### `rpm` package: `vim-data-9.0.2153-1.amzn2.0.5.noarch`
+### `rpm` package: `vim-data-9.0.2153-1.amzn2.0.6.noarch`
 
 Licenses (from `rpm --query`): Vim AND LGPL-2.1-or-later AND MIT AND GPL-1.0-only AND (GPL-2.0-only OR Vim) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND GPL-2.0-or-later AND GPL-3.0-or-later AND OPUBL-1.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url vim-data-9.0.2153-1.amzn2.0.5.noarch
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a1cdfd1aca2a4489cea8cf2ac192113c7b8cd3bfed8ed7b56cf68d70fca4dcf1/../../../../../blobstore/55f733d7deea03e7baf3fc803abb0c678750f35a5bdd3fc1587db28b6dba8800/vim-9.0.2153-1.amzn2.0.5.src.rpm
+$ dnf --quiet download --source --url vim-data-9.0.2153-1.amzn2.0.6.noarch
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a1cdfd1aca2a4489cea8cf2ac192113c7b8cd3bfed8ed7b56cf68d70fca4dcf1/../../../../../blobstore/493da6eb4805579db83b715bfd6afe26628c46f3aef09ca165f5007e605fcf07/vim-9.0.2153-1.amzn2.0.6.src.rpm
 ```
 
-### `rpm` package: `vim-minimal-9.0.2153-1.amzn2.0.5.x86_64`
+### `rpm` package: `vim-minimal-9.0.2153-1.amzn2.0.6.x86_64`
 
 Licenses (from `rpm --query`): Vim AND LGPL-2.1-or-later AND MIT AND GPL-1.0-only AND (GPL-2.0-only OR Vim) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND GPL-2.0-or-later AND GPL-3.0-or-later AND OPUBL-1.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url vim-minimal-9.0.2153-1.amzn2.0.5
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a1cdfd1aca2a4489cea8cf2ac192113c7b8cd3bfed8ed7b56cf68d70fca4dcf1/../../../../../blobstore/55f733d7deea03e7baf3fc803abb0c678750f35a5bdd3fc1587db28b6dba8800/vim-9.0.2153-1.amzn2.0.5.src.rpm
+$ dnf --quiet download --source --url vim-minimal-9.0.2153-1.amzn2.0.6
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/a1cdfd1aca2a4489cea8cf2ac192113c7b8cd3bfed8ed7b56cf68d70fca4dcf1/../../../../../blobstore/493da6eb4805579db83b715bfd6afe26628c46f3aef09ca165f5007e605fcf07/vim-9.0.2153-1.amzn2.0.6.src.rpm
 ```
 
 ### `rpm` package: `xz-libs-5.2.2-1.amzn2.0.3.x86_64`
