@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:02c430ec8a3fdc0626dd3a576dceddbed088f6695a71fdd140324e7a8b5f55c3`
-- Created: `2026-05-20T02:20:39.408320762Z`
+- Image ID: `sha256:d4c39d25a808db8632e875c232714496b070597988612eb4c69813b69c3de35d`
+- Created: `2026-05-20T20:12:02.149467443Z`
 - Virtual Size: ~ 1.05 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=26.1.0`
+  - `NODE_VERSION=26.2.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1583,21 +1583,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u9
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u9.dsc' gnutls28_3.7.1-5+deb11u9.dsc 3541 SHA256:43651971eb727d20ef648dc033e20fcb620c276687a6b8afa9832be165f38b33
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz' gnutls28_3.7.1.orig.tar.xz 6038388 SHA256:3777d7963eca5e06eb315686163b7b3f5045e2baac5e54e038ace9835e5cac6f
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz.asc' gnutls28_3.7.1.orig.tar.xz.asc 854 SHA256:13a683b12602c169a7ad7827ab0e3f35c8fa1f98675d0073cf7d54a8cd635582
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u9.debian.tar.xz' gnutls28_3.7.1-5+deb11u9.debian.tar.xz 132768 SHA256:fb421a35577a7d9885de48f100f25d13eee9d18185c4a211141f1b167d67fcab
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u9/
 
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u9/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gobject-introspection=1.66.1-1`
 
@@ -4300,20 +4292,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc
 - `ZLIB`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjpeg2=2.4.0-3+deb11u2
-'http://deb.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.4.0-3%2bdeb11u2.dsc' openjpeg2_2.4.0-3+deb11u2.dsc 2775 SHA256:bc2db7690db529c9443e8a1f4b26b6aca52ebb67c3b48863f262903d5f1389cc
-'http://deb.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.4.0.orig.tar.xz' openjpeg2_2.4.0.orig.tar.xz 1396964 SHA256:4b89da8abea5ea4e8dd5b214f1633a492554d784b5aebc22cb6495a1e5fe681c
-'http://deb.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.4.0-3%2bdeb11u2.debian.tar.xz' openjpeg2_2.4.0-3+deb11u2.debian.tar.xz 22816 SHA256:164e86f860ddfce77913627897bf698aad4271d1b61db90752c09db1931dae83
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjpeg2/2.4.0-3+deb11u2/
 
-- https://sources.debian.net/src/openjpeg2/2.4.0-3+deb11u2/ (for browsing the source)
-- https://sources.debian.net/src/openjpeg2/2.4.0-3+deb11u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjpeg2/2.4.0-3+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.57+dfsg-3+deb11u1`
 
