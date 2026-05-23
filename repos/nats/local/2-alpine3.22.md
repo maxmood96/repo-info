@@ -1,17 +1,17 @@
-# `nats:2.14.0-alpine3.22`
+# `nats:2.14.1-alpine3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d2aa95f5acd85535217858bde3f513b2fd61fcded722bdd5d17bb9d89f124eb0`
-- Created: `2026-04-30T23:54:43.549671898Z`
-- Virtual Size: ~ 27.29 Mb  
+- Image ID: `sha256:c133130b2f2f46568f11546ffef920fccb739e99fd733ef11ea43fc1737887c3`
+- Created: `2026-05-20T18:37:17.937765618Z`
+- Virtual Size: ~ 27.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["nats-server","--config","/etc/nats/nats-server.conf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NATS_SERVER=2.14.0`
+  - `NATS_SERVER=2.14.1`
 - Labels:
   - `org.opencontainers.image.description=NATS is an open-source, high-performance, cloud native messaging system.`
   - `org.opencontainers.image.documentation=https://docs.nats.io`
@@ -20,7 +20,7 @@
   - `org.opencontainers.image.title=NATS Server`
   - `org.opencontainers.image.url=https://nats.io`
   - `org.opencontainers.image.vendor=NATS.io`
-  - `org.opencontainers.image.version=2.14.0`
+  - `org.opencontainers.image.version=2.14.1`
 
 ## `apk` (`.apk`-based packages)
 
