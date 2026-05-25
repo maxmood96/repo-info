@@ -752,21 +752,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u9
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u9.dsc' gnutls28_3.7.1-5+deb11u9.dsc 3541 SHA256:43651971eb727d20ef648dc033e20fcb620c276687a6b8afa9832be165f38b33
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz' gnutls28_3.7.1.orig.tar.xz 6038388 SHA256:3777d7963eca5e06eb315686163b7b3f5045e2baac5e54e038ace9835e5cac6f
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz.asc' gnutls28_3.7.1.orig.tar.xz.asc 854 SHA256:13a683b12602c169a7ad7827ab0e3f35c8fa1f98675d0073cf7d54a8cd635582
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u9.debian.tar.xz' gnutls28_3.7.1-5+deb11u9.debian.tar.xz 132768 SHA256:fb421a35577a7d9885de48f100f25d13eee9d18185c4a211141f1b167d67fcab
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u9/
 
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u9/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.6-1+deb11u1`
 
@@ -889,20 +881,13 @@ Licenses: (parsed from: `/usr/share/doc/jq/copyright`, `/usr/share/doc/libjq1/co
 - `GPL-2.0+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris jq=1.6-2.1+deb11u1
-'http://deb.debian.org/debian-security/pool/updates/main/j/jq/jq_1.6-2.1%2bdeb11u1.dsc' jq_1.6-2.1+deb11u1.dsc 2132 SHA256:f423b9a3a2d570b5c1976a69a0e34fa98847c9ffae29896edb19397908756817
-'http://deb.debian.org/debian-security/pool/updates/main/j/jq/jq_1.6.orig.tar.gz' jq_1.6.orig.tar.gz 419859 SHA256:3ba940b97571c866923f0409678033d33b5a98758dfc174fad8397ed908bc4d9
-'http://deb.debian.org/debian-security/pool/updates/main/j/jq/jq_1.6-2.1%2bdeb11u1.debian.tar.xz' jq_1.6-2.1+deb11u1.debian.tar.xz 14408 SHA256:377efe63863d7fe3f177abc6d574f81fbc7683bfb87b005efb53da18493e72ce
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/jq/1.6-2.1+deb11u1/
 
-- https://sources.debian.net/src/jq/1.6-2.1+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/jq/1.6-2.1+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/jq/1.6-2.1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.6.1-2`
 
