@@ -1,10 +1,10 @@
-# `drupal:11.3.9-php8.4-fpm-alpine3.22`
+# `drupal:11.3.10-php8.4-fpm-alpine3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cdc28a59ac113eb818513a8622bd2a585fad0ba510ffa774616f542181fe8493`
-- Created: `2026-05-14T17:13:10.039975188Z`
-- Virtual Size: ~ 190.67 Mb  
+- Image ID: `sha256:80520f85de61976bc8fcfb84c9bfad810fd59d039fb3a2ba027a4c6869cff191`
+- Created: `2026-05-22T16:24:22.317376247Z`
+- Virtual Size: ~ 190.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.4.21.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.21.tar.xz.asc`
   - `PHP_SHA256=7cf5d8ab12c3b2016875bcfaec71bef1ef0b07bed6148f2c447577074431f984`
-  - `DRUPAL_VERSION=11.3.9`
+  - `DRUPAL_VERSION=11.3.10`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `apk` (`.apk`-based packages)
@@ -454,16 +454,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-17.9-r0 description:
+libpq-17.10-r0 description:
 PostgreSQL client library
 
-libpq-17.9-r0 webpage:
+libpq-17.10-r0 webpage:
 https://www.postgresql.org/
 
-libpq-17.9-r0 installed size:
+libpq-17.10-r0 installed size:
 322 KiB
 
-libpq-17.9-r0 license:
+libpq-17.10-r0 license:
 PostgreSQL
 
 ```
