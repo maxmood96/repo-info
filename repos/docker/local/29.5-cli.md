@@ -1,19 +1,19 @@
-# `docker:29.5.1-cli`
+# `docker:29.5.2-cli`
 
 ## Docker Metadata
 
-- Image ID: `sha256:54560465c89852384428d8b003c70278f2a11fdee74fde28173fea1077416da9`
-- Created: `2026-05-19T18:43:55.534201437Z`
-- Virtual Size: ~ 166.41 Mb  
+- Image ID: `sha256:1a190ccdf9e97f139d089920e904db8c97e394f8b5f3ff536cdadeda6c821ded`
+- Created: `2026-05-21T22:57:01.612372614Z`
+- Virtual Size: ~ 166.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.5.1`
-  - `DOCKER_BUILDX_VERSION=0.34.0`
-  - `DOCKER_COMPOSE_VERSION=5.1.3`
+  - `DOCKER_VERSION=29.5.2`
+  - `DOCKER_BUILDX_VERSION=0.34.1`
+  - `DOCKER_COMPOSE_VERSION=5.1.4`
   - `DOCKER_TLS_CERTDIR=/certs`
 
 ## `apk` (`.apk`-based packages)

@@ -1,18 +1,18 @@
-# `docker:29.5.1-dind`
+# `docker:29.5.2-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a475a10539689996453c7c7aa57795a1c35cb8da621faddaef1fb0f05cdb7723`
-- Created: `2026-05-19T18:52:13.388047283Z`
-- Virtual Size: ~ 378.11 Mb  
+- Image ID: `sha256:e66c2031aa87d55dc42382335002372966bf0c8c4375c1e803ab288998a8c142`
+- Created: `2026-05-22T00:10:23.166160775Z`
+- Virtual Size: ~ 378.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.5.1`
-  - `DOCKER_BUILDX_VERSION=0.34.0`
-  - `DOCKER_COMPOSE_VERSION=5.1.3`
+  - `DOCKER_VERSION=29.5.2`
+  - `DOCKER_BUILDX_VERSION=0.34.1`
+  - `DOCKER_COMPOSE_VERSION=5.1.4`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
 
