@@ -230,20 +230,13 @@ Licenses: (parsed from: `/usr/share/doc/autoconf/copyright`)
 - `permissive-without-disclaimer`
 - `permissive-without-notices-or-disclaimer`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris autoconf=2.72-6
-'http://deb.debian.org/debian/pool/main/a/autoconf/autoconf_2.72-6.dsc' autoconf_2.72-6.dsc 2101 SHA256:93fd1557576452ca65999ed06ef890f46d55fc7a8618276d6f8911502847dccf
-'http://deb.debian.org/debian/pool/main/a/autoconf/autoconf_2.72.orig.tar.xz' autoconf_2.72.orig.tar.xz 1389680 SHA256:ba885c1319578d6c94d46e9b0dceb4014caafe2490e437a0dbca3f270a223f5a
-'http://deb.debian.org/debian/pool/main/a/autoconf/autoconf_2.72-6.debian.tar.xz' autoconf_2.72-6.debian.tar.xz 20960 SHA256:d1b171076aaab320b9f9a1cb66593145653c924d3dbc752fcb508fd9575f672f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/autoconf/2.72-6/
 
-- https://sources.debian.net/src/autoconf/2.72-6/ (for browsing the source)
-- https://sources.debian.net/src/autoconf/2.72-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/autoconf/2.72-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `automake=1:1.18.1-4`
 
@@ -1035,20 +1028,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.8.0-1
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.0-1.dsc' expat_2.8.0-1.dsc 1970 SHA256:db9e0413b7ad34bcdd63045b76144d7ee4ed423f09dbb20009138b46fead942e
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.0.orig.tar.gz' expat_2.8.0.orig.tar.gz 8454954 SHA256:b6cfb7fee2d674587d94899d1f2dc039a7cbb65d167f0ba601d0b73a58f9db9e
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.0-1.debian.tar.xz' expat_2.8.0-1.debian.tar.xz 13604 SHA256:fb3074f1e9ddcb0757a3c9c479edfa5c1f4cdfbbbab121d0a12971c9fa42927a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.8.0-1/
 
-- https://sources.debian.net/src/expat/2.8.0-1/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.8.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.8.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.10-2`
 
@@ -2146,21 +2132,13 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.22.1-2
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.22.1-2.dsc' krb5_1.22.1-2.dsc 3378 SHA256:2f6e27442ee93856cdb52cf87050b7c2447239c2ad4e30da8a6d8972ac862c2d
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.22.1.orig.tar.gz' krb5_1.22.1.orig.tar.gz 8747101 SHA256:1a8832b8cad923ebbf1394f67e2efcf41e3a49f460285a66e35adec8fa0053af
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.22.1.orig.tar.gz.asc' krb5_1.22.1.orig.tar.gz.asc 833 SHA256:598334b7b54f63a2280f72cc566bee6f9cbc5ef4dcd9ccabd3a0460641908a64
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.22.1-2.debian.tar.xz' krb5_1.22.1-2.debian.tar.xz 102864 SHA256:6256a11c4dec6ec9897fb6aee006a14cb13cfe89dc4e66cc9cfc3ed31294c59c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.22.1-2/
 
-- https://sources.debian.net/src/krb5/1.22.1-2/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.22.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.22.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lcms2=2.17-1.1`
 
@@ -2768,21 +2746,13 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`, `/usr/share/doc/li
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn2=2.3.8-4
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.8-4.dsc' libidn2_2.3.8-4.dsc 2811 SHA256:a48a66a00e742b5985db5215dc99d59f5bc257de32ef62f9c71374934cc2ce8d
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.8.orig.tar.gz' libidn2_2.3.8.orig.tar.gz 718637 SHA256:bbad1678d35d28e2c62e6a2577083829461402d9e47b908791c55314a5cb5e04
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.8.orig.tar.gz.asc' libidn2_2.3.8.orig.tar.gz.asc 1223 SHA256:8995cab7db361d9d6989eab26d9b521c74236960a5d78250121c8d369b013bd8
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.8-4.debian.tar.xz' libidn2_2.3.8-4.debian.tar.xz 18116 SHA256:527b1675003a8be38cda322be1f3ba9352687f8d2ba438f0c82a06318848ff83
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libidn2/2.3.8-4/
 
-- https://sources.debian.net/src/libidn2/2.3.8-4/ (for browsing the source)
-- https://sources.debian.net/src/libidn2/2.3.8-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libidn2/2.3.8-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libjpeg-turbo=1:3.1.3-4`
 
@@ -2924,21 +2894,13 @@ Licenses: (parsed from: `/usr/share/doc/libmd0/copyright`)
 - `public-domain-md5`
 - `public-domain-sha1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libmd=1.1.0-2
-'http://deb.debian.org/debian/pool/main/libm/libmd/libmd_1.1.0-2.dsc' libmd_1.1.0-2.dsc 2280 SHA256:46cc951cd6d71bbfeff4522de66f968fb92601ec4cc622b07f6ac0a2a36ac5f0
-'http://deb.debian.org/debian/pool/main/libm/libmd/libmd_1.1.0.orig.tar.xz' libmd_1.1.0.orig.tar.xz 271228 SHA256:1bd6aa42275313af3141c7cf2e5b964e8b1fd488025caf2f971f43b00776b332
-'http://deb.debian.org/debian/pool/main/libm/libmd/libmd_1.1.0.orig.tar.xz.asc' libmd_1.1.0.orig.tar.xz.asc 833 SHA256:402fd3024e43ab975733d09e661804a58ca58697194e4b15216b1217cfe1dadb
-'http://deb.debian.org/debian/pool/main/libm/libmd/libmd_1.1.0-2.debian.tar.xz' libmd_1.1.0-2.debian.tar.xz 8244 SHA256:3b6ff35fc921eb5450fa9bf2d300c9e058e3771f96f8f13f759768fadd53324c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libmd/1.1.0-2/
 
-- https://sources.debian.net/src/libmd/1.1.0-2/ (for browsing the source)
-- https://sources.debian.net/src/libmd/1.1.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libmd/1.1.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpng1.6=1.6.58-1`
 
@@ -4861,20 +4823,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-18=18.3-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.3-1.dsc' postgresql-18_18.3-1.dsc 4752 SHA256:38b360aa0386959b74b7af48d32beb1c645a44f7f2010c2426b4309d6f4a0f0e
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.3.orig.tar.bz2' postgresql-18_18.3.orig.tar.bz2 22497924 SHA256:d95663fbbf3a80f81a9d98d895266bdcb74ba274bcc04ef6d76630a72dee016f
-'http://deb.debian.org/debian/pool/main/p/postgresql-18/postgresql-18_18.3-1.debian.tar.xz' postgresql-18_18.3-1.debian.tar.xz 25136 SHA256:c93635968686b8ee5c81092feb1ecafd8d70c8a7b506ecdddcc8ff887ec04c99
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-18/18.3-1/
 
-- https://sources.debian.net/src/postgresql-18/18.3-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-18/18.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-18/18.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.4-9`
 
@@ -4920,20 +4875,13 @@ Licenses: (parsed from: `/usr/share/doc/python3-packaging/copyright`)
 - `BSD-3-clause`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-packaging=25.0-2
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_25.0-2.dsc' python-packaging_25.0-2.dsc 2526 SHA256:5b7cb05c8ab31166f8b7a315d954c21ca0c414e475864e69b81ee18a040a7cab
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_25.0.orig.tar.gz' python-packaging_25.0.orig.tar.gz 165727 SHA256:d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f
-'http://deb.debian.org/debian/pool/main/p/python-packaging/python-packaging_25.0-2.debian.tar.xz' python-packaging_25.0-2.debian.tar.xz 4232 SHA256:1bc8a69a700dfa8e6172d64c6f839a4d8e05cd4caca6f69f66cebc9e75532971
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python-packaging/25.0-2/
 
-- https://sources.debian.net/src/python-packaging/25.0-2/ (for browsing the source)
-- https://sources.debian.net/src/python-packaging/25.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python-packaging/25.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.13.9-3`
 
@@ -5569,21 +5517,13 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unbound=1.24.2-1
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.24.2-1.dsc' unbound_1.24.2-1.dsc 3267 SHA256:fb416caafd91f080db635f83e414e22cdc46ea1baed89cab660ad3c2f657adaa
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.24.2.orig.tar.gz' unbound_1.24.2.orig.tar.gz 6905018 SHA256:44e7b53e008a6dcaec03032769a212b46ab5c23c105284aa05a4f3af78e59cdb
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.24.2.orig.tar.gz.asc' unbound_1.24.2.orig.tar.gz.asc 862 SHA256:b9bc1395242e1d22bf8a2bf4504a40b405a6a4fa527db27116b50da317111246
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.24.2-1.debian.tar.xz' unbound_1.24.2-1.debian.tar.xz 35820 SHA256:7b3027fa14199b844a36294c27bd3d68941f42b696658705bf97eba7e41cb687
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/unbound/1.24.2-1/
 
-- https://sources.debian.net/src/unbound/1.24.2-1/ (for browsing the source)
-- https://sources.debian.net/src/unbound/1.24.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unbound/1.24.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-29`
 

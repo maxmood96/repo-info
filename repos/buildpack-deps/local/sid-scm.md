@@ -733,20 +733,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.8.0-2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.0-2.dsc' expat_2.8.0-2.dsc 1970 SHA256:ac71b0fa6c9b8e748f864902d1da5ab21b095517f9a1c29efb1b4a2bda3f13ba
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.0.orig.tar.gz' expat_2.8.0.orig.tar.gz 8454954 SHA256:b6cfb7fee2d674587d94899d1f2dc039a7cbb65d167f0ba601d0b73a58f9db9e
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.0-2.debian.tar.xz' expat_2.8.0-2.debian.tar.xz 19944 SHA256:ff646c22da9fb25e9e28e6c637046d188d5897f26f08c407f6585b65f0147fb7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.8.0-2/
 
-- https://sources.debian.net/src/expat/2.8.0-2/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.8.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.8.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.10.0-4`
 
@@ -1403,20 +1396,13 @@ Licenses: (parsed from: `/usr/share/doc/libedit2/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libedit=3.1-20251016-1
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20251016-1.dsc' libedit_3.1-20251016-1.dsc 2264 SHA256:82f4a6ba02d58128414520489537cd73d765c2ed3fb636cc6708f1c576f51bfe
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20251016.orig.tar.gz' libedit_3.1-20251016.orig.tar.gz 549005 SHA256:21362b00653bbfc1c71f71a7578da66b5b5203559d43134d2dd7719e313ce041
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20251016-1.debian.tar.xz' libedit_3.1-20251016-1.debian.tar.xz 16716 SHA256:f4044457a9648f00ea77e79069e0569f47d48c00b310150dcd070de689e4d8ed
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libedit/3.1-20251016-1/
 
-- https://sources.debian.net/src/libedit/3.1-20251016-1/ (for browsing the source)
-- https://sources.debian.net/src/libedit/3.1-20251016-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libedit/3.1-20251016-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `liberror-perl=0.17030-1`
 
@@ -1612,21 +1598,13 @@ Licenses: (parsed from: `/usr/share/doc/libksba8/copyright`)
 - `GPL-3`
 - `LGPL-2.1-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libksba=1.6.8-2
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.8-2.dsc' libksba_1.6.8-2.dsc 2480 SHA256:6b134b2362e4a9b2ac35d17d6dcc3cbf267b4ebfe5523eb4ebbda10d8686a30a
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.8.orig.tar.bz2' libksba_1.6.8.orig.tar.bz2 716917 SHA256:0f4510f1c7a679c3545990a31479f391ad45d84e039176309d42f80cf41743f5
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.8.orig.tar.bz2.asc' libksba_1.6.8.orig.tar.bz2.asc 464 SHA256:3358aaf4b8bbbcf7c30b441ee19dcc01a586d9a661b95a7cd2443e103a5f1242
-'http://deb.debian.org/debian/pool/main/libk/libksba/libksba_1.6.8-2.debian.tar.xz' libksba_1.6.8-2.debian.tar.xz 14912 SHA256:484d137fe043d8736af9a1dfd22ee19bb3df39c70f36d6144901e5b370f8ae59
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libksba/1.6.8-2/
 
-- https://sources.debian.net/src/libksba/1.6.8-2/ (for browsing the source)
-- https://sources.debian.net/src/libksba/1.6.8-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libksba/1.6.8-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libmd=1.2.0-1`
 
