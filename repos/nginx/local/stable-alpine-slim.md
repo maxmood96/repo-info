@@ -1,9 +1,9 @@
-# `nginx:1.30.1-alpine-slim`
+# `nginx:1.30.2-alpine-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:700e17e248076bca13c394584d49f46d72586969c080b909491b7624d95fe528`
-- Created: `2026-05-19T20:15:20.71218327Z`
+- Image ID: `sha256:7f7379687e7942604aeabab953ece739138e28ace8a21f769720d080f2775cbc`
+- Created: `2026-05-22T18:25:13.475748046Z`
 - Virtual Size: ~ 12.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.30.1`
+  - `NGINX_VERSION=1.30.2`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
 - Labels:
@@ -277,16 +277,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.30.1-r1 description:
+nginx-1.30.2-r1 description:
 High performance web server
 
-nginx-1.30.1-r1 webpage:
+nginx-1.30.2-r1 webpage:
 https://nginx.org/
 
-nginx-1.30.1-r1 installed size:
+nginx-1.30.2-r1 installed size:
 2732 KiB
 
-nginx-1.30.1-r1 license:
+nginx-1.30.2-r1 license:
 2-clause BSD-like license
 
 ```

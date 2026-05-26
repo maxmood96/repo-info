@@ -1,9 +1,9 @@
-# `nginx:1.31.0-alpine-perl`
+# `nginx:1.31.1-alpine-perl`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3ad8759b1d868ffc0c1789ecdd0cf839b46bec9ec01509a599c1fae28e3d75e8`
-- Created: `2026-05-19T21:30:49.393580835Z`
+- Image ID: `sha256:78381092dd666609cea6780279cdacf80901effb2af7e5c35de4fa080b8a81e2`
+- Created: `2026-05-22T19:10:11.923794429Z`
 - Virtual Size: ~ 102.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.31.0`
+  - `NGINX_VERSION=1.31.1`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
   - `NJS_VERSION=0.9.9`
@@ -994,16 +994,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.31.0-r1 description:
+nginx-1.31.1-r1 description:
 High performance web server
 
-nginx-1.31.0-r1 webpage:
+nginx-1.31.1-r1 webpage:
 https://nginx.org/
 
-nginx-1.31.0-r1 installed size:
+nginx-1.31.1-r1 installed size:
 2769 KiB
 
-nginx-1.31.0-r1 license:
+nginx-1.31.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1011,16 +1011,16 @@ nginx-1.31.0-r1 license:
 ### `apk` package: `nginx-module-acme`
 
 ```console
-nginx-module-acme-1.31.0.0.4.1-r1 description:
+nginx-module-acme-1.31.1.0.4.1-r1 description:
 nginx nginx-acme
 
-nginx-module-acme-1.31.0.0.4.1-r1 webpage:
+nginx-module-acme-1.31.1.0.4.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-acme-1.31.0.0.4.1-r1 installed size:
+nginx-module-acme-1.31.1.0.4.1-r1 installed size:
 8167 KiB
 
-nginx-module-acme-1.31.0.0.4.1-r1 license:
+nginx-module-acme-1.31.1.0.4.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1028,16 +1028,16 @@ nginx-module-acme-1.31.0.0.4.1-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.31.0-r1 description:
+nginx-module-geoip-1.31.1-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.31.0-r1 webpage:
+nginx-module-geoip-1.31.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.31.0-r1 installed size:
+nginx-module-geoip-1.31.1-r1 installed size:
 62 KiB
 
-nginx-module-geoip-1.31.0-r1 license:
+nginx-module-geoip-1.31.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1045,16 +1045,16 @@ nginx-module-geoip-1.31.0-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.31.0-r1 description:
+nginx-module-image-filter-1.31.1-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.31.0-r1 webpage:
+nginx-module-image-filter-1.31.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.31.0-r1 installed size:
+nginx-module-image-filter-1.31.1-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.31.0-r1 license:
+nginx-module-image-filter-1.31.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1062,16 +1062,16 @@ nginx-module-image-filter-1.31.0-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.31.0.0.9.9-r1 description:
+nginx-module-njs-1.31.1.0.9.9-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.31.0.0.9.9-r1 webpage:
+nginx-module-njs-1.31.1.0.9.9-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.31.0.0.9.9-r1 installed size:
+nginx-module-njs-1.31.1.0.9.9-r1 installed size:
 9392 KiB
 
-nginx-module-njs-1.31.0.0.9.9-r1 license:
+nginx-module-njs-1.31.1.0.9.9-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1079,16 +1079,16 @@ nginx-module-njs-1.31.0.0.9.9-r1 license:
 ### `apk` package: `nginx-module-perl`
 
 ```console
-nginx-module-perl-1.31.0-r1 description:
+nginx-module-perl-1.31.1-r1 description:
 nginx Perl dynamic module
 
-nginx-module-perl-1.31.0-r1 webpage:
+nginx-module-perl-1.31.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-perl-1.31.0-r1 installed size:
+nginx-module-perl-1.31.1-r1 installed size:
 85 KiB
 
-nginx-module-perl-1.31.0-r1 license:
+nginx-module-perl-1.31.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -1096,16 +1096,16 @@ nginx-module-perl-1.31.0-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.31.0-r1 description:
+nginx-module-xslt-1.31.1-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.31.0-r1 webpage:
+nginx-module-xslt-1.31.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.31.0-r1 installed size:
+nginx-module-xslt-1.31.1-r1 installed size:
 46 KiB
 
-nginx-module-xslt-1.31.0-r1 license:
+nginx-module-xslt-1.31.1-r1 license:
 2-clause BSD-like license
 
 ```
