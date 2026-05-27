@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a25d21aaeb565c9adb291a49fe9a694237cf957c0d78da6b3134d01900bbd455`
-- Created: `2026-05-11T16:40:28.623870682Z`
+- Image ID: `sha256:08a7829a19125f266fe17e2ff5c9a244e39bb685c17697d59b62cef2b5a5ac1c`
+- Created: `2026-05-26T19:12:11.635076512Z`
 - Virtual Size: ~ 93.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -189,15 +189,15 @@ $ dnf --quiet download --source --url gawk-4.2.1-4.el8
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/gawk-4.2.1-4.el8.src.rpm
 ```
 
-### `rpm` package: `glib2-2.56.4-168.el8_10.x86_64`
+### `rpm` package: `glib2-2.56.4-169.el8_10.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glib2-2.56.4-168.el8_10
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glib2-2.56.4-168.el8_10.src.rpm
+$ dnf --quiet download --source --url glib2-2.56.4-169.el8_10
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glib2-2.56.4-169.el8_10.src.rpm
 ```
 
 ### `rpm` package: `glibc-2.28-251.el8_10.34.x86_64`
@@ -344,15 +344,15 @@ $ dnf --quiet download --source --url keyutils-libs-1.5.10-9.el8
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/keyutils-1.5.10-9.el8.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.18.2-33.el8_10.x86_64`
+### `rpm` package: `krb5-libs-1.18.2-34.el8_10.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.18.2-33.el8_10
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/krb5-1.18.2-33.el8_10.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.18.2-34.el8_10
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/krb5-1.18.2-34.el8_10.src.rpm
 ```
 
 ### `rpm` package: `langpacks-en-1.0-12.el8.noarch`
