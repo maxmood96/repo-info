@@ -1,10 +1,10 @@
-# `hylang:1.2.0-python3.10-trixie`
+# `hylang:1.3.0-python3.10-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5da294472bf4a2ee6c68bc61c7f44469e9e7069c51f24c2d375b0d187ab56d98`
-- Created: `2026-05-20T00:41:40.674666862Z`
-- Virtual Size: ~ 132.81 Mb  
+- Image ID: `sha256:713db2454282bc32bc2f5541e3943d21750d482de7e3a54f3d0c205cbaaf3b6c`
+- Created: `2026-05-27T00:12:06.606353609Z`
+- Virtual Size: ~ 132.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -14,7 +14,7 @@
   - `GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D`
   - `PYTHON_VERSION=3.10.20`
   - `PYTHON_SHA256=de6517421601e39a9a3bc3e1bc4c7b2f239297423ee05e282598c83ec0647505`
-  - `HY_VERSION=1.2.0`
+  - `HY_VERSION=1.3.0`
   - `HYRULE_VERSION=1.0.1`
 
 ## `dpkg` (`.deb`-based packages)
