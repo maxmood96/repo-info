@@ -1,7 +1,7 @@
 ## `rabbitmq:4-management`
 
 ```console
-$ docker pull rabbitmq@sha256:bb93cdfb6b57ef7bf5fdc0c9212140894d396a75f70e8311b668e564881ebaaf
+$ docker pull rabbitmq@sha256:8dee04a47dd603422f03b57b5b32b218944dc0c07461ffb0cf38d3f6f743ab57
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -614,13 +614,13 @@ $ docker pull rabbitmq@sha256:7a25f2722cd3b6fc1a8260f57e4a15166c61ce769b20713b27
 ### `rabbitmq:4-management` - linux; riscv64
 
 ```console
-$ docker pull rabbitmq@sha256:71fa22e894d7ec3773e849b08a8d8975300a472e7da337b009311af4899fe52e
+$ docker pull rabbitmq@sha256:be1b6b8a0c487dc9c66773976dafa103af7e2b8ca86454261be5eb7612ba259c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.4 MB (105368280 bytes)**  
+-	Total Size: **105.4 MB (105368626 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:653c4eadcdf7408266c79d857d3cb5dc822c9c138b4b7eada6cf141c0075b3dc`
+-	Image ID: `sha256:f9cc4456f1a9149e568d68a7189ee78ae769c1ebaff2d9da5d4589a486850ac2`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -635,57 +635,57 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:a9a4679e3df2846468311b83a8f6ab86f5a205bab966d3f236c9f30151010c5b in / 
 # Fri, 10 Apr 2026 09:24:47 GMT
 CMD ["/bin/bash"]
-# Wed, 22 Apr 2026 03:52:29 GMT
+# Tue, 26 May 2026 20:13:31 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Wed, 22 Apr 2026 03:52:29 GMT
+# Tue, 26 May 2026 20:13:31 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Wed, 22 Apr 2026 03:52:29 GMT
+# Tue, 26 May 2026 20:13:31 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Wed, 22 Apr 2026 03:52:30 GMT
+# Tue, 26 May 2026 20:13:32 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Wed, 22 Apr 2026 03:52:30 GMT
+# Tue, 26 May 2026 20:13:32 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 22 Apr 2026 03:52:30 GMT
+# Tue, 26 May 2026 20:13:32 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Wed, 22 Apr 2026 03:52:34 GMT
+# Tue, 26 May 2026 20:13:36 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		ldconfig; 	sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		groupadd --gid 999 --system rabbitmq; 	useradd --uid 999 --system --home-dir "$RABBITMQ_DATA_DIR" --gid rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie # buildkit
-# Wed, 22 Apr 2026 03:52:34 GMT
-ENV RABBITMQ_VERSION=4.3.0
-# Wed, 22 Apr 2026 03:52:34 GMT
+# Tue, 26 May 2026 20:13:36 GMT
+ENV RABBITMQ_VERSION=4.3.1
+# Tue, 26 May 2026 20:13:36 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Wed, 22 Apr 2026 03:52:34 GMT
+# Tue, 26 May 2026 20:13:36 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Wed, 22 Apr 2026 03:52:34 GMT
+# Tue, 26 May 2026 20:13:36 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sun, 26 Apr 2026 11:16:43 GMT
+# Tue, 26 May 2026 20:15:48 GMT
 RUN set -eux; 	export DEBIAN_FRONTEND=noninteractive; 	apt-get update; 	apt-get install --yes --no-install-recommends 		ca-certificates 		gosu 		tzdata 	; 	gosu nobody true; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get install --yes --no-install-recommends 		gnupg 		wget 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	gosu rabbitmq rabbitmqctl help; 	gosu rabbitmq rabbitmqctl list_ciphers; 	gosu rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Sun, 26 Apr 2026 11:16:53 GMT
+# Tue, 26 May 2026 20:15:57 GMT
 RUN gosu rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Sun, 26 Apr 2026 11:16:53 GMT
+# Tue, 26 May 2026 20:15:57 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Sun, 26 Apr 2026 11:16:53 GMT
+# Tue, 26 May 2026 20:15:57 GMT
 ENV HOME=/var/lib/rabbitmq
-# Sun, 26 Apr 2026 11:16:53 GMT
+# Tue, 26 May 2026 20:15:57 GMT
 VOLUME [/var/lib/rabbitmq]
-# Sun, 26 Apr 2026 11:16:53 GMT
+# Tue, 26 May 2026 20:15:57 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Sun, 26 Apr 2026 11:16:53 GMT
+# Tue, 26 May 2026 20:15:57 GMT
 ENV RUNNING_UNDER_SYSTEMD=true
-# Sun, 26 Apr 2026 11:16:53 GMT
+# Tue, 26 May 2026 20:15:58 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Sun, 26 Apr 2026 11:16:54 GMT
+# Tue, 26 May 2026 20:15:58 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Sun, 26 Apr 2026 11:16:54 GMT
+# Tue, 26 May 2026 20:15:58 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sun, 26 Apr 2026 11:16:54 GMT
+# Tue, 26 May 2026 20:15:58 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Sun, 26 Apr 2026 11:16:54 GMT
+# Tue, 26 May 2026 20:15:58 GMT
 CMD ["rabbitmq-server"]
-# Sun, 26 Apr 2026 16:16:46 GMT
+# Thu, 28 May 2026 13:29:33 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Wed, 06 May 2026 08:16:13 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.30.0/rabbitmqadmin-2.30.0-x86_64-unknown-linux-gnu'; digest='fd8f7c56c6bc6c0e829049d24bf6c848a51fe658934eab4f16ca1be045219c4e' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.30.0/rabbitmqadmin-2.30.0-aarch64-unknown-linux-gnu'; digest='21dd89100f08e7db9fca0ad2a9d0a71e4b151f5960ee7dd252545283cad05fc5' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Wed, 06 May 2026 08:16:13 GMT
+# Thu, 28 May 2026 13:29:34 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.31.0/rabbitmqadmin-2.31.0-x86_64-unknown-linux-gnu'; digest='ede1745e7cf2dbc87e92961b2ed404209ddfb12875d98cd97fc921a6859bd3df' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.31.0/rabbitmqadmin-2.31.0-aarch64-unknown-linux-gnu'; digest='46be6ef6f0e17ec095c670882206f68e0aacec84a3a5344fe99c53a8292a70bd' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Thu, 28 May 2026 13:29:34 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -694,40 +694,40 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Fri, 10 Apr 2026 09:34:45 GMT  
 		Size: 31.0 MB (30965327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c960ea9e328ab3ee58c30b09ea3a95d1f30dea9d977bfb27e1aabaf0dba39aa`  
-		Last Modified: Wed, 22 Apr 2026 04:01:18 GMT  
-		Size: 35.2 MB (35179488 bytes)  
+	-	`sha256:a78b24ffd84bb068a3bd0edba81d6f71202248089d60b17047d61bb9b8143961`  
+		Last Modified: Tue, 26 May 2026 20:22:26 GMT  
+		Size: 35.2 MB (35179586 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e98760d3d077246d6e1c6d8b7d5ace39954b7d7fc75b716fae346432ec72772`  
-		Last Modified: Wed, 22 Apr 2026 04:01:11 GMT  
-		Size: 10.8 MB (10836870 bytes)  
+	-	`sha256:23b4557716494b167defd0fc97c25f6aaf8b5e1fb1adeea85b8f53298b3756dd`  
+		Last Modified: Tue, 26 May 2026 20:22:19 GMT  
+		Size: 10.8 MB (10836894 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d33eb29b1bda2d247b07c6d6d675bb9780b9b8fa42ed028b8ff4cc75687e1a6f`  
-		Last Modified: Wed, 22 Apr 2026 04:01:05 GMT  
-		Size: 9.7 KB (9683 bytes)  
+	-	`sha256:df8e48b07a6af720c76601fda19e9ea5573bc5530787d333e0c91e87aed46557`  
+		Last Modified: Tue, 26 May 2026 20:22:13 GMT  
+		Size: 9.7 KB (9675 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d11b3e4572ba9f23a04347b3415894dec1cb466df104d78b7e1da985af3dfbd7`  
-		Last Modified: Sun, 26 Apr 2026 11:23:15 GMT  
-		Size: 28.4 MB (28374858 bytes)  
+	-	`sha256:b379be9f531f2f1a0ecc970ff1f2ab51daeced800f5b54de969a7d96a2df91a4`  
+		Last Modified: Tue, 26 May 2026 20:22:25 GMT  
+		Size: 28.4 MB (28375084 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8eb8b0a6593a22745e12e561a25a83e27fddfd60549dc8eef6fc9c22a1a07199`  
-		Last Modified: Sun, 26 Apr 2026 11:23:09 GMT  
-		Size: 187.0 B  
+	-	`sha256:7166cc64209eb2d049b66d03081990c811d6a05cebefc10896dd89a6b02596a0`  
+		Last Modified: Tue, 26 May 2026 20:22:17 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22691c43dde8c23ea9aa15c7d819a173abbb6fde096dfba31cf8fd6e9db290b0`  
-		Last Modified: Sun, 26 Apr 2026 11:23:08 GMT  
-		Size: 108.0 B  
+	-	`sha256:e473a826d7268b8fca7a8be998c5fee768edcf57c8269121e1e21b4dfdb3ba56`  
+		Last Modified: Tue, 26 May 2026 20:22:20 GMT  
+		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:511a10e915a19ba773ee1a55aa200a401d22ecec6e1cf52c13b9525b844e67b1`  
-		Last Modified: Sun, 26 Apr 2026 11:23:09 GMT  
-		Size: 621.0 B  
+	-	`sha256:23e8a7be3d7fe5b11713bf8268fa8b21f3ad630929b1cedc25340f8af3c6bba6`  
+		Last Modified: Tue, 26 May 2026 20:22:21 GMT  
+		Size: 622.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d717d06a215fa1a0470474bd81872ef4ca2ddd12126a411d14ffb79c965e619d`  
-		Last Modified: Sun, 26 Apr 2026 11:23:11 GMT  
-		Size: 832.0 B  
+	-	`sha256:889c342da962b8cf84aec63ebb915ad698e41a76176fd0779ffae7fbb4cbd5da`  
+		Last Modified: Tue, 26 May 2026 20:22:22 GMT  
+		Size: 833.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee24fbb21a9d150e401b9c7b7975c510f0430fad35c37c61883dff0f731dca4d`  
-		Last Modified: Sun, 26 Apr 2026 16:18:05 GMT  
+	-	`sha256:1dadca299b9be6ed3b6964c42d9b561a89b7bbf448bff02583d580e6ed606557`  
+		Last Modified: Thu, 28 May 2026 13:30:55 GMT  
 		Size: 274.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -738,24 +738,24 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:4-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:7bef7995e35e6837cd2e150793993dc149b8b4831f9ecd498c7f4610f2e3eb11
+$ docker pull rabbitmq@sha256:a685ea9204fd258d84913c3a06d38a40510696f77b9fde098a8dfe2f4d7dfe51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2495441 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3456640af7c1c60673af7486d690404381a65294702ecf1f5ed9595684fd4306`
+-	Image ID: `sha256:9dfdd350c2cdaaa95e42721400e34c36eafaa3c40db7b079b22b71d03d2f3c6c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:26cc9d8dc6a025d7200d2f2cdb89d25370ac79c005ebe1cb641a725eb51cb9bc`  
-		Last Modified: Wed, 06 May 2026 08:17:34 GMT  
+	-	`sha256:4d4d6b8d9b23a5865cd5c5ad68d6f16485952d68af61e8cd37783dd5217289ea`  
+		Last Modified: Thu, 28 May 2026 13:30:55 GMT  
 		Size: 2.5 MB (2479128 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5513e29f9537b096320beb829fc4464df6de68774b1c4bbca2a4eceb5c4e90c0`  
-		Last Modified: Wed, 06 May 2026 08:17:34 GMT  
+	-	`sha256:9b29eae840a173d8bd707052fa1d3adca79b31b42ce5a5c86fee49ca705f36e3`  
+		Last Modified: Thu, 28 May 2026 13:30:55 GMT  
 		Size: 16.3 KB (16313 bytes)  
 		MIME: application/vnd.in-toto+json
 
