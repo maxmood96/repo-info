@@ -6810,14 +6810,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-lts=11.0.30+7-1ubuntu1~22.04
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.30%2b7.orig.tar.xz' openjdk-lts_11.0.30+7.orig.tar.xz 69319020 SHA256:a5e3820d06224ae855fa4e42b949dd855d8ca31006c2affae08386f9b5eeba70
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.30%2b7-1ubuntu1%7e22.04.debian.tar.xz' openjdk-lts_11.0.30+7-1ubuntu1~22.04.debian.tar.xz 172512 SHA256:df85d67e4ec03df1640c169a68ca479639d105c8edbbf8509a83ccd344216cd0
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.30%2b7-1ubuntu1%7e22.04.dsc' openjdk-lts_11.0.30+7-1ubuntu1~22.04.dsc 4609 SHA256:85a70159363272cef59b4880692041c53a83e55fe35cab53eb6083820ce57e60
-```
 
 ### `dpkg` source package: `openjpeg2=2.4.0-6ubuntu0.5`
 
