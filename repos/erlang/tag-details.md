@@ -12127,15 +12127,30 @@ $ docker pull erlang@sha256:02a8a93ad8f5529b8fcb426e3a5d04c97e5b695f673c0ebf6f85
 
 ## `erlang:26.2.5.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull erlang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `erlang:26.2.5.21-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull erlang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `erlang:26.2.5.21-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull erlang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `erlang:27`
 
@@ -17026,15 +17041,30 @@ $ docker pull erlang@sha256:fd5412c288f7e0b8a26bda8a2c944de6170511c340ff4b6e2f7e
 
 ## `erlang:27.3.4.12`
 
-**does not exist** (yet?)
+```console
+$ docker pull erlang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `erlang:27.3.4.12-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull erlang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `erlang:27.3.4.12-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull erlang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `erlang:28`
 
@@ -21487,15 +21517,30 @@ $ docker pull erlang@sha256:01064000e5822bbc3df0506749a17d3b2121d157a4cc0df10c4b
 
 ## `erlang:28.5.0.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull erlang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `erlang:28.5.0.1-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull erlang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `erlang:28.5.0.1-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull erlang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `erlang:29`
 
@@ -24465,27 +24510,57 @@ $ docker pull erlang@sha256:bc1698c00e7cf005efb96d11d788fd1fc071ab15f30c6a82f346
 
 ## `erlang:29.0.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull erlang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `erlang:29.0.1-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull erlang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `erlang:29.0.1-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull erlang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `erlang:29.0.1.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull erlang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `erlang:29.0.1.0-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull erlang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `erlang:29.0.1.0-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull erlang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `erlang:alpine`
 
