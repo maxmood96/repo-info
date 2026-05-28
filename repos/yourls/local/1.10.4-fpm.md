@@ -1,10 +1,10 @@
-# `yourls:1.10.3-fpm`
+# `yourls:1.10.4-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b180fa198b776107224e71c21df0884c6d17eabe94cf8010a1b56ce1535b5979`
-- Created: `2026-05-20T00:25:27.820773822Z`
-- Virtual Size: ~ 529.39 Mb  
+- Image ID: `sha256:65327e7d3558c5ed1b68f6b9e5f7e86b2face010c90bba233dc8258ac7a14c18`
+- Created: `2026-05-26T19:12:22.495803668Z`
+- Virtual Size: ~ 529.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["container-entrypoint.sh"]`
@@ -21,8 +21,8 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.5.6.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.6.tar.xz.asc`
   - `PHP_SHA256=826c600b7c6f956bd335558ca3bdbcab23b22126c1cc8d9348be2280a2204bb7`
-  - `YOURLS_VERSION=1.10.3`
-  - `YOURLS_SHA256=71749ae9b3950d6a7c043b1240aba8645e912c3c22eac5abfb6ae3cc576ff740`
+  - `YOURLS_VERSION=1.10.4`
+  - `YOURLS_SHA256=1a41606138615c9869e232077b9da7b2a084e8751459f72b6c073bf0f092b808`
 
 ## `dpkg` (`.deb`-based packages)
 
