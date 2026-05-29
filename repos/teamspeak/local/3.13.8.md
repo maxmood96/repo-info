@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:46f6ac3a35cbea9a9649363f93cdf6f629f28667980012d7d6d02e846297e681`
-- Created: `2026-04-15T20:22:17.373060479Z`
+- Image ID: `sha256:65e5418e26a820aa0e89e0bbf9191d6371f320e38f62e845db3ff3a49ada81e6`
+- Created: `2026-05-27T20:04:55.245833406Z`
 - Virtual Size: ~ 30.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
 - Labels:
   - `com.teamspeak.description=TeamSpeak 3 Server on Alpine Linux`
   - `com.teamspeak.title=TeamSpeak 3 Server`
-  - `com.teamspeak.version=3.13.7`
+  - `com.teamspeak.version=3.13.8`
 
 ## `apk` (`.apk`-based packages)
 
@@ -226,16 +226,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libpq`
 
 ```console
-libpq-18.3-r0 description:
+libpq-18.4-r0 description:
 PostgreSQL client library
 
-libpq-18.3-r0 webpage:
+libpq-18.4-r0 webpage:
 https://www.postgresql.org/
 
-libpq-18.3-r0 installed size:
+libpq-18.4-r0 installed size:
 350 KiB
 
-libpq-18.3-r0 license:
+libpq-18.4-r0 license:
 PostgreSQL
 
 ```
