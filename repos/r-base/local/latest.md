@@ -65,19 +65,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=3.2.0
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.2.0.dsc' apt_3.2.0.dsc 3127 SHA256:364347278a531cf073f809a14f84617c2b935cfb324bd413aa01c214b6f8a3e8
-'http://deb.debian.org/debian/pool/main/a/apt/apt_3.2.0.tar.xz' apt_3.2.0.tar.xz 2476660 SHA256:dcd186912a7b8553cc885412127925858ee340c655e2f26e77eacdab23f48089
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/3.2.0/
 
-- https://sources.debian.net/src/apt/3.2.0/ (for browsing the source)
-- https://sources.debian.net/src/apt/3.2.0/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/3.2.0/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-4`
 
@@ -890,20 +884,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.8.0-2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.0-2.dsc' expat_2.8.0-2.dsc 1970 SHA256:ac71b0fa6c9b8e748f864902d1da5ab21b095517f9a1c29efb1b4a2bda3f13ba
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.0.orig.tar.gz' expat_2.8.0.orig.tar.gz 8454954 SHA256:b6cfb7fee2d674587d94899d1f2dc039a7cbb65d167f0ba601d0b73a58f9db9e
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.8.0-2.debian.tar.xz' expat_2.8.0-2.debian.tar.xz 19944 SHA256:ff646c22da9fb25e9e28e6c637046d188d5897f26f08c407f6585b65f0147fb7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.8.0-2/
 
-- https://sources.debian.net/src/expat/2.8.0-2/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.8.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.8.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.10.0-4`
 
@@ -4505,20 +4492,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.42-5
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42-5.dsc' util-linux_2.42-5.dsc 5317 SHA256:fe9c2fff43586b5f2dd7161002c61bcf7b14acbd0e4f962d024efd0c96d0a63c
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42.orig.tar.xz' util-linux_2.42.orig.tar.xz 10608300 SHA256:3452b260bbaa775d6e749ac3bb22111785003fc1f444970025c8da26dfa758e9
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42-5.debian.tar.xz' util-linux_2.42-5.debian.tar.xz 101868 SHA256:0167f489c82c60f483fedbc895036ed6a49996dbe4c9f258b61e4353c9b41c19
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.42-5/
 
-- https://sources.debian.net/src/util-linux/2.42-5/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.42-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.42-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `vim=2:9.2.0461-1`
 
@@ -4557,20 +4537,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:9.2.0461-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.2.0461-1.dsc' vim_9.2.0461-1.dsc 3194 SHA256:042b08b2293be7d226fabb8eeb7af8e838838dd9647324a214fd33253687ed25
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.2.0461.orig.tar.xz' vim_9.2.0461.orig.tar.xz 13465284 SHA256:03e8d8238f54a3724c811dfdfdba5de2794905b0e13c4ca95b6a7ff68919c778
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.2.0461-1.debian.tar.xz' vim_9.2.0461-1.debian.tar.xz 162588 SHA256:ff3b8ffa6ffa6cd762b1dbb2901c52cf7f66dc083a6c5d1f114ba8cd846a13a0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/vim/2:9.2.0461-1/
 
-- https://sources.debian.net/src/vim/2:9.2.0461-1/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:9.2.0461-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:9.2.0461-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
