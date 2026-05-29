@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:583c4c0d7eefe9ab7349159c62ca61f2d6665b17459f165b91d2f5640395e9c5`
-- Created: `2026-05-19T23:53:19.165713859Z`
-- Virtual Size: ~ 872.99 Mb  
+- Image ID: `sha256:c09c80c52a0ca1a2a06466c3429a874b3cf45debd3b15782d2050a84f86a8ee5`
+- Created: `2026-05-28T21:46:49.14479259Z`
+- Virtual Size: ~ 873.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.95.0`
+  - `RUST_VERSION=1.96.0`
 - Labels:
   - `org.opencontainers.image.source=https://github.com/rust-lang/docker-rust`
 
@@ -1002,21 +1002,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.18.3-6+deb11u7
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u7.dsc' krb5_1.18.3-6+deb11u7.dsc 3814 SHA256:162309912574992c13fadec1c95ad65b4e1a4fef046e15e065f89b13b3e4585f
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz' krb5_1.18.3.orig.tar.gz 8715312 SHA256:e61783c292b5efd9afb45c555a80dd267ac67eebabca42185362bee6c4fbd719
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz.asc' krb5_1.18.3.orig.tar.gz.asc 833 SHA256:ded19808ba7320ad0bb3ddfb5202845b2ff36a50613af7832f78dd3cb4437419
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u7.debian.tar.xz' krb5_1.18.3-6+deb11u7.debian.tar.xz 121056 SHA256:db0041a414f71358d1365c766f7a4c66e6b46774841dcdeab97042049f8fa011
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u7/
 
-- https://sources.debian.net/src/krb5/1.18.3-6+deb11u7/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.18.3-6+deb11u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2.2`
 
@@ -1456,11 +1448,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=5.10.251-5`
+### `dpkg` source package: `linux=5.10.257-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.10.251-5`
+- `linux-libc-dev:amd64=5.10.257-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1476,17 +1468,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.10.251-5
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.251-5.dsc' linux_5.10.251-5.dsc 193221 SHA256:7ccbb3cd10d4c14ec207ef6c31edb0042c7da22080ee4ebc320af8f739063bd3
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.251.orig.tar.xz' linux_5.10.251.orig.tar.xz 122143548 SHA256:706a020b79d01b7a14fe639554fcf6adcd93b81e4c3194218f5c8c523ef9a753
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.251-5.debian.tar.xz' linux_5.10.251-5.debian.tar.xz 1803640 SHA256:a926ad55fc2f8fef78ce8ad855885b6789e1289f8ed3fe09cc02be959d8015e8
+$ apt-get source -qq --print-uris linux=5.10.257-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.257-1.dsc' linux_5.10.257-1.dsc 193221 SHA256:f69300049a14428c27677532590221b69d18f907903fe760d93881a7d73266a7
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.257.orig.tar.xz' linux_5.10.257.orig.tar.xz 122158232 SHA256:8771a2cc25566ac0925a94f21e64ddd13896fcadad70d23cf013c77648636b16
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.257-1.debian.tar.xz' linux_5.10.257-1.debian.tar.xz 1791756 SHA256:2383cd192c0922b58a31d695c633d3aee19b8b05e9fb55c88e48e4a97f03087a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/5.10.251-5/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.251-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.251-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/5.10.257-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/5.10.257-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/5.10.257-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
