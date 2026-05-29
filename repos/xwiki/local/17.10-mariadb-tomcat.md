@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bd80821073c206b3687fd239a3e78c4963286bf98f66dc598255fe4aae5d3e50`
-- Created: `2026-05-13T00:15:11.069515971Z`
+- Image ID: `sha256:515b6aa3b122ea55973916ef38b026cae2012d28881af64a3b6094c366f7dd10`
+- Created: `2026-05-28T18:14:09.732974387Z`
 - Virtual Size: ~ 1.31 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,9 +22,9 @@
   - `TOMCAT_MAJOR=10`
   - `TOMCAT_VERSION=10.1.55`
   - `TOMCAT_SHA512=f36af12391a277e5c3a802a8e1a2a1e4354cd461b547d2e1a33ac0ab88d707d3fb2591e034a17b7d3a6b965a4c977a97dbf29bb81a3867e85aeec3d8d189e22e`
-  - `XWIKI_VERSION=17.10.8`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.8`
-  - `XWIKI_DOWNLOAD_SHA256=f5dfab908fddb6319e64897bb2fc41661dd5b5d8aafa455db72c8a794eaa5287`
+  - `XWIKI_VERSION=17.10.9`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.9`
+  - `XWIKI_DOWNLOAD_SHA256=b786a85a043cc673e26d887fd0ef34d2fda2f4a9ef4a362360814868ccf41e1f`
   - `MARIADB_JDBC_VERSION=3.5.8`
   - `MARIADB_JDBC_SHA256=6127dc7858047b3d4482899139640b0e2ab2b8abdeb708cfb8c011117771cddf`
   - `MARIADB_JDBC_PREFIX=https://repo1.maven.org/maven2/org/mariadb/jdbc/mariadb-java-client/3.5.8`
@@ -2349,19 +2349,9 @@ Licenses: (parsed from: `/usr/share/doc/fonts-opensymbol/copyright`, `/usr/share
 - `MPL-2.0`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libreoffice=4:24.2.7-0ubuntu0.24.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7.orig-helpcontent2.tar.xz' libreoffice_24.2.7.orig-helpcontent2.tar.xz 165548208 SHA256:2a3d3c959f15a792302f8828850db9167827d9c283d38e5ba777657533d6d449
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7.orig-tarballs.tar.xz' libreoffice_24.2.7.orig-tarballs.tar.xz 213487760 SHA256:2ba8c4e19884f2f1b7c81f872b4a07a1318b5265ae01ba2102579647c1d7d421
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7.orig-translations.tar.xz' libreoffice_24.2.7.orig-translations.tar.xz 222584892 SHA256:6e1220c0f7391dc2fceed4aef2702ee05b14d6bdb3a0ee767be52bfb36863666
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7.orig-yaru.tar.xz' libreoffice_24.2.7.orig-yaru.tar.xz 19874368 SHA256:54f87a95463fee10a22faf57ab228414e39bf9304e71a50255533bb98fa86b67
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7.orig.tar.xz' libreoffice_24.2.7.orig.tar.xz 279885536 SHA256:f5e9b12cedea211d60fb7cce21bed80483c43321d81977dc76e01fedca4310e5
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7.orig.tar.xz.asc' libreoffice_24.2.7.orig.tar.xz.asc 833 SHA256:aa0334b6ea5f4642f1b00f326a4591a38ab34c8f4fc99c221b97a0e6daba081b
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7-0ubuntu0.24.04.4.debian.tar.xz' libreoffice_24.2.7-0ubuntu0.24.04.4.debian.tar.xz 2423480 SHA256:b88b2b330031407572ae6b04555fd37d882611a15d386ce01f0b7115538b5653
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7-0ubuntu0.24.04.4.dsc' libreoffice_24.2.7-0ubuntu0.24.04.4.dsc 26996 SHA256:dab983f9b553b44714413438d8db47608aa8f9800125270e9ba8090d8d67e9e8
-```
 
 ### `dpkg` source package: `librevenge=0.0.5-3build1`
 

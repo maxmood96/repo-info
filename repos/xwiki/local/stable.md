@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bd90d13431c0b701f9a623b86bef596acd4c2b4999aecd22092ea33908bd14d8`
-- Created: `2026-05-13T00:14:39.627468053Z`
+- Image ID: `sha256:8887f5a3a9bcfd030106a0c696c19012577f97ed2eda3d3c4b62b58447175576`
+- Created: `2026-05-27T22:14:43.295830772Z`
 - Virtual Size: ~ 1.33 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,14 +22,14 @@
   - `TOMCAT_MAJOR=10`
   - `TOMCAT_VERSION=10.1.55`
   - `TOMCAT_SHA512=f36af12391a277e5c3a802a8e1a2a1e4354cd461b547d2e1a33ac0ab88d707d3fb2591e034a17b7d3a6b965a4c977a97dbf29bb81a3867e85aeec3d8d189e22e`
-  - `XWIKI_VERSION=18.3.0`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.3.0`
-  - `XWIKI_DOWNLOAD_SHA256=3a0594e4260bc832c8a42f9ea1d6f47d9da7c8ffb7bbe65b7c363e7e8308051a`
-  - `MYSQL_JDBC_VERSION=9.6.0`
-  - `MYSQL_JDBC_SHA256=66df1d453789dc8cb759a7dc17f58646893bf28483f262328650f170472a6ead`
-  - `MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.6.0`
-  - `MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.6.0.jar`
-  - `MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar`
+  - `XWIKI_VERSION=18.4.0`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.4.0`
+  - `XWIKI_DOWNLOAD_SHA256=04ebdbc3c596b79ef79dc0898b55a79861bf65d8d8b011e88f2a192d734fda9f`
+  - `MYSQL_JDBC_VERSION=9.7.0`
+  - `MYSQL_JDBC_SHA256=0353648eaa1c91e0f4020c959abf756bc866ffd583df22ae6b6f6e0cbd43eb44`
+  - `MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.7.0`
+  - `MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.7.0.jar`
+  - `MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.7.0.jar`
 - Labels:
   - `org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki`
@@ -2349,19 +2349,9 @@ Licenses: (parsed from: `/usr/share/doc/fonts-opensymbol/copyright`, `/usr/share
 - `MPL-2.0`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libreoffice=4:24.2.7-0ubuntu0.24.04.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7.orig-helpcontent2.tar.xz' libreoffice_24.2.7.orig-helpcontent2.tar.xz 165548208 SHA256:2a3d3c959f15a792302f8828850db9167827d9c283d38e5ba777657533d6d449
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7.orig-tarballs.tar.xz' libreoffice_24.2.7.orig-tarballs.tar.xz 213487760 SHA256:2ba8c4e19884f2f1b7c81f872b4a07a1318b5265ae01ba2102579647c1d7d421
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7.orig-translations.tar.xz' libreoffice_24.2.7.orig-translations.tar.xz 222584892 SHA256:6e1220c0f7391dc2fceed4aef2702ee05b14d6bdb3a0ee767be52bfb36863666
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7.orig-yaru.tar.xz' libreoffice_24.2.7.orig-yaru.tar.xz 19874368 SHA256:54f87a95463fee10a22faf57ab228414e39bf9304e71a50255533bb98fa86b67
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7.orig.tar.xz' libreoffice_24.2.7.orig.tar.xz 279885536 SHA256:f5e9b12cedea211d60fb7cce21bed80483c43321d81977dc76e01fedca4310e5
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7.orig.tar.xz.asc' libreoffice_24.2.7.orig.tar.xz.asc 833 SHA256:aa0334b6ea5f4642f1b00f326a4591a38ab34c8f4fc99c221b97a0e6daba081b
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7-0ubuntu0.24.04.4.debian.tar.xz' libreoffice_24.2.7-0ubuntu0.24.04.4.debian.tar.xz 2423480 SHA256:b88b2b330031407572ae6b04555fd37d882611a15d386ce01f0b7115538b5653
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7-0ubuntu0.24.04.4.dsc' libreoffice_24.2.7-0ubuntu0.24.04.4.dsc 26996 SHA256:dab983f9b553b44714413438d8db47608aa8f9800125270e9ba8090d8d67e9e8
-```
 
 ### `dpkg` source package: `librevenge=0.0.5-3build1`
 
