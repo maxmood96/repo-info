@@ -1,10 +1,10 @@
-# `rabbitmq:4.3.0-management-alpine`
+# `rabbitmq:4.3.1-management-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9a1839185a0f872da4cb80b985ad30da6c2f2d9228a3eded0249868390bcc581`
-- Created: `2026-05-05T23:12:00.952506055Z`
-- Virtual Size: ~ 174.16 Mb  
+- Image ID: `sha256:dfbfb1bf8fbaf540b5bbf5d8f66db083c49e88b25bad273f7ca2f9f6296e3b17`
+- Created: `2026-05-27T22:33:12.117906692Z`
+- Virtual Size: ~ 174.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `ERLANG_INSTALL_PATH_PREFIX=/opt/erlang`
   - `OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
-  - `RABBITMQ_VERSION=4.3.0`
+  - `RABBITMQ_VERSION=4.3.1`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `HOME=/var/lib/rabbitmq`
@@ -470,16 +470,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026a-r0 description:
+tzdata-2026b-r0 description:
 Timezone data
 
-tzdata-2026a-r0 webpage:
+tzdata-2026b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026a-r0 installed size:
+tzdata-2026b-r0 installed size:
 436 KiB
 
-tzdata-2026a-r0 license:
+tzdata-2026b-r0 license:
 Public-Domain
 
 ```
