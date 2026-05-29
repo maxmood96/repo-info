@@ -1,10 +1,10 @@
-# `joomla:5.4.5-php8.3-fpm-alpine`
+# `joomla:5.4.6-php8.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:53116f7a893f167945b12d5fecc7ecfafe7e7cc4592d16b920126a77f22e4754`
-- Created: `2026-05-07T17:26:20.797400684Z`
-- Virtual Size: ~ 293.67 Mb  
+- Image ID: `sha256:51c9124b1e20c86bf181c96155f1308f5e8d1fcafdad20f5bc5fa7cceb092388`
+- Created: `2026-05-27T22:10:47.301200954Z`
+- Virtual Size: ~ 296.36 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,8 +22,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.31.tar.xz.asc`
   - `PHP_SHA256=66410cee07f4b2baeb0843140bb2a2b52ef930b5cf9b3d6e6d158b33aae8fa37`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=5.4.5`
-  - `JOOMLA_SHA512=b13e34397de1c386d6f083ed10b785b507dce5d685cd7388a6d4f6ac9d1497bf8d927c58d4b8847c223eb5886dd1da7357d9ce73a591e04ac66e64c7bfd543f9`
+  - `JOOMLA_VERSION=5.4.6`
+  - `JOOMLA_SHA512=d4198b32a37cea890b24ab219b7d267e6a6df3373530d5e76eb7f4563868ef6caebefa7a2b9290065146ef733db2b0becc18d69f291730c767a25aa158cb9c16`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -576,16 +576,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.19-r0 description:
+imagemagick-7.1.2.22-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.19-r0 webpage:
+imagemagick-7.1.2.22-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.19-r0 installed size:
+imagemagick-7.1.2.22-r0 installed size:
 3691 KiB
 
-imagemagick-7.1.2.19-r0 license:
+imagemagick-7.1.2.22-r0 license:
 ImageMagick
 
 ```
@@ -593,16 +593,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jp2`
 
 ```console
-imagemagick-jp2-7.1.2.19-r0 description:
+imagemagick-jp2-7.1.2.22-r0 description:
 Collection of tools and libraries for many image formats (JPEG2000 support modules)
 
-imagemagick-jp2-7.1.2.19-r0 webpage:
+imagemagick-jp2-7.1.2.22-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jp2-7.1.2.19-r0 installed size:
+imagemagick-jp2-7.1.2.22-r0 installed size:
 26 KiB
 
-imagemagick-jp2-7.1.2.19-r0 license:
+imagemagick-jp2-7.1.2.22-r0 license:
 ImageMagick
 
 ```
@@ -610,16 +610,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.19-r0 description:
+imagemagick-jpeg-7.1.2.22-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.19-r0 webpage:
+imagemagick-jpeg-7.1.2.22-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.19-r0 installed size:
+imagemagick-jpeg-7.1.2.22-r0 installed size:
 62 KiB
 
-imagemagick-jpeg-7.1.2.19-r0 license:
+imagemagick-jpeg-7.1.2.22-r0 license:
 ImageMagick
 
 ```
@@ -627,16 +627,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.19-r0 description:
+imagemagick-libs-7.1.2.22-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.19-r0 webpage:
+imagemagick-libs-7.1.2.22-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.19-r0 installed size:
-4257 KiB
+imagemagick-libs-7.1.2.22-r0 installed size:
+4261 KiB
 
-imagemagick-libs-7.1.2.19-r0 license:
+imagemagick-libs-7.1.2.22-r0 license:
 ImageMagick
 
 ```
@@ -644,16 +644,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.19-r0 description:
+imagemagick-pdf-7.1.2.22-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.19-r0 webpage:
+imagemagick-pdf-7.1.2.22-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.19-r0 installed size:
+imagemagick-pdf-7.1.2.22-r0 installed size:
 121 KiB
 
-imagemagick-pdf-7.1.2.19-r0 license:
+imagemagick-pdf-7.1.2.22-r0 license:
 ImageMagick
 
 ```
@@ -661,16 +661,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.19-r0 description:
+imagemagick-tiff-7.1.2.22-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.19-r0 webpage:
+imagemagick-tiff-7.1.2.22-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.19-r0 installed size:
+imagemagick-tiff-7.1.2.22-r0 installed size:
 115 KiB
 
-imagemagick-tiff-7.1.2.19-r0 license:
+imagemagick-tiff-7.1.2.22-r0 license:
 ImageMagick
 
 ```
@@ -678,16 +678,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.19-r0 description:
+imagemagick-webp-7.1.2.22-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.19-r0 webpage:
+imagemagick-webp-7.1.2.22-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.19-r0 installed size:
+imagemagick-webp-7.1.2.22-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.19-r0 license:
+imagemagick-webp-7.1.2.22-r0 license:
 ImageMagick
 
 ```
@@ -984,16 +984,16 @@ BSD-3-Clause AND IJG AND Zlib
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.10-r0 description:
+libldap-2.6.13-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.10-r0 webpage:
+libldap-2.6.13-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.10-r0 installed size:
+libldap-2.6.13-r0 installed size:
 365 KiB
 
-libldap-2.6.10-r0 license:
+libldap-2.6.13-r0 license:
 OLDAP-2.8
 
 ```
@@ -1086,16 +1086,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.57-r0 description:
+libpng-1.6.58-r1 description:
 Portable Network Graphics library
 
-libpng-1.6.57-r0 webpage:
+libpng-1.6.58-r1 webpage:
 http://www.libpng.org
 
-libpng-1.6.57-r0 installed size:
+libpng-1.6.58-r1 installed size:
 181 KiB
 
-libpng-1.6.57-r0 license:
+libpng-1.6.58-r1 license:
 Libpng
 
 ```
@@ -1103,16 +1103,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-18.3-r0 description:
+libpq-18.4-r0 description:
 PostgreSQL client library
 
-libpq-18.3-r0 webpage:
+libpq-18.4-r0 webpage:
 https://www.postgresql.org/
 
-libpq-18.3-r0 installed size:
+libpq-18.4-r0 installed size:
 350 KiB
 
-libpq-18.3-r0 license:
+libpq-18.4-r0 license:
 PostgreSQL
 
 ```

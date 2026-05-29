@@ -1,10 +1,10 @@
-# `joomla:5.4.5-php8.2-fpm`
+# `joomla:5.4.6-php8.2-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e59328d06f438adc2ee43de3cb85f417e005195067f413853f974137b0f70fe1`
-- Created: `2026-05-20T00:34:08.722428288Z`
-- Virtual Size: ~ 772.25 Mb  
+- Image ID: `sha256:e4c34073fcfd82a47a3f10e132329fa72441d99294b10184aed0c23484c98963`
+- Created: `2026-05-27T22:11:49.562657219Z`
+- Virtual Size: ~ 774.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -22,8 +22,8 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.31.tar.xz.asc`
   - `PHP_SHA256=95eae411d594fe6f6e5678b76645dc13ae47d3c0a5325c1d969b58dea56ee45a`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=5.4.5`
-  - `JOOMLA_SHA512=b13e34397de1c386d6f083ed10b785b507dce5d685cd7388a6d4f6ac9d1497bf8d927c58d4b8847c223eb5886dd1da7357d9ce73a591e04ac66e64c7bfd543f9`
+  - `JOOMLA_VERSION=5.4.6`
+  - `JOOMLA_SHA512=d4198b32a37cea890b24ab219b7d267e6a6df3373530d5e76eb7f4563868ef6caebefa7a2b9290065146ef733db2b0becc18d69f291730c767a25aa158cb9c16`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
@@ -1728,13 +1728,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ijs/0.35-15.2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ijs/0.35-15.2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:7.1.1.43+dfsg1-1+deb13u8`
+### `dpkg` source package: `imagemagick=8:7.1.1.43+dfsg1-1+deb13u9`
 
 Binary Packages:
 
-- `imagemagick-7-common=8:7.1.1.43+dfsg1-1+deb13u8`
-- `libmagickcore-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u8`
-- `libmagickwand-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u8`
+- `imagemagick-7-common=8:7.1.1.43+dfsg1-1+deb13u9`
+- `libmagickcore-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u9`
+- `libmagickwand-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u9`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick-7-common/copyright`, `/usr/share/doc/libmagickcore-7.q16-10/copyright`, `/usr/share/doc/libmagickwand-7.q16-10/copyright`)
 
@@ -1767,17 +1767,17 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick-7-common/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.1.43+dfsg1-1+deb13u8
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u8.dsc' imagemagick_7.1.1.43+dfsg1-1+deb13u8.dsc 5136 SHA256:78093fc2c18a42764bfe4305540320b511a1a20990a9ca9353a56aac9cc6f463
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1.orig.tar.xz' imagemagick_7.1.1.43+dfsg1.orig.tar.xz 10501740 SHA256:bcb4f3c78a930a608fa4889f889edbcb384974246ad9407fce1858f2c0607bfe
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u8.debian.tar.xz' imagemagick_7.1.1.43+dfsg1-1+deb13u8.debian.tar.xz 335096 SHA256:e3ab896e0d5c12fb38ad0d0d330456ed31b7d722ac40f6dbbe8115bc8f7fcbba
+$ apt-get source -qq --print-uris imagemagick=8:7.1.1.43+dfsg1-1+deb13u9
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u9.dsc' imagemagick_7.1.1.43+dfsg1-1+deb13u9.dsc 5136 SHA256:5ed72512cc726eb14fc80520c5e87dab979e8a591cf6faca98e18554e93bcdd8
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1.orig.tar.xz' imagemagick_7.1.1.43+dfsg1.orig.tar.xz 10501740 SHA256:bcb4f3c78a930a608fa4889f889edbcb384974246ad9407fce1858f2c0607bfe
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u9.debian.tar.xz' imagemagick_7.1.1.43+dfsg1-1+deb13u9.debian.tar.xz 342248 SHA256:ecaa16ef9c69645dd7526a698b6401c3e7b91d1be1d8708ae4ce6011b309300b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u8/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u9/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.69~deb13u1`
 
