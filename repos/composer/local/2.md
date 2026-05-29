@@ -1,10 +1,10 @@
-# `composer:2.9.8`
+# `composer:2.10.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1b6d64224f9fc5843f6130f5a110dd5bf0aeb862394c26e525eac901046515fc`
-- Created: `2026-05-14T16:56:14.22791958Z`
-- Virtual Size: ~ 227.21 Mb  
+- Image ID: `sha256:077c964b7bc8d941812c76a16117f8b1fcd7e57018b6e6a487788db7e76abbfd`
+- Created: `2026-05-28T21:46:46.162719816Z`
+- Virtual Size: ~ 228.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=826c600b7c6f956bd335558ca3bdbcab23b22126c1cc8d9348be2280a2204bb7`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=2.9.8`
+  - `COMPOSER_VERSION=2.10.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -387,16 +387,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.17.0-r1 description:
+curl-8.19.0-r0 description:
 URL retrival utility and library
 
-curl-8.17.0-r1 webpage:
+curl-8.19.0-r0 webpage:
 https://curl.se/
 
-curl-8.17.0-r1 installed size:
-265 KiB
+curl-8.19.0-r0 installed size:
+273 KiB
 
-curl-8.17.0-r1 license:
+curl-8.19.0-r0 license:
 curl
 
 ```
@@ -540,16 +540,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.17.0-r1 description:
+libcurl-8.19.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.17.0-r1 webpage:
+libcurl-8.19.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.17.0-r1 installed size:
-721 KiB
+libcurl-8.19.0-r0 installed size:
+697 KiB
 
-libcurl-8.17.0-r1 license:
+libcurl-8.19.0-r0 license:
 curl
 
 ```
@@ -975,23 +975,6 @@ nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
 nghttp2-libs-1.69.0-r0 license:
-MIT
-
-```
-
-### `apk` package: `nghttp3`
-
-```console
-nghttp3-1.13.1-r0 description:
-HTTP/3 library written in C
-
-nghttp3-1.13.1-r0 webpage:
-https://github.com/ngtcp2/nghttp3
-
-nghttp3-1.13.1-r0 installed size:
-140 KiB
-
-nghttp3-1.13.1-r0 license:
 MIT
 
 ```
