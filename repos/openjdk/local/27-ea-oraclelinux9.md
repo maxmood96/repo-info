@@ -1,10 +1,10 @@
-# `openjdk:27-ea-22-jdk-oraclelinux9`
+# `openjdk:27-ea-23-jdk-oraclelinux9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2c223266c05ee2efaffb2d27462f46a05f5422717179e50ffbbd74f43211a373`
-- Created: `2026-05-15T20:19:05.291480287Z`
-- Virtual Size: ~ 617.34 Mb  
+- Image ID: `sha256:fd0706fb08c0128128daa6f9fbe7cd18ce4e20b8f86897754024509cba210a21`
+- Created: `2026-05-26T19:09:26.003246674Z`
+- Virtual Size: ~ 617.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-27/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-27`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=27-ea+22`
+  - `JAVA_VERSION=27-ea+23`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -917,16 +917,16 @@ https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/li
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libpeas-1.30.0-4.el9.src.rpm
 ```
 
-### `rpm` package: `libpng-1.6.37-12.el9_7.3.x86_64`
+### `rpm` package: `libpng-1.6.37-12.el9_7.4.x86_64`
 
 Licenses (from `rpm --query`): zlib
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libpng-1.6.37-12.el9_7.3
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libpng-1.6.37-12.el9_7.3.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libpng-1.6.37-12.el9_7.3.src.rpm
+$ dnf --quiet download --source --url libpng-1.6.37-12.el9_7.4
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libpng-1.6.37-12.el9_7.4.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libpng-1.6.37-12.el9_7.4.src.rpm
 ```
 
 ### `rpm` package: `libpsl-0.21.1-5.el9.x86_64`
