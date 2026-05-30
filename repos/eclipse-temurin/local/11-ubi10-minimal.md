@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac59e879890fef7e32703a4d8ff799bfb011cac19ee503d0b42f55c0dc3463fc`
-- Created: `2026-05-26T23:10:04.319330409Z`
-- Virtual Size: ~ 430.99 Mb  
+- Image ID: `sha256:8c2657605a4e7d85b0c8152e03a70139d9c91cf574c100c33d1125abd12efd8c`
+- Created: `2026-05-27T22:37:04.507670208Z`
+- Virtual Size: ~ 453.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -19,10 +19,10 @@
   - `JAVA_VERSION=jdk-11.0.31+11`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-05-26T09:52:24Z`
+  - `build-date=2026-05-27T06:11:58Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
-  - `cpe=cpe:/o:redhat:enterprise_linux:10.1`
+  - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `distribution-scope=public`
   - `io.buildah.version=1.42.2`
@@ -32,12 +32,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-05-26T09:52:24Z`
-  - `org.opencontainers.image.revision=28a4d5c7cdb1969ee63337adb47fcb350a380874`
-  - `release=1779788807`
+  - `org.opencontainers.image.created=2026-05-27T06:11:58Z`
+  - `org.opencontainers.image.revision=3aa29655e860e8f28ee9014c3803f132b3b1e65d`
+  - `release=1779862102`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=28a4d5c7cdb1969ee63337adb47fcb350a380874`
+  - `vcs-ref=3aa29655e860e8f28ee9014c3803f132b3b1e65d`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
-  - `version=10.1`
+  - `version=10.2`

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f20b67b4eef1ab747af3ff4132716a22bb154bf0d4139f2d6f1c5d753338833`
-- Created: `2026-05-26T23:09:52.975484994Z`
-- Virtual Size: ~ 316.64 Mb  
+- Image ID: `sha256:c385a20df2326b0cd3f557c2525a0b2e5aa52143ad35040309e73756f4d8c24d`
+- Created: `2026-05-27T22:36:55.880603023Z`
+- Virtual Size: ~ 339.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,10 +18,10 @@
   - `JAVA_VERSION=jdk8u492-b09`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-05-26T09:52:24Z`
+  - `build-date=2026-05-27T06:11:58Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
-  - `cpe=cpe:/o:redhat:enterprise_linux:10.1`
+  - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `distribution-scope=public`
   - `io.buildah.version=1.42.2`
@@ -31,12 +31,12 @@
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-05-26T09:52:24Z`
-  - `org.opencontainers.image.revision=28a4d5c7cdb1969ee63337adb47fcb350a380874`
-  - `release=1779788807`
+  - `org.opencontainers.image.created=2026-05-27T06:11:58Z`
+  - `org.opencontainers.image.revision=3aa29655e860e8f28ee9014c3803f132b3b1e65d`
+  - `release=1779862102`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=28a4d5c7cdb1969ee63337adb47fcb350a380874`
+  - `vcs-ref=3aa29655e860e8f28ee9014c3803f132b3b1e65d`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
-  - `version=10.1`
+  - `version=10.2`
