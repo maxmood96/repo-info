@@ -1,9 +1,9 @@
-# `pypy:2.7-7.3.22-trixie`
+# `pypy:2.7-7.3.23-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:095cad6572b890ba557e989401e5f9c368f6d77aecadf39cd7fe0830726e073f`
-- Created: `2026-05-20T02:44:04.353070184Z`
+- Image ID: `sha256:2b8c4abcf104552fc394a54ec2deecadc4e6facf04c7ccee15705cc867ff6f2f`
+- Created: `2026-05-27T23:37:27.198745146Z`
 - Virtual Size: ~ 1.14 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=7.3.22`
+  - `PYPY_VERSION=7.3.23`
 
 ## `dpkg` (`.deb`-based packages)
 

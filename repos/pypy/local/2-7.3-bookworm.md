@@ -1,9 +1,9 @@
-# `pypy:2.7-7.3.22-bookworm`
+# `pypy:2.7-7.3.23-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:070ceebbc77b6f11c38562e6cad0a1fb19c894106326749e3d51f90832dba24f`
-- Created: `2026-05-20T02:44:42.037519157Z`
+- Image ID: `sha256:ec85e0fa8ec5e067a6477c47933d6798fd443de91e3f2a77223e67f7df924fe2`
+- Created: `2026-05-27T23:37:26.227000105Z`
 - Virtual Size: ~ 1.05 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=7.3.22`
+  - `PYPY_VERSION=7.3.23`
 
 ## `dpkg` (`.deb`-based packages)
 
