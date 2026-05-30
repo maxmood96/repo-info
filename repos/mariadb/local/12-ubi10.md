@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6a28f58c15594fff7e2cbe523ed7e847dd2f6063e86ea7a648dc03f399c7410f`
-- Created: `2026-05-26T23:11:50.16476014Z`
-- Virtual Size: ~ 579.28 Mb  
+- Image ID: `sha256:2a662cc5760a7282a259c3fb63f3a2d1e13ef1975de59e315f6bb50b0b108436`
+- Created: `2026-05-29T23:07:48.885761495Z`
+- Virtual Size: ~ 524.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,10 +16,10 @@
   - `MARIADB_VERSION=12.2.2`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-05-26T09:52:24Z`
+  - `build-date=2026-05-27T06:11:58Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
-  - `cpe=cpe:/o:redhat:enterprise_linux:10.1`
+  - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
   - `description=MariaDB Database for relational SQL`
   - `distribution-scope=public`
   - `io.buildah.version=1.42.2`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-05-26T09:52:24Z`
+  - `org.opencontainers.image.created=2026-05-27T06:11:58Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=28a4d5c7cdb1969ee63337adb47fcb350a380874`
+  - `org.opencontainers.image.revision=3aa29655e860e8f28ee9014c3803f132b3b1e65d`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=28a4d5c7cdb1969ee63337adb47fcb350a380874`
+  - `vcs-ref=3aa29655e860e8f28ee9014c3803f132b3b1e65d`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=12.2.2`
