@@ -903,21 +903,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.18.3-6+deb11u7
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u7.dsc' krb5_1.18.3-6+deb11u7.dsc 3814 SHA256:162309912574992c13fadec1c95ad65b4e1a4fef046e15e065f89b13b3e4585f
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz' krb5_1.18.3.orig.tar.gz 8715312 SHA256:e61783c292b5efd9afb45c555a80dd267ac67eebabca42185362bee6c4fbd719
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz.asc' krb5_1.18.3.orig.tar.gz.asc 833 SHA256:ded19808ba7320ad0bb3ddfb5202845b2ff36a50613af7832f78dd3cb4437419
-'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u7.debian.tar.xz' krb5_1.18.3-6+deb11u7.debian.tar.xz 121056 SHA256:db0041a414f71358d1365c766f7a4c66e6b46774841dcdeab97042049f8fa011
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u7/
 
-- https://sources.debian.net/src/krb5/1.18.3-6+deb11u7/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.18.3-6+deb11u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2.2`
 
