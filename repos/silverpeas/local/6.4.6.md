@@ -2345,14 +2345,9 @@ Licenses: (parsed from: `/usr/share/doc/libcaca0/copyright`)
 
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcaca=0.99.beta19-2.2ubuntu4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcaca/libcaca_0.99.beta19.orig.tar.gz' libcaca_0.99.beta19.orig.tar.gz 1203495 SHA256:128b467c4ed03264c187405172a4e83049342cc8cc2f655f53a2d0ee9d3772f4
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcaca/libcaca_0.99.beta19-2.2ubuntu4.1.debian.tar.xz' libcaca_0.99.beta19-2.2ubuntu4.1.debian.tar.xz 16860 SHA256:ec03b764e104ae6b03d8204c13b14ab58597ca0146863b63ef0bb33cbc531d6e
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcaca/libcaca_0.99.beta19-2.2ubuntu4.1.dsc' libcaca_0.99.beta19-2.2ubuntu4.1.dsc 2205 SHA256:4765a10b320fad63152529d8af365324064f4b218eaaee3ad158d8fd9695e9f8
-```
 
 ### `dpkg` source package: `libcap-ng=0.7.9-2.2build3`
 
@@ -3517,19 +3512,9 @@ Licenses: (parsed from: `/usr/share/doc/fonts-opensymbol/copyright`, `/usr/share
 - `MPL_2.0`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libreoffice=1:7.3.7-0ubuntu0.22.04.10
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig-helpcontent2.tar.xz' libreoffice_7.3.7.orig-helpcontent2.tar.xz 112067652 SHA256:5d28a98557b3d1a96f647c503e16a068097ca4c2b6bd0b5fcb90fd7bcdfca96a
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig-tarballs.tar.xz' libreoffice_7.3.7.orig-tarballs.tar.xz 324661956 SHA256:563a4e88537515006b83dd0962d13bb2741feee6e98f49c795f5ce7518cfe415
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig-translations.tar.xz' libreoffice_7.3.7.orig-translations.tar.xz 208926792 SHA256:5d299cfce8dc775b15d06d8d9a74681a2f074ecb1510d1574dd5eae3168d24d4
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig-yaru.tar.xz' libreoffice_7.3.7.orig-yaru.tar.xz 19257660 SHA256:36d85dab2877e63bcc1c62c30a9b2274b4e6505908986267a089144cdae1b235
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig.tar.xz' libreoffice_7.3.7.orig.tar.xz 256653492 SHA256:52986602495f6d97561a54e09811ac5efe77bd83d8fa8c91a4529f061057f4bb
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7.orig.tar.xz.asc' libreoffice_7.3.7.orig.tar.xz.asc 833 SHA256:4e33fdc49a1e21ba619676fa1c2d5708708412661fe042673414493347596070
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7-0ubuntu0.22.04.10.debian.tar.xz' libreoffice_7.3.7-0ubuntu0.22.04.10.debian.tar.xz 2416028 SHA256:55c6bcd846d8b06989d986779deec5f7091fbb71dd2668f241250cbf687c4346
-'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_7.3.7-0ubuntu0.22.04.10.dsc' libreoffice_7.3.7-0ubuntu0.22.04.10.dsc 25786 SHA256:fd51678dcd393352a729e4cd7e3ce71dfaf7013577f08e48b23fc12d00cdc42f
-```
 
 ### `dpkg` source package: `librevenge=0.0.4-6ubuntu7`
 
@@ -5246,14 +5231,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-lts=11.0.30+7-1ubuntu1~22.04
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.30%2b7.orig.tar.xz' openjdk-lts_11.0.30+7.orig.tar.xz 69319020 SHA256:a5e3820d06224ae855fa4e42b949dd855d8ca31006c2affae08386f9b5eeba70
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.30%2b7-1ubuntu1%7e22.04.debian.tar.xz' openjdk-lts_11.0.30+7-1ubuntu1~22.04.debian.tar.xz 172512 SHA256:df85d67e4ec03df1640c169a68ca479639d105c8edbbf8509a83ccd344216cd0
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.30%2b7-1ubuntu1%7e22.04.dsc' openjdk-lts_11.0.30+7-1ubuntu1~22.04.dsc 4609 SHA256:85a70159363272cef59b4880692041c53a83e55fe35cab53eb6083820ce57e60
-```
 
 ### `dpkg` source package: `openjpeg2=2.4.0-6ubuntu0.5`
 
