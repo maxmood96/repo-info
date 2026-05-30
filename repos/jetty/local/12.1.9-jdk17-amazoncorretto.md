@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a1c54f954d76c61b853320d6b7db0cb07cc3cab42c44ba950166482d70722926`
-- Created: `2026-05-22T22:07:52.929627993Z`
-- Virtual Size: ~ 534.74 Mb  
+- Image ID: `sha256:3345cd8fbb01f0f4712d7ab82b397349097b6828b56b1af830a2df1aa43a1c28`
+- Created: `2026-05-30T02:13:13.288825641Z`
+- Virtual Size: ~ 534.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -26,199 +26,109 @@
 
 Licenses (from `rpm --query`): GPLv2
 
-Source:
-
-```console
-$ dnf --quiet download --source --url amazon-linux-extras-2.0.3-1.amzn2.noarch
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/c8391609150db76aac95144697183fcaff68c7b05fb74b19e1b4f42af0bf158a/amazon-linux-extras-2.0.3-1.amzn2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `audit-libs-2.8.1-3.amzn2.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url audit-libs-2.8.1-3.amzn2.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/6af950cd493703410c3c041e3343bf1618b94f4f5a2e72976d8ab1d31f625871/audit-2.8.1-3.amzn2.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `basesystem-10.0-7.amzn2.0.1.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-Source:
-
-```console
-$ dnf --quiet download --source --url basesystem-10.0-7.amzn2.0.1.noarch
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/303ffc769b33bd06f7d3c5d0a1999079ad5afb6d205448dd607a8b6a5cbc3551/basesystem-10.0-7.amzn2.0.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `bash-4.2.46-34.amzn2.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url bash-4.2.46-34.amzn2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/088b4acd2aa66aac9479237b6c06724ef38173941734da6a81fb28add6418143/bash-4.2.46-34.amzn2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `bzip2-libs-1.0.6-13.amzn2.0.3.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
-Source:
-
-```console
-$ dnf --quiet download --source --url bzip2-libs-1.0.6-13.amzn2.0.3
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/5eb7c8b4ed1b326f5e640d655f92f498451c8013b223ad5702abb108358ef0dc/bzip2-1.0.6-13.amzn2.0.3.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `ca-certificates-2025.2.76-1.amzn2.0.2.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-Source:
-
-```console
-$ dnf --quiet download --source --url ca-certificates-2025.2.76-1.amzn2.0.2.noarch
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/962e14d92dace1a04589f53889f9d9258ed97d0cec5dbe77dcde5b5fb15a1d16/ca-certificates-2025.2.76-1.amzn2.0.2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `chkconfig-1.7.4-1.amzn2.0.2.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
-Source:
-
-```console
-$ dnf --quiet download --source --url chkconfig-1.7.4-1.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/227e42c03e4cdcc55a1851cfe633f2a280cb53eea907a581d95422575f584465/chkconfig-1.7.4-1.amzn2.0.2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `coreutils-8.22-24.amzn2.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url coreutils-8.22-24.amzn2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/7785c3a49bafaa745c01233429d6dab66539416864de241fb29aea434a29dcb2/coreutils-8.22-24.amzn2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `cpio-2.12-11.amzn2.0.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url cpio-2.12-11.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/bb095c4c518e2c72a241855ea49e34dc5a9972ff7cecfcbdd3e1975a346843de/cpio-2.12-11.amzn2.0.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `curl-8.3.0-1.amzn2.0.12.x86_64`
 
 Licenses (from `rpm --query`): curl
 
-Source:
-
-```console
-$ dnf --quiet download --source --url curl-8.3.0-1.amzn2.0.12
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/811c4634801cc0fe1d16d6d044edf03618d44f33fe20a63564ff66db69600a70/curl-8.3.0-1.amzn2.0.12.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.26-24.amzn2.0.1.x86_64`
 
 Licenses (from `rpm --query`): BSD with advertising
 
-Source:
-
-```console
-$ dnf --quiet download --source --url cyrus-sasl-lib-2.1.26-24.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/35e086928aa7cd621793f2157824668862228d873c714508e5bbc13979cfe2f3/cyrus-sasl-2.1.26-24.amzn2.0.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `dejavu-fonts-common-2.33-6.amzn2.noarch`
 
 Licenses (from `rpm --query`): Bitstream Vera and Public Domain
 
-Source:
-
-```console
-$ dnf --quiet download --source --url dejavu-fonts-common-2.33-6.amzn2.noarch
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/2c78ae75ee92a19e0ecbd2d6f1b1e6c343e2c8357057617fb7a03438fcff9ce0/dejavu-fonts-2.33-6.amzn2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `dejavu-sans-fonts-2.33-6.amzn2.noarch`
 
 Licenses (from `rpm --query`): Bitstream Vera and Public Domain
 
-Source:
-
-```console
-$ dnf --quiet download --source --url dejavu-sans-fonts-2.33-6.amzn2.noarch
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/2c78ae75ee92a19e0ecbd2d6f1b1e6c343e2c8357057617fb7a03438fcff9ce0/dejavu-fonts-2.33-6.amzn2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `diffutils-3.3-5.amzn2.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url diffutils-3.3-5.amzn2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/3b94189bd4a0bbb334c887b5a7306f5cbe927e45ca9a9c1e68e6466570b7a4e1/diffutils-3.3-5.amzn2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `elfutils-libelf-0.176-2.amzn2.0.2.x86_64`
 
 Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
-Source:
-
-```console
-$ dnf --quiet download --source --url elfutils-libelf-0.176-2.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/1c91483c986f8c6728684f387c271636212f24068e329c1b81b7502fdeeadddc/elfutils-0.176-2.amzn2.0.2.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `expat-2.1.0-15.amzn2.0.6.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url expat-2.1.0-15.amzn2.0.6
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/acb46a8d20e2dbed13de17d598579c51f44e602a204689a111aca2224a01b701/expat-2.1.0-15.amzn2.0.6.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `file-libs-5.11-36.amzn2.0.1.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
-Source:
-
-```console
-$ dnf --quiet download --source --url file-libs-5.11-36.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/6826885873bb4ef8f4d7479ffbfbceb96807ae298e2f0a9a083022200ca7caab/file-5.11-36.amzn2.0.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `filesystem-3.2-25.amzn2.0.4.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
 
-Source:
-
-```console
-$ dnf --quiet download --source --url filesystem-3.2-25.amzn2.0.4
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/c1bdb520a838326c15c1c86b0a1314c9e44f7689de956010d7a8e4bfda7d34e4/filesystem-3.2-25.amzn2.0.4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `findutils-4.5.11-6.amzn2.x86_64`
 
@@ -843,15 +753,15 @@ $ dnf --quiet download --source --url nspr-4.35.0-1.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/ff6f819d94da64b15bbf33ec914529f7010def8329f177e8534293d072901b92/nspr-4.35.0-1.amzn2.src.rpm
 ```
 
-### `rpm` package: `nss-3.90.0-2.amzn2.0.2.x86_64`
+### `rpm` package: `nss-3.90.0-2.amzn2.0.3.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url nss-3.90.0-2.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/c0937ce110ab46441ff9c8c24084c5f69b9f52904ddef90de0daaf0827e2ea65/nss-3.90.0-2.amzn2.0.2.src.rpm
+$ dnf --quiet download --source --url nss-3.90.0-2.amzn2.0.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/9418eac9c5fbd449f579b18bc316c5c186629afe6efc0ffab6df91443108ba0f/nss-3.90.0-2.amzn2.0.3.src.rpm
 ```
 
 ### `rpm` package: `nss-pem-1.0.3-5.amzn2.x86_64`
@@ -887,26 +797,26 @@ $ dnf --quiet download --source --url nss-softokn-freebl-3.90.0-6.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/6b744a951b86205fbff055c8d9e2ae9cc8c0a90b9a1e733d555f7b38c5cb1ec0/nss-softokn-3.90.0-6.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `nss-sysinit-3.90.0-2.amzn2.0.2.x86_64`
+### `rpm` package: `nss-sysinit-3.90.0-2.amzn2.0.3.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url nss-sysinit-3.90.0-2.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/c0937ce110ab46441ff9c8c24084c5f69b9f52904ddef90de0daaf0827e2ea65/nss-3.90.0-2.amzn2.0.2.src.rpm
+$ dnf --quiet download --source --url nss-sysinit-3.90.0-2.amzn2.0.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/9418eac9c5fbd449f579b18bc316c5c186629afe6efc0ffab6df91443108ba0f/nss-3.90.0-2.amzn2.0.3.src.rpm
 ```
 
-### `rpm` package: `nss-tools-3.90.0-2.amzn2.0.2.x86_64`
+### `rpm` package: `nss-tools-3.90.0-2.amzn2.0.3.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url nss-tools-3.90.0-2.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/c0937ce110ab46441ff9c8c24084c5f69b9f52904ddef90de0daaf0827e2ea65/nss-3.90.0-2.amzn2.0.2.src.rpm
+$ dnf --quiet download --source --url nss-tools-3.90.0-2.amzn2.0.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/9418eac9c5fbd449f579b18bc316c5c186629afe6efc0ffab6df91443108ba0f/nss-3.90.0-2.amzn2.0.3.src.rpm
 ```
 
 ### `rpm` package: `nss-util-3.90.0-1.amzn2.x86_64`
