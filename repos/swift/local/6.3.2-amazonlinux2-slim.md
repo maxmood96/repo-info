@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1917f0fbc6b8dfefab4f13a165939961dd0d0c9c00eac68c7e6f4ac494469d22`
-- Created: `2026-05-22T21:13:31.532216012Z`
-- Virtual Size: ~ 802.67 Mb  
+- Image ID: `sha256:aa0229c6568ed09c667be0bac78d618173aba655c2d1f1b8ebd21ea23ae82680`
+- Created: `2026-05-30T01:13:54.583390482Z`
+- Virtual Size: ~ 803.38 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -720,15 +720,15 @@ $ dnf --quiet download --source --url nspr-4.35.0-1.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/ff6f819d94da64b15bbf33ec914529f7010def8329f177e8534293d072901b92/nspr-4.35.0-1.amzn2.src.rpm
 ```
 
-### `rpm` package: `nss-3.90.0-2.amzn2.0.2.x86_64`
+### `rpm` package: `nss-3.90.0-2.amzn2.0.3.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url nss-3.90.0-2.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/c0937ce110ab46441ff9c8c24084c5f69b9f52904ddef90de0daaf0827e2ea65/nss-3.90.0-2.amzn2.0.2.src.rpm
+$ dnf --quiet download --source --url nss-3.90.0-2.amzn2.0.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/9418eac9c5fbd449f579b18bc316c5c186629afe6efc0ffab6df91443108ba0f/nss-3.90.0-2.amzn2.0.3.src.rpm
 ```
 
 ### `rpm` package: `nss-pem-1.0.3-5.amzn2.x86_64`
@@ -764,26 +764,26 @@ $ dnf --quiet download --source --url nss-softokn-freebl-3.90.0-6.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/6b744a951b86205fbff055c8d9e2ae9cc8c0a90b9a1e733d555f7b38c5cb1ec0/nss-softokn-3.90.0-6.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `nss-sysinit-3.90.0-2.amzn2.0.2.x86_64`
+### `rpm` package: `nss-sysinit-3.90.0-2.amzn2.0.3.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url nss-sysinit-3.90.0-2.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/c0937ce110ab46441ff9c8c24084c5f69b9f52904ddef90de0daaf0827e2ea65/nss-3.90.0-2.amzn2.0.2.src.rpm
+$ dnf --quiet download --source --url nss-sysinit-3.90.0-2.amzn2.0.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/9418eac9c5fbd449f579b18bc316c5c186629afe6efc0ffab6df91443108ba0f/nss-3.90.0-2.amzn2.0.3.src.rpm
 ```
 
-### `rpm` package: `nss-tools-3.90.0-2.amzn2.0.2.x86_64`
+### `rpm` package: `nss-tools-3.90.0-2.amzn2.0.3.x86_64`
 
 Licenses (from `rpm --query`): MPLv2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url nss-tools-3.90.0-2.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/c0937ce110ab46441ff9c8c24084c5f69b9f52904ddef90de0daaf0827e2ea65/nss-3.90.0-2.amzn2.0.2.src.rpm
+$ dnf --quiet download --source --url nss-tools-3.90.0-2.amzn2.0.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/793d6c328e20f10fdc29a8f88d8488406da73e29f40b3912f49fbe03947df76a/../../../../../blobstore/9418eac9c5fbd449f579b18bc316c5c186629afe6efc0ffab6df91443108ba0f/nss-3.90.0-2.amzn2.0.3.src.rpm
 ```
 
 ### `rpm` package: `nss-util-3.90.0-1.amzn2.x86_64`
