@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:da5dcaaa13349ee2953055b62a238418c59867e6bbccbdad235ff76340aca5f6`
-- Created: `2026-05-14T17:16:10.033992494Z`
-- Virtual Size: ~ 168.70 Mb  
+- Image ID: `sha256:8da269c3fbfb2d568ccc8871022dc75e771baa447d9d04f4336140ebcf11270e`
+- Created: `2026-05-28T22:15:37.966797858Z`
+- Virtual Size: ~ 168.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -406,16 +406,16 @@ X11
 ### `apk` package: `libpq`
 
 ```console
-libpq-18.3-r0 description:
+libpq-18.4-r0 description:
 PostgreSQL client library
 
-libpq-18.3-r0 webpage:
+libpq-18.4-r0 webpage:
 https://www.postgresql.org/
 
-libpq-18.3-r0 installed size:
+libpq-18.4-r0 installed size:
 350 KiB
 
-libpq-18.3-r0 license:
+libpq-18.4-r0 license:
 PostgreSQL
 
 ```
