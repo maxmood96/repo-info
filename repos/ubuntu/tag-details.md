@@ -2923,7 +2923,12 @@ $ docker pull ubuntu@sha256:91bb100b6bf43d0a7ac2a28de860e2665805a5f58d2c49c69d49
 
 ## `ubuntu:noble-20260509.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull ubuntu@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ubuntu:questing`
 
