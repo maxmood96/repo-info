@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8a51976b06f0ea7f256d0fd53a10f96bda105ffb8598fe5238c4493ecf2ea3a0`
-- Created: `2026-05-01T00:11:38.682715981Z`
-- Virtual Size: ~ 325.77 Mb  
+- Image ID: `sha256:91d12314b41c879c284ef8a99b68e01dc3c973099c2021896a21e117ff72f091`
+- Created: `2026-05-29T23:04:44.48699148Z`
+- Virtual Size: ~ 325.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ol/helpers/runtime/docker-server.sh"]`
@@ -24,16 +24,16 @@
   - `RANDFILE=/tmp/.rnd`
   - `OPENJ9_JAVA_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal -Dosgi.checkConfiguration=false`
 - Labels:
-  - `io.openliberty.version=26.0.0.3`
-  - `liberty.version=26.0.0.3`
+  - `io.openliberty.version=26.0.0.5`
+  - `liberty.version=26.0.0.5`
   - `org.opencontainers.image.authors=Leo Christy Jesuraj, Melissa Lee, Thomas Watson, Michal Broz, Wendy Raschke`
   - `org.opencontainers.image.description=This image contains the Open Liberty runtime with IBM Semeru Runtime Open Edition OpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://github.com/OpenLiberty/ci.docker#building-an-application-image`
-  - `org.opencontainers.image.revision=cl260320260309-1102`
+  - `org.opencontainers.image.revision=cl260520260430-1602`
   - `org.opencontainers.image.source=https://github.com/OpenLiberty/ci.docker`
   - `org.opencontainers.image.title=Open Liberty`
   - `org.opencontainers.image.url=https://openliberty.io/`
   - `org.opencontainers.image.vendor=Open Liberty`
-  - `org.opencontainers.image.version=26.0.0.3`
+  - `org.opencontainers.image.version=26.0.0.5`
 
 ## `dpkg` (`.deb`-based packages)
 
