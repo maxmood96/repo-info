@@ -1,7 +1,7 @@
 ## `ros:kilted-ros-base`
 
 ```console
-$ docker pull ros@sha256:cf281fc739d5193a882ad7324e6dd03f9042de5d4c9d3d0148db7503e65c5a5b
+$ docker pull ros@sha256:ce241352eb294cc26f99fc3b0d5a3aa9777781e6f197a9fc20e109befa08ab89
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,239 +14,239 @@ $ docker pull ros@sha256:cf281fc739d5193a882ad7324e6dd03f9042de5d4c9d3d0148db750
 ### `ros:kilted-ros-base` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:cb3d4998744a506d3f8bbaa64738ea7bfd43673112c7066a8f07f16023a1205a
+$ docker pull ros@sha256:97552ea9286484fdd62ac01f9091d7f08778dd8abcae35800ae66f84c89deb13
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **297.1 MB (297136544 bytes)**  
+-	Total Size: **296.5 MB (296525362 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f528e859b71dcab36a6045daff8d4a2e5e7ff45efb5eca098638bb666e82b27`
+-	Image ID: `sha256:eca1dd27516e3749ee2d2648bf9f7db6092623e968f5c6fef9ba190ec662869e`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 10 Apr 2026 06:49:15 GMT
+# Wed, 20 May 2026 01:37:19 GMT
 ARG RELEASE
-# Fri, 10 Apr 2026 06:49:15 GMT
+# Wed, 20 May 2026 01:37:19 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 10 Apr 2026 06:49:15 GMT
+# Wed, 20 May 2026 01:37:19 GMT
 LABEL org.opencontainers.image.version=24.04
-# Fri, 10 Apr 2026 06:49:17 GMT
-ADD file:8ce1caf246e7c778bca84c516d02fd4e83766bb2c530a0fffa8a351b560a2728 in / 
-# Fri, 10 Apr 2026 06:49:18 GMT
+# Wed, 20 May 2026 01:37:21 GMT
+ADD file:46ac5b8ee4c64ad9ebe840abd5619f571a617ac19483764d47d0eeba7907934f in / 
+# Wed, 20 May 2026 01:37:22 GMT
 CMD ["/bin/bash"]
-# Mon, 11 May 2026 19:00:24 GMT
+# Tue, 02 Jun 2026 08:21:01 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 11 May 2026 19:00:32 GMT
+# Tue, 02 Jun 2026 08:21:09 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     ca-certificates     curl     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 11 May 2026 19:00:35 GMT
+# Tue, 02 Jun 2026 08:21:13 GMT
 RUN curl -L -s -f -o /tmp/ros2-apt-source.deb https://github.com/ros-infrastructure/ros-apt-source/releases/download/1.2.0/ros2-apt-source_1.2.0.noble_all.deb     && echo "0804d9b13db770eb87019be414cd78378835228ad5fa801fc88758596dd8f7e5 */tmp/ros2-apt-source.deb" | sha256sum --strict --check     && apt-get update     && apt-get install /tmp/ros2-apt-source.deb     && rm -f /tmp/ros2-apt-source.deb     && rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 11 May 2026 19:01:13 GMT
+# Tue, 02 Jun 2026 08:21:53 GMT
 ENV LANG=C.UTF-8
-# Mon, 11 May 2026 19:01:13 GMT
+# Tue, 02 Jun 2026 08:21:53 GMT
 ENV LC_ALL=C.UTF-8
-# Mon, 11 May 2026 19:01:13 GMT
+# Tue, 02 Jun 2026 08:21:53 GMT
 ENV ROS_DISTRO=kilted
-# Mon, 11 May 2026 19:01:13 GMT
+# Tue, 02 Jun 2026 08:21:53 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-kilted-ros-core=0.12.0-2*     && rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 11 May 2026 19:01:13 GMT
+# Tue, 02 Jun 2026 08:21:53 GMT
 COPY ./ros_entrypoint.sh / # buildkit
-# Mon, 11 May 2026 19:01:13 GMT
+# Tue, 02 Jun 2026 08:21:53 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Mon, 11 May 2026 19:01:13 GMT
+# Tue, 02 Jun 2026 08:21:53 GMT
 CMD ["bash"]
-# Mon, 11 May 2026 19:13:59 GMT
+# Tue, 02 Jun 2026 09:14:58 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     build-essential     git     python3-colcon-common-extensions     python3-colcon-mixin     python3-rosdep     python3-vcstool     && rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 11 May 2026 19:14:02 GMT
+# Tue, 02 Jun 2026 09:15:00 GMT
 RUN rosdep init &&   rosdep update --rosdistro $ROS_DISTRO # buildkit
-# Mon, 11 May 2026 19:14:06 GMT
+# Tue, 02 Jun 2026 09:15:01 GMT
 RUN colcon mixin add default       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml &&     colcon mixin update &&     colcon metadata add default       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml &&     colcon metadata update # buildkit
-# Mon, 11 May 2026 19:14:20 GMT
+# Tue, 02 Jun 2026 09:15:16 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-kilted-ros-base=0.12.0-2*     && rm -rf /var/lib/apt/lists/* # buildkit
 ```
 
 -	Layers:
-	-	`sha256:b40150c1c2717d324cdb17278c8efdfa4dfcd2ffe083e976f0bcedf31115f081`  
-		Last Modified: Fri, 10 Apr 2026 09:34:17 GMT  
-		Size: 29.7 MB (29732978 bytes)  
+	-	`sha256:cb259a83ac3dd9fea0b394df41df2b298adf0df938fef5999475af18a751c257`  
+		Last Modified: Wed, 20 May 2026 02:15:22 GMT  
+		Size: 29.7 MB (29732805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:203aa6346a00710093073ecb851e68546fe7d5c7a63cadd967ed2e0aa14710a3`  
-		Last Modified: Mon, 11 May 2026 19:01:39 GMT  
-		Size: 684.0 KB (683966 bytes)  
+	-	`sha256:685092803da43ca941292a896dd8f48ce1a8d91790f69c2b1c79155b9a69b145`  
+		Last Modified: Tue, 02 Jun 2026 08:22:21 GMT  
+		Size: 684.1 KB (684100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8297d1086b1f98cc9287380fd3692f52255afda0cdc36d3f71de8384e801f5c6`  
-		Last Modified: Mon, 11 May 2026 19:01:40 GMT  
-		Size: 6.8 MB (6752218 bytes)  
+	-	`sha256:6dfe1f8d3291d469cb43e34c42805d2fc2b1c783dcf66f4ee0525af8f9949005`  
+		Last Modified: Tue, 02 Jun 2026 08:22:21 GMT  
+		Size: 6.8 MB (6752403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a6d4ff6313d42e457ed69085fdbdc948df6fb09eda1bce0ed0adc882aca17571`  
-		Last Modified: Mon, 11 May 2026 19:01:39 GMT  
-		Size: 94.2 KB (94167 bytes)  
+	-	`sha256:b4ad6cfd35f7eb6e09d5e6988027d6d14d4616a251e4b6f7b15d46610e5da6bf`  
+		Last Modified: Tue, 02 Jun 2026 08:22:21 GMT  
+		Size: 94.3 KB (94312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d83cec8ec35503c52817d061b1414b615de2561b55cb85f2e547c2a4f2498d16`  
-		Last Modified: Mon, 11 May 2026 19:01:43 GMT  
-		Size: 120.9 MB (120935367 bytes)  
+	-	`sha256:16adb782f56ae8a50f40642754bde93ad1b585f0ec4ad386db098320f795644c`  
+		Last Modified: Tue, 02 Jun 2026 08:22:24 GMT  
+		Size: 120.8 MB (120789572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7cbfd4d642fd8b6e0afa60c8511d6c0bc8eb8471fac315e352391383debe6f0`  
-		Last Modified: Mon, 11 May 2026 19:01:41 GMT  
+	-	`sha256:cd387be3eedd271dde548d6e8d372f2d0df9203a335b5a07277419fd3a25c6f5`  
+		Last Modified: Tue, 02 Jun 2026 08:22:22 GMT  
 		Size: 196.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4a6dd392dbff6d7b6d67519ea916b13cc6925d0f92d2307dbd82948acdad262e`  
-		Last Modified: Mon, 11 May 2026 19:14:56 GMT  
-		Size: 110.7 MB (110663798 bytes)  
+	-	`sha256:7591985e47a84095a344162d1c2db751bf489e751dcd4e74636cfe7ce1b56c32`  
+		Last Modified: Tue, 02 Jun 2026 09:15:51 GMT  
+		Size: 110.2 MB (110196246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d1181bd112c159be737e19d577fcc94d397c7a43df3b628032eba0cd6d04aaf1`  
-		Last Modified: Mon, 11 May 2026 19:14:53 GMT  
-		Size: 382.2 KB (382206 bytes)  
+	-	`sha256:a097140c3e1ce3192ceaafb4247254801b5536f5ff6e4e935df9b35d20218973`  
+		Last Modified: Tue, 02 Jun 2026 09:15:48 GMT  
+		Size: 384.0 KB (383978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f74b2253a336265af7d54719c96a7b7657acd02bdb998b134763b3d84a72ba52`  
-		Last Modified: Mon, 11 May 2026 19:14:53 GMT  
-		Size: 2.5 KB (2517 bytes)  
+	-	`sha256:3112170637d27b54fc305ed87c92758f6cac238c074fe0c0e11226c3e22c94c3`  
+		Last Modified: Tue, 02 Jun 2026 09:15:48 GMT  
+		Size: 2.5 KB (2498 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3324873c74ee6b185565d669a1ea23f5580faf99788e41da860250d9c7599abb`  
-		Last Modified: Mon, 11 May 2026 19:14:54 GMT  
-		Size: 27.9 MB (27889131 bytes)  
+	-	`sha256:ac36c7d12f9264e8c13e70c4be0a94ec42d19a7fa9ef2e9020fa697cb5aee914`  
+		Last Modified: Tue, 02 Jun 2026 09:15:49 GMT  
+		Size: 27.9 MB (27889252 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ros:kilted-ros-base` - unknown; unknown
 
 ```console
-$ docker pull ros@sha256:907d5440f833628c2cd66d046da612d05b6dbaf613a36e923972b0d7ba1fca96
+$ docker pull ros@sha256:da0b9b34cfa4f2e02f46cb4fc2a787b180e0641b84d8016dcd778ce344654314
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.8 MB (24756713 bytes)**  
+-	Total Size: **24.8 MB (24756730 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:379d065e31e555ccd272014fd0ea8e326f2d896092d01d2f5d431390650b1185`
+-	Image ID: `sha256:ebd08bdac497a708635a7ef3b13fa4d7f0a33c206dbb9b8070fe0fa5b4fc7296`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:64dc42aa8bbf1cbd88565dee2e3b9217c3ae8ca0caa83f2eb80c839cc669fcd0`  
-		Last Modified: Mon, 11 May 2026 19:14:54 GMT  
-		Size: 24.7 MB (24740366 bytes)  
+	-	`sha256:a8a0a8146a51875f4d1c7b2dff7bfcb1314329bdd1ce751fe21d86868b5e9778`  
+		Last Modified: Tue, 02 Jun 2026 09:15:49 GMT  
+		Size: 24.7 MB (24740384 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4319d6fc7f46b8b6139c6311d8b3164aec04fae2546399cfddd86513aeb93ac3`  
-		Last Modified: Mon, 11 May 2026 19:14:53 GMT  
-		Size: 16.3 KB (16347 bytes)  
+	-	`sha256:741fcf5c9fad5dbc7ff704534dc39fc9955edcba1567c6601e32c35d09516087`  
+		Last Modified: Tue, 02 Jun 2026 09:15:47 GMT  
+		Size: 16.3 KB (16346 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ros:kilted-ros-base` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:4b3054abbdebccaa00bebe2f1f0e6fa32055f0d7d9a5e20e5838855891011948
+$ docker pull ros@sha256:837b40120856c929d7b0bc72c906aa8867506fd90f211d09afd0d9c221529050
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **285.6 MB (285553651 bytes)**  
+-	Total Size: **284.9 MB (284932276 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88425e0b22fabe9ef0564ee7133f7546f7a5f0114637c9eaf9e8e92271a91567`
+-	Image ID: `sha256:b3ed99ef2ffe5535866e73b80ee91b3ec4592eb05dfc499de418d75fe7d3d97c`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 10 Apr 2026 06:56:52 GMT
+# Wed, 20 May 2026 01:37:31 GMT
 ARG RELEASE
-# Fri, 10 Apr 2026 06:56:52 GMT
+# Wed, 20 May 2026 01:37:31 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 10 Apr 2026 06:56:52 GMT
+# Wed, 20 May 2026 01:37:31 GMT
 LABEL org.opencontainers.image.version=24.04
-# Fri, 10 Apr 2026 06:56:54 GMT
-ADD file:c98b7645109cdf61ab97492b90629581b1b7cb925b9d58a5787a4aaeb719f2be in / 
-# Fri, 10 Apr 2026 06:56:54 GMT
+# Wed, 20 May 2026 01:37:34 GMT
+ADD file:08e1f650999ca51d9b63c782d658d9485c64263966d69dc423a3b64a16449f00 in / 
+# Wed, 20 May 2026 01:37:34 GMT
 CMD ["/bin/bash"]
-# Mon, 11 May 2026 19:00:47 GMT
+# Tue, 02 Jun 2026 08:21:16 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 11 May 2026 19:01:00 GMT
+# Tue, 02 Jun 2026 08:21:25 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     ca-certificates     curl     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 11 May 2026 19:01:08 GMT
+# Tue, 02 Jun 2026 08:21:30 GMT
 RUN curl -L -s -f -o /tmp/ros2-apt-source.deb https://github.com/ros-infrastructure/ros-apt-source/releases/download/1.2.0/ros2-apt-source_1.2.0.noble_all.deb     && echo "0804d9b13db770eb87019be414cd78378835228ad5fa801fc88758596dd8f7e5 */tmp/ros2-apt-source.deb" | sha256sum --strict --check     && apt-get update     && apt-get install /tmp/ros2-apt-source.deb     && rm -f /tmp/ros2-apt-source.deb     && rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 11 May 2026 19:01:53 GMT
+# Tue, 02 Jun 2026 08:22:09 GMT
 ENV LANG=C.UTF-8
-# Mon, 11 May 2026 19:01:53 GMT
+# Tue, 02 Jun 2026 08:22:09 GMT
 ENV LC_ALL=C.UTF-8
-# Mon, 11 May 2026 19:01:53 GMT
+# Tue, 02 Jun 2026 08:22:09 GMT
 ENV ROS_DISTRO=kilted
-# Mon, 11 May 2026 19:01:53 GMT
+# Tue, 02 Jun 2026 08:22:09 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-kilted-ros-core=0.12.0-2*     && rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 11 May 2026 19:01:53 GMT
+# Tue, 02 Jun 2026 08:22:09 GMT
 COPY ./ros_entrypoint.sh / # buildkit
-# Mon, 11 May 2026 19:01:53 GMT
+# Tue, 02 Jun 2026 08:22:09 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Mon, 11 May 2026 19:01:53 GMT
+# Tue, 02 Jun 2026 08:22:09 GMT
 CMD ["bash"]
-# Mon, 11 May 2026 19:12:08 GMT
+# Tue, 02 Jun 2026 09:23:11 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     build-essential     git     python3-colcon-common-extensions     python3-colcon-mixin     python3-rosdep     python3-vcstool     && rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 11 May 2026 19:12:11 GMT
+# Tue, 02 Jun 2026 09:23:14 GMT
 RUN rosdep init &&   rosdep update --rosdistro $ROS_DISTRO # buildkit
-# Mon, 11 May 2026 19:12:13 GMT
+# Tue, 02 Jun 2026 09:23:16 GMT
 RUN colcon mixin add default       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml &&     colcon mixin update &&     colcon metadata add default       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml &&     colcon metadata update # buildkit
-# Mon, 11 May 2026 19:12:34 GMT
+# Tue, 02 Jun 2026 09:23:33 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-kilted-ros-base=0.12.0-2*     && rm -rf /var/lib/apt/lists/* # buildkit
 ```
 
 -	Layers:
-	-	`sha256:818154cda96df8bbb276b4f4339124da55756620a1037af15570bc95312850fa`  
-		Last Modified: Fri, 10 Apr 2026 09:34:24 GMT  
-		Size: 28.9 MB (28875785 bytes)  
+	-	`sha256:fff3795b437199a0b714aadba6fb2c251d7da853c3e257d3fed1d2c8d0f05158`  
+		Last Modified: Wed, 20 May 2026 02:15:29 GMT  
+		Size: 28.9 MB (28876406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc10796365a045f536d89d2fac057e52b1f2ac4ded2cd70e983c8d188e980099`  
-		Last Modified: Mon, 11 May 2026 19:02:21 GMT  
-		Size: 684.2 KB (684192 bytes)  
+	-	`sha256:b416145b2d0ffb7ae21a537e749877dcd599e74b4d9f478ff90dc7ca53b9bd61`  
+		Last Modified: Tue, 02 Jun 2026 08:22:37 GMT  
+		Size: 684.2 KB (684232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52cc3dfbf9593cf69afba801c78df1d39513c204943247037d87b6ffc686f2bd`  
-		Last Modified: Mon, 11 May 2026 19:02:22 GMT  
-		Size: 6.8 MB (6765719 bytes)  
+	-	`sha256:aee6875267f1b9da5a58d88bcee0d575c2e293237fb4742314202eabbc1d1df8`  
+		Last Modified: Tue, 02 Jun 2026 08:22:37 GMT  
+		Size: 6.8 MB (6765733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0325aca0beeecd063d5b36f9d2b79c49f8b5285d68089393904bb78725a415c6`  
-		Last Modified: Mon, 11 May 2026 19:02:21 GMT  
-		Size: 94.4 KB (94387 bytes)  
+	-	`sha256:42269c28912bc00b80ac1cd7f69237e55b1853486f06e98f684b3b531cad7572`  
+		Last Modified: Tue, 02 Jun 2026 08:22:36 GMT  
+		Size: 94.4 KB (94402 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03683ac42ce0d6085689c7560dccd52e485e8811e595a23298003750fed62592`  
-		Last Modified: Mon, 11 May 2026 19:02:25 GMT  
-		Size: 115.7 MB (115660823 bytes)  
+	-	`sha256:6e07f457aff02417cb213909621dc479df8474c419987ecb0627cd88fd7bc2a6`  
+		Last Modified: Tue, 02 Jun 2026 08:22:40 GMT  
+		Size: 115.5 MB (115517604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0310fb8d7ab59c87909b9450d1df5d071d4e1796dd9aff7a3039b45a8807780b`  
-		Last Modified: Mon, 11 May 2026 19:02:22 GMT  
-		Size: 195.0 B  
+	-	`sha256:930c855c40a83380b5b946026099a869c99e32021af8b48e3604c5218a4e9c70`  
+		Last Modified: Tue, 02 Jun 2026 08:22:38 GMT  
+		Size: 194.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:27109cc6f2f4ce1d42bfbc092c0beee92d9717649e91b7bd9673e2fcbd075cbd`  
-		Last Modified: Mon, 11 May 2026 19:13:10 GMT  
-		Size: 106.1 MB (106090308 bytes)  
+	-	`sha256:cf77bfb824aac72d5c1073df5f5acb6b7a3c20d107adec44a222da0c810d8c94`  
+		Last Modified: Tue, 02 Jun 2026 09:24:11 GMT  
+		Size: 105.6 MB (105609755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d522455a5a2e6e8a9311ac13057aa690b6d1ebf53c75b456e1cafc24bf8f9f27`  
-		Last Modified: Mon, 11 May 2026 19:13:07 GMT  
-		Size: 382.2 KB (382192 bytes)  
+	-	`sha256:4428427f205c2c454f011d2825db888344ddc8501ace447a350671bfef15670a`  
+		Last Modified: Tue, 02 Jun 2026 09:24:07 GMT  
+		Size: 384.0 KB (383972 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:834d76cc9a9d526bd2365c7b6dc88a52aaf996f604271a069a01abc4cc2f0141`  
-		Last Modified: Mon, 11 May 2026 19:13:07 GMT  
-		Size: 2.5 KB (2516 bytes)  
+	-	`sha256:a251bc17a680222bf4f00827205fce57a7a1229a19ed87b70fb066f99a0c5910`  
+		Last Modified: Tue, 02 Jun 2026 09:24:07 GMT  
+		Size: 2.5 KB (2496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29bbcab63cba92ef478797b62881851c9f78d63434813a411a979a749f7fac07`  
-		Last Modified: Mon, 11 May 2026 19:13:08 GMT  
-		Size: 27.0 MB (26997534 bytes)  
+	-	`sha256:3c18e61574b544d7fd789fc4baed9d75abfd91e2912379743520d5aaf7a68bf6`  
+		Last Modified: Tue, 02 Jun 2026 09:24:09 GMT  
+		Size: 27.0 MB (26997482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ros:kilted-ros-base` - unknown; unknown
 
 ```console
-$ docker pull ros@sha256:345cd072abe5b9ed568306eefb47f8f69e38d46832e23a51c4ed460d74a25171
+$ docker pull ros@sha256:fc1f84921a10b9d8372250c8a0c7383a420b806af7113c19003dbbd81b3b2116
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.8 MB (24779110 bytes)**  
+-	Total Size: **24.8 MB (24779128 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e6b1efb3fdba4476ac69a6724610b446c83a91d09a3360c5d7a1b83fd0c57c2`
+-	Image ID: `sha256:fd2b424d98817a45c88ad6e9be8319164e8cf15446b0a06493dcbd1391ba2e20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b7f4139b31da0ae7c2cc84a845d28549bb57e698fe46299e796e62a398cff72`  
-		Last Modified: Mon, 11 May 2026 19:13:08 GMT  
-		Size: 24.8 MB (24762626 bytes)  
+	-	`sha256:2c4c5656e0cbb0d23a6940cd6150585c72d47642167049cdd5528bcae835580d`  
+		Last Modified: Tue, 02 Jun 2026 09:24:08 GMT  
+		Size: 24.8 MB (24762644 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c099573f70788522e5453ceabb26cbc497203ca0f5d27a91d955f634b003d85f`  
-		Last Modified: Mon, 11 May 2026 19:13:07 GMT  
+	-	`sha256:b762863b72c4c0fdc52e8ddbef2ec008f88a2585163002ec2ede4de40e2f48d0`  
+		Last Modified: Tue, 02 Jun 2026 09:24:07 GMT  
 		Size: 16.5 KB (16484 bytes)  
 		MIME: application/vnd.in-toto+json
