@@ -1,9 +1,9 @@
-# `matomo:5.10.0-fpm-alpine`
+# `matomo:5.10.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a07407c2d982a3b4a0d0ccaf502a5b4774c52e5fc57ee7c838140ae2a55d3bbf`
-- Created: `2026-05-07T17:27:14.636418653Z`
+- Image ID: `sha256:559b780df1ed31d2ee26de348af0c3aec3e506bef30a86032e802721ce0ddab4`
+- Created: `2026-05-30T00:28:03.594948684Z`
 - Virtual Size: ~ 169.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,7 +22,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.21.tar.xz.asc`
   - `PHP_SHA256=7cf5d8ab12c3b2016875bcfaec71bef1ef0b07bed6148f2c447577074431f984`
   - `PHP_MEMORY_LIMIT=256M`
-  - `MATOMO_VERSION=5.10.0`
+  - `MATOMO_VERSION=5.10.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -437,16 +437,16 @@ BSD-3-Clause AND IJG AND Zlib
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.10-r0 description:
+libldap-2.6.13-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.10-r0 webpage:
+libldap-2.6.13-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.10-r0 installed size:
+libldap-2.6.13-r0 installed size:
 365 KiB
 
-libldap-2.6.10-r0 license:
+libldap-2.6.13-r0 license:
 OLDAP-2.8
 
 ```
@@ -471,16 +471,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.57-r0 description:
+libpng-1.6.58-r1 description:
 Portable Network Graphics library
 
-libpng-1.6.57-r0 webpage:
+libpng-1.6.58-r1 webpage:
 http://www.libpng.org
 
-libpng-1.6.57-r0 installed size:
+libpng-1.6.58-r1 installed size:
 181 KiB
 
-libpng-1.6.57-r0 license:
+libpng-1.6.58-r1 license:
 Libpng
 
 ```
