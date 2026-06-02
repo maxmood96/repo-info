@@ -3089,14 +3089,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=7.0.0-15.15
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-15.15.diff.gz' linux_7.0.0-15.15.diff.gz 987444 SHA512:1fe03b3fa655e332784b60e85e14bb63269a9e9326ab61149348bf822fbe3540ca17b633d680d67edd1e4e08424e5b86273c016a20c1e4d29b50139ee0287de8
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-15.15.dsc' linux_7.0.0-15.15.dsc 7918 SHA512:597e734c4dffa86f2b6d57fcb47b4b37f34d8db6c306109c06b02e0184671edba22ed9c93ef7856e4c15567a84e9c65df4157f36246d1b4fa4799f1ad7d2c26b
-```
 
 ### `dpkg` source package: `lto-disabled-list=79`
 
