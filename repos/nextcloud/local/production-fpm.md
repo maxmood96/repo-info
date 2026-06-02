@@ -1,9 +1,9 @@
-# `nextcloud:33.0.3-fpm`
+# `nextcloud:33.0.4-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bca401a24ed787dc1b1a3f763bcff3c401a9089f43fd8e1d1f62a8dfe070cb24`
-- Created: `2026-05-20T00:38:37.290602093Z`
+- Image ID: `sha256:14a116915ec1c968f4b0e5e21088bf3c0d83b2bc4b4a7182f515c3f6a3e3816f`
+- Created: `2026-05-29T17:16:21.944595512Z`
 - Virtual Size: ~ 1.42 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -24,7 +24,7 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
-  - `NEXTCLOUD_VERSION=33.0.3`
+  - `NEXTCLOUD_VERSION=33.0.4`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1725,14 +1725,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/icu/76.1-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/icu/76.1-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:7.1.1.43+dfsg1-1+deb13u8`
+### `dpkg` source package: `imagemagick=8:7.1.1.43+dfsg1-1+deb13u9`
 
 Binary Packages:
 
-- `imagemagick-7-common=8:7.1.1.43+dfsg1-1+deb13u8`
-- `libmagickcore-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u8`
-- `libmagickcore-7.q16-10-extra:amd64=8:7.1.1.43+dfsg1-1+deb13u8`
-- `libmagickwand-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u8`
+- `imagemagick-7-common=8:7.1.1.43+dfsg1-1+deb13u9`
+- `libmagickcore-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u9`
+- `libmagickcore-7.q16-10-extra:amd64=8:7.1.1.43+dfsg1-1+deb13u9`
+- `libmagickwand-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u9`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick-7-common/copyright`, `/usr/share/doc/libmagickcore-7.q16-10/copyright`, `/usr/share/doc/libmagickcore-7.q16-10-extra/copyright`, `/usr/share/doc/libmagickwand-7.q16-10/copyright`)
 
@@ -1765,17 +1765,17 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick-7-common/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.1.43+dfsg1-1+deb13u8
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u8.dsc' imagemagick_7.1.1.43+dfsg1-1+deb13u8.dsc 5136 SHA256:78093fc2c18a42764bfe4305540320b511a1a20990a9ca9353a56aac9cc6f463
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1.orig.tar.xz' imagemagick_7.1.1.43+dfsg1.orig.tar.xz 10501740 SHA256:bcb4f3c78a930a608fa4889f889edbcb384974246ad9407fce1858f2c0607bfe
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u8.debian.tar.xz' imagemagick_7.1.1.43+dfsg1-1+deb13u8.debian.tar.xz 335096 SHA256:e3ab896e0d5c12fb38ad0d0d330456ed31b7d722ac40f6dbbe8115bc8f7fcbba
+$ apt-get source -qq --print-uris imagemagick=8:7.1.1.43+dfsg1-1+deb13u9
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u9.dsc' imagemagick_7.1.1.43+dfsg1-1+deb13u9.dsc 5136 SHA256:5ed72512cc726eb14fc80520c5e87dab979e8a591cf6faca98e18554e93bcdd8
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1.orig.tar.xz' imagemagick_7.1.1.43+dfsg1.orig.tar.xz 10501740 SHA256:bcb4f3c78a930a608fa4889f889edbcb384974246ad9407fce1858f2c0607bfe
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u9.debian.tar.xz' imagemagick_7.1.1.43+dfsg1-1+deb13u9.debian.tar.xz 342248 SHA256:ecaa16ef9c69645dd7526a698b6401c3e7b91d1be1d8708ae4ce6011b309300b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u8/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u9/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.12-1`
 
@@ -1936,14 +1936,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/keyutils/1.6.3-6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/keyutils/1.6.3-6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `krb5=1.21.3-5`
+### `dpkg` source package: `krb5=1.21.3-5+deb13u1`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.21.3-5`
-- `libk5crypto3:amd64=1.21.3-5`
-- `libkrb5-3:amd64=1.21.3-5`
-- `libkrb5support0:amd64=1.21.3-5`
+- `libgssapi-krb5-2:amd64=1.21.3-5+deb13u1`
+- `libk5crypto3:amd64=1.21.3-5+deb13u1`
+- `libkrb5-3:amd64=1.21.3-5+deb13u1`
+- `libkrb5support0:amd64=1.21.3-5+deb13u1`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1952,18 +1952,18 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.21.3-5
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3-5.dsc' krb5_1.21.3-5.dsc 3983 SHA256:88e736b6439d0fe30317ae7c38c3093b7139f1b7709997debe28d756f92de353
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz' krb5_1.21.3.orig.tar.gz 9136145 SHA256:b7a4cd5ead67fb08b980b21abd150ff7217e85ea320c9ed0c6dadd304840ad35
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz.asc' krb5_1.21.3.orig.tar.gz.asc 833 SHA256:85047c935fe949ef2e275885451b168557b923dd13a5aab0ef8fe6acd27b94d7
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3-5.debian.tar.xz' krb5_1.21.3-5.debian.tar.xz 104424 SHA256:521fdfaf5cda93a64cc70afd357dc31ea6f4128ff5a489b036b58887eceddd46
+$ apt-get source -qq --print-uris krb5=1.21.3-5+deb13u1
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.21.3-5%2bdeb13u1.dsc' krb5_1.21.3-5+deb13u1.dsc 4189 SHA256:d17d2840bc97fea2c2375245569ca67838a2b557ee083c6cbe42b129a317212c
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.21.3.orig.tar.gz' krb5_1.21.3.orig.tar.gz 9136145 SHA256:b7a4cd5ead67fb08b980b21abd150ff7217e85ea320c9ed0c6dadd304840ad35
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.21.3.orig.tar.gz.asc' krb5_1.21.3.orig.tar.gz.asc 833 SHA256:85047c935fe949ef2e275885451b168557b923dd13a5aab0ef8fe6acd27b94d7
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.21.3-5%2bdeb13u1.debian.tar.xz' krb5_1.21.3-5+deb13u1.debian.tar.xz 105252 SHA256:02b873b239fbe7ddf016dfe44deba4130673f4606c18c93da0622e2bc8500fb4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/krb5/1.21.3-5/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.21.3-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.21.3-5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/krb5/1.21.3-5+deb13u1/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.21.3-5+deb13u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.21.3-5+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lcms2=2.16-2+deb13u2`
 
@@ -4222,11 +4222,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/rpcsvc-proto/1.4.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/rpcsvc-proto/1.4.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `rsync=3.4.1+ds1-5+deb13u2`
+### `dpkg` source package: `rsync=3.4.1+ds1-5+deb13u3`
 
 Binary Packages:
 
-- `rsync=3.4.1+ds1-5+deb13u2`
+- `rsync=3.4.1+ds1-5+deb13u3`
 
 Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 
@@ -4247,17 +4247,17 @@ Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris rsync=3.4.1+ds1-5+deb13u2
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.4.1%2bds1-5%2bdeb13u2.dsc' rsync_3.4.1+ds1-5+deb13u2.dsc 2224 SHA256:0f80ada223dc21c23620cd84854a518ae3041304532f3faa939be26b5a367874
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.4.1%2bds1.orig.tar.xz' rsync_3.4.1+ds1.orig.tar.xz 646840 SHA256:bb9e2dda7e79d9639bc04bdafff6bb0b06a606ed915358b574696384215c9e5c
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.4.1%2bds1-5%2bdeb13u2.debian.tar.xz' rsync_3.4.1+ds1-5+deb13u2.debian.tar.xz 40620 SHA256:3dec355dba485a786cd94052c453dfe0ffb63f3b1e84871a05a991f52ea2e20d
+$ apt-get source -qq --print-uris rsync=3.4.1+ds1-5+deb13u3
+'http://deb.debian.org/debian-security/pool/updates/main/r/rsync/rsync_3.4.1%2bds1-5%2bdeb13u3.dsc' rsync_3.4.1+ds1-5+deb13u3.dsc 2379 SHA256:34ff65b88f32742174616e5b5e4b4ca8d0e0a90aa20b7ab446344062baab0b12
+'http://deb.debian.org/debian-security/pool/updates/main/r/rsync/rsync_3.4.1%2bds1.orig.tar.xz' rsync_3.4.1+ds1.orig.tar.xz 646840 SHA256:bb9e2dda7e79d9639bc04bdafff6bb0b06a606ed915358b574696384215c9e5c
+'http://deb.debian.org/debian-security/pool/updates/main/r/rsync/rsync_3.4.1%2bds1-5%2bdeb13u3.debian.tar.xz' rsync_3.4.1+ds1-5+deb13u3.debian.tar.xz 88284 SHA256:8af184808b59d8b6b866393b80c2b02525dd418ebe2fe574191be02b30464018
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/rsync/3.4.1+ds1-5+deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/rsync/3.4.1+ds1-5+deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rsync/3.4.1+ds1-5+deb13u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/rsync/3.4.1+ds1-5+deb13u3/ (for browsing the source)
+- https://sources.debian.net/src/rsync/3.4.1+ds1-5+deb13u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rsync/3.4.1+ds1-5+deb13u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-2`
 
