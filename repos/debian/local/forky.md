@@ -1572,20 +1572,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.42-5
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42-5.dsc' util-linux_2.42-5.dsc 5317 SHA256:fe9c2fff43586b5f2dd7161002c61bcf7b14acbd0e4f962d024efd0c96d0a63c
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42.orig.tar.xz' util-linux_2.42.orig.tar.xz 10608300 SHA256:3452b260bbaa775d6e749ac3bb22111785003fc1f444970025c8da26dfa758e9
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42-5.debian.tar.xz' util-linux_2.42-5.debian.tar.xz 101868 SHA256:0167f489c82c60f483fedbc895036ed6a49996dbe4c9f258b61e4353c9b41c19
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.42-5/
 
-- https://sources.debian.net/src/util-linux/2.42-5/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.42-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.42-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.3-2`
 
