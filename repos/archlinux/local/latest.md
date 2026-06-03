@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7bd549cf9ec5dc1c2a348412027a9b3bde3d5ed00698c23c7e24b0f9f16eefef`
-- Created: `2026-05-26T18:59:33.652546386Z`
-- Virtual Size: ~ 393.96 Mb  
+- Image ID: `sha256:a6f760002b3b4da50eef8689003a869a7bbfc1c60da0e1c7bb9bb55783a1b34f`
+- Created: `2026-06-01T21:30:30.198918444Z`
+- Virtual Size: ~ 394.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/usr/bin/bash"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
 - Labels:
   - `org.opencontainers.image.authors=Santiago Torres-Arias <santiago@archlinux.org> (@SantiagoTorres), Christian Rebischke <Chris.Rebischke@archlinux.org> (@shibumi), Justin Kromlinger <hashworks@archlinux.org> (@hashworks)`
-  - `org.opencontainers.image.created=2026-05-24T00:12:57+00:00`
+  - `org.opencontainers.image.created=2026-05-31T00:09:15+00:00`
   - `org.opencontainers.image.description=Official containerd image of Arch Linux, a simple, lightweight Linux distribution aimed for flexibility.`
   - `org.opencontainers.image.documentation=https://wiki.archlinux.org/title/Docker#Arch_Linux`
   - `org.opencontainers.image.licenses=GPL-3.0-or-later`
@@ -21,4 +21,4 @@
   - `org.opencontainers.image.source=https://gitlab.archlinux.org/archlinux/archlinux-docker`
   - `org.opencontainers.image.title=Arch Linux base Image`
   - `org.opencontainers.image.url=https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/master/README.md`
-  - `org.opencontainers.image.version=20260524.0.535079`
+  - `org.opencontainers.image.version=20260531.0.538839`
