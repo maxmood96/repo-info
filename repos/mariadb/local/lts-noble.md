@@ -1,10 +1,10 @@
-# `mariadb:11.8.8-noble`
+# `mariadb:12.3.2-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:10247350efcbc2383c324c09d2d824aedb1e84d0a71c9b7bfcd5687c9f0ab91a`
-- Created: `2026-05-29T23:07:58.688795449Z`
-- Virtual Size: ~ 328.87 Mb  
+- Image ID: `sha256:ca20b0713cc87f0e9a75d154f677e3f9469e1281f21dd68dc551bf3d93467e27`
+- Created: `2026-06-02T08:19:20.45881008Z`
+- Virtual Size: ~ 333.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.19`
   - `LANG=C.UTF-8`
-  - `MARIADB_VERSION=1:11.8.8+maria~ubu2404`
+  - `MARIADB_VERSION=1:12.3.2+maria~ubu2404`
 - Labels:
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/library/ubuntu:noble`
@@ -24,7 +24,7 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=11.8.8`
+  - `org.opencontainers.image.version=12.3.2`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -417,11 +417,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.10-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.10-1build1.debian.tar.xz' diffutils_3.10-1build1.debian.tar.xz 14068 SHA512:36cb15f987cfd57dbe5bfe347a990887ffe52f8ba3756c4f806e78ba702d2b1acc2f316292bf1096a1a7db158358b4cd6261cabe70a77fd292945e07d5808cb5
 ```
 
-### `dpkg` source package: `dpkg=1.22.6ubuntu6.5`
+### `dpkg` source package: `dpkg=1.22.6ubuntu6.6`
 
 Binary Packages:
 
-- `dpkg=1.22.6ubuntu6.5`
+- `dpkg=1.22.6ubuntu6.6`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -429,9 +429,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris dpkg=1.22.6ubuntu6.6
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.6.tar.xz' dpkg_1.22.6ubuntu6.6.tar.xz 5548716 SHA512:e934e50a46a65b015982ad69dc4eca8bd514fbbd48aeeb5a84a66ab93c1e64b6d4d9429d08c2d8097ba0a3e96e27c205ab2142bb6e33659c96e32bdee477b6c3
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.6.dsc' dpkg_1.22.6ubuntu6.6.dsc 3156 SHA512:99f857ee029f720f79414a3ae85d857d06f30f57ff6ce259710a33d1de2a02d9398e511af46b689d4b9819b4c3f76d877d50d8da961fb7b6b9ecae621d1c562c
+```
 
 ### `dpkg` source package: `e2fsprogs=1.47.0-2.4~exp1ubuntu4.1`
 
@@ -1624,18 +1628,19 @@ $ apt-get source -qq --print-uris lz4=1.9.4-1build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.9.4-1build1.1.dsc' lz4_1.9.4-1build1.1.dsc 2061 SHA256:ba7b585b15d8b4c955dd68c7af5aa89901cfbb3fdb4f2607ccad51628857d669
 ```
 
-### `dpkg` source package: `mariadb=1:11.8.8+maria~ubu2404`
+### `dpkg` source package: `mariadb=1:12.3.2+maria~ubu2404`
 
 Binary Packages:
 
-- `libmariadb3:amd64=1:11.8.8+maria~ubu2404`
-- `mariadb-backup=1:11.8.8+maria~ubu2404`
-- `mariadb-client=1:11.8.8+maria~ubu2404`
-- `mariadb-client-core=1:11.8.8+maria~ubu2404`
-- `mariadb-common=1:11.8.8+maria~ubu2404`
-- `mariadb-server=1:11.8.8+maria~ubu2404`
-- `mariadb-server-core=1:11.8.8+maria~ubu2404`
-- `mysql-common=1:11.8.8+maria~ubu2404`
+- `libmariadb3:amd64=1:12.3.2+maria~ubu2404`
+- `mariadb-backup=1:12.3.2+maria~ubu2404`
+- `mariadb-client=1:12.3.2+maria~ubu2404`
+- `mariadb-client-core=1:12.3.2+maria~ubu2404`
+- `mariadb-common=1:12.3.2+maria~ubu2404`
+- `mariadb-server=1:12.3.2+maria~ubu2404`
+- `mariadb-server-core=1:12.3.2+maria~ubu2404`
+- `mariadb-server-galera=1:12.3.2+maria~ubu2404`
+- `mysql-common=1:12.3.2+maria~ubu2404`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1644,9 +1649,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb=1:11.8.8+maria~ubu2404
-'http://archive.mariadb.org/mariadb-11.8.8/repo/ubuntu/pool/main/m/mariadb/mariadb_11.8.8%2bmaria%7eubu2404.dsc' mariadb_11.8.8+maria~ubu2404.dsc 4374 SHA256:04f4312495c99fbd9fa12bb857e2e6564c8745b4ee78eec2b5844319dc7ad719
-'http://archive.mariadb.org/mariadb-11.8.8/repo/ubuntu/pool/main/m/mariadb/mariadb_11.8.8%2bmaria%7eubu2404.tar.xz' mariadb_11.8.8+maria~ubu2404.tar.xz 183511908 SHA256:45029901572dba1c3a6220d58338b1561e22bc03da3fa295e7222bced99e31a5
+$ apt-get source -qq --print-uris mariadb=1:12.3.2+maria~ubu2404
+'http://archive.mariadb.org/mariadb-12.3.2/repo/ubuntu/pool/main/m/mariadb/mariadb_12.3.2%2bmaria%7eubu2404.dsc' mariadb_12.3.2+maria~ubu2404.dsc 4526 SHA256:07b4e776f329d906e67eb7a454c10e0f0d5a3f59c7f942aab81d28f8b6e14911
+'http://archive.mariadb.org/mariadb-12.3.2/repo/ubuntu/pool/main/m/mariadb/mariadb_12.3.2%2bmaria%7eubu2404.tar.xz' mariadb_12.3.2+maria~ubu2404.tar.xz 184660896 SHA256:fefc5c454c9a8419f39611468af639ad0204ecef6fd8c0e0a38006f8068f431f
 ```
 
 ### `dpkg` source package: `mawk=1.3.4.20240123-1build1`
@@ -2057,11 +2062,11 @@ $ apt-get source -qq --print-uris rsync=3.2.7-1ubuntu1.4
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7-1ubuntu1.4.dsc' rsync_3.2.7-1ubuntu1.4.dsc 2408 SHA512:8bc29aca30307d081f7958d8da6f1adcd896689d639ccb3f0e448cb3a1d14f9f8819ff3d1ad4d9b18abefa87e0e157c3e410f2235b6f8c227acfe1d7a4c8aea1
 ```
 
-### `dpkg` source package: `sed=4.9-2build1`
+### `dpkg` source package: `sed=4.9-2ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `sed=4.9-2build1`
+- `sed=4.9-2ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
@@ -2078,10 +2083,10 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sed=4.9-2build1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9-2build1.dsc' sed_4.9-2build1.dsc 1992 SHA512:c1fb23ca19645e3c77d7d466818b0ff15ec2fefa423d03c60746d3c441a767af9a551c0af022a5c17e69e58589b8004bc6e127dbb63d806c6269ba0ee2c1e8fd
+$ apt-get source -qq --print-uris sed=4.9-2ubuntu0.24.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9.orig.tar.xz' sed_4.9.orig.tar.xz 1397092 SHA512:36157a4b4a2430cf421b7bd07f1675d680d9f1616be96cf6ad6ee74a9ec0fe695f8d0b1e1f0b008bbb33cc7fcde5e1c456359bbbc63f8aebdd4fedc3982cf6dc
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9-2build1.debian.tar.xz' sed_4.9-2build1.debian.tar.xz 62896 SHA512:e9e57380873aa800f7892d99dbebb362a2ba9f27cc984180753d306592d6ca572d0baa3c4faf4b10dbc2aa33985e759f668f1efb4e0b09e4ae2ae689e32969ad
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9-2ubuntu0.24.04.1.debian.tar.xz' sed_4.9-2ubuntu0.24.04.1.debian.tar.xz 63288 SHA512:d6fbc8c55fa3157a77d5466662f9243b7cb67914607e63a86682090c6da61ef2c15b9ab0da25a5fdf73e7bcb7048e8f921fc7c8686aa24dc46156388ba3271df
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9-2ubuntu0.24.04.1.dsc' sed_4.9-2ubuntu0.24.04.1.dsc 1999 SHA512:adb7be30c5f0224b11b7b12e9f2f9214a032b2794ecf026b23c9289352eafcff53cb719721fccde6d1f9ea007cdd625cc2c5940b933d6f66c9d6251ff8d13274
 ```
 
 ### `dpkg` source package: `sensible-utils=0.0.22`
@@ -2417,14 +2422,9 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`, `/usr/share/doc/xz-
 - `permissive-nowarranty`
 - `probably-PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.6.1+really5.4.5-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5.orig.tar.xz' xz-utils_5.6.1+really5.4.5.orig.tar.xz 1680520 SHA256:da9dec6c12cf2ecf269c31ab65b5de18e8e52b96f35d5bcd08c12b43e6878803
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1ubuntu0.2.debian.tar.xz' xz-utils_5.6.1+really5.4.5-1ubuntu0.2.debian.tar.xz 30776 SHA256:fcf6b1a987c3c82a4382b2f17a194aa9fbb1a05f307a00baf253307b10bf5ca8
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1ubuntu0.2.dsc' xz-utils_5.6.1+really5.4.5-1ubuntu0.2.dsc 2639 SHA256:72f961b40534c1254edf0950e1826635c1aaae72f2aaa588423d833374307396
-```
 
 ### `dpkg` source package: `zlib=1:1.3.dfsg-3.1ubuntu2.1`
 
