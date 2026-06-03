@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2c8871996a4aabedf69e2474723283592559a22bd4e1d01c95f3667ad1054d3b`
-- Created: `2026-04-15T20:26:39.78441385Z`
+- Image ID: `sha256:74356f815b097adb0f7da9f0c0061d623286142d0ec8cc9c4ff59d3d8b5cdb61`
+- Created: `2026-06-02T08:12:12.427948908Z`
 - Virtual Size: ~ 2.04 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -73,14 +73,9 @@ Licenses: (parsed from: `/usr/share/doc/libapparmor1/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apparmor=4.0.1really4.0.1-0ubuntu0.24.04.6
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1.orig.tar.gz' apparmor_4.0.1really4.0.1.orig.tar.gz 6984984 SHA256:b0d72cedc48e533d189ea415bde721ad597101c77fa398fdd2858ec4f58f7e26
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1-0ubuntu0.24.04.6.debian.tar.xz' apparmor_4.0.1really4.0.1-0ubuntu0.24.04.6.debian.tar.xz 139420 SHA256:51a252cd1729abd4900107ed80aef09868f8719fc5336b81749379fe42167f7c
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_4.0.1really4.0.1-0ubuntu0.24.04.6.dsc' apparmor_4.0.1really4.0.1-0ubuntu0.24.04.6.dsc 3434 SHA256:5e8a01d1e3319f0c0d4d93805e9133c36a2b39b065ef871d114563ca225fa32d
-```
 
 ### `dpkg` source package: `apt=2.8.3`
 
@@ -555,11 +550,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.10-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.10-1build1.debian.tar.xz' diffutils_3.10-1build1.debian.tar.xz 14068 SHA512:36cb15f987cfd57dbe5bfe347a990887ffe52f8ba3756c4f806e78ba702d2b1acc2f316292bf1096a1a7db158358b4cd6261cabe70a77fd292945e07d5808cb5
 ```
 
-### `dpkg` source package: `dpkg=1.22.6ubuntu6.5`
+### `dpkg` source package: `dpkg=1.22.6ubuntu6.6`
 
 Binary Packages:
 
-- `dpkg=1.22.6ubuntu6.5`
+- `dpkg=1.22.6ubuntu6.6`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -567,9 +562,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris dpkg=1.22.6ubuntu6.6
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.6.tar.xz' dpkg_1.22.6ubuntu6.6.tar.xz 5548716 SHA512:e934e50a46a65b015982ad69dc4eca8bd514fbbd48aeeb5a84a66ab93c1e64b6d4d9429d08c2d8097ba0a3e96e27c205ab2142bb6e33659c96e32bdee477b6c3
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.6.dsc' dpkg_1.22.6ubuntu6.6.dsc 3156 SHA512:99f857ee029f720f79414a3ae85d857d06f30f57ff6ce259710a33d1de2a02d9398e511af46b689d4b9819b4c3f76d877d50d8da961fb7b6b9ecae621d1c562c
+```
 
 ### `dpkg` source package: `e2fsprogs=1.47.0-2.4~exp1ubuntu4.1`
 
@@ -1032,11 +1031,11 @@ $ apt-get source -qq --print-uris keyutils=1.6.3-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.3-3build1.debian.tar.xz' keyutils_1.6.3-3build1.debian.tar.xz 13456 SHA512:ef729447f8f4adebdb986d115e227bd908b346e26115eb7a0385a084ad69f6772c914744d8c24928587247cd5fc329ed1305e9b006db276d0445b9614f20603f
 ```
 
-### `dpkg` source package: `kmod=31+20240202-2ubuntu7.1`
+### `dpkg` source package: `kmod=31+20240202-2ubuntu7.2`
 
 Binary Packages:
 
-- `libkmod2:amd64=31+20240202-2ubuntu7.1`
+- `libkmod2:amd64=31+20240202-2ubuntu7.2`
 
 Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 
@@ -1045,9 +1044,14 @@ Licenses: (parsed from: `/usr/share/doc/libkmod2/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris kmod=31+20240202-2ubuntu7.2
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_31%2b20240202.orig.tar.xz' kmod_31+20240202.orig.tar.xz 253852 SHA512:9f9f344fbbcde8d3d479ff0c48adabb96442ccdf4190dcfde1c5ee797e2e85c6518b4a9d9451ebb0cf6d36364cd3e6a8f4301f87659b6b9b0b0cb0c7d3535a93
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_31%2b20240202-2ubuntu7.2.debian.tar.xz' kmod_31+20240202-2ubuntu7.2.debian.tar.xz 15332 SHA512:b79d51d013c06629f14ae5655f703498936dc7f5335cca7938152798825db91c148fd3201ec308b48357b35225675334d9bfd54b425a0aadd991f375626bd4d6
+'http://archive.ubuntu.com/ubuntu/pool/main/k/kmod/kmod_31%2b20240202-2ubuntu7.2.dsc' kmod_31+20240202-2ubuntu7.2.dsc 2288 SHA512:b9330c384f8f6c0e43145f216d7603c37a6775b3808691e7e211f59c4648c2ccc610df5c10bf59e2e9dc3e65c3b73a965e0a6e0aa8e62b0e720d6f935ffb7610
+```
 
 ### `dpkg` source package: `krb5=1.20.1-6ubuntu2.6`
 
@@ -1126,11 +1130,11 @@ $ apt-get source -qq --print-uris libcap-ng=0.8.4-2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.4-2build2.debian.tar.xz' libcap-ng_0.8.4-2build2.debian.tar.xz 7384 SHA512:c21cf4b7df670034773ab883e5149bc28606d11416a5f075c85106395a6d46ea529227e270f9342c910631059b8cf94a55dc5cfa5ec908a6f57d6a8c0a32277e
 ```
 
-### `dpkg` source package: `libcap2=1:2.66-5ubuntu2.2`
+### `dpkg` source package: `libcap2=1:2.66-5ubuntu2.4`
 
 Binary Packages:
 
-- `libcap2:amd64=1:2.66-5ubuntu2.2`
+- `libcap2:amd64=1:2.66-5ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 
@@ -1138,9 +1142,14 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libcap2=1:2.66-5ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66.orig.tar.xz' libcap2_2.66.orig.tar.xz 181592 SHA512:ac005b622f6e065f30ce282a5c87240e7b9da75366ee537aa4835bc501b44bc242c10a4ba4dc070e2415fc7f635d1c3c4e45fbeeaf962cf7973dda82bf6377f0
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-5ubuntu2.4.debian.tar.xz' libcap2_2.66-5ubuntu2.4.debian.tar.xz 24724 SHA512:d8e7c11b8457de7606d007d8e447c2569a43d937096153b95e7702c4adef8031b0adb89be6d534896c93cb2e9a469eafbd6681d02a5567c33ed35bd2f94b1762
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-5ubuntu2.4.dsc' libcap2_2.66-5ubuntu2.4.dsc 2319 SHA512:4792efe7caeecddd81aed675be95828fdc03140484303be3548b7f55f0ffcd2fe039c87b4b4cd0f5ef30222adb3bb1baedb8a38f6418b64bd9816f9a318d60c9
+```
 
 ### `dpkg` source package: `libffi=3.4.6-1build1`
 
@@ -2085,14 +2094,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.1.dsc' python3-defaults_3.12.3-0ubuntu2.1.dsc 3116 SHA256:79676920120c7f45f1605d92047174fca9cc75a39d9df91c9740be98fb8cc542
 ```
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.12`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.13`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.12`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.12`
-- `python3.12=3.12.3-1ubuntu0.12`
-- `python3.12-minimal=3.12.3-1ubuntu0.12`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.13`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.13`
+- `python3.12=3.12.3-1ubuntu0.13`
+- `python3.12-minimal=3.12.3-1ubuntu0.13`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -2114,9 +2123,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.13
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA256:56bfef1fdfc1221ce6720e43a661e3eb41785dd914ce99698d8c7896af4bdaa1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.13.debian.tar.xz' python3.12_3.12.3-1ubuntu0.13.debian.tar.xz 271684 SHA256:c29d3713afdaadbeb910f01df96877a81c3deb114876be42a47ce8e7172a2b91
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.13.dsc' python3.12_3.12.3-1ubuntu0.13.dsc 3879 SHA256:c9dac8ff007c2b12b917cae256b2477cd1662de3fd3d02171ba3ebe98bbd7b30
+```
 
 ### `dpkg` source package: `readline=8.2-4build1`
 
@@ -2144,11 +2158,11 @@ $ apt-get source -qq --print-uris readline=8.2-4build1
 'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.2-4build1.debian.tar.xz' readline_8.2-4build1.debian.tar.xz 33816 SHA512:b8c92282e25f3d28acd02c1431088f5f29aa1398ce919c312de50813e8a0df07d973ffd49fccde51505538ed7e29f666d812931961746b12ebde219d16be914f
 ```
 
-### `dpkg` source package: `sed=4.9-2build1`
+### `dpkg` source package: `sed=4.9-2ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `sed=4.9-2build1`
+- `sed=4.9-2ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
@@ -2165,10 +2179,10 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sed=4.9-2build1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9-2build1.dsc' sed_4.9-2build1.dsc 1992 SHA512:c1fb23ca19645e3c77d7d466818b0ff15ec2fefa423d03c60746d3c441a767af9a551c0af022a5c17e69e58589b8004bc6e127dbb63d806c6269ba0ee2c1e8fd
+$ apt-get source -qq --print-uris sed=4.9-2ubuntu0.24.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9.orig.tar.xz' sed_4.9.orig.tar.xz 1397092 SHA512:36157a4b4a2430cf421b7bd07f1675d680d9f1616be96cf6ad6ee74a9ec0fe695f8d0b1e1f0b008bbb33cc7fcde5e1c456359bbbc63f8aebdd4fedc3982cf6dc
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9-2build1.debian.tar.xz' sed_4.9-2build1.debian.tar.xz 62896 SHA512:e9e57380873aa800f7892d99dbebb362a2ba9f27cc984180753d306592d6ca572d0baa3c4faf4b10dbc2aa33985e759f668f1efb4e0b09e4ae2ae689e32969ad
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9-2ubuntu0.24.04.1.debian.tar.xz' sed_4.9-2ubuntu0.24.04.1.debian.tar.xz 63288 SHA512:d6fbc8c55fa3157a77d5466662f9243b7cb67914607e63a86682090c6da61ef2c15b9ab0da25a5fdf73e7bcb7048e8f921fc7c8686aa24dc46156388ba3271df
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9-2ubuntu0.24.04.1.dsc' sed_4.9-2ubuntu0.24.04.1.dsc 1999 SHA512:adb7be30c5f0224b11b7b12e9f2f9214a032b2794ecf026b23c9289352eafcff53cb719721fccde6d1f9ea007cdd625cc2c5940b933d6f66c9d6251ff8d13274
 ```
 
 ### `dpkg` source package: `sensible-utils=0.0.22`
@@ -2585,14 +2599,9 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`, `/usr/share/doc/xz-
 - `permissive-nowarranty`
 - `probably-PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.6.1+really5.4.5-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5.orig.tar.xz' xz-utils_5.6.1+really5.4.5.orig.tar.xz 1680520 SHA256:da9dec6c12cf2ecf269c31ab65b5de18e8e52b96f35d5bcd08c12b43e6878803
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1ubuntu0.2.debian.tar.xz' xz-utils_5.6.1+really5.4.5-1ubuntu0.2.debian.tar.xz 30776 SHA256:fcf6b1a987c3c82a4382b2f17a194aa9fbb1a05f307a00baf253307b10bf5ca8
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1ubuntu0.2.dsc' xz-utils_5.6.1+really5.4.5-1ubuntu0.2.dsc 2639 SHA256:72f961b40534c1254edf0950e1826635c1aaae72f2aaa588423d833374307396
-```
 
 ### `dpkg` source package: `zlib=1:1.3.dfsg-3.1ubuntu2.1`
 
