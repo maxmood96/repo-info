@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5ffdb9cf830de6008864893723da764e095131f36a1e3ee96afc4bb00e2ef802`
-- Created: `2026-05-27T00:13:23.073518079Z`
+- Image ID: `sha256:b75662d38f9a68bbdbb9cc39cd638e267f0c556888ce65c192ab96a30fa29f82`
+- Created: `2026-06-02T19:05:44.391850865Z`
 - Virtual Size: ~ 94.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -233,37 +233,37 @@ $ dnf --quiet download --source --url glib2-2.68.4-19.el9_8.1
 http://vault.almalinux.org/9.8/BaseOS/Source/Packages/glib2-2.68.4-19.el9_8.1.src.rpm
 ```
 
-### `rpm` package: `glibc-2.34-266.el9_8.x86_64`
+### `rpm` package: `glibc-2.34-270.el9_8.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later AND SunPro AND LGPL-2.1-or-later WITH GCC-exception-2.0 AND BSD-3-Clause AND GPL-2.0-or-later AND LGPL-2.1-or-later WITH GNU-compiler-exception AND GPL-2.0-only AND ISC AND LicenseRef-Fedora-Public-Domain AND HPND AND CMU-Mach AND LGPL-2.0-or-later AND Unicode-3.0 AND GFDL-1.1-or-later AND GPL-1.0-or-later AND FSFUL AND MIT AND Inner-Net-2.0 AND X11 AND GPL-2.0-or-later WITH GCC-exception-2.0 AND GFDL-1.3-only AND GFDL-1.1-only AND GPL-3.0-or-later AND GPL-3.0-or-later WITH Autoconf-exception-generic-3.0 AND GPL-3.0-or-later WITH Texinfo-exception
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.34-266.el9_8
-http://vault.almalinux.org/9.8/BaseOS/Source/Packages/glibc-2.34-266.el9_8.src.rpm
+$ dnf --quiet download --source --url glibc-2.34-270.el9_8
+http://vault.almalinux.org/9.8/BaseOS/Source/Packages/glibc-2.34-270.el9_8.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.34-266.el9_8.x86_64`
+### `rpm` package: `glibc-common-2.34-270.el9_8.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later AND SunPro AND LGPL-2.1-or-later WITH GCC-exception-2.0 AND BSD-3-Clause AND GPL-2.0-or-later AND LGPL-2.1-or-later WITH GNU-compiler-exception AND GPL-2.0-only AND ISC AND LicenseRef-Fedora-Public-Domain AND HPND AND CMU-Mach AND LGPL-2.0-or-later AND Unicode-3.0 AND GFDL-1.1-or-later AND GPL-1.0-or-later AND FSFUL AND MIT AND Inner-Net-2.0 AND X11 AND GPL-2.0-or-later WITH GCC-exception-2.0 AND GFDL-1.3-only AND GFDL-1.1-only AND GPL-3.0-or-later AND GPL-3.0-or-later WITH Autoconf-exception-generic-3.0 AND GPL-3.0-or-later WITH Texinfo-exception
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.34-266.el9_8
-http://vault.almalinux.org/9.8/BaseOS/Source/Packages/glibc-2.34-266.el9_8.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.34-270.el9_8
+http://vault.almalinux.org/9.8/BaseOS/Source/Packages/glibc-2.34-270.el9_8.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.34-266.el9_8.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-270.el9_8.x86_64`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later AND SunPro AND LGPL-2.1-or-later WITH GCC-exception-2.0 AND BSD-3-Clause AND GPL-2.0-or-later AND LGPL-2.1-or-later WITH GNU-compiler-exception AND GPL-2.0-only AND ISC AND LicenseRef-Fedora-Public-Domain AND HPND AND CMU-Mach AND LGPL-2.0-or-later AND Unicode-3.0 AND GFDL-1.1-or-later AND GPL-1.0-or-later AND FSFUL AND MIT AND Inner-Net-2.0 AND X11 AND GPL-2.0-or-later WITH GCC-exception-2.0 AND GFDL-1.3-only AND GFDL-1.1-only AND GPL-3.0-or-later AND GPL-3.0-or-later WITH Autoconf-exception-generic-3.0 AND GPL-3.0-or-later WITH Texinfo-exception
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-266.el9_8
-http://vault.almalinux.org/9.8/BaseOS/Source/Packages/glibc-2.34-266.el9_8.src.rpm
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-270.el9_8
+http://vault.almalinux.org/9.8/BaseOS/Source/Packages/glibc-2.34-270.el9_8.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.2.0-13.el9.x86_64`
@@ -288,15 +288,15 @@ $ dnf --quiet download --source --url gnupg2-2.3.3-5.el9_7
 http://vault.almalinux.org/9.8/BaseOS/Source/Packages/gnupg2-2.3.3-5.el9_7.src.rpm
 ```
 
-### `rpm` package: `gnutls-3.8.10-3.el9.x86_64`
+### `rpm` package: `gnutls-3.8.10-4.el9_8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gnutls-3.8.10-3.el9
-http://vault.almalinux.org/9.8/BaseOS/Source/Packages/gnutls-3.8.10-3.el9.src.rpm
+$ dnf --quiet download --source --url gnutls-3.8.10-4.el9_8
+http://vault.almalinux.org/9.8/BaseOS/Source/Packages/gnutls-3.8.10-4.el9_8.src.rpm
 ```
 
 ### `rpm` package: `gobject-introspection-1.68.0-11.el9.x86_64`
@@ -1097,15 +1097,15 @@ $ dnf --quiet download --source --url systemd-libs-252-67.el9_8.2.alma.1
 http://vault.almalinux.org/9.8/BaseOS/Source/Packages/systemd-252-67.el9_8.2.alma.1.src.rpm
 ```
 
-### `rpm` package: `tzdata-2026a-1.el9.noarch`
+### `rpm` package: `tzdata-2026b-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2026a-1.el9.noarch
-http://vault.almalinux.org/9.8/BaseOS/Source/Packages/tzdata-2026a-1.el9.src.rpm
+$ dnf --quiet download --source --url tzdata-2026b-1.el9.noarch
+http://vault.almalinux.org/9.8/BaseOS/Source/Packages/tzdata-2026b-1.el9.src.rpm
 ```
 
 ### `rpm` package: `xz-libs-5.2.5-8.el9_0.x86_64`

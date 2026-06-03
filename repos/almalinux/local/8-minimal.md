@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:08a7829a19125f266fe17e2ff5c9a244e39bb685c17697d59b62cef2b5a5ac1c`
-- Created: `2026-05-26T19:12:11.635076512Z`
-- Virtual Size: ~ 93.55 Mb  
+- Image ID: `sha256:23cbf0d594474c5a87edd26669b67a04f375b847315501d361198761c2bff784`
+- Created: `2026-06-02T19:05:11.788520781Z`
+- Virtual Size: ~ 93.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -200,37 +200,37 @@ $ dnf --quiet download --source --url glib2-2.56.4-169.el8_10
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glib2-2.56.4-169.el8_10.src.rpm
 ```
 
-### `rpm` package: `glibc-2.28-251.el8_10.34.x86_64`
+### `rpm` package: `glibc-2.28-251.el8_10.37.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.28-251.el8_10.34
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.34.src.rpm
+$ dnf --quiet download --source --url glibc-2.28-251.el8_10.37
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.37.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.28-251.el8_10.34.x86_64`
+### `rpm` package: `glibc-common-2.28-251.el8_10.37.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.28-251.el8_10.34
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.34.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.28-251.el8_10.37
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.37.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.28-251.el8_10.34.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.28-251.el8_10.37.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.28-251.el8_10.34
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.34.src.rpm
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.28-251.el8_10.37
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/glibc-2.28-251.el8_10.37.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.1.2-11.el8.x86_64`
@@ -255,15 +255,15 @@ $ dnf --quiet download --source --url gnupg2-2.2.20-4.el8_10
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/gnupg2-2.2.20-4.el8_10.src.rpm
 ```
 
-### `rpm` package: `gnutls-3.6.16-8.el8_10.5.x86_64`
+### `rpm` package: `gnutls-3.6.16-8.el8_10.6.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url gnutls-3.6.16-8.el8_10.5
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/gnutls-3.6.16-8.el8_10.5.src.rpm
+$ dnf --quiet download --source --url gnutls-3.6.16-8.el8_10.6
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/gnutls-3.6.16-8.el8_10.6.src.rpm
 ```
 
 ### `rpm` package: `gobject-introspection-1.56.1-1.el8.x86_64`
@@ -1081,15 +1081,15 @@ $ dnf --quiet download --source --url systemd-libs-239-82.el8_10.16
 http://vault.almalinux.org/8.10/BaseOS/Source/Packages/systemd-239-82.el8_10.16.src.rpm
 ```
 
-### `rpm` package: `tzdata-2026a-1.el8.noarch`
+### `rpm` package: `tzdata-2026b-1.el8.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2026a-1.el8.noarch
-http://vault.almalinux.org/8.10/BaseOS/Source/Packages/tzdata-2026a-1.el8.src.rpm
+$ dnf --quiet download --source --url tzdata-2026b-1.el8.noarch
+http://vault.almalinux.org/8.10/BaseOS/Source/Packages/tzdata-2026b-1.el8.src.rpm
 ```
 
 ### `rpm` package: `xz-libs-5.2.4-4.el8_6.x86_64`
