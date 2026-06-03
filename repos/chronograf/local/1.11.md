@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:af90b8b91f71b6afd6ecde5ba23d33fce7c32c63d98eb7d7146a99bcd29d2dd9`
-- Created: `2026-05-19T23:23:39.085250581Z`
-- Virtual Size: ~ 312.91 Mb  
+- Image ID: `sha256:2bb4e2824168d6fefce1709e3513a724bbc8f18c102506c7b82a24fac91ba249`
+- Created: `2026-06-02T19:04:50.567366988Z`
+- Virtual Size: ~ 312.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
 - Command: `["chronograf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `CHRONOGRAF_VERSION=1.11.2`
+  - `CHRONOGRAF_VERSION=1.11.3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -342,11 +342,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/cdebconf/0.270/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/cdebconf/0.270/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `chronograf=1.11.2-1`
+### `dpkg` source package: `chronograf=1.11.3-1`
 
 Binary Packages:
 
-- `chronograf=1.11.2-1`
+- `chronograf=1.11.3-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1078,14 +1078,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/keyutils/1.6.3-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/keyutils/1.6.3-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `krb5=1.20.1-2+deb12u4`
+### `dpkg` source package: `krb5=1.20.1-2+deb12u5`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.20.1-2+deb12u4`
-- `libk5crypto3:amd64=1.20.1-2+deb12u4`
-- `libkrb5-3:amd64=1.20.1-2+deb12u4`
-- `libkrb5support0:amd64=1.20.1-2+deb12u4`
+- `libgssapi-krb5-2:amd64=1.20.1-2+deb12u5`
+- `libk5crypto3:amd64=1.20.1-2+deb12u5`
+- `libkrb5-3:amd64=1.20.1-2+deb12u5`
+- `libkrb5support0:amd64=1.20.1-2+deb12u5`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1094,18 +1094,18 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.20.1-2+deb12u4
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-2%2bdeb12u4.dsc' krb5_1.20.1-2+deb12u4.dsc 3808 SHA256:3a83a9c281fa9a4358fe5351ddbd8d02ce26c1b3913c4898c9769475c2d8e270
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-2%2bdeb12u4.debian.tar.xz' krb5_1.20.1-2+deb12u4.debian.tar.xz 111436 SHA256:76a985c0d60ed1a62cbb82b23041185cd9bf9a600ddc0b03172bf8745ac14e85
+$ apt-get source -qq --print-uris krb5=1.20.1-2+deb12u5
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1-2%2bdeb12u5.dsc' krb5_1.20.1-2+deb12u5.dsc 3982 SHA256:643c1e56f5d2022f7685f5d5490a4fc348adc68a4bb42adbc1780e4a5b1bb05e
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1-2%2bdeb12u5.debian.tar.xz' krb5_1.20.1-2+deb12u5.debian.tar.xz 112068 SHA256:195842a66252dfee21b3402b5048f8dea11ea92056742aedf71b356e26f4513f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/krb5/1.20.1-2+deb12u4/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.20.1-2+deb12u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.20.1-2+deb12u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/krb5/1.20.1-2+deb12u5/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.20.1-2+deb12u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.20.1-2+deb12u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=2.5.5-5`
 
