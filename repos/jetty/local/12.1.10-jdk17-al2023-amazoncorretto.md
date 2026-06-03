@@ -1,10 +1,10 @@
-# `jetty:12.1.10-amazoncorretto`
+# `jetty:12.1.10-jdk17-al2023-amazoncorretto`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a852a24d531fbcba07d257935a94840181a6b3407a025972a44d9db2569a22ca`
-- Created: `2026-06-02T17:56:59.273948817Z`
-- Virtual Size: ~ 674.51 Mb  
+- Image ID: `sha256:5e326a247f882ee6f24344a9d02cb5e6ea8e469f1cc1a2a12ad539376a06d6e9`
+- Created: `2026-06-02T17:57:09.254879096Z`
+- Virtual Size: ~ 601.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/jetty/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `JAVA_HOME=/usr/lib/jvm/java-25-amazon-corretto`
+  - `JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto`
   - `JETTY_VERSION=12.1.10`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
@@ -633,48 +633,48 @@ $ dnf --quiet download --source --url harfbuzz-7.0.0-2.amzn2023.0.2
 https://cdn.amazonlinux.com/al2023/core/guids/be80c224b987d369d8faee1756dcded7a1dbc1a970a53e184e941d3991b0f58e/SRPMS/../../../../blobstore/3cc7971ddcf04cd18ac90b4a978eb7acf4249d5a04124a457b0913212fa1e684/harfbuzz-7.0.0-2.amzn2023.0.2.src.rpm
 ```
 
-### `rpm` package: `java-25-amazon-corretto-25.0.3+9-1.amzn2023.1.x86_64`
+### `rpm` package: `java-17-amazon-corretto-17.0.19+10-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url java-25-amazon-corretto-25.0.3+9-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/be80c224b987d369d8faee1756dcded7a1dbc1a970a53e184e941d3991b0f58e/SRPMS/../../../../blobstore/47c5cd916b8fdc31baddd1adf138488421b32c128bdfc7b7b8523ba2592616a0/java-25-amazon-corretto-25.0.3+9-1.amzn2023.1.src.rpm
+$ dnf --quiet download --source --url java-17-amazon-corretto-17.0.19+10-1.amzn2023.1
+https://cdn.amazonlinux.com/al2023/core/guids/be80c224b987d369d8faee1756dcded7a1dbc1a970a53e184e941d3991b0f58e/SRPMS/../../../../blobstore/0bd3ccd0d1f11f73838353e695de2176c1bc45d631e137a6c195b9ce19593553/java-17-amazon-corretto-17.0.19+10-1.amzn2023.1.src.rpm
 ```
 
-### `rpm` package: `java-25-amazon-corretto-devel-25.0.3+9-1.amzn2023.1.x86_64`
+### `rpm` package: `java-17-amazon-corretto-devel-17.0.19+10-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url java-25-amazon-corretto-devel-25.0.3+9-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/be80c224b987d369d8faee1756dcded7a1dbc1a970a53e184e941d3991b0f58e/SRPMS/../../../../blobstore/47c5cd916b8fdc31baddd1adf138488421b32c128bdfc7b7b8523ba2592616a0/java-25-amazon-corretto-25.0.3+9-1.amzn2023.1.src.rpm
+$ dnf --quiet download --source --url java-17-amazon-corretto-devel-17.0.19+10-1.amzn2023.1
+https://cdn.amazonlinux.com/al2023/core/guids/be80c224b987d369d8faee1756dcded7a1dbc1a970a53e184e941d3991b0f58e/SRPMS/../../../../blobstore/0bd3ccd0d1f11f73838353e695de2176c1bc45d631e137a6c195b9ce19593553/java-17-amazon-corretto-17.0.19+10-1.amzn2023.1.src.rpm
 ```
 
-### `rpm` package: `java-25-amazon-corretto-headless-25.0.3+9-1.amzn2023.1.x86_64`
+### `rpm` package: `java-17-amazon-corretto-headless-17.0.19+10-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url java-25-amazon-corretto-headless-25.0.3+9-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/be80c224b987d369d8faee1756dcded7a1dbc1a970a53e184e941d3991b0f58e/SRPMS/../../../../blobstore/47c5cd916b8fdc31baddd1adf138488421b32c128bdfc7b7b8523ba2592616a0/java-25-amazon-corretto-25.0.3+9-1.amzn2023.1.src.rpm
+$ dnf --quiet download --source --url java-17-amazon-corretto-headless-17.0.19+10-1.amzn2023.1
+https://cdn.amazonlinux.com/al2023/core/guids/be80c224b987d369d8faee1756dcded7a1dbc1a970a53e184e941d3991b0f58e/SRPMS/../../../../blobstore/0bd3ccd0d1f11f73838353e695de2176c1bc45d631e137a6c195b9ce19593553/java-17-amazon-corretto-17.0.19+10-1.amzn2023.1.src.rpm
 ```
 
-### `rpm` package: `java-25-amazon-corretto-jmods-25.0.3+9-1.amzn2023.1.x86_64`
+### `rpm` package: `java-17-amazon-corretto-jmods-17.0.19+10-1.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url java-25-amazon-corretto-jmods-25.0.3+9-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/be80c224b987d369d8faee1756dcded7a1dbc1a970a53e184e941d3991b0f58e/SRPMS/../../../../blobstore/47c5cd916b8fdc31baddd1adf138488421b32c128bdfc7b7b8523ba2592616a0/java-25-amazon-corretto-25.0.3+9-1.amzn2023.1.src.rpm
+$ dnf --quiet download --source --url java-17-amazon-corretto-jmods-17.0.19+10-1.amzn2023.1
+https://cdn.amazonlinux.com/al2023/core/guids/be80c224b987d369d8faee1756dcded7a1dbc1a970a53e184e941d3991b0f58e/SRPMS/../../../../blobstore/0bd3ccd0d1f11f73838353e695de2176c1bc45d631e137a6c195b9ce19593553/java-17-amazon-corretto-17.0.19+10-1.amzn2023.1.src.rpm
 ```
 
 ### `rpm` package: `javapackages-filesystem-6.0.0-7.amzn2023.0.6.noarch`

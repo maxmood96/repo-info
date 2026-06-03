@@ -1,10 +1,10 @@
-# `jetty:12.1.9-jdk21-alpine`
+# `jetty:12.1.10-jdk21-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d42fbb3a27b38b8bec6aef2103345befe4d0f690fd80107ab665efad7fb759f`
-- Created: `2026-05-08T00:14:19.918784916Z`
-- Virtual Size: ~ 417.57 Mb  
+- Image ID: `sha256:0623edc2c58d5ed2986c47245f1900081897673e2a1f5231df77bc0c27663e48`
+- Created: `2026-06-02T17:55:41.373351601Z`
+- Virtual Size: ~ 417.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -16,11 +16,11 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.11+10`
-  - `JETTY_VERSION=12.1.9`
+  - `JETTY_VERSION=12.1.10`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
   - `TMPDIR=/tmp/jetty`
-  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.9/jetty-home-12.1.9.tar.gz`
+  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.1.10/jetty-home-12.1.10.tar.gz`
   - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3`
 
 ## `apk` (`.apk`-based packages)
@@ -317,16 +317,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.17.0-r1 description:
+curl-8.19.0-r0 description:
 URL retrival utility and library
 
-curl-8.17.0-r1 webpage:
+curl-8.19.0-r0 webpage:
 https://curl.se/
 
-curl-8.17.0-r1 installed size:
-265 KiB
+curl-8.19.0-r0 installed size:
+273 KiB
 
-curl-8.17.0-r1 license:
+curl-8.19.0-r0 license:
 curl
 
 ```
@@ -742,16 +742,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.17.0-r1 description:
+libcurl-8.19.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.17.0-r1 webpage:
+libcurl-8.19.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.17.0-r1 installed size:
-721 KiB
+libcurl-8.19.0-r0 installed size:
+697 KiB
 
-libcurl-8.17.0-r1 license:
+libcurl-8.19.0-r0 license:
 curl
 
 ```
@@ -1194,23 +1194,6 @@ nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
 nghttp2-libs-1.69.0-r0 license:
-MIT
-
-```
-
-### `apk` package: `nghttp3`
-
-```console
-nghttp3-1.13.1-r0 description:
-HTTP/3 library written in C
-
-nghttp3-1.13.1-r0 webpage:
-https://github.com/ngtcp2/nghttp3
-
-nghttp3-1.13.1-r0 installed size:
-140 KiB
-
-nghttp3-1.13.1-r0 license:
 MIT
 
 ```
