@@ -1,7 +1,7 @@
 ## `rabbitmq:management`
 
 ```console
-$ docker pull rabbitmq@sha256:e20681f7c4f35b5ec2904601000fbde4784213377ac14c854806204342f4e74c
+$ docker pull rabbitmq@sha256:261d0262cae01a375f9778a2a373d4f796dadaede341d5cbabf5ef9d25ae0045
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -614,13 +614,13 @@ $ docker pull rabbitmq@sha256:c63207dd58cc59d81a3a2ce780431429b29540481aabe17dce
 ### `rabbitmq:management` - linux; riscv64
 
 ```console
-$ docker pull rabbitmq@sha256:0856ee06e28d0c4e196a10e53e9148ecfdc049e2c72f786e061d7b4c3fa99e41
+$ docker pull rabbitmq@sha256:6d217e1ddd6b617eb1f16300e613d99999edb5eb9fc56ef7e739354b07428b1d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **105.5 MB (105479257 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4398e1f066408050a3b05be70dc1e9f69458806ac5224a94e68e6895082515b6`
+-	Image ID: `sha256:807db50b750c0b8da3969208b64e763a6dea22c8493abb1f1e187663e465f882`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -683,9 +683,9 @@ EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/t
 CMD ["rabbitmq-server"]
 # Wed, 03 Jun 2026 01:02:27 GMT
 RUN set -eux; 	rabbitmq-plugins enable --offline rabbitmq_management; 	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf # buildkit
-# Wed, 03 Jun 2026 01:02:27 GMT
-RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.31.0/rabbitmqadmin-2.31.0-x86_64-unknown-linux-gnu'; digest='ede1745e7cf2dbc87e92961b2ed404209ddfb12875d98cd97fc921a6859bd3df' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.31.0/rabbitmqadmin-2.31.0-aarch64-unknown-linux-gnu'; digest='46be6ef6f0e17ec095c670882206f68e0aacec84a3a5344fe99c53a8292a70bd' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
-# Wed, 03 Jun 2026 01:02:27 GMT
+# Thu, 04 Jun 2026 03:23:18 GMT
+RUN set -eux; 	arch="$(dpkg --print-architecture)"; 	case "$arch" in 		'amd64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.32.0/rabbitmqadmin-2.32.0-x86_64-unknown-linux-gnu'; digest='32d5914481725a6707d164e42298a70906a289fdc5afeca92066106d32a68aee' ;; 		'arm64') url='https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v2.32.0/rabbitmqadmin-2.32.0-aarch64-unknown-linux-gnu'; digest='bffb785e3b5f19169a872192aae066b5c8266b3eaf616e6644d2130ee4e972f7' ;; 		*) echo "[INFO] rabbitmqadmin is not available on $arch (yet?)"; exit 0 ;; 	esac; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 		wget -O /usr/local/bin/rabbitmqadmin "$url"; 	echo "$digest */usr/local/bin/rabbitmqadmin" | sha256sum --strict --check -; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		chmod +x /usr/local/bin/rabbitmqadmin; 	rabbitmqadmin --help # buildkit
+# Thu, 04 Jun 2026 03:23:18 GMT
 EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ```
 
@@ -738,24 +738,24 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 ### `rabbitmq:management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:69f8923a1e2dc67a87f7bc5086f3ccbf2ad8926017d1abb9f9888f759afced53
+$ docker pull rabbitmq@sha256:4a49c6833783c01158749ca4befb42c90902eae81792adc02221b1cf04fee6a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.5 MB (2495459 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d86bb83a5e3a21b07e2ebe95ba238b1b5af9db78ef9f55b5196cd038c147ef3`
+-	Image ID: `sha256:39ca06e55a2fa16fddf82e09b8e66fddbe3b6fffa12fef1c66080c1bb0c64433`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:07eed32f136d3ba86754114608081a53ff54c9c38ec73dc8784266167b65645f`  
-		Last Modified: Wed, 03 Jun 2026 01:03:46 GMT  
+	-	`sha256:3ae31830b499f878b448e2cf4aca68d4ef42aad3fb4a709d0eb9aef0c4f642e1`  
+		Last Modified: Thu, 04 Jun 2026 03:24:38 GMT  
 		Size: 2.5 MB (2479146 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:96b700417eee4a6c134c09b2a7985665385bd4f77a982c03faeafc90f0baa9e1`  
-		Last Modified: Wed, 03 Jun 2026 01:03:46 GMT  
+	-	`sha256:f29157d49e68c14c9b28675ffc6137c93ade0f2eefb74f539e6435e698c70251`  
+		Last Modified: Thu, 04 Jun 2026 03:24:38 GMT  
 		Size: 16.3 KB (16313 bytes)  
 		MIME: application/vnd.in-toto+json
 
