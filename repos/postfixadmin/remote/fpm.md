@@ -1,7 +1,7 @@
 ## `postfixadmin:fpm`
 
 ```console
-$ docker pull postfixadmin@sha256:83fe075ec39640e972dd627f97d89e8e5d749d472c7f3760c9f25497d344a3f5
+$ docker pull postfixadmin@sha256:851c3334d3b455b9a65ab5e6a6da947cadb8b80bf753ad2bc34c309a4448803b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -974,7 +974,7 @@ $ docker pull postfixadmin@sha256:a65c3ce8f4948575c80ebd8f67981e80e2593fe3680ac4
 ### `postfixadmin:fpm` - linux; riscv64
 
 ```console
-$ docker pull postfixadmin@sha256:3ab4f3f9091d52d2c3286457af1fb3913ecc96179b9cd91ed60428b8fda87653
+$ docker pull postfixadmin@sha256:7032b9ba39941323ba3c27b7633a6c8b43a1f2bd32b379b7899f6d81310d980d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -1144,21 +1144,21 @@ CMD ["php-fpm"]
 ### `postfixadmin:fpm` - unknown; unknown
 
 ```console
-$ docker pull postfixadmin@sha256:a31088863a84e8a972a54908f234e2b87c7712ed7db1297a58b900b5bbf6b620
+$ docker pull postfixadmin@sha256:52f3f5c4fdad11929ba7f056e1e933491a35e8ebd13931bf7f2b14e4d5ee3c1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.6 KB (39575 bytes)**  
+-	Total Size: **39.6 KB (39574 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:588eda239e287ab9495d4df6fada166d9f7152a71a84c5e927614e195545ff66`
+-	Image ID: `sha256:3d34eef01f5b4f09206c00914b0d305b05c673615495a44eb47d5e71e6bc2121`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:463c86d389aa1699cf4d1b48cd7c79cfecad2d314351d908f2ce9bbdbfedc63e`  
-		Last Modified: Thu, 04 Jun 2026 20:39:51 GMT  
-		Size: 39.6 KB (39575 bytes)  
+	-	`sha256:dd4c3308634d191f6cd8bfacfe99cc95f3c798b2634a7dbeb96a037d7994ac13`  
+		Last Modified: Fri, 05 Jun 2026 16:39:16 GMT  
+		Size: 39.6 KB (39574 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `postfixadmin:fpm` - linux; s390x
