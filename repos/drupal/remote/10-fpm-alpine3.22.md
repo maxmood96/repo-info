@@ -1,7 +1,7 @@
 ## `drupal:10-fpm-alpine3.22`
 
 ```console
-$ docker pull drupal@sha256:a7566702070b96f0976a0a09434f52791fc82b5fd73bf38a08f957ae5b842c30
+$ docker pull drupal@sha256:8493ee69f52893bc80d415d5f5400c210cac9003f0a7503e797adf067711d6d5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1090,7 +1090,7 @@ $ docker pull drupal@sha256:994cf2337c23562c79984c75f28763ffc5560144870d11c6cf5f
 ### `drupal:10-fpm-alpine3.22` - linux; riscv64
 
 ```console
-$ docker pull drupal@sha256:b7a87476af5b57623fd7cdb5e4ceab09574f9821a32b13cae33ec5e6e287ea45
+$ docker pull drupal@sha256:3217dc6d161bd8662456d977019d3ddf5f4e30b3057357f1715244a3f0f8c0cc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
@@ -1244,25 +1244,25 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 ### `drupal:10-fpm-alpine3.22` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:f52534b032e84903adfcf19700f67f2d3827c76b083de4c6014c56f35e24ce82
+$ docker pull drupal@sha256:b6db209bd1237a6f8cf54c0dd351ef0044a9e34b21d3aa224f04502293b8d06c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **396.9 KB (396863 bytes)**  
+-	Total Size: **396.9 KB (396864 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1f2dc845b8891df5a9ac1376233c406329381b9cdd64f1910bd41a12a7377eb`
+-	Image ID: `sha256:7715244aa6e3be4d6a23ce742b3f9ff5f9963b5b8c40d1281c79270501db1f00`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5ccec237d56e5056b2b176c085a6f6944d3a777446e7b93f5aeb4bfb4d265dea`  
-		Last Modified: Thu, 04 Jun 2026 19:36:13 GMT  
+	-	`sha256:748693762a8bc31b8bb67ac2a9f947147d81f620921078e9424aa744482b5ba3`  
+		Last Modified: Fri, 05 Jun 2026 16:18:11 GMT  
 		Size: 362.9 KB (362931 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0e8bddaa590e56d02bd2b8e3ba7aa2861571cdb307fcdb608da913400fba70db`  
-		Last Modified: Thu, 04 Jun 2026 19:36:13 GMT  
-		Size: 33.9 KB (33932 bytes)  
+	-	`sha256:6a6121a6fb7637c3a8c5bd836c1a419366e024b386ddb23766193bfa44590552`  
+		Last Modified: Fri, 05 Jun 2026 16:18:11 GMT  
+		Size: 33.9 KB (33933 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:10-fpm-alpine3.22` - linux; s390x
