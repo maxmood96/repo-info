@@ -300,19 +300,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=14.0
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_14.0.dsc' base-files_14.0.dsc 1215 SHA256:b781c3350836fb3acc04b3c7b8dc05609160ef7dd293f3e4120867e8a790b880
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_14.0.tar.xz' base-files_14.0.tar.xz 68148 SHA256:63a20f84fc35fc2c67fe26d93148d0c26f277350681f8f4ed0eba78139301fab
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/14.0/
 
-- https://sources.debian.net/src/base-files/14.0/ (for browsing the source)
-- https://sources.debian.net/src/base-files/14.0/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/14.0/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.8`
 
@@ -2142,20 +2136,13 @@ Licenses: (parsed from: `/usr/share/doc/liblcms2-2/copyright`, `/usr/share/doc/l
 - `IJG`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lcms2=2.17-1.1
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.17-1.1.dsc' lcms2_2.17-1.1.dsc 2051 SHA256:a111ce13548d19ff600bd692c35259ec03f5750645cae24732c087e53c5195ea
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.17.orig.tar.gz' lcms2_2.17.orig.tar.gz 5245319 SHA256:d11af569e42a1baa1650d20ad61d12e41af4fead4aa7964a01f93b08b53ab074
-'http://deb.debian.org/debian/pool/main/l/lcms2/lcms2_2.17-1.1.debian.tar.xz' lcms2_2.17-1.1.debian.tar.xz 12428 SHA256:d7ec4a99462a93a92e067a4ebbb876e0ef165cb21eb91bb9b5d6176bf53a7df4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lcms2/2.17-1.1/
 
-- https://sources.debian.net/src/lcms2/2.17-1.1/ (for browsing the source)
-- https://sources.debian.net/src/lcms2/2.17-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lcms2/2.17-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lerc=4.1.0+ds-1`
 
@@ -4330,20 +4317,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenjph-dev/copyright`, `/usr/share/d
 - `BSD-2-clause`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjph=0.27.0-1
-'http://deb.debian.org/debian/pool/main/o/openjph/openjph_0.27.0-1.dsc' openjph_0.27.0-1.dsc 2172 SHA256:bd225fb45d2f9f6ad53ca60c37917b08bac02b5bcdf7eda705410e8f4038733e
-'http://deb.debian.org/debian/pool/main/o/openjph/openjph_0.27.0.orig.tar.gz' openjph_0.27.0.orig.tar.gz 483875 SHA256:1fc8b9c93d4f15c0e2e6ccc4bc521763a1bf9ae0723f9d646aeb790fa952539f
-'http://deb.debian.org/debian/pool/main/o/openjph/openjph_0.27.0-1.debian.tar.xz' openjph_0.27.0-1.debian.tar.xz 5524 SHA256:cd74a2b9e1c5ceee4dad7805e00cb0f28345c462e08a7ad735e31ef2b02771d9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjph/0.27.0-1/
 
-- https://sources.debian.net/src/openjph/0.27.0-1/ (for browsing the source)
-- https://sources.debian.net/src/openjph/0.27.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjph/0.27.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.6.10+dfsg-1`
 
