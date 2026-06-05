@@ -1,9 +1,9 @@
-# `nextcloud:33.0.4-fpm-alpine`
+# `nextcloud:33.0.5-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1f21249956fd5777afeb85b63bb09f8ff21f91e4375480b6aa9b799fdcb3da1f`
-- Created: `2026-05-29T17:17:53.82438681Z`
+- Image ID: `sha256:3b1c9d14769e3ad13db8ce70fb9e91ad8bf7d90ac1911ac76b27c7c83ff6210d`
+- Created: `2026-06-03T17:28:32.775207123Z`
 - Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -24,7 +24,7 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
-  - `NEXTCLOUD_VERSION=33.0.4`
+  - `NEXTCLOUD_VERSION=33.0.5`
 
 ## `apk` (`.apk`-based packages)
 
@@ -116,16 +116,16 @@ MIT
 ### `apk` package: `aom-libs`
 
 ```console
-aom-libs-3.13.1-r1 description:
+aom-libs-3.14.1-r0 description:
 Alliance for Open Media (AOM) AV1 codec SDK (libraries)
 
-aom-libs-3.13.1-r1 webpage:
+aom-libs-3.14.1-r0 webpage:
 https://aomedia.org/
 
-aom-libs-3.13.1-r1 installed size:
-8140 KiB
+aom-libs-3.14.1-r0 installed size:
+8180 KiB
 
-aom-libs-3.13.1-r1 license:
+aom-libs-3.14.1-r0 license:
 BSD-2-Clause AND custom
 
 ```
@@ -1646,16 +1646,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.9-r0 description:
+libxml2-2.13.9-r1 description:
 XML parsing library, version 2
 
-libxml2-2.13.9-r0 webpage:
+libxml2-2.13.9-r1 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.9-r0 installed size:
+libxml2-2.13.9-r1 installed size:
 1046 KiB
 
-libxml2-2.13.9-r0 license:
+libxml2-2.13.9-r1 license:
 MIT
 
 ```
