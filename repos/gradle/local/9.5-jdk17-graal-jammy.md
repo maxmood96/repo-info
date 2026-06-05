@@ -1744,14 +1744,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.15.0-179.189
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-179.189.diff.gz' linux_5.15.0-179.189.diff.gz 12796742 SHA512:f57a97c2b0d675e04a110c2c3a845ed708eeb5752bf63123054e10c42d066b0be91efd2dbab4770f3923af39b3e62d114ae0247b09b5944cbe334da9c6a8126c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-179.189.dsc' linux_5.15.0-179.189.dsc 7824 SHA512:a2f369858b3afa712f6380afd01043c2933622d83af743e7e4ec6b8174a750ce7714ff3441d38fe37698e23dd990e73a1f576ff8b5691f6bd92d609b1a1e9cdb
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
 
@@ -2319,14 +2314,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 - `Expat`
 - `PSF-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-urllib3=1.26.5-1~exp1ubuntu0.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5.orig.tar.gz' python-urllib3_1.26.5.orig.tar.gz 292865 SHA256:a7acd0977125325f516bda9735fa7142b909a8d01e8b2e4c8108d0984e6e0098
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.6.debian.tar.xz' python-urllib3_1.26.5-1~exp1ubuntu0.6.debian.tar.xz 19228 SHA256:05729bbed602a4296a10796efab977470cad0b12db10eab35b7935da0391855c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.6.dsc' python-urllib3_1.26.5-1~exp1ubuntu0.6.dsc 2378 SHA256:07ee6a554a6005898a9ecab6b7fa206691cfa169be35372550ddf05f73667db6
-```
 
 ### `dpkg` source package: `python3-defaults=3.10.6-1~22.04.1`
 
