@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c86c0c96b65a3304b37e630ab57ebb404f2c69a8df3e3470e7e4406406913151`
-- Created: `2026-05-08T00:25:20.724836277Z`
-- Virtual Size: ~ 371.52 Mb  
+- Image ID: `sha256:e5c7167f32c59d7cc0e740969946afb016dcd547763a07b95a3ba7ef59244b37`
+- Created: `2026-06-02T09:20:45.135271747Z`
+- Virtual Size: ~ 371.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -497,11 +497,11 @@ $ apt-get source -qq --print-uris diffutils=1:3.10-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/d/diffutils/diffutils_3.10-1build1.debian.tar.xz' diffutils_3.10-1build1.debian.tar.xz 14068 SHA512:36cb15f987cfd57dbe5bfe347a990887ffe52f8ba3756c4f806e78ba702d2b1acc2f316292bf1096a1a7db158358b4cd6261cabe70a77fd292945e07d5808cb5
 ```
 
-### `dpkg` source package: `dpkg=1.22.6ubuntu6.5`
+### `dpkg` source package: `dpkg=1.22.6ubuntu6.6`
 
 Binary Packages:
 
-- `dpkg=1.22.6ubuntu6.5`
+- `dpkg=1.22.6ubuntu6.6`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -509,9 +509,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris dpkg=1.22.6ubuntu6.6
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.6.tar.xz' dpkg_1.22.6ubuntu6.6.tar.xz 5548716 SHA512:e934e50a46a65b015982ad69dc4eca8bd514fbbd48aeeb5a84a66ab93c1e64b6d4d9429d08c2d8097ba0a3e96e27c205ab2142bb6e33659c96e32bdee477b6c3
+'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.22.6ubuntu6.6.dsc' dpkg_1.22.6ubuntu6.6.dsc 3156 SHA512:99f857ee029f720f79414a3ae85d857d06f30f57ff6ce259710a33d1de2a02d9398e511af46b689d4b9819b4c3f76d877d50d8da961fb7b6b9ecae621d1c562c
+```
 
 ### `dpkg` source package: `e2fsprogs=1.47.0-2.4~exp1ubuntu4.1`
 
@@ -1009,11 +1013,11 @@ $ apt-get source -qq --print-uris libcap-ng=0.8.4-2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.4-2build2.debian.tar.xz' libcap-ng_0.8.4-2build2.debian.tar.xz 7384 SHA512:c21cf4b7df670034773ab883e5149bc28606d11416a5f075c85106395a6d46ea529227e270f9342c910631059b8cf94a55dc5cfa5ec908a6f57d6a8c0a32277e
 ```
 
-### `dpkg` source package: `libcap2=1:2.66-5ubuntu2.2`
+### `dpkg` source package: `libcap2=1:2.66-5ubuntu2.4`
 
 Binary Packages:
 
-- `libcap2:amd64=1:2.66-5ubuntu2.2`
+- `libcap2:amd64=1:2.66-5ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 
@@ -1021,9 +1025,14 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libcap2=1:2.66-5ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66.orig.tar.xz' libcap2_2.66.orig.tar.xz 181592 SHA512:ac005b622f6e065f30ce282a5c87240e7b9da75366ee537aa4835bc501b44bc242c10a4ba4dc070e2415fc7f635d1c3c4e45fbeeaf962cf7973dda82bf6377f0
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-5ubuntu2.4.debian.tar.xz' libcap2_2.66-5ubuntu2.4.debian.tar.xz 24724 SHA512:d8e7c11b8457de7606d007d8e447c2569a43d937096153b95e7702c4adef8031b0adb89be6d534896c93cb2e9a469eafbd6681d02a5567c33ed35bd2f94b1762
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-5ubuntu2.4.dsc' libcap2_2.66-5ubuntu2.4.dsc 2319 SHA512:4792efe7caeecddd81aed675be95828fdc03140484303be3548b7f55f0ffcd2fe039c87b4b4cd0f5ef30222adb3bb1baedb8a38f6418b64bd9816f9a318d60c9
+```
 
 ### `dpkg` source package: `libffi=3.4.6-1build1`
 
@@ -1862,11 +1871,11 @@ $ apt-get source -qq --print-uris rtmpdump=2.4+20151223.gitfa8646d.1-2build7
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rtmpdump/rtmpdump_2.4%2b20151223.gitfa8646d.1-2build7.debian.tar.xz' rtmpdump_2.4+20151223.gitfa8646d.1-2build7.debian.tar.xz 8464 SHA512:812edf4f933ad0f723404192bfbfceca86e58303169a30e3b1f47781b709b91a259621293533d31d7abd16bc522824e2db325426a4ce9a6b428b88d492ae4c6c
 ```
 
-### `dpkg` source package: `sed=4.9-2build1`
+### `dpkg` source package: `sed=4.9-2ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `sed=4.9-2build1`
+- `sed=4.9-2ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
@@ -1883,10 +1892,10 @@ Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris sed=4.9-2build1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9-2build1.dsc' sed_4.9-2build1.dsc 1992 SHA512:c1fb23ca19645e3c77d7d466818b0ff15ec2fefa423d03c60746d3c441a767af9a551c0af022a5c17e69e58589b8004bc6e127dbb63d806c6269ba0ee2c1e8fd
+$ apt-get source -qq --print-uris sed=4.9-2ubuntu0.24.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9.orig.tar.xz' sed_4.9.orig.tar.xz 1397092 SHA512:36157a4b4a2430cf421b7bd07f1675d680d9f1616be96cf6ad6ee74a9ec0fe695f8d0b1e1f0b008bbb33cc7fcde5e1c456359bbbc63f8aebdd4fedc3982cf6dc
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9-2build1.debian.tar.xz' sed_4.9-2build1.debian.tar.xz 62896 SHA512:e9e57380873aa800f7892d99dbebb362a2ba9f27cc984180753d306592d6ca572d0baa3c4faf4b10dbc2aa33985e759f668f1efb4e0b09e4ae2ae689e32969ad
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9-2ubuntu0.24.04.1.debian.tar.xz' sed_4.9-2ubuntu0.24.04.1.debian.tar.xz 63288 SHA512:d6fbc8c55fa3157a77d5466662f9243b7cb67914607e63a86682090c6da61ef2c15b9ab0da25a5fdf73e7bcb7048e8f921fc7c8686aa24dc46156388ba3271df
+'http://archive.ubuntu.com/ubuntu/pool/main/s/sed/sed_4.9-2ubuntu0.24.04.1.dsc' sed_4.9-2ubuntu0.24.04.1.dsc 1999 SHA512:adb7be30c5f0224b11b7b12e9f2f9214a032b2794ecf026b23c9289352eafcff53cb719721fccde6d1f9ea007cdd625cc2c5940b933d6f66c9d6251ff8d13274
 ```
 
 ### `dpkg` source package: `sensible-utils=0.0.22`
@@ -2201,14 +2210,9 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 - `permissive-nowarranty`
 - `probably-PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.6.1+really5.4.5-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5.orig.tar.xz' xz-utils_5.6.1+really5.4.5.orig.tar.xz 1680520 SHA256:da9dec6c12cf2ecf269c31ab65b5de18e8e52b96f35d5bcd08c12b43e6878803
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1ubuntu0.2.debian.tar.xz' xz-utils_5.6.1+really5.4.5-1ubuntu0.2.debian.tar.xz 30776 SHA256:fcf6b1a987c3c82a4382b2f17a194aa9fbb1a05f307a00baf253307b10bf5ca8
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1ubuntu0.2.dsc' xz-utils_5.6.1+really5.4.5-1ubuntu0.2.dsc 2639 SHA256:72f961b40534c1254edf0950e1826635c1aaae72f2aaa588423d833374307396
-```
 
 ### `dpkg` source package: `zlib=1:1.3.dfsg-3.1ubuntu2.1`
 
