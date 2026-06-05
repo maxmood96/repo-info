@@ -1,7 +1,7 @@
 ## `elixir:slim`
 
 ```console
-$ docker pull elixir@sha256:9c94c3d91991d7c1582c0d18e0900b9353c55819be009299b4910cd8e1bfb902
+$ docker pull elixir@sha256:ecfa93897706d964383feeaa130afa1496617a1333aaa982edcc559a45e79bf6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,31 +22,31 @@ $ docker pull elixir@sha256:9c94c3d91991d7c1582c0d18e0900b9353c55819be009299b491
 ### `elixir:slim` - linux; amd64
 
 ```console
-$ docker pull elixir@sha256:43278d09cfbaf94446607f051b0fce530e17e265b5c4d6358d817612bd9b0c18
+$ docker pull elixir@sha256:d08cc3fc363aab5664b8de9e5cf37dab2175e9a3b246080dea8e04390536f567
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.5 MB (136482826 bytes)**  
+-	Total Size: **138.2 MB (138178795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f0859bbb1e2e19c0a4f72c8d956d02ea37d3316647544bfb4de5c7415c9eb52`
+-	Image ID: `sha256:9ff5b05b2d31297eeee6ae33d5ff967fd99ade219f246c0d7ec9c7946d6dcde2`
 -	Default Command: `["iex"]`
 
 ```dockerfile
 # Mon, 18 May 2026 00:00:00 GMT
 RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1779062400'
-# Thu, 28 May 2026 18:29:59 GMT
-ENV OTP_VERSION=28.5.0.1 REBAR3_VERSION=3.26.0
-# Thu, 28 May 2026 18:29:59 GMT
-LABEL org.opencontainers.image.version=28.5.0.1
-# Thu, 28 May 2026 18:29:59 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/releases/download/OTP-${OTP_VERSION}/otp_src_${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="adcc18a958713356d251980004b552b66e9cd33493e7c60c325d2f523b33329a" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc2 		libssl3t64 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="a151dc4a07805490e9f217a099e597ac9774814875f55da2c66545c333fdff64" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
-# Thu, 28 May 2026 18:29:59 GMT
+# Thu, 28 May 2026 18:30:06 GMT
+ENV OTP_VERSION=29.0.1 REBAR3_VERSION=3.27.0
+# Thu, 28 May 2026 18:30:06 GMT
+LABEL org.opencontainers.image.version=29.0.1
+# Thu, 28 May 2026 18:30:06 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/releases/download/OTP-${OTP_VERSION}/otp_src_${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="42299cd4674a898d354ccfcd16651a7940e0125af59ee3733f7bd5f4a0dd50cf" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc2 		libssl3t64 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="985cae6e957334cfa549190b9f5efb9185c184a18fc181c87b8dde096ba79f38" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
+# Thu, 28 May 2026 18:30:06 GMT
 CMD ["erl"]
-# Thu, 28 May 2026 19:11:40 GMT
-ENV ELIXIR_VERSION=v1.19.5 LANG=C.UTF-8
-# Thu, 28 May 2026 19:11:40 GMT
-RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/archive/${ELIXIR_VERSION}.tar.gz" 	&& ELIXIR_DOWNLOAD_SHA256="10750b8bd74b10ac1e25afab6df03e3d86999890fa359b5f02aa81de18a78e36" 	&& buildDeps=' 		ca-certificates 		curl 		make 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-src.tar.gz $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256  elixir-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/local/src/elixir 	&& tar -xzC /usr/local/src/elixir --strip-components=1 -f elixir-src.tar.gz 	&& rm elixir-src.tar.gz 	&& cd /usr/local/src/elixir 	&& make install clean 	&& find /usr/local/src/elixir/ -type f -not -regex "/usr/local/src/elixir/lib/[^\/]*/lib.*" -exec rm -rf {} + 	&& find /usr/local/src/elixir/ -type d -depth -empty -delete 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 28 May 2026 19:11:40 GMT
+# Fri, 05 Jun 2026 17:12:18 GMT
+ENV ELIXIR_VERSION=v1.20.0 LANG=C.UTF-8
+# Fri, 05 Jun 2026 17:12:18 GMT
+RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/archive/${ELIXIR_VERSION}.tar.gz" 	&& ELIXIR_DOWNLOAD_SHA256="70f6cb721f238fa5dd33eb29aa5b19e5ccc3807e41cd5f9b65d5c715b669438c" 	&& buildDeps=' 		ca-certificates 		curl 		make 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-src.tar.gz $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256  elixir-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/local/src/elixir 	&& tar -xzC /usr/local/src/elixir --strip-components=1 -f elixir-src.tar.gz 	&& rm elixir-src.tar.gz 	&& cd /usr/local/src/elixir 	&& make install clean 	&& find /usr/local/src/elixir/ -type f -not -regex "/usr/local/src/elixir/lib/[^\/]*/lib.*" -exec rm -rf {} + 	&& find /usr/local/src/elixir/ -type d -depth -empty -delete 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 05 Jun 2026 17:12:18 GMT
 CMD ["iex"]
 ```
 
@@ -55,67 +55,67 @@ CMD ["iex"]
 		Last Modified: Tue, 19 May 2026 22:37:05 GMT  
 		Size: 49.3 MB (49310623 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96732ff508890c208cf3ababe2ab5441066adcbd18b49f57d7c6d8c534a4690b`  
-		Last Modified: Thu, 28 May 2026 18:30:13 GMT  
-		Size: 78.9 MB (78935348 bytes)  
+	-	`sha256:462f0fa98a669d4e1d50db65bd5e01453b4054cbee96d19624b8e4132db01b16`  
+		Last Modified: Thu, 28 May 2026 18:30:21 GMT  
+		Size: 80.3 MB (80279629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26ab258d40cb0128e7f95d5f7056b113b82faa2c32c41e32502d2898674cf4bb`  
-		Last Modified: Thu, 28 May 2026 19:11:49 GMT  
-		Size: 8.2 MB (8236855 bytes)  
+	-	`sha256:ce42602eed8afe5f891ece307c625433a37629ada27beb49baf062f4ca73671c`  
+		Last Modified: Fri, 05 Jun 2026 17:12:27 GMT  
+		Size: 8.6 MB (8588543 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elixir:slim` - unknown; unknown
 
 ```console
-$ docker pull elixir@sha256:ca327de3c037b63bc4be310e6d7e7e0f3773b76cbd5bcb107bf738bcb9e6a4ef
+$ docker pull elixir@sha256:e8e482830b8a18c89a4dd29e9e2f31c128edc80869be0fe02787eab36a9bb5dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3302298 bytes)**  
+-	Total Size: **3.3 MB (3302106 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cad1488e96e23b30d59b3808f746890ad4f815fa71eec1c7d2a7e18bd197464b`
+-	Image ID: `sha256:4d388e6a54abc3ef34847d8aefba749a5c6b2235e1280fa5d860d317da81b70a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c522128ebe5e66dd75da3004c9b5f7c8bb896a6acd60aef8443175c92e93ca68`  
-		Last Modified: Thu, 28 May 2026 19:11:49 GMT  
-		Size: 3.3 MB (3291660 bytes)  
+	-	`sha256:e34f3ba38a033bbc9c1d1dafdb3097824fd78c4f2b4db3f1dd93c07e9cbafd2c`  
+		Last Modified: Fri, 05 Jun 2026 17:12:27 GMT  
+		Size: 3.3 MB (3291470 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:30fb587e9917bbdeb8989757acc6c1361b00a6e4078e3ac8de986d0cc0da618a`  
-		Last Modified: Thu, 28 May 2026 19:11:49 GMT  
-		Size: 10.6 KB (10638 bytes)  
+	-	`sha256:e9d95911af6f5c0f41bc200d111708c83dc6179b99aeaa026861a5eda6c5702b`  
+		Last Modified: Fri, 05 Jun 2026 17:12:27 GMT  
+		Size: 10.6 KB (10636 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `elixir:slim` - linux; arm variant v7
 
 ```console
-$ docker pull elixir@sha256:b2daf64036f4524281631be2c8b89346c0f307a6c9d9b9cdcfea6f510312a128
+$ docker pull elixir@sha256:fd05784aeb2b982e691c38497ee719aeb7051397997fe16e939592e8ae8e62f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **123.0 MB (122973712 bytes)**  
+-	Total Size: **124.3 MB (124336500 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:402815b60965a817135e05ba18eb29166af6188d9a747bd451e402ace649c7c3`
+-	Image ID: `sha256:7c838beeb29856333c0dd0f51fe594f0c06c7260cc8193534ef745801170ab10`
 -	Default Command: `["iex"]`
 
 ```dockerfile
 # Mon, 18 May 2026 00:00:00 GMT
 RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1779062400'
-# Thu, 28 May 2026 18:29:30 GMT
-ENV OTP_VERSION=28.5.0.1 REBAR3_VERSION=3.26.0
-# Thu, 28 May 2026 18:29:30 GMT
-LABEL org.opencontainers.image.version=28.5.0.1
-# Thu, 28 May 2026 18:29:30 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/releases/download/OTP-${OTP_VERSION}/otp_src_${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="adcc18a958713356d251980004b552b66e9cd33493e7c60c325d2f523b33329a" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc2 		libssl3t64 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="a151dc4a07805490e9f217a099e597ac9774814875f55da2c66545c333fdff64" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
-# Thu, 28 May 2026 18:29:30 GMT
+# Thu, 28 May 2026 18:28:40 GMT
+ENV OTP_VERSION=29.0.1 REBAR3_VERSION=3.27.0
+# Thu, 28 May 2026 18:28:40 GMT
+LABEL org.opencontainers.image.version=29.0.1
+# Thu, 28 May 2026 18:28:40 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/releases/download/OTP-${OTP_VERSION}/otp_src_${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="42299cd4674a898d354ccfcd16651a7940e0125af59ee3733f7bd5f4a0dd50cf" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc2 		libssl3t64 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="985cae6e957334cfa549190b9f5efb9185c184a18fc181c87b8dde096ba79f38" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
+# Thu, 28 May 2026 18:28:40 GMT
 CMD ["erl"]
-# Thu, 28 May 2026 19:13:33 GMT
-ENV ELIXIR_VERSION=v1.19.5 LANG=C.UTF-8
-# Thu, 28 May 2026 19:13:33 GMT
-RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/archive/${ELIXIR_VERSION}.tar.gz" 	&& ELIXIR_DOWNLOAD_SHA256="10750b8bd74b10ac1e25afab6df03e3d86999890fa359b5f02aa81de18a78e36" 	&& buildDeps=' 		ca-certificates 		curl 		make 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-src.tar.gz $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256  elixir-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/local/src/elixir 	&& tar -xzC /usr/local/src/elixir --strip-components=1 -f elixir-src.tar.gz 	&& rm elixir-src.tar.gz 	&& cd /usr/local/src/elixir 	&& make install clean 	&& find /usr/local/src/elixir/ -type f -not -regex "/usr/local/src/elixir/lib/[^\/]*/lib.*" -exec rm -rf {} + 	&& find /usr/local/src/elixir/ -type d -depth -empty -delete 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 28 May 2026 19:13:33 GMT
+# Fri, 05 Jun 2026 17:13:01 GMT
+ENV ELIXIR_VERSION=v1.20.0 LANG=C.UTF-8
+# Fri, 05 Jun 2026 17:13:01 GMT
+RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/archive/${ELIXIR_VERSION}.tar.gz" 	&& ELIXIR_DOWNLOAD_SHA256="70f6cb721f238fa5dd33eb29aa5b19e5ccc3807e41cd5f9b65d5c715b669438c" 	&& buildDeps=' 		ca-certificates 		curl 		make 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-src.tar.gz $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256  elixir-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/local/src/elixir 	&& tar -xzC /usr/local/src/elixir --strip-components=1 -f elixir-src.tar.gz 	&& rm elixir-src.tar.gz 	&& cd /usr/local/src/elixir 	&& make install clean 	&& find /usr/local/src/elixir/ -type f -not -regex "/usr/local/src/elixir/lib/[^\/]*/lib.*" -exec rm -rf {} + 	&& find /usr/local/src/elixir/ -type d -depth -empty -delete 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 05 Jun 2026 17:13:01 GMT
 CMD ["iex"]
 ```
 
@@ -124,67 +124,67 @@ CMD ["iex"]
 		Last Modified: Tue, 19 May 2026 22:37:01 GMT  
 		Size: 45.7 MB (45742031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77a7dfa23d37d8c469d05501518684bda1daae0f1acb2a86a8b4c15f603c34aa`  
-		Last Modified: Thu, 28 May 2026 18:29:44 GMT  
-		Size: 69.0 MB (68995375 bytes)  
+	-	`sha256:05a39a2ac4cec914f25baad9b5905d6b38da79f50b4c677723a7d60ba6f66405`  
+		Last Modified: Thu, 28 May 2026 18:28:54 GMT  
+		Size: 70.0 MB (70006606 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92a1adf7766b3f9202f156d30f5d322efca20a4d24175a99941458d450756d4b`  
-		Last Modified: Thu, 28 May 2026 19:13:41 GMT  
-		Size: 8.2 MB (8236306 bytes)  
+	-	`sha256:e07dc55858086f0c11ecf3d2fff7bce7c007520e38a4444c4c17ed790b53028d`  
+		Last Modified: Fri, 05 Jun 2026 17:13:10 GMT  
+		Size: 8.6 MB (8587863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elixir:slim` - unknown; unknown
 
 ```console
-$ docker pull elixir@sha256:c840143765c0819a3d3c4b0fe1a7354b6d871333c9243f0999e003e80ec6156b
+$ docker pull elixir@sha256:588172ea46711f8f975832f47b85bde81b547289803388d4c00cc8edc72e0ba4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3303826 bytes)**  
+-	Total Size: **3.3 MB (3303634 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63912e417fcf3783f41b3f105dcf1f8d58117e9da6f7d752c6bab78acaf77122`
+-	Image ID: `sha256:83f54bfc80d4faf2681f12b64eda7865d4c18d9d4b7aba3e70e2e0c40f73d9d2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:691b24c91f7d77d3d566b5761d4df12d0b0e72ba788869f9d9f964ddc85bf5d3`  
-		Last Modified: Thu, 28 May 2026 19:13:41 GMT  
-		Size: 3.3 MB (3293092 bytes)  
+	-	`sha256:0bbce9053da9ffc76392d4d40ac785ca91b97af4876676abf4f388f2319ef563`  
+		Last Modified: Fri, 05 Jun 2026 17:13:10 GMT  
+		Size: 3.3 MB (3292902 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:18d311cb43d6f348b2cf4ab767f5873ce0c0b0d1b4bf721a05b320f84e2c35e9`  
-		Last Modified: Thu, 28 May 2026 19:13:41 GMT  
-		Size: 10.7 KB (10734 bytes)  
+	-	`sha256:4366c8a0d2cb953452fd3e6331a23e2ae26b804ec72de067cc3a47266d738d27`  
+		Last Modified: Fri, 05 Jun 2026 17:13:10 GMT  
+		Size: 10.7 KB (10732 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `elixir:slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull elixir@sha256:a904d67c9f2c43445ee83b5257598e76d516563313047c8cb1d2a74c4932f641
+$ docker pull elixir@sha256:938d84431bd37ff6e3992dd22a8a93d6524f9a985075f721428a16e0a0d21580
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.4 MB (135390783 bytes)**  
+-	Total Size: **137.0 MB (136998093 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a7190ac713444382745bf1a6f2fd6f1c6bc3c717709405cfd04e1db88fbe6d4`
+-	Image ID: `sha256:de45fa4fc8f08018d3340867630d1b2f9d6c3df423b597e65e34b7bd73a284c3`
 -	Default Command: `["iex"]`
 
 ```dockerfile
 # Mon, 18 May 2026 00:00:00 GMT
 RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1779062400'
-# Thu, 28 May 2026 18:29:03 GMT
-ENV OTP_VERSION=28.5.0.1 REBAR3_VERSION=3.26.0
-# Thu, 28 May 2026 18:29:03 GMT
-LABEL org.opencontainers.image.version=28.5.0.1
-# Thu, 28 May 2026 18:29:03 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/releases/download/OTP-${OTP_VERSION}/otp_src_${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="adcc18a958713356d251980004b552b66e9cd33493e7c60c325d2f523b33329a" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc2 		libssl3t64 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="a151dc4a07805490e9f217a099e597ac9774814875f55da2c66545c333fdff64" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
-# Thu, 28 May 2026 18:29:03 GMT
+# Thu, 28 May 2026 18:28:56 GMT
+ENV OTP_VERSION=29.0.1 REBAR3_VERSION=3.27.0
+# Thu, 28 May 2026 18:28:56 GMT
+LABEL org.opencontainers.image.version=29.0.1
+# Thu, 28 May 2026 18:28:56 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/releases/download/OTP-${OTP_VERSION}/otp_src_${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="42299cd4674a898d354ccfcd16651a7940e0125af59ee3733f7bd5f4a0dd50cf" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc2 		libssl3t64 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="985cae6e957334cfa549190b9f5efb9185c184a18fc181c87b8dde096ba79f38" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
+# Thu, 28 May 2026 18:28:56 GMT
 CMD ["erl"]
-# Thu, 28 May 2026 19:11:42 GMT
-ENV ELIXIR_VERSION=v1.19.5 LANG=C.UTF-8
-# Thu, 28 May 2026 19:11:42 GMT
-RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/archive/${ELIXIR_VERSION}.tar.gz" 	&& ELIXIR_DOWNLOAD_SHA256="10750b8bd74b10ac1e25afab6df03e3d86999890fa359b5f02aa81de18a78e36" 	&& buildDeps=' 		ca-certificates 		curl 		make 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-src.tar.gz $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256  elixir-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/local/src/elixir 	&& tar -xzC /usr/local/src/elixir --strip-components=1 -f elixir-src.tar.gz 	&& rm elixir-src.tar.gz 	&& cd /usr/local/src/elixir 	&& make install clean 	&& find /usr/local/src/elixir/ -type f -not -regex "/usr/local/src/elixir/lib/[^\/]*/lib.*" -exec rm -rf {} + 	&& find /usr/local/src/elixir/ -type d -depth -empty -delete 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 28 May 2026 19:11:42 GMT
+# Fri, 05 Jun 2026 17:12:27 GMT
+ENV ELIXIR_VERSION=v1.20.0 LANG=C.UTF-8
+# Fri, 05 Jun 2026 17:12:27 GMT
+RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/archive/${ELIXIR_VERSION}.tar.gz" 	&& ELIXIR_DOWNLOAD_SHA256="70f6cb721f238fa5dd33eb29aa5b19e5ccc3807e41cd5f9b65d5c715b669438c" 	&& buildDeps=' 		ca-certificates 		curl 		make 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-src.tar.gz $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256  elixir-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/local/src/elixir 	&& tar -xzC /usr/local/src/elixir --strip-components=1 -f elixir-src.tar.gz 	&& rm elixir-src.tar.gz 	&& cd /usr/local/src/elixir 	&& make install clean 	&& find /usr/local/src/elixir/ -type f -not -regex "/usr/local/src/elixir/lib/[^\/]*/lib.*" -exec rm -rf {} + 	&& find /usr/local/src/elixir/ -type d -depth -empty -delete 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 05 Jun 2026 17:12:27 GMT
 CMD ["iex"]
 ```
 
@@ -193,67 +193,67 @@ CMD ["iex"]
 		Last Modified: Tue, 19 May 2026 22:37:01 GMT  
 		Size: 49.7 MB (49672220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:621fc96c45ea0937891478a1191c8d7eb5cf5c06cee9265e90f3fe16338ed80b`  
-		Last Modified: Thu, 28 May 2026 18:29:18 GMT  
-		Size: 77.5 MB (77481861 bytes)  
+	-	`sha256:17d975fb1fee17f1d19f1a81b9fe80588bf47975b137ddf3424cb4452cd4075f`  
+		Last Modified: Thu, 28 May 2026 18:29:12 GMT  
+		Size: 78.7 MB (78737360 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3ff75dec06f5956ab3dae1a366a445c5ca4fde38c30c13678f8a0379e6d35cf`  
-		Last Modified: Thu, 28 May 2026 19:11:51 GMT  
-		Size: 8.2 MB (8236702 bytes)  
+	-	`sha256:46b02fb0ffb6615471e32ba6077b463ad9463f92144a73196936b2846422e13b`  
+		Last Modified: Fri, 05 Jun 2026 17:12:37 GMT  
+		Size: 8.6 MB (8588513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elixir:slim` - unknown; unknown
 
 ```console
-$ docker pull elixir@sha256:3f1c934f793b02f9e2f4bb066a39a9b33fb3e431fe855c7b6db5223803c94efb
+$ docker pull elixir@sha256:b5c3ef8e7bf67c352442b7c0e860048238b6ad1179bb418d12725e9acb9c4d3c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3303336 bytes)**  
+-	Total Size: **3.3 MB (3303144 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:771d0672ee6c53320ef7424c117c91850544d39116dcd24a6e95ac9e3060301c`
+-	Image ID: `sha256:cfb0a42aba84ad9a54ca6188672d430f49fb78f227e7fda890bcdd063d6669cc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:827dba17fad1ec697e23ffa031dfd15c5682308d9ea868498f63551ed2a5a247`  
-		Last Modified: Thu, 28 May 2026 19:11:51 GMT  
-		Size: 3.3 MB (3292570 bytes)  
+	-	`sha256:f7765796f65544c2a6c24a97d7dbdaed5a04ea8f95571985d8b7d020e6be7950`  
+		Last Modified: Fri, 05 Jun 2026 17:12:37 GMT  
+		Size: 3.3 MB (3292380 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:815292459ab84473ae47fe7dbbcb628e3fef14801d714d3a969360c113c21a15`  
-		Last Modified: Thu, 28 May 2026 19:11:51 GMT  
-		Size: 10.8 KB (10766 bytes)  
+	-	`sha256:50fb1159b25b1e4742cbe82c1e19f63d25b0e85143fdf367218a68f3e2d0e4bb`  
+		Last Modified: Fri, 05 Jun 2026 17:12:36 GMT  
+		Size: 10.8 KB (10764 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `elixir:slim` - linux; 386
 
 ```console
-$ docker pull elixir@sha256:001d127bbef537f0257ce9e86a7892f211129802ea327b43e4f11fb005d6af16
+$ docker pull elixir@sha256:8730123037efd63a751b109124a2e6eada9797bd13b314ce02439578a15d8892
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **128.5 MB (128483901 bytes)**  
+-	Total Size: **129.8 MB (129808149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f8f8c9bd1c3c25057ed7f8318e5df5cf05847335667d27c61b7fea42e2d0b4df`
+-	Image ID: `sha256:243fedecd461bfb52da0b4b9dfa15536c5c554b0e88d8c6ece67b0d332a5312a`
 -	Default Command: `["iex"]`
 
 ```dockerfile
 # Mon, 18 May 2026 00:00:00 GMT
 RUN # debian.sh --arch 'i386' out/ 'trixie' '@1779062400'
-# Thu, 28 May 2026 18:29:14 GMT
-ENV OTP_VERSION=28.5.0.1 REBAR3_VERSION=3.26.0
-# Thu, 28 May 2026 18:29:14 GMT
-LABEL org.opencontainers.image.version=28.5.0.1
-# Thu, 28 May 2026 18:29:14 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/releases/download/OTP-${OTP_VERSION}/otp_src_${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="adcc18a958713356d251980004b552b66e9cd33493e7c60c325d2f523b33329a" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc2 		libssl3t64 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="a151dc4a07805490e9f217a099e597ac9774814875f55da2c66545c333fdff64" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
-# Thu, 28 May 2026 18:29:14 GMT
+# Thu, 28 May 2026 18:29:10 GMT
+ENV OTP_VERSION=29.0.1 REBAR3_VERSION=3.27.0
+# Thu, 28 May 2026 18:29:10 GMT
+LABEL org.opencontainers.image.version=29.0.1
+# Thu, 28 May 2026 18:29:10 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/releases/download/OTP-${OTP_VERSION}/otp_src_${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="42299cd4674a898d354ccfcd16651a7940e0125af59ee3733f7bd5f4a0dd50cf" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc2 		libssl3t64 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="985cae6e957334cfa549190b9f5efb9185c184a18fc181c87b8dde096ba79f38" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
+# Thu, 28 May 2026 18:29:10 GMT
 CMD ["erl"]
-# Thu, 28 May 2026 19:12:45 GMT
-ENV ELIXIR_VERSION=v1.19.5 LANG=C.UTF-8
-# Thu, 28 May 2026 19:12:45 GMT
-RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/archive/${ELIXIR_VERSION}.tar.gz" 	&& ELIXIR_DOWNLOAD_SHA256="10750b8bd74b10ac1e25afab6df03e3d86999890fa359b5f02aa81de18a78e36" 	&& buildDeps=' 		ca-certificates 		curl 		make 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-src.tar.gz $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256  elixir-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/local/src/elixir 	&& tar -xzC /usr/local/src/elixir --strip-components=1 -f elixir-src.tar.gz 	&& rm elixir-src.tar.gz 	&& cd /usr/local/src/elixir 	&& make install clean 	&& find /usr/local/src/elixir/ -type f -not -regex "/usr/local/src/elixir/lib/[^\/]*/lib.*" -exec rm -rf {} + 	&& find /usr/local/src/elixir/ -type d -depth -empty -delete 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 28 May 2026 19:12:45 GMT
+# Fri, 05 Jun 2026 17:12:38 GMT
+ENV ELIXIR_VERSION=v1.20.0 LANG=C.UTF-8
+# Fri, 05 Jun 2026 17:12:38 GMT
+RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/archive/${ELIXIR_VERSION}.tar.gz" 	&& ELIXIR_DOWNLOAD_SHA256="70f6cb721f238fa5dd33eb29aa5b19e5ccc3807e41cd5f9b65d5c715b669438c" 	&& buildDeps=' 		ca-certificates 		curl 		make 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-src.tar.gz $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256  elixir-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/local/src/elixir 	&& tar -xzC /usr/local/src/elixir --strip-components=1 -f elixir-src.tar.gz 	&& rm elixir-src.tar.gz 	&& cd /usr/local/src/elixir 	&& make install clean 	&& find /usr/local/src/elixir/ -type f -not -regex "/usr/local/src/elixir/lib/[^\/]*/lib.*" -exec rm -rf {} + 	&& find /usr/local/src/elixir/ -type d -depth -empty -delete 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 05 Jun 2026 17:12:38 GMT
 CMD ["iex"]
 ```
 
@@ -262,67 +262,67 @@ CMD ["iex"]
 		Last Modified: Tue, 19 May 2026 22:37:18 GMT  
 		Size: 50.8 MB (50829554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02f76f4149b6a021fc254749d9ec6ba09a391bc72b5fad046c9806a9c9e18a16`  
-		Last Modified: Thu, 28 May 2026 18:29:27 GMT  
-		Size: 69.4 MB (69417908 bytes)  
+	-	`sha256:72388c27ed603b46c7760ec256823dadb8207b8d343fbb847a2515a09b6a389a`  
+		Last Modified: Thu, 28 May 2026 18:29:24 GMT  
+		Size: 70.4 MB (70390535 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e38994e1d29e0c2b42558fa6508a588673a901f90a82296e5b6de9b18ce09c05`  
-		Last Modified: Thu, 28 May 2026 19:12:53 GMT  
-		Size: 8.2 MB (8236439 bytes)  
+	-	`sha256:f6ae1f0df0bacab59713d169ef467200ca090bd0758a2a692cfec5aa41cc31bc`  
+		Last Modified: Fri, 05 Jun 2026 17:12:47 GMT  
+		Size: 8.6 MB (8588060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elixir:slim` - unknown; unknown
 
 ```console
-$ docker pull elixir@sha256:9f8b95e176b774415335272c6bdafac881c43b78a7c0f95c4abc685058ead945
+$ docker pull elixir@sha256:45d4af4aaedf6e910a489d37e5a60a3b06c24bb1d5b8bd5b8f295c2fcc2acc47
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3299421 bytes)**  
+-	Total Size: **3.3 MB (3299229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:151755f9a1d9be5119740bd7e3097596cc2491eff7a3bef8f55eccc232466624`
+-	Image ID: `sha256:905e66a97f761436ee7caa38fa77270b0ccad2ba6ff77a5885d7ca3adb3bb69d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:74fc2feca0f83d761837ec8513eae79f133765c85c3cf6481efa41d3ef5f7597`  
-		Last Modified: Thu, 28 May 2026 19:12:53 GMT  
-		Size: 3.3 MB (3288825 bytes)  
+	-	`sha256:76a01bb6806e3cae529c987c8baff072e36e10cf5d12f969623dbb4f4d9032b7`  
+		Last Modified: Fri, 05 Jun 2026 17:12:47 GMT  
+		Size: 3.3 MB (3288635 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5d5ec74eb6a29e9b047899fa522d0bef24d33ce61285f2a626891883583b99c7`  
-		Last Modified: Thu, 28 May 2026 19:12:53 GMT  
-		Size: 10.6 KB (10596 bytes)  
+	-	`sha256:4dc8177ad8aa42d4961b66708af757217c39b875348111c817ebedfdeb7aed8d`  
+		Last Modified: Fri, 05 Jun 2026 17:12:46 GMT  
+		Size: 10.6 KB (10594 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `elixir:slim` - linux; ppc64le
 
 ```console
-$ docker pull elixir@sha256:ebcdbe0a590e81d6e3ea8415231bebd1efa556bc57519db0a8c6fae79a08b471
+$ docker pull elixir@sha256:63b2db3786c4f817764ef89243c50aa8c6d1e08303a43d27d2101df20468b27d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **131.8 MB (131755816 bytes)**  
+-	Total Size: **133.1 MB (133098059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc13d531279939021131505f17c3675359b09a858ce476ce069c350f5c780591`
+-	Image ID: `sha256:3d476335b7ed5cb536fe304b1bdf088500a6d70610398e844e0c59c15dac60ae`
 -	Default Command: `["iex"]`
 
 ```dockerfile
 # Mon, 18 May 2026 00:00:00 GMT
 RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1779062400'
-# Thu, 28 May 2026 18:37:10 GMT
-ENV OTP_VERSION=28.5.0.1 REBAR3_VERSION=3.26.0
-# Thu, 28 May 2026 18:37:10 GMT
-LABEL org.opencontainers.image.version=28.5.0.1
-# Thu, 28 May 2026 18:37:10 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/releases/download/OTP-${OTP_VERSION}/otp_src_${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="adcc18a958713356d251980004b552b66e9cd33493e7c60c325d2f523b33329a" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc2 		libssl3t64 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="a151dc4a07805490e9f217a099e597ac9774814875f55da2c66545c333fdff64" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
-# Thu, 28 May 2026 18:37:10 GMT
+# Thu, 28 May 2026 18:28:51 GMT
+ENV OTP_VERSION=29.0.1 REBAR3_VERSION=3.27.0
+# Thu, 28 May 2026 18:28:51 GMT
+LABEL org.opencontainers.image.version=29.0.1
+# Thu, 28 May 2026 18:28:51 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/releases/download/OTP-${OTP_VERSION}/otp_src_${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="42299cd4674a898d354ccfcd16651a7940e0125af59ee3733f7bd5f4a0dd50cf" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc2 		libssl3t64 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="985cae6e957334cfa549190b9f5efb9185c184a18fc181c87b8dde096ba79f38" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
+# Thu, 28 May 2026 18:28:51 GMT
 CMD ["erl"]
-# Thu, 28 May 2026 19:12:10 GMT
-ENV ELIXIR_VERSION=v1.19.5 LANG=C.UTF-8
-# Thu, 28 May 2026 19:12:10 GMT
-RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/archive/${ELIXIR_VERSION}.tar.gz" 	&& ELIXIR_DOWNLOAD_SHA256="10750b8bd74b10ac1e25afab6df03e3d86999890fa359b5f02aa81de18a78e36" 	&& buildDeps=' 		ca-certificates 		curl 		make 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-src.tar.gz $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256  elixir-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/local/src/elixir 	&& tar -xzC /usr/local/src/elixir --strip-components=1 -f elixir-src.tar.gz 	&& rm elixir-src.tar.gz 	&& cd /usr/local/src/elixir 	&& make install clean 	&& find /usr/local/src/elixir/ -type f -not -regex "/usr/local/src/elixir/lib/[^\/]*/lib.*" -exec rm -rf {} + 	&& find /usr/local/src/elixir/ -type d -depth -empty -delete 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 28 May 2026 19:12:10 GMT
+# Fri, 05 Jun 2026 17:12:54 GMT
+ENV ELIXIR_VERSION=v1.20.0 LANG=C.UTF-8
+# Fri, 05 Jun 2026 17:12:54 GMT
+RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/archive/${ELIXIR_VERSION}.tar.gz" 	&& ELIXIR_DOWNLOAD_SHA256="70f6cb721f238fa5dd33eb29aa5b19e5ccc3807e41cd5f9b65d5c715b669438c" 	&& buildDeps=' 		ca-certificates 		curl 		make 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-src.tar.gz $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256  elixir-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/local/src/elixir 	&& tar -xzC /usr/local/src/elixir --strip-components=1 -f elixir-src.tar.gz 	&& rm elixir-src.tar.gz 	&& cd /usr/local/src/elixir 	&& make install clean 	&& find /usr/local/src/elixir/ -type f -not -regex "/usr/local/src/elixir/lib/[^\/]*/lib.*" -exec rm -rf {} + 	&& find /usr/local/src/elixir/ -type d -depth -empty -delete 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 05 Jun 2026 17:12:54 GMT
 CMD ["iex"]
 ```
 
@@ -331,67 +331,67 @@ CMD ["iex"]
 		Last Modified: Tue, 19 May 2026 22:37:59 GMT  
 		Size: 53.1 MB (53132182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ba49022066834e18b2e4b4fd7a9a817fec59b53ac0881cd25e8a4691293745f`  
-		Last Modified: Thu, 28 May 2026 18:37:34 GMT  
-		Size: 70.4 MB (70386637 bytes)  
+	-	`sha256:e49be04d35f27c984f77217c21736346912de4a0a2b0856557ec5315e725667f`  
+		Last Modified: Thu, 28 May 2026 18:29:22 GMT  
+		Size: 71.4 MB (71377321 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b24a5ba55c98d367f749fb19d37418861d64fe667354a0560e40dc6bcc3b6502`  
-		Last Modified: Thu, 28 May 2026 19:12:23 GMT  
-		Size: 8.2 MB (8236997 bytes)  
+	-	`sha256:81d194ddfb39f9f701448a63feb797ca55130cbe3099a5862b4dbdadde6319d4`  
+		Last Modified: Fri, 05 Jun 2026 17:13:22 GMT  
+		Size: 8.6 MB (8588556 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elixir:slim` - unknown; unknown
 
 ```console
-$ docker pull elixir@sha256:337e31e9013210029437351791f39462b576c5a31f45f2398bc60a1823fd476f
+$ docker pull elixir@sha256:34f26fc8117373d7dac667024bb07fcee63415bb6a4cef425450b8e9ef09ef88
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3305951 bytes)**  
+-	Total Size: **3.3 MB (3305759 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:921192a5e2cfd677fed4f8d552315b5727c3a21a6ce882cbc13c909edbf28be7`
+-	Image ID: `sha256:58cc80f8dad0ff73fda134826290f04b5f0face03fcddba0c1bf628c7f28aeb0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8fd04a550a09d1937e583fbaa058e680aebc5788d94bc584b83f5a4134123705`  
-		Last Modified: Thu, 28 May 2026 19:12:23 GMT  
-		Size: 3.3 MB (3295257 bytes)  
+	-	`sha256:b171b627e1510f573a28969b875cdf411fe8fec05d9cefe78936da7767b006dc`  
+		Last Modified: Fri, 05 Jun 2026 17:13:22 GMT  
+		Size: 3.3 MB (3295067 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d36730c8893bf3e3d3bbe37c10175abefd57c80d3df7a380c1323f5738414ee2`  
-		Last Modified: Thu, 28 May 2026 19:12:22 GMT  
-		Size: 10.7 KB (10694 bytes)  
+	-	`sha256:b172893e891b942b3384105bfb9a3fbb26bafe510ef173c58051852a095eaec4`  
+		Last Modified: Fri, 05 Jun 2026 17:13:22 GMT  
+		Size: 10.7 KB (10692 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `elixir:slim` - linux; s390x
 
 ```console
-$ docker pull elixir@sha256:8353064b4cd26cedeb989cfa928491e28982e6753da17a4b9f44a1a097418a80
+$ docker pull elixir@sha256:6d311d85ff541edc7132326bc4ef953cbe1bf52f1652dcb3679ab07f7c7f5479
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.9 MB (127885467 bytes)**  
+-	Total Size: **129.2 MB (129248536 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa640c54d62928de8d129542d4f2ab131b8d7a12e55ed8dce441c7b1d0f23fb8`
+-	Image ID: `sha256:97cb106391ef04f8de6b1c1eff61f40a700de509aab898fe0d1181ad4f4040b0`
 -	Default Command: `["iex"]`
 
 ```dockerfile
 # Mon, 18 May 2026 00:00:00 GMT
 RUN # debian.sh --arch 's390x' out/ 'trixie' '@1779062400'
-# Thu, 28 May 2026 18:31:21 GMT
-ENV OTP_VERSION=28.5.0.1 REBAR3_VERSION=3.26.0
-# Thu, 28 May 2026 18:31:21 GMT
-LABEL org.opencontainers.image.version=28.5.0.1
-# Thu, 28 May 2026 18:31:21 GMT
-RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/releases/download/OTP-${OTP_VERSION}/otp_src_${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="adcc18a958713356d251980004b552b66e9cd33493e7c60c325d2f523b33329a" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc2 		libssl3t64 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="a151dc4a07805490e9f217a099e597ac9774814875f55da2c66545c333fdff64" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
-# Thu, 28 May 2026 18:31:21 GMT
+# Thu, 28 May 2026 18:28:12 GMT
+ENV OTP_VERSION=29.0.1 REBAR3_VERSION=3.27.0
+# Thu, 28 May 2026 18:28:12 GMT
+LABEL org.opencontainers.image.version=29.0.1
+# Thu, 28 May 2026 18:28:12 GMT
+RUN set -xe 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/releases/download/OTP-${OTP_VERSION}/otp_src_${OTP_VERSION}.tar.gz" 	&& OTP_DOWNLOAD_SHA256="42299cd4674a898d354ccfcd16651a7940e0125af59ee3733f7bd5f4a0dd50cf" 	&& fetchDeps=' 		curl 		ca-certificates' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $fetchDeps 	&& curl -fSL -o otp-src.tar.gz "$OTP_DOWNLOAD_URL" 	&& echo "$OTP_DOWNLOAD_SHA256  otp-src.tar.gz" | sha256sum -c - 	&& runtimeDeps=' 		libodbc2 		libssl3t64 		libsctp1 	' 	&& buildDeps=' 		autoconf 		dpkg-dev 		gcc 		g++ 		make 		libncurses-dev 		unixodbc-dev 		libssl-dev 		libsctp-dev 	' 	&& apt-get install -y --no-install-recommends $runtimeDeps 	&& apt-get install -y --no-install-recommends $buildDeps 	&& export ERL_TOP="/usr/src/otp_src_${OTP_VERSION%%@*}" 	&& mkdir -vp $ERL_TOP 	&& tar -xzf otp-src.tar.gz -C $ERL_TOP --strip-components=1 	&& rm otp-src.tar.gz 	&& ( cd $ERL_TOP 	  && ./otp_build autoconf 	  && gnuArch="$(dpkg-architecture --query DEB_HOST_GNU_TYPE)" 	  && ./configure --build="$gnuArch" 	  && make -j$(nproc) 	  && make install ) 	&& find /usr/local -name examples | xargs rm -rf 	&& REBAR3_DOWNLOAD_URL="https://github.com/erlang/rebar3/archive/${REBAR3_VERSION}.tar.gz" 	&& REBAR3_DOWNLOAD_SHA256="985cae6e957334cfa549190b9f5efb9185c184a18fc181c87b8dde096ba79f38" 	&& mkdir -p /usr/src/rebar3-src 	&& curl -fSL -o rebar3-src.tar.gz "$REBAR3_DOWNLOAD_URL" 	&& echo "$REBAR3_DOWNLOAD_SHA256 rebar3-src.tar.gz" | sha256sum -c - 	&& tar -xzf rebar3-src.tar.gz -C /usr/src/rebar3-src --strip-components=1 	&& rm rebar3-src.tar.gz 	&& cd /usr/src/rebar3-src 	&& HOME=$PWD ./bootstrap 	&& install -v ./rebar3 /usr/local/bin/ 	&& rm -rf /usr/src/rebar3-src 	&& apt-get purge -y --auto-remove $buildDeps $fetchDeps 	&& rm -rf $ERL_TOP /var/lib/apt/lists/* # buildkit
+# Thu, 28 May 2026 18:28:12 GMT
 CMD ["erl"]
-# Thu, 28 May 2026 19:11:13 GMT
-ENV ELIXIR_VERSION=v1.19.5 LANG=C.UTF-8
-# Thu, 28 May 2026 19:11:13 GMT
-RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/archive/${ELIXIR_VERSION}.tar.gz" 	&& ELIXIR_DOWNLOAD_SHA256="10750b8bd74b10ac1e25afab6df03e3d86999890fa359b5f02aa81de18a78e36" 	&& buildDeps=' 		ca-certificates 		curl 		make 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-src.tar.gz $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256  elixir-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/local/src/elixir 	&& tar -xzC /usr/local/src/elixir --strip-components=1 -f elixir-src.tar.gz 	&& rm elixir-src.tar.gz 	&& cd /usr/local/src/elixir 	&& make install clean 	&& find /usr/local/src/elixir/ -type f -not -regex "/usr/local/src/elixir/lib/[^\/]*/lib.*" -exec rm -rf {} + 	&& find /usr/local/src/elixir/ -type d -depth -empty -delete 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 28 May 2026 19:11:13 GMT
+# Fri, 05 Jun 2026 17:12:34 GMT
+ENV ELIXIR_VERSION=v1.20.0 LANG=C.UTF-8
+# Fri, 05 Jun 2026 17:12:34 GMT
+RUN set -xe 	&& ELIXIR_DOWNLOAD_URL="https://github.com/elixir-lang/elixir/archive/${ELIXIR_VERSION}.tar.gz" 	&& ELIXIR_DOWNLOAD_SHA256="70f6cb721f238fa5dd33eb29aa5b19e5ccc3807e41cd5f9b65d5c715b669438c" 	&& buildDeps=' 		ca-certificates 		curl 		make 	' 	&& apt-get update 	&& apt-get install -y --no-install-recommends $buildDeps 	&& curl -fSL -o elixir-src.tar.gz $ELIXIR_DOWNLOAD_URL 	&& echo "$ELIXIR_DOWNLOAD_SHA256  elixir-src.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/local/src/elixir 	&& tar -xzC /usr/local/src/elixir --strip-components=1 -f elixir-src.tar.gz 	&& rm elixir-src.tar.gz 	&& cd /usr/local/src/elixir 	&& make install clean 	&& find /usr/local/src/elixir/ -type f -not -regex "/usr/local/src/elixir/lib/[^\/]*/lib.*" -exec rm -rf {} + 	&& find /usr/local/src/elixir/ -type d -depth -empty -delete 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 05 Jun 2026 17:12:34 GMT
 CMD ["iex"]
 ```
 
@@ -400,35 +400,35 @@ CMD ["iex"]
 		Last Modified: Tue, 19 May 2026 22:37:00 GMT  
 		Size: 49.4 MB (49379780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3b3c60ada471921645190882a79a529b4141d8efc47fde94028a63f229500aee`  
-		Last Modified: Thu, 28 May 2026 18:31:40 GMT  
-		Size: 70.3 MB (70269219 bytes)  
+	-	`sha256:6aee576bc312a1b8982dd72b09270248584a9ea40ce426f9f17bfe83dcfeb417`  
+		Last Modified: Thu, 28 May 2026 18:28:31 GMT  
+		Size: 71.3 MB (71280689 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5729d08bb123aa12a8e23774398a14706d8713871c0f2d9d4a1da6b73e6b4e6`  
-		Last Modified: Thu, 28 May 2026 19:11:25 GMT  
-		Size: 8.2 MB (8236468 bytes)  
+	-	`sha256:0e9db20d8c71132968763962304880056cbc7b406e7c2ecba6224a9f3cdcd6b0`  
+		Last Modified: Fri, 05 Jun 2026 17:12:49 GMT  
+		Size: 8.6 MB (8588067 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elixir:slim` - unknown; unknown
 
 ```console
-$ docker pull elixir@sha256:bca7a989ad2731b0408aeb4cf8e476d44181e805e0fb12c455017c5c55eb4c1d
+$ docker pull elixir@sha256:aafb90a761c1b8f91033880096ac9d8ec252c57d60c9184629eed13894271d48
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.3 MB (3303739 bytes)**  
+-	Total Size: **3.3 MB (3303547 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9f1cbd74bc9b94cd1d010924cdfab2ff736e9dfd9a06423d9ab520f5476f7f8`
+-	Image ID: `sha256:bcb69e2ccf9acc425db9d84aad34589626ae32f22cc8cc4cd6e3c208f6fde2fb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0e4c766674f1ac2db1e7adb0b9cf83bdcf5243b38b1bbbcd7561c8c9a8e939e0`  
-		Last Modified: Thu, 28 May 2026 19:11:25 GMT  
-		Size: 3.3 MB (3293101 bytes)  
+	-	`sha256:ded0fe1cad2c1f1c8503e8c65d1adb4340256f09ddac7f74052d73e4df708a09`  
+		Last Modified: Fri, 05 Jun 2026 17:12:49 GMT  
+		Size: 3.3 MB (3292911 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3b590b6e5f10bca35abdda05a63f8107c6bbc04908656d6098cb7d73c59e25cf`  
-		Last Modified: Thu, 28 May 2026 19:11:25 GMT  
-		Size: 10.6 KB (10638 bytes)  
+	-	`sha256:50be5a76f6122eefa06414dd328e953e61eb0cb2221e743169483acd4468be07`  
+		Last Modified: Fri, 05 Jun 2026 17:12:49 GMT  
+		Size: 10.6 KB (10636 bytes)  
 		MIME: application/vnd.in-toto+json
