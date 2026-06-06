@@ -1,7 +1,7 @@
 ## `nextcloud:stable-apache`
 
 ```console
-$ docker pull nextcloud@sha256:4c8bf9140e07ad0293e32500de47a97647677cd4cace358db3ecdc225dff9856
+$ docker pull nextcloud@sha256:96f8b6ad4adf4044ac6d3cbc10ef99b4897c90792782b5b60a5700e5b1b97b84
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,108 +26,108 @@ $ docker pull nextcloud@sha256:4c8bf9140e07ad0293e32500de47a97647677cd4cace358db
 ### `nextcloud:stable-apache` - linux; amd64
 
 ```console
-$ docker pull nextcloud@sha256:c23eb82fb5ed1c92568c33501a96e5b4173adb234c9f40b47b8307b71c886b77
+$ docker pull nextcloud@sha256:613dd7b0f01f860c503571f3ce22b057cbd23b7e0ecea261ed606c6f4f52d9f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **503.8 MB (503822097 bytes)**  
+-	Total Size: **503.1 MB (503112629 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d3690c8de92d82b0643f8e4a3e83d3d1008aaf595757c4f9c80da0a7eb4b34fc`
+-	Image ID: `sha256:7bab1eaf408c10ffa350f95d9433ee9da3f22b8dae0a20d2445f32da63ac96e7`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 18 May 2026 00:00:00 GMT
 RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1779062400'
-# Tue, 19 May 2026 23:08:14 GMT
+# Fri, 05 Jun 2026 22:39:06 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Tue, 19 May 2026 23:08:30 GMT
+# Fri, 05 Jun 2026 22:39:21 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 19 May 2026 23:08:30 GMT
+# Fri, 05 Jun 2026 22:39:21 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	apt-get dist-clean # buildkit
-# Tue, 19 May 2026 23:08:30 GMT
+# Fri, 05 Jun 2026 22:39:21 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 19 May 2026 23:08:30 GMT
+# Fri, 05 Jun 2026 22:39:21 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Tue, 19 May 2026 23:08:30 GMT
+# Fri, 05 Jun 2026 22:39:21 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Tue, 19 May 2026 23:08:30 GMT
+# Fri, 05 Jun 2026 22:39:21 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Tue, 19 May 2026 23:08:35 GMT
+# Fri, 05 Jun 2026 22:39:26 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	apt-get dist-clean; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Tue, 19 May 2026 23:08:35 GMT
+# Fri, 05 Jun 2026 22:39:26 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Tue, 19 May 2026 23:08:35 GMT
+# Fri, 05 Jun 2026 22:39:26 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Tue, 19 May 2026 23:08:35 GMT
+# Fri, 05 Jun 2026 22:39:26 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 19 May 2026 23:08:35 GMT
+# Fri, 05 Jun 2026 22:39:26 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 19 May 2026 23:08:35 GMT
+# Fri, 05 Jun 2026 22:39:26 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 19 May 2026 23:08:35 GMT
+# Fri, 05 Jun 2026 22:39:26 GMT
 ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
-# Tue, 19 May 2026 23:08:35 GMT
-ENV PHP_VERSION=8.4.21
-# Tue, 19 May 2026 23:08:35 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.4.21.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.21.tar.xz.asc
-# Tue, 19 May 2026 23:08:35 GMT
-ENV PHP_SHA256=7cf5d8ab12c3b2016875bcfaec71bef1ef0b07bed6148f2c447577074431f984
-# Tue, 19 May 2026 23:08:44 GMT
+# Fri, 05 Jun 2026 22:39:26 GMT
+ENV PHP_VERSION=8.4.22
+# Fri, 05 Jun 2026 22:39:26 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.4.22.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.22.tar.xz.asc
+# Fri, 05 Jun 2026 22:39:26 GMT
+ENV PHP_SHA256=696c0f6ad92e94c59059c1eb6e300842b8d050934226efcdf00f2a413cb083cf
+# Fri, 05 Jun 2026 22:39:35 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 19 May 2026 23:08:44 GMT
+# Fri, 05 Jun 2026 22:39:35 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:11:07 GMT
+# Fri, 05 Jun 2026 22:41:57 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 19 May 2026 23:11:07 GMT
+# Fri, 05 Jun 2026 22:41:57 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:11:07 GMT
+# Fri, 05 Jun 2026 22:41:57 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Tue, 19 May 2026 23:11:08 GMT
+# Fri, 05 Jun 2026 22:41:57 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 19 May 2026 23:11:08 GMT
+# Fri, 05 Jun 2026 22:41:57 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 19 May 2026 23:11:08 GMT
+# Fri, 05 Jun 2026 22:41:57 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 19 May 2026 23:11:08 GMT
+# Fri, 05 Jun 2026 22:41:57 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:11:08 GMT
+# Fri, 05 Jun 2026 22:41:57 GMT
 WORKDIR /var/www/html
-# Tue, 19 May 2026 23:11:08 GMT
+# Fri, 05 Jun 2026 22:41:57 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 19 May 2026 23:11:08 GMT
+# Fri, 05 Jun 2026 22:41:57 GMT
 CMD ["apache2-foreground"]
-# Wed, 03 Jun 2026 17:26:10 GMT
+# Sat, 06 Jun 2026 00:16:28 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         busybox-static         bzip2         libldap-common         libmagickcore-7.q16-10-extra         rsync     ;     apt-get dist-clean;         mkdir -p /var/spool/cron/crontabs;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data # buildkit
-# Wed, 03 Jun 2026 17:28:10 GMT
+# Sat, 06 Jun 2026 00:18:22 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Wed, 03 Jun 2026 17:28:10 GMT
+# Sat, 06 Jun 2026 00:18:22 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Wed, 03 Jun 2026 17:28:10 GMT
+# Sat, 06 Jun 2026 00:18:22 GMT
 ENV PHP_OPCACHE_MEMORY_CONSUMPTION=128
-# Wed, 03 Jun 2026 17:28:10 GMT
+# Sat, 06 Jun 2026 00:18:22 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libgmp-dev         libicu-dev         libjpeg-dev         libldap2-dev         liblz4-dev         libmagickwand-dev         libmemcached-dev         libpng-dev         libpq-dev         libwebp-dev         libxml2-dev         libzip-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure ftp --with-ftp-ssl;     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         ftp         gd         gmp         intl         ldap         pcntl         pdo_mysql         pdo_pgsql         sysvsem         zip     ;         pecl install APCu-5.1.28;     pecl install igbinary-3.2.16;     pecl install imagick-3.8.1;     pecl install --configureoptions 'enable-memcached-igbinary="yes"'         memcached-3.4.0;     pecl install --configureoptions 'enable-redis-igbinary="yes" enable-redis-zstd="yes" enable-redis-lz4="yes"'         redis-6.3.0;         docker-php-ext-enable         apcu         igbinary         imagick         memcached         redis     ;     rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'         | sort -u         | xargs -rt dpkg-query --search         | awk 'sub(":$", "", $1) { print $1 }'         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     apt-get dist-clean # buildkit
-# Wed, 03 Jun 2026 17:28:10 GMT
+# Sat, 06 Jun 2026 00:18:22 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=8M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'apc.serializer=igbinary';         echo 'session.serialize_handler=igbinary';     } >> "${PHP_INI_DIR}/conf.d/docker-php-ext-igbinary.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Wed, 03 Jun 2026 17:28:10 GMT
+# Sat, 06 Jun 2026 00:18:22 GMT
 VOLUME [/var/www/html]
-# Wed, 03 Jun 2026 17:28:10 GMT
+# Sat, 06 Jun 2026 00:18:23 GMT
 RUN a2enmod headers rewrite remoteip ;     {      echo 'RemoteIPHeader X-Real-IP';      echo 'RemoteIPInternalProxy 10.0.0.0/8';      echo 'RemoteIPInternalProxy 172.16.0.0/12';      echo 'RemoteIPInternalProxy 192.168.0.0/16';     } > /etc/apache2/conf-available/remoteip.conf;     a2enconf remoteip # buildkit
-# Wed, 03 Jun 2026 17:28:10 GMT
+# Sat, 06 Jun 2026 00:18:23 GMT
 ENV APACHE_BODY_LIMIT=1073741824
-# Wed, 03 Jun 2026 17:28:10 GMT
+# Sat, 06 Jun 2026 00:18:23 GMT
 RUN {      echo 'LimitRequestBody ${APACHE_BODY_LIMIT}';     } > /etc/apache2/conf-available/apache-limits.conf;     a2enconf apache-limits # buildkit
-# Wed, 03 Jun 2026 17:28:10 GMT
+# Sat, 06 Jun 2026 00:18:23 GMT
 ENV NEXTCLOUD_VERSION=33.0.5
-# Wed, 03 Jun 2026 17:28:44 GMT
+# Sat, 06 Jun 2026 00:18:55 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://github.com/nextcloud-releases/server/releases/download/v33.0.5/nextcloud-33.0.5.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://github.com/nextcloud-releases/server/releases/download/v33.0.5/nextcloud-33.0.5.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     apt-get dist-clean # buildkit
-# Wed, 03 Jun 2026 17:28:44 GMT
+# Sat, 06 Jun 2026 00:18:55 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Wed, 03 Jun 2026 17:28:44 GMT
+# Sat, 06 Jun 2026 00:18:56 GMT
 COPY config/* /usr/src/nextcloud/config/ # buildkit
-# Wed, 03 Jun 2026 17:28:44 GMT
+# Sat, 06 Jun 2026 00:18:56 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 03 Jun 2026 17:28:44 GMT
+# Sat, 06 Jun 2026 00:18:56 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -136,220 +136,220 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 19 May 2026 22:37:05 GMT  
 		Size: 29.8 MB (29779926 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fce99d4331344d80bebd4205a62d52d373f28e66a9be8ddc507498b2dbbb9189`  
-		Last Modified: Tue, 19 May 2026 23:11:28 GMT  
+	-	`sha256:39aa2f07689a8ad2be828279559aee2d6217b59dce1c72812d9f1f99c46e83e3`  
+		Last Modified: Fri, 05 Jun 2026 22:42:17 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0cc59ba4d66f8f31d50e207bda3d579a0c75849d686f3007a1a4963742a6fa11`  
-		Last Modified: Tue, 19 May 2026 23:11:32 GMT  
-		Size: 117.8 MB (117840120 bytes)  
+	-	`sha256:f00af46a6fb8d65b4c2cd5136c18b998028dbdb4724e88728a803eaf1d9bbecb`  
+		Last Modified: Fri, 05 Jun 2026 22:42:20 GMT  
+		Size: 117.8 MB (117839883 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33e51ede2f9858efeb6379f9a0028ceb58ecfabeb661d4d73f7c3bfb4bb64d6f`  
-		Last Modified: Tue, 19 May 2026 23:11:27 GMT  
-		Size: 226.0 B  
+	-	`sha256:625ed921f0d21f57b3c511330dfafa30f7a598848ad987b6efd843aec0a6def0`  
+		Last Modified: Fri, 05 Jun 2026 22:42:17 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:faf3043eabd98c7ee097cb971f13623f4e15de793bcf99ebadc34c23810e0009`  
-		Last Modified: Tue, 19 May 2026 23:11:28 GMT  
-		Size: 4.2 MB (4227823 bytes)  
+	-	`sha256:64ede3a51c79f8280b31d50617fad94e5e2f3990fba30ffc8bfe32d5236c2dd7`  
+		Last Modified: Fri, 05 Jun 2026 22:42:17 GMT  
+		Size: 4.2 MB (4227864 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3fc54b6f8f718bbd605e7197bf00c3549bf41ada3ed2fdc2929be321f3502f36`  
-		Last Modified: Tue, 19 May 2026 23:11:29 GMT  
-		Size: 429.0 B  
+	-	`sha256:5223b96e16b4976bf5a9ad173107c1f4b197c6f8a90e0c76ac31b0c05c3588a6`  
+		Last Modified: Fri, 05 Jun 2026 22:42:18 GMT  
+		Size: 426.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cdf37826b67c5a88f89754a9e055e5a5907d45e6a2fdcff8e2b4b0ad8d81bcc9`  
-		Last Modified: Tue, 19 May 2026 23:11:29 GMT  
-		Size: 484.0 B  
+	-	`sha256:0253b1139356babd7b596fbd44778193a283e0ea1529839ce01ad00d846e7a38`  
+		Last Modified: Fri, 05 Jun 2026 22:42:18 GMT  
+		Size: 480.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd1f3ffd4aea81a6d0f1e9f9b1d761b1789af4ca603f98e3c1293bf3f8f955d`  
-		Last Modified: Tue, 19 May 2026 23:11:30 GMT  
-		Size: 13.9 MB (13885179 bytes)  
+	-	`sha256:3166beeb233be6875c4147cc838995077dceb1627063e0c253b76be1a852d96e`  
+		Last Modified: Fri, 05 Jun 2026 22:42:20 GMT  
+		Size: 13.9 MB (13898678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2c816e7ae5934a413293b7f57731c7a7cb861fdaff16bc3f1fe7c55815693e6`  
-		Last Modified: Tue, 19 May 2026 23:11:30 GMT  
-		Size: 487.0 B  
+	-	`sha256:405a149b5346b0287a179a63ded29b93cc303c6e4da9df237aa5f7663a3831b8`  
+		Last Modified: Fri, 05 Jun 2026 22:42:20 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:757aa5ba80cf7c23c95bee433f4f64f72b736d77ced083e48a49de37bc7a2e74`  
-		Last Modified: Tue, 19 May 2026 23:11:30 GMT  
-		Size: 13.7 MB (13682587 bytes)  
+	-	`sha256:5ba30ea08bda1a4cc3213719a634028d2fcec91aa30b2ec9e4c619720fc155ba`  
+		Last Modified: Fri, 05 Jun 2026 22:42:20 GMT  
+		Size: 13.7 MB (13691044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d52d450d192d140bfe27640cbdc2e82fc325dda72d85481eb9b30b97828999d`  
-		Last Modified: Tue, 19 May 2026 23:11:31 GMT  
-		Size: 2.5 KB (2462 bytes)  
+	-	`sha256:7806628a945adad88843f81e60ea823b6eb8acb6e29bda1b00268f1a7fca51c9`  
+		Last Modified: Fri, 05 Jun 2026 22:42:21 GMT  
+		Size: 2.5 KB (2456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f92ce4677f604d86a41edd764fb6dc3b8f711bd665abe0e1d3b37f0075ef9ce`  
-		Last Modified: Tue, 19 May 2026 23:11:31 GMT  
-		Size: 252.0 B  
+	-	`sha256:6d6df911884cbfe0001ee99fb42df5721698c99e8dd5bb1af062bdd520fed721`  
+		Last Modified: Fri, 05 Jun 2026 22:42:21 GMT  
+		Size: 253.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c8acfac93d9f745555e4601c7a3b8fc10a0868cbebaa6d044c6998d0006e40c`  
-		Last Modified: Tue, 19 May 2026 23:11:32 GMT  
-		Size: 246.0 B  
+	-	`sha256:aac6491fcdfec5ee6a149377ee56ef4a2ba5622d8bab357ef5badbd58e1df1dc`  
+		Last Modified: Fri, 05 Jun 2026 22:42:21 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c39bc0a3849ee7f8edcc2c8b113285595614d3fd1240ae7af4f5ffbcd7dae00`  
-		Last Modified: Tue, 19 May 2026 23:11:32 GMT  
-		Size: 894.0 B  
+	-	`sha256:57d0b50770cf8181da2166dd5de8426248951e3f11b385c311a0c1a5124a076e`  
+		Last Modified: Fri, 05 Jun 2026 22:42:22 GMT  
+		Size: 888.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2e6b1b0cce710706298fb64594dcedf2ad4bb1d4af74a296985b81de825bab3`  
-		Last Modified: Wed, 03 Jun 2026 17:29:12 GMT  
-		Size: 21.0 MB (20976494 bytes)  
+	-	`sha256:84288cd82467986834c7cec94113b6d71d2208e6e9baf8838cd517f7cae6c558`  
+		Last Modified: Sat, 06 Jun 2026 00:19:22 GMT  
+		Size: 21.0 MB (20961136 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77f6edda0bf60d2d05ff86953802c5acc5f65993ed805ef2b360e5a5dbd5bd8b`  
-		Last Modified: Wed, 03 Jun 2026 17:29:12 GMT  
-		Size: 37.6 MB (37609968 bytes)  
+	-	`sha256:96ef18ef8b3f7878e58c54516aa39d413964eaadb813421edaa11afceb2f8d7e`  
+		Last Modified: Sat, 06 Jun 2026 00:19:23 GMT  
+		Size: 36.9 MB (36894512 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7534a5a80ff9eb5a3596bdfa03fc0d849901f8f0f07e848060fceee3b80fef00`  
-		Last Modified: Wed, 03 Jun 2026 17:29:16 GMT  
-		Size: 795.0 B  
+	-	`sha256:9e3ac6fbd28bb8778197a38706143403e68c2886c55c01292c19bcd59825d761`  
+		Last Modified: Sat, 06 Jun 2026 00:19:21 GMT  
+		Size: 793.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3d61b824429f169869dfb35dac857e9c900bce99d1d7beec2d306ee84a4783bf`  
-		Last Modified: Wed, 03 Jun 2026 17:29:10 GMT  
-		Size: 575.0 B  
+	-	`sha256:21ca868fe1f5c13f5d0f18ac5104dccb7d4f5aeba493355c4386b6fed5b059ca`  
+		Last Modified: Sat, 06 Jun 2026 00:19:22 GMT  
+		Size: 568.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04289586a2c52b7217b4baa7a4cf41b45e7fb22700d2ede1b2d479a7051c2be4`  
-		Last Modified: Wed, 03 Jun 2026 17:29:12 GMT  
-		Size: 409.0 B  
+	-	`sha256:42c4f3cadfa5e17bad2d5c8b1eae7d24777c1426a378c869e56d93c3e032e03a`  
+		Last Modified: Sat, 06 Jun 2026 00:19:22 GMT  
+		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e871d9a190afd13d02635da88b7cf55357c480bd5b5f38e78de78ed336cbb3b8`  
-		Last Modified: Wed, 03 Jun 2026 17:29:20 GMT  
-		Size: 265.8 MB (265805934 bytes)  
+	-	`sha256:04f7425f4cd3b52d2b7187ea7b6c0f92da70fe92190ce2ff919c459274db519a`  
+		Last Modified: Sat, 06 Jun 2026 00:19:32 GMT  
+		Size: 265.8 MB (265805559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f64c350903c06ee8d84ba7170b622c85fdd27447c09b878a7c564604719682e`  
-		Last Modified: Wed, 03 Jun 2026 17:29:13 GMT  
-		Size: 4.1 KB (4135 bytes)  
+	-	`sha256:a6f130772c956d330e4f69df76b2d0ab44ee2debf45221691265edcc9a135868`  
+		Last Modified: Sat, 06 Jun 2026 00:19:24 GMT  
+		Size: 4.1 KB (4136 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c99eab788cf98f2078022e4d952e42ff38fffb96289534491d694e1d8c0c5f0a`  
-		Last Modified: Wed, 03 Jun 2026 17:29:14 GMT  
-		Size: 2.4 KB (2415 bytes)  
+	-	`sha256:137b0bc1fc79e14addf636b7978cdd1acc9375bae0d4dca8f616119762a46fcc`  
+		Last Modified: Sat, 06 Jun 2026 00:19:25 GMT  
+		Size: 2.4 KB (2413 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nextcloud:stable-apache` - unknown; unknown
 
 ```console
-$ docker pull nextcloud@sha256:9921e2664fbdbef1c21d37390b9b16760e325eb006fce861397052a9e3a8e848
+$ docker pull nextcloud@sha256:d62e4a981b8a5220cacb512ce30e494a460f31a6d7128aadb487fdc9a4028000
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **64.2 KB (64188 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e852ca4d2339f2cff4ebd6ea04d6c714a298affce2d47d1c5cfefc30dc0c7a68`
+-	Image ID: `sha256:633411e173b0fd4763e5f7708a1b26eb52740c74a6062da4298b4f688ecac3bf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0ee1c1a361a507836a388cd6f8dc80d80dd175b185b28c892e0bea0224d2d31a`  
-		Last Modified: Wed, 03 Jun 2026 17:29:10 GMT  
+	-	`sha256:fbcd3ba1a90b2bde6653bc8db13a1902c51eb42e7b8c96948edf85d8713cc2b9`  
+		Last Modified: Sat, 06 Jun 2026 00:19:21 GMT  
 		Size: 64.2 KB (64188 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nextcloud:stable-apache` - linux; arm variant v5
 
 ```console
-$ docker pull nextcloud@sha256:97973e2899bd29728a045e0d54bf3300bffdaf675b7f50ee236385dfc2e1421f
+$ docker pull nextcloud@sha256:1fb86b11fbb5221680fc43954c64a26557c891b79e2ac528e2dcb5675314d50f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **474.7 MB (474725659 bytes)**  
+-	Total Size: **474.1 MB (474060775 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ae83b4d0e25e02394be74d509db1eeb67d1ac76e2633a359ef4de06490b83b8`
+-	Image ID: `sha256:ca6cbc370590a2ec6a119a9950fa6fb5c59fa23f0d1df0055df49312e467f942`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 18 May 2026 00:00:00 GMT
 RUN # debian.sh --arch 'armel' out/ 'trixie' '@1779062400'
-# Tue, 19 May 2026 22:59:59 GMT
+# Fri, 05 Jun 2026 22:39:26 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Tue, 19 May 2026 23:00:21 GMT
+# Fri, 05 Jun 2026 22:39:47 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 19 May 2026 23:00:21 GMT
+# Fri, 05 Jun 2026 22:39:47 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	apt-get dist-clean # buildkit
-# Tue, 19 May 2026 23:00:21 GMT
+# Fri, 05 Jun 2026 22:39:47 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 19 May 2026 23:00:21 GMT
+# Fri, 05 Jun 2026 22:39:48 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Tue, 19 May 2026 23:00:21 GMT
+# Fri, 05 Jun 2026 22:39:48 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Tue, 19 May 2026 23:00:21 GMT
+# Fri, 05 Jun 2026 22:39:48 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Tue, 19 May 2026 23:08:23 GMT
+# Fri, 05 Jun 2026 22:39:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	apt-get dist-clean; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Tue, 19 May 2026 23:08:23 GMT
+# Fri, 05 Jun 2026 22:39:57 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Tue, 19 May 2026 23:08:23 GMT
+# Fri, 05 Jun 2026 22:39:57 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Tue, 19 May 2026 23:08:23 GMT
+# Fri, 05 Jun 2026 22:39:57 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 19 May 2026 23:08:23 GMT
+# Fri, 05 Jun 2026 22:39:57 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 19 May 2026 23:08:23 GMT
+# Fri, 05 Jun 2026 22:39:57 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 19 May 2026 23:08:23 GMT
+# Fri, 05 Jun 2026 22:39:57 GMT
 ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
-# Tue, 19 May 2026 23:08:23 GMT
-ENV PHP_VERSION=8.4.21
-# Tue, 19 May 2026 23:08:23 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.4.21.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.21.tar.xz.asc
-# Tue, 19 May 2026 23:08:23 GMT
-ENV PHP_SHA256=7cf5d8ab12c3b2016875bcfaec71bef1ef0b07bed6148f2c447577074431f984
-# Tue, 19 May 2026 23:08:35 GMT
+# Fri, 05 Jun 2026 22:39:57 GMT
+ENV PHP_VERSION=8.4.22
+# Fri, 05 Jun 2026 22:39:57 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.4.22.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.22.tar.xz.asc
+# Fri, 05 Jun 2026 22:39:57 GMT
+ENV PHP_SHA256=696c0f6ad92e94c59059c1eb6e300842b8d050934226efcdf00f2a413cb083cf
+# Fri, 05 Jun 2026 22:40:10 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 19 May 2026 23:08:36 GMT
+# Fri, 05 Jun 2026 22:40:10 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:11:43 GMT
+# Fri, 05 Jun 2026 22:43:19 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 19 May 2026 23:11:43 GMT
+# Fri, 05 Jun 2026 22:43:19 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:11:44 GMT
+# Fri, 05 Jun 2026 22:43:19 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Tue, 19 May 2026 23:11:44 GMT
+# Fri, 05 Jun 2026 22:43:20 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 19 May 2026 23:11:44 GMT
+# Fri, 05 Jun 2026 22:43:20 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 19 May 2026 23:11:44 GMT
+# Fri, 05 Jun 2026 22:43:20 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 19 May 2026 23:11:44 GMT
+# Fri, 05 Jun 2026 22:43:20 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:11:44 GMT
+# Fri, 05 Jun 2026 22:43:20 GMT
 WORKDIR /var/www/html
-# Tue, 19 May 2026 23:11:44 GMT
+# Fri, 05 Jun 2026 22:43:20 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 19 May 2026 23:11:44 GMT
+# Fri, 05 Jun 2026 22:43:20 GMT
 CMD ["apache2-foreground"]
-# Wed, 03 Jun 2026 17:28:51 GMT
+# Sat, 06 Jun 2026 00:15:09 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         busybox-static         bzip2         libldap-common         libmagickcore-7.q16-10-extra         rsync     ;     apt-get dist-clean;         mkdir -p /var/spool/cron/crontabs;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data # buildkit
-# Wed, 03 Jun 2026 17:31:57 GMT
+# Sat, 06 Jun 2026 00:18:17 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Wed, 03 Jun 2026 17:31:57 GMT
+# Sat, 06 Jun 2026 00:18:17 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Wed, 03 Jun 2026 17:31:57 GMT
+# Sat, 06 Jun 2026 00:18:17 GMT
 ENV PHP_OPCACHE_MEMORY_CONSUMPTION=128
-# Wed, 03 Jun 2026 17:31:57 GMT
+# Sat, 06 Jun 2026 00:18:17 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libgmp-dev         libicu-dev         libjpeg-dev         libldap2-dev         liblz4-dev         libmagickwand-dev         libmemcached-dev         libpng-dev         libpq-dev         libwebp-dev         libxml2-dev         libzip-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure ftp --with-ftp-ssl;     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         ftp         gd         gmp         intl         ldap         pcntl         pdo_mysql         pdo_pgsql         sysvsem         zip     ;         pecl install APCu-5.1.28;     pecl install igbinary-3.2.16;     pecl install imagick-3.8.1;     pecl install --configureoptions 'enable-memcached-igbinary="yes"'         memcached-3.4.0;     pecl install --configureoptions 'enable-redis-igbinary="yes" enable-redis-zstd="yes" enable-redis-lz4="yes"'         redis-6.3.0;         docker-php-ext-enable         apcu         igbinary         imagick         memcached         redis     ;     rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'         | sort -u         | xargs -rt dpkg-query --search         | awk 'sub(":$", "", $1) { print $1 }'         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     apt-get dist-clean # buildkit
-# Wed, 03 Jun 2026 17:31:57 GMT
+# Sat, 06 Jun 2026 00:18:17 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=8M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'apc.serializer=igbinary';         echo 'session.serialize_handler=igbinary';     } >> "${PHP_INI_DIR}/conf.d/docker-php-ext-igbinary.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Wed, 03 Jun 2026 17:31:57 GMT
+# Sat, 06 Jun 2026 00:18:17 GMT
 VOLUME [/var/www/html]
-# Wed, 03 Jun 2026 17:31:58 GMT
+# Sat, 06 Jun 2026 00:18:17 GMT
 RUN a2enmod headers rewrite remoteip ;     {      echo 'RemoteIPHeader X-Real-IP';      echo 'RemoteIPInternalProxy 10.0.0.0/8';      echo 'RemoteIPInternalProxy 172.16.0.0/12';      echo 'RemoteIPInternalProxy 192.168.0.0/16';     } > /etc/apache2/conf-available/remoteip.conf;     a2enconf remoteip # buildkit
-# Wed, 03 Jun 2026 17:31:58 GMT
+# Sat, 06 Jun 2026 00:18:17 GMT
 ENV APACHE_BODY_LIMIT=1073741824
-# Wed, 03 Jun 2026 17:31:58 GMT
+# Sat, 06 Jun 2026 00:18:18 GMT
 RUN {      echo 'LimitRequestBody ${APACHE_BODY_LIMIT}';     } > /etc/apache2/conf-available/apache-limits.conf;     a2enconf apache-limits # buildkit
-# Wed, 03 Jun 2026 17:31:58 GMT
+# Sat, 06 Jun 2026 00:18:18 GMT
 ENV NEXTCLOUD_VERSION=33.0.5
-# Wed, 03 Jun 2026 17:32:46 GMT
+# Sat, 06 Jun 2026 00:19:05 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://github.com/nextcloud-releases/server/releases/download/v33.0.5/nextcloud-33.0.5.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://github.com/nextcloud-releases/server/releases/download/v33.0.5/nextcloud-33.0.5.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     apt-get dist-clean # buildkit
-# Wed, 03 Jun 2026 17:32:46 GMT
+# Sat, 06 Jun 2026 00:19:06 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Wed, 03 Jun 2026 17:32:46 GMT
+# Sat, 06 Jun 2026 00:19:06 GMT
 COPY config/* /usr/src/nextcloud/config/ # buildkit
-# Wed, 03 Jun 2026 17:32:46 GMT
+# Sat, 06 Jun 2026 00:19:06 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 03 Jun 2026 17:32:46 GMT
+# Sat, 06 Jun 2026 00:19:06 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -358,220 +358,220 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 19 May 2026 22:36:45 GMT  
 		Size: 28.0 MB (27953869 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0443c80029b8a2ca9379fe635ba383703251fabfa25d301492db5bf9ae30adb6`  
-		Last Modified: Tue, 19 May 2026 23:04:01 GMT  
+	-	`sha256:b20c97aed179bfb864ac61b7e17ae90957e42afe4b7ad4fc0328f9e5c223ac15`  
+		Last Modified: Fri, 05 Jun 2026 22:43:39 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a0b4a242d5e9b39c774a9accd7434938c289e873d17d8b16b43898e0866ec1a`  
-		Last Modified: Tue, 19 May 2026 23:04:04 GMT  
-		Size: 94.9 MB (94886050 bytes)  
+	-	`sha256:bd2e54ca5c69cde6f1a44500be890fa0aa6b1a8ae4d7551ad74b26e6c1c83a97`  
+		Last Modified: Fri, 05 Jun 2026 22:43:41 GMT  
+		Size: 94.9 MB (94885711 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3be848e3f9b8c1aad313e3d24aa3e2fa9ac4bc37af999f1e009e99d22b8b2523`  
-		Last Modified: Tue, 19 May 2026 23:04:01 GMT  
-		Size: 225.0 B  
+	-	`sha256:10cd13baf75c2bfe8b7f79ebabc610fbedb175a69331df19540c1d18694b8ac0`  
+		Last Modified: Fri, 05 Jun 2026 22:43:39 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cdeab1feed2bbe5e63c6f75eb00740b986d17a5b4b52eb1753da48c72f981935`  
-		Last Modified: Tue, 19 May 2026 23:11:54 GMT  
-		Size: 4.1 MB (4090125 bytes)  
+	-	`sha256:0b0cabb95db5343768a5fc90a6c61565c71621ffbb7c64f422f0085b91e06eb7`  
+		Last Modified: Fri, 05 Jun 2026 22:43:39 GMT  
+		Size: 4.1 MB (4090302 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3fd54a63fd692f75521a6386c596e36010721111bfaa2254285f093b8ec3451`  
-		Last Modified: Tue, 19 May 2026 23:11:54 GMT  
-		Size: 437.0 B  
+	-	`sha256:acb5dfcc59f9b167e787a02f8614418637c72ebb645d77ab264edeb9181f94e4`  
+		Last Modified: Fri, 05 Jun 2026 22:43:40 GMT  
+		Size: 438.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95c255d3eed0ca51e329075fa8b85689b2894283a43a5c229f99f4b27de70b3e`  
-		Last Modified: Tue, 19 May 2026 23:11:54 GMT  
-		Size: 488.0 B  
+	-	`sha256:d67aca0494ff0c0ad7e4959272c6596806534f2a81952e8eb7991e9332008694`  
+		Last Modified: Fri, 05 Jun 2026 22:43:40 GMT  
+		Size: 484.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5916902b2cc44c871068b87a83b9eb838c3a2edd582766f8c3cb35f683f28cf9`  
-		Last Modified: Tue, 19 May 2026 23:11:55 GMT  
-		Size: 13.9 MB (13882569 bytes)  
+	-	`sha256:7aba75ebc8c107e33316b4a018bb85b4a69b5465cfb3b4e0c3baed173c1301cf`  
+		Last Modified: Fri, 05 Jun 2026 22:43:41 GMT  
+		Size: 13.9 MB (13895845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2ea62b0cc9ef2fdb903e1750632b92cf9dad62ca191d09b091643e086a5b2e9`  
-		Last Modified: Tue, 19 May 2026 23:11:55 GMT  
-		Size: 487.0 B  
+	-	`sha256:e000b25434bcf17b5782b0d9c411845989e0a7379c9ba9c064cdfc74612cb41c`  
+		Last Modified: Fri, 05 Jun 2026 22:43:41 GMT  
+		Size: 490.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a52e1347330216a00d68167c62a9143e51667465b0d58d0b831c8e52c55ff15`  
-		Last Modified: Tue, 19 May 2026 23:11:56 GMT  
-		Size: 12.3 MB (12295218 bytes)  
+	-	`sha256:0f830833dc7fce2169a27bb31f51ee9c278965706db0e1e65f889358f89c9ff7`  
+		Last Modified: Fri, 05 Jun 2026 22:43:41 GMT  
+		Size: 12.3 MB (12297687 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f546a12f9d71f4b7583210fdf2d22785282bd359dcc133fcd80d60599cbec263`  
-		Last Modified: Tue, 19 May 2026 23:11:56 GMT  
-		Size: 2.5 KB (2462 bytes)  
+	-	`sha256:e5e116afaaff34f1951ed068d118be05bd39201fe071ecb46fc3d65d46a96bf1`  
+		Last Modified: Fri, 05 Jun 2026 22:43:42 GMT  
+		Size: 2.5 KB (2463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e4ea6372789213391ad90ff0c138b41518befd5822ee2ef64f670735f33ece2`  
-		Last Modified: Tue, 19 May 2026 23:11:56 GMT  
-		Size: 250.0 B  
+	-	`sha256:875b3e52af0020ba49a040aea6a0d84920cccca8f1605f4bc3c97b4c3ddab0eb`  
+		Last Modified: Fri, 05 Jun 2026 22:43:42 GMT  
+		Size: 253.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:895488a967fa1e2a57bbcbf6b92bca14a5e39cb9730d64fe979c0bff6aae78b4`  
-		Last Modified: Tue, 19 May 2026 23:11:57 GMT  
-		Size: 246.0 B  
+	-	`sha256:4c55e6fad965e2537478e0b5f23443f25376aa070501e2788a0db565896ee95c`  
+		Last Modified: Fri, 05 Jun 2026 22:43:42 GMT  
+		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7ca0d370282acd3c074bdaa205aacf6162028ed56bd56f5d21c2fe4c3929035`  
-		Last Modified: Tue, 19 May 2026 23:11:57 GMT  
-		Size: 892.0 B  
+	-	`sha256:60ceea0c97b281ef7c4dec2cbb992813b00b09900723d9e794a85ec48bbc641a`  
+		Last Modified: Fri, 05 Jun 2026 22:43:43 GMT  
+		Size: 893.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35bda09a8f033f62ec9e14b1889282ca5a93b899c9e7d5921320ebc44143155e`  
-		Last Modified: Wed, 03 Jun 2026 17:33:14 GMT  
-		Size: 20.1 MB (20076513 bytes)  
+	-	`sha256:bfac276418cc6e57cf6f172aada4f74143f8d6c20f672d77e9ca4e8f0d5cfd73`  
+		Last Modified: Sat, 06 Jun 2026 00:19:33 GMT  
+		Size: 20.1 MB (20061527 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84134a242a69f0193fb03c935f27d688645e8ef91630aea666a03a2664f21cd1`  
-		Last Modified: Wed, 03 Jun 2026 17:33:14 GMT  
-		Size: 35.7 MB (35723976 bytes)  
+	-	`sha256:3e22ab7a11d1100b4c0bbfba5a9688897a54fb2021a8868b3d6075d288c140b9`  
+		Last Modified: Sat, 06 Jun 2026 00:19:34 GMT  
+		Size: 35.1 MB (35058987 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6f7bc9e539e21792fb91cce8529ef09cf283d6d90ca54007cf09094a32d4243`  
-		Last Modified: Wed, 03 Jun 2026 17:33:13 GMT  
-		Size: 793.0 B  
+	-	`sha256:48bc685b6fa6e95406a93e272b53b16f27ffda293553d15ebdd81314c14c870d`  
+		Last Modified: Sat, 06 Jun 2026 00:19:33 GMT  
+		Size: 794.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57609b47aba0fdac6568af13db56011863cd17cf5aa2dfe2fe52bb2741c426f4`  
-		Last Modified: Wed, 03 Jun 2026 17:33:13 GMT  
-		Size: 575.0 B  
+	-	`sha256:58a3d92623093248e95f4d09c747058aa3124e8eb2a279f9d65b96258e1767df`  
+		Last Modified: Sat, 06 Jun 2026 00:19:33 GMT  
+		Size: 570.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67d1d29b539e9511fe52af81d3ea4753c3b48c3488e26daab66a8d84015f195f`  
-		Last Modified: Wed, 03 Jun 2026 17:33:14 GMT  
-		Size: 405.0 B  
+	-	`sha256:c80124affe5fc8ee5a2dde99afa4bbd8cbcc42c8aec633560db1c6f2b4b9b9d3`  
+		Last Modified: Sat, 06 Jun 2026 00:19:34 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b9bb5082de2d6c1f263364b0799a3df4a42940ef1be1b04e6b45b09cb3e6052`  
-		Last Modified: Wed, 03 Jun 2026 17:33:20 GMT  
-		Size: 265.8 MB (265803272 bytes)  
+	-	`sha256:fb518625e142d00b1ae5e43747f9d7e72c46338e7228bac51fd5378984aa6d88`  
+		Last Modified: Sat, 06 Jun 2026 00:19:40 GMT  
+		Size: 265.8 MB (265802778 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1dc965ecd8f5ca4b15eb74496b564784e67af7bd9abb083defac7e81c21e62c`  
-		Last Modified: Wed, 03 Jun 2026 17:31:57 GMT  
-		Size: 4.1 KB (4135 bytes)  
+	-	`sha256:fc5d7afd08e40385cd476dbf15ae7b9b4104d2454de16840664a349ff87579ed`  
+		Last Modified: Sat, 06 Jun 2026 00:19:35 GMT  
+		Size: 4.1 KB (4136 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a182629d0b339e5f1e55fdc7198e68cb2395d55c58fcd8f1607ba07a62fc8e5`  
-		Last Modified: Wed, 03 Jun 2026 17:33:15 GMT  
-		Size: 2.4 KB (2414 bytes)  
+	-	`sha256:b7d4de6f31c2cf11075f415ea6b8bf15f1047a9b8ed1756d564a6f1ba35038b6`  
+		Last Modified: Sat, 06 Jun 2026 00:19:35 GMT  
+		Size: 2.4 KB (2415 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nextcloud:stable-apache` - unknown; unknown
 
 ```console
-$ docker pull nextcloud@sha256:e8ff8a993ad8a03da3ce05db8c7cd7b0f9561c4db335557cca9d066b6f612b54
+$ docker pull nextcloud@sha256:0b0f33ad7f34dd72a6db2541d18aec96f814684255df4d636767a2cc743b24c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **64.4 KB (64388 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:46bcc2f5083a8f83ade3e4e033c4dabc6a0986351a17f8be6c4f37834ee8a9bc`
+-	Image ID: `sha256:32a5f6a7608ab630284f8a00bed77a21761d7b916aea02ae871907c39e569cbf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dffb2de4a49dc707a76ff389a622f973a08b1f27a602b02acc0facbb689044e9`  
-		Last Modified: Wed, 03 Jun 2026 17:33:12 GMT  
+	-	`sha256:d73bd3696d37a9034251b298e61cd7e396c2d1632358f83f6014e707443e3ff6`  
+		Last Modified: Sat, 06 Jun 2026 00:19:32 GMT  
 		Size: 64.4 KB (64388 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nextcloud:stable-apache` - linux; arm variant v7
 
 ```console
-$ docker pull nextcloud@sha256:6826bf2f934596481558dc5bd81066c5a98cfcb7f1099a7305cbf6e966df7aa3
+$ docker pull nextcloud@sha256:d695e9988d23959b6d608a2349c2a38779257b2824fcd703e78e41260b0f065e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **460.9 MB (460919449 bytes)**  
+-	Total Size: **460.3 MB (460290654 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:889d864fbafe2ed648d12bdb3d9cdaf207c9b63028b6c421d0ced3779e1af342`
+-	Image ID: `sha256:cbcaf775d58225a12827147144ca29ef03374ad2dc765841e79f17709012391e`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 18 May 2026 00:00:00 GMT
 RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1779062400'
-# Tue, 19 May 2026 23:08:33 GMT
+# Fri, 05 Jun 2026 22:39:09 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Tue, 19 May 2026 23:08:51 GMT
+# Fri, 05 Jun 2026 22:39:28 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 19 May 2026 23:08:51 GMT
+# Fri, 05 Jun 2026 22:39:28 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	apt-get dist-clean # buildkit
-# Tue, 19 May 2026 23:08:51 GMT
+# Fri, 05 Jun 2026 22:39:28 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 19 May 2026 23:08:51 GMT
+# Fri, 05 Jun 2026 22:39:28 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Tue, 19 May 2026 23:08:51 GMT
+# Fri, 05 Jun 2026 22:39:28 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Tue, 19 May 2026 23:08:51 GMT
+# Fri, 05 Jun 2026 22:39:28 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Tue, 19 May 2026 23:12:32 GMT
+# Fri, 05 Jun 2026 22:39:36 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	apt-get dist-clean; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Tue, 19 May 2026 23:12:32 GMT
+# Fri, 05 Jun 2026 22:39:36 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Tue, 19 May 2026 23:12:33 GMT
+# Fri, 05 Jun 2026 22:39:36 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Tue, 19 May 2026 23:12:33 GMT
+# Fri, 05 Jun 2026 22:39:36 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 19 May 2026 23:12:33 GMT
+# Fri, 05 Jun 2026 22:39:36 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 19 May 2026 23:12:33 GMT
+# Fri, 05 Jun 2026 22:39:36 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 19 May 2026 23:12:33 GMT
+# Fri, 05 Jun 2026 22:39:36 GMT
 ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
-# Tue, 19 May 2026 23:12:33 GMT
-ENV PHP_VERSION=8.4.21
-# Tue, 19 May 2026 23:12:33 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.4.21.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.21.tar.xz.asc
-# Tue, 19 May 2026 23:12:33 GMT
-ENV PHP_SHA256=7cf5d8ab12c3b2016875bcfaec71bef1ef0b07bed6148f2c447577074431f984
-# Tue, 19 May 2026 23:12:44 GMT
+# Fri, 05 Jun 2026 22:39:36 GMT
+ENV PHP_VERSION=8.4.22
+# Fri, 05 Jun 2026 22:39:36 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.4.22.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.22.tar.xz.asc
+# Fri, 05 Jun 2026 22:39:36 GMT
+ENV PHP_SHA256=696c0f6ad92e94c59059c1eb6e300842b8d050934226efcdf00f2a413cb083cf
+# Fri, 05 Jun 2026 22:39:49 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 19 May 2026 23:12:44 GMT
+# Fri, 05 Jun 2026 22:39:49 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:15:42 GMT
+# Fri, 05 Jun 2026 22:42:47 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 19 May 2026 23:15:42 GMT
+# Fri, 05 Jun 2026 22:42:47 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:15:42 GMT
+# Fri, 05 Jun 2026 22:42:47 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Tue, 19 May 2026 23:15:42 GMT
+# Fri, 05 Jun 2026 22:42:47 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 19 May 2026 23:15:42 GMT
+# Fri, 05 Jun 2026 22:42:47 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 19 May 2026 23:15:42 GMT
+# Fri, 05 Jun 2026 22:42:47 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 19 May 2026 23:15:42 GMT
+# Fri, 05 Jun 2026 22:42:48 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:15:42 GMT
+# Fri, 05 Jun 2026 22:42:48 GMT
 WORKDIR /var/www/html
-# Tue, 19 May 2026 23:15:42 GMT
+# Fri, 05 Jun 2026 22:42:48 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 19 May 2026 23:15:42 GMT
+# Fri, 05 Jun 2026 22:42:48 GMT
 CMD ["apache2-foreground"]
-# Wed, 03 Jun 2026 17:25:22 GMT
+# Sat, 06 Jun 2026 00:21:59 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         busybox-static         bzip2         libldap-common         libmagickcore-7.q16-10-extra         rsync     ;     apt-get dist-clean;         mkdir -p /var/spool/cron/crontabs;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data # buildkit
-# Wed, 03 Jun 2026 17:28:19 GMT
+# Sat, 06 Jun 2026 00:25:03 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Wed, 03 Jun 2026 17:28:19 GMT
+# Sat, 06 Jun 2026 00:25:03 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Wed, 03 Jun 2026 17:28:19 GMT
+# Sat, 06 Jun 2026 00:25:03 GMT
 ENV PHP_OPCACHE_MEMORY_CONSUMPTION=128
-# Wed, 03 Jun 2026 17:28:19 GMT
+# Sat, 06 Jun 2026 00:25:03 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libgmp-dev         libicu-dev         libjpeg-dev         libldap2-dev         liblz4-dev         libmagickwand-dev         libmemcached-dev         libpng-dev         libpq-dev         libwebp-dev         libxml2-dev         libzip-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure ftp --with-ftp-ssl;     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         ftp         gd         gmp         intl         ldap         pcntl         pdo_mysql         pdo_pgsql         sysvsem         zip     ;         pecl install APCu-5.1.28;     pecl install igbinary-3.2.16;     pecl install imagick-3.8.1;     pecl install --configureoptions 'enable-memcached-igbinary="yes"'         memcached-3.4.0;     pecl install --configureoptions 'enable-redis-igbinary="yes" enable-redis-zstd="yes" enable-redis-lz4="yes"'         redis-6.3.0;         docker-php-ext-enable         apcu         igbinary         imagick         memcached         redis     ;     rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'         | sort -u         | xargs -rt dpkg-query --search         | awk 'sub(":$", "", $1) { print $1 }'         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     apt-get dist-clean # buildkit
-# Wed, 03 Jun 2026 17:28:19 GMT
+# Sat, 06 Jun 2026 00:25:03 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=8M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'apc.serializer=igbinary';         echo 'session.serialize_handler=igbinary';     } >> "${PHP_INI_DIR}/conf.d/docker-php-ext-igbinary.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Wed, 03 Jun 2026 17:28:19 GMT
+# Sat, 06 Jun 2026 00:25:03 GMT
 VOLUME [/var/www/html]
-# Wed, 03 Jun 2026 17:28:19 GMT
+# Sat, 06 Jun 2026 00:25:03 GMT
 RUN a2enmod headers rewrite remoteip ;     {      echo 'RemoteIPHeader X-Real-IP';      echo 'RemoteIPInternalProxy 10.0.0.0/8';      echo 'RemoteIPInternalProxy 172.16.0.0/12';      echo 'RemoteIPInternalProxy 192.168.0.0/16';     } > /etc/apache2/conf-available/remoteip.conf;     a2enconf remoteip # buildkit
-# Wed, 03 Jun 2026 17:28:19 GMT
+# Sat, 06 Jun 2026 00:25:03 GMT
 ENV APACHE_BODY_LIMIT=1073741824
-# Wed, 03 Jun 2026 17:28:20 GMT
+# Sat, 06 Jun 2026 00:25:03 GMT
 RUN {      echo 'LimitRequestBody ${APACHE_BODY_LIMIT}';     } > /etc/apache2/conf-available/apache-limits.conf;     a2enconf apache-limits # buildkit
-# Wed, 03 Jun 2026 17:28:20 GMT
+# Sat, 06 Jun 2026 00:25:03 GMT
 ENV NEXTCLOUD_VERSION=33.0.5
-# Wed, 03 Jun 2026 17:29:06 GMT
+# Sat, 06 Jun 2026 00:25:52 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://github.com/nextcloud-releases/server/releases/download/v33.0.5/nextcloud-33.0.5.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://github.com/nextcloud-releases/server/releases/download/v33.0.5/nextcloud-33.0.5.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     apt-get dist-clean # buildkit
-# Wed, 03 Jun 2026 17:29:07 GMT
+# Sat, 06 Jun 2026 00:25:52 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Wed, 03 Jun 2026 17:29:07 GMT
+# Sat, 06 Jun 2026 00:25:52 GMT
 COPY config/* /usr/src/nextcloud/config/ # buildkit
-# Wed, 03 Jun 2026 17:29:07 GMT
+# Sat, 06 Jun 2026 00:25:52 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 03 Jun 2026 17:29:07 GMT
+# Sat, 06 Jun 2026 00:25:52 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -580,220 +580,220 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 19 May 2026 22:36:18 GMT  
 		Size: 26.2 MB (26205831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c80663a52f952db5086478df376d16a1453349952589840b8ca097442ab14cd0`  
-		Last Modified: Tue, 19 May 2026 23:12:12 GMT  
-		Size: 226.0 B  
+	-	`sha256:ef49eb4129cb389ab49a4d1edb009a8397667aa1a5a5a25c5fe09d2555c0e4fc`  
+		Last Modified: Fri, 05 Jun 2026 22:42:39 GMT  
+		Size: 227.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:514301f83bdb225277579f50588e6829724d3bb4841a4bd9b395db2279fdc9b7`  
-		Last Modified: Tue, 19 May 2026 23:12:16 GMT  
-		Size: 86.3 MB (86255720 bytes)  
+	-	`sha256:6367a2b5c37154791cd30e344f8752ad05592a3f102084d184ac119bc6d7950b`  
+		Last Modified: Fri, 05 Jun 2026 22:43:07 GMT  
+		Size: 86.3 MB (86256157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de8d537acfbe5e0ed1f39bf4dbf62e0972f207c66efa0236c4923f803929cba7`  
-		Last Modified: Tue, 19 May 2026 23:12:12 GMT  
-		Size: 226.0 B  
+	-	`sha256:cd9309e35ce84e354961e3afd02de3a72f241f3b1460a323eda422c15b695543`  
+		Last Modified: Fri, 05 Jun 2026 22:43:05 GMT  
+		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df07ddf8bb7bf114b7393188a3a09a3dde42d34aab799196b495413863548597`  
-		Last Modified: Tue, 19 May 2026 23:15:53 GMT  
-		Size: 3.8 MB (3756727 bytes)  
+	-	`sha256:3f0d964487f564b6dfeadb20c5fff09fe1df38a6c9d46fd37ad133bf8918e53f`  
+		Last Modified: Fri, 05 Jun 2026 22:43:05 GMT  
+		Size: 3.8 MB (3756685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e246333f81bf4c767d0117e2e9aed7af4e85fb1f22c421312d06a05c4354645e`  
-		Last Modified: Tue, 19 May 2026 23:15:53 GMT  
-		Size: 428.0 B  
+	-	`sha256:36c06cdcd530eb203db34b94a8afd9932168fbae523ea2c6e8a8ce886a4af733`  
+		Last Modified: Fri, 05 Jun 2026 22:43:06 GMT  
+		Size: 427.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12c2005f567285d1cecc792ab9910462f4a040ee0a264ced9cf3c29583920237`  
-		Last Modified: Tue, 19 May 2026 23:15:52 GMT  
-		Size: 486.0 B  
+	-	`sha256:113509df834836f0475b5a2f2e19589fa95bfe00c206ca57094305cc15bf8c32`  
+		Last Modified: Fri, 05 Jun 2026 22:43:07 GMT  
+		Size: 482.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a8bde70dd28dd0da6f86d033d9ea84c96693767acbceff05ae22f10012d1314`  
-		Last Modified: Tue, 19 May 2026 23:15:53 GMT  
-		Size: 13.9 MB (13882835 bytes)  
+	-	`sha256:0a6f4de93d6be1c989b55a76daea334c3fcb1409d7fd9438d45d45579a94b744`  
+		Last Modified: Fri, 05 Jun 2026 22:43:07 GMT  
+		Size: 13.9 MB (13896005 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f939df7e700eacb26c21da1ddaa9161610d10bff7aaaba1a3bd511444069a907`  
-		Last Modified: Tue, 19 May 2026 23:15:54 GMT  
+	-	`sha256:f8e4225a6ba24de6db35f1b12a6e46e90302e7d5ccab0c77dbeb54901ef6d6c8`  
+		Last Modified: Fri, 05 Jun 2026 22:43:07 GMT  
 		Size: 489.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68fd0f1300ce98b8d40b7c62e0e78d6e11bc4874d6a9ee669697950cc215e387`  
-		Last Modified: Tue, 19 May 2026 23:15:54 GMT  
-		Size: 11.7 MB (11711476 bytes)  
+	-	`sha256:0f45aa4ee8f5c467421c32a6e5a246f174accf76c226b5069e7d63b5d8f61f19`  
+		Last Modified: Fri, 05 Jun 2026 22:43:08 GMT  
+		Size: 11.7 MB (11712268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8be6cd7b7bb55ef1cc2bc74ec67d40ca3364199b7688f4d69a8efba03f53341c`  
-		Last Modified: Tue, 19 May 2026 23:15:54 GMT  
-		Size: 2.5 KB (2458 bytes)  
+	-	`sha256:f495d0bfbc535f696d03f3c519b27abeb5ecb8c8bfdf3329ae9da3bb9e42f302`  
+		Last Modified: Fri, 05 Jun 2026 22:43:08 GMT  
+		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4241455cb69f1cb7ecd0fd5dfed1ab1d96d3650add01233dcb5450ebdb0a6d26`  
-		Last Modified: Tue, 19 May 2026 23:15:54 GMT  
-		Size: 251.0 B  
+	-	`sha256:93caf799ddda63f51f7a21efea228ee1dfbdca9b9ae13fc553bfcb0d000ce346`  
+		Last Modified: Fri, 05 Jun 2026 22:43:08 GMT  
+		Size: 252.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9bff8cfbbb2aaa89540687ae8f12490fd81e4bd3d79cbce1468cd2e0242a2203`  
-		Last Modified: Tue, 19 May 2026 23:15:55 GMT  
-		Size: 246.0 B  
+	-	`sha256:459f7a2eb197aef2c8c84366628a0402c16e3aaf4e09486cb0c05a5658f89287`  
+		Last Modified: Fri, 05 Jun 2026 22:43:09 GMT  
+		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ec890c4e16ccb54c6732524f94d89e6b2605bac6b3f87cb543195667470be9c`  
-		Last Modified: Tue, 19 May 2026 23:15:55 GMT  
-		Size: 889.0 B  
+	-	`sha256:00f37676ccdb442a364c69c9d8896b4f91526107a0d6e4b649a158fc6bfd0160`  
+		Last Modified: Fri, 05 Jun 2026 22:43:09 GMT  
+		Size: 892.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92e2630a9e606d855c8f5d1a0d7333b95d0b2124365ea9c807e5f3ef437c52ec`  
-		Last Modified: Wed, 03 Jun 2026 17:29:38 GMT  
-		Size: 18.0 MB (18012366 bytes)  
+	-	`sha256:a92fbdc41b78a23f35c660263e22c32c7ffae298222db22adecf57378468197f`  
+		Last Modified: Sat, 06 Jun 2026 00:26:20 GMT  
+		Size: 18.0 MB (17996519 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:156b41327337ddc9c7c75214bafa07f85e4ee1b022688b44e709ce5ad14e1ebc`  
-		Last Modified: Wed, 03 Jun 2026 17:29:39 GMT  
-		Size: 35.3 MB (35276844 bytes)  
+	-	`sha256:04670d8dcebf8152d102d5a71e11646a37e48e84d22a9e5fef405b267d06bc3f`  
+		Last Modified: Sat, 06 Jun 2026 00:26:21 GMT  
+		Size: 34.7 MB (34650080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32b99cb43711590bcc0cf985bca267577ef175b7f47cb8707e39df5cf9b29cd6`  
-		Last Modified: Wed, 03 Jun 2026 17:29:37 GMT  
+	-	`sha256:45cfe675ae52aca5d8cdcd9c8d0ece67a087473ae53701a78b4acf459e3ba50d`  
+		Last Modified: Sat, 06 Jun 2026 00:26:20 GMT  
 		Size: 794.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f6536f7e84628177324c0a500353267bcbf593a012908dd719b199999c5580a4`  
-		Last Modified: Wed, 03 Jun 2026 17:29:37 GMT  
-		Size: 577.0 B  
+	-	`sha256:eb8bc3bc47a72b962eed019ba933d86f0455a8c4f1eaeb1002d818670cde2128`  
+		Last Modified: Sat, 06 Jun 2026 00:26:19 GMT  
+		Size: 570.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:166d8ca2f598745d4fa2ab5e311ff74f181ca04415d8b251fc79af6dcf8b1304`  
-		Last Modified: Wed, 03 Jun 2026 17:29:39 GMT  
-		Size: 403.0 B  
+	-	`sha256:2d6e3c5cfa850b05ada80cf75a37721f6a9aa8fdb7b56683080469b250775c59`  
+		Last Modified: Sat, 06 Jun 2026 00:26:21 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c7e1c9a374d56e028135d1ea85ac598c567ecc3333c8eea872d92d7da04aaddc`  
-		Last Modified: Wed, 03 Jun 2026 17:29:49 GMT  
-		Size: 265.8 MB (265803593 bytes)  
+	-	`sha256:ac2b839136055b89e533330e427d61b7028066ff6da08155d190793e9909418f`  
+		Last Modified: Sat, 06 Jun 2026 00:26:27 GMT  
+		Size: 265.8 MB (265803061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a1c892600e19fcc69570abad9503f7c0f5b9050709c501623b73d756a1aff9a`  
-		Last Modified: Wed, 03 Jun 2026 17:28:25 GMT  
+	-	`sha256:7ead0bfb2041b8af174be202d2482ca5000ab860fb67544ede6be7ac65adc587`  
+		Last Modified: Sat, 06 Jun 2026 00:26:22 GMT  
 		Size: 4.1 KB (4136 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:005bf397c17169963292d41bbfbc0a4ba8399c9968a8cd830dce6923ad1c8532`  
-		Last Modified: Wed, 03 Jun 2026 17:29:41 GMT  
-		Size: 2.4 KB (2416 bytes)  
+	-	`sha256:51b508cf6607eadbf359f66b8f0da4e6932974c5d9a8556c0272d21514ab0eaa`  
+		Last Modified: Sat, 06 Jun 2026 00:26:23 GMT  
+		Size: 2.4 KB (2413 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nextcloud:stable-apache` - unknown; unknown
 
 ```console
-$ docker pull nextcloud@sha256:b7e4e62af14f1d9e0e988c61968518e83a7b54cde0878313899e167b06310c4b
+$ docker pull nextcloud@sha256:a494b5757dbc2642203f22dd1716842ee88b5f9bee10b94ebe183a31f0686d9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **64.4 KB (64388 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:864dcb0c296a5061abd1c01aabc8f25a40fbca36a1a05d5faa04bae36c094bde`
+-	Image ID: `sha256:c4403aeefb1e71f856afa0ed210a7fbb1036c2a0c6818aaf85af5760863aa5d8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:440af28d719d7f9016c5aa059e4692677afbef15cd4b22d8920c5c4289776e0b`  
-		Last Modified: Wed, 03 Jun 2026 17:29:37 GMT  
+	-	`sha256:e1985d83c5d0a93cd9f72610cd691d5b416f630d2cb39b3537b8a57a321807ec`  
+		Last Modified: Sat, 06 Jun 2026 00:26:19 GMT  
 		Size: 64.4 KB (64388 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nextcloud:stable-apache` - linux; arm64 variant v8
 
 ```console
-$ docker pull nextcloud@sha256:19f655bb9e4b7395f8a3b1d76ad10c2c84a2e9dd66034cbfc1f3964aade11055
+$ docker pull nextcloud@sha256:a13c3b86d900241479f219c5013f0b107bb7e72d99699a8e32284353f938c4ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **494.9 MB (494881162 bytes)**  
+-	Total Size: **494.1 MB (494149851 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4cd19a8ac6a33c816516a121504dc220ffc088e7d71091f98559c85976c97558`
+-	Image ID: `sha256:f530a9f3fbf79b4cb6c8a14c1e31bea4945c1144bfc68dce5dcb1688436f4be1`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 18 May 2026 00:00:00 GMT
 RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1779062400'
-# Tue, 19 May 2026 23:08:21 GMT
+# Fri, 05 Jun 2026 22:38:59 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Tue, 19 May 2026 23:08:38 GMT
+# Fri, 05 Jun 2026 22:39:17 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 19 May 2026 23:08:38 GMT
+# Fri, 05 Jun 2026 22:39:17 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	apt-get dist-clean # buildkit
-# Tue, 19 May 2026 23:08:38 GMT
+# Fri, 05 Jun 2026 22:39:17 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 19 May 2026 23:08:38 GMT
+# Fri, 05 Jun 2026 22:39:18 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Tue, 19 May 2026 23:08:38 GMT
+# Fri, 05 Jun 2026 22:39:18 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Tue, 19 May 2026 23:08:38 GMT
+# Fri, 05 Jun 2026 22:39:18 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Tue, 19 May 2026 23:08:44 GMT
+# Fri, 05 Jun 2026 22:39:24 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	apt-get dist-clean; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Tue, 19 May 2026 23:08:44 GMT
+# Fri, 05 Jun 2026 22:39:24 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Tue, 19 May 2026 23:08:44 GMT
+# Fri, 05 Jun 2026 22:39:24 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Tue, 19 May 2026 23:08:44 GMT
+# Fri, 05 Jun 2026 22:39:24 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 19 May 2026 23:08:44 GMT
+# Fri, 05 Jun 2026 22:39:24 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 19 May 2026 23:08:44 GMT
+# Fri, 05 Jun 2026 22:39:24 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 19 May 2026 23:08:44 GMT
+# Fri, 05 Jun 2026 22:39:24 GMT
 ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
-# Tue, 19 May 2026 23:08:44 GMT
-ENV PHP_VERSION=8.4.21
-# Tue, 19 May 2026 23:08:44 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.4.21.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.21.tar.xz.asc
-# Tue, 19 May 2026 23:08:44 GMT
-ENV PHP_SHA256=7cf5d8ab12c3b2016875bcfaec71bef1ef0b07bed6148f2c447577074431f984
-# Tue, 19 May 2026 23:08:54 GMT
+# Fri, 05 Jun 2026 22:39:24 GMT
+ENV PHP_VERSION=8.4.22
+# Fri, 05 Jun 2026 22:39:24 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.4.22.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.22.tar.xz.asc
+# Fri, 05 Jun 2026 22:39:24 GMT
+ENV PHP_SHA256=696c0f6ad92e94c59059c1eb6e300842b8d050934226efcdf00f2a413cb083cf
+# Fri, 05 Jun 2026 22:39:34 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 19 May 2026 23:08:54 GMT
+# Fri, 05 Jun 2026 22:39:34 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:11:58 GMT
+# Fri, 05 Jun 2026 22:42:38 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 19 May 2026 23:11:58 GMT
+# Fri, 05 Jun 2026 22:42:38 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:11:58 GMT
+# Fri, 05 Jun 2026 22:42:38 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Tue, 19 May 2026 23:11:58 GMT
+# Fri, 05 Jun 2026 22:42:38 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 19 May 2026 23:11:58 GMT
+# Fri, 05 Jun 2026 22:42:38 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 19 May 2026 23:11:58 GMT
+# Fri, 05 Jun 2026 22:42:38 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 19 May 2026 23:11:58 GMT
+# Fri, 05 Jun 2026 22:42:38 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:11:59 GMT
+# Fri, 05 Jun 2026 22:42:38 GMT
 WORKDIR /var/www/html
-# Tue, 19 May 2026 23:11:59 GMT
+# Fri, 05 Jun 2026 22:42:38 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 19 May 2026 23:11:59 GMT
+# Fri, 05 Jun 2026 22:42:38 GMT
 CMD ["apache2-foreground"]
-# Wed, 03 Jun 2026 17:25:36 GMT
+# Sat, 06 Jun 2026 00:17:10 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         busybox-static         bzip2         libldap-common         libmagickcore-7.q16-10-extra         rsync     ;     apt-get dist-clean;         mkdir -p /var/spool/cron/crontabs;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data # buildkit
-# Wed, 03 Jun 2026 17:28:04 GMT
+# Sat, 06 Jun 2026 00:19:48 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Wed, 03 Jun 2026 17:28:04 GMT
+# Sat, 06 Jun 2026 00:19:48 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Wed, 03 Jun 2026 17:28:04 GMT
+# Sat, 06 Jun 2026 00:19:48 GMT
 ENV PHP_OPCACHE_MEMORY_CONSUMPTION=128
-# Wed, 03 Jun 2026 17:28:04 GMT
+# Sat, 06 Jun 2026 00:19:48 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libgmp-dev         libicu-dev         libjpeg-dev         libldap2-dev         liblz4-dev         libmagickwand-dev         libmemcached-dev         libpng-dev         libpq-dev         libwebp-dev         libxml2-dev         libzip-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure ftp --with-ftp-ssl;     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         ftp         gd         gmp         intl         ldap         pcntl         pdo_mysql         pdo_pgsql         sysvsem         zip     ;         pecl install APCu-5.1.28;     pecl install igbinary-3.2.16;     pecl install imagick-3.8.1;     pecl install --configureoptions 'enable-memcached-igbinary="yes"'         memcached-3.4.0;     pecl install --configureoptions 'enable-redis-igbinary="yes" enable-redis-zstd="yes" enable-redis-lz4="yes"'         redis-6.3.0;         docker-php-ext-enable         apcu         igbinary         imagick         memcached         redis     ;     rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'         | sort -u         | xargs -rt dpkg-query --search         | awk 'sub(":$", "", $1) { print $1 }'         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     apt-get dist-clean # buildkit
-# Wed, 03 Jun 2026 17:28:04 GMT
+# Sat, 06 Jun 2026 00:19:48 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=8M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'apc.serializer=igbinary';         echo 'session.serialize_handler=igbinary';     } >> "${PHP_INI_DIR}/conf.d/docker-php-ext-igbinary.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Wed, 03 Jun 2026 17:28:04 GMT
+# Sat, 06 Jun 2026 00:19:48 GMT
 VOLUME [/var/www/html]
-# Wed, 03 Jun 2026 17:28:04 GMT
+# Sat, 06 Jun 2026 00:19:48 GMT
 RUN a2enmod headers rewrite remoteip ;     {      echo 'RemoteIPHeader X-Real-IP';      echo 'RemoteIPInternalProxy 10.0.0.0/8';      echo 'RemoteIPInternalProxy 172.16.0.0/12';      echo 'RemoteIPInternalProxy 192.168.0.0/16';     } > /etc/apache2/conf-available/remoteip.conf;     a2enconf remoteip # buildkit
-# Wed, 03 Jun 2026 17:28:04 GMT
+# Sat, 06 Jun 2026 00:19:48 GMT
 ENV APACHE_BODY_LIMIT=1073741824
-# Wed, 03 Jun 2026 17:28:04 GMT
+# Sat, 06 Jun 2026 00:19:49 GMT
 RUN {      echo 'LimitRequestBody ${APACHE_BODY_LIMIT}';     } > /etc/apache2/conf-available/apache-limits.conf;     a2enconf apache-limits # buildkit
-# Wed, 03 Jun 2026 17:28:04 GMT
+# Sat, 06 Jun 2026 00:19:49 GMT
 ENV NEXTCLOUD_VERSION=33.0.5
-# Wed, 03 Jun 2026 17:28:41 GMT
+# Sat, 06 Jun 2026 00:20:32 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://github.com/nextcloud-releases/server/releases/download/v33.0.5/nextcloud-33.0.5.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://github.com/nextcloud-releases/server/releases/download/v33.0.5/nextcloud-33.0.5.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     apt-get dist-clean # buildkit
-# Wed, 03 Jun 2026 17:28:41 GMT
+# Sat, 06 Jun 2026 00:20:32 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Wed, 03 Jun 2026 17:28:41 GMT
+# Sat, 06 Jun 2026 00:20:32 GMT
 COPY config/* /usr/src/nextcloud/config/ # buildkit
-# Wed, 03 Jun 2026 17:28:41 GMT
+# Sat, 06 Jun 2026 00:20:32 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 03 Jun 2026 17:28:41 GMT
+# Sat, 06 Jun 2026 00:20:32 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -802,220 +802,220 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 19 May 2026 22:36:58 GMT  
 		Size: 30.1 MB (30141919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37d5b5a36dca1e5b92d670201258e6eb21a7f1ddbd7962e42b1cc4aebb659f26`  
-		Last Modified: Tue, 19 May 2026 23:12:19 GMT  
-		Size: 225.0 B  
+	-	`sha256:732ca734afc06998cc4f469d46d7ea72ebe993b64300582fa19dadf760777d16`  
+		Last Modified: Fri, 05 Jun 2026 22:42:26 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:536de9c4c15e9f78ca996ab669b28d7ceeebdba2a94fc0e98965d4747b5b6f64`  
-		Last Modified: Tue, 19 May 2026 23:12:23 GMT  
-		Size: 110.2 MB (110168949 bytes)  
+	-	`sha256:59526dcf80a0c0a7c37013ed0742cbfd2896a4817db99f2bf2a4c5de829dacb9`  
+		Last Modified: Fri, 05 Jun 2026 22:43:02 GMT  
+		Size: 110.2 MB (110169134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dff06c75883e058ceef56d0ac4f3023b4583d14fdb0cc7597e453b2d98cbb51a`  
-		Last Modified: Tue, 19 May 2026 23:12:20 GMT  
-		Size: 225.0 B  
+	-	`sha256:d0476155b25748c07c80dae6490653f5e448ceec83aca078540f2a445829b1c7`  
+		Last Modified: Fri, 05 Jun 2026 22:42:39 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58ca39218606bec14214775e838112e7a29066907a8ba8e6008199b72dd667e`  
-		Last Modified: Tue, 19 May 2026 23:12:20 GMT  
-		Size: 4.3 MB (4307754 bytes)  
+	-	`sha256:8cc7e4e26cbc5e7ec40f197b561c548d521ad703e9c12dca6ced20f8c1b64273`  
+		Last Modified: Fri, 05 Jun 2026 22:43:00 GMT  
+		Size: 4.3 MB (4308172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ebb1a39d4228ed2f7eaf2d52d5b5793cec4eb9bcde4f9027f5c20098a682f7b`  
-		Last Modified: Tue, 19 May 2026 23:12:21 GMT  
-		Size: 431.0 B  
+	-	`sha256:f7aed88e2e78ce24c3af427e303d304b2f871abdef109566e0d94a32b91ec8a6`  
+		Last Modified: Fri, 05 Jun 2026 22:42:59 GMT  
+		Size: 429.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:142446d5adc5ca005def03fd448488ceb2a15d746803a5e83ba2896629472090`  
-		Last Modified: Tue, 19 May 2026 23:12:21 GMT  
-		Size: 484.0 B  
+	-	`sha256:d3d0812317ab085f405383e23b0f3d4ecc4929ef770fca793631e3be7e94f600`  
+		Last Modified: Fri, 05 Jun 2026 22:43:00 GMT  
+		Size: 482.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a6fb3609dbd200fe21a32e450678c298349a0bc3a595e72fc75054cd97750692`  
-		Last Modified: Tue, 19 May 2026 23:12:22 GMT  
-		Size: 13.9 MB (13884748 bytes)  
+	-	`sha256:ba2b825dc1b8409e1bd52d7a3b3eb1a9b371a6ff431a86b8244e717bb4ea13bc`  
+		Last Modified: Fri, 05 Jun 2026 22:43:01 GMT  
+		Size: 13.9 MB (13898308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f451f954588713077eba1528bdf576c62e36a2786b650e529c1312ca0779bf2b`  
-		Last Modified: Tue, 19 May 2026 23:12:22 GMT  
-		Size: 488.0 B  
+	-	`sha256:b323b6ea7172ef2c98c5d34dc925223748bf5bcc4fb844939e9b4e229ef517c2`  
+		Last Modified: Fri, 05 Jun 2026 22:43:01 GMT  
+		Size: 492.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9f705090045184ba1ef36096ed379d8f219ba2a946008580360786a82fc7539`  
-		Last Modified: Tue, 19 May 2026 23:12:23 GMT  
-		Size: 13.3 MB (13334110 bytes)  
+	-	`sha256:ba0c91725ddc70a56d006a136b82bc420ea438a86760ff5697a6843df5090c49`  
+		Last Modified: Fri, 05 Jun 2026 22:43:02 GMT  
+		Size: 13.3 MB (13338628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e475e0a28744bb8ff4007ba3f03123179fb7d05a1afea86c6f4a3d1c6a72324d`  
-		Last Modified: Tue, 19 May 2026 23:12:23 GMT  
-		Size: 2.5 KB (2460 bytes)  
+	-	`sha256:1f79777aa9c5694485f0fd5c66481eb57912a5d866cb94b83c1dbc3c7ac36d81`  
+		Last Modified: Fri, 05 Jun 2026 22:43:02 GMT  
+		Size: 2.5 KB (2465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2c8573b313e05de7cd6480731b2b6c9716f3e3707b2672aba650d78ce8d7ab1`  
-		Last Modified: Tue, 19 May 2026 23:12:23 GMT  
-		Size: 252.0 B  
+	-	`sha256:541b2d572ceebb95ceafc03d938614476c4d6dc4b6b6269174f7df9f271ae4c1`  
+		Last Modified: Fri, 05 Jun 2026 22:43:02 GMT  
+		Size: 250.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2551f678d737d85c42d9aca42274a61b9a52e3c76ccb5aaf38de697ec9f15d94`  
-		Last Modified: Tue, 19 May 2026 23:12:24 GMT  
-		Size: 247.0 B  
+	-	`sha256:65d3a4c5525c34dcb8f795daa01a06232d5a8ec5744f7ea32a24a680bd37dd97`  
+		Last Modified: Fri, 05 Jun 2026 22:43:03 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dfba6557d00f1426caccc2d950544ea65a12a6893d3fafccee56e3a49fa53f98`  
-		Last Modified: Tue, 19 May 2026 23:12:24 GMT  
-		Size: 891.0 B  
+	-	`sha256:6c81cd241d73959c6db6cec284b640d26831e691013fa670935c5d93f4f9bea2`  
+		Last Modified: Fri, 05 Jun 2026 22:43:03 GMT  
+		Size: 894.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:067a99212c1dc0e94b016e779b85641297146d67ed52c555981b3e46b356e18f`  
-		Last Modified: Wed, 03 Jun 2026 17:29:12 GMT  
-		Size: 19.7 MB (19696725 bytes)  
+	-	`sha256:a9a434bb8bd01f65a86a5241bff15ba1d1943216ce6762deb39a8d658b8c13be`  
+		Last Modified: Sat, 06 Jun 2026 00:21:00 GMT  
+		Size: 19.7 MB (19680988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee966b77a9363b3b0d054bb08076837847ac75b981f29930008f187cfcd09aae`  
-		Last Modified: Wed, 03 Jun 2026 17:29:12 GMT  
-		Size: 37.5 MB (37527443 bytes)  
+	-	`sha256:38a3ac3bdc0adc9637794f77ff2270297db8dcfc7a9001a11b85e6e07fae5910`  
+		Last Modified: Sat, 06 Jun 2026 00:21:01 GMT  
+		Size: 36.8 MB (36793570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ef5a0511dafa5169e2118a2196c176153f32f68051ab3634e786493efd5ea51`  
-		Last Modified: Wed, 03 Jun 2026 17:29:11 GMT  
-		Size: 789.0 B  
+	-	`sha256:60c1778dfc702c1c111eea2a3395c5ead0a03c0c55e46fc30d53bda879820408`  
+		Last Modified: Sat, 06 Jun 2026 00:20:59 GMT  
+		Size: 790.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7671d9164bfad5e7c090ae332986b4a27433e6255272a3a97b2d1d58769ae619`  
-		Last Modified: Wed, 03 Jun 2026 17:29:11 GMT  
-		Size: 575.0 B  
+	-	`sha256:b3ef304754bbf0ffd24d24c979c37b07a57a976c985a52774648f33e01b20ffb`  
+		Last Modified: Sat, 06 Jun 2026 00:21:00 GMT  
+		Size: 568.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc040a21a6e7373c6872b45874f06d31945911966914d95aa33f709cfd010180`  
-		Last Modified: Wed, 03 Jun 2026 17:29:12 GMT  
-		Size: 408.0 B  
+	-	`sha256:ee05a67d6619aabac9135887e81e8535cff6f231a476a91b568be729d7fe6955`  
+		Last Modified: Sat, 06 Jun 2026 00:21:01 GMT  
+		Size: 398.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f59d4b4defa5fa8989f28b00bcf4ea844d23e6f68a995cc314dddea9aa67282c`  
-		Last Modified: Wed, 03 Jun 2026 17:29:17 GMT  
-		Size: 265.8 MB (265805454 bytes)  
+	-	`sha256:1c0cce255a31bd4cad9cffe08a26d27d0915ceaee28f61950d9265b01cdcc8c0`  
+		Last Modified: Sat, 06 Jun 2026 00:21:07 GMT  
+		Size: 265.8 MB (265805088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09016749827809bdad5a5bf59653e0d01826dc8902f4743225321fb0b9bebab1`  
-		Last Modified: Wed, 03 Jun 2026 17:29:13 GMT  
-		Size: 4.1 KB (4135 bytes)  
+	-	`sha256:c8021e0d06fd3cb60c981841e9031445f6fea65547a61d10f70db18df948e331`  
+		Last Modified: Sat, 06 Jun 2026 00:21:02 GMT  
+		Size: 4.1 KB (4136 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ea1eecc0c22f7c7832f87e0459f2041d66cf6f805f261b5bc8ad31a46652be9`  
-		Last Modified: Wed, 03 Jun 2026 17:29:13 GMT  
-		Size: 2.4 KB (2418 bytes)  
+	-	`sha256:3df6a6edb7cc23cfffe17ba1b413f52aff9f77f55c98f879d4ed2628d58b23ca`  
+		Last Modified: Sat, 06 Jun 2026 00:21:02 GMT  
+		Size: 2.4 KB (2413 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nextcloud:stable-apache` - unknown; unknown
 
 ```console
-$ docker pull nextcloud@sha256:93e6bcfb2cc4b57f0e6efa4b50ac93d9178f090b9b314007469e9a5754535f96
+$ docker pull nextcloud@sha256:5959ffd560bebe0e8d7fb862b9fdead3c524d6041c93b547c36a4102c3981042
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **64.5 KB (64463 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ee3fc94797d860cf394effbbd846a2c1ac671ff08953d27f01e048797db39eb`
+-	Image ID: `sha256:ea8286bb024fda382cc1df99d256eebd44b96d81eac51a3668579540b9037889`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:419572a38c417857d2f8bf1d97f0f2bb1a5b55274d728fe4af20ea97cd89b28d`  
-		Last Modified: Wed, 03 Jun 2026 17:29:11 GMT  
+	-	`sha256:184b9aebbb8e11d8d4dececebddb46ff50dc945bfbe2346c76fa669173024384`  
+		Last Modified: Sat, 06 Jun 2026 00:20:59 GMT  
 		Size: 64.5 KB (64463 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nextcloud:stable-apache` - linux; 386
 
 ```console
-$ docker pull nextcloud@sha256:5e49f7c0842a39a2a0c0a89bd93ffe3aa941a5bea0ff78d59e5c138bc1ad3558
+$ docker pull nextcloud@sha256:1954d902902fc8237ea5ca2620967cc0e7833fdb57bcb7466c19462f3198df09
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **504.9 MB (504905703 bytes)**  
+-	Total Size: **504.1 MB (504118654 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b83cea6c73f9c7606f050ad67f27e49ec2670517115c3ac9e5e65538844d2efa`
+-	Image ID: `sha256:3fddffcc8a77ed93495a8e7beebf1f237e9efd5a04d8da708578fd0961a88ca6`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Mon, 18 May 2026 00:00:00 GMT
 RUN # debian.sh --arch 'i386' out/ 'trixie' '@1779062400'
-# Tue, 19 May 2026 22:59:34 GMT
+# Fri, 05 Jun 2026 22:38:59 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Tue, 19 May 2026 22:59:52 GMT
+# Fri, 05 Jun 2026 22:39:15 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 19 May 2026 22:59:52 GMT
+# Fri, 05 Jun 2026 22:39:15 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	apt-get dist-clean # buildkit
-# Tue, 19 May 2026 22:59:52 GMT
+# Fri, 05 Jun 2026 22:39:15 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 19 May 2026 22:59:52 GMT
+# Fri, 05 Jun 2026 22:39:15 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Tue, 19 May 2026 22:59:52 GMT
+# Fri, 05 Jun 2026 22:39:15 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Tue, 19 May 2026 22:59:52 GMT
+# Fri, 05 Jun 2026 22:39:15 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Tue, 19 May 2026 23:03:54 GMT
+# Fri, 05 Jun 2026 22:39:21 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	apt-get dist-clean; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Tue, 19 May 2026 23:03:54 GMT
+# Fri, 05 Jun 2026 22:39:21 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Tue, 19 May 2026 23:03:54 GMT
+# Fri, 05 Jun 2026 22:39:21 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Tue, 19 May 2026 23:03:54 GMT
+# Fri, 05 Jun 2026 22:39:21 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 19 May 2026 23:03:54 GMT
+# Fri, 05 Jun 2026 22:39:21 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 19 May 2026 23:03:54 GMT
+# Fri, 05 Jun 2026 22:39:21 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 19 May 2026 23:03:54 GMT
+# Fri, 05 Jun 2026 22:39:21 GMT
 ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
-# Tue, 19 May 2026 23:03:54 GMT
-ENV PHP_VERSION=8.4.21
-# Tue, 19 May 2026 23:03:54 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.4.21.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.21.tar.xz.asc
-# Tue, 19 May 2026 23:03:54 GMT
-ENV PHP_SHA256=7cf5d8ab12c3b2016875bcfaec71bef1ef0b07bed6148f2c447577074431f984
-# Tue, 19 May 2026 23:04:04 GMT
+# Fri, 05 Jun 2026 22:39:21 GMT
+ENV PHP_VERSION=8.4.22
+# Fri, 05 Jun 2026 22:39:21 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.4.22.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.22.tar.xz.asc
+# Fri, 05 Jun 2026 22:39:21 GMT
+ENV PHP_SHA256=696c0f6ad92e94c59059c1eb6e300842b8d050934226efcdf00f2a413cb083cf
+# Fri, 05 Jun 2026 22:39:30 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 19 May 2026 23:04:04 GMT
+# Fri, 05 Jun 2026 22:39:30 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:07:05 GMT
+# Fri, 05 Jun 2026 22:42:07 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 19 May 2026 23:07:05 GMT
+# Fri, 05 Jun 2026 22:42:07 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:07:06 GMT
+# Fri, 05 Jun 2026 22:42:07 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Tue, 19 May 2026 23:07:06 GMT
+# Fri, 05 Jun 2026 22:42:07 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 19 May 2026 23:07:06 GMT
+# Fri, 05 Jun 2026 22:42:07 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 19 May 2026 23:07:06 GMT
+# Fri, 05 Jun 2026 22:42:07 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 19 May 2026 23:07:06 GMT
+# Fri, 05 Jun 2026 22:42:07 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:07:06 GMT
+# Fri, 05 Jun 2026 22:42:07 GMT
 WORKDIR /var/www/html
-# Tue, 19 May 2026 23:07:06 GMT
+# Fri, 05 Jun 2026 22:42:07 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 19 May 2026 23:07:06 GMT
+# Fri, 05 Jun 2026 22:42:07 GMT
 CMD ["apache2-foreground"]
-# Wed, 03 Jun 2026 17:25:36 GMT
+# Sat, 06 Jun 2026 00:16:18 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         busybox-static         bzip2         libldap-common         libmagickcore-7.q16-10-extra         rsync     ;     apt-get dist-clean;         mkdir -p /var/spool/cron/crontabs;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data # buildkit
-# Wed, 03 Jun 2026 17:27:42 GMT
+# Sat, 06 Jun 2026 00:18:44 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Wed, 03 Jun 2026 17:27:42 GMT
+# Sat, 06 Jun 2026 00:18:44 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Wed, 03 Jun 2026 17:27:42 GMT
+# Sat, 06 Jun 2026 00:18:44 GMT
 ENV PHP_OPCACHE_MEMORY_CONSUMPTION=128
-# Wed, 03 Jun 2026 17:27:42 GMT
+# Sat, 06 Jun 2026 00:18:44 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libgmp-dev         libicu-dev         libjpeg-dev         libldap2-dev         liblz4-dev         libmagickwand-dev         libmemcached-dev         libpng-dev         libpq-dev         libwebp-dev         libxml2-dev         libzip-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure ftp --with-ftp-ssl;     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         ftp         gd         gmp         intl         ldap         pcntl         pdo_mysql         pdo_pgsql         sysvsem         zip     ;         pecl install APCu-5.1.28;     pecl install igbinary-3.2.16;     pecl install imagick-3.8.1;     pecl install --configureoptions 'enable-memcached-igbinary="yes"'         memcached-3.4.0;     pecl install --configureoptions 'enable-redis-igbinary="yes" enable-redis-zstd="yes" enable-redis-lz4="yes"'         redis-6.3.0;         docker-php-ext-enable         apcu         igbinary         imagick         memcached         redis     ;     rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'         | sort -u         | xargs -rt dpkg-query --search         | awk 'sub(":$", "", $1) { print $1 }'         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     apt-get dist-clean # buildkit
-# Wed, 03 Jun 2026 17:27:42 GMT
+# Sat, 06 Jun 2026 00:18:45 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=8M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'apc.serializer=igbinary';         echo 'session.serialize_handler=igbinary';     } >> "${PHP_INI_DIR}/conf.d/docker-php-ext-igbinary.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Wed, 03 Jun 2026 17:27:42 GMT
+# Sat, 06 Jun 2026 00:18:45 GMT
 VOLUME [/var/www/html]
-# Wed, 03 Jun 2026 17:27:42 GMT
+# Sat, 06 Jun 2026 00:18:45 GMT
 RUN a2enmod headers rewrite remoteip ;     {      echo 'RemoteIPHeader X-Real-IP';      echo 'RemoteIPInternalProxy 10.0.0.0/8';      echo 'RemoteIPInternalProxy 172.16.0.0/12';      echo 'RemoteIPInternalProxy 192.168.0.0/16';     } > /etc/apache2/conf-available/remoteip.conf;     a2enconf remoteip # buildkit
-# Wed, 03 Jun 2026 17:27:42 GMT
+# Sat, 06 Jun 2026 00:18:45 GMT
 ENV APACHE_BODY_LIMIT=1073741824
-# Wed, 03 Jun 2026 17:27:42 GMT
+# Sat, 06 Jun 2026 00:18:45 GMT
 RUN {      echo 'LimitRequestBody ${APACHE_BODY_LIMIT}';     } > /etc/apache2/conf-available/apache-limits.conf;     a2enconf apache-limits # buildkit
-# Wed, 03 Jun 2026 17:27:42 GMT
+# Sat, 06 Jun 2026 00:18:45 GMT
 ENV NEXTCLOUD_VERSION=33.0.5
-# Wed, 03 Jun 2026 17:28:18 GMT
+# Sat, 06 Jun 2026 00:19:24 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://github.com/nextcloud-releases/server/releases/download/v33.0.5/nextcloud-33.0.5.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://github.com/nextcloud-releases/server/releases/download/v33.0.5/nextcloud-33.0.5.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     apt-get dist-clean # buildkit
-# Wed, 03 Jun 2026 17:28:18 GMT
+# Sat, 06 Jun 2026 00:19:24 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Wed, 03 Jun 2026 17:28:18 GMT
+# Sat, 06 Jun 2026 00:19:24 GMT
 COPY config/* /usr/src/nextcloud/config/ # buildkit
-# Wed, 03 Jun 2026 17:28:18 GMT
+# Sat, 06 Jun 2026 00:19:24 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 03 Jun 2026 17:28:18 GMT
+# Sat, 06 Jun 2026 00:19:24 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1024,125 +1024,125 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 19 May 2026 22:37:18 GMT  
 		Size: 31.3 MB (31295335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ae7ef0e2b9b8831424e569f81adb803e123836986b90b85facc1082aff0e10ef`  
-		Last Modified: Tue, 19 May 2026 23:03:36 GMT  
+	-	`sha256:732ca734afc06998cc4f469d46d7ea72ebe993b64300582fa19dadf760777d16`  
+		Last Modified: Fri, 05 Jun 2026 22:42:26 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f81e1fbd7e8c7666219c63cd3fd7c04b90c6d3ea9a4cc7081909983cec74d4f`  
-		Last Modified: Tue, 19 May 2026 23:03:40 GMT  
-		Size: 116.1 MB (116142338 bytes)  
+	-	`sha256:6d740fa7e6837d80b1e04704f9c826afb84614d0ae758f8904665acd449aafe3`  
+		Last Modified: Fri, 05 Jun 2026 22:42:28 GMT  
+		Size: 116.1 MB (116142193 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b4a1e4fab902fc8e38f6c1e11f37967937f31b067ad0dacf2e8143071267a78`  
-		Last Modified: Tue, 19 May 2026 23:03:36 GMT  
+	-	`sha256:da462e12d196369d393599d669ddfb1524d415a8d36fb2ce1390b2f05e46f343`  
+		Last Modified: Fri, 05 Jun 2026 22:42:26 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f110b68dd5333b080598c4f99cfea0e4f2fb066a957dbafee578356c73d7a0a4`  
-		Last Modified: Tue, 19 May 2026 23:07:16 GMT  
-		Size: 4.5 MB (4459220 bytes)  
+	-	`sha256:4602c55c0f71750b4b8a70c5ac33b7372b06f1754c15a97b1db5720faaf2f6d8`  
+		Last Modified: Fri, 05 Jun 2026 22:42:26 GMT  
+		Size: 4.5 MB (4459159 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7807629de4dddfc71738872769e6e2fff272bc313d237a5895efcd5028e43c9`  
-		Last Modified: Tue, 19 May 2026 23:07:16 GMT  
-		Size: 428.0 B  
+	-	`sha256:ef107ef7934abace6976310ecdfe9596971080576c11a4e885cbcb201b7cec50`  
+		Last Modified: Fri, 05 Jun 2026 22:42:27 GMT  
+		Size: 427.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef3e0eee4f7b5a2d277ad1759243ad63ee2cdead09d47231593a865b903c187f`  
-		Last Modified: Tue, 19 May 2026 23:07:16 GMT  
-		Size: 481.0 B  
+	-	`sha256:1d64c752c2c00bc0341d336eb708f0edb8577f364587e49b997637be91f51863`  
+		Last Modified: Fri, 05 Jun 2026 22:42:27 GMT  
+		Size: 480.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed5855bec8215b60ceec7b88ab06366e12930281a465289587b21203cece65a1`  
-		Last Modified: Tue, 19 May 2026 23:07:17 GMT  
-		Size: 13.9 MB (13884144 bytes)  
+	-	`sha256:3cf8cad72ee668d3bc49d93323d01860360678ab389d9ebd57706a0b1d5a27eb`  
+		Last Modified: Fri, 05 Jun 2026 22:42:28 GMT  
+		Size: 13.9 MB (13897515 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1fd255a001652510f95ed1906742ea6ebfe7c19658485062ea36f09323e45d3`  
-		Last Modified: Tue, 19 May 2026 23:07:17 GMT  
-		Size: 489.0 B  
+	-	`sha256:f2363aa8225c0535ea2d19e7c744a722c019e5e7577aa677c90aaac99bbf44c6`  
+		Last Modified: Fri, 05 Jun 2026 22:42:28 GMT  
+		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44576d934420317703b71545fd9bdde8b762a2f9c806701eba3a8e0b736245f2`  
-		Last Modified: Tue, 19 May 2026 23:07:18 GMT  
-		Size: 14.0 MB (13985036 bytes)  
+	-	`sha256:68bc5078b97fdabfb77ccc5a379fddf75f58e181f8094a06d5adca56f45c1d55`  
+		Last Modified: Fri, 05 Jun 2026 22:42:28 GMT  
+		Size: 14.0 MB (13988055 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a41208d9007a2684e316ab71688d3be38ad1909c0ace36bc298927a6257383e`  
-		Last Modified: Tue, 19 May 2026 23:07:18 GMT  
-		Size: 2.5 KB (2459 bytes)  
+	-	`sha256:c5a60493158bff33ed907925f5b7516f927a9bc4af4c1cad7a28a80ae463ee73`  
+		Last Modified: Fri, 05 Jun 2026 22:42:29 GMT  
+		Size: 2.5 KB (2461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9d49c8d9ecac46abcf0b5048e75e8c5dec65af5c4d62c40a57c36d6f05221e5`  
-		Last Modified: Tue, 19 May 2026 23:07:18 GMT  
-		Size: 251.0 B  
+	-	`sha256:d0d8f67303c7306033e175897c5840ef369f3d0437d3f32e7a0138b24c6295d7`  
+		Last Modified: Fri, 05 Jun 2026 22:42:29 GMT  
+		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2935f5923823861b3bd1c19c09d06a52bb3027831c8cfb7c420fc7e875ee1816`  
-		Last Modified: Tue, 19 May 2026 23:07:18 GMT  
-		Size: 247.0 B  
+	-	`sha256:ac3512886fadf9d7fbc67b7f5289e56439af41d1755a7db5829b053cc2993ca7`  
+		Last Modified: Fri, 05 Jun 2026 22:42:30 GMT  
+		Size: 244.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:232c1d432d5c14625d1d0c0b7ed47bd10db79d8a6c5202b0ef339f9cf3790f50`  
-		Last Modified: Tue, 19 May 2026 23:07:19 GMT  
-		Size: 890.0 B  
+	-	`sha256:6464ea7db1775cb7c4c2379aff6ef7528001daafb896c2e2d88e622766c192d4`  
+		Last Modified: Fri, 05 Jun 2026 22:42:30 GMT  
+		Size: 892.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5cf4adca7f3d8976ef4b85a19c3cae30eb0d39a0a9c41d5a368e3e698490c81f`  
-		Last Modified: Wed, 03 Jun 2026 17:28:45 GMT  
-		Size: 21.2 MB (21228403 bytes)  
+	-	`sha256:557b037209cf90e3b2bbb552fc9abf6414dbf44069d2ab5b7c3d091a7f41898c`  
+		Last Modified: Sat, 06 Jun 2026 00:19:52 GMT  
+		Size: 21.2 MB (21213389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd5c0d7d26cd0da8181b4df592f9e70674eff527c7de415df00b1a753bf3ddc1`  
-		Last Modified: Wed, 03 Jun 2026 17:28:45 GMT  
-		Size: 38.1 MB (38092177 bytes)  
+	-	`sha256:f6d75019e2bdc502d2760484a67ea14dbbaa1f9334c8d65e418e88e89e489b1e`  
+		Last Modified: Sat, 06 Jun 2026 00:19:52 GMT  
+		Size: 37.3 MB (37304417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d57107405d7a9460684b544a4d4bcc8e61f07e3343043f729821d56bb58f407d`  
-		Last Modified: Wed, 03 Jun 2026 17:28:44 GMT  
-		Size: 794.0 B  
+	-	`sha256:dba78fee89265e16023647fb80a0d6e0f16631e5859c2588ab1d91e28c941f40`  
+		Last Modified: Sat, 06 Jun 2026 00:19:51 GMT  
+		Size: 792.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9eb58021a64dbe90d6ea865608488cf3be5b65b1b693a5069ce7e3fdcd636c58`  
-		Last Modified: Wed, 03 Jun 2026 17:28:44 GMT  
-		Size: 574.0 B  
+	-	`sha256:c6e6545cfa05a7a25e612b90245d518083da1e7f91a122144711620a11a18f9a`  
+		Last Modified: Sat, 06 Jun 2026 00:19:51 GMT  
+		Size: 567.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b941a3f2bcc7b8724ecf310a4a37b41c6b795ced211d8f9a083898f67d003ebb`  
-		Last Modified: Wed, 03 Jun 2026 17:28:45 GMT  
-		Size: 402.0 B  
+	-	`sha256:23b6efa59be8c0b0e8c18b2072b66e0d97661404d6a7717500170830d4bdf383`  
+		Last Modified: Sat, 06 Jun 2026 00:19:52 GMT  
+		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05031686c1f07d1175b1e205e7cf2ff0a733f63a18c7293e1ec8f3890fb9c8f9`  
-		Last Modified: Wed, 03 Jun 2026 17:28:52 GMT  
-		Size: 265.8 MB (265805003 bytes)  
+	-	`sha256:94f8402a1c0eb1fc549173f12f2393f61ae3d372587ab35cdd5af96bb3810710`  
+		Last Modified: Sat, 06 Jun 2026 00:19:58 GMT  
+		Size: 265.8 MB (265804558 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70931de9572a9614e124f3970e776fd4c9c0e953171271fa1668d1a67241d523`  
-		Last Modified: Wed, 03 Jun 2026 17:28:46 GMT  
-		Size: 4.1 KB (4135 bytes)  
+	-	`sha256:47cf8a5868c21d26f64182ba4e498e9f655acda1fa52f997675747b8e18d7b71`  
+		Last Modified: Sat, 06 Jun 2026 00:19:53 GMT  
+		Size: 4.1 KB (4134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9136436774420f4e8dc846c9d98159da4dfd56f32a1af2bd61600746d75aab0`  
-		Last Modified: Wed, 03 Jun 2026 17:28:47 GMT  
-		Size: 2.4 KB (2413 bytes)  
+	-	`sha256:5cd6b4299543bc503aaeb055b12354e575e305dd8f17a223322d7a3c029740e6`  
+		Last Modified: Sat, 06 Jun 2026 00:19:54 GMT  
+		Size: 2.4 KB (2415 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nextcloud:stable-apache` - unknown; unknown
 
 ```console
-$ docker pull nextcloud@sha256:b4514c4c95a67f2317a9a9d6995499d884f715562b3d2dece05a5cd27ed3a1bc
+$ docker pull nextcloud@sha256:73987288793678620649ae1b6c1c4a2c594f00c66736f608803705c16c2c8510
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **64.1 KB (64106 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:713f37fedc9e0e2ccdc77e12f0164543262e14df035a91cf4d1faaf2e09eb633`
+-	Image ID: `sha256:e776c50f4785a31b38523716f300e3d2fe41699bd2dd11d31c08c760c14259c4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a99442353d76ea1df7ac09ace5249b85c00002a17a5d95f49600d0ebe1f07b1c`  
-		Last Modified: Wed, 03 Jun 2026 17:28:43 GMT  
+	-	`sha256:b8b52ea9524f3197725c5a5e0e937dffca027355c24653133e9ea79505304168`  
+		Last Modified: Sat, 06 Jun 2026 00:19:50 GMT  
 		Size: 64.1 KB (64106 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nextcloud:stable-apache` - linux; ppc64le
 
 ```console
-$ docker pull nextcloud@sha256:5cd1a320c86373a32c63a69cf993f609ac03bff7682c52e9f39ee2d12cae5c11
+$ docker pull nextcloud@sha256:e9c34cdf718f653ca66cf1d30467880ab793786bb317c0a10fc0ad66bd68dc5a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **503.3 MB (503346517 bytes)**  
+-	Total Size: **503.4 MB (503363883 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c6699c4f4f96f8e98f05c6a296f97c8de694a8fde65dd7cc76d340ab6814e12`
+-	Image ID: `sha256:770f37e5ffe9556cf6dafea225e0a54974e5eff8a9c859a50122c95eb15ec58e`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1178,66 +1178,66 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 19 May 2026 23:29:19 GMT
 ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
 # Tue, 19 May 2026 23:29:19 GMT
-ENV PHP_VERSION=8.4.21
+ENV PHP_VERSION=8.4.22
 # Tue, 19 May 2026 23:29:19 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.4.21.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.21.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.4.22.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.22.tar.xz.asc
 # Tue, 19 May 2026 23:29:19 GMT
-ENV PHP_SHA256=7cf5d8ab12c3b2016875bcfaec71bef1ef0b07bed6148f2c447577074431f984
-# Tue, 19 May 2026 23:50:55 GMT
+ENV PHP_SHA256=696c0f6ad92e94c59059c1eb6e300842b8d050934226efcdf00f2a413cb083cf
+# Fri, 05 Jun 2026 22:38:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 19 May 2026 23:50:55 GMT
+# Fri, 05 Jun 2026 22:38:17 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:55:07 GMT
+# Fri, 05 Jun 2026 22:43:47 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 19 May 2026 23:55:08 GMT
+# Fri, 05 Jun 2026 22:43:48 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:55:08 GMT
+# Fri, 05 Jun 2026 22:43:49 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Tue, 19 May 2026 23:55:09 GMT
+# Fri, 05 Jun 2026 22:43:50 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 19 May 2026 23:55:09 GMT
+# Fri, 05 Jun 2026 22:43:50 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 19 May 2026 23:55:09 GMT
+# Fri, 05 Jun 2026 22:43:50 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 19 May 2026 23:55:09 GMT
+# Fri, 05 Jun 2026 22:43:51 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:55:09 GMT
+# Fri, 05 Jun 2026 22:43:51 GMT
 WORKDIR /var/www/html
-# Tue, 19 May 2026 23:55:09 GMT
+# Fri, 05 Jun 2026 22:43:51 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 19 May 2026 23:55:09 GMT
+# Fri, 05 Jun 2026 22:43:51 GMT
 CMD ["apache2-foreground"]
-# Wed, 03 Jun 2026 17:33:12 GMT
+# Sat, 06 Jun 2026 00:50:53 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         busybox-static         bzip2         libldap-common         libmagickcore-7.q16-10-extra         rsync     ;     apt-get dist-clean;         mkdir -p /var/spool/cron/crontabs;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data # buildkit
-# Wed, 03 Jun 2026 17:37:40 GMT
+# Sat, 06 Jun 2026 00:55:50 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Wed, 03 Jun 2026 17:37:40 GMT
+# Sat, 06 Jun 2026 00:55:50 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Wed, 03 Jun 2026 17:37:40 GMT
+# Sat, 06 Jun 2026 00:55:50 GMT
 ENV PHP_OPCACHE_MEMORY_CONSUMPTION=128
-# Wed, 03 Jun 2026 17:37:40 GMT
+# Sat, 06 Jun 2026 00:55:50 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libgmp-dev         libicu-dev         libjpeg-dev         libldap2-dev         liblz4-dev         libmagickwand-dev         libmemcached-dev         libpng-dev         libpq-dev         libwebp-dev         libxml2-dev         libzip-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure ftp --with-ftp-ssl;     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         ftp         gd         gmp         intl         ldap         pcntl         pdo_mysql         pdo_pgsql         sysvsem         zip     ;         pecl install APCu-5.1.28;     pecl install igbinary-3.2.16;     pecl install imagick-3.8.1;     pecl install --configureoptions 'enable-memcached-igbinary="yes"'         memcached-3.4.0;     pecl install --configureoptions 'enable-redis-igbinary="yes" enable-redis-zstd="yes" enable-redis-lz4="yes"'         redis-6.3.0;         docker-php-ext-enable         apcu         igbinary         imagick         memcached         redis     ;     rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'         | sort -u         | xargs -rt dpkg-query --search         | awk 'sub(":$", "", $1) { print $1 }'         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     apt-get dist-clean # buildkit
-# Wed, 03 Jun 2026 17:37:41 GMT
+# Sat, 06 Jun 2026 00:55:50 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=8M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'apc.serializer=igbinary';         echo 'session.serialize_handler=igbinary';     } >> "${PHP_INI_DIR}/conf.d/docker-php-ext-igbinary.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Wed, 03 Jun 2026 17:37:41 GMT
+# Sat, 06 Jun 2026 00:55:50 GMT
 VOLUME [/var/www/html]
-# Wed, 03 Jun 2026 17:37:41 GMT
+# Sat, 06 Jun 2026 00:55:51 GMT
 RUN a2enmod headers rewrite remoteip ;     {      echo 'RemoteIPHeader X-Real-IP';      echo 'RemoteIPInternalProxy 10.0.0.0/8';      echo 'RemoteIPInternalProxy 172.16.0.0/12';      echo 'RemoteIPInternalProxy 192.168.0.0/16';     } > /etc/apache2/conf-available/remoteip.conf;     a2enconf remoteip # buildkit
-# Wed, 03 Jun 2026 17:37:41 GMT
+# Sat, 06 Jun 2026 00:55:51 GMT
 ENV APACHE_BODY_LIMIT=1073741824
-# Wed, 03 Jun 2026 17:37:41 GMT
+# Sat, 06 Jun 2026 00:55:51 GMT
 RUN {      echo 'LimitRequestBody ${APACHE_BODY_LIMIT}';     } > /etc/apache2/conf-available/apache-limits.conf;     a2enconf apache-limits # buildkit
-# Wed, 03 Jun 2026 17:37:41 GMT
+# Sat, 06 Jun 2026 00:55:51 GMT
 ENV NEXTCLOUD_VERSION=33.0.5
-# Wed, 03 Jun 2026 17:38:32 GMT
+# Sat, 06 Jun 2026 00:57:05 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://github.com/nextcloud-releases/server/releases/download/v33.0.5/nextcloud-33.0.5.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://github.com/nextcloud-releases/server/releases/download/v33.0.5/nextcloud-33.0.5.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     apt-get dist-clean # buildkit
-# Wed, 03 Jun 2026 17:38:33 GMT
+# Sat, 06 Jun 2026 00:57:06 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Wed, 03 Jun 2026 17:38:33 GMT
+# Sat, 06 Jun 2026 00:57:07 GMT
 COPY config/* /usr/src/nextcloud/config/ # buildkit
-# Wed, 03 Jun 2026 17:38:33 GMT
+# Sat, 06 Jun 2026 00:57:07 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 03 Jun 2026 17:38:33 GMT
+# Sat, 06 Jun 2026 00:57:07 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1270,89 +1270,89 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 19 May 2026 23:34:38 GMT  
 		Size: 486.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b832b98d28c4265bc674a61814ff3f37d771c7cd82daef8bccbc5e62b92590cc`  
-		Last Modified: Tue, 19 May 2026 23:55:32 GMT  
-		Size: 13.9 MB (13884231 bytes)  
+	-	`sha256:9d2e5f6a80b46b08a6e4c44005092a44282dd4f852c4e75710a8baad958376a7`  
+		Last Modified: Fri, 05 Jun 2026 22:44:14 GMT  
+		Size: 13.9 MB (13913049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0684242f06e6f3246f72cbf4b45d566d49ce1e298d40f4542c1bd6d9a7f2dc27`  
-		Last Modified: Tue, 19 May 2026 23:55:31 GMT  
-		Size: 488.0 B  
+	-	`sha256:3eb74339744d2bb31e8fa8a58dfdee161ffc46c70022a1056a126d980b8acb39`  
+		Last Modified: Fri, 05 Jun 2026 22:44:13 GMT  
+		Size: 490.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e017cfece40e398ade025b52760fbd76eef85f634ab4d741f135ecf563f89b41`  
-		Last Modified: Tue, 19 May 2026 23:55:32 GMT  
-		Size: 14.1 MB (14090791 bytes)  
+	-	`sha256:c23d4f87f2add2b3569b179f01fa8ab12367c102f8de4fcd9da9b2ad095625f3`  
+		Last Modified: Fri, 05 Jun 2026 22:44:14 GMT  
+		Size: 14.9 MB (14933963 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:818347d4ac11626ea1d9c390539e9769b0cbfd5c3a9518558eda127e510c8292`  
-		Last Modified: Tue, 19 May 2026 23:55:31 GMT  
-		Size: 2.5 KB (2460 bytes)  
+	-	`sha256:184b576e37457d6a6a9446c9126a625daaa8b4a7a0607c626bdce9ab3c4ced30`  
+		Last Modified: Fri, 05 Jun 2026 22:44:13 GMT  
+		Size: 2.5 KB (2465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbc7908419be88f32e37cf0bef05b786db1958deb1a359af14bf8a6841f0ef08`  
-		Last Modified: Tue, 19 May 2026 23:55:32 GMT  
-		Size: 251.0 B  
+	-	`sha256:12f65c0f891b405eadf31d0b9a99fb78dd88c97ae9d31d3219797d54df73900b`  
+		Last Modified: Fri, 05 Jun 2026 22:44:14 GMT  
+		Size: 253.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b47881d2425d854df90a03061525176160b28d667aee55eced80646dfe4b154`  
-		Last Modified: Tue, 19 May 2026 23:55:32 GMT  
-		Size: 246.0 B  
+	-	`sha256:55d7e88062b15a9aebc5978fcad77bf0e1f72a4e49e54fffbebbab76822269a1`  
+		Last Modified: Fri, 05 Jun 2026 22:44:14 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72bd71a193a350ecf0cc3a4f31317c08eac09678c5475713b1ba0e8c2b85b890`  
-		Last Modified: Tue, 19 May 2026 23:55:33 GMT  
-		Size: 890.0 B  
+	-	`sha256:c010a08a8429ebefb875f77de8d5332019ecee75ce7d7ad84188956471d3761d`  
+		Last Modified: Fri, 05 Jun 2026 22:44:15 GMT  
+		Size: 894.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47ae04bdb70809bd8e6ec932be1722c1b162170186f1cb2c26c3144daf800aa5`  
-		Last Modified: Wed, 03 Jun 2026 17:39:28 GMT  
-		Size: 22.0 MB (22045343 bytes)  
+	-	`sha256:c9555fd8ad597398552415b6f5f3204fa50ff64037a73ecff7ffb96a1560957a`  
+		Last Modified: Sat, 06 Jun 2026 00:57:56 GMT  
+		Size: 22.0 MB (22030987 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a03994ed0419cc691f40c0e4802d68d8b451d33c761dc0320518d3a9642ab4d0`  
-		Last Modified: Wed, 03 Jun 2026 17:39:28 GMT  
-		Size: 39.4 MB (39423853 bytes)  
+	-	`sha256:94a924f6aacbf061638b015d150ac363164aa74ce13294673b2c6f48aeffe65e`  
+		Last Modified: Sat, 06 Jun 2026 00:57:57 GMT  
+		Size: 38.6 MB (38583300 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f150310191eb7c61be5f7ab0ec5c407a78cd4b5a6fc44c3e124e3fc7e291ed02`  
-		Last Modified: Wed, 03 Jun 2026 17:39:27 GMT  
-		Size: 797.0 B  
+	-	`sha256:125c6f69dda31f1f892ced19ce923b3404b5a05cbbceae3366c021328daeba89`  
+		Last Modified: Sat, 06 Jun 2026 00:57:55 GMT  
+		Size: 795.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d2a1b3cc586fc73b84696af327096f6b630664558d38ff3d0507bd23604402e`  
-		Last Modified: Wed, 03 Jun 2026 17:39:27 GMT  
-		Size: 577.0 B  
+	-	`sha256:e278b01631bca6ec346ee851a3f96f7bb193c63321ad060990669d4914a6430f`  
+		Last Modified: Sat, 06 Jun 2026 00:57:55 GMT  
+		Size: 591.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:062c474f620d1ca6b61ed84cd35178e252bd939be051f58456d455cbde1bbb1f`  
-		Last Modified: Wed, 03 Jun 2026 17:39:28 GMT  
-		Size: 404.0 B  
+	-	`sha256:84105b44316ca5a860335a1c8c9a8d283e7ec8a5849f18702eec4c45948c19fd`  
+		Last Modified: Sat, 06 Jun 2026 00:57:56 GMT  
+		Size: 405.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6ba88dd61f89e7bd464f5ea4b6acaa9c95b63dd1a726eb4108073ce402410a2`  
-		Last Modified: Wed, 03 Jun 2026 17:39:34 GMT  
-		Size: 265.8 MB (265806057 bytes)  
+	-	`sha256:be2ab310f01682cccfc8e618799e8fc64b5f7c93acdbf929f8783a1edc794b82`  
+		Last Modified: Sat, 06 Jun 2026 00:58:02 GMT  
+		Size: 265.8 MB (265806314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f7f892fa1c0e79aa7cdbd595f2ce76d34002abeeed41456555c93ef7a45427e`  
-		Last Modified: Wed, 03 Jun 2026 17:39:29 GMT  
+	-	`sha256:d99be213fa80d59640bf1bc16e0171acdc30e8e1cb95a6685794a62b6aa75bf8`  
+		Last Modified: Sat, 06 Jun 2026 00:57:58 GMT  
 		Size: 4.1 KB (4136 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef6314da46236cf0c8877fea0600e095d62f7e4ed575a8289c4bec0b445706cb`  
-		Last Modified: Wed, 03 Jun 2026 17:39:30 GMT  
+	-	`sha256:7a2fee6551d2562d8158fa5cc30b1a5882447a764d3d204e078614966aee26f3`  
+		Last Modified: Sat, 06 Jun 2026 00:57:58 GMT  
 		Size: 2.4 KB (2417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nextcloud:stable-apache` - unknown; unknown
 
 ```console
-$ docker pull nextcloud@sha256:7cfa234cc993351256bbd02329a7716dc1dc649aaa20065dcb1a5d80421b6d0f
+$ docker pull nextcloud@sha256:5d0cbbe28833ffcf7d42909110c0e237c1df349132df54a941cf88151ca6771a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.3 KB (64289 bytes)**  
+-	Total Size: **64.3 KB (64290 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47792a0b15fcbc9ac25b25a438b75d6fcd58f6938d3f9937522466b2602a41df`
+-	Image ID: `sha256:b5549ab34a360d602fbf00b4236f3463f06c77f5ed0ee7b845e7a2a65c77f44c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0a26d52e3488e154d17330d416ebec7f15013085884ac49c26606a2eb612fd9c`  
-		Last Modified: Wed, 03 Jun 2026 17:39:26 GMT  
-		Size: 64.3 KB (64289 bytes)  
+	-	`sha256:e951f92b81b3a59347875640af0d3a161453bd2f75702a32f65415703904df18`  
+		Last Modified: Sat, 06 Jun 2026 00:57:55 GMT  
+		Size: 64.3 KB (64290 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `nextcloud:stable-apache` - linux; riscv64
@@ -1580,13 +1580,13 @@ $ docker pull nextcloud@sha256:f58a3ecce10f3004e6edfacece075cec7ee3dc3fcb189fe11
 ### `nextcloud:stable-apache` - linux; s390x
 
 ```console
-$ docker pull nextcloud@sha256:f8ecb7092079493f7d58d657e6f1a6340101421e4b7c806f43f91c95ad4e41b8
+$ docker pull nextcloud@sha256:e3dacb420c09b78a0a89fb551fdb1d2de7a68d728ada3dd7bd14842417ff25a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **478.0 MB (477992661 bytes)**  
+-	Total Size: **478.0 MB (477998837 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f9977b148a4a9aece21a11932164e614be5c92df8e092e8fd5f4a0f21c5482b`
+-	Image ID: `sha256:8fd4f0a4928203c26129f5aaa54d39fd48e9319c7600bdfe9550268162afe1f8`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1622,66 +1622,66 @@ ENV PHP_LDFLAGS=-Wl,-O1 -pie
 # Tue, 19 May 2026 23:15:45 GMT
 ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
 # Tue, 19 May 2026 23:15:45 GMT
-ENV PHP_VERSION=8.4.21
+ENV PHP_VERSION=8.4.22
 # Tue, 19 May 2026 23:15:45 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.4.21.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.21.tar.xz.asc
+ENV PHP_URL=https://www.php.net/distributions/php-8.4.22.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.22.tar.xz.asc
 # Tue, 19 May 2026 23:15:45 GMT
-ENV PHP_SHA256=7cf5d8ab12c3b2016875bcfaec71bef1ef0b07bed6148f2c447577074431f984
-# Tue, 19 May 2026 23:15:54 GMT
+ENV PHP_SHA256=696c0f6ad92e94c59059c1eb6e300842b8d050934226efcdf00f2a413cb083cf
+# Fri, 05 Jun 2026 22:38:05 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	apt-get dist-clean; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify php.tar.xz.asc php.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 19 May 2026 23:15:55 GMT
+# Fri, 05 Jun 2026 22:38:05 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:20:14 GMT
+# Fri, 05 Jun 2026 22:42:23 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	test "$PHP_INI_DIR" != "${PHP_INI_DIR%/php}"; 	./configure 		--build="$gnuArch" 		--sysconfdir="${PHP_INI_DIR%/php}" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -rt dpkg-query --search 		| awk 'sub(":$", "", $1) { print $1 }' 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	apt-get dist-clean; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 19 May 2026 23:20:15 GMT
+# Fri, 05 Jun 2026 22:42:24 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:20:15 GMT
+# Fri, 05 Jun 2026 22:42:24 GMT
 RUN docker-php-ext-enable opcache # buildkit
-# Tue, 19 May 2026 23:20:15 GMT
+# Fri, 05 Jun 2026 22:42:24 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 19 May 2026 23:20:15 GMT
+# Fri, 05 Jun 2026 22:42:24 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 19 May 2026 23:20:15 GMT
+# Fri, 05 Jun 2026 22:42:24 GMT
 STOPSIGNAL SIGWINCH
-# Tue, 19 May 2026 23:20:15 GMT
+# Fri, 05 Jun 2026 22:42:24 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Tue, 19 May 2026 23:20:15 GMT
+# Fri, 05 Jun 2026 22:42:24 GMT
 WORKDIR /var/www/html
-# Tue, 19 May 2026 23:20:15 GMT
+# Fri, 05 Jun 2026 22:42:24 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 19 May 2026 23:20:15 GMT
+# Fri, 05 Jun 2026 22:42:24 GMT
 CMD ["apache2-foreground"]
-# Wed, 03 Jun 2026 17:23:54 GMT
+# Sat, 06 Jun 2026 00:25:16 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         busybox-static         bzip2         libldap-common         libmagickcore-7.q16-10-extra         rsync     ;     apt-get dist-clean;         mkdir -p /var/spool/cron/crontabs;     echo '*/5 * * * * php -f /var/www/html/cron.php' > /var/spool/cron/crontabs/www-data # buildkit
-# Wed, 03 Jun 2026 17:26:46 GMT
+# Sat, 06 Jun 2026 00:27:29 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Wed, 03 Jun 2026 17:26:46 GMT
+# Sat, 06 Jun 2026 00:27:29 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Wed, 03 Jun 2026 17:26:46 GMT
+# Sat, 06 Jun 2026 00:27:29 GMT
 ENV PHP_OPCACHE_MEMORY_CONSUMPTION=128
-# Wed, 03 Jun 2026 17:26:46 GMT
+# Sat, 06 Jun 2026 00:27:29 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         libcurl4-openssl-dev         libevent-dev         libfreetype6-dev         libgmp-dev         libicu-dev         libjpeg-dev         libldap2-dev         liblz4-dev         libmagickwand-dev         libmemcached-dev         libpng-dev         libpq-dev         libwebp-dev         libxml2-dev         libzip-dev     ;         debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";     docker-php-ext-configure ftp --with-ftp-ssl;     docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp;     docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch";     docker-php-ext-install -j "$(nproc)"         bcmath         exif         ftp         gd         gmp         intl         ldap         pcntl         pdo_mysql         pdo_pgsql         sysvsem         zip     ;         pecl install APCu-5.1.28;     pecl install igbinary-3.2.16;     pecl install imagick-3.8.1;     pecl install --configureoptions 'enable-memcached-igbinary="yes"'         memcached-3.4.0;     pecl install --configureoptions 'enable-redis-igbinary="yes" enable-redis-zstd="yes" enable-redis-lz4="yes"'         redis-6.3.0;         docker-php-ext-enable         apcu         igbinary         imagick         memcached         redis     ;     rm -r /tmp/pear;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }'         | sort -u         | xargs -rt dpkg-query --search         | awk 'sub(":$", "", $1) { print $1 }'         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     apt-get dist-clean # buildkit
-# Wed, 03 Jun 2026 17:26:46 GMT
+# Sat, 06 Jun 2026 00:27:29 GMT
 RUN {         echo 'opcache.enable=1';         echo 'opcache.interned_strings_buffer=32';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=${PHP_OPCACHE_MEMORY_CONSUMPTION}';         echo 'opcache.save_comments=1';         echo 'opcache.revalidate_freq=60';         echo 'opcache.jit=1255';         echo 'opcache.jit_buffer_size=8M';     } > "${PHP_INI_DIR}/conf.d/opcache-recommended.ini";         echo 'apc.enable_cli=1' >> "${PHP_INI_DIR}/conf.d/docker-php-ext-apcu.ini";         {         echo 'apc.serializer=igbinary';         echo 'session.serialize_handler=igbinary';     } >> "${PHP_INI_DIR}/conf.d/docker-php-ext-igbinary.ini";         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > "${PHP_INI_DIR}/conf.d/nextcloud.ini";         mkdir /var/www/data;     mkdir -p /docker-entrypoint-hooks.d/pre-installation              /docker-entrypoint-hooks.d/post-installation              /docker-entrypoint-hooks.d/pre-upgrade              /docker-entrypoint-hooks.d/post-upgrade              /docker-entrypoint-hooks.d/before-starting;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Wed, 03 Jun 2026 17:26:46 GMT
+# Sat, 06 Jun 2026 00:27:29 GMT
 VOLUME [/var/www/html]
-# Wed, 03 Jun 2026 17:26:47 GMT
+# Sat, 06 Jun 2026 00:27:30 GMT
 RUN a2enmod headers rewrite remoteip ;     {      echo 'RemoteIPHeader X-Real-IP';      echo 'RemoteIPInternalProxy 10.0.0.0/8';      echo 'RemoteIPInternalProxy 172.16.0.0/12';      echo 'RemoteIPInternalProxy 192.168.0.0/16';     } > /etc/apache2/conf-available/remoteip.conf;     a2enconf remoteip # buildkit
-# Wed, 03 Jun 2026 17:26:47 GMT
+# Sat, 06 Jun 2026 00:27:30 GMT
 ENV APACHE_BODY_LIMIT=1073741824
-# Wed, 03 Jun 2026 17:26:47 GMT
+# Sat, 06 Jun 2026 00:27:30 GMT
 RUN {      echo 'LimitRequestBody ${APACHE_BODY_LIMIT}';     } > /etc/apache2/conf-available/apache-limits.conf;     a2enconf apache-limits # buildkit
-# Wed, 03 Jun 2026 17:26:47 GMT
+# Sat, 06 Jun 2026 00:27:30 GMT
 ENV NEXTCLOUD_VERSION=33.0.5
-# Wed, 03 Jun 2026 17:27:23 GMT
+# Sat, 06 Jun 2026 00:28:05 GMT
 RUN set -ex;     fetchDeps="         gnupg         dirmngr     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps;         curl -fsSL -o nextcloud.tar.bz2 "https://github.com/nextcloud-releases/server/releases/download/v33.0.5/nextcloud-33.0.5.tar.bz2";     curl -fsSL -o nextcloud.tar.bz2.asc "https://github.com/nextcloud-releases/server/releases/download/v33.0.5/nextcloud-33.0.5.tar.bz2.asc";     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 28806A878AE423A28372792ED75899B9A724937A;     gpg --batch --verify nextcloud.tar.bz2.asc nextcloud.tar.bz2;     tar -xjf nextcloud.tar.bz2 -C /usr/src/;     gpgconf --kill all;     rm nextcloud.tar.bz2.asc nextcloud.tar.bz2;     rm -rf "$GNUPGHOME" /usr/src/nextcloud/updater;     mkdir -p /usr/src/nextcloud/data;     mkdir -p /usr/src/nextcloud/custom_apps;     chmod +x /usr/src/nextcloud/occ;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps;     apt-get dist-clean # buildkit
-# Wed, 03 Jun 2026 17:27:24 GMT
+# Sat, 06 Jun 2026 00:28:05 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Wed, 03 Jun 2026 17:27:24 GMT
+# Sat, 06 Jun 2026 00:28:05 GMT
 COPY config/* /usr/src/nextcloud/config/ # buildkit
-# Wed, 03 Jun 2026 17:27:24 GMT
+# Sat, 06 Jun 2026 00:28:05 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 03 Jun 2026 17:27:24 GMT
+# Sat, 06 Jun 2026 00:28:05 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1714,87 +1714,87 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 19 May 2026 23:20:33 GMT  
 		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90dd1bb006d4fa2ea4d386e4128baf591fc08e19c231dfa8e5d185f380dca614`  
-		Last Modified: Tue, 19 May 2026 23:20:33 GMT  
-		Size: 13.9 MB (13883468 bytes)  
+	-	`sha256:56f7bdd7c348c1336403029eb24b4cfc6bf726014f960bbd6847e29db809a653`  
+		Last Modified: Fri, 05 Jun 2026 22:42:43 GMT  
+		Size: 13.9 MB (13912253 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4562bfda7be6e3ce7f03c6c857f903469a262444401732867dca5443f21038d0`  
-		Last Modified: Tue, 19 May 2026 23:20:34 GMT  
-		Size: 489.0 B  
+	-	`sha256:a69e778f7c4eedf2dd20c9aaaed9f625ea8391ea137a2c2b0a3352d696a251d2`  
+		Last Modified: Fri, 05 Jun 2026 22:42:43 GMT  
+		Size: 490.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5c6117bb68dabc9db1f86809e1fb835e09db5db4adb1a611c728052e79ee424`  
-		Last Modified: Tue, 19 May 2026 23:20:34 GMT  
-		Size: 13.4 MB (13447813 bytes)  
+	-	`sha256:517bd214162a1a413f7f554c5e033938dfaac9f902869f3ba9b03dc61063fb04`  
+		Last Modified: Fri, 05 Jun 2026 22:42:43 GMT  
+		Size: 14.2 MB (14191079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eae748546640b4e239e2d7fe2d5b223daba33faa30c905df2b95f4f970bd4402`  
-		Last Modified: Tue, 19 May 2026 23:20:35 GMT  
+	-	`sha256:67ed4de46510d84a3eaf6ee8c58e8a0b9925a4e11c80ccf3f29887b0273bbf64`  
+		Last Modified: Fri, 05 Jun 2026 22:42:43 GMT  
 		Size: 2.5 KB (2464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80741973cd9dc49165a0743446985e0dc3011a88b18b0040ba7472451cd999e1`  
-		Last Modified: Tue, 19 May 2026 23:20:35 GMT  
+	-	`sha256:7027dbaa21b5515fda4679f8104c88eef9a35c26bdedd7fe7f3f03ce21c8cdf3`  
+		Last Modified: Fri, 05 Jun 2026 22:42:44 GMT  
 		Size: 251.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:089bd7034fca1399f94b7df5b5efa272e0da65a3b4dce908ac3a8d012db3b536`  
-		Last Modified: Tue, 19 May 2026 23:20:35 GMT  
-		Size: 245.0 B  
+	-	`sha256:a662bae0eb4d9b3d9349d22d5cbf4806f3b6313bd0e4325dd7005f1e6567df59`  
+		Last Modified: Fri, 05 Jun 2026 22:42:44 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d11fb92a10bccc78327eec98081d653627591d93fb43c9fc6a0ddb55674beccc`  
-		Last Modified: Tue, 19 May 2026 23:20:36 GMT  
-		Size: 893.0 B  
+	-	`sha256:6a8027a1444fda70b3209fd01700201147af1fcc1eae4a15b5014a2c09468a2f`  
+		Last Modified: Fri, 05 Jun 2026 22:42:44 GMT  
+		Size: 894.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2754fbedb2867f22767b3cd9a192a258d202ac73ae60c62563ff2fd48fcf39b`  
-		Last Modified: Wed, 03 Jun 2026 17:28:04 GMT  
-		Size: 20.3 MB (20292966 bytes)  
+	-	`sha256:ae4aa068e3fecd148acee2ef06039cd13fb53e676874ccd96f375eb7c92217dc`  
+		Last Modified: Sat, 06 Jun 2026 00:28:42 GMT  
+		Size: 20.3 MB (20277794 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5790fa0fe1bd30d44b7fc49e19b3a984b67c08bbbd743526d9fc1170072d3908`  
-		Last Modified: Wed, 03 Jun 2026 17:28:05 GMT  
-		Size: 37.8 MB (37800394 bytes)  
+	-	`sha256:601a882d2d4e660f13c1cd5826a3e546f7074da2cce722f4cab7ddca1a6269b0`  
+		Last Modified: Sat, 06 Jun 2026 00:28:43 GMT  
+		Size: 37.0 MB (37049884 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ec30df434fa562c5ea39f67e1ed24f08954c4daa335dcfdbbaf4550d1ccd3ffa`  
-		Last Modified: Wed, 03 Jun 2026 17:28:04 GMT  
-		Size: 793.0 B  
+	-	`sha256:89857652b9724e8b5b6b62c49eafc633704e38ae2c6a66c159cc21cfd1e6b190`  
+		Last Modified: Sat, 06 Jun 2026 00:28:42 GMT  
+		Size: 795.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c39a2861fffd906168233b346740bb8eadf60eaf36f5161e9cacbbc620412c1b`  
-		Last Modified: Wed, 03 Jun 2026 17:28:04 GMT  
-		Size: 592.0 B  
+	-	`sha256:e13e79b4d7ee212472e5aa608e0eb2157c207f7db3f96687f444f1e801e1b6a1`  
+		Last Modified: Sat, 06 Jun 2026 00:28:42 GMT  
+		Size: 589.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:779ab2ffc0e88e7c4e40374fb4e7c6bff1e72e700eaa307d657a35d16da537da`  
-		Last Modified: Wed, 03 Jun 2026 17:28:05 GMT  
-		Size: 408.0 B  
+	-	`sha256:07252e75531e9fc03e9b68ac617249680f73a61b7851bba94de5dc401c89cae6`  
+		Last Modified: Sat, 06 Jun 2026 00:28:43 GMT  
+		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9895af520ef578f4d4b4a1588fa4fdbded6a98948c8799a8976cbb179950ad3`  
-		Last Modified: Wed, 03 Jun 2026 17:28:09 GMT  
-		Size: 265.8 MB (265804173 bytes)  
+	-	`sha256:3b23eb5d2b17865071d564bbeefcf633adc0b71e76acb2387970597d30e2b2b9`  
+		Last Modified: Sat, 06 Jun 2026 00:28:48 GMT  
+		Size: 265.8 MB (265803980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:368803cb8a3f3164ce7c27ab3c2025e2846282e94fa56df6cb0f2d65e1aefb60`  
-		Last Modified: Wed, 03 Jun 2026 17:28:06 GMT  
-		Size: 4.1 KB (4135 bytes)  
+	-	`sha256:4d65c004dabf76962b90e5208aa4bec625fa1ae3da23ed57870b5951c19b10cf`  
+		Last Modified: Sat, 06 Jun 2026 00:28:44 GMT  
+		Size: 4.1 KB (4136 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:465527aa4079085f89104c4d19df296a550e3ad633071a8fc2a415a54d869e34`  
-		Last Modified: Wed, 03 Jun 2026 17:28:06 GMT  
-		Size: 2.4 KB (2413 bytes)  
+	-	`sha256:e14589e6759725da80d4bed197a506db9fc4c7eb1a2b289c91700aa5ed377a7f`  
+		Last Modified: Sat, 06 Jun 2026 00:28:44 GMT  
+		Size: 2.4 KB (2414 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nextcloud:stable-apache` - unknown; unknown
 
 ```console
-$ docker pull nextcloud@sha256:ce366f0eb48afdb38545512f61383ef9ffa365101071d0488d995275536f51cc
+$ docker pull nextcloud@sha256:7f3046421984aa6dd02c4f22b3a0cef44b3c2358cb8ba39dc80a17bd4c459cc8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **64.2 KB (64178 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9d979be3f49c88fa2f344dd1d4d5ff819bafb5469d8f7ea9eaba3ce010496409`
+-	Image ID: `sha256:9f3b11430bf0e23dc6924ec643c84e295be7209099f11c8b20d2629bc804f7c5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e8f864b201f3e020b878ae7cfdfcfdb368569b571d2cf4da397676888c1a07ef`  
-		Last Modified: Wed, 03 Jun 2026 17:28:04 GMT  
+	-	`sha256:9169ed315be1b723bcaaf2ecfbc60aea3a9e2d1348e7d0cb77071322f6562300`  
+		Last Modified: Sat, 06 Jun 2026 00:28:42 GMT  
 		Size: 64.2 KB (64178 bytes)  
 		MIME: application/vnd.in-toto+json
