@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:221779179a996af6f2e170ba0ce9f517a7a3e309e1bf33691ee0772e03341d98`
-- Created: `2026-05-07T17:17:19.543710303Z`
-- Virtual Size: ~ 96.97 Mb  
+- Image ID: `sha256:b9f0207d933119f07e6384814c130ca000d3886e71baf4c8bd89b6ebe781531e`
+- Created: `2026-06-06T00:13:32.967787459Z`
+- Virtual Size: ~ 96.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh","docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.21`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.21.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.21.tar.xz.asc`
-  - `PHP_SHA256=7cf5d8ab12c3b2016875bcfaec71bef1ef0b07bed6148f2c447577074431f984`
+  - `PHP_VERSION=8.4.22`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.22.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.22.tar.xz.asc`
+  - `PHP_SHA256=696c0f6ad92e94c59059c1eb6e300842b8d050934226efcdf00f2a413cb083cf`
   - `ADMINER_VERSION=4.17.1`
   - `ADMINER_DOWNLOAD_SHA256=58956bc021b6b260b1a2ef32d03517f6f88f5ad4aa03ff2d0092c6f509e26d0a`
   - `ADMINER_SRC_DOWNLOAD_SHA256=6e006c514a3f189dd14ee10fa98977141a00fe79beb2a515966c98f0914cbdd0`
@@ -251,16 +251,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.17.0-r1 description:
+curl-8.19.0-r0 description:
 URL retrival utility and library
 
-curl-8.17.0-r1 webpage:
+curl-8.19.0-r0 webpage:
 https://curl.se/
 
-curl-8.17.0-r1 installed size:
-265 KiB
+curl-8.19.0-r0 installed size:
+273 KiB
 
-curl-8.17.0-r1 license:
+curl-8.19.0-r0 license:
 curl
 
 ```
@@ -336,16 +336,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.17.0-r1 description:
+libcurl-8.19.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.17.0-r1 webpage:
+libcurl-8.19.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.17.0-r1 installed size:
-721 KiB
+libcurl-8.19.0-r0 installed size:
+697 KiB
 
-libcurl-8.17.0-r1 license:
+libcurl-8.19.0-r0 license:
 curl
 
 ```
@@ -404,16 +404,16 @@ X11
 ### `apk` package: `libpq`
 
 ```console
-libpq-18.3-r0 description:
+libpq-18.4-r0 description:
 PostgreSQL client library
 
-libpq-18.3-r0 webpage:
+libpq-18.4-r0 webpage:
 https://www.postgresql.org/
 
-libpq-18.3-r0 installed size:
+libpq-18.4-r0 installed size:
 350 KiB
 
-libpq-18.3-r0 license:
+libpq-18.4-r0 license:
 PostgreSQL
 
 ```
@@ -489,16 +489,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.9-r0 description:
+libxml2-2.13.9-r1 description:
 XML parsing library, version 2
 
-libxml2-2.13.9-r0 webpage:
+libxml2-2.13.9-r1 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.9-r0 installed size:
+libxml2-2.13.9-r1 installed size:
 1046 KiB
 
-libxml2-2.13.9-r0 license:
+libxml2-2.13.9-r1 license:
 MIT
 
 ```
@@ -567,23 +567,6 @@ nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
 nghttp2-libs-1.69.0-r0 license:
-MIT
-
-```
-
-### `apk` package: `nghttp3`
-
-```console
-nghttp3-1.13.1-r0 description:
-HTTP/3 library written in C
-
-nghttp3-1.13.1-r0 webpage:
-https://github.com/ngtcp2/nghttp3
-
-nghttp3-1.13.1-r0 installed size:
-140 KiB
-
-nghttp3-1.13.1-r0 license:
 MIT
 
 ```
