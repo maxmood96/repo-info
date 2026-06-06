@@ -321,19 +321,14 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-10.el9.noarch
-https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
+rsync://mirror.us.mirhosting.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
 ```
 
 ### `rpm` package: `expat-2.5.0-6.el9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url expat-2.5.0-6.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-6.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `file-libs-5.39-17.el9.x86_64`
 
@@ -503,7 +498,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gperftools-libs-2.9.1-3.el9
-https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
+rsync://mirror.us.mirhosting.net/epel/9/Everything/source/tree/Packages/g/gperftools-2.9.1-3.el9.src.rpm
 ```
 
 ### `rpm` package: `gpg-pubkey-3228467c-613798eb`
@@ -593,7 +588,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+rsync://mirror.us.mirhosting.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -1166,7 +1161,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libunwind-1.6.2-1.el9
-https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/l/libunwind-1.6.2-1.el9.src.rpm
+rsync://mirror.us.mirhosting.net/epel/9/Everything/source/tree/Packages/l/libunwind-1.6.2-1.el9.src.rpm
 ```
 
 ### `rpm` package: `liburing-2.12-1.el9.x86_64`
@@ -2233,7 +2228,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+rsync://mirror.us.mirhosting.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2244,7 +2239,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+rsync://mirror.us.mirhosting.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
