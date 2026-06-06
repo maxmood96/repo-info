@@ -3277,19 +3277,39 @@ $ docker pull ghost@sha256:ff7b5a78947160ae40441c99324c1f9822ade5a0b3e97cbb8fc2c
 
 ## `ghost:6.44.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull ghost@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ghost:6.44.1-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull ghost@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ghost:6.44.1-alpine3.23`
 
-**does not exist** (yet?)
+```console
+$ docker pull ghost@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ghost:6.44.1-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull ghost@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ghost:alpine`
 
