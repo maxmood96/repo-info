@@ -2,16 +2,16 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5bf3c934809bbba1c73839bc06da14654db9a2bcb0ef14783d0cf713e9c96030`
-- Created: `2026-05-19T23:58:11.272594564Z`
-- Virtual Size: ~ 558.04 Mb  
+- Image ID: `sha256:9f294b377daa55dd21f287f13cff2464a3b1c4c6105ec2b26c4146a1ac7902a1`
+- Created: `2026-06-04T17:44:44.928956676Z`
+- Virtual Size: ~ 554.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["clj"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `CLOJURE_VERSION=1.12.5.1645`
+  - `CLOJURE_VERSION=1.12.5.1654`
 
 ## `dpkg` (`.deb`-based packages)
 
