@@ -1,10 +1,10 @@
-# `php:8.5.6-fpm-alpine3.23`
+# `php:8.5.7-fpm-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8788390aba4adc0f55639c3e0c9f8c080479ac509f003a7157c30df40fd248ad`
-- Created: `2026-05-08T16:45:35.865143149Z`
-- Virtual Size: ~ 107.81 Mb  
+- Image ID: `sha256:bf862177f05e3befa0d28f5c315284a1e714d8ebfa18d405d4dcc88bacab367d`
+- Created: `2026-06-05T01:15:50.675478911Z`
+- Virtual Size: ~ 107.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.6`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.6.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.6.tar.xz.asc`
-  - `PHP_SHA256=826c600b7c6f956bd335558ca3bdbcab23b22126c1cc8d9348be2280a2204bb7`
+  - `PHP_VERSION=8.5.7`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.7.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.7.tar.xz.asc`
+  - `PHP_SHA256=01ba2ed1c2658dacf91bebc8be6a4885f69b811c7993831fc48e26107ab29985`
 
 ## `apk` (`.apk`-based packages)
 
@@ -248,16 +248,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.17.0-r1 description:
+curl-8.19.0-r0 description:
 URL retrival utility and library
 
-curl-8.17.0-r1 webpage:
+curl-8.19.0-r0 webpage:
 https://curl.se/
 
-curl-8.17.0-r1 installed size:
-265 KiB
+curl-8.19.0-r0 installed size:
+273 KiB
 
-curl-8.17.0-r1 license:
+curl-8.19.0-r0 license:
 curl
 
 ```
@@ -316,16 +316,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.17.0-r1 description:
+libcurl-8.19.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.17.0-r1 webpage:
+libcurl-8.19.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.17.0-r1 installed size:
-721 KiB
+libcurl-8.19.0-r0 installed size:
+697 KiB
 
-libcurl-8.17.0-r1 license:
+libcurl-8.19.0-r0 license:
 curl
 
 ```
@@ -452,16 +452,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.9-r0 description:
+libxml2-2.13.9-r1 description:
 XML parsing library, version 2
 
-libxml2-2.13.9-r0 webpage:
+libxml2-2.13.9-r1 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.9-r0 installed size:
+libxml2-2.13.9-r1 installed size:
 1046 KiB
 
-libxml2-2.13.9-r0 license:
+libxml2-2.13.9-r1 license:
 MIT
 
 ```
@@ -530,23 +530,6 @@ nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
 nghttp2-libs-1.69.0-r0 license:
-MIT
-
-```
-
-### `apk` package: `nghttp3`
-
-```console
-nghttp3-1.13.1-r0 description:
-HTTP/3 library written in C
-
-nghttp3-1.13.1-r0 webpage:
-https://github.com/ngtcp2/nghttp3
-
-nghttp3-1.13.1-r0 installed size:
-140 KiB
-
-nghttp3-1.13.1-r0 license:
 MIT
 
 ```

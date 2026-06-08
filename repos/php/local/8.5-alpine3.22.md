@@ -1,10 +1,10 @@
-# `php:8.5.6-cli-alpine3.22`
+# `php:8.5.7-cli-alpine3.22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:748923130cd81b2a6599fab3ecba3511d1564a10ba38e0374b0f5d36462d6954`
-- Created: `2026-05-08T16:48:28.065301151Z`
-- Virtual Size: ~ 137.48 Mb  
+- Image ID: `sha256:33564f368f5beb0653b6ca7df633dfe8d0af9c4774bc1054f17cc284657baf0e`
+- Created: `2026-06-05T01:18:08.560287615Z`
+- Virtual Size: ~ 137.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.6`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.6.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.6.tar.xz.asc`
-  - `PHP_SHA256=826c600b7c6f956bd335558ca3bdbcab23b22126c1cc8d9348be2280a2204bb7`
+  - `PHP_VERSION=8.5.7`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.7.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.7.tar.xz.asc`
+  - `PHP_SHA256=01ba2ed1c2658dacf91bebc8be6a4885f69b811c7993831fc48e26107ab29985`
 
 ## `apk` (`.apk`-based packages)
 
@@ -452,16 +452,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.9-r0 description:
+libxml2-2.13.9-r1 description:
 XML parsing library, version 2
 
-libxml2-2.13.9-r0 webpage:
+libxml2-2.13.9-r1 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.9-r0 installed size:
+libxml2-2.13.9-r1 installed size:
 1050 KiB
 
-libxml2-2.13.9-r0 license:
+libxml2-2.13.9-r1 license:
 MIT
 
 ```
