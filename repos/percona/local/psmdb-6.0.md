@@ -1,10 +1,10 @@
-# `percona:psmdb-6.0.27`
+# `percona:psmdb-6.0.28`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f0f86c1f50de15590266efc2f42d3c179bb5428b5d2478e68e4b4f1399e6e43b`
-- Created: `2026-06-02T22:44:45.78299945Z`
-- Virtual Size: ~ 823.94 Mb  
+- Image ID: `sha256:ce82b0beb03770ad718036471127c050b3b609611936da12bde2d9b537626119`
+- Created: `2026-06-04T17:10:56.650509946Z`
+- Virtual Size: ~ 824.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `PSMDB_VERSION=6.0.27-21`
+  - `PSMDB_VERSION=6.0.28-22`
   - `OS_VER=el9`
-  - `FULL_PERCONA_VERSION=6.0.27-21.el9`
+  - `FULL_PERCONA_VERSION=6.0.28-22.el9`
   - `K8S_TOOLS_VERSION=0.5.0`
   - `PSMDB_REPO=release`
   - `CALL_HOME_DOWNLOAD_SHA256=5e84d2f1a5d57f44c46e6a1f16794d649d3de09fe8021f0294bc321c89e51068`
@@ -280,15 +280,15 @@ $ dnf --quiet download --source --url dnf-data-4.14.0-34.el9_8.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/d/dnf-4.14.0-34.el9_8.src.rpm
 ```
 
-### `rpm` package: `expat-2.5.0-6.el9.x86_64`
+### `rpm` package: `expat-2.5.0-6.el9_8.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url expat-2.5.0-6.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-6.el9.src.rpm
+$ dnf --quiet download --source --url expat-2.5.0-6.el9_8.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-6.el9_8.1.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-17.el9.x86_64`
@@ -734,11 +734,16 @@ $ dnf --quiet download --source --url libdnf-0.69.0-18.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libdnf-0.69.0-18.el9.src.rpm
 ```
 
-### `rpm` package: `libeconf-0.4.1-5.el9.x86_64`
+### `rpm` package: `libeconf-0.4.1-7.el9_8.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libeconf-0.4.1-7.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libeconf-0.4.1-7.el9_8.src.rpm
+```
 
 ### `rpm` package: `libevent-2.1.12-8.el9_4.x86_64`
 
@@ -1396,19 +1401,19 @@ Licenses (from `rpm --query`): GPL-3.0+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-mongos-6.0.27-21.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-mongos-6.0.28-22.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-server-6.0.27-21.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-server-6.0.28-22.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-mongodb-tools-6.0.27-21.el9.x86_64`
+### `rpm` package: `percona-server-mongodb-tools-6.0.28-22.el9.x86_64`
 
 Licenses (from `rpm --query`): SSPL
 
