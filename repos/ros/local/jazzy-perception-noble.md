@@ -1180,14 +1180,9 @@ Licenses: (parsed from: `/usr/share/doc/libcups2t64/copyright`)
 - `FSFUL`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cups=2.4.7-1.2ubuntu7.9
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7.orig.tar.gz' cups_2.4.7.orig.tar.gz 8134809 SHA256:dd54228dd903526428ce7e37961afaed230ad310788141da75cebaa08362cf6c
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7-1.2ubuntu7.9.debian.tar.xz' cups_2.4.7-1.2ubuntu7.9.debian.tar.xz 418144 SHA256:edbdf3ff46de5faa38cc1390ed98da8b07356e44b49bf4c93aa4270c1909f419
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7-1.2ubuntu7.9.dsc' cups_2.4.7-1.2ubuntu7.9.dsc 3188 SHA256:2566636331012f8a9aaf0b6043ece9ff0a9c3c095ac4fe44acc98a29e2475963
-```
 
 ### `dpkg` source package: `curl=8.5.0-2ubuntu10.9`
 
@@ -7749,14 +7744,9 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler-dev/copyright`, `/usr/share/d
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris poppler=24.02.0-1ubuntu9.8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0.orig.tar.gz' poppler_24.02.0.orig.tar.gz 1975230 SHA256:1035869c58a8b060232dfa1d97e74dbe8a1c3937a93140be48f7dc6de5b83980
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.8.debian.tar.xz' poppler_24.02.0-1ubuntu9.8.debian.tar.xz 43812 SHA256:21b34aa784a440ee8c55e96019edb10c0dd46c708eacfea9610b8416c3eb4508
-'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.8.dsc' poppler_24.02.0-1ubuntu9.8.dsc 3940 SHA256:427a5138b3d7c3b40f91d5c881d4ff42680c765fa83c5bf8e19c20f964d208b3
-```
 
 ### `dpkg` source package: `popt=1.19+dfsg-1build1`
 
@@ -13228,14 +13218,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/d
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.15
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA256:96e75bd08c57ad401677456fb88ef54a9f05bb1695693013bc6ecce839640fd5
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.15.debian.tar.xz' systemd_255.4-1ubuntu8.15.debian.tar.xz 264648 SHA256:0e63b049e745afdeec38be8ea086c1969c568ef704df48bf6ffebaeba5a7d618
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.15.dsc' systemd_255.4-1ubuntu8.15.dsc 7324 SHA256:0037037654eaf11e527954282b92daad1285140313da25abdb4507bcebebe087
-```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
