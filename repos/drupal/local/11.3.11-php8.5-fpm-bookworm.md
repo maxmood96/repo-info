@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:015d08feefa376dfacb3f9be7a7bfcb21fdad87a73ab7433832c0d363dfc7e1f`
-- Created: `2026-06-03T18:32:15.599721013Z`
-- Virtual Size: ~ 621.55 Mb  
+- Image ID: `sha256:d14096a9cacb9c1ebd19eac70a33175e0d96f91154f222c3411d0ee8288e87d6`
+- Created: `2026-06-05T03:11:48.782006708Z`
+- Virtual Size: ~ 621.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.6`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.6.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.6.tar.xz.asc`
-  - `PHP_SHA256=826c600b7c6f956bd335558ca3bdbcab23b22126c1cc8d9348be2280a2204bb7`
+  - `PHP_VERSION=8.5.7`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.7.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.7.tar.xz.asc`
+  - `PHP_SHA256=01ba2ed1c2658dacf91bebc8be6a4885f69b811c7993831fc48e26107ab29985`
   - `DRUPAL_VERSION=11.3.11`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
@@ -1393,14 +1393,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/keyutils/1.6.3-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/keyutils/1.6.3-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `krb5=1.20.1-2+deb12u4`
+### `dpkg` source package: `krb5=1.20.1-2+deb12u5`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.20.1-2+deb12u4`
-- `libk5crypto3:amd64=1.20.1-2+deb12u4`
-- `libkrb5-3:amd64=1.20.1-2+deb12u4`
-- `libkrb5support0:amd64=1.20.1-2+deb12u4`
+- `libgssapi-krb5-2:amd64=1.20.1-2+deb12u5`
+- `libk5crypto3:amd64=1.20.1-2+deb12u5`
+- `libkrb5-3:amd64=1.20.1-2+deb12u5`
+- `libkrb5support0:amd64=1.20.1-2+deb12u5`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1409,18 +1409,18 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris krb5=1.20.1-2+deb12u4
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-2%2bdeb12u4.dsc' krb5_1.20.1-2+deb12u4.dsc 3808 SHA256:3a83a9c281fa9a4358fe5351ddbd8d02ce26c1b3913c4898c9769475c2d8e270
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.20.1-2%2bdeb12u4.debian.tar.xz' krb5_1.20.1-2+deb12u4.debian.tar.xz 111436 SHA256:76a985c0d60ed1a62cbb82b23041185cd9bf9a600ddc0b03172bf8745ac14e85
+$ apt-get source -qq --print-uris krb5=1.20.1-2+deb12u5
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1-2%2bdeb12u5.dsc' krb5_1.20.1-2+deb12u5.dsc 3982 SHA256:643c1e56f5d2022f7685f5d5490a4fc348adc68a4bb42adbc1780e4a5b1bb05e
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA256:704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA256:2afeec5dbc586cc40b7975645e02b4c41c4d719dd02213e828c72d8239d55666
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.20.1-2%2bdeb12u5.debian.tar.xz' krb5_1.20.1-2+deb12u5.debian.tar.xz 112068 SHA256:195842a66252dfee21b3402b5048f8dea11ea92056742aedf71b356e26f4513f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/krb5/1.20.1-2+deb12u4/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.20.1-2+deb12u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.20.1-2+deb12u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/krb5/1.20.1-2+deb12u5/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.20.1-2+deb12u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.20.1-2+deb12u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.8.3-1`
 
@@ -2188,11 +2188,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.172-1`
+### `dpkg` source package: `linux=6.1.174-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.172-1`
+- `linux-libc-dev:amd64=6.1.174-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2207,17 +2207,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.172-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.172-1.dsc' linux_6.1.172-1.dsc 399396 SHA256:e3db5792430cc74993ae4ac610e557c44f8f12bb3ba0017872bb24c7be68f138
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.172.orig.tar.xz' linux_6.1.172.orig.tar.xz 137908588 SHA256:64a5e512fbc9e0aeba50208e966be2e1452979e0efb2373c5c69996b564d9c32
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.172-1.debian.tar.xz' linux_6.1.172-1.debian.tar.xz 1841724 SHA256:067d29c785c6e9dae028b490646945db842e652beb0ebbd0f30fe85af48ae17e
+$ apt-get source -qq --print-uris linux=6.1.174-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.174-1.dsc' linux_6.1.174-1.dsc 399396 SHA256:faa65e532e688156f94f06e5be9f7b13ab742c77a60fe1679f38f341da15005f
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.174.orig.tar.xz' linux_6.1.174.orig.tar.xz 137896484 SHA256:a4eb0303d116da3da0f213aaa01ba559ae35127aa0dcbdaa30ce3598fdd42ffe
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.174-1.debian.tar.xz' linux_6.1.174-1.debian.tar.xz 1841184 SHA256:279ba1361f5bf487deba6ad25fcb433225ff5e29686c85d029b4230f2a39db02
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.172-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.172-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.172-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.174-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.174-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.174-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
