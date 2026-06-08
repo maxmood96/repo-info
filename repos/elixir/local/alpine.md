@@ -1,21 +1,21 @@
-# `elixir:1.19.5-alpine`
+# `elixir:1.20.0-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f1a1b1fbdb5ea5af9baea3bc6af1353e5af63dbf62b2e6cb9f6d07d76d4841f2`
-- Created: `2026-05-28T19:11:48.032620397Z`
-- Virtual Size: ~ 103.67 Mb  
+- Image ID: `sha256:78c24d1665113e88dd646b49911ca0e619b655fed0ece3bb714d6130950f86ae`
+- Created: `2026-06-05T17:12:30.481914911Z`
+- Virtual Size: ~ 104.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=28.5.0.1`
-  - `REBAR3_VERSION=3.26.0`
-  - `ELIXIR_VERSION=v1.19.5`
+  - `OTP_VERSION=29.0.1`
+  - `REBAR3_VERSION=3.27.0`
+  - `ELIXIR_VERSION=v1.20.0`
   - `LANG=C.UTF-8`
 - Labels:
-  - `org.opencontainers.image.version=28.5.0.1`
+  - `org.opencontainers.image.version=29.0.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -359,23 +359,6 @@ X11
 
 ```
 
-### `apk` package: `readline`
-
-```console
-readline-8.3.1-r0 description:
-GNU readline library
-
-readline-8.3.1-r0 webpage:
-https://tiswww.cwru.edu/php/chet/readline/rltop.html
-
-readline-8.3.1-r0 installed size:
-292 KiB
-
-readline-8.3.1-r0 license:
-GPL-3.0-or-later
-
-```
-
 ### `apk` package: `scanelf`
 
 ```console
@@ -407,23 +390,6 @@ ssl_client-1.37.0-r30 installed size:
 
 ssl_client-1.37.0-r30 license:
 GPL-2.0-only
-
-```
-
-### `apk` package: `unixodbc`
-
-```console
-unixodbc-2.3.14-r0 description:
-Unix Open DataBase Connectivity sub-system and SDK
-
-unixodbc-2.3.14-r0 webpage:
-https://www.unixodbc.org/
-
-unixodbc-2.3.14-r0 installed size:
-651 KiB
-
-unixodbc-2.3.14-r0 license:
-LGPL-2.0-or-later
 
 ```
 
