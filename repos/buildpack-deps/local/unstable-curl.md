@@ -2160,21 +2160,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.40.1-7
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1-7.dsc' perl_5.40.1-7.dsc 2372 SHA256:b74d67b039d7bb2c2c63b0928fae9269f4c025ef6d09254af196827388ff885a
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA256:4ea023d08101443f6ed9dc3bdd9bb5f5e08087678dc9e443d195df22da36209a
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA256:dfa20c2eef2b4af133525610bbb65dd13777ecf998c9c5b1ccf0d308e732ee3f
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.1-7.debian.tar.xz' perl_5.40.1-7.debian.tar.xz 172940 SHA256:d9a0b6e8466e0b2061e6fe7605e1f316a86a8e2a95fb3ed7f9e91e698ff002cc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.40.1-7/
 
-- https://sources.debian.net/src/perl/5.40.1-7/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.40.1-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.40.1-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.3.2-4`
 
@@ -2251,20 +2243,13 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=1.3.1-9
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-9.dsc' rust-sequoia-sq_1.3.1-9.dsc 4411 SHA256:3b3abcd570a439701df03e2da391c39180d3da73054ba949e80d8521d03c5e83
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1.orig.tar.gz' rust-sequoia-sq_1.3.1.orig.tar.gz 740320 SHA256:5c04b662da1c207e79beaeff6e5ab2d713ab10c1263f64c367f8489aac815705
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-9.debian.tar.xz' rust-sequoia-sq_1.3.1-9.debian.tar.xz 5620 SHA256:927ebcaaead2690937347b3dfa94ef4e67aab542c6c6555dc7ab093cc7fad147
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sq/1.3.1-9/
 
-- https://sources.debian.net/src/rust-sequoia-sq/1.3.1-9/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sq/1.3.1-9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sq/1.3.1-9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rust-sequoia-sqv=1.3.0-5`
 

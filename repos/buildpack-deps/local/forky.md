@@ -1700,20 +1700,13 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 - `custom-sil-open-font-license`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris graphite2=1.3.14-13
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.14-13.dsc' graphite2_1.3.14-13.dsc 2536 SHA256:692b82f2ca43b5dc9531d33e24a5cd8420effe5e8731d70f4aac822a72977ac2
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.14.orig.tar.gz' graphite2_1.3.14.orig.tar.gz 6629829 SHA256:7a3b342c5681921ce2e0c2496509d30b5b078399d5a7bd2358f95166d57d91df
-'http://deb.debian.org/debian/pool/main/g/graphite2/graphite2_1.3.14-13.debian.tar.xz' graphite2_1.3.14-13.debian.tar.xz 16124 SHA256:e0fd4ba48cadbc63d2f61251bf3b3b32fe78a0c08887668b54460ccec8968737
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/graphite2/1.3.14-13/
 
-- https://sources.debian.net/src/graphite2/1.3.14-13/ (for browsing the source)
-- https://sources.debian.net/src/graphite2/1.3.14-13/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/graphite2/1.3.14-13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.12-1`
 
@@ -2233,21 +2226,13 @@ Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 - `ISC-Original`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libbsd=0.12.2-2
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.2-2.dsc' libbsd_0.12.2-2.dsc 2446 SHA256:01eb1d0c896096f9038213f5f00376ecfd1c0d1def21b7042f28ae070e4837e3
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.2.orig.tar.xz' libbsd_0.12.2.orig.tar.xz 446032 SHA256:b88cc9163d0c652aaf39a99991d974ddba1c3a9711db8f1b5838af2a14731014
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.2.orig.tar.xz.asc' libbsd_0.12.2.orig.tar.xz.asc 833 SHA256:620dc92f158ebe0a650c0e92214a8121b927276895dc9a1dcaa38f627fa0fcb0
-'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.2-2.debian.tar.xz' libbsd_0.12.2-2.debian.tar.xz 18688 SHA256:36c878a32c1f190ca2cb474de5c6139990a6c029906493d3566770b1ebd569bf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libbsd/0.12.2-2/
 
-- https://sources.debian.net/src/libbsd/0.12.2-2/ (for browsing the source)
-- https://sources.debian.net/src/libbsd/0.12.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libbsd/0.12.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.9.3-1`
 
@@ -2373,20 +2358,13 @@ Licenses: (parsed from: `/usr/share/doc/libdeflate-dev/copyright`, `/usr/share/d
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdeflate=1.23-2
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.23-2.dsc' libdeflate_1.23-2.dsc 1743 SHA256:fbec7154ffff5193ef71c196e1e7348a154b1ed35c2a9ce3ece5fcc947303d77
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.23.orig.tar.gz' libdeflate_1.23.orig.tar.gz 197519 SHA256:1ab18349b9fb0ce8a0ca4116bded725be7dcbfa709e19f6f983d99df1fb8b25f
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.23-2.debian.tar.xz' libdeflate_1.23-2.debian.tar.xz 5624 SHA256:6d3101de26f30c25e4900fecc3b6da34543771d6014767af29850bc3ff3cbd09
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libdeflate/1.23-2/
 
-- https://sources.debian.net/src/libdeflate/1.23-2/ (for browsing the source)
-- https://sources.debian.net/src/libdeflate/1.23-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdeflate/1.23-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libedit=3.1-20251016-1`
 
@@ -3922,21 +3900,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=7.2-5
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_7.2-5.dsc' mercurial_7.2-5.dsc 2856 SHA256:bee8501c2c07dd3f7b72e30ab712db41a75074bc4ed2c1e1313275b9a5c030c6
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_7.2.orig.tar.gz' mercurial_7.2.orig.tar.gz 9244423 SHA256:a250227eba47c6ad5aa32b9a72281343762f5d274ff38c53c2f43df5c63af3ec
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_7.2.orig.tar.gz.asc' mercurial_7.2.orig.tar.gz.asc 659 SHA256:d39f1ba5defb6b24305af2956361fbca6ace286085f223197b96710bdc2a3b73
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_7.2-5.debian.tar.xz' mercurial_7.2-5.debian.tar.xz 54988 SHA256:848e32d815f07114257c347dd4b6daf8ae16d63deaa20bd75adbc3e9f64aeb00
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/7.2-5/
 
-- https://sources.debian.net/src/mercurial/7.2-5/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/7.2-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/7.2-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpclib3=1.3.1-3`
 

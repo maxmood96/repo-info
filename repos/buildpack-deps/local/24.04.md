@@ -4415,14 +4415,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.15
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA256:96e75bd08c57ad401677456fb88ef54a9f05bb1695693013bc6ecce839640fd5
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.15.debian.tar.xz' systemd_255.4-1ubuntu8.15.debian.tar.xz 264648 SHA256:0e63b049e745afdeec38be8ea086c1969c568ef704df48bf6ffebaeba5a7d618
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.15.dsc' systemd_255.4-1ubuntu8.15.dsc 7324 SHA256:0037037654eaf11e527954282b92daad1285140313da25abdb4507bcebebe087
-```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
