@@ -1,4 +1,4 @@
-## `bash:5.3.15-alpine3.23`
+## `bash:devel-20260608-alpine3.24`
 
 ```console
 $ docker pull bash@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
