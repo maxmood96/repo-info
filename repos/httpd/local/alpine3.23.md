@@ -1,18 +1,18 @@
-# `httpd:2.4.67-alpine`
+# `httpd:2.4.68-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c9e51ef5214c52b120c52611ebf3292ee790be454d84de82aa1e9431595d36db`
-- Created: `2026-05-05T17:41:11.809000817Z`
-- Virtual Size: ~ 67.16 Mb  
+- Image ID: `sha256:5bdbd06577ba009805166768103f9a62685d9f97a9884b54388b1fa4bea9ecdd`
+- Created: `2026-06-08T18:32:30.055630358Z`
+- Virtual Size: ~ 66.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
 - Environment:
   - `PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HTTPD_PREFIX=/usr/local/apache2`
-  - `HTTPD_VERSION=2.4.67`
-  - `HTTPD_SHA256=66cd206637b0d5c446fa7dabe75fe03525da8fb55855876c46288cd88b136aa4`
+  - `HTTPD_VERSION=2.4.68`
+  - `HTTPD_SHA256=68c74d4df38c26bed4dfbdb8f3baf1eb532f3872357becc1bba5d136f6b63c06`
   - `HTTPD_PATCHES=`
 
 ## `apk` (`.apk`-based packages)
@@ -343,16 +343,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.17.0-r1 description:
+libcurl-8.19.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.17.0-r1 webpage:
+libcurl-8.19.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.17.0-r1 installed size:
-721 KiB
+libcurl-8.19.0-r0 installed size:
+697 KiB
 
-libcurl-8.17.0-r1 license:
+libcurl-8.19.0-r0 license:
 curl
 
 ```
@@ -394,16 +394,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.10-r0 description:
+libldap-2.6.13-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.10-r0 webpage:
+libldap-2.6.13-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.10-r0 installed size:
+libldap-2.6.13-r0 installed size:
 365 KiB
 
-libldap-2.6.10-r0 license:
+libldap-2.6.13-r0 license:
 OLDAP-2.8
 
 ```
@@ -496,16 +496,16 @@ BSD-3-Clause
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.9-r0 description:
+libxml2-2.13.9-r1 description:
 XML parsing library, version 2
 
-libxml2-2.13.9-r0 webpage:
+libxml2-2.13.9-r1 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.9-r0 installed size:
+libxml2-2.13.9-r1 installed size:
 1046 KiB
 
-libxml2-2.13.9-r0 license:
+libxml2-2.13.9-r1 license:
 MIT
 
 ```
@@ -574,23 +574,6 @@ nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
 nghttp2-libs-1.69.0-r0 license:
-MIT
-
-```
-
-### `apk` package: `nghttp3`
-
-```console
-nghttp3-1.13.1-r0 description:
-HTTP/3 library written in C
-
-nghttp3-1.13.1-r0 webpage:
-https://github.com/ngtcp2/nghttp3
-
-nghttp3-1.13.1-r0 installed size:
-140 KiB
-
-nghttp3-1.13.1-r0 license:
 MIT
 
 ```
