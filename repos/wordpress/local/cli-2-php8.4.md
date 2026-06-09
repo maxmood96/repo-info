@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac29ca501f32e292de848c78844e85a562c69b7e4b2465896bd0ddb76f6c4f17`
-- Created: `2026-05-07T17:16:34.909014212Z`
-- Virtual Size: ~ 210.04 Mb  
+- Image ID: `sha256:0c69f1c3a06167c4e9f17dfcfb7141f926cc5f6eb09e45586bbce9ee2cc27e87`
+- Created: `2026-06-06T00:13:07.741492101Z`
+- Virtual Size: ~ 210.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.21`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.21.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.21.tar.xz.asc`
-  - `PHP_SHA256=7cf5d8ab12c3b2016875bcfaec71bef1ef0b07bed6148f2c447577074431f984`
+  - `PHP_VERSION=8.4.22`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.22.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.22.tar.xz.asc`
+  - `PHP_SHA256=696c0f6ad92e94c59059c1eb6e300842b8d050934226efcdf00f2a413cb083cf`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.12.0`
   - `WORDPRESS_CLI_SHA512=be928f6b8ca1e8dfb9d2f4b75a13aa4aee0896f8a9a0a1c45cd5d2c98605e6172e6d014dda2e27f88c98befc16c040cbb2bd1bfa121510ea5cdf5f6a30fe8832`
@@ -115,16 +115,16 @@ MIT
 ### `apk` package: `aom-libs`
 
 ```console
-aom-libs-3.13.1-r1 description:
+aom-libs-3.14.1-r0 description:
 Alliance for Open Media (AOM) AV1 codec SDK (libraries)
 
-aom-libs-3.13.1-r1 webpage:
+aom-libs-3.14.1-r0 webpage:
 https://aomedia.org/
 
-aom-libs-3.13.1-r1 installed size:
-8140 KiB
+aom-libs-3.14.1-r0 installed size:
+8180 KiB
 
-aom-libs-3.13.1-r1 license:
+aom-libs-3.14.1-r0 license:
 BSD-2-Clause AND custom
 
 ```
@@ -285,16 +285,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.17.0-r1 description:
+curl-8.19.0-r0 description:
 URL retrival utility and library
 
-curl-8.17.0-r1 webpage:
+curl-8.19.0-r0 webpage:
 https://curl.se/
 
-curl-8.17.0-r1 installed size:
-265 KiB
+curl-8.19.0-r0 installed size:
+273 KiB
 
-curl-8.17.0-r1 license:
+curl-8.19.0-r0 license:
 curl
 
 ```
@@ -472,16 +472,16 @@ ICU
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.19-r0 description:
+imagemagick-libs-7.1.2.24-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.19-r0 webpage:
+imagemagick-libs-7.1.2.24-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.19-r0 installed size:
-4257 KiB
+imagemagick-libs-7.1.2.24-r0 installed size:
+4261 KiB
 
-imagemagick-libs-7.1.2.19-r0 license:
+imagemagick-libs-7.1.2.24-r0 license:
 ImageMagick
 
 ```
@@ -625,16 +625,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.17.0-r1 description:
+libcurl-8.19.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.17.0-r1 webpage:
+libcurl-8.19.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.17.0-r1 installed size:
-721 KiB
+libcurl-8.19.0-r0 installed size:
+697 KiB
 
-libcurl-8.17.0-r1 license:
+libcurl-8.19.0-r0 license:
 curl
 
 ```
@@ -863,16 +863,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.57-r0 description:
+libpng-1.6.58-r1 description:
 Portable Network Graphics library
 
-libpng-1.6.57-r0 webpage:
+libpng-1.6.58-r1 webpage:
 http://www.libpng.org
 
-libpng-1.6.57-r0 installed size:
+libpng-1.6.58-r1 installed size:
 181 KiB
 
-libpng-1.6.57-r0 license:
+libpng-1.6.58-r1 license:
 Libpng
 
 ```
@@ -1101,16 +1101,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.9-r0 description:
+libxml2-2.13.9-r1 description:
 XML parsing library, version 2
 
-libxml2-2.13.9-r0 webpage:
+libxml2-2.13.9-r1 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.9-r0 installed size:
+libxml2-2.13.9-r1 installed size:
 1046 KiB
 
-libxml2-2.13.9-r0 license:
+libxml2-2.13.9-r1 license:
 MIT
 
 ```
@@ -1152,16 +1152,16 @@ BSD-3-Clause
 ### `apk` package: `mariadb-client`
 
 ```console
-mariadb-client-11.4.10-r0 description:
+mariadb-client-11.4.12-r0 description:
 Client for the MariaDB database
 
-mariadb-client-11.4.10-r0 webpage:
+mariadb-client-11.4.12-r0 webpage:
 https://www.mariadb.org/
 
-mariadb-client-11.4.10-r0 installed size:
+mariadb-client-11.4.12-r0 installed size:
 36 MiB
 
-mariadb-client-11.4.10-r0 license:
+mariadb-client-11.4.12-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1169,16 +1169,16 @@ GPL-2.0-or-later
 ### `apk` package: `mariadb-common`
 
 ```console
-mariadb-common-11.4.10-r0 description:
+mariadb-common-11.4.12-r0 description:
 MariaDB common files for both server and client
 
-mariadb-common-11.4.10-r0 webpage:
+mariadb-common-11.4.12-r0 webpage:
 https://www.mariadb.org/
 
-mariadb-common-11.4.10-r0 installed size:
-2051 KiB
+mariadb-common-11.4.12-r0 installed size:
+2052 KiB
 
-mariadb-common-11.4.10-r0 license:
+mariadb-common-11.4.12-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1220,16 +1220,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `mysql-client`
 
 ```console
-mysql-client-11.4.10-r0 description:
+mysql-client-11.4.12-r0 description:
 Dummy package for mysql-client migration
 
-mysql-client-11.4.10-r0 webpage:
+mysql-client-11.4.12-r0 webpage:
 https://www.mariadb.org/
 
-mysql-client-11.4.10-r0 installed size:
+mysql-client-11.4.12-r0 installed size:
 0 B
 
-mysql-client-11.4.10-r0 license:
+mysql-client-11.4.12-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1264,23 +1264,6 @@ nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
 nghttp2-libs-1.69.0-r0 license:
-MIT
-
-```
-
-### `apk` package: `nghttp3`
-
-```console
-nghttp3-1.13.1-r0 description:
-HTTP/3 library written in C
-
-nghttp3-1.13.1-r0 webpage:
-https://github.com/ngtcp2/nghttp3
-
-nghttp3-1.13.1-r0 installed size:
-140 KiB
-
-nghttp3-1.13.1-r0 license:
 MIT
 
 ```

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:059fb2fff26acdccea34a50a6ca7468a3b8531a987b376a109c2fc55a67786b4`
-- Created: `2026-05-21T23:00:13.210161481Z`
-- Virtual Size: ~ 322.48 Mb  
+- Image ID: `sha256:632589f1ef45c7184b4f63f300dca5c167b25f23f5b1f553330dc0658849ee2c`
+- Created: `2026-06-05T02:11:30.707960449Z`
+- Virtual Size: ~ 322.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC 49D9AF6BC72A80D6691719C8AA23F5BE9C7097D4 D95C03BC702BE9515344AE3374E44BC9067701A5`
-  - `PHP_VERSION=8.5.6`
-  - `PHP_URL=https://www.php.net/distributions/php-8.5.6.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.6.tar.xz.asc`
-  - `PHP_SHA256=826c600b7c6f956bd335558ca3bdbcab23b22126c1cc8d9348be2280a2204bb7`
+  - `PHP_VERSION=8.5.7`
+  - `PHP_URL=https://www.php.net/distributions/php-8.5.7.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.7.tar.xz.asc`
+  - `PHP_SHA256=01ba2ed1c2658dacf91bebc8be6a4885f69b811c7993831fc48e26107ab29985`
 
 ## `apk` (`.apk`-based packages)
 
@@ -112,16 +112,16 @@ MIT
 ### `apk` package: `aom-libs`
 
 ```console
-aom-libs-3.13.1-r1 description:
+aom-libs-3.14.1-r0 description:
 Alliance for Open Media (AOM) AV1 codec SDK (libraries)
 
-aom-libs-3.13.1-r1 webpage:
+aom-libs-3.14.1-r0 webpage:
 https://aomedia.org/
 
-aom-libs-3.13.1-r1 installed size:
-8140 KiB
+aom-libs-3.14.1-r0 installed size:
+8180 KiB
 
-aom-libs-3.13.1-r1 license:
+aom-libs-3.14.1-r0 license:
 BSD-2-Clause AND custom
 
 ```
@@ -316,16 +316,16 @@ Apache-2.0
 ### `apk` package: `curl`
 
 ```console
-curl-8.17.0-r1 description:
+curl-8.19.0-r0 description:
 URL retrival utility and library
 
-curl-8.17.0-r1 webpage:
+curl-8.19.0-r0 webpage:
 https://curl.se/
 
-curl-8.17.0-r1 installed size:
-265 KiB
+curl-8.19.0-r0 installed size:
+273 KiB
 
-curl-8.17.0-r1 license:
+curl-8.19.0-r0 license:
 curl
 
 ```
@@ -571,16 +571,16 @@ ICU
 ### `apk` package: `imagemagick`
 
 ```console
-imagemagick-7.1.2.22-r0 description:
+imagemagick-7.1.2.24-r0 description:
 Collection of tools and libraries for many image formats
 
-imagemagick-7.1.2.22-r0 webpage:
+imagemagick-7.1.2.24-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-7.1.2.22-r0 installed size:
-3691 KiB
+imagemagick-7.1.2.24-r0 installed size:
+3696 KiB
 
-imagemagick-7.1.2.22-r0 license:
+imagemagick-7.1.2.24-r0 license:
 ImageMagick
 
 ```
@@ -588,16 +588,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jp2`
 
 ```console
-imagemagick-jp2-7.1.2.22-r0 description:
+imagemagick-jp2-7.1.2.24-r0 description:
 Collection of tools and libraries for many image formats (JPEG2000 support modules)
 
-imagemagick-jp2-7.1.2.22-r0 webpage:
+imagemagick-jp2-7.1.2.24-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jp2-7.1.2.22-r0 installed size:
+imagemagick-jp2-7.1.2.24-r0 installed size:
 26 KiB
 
-imagemagick-jp2-7.1.2.22-r0 license:
+imagemagick-jp2-7.1.2.24-r0 license:
 ImageMagick
 
 ```
@@ -605,16 +605,16 @@ ImageMagick
 ### `apk` package: `imagemagick-jpeg`
 
 ```console
-imagemagick-jpeg-7.1.2.22-r0 description:
+imagemagick-jpeg-7.1.2.24-r0 description:
 Collection of tools and libraries for many image formats (JPEG support modules)
 
-imagemagick-jpeg-7.1.2.22-r0 webpage:
+imagemagick-jpeg-7.1.2.24-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-jpeg-7.1.2.22-r0 installed size:
+imagemagick-jpeg-7.1.2.24-r0 installed size:
 62 KiB
 
-imagemagick-jpeg-7.1.2.22-r0 license:
+imagemagick-jpeg-7.1.2.24-r0 license:
 ImageMagick
 
 ```
@@ -622,16 +622,16 @@ ImageMagick
 ### `apk` package: `imagemagick-libs`
 
 ```console
-imagemagick-libs-7.1.2.22-r0 description:
+imagemagick-libs-7.1.2.24-r0 description:
 Collection of tools and libraries for many image formats (libraries)
 
-imagemagick-libs-7.1.2.22-r0 webpage:
+imagemagick-libs-7.1.2.24-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-libs-7.1.2.22-r0 installed size:
+imagemagick-libs-7.1.2.24-r0 installed size:
 4261 KiB
 
-imagemagick-libs-7.1.2.22-r0 license:
+imagemagick-libs-7.1.2.24-r0 license:
 ImageMagick
 
 ```
@@ -639,16 +639,16 @@ ImageMagick
 ### `apk` package: `imagemagick-pdf`
 
 ```console
-imagemagick-pdf-7.1.2.22-r0 description:
+imagemagick-pdf-7.1.2.24-r0 description:
 Collection of tools and libraries for many image formats (PDF support modules)
 
-imagemagick-pdf-7.1.2.22-r0 webpage:
+imagemagick-pdf-7.1.2.24-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-pdf-7.1.2.22-r0 installed size:
+imagemagick-pdf-7.1.2.24-r0 installed size:
 121 KiB
 
-imagemagick-pdf-7.1.2.22-r0 license:
+imagemagick-pdf-7.1.2.24-r0 license:
 ImageMagick
 
 ```
@@ -656,16 +656,16 @@ ImageMagick
 ### `apk` package: `imagemagick-tiff`
 
 ```console
-imagemagick-tiff-7.1.2.22-r0 description:
+imagemagick-tiff-7.1.2.24-r0 description:
 Collection of tools and libraries for many image formats (TIFF support modules)
 
-imagemagick-tiff-7.1.2.22-r0 webpage:
+imagemagick-tiff-7.1.2.24-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-tiff-7.1.2.22-r0 installed size:
+imagemagick-tiff-7.1.2.24-r0 installed size:
 115 KiB
 
-imagemagick-tiff-7.1.2.22-r0 license:
+imagemagick-tiff-7.1.2.24-r0 license:
 ImageMagick
 
 ```
@@ -673,16 +673,16 @@ ImageMagick
 ### `apk` package: `imagemagick-webp`
 
 ```console
-imagemagick-webp-7.1.2.22-r0 description:
+imagemagick-webp-7.1.2.24-r0 description:
 Collection of tools and libraries for many image formats (WebP support modules)
 
-imagemagick-webp-7.1.2.22-r0 webpage:
+imagemagick-webp-7.1.2.24-r0 webpage:
 https://imagemagick.org/
 
-imagemagick-webp-7.1.2.22-r0 installed size:
+imagemagick-webp-7.1.2.24-r0 installed size:
 30 KiB
 
-imagemagick-webp-7.1.2.22-r0 license:
+imagemagick-webp-7.1.2.24-r0 license:
 ImageMagick
 
 ```
@@ -826,16 +826,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.17.0-r1 description:
+libcurl-8.19.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.17.0-r1 webpage:
+libcurl-8.19.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.17.0-r1 installed size:
-721 KiB
+libcurl-8.19.0-r0 installed size:
+697 KiB
 
-libcurl-8.17.0-r1 license:
+libcurl-8.19.0-r0 license:
 curl
 
 ```
@@ -1404,16 +1404,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.9-r0 description:
+libxml2-2.13.9-r1 description:
 XML parsing library, version 2
 
-libxml2-2.13.9-r0 webpage:
+libxml2-2.13.9-r1 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.9-r0 installed size:
+libxml2-2.13.9-r1 installed size:
 1046 KiB
 
-libxml2-2.13.9-r0 license:
+libxml2-2.13.9-r1 license:
 MIT
 
 ```
@@ -1550,23 +1550,6 @@ nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
 nghttp2-libs-1.69.0-r0 license:
-MIT
-
-```
-
-### `apk` package: `nghttp3`
-
-```console
-nghttp3-1.13.1-r0 description:
-HTTP/3 library written in C
-
-nghttp3-1.13.1-r0 webpage:
-https://github.com/ngtcp2/nghttp3
-
-nghttp3-1.13.1-r0 installed size:
-140 KiB
-
-nghttp3-1.13.1-r0 license:
 MIT
 
 ```
