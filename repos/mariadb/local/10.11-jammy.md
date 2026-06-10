@@ -1702,15 +1702,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.23
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.23.debian.tar.xz' openssl_3.0.2-0ubuntu1.23.debian.tar.xz 277852 SHA512:1de5b111ad19a4d0400c2195574737293a83a23d4f79ca44e86f09e8438f879d29888be39455f7483fdaf8a9314841ffb9511ace908813e7f849c4d98af53562
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.23.dsc' openssl_3.0.2-0ubuntu1.23.dsc 2730 SHA512:63c782499d5cee71f4d999ae0581c3b1f3ccc6f68b0147e1e3487c2dcd43e83c420b9a3d9bbf305ec6ed39f7dfc73e2386c2a5d89adc46878d8a36dd53d1d431
-```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
@@ -1965,15 +1959,9 @@ Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rsync=3.2.7-0ubuntu0.22.04.6
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7.orig.tar.gz' rsync_3.2.7.orig.tar.gz 1149787 SHA512:c2afba11a352fd88133f9e96e19d6df80eb864450c83eced13a7faa23df947bccf2ef093f2101df6ee30abff4cbbd39ac802e9aa5f726e42c9caff274fad8377
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7.orig.tar.gz.asc' rsync_3.2.7.orig.tar.gz.asc 195 SHA512:bad9f48e033966566c6abf8cd485d35c0d9cf130eafb0c5fff9bcb928882283bbcdd2375e7c2880cf71cf81496ba6b743b61adca3d4678421c32915a2464acc3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7-0ubuntu0.22.04.6.debian.tar.xz' rsync_3.2.7-0ubuntu0.22.04.6.debian.tar.xz 100492 SHA512:cebbef4effb1f89c6854297b700adef5ec90b8f80d92b1960624a75af61e03dbc55f51f353a3ba6b280e1359c9fa57263c36e57f85081949751fe52ebe65c28a
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7-0ubuntu0.22.04.6.dsc' rsync_3.2.7-0ubuntu0.22.04.6.dsc 2402 SHA512:328bec46a237cbdfd32730784e5a52bd2fabdc0dc45d93067e9628c4c8adf0fa6b20f573a6ffafed55d746b85ac094872b144a9083ea61e9ca292b1e1f6b44e8
-```
 
 ### `dpkg` source package: `sed=4.8-1ubuntu2.1`
 
@@ -2097,14 +2085,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.20
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA256:305ba81cc33593bc2e8e9d6dc7f964b1c0a9303155fced5e6b1d236577441bf2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.20.debian.tar.xz' systemd_249.11-0ubuntu3.20.debian.tar.xz 268300 SHA256:5ee6145eb25c4a8b2419da5f146a22f9ae46f3e37af9acc90c73ee7424b8f8d6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.20.dsc' systemd_249.11-0ubuntu3.20.dsc 5907 SHA256:8f7b24a4b0f18fdf74fe35a20bba8ac10d71f6418792015bb19d9fe235f80cb6
-```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
