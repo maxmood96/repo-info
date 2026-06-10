@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9bf3851549525f78ded6002775b1cf2f49ed6a5a7da27e3aaf2ea1f84a9ed1b6`
-- Created: `2026-05-27T00:11:37.255094064Z`
-- Virtual Size: ~ 59.64 Mb  
+- Image ID: `sha256:9ba695f66b0e7b05a74f8e3d32bbca399f582c48970e178276e92f9e72303693`
+- Created: `2026-06-08T22:44:41.460915276Z`
+- Virtual Size: ~ 59.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -13,7 +13,7 @@
   - `PYTHON_VERSION=3.14.5`
   - `PYTHON_SHA256=7e32597b99e5d9a39abed35de4693fa169df3e5850d4c334337ffd6a19a36db6`
   - `HY_VERSION=1.3.0`
-  - `HYRULE_VERSION=1.0.1`
+  - `HYRULE_VERSION=1.1.0`
 
 ## `apk` (`.apk`-based packages)
 
