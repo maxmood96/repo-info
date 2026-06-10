@@ -7,6 +7,7 @@
 -	[`rust:1-alpine3.21`](#rust1-alpine321)
 -	[`rust:1-alpine3.22`](#rust1-alpine322)
 -	[`rust:1-alpine3.23`](#rust1-alpine323)
+-	[`rust:1-alpine3.24`](#rust1-alpine324)
 -	[`rust:1-bookworm`](#rust1-bookworm)
 -	[`rust:1-bullseye`](#rust1-bullseye)
 -	[`rust:1-slim`](#rust1-slim)
@@ -19,6 +20,7 @@
 -	[`rust:1.96-alpine3.21`](#rust196-alpine321)
 -	[`rust:1.96-alpine3.22`](#rust196-alpine322)
 -	[`rust:1.96-alpine3.23`](#rust196-alpine323)
+-	[`rust:1.96-alpine3.24`](#rust196-alpine324)
 -	[`rust:1.96-bookworm`](#rust196-bookworm)
 -	[`rust:1.96-bullseye`](#rust196-bullseye)
 -	[`rust:1.96-slim`](#rust196-slim)
@@ -31,6 +33,7 @@
 -	[`rust:1.96.0-alpine3.21`](#rust1960-alpine321)
 -	[`rust:1.96.0-alpine3.22`](#rust1960-alpine322)
 -	[`rust:1.96.0-alpine3.23`](#rust1960-alpine323)
+-	[`rust:1.96.0-alpine3.24`](#rust1960-alpine324)
 -	[`rust:1.96.0-bookworm`](#rust1960-bookworm)
 -	[`rust:1.96.0-bullseye`](#rust1960-bullseye)
 -	[`rust:1.96.0-slim`](#rust1960-slim)
@@ -42,6 +45,7 @@
 -	[`rust:alpine3.21`](#rustalpine321)
 -	[`rust:alpine3.22`](#rustalpine322)
 -	[`rust:alpine3.23`](#rustalpine323)
+-	[`rust:alpine3.24`](#rustalpine324)
 -	[`rust:bookworm`](#rustbookworm)
 -	[`rust:bullseye`](#rustbullseye)
 -	[`rust:latest`](#rustlatest)
@@ -1438,6 +1442,10 @@ $ docker pull rust@sha256:f3261c6e41eea15ae7fd356aba14d2cb0a9f6c774c7b9af1ce5eb1
 		Last Modified: Thu, 28 May 2026 21:45:44 GMT  
 		Size: 13.5 KB (13460 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `rust:1-alpine3.24`
+
+**does not exist** (yet?)
 
 ## `rust:1-bookworm`
 
@@ -5615,6 +5623,10 @@ $ docker pull rust@sha256:f3261c6e41eea15ae7fd356aba14d2cb0a9f6c774c7b9af1ce5eb1
 		Size: 13.5 KB (13460 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `rust:1.96-alpine3.24`
+
+**does not exist** (yet?)
+
 ## `rust:1.96-bookworm`
 
 ```console
@@ -9791,6 +9803,10 @@ $ docker pull rust@sha256:f3261c6e41eea15ae7fd356aba14d2cb0a9f6c774c7b9af1ce5eb1
 		Size: 13.5 KB (13460 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `rust:1.96.0-alpine3.24`
+
+**does not exist** (yet?)
+
 ## `rust:1.96.0-bookworm`
 
 ```console
@@ -13418,6 +13434,10 @@ $ docker pull rust@sha256:f3261c6e41eea15ae7fd356aba14d2cb0a9f6c774c7b9af1ce5eb1
 		Last Modified: Thu, 28 May 2026 21:45:44 GMT  
 		Size: 13.5 KB (13460 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `rust:alpine3.24`
+
+**does not exist** (yet?)
 
 ## `rust:bookworm`
 
