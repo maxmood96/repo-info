@@ -1,10 +1,10 @@
-# `mongo:7.0.34-jammy`
+# `mongo:7.0.35-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:dce1a146801e912688bd7e60e67a8fda266cd4afb530e9f30c5ed4f11d4ba0c5`
-- Created: `2026-05-15T21:20:35.860028793Z`
-- Virtual Size: ~ 873.34 Mb  
+- Image ID: `sha256:7fea46266edecb70bf9e7cb0f5c2db9fea0d33c1beceb8b2ae9f8db88e4cc77a`
+- Created: `2026-06-10T20:12:13.507508984Z`
+- Virtual Size: ~ 873.51 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=7.0`
-  - `MONGO_VERSION=7.0.34`
+  - `MONGO_VERSION=7.0.35`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.version=22.04`
@@ -1313,17 +1313,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=7.0.34`
+### `dpkg` source package: `mongodb-org=7.0.35`
 
 Binary Packages:
 
-- `mongodb-org=7.0.34`
-- `mongodb-org-database=7.0.34`
-- `mongodb-org-database-tools-extra=7.0.34`
-- `mongodb-org-mongos=7.0.34`
-- `mongodb-org-server=7.0.34`
-- `mongodb-org-shell=7.0.34`
-- `mongodb-org-tools=7.0.34`
+- `mongodb-org=7.0.35`
+- `mongodb-org-database=7.0.35`
+- `mongodb-org-database-tools-extra=7.0.35`
+- `mongodb-org-mongos=7.0.35`
+- `mongodb-org-server=7.0.35`
+- `mongodb-org-shell=7.0.35`
+- `mongodb-org-tools=7.0.35`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1461,9 +1461,25 @@ $ apt-get source -qq --print-uris openldap=2.5.20+dfsg-0ubuntu0.22.04.1
 Binary Packages:
 
 - `libssl3:amd64=3.0.2-0ubuntu1.23`
-- `openssl=3.0.2-0ubuntu1.23`
 
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
+
+- `Apache-2.0`
+- `Artistic`
+- `GPL-1`
+- `GPL-1+`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.25`
+
+Binary Packages:
+
+- `openssl=3.0.2-0ubuntu1.25`
+
+Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -1473,11 +1489,11 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.23
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.25
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.23.debian.tar.xz' openssl_3.0.2-0ubuntu1.23.debian.tar.xz 277852 SHA512:1de5b111ad19a4d0400c2195574737293a83a23d4f79ca44e86f09e8438f879d29888be39455f7483fdaf8a9314841ffb9511ace908813e7f849c4d98af53562
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.23.dsc' openssl_3.0.2-0ubuntu1.23.dsc 2730 SHA512:63c782499d5cee71f4d999ae0581c3b1f3ccc6f68b0147e1e3487c2dcd43e83c420b9a3d9bbf305ec6ed39f7dfc73e2386c2a5d89adc46878d8a36dd53d1d431
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.25.debian.tar.xz' openssl_3.0.2-0ubuntu1.25.debian.tar.xz 292264 SHA512:68d7cb2233d1cb266fc9bd4d11e435d64237033624a22c2ec7f75917314238bc7dbcc38bcc7a761a844ce0c68b426b4b572f87f83bd458162ebe705cc4dd84c3
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.25.dsc' openssl_3.0.2-0ubuntu1.25.dsc 2730 SHA512:6e4d4e77f6a68dd44a5a042e55a70c7ed414ed93d05ee3d1bb7b7c9699accbfab2c297c453b06d5f6b5c537d1c480e685b3df344206bf9671eb9d8a362930581
 ```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
@@ -1758,14 +1774,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.20
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA256:305ba81cc33593bc2e8e9d6dc7f964b1c0a9303155fced5e6b1d236577441bf2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.20.debian.tar.xz' systemd_249.11-0ubuntu3.20.debian.tar.xz 268300 SHA256:5ee6145eb25c4a8b2419da5f146a22f9ae46f3e37af9acc90c73ee7424b8f8d6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.20.dsc' systemd_249.11-0ubuntu3.20.dsc 5907 SHA256:8f7b24a4b0f18fdf74fe35a20bba8ac10d71f6418792015bb19d9fe235f80cb6
-```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
