@@ -1,7 +1,7 @@
 ## `golang:tip-20260606-bookworm`
 
 ```console
-$ docker pull golang@sha256:380dc6c56c60564e516e98d937d44867734d25a4c0f0689180590fa5f575152b
+$ docker pull golang@sha256:80e9de51a2fd6a2ba57b63feac0c01d8f19bc2d8283279d4b5efbf3ead6f14a2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -554,23 +554,23 @@ $ docker pull golang@sha256:72b27b298677b3e8d070e5ab508395e87768c1d1c7bde04449ca
 ### `golang:tip-20260606-bookworm` - linux; s390x
 
 ```console
-$ docker pull golang@sha256:50dbd3618d7f5a49db90d0ce0498a16dc5b11e0fae34617bd96942b0021f1e9a
+$ docker pull golang@sha256:c2b0c431ed15d10a469bfee0a7dcbeb814f3c2c52596789ba100cb206b3aee77
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.3 MB (304272503 bytes)**  
+-	Total Size: **304.3 MB (304278085 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:429bbf6985f753e87da4eda1741f05a8587d371883a47c6b914b154aac693579`
+-	Image ID: `sha256:c5d4a82fa68978f99ae3c4d59b2aee2e92c8252478729c1b06ced6fb292e206a`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1779062400'
-# Wed, 20 May 2026 00:17:57 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1781049600'
+# Thu, 11 Jun 2026 01:43:44 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 20 May 2026 02:05:12 GMT
+# Thu, 11 Jun 2026 03:26:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 02 Jun 2026 16:42:08 GMT
+# Thu, 11 Jun 2026 04:17:16 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	dpkgArch="$(dpkg --print-architecture)"; 	if [ "$dpkgArch" = 'arm64' ]; then 		apt-get install -y --no-install-recommends binutils-gold; 	fi; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 08 Jun 2026 22:52:26 GMT
 ENV GOTOOLCHAIN=local
@@ -580,36 +580,36 @@ ENV GOPATH=/go
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Mon, 08 Jun 2026 22:52:26 GMT
 COPY /target/ / # buildkit
-# Mon, 08 Jun 2026 22:52:29 GMT
+# Thu, 11 Jun 2026 07:25:56 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Mon, 08 Jun 2026 22:52:29 GMT
+# Thu, 11 Jun 2026 07:25:56 GMT
 WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:e0fc2c7a6bb12f7a9b333cc117b6ea5fa5cf251c5fa4dd298303beee01028f59`  
-		Last Modified: Tue, 19 May 2026 22:35:39 GMT  
-		Size: 47.2 MB (47155589 bytes)  
+	-	`sha256:b041a55a85cc0e47dd570746852cc1b0fee042f3a03eb250b9f896ac4aa74a3d`  
+		Last Modified: Wed, 10 Jun 2026 23:41:01 GMT  
+		Size: 47.2 MB (47161500 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d79feab17202415ba0b431eca0e903b1c895e662e755c4c9f1b5678ad8eb605f`  
-		Last Modified: Wed, 20 May 2026 00:18:12 GMT  
-		Size: 24.0 MB (24039201 bytes)  
+	-	`sha256:4dc0f0bf9684619796dace2f15b323a1fcec3fdfd4a5712e33f82ae28ed815bf`  
+		Last Modified: Thu, 11 Jun 2026 01:43:58 GMT  
+		Size: 24.0 MB (24038950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:511ade0407a6db3c4a6853a735563e5fb22577aaaa32942a9458cc0c09942583`  
-		Last Modified: Wed, 20 May 2026 02:05:37 GMT  
-		Size: 63.5 MB (63498321 bytes)  
+	-	`sha256:5f33cb3e3ab28182d2640ab8d60069099e6c4d1dd9ee3f806d20e366f1901797`  
+		Last Modified: Thu, 11 Jun 2026 03:26:38 GMT  
+		Size: 63.5 MB (63498201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6f90b46dcc8622719e19e9e04b1bcb5bc39309966d69636e349c233ba832e30`  
-		Last Modified: Tue, 02 Jun 2026 16:42:45 GMT  
-		Size: 69.1 MB (69088003 bytes)  
+	-	`sha256:a8af5a7d1036fb8bff3fd2bc25c291ea4a3ed7725de01c46987c947758f03450`  
+		Last Modified: Thu, 11 Jun 2026 04:17:58 GMT  
+		Size: 69.1 MB (69088043 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a56217687aa3cc648280b9c7052cd68f26077339d92dab45c68b721ed5388981`  
 		Last Modified: Mon, 08 Jun 2026 22:53:02 GMT  
 		Size: 100.5 MB (100491232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afd08ea32efd9c11828b1255d55ab235bb8c1c583bee295d934ea31598fce050`  
-		Last Modified: Mon, 08 Jun 2026 22:53:02 GMT  
-		Size: 125.0 B  
+	-	`sha256:2391d38860b44148b3061998061e20638c6bae1aa29c693122dd41926bd8cf89`  
+		Last Modified: Thu, 11 Jun 2026 07:26:23 GMT  
+		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -619,23 +619,23 @@ WORKDIR /go
 ### `golang:tip-20260606-bookworm` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:273e5a43e244d5924bbdc4767314a4dff32a3f6bb88de9685c20ebfd2507919c
+$ docker pull golang@sha256:9bdb82708bcc012cc99b75a2d0c75e088da871d456b096beb779434bd8a5d826
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.4 MB (10357951 bytes)**  
+-	Total Size: **10.4 MB (10357969 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94a7cdbbb57abc0c03c2ccf94f6a45f999fb3481d1f5963277d86ec05ad508af`
+-	Image ID: `sha256:bb07ce1fef4b12ca657e735ca824e7847411179576daeccf5f74732c5f0c3b39`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:698115f10be521fd06223098e65a12e9b483f4b1c345620b3eda36b15a4b92fc`  
-		Last Modified: Mon, 08 Jun 2026 22:53:02 GMT  
-		Size: 10.3 MB (10329561 bytes)  
+	-	`sha256:932074979419af5338839923e0b617dd127e7f4e4694a6904e35b37d1c2ff464`  
+		Last Modified: Thu, 11 Jun 2026 07:26:23 GMT  
+		Size: 10.3 MB (10329579 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:716a0f057098121180cb9a966d1cce91bda9e050aa2170f742ccf0e93cb697cf`  
-		Last Modified: Mon, 08 Jun 2026 22:53:02 GMT  
+	-	`sha256:228aa503b4f712bc3ffc78f69f4e0e732c27734357ce910e8d6048b6d1911e79`  
+		Last Modified: Thu, 11 Jun 2026 07:26:23 GMT  
 		Size: 28.4 KB (28390 bytes)  
 		MIME: application/vnd.in-toto+json
