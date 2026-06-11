@@ -1,7 +1,7 @@
 ## `azul-zulu:25-jre-headless-debian13`
 
 ```console
-$ docker pull azul-zulu@sha256:ed0d7744d8b608f1297c6d8682c3eddf8f062eb62c591750a67f486952a99b83
+$ docker pull azul-zulu@sha256:03b56a65eeedfec2e10ce0411f00951287a6909b4d17137c6c5cd8fd2845de06
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,111 +14,111 @@ $ docker pull azul-zulu@sha256:ed0d7744d8b608f1297c6d8682c3eddf8f062eb62c591750a
 ### `azul-zulu:25-jre-headless-debian13` - linux; amd64
 
 ```console
-$ docker pull azul-zulu@sha256:2d23935c7bae86bad25ed2c897dfc414344294fcc521bd482934c596e9fb67c3
+$ docker pull azul-zulu@sha256:b9734e7f7a5f436004efc00e7ede84aed02cd1282d187e0ded0c17483e47bf8f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.8 MB (118769087 bytes)**  
+-	Total Size: **118.8 MB (118774419 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:328c03b9a82ff96df566a5a47370c7b4cb372ca2b653eb573719813fbaac3fdb`
+-	Image ID: `sha256:e3718770949c16d0934133b8a6f8667dfcc90299d097eb1b420e568c3cd1bceb`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1779062400'
-# Tue, 19 May 2026 23:22:04 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1781049600'
+# Thu, 11 Jun 2026 00:41:20 GMT
 ARG REPO_HOST=repos.azul.com
-# Tue, 19 May 2026 23:22:04 GMT
+# Thu, 11 Jun 2026 00:41:20 GMT
 ENV LANG=C.UTF-8
-# Tue, 19 May 2026 23:22:04 GMT
+# Thu, 11 Jun 2026 00:41:20 GMT
 # ARGS: REPO_HOST=repos.azul.com
 RUN set -eux &&     apt-get update &&     apt-get install -y --no-install-recommends gnupg ca-certificates curl &&     GNUPGHOME="$(mktemp -d)" &&     export GNUPGHOME &&     curl -fsSL https://repos.azul.com/azul-repo.key | gpg --batch --import &&     gpg --batch --export --armor '27BC 0C8C B3D8 1623 F59B  DADC B199 8361 219B D9C9' > /usr/share/keyrings/azul.pgp.asc &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" &&     echo "deb [signed-by=/usr/share/keyrings/azul.pgp.asc] https://$REPO_HOST/zulu/deb stable main" | tee /etc/apt/sources.list.d/zulu.list &&     printf 'Package: zulu25-*\nPin: version 25.0.3-3\nPin-Priority: 1001\n' > /etc/apt/preferences &&     apt-get update &&     apt-get -y --no-install-recommends install zulu25-jre-headless &&     apt-get -y purge --auto-remove gnupg curl &&     apt-get dist-clean &&     java -version # buildkit
-# Tue, 19 May 2026 23:22:04 GMT
+# Thu, 11 Jun 2026 00:41:20 GMT
 ENV JAVA_HOME=/usr/lib/jvm/zulu25
 ```
 
 -	Layers:
-	-	`sha256:5b4d6ff92fc4e14e911b7753c954fac965d48c40fe1075758d284148ccace970`  
-		Last Modified: Tue, 19 May 2026 22:37:05 GMT  
-		Size: 29.8 MB (29779926 bytes)  
+	-	`sha256:72c03230f1363a3fb61d2f98504cf168bad3fe22f511ad2005dc021515d7ce97`  
+		Last Modified: Wed, 10 Jun 2026 23:40:25 GMT  
+		Size: 29.8 MB (29785415 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bfa542975def6d0b15505fa410abe226a2b6325724b5b44e02fa4368105b6556`  
-		Last Modified: Tue, 19 May 2026 23:22:18 GMT  
-		Size: 89.0 MB (88989161 bytes)  
+	-	`sha256:b6fb91896f3ed9f6809f7e0ed00cde6463f5fa2fff7288d18f0141037997c418`  
+		Last Modified: Thu, 11 Jun 2026 00:41:34 GMT  
+		Size: 89.0 MB (88989004 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `azul-zulu:25-jre-headless-debian13` - unknown; unknown
 
 ```console
-$ docker pull azul-zulu@sha256:2b9c0a6472a2d666b6ef6c803c33fdea142517e114d8527fe1dd318e85eaaf10
+$ docker pull azul-zulu@sha256:318200ed043944d2a8f38632d940cd22e9ef57f63e8a021e2322f01df2173fe1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.3 KB (9298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02b658b896ad0ea6242bd00eaf31b5656d7484d72912daed2d8b157848cd7c76`
+-	Image ID: `sha256:b8bc7244cb3f9562cf83fc824eca64212e7b8b337ffac10e7ea997bff3af0fd7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a7458fc5a30fec6aaa09bb8d70dc933546cc7bee9aa1a7423965e0ab3c216b2f`  
-		Last Modified: Tue, 19 May 2026 23:22:15 GMT  
+	-	`sha256:522e6db99ad4dcf93bacd174cd555d96baba14fe04765f464b5e5201287e6acb`  
+		Last Modified: Thu, 11 Jun 2026 00:41:32 GMT  
 		Size: 9.3 KB (9298 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `azul-zulu:25-jre-headless-debian13` - linux; arm64 variant v8
 
 ```console
-$ docker pull azul-zulu@sha256:82ebf545e29d1a940a28815388f1f407f2002340051e1559396904f340d8facd
+$ docker pull azul-zulu@sha256:2b10a433d5e1e77be65a4d259ad954e41145d2f37ac23a09ab14b9afd4f669cd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.7 MB (118739266 bytes)**  
+-	Total Size: **118.7 MB (118745849 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72c012d637b7893e28ca75f104dfecde33e9d7377a91d4d637c998fe765b4b9a`
+-	Image ID: `sha256:200714bfe31ae6d513922f728653a6f21bfc63aa200e96ec4d52647892c48fbf`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1779062400'
-# Tue, 19 May 2026 23:25:49 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1781049600'
+# Thu, 11 Jun 2026 00:43:15 GMT
 ARG REPO_HOST=repos.azul.com
-# Tue, 19 May 2026 23:25:49 GMT
+# Thu, 11 Jun 2026 00:43:15 GMT
 ENV LANG=C.UTF-8
-# Tue, 19 May 2026 23:25:49 GMT
+# Thu, 11 Jun 2026 00:43:15 GMT
 # ARGS: REPO_HOST=repos.azul.com
 RUN set -eux &&     apt-get update &&     apt-get install -y --no-install-recommends gnupg ca-certificates curl &&     GNUPGHOME="$(mktemp -d)" &&     export GNUPGHOME &&     curl -fsSL https://repos.azul.com/azul-repo.key | gpg --batch --import &&     gpg --batch --export --armor '27BC 0C8C B3D8 1623 F59B  DADC B199 8361 219B D9C9' > /usr/share/keyrings/azul.pgp.asc &&     gpgconf --kill all &&     rm -rf "$GNUPGHOME" &&     echo "deb [signed-by=/usr/share/keyrings/azul.pgp.asc] https://$REPO_HOST/zulu/deb stable main" | tee /etc/apt/sources.list.d/zulu.list &&     printf 'Package: zulu25-*\nPin: version 25.0.3-3\nPin-Priority: 1001\n' > /etc/apt/preferences &&     apt-get update &&     apt-get -y --no-install-recommends install zulu25-jre-headless &&     apt-get -y purge --auto-remove gnupg curl &&     apt-get dist-clean &&     java -version # buildkit
-# Tue, 19 May 2026 23:25:49 GMT
+# Thu, 11 Jun 2026 00:43:15 GMT
 ENV JAVA_HOME=/usr/lib/jvm/zulu25
 ```
 
 -	Layers:
-	-	`sha256:cda3d70ae7d7c3d0b3b57a99a2085f9d93e919a846913dc6517a420b348c123d`  
-		Last Modified: Tue, 19 May 2026 22:36:58 GMT  
-		Size: 30.1 MB (30141919 bytes)  
+	-	`sha256:a25cd16f2d8653f652f8292b34b21bfbabdc85d6b39861a24b85f0896df1a95e`  
+		Last Modified: Wed, 10 Jun 2026 23:40:16 GMT  
+		Size: 30.1 MB (30148530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed50771141c784707017c822497a10ba1003f411db8b12ca811b250e9fa32828`  
-		Last Modified: Tue, 19 May 2026 23:26:03 GMT  
-		Size: 88.6 MB (88597347 bytes)  
+	-	`sha256:9d70f3f89ef0b773166514e1d066b23b1514bbd8d26f5d530f18b1e1fcacc6a5`  
+		Last Modified: Thu, 11 Jun 2026 00:43:29 GMT  
+		Size: 88.6 MB (88597319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `azul-zulu:25-jre-headless-debian13` - unknown; unknown
 
 ```console
-$ docker pull azul-zulu@sha256:62b8f0f9c1ae71f8b630d126e21b3184ef3a86cc12c1cc3b84f5dc7262146efa
+$ docker pull azul-zulu@sha256:ba457c5485d5b966c2ce75419e5d5593a71936495911a348b97e1e4870d91af9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **9.4 KB (9402 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f5dd410f1bbef1cbd9889525ce3fd82eb00a3ea307bf2f71b4139664e7db776`
+-	Image ID: `sha256:24c3a81c920ea99f4a37d3b752a667457288b572853fdc76e134ac7272a2e654`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:35efee6327bedd7acb27d4f53df4b80fa11a680e36c90e42493dc730eee26e4b`  
-		Last Modified: Tue, 19 May 2026 23:26:00 GMT  
+	-	`sha256:f6b64832c3226065377cb434f356f872854ca01a775dabf55d08eef84d5bfb05`  
+		Last Modified: Thu, 11 Jun 2026 00:43:27 GMT  
 		Size: 9.4 KB (9402 bytes)  
 		MIME: application/vnd.in-toto+json
