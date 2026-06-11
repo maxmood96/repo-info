@@ -24,7 +24,7 @@
 ## `chronograf:1.10`
 
 ```console
-$ docker pull chronograf@sha256:4212bfe106df50084c6d16d332a0ae1f2fa4afb9bfb70532925204943c712494
+$ docker pull chronograf@sha256:1e2982a21cab332a1d8ad29083c6e9799df65e497ecbc0cc4873ae3a64035d7e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -39,264 +39,264 @@ $ docker pull chronograf@sha256:4212bfe106df50084c6d16d332a0ae1f2fa4afb9bfb70532
 ### `chronograf:1.10` - linux; amd64
 
 ```console
-$ docker pull chronograf@sha256:3589d92826eec8a6de865ab37b92695dd9d37934b3128545bf83d8011a3a9475
+$ docker pull chronograf@sha256:8760f4d98c23b352d4d55ed05f2a2d92ce01f6f90fa8799de49e7b65617b8433
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **85.0 MB (85008703 bytes)**  
+-	Total Size: **85.0 MB (85013254 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:604747b8fa456af2ca3106968c70dddf935f988ae9dc99c289d1cd11efdbb2e0`
+-	Image ID: `sha256:623aaab10cc07007e12c30b976d188ca4d8c4e0ea0e48994647321d8eb268651`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1779062400'
-# Tue, 19 May 2026 23:23:25 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1781049600'
+# Thu, 11 Jun 2026 00:42:46 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         24C975CBA61A024EE1B631787C3D57159FC2F927 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Tue, 19 May 2026 23:23:31 GMT
+# Thu, 11 Jun 2026 00:42:52 GMT
 ENV CHRONOGRAF_VERSION=1.10.9
-# Tue, 19 May 2026 23:23:31 GMT
+# Thu, 11 Jun 2026 00:42:52 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Tue, 19 May 2026 23:23:31 GMT
+# Thu, 11 Jun 2026 00:42:52 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Tue, 19 May 2026 23:23:31 GMT
+# Thu, 11 Jun 2026 00:42:52 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Tue, 19 May 2026 23:23:31 GMT
+# Thu, 11 Jun 2026 00:42:52 GMT
 EXPOSE map[8888/tcp:{}]
-# Tue, 19 May 2026 23:23:31 GMT
+# Thu, 11 Jun 2026 00:42:52 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 19 May 2026 23:23:31 GMT
+# Thu, 11 Jun 2026 00:42:52 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 19 May 2026 23:23:31 GMT
+# Thu, 11 Jun 2026 00:42:52 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 May 2026 23:23:31 GMT
+# Thu, 11 Jun 2026 00:42:52 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:068fedd6b0f109b8186d00d49327b6fc6747c428fd3c9a8739424ff5f38d7531`  
-		Last Modified: Tue, 19 May 2026 22:36:36 GMT  
-		Size: 28.2 MB (28233543 bytes)  
+	-	`sha256:b9136609bef0128191aa157637b98dd7b98e52154ca60c18258d65957a01c6d0`  
+		Last Modified: Wed, 10 Jun 2026 23:39:54 GMT  
+		Size: 28.2 MB (28237624 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f66498cb6d1a3ae9feb8c0aad57ad24ae695279adfbd3a253809b10e917d34eb`  
-		Last Modified: Tue, 19 May 2026 23:23:43 GMT  
-		Size: 7.9 MB (7882832 bytes)  
+	-	`sha256:777573d12ae65c04d3140876bdc7dd031719e58dbe5e06afd0f6bc42c2a93446`  
+		Last Modified: Thu, 11 Jun 2026 00:43:04 GMT  
+		Size: 7.9 MB (7883331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95130d01082a5882ce2fe8335539d8e3950c526b8ec6441758d46a8c4737b6ff`  
-		Last Modified: Tue, 19 May 2026 23:23:44 GMT  
-		Size: 48.9 MB (48867855 bytes)  
+	-	`sha256:8265ecc0dd96adcb35313ba4613cce460214db1f07a73e5e72172cd764b98b14`  
+		Last Modified: Thu, 11 Jun 2026 00:43:06 GMT  
+		Size: 48.9 MB (48867835 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbf079df6290fb24745fe217ba48acc58ac7988005c2b46cb6976111ab774ed1`  
-		Last Modified: Tue, 19 May 2026 23:23:42 GMT  
-		Size: 12.2 KB (12249 bytes)  
+	-	`sha256:cf0fa0d395cc097ddfc8f82019202e65ac2146b3d3d62599f7366baf6ba0ba28`  
+		Last Modified: Thu, 11 Jun 2026 00:43:03 GMT  
+		Size: 12.2 KB (12244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1218cd92899e2f632f0e7043d185af04ee9dcc0c6799e824cb68657e2f2edfb`  
-		Last Modified: Tue, 19 May 2026 23:23:42 GMT  
-		Size: 11.9 KB (11910 bytes)  
+	-	`sha256:49f74d4683e012dac190c42635e8e1da469e82444707939395a012b8f7683984`  
+		Last Modified: Thu, 11 Jun 2026 00:43:04 GMT  
+		Size: 11.9 KB (11905 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a8726232d78b1da893f671d669df79e2cf80400e6d0124e222992f168a12895`  
-		Last Modified: Tue, 19 May 2026 23:23:44 GMT  
+	-	`sha256:75ed6d02a52d2765364e5bce636d8fdc66f7841fe6f3ecea4a7af3fd692c3822`  
+		Last Modified: Thu, 11 Jun 2026 00:43:05 GMT  
+		Size: 315.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `chronograf:1.10` - unknown; unknown
+
+```console
+$ docker pull chronograf@sha256:f8f562e8aedfc102c49ba86357b0fe2dfbcfae5e58e3671bc657984e4cde10ff
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.9 MB (2871238 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:91f10898bd9e9279e5245ee4e41146be825b58df23c9689098c49ce2c4172662`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:ba7bb74c7a686129cba964213121f515ddff6a6cdf7f0bde5f4d462e229898e7`  
+		Last Modified: Thu, 11 Jun 2026 00:43:04 GMT  
+		Size: 2.9 MB (2855460 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:859339ed59fbee4a31097c6033f663bd90b976b1f8d123b8f675cfdd52f7e10d`  
+		Last Modified: Thu, 11 Jun 2026 00:43:03 GMT  
+		Size: 15.8 KB (15778 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `chronograf:1.10` - linux; arm variant v7
+
+```console
+$ docker pull chronograf@sha256:639c91e21b682607057aab5cfafd420d8f4472c05fc185a081319bff4fa6c24e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **76.8 MB (76803529 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4666f0d926abef3a7bfeaea2a178761b4c17e46f160bec33914ebd1e3f8a2f91`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["chronograf"]`
+
+```dockerfile
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1781049600'
+# Thu, 11 Jun 2026 01:30:52 GMT
+RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         24C975CBA61A024EE1B631787C3D57159FC2F927 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
+# Thu, 11 Jun 2026 01:30:58 GMT
+ENV CHRONOGRAF_VERSION=1.10.9
+# Thu, 11 Jun 2026 01:30:58 GMT
+RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
+# Thu, 11 Jun 2026 01:30:58 GMT
+COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
+# Thu, 11 Jun 2026 01:30:58 GMT
+COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
+# Thu, 11 Jun 2026 01:30:58 GMT
+EXPOSE map[8888/tcp:{}]
+# Thu, 11 Jun 2026 01:30:58 GMT
+VOLUME [/var/lib/chronograf]
+# Thu, 11 Jun 2026 01:30:58 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Thu, 11 Jun 2026 01:30:58 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Thu, 11 Jun 2026 01:30:58 GMT
+CMD ["chronograf"]
+```
+
+-	Layers:
+	-	`sha256:8ae2378435d99f39097aa4fd0d6c58c08445becca3153d53205b2cc5054b09c2`  
+		Last Modified: Wed, 10 Jun 2026 23:40:16 GMT  
+		Size: 23.9 MB (23944473 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c1df41aea1f61522fb0febc178cdc134934f0cdab30cf3fd8116547c6a28ef21`  
+		Last Modified: Thu, 11 Jun 2026 01:31:10 GMT  
+		Size: 6.5 MB (6514534 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:331d7cc0440968a01825592a1c8d60a43171834901f50e2c9a8ac4b5264e1bc9`  
+		Last Modified: Thu, 11 Jun 2026 01:31:10 GMT  
+		Size: 46.3 MB (46320061 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:038c0fedc8f6b97547ba19c2b505783dcf0bda7cf3adaf8777c51fb292f51d92`  
+		Last Modified: Thu, 11 Jun 2026 01:31:09 GMT  
+		Size: 12.2 KB (12243 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b1ed94dee9e122944104a9020255dccb60c24e2720e3f2a4b5fea27f83f9774a`  
+		Last Modified: Thu, 11 Jun 2026 01:31:09 GMT  
+		Size: 11.9 KB (11904 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:79eeb733bfce62026bec9dce96e10e401c7e7f58e6215b318a56a5d2611f429c`  
+		Last Modified: Thu, 11 Jun 2026 01:31:10 GMT  
 		Size: 314.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.10` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:4255b483c688d3a5cb9eaeb2174f98519dd21ac08baee939d11503fa31c478b2
+$ docker pull chronograf@sha256:e0208879ba38610ab02632ea313802f16ee1f8ca9a7ec74b45c7f060eb198314
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2871221 bytes)**  
+-	Total Size: **2.9 MB (2873604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36089e2054012c6186c081804c109a63930e1fae63ba060bca1e5e42ae6ef23d`
+-	Image ID: `sha256:69883f0876ac0c1e47b4b99e3f457d761ed9a58e466c57b7b8285f9988c6abae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:04b5f9312f723daf90732de4945f91be43bbd6c292e30b3a46f4c427ef9385ee`  
-		Last Modified: Tue, 19 May 2026 23:23:43 GMT  
-		Size: 2.9 MB (2855442 bytes)  
+	-	`sha256:ad53705953eece4ee7ac1833378cd196ef5a88915f7e7d4f7a2f3ee9c62c2732`  
+		Last Modified: Thu, 11 Jun 2026 01:31:09 GMT  
+		Size: 2.9 MB (2857749 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:11893cc52075ca76b00e3f4accfbacbdedb79a9ac36fedc1689e349f22b69d26`  
-		Last Modified: Tue, 19 May 2026 23:23:43 GMT  
-		Size: 15.8 KB (15779 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `chronograf:1.10` - linux; arm variant v7
-
-```console
-$ docker pull chronograf@sha256:d572bad6f25c8b4b2716e657d6571ac19080114cd80d9c999a811d1018b6fd89
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.8 MB (76800272 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cef274ea93a7c75ca3cd904eede68aa1bb4d7d6f5f85344d7eae4137a6da3d8f`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["chronograf"]`
-
-```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1779062400'
-# Wed, 20 May 2026 00:06:06 GMT
-RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         24C975CBA61A024EE1B631787C3D57159FC2F927 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Wed, 20 May 2026 00:06:12 GMT
-ENV CHRONOGRAF_VERSION=1.10.9
-# Wed, 20 May 2026 00:06:12 GMT
-RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Wed, 20 May 2026 00:06:12 GMT
-COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Wed, 20 May 2026 00:06:12 GMT
-COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Wed, 20 May 2026 00:06:12 GMT
-EXPOSE map[8888/tcp:{}]
-# Wed, 20 May 2026 00:06:12 GMT
-VOLUME [/var/lib/chronograf]
-# Wed, 20 May 2026 00:06:12 GMT
-COPY entrypoint.sh /entrypoint.sh # buildkit
-# Wed, 20 May 2026 00:06:12 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 20 May 2026 00:06:12 GMT
-CMD ["chronograf"]
-```
-
--	Layers:
-	-	`sha256:af86988b12731b7fa2ac73fa1c3f6ab4510a6641d04afb18df09600383bc399d`  
-		Last Modified: Tue, 19 May 2026 22:36:05 GMT  
-		Size: 23.9 MB (23941643 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49040f7a58eb3b2b9d394a653fb6defd94862c674a9b16991f001ef2d62665ca`  
-		Last Modified: Wed, 20 May 2026 00:06:24 GMT  
-		Size: 6.5 MB (6514151 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1bae880cb0dd3f1cffb9715eaa6d071c131f871b75dd64f95ae32fb173efc578`  
-		Last Modified: Wed, 20 May 2026 00:06:25 GMT  
-		Size: 46.3 MB (46320011 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f417a18c766238d4fae80eb50406bbed212c3ab7e3cb0d24041cf3198ec63845`  
-		Last Modified: Wed, 20 May 2026 00:06:23 GMT  
-		Size: 12.2 KB (12246 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d94b2978a4d915d53eef7aad8618c1a563aabac65a8c4b617d3d7a1e37bb5618`  
-		Last Modified: Wed, 20 May 2026 00:06:23 GMT  
-		Size: 11.9 KB (11905 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4ad025808c3e7c27e94f307bf8849e3898e49ff86df84e460e76e2beb5a7ba3`  
-		Last Modified: Wed, 20 May 2026 00:06:25 GMT  
-		Size: 316.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `chronograf:1.10` - unknown; unknown
-
-```console
-$ docker pull chronograf@sha256:f2a58330bcf76071622a64ecc408e780116e37a79b2b016652a555d08f1ba617
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2873587 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b582b72f2bfe9545615d1604b26d377a6f33d16f495a4252543a754f701518a7`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:8b23f716d37303e545491ab56d5e155f369ea3fe44a24bee2c382344919c0f7c`  
-		Last Modified: Wed, 20 May 2026 00:06:23 GMT  
-		Size: 2.9 MB (2857731 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:e99ec7dbd7216313957a1ec818bab3b6f3e47f3e00b6f29d78b7331dcca445e9`  
-		Last Modified: Wed, 20 May 2026 00:06:23 GMT  
-		Size: 15.9 KB (15856 bytes)  
+	-	`sha256:b9b1a3e86baf536f21a7ad25234651c13e7a15a8b82108a1c4613774e54b3081`  
+		Last Modified: Thu, 11 Jun 2026 01:31:09 GMT  
+		Size: 15.9 KB (15855 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `chronograf:1.10` - linux; arm64 variant v8
 
 ```console
-$ docker pull chronograf@sha256:e507bf128bcedf148cddda021cd81049eddb38018f87cb252bc74c91944349dd
+$ docker pull chronograf@sha256:72bf1862281573f4dcca4f4e5e9cff88f81eb7ce97c4029e89db627f083b04d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.8 MB (81847856 bytes)**  
+-	Total Size: **81.9 MB (81855416 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:504451837a1f4fd32a6af8809f4dc636fa78a8bab534d3307e7577cf34a2c5c4`
+-	Image ID: `sha256:e73c21ceecd9ef63c5ae20524c961f624aecb406d843092b6e8f532950d50930`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1779062400'
-# Tue, 19 May 2026 23:27:07 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1781049600'
+# Thu, 11 Jun 2026 00:44:30 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         24C975CBA61A024EE1B631787C3D57159FC2F927 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Tue, 19 May 2026 23:27:13 GMT
+# Thu, 11 Jun 2026 00:44:36 GMT
 ENV CHRONOGRAF_VERSION=1.10.9
-# Tue, 19 May 2026 23:27:13 GMT
+# Thu, 11 Jun 2026 00:44:36 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Tue, 19 May 2026 23:27:13 GMT
+# Thu, 11 Jun 2026 00:44:36 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Tue, 19 May 2026 23:27:13 GMT
+# Thu, 11 Jun 2026 00:44:36 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Tue, 19 May 2026 23:27:13 GMT
+# Thu, 11 Jun 2026 00:44:36 GMT
 EXPOSE map[8888/tcp:{}]
-# Tue, 19 May 2026 23:27:13 GMT
+# Thu, 11 Jun 2026 00:44:36 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 19 May 2026 23:27:13 GMT
+# Thu, 11 Jun 2026 00:44:36 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 19 May 2026 23:27:13 GMT
+# Thu, 11 Jun 2026 00:44:36 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 May 2026 23:27:13 GMT
+# Thu, 11 Jun 2026 00:44:36 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:f400d36d7784570c9fb7558e367d2b5d38e8b2f1d6faee041815acea7f87e669`  
-		Last Modified: Tue, 19 May 2026 22:36:40 GMT  
-		Size: 28.1 MB (28115043 bytes)  
+	-	`sha256:402614bd39aaec1e4bdcf25aa67f88588fc8d93997a2551c4e130e6ed2b06c7a`  
+		Last Modified: Wed, 10 Jun 2026 23:39:57 GMT  
+		Size: 28.1 MB (28122307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79453e0e3f10b3b54e5f917a6a5190e91a70ed58e0ea5e67719b742b199a7d6d`  
-		Last Modified: Tue, 19 May 2026 23:27:26 GMT  
-		Size: 7.7 MB (7699455 bytes)  
+	-	`sha256:178c785dfc4e2d2645c1bc0d89fe671d8526dbbbec573f6604330067f48d5b33`  
+		Last Modified: Thu, 11 Jun 2026 00:44:47 GMT  
+		Size: 7.7 MB (7699782 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e34fe634144a1399cb25010722e6018324b0443aa307c6c0e13e5a64ffa5021d`  
-		Last Modified: Tue, 19 May 2026 23:27:27 GMT  
-		Size: 46.0 MB (46008883 bytes)  
+	-	`sha256:0bd903b66630bc06414d0520ccc1edd9f5b6461c98195e7b47bf0c7d17de0795`  
+		Last Modified: Thu, 11 Jun 2026 00:44:48 GMT  
+		Size: 46.0 MB (46008870 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:94864be51423af3562dd29f3081fa36ccf634ec7d4c01511a730365cf04b0108`  
-		Last Modified: Tue, 19 May 2026 23:27:25 GMT  
-		Size: 12.2 KB (12250 bytes)  
+	-	`sha256:0dc38ed08988a636521f039fed509393cd9157cc5a0ff0915ff921be433423e4`  
+		Last Modified: Thu, 11 Jun 2026 00:44:46 GMT  
+		Size: 12.2 KB (12242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:624ae7adb4dedc20fd1ca4765cb02e64c751245a96fac0379eaa29e1e4cb0e05`  
-		Last Modified: Tue, 19 May 2026 23:27:25 GMT  
-		Size: 11.9 KB (11909 bytes)  
+	-	`sha256:5600d08501e1281d85bdf55615e8198a9c7c3c631f674c9eb4ee868a07477d0f`  
+		Last Modified: Thu, 11 Jun 2026 00:44:46 GMT  
+		Size: 11.9 KB (11901 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b318403294f11892a65bb2a78da204df41f27115d4f0f80a8b4d4a9eb7260603`  
-		Last Modified: Tue, 19 May 2026 23:27:26 GMT  
-		Size: 316.0 B  
+	-	`sha256:ea605ba23cf1c1bc2740f58bdd6611ff69c9aa72c7e9290df38655ccd2c84cd1`  
+		Last Modified: Thu, 11 Jun 2026 00:44:47 GMT  
+		Size: 314.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.10` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:15be158243c79c3f3a1f5839d0105167b660f05925cfdb832cd2d512ffe810c3
+$ docker pull chronograf@sha256:950f79304babc4401b888321d6fa601af2c4d8408cd895eaa19621efce951ff5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2871577 bytes)**  
+-	Total Size: **2.9 MB (2871595 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:67fac263a4f7a59f0be21961d69ee80e3b12e1e58e6700a682d5ef34e9b4aeb5`
+-	Image ID: `sha256:0c55ce2dd578f36a26fb90f267c9d892a5d27aa35b1f10ae87420dd537c367ae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bc924b263e906ecd583b04a6d730646fbc0d04ce1ce4461cd564d001419c345f`  
-		Last Modified: Tue, 19 May 2026 23:27:25 GMT  
-		Size: 2.9 MB (2855703 bytes)  
+	-	`sha256:6dc726da581cbe1357a405d2b55c501d9c9aa548186ac9a0b1f01f758e895ff8`  
+		Last Modified: Thu, 11 Jun 2026 00:44:46 GMT  
+		Size: 2.9 MB (2855721 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e8ed34f5fb8ac221217679effebfb06373b90e593ba3666dd6c5cd4a65b2d5e8`  
-		Last Modified: Tue, 19 May 2026 23:27:25 GMT  
+	-	`sha256:274e20d904a3b4aa7514220ff201a73777954fc6d080ae4e7ca3a20773059822`  
+		Last Modified: Thu, 11 Jun 2026 00:44:46 GMT  
 		Size: 15.9 KB (15874 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -410,7 +410,7 @@ $ docker pull chronograf@sha256:d2f1dd5e80f798e00c99361d4e5ae8a4c66a9cd69fa098c1
 ## `chronograf:1.10.9`
 
 ```console
-$ docker pull chronograf@sha256:4212bfe106df50084c6d16d332a0ae1f2fa4afb9bfb70532925204943c712494
+$ docker pull chronograf@sha256:1e2982a21cab332a1d8ad29083c6e9799df65e497ecbc0cc4873ae3a64035d7e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -425,264 +425,264 @@ $ docker pull chronograf@sha256:4212bfe106df50084c6d16d332a0ae1f2fa4afb9bfb70532
 ### `chronograf:1.10.9` - linux; amd64
 
 ```console
-$ docker pull chronograf@sha256:3589d92826eec8a6de865ab37b92695dd9d37934b3128545bf83d8011a3a9475
+$ docker pull chronograf@sha256:8760f4d98c23b352d4d55ed05f2a2d92ce01f6f90fa8799de49e7b65617b8433
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **85.0 MB (85008703 bytes)**  
+-	Total Size: **85.0 MB (85013254 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:604747b8fa456af2ca3106968c70dddf935f988ae9dc99c289d1cd11efdbb2e0`
+-	Image ID: `sha256:623aaab10cc07007e12c30b976d188ca4d8c4e0ea0e48994647321d8eb268651`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1779062400'
-# Tue, 19 May 2026 23:23:25 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1781049600'
+# Thu, 11 Jun 2026 00:42:46 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         24C975CBA61A024EE1B631787C3D57159FC2F927 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Tue, 19 May 2026 23:23:31 GMT
+# Thu, 11 Jun 2026 00:42:52 GMT
 ENV CHRONOGRAF_VERSION=1.10.9
-# Tue, 19 May 2026 23:23:31 GMT
+# Thu, 11 Jun 2026 00:42:52 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Tue, 19 May 2026 23:23:31 GMT
+# Thu, 11 Jun 2026 00:42:52 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Tue, 19 May 2026 23:23:31 GMT
+# Thu, 11 Jun 2026 00:42:52 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Tue, 19 May 2026 23:23:31 GMT
+# Thu, 11 Jun 2026 00:42:52 GMT
 EXPOSE map[8888/tcp:{}]
-# Tue, 19 May 2026 23:23:31 GMT
+# Thu, 11 Jun 2026 00:42:52 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 19 May 2026 23:23:31 GMT
+# Thu, 11 Jun 2026 00:42:52 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 19 May 2026 23:23:31 GMT
+# Thu, 11 Jun 2026 00:42:52 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 May 2026 23:23:31 GMT
+# Thu, 11 Jun 2026 00:42:52 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:068fedd6b0f109b8186d00d49327b6fc6747c428fd3c9a8739424ff5f38d7531`  
-		Last Modified: Tue, 19 May 2026 22:36:36 GMT  
-		Size: 28.2 MB (28233543 bytes)  
+	-	`sha256:b9136609bef0128191aa157637b98dd7b98e52154ca60c18258d65957a01c6d0`  
+		Last Modified: Wed, 10 Jun 2026 23:39:54 GMT  
+		Size: 28.2 MB (28237624 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f66498cb6d1a3ae9feb8c0aad57ad24ae695279adfbd3a253809b10e917d34eb`  
-		Last Modified: Tue, 19 May 2026 23:23:43 GMT  
-		Size: 7.9 MB (7882832 bytes)  
+	-	`sha256:777573d12ae65c04d3140876bdc7dd031719e58dbe5e06afd0f6bc42c2a93446`  
+		Last Modified: Thu, 11 Jun 2026 00:43:04 GMT  
+		Size: 7.9 MB (7883331 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95130d01082a5882ce2fe8335539d8e3950c526b8ec6441758d46a8c4737b6ff`  
-		Last Modified: Tue, 19 May 2026 23:23:44 GMT  
-		Size: 48.9 MB (48867855 bytes)  
+	-	`sha256:8265ecc0dd96adcb35313ba4613cce460214db1f07a73e5e72172cd764b98b14`  
+		Last Modified: Thu, 11 Jun 2026 00:43:06 GMT  
+		Size: 48.9 MB (48867835 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbf079df6290fb24745fe217ba48acc58ac7988005c2b46cb6976111ab774ed1`  
-		Last Modified: Tue, 19 May 2026 23:23:42 GMT  
-		Size: 12.2 KB (12249 bytes)  
+	-	`sha256:cf0fa0d395cc097ddfc8f82019202e65ac2146b3d3d62599f7366baf6ba0ba28`  
+		Last Modified: Thu, 11 Jun 2026 00:43:03 GMT  
+		Size: 12.2 KB (12244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1218cd92899e2f632f0e7043d185af04ee9dcc0c6799e824cb68657e2f2edfb`  
-		Last Modified: Tue, 19 May 2026 23:23:42 GMT  
-		Size: 11.9 KB (11910 bytes)  
+	-	`sha256:49f74d4683e012dac190c42635e8e1da469e82444707939395a012b8f7683984`  
+		Last Modified: Thu, 11 Jun 2026 00:43:04 GMT  
+		Size: 11.9 KB (11905 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a8726232d78b1da893f671d669df79e2cf80400e6d0124e222992f168a12895`  
-		Last Modified: Tue, 19 May 2026 23:23:44 GMT  
+	-	`sha256:75ed6d02a52d2765364e5bce636d8fdc66f7841fe6f3ecea4a7af3fd692c3822`  
+		Last Modified: Thu, 11 Jun 2026 00:43:05 GMT  
+		Size: 315.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `chronograf:1.10.9` - unknown; unknown
+
+```console
+$ docker pull chronograf@sha256:f8f562e8aedfc102c49ba86357b0fe2dfbcfae5e58e3671bc657984e4cde10ff
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.9 MB (2871238 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:91f10898bd9e9279e5245ee4e41146be825b58df23c9689098c49ce2c4172662`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:ba7bb74c7a686129cba964213121f515ddff6a6cdf7f0bde5f4d462e229898e7`  
+		Last Modified: Thu, 11 Jun 2026 00:43:04 GMT  
+		Size: 2.9 MB (2855460 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:859339ed59fbee4a31097c6033f663bd90b976b1f8d123b8f675cfdd52f7e10d`  
+		Last Modified: Thu, 11 Jun 2026 00:43:03 GMT  
+		Size: 15.8 KB (15778 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `chronograf:1.10.9` - linux; arm variant v7
+
+```console
+$ docker pull chronograf@sha256:639c91e21b682607057aab5cfafd420d8f4472c05fc185a081319bff4fa6c24e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **76.8 MB (76803529 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4666f0d926abef3a7bfeaea2a178761b4c17e46f160bec33914ebd1e3f8a2f91`
+-	Entrypoint: `["\/entrypoint.sh"]`
+-	Default Command: `["chronograf"]`
+
+```dockerfile
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1781049600'
+# Thu, 11 Jun 2026 01:30:52 GMT
+RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         24C975CBA61A024EE1B631787C3D57159FC2F927 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
+# Thu, 11 Jun 2026 01:30:58 GMT
+ENV CHRONOGRAF_VERSION=1.10.9
+# Thu, 11 Jun 2026 01:30:58 GMT
+RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
+# Thu, 11 Jun 2026 01:30:58 GMT
+COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
+# Thu, 11 Jun 2026 01:30:58 GMT
+COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
+# Thu, 11 Jun 2026 01:30:58 GMT
+EXPOSE map[8888/tcp:{}]
+# Thu, 11 Jun 2026 01:30:58 GMT
+VOLUME [/var/lib/chronograf]
+# Thu, 11 Jun 2026 01:30:58 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Thu, 11 Jun 2026 01:30:58 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+# Thu, 11 Jun 2026 01:30:58 GMT
+CMD ["chronograf"]
+```
+
+-	Layers:
+	-	`sha256:8ae2378435d99f39097aa4fd0d6c58c08445becca3153d53205b2cc5054b09c2`  
+		Last Modified: Wed, 10 Jun 2026 23:40:16 GMT  
+		Size: 23.9 MB (23944473 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c1df41aea1f61522fb0febc178cdc134934f0cdab30cf3fd8116547c6a28ef21`  
+		Last Modified: Thu, 11 Jun 2026 01:31:10 GMT  
+		Size: 6.5 MB (6514534 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:331d7cc0440968a01825592a1c8d60a43171834901f50e2c9a8ac4b5264e1bc9`  
+		Last Modified: Thu, 11 Jun 2026 01:31:10 GMT  
+		Size: 46.3 MB (46320061 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:038c0fedc8f6b97547ba19c2b505783dcf0bda7cf3adaf8777c51fb292f51d92`  
+		Last Modified: Thu, 11 Jun 2026 01:31:09 GMT  
+		Size: 12.2 KB (12243 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b1ed94dee9e122944104a9020255dccb60c24e2720e3f2a4b5fea27f83f9774a`  
+		Last Modified: Thu, 11 Jun 2026 01:31:09 GMT  
+		Size: 11.9 KB (11904 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:79eeb733bfce62026bec9dce96e10e401c7e7f58e6215b318a56a5d2611f429c`  
+		Last Modified: Thu, 11 Jun 2026 01:31:10 GMT  
 		Size: 314.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.10.9` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:4255b483c688d3a5cb9eaeb2174f98519dd21ac08baee939d11503fa31c478b2
+$ docker pull chronograf@sha256:e0208879ba38610ab02632ea313802f16ee1f8ca9a7ec74b45c7f060eb198314
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2871221 bytes)**  
+-	Total Size: **2.9 MB (2873604 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36089e2054012c6186c081804c109a63930e1fae63ba060bca1e5e42ae6ef23d`
+-	Image ID: `sha256:69883f0876ac0c1e47b4b99e3f457d761ed9a58e466c57b7b8285f9988c6abae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:04b5f9312f723daf90732de4945f91be43bbd6c292e30b3a46f4c427ef9385ee`  
-		Last Modified: Tue, 19 May 2026 23:23:43 GMT  
-		Size: 2.9 MB (2855442 bytes)  
+	-	`sha256:ad53705953eece4ee7ac1833378cd196ef5a88915f7e7d4f7a2f3ee9c62c2732`  
+		Last Modified: Thu, 11 Jun 2026 01:31:09 GMT  
+		Size: 2.9 MB (2857749 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:11893cc52075ca76b00e3f4accfbacbdedb79a9ac36fedc1689e349f22b69d26`  
-		Last Modified: Tue, 19 May 2026 23:23:43 GMT  
-		Size: 15.8 KB (15779 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `chronograf:1.10.9` - linux; arm variant v7
-
-```console
-$ docker pull chronograf@sha256:d572bad6f25c8b4b2716e657d6571ac19080114cd80d9c999a811d1018b6fd89
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.8 MB (76800272 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cef274ea93a7c75ca3cd904eede68aa1bb4d7d6f5f85344d7eae4137a6da3d8f`
--	Entrypoint: `["\/entrypoint.sh"]`
--	Default Command: `["chronograf"]`
-
-```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1779062400'
-# Wed, 20 May 2026 00:06:06 GMT
-RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         24C975CBA61A024EE1B631787C3D57159FC2F927 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Wed, 20 May 2026 00:06:12 GMT
-ENV CHRONOGRAF_VERSION=1.10.9
-# Wed, 20 May 2026 00:06:12 GMT
-RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Wed, 20 May 2026 00:06:12 GMT
-COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Wed, 20 May 2026 00:06:12 GMT
-COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Wed, 20 May 2026 00:06:12 GMT
-EXPOSE map[8888/tcp:{}]
-# Wed, 20 May 2026 00:06:12 GMT
-VOLUME [/var/lib/chronograf]
-# Wed, 20 May 2026 00:06:12 GMT
-COPY entrypoint.sh /entrypoint.sh # buildkit
-# Wed, 20 May 2026 00:06:12 GMT
-ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 20 May 2026 00:06:12 GMT
-CMD ["chronograf"]
-```
-
--	Layers:
-	-	`sha256:af86988b12731b7fa2ac73fa1c3f6ab4510a6641d04afb18df09600383bc399d`  
-		Last Modified: Tue, 19 May 2026 22:36:05 GMT  
-		Size: 23.9 MB (23941643 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49040f7a58eb3b2b9d394a653fb6defd94862c674a9b16991f001ef2d62665ca`  
-		Last Modified: Wed, 20 May 2026 00:06:24 GMT  
-		Size: 6.5 MB (6514151 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1bae880cb0dd3f1cffb9715eaa6d071c131f871b75dd64f95ae32fb173efc578`  
-		Last Modified: Wed, 20 May 2026 00:06:25 GMT  
-		Size: 46.3 MB (46320011 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f417a18c766238d4fae80eb50406bbed212c3ab7e3cb0d24041cf3198ec63845`  
-		Last Modified: Wed, 20 May 2026 00:06:23 GMT  
-		Size: 12.2 KB (12246 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d94b2978a4d915d53eef7aad8618c1a563aabac65a8c4b617d3d7a1e37bb5618`  
-		Last Modified: Wed, 20 May 2026 00:06:23 GMT  
-		Size: 11.9 KB (11905 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4ad025808c3e7c27e94f307bf8849e3898e49ff86df84e460e76e2beb5a7ba3`  
-		Last Modified: Wed, 20 May 2026 00:06:25 GMT  
-		Size: 316.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `chronograf:1.10.9` - unknown; unknown
-
-```console
-$ docker pull chronograf@sha256:f2a58330bcf76071622a64ecc408e780116e37a79b2b016652a555d08f1ba617
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2873587 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b582b72f2bfe9545615d1604b26d377a6f33d16f495a4252543a754f701518a7`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:8b23f716d37303e545491ab56d5e155f369ea3fe44a24bee2c382344919c0f7c`  
-		Last Modified: Wed, 20 May 2026 00:06:23 GMT  
-		Size: 2.9 MB (2857731 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:e99ec7dbd7216313957a1ec818bab3b6f3e47f3e00b6f29d78b7331dcca445e9`  
-		Last Modified: Wed, 20 May 2026 00:06:23 GMT  
-		Size: 15.9 KB (15856 bytes)  
+	-	`sha256:b9b1a3e86baf536f21a7ad25234651c13e7a15a8b82108a1c4613774e54b3081`  
+		Last Modified: Thu, 11 Jun 2026 01:31:09 GMT  
+		Size: 15.9 KB (15855 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `chronograf:1.10.9` - linux; arm64 variant v8
 
 ```console
-$ docker pull chronograf@sha256:e507bf128bcedf148cddda021cd81049eddb38018f87cb252bc74c91944349dd
+$ docker pull chronograf@sha256:72bf1862281573f4dcca4f4e5e9cff88f81eb7ce97c4029e89db627f083b04d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.8 MB (81847856 bytes)**  
+-	Total Size: **81.9 MB (81855416 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:504451837a1f4fd32a6af8809f4dc636fa78a8bab534d3307e7577cf34a2c5c4`
+-	Image ID: `sha256:e73c21ceecd9ef63c5ae20524c961f624aecb406d843092b6e8f532950d50930`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1779062400'
-# Tue, 19 May 2026 23:27:07 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1781049600'
+# Thu, 11 Jun 2026 00:44:30 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         24C975CBA61A024EE1B631787C3D57159FC2F927 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Tue, 19 May 2026 23:27:13 GMT
+# Thu, 11 Jun 2026 00:44:36 GMT
 ENV CHRONOGRAF_VERSION=1.10.9
-# Tue, 19 May 2026 23:27:13 GMT
+# Thu, 11 Jun 2026 00:44:36 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Tue, 19 May 2026 23:27:13 GMT
+# Thu, 11 Jun 2026 00:44:36 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Tue, 19 May 2026 23:27:13 GMT
+# Thu, 11 Jun 2026 00:44:36 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Tue, 19 May 2026 23:27:13 GMT
+# Thu, 11 Jun 2026 00:44:36 GMT
 EXPOSE map[8888/tcp:{}]
-# Tue, 19 May 2026 23:27:13 GMT
+# Thu, 11 Jun 2026 00:44:36 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 19 May 2026 23:27:13 GMT
+# Thu, 11 Jun 2026 00:44:36 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 19 May 2026 23:27:13 GMT
+# Thu, 11 Jun 2026 00:44:36 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 May 2026 23:27:13 GMT
+# Thu, 11 Jun 2026 00:44:36 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:f400d36d7784570c9fb7558e367d2b5d38e8b2f1d6faee041815acea7f87e669`  
-		Last Modified: Tue, 19 May 2026 22:36:40 GMT  
-		Size: 28.1 MB (28115043 bytes)  
+	-	`sha256:402614bd39aaec1e4bdcf25aa67f88588fc8d93997a2551c4e130e6ed2b06c7a`  
+		Last Modified: Wed, 10 Jun 2026 23:39:57 GMT  
+		Size: 28.1 MB (28122307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79453e0e3f10b3b54e5f917a6a5190e91a70ed58e0ea5e67719b742b199a7d6d`  
-		Last Modified: Tue, 19 May 2026 23:27:26 GMT  
-		Size: 7.7 MB (7699455 bytes)  
+	-	`sha256:178c785dfc4e2d2645c1bc0d89fe671d8526dbbbec573f6604330067f48d5b33`  
+		Last Modified: Thu, 11 Jun 2026 00:44:47 GMT  
+		Size: 7.7 MB (7699782 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e34fe634144a1399cb25010722e6018324b0443aa307c6c0e13e5a64ffa5021d`  
-		Last Modified: Tue, 19 May 2026 23:27:27 GMT  
-		Size: 46.0 MB (46008883 bytes)  
+	-	`sha256:0bd903b66630bc06414d0520ccc1edd9f5b6461c98195e7b47bf0c7d17de0795`  
+		Last Modified: Thu, 11 Jun 2026 00:44:48 GMT  
+		Size: 46.0 MB (46008870 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:94864be51423af3562dd29f3081fa36ccf634ec7d4c01511a730365cf04b0108`  
-		Last Modified: Tue, 19 May 2026 23:27:25 GMT  
-		Size: 12.2 KB (12250 bytes)  
+	-	`sha256:0dc38ed08988a636521f039fed509393cd9157cc5a0ff0915ff921be433423e4`  
+		Last Modified: Thu, 11 Jun 2026 00:44:46 GMT  
+		Size: 12.2 KB (12242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:624ae7adb4dedc20fd1ca4765cb02e64c751245a96fac0379eaa29e1e4cb0e05`  
-		Last Modified: Tue, 19 May 2026 23:27:25 GMT  
-		Size: 11.9 KB (11909 bytes)  
+	-	`sha256:5600d08501e1281d85bdf55615e8198a9c7c3c631f674c9eb4ee868a07477d0f`  
+		Last Modified: Thu, 11 Jun 2026 00:44:46 GMT  
+		Size: 11.9 KB (11901 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b318403294f11892a65bb2a78da204df41f27115d4f0f80a8b4d4a9eb7260603`  
-		Last Modified: Tue, 19 May 2026 23:27:26 GMT  
-		Size: 316.0 B  
+	-	`sha256:ea605ba23cf1c1bc2740f58bdd6611ff69c9aa72c7e9290df38655ccd2c84cd1`  
+		Last Modified: Thu, 11 Jun 2026 00:44:47 GMT  
+		Size: 314.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.10.9` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:15be158243c79c3f3a1f5839d0105167b660f05925cfdb832cd2d512ffe810c3
+$ docker pull chronograf@sha256:950f79304babc4401b888321d6fa601af2c4d8408cd895eaa19621efce951ff5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2871577 bytes)**  
+-	Total Size: **2.9 MB (2871595 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:67fac263a4f7a59f0be21961d69ee80e3b12e1e58e6700a682d5ef34e9b4aeb5`
+-	Image ID: `sha256:0c55ce2dd578f36a26fb90f267c9d892a5d27aa35b1f10ae87420dd537c367ae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bc924b263e906ecd583b04a6d730646fbc0d04ce1ce4461cd564d001419c345f`  
-		Last Modified: Tue, 19 May 2026 23:27:25 GMT  
-		Size: 2.9 MB (2855703 bytes)  
+	-	`sha256:6dc726da581cbe1357a405d2b55c501d9c9aa548186ac9a0b1f01f758e895ff8`  
+		Last Modified: Thu, 11 Jun 2026 00:44:46 GMT  
+		Size: 2.9 MB (2855721 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e8ed34f5fb8ac221217679effebfb06373b90e593ba3666dd6c5cd4a65b2d5e8`  
-		Last Modified: Tue, 19 May 2026 23:27:25 GMT  
+	-	`sha256:274e20d904a3b4aa7514220ff201a73777954fc6d080ae4e7ca3a20773059822`  
+		Last Modified: Thu, 11 Jun 2026 00:44:46 GMT  
 		Size: 15.9 KB (15874 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -796,7 +796,7 @@ $ docker pull chronograf@sha256:d2f1dd5e80f798e00c99361d4e5ae8a4c66a9cd69fa098c1
 ## `chronograf:1.11`
 
 ```console
-$ docker pull chronograf@sha256:eb70ca38ed0435787c9ffe469c3ad502d05f221e3c697015b070d69087c9edd3
+$ docker pull chronograf@sha256:32c87a379b2e2698e2c03c9b5baec4b150045fb67a9b5d31269ae88d1d33d8f7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -809,176 +809,176 @@ $ docker pull chronograf@sha256:eb70ca38ed0435787c9ffe469c3ad502d05f221e3c697015
 ### `chronograf:1.11` - linux; amd64
 
 ```console
-$ docker pull chronograf@sha256:5f287d828526a3622cbb0ada9c8cafa02a7dff6751aface86c3fd39474326595
+$ docker pull chronograf@sha256:73202e652dda47453c6e05e29ca9be91761dcc92f64682de2e149a3d0a622a36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.3 MB (96338084 bytes)**  
+-	Total Size: **96.3 MB (96342670 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2bb4e2824168d6fefce1709e3513a724bbc8f18c102506c7b82a24fac91ba249`
+-	Image ID: `sha256:27932b95b4e46a21c3c4b00e9535bbe9d7155a6a5128abdac0e17faac5c5c816`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1779062400'
-# Tue, 02 Jun 2026 19:04:44 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1781049600'
+# Thu, 11 Jun 2026 00:42:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         24C975CBA61A024EE1B631787C3D57159FC2F927 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 ENV CHRONOGRAF_VERSION=1.11.3
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 EXPOSE map[8888/tcp:{}]
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:068fedd6b0f109b8186d00d49327b6fc6747c428fd3c9a8739424ff5f38d7531`  
-		Last Modified: Tue, 19 May 2026 22:36:36 GMT  
-		Size: 28.2 MB (28233543 bytes)  
+	-	`sha256:b9136609bef0128191aa157637b98dd7b98e52154ca60c18258d65957a01c6d0`  
+		Last Modified: Wed, 10 Jun 2026 23:39:54 GMT  
+		Size: 28.2 MB (28237624 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2dc8ae8cd182811c8f1025ccc205da723f8e17214b0182b8576738541b681448`  
-		Last Modified: Tue, 02 Jun 2026 19:05:05 GMT  
-		Size: 7.9 MB (7882781 bytes)  
+	-	`sha256:556c9fe7644e1166887620855e94c2fba32d97d5e3ed4df537f06c1884a7f0ae`  
+		Last Modified: Thu, 11 Jun 2026 00:43:15 GMT  
+		Size: 7.9 MB (7883267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e913f912f9931a55a6888069207af19b462bf030aa63a495e5266f7efe98ac3f`  
-		Last Modified: Tue, 02 Jun 2026 19:05:06 GMT  
-		Size: 60.2 MB (60197283 bytes)  
+	-	`sha256:b55cf3f7752999b38e3d9223912ce753e63b747ba0ca49f8df5e319c088063e9`  
+		Last Modified: Thu, 11 Jun 2026 00:43:16 GMT  
+		Size: 60.2 MB (60197307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:455675abf40c5ac87a7da8c8aaf4b1a46d53d41dad64299e2d42d1035a375721`  
-		Last Modified: Tue, 02 Jun 2026 19:05:04 GMT  
-		Size: 12.3 KB (12251 bytes)  
+	-	`sha256:5769e0d1dcfbaa03829bf62a9018e38189487c8fe5cde7c33ecf939c2b143f7e`  
+		Last Modified: Thu, 11 Jun 2026 00:43:15 GMT  
+		Size: 12.2 KB (12249 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c5205e18c12565276f1a0b9049b861f144429a336825095df5ff2aaa7a2c226`  
-		Last Modified: Tue, 02 Jun 2026 19:05:04 GMT  
-		Size: 11.9 KB (11911 bytes)  
+	-	`sha256:6e438f602a3cd637900418a3cae8b6eb964b101379fb8aa88f21114895f23481`  
+		Last Modified: Thu, 11 Jun 2026 00:43:14 GMT  
+		Size: 11.9 KB (11909 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2c0b12cf3395c8e678dbf286cb994771b3547e2f2757d93108e967f27b1ecdc`  
-		Last Modified: Tue, 02 Jun 2026 19:05:06 GMT  
-		Size: 315.0 B  
+	-	`sha256:35b16275212f52100b6eafaf66aa0d7343a79c7ce9ce1ca94ef1ea4dd3aba17d`  
+		Last Modified: Thu, 11 Jun 2026 00:43:16 GMT  
+		Size: 314.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.11` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:af34f5ab4ae131481d91533abd74f94aa75d7e549f02e2b0a757181585dc64e8
+$ docker pull chronograf@sha256:2c377acca3100b8eded8237f5294e94e498c9d60115575d43098702c544aab82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2889805 bytes)**  
+-	Total Size: **2.9 MB (2889823 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72c161f28bf70196401d96e82464c8216b69ea8e746e0de247b5fbfef0e5778b`
+-	Image ID: `sha256:07de8db60e77546e14d4ee2975da7c7da016d1f475ba6cdc862591a303a9a83e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0877e14103aeb5913a8a7572fe12a697f3043d31d0656e1926307268b90f695c`  
-		Last Modified: Tue, 02 Jun 2026 19:05:05 GMT  
-		Size: 2.9 MB (2873720 bytes)  
+	-	`sha256:2625568072a9dd1c4abcd0c7a987dab62a3e6c1f9f0afcb55d1ca787025eada8`  
+		Last Modified: Thu, 11 Jun 2026 00:43:15 GMT  
+		Size: 2.9 MB (2873738 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ca3ed46836e66c33c1fb0da4f7c7cf7ec972deb61a77f97cb98b882ee7dd5d69`  
-		Last Modified: Tue, 02 Jun 2026 19:05:04 GMT  
+	-	`sha256:3e92aee71ca4c730a54e0d2b4d449e648529f3c9cf1d08c370c6c63ffc0cf073`  
+		Last Modified: Thu, 11 Jun 2026 00:43:15 GMT  
 		Size: 16.1 KB (16085 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `chronograf:1.11` - linux; arm64 variant v8
 
 ```console
-$ docker pull chronograf@sha256:8f60556f88893bb34a9117ad8eb3041bda2d557ede818fbf4e1e9b2c707b7ca0
+$ docker pull chronograf@sha256:366675e696db69e613db19076980c8908e9b58729a1847e6749ffe90c20dab8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **93.0 MB (93047811 bytes)**  
+-	Total Size: **93.1 MB (93055462 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d64ae9ca865476dfd34d335223a68573df98b89f5ca2b40ea97b644ff6a7e074`
+-	Image ID: `sha256:459b3796796fdfea3d602ce56fab1cc2c29954072f40d70adc290142e4fb3f8a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1779062400'
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1781049600'
+# Thu, 11 Jun 2026 00:44:38 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         24C975CBA61A024EE1B631787C3D57159FC2F927 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 ENV CHRONOGRAF_VERSION=1.11.3
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 EXPOSE map[8888/tcp:{}]
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:f400d36d7784570c9fb7558e367d2b5d38e8b2f1d6faee041815acea7f87e669`  
-		Last Modified: Tue, 19 May 2026 22:36:40 GMT  
-		Size: 28.1 MB (28115043 bytes)  
+	-	`sha256:402614bd39aaec1e4bdcf25aa67f88588fc8d93997a2551c4e130e6ed2b06c7a`  
+		Last Modified: Wed, 10 Jun 2026 23:39:57 GMT  
+		Size: 28.1 MB (28122307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fe123d17146413325d255a21d4c2f8984fd6e08d3c8460a232b1dfcf8e48566`  
-		Last Modified: Tue, 02 Jun 2026 19:05:10 GMT  
-		Size: 7.7 MB (7699448 bytes)  
+	-	`sha256:4cbdd8fdc217506b94f451fe694a7434259077980dbfce32d678a110b1d5a084`  
+		Last Modified: Thu, 11 Jun 2026 00:45:01 GMT  
+		Size: 7.7 MB (7699815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ef03fe0fdbc1bb5177bf111c153aafacab7551ce6d1ea2cd0a29379a492fb30`  
-		Last Modified: Tue, 02 Jun 2026 19:05:11 GMT  
-		Size: 57.2 MB (57208859 bytes)  
+	-	`sha256:e8d99986976f45e221d9b9536bb7d61740629e2e34f15c8c96d9f4b700bff729`  
+		Last Modified: Thu, 11 Jun 2026 00:45:02 GMT  
+		Size: 57.2 MB (57208871 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:587cdfa30ae0c1bcfaa6cc739d142c925859efa2b8c3e7b31b6bd6337a8066da`  
-		Last Modified: Tue, 02 Jun 2026 19:05:09 GMT  
-		Size: 12.2 KB (12242 bytes)  
+	-	`sha256:694ce58a5f420870f543a6533816a87c9081c6d337adb50dc9b0fe82bec5ec9d`  
+		Last Modified: Thu, 11 Jun 2026 00:45:00 GMT  
+		Size: 12.2 KB (12247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03f02a0b9affa9f7ef18cf4bcab1866d09d0aa22a353ad2e82b7397b2ebcb17f`  
-		Last Modified: Tue, 02 Jun 2026 19:05:09 GMT  
-		Size: 11.9 KB (11904 bytes)  
+	-	`sha256:a236533c741fb74910832ada4193e1b28ee7b4538e09f17c736fc033514e8c51`  
+		Last Modified: Thu, 11 Jun 2026 00:45:01 GMT  
+		Size: 11.9 KB (11907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5914993df547519c55aa65a3a21bff47e93930a0e306ea322e108d3cac587d4e`  
-		Last Modified: Tue, 02 Jun 2026 19:05:10 GMT  
+	-	`sha256:08405dd5bfe3886ba00084d0d4013c2b5840b2fea056cdcea79f498c5bcd2084`  
+		Last Modified: Thu, 11 Jun 2026 00:45:02 GMT  
 		Size: 315.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.11` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:ae95547b414d7af79db70d299dcfd82664b4fe7e7ea19a8bf248358d7afafc83
+$ docker pull chronograf@sha256:070e47966d05c2d6ad9490421a9ea383cd4c75362b29b8a8a4dc8548fd72f921
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2889126 bytes)**  
+-	Total Size: **2.9 MB (2889144 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8fa41b0f97732b2535d5863d58f9147ba421671b1962e1642bdf584b15faeab`
+-	Image ID: `sha256:40398e85b3e847b5bc169b9a9120493fbe744a1c8ec58c0b8bc92cc77725a6bf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c426d19ed3b0c675a4a4d5da70287cbf62376981b5f5fa11006452e00a63c7f`  
-		Last Modified: Tue, 02 Jun 2026 19:05:09 GMT  
-		Size: 2.9 MB (2872934 bytes)  
+	-	`sha256:4cc86ee46eff59029c08f7a731845be8bf30156058866c32b2ae52c16c96560b`  
+		Last Modified: Thu, 11 Jun 2026 00:45:01 GMT  
+		Size: 2.9 MB (2872952 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1ec92e58f6d130d0dbbd936941c699acc570f0eeda6bfe15e0824363ed091ed4`  
-		Last Modified: Tue, 02 Jun 2026 19:05:09 GMT  
+	-	`sha256:06c6deb7e17d185253c508ce914f5f9b2c1c20fb44f7b9fa7fbb5528837f1745`  
+		Last Modified: Thu, 11 Jun 2026 00:45:00 GMT  
 		Size: 16.2 KB (16192 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1092,7 +1092,7 @@ $ docker pull chronograf@sha256:08db9de38b0153583acd24af21133c549def40c9dec94d56
 ## `chronograf:1.11.3`
 
 ```console
-$ docker pull chronograf@sha256:eb70ca38ed0435787c9ffe469c3ad502d05f221e3c697015b070d69087c9edd3
+$ docker pull chronograf@sha256:32c87a379b2e2698e2c03c9b5baec4b150045fb67a9b5d31269ae88d1d33d8f7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1105,176 +1105,176 @@ $ docker pull chronograf@sha256:eb70ca38ed0435787c9ffe469c3ad502d05f221e3c697015
 ### `chronograf:1.11.3` - linux; amd64
 
 ```console
-$ docker pull chronograf@sha256:5f287d828526a3622cbb0ada9c8cafa02a7dff6751aface86c3fd39474326595
+$ docker pull chronograf@sha256:73202e652dda47453c6e05e29ca9be91761dcc92f64682de2e149a3d0a622a36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.3 MB (96338084 bytes)**  
+-	Total Size: **96.3 MB (96342670 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2bb4e2824168d6fefce1709e3513a724bbc8f18c102506c7b82a24fac91ba249`
+-	Image ID: `sha256:27932b95b4e46a21c3c4b00e9535bbe9d7155a6a5128abdac0e17faac5c5c816`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1779062400'
-# Tue, 02 Jun 2026 19:04:44 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1781049600'
+# Thu, 11 Jun 2026 00:42:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         24C975CBA61A024EE1B631787C3D57159FC2F927 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 ENV CHRONOGRAF_VERSION=1.11.3
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 EXPOSE map[8888/tcp:{}]
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:068fedd6b0f109b8186d00d49327b6fc6747c428fd3c9a8739424ff5f38d7531`  
-		Last Modified: Tue, 19 May 2026 22:36:36 GMT  
-		Size: 28.2 MB (28233543 bytes)  
+	-	`sha256:b9136609bef0128191aa157637b98dd7b98e52154ca60c18258d65957a01c6d0`  
+		Last Modified: Wed, 10 Jun 2026 23:39:54 GMT  
+		Size: 28.2 MB (28237624 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2dc8ae8cd182811c8f1025ccc205da723f8e17214b0182b8576738541b681448`  
-		Last Modified: Tue, 02 Jun 2026 19:05:05 GMT  
-		Size: 7.9 MB (7882781 bytes)  
+	-	`sha256:556c9fe7644e1166887620855e94c2fba32d97d5e3ed4df537f06c1884a7f0ae`  
+		Last Modified: Thu, 11 Jun 2026 00:43:15 GMT  
+		Size: 7.9 MB (7883267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e913f912f9931a55a6888069207af19b462bf030aa63a495e5266f7efe98ac3f`  
-		Last Modified: Tue, 02 Jun 2026 19:05:06 GMT  
-		Size: 60.2 MB (60197283 bytes)  
+	-	`sha256:b55cf3f7752999b38e3d9223912ce753e63b747ba0ca49f8df5e319c088063e9`  
+		Last Modified: Thu, 11 Jun 2026 00:43:16 GMT  
+		Size: 60.2 MB (60197307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:455675abf40c5ac87a7da8c8aaf4b1a46d53d41dad64299e2d42d1035a375721`  
-		Last Modified: Tue, 02 Jun 2026 19:05:04 GMT  
-		Size: 12.3 KB (12251 bytes)  
+	-	`sha256:5769e0d1dcfbaa03829bf62a9018e38189487c8fe5cde7c33ecf939c2b143f7e`  
+		Last Modified: Thu, 11 Jun 2026 00:43:15 GMT  
+		Size: 12.2 KB (12249 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c5205e18c12565276f1a0b9049b861f144429a336825095df5ff2aaa7a2c226`  
-		Last Modified: Tue, 02 Jun 2026 19:05:04 GMT  
-		Size: 11.9 KB (11911 bytes)  
+	-	`sha256:6e438f602a3cd637900418a3cae8b6eb964b101379fb8aa88f21114895f23481`  
+		Last Modified: Thu, 11 Jun 2026 00:43:14 GMT  
+		Size: 11.9 KB (11909 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2c0b12cf3395c8e678dbf286cb994771b3547e2f2757d93108e967f27b1ecdc`  
-		Last Modified: Tue, 02 Jun 2026 19:05:06 GMT  
-		Size: 315.0 B  
+	-	`sha256:35b16275212f52100b6eafaf66aa0d7343a79c7ce9ce1ca94ef1ea4dd3aba17d`  
+		Last Modified: Thu, 11 Jun 2026 00:43:16 GMT  
+		Size: 314.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.11.3` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:af34f5ab4ae131481d91533abd74f94aa75d7e549f02e2b0a757181585dc64e8
+$ docker pull chronograf@sha256:2c377acca3100b8eded8237f5294e94e498c9d60115575d43098702c544aab82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2889805 bytes)**  
+-	Total Size: **2.9 MB (2889823 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72c161f28bf70196401d96e82464c8216b69ea8e746e0de247b5fbfef0e5778b`
+-	Image ID: `sha256:07de8db60e77546e14d4ee2975da7c7da016d1f475ba6cdc862591a303a9a83e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0877e14103aeb5913a8a7572fe12a697f3043d31d0656e1926307268b90f695c`  
-		Last Modified: Tue, 02 Jun 2026 19:05:05 GMT  
-		Size: 2.9 MB (2873720 bytes)  
+	-	`sha256:2625568072a9dd1c4abcd0c7a987dab62a3e6c1f9f0afcb55d1ca787025eada8`  
+		Last Modified: Thu, 11 Jun 2026 00:43:15 GMT  
+		Size: 2.9 MB (2873738 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ca3ed46836e66c33c1fb0da4f7c7cf7ec972deb61a77f97cb98b882ee7dd5d69`  
-		Last Modified: Tue, 02 Jun 2026 19:05:04 GMT  
+	-	`sha256:3e92aee71ca4c730a54e0d2b4d449e648529f3c9cf1d08c370c6c63ffc0cf073`  
+		Last Modified: Thu, 11 Jun 2026 00:43:15 GMT  
 		Size: 16.1 KB (16085 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `chronograf:1.11.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull chronograf@sha256:8f60556f88893bb34a9117ad8eb3041bda2d557ede818fbf4e1e9b2c707b7ca0
+$ docker pull chronograf@sha256:366675e696db69e613db19076980c8908e9b58729a1847e6749ffe90c20dab8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **93.0 MB (93047811 bytes)**  
+-	Total Size: **93.1 MB (93055462 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d64ae9ca865476dfd34d335223a68573df98b89f5ca2b40ea97b644ff6a7e074`
+-	Image ID: `sha256:459b3796796fdfea3d602ce56fab1cc2c29954072f40d70adc290142e4fb3f8a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1779062400'
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1781049600'
+# Thu, 11 Jun 2026 00:44:38 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         24C975CBA61A024EE1B631787C3D57159FC2F927 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 ENV CHRONOGRAF_VERSION=1.11.3
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 EXPOSE map[8888/tcp:{}]
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:f400d36d7784570c9fb7558e367d2b5d38e8b2f1d6faee041815acea7f87e669`  
-		Last Modified: Tue, 19 May 2026 22:36:40 GMT  
-		Size: 28.1 MB (28115043 bytes)  
+	-	`sha256:402614bd39aaec1e4bdcf25aa67f88588fc8d93997a2551c4e130e6ed2b06c7a`  
+		Last Modified: Wed, 10 Jun 2026 23:39:57 GMT  
+		Size: 28.1 MB (28122307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fe123d17146413325d255a21d4c2f8984fd6e08d3c8460a232b1dfcf8e48566`  
-		Last Modified: Tue, 02 Jun 2026 19:05:10 GMT  
-		Size: 7.7 MB (7699448 bytes)  
+	-	`sha256:4cbdd8fdc217506b94f451fe694a7434259077980dbfce32d678a110b1d5a084`  
+		Last Modified: Thu, 11 Jun 2026 00:45:01 GMT  
+		Size: 7.7 MB (7699815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ef03fe0fdbc1bb5177bf111c153aafacab7551ce6d1ea2cd0a29379a492fb30`  
-		Last Modified: Tue, 02 Jun 2026 19:05:11 GMT  
-		Size: 57.2 MB (57208859 bytes)  
+	-	`sha256:e8d99986976f45e221d9b9536bb7d61740629e2e34f15c8c96d9f4b700bff729`  
+		Last Modified: Thu, 11 Jun 2026 00:45:02 GMT  
+		Size: 57.2 MB (57208871 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:587cdfa30ae0c1bcfaa6cc739d142c925859efa2b8c3e7b31b6bd6337a8066da`  
-		Last Modified: Tue, 02 Jun 2026 19:05:09 GMT  
-		Size: 12.2 KB (12242 bytes)  
+	-	`sha256:694ce58a5f420870f543a6533816a87c9081c6d337adb50dc9b0fe82bec5ec9d`  
+		Last Modified: Thu, 11 Jun 2026 00:45:00 GMT  
+		Size: 12.2 KB (12247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03f02a0b9affa9f7ef18cf4bcab1866d09d0aa22a353ad2e82b7397b2ebcb17f`  
-		Last Modified: Tue, 02 Jun 2026 19:05:09 GMT  
-		Size: 11.9 KB (11904 bytes)  
+	-	`sha256:a236533c741fb74910832ada4193e1b28ee7b4538e09f17c736fc033514e8c51`  
+		Last Modified: Thu, 11 Jun 2026 00:45:01 GMT  
+		Size: 11.9 KB (11907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5914993df547519c55aa65a3a21bff47e93930a0e306ea322e108d3cac587d4e`  
-		Last Modified: Tue, 02 Jun 2026 19:05:10 GMT  
+	-	`sha256:08405dd5bfe3886ba00084d0d4013c2b5840b2fea056cdcea79f498c5bcd2084`  
+		Last Modified: Thu, 11 Jun 2026 00:45:02 GMT  
 		Size: 315.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.11.3` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:ae95547b414d7af79db70d299dcfd82664b4fe7e7ea19a8bf248358d7afafc83
+$ docker pull chronograf@sha256:070e47966d05c2d6ad9490421a9ea383cd4c75362b29b8a8a4dc8548fd72f921
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2889126 bytes)**  
+-	Total Size: **2.9 MB (2889144 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8fa41b0f97732b2535d5863d58f9147ba421671b1962e1642bdf584b15faeab`
+-	Image ID: `sha256:40398e85b3e847b5bc169b9a9120493fbe744a1c8ec58c0b8bc92cc77725a6bf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c426d19ed3b0c675a4a4d5da70287cbf62376981b5f5fa11006452e00a63c7f`  
-		Last Modified: Tue, 02 Jun 2026 19:05:09 GMT  
-		Size: 2.9 MB (2872934 bytes)  
+	-	`sha256:4cc86ee46eff59029c08f7a731845be8bf30156058866c32b2ae52c16c96560b`  
+		Last Modified: Thu, 11 Jun 2026 00:45:01 GMT  
+		Size: 2.9 MB (2872952 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1ec92e58f6d130d0dbbd936941c699acc570f0eeda6bfe15e0824363ed091ed4`  
-		Last Modified: Tue, 02 Jun 2026 19:05:09 GMT  
+	-	`sha256:06c6deb7e17d185253c508ce914f5f9b2c1c20fb44f7b9fa7fbb5528837f1745`  
+		Last Modified: Thu, 11 Jun 2026 00:45:00 GMT  
 		Size: 16.2 KB (16192 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1388,7 +1388,7 @@ $ docker pull chronograf@sha256:08db9de38b0153583acd24af21133c549def40c9dec94d56
 ## `chronograf:1.8`
 
 ```console
-$ docker pull chronograf@sha256:fe4d9f2ae3b6a09dc69ea71974475500dd52e79dd881c8662c37f7b01f5f5258
+$ docker pull chronograf@sha256:8d55c6b70fb68357d195962744560226c993c1c22dd9d299f1107f607f069ef2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1403,264 +1403,264 @@ $ docker pull chronograf@sha256:fe4d9f2ae3b6a09dc69ea71974475500dd52e79dd881c866
 ### `chronograf:1.8` - linux; amd64
 
 ```console
-$ docker pull chronograf@sha256:3ce14e8e3ef057e8689c7b21a6c9fae9488fea85047bb2eb58601a0e6ba6d213
+$ docker pull chronograf@sha256:1e439b792d7671fd6c8ffc8a60ac1bffc2857ce1f5d4eced6ff400025627d3de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.9 MB (69888068 bytes)**  
+-	Total Size: **69.9 MB (69890738 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47f1b296a3d067237fb3f8323a78ce95e532a82796dca991a449a07a5a099ad6`
+-	Image ID: `sha256:f2600333790d04eb4ec725432dbae4b026c61ca84693a8f34dfc841373207b73`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1779062400'
-# Tue, 19 May 2026 23:23:15 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
+# Thu, 11 Jun 2026 00:42:36 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Tue, 19 May 2026 23:23:19 GMT
+# Thu, 11 Jun 2026 00:42:41 GMT
 ENV CHRONOGRAF_VERSION=1.8.10
-# Tue, 19 May 2026 23:23:19 GMT
+# Thu, 11 Jun 2026 00:42:41 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Tue, 19 May 2026 23:23:19 GMT
+# Thu, 11 Jun 2026 00:42:41 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Tue, 19 May 2026 23:23:19 GMT
+# Thu, 11 Jun 2026 00:42:41 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Tue, 19 May 2026 23:23:19 GMT
+# Thu, 11 Jun 2026 00:42:41 GMT
 EXPOSE map[8888/tcp:{}]
-# Tue, 19 May 2026 23:23:19 GMT
+# Thu, 11 Jun 2026 00:42:41 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 19 May 2026 23:23:19 GMT
+# Thu, 11 Jun 2026 00:42:41 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 19 May 2026 23:23:19 GMT
+# Thu, 11 Jun 2026 00:42:41 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 May 2026 23:23:19 GMT
+# Thu, 11 Jun 2026 00:42:41 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:8419f4a27c97b0c111ab0dc77e0159bd3abfadcb948d4a49cf6dd6670703b84e`  
-		Last Modified: Tue, 19 May 2026 22:36:35 GMT  
-		Size: 30.3 MB (30257598 bytes)  
+	-	`sha256:55534d9909ecd18467599b415fa2553c3106849154ae8a361a75f1a24f2a4364`  
+		Last Modified: Wed, 10 Jun 2026 23:40:12 GMT  
+		Size: 30.3 MB (30260255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ebd47ef9b74d5b9f70bc68a79b0edcf41385564f44e247900320181e997b4f84`  
-		Last Modified: Tue, 19 May 2026 23:23:29 GMT  
-		Size: 5.2 MB (5241766 bytes)  
+	-	`sha256:22a8f9ee435937b73a68b09b4f10c7e7dc7bae1fa64f2aed12bacfed075143ed`  
+		Last Modified: Thu, 11 Jun 2026 00:42:53 GMT  
+		Size: 5.2 MB (5241790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d71a82bd9cb298f71881e9dc0155e13c0bdff03a97392675d5f5269e7f8c0fb`  
-		Last Modified: Tue, 19 May 2026 23:23:30 GMT  
-		Size: 34.4 MB (34364305 bytes)  
+	-	`sha256:3e058d65f5e3991080a4b28fd688f13360f0ae023127122e8b908cf0f80cc205`  
+		Last Modified: Thu, 11 Jun 2026 00:42:54 GMT  
+		Size: 34.4 MB (34364302 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff50585cec69c6cb7ce980560fc5e06b2b55f8fabc82b89b19bb38f0d3e2a58a`  
-		Last Modified: Tue, 19 May 2026 23:23:28 GMT  
-		Size: 12.2 KB (12250 bytes)  
+	-	`sha256:4ef4d76f4fcc665be1c839d3f0d52ab00e63eeee8f9c37db7913501b5d3f8e4a`  
+		Last Modified: Thu, 11 Jun 2026 00:42:53 GMT  
+		Size: 12.2 KB (12246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:54ce9a334f1d9d4fae927f2b4f0137e4457ea67a7666e5883347a1254d54734a`  
-		Last Modified: Tue, 19 May 2026 23:23:29 GMT  
-		Size: 11.9 KB (11910 bytes)  
+	-	`sha256:a03c1b94c7eaa89d8255c32d954aa3ba712faeaee9d7a20b16c8eb07b116895c`  
+		Last Modified: Thu, 11 Jun 2026 00:42:53 GMT  
+		Size: 11.9 KB (11906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f20db34cd8c32f7a152a24a6ce37a679f0ea6dd7e703de6bfa074822539deb67`  
-		Last Modified: Tue, 19 May 2026 23:23:30 GMT  
+	-	`sha256:4a2deb1d5fc5637721df6cf392d65173f500b6c18afa6d92a7e3bdb6301eeef4`  
+		Last Modified: Thu, 11 Jun 2026 00:42:54 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.8` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:2fa98b37820ff7f20a5124ff1eb8ab4ea3698843eeeb929ffdf7f5d5a39631e9
+$ docker pull chronograf@sha256:a1b6203b1e56b65937633a93bb18e8d704d8f2e66cef606aaa745c40c4f60feb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3128704 bytes)**  
+-	Total Size: **3.1 MB (3128709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75be21ade554897078f12b84eb859a0cc0ce845a1c55261cfbde8d163cec37ee`
+-	Image ID: `sha256:c6843135e3ba85919fe308391857751596a831367ab58ddd25131f7949f79e26`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:34e19855353fb80d988498018b45fae45c212d4af3c0c4959b229b5c3a5c6f25`  
-		Last Modified: Tue, 19 May 2026 23:23:29 GMT  
-		Size: 3.1 MB (3112931 bytes)  
+	-	`sha256:1009073240f04db00e4d9e2f219aad983d6d3a15e2b7cb17ac0f075c77e8a430`  
+		Last Modified: Thu, 11 Jun 2026 00:42:53 GMT  
+		Size: 3.1 MB (3112935 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:95df131077c2be5b2e91e124f6aa391e6006f9eef7806f4353955c18df15f2d0`  
-		Last Modified: Tue, 19 May 2026 23:23:28 GMT  
-		Size: 15.8 KB (15773 bytes)  
+	-	`sha256:d113cf753f2109946937ba86568269f470996afbd8cd1293f3db300b389fe4f3`  
+		Last Modified: Thu, 11 Jun 2026 00:42:53 GMT  
+		Size: 15.8 KB (15774 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `chronograf:1.8` - linux; arm variant v7
 
 ```console
-$ docker pull chronograf@sha256:38a1958ed0719d64f2d6147bd16e734fbfc388b177311dacbbe8a701a2d2efc5
+$ docker pull chronograf@sha256:3f95c764a35f6e4501be84c1c61262c6c064895430cde7b8db4aefb8ad46c201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.6 MB (62620301 bytes)**  
+-	Total Size: **62.6 MB (62622172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a02291411102f81214a68b1e2e3d1eb6f3340249eeb87e09057257e9b6c192fa`
+-	Image ID: `sha256:1ea339cbe386802b3303c6ebe6dc921c81062110c2bfea397e820f153450897c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bullseye' '@1779062400'
-# Wed, 20 May 2026 00:04:28 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bullseye' '@1781049600'
+# Thu, 11 Jun 2026 01:27:36 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Wed, 20 May 2026 00:04:34 GMT
+# Thu, 11 Jun 2026 01:27:42 GMT
 ENV CHRONOGRAF_VERSION=1.8.10
-# Wed, 20 May 2026 00:04:34 GMT
+# Thu, 11 Jun 2026 01:27:42 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Wed, 20 May 2026 00:04:34 GMT
+# Thu, 11 Jun 2026 01:27:42 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Wed, 20 May 2026 00:04:34 GMT
+# Thu, 11 Jun 2026 01:27:42 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Wed, 20 May 2026 00:04:34 GMT
+# Thu, 11 Jun 2026 01:27:42 GMT
 EXPOSE map[8888/tcp:{}]
-# Wed, 20 May 2026 00:04:34 GMT
+# Thu, 11 Jun 2026 01:27:42 GMT
 VOLUME [/var/lib/chronograf]
-# Wed, 20 May 2026 00:04:34 GMT
+# Thu, 11 Jun 2026 01:27:42 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Wed, 20 May 2026 00:04:34 GMT
+# Thu, 11 Jun 2026 01:27:42 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 20 May 2026 00:04:34 GMT
+# Thu, 11 Jun 2026 01:27:42 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:03d011f22c8996d930f4cd66e165f41f901636aacd59f9f3a74c6b0df7ffa952`  
-		Last Modified: Tue, 19 May 2026 22:36:39 GMT  
-		Size: 25.6 MB (25550938 bytes)  
+	-	`sha256:7ba7c49f3099e93649e55cb3558e8587e0d0458fc435dfc054641c2347c164c3`  
+		Last Modified: Wed, 10 Jun 2026 23:41:03 GMT  
+		Size: 25.6 MB (25552842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4777cab77fff94a104d92682077343aa60bde9c868783b361395250f0610307d`  
-		Last Modified: Wed, 20 May 2026 00:04:43 GMT  
-		Size: 4.5 MB (4510016 bytes)  
+	-	`sha256:e014713bc166be47a9d8f88e598297524f9d638ef5ce9ff860ae4c0d7dd67b02`  
+		Last Modified: Thu, 11 Jun 2026 01:27:51 GMT  
+		Size: 4.5 MB (4510004 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fce8ee99d356e0ac46d0f4e67829c14e5257c6540f1503f4677423b774eb2b02`  
-		Last Modified: Wed, 20 May 2026 00:04:44 GMT  
-		Size: 32.5 MB (32534951 bytes)  
+	-	`sha256:b5bcbe5a5dbdc69fb4769d18affef7f32c21bf720219d7d1ba4463c4fe7367a7`  
+		Last Modified: Thu, 11 Jun 2026 01:27:52 GMT  
+		Size: 32.5 MB (32534926 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0023ab81954adfcdb601282ce3a21324874aeddfb0635b92e81907b73a21c730`  
-		Last Modified: Wed, 20 May 2026 00:04:43 GMT  
-		Size: 12.2 KB (12249 bytes)  
+	-	`sha256:ea153933869befe249036fd6775f02fb5600d23eac143eeb3682cc1be80c1f3f`  
+		Last Modified: Thu, 11 Jun 2026 01:27:51 GMT  
+		Size: 12.3 KB (12251 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19b6f7a6817279dc742f9675de4722208a91f3883571ca48ccbf2a713ad2adc1`  
-		Last Modified: Wed, 20 May 2026 00:04:43 GMT  
-		Size: 11.9 KB (11909 bytes)  
+	-	`sha256:331c02c2917d9a903f75f34872bf01ebe04736f5dc68c67afd140bf239f77563`  
+		Last Modified: Thu, 11 Jun 2026 01:27:51 GMT  
+		Size: 11.9 KB (11910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72ef440aa78a6dfb143383d621079524494448c6b921c92331bd54501eb47dc3`  
-		Last Modified: Wed, 20 May 2026 00:04:44 GMT  
-		Size: 238.0 B  
+	-	`sha256:31a2fad6e06b7ebf65823dae42950f8c359eeb306c6b5285446db94d3b817948`  
+		Last Modified: Thu, 11 Jun 2026 01:27:52 GMT  
+		Size: 239.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.8` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:8ba4023a53df840bd7f0963525eebc7b8fce5a524d9d6ceff5c23fa1189ab489
+$ docker pull chronograf@sha256:e5b1647ce5e442ecefc2acc55d370c8fedba653d8d94de159664e1e358197fe6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3131053 bytes)**  
+-	Total Size: **3.1 MB (3131057 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:db197973a09672f3ae1aed19adafb2887eab8ceb345e92db1d3556dfca368582`
+-	Image ID: `sha256:a447b7b61e340a3c59ebe8de88d44df16b8ec1fbb70fd6fe11d77774214bd1ec`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44961c2b532483f5dbc6336feb739de7dcde651642eeee3f86aa640d39ffeabb`  
-		Last Modified: Wed, 20 May 2026 00:04:43 GMT  
-		Size: 3.1 MB (3115202 bytes)  
+	-	`sha256:761e7a5a9689b80b5b77432aad45f81ce5cd62e6aaeca392a02d78d71729f8d8`  
+		Last Modified: Thu, 11 Jun 2026 01:27:51 GMT  
+		Size: 3.1 MB (3115206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:72d3d303359f4ecc4743c76f117faef685b1e2d55ca632a35c8c8b9feb146243`  
-		Last Modified: Wed, 20 May 2026 00:04:43 GMT  
+	-	`sha256:d74fb231948790e3fc8a8dbafcffeee70ae105db709a86bcf79cbe39c0339c54`  
+		Last Modified: Thu, 11 Jun 2026 01:27:50 GMT  
 		Size: 15.9 KB (15851 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `chronograf:1.8` - linux; arm64 variant v8
 
 ```console
-$ docker pull chronograf@sha256:47b48689adb33449bd0dec5b53ad8378bf19edcb6ae052995d6754b20930876a
+$ docker pull chronograf@sha256:e16bf739f132ce96d4d9d673420e4d62850ff84946dbaa16bc3998490a6c2014
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **66.4 MB (66426616 bytes)**  
+-	Total Size: **66.4 MB (66429847 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2742ee4753ad6a478f9cf8010d2edef31e9468c860af5e093df68fbc5ab8e090`
+-	Image ID: `sha256:b38ef6547e36ccb4653f478d7db3c67432f27c7637753f773c4bc864f86c3bfd`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1779062400'
-# Tue, 19 May 2026 23:26:57 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
+# Thu, 11 Jun 2026 00:44:24 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Tue, 19 May 2026 23:27:02 GMT
+# Thu, 11 Jun 2026 00:44:29 GMT
 ENV CHRONOGRAF_VERSION=1.8.10
-# Tue, 19 May 2026 23:27:02 GMT
+# Thu, 11 Jun 2026 00:44:29 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Tue, 19 May 2026 23:27:02 GMT
+# Thu, 11 Jun 2026 00:44:29 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Tue, 19 May 2026 23:27:02 GMT
+# Thu, 11 Jun 2026 00:44:29 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Tue, 19 May 2026 23:27:02 GMT
+# Thu, 11 Jun 2026 00:44:29 GMT
 EXPOSE map[8888/tcp:{}]
-# Tue, 19 May 2026 23:27:02 GMT
+# Thu, 11 Jun 2026 00:44:29 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 19 May 2026 23:27:02 GMT
+# Thu, 11 Jun 2026 00:44:29 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 19 May 2026 23:27:02 GMT
+# Thu, 11 Jun 2026 00:44:29 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 May 2026 23:27:02 GMT
+# Thu, 11 Jun 2026 00:44:29 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:2b99ba6638377be8e7e1e9a328ebb001513ab9f700c8168d404eed03437c7ce5`  
-		Last Modified: Tue, 19 May 2026 22:36:47 GMT  
-		Size: 28.7 MB (28742972 bytes)  
+	-	`sha256:ca483a18241c226a06a4a4afd22dc5496062254c671fa595136458fb8fcd0107`  
+		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
+		Size: 28.7 MB (28746154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb4b499936aab6f50c71c2cb39731e0abad7efa25e68e1477b44cd080d764d8b`  
-		Last Modified: Tue, 19 May 2026 23:27:12 GMT  
-		Size: 5.2 MB (5229760 bytes)  
+	-	`sha256:e341d0ac5bbdb331124debfb6813c85c084a06b0416c43928bdd16f7c0716733`  
+		Last Modified: Thu, 11 Jun 2026 00:44:39 GMT  
+		Size: 5.2 MB (5229756 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e4f5f0ae72a9e9c7b0d9eacb84c03213d17ec9ee0b471cafc3c8db46b4d39cf`  
-		Last Modified: Tue, 19 May 2026 23:27:12 GMT  
-		Size: 32.4 MB (32429494 bytes)  
+	-	`sha256:ad32dadbf3b8cd84900380d055bf855bee871dc3bce9254e68bfbc5f3657403a`  
+		Last Modified: Thu, 11 Jun 2026 00:44:40 GMT  
+		Size: 32.4 MB (32429544 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93fd552a24a08d202acb77f37e251dfa15050a88a43fd57c4a5b07c5d0bfe092`  
-		Last Modified: Tue, 19 May 2026 23:27:11 GMT  
-		Size: 12.2 KB (12246 bytes)  
+	-	`sha256:5fe032898a3f18428d230e9de2b6cbad1a873637512ac63dc4bf0e7c4d9f16bb`  
+		Last Modified: Thu, 11 Jun 2026 00:44:39 GMT  
+		Size: 12.2 KB (12247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97c78b9c4a92054282b0b121ed9ab07137e5d415991e03804a257019f831f50b`  
-		Last Modified: Tue, 19 May 2026 23:27:11 GMT  
-		Size: 11.9 KB (11905 bytes)  
+	-	`sha256:a10c04e323776353688e398257d70b7e7b14da2f96ab8f536697ffc23c55601b`  
+		Last Modified: Thu, 11 Jun 2026 00:44:39 GMT  
+		Size: 11.9 KB (11907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a6ef04445b3b32eb28b7fcf04fc75823dc4b21533a8ec8565bebebf4baf01c31`  
-		Last Modified: Tue, 19 May 2026 23:27:13 GMT  
+	-	`sha256:d5c94cc7d3d38eac603465be77ec6ec969b7d9e30f07f4a311ef23b51eb93bc7`  
+		Last Modified: Thu, 11 Jun 2026 00:44:41 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.8` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:23445bfb3ecef270c0a4cd481269346e9fb8503ff632f89910a1149e392f3f99
+$ docker pull chronograf@sha256:3a83a759df46f98242e97204ab1d4b61623bd44dc7c7eaf8c3acb4ac69e4ff24
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3129049 bytes)**  
+-	Total Size: **3.1 MB (3129053 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d5777b5f69cc8718c19d80cd218c075997e9a9bc56d09c6ddd501fec434b3f1d`
+-	Image ID: `sha256:c2ae0acb9d314921905e18b5dd10c4cf28dafe0f47f0752fa79e598603b40ac8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:df568fbbd9f5ea36eedc98db2fd14bb834ce4327da0b922885341b8765080c19`  
-		Last Modified: Tue, 19 May 2026 23:27:12 GMT  
-		Size: 3.1 MB (3113180 bytes)  
+	-	`sha256:469275a625ee152f0926abd75cb28346ba986e2714f3ae5a87901b0835d12dac`  
+		Last Modified: Thu, 11 Jun 2026 00:44:40 GMT  
+		Size: 3.1 MB (3113184 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4268e90440e046f6e29bb1cf4fd46dbc114f9195bfd71fa254f48de11dd7a033`  
-		Last Modified: Tue, 19 May 2026 23:27:12 GMT  
+	-	`sha256:3a124d0267f99a904f0b7cc98b2b7b81d58c69be2dc9a065b27bc63d48f29932`  
+		Last Modified: Thu, 11 Jun 2026 00:44:39 GMT  
 		Size: 15.9 KB (15869 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1774,7 +1774,7 @@ $ docker pull chronograf@sha256:84b7bdc8d23f218c2fe980ddfdeac820e2627fc7d91f2c42
 ## `chronograf:1.8.10`
 
 ```console
-$ docker pull chronograf@sha256:fe4d9f2ae3b6a09dc69ea71974475500dd52e79dd881c8662c37f7b01f5f5258
+$ docker pull chronograf@sha256:8d55c6b70fb68357d195962744560226c993c1c22dd9d299f1107f607f069ef2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1789,264 +1789,264 @@ $ docker pull chronograf@sha256:fe4d9f2ae3b6a09dc69ea71974475500dd52e79dd881c866
 ### `chronograf:1.8.10` - linux; amd64
 
 ```console
-$ docker pull chronograf@sha256:3ce14e8e3ef057e8689c7b21a6c9fae9488fea85047bb2eb58601a0e6ba6d213
+$ docker pull chronograf@sha256:1e439b792d7671fd6c8ffc8a60ac1bffc2857ce1f5d4eced6ff400025627d3de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.9 MB (69888068 bytes)**  
+-	Total Size: **69.9 MB (69890738 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47f1b296a3d067237fb3f8323a78ce95e532a82796dca991a449a07a5a099ad6`
+-	Image ID: `sha256:f2600333790d04eb4ec725432dbae4b026c61ca84693a8f34dfc841373207b73`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1779062400'
-# Tue, 19 May 2026 23:23:15 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
+# Thu, 11 Jun 2026 00:42:36 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Tue, 19 May 2026 23:23:19 GMT
+# Thu, 11 Jun 2026 00:42:41 GMT
 ENV CHRONOGRAF_VERSION=1.8.10
-# Tue, 19 May 2026 23:23:19 GMT
+# Thu, 11 Jun 2026 00:42:41 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Tue, 19 May 2026 23:23:19 GMT
+# Thu, 11 Jun 2026 00:42:41 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Tue, 19 May 2026 23:23:19 GMT
+# Thu, 11 Jun 2026 00:42:41 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Tue, 19 May 2026 23:23:19 GMT
+# Thu, 11 Jun 2026 00:42:41 GMT
 EXPOSE map[8888/tcp:{}]
-# Tue, 19 May 2026 23:23:19 GMT
+# Thu, 11 Jun 2026 00:42:41 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 19 May 2026 23:23:19 GMT
+# Thu, 11 Jun 2026 00:42:41 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 19 May 2026 23:23:19 GMT
+# Thu, 11 Jun 2026 00:42:41 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 May 2026 23:23:19 GMT
+# Thu, 11 Jun 2026 00:42:41 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:8419f4a27c97b0c111ab0dc77e0159bd3abfadcb948d4a49cf6dd6670703b84e`  
-		Last Modified: Tue, 19 May 2026 22:36:35 GMT  
-		Size: 30.3 MB (30257598 bytes)  
+	-	`sha256:55534d9909ecd18467599b415fa2553c3106849154ae8a361a75f1a24f2a4364`  
+		Last Modified: Wed, 10 Jun 2026 23:40:12 GMT  
+		Size: 30.3 MB (30260255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ebd47ef9b74d5b9f70bc68a79b0edcf41385564f44e247900320181e997b4f84`  
-		Last Modified: Tue, 19 May 2026 23:23:29 GMT  
-		Size: 5.2 MB (5241766 bytes)  
+	-	`sha256:22a8f9ee435937b73a68b09b4f10c7e7dc7bae1fa64f2aed12bacfed075143ed`  
+		Last Modified: Thu, 11 Jun 2026 00:42:53 GMT  
+		Size: 5.2 MB (5241790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d71a82bd9cb298f71881e9dc0155e13c0bdff03a97392675d5f5269e7f8c0fb`  
-		Last Modified: Tue, 19 May 2026 23:23:30 GMT  
-		Size: 34.4 MB (34364305 bytes)  
+	-	`sha256:3e058d65f5e3991080a4b28fd688f13360f0ae023127122e8b908cf0f80cc205`  
+		Last Modified: Thu, 11 Jun 2026 00:42:54 GMT  
+		Size: 34.4 MB (34364302 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff50585cec69c6cb7ce980560fc5e06b2b55f8fabc82b89b19bb38f0d3e2a58a`  
-		Last Modified: Tue, 19 May 2026 23:23:28 GMT  
-		Size: 12.2 KB (12250 bytes)  
+	-	`sha256:4ef4d76f4fcc665be1c839d3f0d52ab00e63eeee8f9c37db7913501b5d3f8e4a`  
+		Last Modified: Thu, 11 Jun 2026 00:42:53 GMT  
+		Size: 12.2 KB (12246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:54ce9a334f1d9d4fae927f2b4f0137e4457ea67a7666e5883347a1254d54734a`  
-		Last Modified: Tue, 19 May 2026 23:23:29 GMT  
-		Size: 11.9 KB (11910 bytes)  
+	-	`sha256:a03c1b94c7eaa89d8255c32d954aa3ba712faeaee9d7a20b16c8eb07b116895c`  
+		Last Modified: Thu, 11 Jun 2026 00:42:53 GMT  
+		Size: 11.9 KB (11906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f20db34cd8c32f7a152a24a6ce37a679f0ea6dd7e703de6bfa074822539deb67`  
-		Last Modified: Tue, 19 May 2026 23:23:30 GMT  
+	-	`sha256:4a2deb1d5fc5637721df6cf392d65173f500b6c18afa6d92a7e3bdb6301eeef4`  
+		Last Modified: Thu, 11 Jun 2026 00:42:54 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.8.10` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:2fa98b37820ff7f20a5124ff1eb8ab4ea3698843eeeb929ffdf7f5d5a39631e9
+$ docker pull chronograf@sha256:a1b6203b1e56b65937633a93bb18e8d704d8f2e66cef606aaa745c40c4f60feb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3128704 bytes)**  
+-	Total Size: **3.1 MB (3128709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:75be21ade554897078f12b84eb859a0cc0ce845a1c55261cfbde8d163cec37ee`
+-	Image ID: `sha256:c6843135e3ba85919fe308391857751596a831367ab58ddd25131f7949f79e26`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:34e19855353fb80d988498018b45fae45c212d4af3c0c4959b229b5c3a5c6f25`  
-		Last Modified: Tue, 19 May 2026 23:23:29 GMT  
-		Size: 3.1 MB (3112931 bytes)  
+	-	`sha256:1009073240f04db00e4d9e2f219aad983d6d3a15e2b7cb17ac0f075c77e8a430`  
+		Last Modified: Thu, 11 Jun 2026 00:42:53 GMT  
+		Size: 3.1 MB (3112935 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:95df131077c2be5b2e91e124f6aa391e6006f9eef7806f4353955c18df15f2d0`  
-		Last Modified: Tue, 19 May 2026 23:23:28 GMT  
-		Size: 15.8 KB (15773 bytes)  
+	-	`sha256:d113cf753f2109946937ba86568269f470996afbd8cd1293f3db300b389fe4f3`  
+		Last Modified: Thu, 11 Jun 2026 00:42:53 GMT  
+		Size: 15.8 KB (15774 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `chronograf:1.8.10` - linux; arm variant v7
 
 ```console
-$ docker pull chronograf@sha256:38a1958ed0719d64f2d6147bd16e734fbfc388b177311dacbbe8a701a2d2efc5
+$ docker pull chronograf@sha256:3f95c764a35f6e4501be84c1c61262c6c064895430cde7b8db4aefb8ad46c201
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.6 MB (62620301 bytes)**  
+-	Total Size: **62.6 MB (62622172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a02291411102f81214a68b1e2e3d1eb6f3340249eeb87e09057257e9b6c192fa`
+-	Image ID: `sha256:1ea339cbe386802b3303c6ebe6dc921c81062110c2bfea397e820f153450897c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bullseye' '@1779062400'
-# Wed, 20 May 2026 00:04:28 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bullseye' '@1781049600'
+# Thu, 11 Jun 2026 01:27:36 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Wed, 20 May 2026 00:04:34 GMT
+# Thu, 11 Jun 2026 01:27:42 GMT
 ENV CHRONOGRAF_VERSION=1.8.10
-# Wed, 20 May 2026 00:04:34 GMT
+# Thu, 11 Jun 2026 01:27:42 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Wed, 20 May 2026 00:04:34 GMT
+# Thu, 11 Jun 2026 01:27:42 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Wed, 20 May 2026 00:04:34 GMT
+# Thu, 11 Jun 2026 01:27:42 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Wed, 20 May 2026 00:04:34 GMT
+# Thu, 11 Jun 2026 01:27:42 GMT
 EXPOSE map[8888/tcp:{}]
-# Wed, 20 May 2026 00:04:34 GMT
+# Thu, 11 Jun 2026 01:27:42 GMT
 VOLUME [/var/lib/chronograf]
-# Wed, 20 May 2026 00:04:34 GMT
+# Thu, 11 Jun 2026 01:27:42 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Wed, 20 May 2026 00:04:34 GMT
+# Thu, 11 Jun 2026 01:27:42 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 20 May 2026 00:04:34 GMT
+# Thu, 11 Jun 2026 01:27:42 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:03d011f22c8996d930f4cd66e165f41f901636aacd59f9f3a74c6b0df7ffa952`  
-		Last Modified: Tue, 19 May 2026 22:36:39 GMT  
-		Size: 25.6 MB (25550938 bytes)  
+	-	`sha256:7ba7c49f3099e93649e55cb3558e8587e0d0458fc435dfc054641c2347c164c3`  
+		Last Modified: Wed, 10 Jun 2026 23:41:03 GMT  
+		Size: 25.6 MB (25552842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4777cab77fff94a104d92682077343aa60bde9c868783b361395250f0610307d`  
-		Last Modified: Wed, 20 May 2026 00:04:43 GMT  
-		Size: 4.5 MB (4510016 bytes)  
+	-	`sha256:e014713bc166be47a9d8f88e598297524f9d638ef5ce9ff860ae4c0d7dd67b02`  
+		Last Modified: Thu, 11 Jun 2026 01:27:51 GMT  
+		Size: 4.5 MB (4510004 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fce8ee99d356e0ac46d0f4e67829c14e5257c6540f1503f4677423b774eb2b02`  
-		Last Modified: Wed, 20 May 2026 00:04:44 GMT  
-		Size: 32.5 MB (32534951 bytes)  
+	-	`sha256:b5bcbe5a5dbdc69fb4769d18affef7f32c21bf720219d7d1ba4463c4fe7367a7`  
+		Last Modified: Thu, 11 Jun 2026 01:27:52 GMT  
+		Size: 32.5 MB (32534926 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0023ab81954adfcdb601282ce3a21324874aeddfb0635b92e81907b73a21c730`  
-		Last Modified: Wed, 20 May 2026 00:04:43 GMT  
-		Size: 12.2 KB (12249 bytes)  
+	-	`sha256:ea153933869befe249036fd6775f02fb5600d23eac143eeb3682cc1be80c1f3f`  
+		Last Modified: Thu, 11 Jun 2026 01:27:51 GMT  
+		Size: 12.3 KB (12251 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19b6f7a6817279dc742f9675de4722208a91f3883571ca48ccbf2a713ad2adc1`  
-		Last Modified: Wed, 20 May 2026 00:04:43 GMT  
-		Size: 11.9 KB (11909 bytes)  
+	-	`sha256:331c02c2917d9a903f75f34872bf01ebe04736f5dc68c67afd140bf239f77563`  
+		Last Modified: Thu, 11 Jun 2026 01:27:51 GMT  
+		Size: 11.9 KB (11910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72ef440aa78a6dfb143383d621079524494448c6b921c92331bd54501eb47dc3`  
-		Last Modified: Wed, 20 May 2026 00:04:44 GMT  
-		Size: 238.0 B  
+	-	`sha256:31a2fad6e06b7ebf65823dae42950f8c359eeb306c6b5285446db94d3b817948`  
+		Last Modified: Thu, 11 Jun 2026 01:27:52 GMT  
+		Size: 239.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.8.10` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:8ba4023a53df840bd7f0963525eebc7b8fce5a524d9d6ceff5c23fa1189ab489
+$ docker pull chronograf@sha256:e5b1647ce5e442ecefc2acc55d370c8fedba653d8d94de159664e1e358197fe6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3131053 bytes)**  
+-	Total Size: **3.1 MB (3131057 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:db197973a09672f3ae1aed19adafb2887eab8ceb345e92db1d3556dfca368582`
+-	Image ID: `sha256:a447b7b61e340a3c59ebe8de88d44df16b8ec1fbb70fd6fe11d77774214bd1ec`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44961c2b532483f5dbc6336feb739de7dcde651642eeee3f86aa640d39ffeabb`  
-		Last Modified: Wed, 20 May 2026 00:04:43 GMT  
-		Size: 3.1 MB (3115202 bytes)  
+	-	`sha256:761e7a5a9689b80b5b77432aad45f81ce5cd62e6aaeca392a02d78d71729f8d8`  
+		Last Modified: Thu, 11 Jun 2026 01:27:51 GMT  
+		Size: 3.1 MB (3115206 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:72d3d303359f4ecc4743c76f117faef685b1e2d55ca632a35c8c8b9feb146243`  
-		Last Modified: Wed, 20 May 2026 00:04:43 GMT  
+	-	`sha256:d74fb231948790e3fc8a8dbafcffeee70ae105db709a86bcf79cbe39c0339c54`  
+		Last Modified: Thu, 11 Jun 2026 01:27:50 GMT  
 		Size: 15.9 KB (15851 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `chronograf:1.8.10` - linux; arm64 variant v8
 
 ```console
-$ docker pull chronograf@sha256:47b48689adb33449bd0dec5b53ad8378bf19edcb6ae052995d6754b20930876a
+$ docker pull chronograf@sha256:e16bf739f132ce96d4d9d673420e4d62850ff84946dbaa16bc3998490a6c2014
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **66.4 MB (66426616 bytes)**  
+-	Total Size: **66.4 MB (66429847 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2742ee4753ad6a478f9cf8010d2edef31e9468c860af5e093df68fbc5ab8e090`
+-	Image ID: `sha256:b38ef6547e36ccb4653f478d7db3c67432f27c7637753f773c4bc864f86c3bfd`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1779062400'
-# Tue, 19 May 2026 23:26:57 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
+# Thu, 11 Jun 2026 00:44:24 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Tue, 19 May 2026 23:27:02 GMT
+# Thu, 11 Jun 2026 00:44:29 GMT
 ENV CHRONOGRAF_VERSION=1.8.10
-# Tue, 19 May 2026 23:27:02 GMT
+# Thu, 11 Jun 2026 00:44:29 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Tue, 19 May 2026 23:27:02 GMT
+# Thu, 11 Jun 2026 00:44:29 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Tue, 19 May 2026 23:27:02 GMT
+# Thu, 11 Jun 2026 00:44:29 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Tue, 19 May 2026 23:27:02 GMT
+# Thu, 11 Jun 2026 00:44:29 GMT
 EXPOSE map[8888/tcp:{}]
-# Tue, 19 May 2026 23:27:02 GMT
+# Thu, 11 Jun 2026 00:44:29 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 19 May 2026 23:27:02 GMT
+# Thu, 11 Jun 2026 00:44:29 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 19 May 2026 23:27:02 GMT
+# Thu, 11 Jun 2026 00:44:29 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 May 2026 23:27:02 GMT
+# Thu, 11 Jun 2026 00:44:29 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:2b99ba6638377be8e7e1e9a328ebb001513ab9f700c8168d404eed03437c7ce5`  
-		Last Modified: Tue, 19 May 2026 22:36:47 GMT  
-		Size: 28.7 MB (28742972 bytes)  
+	-	`sha256:ca483a18241c226a06a4a4afd22dc5496062254c671fa595136458fb8fcd0107`  
+		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
+		Size: 28.7 MB (28746154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb4b499936aab6f50c71c2cb39731e0abad7efa25e68e1477b44cd080d764d8b`  
-		Last Modified: Tue, 19 May 2026 23:27:12 GMT  
-		Size: 5.2 MB (5229760 bytes)  
+	-	`sha256:e341d0ac5bbdb331124debfb6813c85c084a06b0416c43928bdd16f7c0716733`  
+		Last Modified: Thu, 11 Jun 2026 00:44:39 GMT  
+		Size: 5.2 MB (5229756 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e4f5f0ae72a9e9c7b0d9eacb84c03213d17ec9ee0b471cafc3c8db46b4d39cf`  
-		Last Modified: Tue, 19 May 2026 23:27:12 GMT  
-		Size: 32.4 MB (32429494 bytes)  
+	-	`sha256:ad32dadbf3b8cd84900380d055bf855bee871dc3bce9254e68bfbc5f3657403a`  
+		Last Modified: Thu, 11 Jun 2026 00:44:40 GMT  
+		Size: 32.4 MB (32429544 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93fd552a24a08d202acb77f37e251dfa15050a88a43fd57c4a5b07c5d0bfe092`  
-		Last Modified: Tue, 19 May 2026 23:27:11 GMT  
-		Size: 12.2 KB (12246 bytes)  
+	-	`sha256:5fe032898a3f18428d230e9de2b6cbad1a873637512ac63dc4bf0e7c4d9f16bb`  
+		Last Modified: Thu, 11 Jun 2026 00:44:39 GMT  
+		Size: 12.2 KB (12247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97c78b9c4a92054282b0b121ed9ab07137e5d415991e03804a257019f831f50b`  
-		Last Modified: Tue, 19 May 2026 23:27:11 GMT  
-		Size: 11.9 KB (11905 bytes)  
+	-	`sha256:a10c04e323776353688e398257d70b7e7b14da2f96ab8f536697ffc23c55601b`  
+		Last Modified: Thu, 11 Jun 2026 00:44:39 GMT  
+		Size: 11.9 KB (11907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a6ef04445b3b32eb28b7fcf04fc75823dc4b21533a8ec8565bebebf4baf01c31`  
-		Last Modified: Tue, 19 May 2026 23:27:13 GMT  
+	-	`sha256:d5c94cc7d3d38eac603465be77ec6ec969b7d9e30f07f4a311ef23b51eb93bc7`  
+		Last Modified: Thu, 11 Jun 2026 00:44:41 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.8.10` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:23445bfb3ecef270c0a4cd481269346e9fb8503ff632f89910a1149e392f3f99
+$ docker pull chronograf@sha256:3a83a759df46f98242e97204ab1d4b61623bd44dc7c7eaf8c3acb4ac69e4ff24
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3129049 bytes)**  
+-	Total Size: **3.1 MB (3129053 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d5777b5f69cc8718c19d80cd218c075997e9a9bc56d09c6ddd501fec434b3f1d`
+-	Image ID: `sha256:c2ae0acb9d314921905e18b5dd10c4cf28dafe0f47f0752fa79e598603b40ac8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:df568fbbd9f5ea36eedc98db2fd14bb834ce4327da0b922885341b8765080c19`  
-		Last Modified: Tue, 19 May 2026 23:27:12 GMT  
-		Size: 3.1 MB (3113180 bytes)  
+	-	`sha256:469275a625ee152f0926abd75cb28346ba986e2714f3ae5a87901b0835d12dac`  
+		Last Modified: Thu, 11 Jun 2026 00:44:40 GMT  
+		Size: 3.1 MB (3113184 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4268e90440e046f6e29bb1cf4fd46dbc114f9195bfd71fa254f48de11dd7a033`  
-		Last Modified: Tue, 19 May 2026 23:27:12 GMT  
+	-	`sha256:3a124d0267f99a904f0b7cc98b2b7b81d58c69be2dc9a065b27bc63d48f29932`  
+		Last Modified: Thu, 11 Jun 2026 00:44:39 GMT  
 		Size: 15.9 KB (15869 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2160,7 +2160,7 @@ $ docker pull chronograf@sha256:84b7bdc8d23f218c2fe980ddfdeac820e2627fc7d91f2c42
 ## `chronograf:1.9`
 
 ```console
-$ docker pull chronograf@sha256:f1bfd505a98f466902469148348ac1c1e114c0e426a1178e39526b56acea1f38
+$ docker pull chronograf@sha256:0b3c072df39f12bec0604f8e4a7c02b42085ab88ac4c28e1cc60140a70d06bc5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2175,264 +2175,264 @@ $ docker pull chronograf@sha256:f1bfd505a98f466902469148348ac1c1e114c0e426a1178e
 ### `chronograf:1.9` - linux; amd64
 
 ```console
-$ docker pull chronograf@sha256:ab7acf4355026f4cf20b5436580e38120a84be51b44890c01e4cf4174b653231
+$ docker pull chronograf@sha256:32542ded9c70fb95366b306747b0d6a3347e7cef6a8cb9e9b3e755f076717107
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.5 MB (70535532 bytes)**  
+-	Total Size: **70.5 MB (70538271 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70e645d495b8b6025799dd4b602fe2e33e32e3b31a98b7f1ed5eb6fe7493f8d8`
+-	Image ID: `sha256:072289548e73d5fd6e32652ce90ad3f1ac4d9b33ed111d22e7f54c6c13ff9cfb`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1779062400'
-# Tue, 19 May 2026 23:23:16 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
+# Thu, 11 Jun 2026 00:42:42 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Tue, 19 May 2026 23:23:20 GMT
+# Thu, 11 Jun 2026 00:42:47 GMT
 ENV CHRONOGRAF_VERSION=1.9.4
-# Tue, 19 May 2026 23:23:20 GMT
+# Thu, 11 Jun 2026 00:42:47 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Tue, 19 May 2026 23:23:20 GMT
+# Thu, 11 Jun 2026 00:42:47 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Tue, 19 May 2026 23:23:20 GMT
+# Thu, 11 Jun 2026 00:42:47 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Tue, 19 May 2026 23:23:20 GMT
+# Thu, 11 Jun 2026 00:42:47 GMT
 EXPOSE map[8888/tcp:{}]
-# Tue, 19 May 2026 23:23:20 GMT
+# Thu, 11 Jun 2026 00:42:47 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 19 May 2026 23:23:20 GMT
+# Thu, 11 Jun 2026 00:42:47 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 19 May 2026 23:23:20 GMT
+# Thu, 11 Jun 2026 00:42:47 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 May 2026 23:23:20 GMT
+# Thu, 11 Jun 2026 00:42:47 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:8419f4a27c97b0c111ab0dc77e0159bd3abfadcb948d4a49cf6dd6670703b84e`  
-		Last Modified: Tue, 19 May 2026 22:36:35 GMT  
-		Size: 30.3 MB (30257598 bytes)  
+	-	`sha256:55534d9909ecd18467599b415fa2553c3106849154ae8a361a75f1a24f2a4364`  
+		Last Modified: Wed, 10 Jun 2026 23:40:12 GMT  
+		Size: 30.3 MB (30260255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f941a58e8026d8c6ae51ab01d411a1bf8a0cda32bcbd0524149dac09b165bc1`  
-		Last Modified: Tue, 19 May 2026 23:23:31 GMT  
-		Size: 5.2 MB (5241778 bytes)  
+	-	`sha256:1a7bdc72d9028986df2b45952024236a0819caa65c325a9fd7bf9de39249739a`  
+		Last Modified: Thu, 11 Jun 2026 00:42:57 GMT  
+		Size: 5.2 MB (5241824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9d0c3ca85734642435fab97ffaa93a47c191fd272151973115e105946f22c63`  
-		Last Modified: Tue, 19 May 2026 23:23:32 GMT  
-		Size: 35.0 MB (35011759 bytes)  
+	-	`sha256:83b6d5f6adf14d81aae67dbcdcd6c02a70d7e356b964c04909ca7c5b79ed5c69`  
+		Last Modified: Thu, 11 Jun 2026 00:42:58 GMT  
+		Size: 35.0 MB (35011793 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e683562c7678968fb71f20e64185b80293bf935f46e39981097d3e8aa2c2763`  
-		Last Modified: Tue, 19 May 2026 23:23:31 GMT  
-		Size: 12.2 KB (12249 bytes)  
+	-	`sha256:d6bf247abac0bf2f179e1f2cca7d386578342bbfe29165f2a58c12bb9763e6ad`  
+		Last Modified: Thu, 11 Jun 2026 00:42:57 GMT  
+		Size: 12.2 KB (12250 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4ceec946fd6a85c9cdaa4f6f24f05f984617dca6a6b2fb9cb6478952c0618f0`  
-		Last Modified: Tue, 19 May 2026 23:23:31 GMT  
-		Size: 11.9 KB (11909 bytes)  
+	-	`sha256:03fa09ba0e2903ef66131333061ca8e147d71aa0ef81d29a52e6c26dc0c9e891`  
+		Last Modified: Thu, 11 Jun 2026 00:42:57 GMT  
+		Size: 11.9 KB (11910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f20db34cd8c32f7a152a24a6ce37a679f0ea6dd7e703de6bfa074822539deb67`  
-		Last Modified: Tue, 19 May 2026 23:23:30 GMT  
+	-	`sha256:ead191d8839dce1287ecd618fe4c0f9cb5f7e6d5948f846d1709c87bc8a8a96f`  
+		Last Modified: Thu, 11 Jun 2026 00:42:58 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.9` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:2dd688968e0d31d4500fbcd00364a2b49def0069b5af217014ba9f81eb448246
+$ docker pull chronograf@sha256:b7892bbd95b79b2e9b046d9883e0831c1730eea41bfbba42017ca881232cdfc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3133908 bytes)**  
+-	Total Size: **3.1 MB (3133911 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:583693476e9f7a0b855aee1e0671dd7eac91224b1094dee7d3e941106ad5e68c`
+-	Image ID: `sha256:2ea80191cc26817177d9561dce8be523862932c2bf410fe773b1efdfe07829e0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ede8b31e19bafffcea5ae46391ac29ed162849c729b2db5f1536240dd3142b7c`  
-		Last Modified: Tue, 19 May 2026 23:23:31 GMT  
-		Size: 3.1 MB (3118141 bytes)  
+	-	`sha256:e5bc946ec96ec7515621519b871b5af30e6d5594444542e847e87a0ea3b0e4df`  
+		Last Modified: Thu, 11 Jun 2026 00:42:57 GMT  
+		Size: 3.1 MB (3118145 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8048441f464d9bba4ef2c0536e3cd02678e3225abc92f628ef3a499e97f27180`  
-		Last Modified: Tue, 19 May 2026 23:23:31 GMT  
-		Size: 15.8 KB (15767 bytes)  
+	-	`sha256:5e82797b3fff0fad4e31be88bebbab91a4b094033f184d37402a6909d684dac5`  
+		Last Modified: Thu, 11 Jun 2026 00:42:57 GMT  
+		Size: 15.8 KB (15766 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `chronograf:1.9` - linux; arm variant v7
 
 ```console
-$ docker pull chronograf@sha256:ae88b0ebf2e35d02ddd7d0ac89e814b6780f0e19a382e5df723f20887a0a4541
+$ docker pull chronograf@sha256:2dd3b604b75fc1345005187f4d027108c161dd5ec069eca28244a748ed25828e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.4 MB (63396974 bytes)**  
+-	Total Size: **63.4 MB (63398862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5e6885387feb42afc2939dd1c5eaeb1c631e503f2193ec2e0e15705bb6f322b`
+-	Image ID: `sha256:1d315e2a8fad8acc889f6ba99c39cbd51ef0da7b0a6e3242f316f9da213914de`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bullseye' '@1779062400'
-# Wed, 20 May 2026 00:05:37 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bullseye' '@1781049600'
+# Thu, 11 Jun 2026 01:30:00 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Wed, 20 May 2026 00:05:42 GMT
+# Thu, 11 Jun 2026 01:30:06 GMT
 ENV CHRONOGRAF_VERSION=1.9.4
-# Wed, 20 May 2026 00:05:42 GMT
+# Thu, 11 Jun 2026 01:30:06 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Wed, 20 May 2026 00:05:42 GMT
+# Thu, 11 Jun 2026 01:30:06 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Wed, 20 May 2026 00:05:42 GMT
+# Thu, 11 Jun 2026 01:30:06 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Wed, 20 May 2026 00:05:42 GMT
+# Thu, 11 Jun 2026 01:30:06 GMT
 EXPOSE map[8888/tcp:{}]
-# Wed, 20 May 2026 00:05:42 GMT
+# Thu, 11 Jun 2026 01:30:06 GMT
 VOLUME [/var/lib/chronograf]
-# Wed, 20 May 2026 00:05:42 GMT
+# Thu, 11 Jun 2026 01:30:06 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Wed, 20 May 2026 00:05:42 GMT
+# Thu, 11 Jun 2026 01:30:06 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 20 May 2026 00:05:42 GMT
+# Thu, 11 Jun 2026 01:30:06 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:03d011f22c8996d930f4cd66e165f41f901636aacd59f9f3a74c6b0df7ffa952`  
-		Last Modified: Tue, 19 May 2026 22:36:39 GMT  
-		Size: 25.6 MB (25550938 bytes)  
+	-	`sha256:7ba7c49f3099e93649e55cb3558e8587e0d0458fc435dfc054641c2347c164c3`  
+		Last Modified: Wed, 10 Jun 2026 23:41:03 GMT  
+		Size: 25.6 MB (25552842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3b8a8fe6903e1062e8dffc81471bff58f1b0657a5f9eaf11beab9d3143e32ae`  
-		Last Modified: Wed, 20 May 2026 00:05:52 GMT  
-		Size: 4.5 MB (4510027 bytes)  
+	-	`sha256:c20941bb3fef46667d0d5a409f5af50ede5940752aa8f393102fcf8f50ca1cfb`  
+		Last Modified: Thu, 11 Jun 2026 01:30:15 GMT  
+		Size: 4.5 MB (4510022 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9cdadcc47ec7331886582069b303bdbdaa43c27e286aaf962abdc56cd230e0ad`  
-		Last Modified: Wed, 20 May 2026 00:05:53 GMT  
-		Size: 33.3 MB (33311609 bytes)  
+	-	`sha256:ec94f538042ffbe6e7eaf08bd13fff7167d821a78e59d2e881c1f37975e4b024`  
+		Last Modified: Thu, 11 Jun 2026 01:30:16 GMT  
+		Size: 33.3 MB (33311608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6b638b1431acda3c3083701107491ac33a25bddc5b9c64bde59b0ed8be3b3fe`  
-		Last Modified: Wed, 20 May 2026 00:05:51 GMT  
-		Size: 12.3 KB (12251 bytes)  
+	-	`sha256:aff2626e7077f77945ce85e013761b933b09a62c409f16a8eec49a7dc37f3cce`  
+		Last Modified: Thu, 11 Jun 2026 01:30:15 GMT  
+		Size: 12.2 KB (12246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc300e732b16380c456f1a67059f60aceba2c0ad083ef86d240122dc3303b5c0`  
-		Last Modified: Wed, 20 May 2026 00:05:51 GMT  
-		Size: 11.9 KB (11910 bytes)  
+	-	`sha256:6eb94ee72c6ca1d75aaf85172079d6b7ce2e7603f6858631534af0eddafa112c`  
+		Last Modified: Thu, 11 Jun 2026 01:30:15 GMT  
+		Size: 11.9 KB (11905 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a8a0b42db29b31479500d0f752e68009ddc7592939a9ba319eb8e25ccedee05`  
-		Last Modified: Wed, 20 May 2026 00:05:52 GMT  
+	-	`sha256:df6fc0e520062fddde04b66698b8bdf2ef4e491eef339d04bd1434f397c363ba`  
+		Last Modified: Thu, 11 Jun 2026 01:30:16 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.9` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:2f0d91d21411d981b0d926f9a60d9cebbd9626febf5ff64b62914b77b78b417a
+$ docker pull chronograf@sha256:2d94b054096c58434be5263e6b40ccdd929f8f90c747b85096fd9f633dca6554
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3136255 bytes)**  
+-	Total Size: **3.1 MB (3136260 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:325fc5d4f53e5fe86b2fd76476303614c42e87d5e0c6a117d19bd8e3b848f86f`
+-	Image ID: `sha256:18f6ab3887b23f0ff5d3000a41f2181507090fdace3367ede248e9b0c02a664c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a5698c48bd2434414dd5c0035b3107223aef7a54fdb693c6fa891d148821fac1`  
-		Last Modified: Wed, 20 May 2026 00:05:52 GMT  
-		Size: 3.1 MB (3120412 bytes)  
+	-	`sha256:e48ee6c0ed75c15910d66f5baab4f2c94e4fbd91e8c60e7cbe7904debd065695`  
+		Last Modified: Thu, 11 Jun 2026 01:30:15 GMT  
+		Size: 3.1 MB (3120416 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e45db9dbc8a5c37a2bbe513defcafb12835a89b1526f52b0d1387132714d43e7`  
-		Last Modified: Wed, 20 May 2026 00:05:51 GMT  
-		Size: 15.8 KB (15843 bytes)  
+	-	`sha256:f73e74106e44f894390b70e4fe2cd6d212d082d34afb53c66857920e1281f27a`  
+		Last Modified: Thu, 11 Jun 2026 01:30:15 GMT  
+		Size: 15.8 KB (15844 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `chronograf:1.9` - linux; arm64 variant v8
 
 ```console
-$ docker pull chronograf@sha256:783f97ee14f1f46bef43813e7ded9c1c542814ff739dcfff7fdf9ba54835899a
+$ docker pull chronograf@sha256:13a5d5516c5c08972df8e2058ad688253823a7d516fc7151c87de2cae2bc9d0a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **67.2 MB (67179617 bytes)**  
+-	Total Size: **67.2 MB (67182728 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac70d616e2964b2f938fd9479ec5753ea8c94d5881422c3a100aff0ba6473342`
+-	Image ID: `sha256:5f42e74d6e13181f1e38f2b9ae78395bd19206349d4cbe6f6d9aabbb7959ecc4`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1779062400'
-# Tue, 19 May 2026 23:26:59 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
+# Thu, 11 Jun 2026 00:44:26 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Tue, 19 May 2026 23:27:03 GMT
+# Thu, 11 Jun 2026 00:44:31 GMT
 ENV CHRONOGRAF_VERSION=1.9.4
-# Tue, 19 May 2026 23:27:03 GMT
+# Thu, 11 Jun 2026 00:44:31 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Tue, 19 May 2026 23:27:03 GMT
+# Thu, 11 Jun 2026 00:44:31 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Tue, 19 May 2026 23:27:03 GMT
+# Thu, 11 Jun 2026 00:44:31 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Tue, 19 May 2026 23:27:03 GMT
+# Thu, 11 Jun 2026 00:44:31 GMT
 EXPOSE map[8888/tcp:{}]
-# Tue, 19 May 2026 23:27:03 GMT
+# Thu, 11 Jun 2026 00:44:31 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 19 May 2026 23:27:03 GMT
+# Thu, 11 Jun 2026 00:44:31 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 19 May 2026 23:27:03 GMT
+# Thu, 11 Jun 2026 00:44:31 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 May 2026 23:27:03 GMT
+# Thu, 11 Jun 2026 00:44:31 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:2b99ba6638377be8e7e1e9a328ebb001513ab9f700c8168d404eed03437c7ce5`  
-		Last Modified: Tue, 19 May 2026 22:36:47 GMT  
-		Size: 28.7 MB (28742972 bytes)  
+	-	`sha256:ca483a18241c226a06a4a4afd22dc5496062254c671fa595136458fb8fcd0107`  
+		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
+		Size: 28.7 MB (28746154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10f934f8ede6798258d1784f19bd95453fa0428c4b7a845bbfd0e636726e2593`  
-		Last Modified: Tue, 19 May 2026 23:27:13 GMT  
-		Size: 5.2 MB (5229809 bytes)  
+	-	`sha256:df19c65db679567b25fc6b51a89f0ff023c30f29903c61d91f8d09932f0a3dc1`  
+		Last Modified: Thu, 11 Jun 2026 00:44:42 GMT  
+		Size: 5.2 MB (5229810 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8b07919869a9fc727360a9742fc744f18ec2f7aad4234a0a934a337759d3927`  
-		Last Modified: Tue, 19 May 2026 23:27:14 GMT  
-		Size: 33.2 MB (33182446 bytes)  
+	-	`sha256:2f9e82af0818c57d4f43beffa14fd87f50ffa4a287a4c3ae1517efad2830a88c`  
+		Last Modified: Thu, 11 Jun 2026 00:44:43 GMT  
+		Size: 33.2 MB (33182372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07c9fb9315de50ebf4ad8233de31c2c3ac25a61fb3d34f90579b342d3cd1adeb`  
-		Last Modified: Tue, 19 May 2026 23:27:12 GMT  
+	-	`sha256:92be84d6df7a557e61d79e4ef84158fd8d80543adef294aa6873d44207e1d0a7`  
+		Last Modified: Thu, 11 Jun 2026 00:44:41 GMT  
 		Size: 12.2 KB (12246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa972b5d5d0f0359603f7c0637b6d0fe9dc5b185ce2ade891285caad07790a3a`  
-		Last Modified: Tue, 19 May 2026 23:27:13 GMT  
-		Size: 11.9 KB (11905 bytes)  
+	-	`sha256:9448ee11a9a3cdfe843f2bb8c686389731c2e97dfb8f9049256ddfa914f35700`  
+		Last Modified: Thu, 11 Jun 2026 00:44:42 GMT  
+		Size: 11.9 KB (11906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9263cf0792581e37e12e557cf86a9a412aadde702900aab1747d230492d7b84`  
-		Last Modified: Tue, 19 May 2026 23:27:14 GMT  
-		Size: 239.0 B  
+	-	`sha256:a0e6ab33c0bd1b32d26a88bcb4a50fb7e42c945c9403cb9f2d90674f19d08693`  
+		Last Modified: Thu, 11 Jun 2026 00:44:43 GMT  
+		Size: 240.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.9` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:c6f82cdaa299a8296cf09bc548c7a907dbd6c18bd8d393210b4ce4f7e705c93d
+$ docker pull chronograf@sha256:45b67a28529bf52a66596f3b659bd1685bff505bf7025e7026bf13c5197f28f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3134252 bytes)**  
+-	Total Size: **3.1 MB (3134256 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:15688edef07d1c2562ea49351b20a4f7ce59e70fca767a7aa05562ec17a838d9`
+-	Image ID: `sha256:f68ef40d1fe35c619e0deea588177adc79fbc4b01fc3b5f6afeba8c3ddb67406`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0d2693a5748b29e28dd8b0fd1d596aa34761f807a36f70d00d63e73aa437c440`  
-		Last Modified: Tue, 19 May 2026 23:27:13 GMT  
-		Size: 3.1 MB (3118390 bytes)  
+	-	`sha256:f974f608f04ecea1e41a00f32d27e537cb12d903a4d5dfe6769774712f99bc56`  
+		Last Modified: Thu, 11 Jun 2026 00:44:42 GMT  
+		Size: 3.1 MB (3118394 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aae9218184d292f4927bb6447c6ada34fee2736e295ef8c33a00c7cfbcfdb391`  
-		Last Modified: Tue, 19 May 2026 23:27:13 GMT  
+	-	`sha256:f38eda398bda25bcb3de057dd0703272dbb3660477e629bc1049d2ca6b0ec1c4`  
+		Last Modified: Thu, 11 Jun 2026 00:44:41 GMT  
 		Size: 15.9 KB (15862 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2546,7 +2546,7 @@ $ docker pull chronograf@sha256:4be611f408b68b71f2ce6e27bd942207676513556d3d2d9e
 ## `chronograf:1.9.4`
 
 ```console
-$ docker pull chronograf@sha256:f1bfd505a98f466902469148348ac1c1e114c0e426a1178e39526b56acea1f38
+$ docker pull chronograf@sha256:0b3c072df39f12bec0604f8e4a7c02b42085ab88ac4c28e1cc60140a70d06bc5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2561,264 +2561,264 @@ $ docker pull chronograf@sha256:f1bfd505a98f466902469148348ac1c1e114c0e426a1178e
 ### `chronograf:1.9.4` - linux; amd64
 
 ```console
-$ docker pull chronograf@sha256:ab7acf4355026f4cf20b5436580e38120a84be51b44890c01e4cf4174b653231
+$ docker pull chronograf@sha256:32542ded9c70fb95366b306747b0d6a3347e7cef6a8cb9e9b3e755f076717107
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.5 MB (70535532 bytes)**  
+-	Total Size: **70.5 MB (70538271 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70e645d495b8b6025799dd4b602fe2e33e32e3b31a98b7f1ed5eb6fe7493f8d8`
+-	Image ID: `sha256:072289548e73d5fd6e32652ce90ad3f1ac4d9b33ed111d22e7f54c6c13ff9cfb`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1779062400'
-# Tue, 19 May 2026 23:23:16 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
+# Thu, 11 Jun 2026 00:42:42 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Tue, 19 May 2026 23:23:20 GMT
+# Thu, 11 Jun 2026 00:42:47 GMT
 ENV CHRONOGRAF_VERSION=1.9.4
-# Tue, 19 May 2026 23:23:20 GMT
+# Thu, 11 Jun 2026 00:42:47 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Tue, 19 May 2026 23:23:20 GMT
+# Thu, 11 Jun 2026 00:42:47 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Tue, 19 May 2026 23:23:20 GMT
+# Thu, 11 Jun 2026 00:42:47 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Tue, 19 May 2026 23:23:20 GMT
+# Thu, 11 Jun 2026 00:42:47 GMT
 EXPOSE map[8888/tcp:{}]
-# Tue, 19 May 2026 23:23:20 GMT
+# Thu, 11 Jun 2026 00:42:47 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 19 May 2026 23:23:20 GMT
+# Thu, 11 Jun 2026 00:42:47 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 19 May 2026 23:23:20 GMT
+# Thu, 11 Jun 2026 00:42:47 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 May 2026 23:23:20 GMT
+# Thu, 11 Jun 2026 00:42:47 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:8419f4a27c97b0c111ab0dc77e0159bd3abfadcb948d4a49cf6dd6670703b84e`  
-		Last Modified: Tue, 19 May 2026 22:36:35 GMT  
-		Size: 30.3 MB (30257598 bytes)  
+	-	`sha256:55534d9909ecd18467599b415fa2553c3106849154ae8a361a75f1a24f2a4364`  
+		Last Modified: Wed, 10 Jun 2026 23:40:12 GMT  
+		Size: 30.3 MB (30260255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f941a58e8026d8c6ae51ab01d411a1bf8a0cda32bcbd0524149dac09b165bc1`  
-		Last Modified: Tue, 19 May 2026 23:23:31 GMT  
-		Size: 5.2 MB (5241778 bytes)  
+	-	`sha256:1a7bdc72d9028986df2b45952024236a0819caa65c325a9fd7bf9de39249739a`  
+		Last Modified: Thu, 11 Jun 2026 00:42:57 GMT  
+		Size: 5.2 MB (5241824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9d0c3ca85734642435fab97ffaa93a47c191fd272151973115e105946f22c63`  
-		Last Modified: Tue, 19 May 2026 23:23:32 GMT  
-		Size: 35.0 MB (35011759 bytes)  
+	-	`sha256:83b6d5f6adf14d81aae67dbcdcd6c02a70d7e356b964c04909ca7c5b79ed5c69`  
+		Last Modified: Thu, 11 Jun 2026 00:42:58 GMT  
+		Size: 35.0 MB (35011793 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e683562c7678968fb71f20e64185b80293bf935f46e39981097d3e8aa2c2763`  
-		Last Modified: Tue, 19 May 2026 23:23:31 GMT  
-		Size: 12.2 KB (12249 bytes)  
+	-	`sha256:d6bf247abac0bf2f179e1f2cca7d386578342bbfe29165f2a58c12bb9763e6ad`  
+		Last Modified: Thu, 11 Jun 2026 00:42:57 GMT  
+		Size: 12.2 KB (12250 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4ceec946fd6a85c9cdaa4f6f24f05f984617dca6a6b2fb9cb6478952c0618f0`  
-		Last Modified: Tue, 19 May 2026 23:23:31 GMT  
-		Size: 11.9 KB (11909 bytes)  
+	-	`sha256:03fa09ba0e2903ef66131333061ca8e147d71aa0ef81d29a52e6c26dc0c9e891`  
+		Last Modified: Thu, 11 Jun 2026 00:42:57 GMT  
+		Size: 11.9 KB (11910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f20db34cd8c32f7a152a24a6ce37a679f0ea6dd7e703de6bfa074822539deb67`  
-		Last Modified: Tue, 19 May 2026 23:23:30 GMT  
+	-	`sha256:ead191d8839dce1287ecd618fe4c0f9cb5f7e6d5948f846d1709c87bc8a8a96f`  
+		Last Modified: Thu, 11 Jun 2026 00:42:58 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.9.4` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:2dd688968e0d31d4500fbcd00364a2b49def0069b5af217014ba9f81eb448246
+$ docker pull chronograf@sha256:b7892bbd95b79b2e9b046d9883e0831c1730eea41bfbba42017ca881232cdfc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3133908 bytes)**  
+-	Total Size: **3.1 MB (3133911 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:583693476e9f7a0b855aee1e0671dd7eac91224b1094dee7d3e941106ad5e68c`
+-	Image ID: `sha256:2ea80191cc26817177d9561dce8be523862932c2bf410fe773b1efdfe07829e0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ede8b31e19bafffcea5ae46391ac29ed162849c729b2db5f1536240dd3142b7c`  
-		Last Modified: Tue, 19 May 2026 23:23:31 GMT  
-		Size: 3.1 MB (3118141 bytes)  
+	-	`sha256:e5bc946ec96ec7515621519b871b5af30e6d5594444542e847e87a0ea3b0e4df`  
+		Last Modified: Thu, 11 Jun 2026 00:42:57 GMT  
+		Size: 3.1 MB (3118145 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8048441f464d9bba4ef2c0536e3cd02678e3225abc92f628ef3a499e97f27180`  
-		Last Modified: Tue, 19 May 2026 23:23:31 GMT  
-		Size: 15.8 KB (15767 bytes)  
+	-	`sha256:5e82797b3fff0fad4e31be88bebbab91a4b094033f184d37402a6909d684dac5`  
+		Last Modified: Thu, 11 Jun 2026 00:42:57 GMT  
+		Size: 15.8 KB (15766 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `chronograf:1.9.4` - linux; arm variant v7
 
 ```console
-$ docker pull chronograf@sha256:ae88b0ebf2e35d02ddd7d0ac89e814b6780f0e19a382e5df723f20887a0a4541
+$ docker pull chronograf@sha256:2dd3b604b75fc1345005187f4d027108c161dd5ec069eca28244a748ed25828e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.4 MB (63396974 bytes)**  
+-	Total Size: **63.4 MB (63398862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5e6885387feb42afc2939dd1c5eaeb1c631e503f2193ec2e0e15705bb6f322b`
+-	Image ID: `sha256:1d315e2a8fad8acc889f6ba99c39cbd51ef0da7b0a6e3242f316f9da213914de`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bullseye' '@1779062400'
-# Wed, 20 May 2026 00:05:37 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bullseye' '@1781049600'
+# Thu, 11 Jun 2026 01:30:00 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Wed, 20 May 2026 00:05:42 GMT
+# Thu, 11 Jun 2026 01:30:06 GMT
 ENV CHRONOGRAF_VERSION=1.9.4
-# Wed, 20 May 2026 00:05:42 GMT
+# Thu, 11 Jun 2026 01:30:06 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Wed, 20 May 2026 00:05:42 GMT
+# Thu, 11 Jun 2026 01:30:06 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Wed, 20 May 2026 00:05:42 GMT
+# Thu, 11 Jun 2026 01:30:06 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Wed, 20 May 2026 00:05:42 GMT
+# Thu, 11 Jun 2026 01:30:06 GMT
 EXPOSE map[8888/tcp:{}]
-# Wed, 20 May 2026 00:05:42 GMT
+# Thu, 11 Jun 2026 01:30:06 GMT
 VOLUME [/var/lib/chronograf]
-# Wed, 20 May 2026 00:05:42 GMT
+# Thu, 11 Jun 2026 01:30:06 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Wed, 20 May 2026 00:05:42 GMT
+# Thu, 11 Jun 2026 01:30:06 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 20 May 2026 00:05:42 GMT
+# Thu, 11 Jun 2026 01:30:06 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:03d011f22c8996d930f4cd66e165f41f901636aacd59f9f3a74c6b0df7ffa952`  
-		Last Modified: Tue, 19 May 2026 22:36:39 GMT  
-		Size: 25.6 MB (25550938 bytes)  
+	-	`sha256:7ba7c49f3099e93649e55cb3558e8587e0d0458fc435dfc054641c2347c164c3`  
+		Last Modified: Wed, 10 Jun 2026 23:41:03 GMT  
+		Size: 25.6 MB (25552842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3b8a8fe6903e1062e8dffc81471bff58f1b0657a5f9eaf11beab9d3143e32ae`  
-		Last Modified: Wed, 20 May 2026 00:05:52 GMT  
-		Size: 4.5 MB (4510027 bytes)  
+	-	`sha256:c20941bb3fef46667d0d5a409f5af50ede5940752aa8f393102fcf8f50ca1cfb`  
+		Last Modified: Thu, 11 Jun 2026 01:30:15 GMT  
+		Size: 4.5 MB (4510022 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9cdadcc47ec7331886582069b303bdbdaa43c27e286aaf962abdc56cd230e0ad`  
-		Last Modified: Wed, 20 May 2026 00:05:53 GMT  
-		Size: 33.3 MB (33311609 bytes)  
+	-	`sha256:ec94f538042ffbe6e7eaf08bd13fff7167d821a78e59d2e881c1f37975e4b024`  
+		Last Modified: Thu, 11 Jun 2026 01:30:16 GMT  
+		Size: 33.3 MB (33311608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6b638b1431acda3c3083701107491ac33a25bddc5b9c64bde59b0ed8be3b3fe`  
-		Last Modified: Wed, 20 May 2026 00:05:51 GMT  
-		Size: 12.3 KB (12251 bytes)  
+	-	`sha256:aff2626e7077f77945ce85e013761b933b09a62c409f16a8eec49a7dc37f3cce`  
+		Last Modified: Thu, 11 Jun 2026 01:30:15 GMT  
+		Size: 12.2 KB (12246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc300e732b16380c456f1a67059f60aceba2c0ad083ef86d240122dc3303b5c0`  
-		Last Modified: Wed, 20 May 2026 00:05:51 GMT  
-		Size: 11.9 KB (11910 bytes)  
+	-	`sha256:6eb94ee72c6ca1d75aaf85172079d6b7ce2e7603f6858631534af0eddafa112c`  
+		Last Modified: Thu, 11 Jun 2026 01:30:15 GMT  
+		Size: 11.9 KB (11905 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a8a0b42db29b31479500d0f752e68009ddc7592939a9ba319eb8e25ccedee05`  
-		Last Modified: Wed, 20 May 2026 00:05:52 GMT  
+	-	`sha256:df6fc0e520062fddde04b66698b8bdf2ef4e491eef339d04bd1434f397c363ba`  
+		Last Modified: Thu, 11 Jun 2026 01:30:16 GMT  
 		Size: 239.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.9.4` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:2f0d91d21411d981b0d926f9a60d9cebbd9626febf5ff64b62914b77b78b417a
+$ docker pull chronograf@sha256:2d94b054096c58434be5263e6b40ccdd929f8f90c747b85096fd9f633dca6554
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3136255 bytes)**  
+-	Total Size: **3.1 MB (3136260 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:325fc5d4f53e5fe86b2fd76476303614c42e87d5e0c6a117d19bd8e3b848f86f`
+-	Image ID: `sha256:18f6ab3887b23f0ff5d3000a41f2181507090fdace3367ede248e9b0c02a664c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a5698c48bd2434414dd5c0035b3107223aef7a54fdb693c6fa891d148821fac1`  
-		Last Modified: Wed, 20 May 2026 00:05:52 GMT  
-		Size: 3.1 MB (3120412 bytes)  
+	-	`sha256:e48ee6c0ed75c15910d66f5baab4f2c94e4fbd91e8c60e7cbe7904debd065695`  
+		Last Modified: Thu, 11 Jun 2026 01:30:15 GMT  
+		Size: 3.1 MB (3120416 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e45db9dbc8a5c37a2bbe513defcafb12835a89b1526f52b0d1387132714d43e7`  
-		Last Modified: Wed, 20 May 2026 00:05:51 GMT  
-		Size: 15.8 KB (15843 bytes)  
+	-	`sha256:f73e74106e44f894390b70e4fe2cd6d212d082d34afb53c66857920e1281f27a`  
+		Last Modified: Thu, 11 Jun 2026 01:30:15 GMT  
+		Size: 15.8 KB (15844 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `chronograf:1.9.4` - linux; arm64 variant v8
 
 ```console
-$ docker pull chronograf@sha256:783f97ee14f1f46bef43813e7ded9c1c542814ff739dcfff7fdf9ba54835899a
+$ docker pull chronograf@sha256:13a5d5516c5c08972df8e2058ad688253823a7d516fc7151c87de2cae2bc9d0a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **67.2 MB (67179617 bytes)**  
+-	Total Size: **67.2 MB (67182728 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac70d616e2964b2f938fd9479ec5753ea8c94d5881422c3a100aff0ba6473342`
+-	Image ID: `sha256:5f42e74d6e13181f1e38f2b9ae78395bd19206349d4cbe6f6d9aabbb7959ecc4`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1779062400'
-# Tue, 19 May 2026 23:26:59 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
+# Thu, 11 Jun 2026 00:44:26 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Tue, 19 May 2026 23:27:03 GMT
+# Thu, 11 Jun 2026 00:44:31 GMT
 ENV CHRONOGRAF_VERSION=1.9.4
-# Tue, 19 May 2026 23:27:03 GMT
+# Thu, 11 Jun 2026 00:44:31 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Tue, 19 May 2026 23:27:03 GMT
+# Thu, 11 Jun 2026 00:44:31 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Tue, 19 May 2026 23:27:03 GMT
+# Thu, 11 Jun 2026 00:44:31 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Tue, 19 May 2026 23:27:03 GMT
+# Thu, 11 Jun 2026 00:44:31 GMT
 EXPOSE map[8888/tcp:{}]
-# Tue, 19 May 2026 23:27:03 GMT
+# Thu, 11 Jun 2026 00:44:31 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 19 May 2026 23:27:03 GMT
+# Thu, 11 Jun 2026 00:44:31 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 19 May 2026 23:27:03 GMT
+# Thu, 11 Jun 2026 00:44:31 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 19 May 2026 23:27:03 GMT
+# Thu, 11 Jun 2026 00:44:31 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:2b99ba6638377be8e7e1e9a328ebb001513ab9f700c8168d404eed03437c7ce5`  
-		Last Modified: Tue, 19 May 2026 22:36:47 GMT  
-		Size: 28.7 MB (28742972 bytes)  
+	-	`sha256:ca483a18241c226a06a4a4afd22dc5496062254c671fa595136458fb8fcd0107`  
+		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
+		Size: 28.7 MB (28746154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10f934f8ede6798258d1784f19bd95453fa0428c4b7a845bbfd0e636726e2593`  
-		Last Modified: Tue, 19 May 2026 23:27:13 GMT  
-		Size: 5.2 MB (5229809 bytes)  
+	-	`sha256:df19c65db679567b25fc6b51a89f0ff023c30f29903c61d91f8d09932f0a3dc1`  
+		Last Modified: Thu, 11 Jun 2026 00:44:42 GMT  
+		Size: 5.2 MB (5229810 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8b07919869a9fc727360a9742fc744f18ec2f7aad4234a0a934a337759d3927`  
-		Last Modified: Tue, 19 May 2026 23:27:14 GMT  
-		Size: 33.2 MB (33182446 bytes)  
+	-	`sha256:2f9e82af0818c57d4f43beffa14fd87f50ffa4a287a4c3ae1517efad2830a88c`  
+		Last Modified: Thu, 11 Jun 2026 00:44:43 GMT  
+		Size: 33.2 MB (33182372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07c9fb9315de50ebf4ad8233de31c2c3ac25a61fb3d34f90579b342d3cd1adeb`  
-		Last Modified: Tue, 19 May 2026 23:27:12 GMT  
+	-	`sha256:92be84d6df7a557e61d79e4ef84158fd8d80543adef294aa6873d44207e1d0a7`  
+		Last Modified: Thu, 11 Jun 2026 00:44:41 GMT  
 		Size: 12.2 KB (12246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa972b5d5d0f0359603f7c0637b6d0fe9dc5b185ce2ade891285caad07790a3a`  
-		Last Modified: Tue, 19 May 2026 23:27:13 GMT  
-		Size: 11.9 KB (11905 bytes)  
+	-	`sha256:9448ee11a9a3cdfe843f2bb8c686389731c2e97dfb8f9049256ddfa914f35700`  
+		Last Modified: Thu, 11 Jun 2026 00:44:42 GMT  
+		Size: 11.9 KB (11906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9263cf0792581e37e12e557cf86a9a412aadde702900aab1747d230492d7b84`  
-		Last Modified: Tue, 19 May 2026 23:27:14 GMT  
-		Size: 239.0 B  
+	-	`sha256:a0e6ab33c0bd1b32d26a88bcb4a50fb7e42c945c9403cb9f2d90674f19d08693`  
+		Last Modified: Thu, 11 Jun 2026 00:44:43 GMT  
+		Size: 240.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:1.9.4` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:c6f82cdaa299a8296cf09bc548c7a907dbd6c18bd8d393210b4ce4f7e705c93d
+$ docker pull chronograf@sha256:45b67a28529bf52a66596f3b659bd1685bff505bf7025e7026bf13c5197f28f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3134252 bytes)**  
+-	Total Size: **3.1 MB (3134256 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:15688edef07d1c2562ea49351b20a4f7ce59e70fca767a7aa05562ec17a838d9`
+-	Image ID: `sha256:f68ef40d1fe35c619e0deea588177adc79fbc4b01fc3b5f6afeba8c3ddb67406`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0d2693a5748b29e28dd8b0fd1d596aa34761f807a36f70d00d63e73aa437c440`  
-		Last Modified: Tue, 19 May 2026 23:27:13 GMT  
-		Size: 3.1 MB (3118390 bytes)  
+	-	`sha256:f974f608f04ecea1e41a00f32d27e537cb12d903a4d5dfe6769774712f99bc56`  
+		Last Modified: Thu, 11 Jun 2026 00:44:42 GMT  
+		Size: 3.1 MB (3118394 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aae9218184d292f4927bb6447c6ada34fee2736e295ef8c33a00c7cfbcfdb391`  
-		Last Modified: Tue, 19 May 2026 23:27:13 GMT  
+	-	`sha256:f38eda398bda25bcb3de057dd0703272dbb3660477e629bc1049d2ca6b0ec1c4`  
+		Last Modified: Thu, 11 Jun 2026 00:44:41 GMT  
 		Size: 15.9 KB (15862 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3039,7 +3039,7 @@ $ docker pull chronograf@sha256:08db9de38b0153583acd24af21133c549def40c9dec94d56
 ## `chronograf:latest`
 
 ```console
-$ docker pull chronograf@sha256:d40aa30936e76a9d77532e9a00382b998eb937370fbe440c274ed20fe158d9aa
+$ docker pull chronograf@sha256:2aa9fb24f733b4d04e164d25f5ef96980c3b581ddab5c50857d1fdb42d222089
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3054,88 +3054,88 @@ $ docker pull chronograf@sha256:d40aa30936e76a9d77532e9a00382b998eb937370fbe440c
 ### `chronograf:latest` - linux; amd64
 
 ```console
-$ docker pull chronograf@sha256:5f287d828526a3622cbb0ada9c8cafa02a7dff6751aface86c3fd39474326595
+$ docker pull chronograf@sha256:73202e652dda47453c6e05e29ca9be91761dcc92f64682de2e149a3d0a622a36
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.3 MB (96338084 bytes)**  
+-	Total Size: **96.3 MB (96342670 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2bb4e2824168d6fefce1709e3513a724bbc8f18c102506c7b82a24fac91ba249`
+-	Image ID: `sha256:27932b95b4e46a21c3c4b00e9535bbe9d7155a6a5128abdac0e17faac5c5c816`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1779062400'
-# Tue, 02 Jun 2026 19:04:44 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1781049600'
+# Thu, 11 Jun 2026 00:42:55 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         24C975CBA61A024EE1B631787C3D57159FC2F927 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 ENV CHRONOGRAF_VERSION=1.11.3
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 EXPOSE map[8888/tcp:{}]
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Thu, 11 Jun 2026 00:43:02 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:068fedd6b0f109b8186d00d49327b6fc6747c428fd3c9a8739424ff5f38d7531`  
-		Last Modified: Tue, 19 May 2026 22:36:36 GMT  
-		Size: 28.2 MB (28233543 bytes)  
+	-	`sha256:b9136609bef0128191aa157637b98dd7b98e52154ca60c18258d65957a01c6d0`  
+		Last Modified: Wed, 10 Jun 2026 23:39:54 GMT  
+		Size: 28.2 MB (28237624 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2dc8ae8cd182811c8f1025ccc205da723f8e17214b0182b8576738541b681448`  
-		Last Modified: Tue, 02 Jun 2026 19:05:05 GMT  
-		Size: 7.9 MB (7882781 bytes)  
+	-	`sha256:556c9fe7644e1166887620855e94c2fba32d97d5e3ed4df537f06c1884a7f0ae`  
+		Last Modified: Thu, 11 Jun 2026 00:43:15 GMT  
+		Size: 7.9 MB (7883267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e913f912f9931a55a6888069207af19b462bf030aa63a495e5266f7efe98ac3f`  
-		Last Modified: Tue, 02 Jun 2026 19:05:06 GMT  
-		Size: 60.2 MB (60197283 bytes)  
+	-	`sha256:b55cf3f7752999b38e3d9223912ce753e63b747ba0ca49f8df5e319c088063e9`  
+		Last Modified: Thu, 11 Jun 2026 00:43:16 GMT  
+		Size: 60.2 MB (60197307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:455675abf40c5ac87a7da8c8aaf4b1a46d53d41dad64299e2d42d1035a375721`  
-		Last Modified: Tue, 02 Jun 2026 19:05:04 GMT  
-		Size: 12.3 KB (12251 bytes)  
+	-	`sha256:5769e0d1dcfbaa03829bf62a9018e38189487c8fe5cde7c33ecf939c2b143f7e`  
+		Last Modified: Thu, 11 Jun 2026 00:43:15 GMT  
+		Size: 12.2 KB (12249 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c5205e18c12565276f1a0b9049b861f144429a336825095df5ff2aaa7a2c226`  
-		Last Modified: Tue, 02 Jun 2026 19:05:04 GMT  
-		Size: 11.9 KB (11911 bytes)  
+	-	`sha256:6e438f602a3cd637900418a3cae8b6eb964b101379fb8aa88f21114895f23481`  
+		Last Modified: Thu, 11 Jun 2026 00:43:14 GMT  
+		Size: 11.9 KB (11909 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2c0b12cf3395c8e678dbf286cb994771b3547e2f2757d93108e967f27b1ecdc`  
-		Last Modified: Tue, 02 Jun 2026 19:05:06 GMT  
-		Size: 315.0 B  
+	-	`sha256:35b16275212f52100b6eafaf66aa0d7343a79c7ce9ce1ca94ef1ea4dd3aba17d`  
+		Last Modified: Thu, 11 Jun 2026 00:43:16 GMT  
+		Size: 314.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:latest` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:af34f5ab4ae131481d91533abd74f94aa75d7e549f02e2b0a757181585dc64e8
+$ docker pull chronograf@sha256:2c377acca3100b8eded8237f5294e94e498c9d60115575d43098702c544aab82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2889805 bytes)**  
+-	Total Size: **2.9 MB (2889823 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72c161f28bf70196401d96e82464c8216b69ea8e746e0de247b5fbfef0e5778b`
+-	Image ID: `sha256:07de8db60e77546e14d4ee2975da7c7da016d1f475ba6cdc862591a303a9a83e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0877e14103aeb5913a8a7572fe12a697f3043d31d0656e1926307268b90f695c`  
-		Last Modified: Tue, 02 Jun 2026 19:05:05 GMT  
-		Size: 2.9 MB (2873720 bytes)  
+	-	`sha256:2625568072a9dd1c4abcd0c7a987dab62a3e6c1f9f0afcb55d1ca787025eada8`  
+		Last Modified: Thu, 11 Jun 2026 00:43:15 GMT  
+		Size: 2.9 MB (2873738 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ca3ed46836e66c33c1fb0da4f7c7cf7ec972deb61a77f97cb98b882ee7dd5d69`  
-		Last Modified: Tue, 02 Jun 2026 19:05:04 GMT  
+	-	`sha256:3e92aee71ca4c730a54e0d2b4d449e648529f3c9cf1d08c370c6c63ffc0cf073`  
+		Last Modified: Thu, 11 Jun 2026 00:43:15 GMT  
 		Size: 16.1 KB (16085 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3230,87 +3230,87 @@ $ docker pull chronograf@sha256:d033ac4c98bc3deb3c46315bff42913e431c32321890ec79
 ### `chronograf:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull chronograf@sha256:8f60556f88893bb34a9117ad8eb3041bda2d557ede818fbf4e1e9b2c707b7ca0
+$ docker pull chronograf@sha256:366675e696db69e613db19076980c8908e9b58729a1847e6749ffe90c20dab8a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **93.0 MB (93047811 bytes)**  
+-	Total Size: **93.1 MB (93055462 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d64ae9ca865476dfd34d335223a68573df98b89f5ca2b40ea97b644ff6a7e074`
+-	Image ID: `sha256:459b3796796fdfea3d602ce56fab1cc2c29954072f40d70adc290142e4fb3f8a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
-# Mon, 18 May 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1779062400'
-# Tue, 02 Jun 2026 19:04:50 GMT
+# Wed, 10 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1781049600'
+# Thu, 11 Jun 2026 00:44:38 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         24C975CBA61A024EE1B631787C3D57159FC2F927 ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 ENV CHRONOGRAF_VERSION=1.11.3
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     set -x &&     apt-get update && apt-get install -y ca-certificates curl --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc" &&     curl -SLO "https://dl.influxdata.com/chronograf/releases/chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb" &&     gpg --batch --verify chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb.asc chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     dpkg -i chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb &&     rm -f chronograf_${CHRONOGRAF_VERSION}_${ARCH}.deb* &&     apt-get purge -y --auto-remove $buildDeps # buildkit
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 COPY LICENSE /usr/share/chronograf/LICENSE # buildkit
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 COPY agpl-3.0.md /usr/share/chronograf/agpl-3.0.md # buildkit
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 EXPOSE map[8888/tcp:{}]
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 VOLUME [/var/lib/chronograf]
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Tue, 02 Jun 2026 19:04:55 GMT
+# Thu, 11 Jun 2026 00:44:47 GMT
 CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:f400d36d7784570c9fb7558e367d2b5d38e8b2f1d6faee041815acea7f87e669`  
-		Last Modified: Tue, 19 May 2026 22:36:40 GMT  
-		Size: 28.1 MB (28115043 bytes)  
+	-	`sha256:402614bd39aaec1e4bdcf25aa67f88588fc8d93997a2551c4e130e6ed2b06c7a`  
+		Last Modified: Wed, 10 Jun 2026 23:39:57 GMT  
+		Size: 28.1 MB (28122307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fe123d17146413325d255a21d4c2f8984fd6e08d3c8460a232b1dfcf8e48566`  
-		Last Modified: Tue, 02 Jun 2026 19:05:10 GMT  
-		Size: 7.7 MB (7699448 bytes)  
+	-	`sha256:4cbdd8fdc217506b94f451fe694a7434259077980dbfce32d678a110b1d5a084`  
+		Last Modified: Thu, 11 Jun 2026 00:45:01 GMT  
+		Size: 7.7 MB (7699815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ef03fe0fdbc1bb5177bf111c153aafacab7551ce6d1ea2cd0a29379a492fb30`  
-		Last Modified: Tue, 02 Jun 2026 19:05:11 GMT  
-		Size: 57.2 MB (57208859 bytes)  
+	-	`sha256:e8d99986976f45e221d9b9536bb7d61740629e2e34f15c8c96d9f4b700bff729`  
+		Last Modified: Thu, 11 Jun 2026 00:45:02 GMT  
+		Size: 57.2 MB (57208871 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:587cdfa30ae0c1bcfaa6cc739d142c925859efa2b8c3e7b31b6bd6337a8066da`  
-		Last Modified: Tue, 02 Jun 2026 19:05:09 GMT  
-		Size: 12.2 KB (12242 bytes)  
+	-	`sha256:694ce58a5f420870f543a6533816a87c9081c6d337adb50dc9b0fe82bec5ec9d`  
+		Last Modified: Thu, 11 Jun 2026 00:45:00 GMT  
+		Size: 12.2 KB (12247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03f02a0b9affa9f7ef18cf4bcab1866d09d0aa22a353ad2e82b7397b2ebcb17f`  
-		Last Modified: Tue, 02 Jun 2026 19:05:09 GMT  
-		Size: 11.9 KB (11904 bytes)  
+	-	`sha256:a236533c741fb74910832ada4193e1b28ee7b4538e09f17c736fc033514e8c51`  
+		Last Modified: Thu, 11 Jun 2026 00:45:01 GMT  
+		Size: 11.9 KB (11907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5914993df547519c55aa65a3a21bff47e93930a0e306ea322e108d3cac587d4e`  
-		Last Modified: Tue, 02 Jun 2026 19:05:10 GMT  
+	-	`sha256:08405dd5bfe3886ba00084d0d4013c2b5840b2fea056cdcea79f498c5bcd2084`  
+		Last Modified: Thu, 11 Jun 2026 00:45:02 GMT  
 		Size: 315.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:latest` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:ae95547b414d7af79db70d299dcfd82664b4fe7e7ea19a8bf248358d7afafc83
+$ docker pull chronograf@sha256:070e47966d05c2d6ad9490421a9ea383cd4c75362b29b8a8a4dc8548fd72f921
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2889126 bytes)**  
+-	Total Size: **2.9 MB (2889144 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8fa41b0f97732b2535d5863d58f9147ba421671b1962e1642bdf584b15faeab`
+-	Image ID: `sha256:40398e85b3e847b5bc169b9a9120493fbe744a1c8ec58c0b8bc92cc77725a6bf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8c426d19ed3b0c675a4a4d5da70287cbf62376981b5f5fa11006452e00a63c7f`  
-		Last Modified: Tue, 02 Jun 2026 19:05:09 GMT  
-		Size: 2.9 MB (2872934 bytes)  
+	-	`sha256:4cc86ee46eff59029c08f7a731845be8bf30156058866c32b2ae52c16c96560b`  
+		Last Modified: Thu, 11 Jun 2026 00:45:01 GMT  
+		Size: 2.9 MB (2872952 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1ec92e58f6d130d0dbbd936941c699acc570f0eeda6bfe15e0824363ed091ed4`  
-		Last Modified: Tue, 02 Jun 2026 19:05:09 GMT  
+	-	`sha256:06c6deb7e17d185253c508ce914f5f9b2c1c20fb44f7b9fa7fbb5528837f1745`  
+		Last Modified: Thu, 11 Jun 2026 00:45:00 GMT  
 		Size: 16.2 KB (16192 bytes)  
 		MIME: application/vnd.in-toto+json
