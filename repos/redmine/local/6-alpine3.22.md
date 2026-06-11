@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:648749373db486c39fd3c1c8535a2528a2ed3a9e96dabb6b7d9895dc92ae07cb`
-- Created: `2026-04-17T01:17:11.903871788Z`
-- Virtual Size: ~ 431.13 Mb  
+- Image ID: `sha256:1fb1d1bc5c9e8a150f982366eb016f78a1503f548eb57edb2d2f0c8be81feef6`
+- Created: `2026-06-08T22:40:41.286887079Z`
+- Virtual Size: ~ 431.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -320,16 +320,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `cups-libs`
 
 ```console
-cups-libs-2.4.16-r0 description:
+cups-libs-2.4.18-r0 description:
 CUPS libraries
 
-cups-libs-2.4.16-r0 webpage:
+cups-libs-2.4.18-r0 webpage:
 https://github.com/OpenPrinting/cups/
 
-cups-libs-2.4.16-r0 installed size:
+cups-libs-2.4.18-r0 installed size:
 559 KiB
 
-cups-libs-2.4.16-r0 license:
+cups-libs-2.4.18-r0 license:
 Apache-2.0
 
 ```
@@ -541,16 +541,16 @@ LGPL-3.0-or-later OR GPL-2.0-or-later
 ### `apk` package: `gnutls`
 
 ```console
-gnutls-3.8.12-r0 description:
+gnutls-3.8.13-r0 description:
 TLS protocol implementation
 
-gnutls-3.8.12-r0 webpage:
+gnutls-3.8.13-r0 webpage:
 https://www.gnutls.org/
 
-gnutls-3.8.12-r0 installed size:
-1916 KiB
+gnutls-3.8.13-r0 installed size:
+2012 KiB
 
-gnutls-3.8.12-r0 license:
+gnutls-3.8.13-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -677,16 +677,16 @@ AGPL-3.0-or-later
 ### `apk` package: `lcms2`
 
 ```console
-lcms2-2.16-r0 description:
+lcms2-2.19-r0 description:
 Color Management Engine
 
-lcms2-2.16-r0 webpage:
+lcms2-2.19-r0 webpage:
 https://www.littlecms.com
 
-lcms2-2.16-r0 installed size:
-328 KiB
+lcms2-2.19-r0 installed size:
+332 KiB
 
-lcms2-2.16-r0 license:
+lcms2-2.19-r0 license:
 MIT
 
 ```
@@ -1017,16 +1017,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-17.9-r0 description:
+libpq-17.10-r0 description:
 PostgreSQL client library
 
-libpq-17.9-r0 webpage:
+libpq-17.10-r0 webpage:
 https://www.postgresql.org/
 
-libpq-17.9-r0 installed size:
+libpq-17.10-r0 installed size:
 322 KiB
 
-libpq-17.9-r0 license:
+libpq-17.10-r0 license:
 PostgreSQL
 
 ```
@@ -1323,16 +1323,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.9-r0 description:
+libxml2-2.13.9-r1 description:
 XML parsing library, version 2
 
-libxml2-2.13.9-r0 webpage:
+libxml2-2.13.9-r1 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.9-r0 installed size:
+libxml2-2.13.9-r1 installed size:
 1050 KiB
 
-libxml2-2.13.9-r0 license:
+libxml2-2.13.9-r1 license:
 MIT
 
 ```
@@ -1510,16 +1510,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `nghttp2-libs`
 
 ```console
-nghttp2-libs-1.65.0-r0 description:
+nghttp2-libs-1.69.0-r0 description:
 HTTP/2 C client, server and proxy (libraries)
 
-nghttp2-libs-1.65.0-r0 webpage:
+nghttp2-libs-1.69.0-r0 webpage:
 https://nghttp2.org
 
-nghttp2-libs-1.65.0-r0 installed size:
-129 KiB
+nghttp2-libs-1.69.0-r0 installed size:
+133 KiB
 
-nghttp2-libs-1.65.0-r0 license:
+nghttp2-libs-1.69.0-r0 license:
 MIT
 
 ```
@@ -2088,16 +2088,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2026a-r0 description:
+tzdata-2026b-r0 description:
 Timezone data
 
-tzdata-2026a-r0 webpage:
+tzdata-2026b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2026a-r0 installed size:
+tzdata-2026b-r0 installed size:
 436 KiB
 
-tzdata-2026a-r0 license:
+tzdata-2026b-r0 license:
 Public-Domain
 
 ```
@@ -2139,16 +2139,16 @@ GPL-3.0-or-later WITH OpenSSL-Exception
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.8.1-r0 description:
+xz-libs-5.8.3-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.8.1-r0 webpage:
+xz-libs-5.8.3-r0 webpage:
 https://tukaani.org/xz/
 
-xz-libs-5.8.1-r0 installed size:
+xz-libs-5.8.3-r0 installed size:
 225 KiB
 
-xz-libs-5.8.1-r0 license:
+xz-libs-5.8.3-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
