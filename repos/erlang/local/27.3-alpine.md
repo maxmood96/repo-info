@@ -1,19 +1,19 @@
-# `erlang:27.3.4.12-alpine`
+# `erlang:27.3.4.13-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f5bc38897aaad985bf438520aa5a8bbb3223ce940aacb360cb67cac640883374`
-- Created: `2026-05-28T18:29:45.266970948Z`
-- Virtual Size: ~ 88.76 Mb  
+- Image ID: `sha256:69d056bcab6027b5e8ee82dce9e3b42ecf23af60ce0e2b9b4599a4ceb1cbff8f`
+- Created: `2026-06-11T19:12:57.529281286Z`
+- Virtual Size: ~ 94.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["erl"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=27.3.4.12`
+  - `OTP_VERSION=27.3.4.13`
   - `REBAR3_VERSION=3.26.0`
 - Labels:
-  - `org.opencontainers.image.version=27.3.4.12`
+  - `org.opencontainers.image.version=27.3.4.13`
 
 ## `apk` (`.apk`-based packages)
 
@@ -190,16 +190,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.6-r0 description:
+libcrypto3-3.5.7-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.6-r0 webpage:
+libcrypto3-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.6-r0 installed size:
-5095 KiB
+libcrypto3-3.5.7-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.6-r0 license:
+libcrypto3-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -258,16 +258,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.6-r0 description:
+libssl3-3.5.7-r0 description:
 SSL shared libraries
 
-libssl3-3.5.6-r0 webpage:
+libssl3-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.6-r0 installed size:
+libssl3-3.5.7-r0 installed size:
 823 KiB
 
-libssl3-3.5.6-r0 license:
+libssl3-3.5.7-r0 license:
 Apache-2.0
 
 ```
