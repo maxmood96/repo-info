@@ -1,10 +1,10 @@
-# `debian:unstable-slim`
+# `debian:forky-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:bc03dab48772e033883ee06fc86fff7b5232c8540ce5fe1ae6842cadd3a5646d`
-- Created: `2026-05-18T00:00:00Z`
-- Virtual Size: ~ 77.44 Mb  
+- Image ID: `sha256:c09a162bd85ac0544cceb09142d8344d1edf850a230a501ece169cb22aec18f1`
+- Created: `2026-06-10T00:00:00Z`
+- Virtual Size: ~ 77.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -42,12 +42,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/acl/2.3.2-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/acl/2.3.2-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apt=3.3.0`
+### `dpkg` source package: `apt=3.3.1`
 
 Binary Packages:
 
-- `apt=3.3.0`
-- `libapt-pkg7.0:amd64=3.3.0`
+- `apt=3.3.1`
+- `libapt-pkg7.0:amd64=3.3.1`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg7.0/copyright`)
 
@@ -57,13 +57,19 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris apt=3.3.1
+'http://deb.debian.org/debian/pool/main/a/apt/apt_3.3.1.dsc' apt_3.3.1.dsc 3132 SHA256:dbb1ef739a7d564547b8d4791d15044e52dbf07a15d8fde76352db1ef96e095f
+'http://deb.debian.org/debian/pool/main/a/apt/apt_3.3.1.tar.xz' apt_3.3.1.tar.xz 2478544 SHA256:bc979b233f864ce08f177ac40118d44406c06179aec4d684dd1227d61e40673a
+```
 
-- http://snapshot.debian.org/package/apt/3.3.0/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/apt/3.3.1/ (for browsing the source)
+- https://sources.debian.net/src/apt/3.3.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/3.3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-4`
 
@@ -121,25 +127,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/audit/1:4.1.2-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/audit/1:4.1.2-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=14.0`
+### `dpkg` source package: `base-files=14.2`
 
 Binary Packages:
 
-- `base-files=14.0`
+- `base-files=14.2`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
-- `GPL`
+- `GPL-2`
 - `GPL-2+`
 - `verbatim`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris base-files=14.2
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_14.2.dsc' base-files_14.2.dsc 1215 SHA256:e66dac428bfca466d6d62694f0b6436c6d7cf86c193acc9cc1bb0b59991f17c3
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_14.2.tar.xz' base-files_14.2.tar.xz 83180 SHA256:3a4e17a419df523a5ad53d1593b70d242a2163058744aaa69fb505ba2a8fba2e
+```
 
-- http://snapshot.debian.org/package/base-files/14.0/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/base-files/14.2/ (for browsing the source)
+- https://sources.debian.net/src/base-files/14.2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/14.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.8`
 
@@ -791,11 +803,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/init-system-helpers/1.69/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/init-system-helpers/1.69/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libbsd=0.12.2-2`
+### `dpkg` source package: `libbsd=0.12.2-3`
 
 Binary Packages:
 
-- `libbsd0:amd64=0.12.2-2+b2`
+- `libbsd0:amd64=0.12.2-3`
 
 Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 
@@ -814,13 +826,21 @@ Licenses: (parsed from: `/usr/share/doc/libbsd0/copyright`)
 - `ISC-Original`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libbsd=0.12.2-3
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.2-3.dsc' libbsd_0.12.2-3.dsc 2611 SHA256:bc309d6fc4da367c7d57d7467b1bcab6ba013f6b90d07b8552f5bd37d28d6cd5
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.2.orig.tar.xz' libbsd_0.12.2.orig.tar.xz 446032 SHA256:b88cc9163d0c652aaf39a99991d974ddba1c3a9711db8f1b5838af2a14731014
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.2.orig.tar.xz.asc' libbsd_0.12.2.orig.tar.xz.asc 833 SHA256:620dc92f158ebe0a650c0e92214a8121b927276895dc9a1dcaa38f627fa0fcb0
+'http://deb.debian.org/debian/pool/main/libb/libbsd/libbsd_0.12.2-3.debian.tar.xz' libbsd_0.12.2-3.debian.tar.xz 18892 SHA256:1415cfb3023977137d01c4acf80a00f6504f21be0bb2412214eeeaae63b45d92
+```
 
-- http://snapshot.debian.org/package/libbsd/0.12.2-2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libbsd/0.12.2-3/ (for browsing the source)
+- https://sources.debian.net/src/libbsd/0.12.2-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libbsd/0.12.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap-ng=0.9.3-1`
 
@@ -851,11 +871,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libcap-ng/0.9.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libcap-ng/0.9.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libmd=1.2.0-1`
+### `dpkg` source package: `libmd=1.2.0-2`
 
 Binary Packages:
 
-- `libmd0:amd64=1.2.0-1`
+- `libmd0:amd64=1.2.0-2`
 
 Licenses: (parsed from: `/usr/share/doc/libmd0/copyright`)
 
@@ -870,13 +890,21 @@ Licenses: (parsed from: `/usr/share/doc/libmd0/copyright`)
 - `public-domain-md5`
 - `public-domain-sha1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris libmd=1.2.0-2
+'http://deb.debian.org/debian/pool/main/libm/libmd/libmd_1.2.0-2.dsc' libmd_1.2.0-2.dsc 2588 SHA256:5b7729eddce8491214e6525182f8d11223e26b859283922643a9d2a73cc7892d
+'http://deb.debian.org/debian/pool/main/libm/libmd/libmd_1.2.0.orig.tar.xz' libmd_1.2.0.orig.tar.xz 287992 SHA256:ac15ffb8430502fbaccdec66c5a82ee0eab0b0f36220df56710feadfeb13d0a0
+'http://deb.debian.org/debian/pool/main/libm/libmd/libmd_1.2.0.orig.tar.xz.asc' libmd_1.2.0.orig.tar.xz.asc 931 SHA256:73fabccfa20d77cb2e7db897aadf1a9bc69975906103381f7ca94564cea4f4a0
+'http://deb.debian.org/debian/pool/main/libm/libmd/libmd_1.2.0-2.debian.tar.xz' libmd_1.2.0-2.debian.tar.xz 8760 SHA256:f874725b64236f70749c9234a132f789fc8357da9f4ecfca67923abcd05a4047
+```
 
-- http://snapshot.debian.org/package/libmd/1.2.0-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/libmd/1.2.0-2/ (for browsing the source)
+- https://sources.debian.net/src/libmd/1.2.0-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libmd/1.2.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.6.0-2`
 
@@ -1311,7 +1339,7 @@ The source package *may* still be available for download from:
 
 Binary Packages:
 
-- `sqv=1.3.0-5+b1`
+- `sqv=1.3.0-5+b2`
 
 Licenses: (parsed from: `/usr/share/doc/sqv/copyright`)
 
@@ -1414,13 +1442,20 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris systemd=260.1-1
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_260.1-1.dsc' systemd_260.1-1.dsc 8607 SHA256:ae9dc2f650c52fd3a8388e8cb5121a3b6988e257fb97352e5871d5241d9717f8
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_260.1.orig.tar.gz' systemd_260.1.orig.tar.gz 17581096 SHA256:11b9821892b75d19af7b21f0f7f4e53636638147faf3e6a4ded78b40cb38993f
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_260.1-1.debian.tar.xz' systemd_260.1-1.debian.tar.xz 185416 SHA256:eb37d781bfa7e4395df6da4716f1aa31f4b7cfe6f247b0815f5bf178ccd0071e
+```
 
-- http://snapshot.debian.org/package/systemd/260.1-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/systemd/260.1-1/ (for browsing the source)
+- https://sources.debian.net/src/systemd/260.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/260.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.18-1`
 
@@ -1510,18 +1545,18 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tzdata/2026b-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tzdata/2026b-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `util-linux=2.42-6`
+### `dpkg` source package: `util-linux=2.42.1-2`
 
 Binary Packages:
 
-- `bsdutils=1:2.42-6`
-- `libblkid1:amd64=2.42-6`
-- `libmount1:amd64=2.42-6`
-- `libsmartcols1:amd64=2.42-6`
-- `libuuid1:amd64=2.42-6`
-- `login=1:4.16.0-2+really2.42-6`
-- `mount=2.42-6`
-- `util-linux=2.42-6`
+- `bsdutils=1:2.42.1-2`
+- `libblkid1:amd64=2.42.1-2`
+- `libmount1:amd64=2.42.1-2`
+- `libsmartcols1:amd64=2.42.1-2`
+- `libuuid1:amd64=2.42.1-2`
+- `login=1:4.16.0-2+really2.42.1-2`
+- `mount=2.42.1-2`
+- `util-linux=2.42.1-2`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/login/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -1549,7 +1584,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/util-linux/2.42-6/
+- http://snapshot.debian.org/package/util-linux/2.42.1-2/
 
 
 ### `dpkg` source package: `xxhash=0.8.3-2`
