@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:247a0aa52f5b432a93df615a78311a31b13d05c141c64abc0b44baf6ab332a7d`
-- Created: `2026-06-06T00:13:30.218001805Z`
-- Virtual Size: ~ 768.29 Mb  
+- Image ID: `sha256:9d0a3f64eb5319d72b9b787e5a8a747d51c48ad6f27f535f56ed93cdb50ab647`
+- Created: `2026-06-11T02:23:59.824669595Z`
+- Virtual Size: ~ 768.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -135,14 +135,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/aom/3.12.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/aom/3.12.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apache2=2.4.67-1~deb13u2`
+### `dpkg` source package: `apache2=2.4.67-1~deb13u3`
 
 Binary Packages:
 
-- `apache2=2.4.67-1~deb13u2`
-- `apache2-bin=2.4.67-1~deb13u2`
-- `apache2-data=2.4.67-1~deb13u2`
-- `apache2-utils=2.4.67-1~deb13u2`
+- `apache2=2.4.67-1~deb13u3`
+- `apache2-bin=2.4.67-1~deb13u3`
+- `apache2-data=2.4.67-1~deb13u3`
+- `apache2-utils=2.4.67-1~deb13u3`
 
 Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apache2-bin/copyright`, `/usr/share/doc/apache2-data/copyright`, `/usr/share/doc/apache2-utils/copyright`)
 
@@ -165,18 +165,18 @@ Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apac
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apache2=2.4.67-1~deb13u2
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.67-1%7edeb13u2.dsc' apache2_2.4.67-1~deb13u2.dsc 3526 SHA256:d12186d4b2c632f8c2c789a0832469099e1f17e8d94312e61c585fc7ade2f573
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.67.orig.tar.gz' apache2_2.4.67.orig.tar.gz 9714011 SHA256:10a578d199c3930250534fac629995f34ef7571709a7c88c45239e1fdc88cf77
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.67.orig.tar.gz.asc' apache2_2.4.67.orig.tar.gz.asc 870 SHA256:d8a6e18c2f892aa901121d14852717bddf42e430b0f48f853a4effce7b89f348
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.67-1%7edeb13u2.debian.tar.xz' apache2_2.4.67-1~deb13u2.debian.tar.xz 827744 SHA256:7dfc781d8b04d9c4663bb72a919ab636d0b84d3b3143df9cb0c23985d535fc47
+$ apt-get source -qq --print-uris apache2=2.4.67-1~deb13u3
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.67-1%7edeb13u3.dsc' apache2_2.4.67-1~deb13u3.dsc 3526 SHA256:433f50fca7e2d3e0f2a340d3376e14ae16d8bf216e11f40d064642974f77de73
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.67.orig.tar.gz' apache2_2.4.67.orig.tar.gz 9714011 SHA256:10a578d199c3930250534fac629995f34ef7571709a7c88c45239e1fdc88cf77
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.67.orig.tar.gz.asc' apache2_2.4.67.orig.tar.gz.asc 870 SHA256:d8a6e18c2f892aa901121d14852717bddf42e430b0f48f853a4effce7b89f348
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.67-1%7edeb13u3.debian.tar.xz' apache2_2.4.67-1~deb13u3.debian.tar.xz 828724 SHA256:40836c7da438b3a7cf8a600fac8baa842cfd4edd43b11934e2a2f2ba4f8a1ab1
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apache2/2.4.67-1~deb13u2/ (for browsing the source)
-- https://sources.debian.net/src/apache2/2.4.67-1~deb13u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apache2/2.4.67-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apache2/2.4.67-1~deb13u3/ (for browsing the source)
+- https://sources.debian.net/src/apache2/2.4.67-1~deb13u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apache2/2.4.67-1~deb13u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.3-3`
 
@@ -3842,13 +3842,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.6.10+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.6.10+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.5.6-1~deb13u1`
+### `dpkg` source package: `openssl=3.5.6-1~deb13u2`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.5.6-1~deb13u1`
-- `openssl=3.5.6-1~deb13u1`
-- `openssl-provider-legacy=3.5.6-1~deb13u1`
+- `libssl3t64:amd64=3.5.6-1~deb13u2`
+- `openssl=3.5.6-1~deb13u2`
+- `openssl-provider-legacy=3.5.6-1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -3860,18 +3860,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.5.6-1~deb13u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6-1%7edeb13u1.dsc' openssl_3.5.6-1~deb13u1.dsc 2707 SHA256:e80c41b4a11930ff4ab52be1bd63d47c3657f0e129cb2f3ab1f086e5ad9596c6
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6.orig.tar.gz' openssl_3.5.6.orig.tar.gz 53121812 SHA256:deae7c80cba99c4b4f940ecadb3c3338b13cb77418409238e57d7f31f2a3b736
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6.orig.tar.gz.asc' openssl_3.5.6.orig.tar.gz.asc 833 SHA256:581c536bd4c5bf7e325feaa90d6ce01c3da297737b5be3213c4e8087323fb623
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6-1%7edeb13u1.debian.tar.xz' openssl_3.5.6-1~deb13u1.debian.tar.xz 52364 SHA256:ce467b7e373870add5e85fc5e591240557f536424c839a7b2678f20c4227030f
+$ apt-get source -qq --print-uris openssl=3.5.6-1~deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.6-1%7edeb13u2.dsc' openssl_3.5.6-1~deb13u2.dsc 2707 SHA256:6a7f8fef28a5134eeb1a88435c35704f6200a268b913232eca09775651a19210
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.6.orig.tar.gz' openssl_3.5.6.orig.tar.gz 53121812 SHA256:deae7c80cba99c4b4f940ecadb3c3338b13cb77418409238e57d7f31f2a3b736
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.6.orig.tar.gz.asc' openssl_3.5.6.orig.tar.gz.asc 833 SHA256:581c536bd4c5bf7e325feaa90d6ce01c3da297737b5be3213c4e8087323fb623
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.6-1%7edeb13u2.debian.tar.xz' openssl_3.5.6-1~deb13u2.debian.tar.xz 82144 SHA256:322797f9ac320606e91eb07540fd4c7ba910ee84f52fa455c7f8619dd53f9bcc
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.5.6-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.5.6-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.5.6-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.5.6-1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.5.6-1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.5.6-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.25.5-3`
 
