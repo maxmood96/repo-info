@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:feacc8eb69aaafc1800c2f3dc2b69c655b6884ba717a6da2dbe6be5c64ac4410`
-- Created: `2026-05-07T17:14:26.991332359Z`
-- Virtual Size: ~ 165.32 Mb  
+- Image ID: `sha256:c945d1ebb2594a72099e40e1acce720325cf339f29c9b693d51fe9231b09c8ce`
+- Created: `2026-06-10T21:12:03.597305526Z`
+- Virtual Size: ~ 171.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -65,16 +65,16 @@ LGPL-2.1-or-later AND GPL-2.0-or-later
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.7.2-r0 description:
+alpine-baselayout-3.7.2-r1 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.7.2-r0 webpage:
+alpine-baselayout-3.7.2-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/main/alpine-baselayout
 
-alpine-baselayout-3.7.2-r0 installed size:
+alpine-baselayout-3.7.2-r1 installed size:
 6552 B
 
-alpine-baselayout-3.7.2-r0 license:
+alpine-baselayout-3.7.2-r1 license:
 GPL-2.0-only
 
 ```
@@ -82,16 +82,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.7.2-r0 description:
+alpine-baselayout-data-3.7.2-r1 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.7.2-r0 webpage:
+alpine-baselayout-data-3.7.2-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/main/alpine-baselayout
 
-alpine-baselayout-data-3.7.2-r0 installed size:
+alpine-baselayout-data-3.7.2-r1 installed size:
 18 KiB
 
-alpine-baselayout-data-3.7.2-r0 license:
+alpine-baselayout-data-3.7.2-r1 license:
 GPL-2.0-only
 
 ```
@@ -116,16 +116,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.4-r0 description:
+alpine-release-3.24.0-r0 description:
 Alpine release data
 
-alpine-release-3.23.4-r0 webpage:
+alpine-release-3.24.0-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.4-r0 installed size:
+alpine-release-3.24.0-r0 installed size:
 343 B
 
-alpine-release-3.23.4-r0 license:
+alpine-release-3.24.0-r0 license:
 MIT
 
 ```
@@ -167,16 +167,16 @@ Apache-2.0 OR CC0-1.0
 ### `apk` package: `bash`
 
 ```console
-bash-5.3.3-r1 description:
+bash-5.3.9-r1 description:
 The GNU Bourne Again shell
 
-bash-5.3.3-r1 webpage:
+bash-5.3.9-r1 webpage:
 https://www.gnu.org/software/bash/bash.html
 
-bash-5.3.3-r1 installed size:
+bash-5.3.9-r1 installed size:
 1344 KiB
 
-bash-5.3.3-r1 license:
+bash-5.3.9-r1 license:
 GPL-3.0-or-later
 
 ```
@@ -184,16 +184,16 @@ GPL-3.0-or-later
 ### `apk` package: `brotli-libs`
 
 ```console
-brotli-libs-1.2.0-r0 description:
+brotli-libs-1.2.0-r1 description:
 Generic lossless compressor (libraries)
 
-brotli-libs-1.2.0-r0 webpage:
+brotli-libs-1.2.0-r1 webpage:
 https://github.com/google/brotli
 
-brotli-libs-1.2.0-r0 installed size:
+brotli-libs-1.2.0-r1 installed size:
 957 KiB
 
-brotli-libs-1.2.0-r0 license:
+brotli-libs-1.2.0-r1 license:
 MIT
 
 ```
@@ -201,16 +201,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r30 description:
+busybox-1.37.0-r31 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r30 webpage:
+busybox-1.37.0-r31 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r30 installed size:
+busybox-1.37.0-r31 installed size:
 794 KiB
 
-busybox-1.37.0-r30 license:
+busybox-1.37.0-r31 license:
 GPL-2.0-only
 
 ```
@@ -218,16 +218,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r30 description:
+busybox-binsh-1.37.0-r31 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r30 webpage:
+busybox-binsh-1.37.0-r31 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r30 installed size:
+busybox-binsh-1.37.0-r31 installed size:
 1 B
 
-busybox-binsh-1.37.0-r30 license:
+busybox-binsh-1.37.0-r31 license:
 GPL-2.0-only
 
 ```
@@ -286,16 +286,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.17.0-r1 description:
-URL retrival utility and library
+curl-8.20.0-r1 description:
+URL retrieval utility and library
 
-curl-8.17.0-r1 webpage:
+curl-8.20.0-r1 webpage:
 https://curl.se/
 
-curl-8.17.0-r1 installed size:
-265 KiB
+curl-8.20.0-r1 installed size:
+273 KiB
 
-curl-8.17.0-r1 license:
+curl-8.20.0-r1 license:
 curl
 
 ```
@@ -303,16 +303,16 @@ curl
 ### `apk` package: `freetype`
 
 ```console
-freetype-2.14.1-r0 description:
+freetype-2.14.3-r0 description:
 TrueType font rendering library
 
-freetype-2.14.1-r0 webpage:
+freetype-2.14.3-r0 webpage:
 https://www.freetype.org/
 
-freetype-2.14.1-r0 installed size:
+freetype-2.14.3-r0 installed size:
 658 KiB
 
-freetype-2.14.1-r0 license:
+freetype-2.14.3-r0 license:
 FTL OR GPL-2.0-or-later
 
 ```
@@ -371,16 +371,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gnupg`
 
 ```console
-gnupg-2.4.9-r0 description:
+gnupg-2.4.9-r1 description:
 GNU Privacy Guard 2 - meta package for full GnuPG suite
 
-gnupg-2.4.9-r0 webpage:
+gnupg-2.4.9-r1 webpage:
 https://www.gnupg.org/
 
-gnupg-2.4.9-r0 installed size:
+gnupg-2.4.9-r1 installed size:
 0 B
 
-gnupg-2.4.9-r0 license:
+gnupg-2.4.9-r1 license:
 GPL-3.0-or-later
 
 ```
@@ -388,16 +388,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-dirmngr`
 
 ```console
-gnupg-dirmngr-2.4.9-r0 description:
+gnupg-dirmngr-2.4.9-r1 description:
 GNU Privacy Guard 2 - network certificate management service
 
-gnupg-dirmngr-2.4.9-r0 webpage:
+gnupg-dirmngr-2.4.9-r1 webpage:
 https://www.gnupg.org/
 
-gnupg-dirmngr-2.4.9-r0 installed size:
+gnupg-dirmngr-2.4.9-r1 installed size:
 625 KiB
 
-gnupg-dirmngr-2.4.9-r0 license:
+gnupg-dirmngr-2.4.9-r1 license:
 GPL-3.0-or-later
 
 ```
@@ -405,16 +405,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-gpgconf`
 
 ```console
-gnupg-gpgconf-2.4.9-r0 description:
+gnupg-gpgconf-2.4.9-r1 description:
 GNU Privacy Guard 2 - core configuration utilities
 
-gnupg-gpgconf-2.4.9-r0 webpage:
+gnupg-gpgconf-2.4.9-r1 webpage:
 https://www.gnupg.org/
 
-gnupg-gpgconf-2.4.9-r0 installed size:
+gnupg-gpgconf-2.4.9-r1 installed size:
 233 KiB
 
-gnupg-gpgconf-2.4.9-r0 license:
+gnupg-gpgconf-2.4.9-r1 license:
 GPL-3.0-or-later
 
 ```
@@ -422,16 +422,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-keyboxd`
 
 ```console
-gnupg-keyboxd-2.4.9-r0 description:
+gnupg-keyboxd-2.4.9-r1 description:
 GNU Privacy Guard 2 - keyboxd manager
 
-gnupg-keyboxd-2.4.9-r0 webpage:
+gnupg-keyboxd-2.4.9-r1 webpage:
 https://www.gnupg.org/
 
-gnupg-keyboxd-2.4.9-r0 installed size:
+gnupg-keyboxd-2.4.9-r1 installed size:
 223 KiB
 
-gnupg-keyboxd-2.4.9-r0 license:
+gnupg-keyboxd-2.4.9-r1 license:
 GPL-3.0-or-later
 
 ```
@@ -439,16 +439,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-utils`
 
 ```console
-gnupg-utils-2.4.9-r0 description:
+gnupg-utils-2.4.9-r1 description:
 GNU Privacy Guard 2 - utility programs
 
-gnupg-utils-2.4.9-r0 webpage:
+gnupg-utils-2.4.9-r1 webpage:
 https://www.gnupg.org/
 
-gnupg-utils-2.4.9-r0 installed size:
+gnupg-utils-2.4.9-r1 installed size:
 824 KiB
 
-gnupg-utils-2.4.9-r0 license:
+gnupg-utils-2.4.9-r1 license:
 GPL-3.0-or-later
 
 ```
@@ -456,16 +456,16 @@ GPL-3.0-or-later
 ### `apk` package: `gnupg-wks-client`
 
 ```console
-gnupg-wks-client-2.4.9-r0 description:
+gnupg-wks-client-2.4.9-r1 description:
 GNU Privacy Guard 2 - Web Key Service client
 
-gnupg-wks-client-2.4.9-r0 webpage:
+gnupg-wks-client-2.4.9-r1 webpage:
 https://www.gnupg.org/
 
-gnupg-wks-client-2.4.9-r0 installed size:
+gnupg-wks-client-2.4.9-r1 installed size:
 167 KiB
 
-gnupg-wks-client-2.4.9-r0 license:
+gnupg-wks-client-2.4.9-r1 license:
 GPL-3.0-or-later
 
 ```
@@ -490,16 +490,16 @@ LGPL-2.1-or-later
 ### `apk` package: `gpg`
 
 ```console
-gpg-2.4.9-r0 description:
+gpg-2.4.9-r1 description:
 GNU Privacy Guard 2 - public key operations only
 
-gpg-2.4.9-r0 webpage:
+gpg-2.4.9-r1 webpage:
 https://www.gnupg.org/
 
-gpg-2.4.9-r0 installed size:
+gpg-2.4.9-r1 installed size:
 925 KiB
 
-gpg-2.4.9-r0 license:
+gpg-2.4.9-r1 license:
 GPL-3.0-or-later
 
 ```
@@ -507,16 +507,16 @@ GPL-3.0-or-later
 ### `apk` package: `gpg-agent`
 
 ```console
-gpg-agent-2.4.9-r0 description:
+gpg-agent-2.4.9-r1 description:
 GNU Privacy Guard 2 - cryptographic agent
 
-gpg-agent-2.4.9-r0 webpage:
+gpg-agent-2.4.9-r1 webpage:
 https://www.gnupg.org/
 
-gpg-agent-2.4.9-r0 installed size:
+gpg-agent-2.4.9-r1 installed size:
 634 KiB
 
-gpg-agent-2.4.9-r0 license:
+gpg-agent-2.4.9-r1 license:
 GPL-3.0-or-later
 
 ```
@@ -524,16 +524,16 @@ GPL-3.0-or-later
 ### `apk` package: `gpg-wks-server`
 
 ```console
-gpg-wks-server-2.4.9-r0 description:
+gpg-wks-server-2.4.9-r1 description:
 GNU Privacy Guard 2 - Web Key Service server
 
-gpg-wks-server-2.4.9-r0 webpage:
+gpg-wks-server-2.4.9-r1 webpage:
 https://www.gnupg.org/
 
-gpg-wks-server-2.4.9-r0 installed size:
+gpg-wks-server-2.4.9-r1 installed size:
 150 KiB
 
-gpg-wks-server-2.4.9-r0 license:
+gpg-wks-server-2.4.9-r1 license:
 GPL-3.0-or-later
 
 ```
@@ -541,16 +541,16 @@ GPL-3.0-or-later
 ### `apk` package: `gpgsm`
 
 ```console
-gpgsm-2.4.9-r0 description:
+gpgsm-2.4.9-r1 description:
 GNU Privacy Guard 2 - S/MIME version
 
-gpgsm-2.4.9-r0 webpage:
+gpgsm-2.4.9-r1 webpage:
 https://www.gnupg.org/
 
-gpgsm-2.4.9-r0 installed size:
+gpgsm-2.4.9-r1 installed size:
 477 KiB
 
-gpgsm-2.4.9-r0 license:
+gpgsm-2.4.9-r1 license:
 GPL-3.0-or-later
 
 ```
@@ -558,16 +558,16 @@ GPL-3.0-or-later
 ### `apk` package: `gpgv`
 
 ```console
-gpgv-2.4.9-r0 description:
+gpgv-2.4.9-r1 description:
 GNU Privacy Guard 2 - signature verification only
 
-gpgv-2.4.9-r0 webpage:
+gpgv-2.4.9-r1 webpage:
 https://www.gnupg.org/
 
-gpgv-2.4.9-r0 installed size:
+gpgv-2.4.9-r1 installed size:
 428 KiB
 
-gpgv-2.4.9-r0 license:
+gpgv-2.4.9-r1 license:
 GPL-3.0-or-later
 
 ```
@@ -643,16 +643,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.6-r0 description:
+libcrypto3-3.5.7-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.6-r0 webpage:
+libcrypto3-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.6-r0 installed size:
+libcrypto3-3.5.7-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.6-r0 license:
+libcrypto3-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -660,16 +660,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.17.0-r1 description:
+libcurl-8.20.0-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.17.0-r1 webpage:
+libcurl-8.20.0-r1 webpage:
 https://curl.se/
 
-libcurl-8.17.0-r1 installed size:
-721 KiB
+libcurl-8.20.0-r1 installed size:
+693 KiB
 
-libcurl-8.17.0-r1 license:
+libcurl-8.20.0-r1 license:
 curl
 
 ```
@@ -677,16 +677,16 @@ curl
 ### `apk` package: `libffi`
 
 ```console
-libffi-3.5.2-r0 description:
+libffi-3.5.2-r1 description:
 portable, high level programming interface to various calling conventions.
 
-libffi-3.5.2-r0 webpage:
+libffi-3.5.2-r1 webpage:
 https://sourceware.org/libffi/
 
-libffi-3.5.2-r0 installed size:
+libffi-3.5.2-r1 installed size:
 38 KiB
 
-libffi-3.5.2-r0 license:
+libffi-3.5.2-r1 license:
 MIT
 
 ```
@@ -694,16 +694,16 @@ MIT
 ### `apk` package: `libgcc`
 
 ```console
-libgcc-15.2.0-r2 description:
+libgcc-15.2.0-r5 description:
 GNU C compiler runtime libraries
 
-libgcc-15.2.0-r2 webpage:
+libgcc-15.2.0-r5 webpage:
 https://gcc.gnu.org
 
-libgcc-15.2.0-r2 installed size:
+libgcc-15.2.0-r5 installed size:
 169 KiB
 
-libgcc-15.2.0-r2 license:
+libgcc-15.2.0-r5 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -711,16 +711,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libgcrypt`
 
 ```console
-libgcrypt-1.11.2-r0 description:
+libgcrypt-1.12.2-r0 description:
 General purpose crypto library based on the code used in GnuPG
 
-libgcrypt-1.11.2-r0 webpage:
+libgcrypt-1.12.2-r0 webpage:
 https://www.gnupg.org/
 
-libgcrypt-1.11.2-r0 installed size:
-1454 KiB
+libgcrypt-1.12.2-r0 installed size:
+1510 KiB
 
-libgcrypt-1.11.2-r0 license:
+libgcrypt-1.12.2-r0 license:
 LGPL-2.1-or-later AND GPL-2.0-or-later
 
 ```
@@ -728,16 +728,16 @@ LGPL-2.1-or-later AND GPL-2.0-or-later
 ### `apk` package: `libgpg-error`
 
 ```console
-libgpg-error-1.55-r0 description:
+libgpg-error-1.61-r0 description:
 Support library for libgcrypt
 
-libgpg-error-1.55-r0 webpage:
+libgpg-error-1.61-r0 webpage:
 https://www.gnupg.org/
 
-libgpg-error-1.55-r0 installed size:
-172 KiB
+libgpg-error-1.61-r0 installed size:
+180 KiB
 
-libgpg-error-1.55-r0 license:
+libgpg-error-1.61-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -779,16 +779,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libjpeg-turbo`
 
 ```console
-libjpeg-turbo-3.1.2-r0 description:
+libjpeg-turbo-3.1.3-r0 description:
 Accelerated baseline JPEG compression and decompression library
 
-libjpeg-turbo-3.1.2-r0 webpage:
+libjpeg-turbo-3.1.3-r0 webpage:
 https://libjpeg-turbo.org/
 
-libjpeg-turbo-3.1.2-r0 installed size:
+libjpeg-turbo-3.1.3-r0 installed size:
 641 KiB
 
-libjpeg-turbo-3.1.2-r0 license:
+libjpeg-turbo-3.1.3-r0 license:
 BSD-3-Clause AND IJG AND Zlib
 
 ```
@@ -796,16 +796,16 @@ BSD-3-Clause AND IJG AND Zlib
 ### `apk` package: `libksba`
 
 ```console
-libksba-1.6.7-r0 description:
+libksba-1.7.0-r0 description:
 Libksba is a CMS and X.509 access library
 
-libksba-1.6.7-r0 webpage:
+libksba-1.7.0-r0 webpage:
 https://www.gnupg.org/software/libksba/index.html
 
-libksba-1.6.7-r0 installed size:
-201 KiB
+libksba-1.7.0-r0 installed size:
+205 KiB
 
-libksba-1.6.7-r0 license:
+libksba-1.7.0-r0 license:
 LGPL-3.0-only AND GPL-2.0-only AND GPL-3.0-only
 
 ```
@@ -813,16 +813,16 @@ LGPL-3.0-only AND GPL-2.0-only AND GPL-3.0-only
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.10-r0 description:
+libldap-2.6.13-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.10-r0 webpage:
+libldap-2.6.13-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.10-r0 installed size:
+libldap-2.6.13-r0 installed size:
 365 KiB
 
-libldap-2.6.10-r0 license:
+libldap-2.6.13-r0 license:
 OLDAP-2.8
 
 ```
@@ -830,16 +830,16 @@ OLDAP-2.8
 ### `apk` package: `libmd`
 
 ```console
-libmd-1.1.0-r0 description:
+libmd-1.2.0-r0 description:
 Message Digest functions from BSD systems
 
-libmd-1.1.0-r0 webpage:
+libmd-1.2.0-r0 webpage:
 https://www.hadrons.org/software/libmd/
 
-libmd-1.1.0-r0 installed size:
-49 KiB
+libmd-1.2.0-r0 installed size:
+61 KiB
 
-libmd-1.1.0-r0 license:
+libmd-1.2.0-r0 license:
 BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 
 ```
@@ -847,16 +847,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.5_p20251123-r0 description:
+libncursesw-6.6_p20260516-r0 description:
 Console display library (libncursesw)
 
-libncursesw-6.5_p20251123-r0 webpage:
+libncursesw-6.6_p20260516-r0 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.5_p20251123-r0 installed size:
+libncursesw-6.6_p20260516-r0 installed size:
 334 KiB
 
-libncursesw-6.5_p20251123-r0 license:
+libncursesw-6.6_p20260516-r0 license:
 X11
 
 ```
@@ -864,16 +864,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.57-r0 description:
+libpng-1.6.58-r1 description:
 Portable Network Graphics library
 
-libpng-1.6.57-r0 webpage:
+libpng-1.6.58-r1 webpage:
 http://www.libpng.org
 
-libpng-1.6.57-r0 installed size:
+libpng-1.6.58-r1 installed size:
 181 KiB
 
-libpng-1.6.57-r0 license:
+libpng-1.6.58-r1 license:
 Libpng
 
 ```
@@ -949,16 +949,16 @@ MIT
 ### `apk` package: `libsodium`
 
 ```console
-libsodium-1.0.20-r1 description:
+libsodium-1.0.22-r0 description:
 P(ortable|ackageable) NaCl-based crypto library
 
-libsodium-1.0.20-r1 webpage:
+libsodium-1.0.22-r0 webpage:
 https://github.com/jedisct1/libsodium
 
-libsodium-1.0.20-r1 installed size:
-339 KiB
+libsodium-1.0.22-r0 installed size:
+407 KiB
 
-libsodium-1.0.20-r1 license:
+libsodium-1.0.22-r0 license:
 ISC
 
 ```
@@ -966,16 +966,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.6-r0 description:
+libssl3-3.5.7-r0 description:
 SSL shared libraries
 
-libssl3-3.5.6-r0 webpage:
+libssl3-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.6-r0 installed size:
+libssl3-3.5.7-r0 installed size:
 819 KiB
 
-libssl3-3.5.6-r0 license:
+libssl3-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -1000,16 +1000,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libunistring`
 
 ```console
-libunistring-1.4.1-r0 description:
+libunistring-1.4.2-r0 description:
 Library for manipulating Unicode strings and C strings
 
-libunistring-1.4.1-r0 webpage:
+libunistring-1.4.2-r0 webpage:
 https://www.gnu.org/software/libunistring/
 
-libunistring-1.4.1-r0 installed size:
+libunistring-1.4.2-r0 installed size:
 1877 KiB
 
-libunistring-1.4.1-r0 license:
+libunistring-1.4.2-r0 license:
 GPL-2.0-or-later OR LGPL-3.0-or-later
 
 ```
@@ -1017,16 +1017,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.41.4-r0 description:
+libuuid-2.42-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.41.4-r0 webpage:
+libuuid-2.42-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.41.4-r0 installed size:
+libuuid-2.42-r0 installed size:
 29 KiB
 
-libuuid-2.41.4-r0 license:
+libuuid-2.42-r0 license:
 BSD-3-Clause
 
 ```
@@ -1051,16 +1051,16 @@ BSD-3-Clause
 ### `apk` package: `libx11`
 
 ```console
-libx11-1.8.12-r1 description:
+libx11-1.8.13-r0 description:
 X11 client-side library
 
-libx11-1.8.12-r1 webpage:
+libx11-1.8.13-r0 webpage:
 https://xorg.freedesktop.org/
 
-libx11-1.8.12-r1 installed size:
+libx11-1.8.13-r0 installed size:
 2271 KiB
 
-libx11-1.8.12-r1 license:
+libx11-1.8.13-r0 license:
 X11
 
 ```
@@ -1085,16 +1085,16 @@ MIT
 ### `apk` package: `libxcb`
 
 ```console
-libxcb-1.17.0-r1 description:
+libxcb-1.17.0-r2 description:
 X11 client-side library
 
-libxcb-1.17.0-r1 webpage:
+libxcb-1.17.0-r2 webpage:
 https://xcb.freedesktop.org/
 
-libxcb-1.17.0-r1 installed size:
+libxcb-1.17.0-r2 installed size:
 943 KiB
 
-libxcb-1.17.0-r1 license:
+libxcb-1.17.0-r2 license:
 MIT
 
 ```
@@ -1119,16 +1119,16 @@ MIT
 ### `apk` package: `libxext`
 
 ```console
-libxext-1.3.6-r2 description:
+libxext-1.3.7-r0 description:
 X11 miscellaneous extensions library
 
-libxext-1.3.6-r2 webpage:
+libxext-1.3.7-r0 webpage:
 https://xorg.freedesktop.org/
 
-libxext-1.3.6-r2 installed size:
+libxext-1.3.7-r0 installed size:
 66 KiB
 
-libxext-1.3.6-r2 license:
+libxext-1.3.7-r0 license:
 MIT
 
 ```
@@ -1136,16 +1136,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.9-r0 description:
+libxml2-2.13.9-r2 description:
 XML parsing library, version 2
 
-libxml2-2.13.9-r0 webpage:
+libxml2-2.13.9-r2 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.9-r0 installed size:
+libxml2-2.13.9-r2 installed size:
 1046 KiB
 
-libxml2-2.13.9-r0 license:
+libxml2-2.13.9-r2 license:
 MIT
 
 ```
@@ -1187,16 +1187,16 @@ MIT
 ### `apk` package: `libzip`
 
 ```console
-libzip-1.11.4-r1 description:
+libzip-1.11.4-r2 description:
 C library for manipulating zip archives
 
-libzip-1.11.4-r1 webpage:
+libzip-1.11.4-r2 webpage:
 https://libzip.org/
 
-libzip-1.11.4-r1 installed size:
+libzip-1.11.4-r2 installed size:
 102 KiB
 
-libzip-1.11.4-r1 license:
+libzip-1.11.4-r2 license:
 BSD-3-Clause
 
 ```
@@ -1204,16 +1204,16 @@ BSD-3-Clause
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r23 description:
+musl-1.2.6-r2 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r23 webpage:
+musl-1.2.6-r2 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r23 installed size:
-650 KiB
+musl-1.2.6-r2 installed size:
+654 KiB
 
-musl-1.2.5-r23 license:
+musl-1.2.6-r2 license:
 MIT
 
 ```
@@ -1221,16 +1221,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r23 description:
+musl-utils-1.2.6-r2 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r23 webpage:
+musl-utils-1.2.6-r2 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r23 installed size:
+musl-utils-1.2.6-r2 installed size:
 54 KiB
 
-musl-utils-1.2.5-r23 license:
+musl-utils-1.2.6-r2 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -1238,16 +1238,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.5_p20251123-r0 description:
+ncurses-terminfo-base-6.6_p20260516-r0 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.5_p20251123-r0 webpage:
+ncurses-terminfo-base-6.6_p20260516-r0 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.5_p20251123-r0 installed size:
-98 KiB
+ncurses-terminfo-base-6.6_p20260516-r0 installed size:
+100 KiB
 
-ncurses-terminfo-base-6.5_p20251123-r0 license:
+ncurses-terminfo-base-6.6_p20260516-r0 license:
 X11
 
 ```
@@ -1282,23 +1282,6 @@ nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
 nghttp2-libs-1.69.0-r0 license:
-MIT
-
-```
-
-### `apk` package: `nghttp3`
-
-```console
-nghttp3-1.13.1-r0 description:
-HTTP/3 library written in C
-
-nghttp3-1.13.1-r0 webpage:
-https://github.com/ngtcp2/nghttp3
-
-nghttp3-1.13.1-r0 installed size:
-140 KiB
-
-nghttp3-1.13.1-r0 license:
 MIT
 
 ```
@@ -1340,16 +1323,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.6-r0 description:
+openssl-3.5.7-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.6-r0 webpage:
+openssl-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.6-r0 installed size:
+openssl-3.5.7-r0 installed size:
 801 KiB
 
-openssl-3.5.6-r0 license:
+openssl-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -1391,16 +1374,16 @@ GPL-2.0-or-later
 ### `apk` package: `readline`
 
 ```console
-readline-8.3.1-r0 description:
+readline-8.3.3-r1 description:
 GNU readline library
 
-readline-8.3.1-r0 webpage:
+readline-8.3.3-r1 webpage:
 https://tiswww.cwru.edu/php/chet/readline/rltop.html
 
-readline-8.3.1-r0 installed size:
+readline-8.3.3-r1 installed size:
 292 KiB
 
-readline-8.3.1-r0 license:
+readline-8.3.3-r1 license:
 GPL-3.0-or-later
 
 ```
@@ -1408,16 +1391,16 @@ GPL-3.0-or-later
 ### `apk` package: `scanelf`
 
 ```console
-scanelf-1.3.8-r2 description:
+scanelf-1.3.9-r1 description:
 Scan ELF binaries for stuff
 
-scanelf-1.3.8-r2 webpage:
+scanelf-1.3.9-r1 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
-scanelf-1.3.8-r2 installed size:
+scanelf-1.3.9-r1 installed size:
 65 KiB
 
-scanelf-1.3.8-r2 license:
+scanelf-1.3.9-r1 license:
 GPL-2.0-only
 
 ```
@@ -1425,16 +1408,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.51.2-r0 description:
+sqlite-libs-3.53.2-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.51.2-r0 webpage:
+sqlite-libs-3.53.2-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.51.2-r0 installed size:
-1577 KiB
+sqlite-libs-3.53.2-r0 installed size:
+1602 KiB
 
-sqlite-libs-3.51.2-r0 license:
+sqlite-libs-3.53.2-r0 license:
 blessing
 
 ```
@@ -1442,16 +1425,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r30 description:
+ssl_client-1.37.0-r31 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r30 webpage:
+ssl_client-1.37.0-r31 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r30 installed size:
+ssl_client-1.37.0-r31 installed size:
 14 KiB
 
-ssl_client-1.37.0-r30 license:
+ssl_client-1.37.0-r31 license:
 GPL-2.0-only
 
 ```
@@ -1459,16 +1442,16 @@ GPL-2.0-only
 ### `apk` package: `tar`
 
 ```console
-tar-1.35-r4 description:
+tar-1.35-r5 description:
 Utility used to store, backup, and transport files
 
-tar-1.35-r4 webpage:
+tar-1.35-r5 webpage:
 https://www.gnu.org/software/tar/
 
-tar-1.35-r4 installed size:
+tar-1.35-r5 installed size:
 399 KiB
 
-tar-1.35-r4 license:
+tar-1.35-r5 license:
 GPL-3.0-or-later
 
 ```
@@ -1551,7 +1534,7 @@ zstd-libs-1.5.7-r2 webpage:
 https://facebook.github.io/zstd/
 
 zstd-libs-1.5.7-r2 installed size:
-693 KiB
+697 KiB
 
 zstd-libs-1.5.7-r2 license:
 BSD-3-Clause OR GPL-2.0-or-later
