@@ -1,10 +1,10 @@
-# `amazoncorretto:8-alpine3.20`
+# `amazoncorretto:8-alpine3.24`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7d7efd0cf541296e155b306ea5fdb4f211f82972c9422d6b69798f72e393976b`
-- Created: `2026-05-08T22:56:44.010995222Z`
-- Virtual Size: ~ 208.46 Mb  
+- Image ID: `sha256:081c11981fb4da5dbc71553fea8e5acf7a4f2f3d4e4275949ff14f63523ac0da`
+- Created: `2026-06-10T20:15:38.506436773Z`
+- Virtual Size: ~ 209.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -18,16 +18,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.6.5-r0 description:
+alpine-baselayout-3.7.2-r1 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.6.5-r0 webpage:
-https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
+alpine-baselayout-3.7.2-r1 webpage:
+https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/main/alpine-baselayout
 
-alpine-baselayout-3.6.5-r0 installed size:
-308 KiB
+alpine-baselayout-3.7.2-r1 installed size:
+6552 B
 
-alpine-baselayout-3.6.5-r0 license:
+alpine-baselayout-3.7.2-r1 license:
 GPL-2.0-only
 
 ```
@@ -35,16 +35,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.6.5-r0 description:
+alpine-baselayout-data-3.7.2-r1 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.6.5-r0 webpage:
-https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
+alpine-baselayout-data-3.7.2-r1 webpage:
+https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/main/alpine-baselayout
 
-alpine-baselayout-data-3.6.5-r0 installed size:
-76 KiB
+alpine-baselayout-data-3.7.2-r1 installed size:
+18 KiB
 
-alpine-baselayout-data-3.6.5-r0 license:
+alpine-baselayout-data-3.7.2-r1 license:
 GPL-2.0-only
 
 ```
@@ -52,16 +52,33 @@ GPL-2.0-only
 ### `apk` package: `alpine-keys`
 
 ```console
-alpine-keys-2.4-r1 description:
+alpine-keys-2.6-r0 description:
 Public keys for Alpine Linux packages
 
-alpine-keys-2.4-r1 webpage:
+alpine-keys-2.6-r0 webpage:
 https://alpinelinux.org
 
-alpine-keys-2.4-r1 installed size:
-156 KiB
+alpine-keys-2.6-r0 installed size:
+12 KiB
 
-alpine-keys-2.4-r1 license:
+alpine-keys-2.6-r0 license:
+MIT
+
+```
+
+### `apk` package: `alpine-release`
+
+```console
+alpine-release-3.24.0-r0 description:
+Alpine release data
+
+alpine-release-3.24.0-r0 webpage:
+https://alpinelinux.org
+
+alpine-release-3.24.0-r0 installed size:
+343 B
+
+alpine-release-3.24.0-r0 license:
 MIT
 
 ```
@@ -103,16 +120,16 @@ GPL-2.0-only WITH Classpath-exception-2.0
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.4-r1 description:
+apk-tools-3.0.6-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.4-r1 webpage:
+apk-tools-3.0.6-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.4-r1 installed size:
-296 KiB
+apk-tools-3.0.6-r0 installed size:
+112 KiB
 
-apk-tools-2.14.4-r1 license:
+apk-tools-3.0.6-r0 license:
 GPL-2.0-only
 
 ```
@@ -120,16 +137,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.36.1-r31 description:
+busybox-1.37.0-r31 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.36.1-r31 webpage:
+busybox-1.37.0-r31 webpage:
 https://busybox.net/
 
-busybox-1.36.1-r31 installed size:
-908 KiB
+busybox-1.37.0-r31 installed size:
+794 KiB
 
-busybox-1.36.1-r31 license:
+busybox-1.37.0-r31 license:
 GPL-2.0-only
 
 ```
@@ -137,16 +154,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.36.1-r31 description:
+busybox-binsh-1.37.0-r31 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.36.1-r31 webpage:
+busybox-binsh-1.37.0-r31 webpage:
 https://busybox.net/
 
-busybox-binsh-1.36.1-r31 installed size:
-8192 B
+busybox-binsh-1.37.0-r31 installed size:
+1 B
 
-busybox-binsh-1.36.1-r31 license:
+busybox-binsh-1.37.0-r31 license:
 GPL-2.0-only
 
 ```
@@ -161,7 +178,7 @@ ca-certificates-bundle-20260413-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
 ca-certificates-bundle-20260413-r0 installed size:
-236 KiB
+212 KiB
 
 ca-certificates-bundle-20260413-r0 license:
 MPL-2.0 AND MIT
@@ -171,33 +188,50 @@ MPL-2.0 AND MIT
 ### `apk` package: `java-common`
 
 ```console
-java-common-0.5-r0 description:
+java-common-1.0-r2 description:
 Java common (updates java links)
 
-java-common-0.5-r0 webpage:
-https://git.alpinelinux.org/aports/
+java-common-1.0-r2 webpage:
+https://gitlab.alpinelinux.org/alpine/aports/-/tree/master/community/java-common
 
-java-common-0.5-r0 installed size:
-12 KiB
+java-common-1.0-r2 installed size:
+1 B
 
-java-common-0.5-r0 license:
+java-common-1.0-r2 license:
 GPL-2.0-or-later
+
+```
+
+### `apk` package: `libapk`
+
+```console
+libapk-3.0.6-r0 description:
+Alpine Package Keeper - package manager for alpine
+
+libapk-3.0.6-r0 webpage:
+https://gitlab.alpinelinux.org/alpine/apk-tools
+
+libapk-3.0.6-r0 installed size:
+270 KiB
+
+libapk-3.0.6-r0 license:
+GPL-2.0-only
 
 ```
 
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.7-r0 description:
+libcrypto3-3.5.6-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.7-r0 webpage:
+libcrypto3-3.5.6-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.7-r0 installed size:
-4664 KiB
+libcrypto3-3.5.6-r0 installed size:
+5091 KiB
 
-libcrypto3-3.3.7-r0 license:
+libcrypto3-3.5.6-r0 license:
 Apache-2.0
 
 ```
@@ -205,16 +239,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.7-r0 description:
+libssl3-3.5.6-r0 description:
 SSL shared libraries
 
-libssl3-3.3.7-r0 webpage:
+libssl3-3.5.6-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.7-r0 installed size:
-800 KiB
+libssl3-3.5.6-r0 installed size:
+819 KiB
 
-libssl3-3.3.7-r0 license:
+libssl3-3.5.6-r0 license:
 Apache-2.0
 
 ```
@@ -222,16 +256,16 @@ Apache-2.0
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r3 description:
+musl-1.2.6-r2 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r3 webpage:
+musl-1.2.6-r2 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r3 installed size:
-652 KiB
+musl-1.2.6-r2 installed size:
+654 KiB
 
-musl-1.2.5-r3 license:
+musl-1.2.6-r2 license:
 MIT
 
 ```
@@ -239,16 +273,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r3 description:
+musl-utils-1.2.6-r2 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r3 webpage:
+musl-utils-1.2.6-r2 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r3 installed size:
-128 KiB
+musl-utils-1.2.6-r2 installed size:
+54 KiB
 
-musl-utils-1.2.5-r3 license:
+musl-utils-1.2.6-r2 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -256,16 +290,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `scanelf`
 
 ```console
-scanelf-1.3.7-r2 description:
+scanelf-1.3.9-r1 description:
 Scan ELF binaries for stuff
 
-scanelf-1.3.7-r2 webpage:
+scanelf-1.3.9-r1 webpage:
 https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities
 
-scanelf-1.3.7-r2 installed size:
-80 KiB
+scanelf-1.3.9-r1 installed size:
+65 KiB
 
-scanelf-1.3.7-r2 license:
+scanelf-1.3.9-r1 license:
 GPL-2.0-only
 
 ```
@@ -273,16 +307,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.36.1-r31 description:
-EXternal ssl_client for busybox wget
+ssl_client-1.37.0-r31 description:
+External ssl_client for busybox wget
 
-ssl_client-1.36.1-r31 webpage:
+ssl_client-1.37.0-r31 webpage:
 https://busybox.net/
 
-ssl_client-1.36.1-r31 installed size:
-28 KiB
+ssl_client-1.37.0-r31 installed size:
+14 KiB
 
-ssl_client-1.36.1-r31 license:
+ssl_client-1.37.0-r31 license:
 GPL-2.0-only
 
 ```
@@ -297,7 +331,7 @@ zlib-1.3.2-r0 webpage:
 https://zlib.net/
 
 zlib-1.3.2-r0 installed size:
-112 KiB
+105 KiB
 
 zlib-1.3.2-r0 license:
 Zlib
