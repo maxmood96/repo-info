@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f144e87d153efc70210ddc457dd200a31c33ac1c0d3411513b43edcd79998586`
-- Created: `2026-06-08T22:44:57.56584776Z`
-- Virtual Size: ~ 128.56 Mb  
+- Image ID: `sha256:c52b57960c614719ae9e5315da48ddecf6e27c41080f407768b4fe22bc1f0aca`
+- Created: `2026-06-11T02:40:30.49472346Z`
+- Virtual Size: ~ 129.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.13.13`
-  - `PYTHON_SHA256=2ab91ff401783ccca64f75d10c882e957bdfd60e2bf5a72f8421793729b78a71`
+  - `PYTHON_VERSION=3.13.14`
+  - `PYTHON_SHA256=639e43243c620a308f968213df9e00f2f8f62332f7adbaa7a7eeb9783057c690`
   - `HY_VERSION=1.3.0`
   - `HYRULE_VERSION=1.1.0`
 
@@ -1342,13 +1342,13 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.10.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.10.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=3.5.6-1~deb13u1`
+### `dpkg` source package: `openssl=3.5.6-1~deb13u2`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.5.6-1~deb13u1`
-- `openssl=3.5.6-1~deb13u1`
-- `openssl-provider-legacy=3.5.6-1~deb13u1`
+- `libssl3t64:amd64=3.5.6-1~deb13u2`
+- `openssl=3.5.6-1~deb13u2`
+- `openssl-provider-legacy=3.5.6-1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`, `/usr/share/doc/openssl-provider-legacy/copyright`)
 
@@ -1360,18 +1360,18 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=3.5.6-1~deb13u1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6-1%7edeb13u1.dsc' openssl_3.5.6-1~deb13u1.dsc 2707 SHA256:e80c41b4a11930ff4ab52be1bd63d47c3657f0e129cb2f3ab1f086e5ad9596c6
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6.orig.tar.gz' openssl_3.5.6.orig.tar.gz 53121812 SHA256:deae7c80cba99c4b4f940ecadb3c3338b13cb77418409238e57d7f31f2a3b736
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6.orig.tar.gz.asc' openssl_3.5.6.orig.tar.gz.asc 833 SHA256:581c536bd4c5bf7e325feaa90d6ce01c3da297737b5be3213c4e8087323fb623
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.5.6-1%7edeb13u1.debian.tar.xz' openssl_3.5.6-1~deb13u1.debian.tar.xz 52364 SHA256:ce467b7e373870add5e85fc5e591240557f536424c839a7b2678f20c4227030f
+$ apt-get source -qq --print-uris openssl=3.5.6-1~deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.6-1%7edeb13u2.dsc' openssl_3.5.6-1~deb13u2.dsc 2707 SHA256:6a7f8fef28a5134eeb1a88435c35704f6200a268b913232eca09775651a19210
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.6.orig.tar.gz' openssl_3.5.6.orig.tar.gz 53121812 SHA256:deae7c80cba99c4b4f940ecadb3c3338b13cb77418409238e57d7f31f2a3b736
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.6.orig.tar.gz.asc' openssl_3.5.6.orig.tar.gz.asc 833 SHA256:581c536bd4c5bf7e325feaa90d6ce01c3da297737b5be3213c4e8087323fb623
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.5.6-1%7edeb13u2.debian.tar.xz' openssl_3.5.6-1~deb13u2.debian.tar.xz 82144 SHA256:322797f9ac320606e91eb07540fd4c7ba910ee84f52fa455c7f8619dd53f9bcc
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/3.5.6-1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.5.6-1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.5.6-1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/3.5.6-1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.5.6-1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.5.6-1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.7.0-5`
 
