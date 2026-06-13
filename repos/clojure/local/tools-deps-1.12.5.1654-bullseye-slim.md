@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:aad9e2f3bff316213c9b5654aae8f52109131d0c9d1bc9e657196a5c86b9815d`
-- Created: `2026-06-04T17:47:35.948136652Z`
-- Virtual Size: ~ 476.89 Mb  
+- Image ID: `sha256:4ca0d08cf1e67c325c0b411cf60da8e5d9dc05eb9098a5df987ff48eee2ead29`
+- Created: `2026-06-11T01:21:22.846917204Z`
+- Virtual Size: ~ 476.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -815,25 +815,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/git/1:2.30.2-1+deb11u5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/git/1:2.30.2-1+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `glibc=2.31-13+deb11u13`
+### `dpkg` source package: `glibc=2.31-13+deb11u14`
 
 Binary Packages:
 
-- `libc-bin=2.31-13+deb11u13`
-- `libc6:amd64=2.31-13+deb11u13`
+- `libc-bin=2.31-13+deb11u14`
+- `libc6:amd64=2.31-13+deb11u14`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris glibc=2.31-13+deb11u14
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u14.dsc' glibc_2.31-13+deb11u14.dsc 9444 SHA256:f3cb6255cbf60297fae7dfdb6f8c6f72b3692b89429fe2536f15fad238e10ec3
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17254692 SHA256:3dc7704b6166839c37d7047626fd199f3d4c09aca0d90e48c51c31c967dce34e
+'http://deb.debian.org/debian-security/pool/updates/main/g/glibc/glibc_2.31-13%2bdeb11u14.debian.tar.xz' glibc_2.31-13+deb11u14.debian.tar.xz 979876 SHA256:b173a5551de5c569738ee545beda2988769ed3f83c2b67def5cf862408bebe95
+```
 
-- http://snapshot.debian.org/package/glibc/2.31-13+deb11u13/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/glibc/2.31-13+deb11u14/ (for browsing the source)
+- https://sources.debian.net/src/glibc/2.31-13+deb11u14/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glibc/2.31-13+deb11u14/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-1+deb11u1`
 
@@ -899,11 +906,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.2.27-2+deb11u3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.2.27-2+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.7.1-5+deb11u9`
+### `dpkg` source package: `gnutls28=3.7.1-5+deb11u10`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.7.1-5+deb11u9`
+- `libgnutls30:amd64=3.7.1-5+deb11u10`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -921,13 +928,21 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u10
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u10.dsc' gnutls28_3.7.1-5+deb11u10.dsc 3545 SHA256:6615de987442a244d54bab8de49d46e91ce02efbd917a03444075cf73252fc03
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz' gnutls28_3.7.1.orig.tar.xz 6038388 SHA256:3777d7963eca5e06eb315686163b7b3f5045e2baac5e54e038ace9835e5cac6f
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz.asc' gnutls28_3.7.1.orig.tar.xz.asc 854 SHA256:13a683b12602c169a7ad7827ab0e3f35c8fa1f98675d0073cf7d54a8cd635582
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u10.debian.tar.xz' gnutls28_3.7.1-5+deb11u10.debian.tar.xz 165252 SHA256:a1b2c47bbc5c38e180d0aa02219901ec99a9cdc90cf7c4fb4b3762f58d23060e
+```
 
-- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u9/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u10/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gpm=1.20.7-8`
 
@@ -1091,26 +1106,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/keyutils/1.6.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/keyutils/1.6.1-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `krb5=1.18.3-6+deb11u7`
+### `dpkg` source package: `krb5=1.18.3-6+deb11u8`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.18.3-6+deb11u7`
-- `libk5crypto3:amd64=1.18.3-6+deb11u7`
-- `libkrb5-3:amd64=1.18.3-6+deb11u7`
-- `libkrb5support0:amd64=1.18.3-6+deb11u7`
+- `libgssapi-krb5-2:amd64=1.18.3-6+deb11u8`
+- `libk5crypto3:amd64=1.18.3-6+deb11u8`
+- `libkrb5-3:amd64=1.18.3-6+deb11u8`
+- `libkrb5support0:amd64=1.18.3-6+deb11u8`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris krb5=1.18.3-6+deb11u8
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u8.dsc' krb5_1.18.3-6+deb11u8.dsc 3839 SHA256:bfdd209fd2d842c4ad7d9bf3d29522a0f6c0a3b8bf0de69ef2400f26748e165b
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz' krb5_1.18.3.orig.tar.gz 8715312 SHA256:e61783c292b5efd9afb45c555a80dd267ac67eebabca42185362bee6c4fbd719
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3.orig.tar.gz.asc' krb5_1.18.3.orig.tar.gz.asc 833 SHA256:ded19808ba7320ad0bb3ddfb5202845b2ff36a50613af7832f78dd3cb4437419
+'http://deb.debian.org/debian-security/pool/updates/main/k/krb5/krb5_1.18.3-6%2bdeb11u8.debian.tar.xz' krb5_1.18.3-6+deb11u8.debian.tar.xz 121824 SHA256:5e88b6bcafbb62b178387948124fb294b224636b5d10df08201930c1fb5a6582
+```
 
-- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u7/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/krb5/1.18.3-6+deb11u8/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.18.3-6+deb11u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.18.3-6+deb11u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `less=551-2+deb11u2`
 
@@ -2294,24 +2317,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssh/1:8.4p1-5+deb11u7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.1w-0+deb11u5`
+### `dpkg` source package: `openssl=1.1.1w-0+deb11u7`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1w-0+deb11u5`
-- `openssl=1.1.1w-0+deb11u5`
+- `libssl1.1:amd64=1.1.1w-0+deb11u7`
+- `openssl=1.1.1w-0+deb11u7`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1w-0+deb11u7
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u7.dsc' openssl_1.1.1w-0+deb11u7.dsc 2684 SHA256:3ac2de6b2215777d8c9ad226c3d605a1d8c565b2b6c46407d9cf63bcb6cf06da
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz' openssl_1.1.1w.orig.tar.gz 9893384 SHA256:cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz.asc' openssl_1.1.1w.orig.tar.gz.asc 833 SHA256:5e5c3694cda755231c0438ac3c96af00d7510abd7b916d79c51bb979567040db
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u7.debian.tar.xz' openssl_1.1.1w-0+deb11u7.debian.tar.xz 118236 SHA256:bf6eb486699b33a79006023e33ad6155dac105dddf7f10521c22bdb2fec8f5be
+```
 
-- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u5/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u7/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.22-1`
 
