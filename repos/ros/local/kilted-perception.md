@@ -3808,15 +3808,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.125-1ubuntu0.1~24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.125.orig.tar.xz' libdrm_2.4.125.orig.tar.xz 485592 SHA256:d4bae92797a50f81a93524762e0410a49cd84cfa0f997795bc0172ac8fb1d96a
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.125.orig.tar.xz.asc' libdrm_2.4.125.orig.tar.xz.asc 833 SHA256:d13820b5488bddee445c1afca57402ec2560cbd9d48f3e9ca5d03cc3fbf304d0
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.125-1ubuntu0.1%7e24.04.1.debian.tar.xz' libdrm_2.4.125-1ubuntu0.1~24.04.1.debian.tar.xz 77420 SHA256:4aafd01b29ee9c8cc96fc9dc690ddc34ecf49a7e6df3ad86b2b96dfe0efea047
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.125-1ubuntu0.1%7e24.04.1.dsc' libdrm_2.4.125-1ubuntu0.1~24.04.1.dsc 3249 SHA256:82888e0616ad9413d964efb332a7e71544fb5a56426d97b53c61f56f1e31d267
-```
 
 ### `dpkg` source package: `libedit=3.1-20230828-1build1`
 
@@ -5366,14 +5360,9 @@ Licenses: (parsed from: `/usr/share/doc/libva-drm2/copyright`, `/usr/share/doc/l
 - `GPL-2+`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libva=2.20.0-2ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/libv/libva/libva_2.20.0.orig.tar.xz' libva_2.20.0.orig.tar.xz 211632 SHA256:a19cbc3b537cd04f43a4511448bcd9fd0b065ea9a3f83efd590bac0a567b0752
-'http://archive.ubuntu.com/ubuntu/pool/universe/libv/libva/libva_2.20.0-2ubuntu0.1.debian.tar.xz' libva_2.20.0-2ubuntu0.1.debian.tar.xz 23224 SHA256:15bfb22a55d9f016ab42286a944a6fff8e61ee18b6b66044405aae0d17138b4f
-'http://archive.ubuntu.com/ubuntu/pool/universe/libv/libva/libva_2.20.0-2ubuntu0.1.dsc' libva_2.20.0-2ubuntu0.1.dsc 2563 SHA256:db1ea5d6b8dc82c5c98cc9d804fed232e3b3905d77a7837a4eb73f2a367d1e3a
-```
 
 ### `dpkg` source package: `libvdpau=1.5-2build1`
 
@@ -6125,15 +6114,9 @@ Licenses: (parsed from: `/usr/share/doc/libllvm20/copyright`)
 - `Python`
 - `solar-public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris llvm-toolchain-20=1:20.1.2-0ubuntu1~24.04.2
-'http://archive.ubuntu.com/ubuntu/pool/universe/l/llvm-toolchain-20/llvm-toolchain-20_20.1.2.orig-integration-test-suite.tar.gz' llvm-toolchain-20_20.1.2.orig-integration-test-suite.tar.gz 195387 SHA256:67362ff54fdbde5a09ce6614e8bcb5ae994bf6216584be895fcecd1299aa13c6
-'http://archive.ubuntu.com/ubuntu/pool/universe/l/llvm-toolchain-20/llvm-toolchain-20_20.1.2.orig.tar.gz' llvm-toolchain-20_20.1.2.orig.tar.gz 226701433 SHA256:9ee597456405ddf4809bcf66a4765137a68a85361347ca2a4bb13d9176e932ab
-'http://archive.ubuntu.com/ubuntu/pool/universe/l/llvm-toolchain-20/llvm-toolchain-20_20.1.2-0ubuntu1%7e24.04.2.debian.tar.xz' llvm-toolchain-20_20.1.2-0ubuntu1~24.04.2.debian.tar.xz 155044 SHA256:eb29a0694d02c942606eac5e6e17851be58b214f090d729a5ad1ef8aa170886e
-'http://archive.ubuntu.com/ubuntu/pool/universe/l/llvm-toolchain-20/llvm-toolchain-20_20.1.2-0ubuntu1%7e24.04.2.dsc' llvm-toolchain-20_20.1.2-0ubuntu1~24.04.2.dsc 8545 SHA256:1aa450028d18b744a01c730809fd27d50152e368e6113a1973f52a8b0f5210b5
-```
 
 ### `dpkg` source package: `lm-sensors=1:3.6.0-9build1`
 
@@ -6444,15 +6427,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `SGI`
 - `Unicode-DFS-2016`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=25.2.8-0ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_25.2.8.orig.tar.xz' mesa_25.2.8.orig.tar.xz 43813260 SHA256:097842f3e49d996868b38688db87b006f7d4541e93ce86d2f341d8b3e7be7c93
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_25.2.8.orig.tar.xz.asc' mesa_25.2.8.orig.tar.xz.asc 488 SHA256:dd9135ba5282d345eb029f99e7e089886eec26fa34d1471dfcd13a77f43fe33e
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_25.2.8-0ubuntu0.24.04.1.debian.tar.xz' mesa_25.2.8-0ubuntu0.24.04.1.debian.tar.xz 403560 SHA256:88c1164513cdcf69b1df7f0805e7b515ae44cdc530c57ce2754a92fd97ce80b2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_25.2.8-0ubuntu0.24.04.1.dsc' mesa_25.2.8-0ubuntu0.24.04.1.dsc 6172 SHA256:d41afcf563f933339b365ec9237d48d152c0a7a5a01aef9f0e3f2c884fc08d7f
-```
 
 ### `dpkg` source package: `more-itertools=10.2.0-1`
 

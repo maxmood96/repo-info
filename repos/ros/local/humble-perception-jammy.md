@@ -6053,14 +6053,9 @@ Licenses: (parsed from: `/usr/share/doc/libegl-mesa0/copyright`, `/usr/share/doc
 - `MLAA`
 - `SGI`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=23.2.1-1ubuntu3.1~22.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_23.2.1.orig.tar.gz' mesa_23.2.1.orig.tar.gz 30631591 SHA256:c1458ab511b87d60644b2c46d67f7d9d5c0e3db691db6aae11762b1cc5b43ca0
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_23.2.1-1ubuntu3.1%7e22.04.3.diff.gz' mesa_23.2.1-1ubuntu3.1~22.04.3.diff.gz 225765 SHA256:f43f7e603db34bb4f8fd8b41be102d112c23042e769d94a0d78fee0ee6ee7fd2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_23.2.1-1ubuntu3.1%7e22.04.3.dsc' mesa_23.2.1-1ubuntu3.1~22.04.3.dsc 5839 SHA256:908c0e80657133d321c701a8cd7b629854b87a46527ae430ee37f85c693da5d4
-```
 
 ### `dpkg` source package: `minizip=1.1-8build1`
 
