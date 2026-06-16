@@ -2453,21 +2453,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.6.2-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.2-1.dsc' openssl_3.6.2-1.dsc 2849 SHA256:c94552e5abc4935764624321bcd29e6c113c3c74af1b85239b523c9f01998e08
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.2.orig.tar.gz' openssl_3.6.2.orig.tar.gz 54913556 SHA256:aaf51a1fe064384f811daeaeb4ec4dce7340ec8bd893027eee676af31e83a04f
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.2.orig.tar.gz.asc' openssl_3.6.2.orig.tar.gz.asc 833 SHA256:c325b2975a9be4fe03425286badbe7a380a6f1e98325c180024182fca62396c1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.2-1.debian.tar.xz' openssl_3.6.2-1.debian.tar.xz 48404 SHA256:4fa6b0d775292b983fba3e5686c850253fc978e9c07c13efb6bca030ac2e93c3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.6.2-1/
 
-- https://sources.debian.net/src/openssl/3.6.2-1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.6.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.6.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.26.2-2`
 
@@ -2489,21 +2481,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `X11`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.26.2-2
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.2-2.dsc' p11-kit_0.26.2-2.dsc 2541 SHA256:066316279c279ca964caa83d92b0f9263914fbbe3c329419e3eec9ffb30540fb
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.2.orig.tar.xz' p11-kit_0.26.2.orig.tar.xz 1069216 SHA256:09fd9f44da4813a3141e73d5e7cf7008e5660d0405f13d56c15e1da9dcecf828
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.2.orig.tar.xz.asc' p11-kit_0.26.2.orig.tar.xz.asc 228 SHA256:a2c205bbac7857adc91eb2670304c2ac6649aa9eaf4aab81bf0e46e124f13d8b
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.2-2.debian.tar.xz' p11-kit_0.26.2-2.debian.tar.xz 24392 SHA256:1e0be1ac6c3f47a44305855b1c54e22064516a258eef911119c4944d5530b87f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.26.2-2/
 
-- https://sources.debian.net/src/p11-kit/0.26.2-2/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.26.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.26.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.7.0-5`
 
@@ -2735,21 +2719,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.13=3.13.12-1
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.12-1.dsc' python3.13_3.13.12-1.dsc 3699 SHA256:719bb6c94e12177e5005c66858f47c8f8d630ef89418b7f5494aeda4c5f6165d
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.12.orig.tar.xz' python3.13_3.13.12.orig.tar.xz 22926488 SHA256:2a84cd31dd8d8ea8aaff75de66fc1b4b0127dd5799aa50a64ae9a313885b4593
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.12.orig.tar.xz.asc' python3.13_3.13.12.orig.tar.xz.asc 963 SHA256:1a0f233d4f31ad9cdda8bfd4db856c74654704304816c00e5ca159e28fb1c925
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.12-1.debian.tar.xz' python3.13_3.13.12-1.debian.tar.xz 261232 SHA256:07004fa9fe09ee7d14cfc0037a04ab08c4c52e91721682b92720839b76abe2d2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.13/3.13.12-1/
 
-- https://sources.debian.net/src/python3.13/3.13.12-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.13/3.13.12-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.13/3.13.12-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.3-4`
 
@@ -2796,20 +2772,13 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=1.3.1-9
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-9.dsc' rust-sequoia-sq_1.3.1-9.dsc 4411 SHA256:3b3abcd570a439701df03e2da391c39180d3da73054ba949e80d8521d03c5e83
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1.orig.tar.gz' rust-sequoia-sq_1.3.1.orig.tar.gz 740320 SHA256:5c04b662da1c207e79beaeff6e5ab2d713ab10c1263f64c367f8489aac815705
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-9.debian.tar.xz' rust-sequoia-sq_1.3.1-9.debian.tar.xz 5620 SHA256:927ebcaaead2690937347b3dfa94ef4e67aab542c6c6555dc7ab093cc7fad147
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sq/1.3.1-9/
 
-- https://sources.debian.net/src/rust-sequoia-sq/1.3.1-9/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sq/1.3.1-9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sq/1.3.1-9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rust-sequoia-sqv=1.3.0-5`
 

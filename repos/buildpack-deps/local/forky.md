@@ -1075,20 +1075,13 @@ Licenses: (parsed from: `/usr/share/doc/libfftw3-bin/copyright`, `/usr/share/doc
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fftw3=3.3.10-2
-'http://deb.debian.org/debian/pool/main/f/fftw3/fftw3_3.3.10-2.dsc' fftw3_3.3.10-2.dsc 2754 SHA256:58bdea9754119c591f95e373c1c85ff2b6861383b20bf3bb1e81af9c76a51d71
-'http://deb.debian.org/debian/pool/main/f/fftw3/fftw3_3.3.10.orig.tar.gz' fftw3_3.3.10.orig.tar.gz 4144100 SHA256:56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467
-'http://deb.debian.org/debian/pool/main/f/fftw3/fftw3_3.3.10-2.debian.tar.xz' fftw3_3.3.10-2.debian.tar.xz 14628 SHA256:369066d9b28af25ac779ad23cce78be8dad3896bcbeb80de30d3d36b7a94fd67
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/fftw3/3.3.10-2/
 
-- https://sources.debian.net/src/fftw3/3.3.10-2/ (for browsing the source)
-- https://sources.debian.net/src/fftw3/3.3.10-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/fftw3/3.3.10-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `file=1:5.46-5`
 
@@ -1106,21 +1099,13 @@ Licenses: (parsed from: `/usr/share/doc/file/copyright`, `/usr/share/doc/libmagi
 - `MIT-Old-Style-with-legal-disclaimer-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris file=1:5.46-5
-'http://deb.debian.org/debian/pool/main/f/file/file_5.46-5.dsc' file_5.46-5.dsc 2268 SHA256:b88a9648e785c073e46565a464334e63bb205b9892f43e44c018861b9608c926
-'http://deb.debian.org/debian/pool/main/f/file/file_5.46.orig.tar.gz' file_5.46.orig.tar.gz 1312892 SHA256:c9cc77c7c560c543135edc555af609d5619dbef011997e988ce40a3d75d86088
-'http://deb.debian.org/debian/pool/main/f/file/file_5.46.orig.tar.gz.asc' file_5.46.orig.tar.gz.asc 201 SHA256:01e43559e64e173c9c9f02714fb48cf631ee810def768507f077ff1309c8badc
-'http://deb.debian.org/debian/pool/main/f/file/file_5.46-5.debian.tar.xz' file_5.46-5.debian.tar.xz 37008 SHA256:a74bd66a0351f15050fdc33d89b857d4761ba2041742f94e024a35685c43bb8c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/file/1:5.46-5/
 
-- https://sources.debian.net/src/file/1:5.46-5/ (for browsing the source)
-- https://sources.debian.net/src/file/1:5.46-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/file/1:5.46-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.10.0-4`
 
@@ -1960,20 +1945,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.2.23+dfsg1-1
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.23%2bdfsg1-1.dsc' imagemagick_7.1.2.23+dfsg1-1.dsc 5202 SHA256:7371f44468e7eefe22dde6843f88f7e58397af74a7c4e0a085092294be060a93
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.23%2bdfsg1.orig.tar.xz' imagemagick_7.1.2.23+dfsg1.orig.tar.xz 10541736 SHA256:7a1d744858b1bb409183e867700303e635f4ed7617599ca8f056943d184c75c4
-'http://deb.debian.org/debian/pool/main/i/imagemagick/imagemagick_7.1.2.23%2bdfsg1-1.debian.tar.xz' imagemagick_7.1.2.23+dfsg1-1.debian.tar.xz 272404 SHA256:3c7bd8c6067a57d8669af8b3e82f453ca14375c84aeead5e11d9de0504f92f33
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:7.1.2.23+dfsg1-1/
 
-- https://sources.debian.net/src/imagemagick/8:7.1.2.23+dfsg1-1/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:7.1.2.23+dfsg1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:7.1.2.23+dfsg1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.12-1`
 
@@ -4525,21 +4503,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.6.2-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.2-1.dsc' openssl_3.6.2-1.dsc 2849 SHA256:c94552e5abc4935764624321bcd29e6c113c3c74af1b85239b523c9f01998e08
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.2.orig.tar.gz' openssl_3.6.2.orig.tar.gz 54913556 SHA256:aaf51a1fe064384f811daeaeb4ec4dce7340ec8bd893027eee676af31e83a04f
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.2.orig.tar.gz.asc' openssl_3.6.2.orig.tar.gz.asc 833 SHA256:c325b2975a9be4fe03425286badbe7a380a6f1e98325c180024182fca62396c1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.2-1.debian.tar.xz' openssl_3.6.2-1.debian.tar.xz 48404 SHA256:4fa6b0d775292b983fba3e5686c850253fc978e9c07c13efb6bca030ac2e93c3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.6.2-1/
 
-- https://sources.debian.net/src/openssl/3.6.2-1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.6.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.6.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.26.2-2`
 
@@ -4562,21 +4532,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit-dev/copyright`, `/usr/share/d
 - `X11`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.26.2-2
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.2-2.dsc' p11-kit_0.26.2-2.dsc 2541 SHA256:066316279c279ca964caa83d92b0f9263914fbbe3c329419e3eec9ffb30540fb
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.2.orig.tar.xz' p11-kit_0.26.2.orig.tar.xz 1069216 SHA256:09fd9f44da4813a3141e73d5e7cf7008e5660d0405f13d56c15e1da9dcecf828
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.2.orig.tar.xz.asc' p11-kit_0.26.2.orig.tar.xz.asc 228 SHA256:a2c205bbac7857adc91eb2670304c2ac6649aa9eaf4aab81bf0e46e124f13d8b
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.26.2-2.debian.tar.xz' p11-kit_0.26.2-2.debian.tar.xz 24392 SHA256:1e0be1ac6c3f47a44305855b1c54e22064516a258eef911119c4944d5530b87f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.26.2-2/
 
-- https://sources.debian.net/src/p11-kit/0.26.2-2/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.26.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.26.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.7.0-5`
 
@@ -4992,21 +4954,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.13=3.13.12-1
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.12-1.dsc' python3.13_3.13.12-1.dsc 3699 SHA256:719bb6c94e12177e5005c66858f47c8f8d630ef89418b7f5494aeda4c5f6165d
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.12.orig.tar.xz' python3.13_3.13.12.orig.tar.xz 22926488 SHA256:2a84cd31dd8d8ea8aaff75de66fc1b4b0127dd5799aa50a64ae9a313885b4593
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.12.orig.tar.xz.asc' python3.13_3.13.12.orig.tar.xz.asc 963 SHA256:1a0f233d4f31ad9cdda8bfd4db856c74654704304816c00e5ca159e28fb1c925
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.12-1.debian.tar.xz' python3.13_3.13.12-1.debian.tar.xz 261232 SHA256:07004fa9fe09ee7d14cfc0037a04ab08c4c52e91721682b92720839b76abe2d2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.13/3.13.12-1/
 
-- https://sources.debian.net/src/python3.13/3.13.12-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.13/3.13.12-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.13/3.13.12-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.3-4`
 
@@ -5118,20 +5072,13 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=1.3.1-9
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-9.dsc' rust-sequoia-sq_1.3.1-9.dsc 4411 SHA256:3b3abcd570a439701df03e2da391c39180d3da73054ba949e80d8521d03c5e83
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1.orig.tar.gz' rust-sequoia-sq_1.3.1.orig.tar.gz 740320 SHA256:5c04b662da1c207e79beaeff6e5ab2d713ab10c1263f64c367f8489aac815705
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.3.1-9.debian.tar.xz' rust-sequoia-sq_1.3.1-9.debian.tar.xz 5620 SHA256:927ebcaaead2690937347b3dfa94ef4e67aab542c6c6555dc7ab093cc7fad147
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sq/1.3.1-9/
 
-- https://sources.debian.net/src/rust-sequoia-sq/1.3.1-9/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sq/1.3.1-9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sq/1.3.1-9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rust-sequoia-sqv=1.3.0-5`
 

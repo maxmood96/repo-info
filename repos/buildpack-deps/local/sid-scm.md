@@ -424,21 +424,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.20.0-5
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.20.0-5.dsc' curl_8.20.0-5.dsc 3334 SHA256:833d8fd1e3a1a628de31a9dc5abce8133905a9b608976899fbf32fae5d2a778d
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.20.0.orig.tar.gz' curl_8.20.0.orig.tar.gz 4220899 SHA256:fc5819cad3f9f5482669adcdc49a782c15f36d2a0715b395b06d9173593d2dc0
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.20.0.orig.tar.gz.asc' curl_8.20.0.orig.tar.gz.asc 488 SHA256:7050f6f9ba9110bdf53d401aa873030ab6dea5a705395aa1c67b3b880b92ec8a
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.20.0-5.debian.tar.xz' curl_8.20.0-5.debian.tar.xz 64400 SHA256:dda9f8c0b7b4822c42d9e17f7187ad233064c315ed71b071ca43c3cf29a860dc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.20.0-5/
 
-- https://sources.debian.net/src/curl/8.20.0-5/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.20.0-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.20.0-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-11`
 
@@ -2453,21 +2445,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.6.2-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.2-1.dsc' openssl_3.6.2-1.dsc 2849 SHA256:c94552e5abc4935764624321bcd29e6c113c3c74af1b85239b523c9f01998e08
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.2.orig.tar.gz' openssl_3.6.2.orig.tar.gz 54913556 SHA256:aaf51a1fe064384f811daeaeb4ec4dce7340ec8bd893027eee676af31e83a04f
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.2.orig.tar.gz.asc' openssl_3.6.2.orig.tar.gz.asc 833 SHA256:c325b2975a9be4fe03425286badbe7a380a6f1e98325c180024182fca62396c1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.2-1.debian.tar.xz' openssl_3.6.2-1.debian.tar.xz 48404 SHA256:4fa6b0d775292b983fba3e5686c850253fc978e9c07c13efb6bca030ac2e93c3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.6.2-1/
 
-- https://sources.debian.net/src/openssl/3.6.2-1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.6.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.6.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.26.2-2`
 
@@ -2952,21 +2936,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-9
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1-9.dsc' sqlite3_3.46.1-9.dsc 2641 SHA256:9ebf8f5168120f5950abe53a6f995db5b7fbda0daefb85864c2bd7ff1d18a5dd
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA256:648df41a8e532882b1905df45919aae4bafaf74c455f66bc86f1f52f45c8b8f0
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA256:d0cdd2ece271b29e7ce18095745d892517ee26d0f270065b3a25c2e9eb11639c
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.46.1-9.debian.tar.xz' sqlite3_3.46.1-9.debian.tar.xz 35848 SHA256:df4c95da200c01221809dc60f2b60618025c3f8565f43e6a5b18a7e34b5d615c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sqlite3/3.46.1-9/
 
-- https://sources.debian.net/src/sqlite3/3.46.1-9/ (for browsing the source)
-- https://sources.debian.net/src/sqlite3/3.46.1-9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sqlite3/3.46.1-9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `subversion=1.14.5-6`
 
@@ -3214,20 +3190,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.42.1-3
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42.1-3.dsc' util-linux_2.42.1-3.dsc 5331 SHA256:c1ea12942b4268659f28f199534944c8bd6a9a5ba39a6641371c192bfda306e6
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42.1.orig.tar.xz' util-linux_2.42.1.orig.tar.xz 10639396 SHA256:82e9158eb12a9b0b569d84e1687fed9dd18fe89ccd8ef5ac3427218a7c0d7f7f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.42.1-3.debian.tar.xz' util-linux_2.42.1-3.debian.tar.xz 102424 SHA256:60a852195115677b3c16a25cf370e37174e10b99668aa8970c936bb70e3389cd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.42.1-3/
 
-- https://sources.debian.net/src/util-linux/2.42.1-3/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.42.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.42.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
