@@ -1,7 +1,7 @@
 ## `alpine:latest`
 
 ```console
-$ docker pull alpine@sha256:f5064d3e5f88c467c714509f491853ab2d951932c5cad699c0cb969dcec6f3b4
+$ docker pull alpine@sha256:28bd5fe8b56d1bd048e5babf5b10710ebe0bae67db86916198a6eec434943f8b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -316,49 +316,49 @@ $ docker pull alpine@sha256:7a21929832908e662272c6e3333f68c662e3854ad4956e49d995
 ### `alpine:latest` - linux; riscv64
 
 ```console
-$ docker pull alpine@sha256:0095233a1a205a9b7e5f63ee6c9e7a3a42c98d7851bd595a6556074eb0a38b45
+$ docker pull alpine@sha256:20a26477b54fb521bc8f633ea0af1f8f9b3dac5661739f857b381b117226919b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3591852 bytes)**  
+-	Total Size: **3.6 MB (3574358 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ca416f19913689e188cdcd03cc0544bdf9c6942e5ab98b1bd57ce92b30259d14`
+-	Image ID: `sha256:792407d5148bf79d4c52139c9bd22fee27dddb2ef5f0b0e4bb9d9aeac06de5cd`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:23:10 GMT
-ADD alpine-minirootfs-3.24.0-riscv64.tar.gz / # buildkit
-# Wed, 10 Jun 2026 00:23:10 GMT
+# Tue, 16 Jun 2026 05:59:15 GMT
+ADD alpine-minirootfs-3.24.1-riscv64.tar.gz / # buildkit
+# Tue, 16 Jun 2026 05:59:15 GMT
 CMD ["/bin/sh"]
 ```
 
 -	Layers:
-	-	`sha256:3d2f730dbeff3c2e957669de5d586604e82939f67ebfd9142872c9ff56603e07`  
-		Last Modified: Wed, 10 Jun 2026 00:23:34 GMT  
-		Size: 3.6 MB (3591852 bytes)  
+	-	`sha256:c34e5222b29b86391cdae95b0473ef789493ff1a0068a3a30b5d66f544bd7cf6`  
+		Last Modified: Sun, 14 Jun 2026 06:47:00 GMT  
+		Size: 3.6 MB (3574358 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `alpine:latest` - unknown; unknown
 
 ```console
-$ docker pull alpine@sha256:38d44f7da3dce1b6286710ccc2b2d745f5c474d9cb524f8e61a569482338d4ef
+$ docker pull alpine@sha256:83b3fe59c5ee68a257a6e179c792b9bd5b0aceb02ceb2813f14eef469a020c00
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **84.7 KB (84726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f5a84860007512a5ddb82eade95762bf7b144f59a6747d38fbdc5b667e62771b`
+-	Image ID: `sha256:d1eb1fdf4c534fe89b9c181f02f77efe97d50f68e87a8fa91997363e7d261bd4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bb24c1a66d238ac18a1ba88d600537d9aa5386dec50f830e5d0ec56db74451e4`  
-		Last Modified: Wed, 10 Jun 2026 00:23:33 GMT  
+	-	`sha256:59e1320095ce23741e0df4423216ab700611566b7722b65ed48d0801e34a332e`  
+		Last Modified: Tue, 16 Jun 2026 05:59:38 GMT  
 		Size: 79.1 KB (79052 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b6910bf006a33e8780e8a4b0e25127735efd970c39788e80a7d365ea71fa8fd8`  
-		Last Modified: Wed, 10 Jun 2026 00:23:34 GMT  
+	-	`sha256:d16a78c0c07d211fb8fdd9f0e59841f379fc5d059a54a53ec69827db230a5054`  
+		Last Modified: Tue, 16 Jun 2026 05:59:38 GMT  
 		Size: 5.7 KB (5674 bytes)  
 		MIME: application/vnd.in-toto+json
 
