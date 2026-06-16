@@ -1483,21 +1483,13 @@ Licenses: (parsed from: `/usr/share/doc/libgsasl18/copyright`)
 - `LGPL-2.1+`
 - `other`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gsasl=2.2.2-1.1+deb13u1
-'http://deb.debian.org/debian-security/pool/updates/main/g/gsasl/gsasl_2.2.2-1.1%2bdeb13u1.dsc' gsasl_2.2.2-1.1+deb13u1.dsc 3334 SHA256:12e2d635dfe80fb7eb1d15b9b71217ae71f31c367feda09ab9f613379de102fa
-'http://deb.debian.org/debian-security/pool/updates/main/g/gsasl/gsasl_2.2.2.orig.tar.gz' gsasl_2.2.2.orig.tar.gz 771705 SHA256:960f3fb6c719504a4b32f106513a476ee208d4845711942c22a66c4852236c1e
-'http://deb.debian.org/debian-security/pool/updates/main/g/gsasl/gsasl_2.2.2.orig.tar.gz.asc' gsasl_2.2.2.orig.tar.gz.asc 1223 SHA256:d6341544aed6beec7ea4860b58057763cc5a751b91804e3b27f7e3d00e35a63e
-'http://deb.debian.org/debian-security/pool/updates/main/g/gsasl/gsasl_2.2.2-1.1%2bdeb13u1.debian.tar.xz' gsasl_2.2.2-1.1+deb13u1.debian.tar.xz 17472 SHA256:a0597aab2cb5fb4551fa712a717f6f22543c34cadd89102289c2f7777e91a670
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gsasl/2.2.2-1.1+deb13u1/
 
-- https://sources.debian.net/src/gsasl/2.2.2-1.1+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/gsasl/2.2.2-1.1+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gsasl/2.2.2-1.1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gzip=1.13-1`
 
