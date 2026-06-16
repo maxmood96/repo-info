@@ -1208,21 +1208,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.6.2-1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.2-1.dsc' openssl_3.6.2-1.dsc 2849 SHA256:c94552e5abc4935764624321bcd29e6c113c3c74af1b85239b523c9f01998e08
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.2.orig.tar.gz' openssl_3.6.2.orig.tar.gz 54913556 SHA256:aaf51a1fe064384f811daeaeb4ec4dce7340ec8bd893027eee676af31e83a04f
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.2.orig.tar.gz.asc' openssl_3.6.2.orig.tar.gz.asc 833 SHA256:c325b2975a9be4fe03425286badbe7a380a6f1e98325c180024182fca62396c1
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.6.2-1.debian.tar.xz' openssl_3.6.2-1.debian.tar.xz 48404 SHA256:4fa6b0d775292b983fba3e5686c850253fc978e9c07c13efb6bca030ac2e93c3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.6.2-1/
 
-- https://sources.debian.net/src/openssl/3.6.2-1/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.6.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.6.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.7.0-5`
 
