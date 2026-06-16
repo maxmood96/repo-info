@@ -1760,15 +1760,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdrm=2.4.125-1ubuntu0.1~24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.125.orig.tar.xz' libdrm_2.4.125.orig.tar.xz 485592 SHA256:d4bae92797a50f81a93524762e0410a49cd84cfa0f997795bc0172ac8fb1d96a
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.125.orig.tar.xz.asc' libdrm_2.4.125.orig.tar.xz.asc 833 SHA256:d13820b5488bddee445c1afca57402ec2560cbd9d48f3e9ca5d03cc3fbf304d0
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.125-1ubuntu0.1%7e24.04.1.debian.tar.xz' libdrm_2.4.125-1ubuntu0.1~24.04.1.debian.tar.xz 77420 SHA256:4aafd01b29ee9c8cc96fc9dc690ddc34ecf49a7e6df3ad86b2b96dfe0efea047
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.125-1ubuntu0.1%7e24.04.1.dsc' libdrm_2.4.125-1ubuntu0.1~24.04.1.dsc 3249 SHA256:82888e0616ad9413d964efb332a7e71544fb5a56426d97b53c61f56f1e31d267
-```
 
 ### `dpkg` source package: `libe-book=0.1.3-2build6`
 
