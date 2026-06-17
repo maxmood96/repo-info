@@ -413,13 +413,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20240203~22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20240203%7e22.04.1.tar.xz' ca-certificates_20240203~22.04.1.tar.xz 263132 SHA256:1b2e51618421eb9375f2453156174b1addbaa91287567ef166c2554e2e78a17f
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20240203%7e22.04.1.dsc' ca-certificates_20240203~22.04.1.dsc 1850 SHA256:7a3f07d20b3488cbdeb8ee03a81dcb7b4b3e608f73dbf6774de705a9cd7e451b
-```
 
 ### `dpkg` source package: `cairo=1.16.0-5ubuntu2.1`
 
@@ -4867,14 +4863,9 @@ Licenses: (parsed from: `/usr/share/doc/libgbm1/copyright`, `/usr/share/doc/libg
 - `MLAA`
 - `SGI`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mesa=23.2.1-1ubuntu3.1~22.04.3
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_23.2.1.orig.tar.gz' mesa_23.2.1.orig.tar.gz 30631591 SHA256:c1458ab511b87d60644b2c46d67f7d9d5c0e3db691db6aae11762b1cc5b43ca0
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_23.2.1-1ubuntu3.1%7e22.04.3.diff.gz' mesa_23.2.1-1ubuntu3.1~22.04.3.diff.gz 225765 SHA256:f43f7e603db34bb4f8fd8b41be102d112c23042e769d94a0d78fee0ee6ee7fd2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/mesa_23.2.1-1ubuntu3.1%7e22.04.3.dsc' mesa_23.2.1-1ubuntu3.1~22.04.3.dsc 5839 SHA256:908c0e80657133d321c701a8cd7b629854b87a46527ae430ee37f85c693da5d4
-```
 
 ### `dpkg` source package: `mhash=0.9.9.9-9build2`
 
