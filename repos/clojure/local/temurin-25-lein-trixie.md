@@ -1,10 +1,10 @@
-# `clojure:lein-2.12.0-trixie`
+# `clojure:lein-2.13.0-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7035238b98d8a5e40aab5b905a598ee3261fe4c300850c0eabb2621244b1cbc7`
-- Created: `2026-06-11T01:20:59.63081559Z`
-- Virtual Size: ~ 414.40 Mb  
+- Image ID: `sha256:959615b69679b14d3da7f6e840ffe3d02440a447e2d2ae96da734478a889cd37`
+- Created: `2026-06-16T23:39:09.930906912Z`
+- Virtual Size: ~ 414.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `LEIN_VERSION=2.12.0`
+  - `LEIN_VERSION=2.13.0`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
 

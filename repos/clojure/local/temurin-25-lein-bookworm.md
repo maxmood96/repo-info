@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:03eae289249585e5b9185ce164dbf3b247f72c2c4aa225365657740c0258b7d3`
-- Created: `2026-06-11T01:20:52.48917851Z`
-- Virtual Size: ~ 413.94 Mb  
+- Image ID: `sha256:3851c50426cd385bddbd8930178abd6f19251f836b91ac7af5d7c8bfbbb0ad9c`
+- Created: `2026-06-16T23:36:39.637588313Z`
+- Virtual Size: ~ 414.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `LEIN_VERSION=2.12.0`
+  - `LEIN_VERSION=2.13.0`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
 

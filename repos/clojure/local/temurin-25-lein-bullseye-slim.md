@@ -1,10 +1,10 @@
-# `clojure:lein-2.12.0-bullseye-slim`
+# `clojure:lein-2.13.0-bullseye-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a4aa280bb9366f6b1fe86052477ee768d08d70e1f26560984c8e334aec49feef`
-- Created: `2026-06-11T01:20:50.221034898Z`
-- Virtual Size: ~ 369.03 Mb  
+- Image ID: `sha256:b9e93abc84a2f72d3f8f22dcbcc9dfa22ec124a0dc8db6c18a5d47c67d6ec547`
+- Created: `2026-06-16T23:38:50.000931486Z`
+- Virtual Size: ~ 369.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `LEIN_VERSION=2.12.0`
+  - `LEIN_VERSION=2.13.0`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
 
@@ -1511,7 +1511,24 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libssl1.1:amd64=1.1.1w-0+deb11u7`
-- `openssl=1.1.1w-0+deb11u7`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u7/
+
+
+### `dpkg` source package: `openssl=1.1.1w-0+deb11u8`
+
+Binary Packages:
+
+- `openssl=1.1.1w-0+deb11u8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1520,18 +1537,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssl=1.1.1w-0+deb11u7
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u7.dsc' openssl_1.1.1w-0+deb11u7.dsc 2684 SHA256:3ac2de6b2215777d8c9ad226c3d605a1d8c565b2b6c46407d9cf63bcb6cf06da
+$ apt-get source -qq --print-uris openssl=1.1.1w-0+deb11u8
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u8.dsc' openssl_1.1.1w-0+deb11u8.dsc 2684 SHA256:92dfbc227edb3a124276544e5c4d92aa738167fb43b9cc98611362db559e0406
 'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz' openssl_1.1.1w.orig.tar.gz 9893384 SHA256:cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8
 'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz.asc' openssl_1.1.1w.orig.tar.gz.asc 833 SHA256:5e5c3694cda755231c0438ac3c96af00d7510abd7b916d79c51bb979567040db
-'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u7.debian.tar.xz' openssl_1.1.1w-0+deb11u7.debian.tar.xz 118236 SHA256:bf6eb486699b33a79006023e33ad6155dac105dddf7f10521c22bdb2fec8f5be
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u8.debian.tar.xz' openssl_1.1.1w-0+deb11u8.debian.tar.xz 126496 SHA256:1b9aab73493a39ccab81f22092abce8d4857deeb5a084c2dcf89e60ec108c818
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u7/ (for browsing the source)
-- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u7/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u8/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.22-1`
 
@@ -1717,6 +1734,34 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sed/4.7-1/ (for browsing the source)
 - https://sources.debian.net/src/sed/4.7-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sed/4.7-1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `sensible-utils=0.0.14`
+
+Binary Packages:
+
+- `sensible-utils=0.0.14`
+
+Licenses: (parsed from: `/usr/share/doc/sensible-utils/copyright`)
+
+- `All-permissive`
+- `GPL-2`
+- `GPL-2+`
+- `configure`
+- `installsh`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris sensible-utils=0.0.14
+'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.14.dsc' sensible-utils_0.0.14.dsc 1702 SHA256:002f637ca92db8bab28048cbab10d6509508508806e2005f4dc6ba3ca505a6d8
+'http://deb.debian.org/debian/pool/main/s/sensible-utils/sensible-utils_0.0.14.tar.xz' sensible-utils_0.0.14.tar.xz 64448 SHA256:a6ee528bf4122d77acacdb97f20cd0434a12ad3ecd119186a5fcee066844c644
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/sensible-utils/0.0.14/ (for browsing the source)
+- https://sources.debian.net/src/sensible-utils/0.0.14/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sensible-utils/0.0.14/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `shadow=1:4.8.1-1+deb11u1`
 

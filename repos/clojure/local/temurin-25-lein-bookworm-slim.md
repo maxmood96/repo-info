@@ -1,10 +1,10 @@
-# `clojure:lein-2.12.0-bookworm-slim`
+# `clojure:lein-2.13.0-bookworm-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:59579c5864c8909e565da2b12bbbc084d05f3f088937a883f0359eb1e1f36096`
-- Created: `2026-06-11T01:20:47.114028965Z`
-- Virtual Size: ~ 369.27 Mb  
+- Image ID: `sha256:579495097b748ec733b75d12710fe2386b7cbdf04771fd477fecf73bb57c81e4`
+- Created: `2026-06-16T23:38:07.624215436Z`
+- Virtual Size: ~ 369.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `LEIN_VERSION=2.12.0`
+  - `LEIN_VERSION=2.13.0`
   - `LEIN_INSTALL=/usr/local/bin/`
   - `LEIN_ROOT=1`
 
