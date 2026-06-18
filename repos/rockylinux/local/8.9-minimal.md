@@ -1,10 +1,9 @@
 # `rockylinux:8.9.20231119-minimal`
-
 ## Docker Metadata
 
 - Image ID: `sha256:f63d8d2889fdbb0b12bde4a7879e843b13c1d61f93562d8a41729244536214d9`
 - Created: `2023-11-24T18:24:04Z`
-- Virtual Size: ~ 93.30 Mb  
+- Virtual Size: ~ 93.3 Mb
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -264,7 +263,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url langpacks-en-1.0-12.el8.noarch
-https://us.mirrors.cicku.me/rocky/8.10/AppStream/source/tree/Packages/l/langpacks-1.0-12.el8.src.rpm
+https://rocky.mirror.shastacoe.net/rocky/8.10/AppStream/source/tree/Packages/l/langpacks-1.0-12.el8.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.2.53-1.el8.1.x86_64`
