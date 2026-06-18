@@ -62,6 +62,30 @@
 -	[`golang:1.26.4-windowsservercore`](#golang1264-windowsservercore)
 -	[`golang:1.26.4-windowsservercore-ltsc2022`](#golang1264-windowsservercore-ltsc2022)
 -	[`golang:1.26.4-windowsservercore-ltsc2025`](#golang1264-windowsservercore-ltsc2025)
+-	[`golang:1.27-rc`](#golang127-rc)
+-	[`golang:1.27-rc-alpine`](#golang127-rc-alpine)
+-	[`golang:1.27-rc-alpine3.23`](#golang127-rc-alpine323)
+-	[`golang:1.27-rc-alpine3.24`](#golang127-rc-alpine324)
+-	[`golang:1.27-rc-bookworm`](#golang127-rc-bookworm)
+-	[`golang:1.27-rc-nanoserver`](#golang127-rc-nanoserver)
+-	[`golang:1.27-rc-nanoserver-ltsc2022`](#golang127-rc-nanoserver-ltsc2022)
+-	[`golang:1.27-rc-nanoserver-ltsc2025`](#golang127-rc-nanoserver-ltsc2025)
+-	[`golang:1.27-rc-trixie`](#golang127-rc-trixie)
+-	[`golang:1.27-rc-windowsservercore`](#golang127-rc-windowsservercore)
+-	[`golang:1.27-rc-windowsservercore-ltsc2022`](#golang127-rc-windowsservercore-ltsc2022)
+-	[`golang:1.27-rc-windowsservercore-ltsc2025`](#golang127-rc-windowsservercore-ltsc2025)
+-	[`golang:1.27rc1`](#golang127rc1)
+-	[`golang:1.27rc1-alpine`](#golang127rc1-alpine)
+-	[`golang:1.27rc1-alpine3.23`](#golang127rc1-alpine323)
+-	[`golang:1.27rc1-alpine3.24`](#golang127rc1-alpine324)
+-	[`golang:1.27rc1-bookworm`](#golang127rc1-bookworm)
+-	[`golang:1.27rc1-nanoserver`](#golang127rc1-nanoserver)
+-	[`golang:1.27rc1-nanoserver-ltsc2022`](#golang127rc1-nanoserver-ltsc2022)
+-	[`golang:1.27rc1-nanoserver-ltsc2025`](#golang127rc1-nanoserver-ltsc2025)
+-	[`golang:1.27rc1-trixie`](#golang127rc1-trixie)
+-	[`golang:1.27rc1-windowsservercore`](#golang127rc1-windowsservercore)
+-	[`golang:1.27rc1-windowsservercore-ltsc2022`](#golang127rc1-windowsservercore-ltsc2022)
+-	[`golang:1.27rc1-windowsservercore-ltsc2025`](#golang127rc1-windowsservercore-ltsc2025)
 -	[`golang:alpine`](#golangalpine)
 -	[`golang:alpine3.23`](#golangalpine323)
 -	[`golang:alpine3.24`](#golangalpine324)
@@ -24811,6 +24835,222 @@ WORKDIR C:\go
 		Last Modified: Tue, 09 Jun 2026 22:24:19 GMT  
 		Size: 1.4 KB (1436 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `golang:1.27-rc`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27-rc-alpine`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27-rc-alpine3.23`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27-rc-alpine3.24`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27-rc-bookworm`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27-rc-nanoserver`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27-rc-nanoserver-ltsc2022`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27-rc-nanoserver-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27-rc-trixie`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27-rc-windowsservercore`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27-rc-windowsservercore-ltsc2022`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27-rc-windowsservercore-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27rc1`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27rc1-alpine`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27rc1-alpine3.23`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27rc1-alpine3.24`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27rc1-bookworm`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27rc1-nanoserver`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27rc1-nanoserver-ltsc2022`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27rc1-nanoserver-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27rc1-trixie`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27rc1-windowsservercore`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27rc1-windowsservercore-ltsc2022`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `golang:1.27rc1-windowsservercore-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `golang:alpine`
 
