@@ -1,10 +1,9 @@
-# `postfixadmin:4.0.1-fpm`
-
+# `postfixadmin:4.0.3-fpm`
 ## Docker Metadata
 
-- Image ID: `sha256:bdcd3137423f964418ae6d1fea2a5d68c02e40ed55fadaf9ca1f74b4ecc1175e`
-- Created: `2026-06-11T02:35:49.6425269Z`
-- Virtual Size: ~ 580.54 Mb  
+- Image ID: `sha256:98b11d9e2123e4a756568e9719d1e6f96dc401523bdee5c21888a187ec9b4eb3`
+- Created: `2026-06-16T02:22:06.681357871Z`
+- Virtual Size: ~ 580.54 Mb
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -21,8 +20,8 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.3.31.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.31.tar.xz.asc`
   - `PHP_SHA256=66410cee07f4b2baeb0843140bb2a2b52ef930b5cf9b3d6e6d158b33aae8fa37`
-  - `POSTFIXADMIN_VERSION=4.0.1`
-  - `POSTFIXADMIN_SHA512=88be6834257580c7a52dce33ce552e1868a1b28ba639a3378a66278939640073af4f8893fbfac690e2df5e67db0143c5726aab575bf0e4014b39a03d46916831`
+  - `POSTFIXADMIN_VERSION=4.0.3`
+  - `POSTFIXADMIN_SHA512=b1f0261bf9cab0529ea43fb502bdef595c81350671c0e4b3fc6609335448552a3d7b649d8f4612473cc07bfe4bd1c6ba7800dc080a0fdf4247f5d81718ff2360`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 - Labels:
   - `maintainer=David Goodwin <david@codepoets.co.uk> (@DavidGoodwin)`
