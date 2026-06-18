@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fff3594bf464bea0f502788874403882d8bbbe618b3250f8649e7e42fd118020`
-- Created: `2026-05-14T19:03:47.733148088Z`
-- Virtual Size: ~ 276.20 Mb  
+- Image ID: `sha256:c3f20eb183be5a050ba1ec7649436068a1ce25bfd59e7f2554086fc27b55ae14`
+- Created: `2026-06-16T23:01:08.270930388Z`
+- Virtual Size: ~ 298.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `PG_MAJOR=16`
   - `PG_VERSION=16.14`
   - `PG_SHA256=f6d077142737920858ce958ccdb75c6ee137a63b5b0853c70693d401ac7e3471`
-  - `DOCKER_PG_LLVM_DEPS=llvm19-dev 		clang19`
+  - `DOCKER_PG_LLVM_DEPS=llvm21-dev 		clang21`
   - `PGDATA=/var/lib/postgresql/data`
 
 ## `apk` (`.apk`-based packages)
@@ -313,16 +313,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.6-r0 description:
+libcrypto3-3.5.7-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.6-r0 webpage:
+libcrypto3-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.6-r0 installed size:
+libcrypto3-3.5.7-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.6-r0 license:
+libcrypto3-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -381,16 +381,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.10-r0 description:
+libldap-2.6.13-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.10-r0 webpage:
+libldap-2.6.13-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.10-r0 installed size:
+libldap-2.6.13-r0 installed size:
 365 KiB
 
-libldap-2.6.10-r0 license:
+libldap-2.6.13-r0 license:
 OLDAP-2.8
 
 ```
@@ -432,16 +432,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.6-r0 description:
+libssl3-3.5.7-r0 description:
 SSL shared libraries
 
-libssl3-3.5.6-r0 webpage:
+libssl3-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.6-r0 installed size:
+libssl3-3.5.7-r0 installed size:
 819 KiB
 
-libssl3-3.5.6-r0 license:
+libssl3-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -500,16 +500,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.9-r0 description:
+libxml2-2.13.9-r1 description:
 XML parsing library, version 2
 
-libxml2-2.13.9-r0 webpage:
+libxml2-2.13.9-r1 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.9-r0 installed size:
+libxml2-2.13.9-r1 installed size:
 1046 KiB
 
-libxml2-2.13.9-r0 license:
+libxml2-2.13.9-r1 license:
 MIT
 
 ```
@@ -531,20 +531,20 @@ X11
 
 ```
 
-### `apk` package: `llvm19-libs`
+### `apk` package: `llvm21-libs`
 
 ```console
-llvm19-libs-19.1.7-r7 description:
-LLVM 19 runtime library
+llvm21-libs-21.1.2-r1 description:
+LLVM 21 runtime library
 
-llvm19-libs-19.1.7-r7 webpage:
+llvm21-libs-21.1.2-r1 webpage:
 https://llvm.org/
 
-llvm19-libs-19.1.7-r7 installed size:
-153 MiB
+llvm21-libs-21.1.2-r1 installed size:
+170 MiB
 
-llvm19-libs-19.1.7-r7 license:
-Apache-2.0 WITH LLVM-exception
+llvm21-libs-21.1.2-r1 license:
+Apache-2.0
 
 ```
 

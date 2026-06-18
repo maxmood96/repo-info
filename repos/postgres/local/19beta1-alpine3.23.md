@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4d106b16cb32d835125a64e530804cab0a9346e90d9d910b5bb34ebcc384f9b9`
-- Created: `2026-06-06T00:23:02.951156649Z`
-- Virtual Size: ~ 288.41 Mb  
+- Image ID: `sha256:17ce9d9cb7ea07027a89dab3f29db63f7d0f3745ca1ca35e6b30b576b64d823e`
+- Created: `2026-06-16T23:00:04.284756807Z`
+- Virtual Size: ~ 311.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `PG_MAJOR=19`
   - `PG_VERSION=19beta1`
   - `PG_SHA256=d8c8d3e18c12e9fb792b3e927049900d40571f4ef6167017a23e5bbfc40d30ee`
-  - `DOCKER_PG_LLVM_DEPS=llvm19-dev 		clang19`
+  - `DOCKER_PG_LLVM_DEPS=llvm21-dev 		clang21`
   - `PGDATA=/var/lib/postgresql/19/docker`
 
 ## `apk` (`.apk`-based packages)
@@ -347,16 +347,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.6-r0 description:
+libcrypto3-3.5.7-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.6-r0 webpage:
+libcrypto3-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.6-r0 installed size:
+libcrypto3-3.5.7-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.6-r0 license:
+libcrypto3-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -517,16 +517,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.6-r0 description:
+libssl3-3.5.7-r0 description:
 SSL shared libraries
 
-libssl3-3.5.6-r0 webpage:
+libssl3-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.6-r0 installed size:
+libssl3-3.5.7-r0 installed size:
 819 KiB
 
-libssl3-3.5.6-r0 license:
+libssl3-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -650,20 +650,20 @@ X11
 
 ```
 
-### `apk` package: `llvm19-libs`
+### `apk` package: `llvm21-libs`
 
 ```console
-llvm19-libs-19.1.7-r7 description:
-LLVM 19 runtime library
+llvm21-libs-21.1.2-r1 description:
+LLVM 21 runtime library
 
-llvm19-libs-19.1.7-r7 webpage:
+llvm21-libs-21.1.2-r1 webpage:
 https://llvm.org/
 
-llvm19-libs-19.1.7-r7 installed size:
-153 MiB
+llvm21-libs-21.1.2-r1 installed size:
+170 MiB
 
-llvm19-libs-19.1.7-r7 license:
-Apache-2.0 WITH LLVM-exception
+llvm21-libs-21.1.2-r1 license:
+Apache-2.0
 
 ```
 
