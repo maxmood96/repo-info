@@ -1,9 +1,10 @@
 # `php:8.5.7-zts-alpine3.23`
+
 ## Docker Metadata
 
 - Image ID: `sha256:85962990d7f56fc4bcf777f4628fe8cf2640ae19278e54ef2975e3af03850680`
 - Created: `2026-06-05T01:17:39.922019469Z`
-- Virtual Size: ~ 164.33 Mb
+- Virtual Size: ~ 164.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`

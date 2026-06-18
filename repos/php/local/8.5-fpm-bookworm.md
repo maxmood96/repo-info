@@ -1,9 +1,10 @@
 # `php:8.5.7-fpm-bookworm`
+
 ## Docker Metadata
 
 - Image ID: `sha256:299e05d9bf6451ac7593bad19133753545ff1ff7cadf4ad417f0aee1c3c64b7b`
 - Created: `2026-06-11T00:27:38.820493979Z`
-- Virtual Size: ~ 519.22 Mb
+- Virtual Size: ~ 519.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`

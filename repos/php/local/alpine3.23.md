@@ -1,9 +1,10 @@
 # `php:8.5.7-cli-alpine3.23`
+
 ## Docker Metadata
 
 - Image ID: `sha256:07032c8aa6f2b7384eb4bfe9d384f043ef21f58095d2545bdf47560591cd3776`
 - Created: `2026-06-05T01:15:56.999726619Z`
-- Virtual Size: ~ 137.74 Mb
+- Virtual Size: ~ 137.74 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
