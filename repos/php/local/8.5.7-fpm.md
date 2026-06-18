@@ -1,10 +1,9 @@
 # `php:8.5.7-fpm-trixie`
-
 ## Docker Metadata
 
 - Image ID: `sha256:bca1fa1bd3e9717861670fedbed18a857b1992d7bbbe353eb2b9e6c2eb06c800`
 - Created: `2026-06-11T00:26:28.037458435Z`
-- Virtual Size: ~ 516.31 Mb  
+- Virtual Size: ~ 516.31 Mb
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
