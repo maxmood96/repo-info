@@ -26,35 +26,49 @@ docker create \
 
 echo '# `'"$image"'`'
 
-size="$(
-	docker inspect -f '{{ if index . "VirtualSize" }}{{ .VirtualSize }}{{ else }}{{ .Size }}{{ end }}' "$image" | awk '{
-		oneKb = 1000;
-		oneMb = 1000 * oneKb;
-		oneGb = 1000 * oneMb;
-		if ($1 >= oneGb) {
-			printf "~ %.2f Gb", $1 / oneGb
-		} else if ($1 >= oneMb) {
-			printf "~ %.2f Mb", $1 / oneMb
-		} else if ($1 >= oneKb) {
-			printf "~ %.2f Kb", $1 / oneKb
-		} else {
-			printf "%d bytes", $1
-		}
-	}'
-)"
-
-docker inspect -f '
-## Docker Metadata
-
-- Image ID: `{{ .Id }}`
-- Created: `{{ .Created }}`
-- Virtual Size: '"$size"'  
-  (total size of all layers on-disk)
-- Arch: `{{ .Os }}`/`{{ .Architecture }}`
-{{ if index .Config "Entrypoint" }}- Entrypoint: `{{ json .Config.Entrypoint }}`
-{{ end }}{{ if index .Config "Cmd" }}- Command: `{{ json .Config.Cmd }}`
-{{ end }}- Environment:{{ range .Config.Env }}{{ "\n" }}  - `{{ . }}`{{ end }}{{ if .Config.Labels }}
-- Labels:{{ range $k, $v := .Config.Labels }}{{ "\n" }}  - `{{ $k }}={{ $v }}`{{ end }}{{ end }}' "$image"
+docker inspect -f 'json' "$image" | jq --raw-output '
+	.[] # docker inspect returns a list of inspections
+	| [
+		"## Docker Metadata",
+		"",
+		"- Image ID: `\( .Id // .ID )`",
+		"- Created: `\( .Created )`",
+		"- Virtual Size: \(
+			def twoDecimals:
+				. * 100 | round / 100
+			;
+			.VirtualSize // .Size
+			| tonumber
+			| 1000 as $oneKb
+			| (1000 * $oneKb) as $oneMb
+			| (1000 * $oneMb) as $oneGb
+			| if . >= $oneGb then
+				"~ \( . / $oneGb | twoDecimals ) Gb"
+			elif . >= $oneMb then
+				"~ \( . / $oneMb | twoDecimals ) Mb"
+			elif . >= $oneKb then
+				"~ \( . / $oneKb | twoDecimals ) Kb"
+			else
+				"\(.) bytes"
+			end
+		)",
+		"  (total size of all layers on-disk)",
+		"- Arch: `\( .Os )`/`\( .Architecture )`",
+		if .Config.Entrypoint then
+			"- Entrypoint: `\( .Config.Entrypoint )`"
+		else empty end,
+		if .Config.Cmd then
+			"- Command: `\( .Config.Cmd )`"
+		else empty end,
+		"- Environment:",
+		( .Config.Env.[] | "  - `\( . )`" ),
+		if .Config.Labels then
+			"- Labels:",
+			( .Config.Labels | to_entries[] | "  - `\( .key )=\( .value )`" )
+		else empty end,
+		empty
+	] | join("\n")
+'
 
 docker run --rm --volumes-from "$name-data" -v /etc/ssl repo-info:local-apk || :
 docker run --rm --volumes-from "$name-data" -v /etc/ssl repo-info:local-dpkg || :

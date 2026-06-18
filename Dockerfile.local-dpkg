@@ -1,4 +1,4 @@
-FROM debian:bullseye-slim
+FROM debian:trixie-slim
 
 RUN set -eux; \
 	apt-get update; \
@@ -7,7 +7,7 @@ RUN set -eux; \
 		gawk \
 		wget \
 	; \
-	rm -rf /var/lib/apt/lists/*
+	apt-get dist-clean
 
 COPY .local-scripts/gather-dpkg.sh /usr/local/bin/
 
