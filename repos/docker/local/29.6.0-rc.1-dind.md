@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:551f19e9f77ddda8a9122dec6c2e38d2d9824331aa9ac5896dc433a7e7c90764`
-- Created: `2026-06-13T00:10:21.076138954Z`
-- Virtual Size: ~ 385.70 Mb  
+- Image ID: `sha256:4d38f5fddbfa804d863c7f2ab875327bbedd5ee3356152f20ba13296b66126d3`
+- Created: `2026-06-16T01:12:18.829566192Z`
+- Virtual Size: ~ 379.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
@@ -72,16 +72,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.0-r0 description:
+alpine-release-3.24.1-r0 description:
 Alpine release data
 
-alpine-release-3.24.0-r0 webpage:
+alpine-release-3.24.1-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.0-r0 installed size:
+alpine-release-3.24.1-r0 installed size:
 343 B
 
-alpine-release-3.24.0-r0 license:
+alpine-release-3.24.1-r0 license:
 MIT
 
 ```
@@ -191,16 +191,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20260413-r0 description:
+ca-certificates-20260611-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20260413-r0 webpage:
+ca-certificates-20260611-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20260413-r0 installed size:
-246 KiB
+ca-certificates-20260611-r0 installed size:
+207 KiB
 
-ca-certificates-20260413-r0 license:
+ca-certificates-20260611-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -208,16 +208,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260413-r0 description:
+ca-certificates-bundle-20260611-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260413-r0 webpage:
+ca-certificates-bundle-20260611-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260413-r0 installed size:
-212 KiB
+ca-certificates-bundle-20260611-r0 installed size:
+175 KiB
 
-ca-certificates-bundle-20260413-r0 license:
+ca-certificates-bundle-20260611-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -1228,16 +1228,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zfs`
 
 ```console
-zfs-2.4.2-r1 description:
+zfs-2.4.3-r0 description:
 Advanced filesystem and volume manager
 
-zfs-2.4.2-r1 webpage:
+zfs-2.4.3-r0 webpage:
 https://openzfs.org
 
-zfs-2.4.2-r1 installed size:
+zfs-2.4.3-r0 installed size:
 1252 KiB
 
-zfs-2.4.2-r1 license:
+zfs-2.4.3-r0 license:
 CDDL-1.0
 
 ```
@@ -1245,16 +1245,16 @@ CDDL-1.0
 ### `apk` package: `zfs-libs`
 
 ```console
-zfs-libs-2.4.2-r1 description:
+zfs-libs-2.4.3-r0 description:
 Advanced filesystem and volume manager (libraries)
 
-zfs-libs-2.4.2-r1 webpage:
+zfs-libs-2.4.3-r0 webpage:
 https://openzfs.org
 
-zfs-libs-2.4.2-r1 installed size:
+zfs-libs-2.4.3-r0 installed size:
 4118 KiB
 
-zfs-libs-2.4.2-r1 license:
+zfs-libs-2.4.3-r0 license:
 CDDL-1.0
 
 ```
