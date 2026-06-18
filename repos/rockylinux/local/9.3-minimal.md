@@ -1,9 +1,10 @@
 # `rockylinux:9.3.20231119-minimal`
+
 ## Docker Metadata
 
 - Image ID: `sha256:dfaa211c6b309e0e1017a49763232bfd37f88bc0ee14cc273c5c1a089dda20fa`
 - Created: `2023-11-28T19:59:10Z`
-- Virtual Size: ~ 117.78 Mb
+- Virtual Size: ~ 117.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -268,7 +269,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url langpacks-core-en-3.0-16.el9.noarch
-http://mirror.cs.vt.edu/pub/rocky/9.8/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
+https://rocky.mirror.shastacoe.net/rocky/9.8/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
 ```
 
 ### `rpm` package: `langpacks-core-font-en-3.0-16.el9.noarch`
@@ -279,7 +280,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url langpacks-core-font-en-3.0-16.el9.noarch
-http://mirror.cs.vt.edu/pub/rocky/9.8/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
+https://rocky.mirror.shastacoe.net/rocky/9.8/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
 ```
 
 ### `rpm` package: `langpacks-en-3.0-16.el9.noarch`
@@ -290,7 +291,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url langpacks-en-3.0-16.el9.noarch
-http://mirror.cs.vt.edu/pub/rocky/9.8/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
+https://rocky.mirror.shastacoe.net/rocky/9.8/AppStream/source/tree/Packages/l/langpacks-3.0-16.el9.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.3.1-3.el9.x86_64`
