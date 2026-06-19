@@ -2257,14 +2257,9 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/
 - `LGPL-3+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.17.6-1ubuntu4.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6.orig.tar.gz' libheif_1.17.6.orig.tar.gz 1433302 SHA256:8390baf4913eda0a183e132cec62b875fb2ef507ced5ddddc98dfd2f17780aee
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.3.debian.tar.xz' libheif_1.17.6-1ubuntu4.3.debian.tar.xz 12640 SHA256:8108807f8915516c9e7e2ecf91746a3a7de10fad14e4888dfc73156e68c68ffa
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.3.dsc' libheif_1.17.6-1ubuntu4.3.dsc 3524 SHA256:43a2a6fab26a775b6001a1f08cef01b00f42a028e99693590a656c9ba93039c3
-```
 
 ### `dpkg` source package: `libice=2:1.0.10-1build3`
 

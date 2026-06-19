@@ -3789,20 +3789,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=7.0.10-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_7.0.10-1.dsc' linux_7.0.10-1.dsc 196174 SHA256:ec0c0441463114199c96d16e629d9aca1f5c79c0446841d4e242f83eb943c4f6
-'http://deb.debian.org/debian/pool/main/l/linux/linux_7.0.10.orig.tar.xz' linux_7.0.10.orig.tar.xz 160368156 SHA256:321a5c3a1f4ab8ba4fb4bc1962a00f3a3b067ef5c7d0a70f3201e3d7b510f65e
-'http://deb.debian.org/debian/pool/main/l/linux/linux_7.0.10-1.debian.tar.xz' linux_7.0.10-1.debian.tar.xz 1489884 SHA256:3c49b23164f3a8fc2a1de13cbd9cbb53bb0d3ebe178f9d7246e16e08f2c7458c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/7.0.10-1/
 
-- https://sources.debian.net/src/linux/7.0.10-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/7.0.10-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/7.0.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-10`
 
@@ -4391,20 +4384,13 @@ Licenses: (parsed from: `/usr/share/doc/libopenjph-dev/copyright`, `/usr/share/d
 - `BSD-2-clause`
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjph=0.27.3-1
-'http://deb.debian.org/debian/pool/main/o/openjph/openjph_0.27.3-1.dsc' openjph_0.27.3-1.dsc 2172 SHA256:111e24d3752e0d9d52311e2a95db72f96839e2f7253a7db7f7d60ba984c8839b
-'http://deb.debian.org/debian/pool/main/o/openjph/openjph_0.27.3.orig.tar.gz' openjph_0.27.3.orig.tar.gz 487036 SHA256:41b4901b281c9305cfca8a3ef6b504b46c4917751b5474c8112c75094fcda997
-'http://deb.debian.org/debian/pool/main/o/openjph/openjph_0.27.3-1.debian.tar.xz' openjph_0.27.3-1.debian.tar.xz 5512 SHA256:3fd15d9bf4c4f23c6abf404102a0e7697b38605aa19b5f5100523c3d39db0e5f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openjph/0.27.3-1/
 
-- https://sources.debian.net/src/openjph/0.27.3-1/ (for browsing the source)
-- https://sources.debian.net/src/openjph/0.27.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjph/0.27.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.6.10+dfsg-1`
 
