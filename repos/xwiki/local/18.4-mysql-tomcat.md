@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9acf4c7edb732fe03c89a287508aa7f711980d64583e419c30544d428a469753`
-- Created: `2026-06-02T11:47:33.899483504Z`
+- Image ID: `sha256:867e3386f72f8acd11b3d818f625684e2e7b533e7c461cd8a45560398d78c428`
+- Created: `2026-06-16T19:13:07.935160161Z`
 - Virtual Size: ~ 1.33 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,9 +22,9 @@
   - `TOMCAT_MAJOR=10`
   - `TOMCAT_VERSION=10.1.55`
   - `TOMCAT_SHA512=f36af12391a277e5c3a802a8e1a2a1e4354cd461b547d2e1a33ac0ab88d707d3fb2591e034a17b7d3a6b965a4c977a97dbf29bb81a3867e85aeec3d8d189e22e`
-  - `XWIKI_VERSION=18.4.0`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.4.0`
-  - `XWIKI_DOWNLOAD_SHA256=04ebdbc3c596b79ef79dc0898b55a79861bf65d8d8b011e88f2a192d734fda9f`
+  - `XWIKI_VERSION=18.4.1`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/18.4.1`
+  - `XWIKI_DOWNLOAD_SHA256=568d3aa4708a5c75d141a978491d800a90d8485afd06e1eb203d003a5a6f8ede`
   - `MYSQL_JDBC_VERSION=9.7.0`
   - `MYSQL_JDBC_SHA256=0353648eaa1c91e0f4020c959abf756bc866ffd583df22ae6b6f6e0cbd43eb44`
   - `MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.7.0`
@@ -483,11 +483,11 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.2.dsc' coreutils_9.4-3ubuntu6.2.dsc 2030 SHA256:a16ffb435f38507bea51474f5e40a26e4c8191d2190da8770e8e4726c18e37ba
 ```
 
-### `dpkg` source package: `cups=2.4.7-1.2ubuntu7.9`
+### `dpkg` source package: `cups=2.4.7-1.2ubuntu7.14`
 
 Binary Packages:
 
-- `libcups2t64:amd64=2.4.7-1.2ubuntu7.9`
+- `libcups2t64:amd64=2.4.7-1.2ubuntu7.14`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2t64/copyright`)
 
@@ -498,9 +498,14 @@ Licenses: (parsed from: `/usr/share/doc/libcups2t64/copyright`)
 - `FSFUL`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cups=2.4.7-1.2ubuntu7.14
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7.orig.tar.gz' cups_2.4.7.orig.tar.gz 8134809 SHA512:914b574ff6d85de9f3471528b52d4a436c484c441f47651846e1bdfa00aec26774efd416ff466216d2bccf468f8a797b1e0d666b5c82abc87e77550ce8b00d39
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7-1.2ubuntu7.14.debian.tar.xz' cups_2.4.7-1.2ubuntu7.14.debian.tar.xz 431720 SHA512:abbeb535b12daa452d1be4cec6a4604eae1940e1ce9d9521627e1d6dce2c78eb347c95fd5377d04e6d1439372438ce7b5b89e6cccbec46ce9401c3e104209bdc
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7-1.2ubuntu7.14.dsc' cups_2.4.7-1.2ubuntu7.14.dsc 3192 SHA512:b6cb7fe704a497194b488219d08fade046966f90126cff65d5d43d35a740dc8d21c5247f658b924a7e8cfe1a92be676c07c38a5ca6f9d9c1a8e51c56cde9e18f
+```
 
 ### `dpkg` source package: `curl=8.5.0-2ubuntu10.9`
 
@@ -1749,20 +1754,26 @@ $ apt-get source -qq --print-uris libdeflate=1.19-1build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdeflate/libdeflate_1.19-1build1.1.dsc' libdeflate_1.19-1build1.1.dsc 2306 SHA256:3a2552cdace2cae2b98b81b64d225f4247bc2ed4409dc0ff9eff1db9843d79d0
 ```
 
-### `dpkg` source package: `libdrm=2.4.125-1ubuntu0.1~24.04.1`
+### `dpkg` source package: `libdrm=2.4.125-1ubuntu0.1~24.04.2`
 
 Binary Packages:
 
-- `libdrm-common=2.4.125-1ubuntu0.1~24.04.1`
-- `libdrm2:amd64=2.4.125-1ubuntu0.1~24.04.1`
+- `libdrm-common=2.4.125-1ubuntu0.1~24.04.2`
+- `libdrm2:amd64=2.4.125-1ubuntu0.1~24.04.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libdrm=2.4.125-1ubuntu0.1~24.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.125.orig.tar.xz' libdrm_2.4.125.orig.tar.xz 485592 SHA512:faad141f48a49915c0312eb635df76968f0f4d41bb6851be625a7ae0e24826e7283b5ec9ec3b09ead9a96297bf42221c411288f9b000c3dbc159ed8dde93a7e4
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.125.orig.tar.xz.asc' libdrm_2.4.125.orig.tar.xz.asc 833 SHA512:e6bf22220e0a5212164f2c1ed0dd4dbbd3c535ac9856af7e3098778a9c0ada2accd955165dc04f48386a0f006b57145399381a4e9fc0d0e6365c6239810be147
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.125-1ubuntu0.1%7e24.04.2.debian.tar.xz' libdrm_2.4.125-1ubuntu0.1~24.04.2.debian.tar.xz 77556 SHA512:e17919e5a33ca4d6c6518f8ec81f30cd31a38f9b1da072c0e846929bf13e1621319d7147c60d51b92c3d22ac0ab59f8a07c3c794cc2ea187c119091263061077
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.125-1ubuntu0.1%7e24.04.2.dsc' libdrm_2.4.125-1ubuntu0.1~24.04.2.dsc 3328 SHA512:4e5fcde5b02e6a79b984d16b4dd92d8f60fa95c619db2b1e5a6ce8e7a0389938a4c7a6be94bc3ee503dea2fc3fdc4467825142f574af7ab46e8a2225ed561605
+```
 
 ### `dpkg` source package: `libe-book=0.1.3-2build6`
 
@@ -3506,11 +3517,11 @@ $ apt-get source -qq --print-uris pixman=0.42.2-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.42.2-1build1.diff.gz' pixman_0.42.2-1build1.diff.gz 327276 SHA512:a07846ba47b3f3407e43aefee37efe6265445a8c1e81589a715f175e426ed2a75822cce7545ac94bb368c3eecaaa2ccd7b0c7944aba9b51f0e939403b2f57d1e
 ```
 
-### `dpkg` source package: `poppler=24.02.0-1ubuntu9.8`
+### `dpkg` source package: `poppler=24.02.0-1ubuntu9.9`
 
 Binary Packages:
 
-- `libpoppler134:amd64=24.02.0-1ubuntu9.8`
+- `libpoppler134:amd64=24.02.0-1ubuntu9.9`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler134/copyright`)
 
@@ -3518,9 +3529,14 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler134/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=24.02.0-1ubuntu9.9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0.orig.tar.gz' poppler_24.02.0.orig.tar.gz 1975230 SHA512:75fc41f94ad6848b834eab1cc9199c5ba55b30b12ffbe26d53fa85e86b9918999e752c82d2c5965d6669ace4d9658b1236159c9bfa4bbf40da2660dc00a19f37
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.9.debian.tar.xz' poppler_24.02.0-1ubuntu9.9.debian.tar.xz 44256 SHA512:ba83a39c4444ae67ecd73977eb6ca00980343de1b20c7f9d3e0569535bf778ce03f360351210468f0b996272058371aaa50bc60cf6a60181eae29ecf2c2a2a13
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.9.dsc' poppler_24.02.0-1ubuntu9.9.dsc 3940 SHA512:5d261665cc98f0d14da1845eb609bccd0c5516e6b80b00bba097451cec84442ebb91f74ec116e5796bba682ee94d4cd406566bcd7b5107c49352ca6c51d31e3b
+```
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.2`
 
