@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:1c65d54bce7e0014d559163590c647fc47bc5c7ca6b5d3408b92168cc901853f`
 - Created: `2026-06-11T00:23:14.464057989Z`
-- Virtual Size: ~ 116.80 Mb  
+- Virtual Size: ~ 116.8 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
