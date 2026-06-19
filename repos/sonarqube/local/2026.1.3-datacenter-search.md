@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:878af6420a2e54abc40e3ab26e5e4b55a6a1c0e69aa05ef7912511af2f832611`
 - Created: `2026-06-02T09:16:28.58266168Z`
-- Virtual Size: ~ 2.00 Gb  
+- Virtual Size: ~ 2 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/sonarqube/docker/run.sh"]`
