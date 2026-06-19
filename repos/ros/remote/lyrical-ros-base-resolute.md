@@ -1,7 +1,7 @@
 ## `ros:lyrical-ros-base-resolute`
 
 ```console
-$ docker pull ros@sha256:b1f52aa94aee73f004225d88622ed2885e2ca4793f4dc8992710438cfe9b0269
+$ docker pull ros@sha256:a3063ea4b3cca293c1697a4495e5961860d88a205dda0701f145a0eb252a624a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,279 +14,279 @@ $ docker pull ros@sha256:b1f52aa94aee73f004225d88622ed2885e2ca4793f4dc8992710438
 ### `ros:lyrical-ros-base-resolute` - linux; amd64
 
 ```console
-$ docker pull ros@sha256:ebffd7c6adcde3c6303f0632eb2a3bbefa5277c687189d4b43fbb2eaf7c47b11
+$ docker pull ros@sha256:1a6db26d51251586c2c7206e16a7a8e7f678f8bf481c691aa62597ad93a272e8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **339.7 MB (339655385 bytes)**  
+-	Total Size: **339.6 MB (339630979 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8685d999868b860c00cc60c45c93198a60605418fed94cb0a6d88d33993ac189`
+-	Image ID: `sha256:b5b91b18371dc470de8db3602ed01d848fa1bf8dba85894da4eaebc1c5d8bc41`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 21 Apr 2026 17:23:53 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-5691f940e215a35dc9b91fc1887cae39/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-5691f940e215a35dc9b91fc1887cae39/images/.temp_layer.4415.tar --tag 26.04
-# Tue, 21 Apr 2026 17:23:54 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-5691f940e215a35dc9b91fc1887cae39/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
-# Tue, 21 Apr 2026 17:23:54 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-5691f940e215a35dc9b91fc1887cae39/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
-# Tue, 21 Apr 2026 17:23:54 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-5691f940e215a35dc9b91fc1887cae39/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 21 Apr 2026 17:23:54 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-5691f940e215a35dc9b91fc1887cae39/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-04-21T17:23:54.324551+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Wed, 10 Jun 2026 03:30:57 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-79fcbede9d5522fcffb04b46daf93b5a/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-79fcbede9d5522fcffb04b46daf93b5a/images/.temp_layer.9106.tar --tag 26.04
+# Wed, 10 Jun 2026 03:30:57 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-79fcbede9d5522fcffb04b46daf93b5a/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
+# Wed, 10 Jun 2026 03:30:57 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-79fcbede9d5522fcffb04b46daf93b5a/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
+# Wed, 10 Jun 2026 03:30:57 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-79fcbede9d5522fcffb04b46daf93b5a/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 10 Jun 2026 03:30:57 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-79fcbede9d5522fcffb04b46daf93b5a/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-06-10T03:30:57.931695+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 21 Apr 2026 17:23:54 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-5691f940e215a35dc9b91fc1887cae39/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-04-21T17:23:54.324551+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Wed, 10 Jun 2026 03:30:57 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-79fcbede9d5522fcffb04b46daf93b5a/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-06-10T03:30:57.931695+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 21 Apr 2026 17:23:54 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-5691f940e215a35dc9b91fc1887cae39/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-5691f940e215a35dc9b91fc1887cae39/images/.temp_layer.control_data.4415.tar
-# Sat, 30 May 2026 00:27:22 GMT
+# Wed, 10 Jun 2026 03:30:57 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-79fcbede9d5522fcffb04b46daf93b5a/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-79fcbede9d5522fcffb04b46daf93b5a/images/.temp_layer.control_data.9106.tar
+# Fri, 19 Jun 2026 01:11:49 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 30 May 2026 00:27:31 GMT
+# Fri, 19 Jun 2026 01:11:59 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     ca-certificates     curl     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 30 May 2026 00:27:35 GMT
+# Fri, 19 Jun 2026 01:12:05 GMT
 RUN curl -L -s -f -o /tmp/ros2-apt-source.deb https://github.com/ros-infrastructure/ros-apt-source/releases/download/1.2.0/ros2-apt-source_1.2.0.resolute_all.deb     && echo "a275b9b819874e745a928e83e39c429fa4d607159285c4ef3ebcf75afa732ee3 */tmp/ros2-apt-source.deb" | sha256sum --strict --check     && apt-get update     && apt-get install /tmp/ros2-apt-source.deb     && rm -f /tmp/ros2-apt-source.deb     && rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 30 May 2026 00:28:19 GMT
+# Fri, 19 Jun 2026 01:12:50 GMT
 ENV LANG=C.UTF-8
-# Sat, 30 May 2026 00:28:19 GMT
+# Fri, 19 Jun 2026 01:12:50 GMT
 ENV LC_ALL=C.UTF-8
-# Sat, 30 May 2026 00:28:19 GMT
+# Fri, 19 Jun 2026 01:12:50 GMT
 ENV ROS_DISTRO=lyrical
-# Sat, 30 May 2026 00:28:19 GMT
+# Fri, 19 Jun 2026 01:12:50 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-lyrical-ros-core=0.13.0-3*     && rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 30 May 2026 00:28:19 GMT
+# Fri, 19 Jun 2026 01:12:50 GMT
 COPY ./ros_entrypoint.sh / # buildkit
-# Sat, 30 May 2026 00:28:19 GMT
+# Fri, 19 Jun 2026 01:12:50 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Sat, 30 May 2026 00:28:19 GMT
+# Fri, 19 Jun 2026 01:12:50 GMT
 CMD ["bash"]
-# Sat, 30 May 2026 01:13:27 GMT
+# Fri, 19 Jun 2026 02:14:27 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     build-essential     git     python3-colcon-common-extensions     python3-colcon-mixin     python3-rosdep     python3-vcstool     && rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 30 May 2026 01:13:29 GMT
+# Fri, 19 Jun 2026 02:14:29 GMT
 RUN rosdep init &&   rosdep update --rosdistro $ROS_DISTRO # buildkit
-# Sat, 30 May 2026 01:13:31 GMT
+# Fri, 19 Jun 2026 02:14:30 GMT
 RUN colcon mixin add default       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml &&     colcon mixin update &&     colcon metadata add default       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml &&     colcon metadata update # buildkit
-# Sat, 30 May 2026 01:13:47 GMT
+# Fri, 19 Jun 2026 02:14:46 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-lyrical-ros-base=0.13.0-3*     && rm -rf /var/lib/apt/lists/* # buildkit
 ```
 
 -	Layers:
-	-	`sha256:6f5c5aa4e145204b113f983c003ff8ad6489394294ef95ec030bc94e3daded54`  
-		Last Modified: Tue, 21 Apr 2026 18:49:33 GMT  
-		Size: 41.6 MB (41554862 bytes)  
+	-	`sha256:81e2f2053c8fa702b6863110b55c09e67f6adeb78b4672745958c4d8b3d056c5`  
+		Last Modified: Wed, 10 Jun 2026 08:00:11 GMT  
+		Size: 41.6 MB (41562239 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c24335ddd46023ff99bd665bd8ea6798464f7bbf501718edcf2eb4696e5f408`  
-		Last Modified: Tue, 21 Apr 2026 18:49:35 GMT  
-		Size: 387.0 B  
+	-	`sha256:d1f56e4c7f2f2a1415c59803638274d488a73b61a8e1f9cbd9cb280327e8d21e`  
+		Last Modified: Wed, 10 Jun 2026 08:00:15 GMT  
+		Size: 388.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a66e0e4ba2827013cfdb6d7d0277845dd90d29cf5be6f6b1a2edb35b35b8f8f`  
-		Last Modified: Sat, 30 May 2026 00:29:01 GMT  
-		Size: 740.5 KB (740466 bytes)  
+	-	`sha256:a47b1770788335db7604bba0ceb7a41f3cc6c19bbd36127093ac28bace3e00d7`  
+		Last Modified: Fri, 19 Jun 2026 01:13:32 GMT  
+		Size: 740.8 KB (740786 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91d768bea23ca17d73373bced93b07f016d49dc73083020b677ca88820b6e206`  
-		Last Modified: Sat, 30 May 2026 00:29:01 GMT  
-		Size: 9.8 MB (9817877 bytes)  
+	-	`sha256:0b7e9c2cfcc02849b9506d2d29cb96f6ee38f7aebaf50ab1dc83d009eb71aabc`  
+		Last Modified: Fri, 19 Jun 2026 01:13:33 GMT  
+		Size: 9.8 MB (9784527 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d56e888694023b5e25084b3279db49e8acf8dd01b333bc892018778ac0b6217`  
-		Last Modified: Sat, 30 May 2026 00:29:01 GMT  
-		Size: 89.6 KB (89573 bytes)  
+	-	`sha256:d7de4965a0ddc323590e6e47b9a1c7c8543b5f4b15cbf6f8cb37582b4518e54a`  
+		Last Modified: Fri, 19 Jun 2026 01:13:32 GMT  
+		Size: 89.9 KB (89872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:568aec1aaa0eab51b8b82e80be56f21f3b816a67df5322fffb3616f28e0eaa6d`  
-		Last Modified: Sat, 30 May 2026 00:29:04 GMT  
-		Size: 136.5 MB (136498683 bytes)  
+	-	`sha256:6ca11c3384c15abaac0e22d6c4ac49a8170e954811534a42084f875a7cf0e80f`  
+		Last Modified: Fri, 19 Jun 2026 01:13:36 GMT  
+		Size: 136.5 MB (136500477 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:27deaf91b06f9331b9e482842dd053ce65d106daab5a1476638159a380ccdeab`  
-		Last Modified: Sat, 30 May 2026 00:29:02 GMT  
-		Size: 195.0 B  
+	-	`sha256:85d9fc928349304d575f19e26e4713c0e9ab4159bb13cefa8129dfb1c2abe8c9`  
+		Last Modified: Fri, 19 Jun 2026 01:13:34 GMT  
+		Size: 196.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fcf73fcb880fdad57bb9149fe62bb72bc7699322651dd7861846cc93bf6d4cd8`  
-		Last Modified: Sat, 30 May 2026 01:14:39 GMT  
-		Size: 124.7 MB (124738161 bytes)  
+	-	`sha256:1c455c6911eba72cf2336b92d219c6a90919a123e5121e5eb2cee4ffb530e410`  
+		Last Modified: Fri, 19 Jun 2026 02:15:44 GMT  
+		Size: 124.7 MB (124738757 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb98ddcadc581f4284f2401341e74d96eeb4a8b0c0cffa70f0027f78d6717859`  
-		Last Modified: Sat, 30 May 2026 01:14:35 GMT  
-		Size: 374.9 KB (374916 bytes)  
+	-	`sha256:72ff568adefbbf749104149fce980c46cf8ac3e55a08efd058c979cdd22f0bb6`  
+		Last Modified: Fri, 19 Jun 2026 02:15:40 GMT  
+		Size: 372.9 KB (372868 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4dca66423f9da379a39cc77d5c07fe0ba0b022d4a9d0f0f1bdf2f74d6b68275`  
-		Last Modified: Sat, 30 May 2026 01:14:35 GMT  
-		Size: 130.8 KB (130835 bytes)  
+	-	`sha256:c9423cb87c7b667f632f63fc7640ddf5a745fea70eb774b4afaecbbbd9e4b920`  
+		Last Modified: Fri, 19 Jun 2026 02:15:40 GMT  
+		Size: 130.8 KB (130820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bf504e38ad1b753e11ce22c64c2a1292309176deb0360051f00e3b8d011be59`  
-		Last Modified: Sat, 30 May 2026 01:14:37 GMT  
-		Size: 25.7 MB (25709430 bytes)  
+	-	`sha256:ca7213c5ae9089e77ccafbbdb25adf08f162ff74baaff34a595fbe98c59abc80`  
+		Last Modified: Fri, 19 Jun 2026 02:15:42 GMT  
+		Size: 25.7 MB (25710049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ros:lyrical-ros-base-resolute` - unknown; unknown
 
 ```console
-$ docker pull ros@sha256:ac13d7c667b3e5b5923e550e6c2924f5d3c66db47111f71de5619557196f55c3
+$ docker pull ros@sha256:7f4d05278aed57afa6f22f9dce1d9eb5d94ba82c4a9d085f1d0a3b4c83dd7711
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.2 MB (29150209 bytes)**  
+-	Total Size: **29.1 MB (29135674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:489aac56c60fb12f8ff1e1fccc2da64c1983bcc15fb126fb83dbe38d8476897b`
+-	Image ID: `sha256:8d32dc260929465193d4a40397ab7223d5037fd846ef5b1477427b3b1cb835ef`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:87b27261aee59a095152f7795ec83a54620eca7d4a9a58a9d4769d929d59fb4f`  
-		Last Modified: Sat, 30 May 2026 01:14:37 GMT  
-		Size: 29.1 MB (29132760 bytes)  
+	-	`sha256:ebaa3aec1b267ae44cec9f4df5dd929704bb244de0361c6416a4f9e29cc72f23`  
+		Last Modified: Fri, 19 Jun 2026 02:15:42 GMT  
+		Size: 29.1 MB (29118226 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7d510f4666455834694e12ab4639c3f662718b503a8cfa4459249fdd8723a95b`  
-		Last Modified: Sat, 30 May 2026 01:14:35 GMT  
-		Size: 17.4 KB (17449 bytes)  
+	-	`sha256:62c385db96d94474e6a9080175872e17f7b97f68299439a90910d418bc274735`  
+		Last Modified: Fri, 19 Jun 2026 02:15:40 GMT  
+		Size: 17.4 KB (17448 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ros:lyrical-ros-base-resolute` - linux; arm64 variant v8
 
 ```console
-$ docker pull ros@sha256:5a1c58d9707d8638e25295ecffdad6b0569163f89e741eeeb1ca46b7cdda0b8e
+$ docker pull ros@sha256:698fba68b227ecdab4bd8bc3afde265f71de5e1a1812537e10ab40be4f8d2b6f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **324.4 MB (324407583 bytes)**  
+-	Total Size: **324.4 MB (324377847 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4cf262eb9952e8435db3c947512095d094f11144f0190a1cd6e28d9ce606136f`
+-	Image ID: `sha256:1a500a45b42ec9258be2166c93661b5f5a67918d1107eda33423035d20dbe190`
 -	Entrypoint: `["\/ros_entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Tue, 21 Apr 2026 15:27:25 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-5691f940e215a35dc9b91fc1887cae39/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-5691f940e215a35dc9b91fc1887cae39/images/.temp_layer.4553.tar --tag 26.04
-# Tue, 21 Apr 2026 15:27:26 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-5691f940e215a35dc9b91fc1887cae39/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
-# Tue, 21 Apr 2026 15:27:26 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-5691f940e215a35dc9b91fc1887cae39/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
-# Tue, 21 Apr 2026 15:27:26 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-5691f940e215a35dc9b91fc1887cae39/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 21 Apr 2026 15:27:26 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-5691f940e215a35dc9b91fc1887cae39/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-04-21T15:27:26.117874+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Wed, 10 Jun 2026 03:33:02 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-79fcbede9d5522fcffb04b46daf93b5a/images/ubuntu:rockcraft-base /home/buildd/rockcraft-ubuntu-79fcbede9d5522fcffb04b46daf93b5a/images/.temp_layer.9196.tar --tag 26.04
+# Wed, 10 Jun 2026 03:33:02 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-79fcbede9d5522fcffb04b46daf93b5a/images/ubuntu:26.04 --clear=config.entrypoint --clear=config.cmd
+# Wed, 10 Jun 2026 03:33:03 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-79fcbede9d5522fcffb04b46daf93b5a/images/ubuntu:26.04 --clear=config.cmd --config.cmd /bin/bash
+# Wed, 10 Jun 2026 03:33:03 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-79fcbede9d5522fcffb04b46daf93b5a/images/ubuntu:26.04 --config.env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 10 Jun 2026 03:33:03 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-79fcbede9d5522fcffb04b46daf93b5a/images/ubuntu:26.04 --clear=config.labels --config.label org.opencontainers.image.version=26.04 --config.label org.opencontainers.image.title=ubuntu --config.label org.opencontainers.image.created=2026-06-10T03:33:03.035505+00:00 --config.label org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 21 Apr 2026 15:27:26 GMT
-RUN umoci config --image /home/buildd/rockcraft-ubuntu-5691f940e215a35dc9b91fc1887cae39/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-04-21T15:27:26.117874+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
+# Wed, 10 Jun 2026 03:33:03 GMT
+RUN umoci config --image /home/buildd/rockcraft-ubuntu-79fcbede9d5522fcffb04b46daf93b5a/images/ubuntu:26.04 --clear=manifest.annotations --manifest.annotation org.opencontainers.image.version=26.04 --manifest.annotation org.opencontainers.image.title=ubuntu --manifest.annotation org.opencontainers.image.created=2026-06-10T03:33:03.035505+00:00 --manifest.annotation org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
 
 Ubuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.
 It is the world's most popular operating system across public clouds and OpenStack clouds.
 It is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.
 Fast, secure and simple, Ubuntu powers millions of PCs worldwide.
 
-# Tue, 21 Apr 2026 15:27:26 GMT
-RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-5691f940e215a35dc9b91fc1887cae39/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-5691f940e215a35dc9b91fc1887cae39/images/.temp_layer.control_data.4553.tar
-# Sat, 30 May 2026 00:26:43 GMT
+# Wed, 10 Jun 2026 03:33:03 GMT
+RUN umoci raw add-layer --image /home/buildd/rockcraft-ubuntu-79fcbede9d5522fcffb04b46daf93b5a/images/ubuntu:26.04 /home/buildd/rockcraft-ubuntu-79fcbede9d5522fcffb04b46daf93b5a/images/.temp_layer.control_data.9196.tar
+# Fri, 19 Jun 2026 01:11:43 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 30 May 2026 00:26:53 GMT
+# Fri, 19 Jun 2026 01:11:52 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     ca-certificates     curl     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 30 May 2026 00:26:57 GMT
+# Fri, 19 Jun 2026 01:11:57 GMT
 RUN curl -L -s -f -o /tmp/ros2-apt-source.deb https://github.com/ros-infrastructure/ros-apt-source/releases/download/1.2.0/ros2-apt-source_1.2.0.resolute_all.deb     && echo "a275b9b819874e745a928e83e39c429fa4d607159285c4ef3ebcf75afa732ee3 */tmp/ros2-apt-source.deb" | sha256sum --strict --check     && apt-get update     && apt-get install /tmp/ros2-apt-source.deb     && rm -f /tmp/ros2-apt-source.deb     && rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 30 May 2026 00:27:46 GMT
+# Fri, 19 Jun 2026 01:12:55 GMT
 ENV LANG=C.UTF-8
-# Sat, 30 May 2026 00:27:46 GMT
+# Fri, 19 Jun 2026 01:12:55 GMT
 ENV LC_ALL=C.UTF-8
-# Sat, 30 May 2026 00:27:46 GMT
+# Fri, 19 Jun 2026 01:12:55 GMT
 ENV ROS_DISTRO=lyrical
-# Sat, 30 May 2026 00:27:46 GMT
+# Fri, 19 Jun 2026 01:12:55 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-lyrical-ros-core=0.13.0-3*     && rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 30 May 2026 00:27:47 GMT
+# Fri, 19 Jun 2026 01:12:55 GMT
 COPY ./ros_entrypoint.sh / # buildkit
-# Sat, 30 May 2026 00:27:47 GMT
+# Fri, 19 Jun 2026 01:12:55 GMT
 ENTRYPOINT ["/ros_entrypoint.sh"]
-# Sat, 30 May 2026 00:27:47 GMT
+# Fri, 19 Jun 2026 01:12:55 GMT
 CMD ["bash"]
-# Sat, 30 May 2026 01:13:19 GMT
+# Fri, 19 Jun 2026 02:14:15 GMT
 RUN apt-get update && apt-get install --no-install-recommends -y     build-essential     git     python3-colcon-common-extensions     python3-colcon-mixin     python3-rosdep     python3-vcstool     && rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 30 May 2026 01:13:22 GMT
+# Fri, 19 Jun 2026 02:14:17 GMT
 RUN rosdep init &&   rosdep update --rosdistro $ROS_DISTRO # buildkit
-# Sat, 30 May 2026 01:13:26 GMT
+# Fri, 19 Jun 2026 02:14:20 GMT
 RUN colcon mixin add default       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml &&     colcon mixin update &&     colcon metadata add default       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml &&     colcon metadata update # buildkit
-# Sat, 30 May 2026 01:13:43 GMT
+# Fri, 19 Jun 2026 02:14:45 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends     ros-lyrical-ros-base=0.13.0-3*     && rm -rf /var/lib/apt/lists/* # buildkit
 ```
 
 -	Layers:
-	-	`sha256:2113f8d7eb32748b14581824c1b94cea9ed9a08456312a2e94eddd522d01b927`  
-		Last Modified: Tue, 21 Apr 2026 18:49:43 GMT  
-		Size: 40.7 MB (40728955 bytes)  
+	-	`sha256:c572f291b2a0cc05a1d523f3dda4d3f1992c3e480debf2e1bc9278aeab115625`  
+		Last Modified: Wed, 10 Jun 2026 08:00:25 GMT  
+		Size: 40.7 MB (40709186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4a7720058461eb4ae40ed203b9874ab3248bd34ffb9948193e99245229fdbd6f`  
-		Last Modified: Tue, 21 Apr 2026 18:49:46 GMT  
-		Size: 390.0 B  
+	-	`sha256:c9dda33820b52cf93fd5ff3808c770af252cf0565784b42e52e3dd74e2ebf5b2`  
+		Last Modified: Wed, 10 Jun 2026 08:00:29 GMT  
+		Size: 385.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:adc2ad364c506093b49a14399caae9c415d779931557582d1064c20883556f3a`  
-		Last Modified: Sat, 30 May 2026 00:28:26 GMT  
-		Size: 741.2 KB (741165 bytes)  
+	-	`sha256:5c4986530f0d3c75ff7820390034f5d3e027407a16c974996b5ded332599d708`  
+		Last Modified: Fri, 19 Jun 2026 01:13:34 GMT  
+		Size: 740.9 KB (740883 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:408f72c9d5baed137ff572cc6144d1b1c3ee48d9da3e8ec830a0a2b85445a8bf`  
-		Last Modified: Sat, 30 May 2026 00:28:26 GMT  
-		Size: 9.6 MB (9641306 bytes)  
+	-	`sha256:c65791f49907d0570d76708a6b7fff49950ae25a376454d38f6777a932bacdfb`  
+		Last Modified: Fri, 19 Jun 2026 01:13:35 GMT  
+		Size: 9.6 MB (9605840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37666b6096b138cbf3a42a8c82ab2e084f00595ad4f69a0d0541a2255a450ce1`  
-		Last Modified: Sat, 30 May 2026 00:28:26 GMT  
-		Size: 90.3 KB (90277 bytes)  
+	-	`sha256:0681652efa697f65008a0c4209e2155b9e5cf57e320f77ceba5d9443b4cbd283`  
+		Last Modified: Fri, 19 Jun 2026 01:13:34 GMT  
+		Size: 90.0 KB (89997 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44192943d5ae755decbe581424aa597252ca509537720b2177b1dabb1ec588a9`  
-		Last Modified: Sat, 30 May 2026 00:28:29 GMT  
-		Size: 129.9 MB (129891737 bytes)  
+	-	`sha256:b9b374f8a21b565bdf721c78327461dd298e6749b9b13b05d9f6cabfb073f7bc`  
+		Last Modified: Fri, 19 Jun 2026 01:13:37 GMT  
+		Size: 129.9 MB (129915744 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f43a2870356aaff3f0fdef23de031b83b26a6a66afe29f02ed3cdaf6285b0ea`  
-		Last Modified: Sat, 30 May 2026 00:28:27 GMT  
+	-	`sha256:8da7d04141ffff77c744942b698c8f9e8a3641e745c138843a6922858ad57b69`  
+		Last Modified: Fri, 19 Jun 2026 01:13:35 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6febeea5348f53a21fe0cc3e79465fbb577084e2a5245c53b4f19de2fbc6dd77`  
-		Last Modified: Sat, 30 May 2026 01:14:36 GMT  
-		Size: 118.2 MB (118153757 bytes)  
+	-	`sha256:1757961943f2d6873e218d227b99aec637e34daaebad76220309ce26bd3cd285`  
+		Last Modified: Fri, 19 Jun 2026 02:15:37 GMT  
+		Size: 118.2 MB (118153811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b69509140db50f8e6085dd132443c50152cb3b18cbb37424e9e337f0cc9039c9`  
-		Last Modified: Sat, 30 May 2026 01:14:33 GMT  
-		Size: 374.9 KB (374930 bytes)  
+	-	`sha256:df5a9d8430525b04e0f4e53d32c19982a81767c850bb3155be5118c71fa64dd2`  
+		Last Modified: Fri, 19 Jun 2026 02:15:33 GMT  
+		Size: 372.9 KB (372871 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d8f65f07e25403ce1a636329c36ec386befaf8605da702e491c52ccb2fd1552`  
-		Last Modified: Sat, 30 May 2026 01:14:33 GMT  
-		Size: 130.8 KB (130836 bytes)  
+	-	`sha256:5e27ef8b50545cc0220a341b681b612673a8daaf05a7fc6446eccc66082bfea4`  
+		Last Modified: Fri, 19 Jun 2026 02:15:33 GMT  
+		Size: 130.9 KB (130851 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:051992ea02b83d9b9d3abce9d9a9297bc29e5518b3d5bf9264b784bbad059354`  
-		Last Modified: Sat, 30 May 2026 01:14:35 GMT  
-		Size: 24.7 MB (24654035 bytes)  
+	-	`sha256:40aa0e0d2e8defb2f1ef68d61ffa62295cf8a0359d555079fbee419c08149f24`  
+		Last Modified: Fri, 19 Jun 2026 02:15:34 GMT  
+		Size: 24.7 MB (24658084 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ros:lyrical-ros-base-resolute` - unknown; unknown
 
 ```console
-$ docker pull ros@sha256:aceda4a3c59c3da902d23035f92a710b56e9420ce4e7843e7ea1f20edaa7356b
+$ docker pull ros@sha256:0aeef8769f4ece6cfa2ea7ac74e0f1ee0bb51ac083d213f991fd19c3daabd10e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **29.2 MB (29214989 bytes)**  
+-	Total Size: **29.2 MB (29200454 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48992051392bf1b5555fa9ccd291800d9f7a47248d24fd60048e1e69a374f43c`
+-	Image ID: `sha256:cdb944e87b16393cb30ea8dbb12f9f171a396c0d28bbc03a4156f125f21b531b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f468707c5422a2ffa2917b8a68997e6f8b3aef41168edabfee6f356c792a4545`  
-		Last Modified: Sat, 30 May 2026 01:14:35 GMT  
-		Size: 29.2 MB (29197390 bytes)  
+	-	`sha256:ffc446d1622f40dfd3940d7b54c1041b20c9f8abce641444c782e8b17134774c`  
+		Last Modified: Fri, 19 Jun 2026 02:15:34 GMT  
+		Size: 29.2 MB (29182856 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6e0f3ffb85f88f59189d315ffd3b001b4f237eb6214a12175d74eca17c4d2460`  
-		Last Modified: Sat, 30 May 2026 01:14:33 GMT  
-		Size: 17.6 KB (17599 bytes)  
+	-	`sha256:b927a61ac8834b1114aa55db3d2558d4d13ec8e2065a182bb2b010bce83c7b30`  
+		Last Modified: Fri, 19 Jun 2026 02:15:33 GMT  
+		Size: 17.6 KB (17598 bytes)  
 		MIME: application/vnd.in-toto+json
