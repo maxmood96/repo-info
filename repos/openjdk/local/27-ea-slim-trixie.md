@@ -1,9 +1,9 @@
-# `openjdk:27-ea-25-jdk-slim-trixie`
+# `openjdk:27-ea-26-jdk-slim-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e89157f8aaeae35e8d30abcc3e2e44af4e55e5a987dc14f9513dc43dd461b1e7`
-- Created: `2026-06-11T00:47:34.550480175Z`
+- Image ID: `sha256:2a075a309f94524dc1140acec2e14fb8aa60ace0a4198d0f226148e4bc7e43e2`
+- Created: `2026-06-16T23:32:05.101321147Z`
 - Virtual Size: ~ 490.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-27/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-27`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=27-ea+25`
+  - `JAVA_VERSION=27-ea+26`
 
 ## `dpkg` (`.deb`-based packages)
 
