@@ -1,17 +1,17 @@
-# `nginx:1.31.1-alpine-otel`
+# `nginx:1.31.2-alpine-otel`
 
 ## Docker Metadata
 
-- Image ID: `sha256:443b8002487216cfa7561f4942914f1a407f3d7179330c5df1c9744d2b1fc302`
-- Created: `2026-05-22T19:10:27.068288628Z`
-- Virtual Size: ~ 105.34 Mb  
+- Image ID: `sha256:9dc7f4a0b44b1beb18d22a29dda00ba82de388733f8abbe28189f96e39075731`
+- Created: `2026-06-17T23:22:38.950436322Z`
+- Virtual Size: ~ 111.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.31.1`
+  - `NGINX_VERSION=1.31.2`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
   - `NJS_VERSION=0.9.9`
@@ -1216,16 +1216,16 @@ MIT
 ### `apk` package: `aom-libs`
 
 ```console
-aom-libs-3.13.1-r1 description:
+aom-libs-3.14.1-r0 description:
 Alliance for Open Media (AOM) AV1 codec SDK (libraries)
 
-aom-libs-3.13.1-r1 webpage:
+aom-libs-3.14.1-r0 webpage:
 https://aomedia.org/
 
-aom-libs-3.13.1-r1 installed size:
-8140 KiB
+aom-libs-3.14.1-r0 installed size:
+8180 KiB
 
-aom-libs-3.13.1-r1 license:
+aom-libs-3.14.1-r0 license:
 BSD-2-Clause AND custom
 
 ```
@@ -1590,16 +1590,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.6-r0 description:
+libcrypto3-3.5.7-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.6-r0 webpage:
+libcrypto3-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.6-r0 installed size:
+libcrypto3-3.5.7-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.6-r0 license:
+libcrypto3-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -1981,16 +1981,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.6-r0 description:
+libssl3-3.5.7-r0 description:
 SSL shared libraries
 
-libssl3-3.5.6-r0 webpage:
+libssl3-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.6-r0 installed size:
+libssl3-3.5.7-r0 installed size:
 819 KiB
 
-libssl3-3.5.6-r0 license:
+libssl3-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -2236,16 +2236,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.9-r0 description:
+libxml2-2.13.9-r1 description:
 XML parsing library, version 2
 
-libxml2-2.13.9-r0 webpage:
+libxml2-2.13.9-r1 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.9-r0 installed size:
+libxml2-2.13.9-r1 installed size:
 1046 KiB
 
-libxml2-2.13.9-r0 license:
+libxml2-2.13.9-r1 license:
 MIT
 
 ```
@@ -2389,16 +2389,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.31.1-r1 description:
+nginx-1.31.2-r1 description:
 High performance web server
 
-nginx-1.31.1-r1 webpage:
+nginx-1.31.2-r1 webpage:
 https://nginx.org/
 
-nginx-1.31.1-r1 installed size:
+nginx-1.31.2-r1 installed size:
 2769 KiB
 
-nginx-1.31.1-r1 license:
+nginx-1.31.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2406,16 +2406,16 @@ nginx-1.31.1-r1 license:
 ### `apk` package: `nginx-module-acme`
 
 ```console
-nginx-module-acme-1.31.1.0.4.1-r1 description:
+nginx-module-acme-1.31.2.0.4.1-r1 description:
 nginx nginx-acme
 
-nginx-module-acme-1.31.1.0.4.1-r1 webpage:
+nginx-module-acme-1.31.2.0.4.1-r1 webpage:
 https://nginx.org/
 
-nginx-module-acme-1.31.1.0.4.1-r1 installed size:
+nginx-module-acme-1.31.2.0.4.1-r1 installed size:
 8167 KiB
 
-nginx-module-acme-1.31.1.0.4.1-r1 license:
+nginx-module-acme-1.31.2.0.4.1-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2423,16 +2423,16 @@ nginx-module-acme-1.31.1.0.4.1-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.31.1-r1 description:
+nginx-module-geoip-1.31.2-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.31.1-r1 webpage:
+nginx-module-geoip-1.31.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.31.1-r1 installed size:
+nginx-module-geoip-1.31.2-r1 installed size:
 62 KiB
 
-nginx-module-geoip-1.31.1-r1 license:
+nginx-module-geoip-1.31.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2440,16 +2440,16 @@ nginx-module-geoip-1.31.1-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.31.1-r1 description:
+nginx-module-image-filter-1.31.2-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.31.1-r1 webpage:
+nginx-module-image-filter-1.31.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.31.1-r1 installed size:
+nginx-module-image-filter-1.31.2-r1 installed size:
 46 KiB
 
-nginx-module-image-filter-1.31.1-r1 license:
+nginx-module-image-filter-1.31.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2457,16 +2457,16 @@ nginx-module-image-filter-1.31.1-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.31.1.0.9.9-r1 description:
+nginx-module-njs-1.31.2.0.9.9-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.31.1.0.9.9-r1 webpage:
+nginx-module-njs-1.31.2.0.9.9-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.31.1.0.9.9-r1 installed size:
+nginx-module-njs-1.31.2.0.9.9-r1 installed size:
 9392 KiB
 
-nginx-module-njs-1.31.1.0.9.9-r1 license:
+nginx-module-njs-1.31.2.0.9.9-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2474,16 +2474,16 @@ nginx-module-njs-1.31.1.0.9.9-r1 license:
 ### `apk` package: `nginx-module-otel`
 
 ```console
-nginx-module-otel-1.31.1.0.1.2-r1 description:
+nginx-module-otel-1.31.2.0.1.2-r1 description:
 nginx OpenTelemetry dynamic module
 
-nginx-module-otel-1.31.1.0.1.2-r1 webpage:
+nginx-module-otel-1.31.2.0.1.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-otel-1.31.1.0.1.2-r1 installed size:
+nginx-module-otel-1.31.2.0.1.2-r1 installed size:
 708 KiB
 
-nginx-module-otel-1.31.1.0.1.2-r1 license:
+nginx-module-otel-1.31.2.0.1.2-r1 license:
 2-clause BSD-like license
 
 ```
@@ -2491,16 +2491,16 @@ nginx-module-otel-1.31.1.0.1.2-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.31.1-r1 description:
+nginx-module-xslt-1.31.2-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.31.1-r1 webpage:
+nginx-module-xslt-1.31.2-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.31.1-r1 installed size:
+nginx-module-xslt-1.31.2-r1 installed size:
 46 KiB
 
-nginx-module-xslt-1.31.1-r1 license:
+nginx-module-xslt-1.31.2-r1 license:
 2-clause BSD-like license
 
 ```
