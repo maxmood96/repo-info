@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:53d82de2f56e8dc9b6d6f3dbb38766dcdc023927ce0d4b6491bc8d088cae7d81`
-- Created: `2026-06-10T21:16:20.41456207Z`
-- Virtual Size: ~ 212.74 Mb  
+- Image ID: `sha256:bfd3202db3ca14c3aed2c7770279fa409523e6da5208e708c29bb8a1ecf504b0`
+- Created: `2026-06-16T01:14:17.946508937Z`
+- Virtual Size: ~ 206.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -98,16 +98,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.0-r0 description:
+alpine-release-3.24.1-r0 description:
 Alpine release data
 
-alpine-release-3.24.0-r0 webpage:
+alpine-release-3.24.1-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.0-r0 installed size:
+alpine-release-3.24.1-r0 installed size:
 343 B
 
-alpine-release-3.24.0-r0 license:
+alpine-release-3.24.1-r0 license:
 MIT
 
 ```
@@ -251,16 +251,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20260413-r0 description:
+ca-certificates-20260611-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20260413-r0 webpage:
+ca-certificates-20260611-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20260413-r0 installed size:
-246 KiB
+ca-certificates-20260611-r0 installed size:
+207 KiB
 
-ca-certificates-20260413-r0 license:
+ca-certificates-20260611-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -268,16 +268,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260413-r0 description:
+ca-certificates-bundle-20260611-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260413-r0 webpage:
+ca-certificates-bundle-20260611-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260413-r0 installed size:
-212 KiB
+ca-certificates-bundle-20260611-r0 installed size:
+175 KiB
 
-ca-certificates-bundle-20260413-r0 license:
+ca-certificates-bundle-20260611-r0 license:
 MPL-2.0 AND MIT
 
 ```

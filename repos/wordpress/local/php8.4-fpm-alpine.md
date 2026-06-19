@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a75660f3a10aed48ab45440a0a63cd1c01fe11947507f6bd822d6fcac006bbb3`
-- Created: `2026-06-10T21:15:42.445395797Z`
-- Virtual Size: ~ 310.27 Mb  
+- Image ID: `sha256:5711cab88ad172db76f9eac9e7fd71c4dd9a9966d8d7e966be0edd13b7c79560`
+- Created: `2026-06-16T01:13:33.41701701Z`
+- Virtual Size: ~ 304.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -95,16 +95,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.24.0-r0 description:
+alpine-release-3.24.1-r0 description:
 Alpine release data
 
-alpine-release-3.24.0-r0 webpage:
+alpine-release-3.24.1-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.24.0-r0 installed size:
+alpine-release-3.24.1-r0 installed size:
 343 B
 
-alpine-release-3.24.0-r0 license:
+alpine-release-3.24.1-r0 license:
 MIT
 
 ```
@@ -265,16 +265,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20260413-r0 description:
+ca-certificates-20260611-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20260413-r0 webpage:
+ca-certificates-20260611-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20260413-r0 installed size:
-246 KiB
+ca-certificates-20260611-r0 installed size:
+207 KiB
 
-ca-certificates-20260413-r0 license:
+ca-certificates-20260611-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -282,16 +282,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260413-r0 description:
+ca-certificates-bundle-20260611-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260413-r0 webpage:
+ca-certificates-bundle-20260611-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260413-r0 installed size:
-212 KiB
+ca-certificates-bundle-20260611-r0 installed size:
+175 KiB
 
-ca-certificates-bundle-20260413-r0 license:
+ca-certificates-bundle-20260611-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -299,16 +299,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `cups-libs`
 
 ```console
-cups-libs-2.4.18-r0 description:
+cups-libs-2.4.19-r0 description:
 CUPS libraries
 
-cups-libs-2.4.18-r0 webpage:
+cups-libs-2.4.19-r0 webpage:
 https://github.com/OpenPrinting/cups/
 
-cups-libs-2.4.18-r0 installed size:
+cups-libs-2.4.19-r0 installed size:
 559 KiB
 
-cups-libs-2.4.18-r0 license:
+cups-libs-2.4.19-r0 license:
 Apache-2.0
 
 ```
