@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:cbaa7fd428a7109c73aba6361292d2a9d37f20319d993b397522989a525474ff`
 - Created: `2026-05-13T18:04:15.020842842Z`
-- Virtual Size: ~ 243.00 Mb  
+- Virtual Size: ~ 243 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["groovysh"]`
