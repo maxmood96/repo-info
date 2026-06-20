@@ -4,7 +4,7 @@
 
 - Image ID: `sha256:cd2e3eac94911fe502648561f8d7c58a6fcfbd510952a61867be139c377a8707`
 - Created: `2026-06-15T23:13:40.248151366Z`
-- Virtual Size: ~ 336.30 Mb  
+- Virtual Size: ~ 336.3 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
