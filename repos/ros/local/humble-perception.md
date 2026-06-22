@@ -5015,9 +5015,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libusb-1.0=2:1.0.25-1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libusb-1.0/libusb-1.0_1.0.25.orig.tar.bz2' libusb-1.0_1.0.25.orig.tar.bz2 609127 SHA256:8a28ef197a797ebac2702f095e81975e2b02b2eeff2774fa909c78a74ef50849
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libusb-1.0/libusb-1.0_1.0.25-1ubuntu2.debian.tar.xz' libusb-1.0_1.0.25-1ubuntu2.debian.tar.xz 15544 SHA256:d74ef813effd4678beb52893b592724c531262c78514e7748d669d37d650b7a9
-'http://archive.ubuntu.com/ubuntu/pool/main/libu/libusb-1.0/libusb-1.0_1.0.25-1ubuntu2.dsc' libusb-1.0_1.0.25-1ubuntu2.dsc 1636 SHA256:d0dd278e73f810d42be78a6eb4a3ef7f58eabd7a43e44828cd0cf608ead8658f
+'http://archive.ubuntu.com/ubuntu/pool/main/libu/libusb-1.0/libusb-1.0_1.0.25.orig.tar.bz2' libusb-1.0_1.0.25.orig.tar.bz2 609127 SHA512:f1e6e5577d4bd1ff136927dc66c615014a06ac332ddd797b1d1ad5f7b68e2405e66068dcb210e2f0ae3e31681603ef72efbd88bf7fbe0eb41ce700fdc3f92f9d
+'http://archive.ubuntu.com/ubuntu/pool/main/libu/libusb-1.0/libusb-1.0_1.0.25-1ubuntu2.debian.tar.xz' libusb-1.0_1.0.25-1ubuntu2.debian.tar.xz 15544 SHA512:ab2c50ce52dfb5bc47265506db8c7bbffe9b88bfc7cb947b195d3b46e6203cadcbab5005cc168c178c3b3c6134b71b75a600dc967a1e2392fb2e55157e91b767
+'http://archive.ubuntu.com/ubuntu/pool/main/libu/libusb-1.0/libusb-1.0_1.0.25-1ubuntu2.dsc' libusb-1.0_1.0.25-1ubuntu2.dsc 1636 SHA512:a57172dd5247ad5a7e0492a129f27c4cdb6662c5ef6a886433c383ae95f38f2e1a85ed5f8c00f91f893118eb37e7b9a4acd6ae18367f5c9eba03743db356ee45
 ```
 
 ### `dpkg` source package: `libuv1=1.43.0-1ubuntu0.1`
@@ -5482,14 +5482,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.11
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA256:13cf2e55e603c34143486f4082cbf202859ac1eec5130b8d8e5e3c06a9902d8a
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.11.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.11.debian.tar.xz 53904 SHA256:d93a70fb00242ed9423e750e21ee14d388e53cf492a204e2b5e3c36b1de150cd
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.11.dsc' libxml2_2.9.13+dfsg-1ubuntu0.11.dsc 3079 SHA256:abf167e8425c872190f4c092b1676d988add8959dd1221e87f3db66057716bf6
-```
 
 ### `dpkg` source package: `libxmu=2:1.1.3-3`
 
