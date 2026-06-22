@@ -1,9 +1,10 @@
 # `postfixadmin:4.0.3-fpm-alpine`
+
 ## Docker Metadata
 
 - Image ID: `sha256:0c8d27f3058c8855456fe9107b2751eb8d8f2b60ed91217d6b7cf0ecd4819c6a`
 - Created: `2026-06-16T02:22:01.692154217Z`
-- Virtual Size: ~ 168.7 Mb
+- Virtual Size: ~ 168.7 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
