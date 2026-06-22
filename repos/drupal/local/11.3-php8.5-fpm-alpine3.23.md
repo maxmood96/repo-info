@@ -1,10 +1,10 @@
-# `drupal:11.3.11-php8.5-fpm-alpine3.23`
+# `drupal:11.3.12-php8.5-fpm-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4e2ca2926c10cdbbc10ebb0ff62d0927895dc7c205ffe9720b6768ec462cf48b`
-- Created: `2026-06-10T23:10:03.03052383Z`
-- Virtual Size: ~ 216.65 Mb  
+- Image ID: `sha256:ec23e108cc3db8b5302559bfa31603c87984cfb89dd5856cca1e900d49429cbc`
+- Created: `2026-06-17T22:27:07.457357079Z`
+- Virtual Size: ~ 231.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.5.7.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.7.tar.xz.asc`
   - `PHP_SHA256=01ba2ed1c2658dacf91bebc8be6a4885f69b811c7993831fc48e26107ab29985`
-  - `DRUPAL_VERSION=11.3.11`
+  - `DRUPAL_VERSION=11.3.12`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `apk` (`.apk`-based packages)
@@ -108,6 +108,23 @@ alpine-release-3.23.4-r0 installed size:
 
 alpine-release-3.23.4-r0 license:
 MIT
+
+```
+
+### `apk` package: `aom-libs`
+
+```console
+aom-libs-3.14.1-r0 description:
+Alliance for Open Media (AOM) AV1 codec SDK (libraries)
+
+aom-libs-3.14.1-r0 webpage:
+https://aomedia.org/
+
+aom-libs-3.14.1-r0 installed size:
+8180 KiB
+
+aom-libs-3.14.1-r0 license:
+BSD-2-Clause AND custom
 
 ```
 
@@ -315,6 +332,23 @@ GPL-2.0-only
 
 ```
 
+### `apk` package: `libavif`
+
+```console
+libavif-1.3.0-r0 description:
+Library for encoding and decoding .avif files
+
+libavif-1.3.0-r0 webpage:
+https://aomediacodec.github.io/av1-avif/
+
+libavif-1.3.0-r0 installed size:
+225 KiB
+
+libavif-1.3.0-r0 license:
+BSD-2-Clause
+
+```
+
 ### `apk` package: `libbz2`
 
 ```console
@@ -363,6 +397,23 @@ libcurl-8.19.0-r0 installed size:
 
 libcurl-8.19.0-r0 license:
 curl
+
+```
+
+### `apk` package: `libdav1d`
+
+```console
+libdav1d-1.5.2-r0 description:
+small and fast AV1 Decoder (libraries)
+
+libdav1d-1.5.2-r0 webpage:
+https://code.videolan.org/videolan/dav1d
+
+libdav1d-1.5.2-r0 installed size:
+1709 KiB
+
+libdav1d-1.5.2-r0 license:
+BSD-2-Clause
 
 ```
 
@@ -536,6 +587,23 @@ Apache-2.0
 
 ```
 
+### `apk` package: `libstdc++`
+
+```console
+libstdc++-15.2.0-r2 description:
+GNU C++ standard runtime library
+
+libstdc++-15.2.0-r2 webpage:
+https://gcc.gnu.org
+
+libstdc++-15.2.0-r2 installed size:
+2738 KiB
+
+libstdc++-15.2.0-r2 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
+
+```
+
 ### `apk` package: `libunistring`
 
 ```console
@@ -584,6 +652,23 @@ libxml2-2.13.9-r1 installed size:
 
 libxml2-2.13.9-r1 license:
 MIT
+
+```
+
+### `apk` package: `libyuv`
+
+```console
+libyuv-0.0.1887.20251502-r1 description:
+Library for YUV scaling
+
+libyuv-0.0.1887.20251502-r1 webpage:
+https://chromium.googlesource.com/libyuv/libyuv/
+
+libyuv-0.0.1887.20251502-r1 installed size:
+1915 KiB
+
+libyuv-0.0.1887.20251502-r1 license:
+BSD-3-Clause
 
 ```
 
