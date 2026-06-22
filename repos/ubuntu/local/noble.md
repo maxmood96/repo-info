@@ -1,9 +1,10 @@
 # `ubuntu:24.04`
+
 ## Docker Metadata
 
 - Image ID: `sha256:8bf6fbc94074daccf0d7e43395600ddd71aa5a9e486cf0d1a19cc36583f8401e`
 - Created: `2026-05-20T01:37:22.119122873Z`
-- Virtual Size: ~ 78.14 Mb
+- Virtual Size: ~ 78.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
