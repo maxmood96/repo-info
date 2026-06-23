@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:343b7e7e34cb3b0c8e6c7a44f74f147f01f7ab4022ad1aa3c99ee43701d261f0`
-- Created: `2026-05-11T23:06:27.751477414Z`
-- Virtual Size: ~ 210.22 Mb  
+- Image ID: `sha256:b096296ace6cf3ae6d76c243d555a7ab09f2c8728e9edfafe3d53fb285246929`
+- Created: `2026-06-22T20:09:11.225372487Z`
+- Virtual Size: ~ 209.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -74,16 +74,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.4-r0 description:
+alpine-release-3.23.5-r0 description:
 Alpine release data
 
-alpine-release-3.23.4-r0 webpage:
+alpine-release-3.23.5-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.4-r0 installed size:
+alpine-release-3.23.5-r0 installed size:
 343 B
 
-alpine-release-3.23.4-r0 license:
+alpine-release-3.23.5-r0 license:
 MIT
 
 ```
@@ -193,16 +193,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20260413-r0 description:
+ca-certificates-20260611-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20260413-r0 webpage:
+ca-certificates-20260611-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20260413-r0 installed size:
-246 KiB
+ca-certificates-20260611-r0 installed size:
+207 KiB
 
-ca-certificates-20260413-r0 license:
+ca-certificates-20260611-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -210,16 +210,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260413-r0 description:
+ca-certificates-bundle-20260611-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260413-r0 webpage:
+ca-certificates-bundle-20260611-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260413-r0 installed size:
-212 KiB
+ca-certificates-bundle-20260611-r0 installed size:
+175 KiB
 
-ca-certificates-bundle-20260413-r0 license:
+ca-certificates-bundle-20260611-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -227,16 +227,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.17.0-r1 description:
+curl-8.19.0-r0 description:
 URL retrival utility and library
 
-curl-8.17.0-r1 webpage:
+curl-8.19.0-r0 webpage:
 https://curl.se/
 
-curl-8.17.0-r1 installed size:
-265 KiB
+curl-8.19.0-r0 installed size:
+273 KiB
 
-curl-8.17.0-r1 license:
+curl-8.19.0-r0 license:
 curl
 
 ```
@@ -550,16 +550,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.6-r0 description:
+libcrypto3-3.5.7-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.6-r0 webpage:
+libcrypto3-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.6-r0 installed size:
+libcrypto3-3.5.7-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.6-r0 license:
+libcrypto3-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -567,16 +567,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.17.0-r1 description:
+libcurl-8.19.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.17.0-r1 webpage:
+libcurl-8.19.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.17.0-r1 installed size:
-721 KiB
+libcurl-8.19.0-r0 installed size:
+697 KiB
 
-libcurl-8.17.0-r1 license:
+libcurl-8.19.0-r0 license:
 curl
 
 ```
@@ -669,16 +669,16 @@ LGPL-3.0-only AND GPL-2.0-only AND GPL-3.0-only
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.10-r0 description:
+libldap-2.6.13-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.10-r0 webpage:
+libldap-2.6.13-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.10-r0 installed size:
+libldap-2.6.13-r0 installed size:
 365 KiB
 
-libldap-2.6.10-r0 license:
+libldap-2.6.13-r0 license:
 OLDAP-2.8
 
 ```
@@ -737,16 +737,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.6-r0 description:
+libssl3-3.5.7-r0 description:
 SSL shared libraries
 
-libssl3-3.5.6-r0 webpage:
+libssl3-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.6-r0 installed size:
+libssl3-3.5.7-r0 installed size:
 819 KiB
 
-libssl3-3.5.6-r0 license:
+libssl3-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -866,23 +866,6 @@ nghttp2-libs-1.69.0-r0 installed size:
 129 KiB
 
 nghttp2-libs-1.69.0-r0 license:
-MIT
-
-```
-
-### `apk` package: `nghttp3`
-
-```console
-nghttp3-1.13.1-r0 description:
-HTTP/3 library written in C
-
-nghttp3-1.13.1-r0 webpage:
-https://github.com/ngtcp2/nghttp3
-
-nghttp3-1.13.1-r0 installed size:
-140 KiB
-
-nghttp3-1.13.1-r0 license:
 MIT
 
 ```
