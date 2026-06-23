@@ -1,10 +1,10 @@
-# `gradle:9.5.1-jdk17-ubi9`
+# `gradle:9.6.0-jdk17-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3694be3b36406b9925e8656bc960e72ad2ab38fd416f0404debc92ecc83e0b38`
-- Created: `2026-06-15T23:33:10.039201183Z`
-- Virtual Size: ~ 732.79 Mb  
+- Image ID: `sha256:6e67f2c11308df369b23174ee5010eed4db57f5fc84c38939437ef03812931f7`
+- Created: `2026-06-22T18:07:45.326898076Z`
+- Virtual Size: ~ 733.2 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.19+10`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.5.1`
+  - `GRADLE_VERSION=9.6.0`
 - Labels:
   - `architecture=x86_64`
   - `build-date=2026-06-15T04:14:02Z`
@@ -1525,23 +1525,13 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): ASL 2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url openssl-fips-provider-3.0.7-8.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-fips-provider-3.0.7-8.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `openssl-fips-provider-so-3.0.7-8.el9.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url openssl-fips-provider-so-3.0.7-8.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-fips-provider-3.0.7-8.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `openssl-libs-3.5.5-4.el9_8.x86_64`
 

@@ -1,10 +1,10 @@
-# `gradle:9.5.1-jdk25-graal-noble`
+# `gradle:9.6.0-jdk25-graal-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f16bfef1b37e1b8d6c5187eb82e35d54e6c13a7b9ab9e75636df34b5faac0245`
-- Created: `2026-06-02T08:15:52.128298588Z`
-- Virtual Size: ~ 1.4 Gb  
+- Image ID: `sha256:2bbe78625c7cad65ab2a4110956094d9ff985fb8235a09aaca125397d1c5c79f`
+- Created: `2026-06-22T18:06:26.644965807Z`
+- Virtual Size: ~ 1.41 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -13,7 +13,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=25.0.2`
-  - `GRADLE_VERSION=9.5.1`
+  - `GRADLE_VERSION=9.6.0`
 - Labels:
   - `org.opencontainers.image.version=24.04`
 
@@ -323,11 +323,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-5.1build0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-5.1build0.1.dsc' bzip2_1.0.8-5.1build0.1.dsc 2220 SHA256:edf9f297ccfba3fc6f89d64fb6c63d866527498d21d0f0771a60f2fb7bc9b16a
 ```
 
-### `dpkg` source package: `ca-certificates=20240203`
+### `dpkg` source package: `ca-certificates=20260601~24.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20240203`
+- `ca-certificates=20260601~24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -338,9 +338,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20240203
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20240203.dsc' ca-certificates_20240203.dsc 1766 SHA512:3cd6d9322800a3469be7dcea1136daa0f9311ae148b258bbf6689d5992f4dda82351fba34d52bc07c505bf407f3f4feb4e284ecfc2fec18bb1c23b1652b98986
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20240203.tar.xz' ca-certificates_20240203.tar.xz 263276 SHA512:e9d7b5283c2be9425d18eb4a9b54b1fa54db0b9d1bdb28f9c6db7f8b2e03fd93442ac973f9b024b7a148d71ac2789edbc1207c2048ce4be589eb1a5376640670
+$ apt-get source -qq --print-uris ca-certificates=20260601~24.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260601%7e24.04.1.tar.xz' ca-certificates_20260601~24.04.1.tar.xz 266460 SHA512:9323be57f3f5fd6214320f164e8167384d312bfa77e63bccc986634804faa4ff6a1012fa4a05901b7e69775b5680c3deb6bbf74af521b13eff0987659cd0889d
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260601%7e24.04.1.dsc' ca-certificates_20260601~24.04.1.dsc 1769 SHA512:724bb7a5cab786bbaa07d63f36e66ff4cde72d1248f515ff3d44b369cec0b69320bbcf92e7282fab45e1ad2239973f2be755a3b04d68c3e62df03ebceb430e60
 ```
 
 ### `dpkg` source package: `cdebconf=0.271ubuntu3`
@@ -2205,12 +2205,12 @@ $ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.16
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.16.dsc' openssh_9.6p1-3ubuntu13.16.dsc 3346 SHA512:4f7d3819d497944f750a76a3b121344b87237e3ebbd5dd4a6c282314decfb5437d835f5bcaf14dddaa9c9c98fde94197f709e0a92121285ddb63629861d9907e
 ```
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3.9`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.11`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.0.13-0ubuntu3.9`
-- `openssl=3.0.13-0ubuntu3.9`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.11`
+- `openssl=3.0.13-0ubuntu3.11`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -2219,9 +2219,14 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.11
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.11.debian.tar.xz' openssl_3.0.13-0ubuntu3.11.debian.tar.xz 195932 SHA512:1296cd3f720a97277db2d400b0817ee89f92bd0ed7165a301ce994d03a48e0da143fc3bf8b8f46d67374278671c91fd2d0883d77fb4844beba72fc21c9eba5ce
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.11.dsc' openssl_3.0.13-0ubuntu3.11.dsc 2516 SHA512:68b2827c93a1a22e2418fc7063b93d900a97d196b4809041362e7f5581315268b1520f78dba839a5d9c080227030e3f86c244c2e34cd31bc10cec529767e2661
+```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 
@@ -2461,19 +2466,24 @@ $ apt-get source -qq --print-uris python-tzlocal=5.2-1.1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-tzlocal/python-tzlocal_5.2-1.1.debian.tar.xz' python-tzlocal_5.2-1.1.debian.tar.xz 3468 SHA512:649650d9edf330c73c52a9063bcdce3f856ef976e399efd3919a935bc5ad41ea7c9226a70b15c803ecabff62c51e208f5009792cea9f01ca4ed19c49b563e1e1
 ```
 
-### `dpkg` source package: `python-urllib3=2.0.7-1ubuntu0.6`
+### `dpkg` source package: `python-urllib3=2.0.7-1ubuntu0.7`
 
 Binary Packages:
 
-- `python3-urllib3=2.0.7-1ubuntu0.6`
+- `python3-urllib3=2.0.7-1ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 
 - `Expat`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-urllib3=2.0.7-1ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_2.0.7.orig.tar.gz' python-urllib3_2.0.7.orig.tar.gz 282546 SHA512:ca21dd330cfc7f53e6f00a92be1df1d24acbe61b6ca31c52a272dccd6f50d1bb797eece9132860adc84c21a9bebc3030a12816081451fcb8384c11a6cd2d1e8b
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_2.0.7-1ubuntu0.7.debian.tar.xz' python-urllib3_2.0.7-1ubuntu0.7.debian.tar.xz 22640 SHA512:6ae10125c03eb6ad38208f715d34bfd86a2002f9d549a64557aa79512eab4f6ae238ff95552ade0c7af3fd66812c1770f75ce08f25a288a85de1f1ced62db38d
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_2.0.7-1ubuntu0.7.dsc' python-urllib3_2.0.7-1ubuntu0.7.dsc 2736 SHA512:48c4b2d633e7832b08b2772c200a9db3fd3f2891dcd75940ed47f8f8021e21fa11c65cf8d6849adc3d17f558318ada732c26d41aab04a617020ae0a130d12e41
+```
 
 ### `dpkg` source package: `python3-defaults=3.12.3-0ubuntu2.1`
 

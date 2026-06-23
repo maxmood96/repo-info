@@ -1,9 +1,9 @@
-# `gradle:9.5.1-jdk21-graal-jammy`
+# `gradle:9.6.0-jdk21-graal-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a17dc64ab871d39de343b0243c28e52e2ac05cbd10ea2934220d2500d9a48eb8`
-- Created: `2026-05-15T21:16:53.453874809Z`
+- Image ID: `sha256:12e6964f3c189adb950573388b4013b57085ceadceca5ded016bad350628ef37`
+- Created: `2026-06-22T18:07:25.24791565Z`
 - Virtual Size: ~ 1.14 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=21.0.2`
-  - `GRADLE_VERSION=9.5.1`
+  - `GRADLE_VERSION=9.6.0`
 - Labels:
   - `org.opencontainers.image.version=22.04`
 
@@ -307,11 +307,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-5build1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-5build1.debian.tar.bz2' bzip2_1.0.8-5build1.debian.tar.bz2 26870 SHA512:e030c257c3458d780fd0ffc6f328efd69d0e875e81acd7441a7c6651194ebded61017c96aad7c99061f93d50dfc33056abe98c9a599abc900f49d51c4a1eed6f
 ```
 
-### `dpkg` source package: `ca-certificates=20240203~22.04.1`
+### `dpkg` source package: `ca-certificates=20260601~22.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20240203~22.04.1`
+- `ca-certificates=20260601~22.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -319,9 +319,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20260601~22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260601%7e22.04.1.tar.xz' ca-certificates_20260601~22.04.1.tar.xz 266492 SHA512:a06f67c74305ad876aa84bf41d594ac902f58143d7d5998fb494630453573e6606ddae5c462ebeeb255c9c94b89fe44af79f59ddcf8b0bd369a9353bfce709d6
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20260601%7e22.04.1.dsc' ca-certificates_20260601~22.04.1.dsc 1850 SHA512:af78747c137e3d0fb7ba55c278792d4c028f177b3c4af49b92c835301371477eb54c2a73120e75611f9f4b8ced331d5d6bcea37f7bba41f0b3f27fcd9871ca29
+```
 
 ### `dpkg` source package: `cdebconf=0.261ubuntu1`
 
@@ -1730,19 +1734,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-179.189`
+### `dpkg` source package: `linux=5.15.0-181.191`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-179.189`
+- `linux-libc-dev:amd64=5.15.0-181.191`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.15.0-181.191
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-181.191.diff.gz' linux_5.15.0-181.191.diff.gz 12798745 SHA512:62cd528be89908f1ec108c1f5ab25d7e1e4b81610f753913dd31f97a33cf64a9dd6fdf4587c670f49dd721378dcbeb3a8b161f55b5294d411bc662a73f56c047
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-181.191.dsc' linux_5.15.0-181.191.dsc 7824 SHA512:00bfdf4e4b8b6a2926a621051750280d976baaa7a0ea4bfc72d1cd0806fd6742b528324b436edc8aaccdd44a1f6033ea11b2c40b279d5e1fad7078b3b7892d72
+```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
 
@@ -2057,9 +2066,8 @@ $ apt-get source -qq --print-uris openssh=1:8.9p1-3ubuntu0.15
 Binary Packages:
 
 - `libssl3:amd64=3.0.2-0ubuntu1.23`
-- `openssl=3.0.2-0ubuntu1.23`
 
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -2069,6 +2077,29 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.25`
+
+Binary Packages:
+
+- `openssl=3.0.2-0ubuntu1.25`
+
+Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
+
+- `Apache-2.0`
+- `Artistic`
+- `GPL-1`
+- `GPL-1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.25
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.25.debian.tar.xz' openssl_3.0.2-0ubuntu1.25.debian.tar.xz 292264 SHA512:68d7cb2233d1cb266fc9bd4d11e435d64237033624a22c2ec7f75917314238bc7dbcc38bcc7a761a844ce0c68b426b4b572f87f83bd458162ebe705cc4dd84c3
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.25.dsc' openssl_3.0.2-0ubuntu1.25.dsc 2730 SHA512:6e4d4e77f6a68dd44a5a042e55a70c7ed414ed93d05ee3d1bb7b7c9699accbfab2c297c453b06d5f6b5c537d1c480e685b3df344206bf9671eb9d8a362930581
+```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
@@ -2293,20 +2324,25 @@ $ apt-get source -qq --print-uris python-fastbencode=0.0.5-1build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-fastbencode/python-fastbencode_0.0.5-1build1.debian.tar.xz' python-fastbencode_0.0.5-1build1.debian.tar.xz 36708 SHA512:136b9b009fcd823e657e1082dfd5fd6f77e9676f85deff3859f7404d693a442f284549067abaf6e37584aac985a66a3ee308fe97da55ff792f1b1941c43aaa55
 ```
 
-### `dpkg` source package: `python-urllib3=1.26.5-1~exp1ubuntu0.6`
+### `dpkg` source package: `python-urllib3=1.26.5-1~exp1ubuntu0.7`
 
 Binary Packages:
 
-- `python3-urllib3=1.26.5-1~exp1ubuntu0.6`
+- `python3-urllib3=1.26.5-1~exp1ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 
 - `Expat`
 - `PSF-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-urllib3=1.26.5-1~exp1ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5.orig.tar.gz' python-urllib3_1.26.5.orig.tar.gz 292865 SHA512:4a1899b223b00894d49f6dff5fc95d410e5b0ab28c11f7e3cd82d03e50438b0c5b0adf693a33fd80f1586312dc0012836713998674da15531bf82d52645881f6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.7.debian.tar.xz' python-urllib3_1.26.5-1~exp1ubuntu0.7.debian.tar.xz 20308 SHA512:b2371a2c95d4859e68fa71d3d7b934cd024f2fb659bc4ec56272f2f757d6129341b5641ff6a70168c6fbc00ae1fb1a4d4c5a0c3e201053aab93683117464762c
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.7.dsc' python-urllib3_1.26.5-1~exp1ubuntu0.7.dsc 2333 SHA512:d5b79b9a90c4ae3b5dadd513a940406bad82ccfd63e49c1bf646cff2fecd5643b7ccf752a2906c45133a8211bb54f89268785e399c8620dd06cf7d10e8408362
+```
 
 ### `dpkg` source package: `python3-defaults=3.10.6-1~22.04.1`
 

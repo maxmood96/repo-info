@@ -1525,23 +1525,13 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): ASL 2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url openssl-fips-provider-3.0.7-8.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-fips-provider-3.0.7-8.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `openssl-fips-provider-so-3.0.7-8.el9.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url openssl-fips-provider-so-3.0.7-8.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-fips-provider-3.0.7-8.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `openssl-libs-3.5.5-4.el9_8.x86_64`
 
