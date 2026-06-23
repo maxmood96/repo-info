@@ -1,10 +1,10 @@
-# `openjdk:27-ea-26-jdk-oraclelinux10`
+# `openjdk:27-ea-27-jdk-oraclelinux10`
 
 ## Docker Metadata
 
-- Image ID: `sha256:64c126e3e72d6bfdc662d307b3ef7e51aa54165e05fafc27ac563cb7ad354c59`
-- Created: `2026-06-16T23:31:37.505690728Z`
-- Virtual Size: ~ 597.17 Mb  
+- Image ID: `sha256:8ce02b6562ef13642347a98c1f9d7a879dd8c44cb1c47ab8dafe3eac3128e6f5`
+- Created: `2026-06-22T22:37:33.829001938Z`
+- Virtual Size: ~ 597.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/java/openjdk-27/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/java/openjdk-27`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=27-ea+26`
+  - `JAVA_VERSION=27-ea+27`
 
 ## `rpm` (`.rpm`-based packages)
 
