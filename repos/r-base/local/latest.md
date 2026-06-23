@@ -4356,20 +4356,13 @@ Licenses: (parsed from: `/usr/share/doc/libtiff6/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.7.1-2
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.1-2.dsc' tiff_4.7.1-2.dsc 2255 SHA256:7612a15f159a308e5f7a55f618004a92c98be3f768fbff5613b97db6abc93759
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.1.orig.tar.bz2' tiff_4.7.1.orig.tar.bz2 2200037 SHA256:7bbeb6ece519e302dc68bb820ae17b9cf071baf30f70a4a6b98e9f72e6d8c1eb
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.7.1-2.debian.tar.xz' tiff_4.7.1-2.debian.tar.xz 22876 SHA256:2918b560efaf54dd98755499a28fe41db81eb4693f506fc1224a92f741257124
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tiff/4.7.1-2/
 
-- https://sources.debian.net/src/tiff/4.7.1-2/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.7.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.7.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tk8.6=8.6.18-1`
 
