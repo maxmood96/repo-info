@@ -2650,21 +2650,13 @@ Licenses: (parsed from: `/usr/share/doc/gstreamer1.0-plugins-good/copyright`)
 - `LGPL-2.1+`
 - `MIT/X11 (BSD like) LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gst-plugins-good1.0=1.26.2-1+deb13u1
-'http://deb.debian.org/debian-security/pool/updates/main/g/gst-plugins-good1.0/gst-plugins-good1.0_1.26.2-1%2bdeb13u1.dsc' gst-plugins-good1.0_1.26.2-1+deb13u1.dsc 5230 SHA256:127f305a63901f56997cfde5a7d07b454e7bbeb24ff22fae58bcfaa2c93388ce
-'http://deb.debian.org/debian-security/pool/updates/main/g/gst-plugins-good1.0/gst-plugins-good1.0_1.26.2.orig.tar.xz' gst-plugins-good1.0_1.26.2.orig.tar.xz 2983396 SHA256:d864b9aec28c3a80895468c909dd303e5f22f92d6e2b1137f80e2a1454584339
-'http://deb.debian.org/debian-security/pool/updates/main/g/gst-plugins-good1.0/gst-plugins-good1.0_1.26.2.orig.tar.xz.asc' gst-plugins-good1.0_1.26.2.orig.tar.xz.asc 833 SHA256:a52f49271f6831942bad02fa2d6c54675b1bda054396ed76a9f0515b3d3888c4
-'http://deb.debian.org/debian-security/pool/updates/main/g/gst-plugins-good1.0/gst-plugins-good1.0_1.26.2-1%2bdeb13u1.debian.tar.xz' gst-plugins-good1.0_1.26.2-1+deb13u1.debian.tar.xz 45616 SHA256:b039d2e9604dd9910701c0cbac6804939e4fd8cfc58f7aeec3a2a386457773ee
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gst-plugins-good1.0/1.26.2-1+deb13u1/
 
-- https://sources.debian.net/src/gst-plugins-good1.0/1.26.2-1+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/gst-plugins-good1.0/1.26.2-1+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gst-plugins-good1.0/1.26.2-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gstreamer1.0=1.26.2-2`
 
@@ -3101,20 +3093,13 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imagemagick=8:7.1.1.43+dfsg1-1+deb13u9
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u9.dsc' imagemagick_7.1.1.43+dfsg1-1+deb13u9.dsc 5136 SHA256:5ed72512cc726eb14fc80520c5e87dab979e8a591cf6faca98e18554e93bcdd8
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1.orig.tar.xz' imagemagick_7.1.1.43+dfsg1.orig.tar.xz 10501740 SHA256:bcb4f3c78a930a608fa4889f889edbcb384974246ad9407fce1858f2c0607bfe
-'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u9.debian.tar.xz' imagemagick_7.1.1.43+dfsg1-1+deb13u9.debian.tar.xz 342248 SHA256:ecaa16ef9c69645dd7526a698b6401c3e7b91d1be1d8708ae4ce6011b309300b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u9/
 
-- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u9/ (for browsing the source)
-- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.12-1`
 
