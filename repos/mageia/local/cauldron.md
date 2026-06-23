@@ -292,12 +292,7 @@ http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/release/rpmtools-7.12-4.m
 
 Licenses (from `rpm --query`): LGPL
 
-Source:
-
-```console
-$ dnf --quiet download --source --url glibc-2.42-8.mga10
-http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/release/glibc-2.42-8.mga10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `gnulib-l10n-20241231-1.mga10.noarch`
 
@@ -540,12 +535,7 @@ http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/release/util-linux-2.42-1
 
 Licenses (from `rpm --query`): GPLv2
 
-Source:
-
-```console
-$ dnf --quiet download --source --url lib64bpf1-6.18.33-1.mga10
-http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/release/kernel-6.18.33-1.mga10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `lib64brotlicommon1-1.2.0-1.mga10.x86_64`
 
@@ -1959,23 +1949,13 @@ http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/release/lsb-release-3.3-3
 
 Licenses (from `rpm --query`): GPL
 
-Source:
-
-```console
-$ dnf --quiet download --source --url mageia-release-Default-10-2.mga10
-http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/release/mageia-release-10-2.mga10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `mageia-release-common-10-2.mga10.x86_64`
 
 Licenses (from `rpm --query`): GPL
 
-Source:
-
-```console
-$ dnf --quiet download --source --url mageia-release-common-10-2.mga10
-http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/release/mageia-release-10-2.mga10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `mageia-repos-10-2.mga10.x86_64`
 
@@ -2542,12 +2522,7 @@ http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/release/sed-4.10-1.mga10.
 
 Licenses (from `rpm --query`): Public Domain
 
-Source:
-
-```console
-$ dnf --quiet download --source --url setup-2.7.25-4.mga10.noarch
-http://distro.ibiblio.org/mageia/distrib/10/SRPMS/core/release/setup-2.7.25-4.mga10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `shadow-utils-4.13-4.mga10.x86_64`
 
