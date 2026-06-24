@@ -99,7 +99,7 @@
 ## `haxe:4.0`
 
 ```console
-$ docker pull haxe@sha256:9860902e031fb99b93dc1a32cd3080aef1f6a9d082b04d58b6586d993765984f
+$ docker pull haxe@sha256:faa4beee027d13aa928afe0c96b6e1a68e56afc81aa2b3e99859703ccc736d8b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -116,84 +116,84 @@ $ docker pull haxe@sha256:9860902e031fb99b93dc1a32cd3080aef1f6a9d082b04d58b6586d
 ### `haxe:4.0` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:800fc5c82ab57779aa3309266aafd72de006c0fe0926a87c44f5a20f910be842
+$ docker pull haxe@sha256:dd65eff1148505b9914277ef8c89b2482e91edf78cbdf9a0aa67284e28176e23
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.0 MB (136012291 bytes)**  
+-	Total Size: **136.0 MB (136013210 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1867b63f6dfb8f2fa52e195b710f3a3a2bdba0a8a26faeed5aa6cef6d240b403`
+-	Image ID: `sha256:6a1cd76a2a6c0da88969b07bc49860f777f98432d4227362ded2e5d4f667be97`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:42:19 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:41:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:36 GMT
+# Wed, 24 Jun 2026 02:28:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:29 GMT
+# Wed, 24 Jun 2026 03:18:45 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:29 GMT
+# Wed, 24 Jun 2026 03:18:45 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:29 GMT
+# Wed, 24 Jun 2026 03:18:45 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:58 GMT
+# Wed, 24 Jun 2026 03:20:07 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:58 GMT
+# Wed, 24 Jun 2026 03:20:07 GMT
 ENV HAXE_VERSION=4.0.5
-# Thu, 11 Jun 2026 03:18:58 GMT
+# Wed, 24 Jun 2026 03:20:07 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:24:00 GMT
+# Wed, 24 Jun 2026 03:25:52 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.11.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.7 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:24:00 GMT
+# Wed, 24 Jun 2026 03:25:52 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:af48a3e7696e07f88a02f9674e541901b65eadb5cf0f62e566b1d895099a1e9e`  
-		Last Modified: Wed, 10 Jun 2026 23:40:09 GMT  
-		Size: 53.8 MB (53771769 bytes)  
+	-	`sha256:c67cddb4b9fcdeefaf829aa012f0ccaefcfa862a558064326104b95b8849cd81`  
+		Last Modified: Wed, 24 Jun 2026 00:28:17 GMT  
+		Size: 53.8 MB (53773009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53f53a3a71a19cca6d8312e9c60a5428b23742024a0057b1f0e46517df6ae4a9`  
-		Last Modified: Thu, 11 Jun 2026 00:42:31 GMT  
-		Size: 15.8 MB (15790824 bytes)  
+	-	`sha256:816526a6d4acf81b392ec5a1e6d8d402fbc4bf0460323c5ad45b376b247ca6fc`  
+		Last Modified: Wed, 24 Jun 2026 01:41:36 GMT  
+		Size: 15.8 MB (15790805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3db6c46730caf21fd1b15e0e84732744cb5a66e6931cf2c3753965fc32257fc`  
-		Last Modified: Thu, 11 Jun 2026 02:24:52 GMT  
-		Size: 54.7 MB (54743048 bytes)  
+	-	`sha256:2d3cf50c221acb61e259a7ecd20caf425597eca7d93e329dde2640ca7ec8aaf4`  
+		Last Modified: Wed, 24 Jun 2026 02:28:36 GMT  
+		Size: 54.7 MB (54742897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1995463ebad64433c0fc82e7ae6486f8bdd52517c484a90a33e5f26704b1ef90`  
-		Last Modified: Thu, 11 Jun 2026 03:24:06 GMT  
-		Size: 1.2 MB (1155239 bytes)  
+	-	`sha256:149ee13db55aaa660a486f341c8ad2118256475d0790ba63a232b9d0c54e3fce`  
+		Last Modified: Wed, 24 Jun 2026 03:25:57 GMT  
+		Size: 1.2 MB (1155276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87ab47b6ed23569c691a9d0fe838adbfede2a2b32bbecffe258f5de07763330b`  
-		Last Modified: Thu, 11 Jun 2026 03:24:06 GMT  
-		Size: 1.5 MB (1462192 bytes)  
+	-	`sha256:17d830c3b39a7604da3b45a9c17301af360ab14f0bd8a97e70cd29cb033900f1`  
+		Last Modified: Wed, 24 Jun 2026 03:25:58 GMT  
+		Size: 1.5 MB (1462122 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41fd9c6c72e160190d15cb1461bf400e1c12ee4c113a80e0f5618eeb438a3503`  
-		Last Modified: Thu, 11 Jun 2026 03:24:06 GMT  
-		Size: 9.1 MB (9089219 bytes)  
+	-	`sha256:55246ae138ea950dc4eb18c2d37a1233b36648522b817842867a7db91544e838`  
+		Last Modified: Wed, 24 Jun 2026 03:25:58 GMT  
+		Size: 9.1 MB (9089101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:0f9a927dc66d2e74b23f5abdf0fa7b52ff2a9f9bdfd07081e6941405a77ee18a
+$ docker pull haxe@sha256:90ba80bc4824751a2f43a30d8cd899ca002e951b6ca3aea5ff801d68e2e1a1ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.3 KB (19270 bytes)**  
+-	Total Size: **19.3 KB (19269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1bede825d9759fb7038ace7fc55c745e22edcc625ca69a4e4bd42287eec7adef`
+-	Image ID: `sha256:45fed899bea85aaa8e6aa09ed3fbb2ac548ba6d59d36b3dc1aa60b76ac89656a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:368d0e22c7493ad6522d082b234687b116706e3771afb85695990ca38d0c62a9`  
-		Last Modified: Thu, 11 Jun 2026 03:24:06 GMT  
-		Size: 19.3 KB (19270 bytes)  
+	-	`sha256:4c2146652700f46ce1a92e0afb2c00c8b5aa2b330c2eec1774606f84d506b73f`  
+		Last Modified: Wed, 24 Jun 2026 03:25:57 GMT  
+		Size: 19.3 KB (19269 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.0` - linux; arm variant v7
@@ -282,84 +282,84 @@ $ docker pull haxe@sha256:735a040ee78dd4f282fdf22d86e051ce17c465c3ca6064f960e2e0
 ### `haxe:4.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f2c454432a8ebc286e6b5900e7e14bb458d53974ab68895ea86cbfd596eebfcd
+$ docker pull haxe@sha256:448bc4f92c04b5b89f735fb21e27775d15862fe17ad9965f457c82c9825ef076
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.1 MB (136060765 bytes)**  
+-	Total Size: **136.1 MB (136054141 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:446079833a82fda67f4dfa914307fa0101610e123ccfd85b3d01b42301b3533f`
+-	Image ID: `sha256:558b7079ce5eefbe46d0580c7c77513eb3390ace2d848e05fc685eee6f5ade5e`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:43:46 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:44:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:19 GMT
+# Wed, 24 Jun 2026 03:18:25 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:19 GMT
+# Wed, 24 Jun 2026 03:18:25 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:19 GMT
+# Wed, 24 Jun 2026 03:18:25 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:36 GMT
+# Wed, 24 Jun 2026 03:19:42 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:36 GMT
+# Wed, 24 Jun 2026 03:19:42 GMT
 ENV HAXE_VERSION=4.0.5
-# Thu, 11 Jun 2026 03:18:36 GMT
+# Wed, 24 Jun 2026 03:19:42 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:23:44 GMT
+# Wed, 24 Jun 2026 03:24:57 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.11.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.7 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:23:44 GMT
+# Wed, 24 Jun 2026 03:24:57 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:7c21e59e753cb91625909251110d6e4cc4a5411b4b7b37f74a62e56b927b7f1e`  
-		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
-		Size: 52.3 MB (52264114 bytes)  
+	-	`sha256:35157acdff35db21da73141f382d0dca0f6bc6d183c3a816d283fe39f471e539`  
+		Last Modified: Wed, 24 Jun 2026 00:27:56 GMT  
+		Size: 52.3 MB (52257219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8698eac281c2783fff44c0d5a2c381eeb273791e12f4dc8b407db26260bc3b85`  
-		Last Modified: Thu, 11 Jun 2026 00:43:55 GMT  
-		Size: 15.8 MB (15774833 bytes)  
+	-	`sha256:daf305d6ad7bad47ee0696c3db8b8fed8e9c2a42c53b57d047f8ab32f5d9b546`  
+		Last Modified: Wed, 24 Jun 2026 01:44:59 GMT  
+		Size: 15.8 MB (15774954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddd4791f1a451400cf59328cbd4f4f9bed438b89f7103b59dc50338fd2ac9293`  
-		Last Modified: Thu, 11 Jun 2026 02:24:59 GMT  
-		Size: 54.9 MB (54879555 bytes)  
+	-	`sha256:c95f37219bba62c0b4908476dc3cf7f0f98f1c87e8908c188797b1dc1f610c77`  
+		Last Modified: Wed, 24 Jun 2026 02:35:29 GMT  
+		Size: 54.9 MB (54879567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7aa8a57182d8ed0176712a99a528697a6512e6e5e8a62483abba4741c336049`  
-		Last Modified: Thu, 11 Jun 2026 03:23:50 GMT  
-		Size: 1.1 MB (1145543 bytes)  
+	-	`sha256:89f68de47fa5519ceb61d02b16b2367fc8fb53dcde0d71cf1c6dd3d679cf4d7f`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 1.1 MB (1145570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70cdeca918a7865228af314b8ec79ee421181901c815610291ea7f66b3d8d67e`  
-		Last Modified: Thu, 11 Jun 2026 03:23:50 GMT  
-		Size: 1.5 MB (1453600 bytes)  
+	-	`sha256:bcedc9f7099f61e40040733d708652b4137b636ff0c74e78ad846ac16f3d50a0`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 1.5 MB (1453670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b71f6c853c7a6392c65104681082019cc710ecbd6ef8491086cd7ee793d78fe`  
-		Last Modified: Thu, 11 Jun 2026 03:23:50 GMT  
-		Size: 10.5 MB (10543120 bytes)  
+	-	`sha256:a1258d2d90e5b3aaaf8ac269b13026194fba14857c2da5c033bb03d846608034`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 10.5 MB (10543161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:ee6215dfe238eb796c7e5e6ee04ed8f3d6eaa2136b49211acfca7dde6bff3ce6
+$ docker pull haxe@sha256:330dad8afed1ac1f27e4f61d42664086e2ee434c85d959ba161483ae4a1a4167
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.4 KB (19403 bytes)**  
+-	Total Size: **19.4 KB (19405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0605d056a4cbb95caba78a61c2939154ded90c7c1bab9d4764957d32fe493dbc`
+-	Image ID: `sha256:731e28b301a1ceb68725527a8774871f4225703e3d875a5292f60612477a8cea`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c86be143c769bece99285e5affccdbd6ddde0c59932b37f356688c8fda6873df`  
-		Last Modified: Thu, 11 Jun 2026 03:23:49 GMT  
-		Size: 19.4 KB (19403 bytes)  
+	-	`sha256:14567d2b0f4808db8fdd6717fea2e7e039514adea0b532eb3dad6ee056f0192a`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 19.4 KB (19405 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.0` - windows version 10.0.26100.32995; amd64
@@ -643,7 +643,7 @@ CMD ["haxe"]
 ## `haxe:4.0-bullseye`
 
 ```console
-$ docker pull haxe@sha256:dbac6d5e8c975f982e82d1331462510cca692c7b6527f52dea5f568a5cfe6b16
+$ docker pull haxe@sha256:27143d031f17d466a777a3e68fe86ec33202c340ee594cb7d420525b27a1f608
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -658,84 +658,84 @@ $ docker pull haxe@sha256:dbac6d5e8c975f982e82d1331462510cca692c7b6527f52dea5f56
 ### `haxe:4.0-bullseye` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:800fc5c82ab57779aa3309266aafd72de006c0fe0926a87c44f5a20f910be842
+$ docker pull haxe@sha256:dd65eff1148505b9914277ef8c89b2482e91edf78cbdf9a0aa67284e28176e23
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.0 MB (136012291 bytes)**  
+-	Total Size: **136.0 MB (136013210 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1867b63f6dfb8f2fa52e195b710f3a3a2bdba0a8a26faeed5aa6cef6d240b403`
+-	Image ID: `sha256:6a1cd76a2a6c0da88969b07bc49860f777f98432d4227362ded2e5d4f667be97`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:42:19 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:41:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:36 GMT
+# Wed, 24 Jun 2026 02:28:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:29 GMT
+# Wed, 24 Jun 2026 03:18:45 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:29 GMT
+# Wed, 24 Jun 2026 03:18:45 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:29 GMT
+# Wed, 24 Jun 2026 03:18:45 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:58 GMT
+# Wed, 24 Jun 2026 03:20:07 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:58 GMT
+# Wed, 24 Jun 2026 03:20:07 GMT
 ENV HAXE_VERSION=4.0.5
-# Thu, 11 Jun 2026 03:18:58 GMT
+# Wed, 24 Jun 2026 03:20:07 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:24:00 GMT
+# Wed, 24 Jun 2026 03:25:52 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.11.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.7 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:24:00 GMT
+# Wed, 24 Jun 2026 03:25:52 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:af48a3e7696e07f88a02f9674e541901b65eadb5cf0f62e566b1d895099a1e9e`  
-		Last Modified: Wed, 10 Jun 2026 23:40:09 GMT  
-		Size: 53.8 MB (53771769 bytes)  
+	-	`sha256:c67cddb4b9fcdeefaf829aa012f0ccaefcfa862a558064326104b95b8849cd81`  
+		Last Modified: Wed, 24 Jun 2026 00:28:17 GMT  
+		Size: 53.8 MB (53773009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53f53a3a71a19cca6d8312e9c60a5428b23742024a0057b1f0e46517df6ae4a9`  
-		Last Modified: Thu, 11 Jun 2026 00:42:31 GMT  
-		Size: 15.8 MB (15790824 bytes)  
+	-	`sha256:816526a6d4acf81b392ec5a1e6d8d402fbc4bf0460323c5ad45b376b247ca6fc`  
+		Last Modified: Wed, 24 Jun 2026 01:41:36 GMT  
+		Size: 15.8 MB (15790805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3db6c46730caf21fd1b15e0e84732744cb5a66e6931cf2c3753965fc32257fc`  
-		Last Modified: Thu, 11 Jun 2026 02:24:52 GMT  
-		Size: 54.7 MB (54743048 bytes)  
+	-	`sha256:2d3cf50c221acb61e259a7ecd20caf425597eca7d93e329dde2640ca7ec8aaf4`  
+		Last Modified: Wed, 24 Jun 2026 02:28:36 GMT  
+		Size: 54.7 MB (54742897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1995463ebad64433c0fc82e7ae6486f8bdd52517c484a90a33e5f26704b1ef90`  
-		Last Modified: Thu, 11 Jun 2026 03:24:06 GMT  
-		Size: 1.2 MB (1155239 bytes)  
+	-	`sha256:149ee13db55aaa660a486f341c8ad2118256475d0790ba63a232b9d0c54e3fce`  
+		Last Modified: Wed, 24 Jun 2026 03:25:57 GMT  
+		Size: 1.2 MB (1155276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87ab47b6ed23569c691a9d0fe838adbfede2a2b32bbecffe258f5de07763330b`  
-		Last Modified: Thu, 11 Jun 2026 03:24:06 GMT  
-		Size: 1.5 MB (1462192 bytes)  
+	-	`sha256:17d830c3b39a7604da3b45a9c17301af360ab14f0bd8a97e70cd29cb033900f1`  
+		Last Modified: Wed, 24 Jun 2026 03:25:58 GMT  
+		Size: 1.5 MB (1462122 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41fd9c6c72e160190d15cb1461bf400e1c12ee4c113a80e0f5618eeb438a3503`  
-		Last Modified: Thu, 11 Jun 2026 03:24:06 GMT  
-		Size: 9.1 MB (9089219 bytes)  
+	-	`sha256:55246ae138ea950dc4eb18c2d37a1233b36648522b817842867a7db91544e838`  
+		Last Modified: Wed, 24 Jun 2026 03:25:58 GMT  
+		Size: 9.1 MB (9089101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:0f9a927dc66d2e74b23f5abdf0fa7b52ff2a9f9bdfd07081e6941405a77ee18a
+$ docker pull haxe@sha256:90ba80bc4824751a2f43a30d8cd899ca002e951b6ca3aea5ff801d68e2e1a1ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.3 KB (19270 bytes)**  
+-	Total Size: **19.3 KB (19269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1bede825d9759fb7038ace7fc55c745e22edcc625ca69a4e4bd42287eec7adef`
+-	Image ID: `sha256:45fed899bea85aaa8e6aa09ed3fbb2ac548ba6d59d36b3dc1aa60b76ac89656a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:368d0e22c7493ad6522d082b234687b116706e3771afb85695990ca38d0c62a9`  
-		Last Modified: Thu, 11 Jun 2026 03:24:06 GMT  
-		Size: 19.3 KB (19270 bytes)  
+	-	`sha256:4c2146652700f46ce1a92e0afb2c00c8b5aa2b330c2eec1774606f84d506b73f`  
+		Last Modified: Wed, 24 Jun 2026 03:25:57 GMT  
+		Size: 19.3 KB (19269 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.0-bullseye` - linux; arm variant v7
@@ -824,84 +824,84 @@ $ docker pull haxe@sha256:735a040ee78dd4f282fdf22d86e051ce17c465c3ca6064f960e2e0
 ### `haxe:4.0-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f2c454432a8ebc286e6b5900e7e14bb458d53974ab68895ea86cbfd596eebfcd
+$ docker pull haxe@sha256:448bc4f92c04b5b89f735fb21e27775d15862fe17ad9965f457c82c9825ef076
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.1 MB (136060765 bytes)**  
+-	Total Size: **136.1 MB (136054141 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:446079833a82fda67f4dfa914307fa0101610e123ccfd85b3d01b42301b3533f`
+-	Image ID: `sha256:558b7079ce5eefbe46d0580c7c77513eb3390ace2d848e05fc685eee6f5ade5e`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:43:46 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:44:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:19 GMT
+# Wed, 24 Jun 2026 03:18:25 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:19 GMT
+# Wed, 24 Jun 2026 03:18:25 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:19 GMT
+# Wed, 24 Jun 2026 03:18:25 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:36 GMT
+# Wed, 24 Jun 2026 03:19:42 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:36 GMT
+# Wed, 24 Jun 2026 03:19:42 GMT
 ENV HAXE_VERSION=4.0.5
-# Thu, 11 Jun 2026 03:18:36 GMT
+# Wed, 24 Jun 2026 03:19:42 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:23:44 GMT
+# Wed, 24 Jun 2026 03:24:57 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.11.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.7 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:23:44 GMT
+# Wed, 24 Jun 2026 03:24:57 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:7c21e59e753cb91625909251110d6e4cc4a5411b4b7b37f74a62e56b927b7f1e`  
-		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
-		Size: 52.3 MB (52264114 bytes)  
+	-	`sha256:35157acdff35db21da73141f382d0dca0f6bc6d183c3a816d283fe39f471e539`  
+		Last Modified: Wed, 24 Jun 2026 00:27:56 GMT  
+		Size: 52.3 MB (52257219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8698eac281c2783fff44c0d5a2c381eeb273791e12f4dc8b407db26260bc3b85`  
-		Last Modified: Thu, 11 Jun 2026 00:43:55 GMT  
-		Size: 15.8 MB (15774833 bytes)  
+	-	`sha256:daf305d6ad7bad47ee0696c3db8b8fed8e9c2a42c53b57d047f8ab32f5d9b546`  
+		Last Modified: Wed, 24 Jun 2026 01:44:59 GMT  
+		Size: 15.8 MB (15774954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddd4791f1a451400cf59328cbd4f4f9bed438b89f7103b59dc50338fd2ac9293`  
-		Last Modified: Thu, 11 Jun 2026 02:24:59 GMT  
-		Size: 54.9 MB (54879555 bytes)  
+	-	`sha256:c95f37219bba62c0b4908476dc3cf7f0f98f1c87e8908c188797b1dc1f610c77`  
+		Last Modified: Wed, 24 Jun 2026 02:35:29 GMT  
+		Size: 54.9 MB (54879567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7aa8a57182d8ed0176712a99a528697a6512e6e5e8a62483abba4741c336049`  
-		Last Modified: Thu, 11 Jun 2026 03:23:50 GMT  
-		Size: 1.1 MB (1145543 bytes)  
+	-	`sha256:89f68de47fa5519ceb61d02b16b2367fc8fb53dcde0d71cf1c6dd3d679cf4d7f`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 1.1 MB (1145570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70cdeca918a7865228af314b8ec79ee421181901c815610291ea7f66b3d8d67e`  
-		Last Modified: Thu, 11 Jun 2026 03:23:50 GMT  
-		Size: 1.5 MB (1453600 bytes)  
+	-	`sha256:bcedc9f7099f61e40040733d708652b4137b636ff0c74e78ad846ac16f3d50a0`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 1.5 MB (1453670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b71f6c853c7a6392c65104681082019cc710ecbd6ef8491086cd7ee793d78fe`  
-		Last Modified: Thu, 11 Jun 2026 03:23:50 GMT  
-		Size: 10.5 MB (10543120 bytes)  
+	-	`sha256:a1258d2d90e5b3aaaf8ac269b13026194fba14857c2da5c033bb03d846608034`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 10.5 MB (10543161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:ee6215dfe238eb796c7e5e6ee04ed8f3d6eaa2136b49211acfca7dde6bff3ce6
+$ docker pull haxe@sha256:330dad8afed1ac1f27e4f61d42664086e2ee434c85d959ba161483ae4a1a4167
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.4 KB (19403 bytes)**  
+-	Total Size: **19.4 KB (19405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0605d056a4cbb95caba78a61c2939154ded90c7c1bab9d4764957d32fe493dbc`
+-	Image ID: `sha256:731e28b301a1ceb68725527a8774871f4225703e3d875a5292f60612477a8cea`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c86be143c769bece99285e5affccdbd6ddde0c59932b37f356688c8fda6873df`  
-		Last Modified: Thu, 11 Jun 2026 03:23:49 GMT  
-		Size: 19.4 KB (19403 bytes)  
+	-	`sha256:14567d2b0f4808db8fdd6717fea2e7e039514adea0b532eb3dad6ee056f0192a`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 19.4 KB (19405 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.0-windowsservercore`
@@ -1494,7 +1494,7 @@ CMD ["haxe"]
 ## `haxe:4.0.5`
 
 ```console
-$ docker pull haxe@sha256:9860902e031fb99b93dc1a32cd3080aef1f6a9d082b04d58b6586d993765984f
+$ docker pull haxe@sha256:faa4beee027d13aa928afe0c96b6e1a68e56afc81aa2b3e99859703ccc736d8b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1511,84 +1511,84 @@ $ docker pull haxe@sha256:9860902e031fb99b93dc1a32cd3080aef1f6a9d082b04d58b6586d
 ### `haxe:4.0.5` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:800fc5c82ab57779aa3309266aafd72de006c0fe0926a87c44f5a20f910be842
+$ docker pull haxe@sha256:dd65eff1148505b9914277ef8c89b2482e91edf78cbdf9a0aa67284e28176e23
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.0 MB (136012291 bytes)**  
+-	Total Size: **136.0 MB (136013210 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1867b63f6dfb8f2fa52e195b710f3a3a2bdba0a8a26faeed5aa6cef6d240b403`
+-	Image ID: `sha256:6a1cd76a2a6c0da88969b07bc49860f777f98432d4227362ded2e5d4f667be97`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:42:19 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:41:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:36 GMT
+# Wed, 24 Jun 2026 02:28:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:29 GMT
+# Wed, 24 Jun 2026 03:18:45 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:29 GMT
+# Wed, 24 Jun 2026 03:18:45 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:29 GMT
+# Wed, 24 Jun 2026 03:18:45 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:58 GMT
+# Wed, 24 Jun 2026 03:20:07 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:58 GMT
+# Wed, 24 Jun 2026 03:20:07 GMT
 ENV HAXE_VERSION=4.0.5
-# Thu, 11 Jun 2026 03:18:58 GMT
+# Wed, 24 Jun 2026 03:20:07 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:24:00 GMT
+# Wed, 24 Jun 2026 03:25:52 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.11.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.7 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:24:00 GMT
+# Wed, 24 Jun 2026 03:25:52 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:af48a3e7696e07f88a02f9674e541901b65eadb5cf0f62e566b1d895099a1e9e`  
-		Last Modified: Wed, 10 Jun 2026 23:40:09 GMT  
-		Size: 53.8 MB (53771769 bytes)  
+	-	`sha256:c67cddb4b9fcdeefaf829aa012f0ccaefcfa862a558064326104b95b8849cd81`  
+		Last Modified: Wed, 24 Jun 2026 00:28:17 GMT  
+		Size: 53.8 MB (53773009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53f53a3a71a19cca6d8312e9c60a5428b23742024a0057b1f0e46517df6ae4a9`  
-		Last Modified: Thu, 11 Jun 2026 00:42:31 GMT  
-		Size: 15.8 MB (15790824 bytes)  
+	-	`sha256:816526a6d4acf81b392ec5a1e6d8d402fbc4bf0460323c5ad45b376b247ca6fc`  
+		Last Modified: Wed, 24 Jun 2026 01:41:36 GMT  
+		Size: 15.8 MB (15790805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3db6c46730caf21fd1b15e0e84732744cb5a66e6931cf2c3753965fc32257fc`  
-		Last Modified: Thu, 11 Jun 2026 02:24:52 GMT  
-		Size: 54.7 MB (54743048 bytes)  
+	-	`sha256:2d3cf50c221acb61e259a7ecd20caf425597eca7d93e329dde2640ca7ec8aaf4`  
+		Last Modified: Wed, 24 Jun 2026 02:28:36 GMT  
+		Size: 54.7 MB (54742897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1995463ebad64433c0fc82e7ae6486f8bdd52517c484a90a33e5f26704b1ef90`  
-		Last Modified: Thu, 11 Jun 2026 03:24:06 GMT  
-		Size: 1.2 MB (1155239 bytes)  
+	-	`sha256:149ee13db55aaa660a486f341c8ad2118256475d0790ba63a232b9d0c54e3fce`  
+		Last Modified: Wed, 24 Jun 2026 03:25:57 GMT  
+		Size: 1.2 MB (1155276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87ab47b6ed23569c691a9d0fe838adbfede2a2b32bbecffe258f5de07763330b`  
-		Last Modified: Thu, 11 Jun 2026 03:24:06 GMT  
-		Size: 1.5 MB (1462192 bytes)  
+	-	`sha256:17d830c3b39a7604da3b45a9c17301af360ab14f0bd8a97e70cd29cb033900f1`  
+		Last Modified: Wed, 24 Jun 2026 03:25:58 GMT  
+		Size: 1.5 MB (1462122 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41fd9c6c72e160190d15cb1461bf400e1c12ee4c113a80e0f5618eeb438a3503`  
-		Last Modified: Thu, 11 Jun 2026 03:24:06 GMT  
-		Size: 9.1 MB (9089219 bytes)  
+	-	`sha256:55246ae138ea950dc4eb18c2d37a1233b36648522b817842867a7db91544e838`  
+		Last Modified: Wed, 24 Jun 2026 03:25:58 GMT  
+		Size: 9.1 MB (9089101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0.5` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:0f9a927dc66d2e74b23f5abdf0fa7b52ff2a9f9bdfd07081e6941405a77ee18a
+$ docker pull haxe@sha256:90ba80bc4824751a2f43a30d8cd899ca002e951b6ca3aea5ff801d68e2e1a1ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.3 KB (19270 bytes)**  
+-	Total Size: **19.3 KB (19269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1bede825d9759fb7038ace7fc55c745e22edcc625ca69a4e4bd42287eec7adef`
+-	Image ID: `sha256:45fed899bea85aaa8e6aa09ed3fbb2ac548ba6d59d36b3dc1aa60b76ac89656a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:368d0e22c7493ad6522d082b234687b116706e3771afb85695990ca38d0c62a9`  
-		Last Modified: Thu, 11 Jun 2026 03:24:06 GMT  
-		Size: 19.3 KB (19270 bytes)  
+	-	`sha256:4c2146652700f46ce1a92e0afb2c00c8b5aa2b330c2eec1774606f84d506b73f`  
+		Last Modified: Wed, 24 Jun 2026 03:25:57 GMT  
+		Size: 19.3 KB (19269 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.0.5` - linux; arm variant v7
@@ -1677,84 +1677,84 @@ $ docker pull haxe@sha256:735a040ee78dd4f282fdf22d86e051ce17c465c3ca6064f960e2e0
 ### `haxe:4.0.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f2c454432a8ebc286e6b5900e7e14bb458d53974ab68895ea86cbfd596eebfcd
+$ docker pull haxe@sha256:448bc4f92c04b5b89f735fb21e27775d15862fe17ad9965f457c82c9825ef076
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.1 MB (136060765 bytes)**  
+-	Total Size: **136.1 MB (136054141 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:446079833a82fda67f4dfa914307fa0101610e123ccfd85b3d01b42301b3533f`
+-	Image ID: `sha256:558b7079ce5eefbe46d0580c7c77513eb3390ace2d848e05fc685eee6f5ade5e`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:43:46 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:44:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:19 GMT
+# Wed, 24 Jun 2026 03:18:25 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:19 GMT
+# Wed, 24 Jun 2026 03:18:25 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:19 GMT
+# Wed, 24 Jun 2026 03:18:25 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:36 GMT
+# Wed, 24 Jun 2026 03:19:42 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:36 GMT
+# Wed, 24 Jun 2026 03:19:42 GMT
 ENV HAXE_VERSION=4.0.5
-# Thu, 11 Jun 2026 03:18:36 GMT
+# Wed, 24 Jun 2026 03:19:42 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:23:44 GMT
+# Wed, 24 Jun 2026 03:24:57 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.11.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.7 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:23:44 GMT
+# Wed, 24 Jun 2026 03:24:57 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:7c21e59e753cb91625909251110d6e4cc4a5411b4b7b37f74a62e56b927b7f1e`  
-		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
-		Size: 52.3 MB (52264114 bytes)  
+	-	`sha256:35157acdff35db21da73141f382d0dca0f6bc6d183c3a816d283fe39f471e539`  
+		Last Modified: Wed, 24 Jun 2026 00:27:56 GMT  
+		Size: 52.3 MB (52257219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8698eac281c2783fff44c0d5a2c381eeb273791e12f4dc8b407db26260bc3b85`  
-		Last Modified: Thu, 11 Jun 2026 00:43:55 GMT  
-		Size: 15.8 MB (15774833 bytes)  
+	-	`sha256:daf305d6ad7bad47ee0696c3db8b8fed8e9c2a42c53b57d047f8ab32f5d9b546`  
+		Last Modified: Wed, 24 Jun 2026 01:44:59 GMT  
+		Size: 15.8 MB (15774954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddd4791f1a451400cf59328cbd4f4f9bed438b89f7103b59dc50338fd2ac9293`  
-		Last Modified: Thu, 11 Jun 2026 02:24:59 GMT  
-		Size: 54.9 MB (54879555 bytes)  
+	-	`sha256:c95f37219bba62c0b4908476dc3cf7f0f98f1c87e8908c188797b1dc1f610c77`  
+		Last Modified: Wed, 24 Jun 2026 02:35:29 GMT  
+		Size: 54.9 MB (54879567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7aa8a57182d8ed0176712a99a528697a6512e6e5e8a62483abba4741c336049`  
-		Last Modified: Thu, 11 Jun 2026 03:23:50 GMT  
-		Size: 1.1 MB (1145543 bytes)  
+	-	`sha256:89f68de47fa5519ceb61d02b16b2367fc8fb53dcde0d71cf1c6dd3d679cf4d7f`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 1.1 MB (1145570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70cdeca918a7865228af314b8ec79ee421181901c815610291ea7f66b3d8d67e`  
-		Last Modified: Thu, 11 Jun 2026 03:23:50 GMT  
-		Size: 1.5 MB (1453600 bytes)  
+	-	`sha256:bcedc9f7099f61e40040733d708652b4137b636ff0c74e78ad846ac16f3d50a0`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 1.5 MB (1453670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b71f6c853c7a6392c65104681082019cc710ecbd6ef8491086cd7ee793d78fe`  
-		Last Modified: Thu, 11 Jun 2026 03:23:50 GMT  
-		Size: 10.5 MB (10543120 bytes)  
+	-	`sha256:a1258d2d90e5b3aaaf8ac269b13026194fba14857c2da5c033bb03d846608034`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 10.5 MB (10543161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0.5` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:ee6215dfe238eb796c7e5e6ee04ed8f3d6eaa2136b49211acfca7dde6bff3ce6
+$ docker pull haxe@sha256:330dad8afed1ac1f27e4f61d42664086e2ee434c85d959ba161483ae4a1a4167
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.4 KB (19403 bytes)**  
+-	Total Size: **19.4 KB (19405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0605d056a4cbb95caba78a61c2939154ded90c7c1bab9d4764957d32fe493dbc`
+-	Image ID: `sha256:731e28b301a1ceb68725527a8774871f4225703e3d875a5292f60612477a8cea`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c86be143c769bece99285e5affccdbd6ddde0c59932b37f356688c8fda6873df`  
-		Last Modified: Thu, 11 Jun 2026 03:23:49 GMT  
-		Size: 19.4 KB (19403 bytes)  
+	-	`sha256:14567d2b0f4808db8fdd6717fea2e7e039514adea0b532eb3dad6ee056f0192a`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 19.4 KB (19405 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.0.5` - windows version 10.0.26100.32995; amd64
@@ -2038,7 +2038,7 @@ CMD ["haxe"]
 ## `haxe:4.0.5-bullseye`
 
 ```console
-$ docker pull haxe@sha256:dbac6d5e8c975f982e82d1331462510cca692c7b6527f52dea5f568a5cfe6b16
+$ docker pull haxe@sha256:27143d031f17d466a777a3e68fe86ec33202c340ee594cb7d420525b27a1f608
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2053,84 +2053,84 @@ $ docker pull haxe@sha256:dbac6d5e8c975f982e82d1331462510cca692c7b6527f52dea5f56
 ### `haxe:4.0.5-bullseye` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:800fc5c82ab57779aa3309266aafd72de006c0fe0926a87c44f5a20f910be842
+$ docker pull haxe@sha256:dd65eff1148505b9914277ef8c89b2482e91edf78cbdf9a0aa67284e28176e23
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.0 MB (136012291 bytes)**  
+-	Total Size: **136.0 MB (136013210 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1867b63f6dfb8f2fa52e195b710f3a3a2bdba0a8a26faeed5aa6cef6d240b403`
+-	Image ID: `sha256:6a1cd76a2a6c0da88969b07bc49860f777f98432d4227362ded2e5d4f667be97`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:42:19 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:41:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:36 GMT
+# Wed, 24 Jun 2026 02:28:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:29 GMT
+# Wed, 24 Jun 2026 03:18:45 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:29 GMT
+# Wed, 24 Jun 2026 03:18:45 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:29 GMT
+# Wed, 24 Jun 2026 03:18:45 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:58 GMT
+# Wed, 24 Jun 2026 03:20:07 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:58 GMT
+# Wed, 24 Jun 2026 03:20:07 GMT
 ENV HAXE_VERSION=4.0.5
-# Thu, 11 Jun 2026 03:18:58 GMT
+# Wed, 24 Jun 2026 03:20:07 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:24:00 GMT
+# Wed, 24 Jun 2026 03:25:52 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.11.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.7 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:24:00 GMT
+# Wed, 24 Jun 2026 03:25:52 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:af48a3e7696e07f88a02f9674e541901b65eadb5cf0f62e566b1d895099a1e9e`  
-		Last Modified: Wed, 10 Jun 2026 23:40:09 GMT  
-		Size: 53.8 MB (53771769 bytes)  
+	-	`sha256:c67cddb4b9fcdeefaf829aa012f0ccaefcfa862a558064326104b95b8849cd81`  
+		Last Modified: Wed, 24 Jun 2026 00:28:17 GMT  
+		Size: 53.8 MB (53773009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53f53a3a71a19cca6d8312e9c60a5428b23742024a0057b1f0e46517df6ae4a9`  
-		Last Modified: Thu, 11 Jun 2026 00:42:31 GMT  
-		Size: 15.8 MB (15790824 bytes)  
+	-	`sha256:816526a6d4acf81b392ec5a1e6d8d402fbc4bf0460323c5ad45b376b247ca6fc`  
+		Last Modified: Wed, 24 Jun 2026 01:41:36 GMT  
+		Size: 15.8 MB (15790805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3db6c46730caf21fd1b15e0e84732744cb5a66e6931cf2c3753965fc32257fc`  
-		Last Modified: Thu, 11 Jun 2026 02:24:52 GMT  
-		Size: 54.7 MB (54743048 bytes)  
+	-	`sha256:2d3cf50c221acb61e259a7ecd20caf425597eca7d93e329dde2640ca7ec8aaf4`  
+		Last Modified: Wed, 24 Jun 2026 02:28:36 GMT  
+		Size: 54.7 MB (54742897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1995463ebad64433c0fc82e7ae6486f8bdd52517c484a90a33e5f26704b1ef90`  
-		Last Modified: Thu, 11 Jun 2026 03:24:06 GMT  
-		Size: 1.2 MB (1155239 bytes)  
+	-	`sha256:149ee13db55aaa660a486f341c8ad2118256475d0790ba63a232b9d0c54e3fce`  
+		Last Modified: Wed, 24 Jun 2026 03:25:57 GMT  
+		Size: 1.2 MB (1155276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87ab47b6ed23569c691a9d0fe838adbfede2a2b32bbecffe258f5de07763330b`  
-		Last Modified: Thu, 11 Jun 2026 03:24:06 GMT  
-		Size: 1.5 MB (1462192 bytes)  
+	-	`sha256:17d830c3b39a7604da3b45a9c17301af360ab14f0bd8a97e70cd29cb033900f1`  
+		Last Modified: Wed, 24 Jun 2026 03:25:58 GMT  
+		Size: 1.5 MB (1462122 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41fd9c6c72e160190d15cb1461bf400e1c12ee4c113a80e0f5618eeb438a3503`  
-		Last Modified: Thu, 11 Jun 2026 03:24:06 GMT  
-		Size: 9.1 MB (9089219 bytes)  
+	-	`sha256:55246ae138ea950dc4eb18c2d37a1233b36648522b817842867a7db91544e838`  
+		Last Modified: Wed, 24 Jun 2026 03:25:58 GMT  
+		Size: 9.1 MB (9089101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0.5-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:0f9a927dc66d2e74b23f5abdf0fa7b52ff2a9f9bdfd07081e6941405a77ee18a
+$ docker pull haxe@sha256:90ba80bc4824751a2f43a30d8cd899ca002e951b6ca3aea5ff801d68e2e1a1ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.3 KB (19270 bytes)**  
+-	Total Size: **19.3 KB (19269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1bede825d9759fb7038ace7fc55c745e22edcc625ca69a4e4bd42287eec7adef`
+-	Image ID: `sha256:45fed899bea85aaa8e6aa09ed3fbb2ac548ba6d59d36b3dc1aa60b76ac89656a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:368d0e22c7493ad6522d082b234687b116706e3771afb85695990ca38d0c62a9`  
-		Last Modified: Thu, 11 Jun 2026 03:24:06 GMT  
-		Size: 19.3 KB (19270 bytes)  
+	-	`sha256:4c2146652700f46ce1a92e0afb2c00c8b5aa2b330c2eec1774606f84d506b73f`  
+		Last Modified: Wed, 24 Jun 2026 03:25:57 GMT  
+		Size: 19.3 KB (19269 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.0.5-bullseye` - linux; arm variant v7
@@ -2219,84 +2219,84 @@ $ docker pull haxe@sha256:735a040ee78dd4f282fdf22d86e051ce17c465c3ca6064f960e2e0
 ### `haxe:4.0.5-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f2c454432a8ebc286e6b5900e7e14bb458d53974ab68895ea86cbfd596eebfcd
+$ docker pull haxe@sha256:448bc4f92c04b5b89f735fb21e27775d15862fe17ad9965f457c82c9825ef076
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.1 MB (136060765 bytes)**  
+-	Total Size: **136.1 MB (136054141 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:446079833a82fda67f4dfa914307fa0101610e123ccfd85b3d01b42301b3533f`
+-	Image ID: `sha256:558b7079ce5eefbe46d0580c7c77513eb3390ace2d848e05fc685eee6f5ade5e`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:43:46 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:44:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:19 GMT
+# Wed, 24 Jun 2026 03:18:25 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:19 GMT
+# Wed, 24 Jun 2026 03:18:25 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:19 GMT
+# Wed, 24 Jun 2026 03:18:25 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:36 GMT
+# Wed, 24 Jun 2026 03:19:42 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:36 GMT
+# Wed, 24 Jun 2026 03:19:42 GMT
 ENV HAXE_VERSION=4.0.5
-# Thu, 11 Jun 2026 03:18:36 GMT
+# Wed, 24 Jun 2026 03:19:42 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:23:44 GMT
+# Wed, 24 Jun 2026 03:24:57 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.0.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.11.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.7 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:23:44 GMT
+# Wed, 24 Jun 2026 03:24:57 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:7c21e59e753cb91625909251110d6e4cc4a5411b4b7b37f74a62e56b927b7f1e`  
-		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
-		Size: 52.3 MB (52264114 bytes)  
+	-	`sha256:35157acdff35db21da73141f382d0dca0f6bc6d183c3a816d283fe39f471e539`  
+		Last Modified: Wed, 24 Jun 2026 00:27:56 GMT  
+		Size: 52.3 MB (52257219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8698eac281c2783fff44c0d5a2c381eeb273791e12f4dc8b407db26260bc3b85`  
-		Last Modified: Thu, 11 Jun 2026 00:43:55 GMT  
-		Size: 15.8 MB (15774833 bytes)  
+	-	`sha256:daf305d6ad7bad47ee0696c3db8b8fed8e9c2a42c53b57d047f8ab32f5d9b546`  
+		Last Modified: Wed, 24 Jun 2026 01:44:59 GMT  
+		Size: 15.8 MB (15774954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddd4791f1a451400cf59328cbd4f4f9bed438b89f7103b59dc50338fd2ac9293`  
-		Last Modified: Thu, 11 Jun 2026 02:24:59 GMT  
-		Size: 54.9 MB (54879555 bytes)  
+	-	`sha256:c95f37219bba62c0b4908476dc3cf7f0f98f1c87e8908c188797b1dc1f610c77`  
+		Last Modified: Wed, 24 Jun 2026 02:35:29 GMT  
+		Size: 54.9 MB (54879567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7aa8a57182d8ed0176712a99a528697a6512e6e5e8a62483abba4741c336049`  
-		Last Modified: Thu, 11 Jun 2026 03:23:50 GMT  
-		Size: 1.1 MB (1145543 bytes)  
+	-	`sha256:89f68de47fa5519ceb61d02b16b2367fc8fb53dcde0d71cf1c6dd3d679cf4d7f`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 1.1 MB (1145570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70cdeca918a7865228af314b8ec79ee421181901c815610291ea7f66b3d8d67e`  
-		Last Modified: Thu, 11 Jun 2026 03:23:50 GMT  
-		Size: 1.5 MB (1453600 bytes)  
+	-	`sha256:bcedc9f7099f61e40040733d708652b4137b636ff0c74e78ad846ac16f3d50a0`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 1.5 MB (1453670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b71f6c853c7a6392c65104681082019cc710ecbd6ef8491086cd7ee793d78fe`  
-		Last Modified: Thu, 11 Jun 2026 03:23:50 GMT  
-		Size: 10.5 MB (10543120 bytes)  
+	-	`sha256:a1258d2d90e5b3aaaf8ac269b13026194fba14857c2da5c033bb03d846608034`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 10.5 MB (10543161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0.5-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:ee6215dfe238eb796c7e5e6ee04ed8f3d6eaa2136b49211acfca7dde6bff3ce6
+$ docker pull haxe@sha256:330dad8afed1ac1f27e4f61d42664086e2ee434c85d959ba161483ae4a1a4167
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.4 KB (19403 bytes)**  
+-	Total Size: **19.4 KB (19405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0605d056a4cbb95caba78a61c2939154ded90c7c1bab9d4764957d32fe493dbc`
+-	Image ID: `sha256:731e28b301a1ceb68725527a8774871f4225703e3d875a5292f60612477a8cea`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c86be143c769bece99285e5affccdbd6ddde0c59932b37f356688c8fda6873df`  
-		Last Modified: Thu, 11 Jun 2026 03:23:49 GMT  
-		Size: 19.4 KB (19403 bytes)  
+	-	`sha256:14567d2b0f4808db8fdd6717fea2e7e039514adea0b532eb3dad6ee056f0192a`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 19.4 KB (19405 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.0.5-windowsservercore`
@@ -2889,7 +2889,7 @@ CMD ["haxe"]
 ## `haxe:4.1`
 
 ```console
-$ docker pull haxe@sha256:34b2b4c7fafd66c985d73e103e14f7bf6487aebe5920fb20ea690f2f838beb66
+$ docker pull haxe@sha256:c9db88c6aa1c8ab20baf0e81bc5c9b64b38f088d9ea9f50e54c1921fa33d3fb6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2906,84 +2906,84 @@ $ docker pull haxe@sha256:34b2b4c7fafd66c985d73e103e14f7bf6487aebe5920fb20ea690f
 ### `haxe:4.1` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:950a5cd22c8b0e544baf5e3909e2c5a3883f7759d055c88e1e9ada601680bdf2
+$ docker pull haxe@sha256:42ba45f0b23611b811eaff98b95386b0b0b338a2753cdfe96dd072ede94dbbdf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.2 MB (136203496 bytes)**  
+-	Total Size: **136.2 MB (136204855 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:004f51bf9202bd3cceaa88772a9cb0c47d3b5c82eac9aba0536103ada9e9b85c`
+-	Image ID: `sha256:277965b7de7e25ef84a1d2c6f07e60fda0bf421cd7051b53d3fdfc600f4701de`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:42:19 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:41:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:36 GMT
+# Wed, 24 Jun 2026 02:28:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:11 GMT
+# Wed, 24 Jun 2026 03:18:34 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:11 GMT
+# Wed, 24 Jun 2026 03:18:34 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:11 GMT
+# Wed, 24 Jun 2026 03:18:34 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:35 GMT
+# Wed, 24 Jun 2026 03:20:04 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:35 GMT
+# Wed, 24 Jun 2026 03:20:04 GMT
 ENV HAXE_VERSION=4.1.5
-# Thu, 11 Jun 2026 03:18:35 GMT
+# Wed, 24 Jun 2026 03:20:04 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:23:12 GMT
+# Wed, 24 Jun 2026 03:24:57 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.11.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.7 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:23:12 GMT
+# Wed, 24 Jun 2026 03:24:57 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:af48a3e7696e07f88a02f9674e541901b65eadb5cf0f62e566b1d895099a1e9e`  
-		Last Modified: Wed, 10 Jun 2026 23:40:09 GMT  
-		Size: 53.8 MB (53771769 bytes)  
+	-	`sha256:c67cddb4b9fcdeefaf829aa012f0ccaefcfa862a558064326104b95b8849cd81`  
+		Last Modified: Wed, 24 Jun 2026 00:28:17 GMT  
+		Size: 53.8 MB (53773009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53f53a3a71a19cca6d8312e9c60a5428b23742024a0057b1f0e46517df6ae4a9`  
-		Last Modified: Thu, 11 Jun 2026 00:42:31 GMT  
-		Size: 15.8 MB (15790824 bytes)  
+	-	`sha256:816526a6d4acf81b392ec5a1e6d8d402fbc4bf0460323c5ad45b376b247ca6fc`  
+		Last Modified: Wed, 24 Jun 2026 01:41:36 GMT  
+		Size: 15.8 MB (15790805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3db6c46730caf21fd1b15e0e84732744cb5a66e6931cf2c3753965fc32257fc`  
-		Last Modified: Thu, 11 Jun 2026 02:24:52 GMT  
-		Size: 54.7 MB (54743048 bytes)  
+	-	`sha256:2d3cf50c221acb61e259a7ecd20caf425597eca7d93e329dde2640ca7ec8aaf4`  
+		Last Modified: Wed, 24 Jun 2026 02:28:36 GMT  
+		Size: 54.7 MB (54742897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee4f66d3a755deefa75bd02da0753afdeb00deb4aa6ad9d7fc4828ee06e852fc`  
-		Last Modified: Thu, 11 Jun 2026 03:23:18 GMT  
-		Size: 1.2 MB (1155206 bytes)  
+	-	`sha256:8f8fa89fa6a214856f11206c04ead19f9fb60bb4a4b7c7f80f091acb4d60d1c0`  
+		Last Modified: Wed, 24 Jun 2026 03:25:02 GMT  
+		Size: 1.2 MB (1155293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efe4979098a56d3c59688cb8f417ae790e08b4bf5bf38e3671f708c3300996e0`  
-		Last Modified: Thu, 11 Jun 2026 03:23:18 GMT  
-		Size: 1.5 MB (1462136 bytes)  
+	-	`sha256:f861e258a98a2a09cdc4b25b450f8f1e732546e63e4ece2383760f9804fd6622`  
+		Last Modified: Wed, 24 Jun 2026 03:25:02 GMT  
+		Size: 1.5 MB (1462215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89524e26fb4edc01ae5047ccfa64680f4d4eb9f73d592e6ab54564d5e75a9f1a`  
-		Last Modified: Thu, 11 Jun 2026 03:23:18 GMT  
-		Size: 9.3 MB (9280513 bytes)  
+	-	`sha256:fea12868e337b65356fac5e88c67660d188afc573179ab107df9451dd33477df`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 9.3 MB (9280636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:8ee626f2e6e94bafc98156a2e2eed9f174a2a84e909b7a206497213c0eb1b52c
+$ docker pull haxe@sha256:5f9c9068770b04ffc18f04a7d2d7eff4d5da2249040368bedaf69fe727303ae2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.3 KB (19270 bytes)**  
+-	Total Size: **19.3 KB (19269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f412f329a5d6f9ea3b8e19ba669d0b93afe7d53c167da671cc5f49f51f0d7258`
+-	Image ID: `sha256:b89154fff04d07a2140ea772ecc17895b5aace2996f43a28c8054bccc9f77b41`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0000747d149cc5901faeb56aead394959364f8a80d1191f799f80f61d5e4b5d9`  
-		Last Modified: Thu, 11 Jun 2026 03:23:18 GMT  
-		Size: 19.3 KB (19270 bytes)  
+	-	`sha256:20a201a41cb187db38560b3a44d6c6638b516314dac0fddb4fe000564f9b7d0b`  
+		Last Modified: Wed, 24 Jun 2026 03:25:02 GMT  
+		Size: 19.3 KB (19269 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.1` - linux; arm variant v7
@@ -3072,83 +3072,83 @@ $ docker pull haxe@sha256:71e6d6e3268ccea81713d10824d4396d2727230ad512d2226dec63
 ### `haxe:4.1` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:4fc078e29b1ae9ad117bae5ddfce78d7d9745a520893f69d5f13df3bbe002bc5
+$ docker pull haxe@sha256:8aa7ff30a452a27f46ef6a0331c7bcad6f8edc69a7bdb60f337930e5636c6e6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.3 MB (136260717 bytes)**  
+-	Total Size: **136.3 MB (136254021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:de454eecf78db5c4fb8d25129abf110e018b04cefc62a0446313448f7b5c4dc1`
+-	Image ID: `sha256:a769c64180800eeee277f37901fb54d6d1ea619e11f8c8dce8c19e630ba3874b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:43:46 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:44:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:14 GMT
+# Wed, 24 Jun 2026 03:18:11 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:14 GMT
+# Wed, 24 Jun 2026 03:18:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:14 GMT
+# Wed, 24 Jun 2026 03:18:11 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:31 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:31 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 ENV HAXE_VERSION=4.1.5
-# Thu, 11 Jun 2026 03:18:31 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:23:24 GMT
+# Wed, 24 Jun 2026 03:24:09 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.11.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.7 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:23:24 GMT
+# Wed, 24 Jun 2026 03:24:09 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:7c21e59e753cb91625909251110d6e4cc4a5411b4b7b37f74a62e56b927b7f1e`  
-		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
-		Size: 52.3 MB (52264114 bytes)  
+	-	`sha256:35157acdff35db21da73141f382d0dca0f6bc6d183c3a816d283fe39f471e539`  
+		Last Modified: Wed, 24 Jun 2026 00:27:56 GMT  
+		Size: 52.3 MB (52257219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8698eac281c2783fff44c0d5a2c381eeb273791e12f4dc8b407db26260bc3b85`  
-		Last Modified: Thu, 11 Jun 2026 00:43:55 GMT  
-		Size: 15.8 MB (15774833 bytes)  
+	-	`sha256:daf305d6ad7bad47ee0696c3db8b8fed8e9c2a42c53b57d047f8ab32f5d9b546`  
+		Last Modified: Wed, 24 Jun 2026 01:44:59 GMT  
+		Size: 15.8 MB (15774954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddd4791f1a451400cf59328cbd4f4f9bed438b89f7103b59dc50338fd2ac9293`  
-		Last Modified: Thu, 11 Jun 2026 02:24:59 GMT  
-		Size: 54.9 MB (54879555 bytes)  
+	-	`sha256:c95f37219bba62c0b4908476dc3cf7f0f98f1c87e8908c188797b1dc1f610c77`  
+		Last Modified: Wed, 24 Jun 2026 02:35:29 GMT  
+		Size: 54.9 MB (54879567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b975df3c35ca3f60311396745e8aac26b4ae3c91d83e285ba91838fdb05f9458`  
-		Last Modified: Thu, 11 Jun 2026 03:23:30 GMT  
-		Size: 1.1 MB (1145538 bytes)  
+	-	`sha256:0d946067816222cb0f5a01b124954dccbcab1bcd043ed30cdf11c82c0e799aeb`  
+		Last Modified: Wed, 24 Jun 2026 03:24:15 GMT  
+		Size: 1.1 MB (1145558 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab46c0aca8da6d0a913db89260dae3d0142abe2aa3c5b4bd9d99e91051a66129`  
-		Last Modified: Thu, 11 Jun 2026 03:23:30 GMT  
-		Size: 1.5 MB (1453592 bytes)  
+	-	`sha256:66ff78942f08595030cb055ffd7e3e02cd4e832e6c9358e5ab203ad86f18bf14`  
+		Last Modified: Wed, 24 Jun 2026 03:24:15 GMT  
+		Size: 1.5 MB (1453569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb7944d696363cb994a7160e95281d93dae369a3f5022215843088e7f3f9985c`  
-		Last Modified: Thu, 11 Jun 2026 03:23:30 GMT  
-		Size: 10.7 MB (10743085 bytes)  
+	-	`sha256:a2a768e26969be1fad2aa6015d7d0e6e1485313d9cc8c331354dfe41fa5d0065`  
+		Last Modified: Wed, 24 Jun 2026 03:24:15 GMT  
+		Size: 10.7 MB (10743154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:34823c91d7b191b76723c5a65d578ae757657362c5ebd95b1dbe2bfff5cb6bad
+$ docker pull haxe@sha256:393093da89366b95680d2bfdae45505a6c0fd4e703a3ff52c4649620a724f19c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.4 KB (19405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc937bce17e95d5c955b9a1726a95019561c84d2d02fd08562e60f2dce72c8b6`
+-	Image ID: `sha256:c251e62af5844da9583444cacab9e45e873b403f78feae37664201c2297ba6f7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2e80e79368be256544279a023806e2150e00b16339eb9194a61e0d73ae9c1070`  
-		Last Modified: Thu, 11 Jun 2026 03:23:30 GMT  
+	-	`sha256:7dbdf2af92ac40ce3295e0297ce1eed52f0cbd8490a4d1fdc51ad6f9f22cff4a`  
+		Last Modified: Wed, 24 Jun 2026 03:24:15 GMT  
 		Size: 19.4 KB (19405 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3433,7 +3433,7 @@ CMD ["haxe"]
 ## `haxe:4.1-bullseye`
 
 ```console
-$ docker pull haxe@sha256:4caa4ac8509cc9daf875b478e2651ff89f2620820bf7c422881d7360570e755e
+$ docker pull haxe@sha256:2f121adea8f5ebca6c2e1fc288c89fb287c2572fc664c9f14019973433aaa283
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3448,84 +3448,84 @@ $ docker pull haxe@sha256:4caa4ac8509cc9daf875b478e2651ff89f2620820bf7c422881d73
 ### `haxe:4.1-bullseye` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:950a5cd22c8b0e544baf5e3909e2c5a3883f7759d055c88e1e9ada601680bdf2
+$ docker pull haxe@sha256:42ba45f0b23611b811eaff98b95386b0b0b338a2753cdfe96dd072ede94dbbdf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.2 MB (136203496 bytes)**  
+-	Total Size: **136.2 MB (136204855 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:004f51bf9202bd3cceaa88772a9cb0c47d3b5c82eac9aba0536103ada9e9b85c`
+-	Image ID: `sha256:277965b7de7e25ef84a1d2c6f07e60fda0bf421cd7051b53d3fdfc600f4701de`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:42:19 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:41:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:36 GMT
+# Wed, 24 Jun 2026 02:28:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:11 GMT
+# Wed, 24 Jun 2026 03:18:34 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:11 GMT
+# Wed, 24 Jun 2026 03:18:34 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:11 GMT
+# Wed, 24 Jun 2026 03:18:34 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:35 GMT
+# Wed, 24 Jun 2026 03:20:04 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:35 GMT
+# Wed, 24 Jun 2026 03:20:04 GMT
 ENV HAXE_VERSION=4.1.5
-# Thu, 11 Jun 2026 03:18:35 GMT
+# Wed, 24 Jun 2026 03:20:04 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:23:12 GMT
+# Wed, 24 Jun 2026 03:24:57 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.11.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.7 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:23:12 GMT
+# Wed, 24 Jun 2026 03:24:57 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:af48a3e7696e07f88a02f9674e541901b65eadb5cf0f62e566b1d895099a1e9e`  
-		Last Modified: Wed, 10 Jun 2026 23:40:09 GMT  
-		Size: 53.8 MB (53771769 bytes)  
+	-	`sha256:c67cddb4b9fcdeefaf829aa012f0ccaefcfa862a558064326104b95b8849cd81`  
+		Last Modified: Wed, 24 Jun 2026 00:28:17 GMT  
+		Size: 53.8 MB (53773009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53f53a3a71a19cca6d8312e9c60a5428b23742024a0057b1f0e46517df6ae4a9`  
-		Last Modified: Thu, 11 Jun 2026 00:42:31 GMT  
-		Size: 15.8 MB (15790824 bytes)  
+	-	`sha256:816526a6d4acf81b392ec5a1e6d8d402fbc4bf0460323c5ad45b376b247ca6fc`  
+		Last Modified: Wed, 24 Jun 2026 01:41:36 GMT  
+		Size: 15.8 MB (15790805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3db6c46730caf21fd1b15e0e84732744cb5a66e6931cf2c3753965fc32257fc`  
-		Last Modified: Thu, 11 Jun 2026 02:24:52 GMT  
-		Size: 54.7 MB (54743048 bytes)  
+	-	`sha256:2d3cf50c221acb61e259a7ecd20caf425597eca7d93e329dde2640ca7ec8aaf4`  
+		Last Modified: Wed, 24 Jun 2026 02:28:36 GMT  
+		Size: 54.7 MB (54742897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee4f66d3a755deefa75bd02da0753afdeb00deb4aa6ad9d7fc4828ee06e852fc`  
-		Last Modified: Thu, 11 Jun 2026 03:23:18 GMT  
-		Size: 1.2 MB (1155206 bytes)  
+	-	`sha256:8f8fa89fa6a214856f11206c04ead19f9fb60bb4a4b7c7f80f091acb4d60d1c0`  
+		Last Modified: Wed, 24 Jun 2026 03:25:02 GMT  
+		Size: 1.2 MB (1155293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efe4979098a56d3c59688cb8f417ae790e08b4bf5bf38e3671f708c3300996e0`  
-		Last Modified: Thu, 11 Jun 2026 03:23:18 GMT  
-		Size: 1.5 MB (1462136 bytes)  
+	-	`sha256:f861e258a98a2a09cdc4b25b450f8f1e732546e63e4ece2383760f9804fd6622`  
+		Last Modified: Wed, 24 Jun 2026 03:25:02 GMT  
+		Size: 1.5 MB (1462215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89524e26fb4edc01ae5047ccfa64680f4d4eb9f73d592e6ab54564d5e75a9f1a`  
-		Last Modified: Thu, 11 Jun 2026 03:23:18 GMT  
-		Size: 9.3 MB (9280513 bytes)  
+	-	`sha256:fea12868e337b65356fac5e88c67660d188afc573179ab107df9451dd33477df`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 9.3 MB (9280636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:8ee626f2e6e94bafc98156a2e2eed9f174a2a84e909b7a206497213c0eb1b52c
+$ docker pull haxe@sha256:5f9c9068770b04ffc18f04a7d2d7eff4d5da2249040368bedaf69fe727303ae2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.3 KB (19270 bytes)**  
+-	Total Size: **19.3 KB (19269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f412f329a5d6f9ea3b8e19ba669d0b93afe7d53c167da671cc5f49f51f0d7258`
+-	Image ID: `sha256:b89154fff04d07a2140ea772ecc17895b5aace2996f43a28c8054bccc9f77b41`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0000747d149cc5901faeb56aead394959364f8a80d1191f799f80f61d5e4b5d9`  
-		Last Modified: Thu, 11 Jun 2026 03:23:18 GMT  
-		Size: 19.3 KB (19270 bytes)  
+	-	`sha256:20a201a41cb187db38560b3a44d6c6638b516314dac0fddb4fe000564f9b7d0b`  
+		Last Modified: Wed, 24 Jun 2026 03:25:02 GMT  
+		Size: 19.3 KB (19269 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.1-bullseye` - linux; arm variant v7
@@ -3614,83 +3614,83 @@ $ docker pull haxe@sha256:71e6d6e3268ccea81713d10824d4396d2727230ad512d2226dec63
 ### `haxe:4.1-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:4fc078e29b1ae9ad117bae5ddfce78d7d9745a520893f69d5f13df3bbe002bc5
+$ docker pull haxe@sha256:8aa7ff30a452a27f46ef6a0331c7bcad6f8edc69a7bdb60f337930e5636c6e6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.3 MB (136260717 bytes)**  
+-	Total Size: **136.3 MB (136254021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:de454eecf78db5c4fb8d25129abf110e018b04cefc62a0446313448f7b5c4dc1`
+-	Image ID: `sha256:a769c64180800eeee277f37901fb54d6d1ea619e11f8c8dce8c19e630ba3874b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:43:46 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:44:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:14 GMT
+# Wed, 24 Jun 2026 03:18:11 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:14 GMT
+# Wed, 24 Jun 2026 03:18:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:14 GMT
+# Wed, 24 Jun 2026 03:18:11 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:31 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:31 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 ENV HAXE_VERSION=4.1.5
-# Thu, 11 Jun 2026 03:18:31 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:23:24 GMT
+# Wed, 24 Jun 2026 03:24:09 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.11.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.7 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:23:24 GMT
+# Wed, 24 Jun 2026 03:24:09 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:7c21e59e753cb91625909251110d6e4cc4a5411b4b7b37f74a62e56b927b7f1e`  
-		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
-		Size: 52.3 MB (52264114 bytes)  
+	-	`sha256:35157acdff35db21da73141f382d0dca0f6bc6d183c3a816d283fe39f471e539`  
+		Last Modified: Wed, 24 Jun 2026 00:27:56 GMT  
+		Size: 52.3 MB (52257219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8698eac281c2783fff44c0d5a2c381eeb273791e12f4dc8b407db26260bc3b85`  
-		Last Modified: Thu, 11 Jun 2026 00:43:55 GMT  
-		Size: 15.8 MB (15774833 bytes)  
+	-	`sha256:daf305d6ad7bad47ee0696c3db8b8fed8e9c2a42c53b57d047f8ab32f5d9b546`  
+		Last Modified: Wed, 24 Jun 2026 01:44:59 GMT  
+		Size: 15.8 MB (15774954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddd4791f1a451400cf59328cbd4f4f9bed438b89f7103b59dc50338fd2ac9293`  
-		Last Modified: Thu, 11 Jun 2026 02:24:59 GMT  
-		Size: 54.9 MB (54879555 bytes)  
+	-	`sha256:c95f37219bba62c0b4908476dc3cf7f0f98f1c87e8908c188797b1dc1f610c77`  
+		Last Modified: Wed, 24 Jun 2026 02:35:29 GMT  
+		Size: 54.9 MB (54879567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b975df3c35ca3f60311396745e8aac26b4ae3c91d83e285ba91838fdb05f9458`  
-		Last Modified: Thu, 11 Jun 2026 03:23:30 GMT  
-		Size: 1.1 MB (1145538 bytes)  
+	-	`sha256:0d946067816222cb0f5a01b124954dccbcab1bcd043ed30cdf11c82c0e799aeb`  
+		Last Modified: Wed, 24 Jun 2026 03:24:15 GMT  
+		Size: 1.1 MB (1145558 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab46c0aca8da6d0a913db89260dae3d0142abe2aa3c5b4bd9d99e91051a66129`  
-		Last Modified: Thu, 11 Jun 2026 03:23:30 GMT  
-		Size: 1.5 MB (1453592 bytes)  
+	-	`sha256:66ff78942f08595030cb055ffd7e3e02cd4e832e6c9358e5ab203ad86f18bf14`  
+		Last Modified: Wed, 24 Jun 2026 03:24:15 GMT  
+		Size: 1.5 MB (1453569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb7944d696363cb994a7160e95281d93dae369a3f5022215843088e7f3f9985c`  
-		Last Modified: Thu, 11 Jun 2026 03:23:30 GMT  
-		Size: 10.7 MB (10743085 bytes)  
+	-	`sha256:a2a768e26969be1fad2aa6015d7d0e6e1485313d9cc8c331354dfe41fa5d0065`  
+		Last Modified: Wed, 24 Jun 2026 03:24:15 GMT  
+		Size: 10.7 MB (10743154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:34823c91d7b191b76723c5a65d578ae757657362c5ebd95b1dbe2bfff5cb6bad
+$ docker pull haxe@sha256:393093da89366b95680d2bfdae45505a6c0fd4e703a3ff52c4649620a724f19c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.4 KB (19405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc937bce17e95d5c955b9a1726a95019561c84d2d02fd08562e60f2dce72c8b6`
+-	Image ID: `sha256:c251e62af5844da9583444cacab9e45e873b403f78feae37664201c2297ba6f7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2e80e79368be256544279a023806e2150e00b16339eb9194a61e0d73ae9c1070`  
-		Last Modified: Thu, 11 Jun 2026 03:23:30 GMT  
+	-	`sha256:7dbdf2af92ac40ce3295e0297ce1eed52f0cbd8490a4d1fdc51ad6f9f22cff4a`  
+		Last Modified: Wed, 24 Jun 2026 03:24:15 GMT  
 		Size: 19.4 KB (19405 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4284,7 +4284,7 @@ CMD ["haxe"]
 ## `haxe:4.1.5`
 
 ```console
-$ docker pull haxe@sha256:34b2b4c7fafd66c985d73e103e14f7bf6487aebe5920fb20ea690f2f838beb66
+$ docker pull haxe@sha256:c9db88c6aa1c8ab20baf0e81bc5c9b64b38f088d9ea9f50e54c1921fa33d3fb6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4301,84 +4301,84 @@ $ docker pull haxe@sha256:34b2b4c7fafd66c985d73e103e14f7bf6487aebe5920fb20ea690f
 ### `haxe:4.1.5` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:950a5cd22c8b0e544baf5e3909e2c5a3883f7759d055c88e1e9ada601680bdf2
+$ docker pull haxe@sha256:42ba45f0b23611b811eaff98b95386b0b0b338a2753cdfe96dd072ede94dbbdf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.2 MB (136203496 bytes)**  
+-	Total Size: **136.2 MB (136204855 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:004f51bf9202bd3cceaa88772a9cb0c47d3b5c82eac9aba0536103ada9e9b85c`
+-	Image ID: `sha256:277965b7de7e25ef84a1d2c6f07e60fda0bf421cd7051b53d3fdfc600f4701de`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:42:19 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:41:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:36 GMT
+# Wed, 24 Jun 2026 02:28:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:11 GMT
+# Wed, 24 Jun 2026 03:18:34 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:11 GMT
+# Wed, 24 Jun 2026 03:18:34 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:11 GMT
+# Wed, 24 Jun 2026 03:18:34 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:35 GMT
+# Wed, 24 Jun 2026 03:20:04 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:35 GMT
+# Wed, 24 Jun 2026 03:20:04 GMT
 ENV HAXE_VERSION=4.1.5
-# Thu, 11 Jun 2026 03:18:35 GMT
+# Wed, 24 Jun 2026 03:20:04 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:23:12 GMT
+# Wed, 24 Jun 2026 03:24:57 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.11.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.7 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:23:12 GMT
+# Wed, 24 Jun 2026 03:24:57 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:af48a3e7696e07f88a02f9674e541901b65eadb5cf0f62e566b1d895099a1e9e`  
-		Last Modified: Wed, 10 Jun 2026 23:40:09 GMT  
-		Size: 53.8 MB (53771769 bytes)  
+	-	`sha256:c67cddb4b9fcdeefaf829aa012f0ccaefcfa862a558064326104b95b8849cd81`  
+		Last Modified: Wed, 24 Jun 2026 00:28:17 GMT  
+		Size: 53.8 MB (53773009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53f53a3a71a19cca6d8312e9c60a5428b23742024a0057b1f0e46517df6ae4a9`  
-		Last Modified: Thu, 11 Jun 2026 00:42:31 GMT  
-		Size: 15.8 MB (15790824 bytes)  
+	-	`sha256:816526a6d4acf81b392ec5a1e6d8d402fbc4bf0460323c5ad45b376b247ca6fc`  
+		Last Modified: Wed, 24 Jun 2026 01:41:36 GMT  
+		Size: 15.8 MB (15790805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3db6c46730caf21fd1b15e0e84732744cb5a66e6931cf2c3753965fc32257fc`  
-		Last Modified: Thu, 11 Jun 2026 02:24:52 GMT  
-		Size: 54.7 MB (54743048 bytes)  
+	-	`sha256:2d3cf50c221acb61e259a7ecd20caf425597eca7d93e329dde2640ca7ec8aaf4`  
+		Last Modified: Wed, 24 Jun 2026 02:28:36 GMT  
+		Size: 54.7 MB (54742897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee4f66d3a755deefa75bd02da0753afdeb00deb4aa6ad9d7fc4828ee06e852fc`  
-		Last Modified: Thu, 11 Jun 2026 03:23:18 GMT  
-		Size: 1.2 MB (1155206 bytes)  
+	-	`sha256:8f8fa89fa6a214856f11206c04ead19f9fb60bb4a4b7c7f80f091acb4d60d1c0`  
+		Last Modified: Wed, 24 Jun 2026 03:25:02 GMT  
+		Size: 1.2 MB (1155293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efe4979098a56d3c59688cb8f417ae790e08b4bf5bf38e3671f708c3300996e0`  
-		Last Modified: Thu, 11 Jun 2026 03:23:18 GMT  
-		Size: 1.5 MB (1462136 bytes)  
+	-	`sha256:f861e258a98a2a09cdc4b25b450f8f1e732546e63e4ece2383760f9804fd6622`  
+		Last Modified: Wed, 24 Jun 2026 03:25:02 GMT  
+		Size: 1.5 MB (1462215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89524e26fb4edc01ae5047ccfa64680f4d4eb9f73d592e6ab54564d5e75a9f1a`  
-		Last Modified: Thu, 11 Jun 2026 03:23:18 GMT  
-		Size: 9.3 MB (9280513 bytes)  
+	-	`sha256:fea12868e337b65356fac5e88c67660d188afc573179ab107df9451dd33477df`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 9.3 MB (9280636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1.5` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:8ee626f2e6e94bafc98156a2e2eed9f174a2a84e909b7a206497213c0eb1b52c
+$ docker pull haxe@sha256:5f9c9068770b04ffc18f04a7d2d7eff4d5da2249040368bedaf69fe727303ae2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.3 KB (19270 bytes)**  
+-	Total Size: **19.3 KB (19269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f412f329a5d6f9ea3b8e19ba669d0b93afe7d53c167da671cc5f49f51f0d7258`
+-	Image ID: `sha256:b89154fff04d07a2140ea772ecc17895b5aace2996f43a28c8054bccc9f77b41`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0000747d149cc5901faeb56aead394959364f8a80d1191f799f80f61d5e4b5d9`  
-		Last Modified: Thu, 11 Jun 2026 03:23:18 GMT  
-		Size: 19.3 KB (19270 bytes)  
+	-	`sha256:20a201a41cb187db38560b3a44d6c6638b516314dac0fddb4fe000564f9b7d0b`  
+		Last Modified: Wed, 24 Jun 2026 03:25:02 GMT  
+		Size: 19.3 KB (19269 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.1.5` - linux; arm variant v7
@@ -4467,83 +4467,83 @@ $ docker pull haxe@sha256:71e6d6e3268ccea81713d10824d4396d2727230ad512d2226dec63
 ### `haxe:4.1.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:4fc078e29b1ae9ad117bae5ddfce78d7d9745a520893f69d5f13df3bbe002bc5
+$ docker pull haxe@sha256:8aa7ff30a452a27f46ef6a0331c7bcad6f8edc69a7bdb60f337930e5636c6e6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.3 MB (136260717 bytes)**  
+-	Total Size: **136.3 MB (136254021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:de454eecf78db5c4fb8d25129abf110e018b04cefc62a0446313448f7b5c4dc1`
+-	Image ID: `sha256:a769c64180800eeee277f37901fb54d6d1ea619e11f8c8dce8c19e630ba3874b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:43:46 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:44:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:14 GMT
+# Wed, 24 Jun 2026 03:18:11 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:14 GMT
+# Wed, 24 Jun 2026 03:18:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:14 GMT
+# Wed, 24 Jun 2026 03:18:11 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:31 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:31 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 ENV HAXE_VERSION=4.1.5
-# Thu, 11 Jun 2026 03:18:31 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:23:24 GMT
+# Wed, 24 Jun 2026 03:24:09 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.11.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.7 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:23:24 GMT
+# Wed, 24 Jun 2026 03:24:09 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:7c21e59e753cb91625909251110d6e4cc4a5411b4b7b37f74a62e56b927b7f1e`  
-		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
-		Size: 52.3 MB (52264114 bytes)  
+	-	`sha256:35157acdff35db21da73141f382d0dca0f6bc6d183c3a816d283fe39f471e539`  
+		Last Modified: Wed, 24 Jun 2026 00:27:56 GMT  
+		Size: 52.3 MB (52257219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8698eac281c2783fff44c0d5a2c381eeb273791e12f4dc8b407db26260bc3b85`  
-		Last Modified: Thu, 11 Jun 2026 00:43:55 GMT  
-		Size: 15.8 MB (15774833 bytes)  
+	-	`sha256:daf305d6ad7bad47ee0696c3db8b8fed8e9c2a42c53b57d047f8ab32f5d9b546`  
+		Last Modified: Wed, 24 Jun 2026 01:44:59 GMT  
+		Size: 15.8 MB (15774954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddd4791f1a451400cf59328cbd4f4f9bed438b89f7103b59dc50338fd2ac9293`  
-		Last Modified: Thu, 11 Jun 2026 02:24:59 GMT  
-		Size: 54.9 MB (54879555 bytes)  
+	-	`sha256:c95f37219bba62c0b4908476dc3cf7f0f98f1c87e8908c188797b1dc1f610c77`  
+		Last Modified: Wed, 24 Jun 2026 02:35:29 GMT  
+		Size: 54.9 MB (54879567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b975df3c35ca3f60311396745e8aac26b4ae3c91d83e285ba91838fdb05f9458`  
-		Last Modified: Thu, 11 Jun 2026 03:23:30 GMT  
-		Size: 1.1 MB (1145538 bytes)  
+	-	`sha256:0d946067816222cb0f5a01b124954dccbcab1bcd043ed30cdf11c82c0e799aeb`  
+		Last Modified: Wed, 24 Jun 2026 03:24:15 GMT  
+		Size: 1.1 MB (1145558 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab46c0aca8da6d0a913db89260dae3d0142abe2aa3c5b4bd9d99e91051a66129`  
-		Last Modified: Thu, 11 Jun 2026 03:23:30 GMT  
-		Size: 1.5 MB (1453592 bytes)  
+	-	`sha256:66ff78942f08595030cb055ffd7e3e02cd4e832e6c9358e5ab203ad86f18bf14`  
+		Last Modified: Wed, 24 Jun 2026 03:24:15 GMT  
+		Size: 1.5 MB (1453569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb7944d696363cb994a7160e95281d93dae369a3f5022215843088e7f3f9985c`  
-		Last Modified: Thu, 11 Jun 2026 03:23:30 GMT  
-		Size: 10.7 MB (10743085 bytes)  
+	-	`sha256:a2a768e26969be1fad2aa6015d7d0e6e1485313d9cc8c331354dfe41fa5d0065`  
+		Last Modified: Wed, 24 Jun 2026 03:24:15 GMT  
+		Size: 10.7 MB (10743154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1.5` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:34823c91d7b191b76723c5a65d578ae757657362c5ebd95b1dbe2bfff5cb6bad
+$ docker pull haxe@sha256:393093da89366b95680d2bfdae45505a6c0fd4e703a3ff52c4649620a724f19c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.4 KB (19405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc937bce17e95d5c955b9a1726a95019561c84d2d02fd08562e60f2dce72c8b6`
+-	Image ID: `sha256:c251e62af5844da9583444cacab9e45e873b403f78feae37664201c2297ba6f7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2e80e79368be256544279a023806e2150e00b16339eb9194a61e0d73ae9c1070`  
-		Last Modified: Thu, 11 Jun 2026 03:23:30 GMT  
+	-	`sha256:7dbdf2af92ac40ce3295e0297ce1eed52f0cbd8490a4d1fdc51ad6f9f22cff4a`  
+		Last Modified: Wed, 24 Jun 2026 03:24:15 GMT  
 		Size: 19.4 KB (19405 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4828,7 +4828,7 @@ CMD ["haxe"]
 ## `haxe:4.1.5-bullseye`
 
 ```console
-$ docker pull haxe@sha256:4caa4ac8509cc9daf875b478e2651ff89f2620820bf7c422881d7360570e755e
+$ docker pull haxe@sha256:2f121adea8f5ebca6c2e1fc288c89fb287c2572fc664c9f14019973433aaa283
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4843,84 +4843,84 @@ $ docker pull haxe@sha256:4caa4ac8509cc9daf875b478e2651ff89f2620820bf7c422881d73
 ### `haxe:4.1.5-bullseye` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:950a5cd22c8b0e544baf5e3909e2c5a3883f7759d055c88e1e9ada601680bdf2
+$ docker pull haxe@sha256:42ba45f0b23611b811eaff98b95386b0b0b338a2753cdfe96dd072ede94dbbdf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.2 MB (136203496 bytes)**  
+-	Total Size: **136.2 MB (136204855 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:004f51bf9202bd3cceaa88772a9cb0c47d3b5c82eac9aba0536103ada9e9b85c`
+-	Image ID: `sha256:277965b7de7e25ef84a1d2c6f07e60fda0bf421cd7051b53d3fdfc600f4701de`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:42:19 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:41:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:36 GMT
+# Wed, 24 Jun 2026 02:28:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:11 GMT
+# Wed, 24 Jun 2026 03:18:34 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:11 GMT
+# Wed, 24 Jun 2026 03:18:34 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:11 GMT
+# Wed, 24 Jun 2026 03:18:34 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:35 GMT
+# Wed, 24 Jun 2026 03:20:04 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:35 GMT
+# Wed, 24 Jun 2026 03:20:04 GMT
 ENV HAXE_VERSION=4.1.5
-# Thu, 11 Jun 2026 03:18:35 GMT
+# Wed, 24 Jun 2026 03:20:04 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:23:12 GMT
+# Wed, 24 Jun 2026 03:24:57 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.11.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.7 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:23:12 GMT
+# Wed, 24 Jun 2026 03:24:57 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:af48a3e7696e07f88a02f9674e541901b65eadb5cf0f62e566b1d895099a1e9e`  
-		Last Modified: Wed, 10 Jun 2026 23:40:09 GMT  
-		Size: 53.8 MB (53771769 bytes)  
+	-	`sha256:c67cddb4b9fcdeefaf829aa012f0ccaefcfa862a558064326104b95b8849cd81`  
+		Last Modified: Wed, 24 Jun 2026 00:28:17 GMT  
+		Size: 53.8 MB (53773009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53f53a3a71a19cca6d8312e9c60a5428b23742024a0057b1f0e46517df6ae4a9`  
-		Last Modified: Thu, 11 Jun 2026 00:42:31 GMT  
-		Size: 15.8 MB (15790824 bytes)  
+	-	`sha256:816526a6d4acf81b392ec5a1e6d8d402fbc4bf0460323c5ad45b376b247ca6fc`  
+		Last Modified: Wed, 24 Jun 2026 01:41:36 GMT  
+		Size: 15.8 MB (15790805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3db6c46730caf21fd1b15e0e84732744cb5a66e6931cf2c3753965fc32257fc`  
-		Last Modified: Thu, 11 Jun 2026 02:24:52 GMT  
-		Size: 54.7 MB (54743048 bytes)  
+	-	`sha256:2d3cf50c221acb61e259a7ecd20caf425597eca7d93e329dde2640ca7ec8aaf4`  
+		Last Modified: Wed, 24 Jun 2026 02:28:36 GMT  
+		Size: 54.7 MB (54742897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee4f66d3a755deefa75bd02da0753afdeb00deb4aa6ad9d7fc4828ee06e852fc`  
-		Last Modified: Thu, 11 Jun 2026 03:23:18 GMT  
-		Size: 1.2 MB (1155206 bytes)  
+	-	`sha256:8f8fa89fa6a214856f11206c04ead19f9fb60bb4a4b7c7f80f091acb4d60d1c0`  
+		Last Modified: Wed, 24 Jun 2026 03:25:02 GMT  
+		Size: 1.2 MB (1155293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efe4979098a56d3c59688cb8f417ae790e08b4bf5bf38e3671f708c3300996e0`  
-		Last Modified: Thu, 11 Jun 2026 03:23:18 GMT  
-		Size: 1.5 MB (1462136 bytes)  
+	-	`sha256:f861e258a98a2a09cdc4b25b450f8f1e732546e63e4ece2383760f9804fd6622`  
+		Last Modified: Wed, 24 Jun 2026 03:25:02 GMT  
+		Size: 1.5 MB (1462215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89524e26fb4edc01ae5047ccfa64680f4d4eb9f73d592e6ab54564d5e75a9f1a`  
-		Last Modified: Thu, 11 Jun 2026 03:23:18 GMT  
-		Size: 9.3 MB (9280513 bytes)  
+	-	`sha256:fea12868e337b65356fac5e88c67660d188afc573179ab107df9451dd33477df`  
+		Last Modified: Wed, 24 Jun 2026 03:25:03 GMT  
+		Size: 9.3 MB (9280636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1.5-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:8ee626f2e6e94bafc98156a2e2eed9f174a2a84e909b7a206497213c0eb1b52c
+$ docker pull haxe@sha256:5f9c9068770b04ffc18f04a7d2d7eff4d5da2249040368bedaf69fe727303ae2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.3 KB (19270 bytes)**  
+-	Total Size: **19.3 KB (19269 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f412f329a5d6f9ea3b8e19ba669d0b93afe7d53c167da671cc5f49f51f0d7258`
+-	Image ID: `sha256:b89154fff04d07a2140ea772ecc17895b5aace2996f43a28c8054bccc9f77b41`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0000747d149cc5901faeb56aead394959364f8a80d1191f799f80f61d5e4b5d9`  
-		Last Modified: Thu, 11 Jun 2026 03:23:18 GMT  
-		Size: 19.3 KB (19270 bytes)  
+	-	`sha256:20a201a41cb187db38560b3a44d6c6638b516314dac0fddb4fe000564f9b7d0b`  
+		Last Modified: Wed, 24 Jun 2026 03:25:02 GMT  
+		Size: 19.3 KB (19269 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.1.5-bullseye` - linux; arm variant v7
@@ -5009,83 +5009,83 @@ $ docker pull haxe@sha256:71e6d6e3268ccea81713d10824d4396d2727230ad512d2226dec63
 ### `haxe:4.1.5-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:4fc078e29b1ae9ad117bae5ddfce78d7d9745a520893f69d5f13df3bbe002bc5
+$ docker pull haxe@sha256:8aa7ff30a452a27f46ef6a0331c7bcad6f8edc69a7bdb60f337930e5636c6e6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.3 MB (136260717 bytes)**  
+-	Total Size: **136.3 MB (136254021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:de454eecf78db5c4fb8d25129abf110e018b04cefc62a0446313448f7b5c4dc1`
+-	Image ID: `sha256:a769c64180800eeee277f37901fb54d6d1ea619e11f8c8dce8c19e630ba3874b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:43:46 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:44:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:14 GMT
+# Wed, 24 Jun 2026 03:18:11 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:14 GMT
+# Wed, 24 Jun 2026 03:18:11 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:14 GMT
+# Wed, 24 Jun 2026 03:18:11 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:31 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:31 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 ENV HAXE_VERSION=4.1.5
-# Thu, 11 Jun 2026 03:18:31 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:23:24 GMT
+# Wed, 24 Jun 2026 03:24:09 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.1.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.11.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.7 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:23:24 GMT
+# Wed, 24 Jun 2026 03:24:09 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:7c21e59e753cb91625909251110d6e4cc4a5411b4b7b37f74a62e56b927b7f1e`  
-		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
-		Size: 52.3 MB (52264114 bytes)  
+	-	`sha256:35157acdff35db21da73141f382d0dca0f6bc6d183c3a816d283fe39f471e539`  
+		Last Modified: Wed, 24 Jun 2026 00:27:56 GMT  
+		Size: 52.3 MB (52257219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8698eac281c2783fff44c0d5a2c381eeb273791e12f4dc8b407db26260bc3b85`  
-		Last Modified: Thu, 11 Jun 2026 00:43:55 GMT  
-		Size: 15.8 MB (15774833 bytes)  
+	-	`sha256:daf305d6ad7bad47ee0696c3db8b8fed8e9c2a42c53b57d047f8ab32f5d9b546`  
+		Last Modified: Wed, 24 Jun 2026 01:44:59 GMT  
+		Size: 15.8 MB (15774954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddd4791f1a451400cf59328cbd4f4f9bed438b89f7103b59dc50338fd2ac9293`  
-		Last Modified: Thu, 11 Jun 2026 02:24:59 GMT  
-		Size: 54.9 MB (54879555 bytes)  
+	-	`sha256:c95f37219bba62c0b4908476dc3cf7f0f98f1c87e8908c188797b1dc1f610c77`  
+		Last Modified: Wed, 24 Jun 2026 02:35:29 GMT  
+		Size: 54.9 MB (54879567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b975df3c35ca3f60311396745e8aac26b4ae3c91d83e285ba91838fdb05f9458`  
-		Last Modified: Thu, 11 Jun 2026 03:23:30 GMT  
-		Size: 1.1 MB (1145538 bytes)  
+	-	`sha256:0d946067816222cb0f5a01b124954dccbcab1bcd043ed30cdf11c82c0e799aeb`  
+		Last Modified: Wed, 24 Jun 2026 03:24:15 GMT  
+		Size: 1.1 MB (1145558 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab46c0aca8da6d0a913db89260dae3d0142abe2aa3c5b4bd9d99e91051a66129`  
-		Last Modified: Thu, 11 Jun 2026 03:23:30 GMT  
-		Size: 1.5 MB (1453592 bytes)  
+	-	`sha256:66ff78942f08595030cb055ffd7e3e02cd4e832e6c9358e5ab203ad86f18bf14`  
+		Last Modified: Wed, 24 Jun 2026 03:24:15 GMT  
+		Size: 1.5 MB (1453569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb7944d696363cb994a7160e95281d93dae369a3f5022215843088e7f3f9985c`  
-		Last Modified: Thu, 11 Jun 2026 03:23:30 GMT  
-		Size: 10.7 MB (10743085 bytes)  
+	-	`sha256:a2a768e26969be1fad2aa6015d7d0e6e1485313d9cc8c331354dfe41fa5d0065`  
+		Last Modified: Wed, 24 Jun 2026 03:24:15 GMT  
+		Size: 10.7 MB (10743154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1.5-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:34823c91d7b191b76723c5a65d578ae757657362c5ebd95b1dbe2bfff5cb6bad
+$ docker pull haxe@sha256:393093da89366b95680d2bfdae45505a6c0fd4e703a3ff52c4649620a724f19c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.4 KB (19405 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc937bce17e95d5c955b9a1726a95019561c84d2d02fd08562e60f2dce72c8b6`
+-	Image ID: `sha256:c251e62af5844da9583444cacab9e45e873b403f78feae37664201c2297ba6f7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2e80e79368be256544279a023806e2150e00b16339eb9194a61e0d73ae9c1070`  
-		Last Modified: Thu, 11 Jun 2026 03:23:30 GMT  
+	-	`sha256:7dbdf2af92ac40ce3295e0297ce1eed52f0cbd8490a4d1fdc51ad6f9f22cff4a`  
+		Last Modified: Wed, 24 Jun 2026 03:24:15 GMT  
 		Size: 19.4 KB (19405 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5679,7 +5679,7 @@ CMD ["haxe"]
 ## `haxe:4.2`
 
 ```console
-$ docker pull haxe@sha256:03504b72a99db97c8239403b2930314d56c8e3b2984f4895a805f81d7372a860
+$ docker pull haxe@sha256:5fbe0d7f57fd65cdfa6f96b59b6873e01b23942bf76b01d3454be32316753148
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5696,83 +5696,83 @@ $ docker pull haxe@sha256:03504b72a99db97c8239403b2930314d56c8e3b2984f4895a805f8
 ### `haxe:4.2` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:bc3959ad9e1565973002a61d60fe71d05d169efb83b411773b49d97903a5f409
+$ docker pull haxe@sha256:fd3ce6078d208b8cb003f5604071b4f5a782060d5f060674257956cdde9c0e96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **398.6 MB (398645956 bytes)**  
+-	Total Size: **398.6 MB (398645988 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2224e7b667f16b38aeba666e56c8ea63310063e78b0a5c0513de9c777fc232cf`
+-	Image ID: `sha256:5b037c2e8113306bbf0d688fafce85746721313d40dd8dec55c1388b362a4453`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:42:10 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:41:22 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:26 GMT
+# Wed, 24 Jun 2026 02:28:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:06 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:06 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto7 		libmbedtls14 		libmbedx509-1 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:06 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:24 GMT
+# Wed, 24 Jun 2026 03:19:38 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:24 GMT
+# Wed, 24 Jun 2026 03:19:38 GMT
 ENV HAXE_VERSION=4.2.5
-# Thu, 11 Jun 2026 03:18:24 GMT
+# Wed, 24 Jun 2026 03:19:38 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:38 GMT
+# Wed, 24 Jun 2026 03:22:52 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.9 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on=camlp5 || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:38 GMT
+# Wed, 24 Jun 2026 03:22:52 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01cedcff86f879d042805360ecba268802bec3d8201484ff3ec54f4250a2d3b7`  
-		Last Modified: Wed, 10 Jun 2026 23:39:39 GMT  
-		Size: 48.5 MB (48502042 bytes)  
+	-	`sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b`  
+		Last Modified: Wed, 24 Jun 2026 00:27:40 GMT  
+		Size: 48.5 MB (48502210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4da31edd9efdb812e66d13819903973ea6b188d2e7358547676d33d1e3f706f2`  
-		Last Modified: Thu, 11 Jun 2026 00:42:23 GMT  
-		Size: 24.0 MB (24044000 bytes)  
+	-	`sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff`  
+		Last Modified: Wed, 24 Jun 2026 01:41:33 GMT  
+		Size: 24.0 MB (24044046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fbaeeb62b9d03a1204b85c3b257aa3e1ce2c4ccfeea479fb2e659211019c29d`  
-		Last Modified: Thu, 11 Jun 2026 02:24:43 GMT  
-		Size: 64.4 MB (64404116 bytes)  
+	-	`sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a`  
+		Last Modified: Wed, 24 Jun 2026 02:28:33 GMT  
+		Size: 64.4 MB (64404017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0030b84760a5aa11016d9a145006655b4014179b4bdb9209baaaf326c9626c06`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 1.6 MB (1637521 bytes)  
+	-	`sha256:66afbd5a5a7da4a131df677e47101376eed30a0477835e918c3f13cb24a04eb7`  
+		Last Modified: Wed, 24 Jun 2026 03:23:22 GMT  
+		Size: 1.6 MB (1637534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2adb028f1472e22d1950855238cb29b1a7ce250c8f4861431e78d88796261fe4`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 1.4 MB (1386085 bytes)  
+	-	`sha256:77de745c2e450d42d86e27736d565f71f9fd435063f03bef1ae3882ccd3e2d0c`  
+		Last Modified: Wed, 24 Jun 2026 03:23:22 GMT  
+		Size: 1.4 MB (1386017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab23394ffa49281afbbd4d677d84b813ff443dcdf9a5bf9c235dafee3d1cf228`  
-		Last Modified: Thu, 11 Jun 2026 03:22:16 GMT  
-		Size: 258.7 MB (258672192 bytes)  
+	-	`sha256:5e9c6cfbdbbdd79ca966b074c8680c5ed26cc6524f7be22c3275b7c2cc501d00`  
+		Last Modified: Wed, 24 Jun 2026 03:23:28 GMT  
+		Size: 258.7 MB (258672164 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:17e515cbbd69bf23afdb97ffc316c4c266b917be7db2e04df1ba64467fe9ebb4
+$ docker pull haxe@sha256:80d16154738a1e1de3e4ed72cf8ff6e269cca2aba6fcc054e60ed69ad81ace29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.3 KB (19295 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97c665be7cf5f69709e52b9631fcc6b2494705b77e6d4e3c6bc4d5fe5b4b3e77`
+-	Image ID: `sha256:32730c655c5ee8ff0b6b40b23bbff01761d15f9683b8a7182ff1a439336d9b00`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1699b4488f722526a1a0ab56786c66c8324afd809fb91be08ccb2a0c20402e3f`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
+	-	`sha256:be7dac8e6cfa3e3f994c03e816b8902cdb9caf035437a3ae53af8f02807a58ce`  
+		Last Modified: Wed, 24 Jun 2026 03:23:22 GMT  
 		Size: 19.3 KB (19295 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5862,83 +5862,83 @@ $ docker pull haxe@sha256:23a7801cc0fb8a0393ae325d8d4256066c47886a1f97f69978f8f1
 ### `haxe:4.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:8be25ac5679b107a1f341b8393cb80d8b70d89673d3025dce3993fde9ac7a942
+$ docker pull haxe@sha256:d0029eaebeb57f835019ccd53c99ea80d0e89837c2b7f424faf5085da8281b71
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **401.6 MB (401589162 bytes)**  
+-	Total Size: **401.6 MB (401589674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac54a8ba68daf39c84d63e8a601ebcbc12d53eb34eb8e2054c20cd6315a972e3`
+-	Image ID: `sha256:f0a4c53a7cbe3ffc870e0caaf181244a01237f69310bc55513984b3a2ef7d024`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:43:47 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:44:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:05 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:05 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto7 		libmbedtls14 		libmbedx509-1 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:05 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:17 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:17 GMT
 ENV HAXE_VERSION=4.2.5
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:17 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:44 GMT
+# Wed, 24 Jun 2026 03:23:56 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.9 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on=camlp5 || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:44 GMT
+# Wed, 24 Jun 2026 03:23:56 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:c847f328095fb083f4a22895b90fe4226efa6458ac57362b64b6e5d99da9e4a3`  
-		Last Modified: Wed, 10 Jun 2026 23:39:28 GMT  
-		Size: 48.4 MB (48389016 bytes)  
+	-	`sha256:0fb1189398e2e4b474d43aac6502510d0da0318e70137a377c21087f198814db`  
+		Last Modified: Wed, 24 Jun 2026 00:27:19 GMT  
+		Size: 48.4 MB (48389201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f511b4c80a6e453785fbcd573c1bf1cb986c4e8d43ed4500ad1ac9a4719762b`  
-		Last Modified: Thu, 11 Jun 2026 00:43:56 GMT  
-		Size: 23.6 MB (23613296 bytes)  
+	-	`sha256:03ebca214f1a4b66acfdb0bd20aa3ee139d1747885ef4b0f3d07aa2a68459230`  
+		Last Modified: Wed, 24 Jun 2026 01:44:48 GMT  
+		Size: 23.6 MB (23613316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b715a6712db064e97302c819acd7a39c0c72f8a315ff83c6ad1c27bfa1b275e`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 64.5 MB (64487878 bytes)  
+	-	`sha256:533bb0e918720911be6cb7a1a5ba9ad0e1a308fcbf24961a23aba0cd220df6cf`  
+		Last Modified: Wed, 24 Jun 2026 02:35:28 GMT  
+		Size: 64.5 MB (64487706 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3323f2917e86837fbca05198a939553b4ea7b829bdeac86206a65d7f015e4653`  
-		Last Modified: Thu, 11 Jun 2026 03:22:20 GMT  
-		Size: 1.6 MB (1618250 bytes)  
+	-	`sha256:65ef1c9651b23ba559cbc6ed6dd16fcbb2775e3d35645dd581979e0776179c00`  
+		Last Modified: Wed, 24 Jun 2026 03:24:31 GMT  
+		Size: 1.6 MB (1618208 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb6302fdfc323a1330b89eeeb289cd4b7a467375c2fba50961a241f670f28be2`  
-		Last Modified: Thu, 11 Jun 2026 03:22:20 GMT  
-		Size: 1.4 MB (1420567 bytes)  
+	-	`sha256:e61d8533622baa43e97679e1033892288f73344bac6933876df6c454a1111f8a`  
+		Last Modified: Wed, 24 Jun 2026 03:24:32 GMT  
+		Size: 1.4 MB (1420584 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0c078bda00a1a087eb2b14029f731e849ddb39e84e7449a7dedcb692cf72def`  
-		Last Modified: Thu, 11 Jun 2026 03:22:26 GMT  
-		Size: 262.1 MB (262060155 bytes)  
+	-	`sha256:5bf8b903c621546510da583774c08d842689a5bd85ea9850cbb727049cf4cfc2`  
+		Last Modified: Wed, 24 Jun 2026 03:24:38 GMT  
+		Size: 262.1 MB (262060659 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:266e32064104739e0a4692ec6fb1e72829dd3ebf7775b6eef9c6d44474aae9dd
+$ docker pull haxe@sha256:3af97ee2763c3a6ac3672d4388c0418dbb538cdb26a049f047a06e55ab926c58
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.4 KB (19429 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b33ff08bee7ca9d57a9f623fb374fa6c7231c6c28d54537f2eae8d51971e0454`
+-	Image ID: `sha256:ff902ef2565e6b8017e18b376783fc41d801a12f25c07538ed47e6b94102f988`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1549b5f9bacef584e83591db45a8e0786d384dcdc6a8785384074d6a0995fa62`  
-		Last Modified: Thu, 11 Jun 2026 03:22:20 GMT  
+	-	`sha256:11616b9b21039b06da992998df25cc96d6ce9e62336148fc6b83ad86603444b6`  
+		Last Modified: Wed, 24 Jun 2026 03:24:31 GMT  
 		Size: 19.4 KB (19429 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6223,7 +6223,7 @@ CMD ["haxe"]
 ## `haxe:4.2-bookworm`
 
 ```console
-$ docker pull haxe@sha256:7deed3eb1779c0c91b72bf58399126f91ba2bbc49b15c62eeb520e7be9710ef3
+$ docker pull haxe@sha256:e3efc17f57bfe40ded58f0a9371d9cec276ab904afd66f8053c6f74b728c7e5a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6238,83 +6238,83 @@ $ docker pull haxe@sha256:7deed3eb1779c0c91b72bf58399126f91ba2bbc49b15c62eeb520e
 ### `haxe:4.2-bookworm` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:bc3959ad9e1565973002a61d60fe71d05d169efb83b411773b49d97903a5f409
+$ docker pull haxe@sha256:fd3ce6078d208b8cb003f5604071b4f5a782060d5f060674257956cdde9c0e96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **398.6 MB (398645956 bytes)**  
+-	Total Size: **398.6 MB (398645988 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2224e7b667f16b38aeba666e56c8ea63310063e78b0a5c0513de9c777fc232cf`
+-	Image ID: `sha256:5b037c2e8113306bbf0d688fafce85746721313d40dd8dec55c1388b362a4453`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:42:10 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:41:22 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:26 GMT
+# Wed, 24 Jun 2026 02:28:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:06 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:06 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto7 		libmbedtls14 		libmbedx509-1 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:06 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:24 GMT
+# Wed, 24 Jun 2026 03:19:38 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:24 GMT
+# Wed, 24 Jun 2026 03:19:38 GMT
 ENV HAXE_VERSION=4.2.5
-# Thu, 11 Jun 2026 03:18:24 GMT
+# Wed, 24 Jun 2026 03:19:38 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:38 GMT
+# Wed, 24 Jun 2026 03:22:52 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.9 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on=camlp5 || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:38 GMT
+# Wed, 24 Jun 2026 03:22:52 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01cedcff86f879d042805360ecba268802bec3d8201484ff3ec54f4250a2d3b7`  
-		Last Modified: Wed, 10 Jun 2026 23:39:39 GMT  
-		Size: 48.5 MB (48502042 bytes)  
+	-	`sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b`  
+		Last Modified: Wed, 24 Jun 2026 00:27:40 GMT  
+		Size: 48.5 MB (48502210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4da31edd9efdb812e66d13819903973ea6b188d2e7358547676d33d1e3f706f2`  
-		Last Modified: Thu, 11 Jun 2026 00:42:23 GMT  
-		Size: 24.0 MB (24044000 bytes)  
+	-	`sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff`  
+		Last Modified: Wed, 24 Jun 2026 01:41:33 GMT  
+		Size: 24.0 MB (24044046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fbaeeb62b9d03a1204b85c3b257aa3e1ce2c4ccfeea479fb2e659211019c29d`  
-		Last Modified: Thu, 11 Jun 2026 02:24:43 GMT  
-		Size: 64.4 MB (64404116 bytes)  
+	-	`sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a`  
+		Last Modified: Wed, 24 Jun 2026 02:28:33 GMT  
+		Size: 64.4 MB (64404017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0030b84760a5aa11016d9a145006655b4014179b4bdb9209baaaf326c9626c06`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 1.6 MB (1637521 bytes)  
+	-	`sha256:66afbd5a5a7da4a131df677e47101376eed30a0477835e918c3f13cb24a04eb7`  
+		Last Modified: Wed, 24 Jun 2026 03:23:22 GMT  
+		Size: 1.6 MB (1637534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2adb028f1472e22d1950855238cb29b1a7ce250c8f4861431e78d88796261fe4`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 1.4 MB (1386085 bytes)  
+	-	`sha256:77de745c2e450d42d86e27736d565f71f9fd435063f03bef1ae3882ccd3e2d0c`  
+		Last Modified: Wed, 24 Jun 2026 03:23:22 GMT  
+		Size: 1.4 MB (1386017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab23394ffa49281afbbd4d677d84b813ff443dcdf9a5bf9c235dafee3d1cf228`  
-		Last Modified: Thu, 11 Jun 2026 03:22:16 GMT  
-		Size: 258.7 MB (258672192 bytes)  
+	-	`sha256:5e9c6cfbdbbdd79ca966b074c8680c5ed26cc6524f7be22c3275b7c2cc501d00`  
+		Last Modified: Wed, 24 Jun 2026 03:23:28 GMT  
+		Size: 258.7 MB (258672164 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:17e515cbbd69bf23afdb97ffc316c4c266b917be7db2e04df1ba64467fe9ebb4
+$ docker pull haxe@sha256:80d16154738a1e1de3e4ed72cf8ff6e269cca2aba6fcc054e60ed69ad81ace29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.3 KB (19295 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97c665be7cf5f69709e52b9631fcc6b2494705b77e6d4e3c6bc4d5fe5b4b3e77`
+-	Image ID: `sha256:32730c655c5ee8ff0b6b40b23bbff01761d15f9683b8a7182ff1a439336d9b00`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1699b4488f722526a1a0ab56786c66c8324afd809fb91be08ccb2a0c20402e3f`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
+	-	`sha256:be7dac8e6cfa3e3f994c03e816b8902cdb9caf035437a3ae53af8f02807a58ce`  
+		Last Modified: Wed, 24 Jun 2026 03:23:22 GMT  
 		Size: 19.3 KB (19295 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6404,90 +6404,90 @@ $ docker pull haxe@sha256:23a7801cc0fb8a0393ae325d8d4256066c47886a1f97f69978f8f1
 ### `haxe:4.2-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:8be25ac5679b107a1f341b8393cb80d8b70d89673d3025dce3993fde9ac7a942
+$ docker pull haxe@sha256:d0029eaebeb57f835019ccd53c99ea80d0e89837c2b7f424faf5085da8281b71
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **401.6 MB (401589162 bytes)**  
+-	Total Size: **401.6 MB (401589674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac54a8ba68daf39c84d63e8a601ebcbc12d53eb34eb8e2054c20cd6315a972e3`
+-	Image ID: `sha256:f0a4c53a7cbe3ffc870e0caaf181244a01237f69310bc55513984b3a2ef7d024`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:43:47 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:44:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:05 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:05 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto7 		libmbedtls14 		libmbedx509-1 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:05 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:17 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:17 GMT
 ENV HAXE_VERSION=4.2.5
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:17 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:44 GMT
+# Wed, 24 Jun 2026 03:23:56 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.9 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on=camlp5 || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:44 GMT
+# Wed, 24 Jun 2026 03:23:56 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:c847f328095fb083f4a22895b90fe4226efa6458ac57362b64b6e5d99da9e4a3`  
-		Last Modified: Wed, 10 Jun 2026 23:39:28 GMT  
-		Size: 48.4 MB (48389016 bytes)  
+	-	`sha256:0fb1189398e2e4b474d43aac6502510d0da0318e70137a377c21087f198814db`  
+		Last Modified: Wed, 24 Jun 2026 00:27:19 GMT  
+		Size: 48.4 MB (48389201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f511b4c80a6e453785fbcd573c1bf1cb986c4e8d43ed4500ad1ac9a4719762b`  
-		Last Modified: Thu, 11 Jun 2026 00:43:56 GMT  
-		Size: 23.6 MB (23613296 bytes)  
+	-	`sha256:03ebca214f1a4b66acfdb0bd20aa3ee139d1747885ef4b0f3d07aa2a68459230`  
+		Last Modified: Wed, 24 Jun 2026 01:44:48 GMT  
+		Size: 23.6 MB (23613316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b715a6712db064e97302c819acd7a39c0c72f8a315ff83c6ad1c27bfa1b275e`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 64.5 MB (64487878 bytes)  
+	-	`sha256:533bb0e918720911be6cb7a1a5ba9ad0e1a308fcbf24961a23aba0cd220df6cf`  
+		Last Modified: Wed, 24 Jun 2026 02:35:28 GMT  
+		Size: 64.5 MB (64487706 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3323f2917e86837fbca05198a939553b4ea7b829bdeac86206a65d7f015e4653`  
-		Last Modified: Thu, 11 Jun 2026 03:22:20 GMT  
-		Size: 1.6 MB (1618250 bytes)  
+	-	`sha256:65ef1c9651b23ba559cbc6ed6dd16fcbb2775e3d35645dd581979e0776179c00`  
+		Last Modified: Wed, 24 Jun 2026 03:24:31 GMT  
+		Size: 1.6 MB (1618208 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb6302fdfc323a1330b89eeeb289cd4b7a467375c2fba50961a241f670f28be2`  
-		Last Modified: Thu, 11 Jun 2026 03:22:20 GMT  
-		Size: 1.4 MB (1420567 bytes)  
+	-	`sha256:e61d8533622baa43e97679e1033892288f73344bac6933876df6c454a1111f8a`  
+		Last Modified: Wed, 24 Jun 2026 03:24:32 GMT  
+		Size: 1.4 MB (1420584 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0c078bda00a1a087eb2b14029f731e849ddb39e84e7449a7dedcb692cf72def`  
-		Last Modified: Thu, 11 Jun 2026 03:22:26 GMT  
-		Size: 262.1 MB (262060155 bytes)  
+	-	`sha256:5bf8b903c621546510da583774c08d842689a5bd85ea9850cbb727049cf4cfc2`  
+		Last Modified: Wed, 24 Jun 2026 03:24:38 GMT  
+		Size: 262.1 MB (262060659 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:266e32064104739e0a4692ec6fb1e72829dd3ebf7775b6eef9c6d44474aae9dd
+$ docker pull haxe@sha256:3af97ee2763c3a6ac3672d4388c0418dbb538cdb26a049f047a06e55ab926c58
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.4 KB (19429 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b33ff08bee7ca9d57a9f623fb374fa6c7231c6c28d54537f2eae8d51971e0454`
+-	Image ID: `sha256:ff902ef2565e6b8017e18b376783fc41d801a12f25c07538ed47e6b94102f988`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1549b5f9bacef584e83591db45a8e0786d384dcdc6a8785384074d6a0995fa62`  
-		Last Modified: Thu, 11 Jun 2026 03:22:20 GMT  
+	-	`sha256:11616b9b21039b06da992998df25cc96d6ce9e62336148fc6b83ad86603444b6`  
+		Last Modified: Wed, 24 Jun 2026 03:24:31 GMT  
 		Size: 19.4 KB (19429 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.2-bullseye`
 
 ```console
-$ docker pull haxe@sha256:ede4ce32870aa3f7c45d705a9ac34047280262cebdc3b7b12ceff26a7644e7a6
+$ docker pull haxe@sha256:fe30d5292a70baed1190f66209b6e5cbbe34265eed25508b8f411acec5edbac2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6502,83 +6502,83 @@ $ docker pull haxe@sha256:ede4ce32870aa3f7c45d705a9ac34047280262cebdc3b7b12ceff2
 ### `haxe:4.2-bullseye` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:56640fe67f469c61536992fef17213b653e8e25cdb6bae7bfc5b1006e69d4aa3
+$ docker pull haxe@sha256:53c962ecfd22e96e1ccd741148870269cb4377f9443f5dbf1aee42d985a764f0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.9 MB (137928365 bytes)**  
+-	Total Size: **137.9 MB (137929535 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52dda1182f326fc512b7195a48543a6f438f0a77fb155efd9baf49d30482df54`
+-	Image ID: `sha256:36e25df0fcb75bf3c8e93432a39190e6220d0fe46c531488bba66ac3ebcb034b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:42:19 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:41:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:36 GMT
+# Wed, 24 Jun 2026 02:28:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:06 GMT
+# Wed, 24 Jun 2026 03:18:30 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:06 GMT
+# Wed, 24 Jun 2026 03:18:30 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:06 GMT
+# Wed, 24 Jun 2026 03:18:30 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:28 GMT
+# Wed, 24 Jun 2026 03:19:46 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:28 GMT
+# Wed, 24 Jun 2026 03:19:46 GMT
 ENV HAXE_VERSION=4.2.5
-# Thu, 11 Jun 2026 03:18:28 GMT
+# Wed, 24 Jun 2026 03:19:46 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:59 GMT
+# Wed, 24 Jun 2026 03:23:16 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.9 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on=camlp5 || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:59 GMT
+# Wed, 24 Jun 2026 03:23:16 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:af48a3e7696e07f88a02f9674e541901b65eadb5cf0f62e566b1d895099a1e9e`  
-		Last Modified: Wed, 10 Jun 2026 23:40:09 GMT  
-		Size: 53.8 MB (53771769 bytes)  
+	-	`sha256:c67cddb4b9fcdeefaf829aa012f0ccaefcfa862a558064326104b95b8849cd81`  
+		Last Modified: Wed, 24 Jun 2026 00:28:17 GMT  
+		Size: 53.8 MB (53773009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53f53a3a71a19cca6d8312e9c60a5428b23742024a0057b1f0e46517df6ae4a9`  
-		Last Modified: Thu, 11 Jun 2026 00:42:31 GMT  
-		Size: 15.8 MB (15790824 bytes)  
+	-	`sha256:816526a6d4acf81b392ec5a1e6d8d402fbc4bf0460323c5ad45b376b247ca6fc`  
+		Last Modified: Wed, 24 Jun 2026 01:41:36 GMT  
+		Size: 15.8 MB (15790805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3db6c46730caf21fd1b15e0e84732744cb5a66e6931cf2c3753965fc32257fc`  
-		Last Modified: Thu, 11 Jun 2026 02:24:52 GMT  
-		Size: 54.7 MB (54743048 bytes)  
+	-	`sha256:2d3cf50c221acb61e259a7ecd20caf425597eca7d93e329dde2640ca7ec8aaf4`  
+		Last Modified: Wed, 24 Jun 2026 02:28:36 GMT  
+		Size: 54.7 MB (54742897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68846bbad35f8e5a9e13ac7bd3b336836ec1d50d1585063cab03eb83f044a4d4`  
-		Last Modified: Thu, 11 Jun 2026 03:22:05 GMT  
-		Size: 1.2 MB (1155235 bytes)  
+	-	`sha256:ef144f65823349b2aacad1f861e3c6c223502fcb96e638b015dc108731311f69`  
+		Last Modified: Wed, 24 Jun 2026 03:23:21 GMT  
+		Size: 1.2 MB (1155286 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6efcce63de44e45f93154fab7c40300b40300192a9a2e37843baa7b5892351ed`  
-		Last Modified: Thu, 11 Jun 2026 03:22:06 GMT  
-		Size: 1.5 MB (1462131 bytes)  
+	-	`sha256:273b6aa30891beb37e8f6de77164e3fd15fc432932b9dfb4e4a39a15338d5688`  
+		Last Modified: Wed, 24 Jun 2026 03:23:21 GMT  
+		Size: 1.5 MB (1462119 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afa0fd9027730b373e9f979b57217ac3a288376a5690caa37bef6add2aded576`  
-		Last Modified: Thu, 11 Jun 2026 03:22:05 GMT  
-		Size: 11.0 MB (11005358 bytes)  
+	-	`sha256:e40df5a08a51e1ea29997feacc142d4fa9bd163a5359769d2a96ad5b5ad44a77`  
+		Last Modified: Wed, 24 Jun 2026 03:23:22 GMT  
+		Size: 11.0 MB (11005419 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c7dc3133e0f5130633b146ca612bb845398e1f338e7277e4f6a1663fc223a047
+$ docker pull haxe@sha256:17271018376e514e94c6dbedd545d5bfde9d226167d7d9aaf895fbe9eea9b6b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **18.7 KB (18705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:357e730f89d323cb81ecf57aa10daef3773363ad5cd369ae6d3e94876440343e`
+-	Image ID: `sha256:3a6c05afd706f6d127b21ffa0ee5ddc525e9e6088357bb1f60e651808d93264e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:59700a2a4bfbafff29eb875bfc54b1b21888351f664503ec93a99847aa66000c`  
-		Last Modified: Thu, 11 Jun 2026 03:22:05 GMT  
+	-	`sha256:86b6f5a809209ecf014b335360398ee7dac485df91b77b9eed520d6c5c17ce7d`  
+		Last Modified: Wed, 24 Jun 2026 03:23:21 GMT  
 		Size: 18.7 KB (18705 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6668,83 +6668,83 @@ $ docker pull haxe@sha256:9c5070f5562804f90e0ac67bad8b5e11add7ee50b075ad0991c5f8
 ### `haxe:4.2-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:8b421397ce008a4a4ad87e5b617a75292b3ffb4c5a2b03e1c09ef172d9da7d54
+$ docker pull haxe@sha256:59b7604010a9c2d8eaaf5bf16a586102acc21e7eb30649aa3b0e0a5258558e88
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.2 MB (138220430 bytes)**  
+-	Total Size: **138.2 MB (138213595 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:26639e7cc7133365f936301b91e33e3513ef5769bf90b347b2ae76d57dbc471e`
+-	Image ID: `sha256:b0522be49696ec47c18415d98422ac6780381df0e3c77c61e7ff25fbc3765b81`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:43:46 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:44:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:10 GMT
+# Wed, 24 Jun 2026 03:18:08 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:10 GMT
+# Wed, 24 Jun 2026 03:18:08 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:10 GMT
+# Wed, 24 Jun 2026 03:18:08 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:26 GMT
+# Wed, 24 Jun 2026 03:19:23 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:26 GMT
+# Wed, 24 Jun 2026 03:19:23 GMT
 ENV HAXE_VERSION=4.2.5
-# Thu, 11 Jun 2026 03:18:26 GMT
+# Wed, 24 Jun 2026 03:19:23 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:22:02 GMT
+# Wed, 24 Jun 2026 03:22:54 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.9 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on=camlp5 || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:22:02 GMT
+# Wed, 24 Jun 2026 03:22:54 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:7c21e59e753cb91625909251110d6e4cc4a5411b4b7b37f74a62e56b927b7f1e`  
-		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
-		Size: 52.3 MB (52264114 bytes)  
+	-	`sha256:35157acdff35db21da73141f382d0dca0f6bc6d183c3a816d283fe39f471e539`  
+		Last Modified: Wed, 24 Jun 2026 00:27:56 GMT  
+		Size: 52.3 MB (52257219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8698eac281c2783fff44c0d5a2c381eeb273791e12f4dc8b407db26260bc3b85`  
-		Last Modified: Thu, 11 Jun 2026 00:43:55 GMT  
-		Size: 15.8 MB (15774833 bytes)  
+	-	`sha256:daf305d6ad7bad47ee0696c3db8b8fed8e9c2a42c53b57d047f8ab32f5d9b546`  
+		Last Modified: Wed, 24 Jun 2026 01:44:59 GMT  
+		Size: 15.8 MB (15774954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddd4791f1a451400cf59328cbd4f4f9bed438b89f7103b59dc50338fd2ac9293`  
-		Last Modified: Thu, 11 Jun 2026 02:24:59 GMT  
-		Size: 54.9 MB (54879555 bytes)  
+	-	`sha256:c95f37219bba62c0b4908476dc3cf7f0f98f1c87e8908c188797b1dc1f610c77`  
+		Last Modified: Wed, 24 Jun 2026 02:35:29 GMT  
+		Size: 54.9 MB (54879567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79bf74d9a7cc8c5990449c194490bec94df4f81ce33f3a5d54d902aaca0e352d`  
-		Last Modified: Thu, 11 Jun 2026 03:22:07 GMT  
-		Size: 1.1 MB (1145566 bytes)  
+	-	`sha256:88e5c29c940fe27a29d9d8effbaaa08797f58e9c953b1bf23d1e19034fbff28a`  
+		Last Modified: Wed, 24 Jun 2026 03:23:01 GMT  
+		Size: 1.1 MB (1145559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05f1e82a8f1c1bf1f17c25cb7ec4cc1c255662ca3c3de69ed640ab785ffe99dc`  
-		Last Modified: Thu, 11 Jun 2026 03:22:07 GMT  
-		Size: 1.5 MB (1453620 bytes)  
+	-	`sha256:6586b839abf3c8097d41bd872a63f0d2cd808dab9e725058c871d90f02cbad14`  
+		Last Modified: Wed, 24 Jun 2026 03:23:00 GMT  
+		Size: 1.5 MB (1453572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99df2f7030be9f7568ceb824876f2bcd90daaaa5aefc28c03caefe71851e087c`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 12.7 MB (12702742 bytes)  
+	-	`sha256:c9c23569ed031e738df84073a7b8dafec0aa42455d75f3420733e5cdae549532`  
+		Last Modified: Wed, 24 Jun 2026 03:23:01 GMT  
+		Size: 12.7 MB (12702724 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:4151d7e98f7f8bda4e35b57913fa4217186d0465734dfafab5ec6d1f513f76c2
+$ docker pull haxe@sha256:024df7ade282010ef381dbb7b7aeb43e6536d9b1055a133fd3dea715922ab1b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **18.8 KB (18815 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c14d810f96eae15716624d8f39da3e44a8286dab27d4400eae6d549f8fd7e681`
+-	Image ID: `sha256:f4c1aeb1709d711d06a1d4bbab81f38b52c3041a40aa34aa98077d42828d6894`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:12975cd4f9601e8baf4b487ecd427ad5a8dc151b1f494f8c4180e6d0b89d2597`  
-		Last Modified: Thu, 11 Jun 2026 03:22:07 GMT  
+	-	`sha256:71e7ea56bb8c56ca393f6b487761be7898abef79d5ed10649cdbef4054e8c569`  
+		Last Modified: Wed, 24 Jun 2026 03:23:00 GMT  
 		Size: 18.8 KB (18815 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7338,7 +7338,7 @@ CMD ["haxe"]
 ## `haxe:4.2.5`
 
 ```console
-$ docker pull haxe@sha256:03504b72a99db97c8239403b2930314d56c8e3b2984f4895a805f81d7372a860
+$ docker pull haxe@sha256:5fbe0d7f57fd65cdfa6f96b59b6873e01b23942bf76b01d3454be32316753148
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7355,83 +7355,83 @@ $ docker pull haxe@sha256:03504b72a99db97c8239403b2930314d56c8e3b2984f4895a805f8
 ### `haxe:4.2.5` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:bc3959ad9e1565973002a61d60fe71d05d169efb83b411773b49d97903a5f409
+$ docker pull haxe@sha256:fd3ce6078d208b8cb003f5604071b4f5a782060d5f060674257956cdde9c0e96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **398.6 MB (398645956 bytes)**  
+-	Total Size: **398.6 MB (398645988 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2224e7b667f16b38aeba666e56c8ea63310063e78b0a5c0513de9c777fc232cf`
+-	Image ID: `sha256:5b037c2e8113306bbf0d688fafce85746721313d40dd8dec55c1388b362a4453`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:42:10 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:41:22 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:26 GMT
+# Wed, 24 Jun 2026 02:28:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:06 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:06 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto7 		libmbedtls14 		libmbedx509-1 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:06 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:24 GMT
+# Wed, 24 Jun 2026 03:19:38 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:24 GMT
+# Wed, 24 Jun 2026 03:19:38 GMT
 ENV HAXE_VERSION=4.2.5
-# Thu, 11 Jun 2026 03:18:24 GMT
+# Wed, 24 Jun 2026 03:19:38 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:38 GMT
+# Wed, 24 Jun 2026 03:22:52 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.9 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on=camlp5 || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:38 GMT
+# Wed, 24 Jun 2026 03:22:52 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01cedcff86f879d042805360ecba268802bec3d8201484ff3ec54f4250a2d3b7`  
-		Last Modified: Wed, 10 Jun 2026 23:39:39 GMT  
-		Size: 48.5 MB (48502042 bytes)  
+	-	`sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b`  
+		Last Modified: Wed, 24 Jun 2026 00:27:40 GMT  
+		Size: 48.5 MB (48502210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4da31edd9efdb812e66d13819903973ea6b188d2e7358547676d33d1e3f706f2`  
-		Last Modified: Thu, 11 Jun 2026 00:42:23 GMT  
-		Size: 24.0 MB (24044000 bytes)  
+	-	`sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff`  
+		Last Modified: Wed, 24 Jun 2026 01:41:33 GMT  
+		Size: 24.0 MB (24044046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fbaeeb62b9d03a1204b85c3b257aa3e1ce2c4ccfeea479fb2e659211019c29d`  
-		Last Modified: Thu, 11 Jun 2026 02:24:43 GMT  
-		Size: 64.4 MB (64404116 bytes)  
+	-	`sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a`  
+		Last Modified: Wed, 24 Jun 2026 02:28:33 GMT  
+		Size: 64.4 MB (64404017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0030b84760a5aa11016d9a145006655b4014179b4bdb9209baaaf326c9626c06`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 1.6 MB (1637521 bytes)  
+	-	`sha256:66afbd5a5a7da4a131df677e47101376eed30a0477835e918c3f13cb24a04eb7`  
+		Last Modified: Wed, 24 Jun 2026 03:23:22 GMT  
+		Size: 1.6 MB (1637534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2adb028f1472e22d1950855238cb29b1a7ce250c8f4861431e78d88796261fe4`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 1.4 MB (1386085 bytes)  
+	-	`sha256:77de745c2e450d42d86e27736d565f71f9fd435063f03bef1ae3882ccd3e2d0c`  
+		Last Modified: Wed, 24 Jun 2026 03:23:22 GMT  
+		Size: 1.4 MB (1386017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab23394ffa49281afbbd4d677d84b813ff443dcdf9a5bf9c235dafee3d1cf228`  
-		Last Modified: Thu, 11 Jun 2026 03:22:16 GMT  
-		Size: 258.7 MB (258672192 bytes)  
+	-	`sha256:5e9c6cfbdbbdd79ca966b074c8680c5ed26cc6524f7be22c3275b7c2cc501d00`  
+		Last Modified: Wed, 24 Jun 2026 03:23:28 GMT  
+		Size: 258.7 MB (258672164 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2.5` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:17e515cbbd69bf23afdb97ffc316c4c266b917be7db2e04df1ba64467fe9ebb4
+$ docker pull haxe@sha256:80d16154738a1e1de3e4ed72cf8ff6e269cca2aba6fcc054e60ed69ad81ace29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.3 KB (19295 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97c665be7cf5f69709e52b9631fcc6b2494705b77e6d4e3c6bc4d5fe5b4b3e77`
+-	Image ID: `sha256:32730c655c5ee8ff0b6b40b23bbff01761d15f9683b8a7182ff1a439336d9b00`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1699b4488f722526a1a0ab56786c66c8324afd809fb91be08ccb2a0c20402e3f`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
+	-	`sha256:be7dac8e6cfa3e3f994c03e816b8902cdb9caf035437a3ae53af8f02807a58ce`  
+		Last Modified: Wed, 24 Jun 2026 03:23:22 GMT  
 		Size: 19.3 KB (19295 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7521,83 +7521,83 @@ $ docker pull haxe@sha256:23a7801cc0fb8a0393ae325d8d4256066c47886a1f97f69978f8f1
 ### `haxe:4.2.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:8be25ac5679b107a1f341b8393cb80d8b70d89673d3025dce3993fde9ac7a942
+$ docker pull haxe@sha256:d0029eaebeb57f835019ccd53c99ea80d0e89837c2b7f424faf5085da8281b71
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **401.6 MB (401589162 bytes)**  
+-	Total Size: **401.6 MB (401589674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac54a8ba68daf39c84d63e8a601ebcbc12d53eb34eb8e2054c20cd6315a972e3`
+-	Image ID: `sha256:f0a4c53a7cbe3ffc870e0caaf181244a01237f69310bc55513984b3a2ef7d024`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:43:47 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:44:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:05 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:05 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto7 		libmbedtls14 		libmbedx509-1 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:05 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:17 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:17 GMT
 ENV HAXE_VERSION=4.2.5
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:17 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:44 GMT
+# Wed, 24 Jun 2026 03:23:56 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.9 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on=camlp5 || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:44 GMT
+# Wed, 24 Jun 2026 03:23:56 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:c847f328095fb083f4a22895b90fe4226efa6458ac57362b64b6e5d99da9e4a3`  
-		Last Modified: Wed, 10 Jun 2026 23:39:28 GMT  
-		Size: 48.4 MB (48389016 bytes)  
+	-	`sha256:0fb1189398e2e4b474d43aac6502510d0da0318e70137a377c21087f198814db`  
+		Last Modified: Wed, 24 Jun 2026 00:27:19 GMT  
+		Size: 48.4 MB (48389201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f511b4c80a6e453785fbcd573c1bf1cb986c4e8d43ed4500ad1ac9a4719762b`  
-		Last Modified: Thu, 11 Jun 2026 00:43:56 GMT  
-		Size: 23.6 MB (23613296 bytes)  
+	-	`sha256:03ebca214f1a4b66acfdb0bd20aa3ee139d1747885ef4b0f3d07aa2a68459230`  
+		Last Modified: Wed, 24 Jun 2026 01:44:48 GMT  
+		Size: 23.6 MB (23613316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b715a6712db064e97302c819acd7a39c0c72f8a315ff83c6ad1c27bfa1b275e`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 64.5 MB (64487878 bytes)  
+	-	`sha256:533bb0e918720911be6cb7a1a5ba9ad0e1a308fcbf24961a23aba0cd220df6cf`  
+		Last Modified: Wed, 24 Jun 2026 02:35:28 GMT  
+		Size: 64.5 MB (64487706 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3323f2917e86837fbca05198a939553b4ea7b829bdeac86206a65d7f015e4653`  
-		Last Modified: Thu, 11 Jun 2026 03:22:20 GMT  
-		Size: 1.6 MB (1618250 bytes)  
+	-	`sha256:65ef1c9651b23ba559cbc6ed6dd16fcbb2775e3d35645dd581979e0776179c00`  
+		Last Modified: Wed, 24 Jun 2026 03:24:31 GMT  
+		Size: 1.6 MB (1618208 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb6302fdfc323a1330b89eeeb289cd4b7a467375c2fba50961a241f670f28be2`  
-		Last Modified: Thu, 11 Jun 2026 03:22:20 GMT  
-		Size: 1.4 MB (1420567 bytes)  
+	-	`sha256:e61d8533622baa43e97679e1033892288f73344bac6933876df6c454a1111f8a`  
+		Last Modified: Wed, 24 Jun 2026 03:24:32 GMT  
+		Size: 1.4 MB (1420584 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0c078bda00a1a087eb2b14029f731e849ddb39e84e7449a7dedcb692cf72def`  
-		Last Modified: Thu, 11 Jun 2026 03:22:26 GMT  
-		Size: 262.1 MB (262060155 bytes)  
+	-	`sha256:5bf8b903c621546510da583774c08d842689a5bd85ea9850cbb727049cf4cfc2`  
+		Last Modified: Wed, 24 Jun 2026 03:24:38 GMT  
+		Size: 262.1 MB (262060659 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2.5` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:266e32064104739e0a4692ec6fb1e72829dd3ebf7775b6eef9c6d44474aae9dd
+$ docker pull haxe@sha256:3af97ee2763c3a6ac3672d4388c0418dbb538cdb26a049f047a06e55ab926c58
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.4 KB (19429 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b33ff08bee7ca9d57a9f623fb374fa6c7231c6c28d54537f2eae8d51971e0454`
+-	Image ID: `sha256:ff902ef2565e6b8017e18b376783fc41d801a12f25c07538ed47e6b94102f988`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1549b5f9bacef584e83591db45a8e0786d384dcdc6a8785384074d6a0995fa62`  
-		Last Modified: Thu, 11 Jun 2026 03:22:20 GMT  
+	-	`sha256:11616b9b21039b06da992998df25cc96d6ce9e62336148fc6b83ad86603444b6`  
+		Last Modified: Wed, 24 Jun 2026 03:24:31 GMT  
 		Size: 19.4 KB (19429 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7882,7 +7882,7 @@ CMD ["haxe"]
 ## `haxe:4.2.5-bookworm`
 
 ```console
-$ docker pull haxe@sha256:7deed3eb1779c0c91b72bf58399126f91ba2bbc49b15c62eeb520e7be9710ef3
+$ docker pull haxe@sha256:e3efc17f57bfe40ded58f0a9371d9cec276ab904afd66f8053c6f74b728c7e5a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7897,83 +7897,83 @@ $ docker pull haxe@sha256:7deed3eb1779c0c91b72bf58399126f91ba2bbc49b15c62eeb520e
 ### `haxe:4.2.5-bookworm` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:bc3959ad9e1565973002a61d60fe71d05d169efb83b411773b49d97903a5f409
+$ docker pull haxe@sha256:fd3ce6078d208b8cb003f5604071b4f5a782060d5f060674257956cdde9c0e96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **398.6 MB (398645956 bytes)**  
+-	Total Size: **398.6 MB (398645988 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2224e7b667f16b38aeba666e56c8ea63310063e78b0a5c0513de9c777fc232cf`
+-	Image ID: `sha256:5b037c2e8113306bbf0d688fafce85746721313d40dd8dec55c1388b362a4453`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:42:10 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:41:22 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:26 GMT
+# Wed, 24 Jun 2026 02:28:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:06 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:06 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto7 		libmbedtls14 		libmbedx509-1 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:06 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:24 GMT
+# Wed, 24 Jun 2026 03:19:38 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:24 GMT
+# Wed, 24 Jun 2026 03:19:38 GMT
 ENV HAXE_VERSION=4.2.5
-# Thu, 11 Jun 2026 03:18:24 GMT
+# Wed, 24 Jun 2026 03:19:38 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:38 GMT
+# Wed, 24 Jun 2026 03:22:52 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.9 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on=camlp5 || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:38 GMT
+# Wed, 24 Jun 2026 03:22:52 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01cedcff86f879d042805360ecba268802bec3d8201484ff3ec54f4250a2d3b7`  
-		Last Modified: Wed, 10 Jun 2026 23:39:39 GMT  
-		Size: 48.5 MB (48502042 bytes)  
+	-	`sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b`  
+		Last Modified: Wed, 24 Jun 2026 00:27:40 GMT  
+		Size: 48.5 MB (48502210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4da31edd9efdb812e66d13819903973ea6b188d2e7358547676d33d1e3f706f2`  
-		Last Modified: Thu, 11 Jun 2026 00:42:23 GMT  
-		Size: 24.0 MB (24044000 bytes)  
+	-	`sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff`  
+		Last Modified: Wed, 24 Jun 2026 01:41:33 GMT  
+		Size: 24.0 MB (24044046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fbaeeb62b9d03a1204b85c3b257aa3e1ce2c4ccfeea479fb2e659211019c29d`  
-		Last Modified: Thu, 11 Jun 2026 02:24:43 GMT  
-		Size: 64.4 MB (64404116 bytes)  
+	-	`sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a`  
+		Last Modified: Wed, 24 Jun 2026 02:28:33 GMT  
+		Size: 64.4 MB (64404017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0030b84760a5aa11016d9a145006655b4014179b4bdb9209baaaf326c9626c06`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 1.6 MB (1637521 bytes)  
+	-	`sha256:66afbd5a5a7da4a131df677e47101376eed30a0477835e918c3f13cb24a04eb7`  
+		Last Modified: Wed, 24 Jun 2026 03:23:22 GMT  
+		Size: 1.6 MB (1637534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2adb028f1472e22d1950855238cb29b1a7ce250c8f4861431e78d88796261fe4`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 1.4 MB (1386085 bytes)  
+	-	`sha256:77de745c2e450d42d86e27736d565f71f9fd435063f03bef1ae3882ccd3e2d0c`  
+		Last Modified: Wed, 24 Jun 2026 03:23:22 GMT  
+		Size: 1.4 MB (1386017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab23394ffa49281afbbd4d677d84b813ff443dcdf9a5bf9c235dafee3d1cf228`  
-		Last Modified: Thu, 11 Jun 2026 03:22:16 GMT  
-		Size: 258.7 MB (258672192 bytes)  
+	-	`sha256:5e9c6cfbdbbdd79ca966b074c8680c5ed26cc6524f7be22c3275b7c2cc501d00`  
+		Last Modified: Wed, 24 Jun 2026 03:23:28 GMT  
+		Size: 258.7 MB (258672164 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2.5-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:17e515cbbd69bf23afdb97ffc316c4c266b917be7db2e04df1ba64467fe9ebb4
+$ docker pull haxe@sha256:80d16154738a1e1de3e4ed72cf8ff6e269cca2aba6fcc054e60ed69ad81ace29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.3 KB (19295 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97c665be7cf5f69709e52b9631fcc6b2494705b77e6d4e3c6bc4d5fe5b4b3e77`
+-	Image ID: `sha256:32730c655c5ee8ff0b6b40b23bbff01761d15f9683b8a7182ff1a439336d9b00`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1699b4488f722526a1a0ab56786c66c8324afd809fb91be08ccb2a0c20402e3f`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
+	-	`sha256:be7dac8e6cfa3e3f994c03e816b8902cdb9caf035437a3ae53af8f02807a58ce`  
+		Last Modified: Wed, 24 Jun 2026 03:23:22 GMT  
 		Size: 19.3 KB (19295 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8063,90 +8063,90 @@ $ docker pull haxe@sha256:23a7801cc0fb8a0393ae325d8d4256066c47886a1f97f69978f8f1
 ### `haxe:4.2.5-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:8be25ac5679b107a1f341b8393cb80d8b70d89673d3025dce3993fde9ac7a942
+$ docker pull haxe@sha256:d0029eaebeb57f835019ccd53c99ea80d0e89837c2b7f424faf5085da8281b71
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **401.6 MB (401589162 bytes)**  
+-	Total Size: **401.6 MB (401589674 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac54a8ba68daf39c84d63e8a601ebcbc12d53eb34eb8e2054c20cd6315a972e3`
+-	Image ID: `sha256:f0a4c53a7cbe3ffc870e0caaf181244a01237f69310bc55513984b3a2ef7d024`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:43:47 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:44:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:05 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:05 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto7 		libmbedtls14 		libmbedx509-1 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:05 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:17 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:17 GMT
 ENV HAXE_VERSION=4.2.5
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:17 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:44 GMT
+# Wed, 24 Jun 2026 03:23:56 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.9 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on=camlp5 || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:44 GMT
+# Wed, 24 Jun 2026 03:23:56 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:c847f328095fb083f4a22895b90fe4226efa6458ac57362b64b6e5d99da9e4a3`  
-		Last Modified: Wed, 10 Jun 2026 23:39:28 GMT  
-		Size: 48.4 MB (48389016 bytes)  
+	-	`sha256:0fb1189398e2e4b474d43aac6502510d0da0318e70137a377c21087f198814db`  
+		Last Modified: Wed, 24 Jun 2026 00:27:19 GMT  
+		Size: 48.4 MB (48389201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f511b4c80a6e453785fbcd573c1bf1cb986c4e8d43ed4500ad1ac9a4719762b`  
-		Last Modified: Thu, 11 Jun 2026 00:43:56 GMT  
-		Size: 23.6 MB (23613296 bytes)  
+	-	`sha256:03ebca214f1a4b66acfdb0bd20aa3ee139d1747885ef4b0f3d07aa2a68459230`  
+		Last Modified: Wed, 24 Jun 2026 01:44:48 GMT  
+		Size: 23.6 MB (23613316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b715a6712db064e97302c819acd7a39c0c72f8a315ff83c6ad1c27bfa1b275e`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 64.5 MB (64487878 bytes)  
+	-	`sha256:533bb0e918720911be6cb7a1a5ba9ad0e1a308fcbf24961a23aba0cd220df6cf`  
+		Last Modified: Wed, 24 Jun 2026 02:35:28 GMT  
+		Size: 64.5 MB (64487706 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3323f2917e86837fbca05198a939553b4ea7b829bdeac86206a65d7f015e4653`  
-		Last Modified: Thu, 11 Jun 2026 03:22:20 GMT  
-		Size: 1.6 MB (1618250 bytes)  
+	-	`sha256:65ef1c9651b23ba559cbc6ed6dd16fcbb2775e3d35645dd581979e0776179c00`  
+		Last Modified: Wed, 24 Jun 2026 03:24:31 GMT  
+		Size: 1.6 MB (1618208 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb6302fdfc323a1330b89eeeb289cd4b7a467375c2fba50961a241f670f28be2`  
-		Last Modified: Thu, 11 Jun 2026 03:22:20 GMT  
-		Size: 1.4 MB (1420567 bytes)  
+	-	`sha256:e61d8533622baa43e97679e1033892288f73344bac6933876df6c454a1111f8a`  
+		Last Modified: Wed, 24 Jun 2026 03:24:32 GMT  
+		Size: 1.4 MB (1420584 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0c078bda00a1a087eb2b14029f731e849ddb39e84e7449a7dedcb692cf72def`  
-		Last Modified: Thu, 11 Jun 2026 03:22:26 GMT  
-		Size: 262.1 MB (262060155 bytes)  
+	-	`sha256:5bf8b903c621546510da583774c08d842689a5bd85ea9850cbb727049cf4cfc2`  
+		Last Modified: Wed, 24 Jun 2026 03:24:38 GMT  
+		Size: 262.1 MB (262060659 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2.5-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:266e32064104739e0a4692ec6fb1e72829dd3ebf7775b6eef9c6d44474aae9dd
+$ docker pull haxe@sha256:3af97ee2763c3a6ac3672d4388c0418dbb538cdb26a049f047a06e55ab926c58
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.4 KB (19429 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b33ff08bee7ca9d57a9f623fb374fa6c7231c6c28d54537f2eae8d51971e0454`
+-	Image ID: `sha256:ff902ef2565e6b8017e18b376783fc41d801a12f25c07538ed47e6b94102f988`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1549b5f9bacef584e83591db45a8e0786d384dcdc6a8785384074d6a0995fa62`  
-		Last Modified: Thu, 11 Jun 2026 03:22:20 GMT  
+	-	`sha256:11616b9b21039b06da992998df25cc96d6ce9e62336148fc6b83ad86603444b6`  
+		Last Modified: Wed, 24 Jun 2026 03:24:31 GMT  
 		Size: 19.4 KB (19429 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.2.5-bullseye`
 
 ```console
-$ docker pull haxe@sha256:ede4ce32870aa3f7c45d705a9ac34047280262cebdc3b7b12ceff26a7644e7a6
+$ docker pull haxe@sha256:fe30d5292a70baed1190f66209b6e5cbbe34265eed25508b8f411acec5edbac2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8161,83 +8161,83 @@ $ docker pull haxe@sha256:ede4ce32870aa3f7c45d705a9ac34047280262cebdc3b7b12ceff2
 ### `haxe:4.2.5-bullseye` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:56640fe67f469c61536992fef17213b653e8e25cdb6bae7bfc5b1006e69d4aa3
+$ docker pull haxe@sha256:53c962ecfd22e96e1ccd741148870269cb4377f9443f5dbf1aee42d985a764f0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.9 MB (137928365 bytes)**  
+-	Total Size: **137.9 MB (137929535 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:52dda1182f326fc512b7195a48543a6f438f0a77fb155efd9baf49d30482df54`
+-	Image ID: `sha256:36e25df0fcb75bf3c8e93432a39190e6220d0fe46c531488bba66ac3ebcb034b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:42:19 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:41:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:36 GMT
+# Wed, 24 Jun 2026 02:28:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:06 GMT
+# Wed, 24 Jun 2026 03:18:30 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:06 GMT
+# Wed, 24 Jun 2026 03:18:30 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:06 GMT
+# Wed, 24 Jun 2026 03:18:30 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:28 GMT
+# Wed, 24 Jun 2026 03:19:46 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:28 GMT
+# Wed, 24 Jun 2026 03:19:46 GMT
 ENV HAXE_VERSION=4.2.5
-# Thu, 11 Jun 2026 03:18:28 GMT
+# Wed, 24 Jun 2026 03:19:46 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:59 GMT
+# Wed, 24 Jun 2026 03:23:16 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.9 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on=camlp5 || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:59 GMT
+# Wed, 24 Jun 2026 03:23:16 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:af48a3e7696e07f88a02f9674e541901b65eadb5cf0f62e566b1d895099a1e9e`  
-		Last Modified: Wed, 10 Jun 2026 23:40:09 GMT  
-		Size: 53.8 MB (53771769 bytes)  
+	-	`sha256:c67cddb4b9fcdeefaf829aa012f0ccaefcfa862a558064326104b95b8849cd81`  
+		Last Modified: Wed, 24 Jun 2026 00:28:17 GMT  
+		Size: 53.8 MB (53773009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53f53a3a71a19cca6d8312e9c60a5428b23742024a0057b1f0e46517df6ae4a9`  
-		Last Modified: Thu, 11 Jun 2026 00:42:31 GMT  
-		Size: 15.8 MB (15790824 bytes)  
+	-	`sha256:816526a6d4acf81b392ec5a1e6d8d402fbc4bf0460323c5ad45b376b247ca6fc`  
+		Last Modified: Wed, 24 Jun 2026 01:41:36 GMT  
+		Size: 15.8 MB (15790805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3db6c46730caf21fd1b15e0e84732744cb5a66e6931cf2c3753965fc32257fc`  
-		Last Modified: Thu, 11 Jun 2026 02:24:52 GMT  
-		Size: 54.7 MB (54743048 bytes)  
+	-	`sha256:2d3cf50c221acb61e259a7ecd20caf425597eca7d93e329dde2640ca7ec8aaf4`  
+		Last Modified: Wed, 24 Jun 2026 02:28:36 GMT  
+		Size: 54.7 MB (54742897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68846bbad35f8e5a9e13ac7bd3b336836ec1d50d1585063cab03eb83f044a4d4`  
-		Last Modified: Thu, 11 Jun 2026 03:22:05 GMT  
-		Size: 1.2 MB (1155235 bytes)  
+	-	`sha256:ef144f65823349b2aacad1f861e3c6c223502fcb96e638b015dc108731311f69`  
+		Last Modified: Wed, 24 Jun 2026 03:23:21 GMT  
+		Size: 1.2 MB (1155286 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6efcce63de44e45f93154fab7c40300b40300192a9a2e37843baa7b5892351ed`  
-		Last Modified: Thu, 11 Jun 2026 03:22:06 GMT  
-		Size: 1.5 MB (1462131 bytes)  
+	-	`sha256:273b6aa30891beb37e8f6de77164e3fd15fc432932b9dfb4e4a39a15338d5688`  
+		Last Modified: Wed, 24 Jun 2026 03:23:21 GMT  
+		Size: 1.5 MB (1462119 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afa0fd9027730b373e9f979b57217ac3a288376a5690caa37bef6add2aded576`  
-		Last Modified: Thu, 11 Jun 2026 03:22:05 GMT  
-		Size: 11.0 MB (11005358 bytes)  
+	-	`sha256:e40df5a08a51e1ea29997feacc142d4fa9bd163a5359769d2a96ad5b5ad44a77`  
+		Last Modified: Wed, 24 Jun 2026 03:23:22 GMT  
+		Size: 11.0 MB (11005419 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2.5-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c7dc3133e0f5130633b146ca612bb845398e1f338e7277e4f6a1663fc223a047
+$ docker pull haxe@sha256:17271018376e514e94c6dbedd545d5bfde9d226167d7d9aaf895fbe9eea9b6b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **18.7 KB (18705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:357e730f89d323cb81ecf57aa10daef3773363ad5cd369ae6d3e94876440343e`
+-	Image ID: `sha256:3a6c05afd706f6d127b21ffa0ee5ddc525e9e6088357bb1f60e651808d93264e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:59700a2a4bfbafff29eb875bfc54b1b21888351f664503ec93a99847aa66000c`  
-		Last Modified: Thu, 11 Jun 2026 03:22:05 GMT  
+	-	`sha256:86b6f5a809209ecf014b335360398ee7dac485df91b77b9eed520d6c5c17ce7d`  
+		Last Modified: Wed, 24 Jun 2026 03:23:21 GMT  
 		Size: 18.7 KB (18705 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8327,83 +8327,83 @@ $ docker pull haxe@sha256:9c5070f5562804f90e0ac67bad8b5e11add7ee50b075ad0991c5f8
 ### `haxe:4.2.5-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:8b421397ce008a4a4ad87e5b617a75292b3ffb4c5a2b03e1c09ef172d9da7d54
+$ docker pull haxe@sha256:59b7604010a9c2d8eaaf5bf16a586102acc21e7eb30649aa3b0e0a5258558e88
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.2 MB (138220430 bytes)**  
+-	Total Size: **138.2 MB (138213595 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:26639e7cc7133365f936301b91e33e3513ef5769bf90b347b2ae76d57dbc471e`
+-	Image ID: `sha256:b0522be49696ec47c18415d98422ac6780381df0e3c77c61e7ff25fbc3765b81`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:43:46 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:44:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:10 GMT
+# Wed, 24 Jun 2026 03:18:08 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:10 GMT
+# Wed, 24 Jun 2026 03:18:08 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		libpcre3 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:10 GMT
+# Wed, 24 Jun 2026 03:18:08 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:26 GMT
+# Wed, 24 Jun 2026 03:19:23 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:26 GMT
+# Wed, 24 Jun 2026 03:19:23 GMT
 ENV HAXE_VERSION=4.2.5
-# Thu, 11 Jun 2026 03:18:26 GMT
+# Wed, 24 Jun 2026 03:19:23 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:22:02 GMT
+# Wed, 24 Jun 2026 03:22:54 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre3-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.2.5 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add extlib 1.7.9 --no-action 		&& opam pin add camlp5 8.00.04 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on=camlp5 || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:22:02 GMT
+# Wed, 24 Jun 2026 03:22:54 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:7c21e59e753cb91625909251110d6e4cc4a5411b4b7b37f74a62e56b927b7f1e`  
-		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
-		Size: 52.3 MB (52264114 bytes)  
+	-	`sha256:35157acdff35db21da73141f382d0dca0f6bc6d183c3a816d283fe39f471e539`  
+		Last Modified: Wed, 24 Jun 2026 00:27:56 GMT  
+		Size: 52.3 MB (52257219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8698eac281c2783fff44c0d5a2c381eeb273791e12f4dc8b407db26260bc3b85`  
-		Last Modified: Thu, 11 Jun 2026 00:43:55 GMT  
-		Size: 15.8 MB (15774833 bytes)  
+	-	`sha256:daf305d6ad7bad47ee0696c3db8b8fed8e9c2a42c53b57d047f8ab32f5d9b546`  
+		Last Modified: Wed, 24 Jun 2026 01:44:59 GMT  
+		Size: 15.8 MB (15774954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddd4791f1a451400cf59328cbd4f4f9bed438b89f7103b59dc50338fd2ac9293`  
-		Last Modified: Thu, 11 Jun 2026 02:24:59 GMT  
-		Size: 54.9 MB (54879555 bytes)  
+	-	`sha256:c95f37219bba62c0b4908476dc3cf7f0f98f1c87e8908c188797b1dc1f610c77`  
+		Last Modified: Wed, 24 Jun 2026 02:35:29 GMT  
+		Size: 54.9 MB (54879567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79bf74d9a7cc8c5990449c194490bec94df4f81ce33f3a5d54d902aaca0e352d`  
-		Last Modified: Thu, 11 Jun 2026 03:22:07 GMT  
-		Size: 1.1 MB (1145566 bytes)  
+	-	`sha256:88e5c29c940fe27a29d9d8effbaaa08797f58e9c953b1bf23d1e19034fbff28a`  
+		Last Modified: Wed, 24 Jun 2026 03:23:01 GMT  
+		Size: 1.1 MB (1145559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05f1e82a8f1c1bf1f17c25cb7ec4cc1c255662ca3c3de69ed640ab785ffe99dc`  
-		Last Modified: Thu, 11 Jun 2026 03:22:07 GMT  
-		Size: 1.5 MB (1453620 bytes)  
+	-	`sha256:6586b839abf3c8097d41bd872a63f0d2cd808dab9e725058c871d90f02cbad14`  
+		Last Modified: Wed, 24 Jun 2026 03:23:00 GMT  
+		Size: 1.5 MB (1453572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99df2f7030be9f7568ceb824876f2bcd90daaaa5aefc28c03caefe71851e087c`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 12.7 MB (12702742 bytes)  
+	-	`sha256:c9c23569ed031e738df84073a7b8dafec0aa42455d75f3420733e5cdae549532`  
+		Last Modified: Wed, 24 Jun 2026 03:23:01 GMT  
+		Size: 12.7 MB (12702724 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2.5-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:4151d7e98f7f8bda4e35b57913fa4217186d0465734dfafab5ec6d1f513f76c2
+$ docker pull haxe@sha256:024df7ade282010ef381dbb7b7aeb43e6536d9b1055a133fd3dea715922ab1b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **18.8 KB (18815 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c14d810f96eae15716624d8f39da3e44a8286dab27d4400eae6d549f8fd7e681`
+-	Image ID: `sha256:f4c1aeb1709d711d06a1d4bbab81f38b52c3041a40aa34aa98077d42828d6894`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:12975cd4f9601e8baf4b487ecd427ad5a8dc151b1f494f8c4180e6d0b89d2597`  
-		Last Modified: Thu, 11 Jun 2026 03:22:07 GMT  
+	-	`sha256:71e7ea56bb8c56ca393f6b487761be7898abef79d5ed10649cdbef4054e8c569`  
+		Last Modified: Wed, 24 Jun 2026 03:23:00 GMT  
 		Size: 18.8 KB (18815 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8997,7 +8997,7 @@ CMD ["haxe"]
 ## `haxe:4.3`
 
 ```console
-$ docker pull haxe@sha256:01b6518688e06f8fcbe75c49a99b6ce6a637abf5341cb97d976278a6c2cc5995
+$ docker pull haxe@sha256:d66f2b9fc43a1fae6fcc6f2a732c3ebe604f1db118165fb6d7bd115ed67aa249
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9014,83 +9014,83 @@ $ docker pull haxe@sha256:01b6518688e06f8fcbe75c49a99b6ce6a637abf5341cb97d976278
 ### `haxe:4.3` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:c43c934eb5267b759561428d41782c2b9f2a90079ac99401cb9114765b12c683
+$ docker pull haxe@sha256:7904130a8ccae528e2d96affeb3c088e857a219ea84a4f6b0563b93371225e14
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.3 MB (165319760 bytes)**  
+-	Total Size: **165.3 MB (165312858 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad037e080a6448f8d065d158716b23a103b1917a077e190c6891ba8942f04b85`
+-	Image ID: `sha256:958a6ad44224fafbabbb3008500fbea33440e00ed28177a0ef1eb47ee30fe8d6`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:42:40 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:41:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:24:44 GMT
+# Wed, 24 Jun 2026 02:28:40 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:11:45 GMT
+# Wed, 24 Jun 2026 03:17:51 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:11:45 GMT
+# Wed, 24 Jun 2026 03:17:51 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:11:45 GMT
+# Wed, 24 Jun 2026 03:17:51 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:13:03 GMT
+# Wed, 24 Jun 2026 03:19:05 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:13:03 GMT
+# Wed, 24 Jun 2026 03:19:05 GMT
 ENV HAXE_VERSION=4.3.7
-# Mon, 22 Jun 2026 20:13:03 GMT
+# Wed, 24 Jun 2026 03:19:05 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 20:16:38 GMT
+# Wed, 24 Jun 2026 03:22:35 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add luv 0.5.14 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on=luv || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:16:38 GMT
+# Wed, 24 Jun 2026 03:22:35 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ef1b08ddd59d42b444e8f9c68a6cebbed70636aed0c242fdccb0bd61b61ba26b`  
-		Last Modified: Wed, 10 Jun 2026 23:40:27 GMT  
-		Size: 49.3 MB (49317121 bytes)  
+	-	`sha256:aa3e9ef32f73c30e8b065800ee66429992d3bfea6a1fb8224afdd878ab5b994f`  
+		Last Modified: Wed, 24 Jun 2026 00:28:33 GMT  
+		Size: 49.3 MB (49317255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b365b6ff7b7e310e1b9a88f996e65b89969c7fa450492b68249d1d1c38e0676`  
-		Last Modified: Thu, 11 Jun 2026 00:42:51 GMT  
-		Size: 25.6 MB (25635173 bytes)  
+	-	`sha256:3f59c84a786323367a79d4959142649bb24b16c989bbaae7f273550b47325959`  
+		Last Modified: Wed, 24 Jun 2026 01:41:50 GMT  
+		Size: 25.6 MB (25634938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ca884014342f240be01d391b498c3ec61b2f4af2c205e7e9a0b5ac2cb2f24c4`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 67.8 MB (67784745 bytes)  
+	-	`sha256:30d0db852850114cc79598cc8ab1ec19da54691d9e3267288bb3458d7488f125`  
+		Last Modified: Wed, 24 Jun 2026 02:28:58 GMT  
+		Size: 67.8 MB (67778134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9acf2cc2bbd80c43956a7feb617f122f840c11f25186eb4e5467f6fdc7519a1b`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
-		Size: 1.5 MB (1478604 bytes)  
+	-	`sha256:0e5c811c078754cb07e6cab76023d049a8347fdd6a39454778ae6abd22a9feb1`  
+		Last Modified: Wed, 24 Jun 2026 03:22:41 GMT  
+		Size: 1.5 MB (1478605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb901720845467255cb5b5601d83eade693e8b34ff327351c8224622a7b4baac`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
-		Size: 9.4 MB (9405526 bytes)  
+	-	`sha256:cc25905a6077737e3e52aa7d6e3a3962d444dc4ac21b7b7505856aabef02455b`  
+		Last Modified: Wed, 24 Jun 2026 03:22:41 GMT  
+		Size: 9.4 MB (9405367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16ace210cbc7cc3c45b1533ae2d85fef60070146ccc058258ad552e2517c68c1`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
-		Size: 11.7 MB (11698591 bytes)  
+	-	`sha256:ed41e9b0ee635d89e9225cecdc28930e0b0dfe5c44bf16457caf6942c2663b7f`  
+		Last Modified: Wed, 24 Jun 2026 03:22:41 GMT  
+		Size: 11.7 MB (11698559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:1c321a4c46ebe5aee393ac66f45ac8d8b36efc2bc487c29b61c7fc3c82e74fb5
+$ docker pull haxe@sha256:4fce81d98a4bbd8668d159f4659857d3f1bd6f4c3d16f0b437534d44004cbeab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.1 KB (19052 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5959691c0b4b4d5386c3b97aa98edda59ca437711adea061c4bd6bcd1ef34ffb`
+-	Image ID: `sha256:3cb350a0a1840eccc057df521fc806f98afec6130418e12187c4f0cb96a6f6be`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b224822a144fe1cd388993881eb6e1cb01a194fa806f56e4d59c5649319e99e`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
+	-	`sha256:bd0cdd72b74083fc8d5123ae9c1e778699fe8c596d30f5215925c9d1157ab330`  
+		Last Modified: Wed, 24 Jun 2026 03:22:40 GMT  
 		Size: 19.1 KB (19052 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9180,84 +9180,84 @@ $ docker pull haxe@sha256:f5984625e66775fc89bee938480f152f190cc57c8c0bd6832295e9
 ### `haxe:4.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:27797a5fc438dd5f4bee4623a39fed44721bc93874a4457006b108996c338d7a
+$ docker pull haxe@sha256:8ffd7ba24fc15d6fc8e4d11dcdc380e83047cf217a9c90c721bc967adfb8d50c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.6 MB (166555431 bytes)**  
+-	Total Size: **166.5 MB (166548292 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2b25b2e57cfce3f434f7a529af8cc2b241e6e80410403deb98133f8726fd1c3`
+-	Image ID: `sha256:c6985f832b9d9c3b21d3e1cbbc94f9210ea75d84cfd5ce39a4e3c8f8fa60100a`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:44:22 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:45:15 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:22:02 GMT
+# Wed, 24 Jun 2026 02:35:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:56:19 GMT
+# Wed, 24 Jun 2026 03:17:44 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:56:19 GMT
+# Wed, 24 Jun 2026 03:17:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:56:19 GMT
+# Wed, 24 Jun 2026 03:17:44 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:57:38 GMT
+# Wed, 24 Jun 2026 03:19:02 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:57:38 GMT
+# Wed, 24 Jun 2026 03:19:02 GMT
 ENV HAXE_VERSION=4.3.7
-# Mon, 22 Jun 2026 20:57:38 GMT
+# Wed, 24 Jun 2026 03:19:02 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 21:01:45 GMT
+# Wed, 24 Jun 2026 03:22:33 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add luv 0.5.14 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on=luv || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 21:01:45 GMT
+# Wed, 24 Jun 2026 03:22:33 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ed660e1af0f5da9e93a4c43fb29e86cb46fe69c76bcf11a3de9c57c987acab82`  
-		Last Modified: Wed, 10 Jun 2026 23:40:16 GMT  
-		Size: 49.7 MB (49678169 bytes)  
+	-	`sha256:c8a311258fd162f6aa0db134045a19154c81a2244ff9ed7620256c95ae5d6b69`  
+		Last Modified: Wed, 24 Jun 2026 00:28:21 GMT  
+		Size: 49.7 MB (49678395 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd2ab02859108b91c1c26f2badd015b5215eb066b7ef4f3a22bd1536a8debe96`  
-		Last Modified: Thu, 11 Jun 2026 00:44:32 GMT  
-		Size: 25.0 MB (25026911 bytes)  
+	-	`sha256:abe059c57e3bc40ea8086d6be574927bed6c0a000b182f3354b758009265e197`  
+		Last Modified: Wed, 24 Jun 2026 01:45:26 GMT  
+		Size: 25.0 MB (25026863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f2e427d8856f71d8d3667d1c4d9274b8aca2bd9d228387c51c211909e51263f`  
-		Last Modified: Thu, 11 Jun 2026 02:22:21 GMT  
-		Size: 67.6 MB (67599934 bytes)  
+	-	`sha256:5cf605f6b62a65326644e598c84134d29702579734c83dfca4cedf5dad7fb6d3`  
+		Last Modified: Wed, 24 Jun 2026 02:35:43 GMT  
+		Size: 67.6 MB (67592645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:377380df1e3e6c1b08aa3af9ba93dfe00a153a234c6bbc2d5a63e9e9fdd63834`  
-		Last Modified: Mon, 22 Jun 2026 21:01:51 GMT  
-		Size: 1.5 MB (1477001 bytes)  
+	-	`sha256:2036f5cecb1b7475069fa47c9d8a93ba3afa483743ca3ba32683fb35a70fcd36`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 1.5 MB (1477016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f46081d5779a696802079f4eb063a6c7cc5663193f255cd66530508d3e67018`  
-		Last Modified: Mon, 22 Jun 2026 21:01:52 GMT  
-		Size: 9.4 MB (9351018 bytes)  
+	-	`sha256:ccf124d6741bdcbe6776113bd66bf542b7ef8fc3ea7e244cdb78e2c6ca62c79d`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 9.4 MB (9351006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ada1c535373b94d5abca99a63b2967859396b8b90950e14cde610a972dff077`  
-		Last Modified: Mon, 22 Jun 2026 21:01:52 GMT  
-		Size: 13.4 MB (13422398 bytes)  
+	-	`sha256:2b668c7e7cdfe73f3316ad14ecb9c6fc32da0c2a22b900c8d37bbb9c9dbae468`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 13.4 MB (13422367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:a47518e09fa4e27fbaf12c4cc192f6272e7b026d6c0f697079462e72f50c6b4b
+$ docker pull haxe@sha256:246c56b2617c49259f05311f443260ea150c2c66a07db1f4d1b7854b69b210a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.2 KB (19197 bytes)**  
+-	Total Size: **19.2 KB (19198 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e35a281d7500a80646f9af29a2dfb443f639e687e8bb5d094757006e3b1527f6`
+-	Image ID: `sha256:0e680b09484ada294576cf618a901638f6b818e89b15a50a69aa13dd5e71d55e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d5c53edd712b128216a89d0f786b03c9e791528e8a9603adc6a729afde5b1691`  
-		Last Modified: Mon, 22 Jun 2026 21:01:51 GMT  
-		Size: 19.2 KB (19197 bytes)  
+	-	`sha256:3281151bc4ec2e30c43a398ff87a105ae11ed9b9efbb6c31aa50ba1e364b8230`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 19.2 KB (19198 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.3` - windows version 10.0.26100.32995; amd64
@@ -10276,7 +10276,7 @@ $ docker pull haxe@sha256:1b217a6ad7323278c0c33aebec75d6c0102d8915bfcc8785068589
 ## `haxe:4.3-bookworm`
 
 ```console
-$ docker pull haxe@sha256:23675a05246dcaed298f18250bcb0b246ef42ee4a86bb6928cd9f207f88491fc
+$ docker pull haxe@sha256:963e3f130787293bae044fac5b912edda989c40f8f341a8ddbf87d8228fa2cf6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10291,84 +10291,84 @@ $ docker pull haxe@sha256:23675a05246dcaed298f18250bcb0b246ef42ee4a86bb6928cd9f2
 ### `haxe:4.3-bookworm` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:c503e54ecb6ca152618a4bfbebc8c5c3c1c9c17c7bfac7a8acef6f5bab2a9eff
+$ docker pull haxe@sha256:4bf048236801b1c7363844524d464aa61904f5103f09398ff72716f117b9d157
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **398.6 MB (398599761 bytes)**  
+-	Total Size: **398.6 MB (398599839 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3cf83bcde56c42ae9b1dafca7fc68ae2299bb43a74e5ecb5328c7ae652bc6344`
+-	Image ID: `sha256:4dcd481aaf5aeb4ff7cb5fb47c7588b1eac741e320114af1635edb994d3321b7`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:42:10 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:41:22 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:26 GMT
+# Wed, 24 Jun 2026 02:28:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:10 GMT
+# Wed, 24 Jun 2026 03:18:01 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:16:10 GMT
+# Wed, 24 Jun 2026 03:18:01 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto7 		libmbedtls14 		libmbedx509-1 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:10 GMT
+# Wed, 24 Jun 2026 03:18:01 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:17:25 GMT
+# Wed, 24 Jun 2026 03:19:19 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:17:25 GMT
+# Wed, 24 Jun 2026 03:19:19 GMT
 ENV HAXE_VERSION=4.3.7
-# Thu, 11 Jun 2026 03:17:25 GMT
+# Wed, 24 Jun 2026 03:19:19 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:20:39 GMT
+# Wed, 24 Jun 2026 03:22:56 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:20:39 GMT
+# Wed, 24 Jun 2026 03:22:56 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01cedcff86f879d042805360ecba268802bec3d8201484ff3ec54f4250a2d3b7`  
-		Last Modified: Wed, 10 Jun 2026 23:39:39 GMT  
-		Size: 48.5 MB (48502042 bytes)  
+	-	`sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b`  
+		Last Modified: Wed, 24 Jun 2026 00:27:40 GMT  
+		Size: 48.5 MB (48502210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4da31edd9efdb812e66d13819903973ea6b188d2e7358547676d33d1e3f706f2`  
-		Last Modified: Thu, 11 Jun 2026 00:42:23 GMT  
-		Size: 24.0 MB (24044000 bytes)  
+	-	`sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff`  
+		Last Modified: Wed, 24 Jun 2026 01:41:33 GMT  
+		Size: 24.0 MB (24044046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fbaeeb62b9d03a1204b85c3b257aa3e1ce2c4ccfeea479fb2e659211019c29d`  
-		Last Modified: Thu, 11 Jun 2026 02:24:43 GMT  
-		Size: 64.4 MB (64404116 bytes)  
+	-	`sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a`  
+		Last Modified: Wed, 24 Jun 2026 02:28:33 GMT  
+		Size: 64.4 MB (64404017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1778e98698984f38afc0b8e7b0cfac97150eb5d0eba1ba46096ee6e761743b0`  
-		Last Modified: Thu, 11 Jun 2026 03:21:09 GMT  
-		Size: 1.3 MB (1261596 bytes)  
+	-	`sha256:8718fcd284f6a775e100aa39e1872a2c5b439550b9f84040865ec3a7eb200bfe`  
+		Last Modified: Wed, 24 Jun 2026 03:23:32 GMT  
+		Size: 1.3 MB (1261570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a9359b2917172f33806d280f1e1771fe14381f957872ac28005e01fe339464a`  
-		Last Modified: Thu, 11 Jun 2026 03:21:09 GMT  
-		Size: 1.4 MB (1385271 bytes)  
+	-	`sha256:c8347d6c86ea3c21c698311a9f87326bc7781fc07f2f1406fe98c1bd5291e9a1`  
+		Last Modified: Wed, 24 Jun 2026 03:23:32 GMT  
+		Size: 1.4 MB (1385254 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b749d1e81d9158322c894e1272123e7c7d4a9cbcd885299012f966f6ac6c5a9`  
-		Last Modified: Thu, 11 Jun 2026 03:21:15 GMT  
-		Size: 259.0 MB (259002736 bytes)  
+	-	`sha256:be5c63f712e2f65b5ba56c3c688ae63a61ff8f9438387be4bb14f1463750f0cc`  
+		Last Modified: Wed, 24 Jun 2026 03:23:37 GMT  
+		Size: 259.0 MB (259002742 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:9a68bca73d7fdc2c066dbb8940b458990ccc41492c159cdfc6bb286f9167cc7a
+$ docker pull haxe@sha256:619fc78c9ca4ba5a1d3c8eb15b78e5df80d12a8f1ee077175bf08bdee265aa02
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.2 KB (19151 bytes)**  
+-	Total Size: **18.3 KB (18276 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a3242333cbf3c02aa894352a2671a38b2f57f405025372b389b9d6b60d668d1c`
+-	Image ID: `sha256:c4edb4972cd367fac350d60855f38c85bdd7f5d5f20bc0d98af4815bfa7c0953`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8b24cb820e1f94a856e0f8eee79ea689dd8bdf80e1ca4e6e8b445e3a444bd7b1`  
-		Last Modified: Thu, 11 Jun 2026 03:21:09 GMT  
-		Size: 19.2 KB (19151 bytes)  
+	-	`sha256:bcd9823ae529e8f3198d4968a8b8cd1ecae3df8096d411a4bb3fd4c1d1826d63`  
+		Last Modified: Wed, 24 Jun 2026 03:23:32 GMT  
+		Size: 18.3 KB (18276 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.3-bookworm` - linux; arm variant v7
@@ -10457,90 +10457,90 @@ $ docker pull haxe@sha256:29cf87e3b309dd14750107114717ef230de0a23960bb83c7d5383e
 ### `haxe:4.3-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:da5a9b89d8d99bf7386c2b3c549198f3a741378854dfb973b7ff951529808df7
+$ docker pull haxe@sha256:aab529abe1cc35fed7421127232659923a0d6f15aa86fe263c11ce26f04c34e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **401.6 MB (401611177 bytes)**  
+-	Total Size: **401.6 MB (401611325 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6218f2ce35b41ebe1b0cc405e4cda0520ca33a1267f828b9648de7aa9bcae95`
+-	Image ID: `sha256:445163811cf3637c8ad18fee4553933a476887d1b334da40938f6a88ac6cebf9`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:43:47 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:44:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:19 GMT
+# Wed, 24 Jun 2026 03:17:40 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:16:19 GMT
+# Wed, 24 Jun 2026 03:17:40 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto7 		libmbedtls14 		libmbedx509-1 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:19 GMT
+# Wed, 24 Jun 2026 03:17:40 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:17:33 GMT
+# Wed, 24 Jun 2026 03:18:53 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:17:33 GMT
+# Wed, 24 Jun 2026 03:18:53 GMT
 ENV HAXE_VERSION=4.3.7
-# Thu, 11 Jun 2026 03:17:33 GMT
+# Wed, 24 Jun 2026 03:18:53 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:22 GMT
+# Wed, 24 Jun 2026 03:22:32 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:22 GMT
+# Wed, 24 Jun 2026 03:22:32 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:c847f328095fb083f4a22895b90fe4226efa6458ac57362b64b6e5d99da9e4a3`  
-		Last Modified: Wed, 10 Jun 2026 23:39:28 GMT  
-		Size: 48.4 MB (48389016 bytes)  
+	-	`sha256:0fb1189398e2e4b474d43aac6502510d0da0318e70137a377c21087f198814db`  
+		Last Modified: Wed, 24 Jun 2026 00:27:19 GMT  
+		Size: 48.4 MB (48389201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f511b4c80a6e453785fbcd573c1bf1cb986c4e8d43ed4500ad1ac9a4719762b`  
-		Last Modified: Thu, 11 Jun 2026 00:43:56 GMT  
-		Size: 23.6 MB (23613296 bytes)  
+	-	`sha256:03ebca214f1a4b66acfdb0bd20aa3ee139d1747885ef4b0f3d07aa2a68459230`  
+		Last Modified: Wed, 24 Jun 2026 01:44:48 GMT  
+		Size: 23.6 MB (23613316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b715a6712db064e97302c819acd7a39c0c72f8a315ff83c6ad1c27bfa1b275e`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 64.5 MB (64487878 bytes)  
+	-	`sha256:533bb0e918720911be6cb7a1a5ba9ad0e1a308fcbf24961a23aba0cd220df6cf`  
+		Last Modified: Wed, 24 Jun 2026 02:35:28 GMT  
+		Size: 64.5 MB (64487706 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f08d7a476cad85e434a36f369a59b96f5407ce55d6277db9bc180c99d2d7e62`  
-		Last Modified: Thu, 11 Jun 2026 03:21:58 GMT  
-		Size: 1.3 MB (1257942 bytes)  
+	-	`sha256:c5c96b2065e997d0d7c6168b933b4747cc420f83d7fa820fc4520c028646740c`  
+		Last Modified: Wed, 24 Jun 2026 03:23:08 GMT  
+		Size: 1.3 MB (1258025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c11d3c40ebcd7c24a95940776570f156546fff4e7ab567a78741b4f455bc6086`  
-		Last Modified: Thu, 11 Jun 2026 03:21:58 GMT  
-		Size: 1.4 MB (1419972 bytes)  
+	-	`sha256:6398b8bfac0c8fa7aebaa799bb94680d084f11059c1a4b91efcf1c5c3c4e6168`  
+		Last Modified: Wed, 24 Jun 2026 03:23:08 GMT  
+		Size: 1.4 MB (1419987 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2399f546e6bf1744fbf84fc50232f3b07354eaa7e8f9f15e9a35528532b2fc40`  
-		Last Modified: Thu, 11 Jun 2026 03:22:03 GMT  
-		Size: 262.4 MB (262443073 bytes)  
+	-	`sha256:a6003ae96df3d7ad04781e837ebd76f8952b4faddcc0122441f7c88d552b59f7`  
+		Last Modified: Wed, 24 Jun 2026 03:23:14 GMT  
+		Size: 262.4 MB (262443090 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:5a51fcd4dc3163c158412becbd3436d12c0ab10911c956dc294acedd944ec8b3
+$ docker pull haxe@sha256:42776f620eed12a1b048a3825eda6ff5723b27eddbedb95a03d8cf005b083960
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.3 KB (19297 bytes)**  
+-	Total Size: **18.4 KB (18387 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0079df2b4526dc27f41fb25ab8908bcdfe9e17815667756e9a5757e31c21c1cf`
+-	Image ID: `sha256:d4ed6e45153b53c983193947da4f4eddc3bbc87ff57754aa5b73faf044e46355`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:862c86e0728111a9e57c43674e0af21b3ca3c1ea5635dcbf5292141a90c35420`  
-		Last Modified: Thu, 11 Jun 2026 03:21:58 GMT  
-		Size: 19.3 KB (19297 bytes)  
+	-	`sha256:e22f23851987f626e77707c701f02e41a81543a78f7d4c452f90ae11a1429053`  
+		Last Modified: Wed, 24 Jun 2026 03:23:08 GMT  
+		Size: 18.4 KB (18387 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.3-bullseye`
 
 ```console
-$ docker pull haxe@sha256:038eec3d382063497741e716e59db8022fe72905511f2920ec3a5e344b14681e
+$ docker pull haxe@sha256:d3c4288b77dceb319c72ac8c5bd8a8a2199396e75c9a05847f46e145a7d5fbb0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10555,83 +10555,83 @@ $ docker pull haxe@sha256:038eec3d382063497741e716e59db8022fe72905511f2920ec3a5e
 ### `haxe:4.3-bullseye` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:a827ef59cd988079f54ed7ef4e207d83ce8f09fda98400f28a6d0be5dec1d3f4
+$ docker pull haxe@sha256:c87db2df64bb9566b42b3ffaa83ae559114f6110fc952e2a30df810d0c68b460
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.3 MB (138253586 bytes)**  
+-	Total Size: **138.3 MB (138254650 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a9ed80dc07fab69ad8559f5909a9677d5c2b3e7010e83655adf30d1c0876b85`
+-	Image ID: `sha256:476b8c26f1469d124968150e464f8c765cc1e52cc3aa76ef73a948bf1d9c265e`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:42:19 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:41:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:36 GMT
+# Wed, 24 Jun 2026 02:28:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:43 GMT
+# Wed, 24 Jun 2026 03:18:02 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:16:43 GMT
+# Wed, 24 Jun 2026 03:18:02 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:43 GMT
+# Wed, 24 Jun 2026 03:18:02 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:01 GMT
+# Wed, 24 Jun 2026 03:19:20 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:01 GMT
+# Wed, 24 Jun 2026 03:19:20 GMT
 ENV HAXE_VERSION=4.3.7
-# Thu, 11 Jun 2026 03:18:01 GMT
+# Wed, 24 Jun 2026 03:19:20 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:59 GMT
+# Wed, 24 Jun 2026 03:23:13 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:59 GMT
+# Wed, 24 Jun 2026 03:23:13 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:af48a3e7696e07f88a02f9674e541901b65eadb5cf0f62e566b1d895099a1e9e`  
-		Last Modified: Wed, 10 Jun 2026 23:40:09 GMT  
-		Size: 53.8 MB (53771769 bytes)  
+	-	`sha256:c67cddb4b9fcdeefaf829aa012f0ccaefcfa862a558064326104b95b8849cd81`  
+		Last Modified: Wed, 24 Jun 2026 00:28:17 GMT  
+		Size: 53.8 MB (53773009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53f53a3a71a19cca6d8312e9c60a5428b23742024a0057b1f0e46517df6ae4a9`  
-		Last Modified: Thu, 11 Jun 2026 00:42:31 GMT  
-		Size: 15.8 MB (15790824 bytes)  
+	-	`sha256:816526a6d4acf81b392ec5a1e6d8d402fbc4bf0460323c5ad45b376b247ca6fc`  
+		Last Modified: Wed, 24 Jun 2026 01:41:36 GMT  
+		Size: 15.8 MB (15790805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3db6c46730caf21fd1b15e0e84732744cb5a66e6931cf2c3753965fc32257fc`  
-		Last Modified: Thu, 11 Jun 2026 02:24:52 GMT  
-		Size: 54.7 MB (54743048 bytes)  
+	-	`sha256:2d3cf50c221acb61e259a7ecd20caf425597eca7d93e329dde2640ca7ec8aaf4`  
+		Last Modified: Wed, 24 Jun 2026 02:28:36 GMT  
+		Size: 54.7 MB (54742897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ef46138230e000dd34af795fc4b9ca8f3ccc380f40b8a0c90481ed6e4d7d3df`  
-		Last Modified: Thu, 11 Jun 2026 03:22:05 GMT  
-		Size: 1.2 MB (1155279 bytes)  
+	-	`sha256:c1d7a2d2ba9374d419d8f4d1ab5d07d58f71a8e7bf9d3110ddccd0f15c32ebb0`  
+		Last Modified: Wed, 24 Jun 2026 03:23:19 GMT  
+		Size: 1.2 MB (1155278 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:759f157101bc0ae5852cf26b486403e57581132292c1d246b061ed7baaa5b07e`  
-		Last Modified: Thu, 11 Jun 2026 03:22:05 GMT  
-		Size: 1.5 MB (1462101 bytes)  
+	-	`sha256:bbeaa4ac1b9bf8e5209b4695491eb857d7b6b9b2acf08a75f67330f533e17ead`  
+		Last Modified: Wed, 24 Jun 2026 03:23:20 GMT  
+		Size: 1.5 MB (1462126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2fb209e568e84ac2a69850665831d93e1a4ea01e7324aecf0258c8f82375e109`  
-		Last Modified: Thu, 11 Jun 2026 03:22:05 GMT  
-		Size: 11.3 MB (11330565 bytes)  
+	-	`sha256:f087a7123b102ce6968483171d732a84f8595152d0d3767987616611af18b9b0`  
+		Last Modified: Wed, 24 Jun 2026 03:23:20 GMT  
+		Size: 11.3 MB (11330535 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:95b1563a9926247fec8cb1eb3b3e7dd7f7e71589cf473d73c4eba193c7533d45
+$ docker pull haxe@sha256:a4a1c79b5e8b7194719de4713ba97d2498db18792b3130a9e16806e4b10c7fa2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **18.3 KB (18263 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57b8740e2468b8f1b516ba64f8eb05533ec003b6c40429d8fb50ea89f64693e1`
+-	Image ID: `sha256:aa30bedc4a095cac604bbc14f72e89e61cf7fd4d2828b310c7a2d1d6192e4dcc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e2a704fc77439bd319ceaffb12d90fb40805c57ba3cced8cb4c88b3b0f0fa2ea`  
-		Last Modified: Thu, 11 Jun 2026 03:22:05 GMT  
+	-	`sha256:833808440bc35f92b33064f5ee4c84077948d9845de253c82702d751a837a36e`  
+		Last Modified: Wed, 24 Jun 2026 03:23:19 GMT  
 		Size: 18.3 KB (18263 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10721,90 +10721,90 @@ $ docker pull haxe@sha256:331f85fa4b85632ed02da785477bb08caec2b8b5fea8936d3d858b
 ### `haxe:4.3-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:30f81a51f98f53f66ae7bcebce873bbf437a6469f2d668f0dde68ece37e22d40
+$ docker pull haxe@sha256:950c23210f7198f7a721cce43f28978005178dde6cf581c5a9507fc3049c0b69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.6 MB (138591399 bytes)**  
+-	Total Size: **138.6 MB (138584644 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87da006b8c42b3d91a726d4c7633dc47369c9a240fd1ec6b64dd75c153d1128a`
+-	Image ID: `sha256:fa3ce9815e2242d1252ea6da53e4c661df8517a465d5d237a6fb0ec8a587bf98`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:43:46 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:44:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:38 GMT
+# Wed, 24 Jun 2026 03:17:48 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:16:38 GMT
+# Wed, 24 Jun 2026 03:17:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:38 GMT
+# Wed, 24 Jun 2026 03:17:48 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:17:53 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:17:53 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 ENV HAXE_VERSION=4.3.7
-# Thu, 11 Jun 2026 03:17:53 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:49 GMT
+# Wed, 24 Jun 2026 03:22:56 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:49 GMT
+# Wed, 24 Jun 2026 03:22:56 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:7c21e59e753cb91625909251110d6e4cc4a5411b4b7b37f74a62e56b927b7f1e`  
-		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
-		Size: 52.3 MB (52264114 bytes)  
+	-	`sha256:35157acdff35db21da73141f382d0dca0f6bc6d183c3a816d283fe39f471e539`  
+		Last Modified: Wed, 24 Jun 2026 00:27:56 GMT  
+		Size: 52.3 MB (52257219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8698eac281c2783fff44c0d5a2c381eeb273791e12f4dc8b407db26260bc3b85`  
-		Last Modified: Thu, 11 Jun 2026 00:43:55 GMT  
-		Size: 15.8 MB (15774833 bytes)  
+	-	`sha256:daf305d6ad7bad47ee0696c3db8b8fed8e9c2a42c53b57d047f8ab32f5d9b546`  
+		Last Modified: Wed, 24 Jun 2026 01:44:59 GMT  
+		Size: 15.8 MB (15774954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddd4791f1a451400cf59328cbd4f4f9bed438b89f7103b59dc50338fd2ac9293`  
-		Last Modified: Thu, 11 Jun 2026 02:24:59 GMT  
-		Size: 54.9 MB (54879555 bytes)  
+	-	`sha256:c95f37219bba62c0b4908476dc3cf7f0f98f1c87e8908c188797b1dc1f610c77`  
+		Last Modified: Wed, 24 Jun 2026 02:35:29 GMT  
+		Size: 54.9 MB (54879567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:baacce2a7964588b50482902ae4ed384b6fc4cc336f9770060e1eee928f3e5c7`  
-		Last Modified: Thu, 11 Jun 2026 03:21:55 GMT  
-		Size: 1.1 MB (1145563 bytes)  
+	-	`sha256:ea3b30df714c23811007df14174c6f5d17a98033fc8171b07b741c9ababe2ad0`  
+		Last Modified: Wed, 24 Jun 2026 03:23:02 GMT  
+		Size: 1.1 MB (1145553 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d421cb4ba3b57ec019bdaa2b38bca44bb46ce9730790a4cb31ef82e9137c607`  
-		Last Modified: Thu, 11 Jun 2026 03:21:55 GMT  
-		Size: 1.5 MB (1453630 bytes)  
+	-	`sha256:577eec45460e0345e0a7a4185876b924f0cddb8fa97e2eea2a09f07a082f84e1`  
+		Last Modified: Wed, 24 Jun 2026 03:23:02 GMT  
+		Size: 1.5 MB (1453606 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95a186b459e403df9757ef8a54bb3da1325c6f6b754101626edd28004d023d1e`  
-		Last Modified: Thu, 11 Jun 2026 03:21:56 GMT  
-		Size: 13.1 MB (13073704 bytes)  
+	-	`sha256:36b8defb24b2d4fc94128de44102f6be6bdcb84e67e0e17ff9ac5013e791cc6a`  
+		Last Modified: Wed, 24 Jun 2026 03:23:02 GMT  
+		Size: 13.1 MB (13073745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:021f33d6c95fdb0832ebf19204a0f7a9950f4179e2466ca052281e117d6adc06
+$ docker pull haxe@sha256:bff65f3f0bba3a275ed7b28c71386a48dc3441747cc942916153f30ef524c683
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.4 KB (18373 bytes)**  
+-	Total Size: **18.4 KB (18372 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:407ee91345609c3a702b6e9b85a36547496be3a6dc18422107c0f917ffacbcc9`
+-	Image ID: `sha256:0b0e3a512a358c7caa8f2160305c79fd8d89f6107d631d05163b2f5d31dc7e29`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:12a11fff8397c92ee8ad9992996bef04aca95207c203e59b53f5ff0283a41035`  
-		Last Modified: Thu, 11 Jun 2026 03:21:55 GMT  
-		Size: 18.4 KB (18373 bytes)  
+	-	`sha256:ba3aa11acbd916a14276d24be2074adadcfed8cd9003d2a187d5b0392cb0f935`  
+		Last Modified: Wed, 24 Jun 2026 03:23:01 GMT  
+		Size: 18.4 KB (18372 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.3-trixie`
 
 ```console
-$ docker pull haxe@sha256:8b98e17f0c9062c0aeefb3b86fd10ceea2a182a8e133c8cceb3a33e3a19832f6
+$ docker pull haxe@sha256:4f02d35e9f5cce18c3210e360f9f06ed41be2e8534973ed21ee531c7588690f7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10819,83 +10819,83 @@ $ docker pull haxe@sha256:8b98e17f0c9062c0aeefb3b86fd10ceea2a182a8e133c8cceb3a33
 ### `haxe:4.3-trixie` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:c43c934eb5267b759561428d41782c2b9f2a90079ac99401cb9114765b12c683
+$ docker pull haxe@sha256:7904130a8ccae528e2d96affeb3c088e857a219ea84a4f6b0563b93371225e14
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.3 MB (165319760 bytes)**  
+-	Total Size: **165.3 MB (165312858 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad037e080a6448f8d065d158716b23a103b1917a077e190c6891ba8942f04b85`
+-	Image ID: `sha256:958a6ad44224fafbabbb3008500fbea33440e00ed28177a0ef1eb47ee30fe8d6`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:42:40 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:41:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:24:44 GMT
+# Wed, 24 Jun 2026 02:28:40 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:11:45 GMT
+# Wed, 24 Jun 2026 03:17:51 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:11:45 GMT
+# Wed, 24 Jun 2026 03:17:51 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:11:45 GMT
+# Wed, 24 Jun 2026 03:17:51 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:13:03 GMT
+# Wed, 24 Jun 2026 03:19:05 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:13:03 GMT
+# Wed, 24 Jun 2026 03:19:05 GMT
 ENV HAXE_VERSION=4.3.7
-# Mon, 22 Jun 2026 20:13:03 GMT
+# Wed, 24 Jun 2026 03:19:05 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 20:16:38 GMT
+# Wed, 24 Jun 2026 03:22:35 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add luv 0.5.14 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on=luv || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:16:38 GMT
+# Wed, 24 Jun 2026 03:22:35 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ef1b08ddd59d42b444e8f9c68a6cebbed70636aed0c242fdccb0bd61b61ba26b`  
-		Last Modified: Wed, 10 Jun 2026 23:40:27 GMT  
-		Size: 49.3 MB (49317121 bytes)  
+	-	`sha256:aa3e9ef32f73c30e8b065800ee66429992d3bfea6a1fb8224afdd878ab5b994f`  
+		Last Modified: Wed, 24 Jun 2026 00:28:33 GMT  
+		Size: 49.3 MB (49317255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b365b6ff7b7e310e1b9a88f996e65b89969c7fa450492b68249d1d1c38e0676`  
-		Last Modified: Thu, 11 Jun 2026 00:42:51 GMT  
-		Size: 25.6 MB (25635173 bytes)  
+	-	`sha256:3f59c84a786323367a79d4959142649bb24b16c989bbaae7f273550b47325959`  
+		Last Modified: Wed, 24 Jun 2026 01:41:50 GMT  
+		Size: 25.6 MB (25634938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ca884014342f240be01d391b498c3ec61b2f4af2c205e7e9a0b5ac2cb2f24c4`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 67.8 MB (67784745 bytes)  
+	-	`sha256:30d0db852850114cc79598cc8ab1ec19da54691d9e3267288bb3458d7488f125`  
+		Last Modified: Wed, 24 Jun 2026 02:28:58 GMT  
+		Size: 67.8 MB (67778134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9acf2cc2bbd80c43956a7feb617f122f840c11f25186eb4e5467f6fdc7519a1b`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
-		Size: 1.5 MB (1478604 bytes)  
+	-	`sha256:0e5c811c078754cb07e6cab76023d049a8347fdd6a39454778ae6abd22a9feb1`  
+		Last Modified: Wed, 24 Jun 2026 03:22:41 GMT  
+		Size: 1.5 MB (1478605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb901720845467255cb5b5601d83eade693e8b34ff327351c8224622a7b4baac`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
-		Size: 9.4 MB (9405526 bytes)  
+	-	`sha256:cc25905a6077737e3e52aa7d6e3a3962d444dc4ac21b7b7505856aabef02455b`  
+		Last Modified: Wed, 24 Jun 2026 03:22:41 GMT  
+		Size: 9.4 MB (9405367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16ace210cbc7cc3c45b1533ae2d85fef60070146ccc058258ad552e2517c68c1`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
-		Size: 11.7 MB (11698591 bytes)  
+	-	`sha256:ed41e9b0ee635d89e9225cecdc28930e0b0dfe5c44bf16457caf6942c2663b7f`  
+		Last Modified: Wed, 24 Jun 2026 03:22:41 GMT  
+		Size: 11.7 MB (11698559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3-trixie` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:1c321a4c46ebe5aee393ac66f45ac8d8b36efc2bc487c29b61c7fc3c82e74fb5
+$ docker pull haxe@sha256:4fce81d98a4bbd8668d159f4659857d3f1bd6f4c3d16f0b437534d44004cbeab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.1 KB (19052 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5959691c0b4b4d5386c3b97aa98edda59ca437711adea061c4bd6bcd1ef34ffb`
+-	Image ID: `sha256:3cb350a0a1840eccc057df521fc806f98afec6130418e12187c4f0cb96a6f6be`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b224822a144fe1cd388993881eb6e1cb01a194fa806f56e4d59c5649319e99e`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
+	-	`sha256:bd0cdd72b74083fc8d5123ae9c1e778699fe8c596d30f5215925c9d1157ab330`  
+		Last Modified: Wed, 24 Jun 2026 03:22:40 GMT  
 		Size: 19.1 KB (19052 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10985,84 +10985,84 @@ $ docker pull haxe@sha256:f5984625e66775fc89bee938480f152f190cc57c8c0bd6832295e9
 ### `haxe:4.3-trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:27797a5fc438dd5f4bee4623a39fed44721bc93874a4457006b108996c338d7a
+$ docker pull haxe@sha256:8ffd7ba24fc15d6fc8e4d11dcdc380e83047cf217a9c90c721bc967adfb8d50c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.6 MB (166555431 bytes)**  
+-	Total Size: **166.5 MB (166548292 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2b25b2e57cfce3f434f7a529af8cc2b241e6e80410403deb98133f8726fd1c3`
+-	Image ID: `sha256:c6985f832b9d9c3b21d3e1cbbc94f9210ea75d84cfd5ce39a4e3c8f8fa60100a`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:44:22 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:45:15 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:22:02 GMT
+# Wed, 24 Jun 2026 02:35:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:56:19 GMT
+# Wed, 24 Jun 2026 03:17:44 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:56:19 GMT
+# Wed, 24 Jun 2026 03:17:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:56:19 GMT
+# Wed, 24 Jun 2026 03:17:44 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:57:38 GMT
+# Wed, 24 Jun 2026 03:19:02 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:57:38 GMT
+# Wed, 24 Jun 2026 03:19:02 GMT
 ENV HAXE_VERSION=4.3.7
-# Mon, 22 Jun 2026 20:57:38 GMT
+# Wed, 24 Jun 2026 03:19:02 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 21:01:45 GMT
+# Wed, 24 Jun 2026 03:22:33 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add luv 0.5.14 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on=luv || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 21:01:45 GMT
+# Wed, 24 Jun 2026 03:22:33 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ed660e1af0f5da9e93a4c43fb29e86cb46fe69c76bcf11a3de9c57c987acab82`  
-		Last Modified: Wed, 10 Jun 2026 23:40:16 GMT  
-		Size: 49.7 MB (49678169 bytes)  
+	-	`sha256:c8a311258fd162f6aa0db134045a19154c81a2244ff9ed7620256c95ae5d6b69`  
+		Last Modified: Wed, 24 Jun 2026 00:28:21 GMT  
+		Size: 49.7 MB (49678395 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd2ab02859108b91c1c26f2badd015b5215eb066b7ef4f3a22bd1536a8debe96`  
-		Last Modified: Thu, 11 Jun 2026 00:44:32 GMT  
-		Size: 25.0 MB (25026911 bytes)  
+	-	`sha256:abe059c57e3bc40ea8086d6be574927bed6c0a000b182f3354b758009265e197`  
+		Last Modified: Wed, 24 Jun 2026 01:45:26 GMT  
+		Size: 25.0 MB (25026863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f2e427d8856f71d8d3667d1c4d9274b8aca2bd9d228387c51c211909e51263f`  
-		Last Modified: Thu, 11 Jun 2026 02:22:21 GMT  
-		Size: 67.6 MB (67599934 bytes)  
+	-	`sha256:5cf605f6b62a65326644e598c84134d29702579734c83dfca4cedf5dad7fb6d3`  
+		Last Modified: Wed, 24 Jun 2026 02:35:43 GMT  
+		Size: 67.6 MB (67592645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:377380df1e3e6c1b08aa3af9ba93dfe00a153a234c6bbc2d5a63e9e9fdd63834`  
-		Last Modified: Mon, 22 Jun 2026 21:01:51 GMT  
-		Size: 1.5 MB (1477001 bytes)  
+	-	`sha256:2036f5cecb1b7475069fa47c9d8a93ba3afa483743ca3ba32683fb35a70fcd36`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 1.5 MB (1477016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f46081d5779a696802079f4eb063a6c7cc5663193f255cd66530508d3e67018`  
-		Last Modified: Mon, 22 Jun 2026 21:01:52 GMT  
-		Size: 9.4 MB (9351018 bytes)  
+	-	`sha256:ccf124d6741bdcbe6776113bd66bf542b7ef8fc3ea7e244cdb78e2c6ca62c79d`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 9.4 MB (9351006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ada1c535373b94d5abca99a63b2967859396b8b90950e14cde610a972dff077`  
-		Last Modified: Mon, 22 Jun 2026 21:01:52 GMT  
-		Size: 13.4 MB (13422398 bytes)  
+	-	`sha256:2b668c7e7cdfe73f3316ad14ecb9c6fc32da0c2a22b900c8d37bbb9c9dbae468`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 13.4 MB (13422367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3-trixie` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:a47518e09fa4e27fbaf12c4cc192f6272e7b026d6c0f697079462e72f50c6b4b
+$ docker pull haxe@sha256:246c56b2617c49259f05311f443260ea150c2c66a07db1f4d1b7854b69b210a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.2 KB (19197 bytes)**  
+-	Total Size: **19.2 KB (19198 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e35a281d7500a80646f9af29a2dfb443f639e687e8bb5d094757006e3b1527f6`
+-	Image ID: `sha256:0e680b09484ada294576cf618a901638f6b818e89b15a50a69aa13dd5e71d55e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d5c53edd712b128216a89d0f786b03c9e791528e8a9603adc6a729afde5b1691`  
-		Last Modified: Mon, 22 Jun 2026 21:01:51 GMT  
-		Size: 19.2 KB (19197 bytes)  
+	-	`sha256:3281151bc4ec2e30c43a398ff87a105ae11ed9b9efbb6c31aa50ba1e364b8230`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 19.2 KB (19198 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.3-windowsservercore`
@@ -11655,7 +11655,7 @@ CMD ["haxe"]
 ## `haxe:4.3.7`
 
 ```console
-$ docker pull haxe@sha256:01b6518688e06f8fcbe75c49a99b6ce6a637abf5341cb97d976278a6c2cc5995
+$ docker pull haxe@sha256:d66f2b9fc43a1fae6fcc6f2a732c3ebe604f1db118165fb6d7bd115ed67aa249
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11672,83 +11672,83 @@ $ docker pull haxe@sha256:01b6518688e06f8fcbe75c49a99b6ce6a637abf5341cb97d976278
 ### `haxe:4.3.7` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:c43c934eb5267b759561428d41782c2b9f2a90079ac99401cb9114765b12c683
+$ docker pull haxe@sha256:7904130a8ccae528e2d96affeb3c088e857a219ea84a4f6b0563b93371225e14
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.3 MB (165319760 bytes)**  
+-	Total Size: **165.3 MB (165312858 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad037e080a6448f8d065d158716b23a103b1917a077e190c6891ba8942f04b85`
+-	Image ID: `sha256:958a6ad44224fafbabbb3008500fbea33440e00ed28177a0ef1eb47ee30fe8d6`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:42:40 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:41:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:24:44 GMT
+# Wed, 24 Jun 2026 02:28:40 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:11:45 GMT
+# Wed, 24 Jun 2026 03:17:51 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:11:45 GMT
+# Wed, 24 Jun 2026 03:17:51 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:11:45 GMT
+# Wed, 24 Jun 2026 03:17:51 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:13:03 GMT
+# Wed, 24 Jun 2026 03:19:05 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:13:03 GMT
+# Wed, 24 Jun 2026 03:19:05 GMT
 ENV HAXE_VERSION=4.3.7
-# Mon, 22 Jun 2026 20:13:03 GMT
+# Wed, 24 Jun 2026 03:19:05 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 20:16:38 GMT
+# Wed, 24 Jun 2026 03:22:35 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add luv 0.5.14 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on=luv || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:16:38 GMT
+# Wed, 24 Jun 2026 03:22:35 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ef1b08ddd59d42b444e8f9c68a6cebbed70636aed0c242fdccb0bd61b61ba26b`  
-		Last Modified: Wed, 10 Jun 2026 23:40:27 GMT  
-		Size: 49.3 MB (49317121 bytes)  
+	-	`sha256:aa3e9ef32f73c30e8b065800ee66429992d3bfea6a1fb8224afdd878ab5b994f`  
+		Last Modified: Wed, 24 Jun 2026 00:28:33 GMT  
+		Size: 49.3 MB (49317255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b365b6ff7b7e310e1b9a88f996e65b89969c7fa450492b68249d1d1c38e0676`  
-		Last Modified: Thu, 11 Jun 2026 00:42:51 GMT  
-		Size: 25.6 MB (25635173 bytes)  
+	-	`sha256:3f59c84a786323367a79d4959142649bb24b16c989bbaae7f273550b47325959`  
+		Last Modified: Wed, 24 Jun 2026 01:41:50 GMT  
+		Size: 25.6 MB (25634938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ca884014342f240be01d391b498c3ec61b2f4af2c205e7e9a0b5ac2cb2f24c4`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 67.8 MB (67784745 bytes)  
+	-	`sha256:30d0db852850114cc79598cc8ab1ec19da54691d9e3267288bb3458d7488f125`  
+		Last Modified: Wed, 24 Jun 2026 02:28:58 GMT  
+		Size: 67.8 MB (67778134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9acf2cc2bbd80c43956a7feb617f122f840c11f25186eb4e5467f6fdc7519a1b`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
-		Size: 1.5 MB (1478604 bytes)  
+	-	`sha256:0e5c811c078754cb07e6cab76023d049a8347fdd6a39454778ae6abd22a9feb1`  
+		Last Modified: Wed, 24 Jun 2026 03:22:41 GMT  
+		Size: 1.5 MB (1478605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb901720845467255cb5b5601d83eade693e8b34ff327351c8224622a7b4baac`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
-		Size: 9.4 MB (9405526 bytes)  
+	-	`sha256:cc25905a6077737e3e52aa7d6e3a3962d444dc4ac21b7b7505856aabef02455b`  
+		Last Modified: Wed, 24 Jun 2026 03:22:41 GMT  
+		Size: 9.4 MB (9405367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16ace210cbc7cc3c45b1533ae2d85fef60070146ccc058258ad552e2517c68c1`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
-		Size: 11.7 MB (11698591 bytes)  
+	-	`sha256:ed41e9b0ee635d89e9225cecdc28930e0b0dfe5c44bf16457caf6942c2663b7f`  
+		Last Modified: Wed, 24 Jun 2026 03:22:41 GMT  
+		Size: 11.7 MB (11698559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.7` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:1c321a4c46ebe5aee393ac66f45ac8d8b36efc2bc487c29b61c7fc3c82e74fb5
+$ docker pull haxe@sha256:4fce81d98a4bbd8668d159f4659857d3f1bd6f4c3d16f0b437534d44004cbeab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.1 KB (19052 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5959691c0b4b4d5386c3b97aa98edda59ca437711adea061c4bd6bcd1ef34ffb`
+-	Image ID: `sha256:3cb350a0a1840eccc057df521fc806f98afec6130418e12187c4f0cb96a6f6be`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b224822a144fe1cd388993881eb6e1cb01a194fa806f56e4d59c5649319e99e`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
+	-	`sha256:bd0cdd72b74083fc8d5123ae9c1e778699fe8c596d30f5215925c9d1157ab330`  
+		Last Modified: Wed, 24 Jun 2026 03:22:40 GMT  
 		Size: 19.1 KB (19052 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11838,84 +11838,84 @@ $ docker pull haxe@sha256:f5984625e66775fc89bee938480f152f190cc57c8c0bd6832295e9
 ### `haxe:4.3.7` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:27797a5fc438dd5f4bee4623a39fed44721bc93874a4457006b108996c338d7a
+$ docker pull haxe@sha256:8ffd7ba24fc15d6fc8e4d11dcdc380e83047cf217a9c90c721bc967adfb8d50c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.6 MB (166555431 bytes)**  
+-	Total Size: **166.5 MB (166548292 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2b25b2e57cfce3f434f7a529af8cc2b241e6e80410403deb98133f8726fd1c3`
+-	Image ID: `sha256:c6985f832b9d9c3b21d3e1cbbc94f9210ea75d84cfd5ce39a4e3c8f8fa60100a`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:44:22 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:45:15 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:22:02 GMT
+# Wed, 24 Jun 2026 02:35:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:56:19 GMT
+# Wed, 24 Jun 2026 03:17:44 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:56:19 GMT
+# Wed, 24 Jun 2026 03:17:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:56:19 GMT
+# Wed, 24 Jun 2026 03:17:44 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:57:38 GMT
+# Wed, 24 Jun 2026 03:19:02 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:57:38 GMT
+# Wed, 24 Jun 2026 03:19:02 GMT
 ENV HAXE_VERSION=4.3.7
-# Mon, 22 Jun 2026 20:57:38 GMT
+# Wed, 24 Jun 2026 03:19:02 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 21:01:45 GMT
+# Wed, 24 Jun 2026 03:22:33 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add luv 0.5.14 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on=luv || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 21:01:45 GMT
+# Wed, 24 Jun 2026 03:22:33 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ed660e1af0f5da9e93a4c43fb29e86cb46fe69c76bcf11a3de9c57c987acab82`  
-		Last Modified: Wed, 10 Jun 2026 23:40:16 GMT  
-		Size: 49.7 MB (49678169 bytes)  
+	-	`sha256:c8a311258fd162f6aa0db134045a19154c81a2244ff9ed7620256c95ae5d6b69`  
+		Last Modified: Wed, 24 Jun 2026 00:28:21 GMT  
+		Size: 49.7 MB (49678395 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd2ab02859108b91c1c26f2badd015b5215eb066b7ef4f3a22bd1536a8debe96`  
-		Last Modified: Thu, 11 Jun 2026 00:44:32 GMT  
-		Size: 25.0 MB (25026911 bytes)  
+	-	`sha256:abe059c57e3bc40ea8086d6be574927bed6c0a000b182f3354b758009265e197`  
+		Last Modified: Wed, 24 Jun 2026 01:45:26 GMT  
+		Size: 25.0 MB (25026863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f2e427d8856f71d8d3667d1c4d9274b8aca2bd9d228387c51c211909e51263f`  
-		Last Modified: Thu, 11 Jun 2026 02:22:21 GMT  
-		Size: 67.6 MB (67599934 bytes)  
+	-	`sha256:5cf605f6b62a65326644e598c84134d29702579734c83dfca4cedf5dad7fb6d3`  
+		Last Modified: Wed, 24 Jun 2026 02:35:43 GMT  
+		Size: 67.6 MB (67592645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:377380df1e3e6c1b08aa3af9ba93dfe00a153a234c6bbc2d5a63e9e9fdd63834`  
-		Last Modified: Mon, 22 Jun 2026 21:01:51 GMT  
-		Size: 1.5 MB (1477001 bytes)  
+	-	`sha256:2036f5cecb1b7475069fa47c9d8a93ba3afa483743ca3ba32683fb35a70fcd36`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 1.5 MB (1477016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f46081d5779a696802079f4eb063a6c7cc5663193f255cd66530508d3e67018`  
-		Last Modified: Mon, 22 Jun 2026 21:01:52 GMT  
-		Size: 9.4 MB (9351018 bytes)  
+	-	`sha256:ccf124d6741bdcbe6776113bd66bf542b7ef8fc3ea7e244cdb78e2c6ca62c79d`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 9.4 MB (9351006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ada1c535373b94d5abca99a63b2967859396b8b90950e14cde610a972dff077`  
-		Last Modified: Mon, 22 Jun 2026 21:01:52 GMT  
-		Size: 13.4 MB (13422398 bytes)  
+	-	`sha256:2b668c7e7cdfe73f3316ad14ecb9c6fc32da0c2a22b900c8d37bbb9c9dbae468`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 13.4 MB (13422367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.7` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:a47518e09fa4e27fbaf12c4cc192f6272e7b026d6c0f697079462e72f50c6b4b
+$ docker pull haxe@sha256:246c56b2617c49259f05311f443260ea150c2c66a07db1f4d1b7854b69b210a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.2 KB (19197 bytes)**  
+-	Total Size: **19.2 KB (19198 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e35a281d7500a80646f9af29a2dfb443f639e687e8bb5d094757006e3b1527f6`
+-	Image ID: `sha256:0e680b09484ada294576cf618a901638f6b818e89b15a50a69aa13dd5e71d55e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d5c53edd712b128216a89d0f786b03c9e791528e8a9603adc6a729afde5b1691`  
-		Last Modified: Mon, 22 Jun 2026 21:01:51 GMT  
-		Size: 19.2 KB (19197 bytes)  
+	-	`sha256:3281151bc4ec2e30c43a398ff87a105ae11ed9b9efbb6c31aa50ba1e364b8230`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 19.2 KB (19198 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.3.7` - windows version 10.0.26100.32995; amd64
@@ -12934,7 +12934,7 @@ $ docker pull haxe@sha256:1b217a6ad7323278c0c33aebec75d6c0102d8915bfcc8785068589
 ## `haxe:4.3.7-bookworm`
 
 ```console
-$ docker pull haxe@sha256:23675a05246dcaed298f18250bcb0b246ef42ee4a86bb6928cd9f207f88491fc
+$ docker pull haxe@sha256:963e3f130787293bae044fac5b912edda989c40f8f341a8ddbf87d8228fa2cf6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12949,84 +12949,84 @@ $ docker pull haxe@sha256:23675a05246dcaed298f18250bcb0b246ef42ee4a86bb6928cd9f2
 ### `haxe:4.3.7-bookworm` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:c503e54ecb6ca152618a4bfbebc8c5c3c1c9c17c7bfac7a8acef6f5bab2a9eff
+$ docker pull haxe@sha256:4bf048236801b1c7363844524d464aa61904f5103f09398ff72716f117b9d157
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **398.6 MB (398599761 bytes)**  
+-	Total Size: **398.6 MB (398599839 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3cf83bcde56c42ae9b1dafca7fc68ae2299bb43a74e5ecb5328c7ae652bc6344`
+-	Image ID: `sha256:4dcd481aaf5aeb4ff7cb5fb47c7588b1eac741e320114af1635edb994d3321b7`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:42:10 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:41:22 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:26 GMT
+# Wed, 24 Jun 2026 02:28:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:10 GMT
+# Wed, 24 Jun 2026 03:18:01 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:16:10 GMT
+# Wed, 24 Jun 2026 03:18:01 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto7 		libmbedtls14 		libmbedx509-1 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:10 GMT
+# Wed, 24 Jun 2026 03:18:01 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:17:25 GMT
+# Wed, 24 Jun 2026 03:19:19 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:17:25 GMT
+# Wed, 24 Jun 2026 03:19:19 GMT
 ENV HAXE_VERSION=4.3.7
-# Thu, 11 Jun 2026 03:17:25 GMT
+# Wed, 24 Jun 2026 03:19:19 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:20:39 GMT
+# Wed, 24 Jun 2026 03:22:56 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:20:39 GMT
+# Wed, 24 Jun 2026 03:22:56 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01cedcff86f879d042805360ecba268802bec3d8201484ff3ec54f4250a2d3b7`  
-		Last Modified: Wed, 10 Jun 2026 23:39:39 GMT  
-		Size: 48.5 MB (48502042 bytes)  
+	-	`sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b`  
+		Last Modified: Wed, 24 Jun 2026 00:27:40 GMT  
+		Size: 48.5 MB (48502210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4da31edd9efdb812e66d13819903973ea6b188d2e7358547676d33d1e3f706f2`  
-		Last Modified: Thu, 11 Jun 2026 00:42:23 GMT  
-		Size: 24.0 MB (24044000 bytes)  
+	-	`sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff`  
+		Last Modified: Wed, 24 Jun 2026 01:41:33 GMT  
+		Size: 24.0 MB (24044046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fbaeeb62b9d03a1204b85c3b257aa3e1ce2c4ccfeea479fb2e659211019c29d`  
-		Last Modified: Thu, 11 Jun 2026 02:24:43 GMT  
-		Size: 64.4 MB (64404116 bytes)  
+	-	`sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a`  
+		Last Modified: Wed, 24 Jun 2026 02:28:33 GMT  
+		Size: 64.4 MB (64404017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1778e98698984f38afc0b8e7b0cfac97150eb5d0eba1ba46096ee6e761743b0`  
-		Last Modified: Thu, 11 Jun 2026 03:21:09 GMT  
-		Size: 1.3 MB (1261596 bytes)  
+	-	`sha256:8718fcd284f6a775e100aa39e1872a2c5b439550b9f84040865ec3a7eb200bfe`  
+		Last Modified: Wed, 24 Jun 2026 03:23:32 GMT  
+		Size: 1.3 MB (1261570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a9359b2917172f33806d280f1e1771fe14381f957872ac28005e01fe339464a`  
-		Last Modified: Thu, 11 Jun 2026 03:21:09 GMT  
-		Size: 1.4 MB (1385271 bytes)  
+	-	`sha256:c8347d6c86ea3c21c698311a9f87326bc7781fc07f2f1406fe98c1bd5291e9a1`  
+		Last Modified: Wed, 24 Jun 2026 03:23:32 GMT  
+		Size: 1.4 MB (1385254 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b749d1e81d9158322c894e1272123e7c7d4a9cbcd885299012f966f6ac6c5a9`  
-		Last Modified: Thu, 11 Jun 2026 03:21:15 GMT  
-		Size: 259.0 MB (259002736 bytes)  
+	-	`sha256:be5c63f712e2f65b5ba56c3c688ae63a61ff8f9438387be4bb14f1463750f0cc`  
+		Last Modified: Wed, 24 Jun 2026 03:23:37 GMT  
+		Size: 259.0 MB (259002742 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.7-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:9a68bca73d7fdc2c066dbb8940b458990ccc41492c159cdfc6bb286f9167cc7a
+$ docker pull haxe@sha256:619fc78c9ca4ba5a1d3c8eb15b78e5df80d12a8f1ee077175bf08bdee265aa02
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.2 KB (19151 bytes)**  
+-	Total Size: **18.3 KB (18276 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a3242333cbf3c02aa894352a2671a38b2f57f405025372b389b9d6b60d668d1c`
+-	Image ID: `sha256:c4edb4972cd367fac350d60855f38c85bdd7f5d5f20bc0d98af4815bfa7c0953`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8b24cb820e1f94a856e0f8eee79ea689dd8bdf80e1ca4e6e8b445e3a444bd7b1`  
-		Last Modified: Thu, 11 Jun 2026 03:21:09 GMT  
-		Size: 19.2 KB (19151 bytes)  
+	-	`sha256:bcd9823ae529e8f3198d4968a8b8cd1ecae3df8096d411a4bb3fd4c1d1826d63`  
+		Last Modified: Wed, 24 Jun 2026 03:23:32 GMT  
+		Size: 18.3 KB (18276 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.3.7-bookworm` - linux; arm variant v7
@@ -13115,90 +13115,90 @@ $ docker pull haxe@sha256:29cf87e3b309dd14750107114717ef230de0a23960bb83c7d5383e
 ### `haxe:4.3.7-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:da5a9b89d8d99bf7386c2b3c549198f3a741378854dfb973b7ff951529808df7
+$ docker pull haxe@sha256:aab529abe1cc35fed7421127232659923a0d6f15aa86fe263c11ce26f04c34e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **401.6 MB (401611177 bytes)**  
+-	Total Size: **401.6 MB (401611325 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6218f2ce35b41ebe1b0cc405e4cda0520ca33a1267f828b9648de7aa9bcae95`
+-	Image ID: `sha256:445163811cf3637c8ad18fee4553933a476887d1b334da40938f6a88ac6cebf9`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:43:47 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:44:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:19 GMT
+# Wed, 24 Jun 2026 03:17:40 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:16:19 GMT
+# Wed, 24 Jun 2026 03:17:40 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto7 		libmbedtls14 		libmbedx509-1 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:19 GMT
+# Wed, 24 Jun 2026 03:17:40 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:17:33 GMT
+# Wed, 24 Jun 2026 03:18:53 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:17:33 GMT
+# Wed, 24 Jun 2026 03:18:53 GMT
 ENV HAXE_VERSION=4.3.7
-# Thu, 11 Jun 2026 03:17:33 GMT
+# Wed, 24 Jun 2026 03:18:53 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:22 GMT
+# Wed, 24 Jun 2026 03:22:32 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:22 GMT
+# Wed, 24 Jun 2026 03:22:32 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:c847f328095fb083f4a22895b90fe4226efa6458ac57362b64b6e5d99da9e4a3`  
-		Last Modified: Wed, 10 Jun 2026 23:39:28 GMT  
-		Size: 48.4 MB (48389016 bytes)  
+	-	`sha256:0fb1189398e2e4b474d43aac6502510d0da0318e70137a377c21087f198814db`  
+		Last Modified: Wed, 24 Jun 2026 00:27:19 GMT  
+		Size: 48.4 MB (48389201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f511b4c80a6e453785fbcd573c1bf1cb986c4e8d43ed4500ad1ac9a4719762b`  
-		Last Modified: Thu, 11 Jun 2026 00:43:56 GMT  
-		Size: 23.6 MB (23613296 bytes)  
+	-	`sha256:03ebca214f1a4b66acfdb0bd20aa3ee139d1747885ef4b0f3d07aa2a68459230`  
+		Last Modified: Wed, 24 Jun 2026 01:44:48 GMT  
+		Size: 23.6 MB (23613316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b715a6712db064e97302c819acd7a39c0c72f8a315ff83c6ad1c27bfa1b275e`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 64.5 MB (64487878 bytes)  
+	-	`sha256:533bb0e918720911be6cb7a1a5ba9ad0e1a308fcbf24961a23aba0cd220df6cf`  
+		Last Modified: Wed, 24 Jun 2026 02:35:28 GMT  
+		Size: 64.5 MB (64487706 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f08d7a476cad85e434a36f369a59b96f5407ce55d6277db9bc180c99d2d7e62`  
-		Last Modified: Thu, 11 Jun 2026 03:21:58 GMT  
-		Size: 1.3 MB (1257942 bytes)  
+	-	`sha256:c5c96b2065e997d0d7c6168b933b4747cc420f83d7fa820fc4520c028646740c`  
+		Last Modified: Wed, 24 Jun 2026 03:23:08 GMT  
+		Size: 1.3 MB (1258025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c11d3c40ebcd7c24a95940776570f156546fff4e7ab567a78741b4f455bc6086`  
-		Last Modified: Thu, 11 Jun 2026 03:21:58 GMT  
-		Size: 1.4 MB (1419972 bytes)  
+	-	`sha256:6398b8bfac0c8fa7aebaa799bb94680d084f11059c1a4b91efcf1c5c3c4e6168`  
+		Last Modified: Wed, 24 Jun 2026 03:23:08 GMT  
+		Size: 1.4 MB (1419987 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2399f546e6bf1744fbf84fc50232f3b07354eaa7e8f9f15e9a35528532b2fc40`  
-		Last Modified: Thu, 11 Jun 2026 03:22:03 GMT  
-		Size: 262.4 MB (262443073 bytes)  
+	-	`sha256:a6003ae96df3d7ad04781e837ebd76f8952b4faddcc0122441f7c88d552b59f7`  
+		Last Modified: Wed, 24 Jun 2026 03:23:14 GMT  
+		Size: 262.4 MB (262443090 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.7-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:5a51fcd4dc3163c158412becbd3436d12c0ab10911c956dc294acedd944ec8b3
+$ docker pull haxe@sha256:42776f620eed12a1b048a3825eda6ff5723b27eddbedb95a03d8cf005b083960
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.3 KB (19297 bytes)**  
+-	Total Size: **18.4 KB (18387 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0079df2b4526dc27f41fb25ab8908bcdfe9e17815667756e9a5757e31c21c1cf`
+-	Image ID: `sha256:d4ed6e45153b53c983193947da4f4eddc3bbc87ff57754aa5b73faf044e46355`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:862c86e0728111a9e57c43674e0af21b3ca3c1ea5635dcbf5292141a90c35420`  
-		Last Modified: Thu, 11 Jun 2026 03:21:58 GMT  
-		Size: 19.3 KB (19297 bytes)  
+	-	`sha256:e22f23851987f626e77707c701f02e41a81543a78f7d4c452f90ae11a1429053`  
+		Last Modified: Wed, 24 Jun 2026 03:23:08 GMT  
+		Size: 18.4 KB (18387 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.3.7-bullseye`
 
 ```console
-$ docker pull haxe@sha256:038eec3d382063497741e716e59db8022fe72905511f2920ec3a5e344b14681e
+$ docker pull haxe@sha256:d3c4288b77dceb319c72ac8c5bd8a8a2199396e75c9a05847f46e145a7d5fbb0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13213,83 +13213,83 @@ $ docker pull haxe@sha256:038eec3d382063497741e716e59db8022fe72905511f2920ec3a5e
 ### `haxe:4.3.7-bullseye` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:a827ef59cd988079f54ed7ef4e207d83ce8f09fda98400f28a6d0be5dec1d3f4
+$ docker pull haxe@sha256:c87db2df64bb9566b42b3ffaa83ae559114f6110fc952e2a30df810d0c68b460
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.3 MB (138253586 bytes)**  
+-	Total Size: **138.3 MB (138254650 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a9ed80dc07fab69ad8559f5909a9677d5c2b3e7010e83655adf30d1c0876b85`
+-	Image ID: `sha256:476b8c26f1469d124968150e464f8c765cc1e52cc3aa76ef73a948bf1d9c265e`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:42:19 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:41:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:36 GMT
+# Wed, 24 Jun 2026 02:28:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:43 GMT
+# Wed, 24 Jun 2026 03:18:02 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:16:43 GMT
+# Wed, 24 Jun 2026 03:18:02 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:43 GMT
+# Wed, 24 Jun 2026 03:18:02 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:01 GMT
+# Wed, 24 Jun 2026 03:19:20 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:01 GMT
+# Wed, 24 Jun 2026 03:19:20 GMT
 ENV HAXE_VERSION=4.3.7
-# Thu, 11 Jun 2026 03:18:01 GMT
+# Wed, 24 Jun 2026 03:19:20 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:59 GMT
+# Wed, 24 Jun 2026 03:23:13 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:59 GMT
+# Wed, 24 Jun 2026 03:23:13 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:af48a3e7696e07f88a02f9674e541901b65eadb5cf0f62e566b1d895099a1e9e`  
-		Last Modified: Wed, 10 Jun 2026 23:40:09 GMT  
-		Size: 53.8 MB (53771769 bytes)  
+	-	`sha256:c67cddb4b9fcdeefaf829aa012f0ccaefcfa862a558064326104b95b8849cd81`  
+		Last Modified: Wed, 24 Jun 2026 00:28:17 GMT  
+		Size: 53.8 MB (53773009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53f53a3a71a19cca6d8312e9c60a5428b23742024a0057b1f0e46517df6ae4a9`  
-		Last Modified: Thu, 11 Jun 2026 00:42:31 GMT  
-		Size: 15.8 MB (15790824 bytes)  
+	-	`sha256:816526a6d4acf81b392ec5a1e6d8d402fbc4bf0460323c5ad45b376b247ca6fc`  
+		Last Modified: Wed, 24 Jun 2026 01:41:36 GMT  
+		Size: 15.8 MB (15790805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3db6c46730caf21fd1b15e0e84732744cb5a66e6931cf2c3753965fc32257fc`  
-		Last Modified: Thu, 11 Jun 2026 02:24:52 GMT  
-		Size: 54.7 MB (54743048 bytes)  
+	-	`sha256:2d3cf50c221acb61e259a7ecd20caf425597eca7d93e329dde2640ca7ec8aaf4`  
+		Last Modified: Wed, 24 Jun 2026 02:28:36 GMT  
+		Size: 54.7 MB (54742897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ef46138230e000dd34af795fc4b9ca8f3ccc380f40b8a0c90481ed6e4d7d3df`  
-		Last Modified: Thu, 11 Jun 2026 03:22:05 GMT  
-		Size: 1.2 MB (1155279 bytes)  
+	-	`sha256:c1d7a2d2ba9374d419d8f4d1ab5d07d58f71a8e7bf9d3110ddccd0f15c32ebb0`  
+		Last Modified: Wed, 24 Jun 2026 03:23:19 GMT  
+		Size: 1.2 MB (1155278 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:759f157101bc0ae5852cf26b486403e57581132292c1d246b061ed7baaa5b07e`  
-		Last Modified: Thu, 11 Jun 2026 03:22:05 GMT  
-		Size: 1.5 MB (1462101 bytes)  
+	-	`sha256:bbeaa4ac1b9bf8e5209b4695491eb857d7b6b9b2acf08a75f67330f533e17ead`  
+		Last Modified: Wed, 24 Jun 2026 03:23:20 GMT  
+		Size: 1.5 MB (1462126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2fb209e568e84ac2a69850665831d93e1a4ea01e7324aecf0258c8f82375e109`  
-		Last Modified: Thu, 11 Jun 2026 03:22:05 GMT  
-		Size: 11.3 MB (11330565 bytes)  
+	-	`sha256:f087a7123b102ce6968483171d732a84f8595152d0d3767987616611af18b9b0`  
+		Last Modified: Wed, 24 Jun 2026 03:23:20 GMT  
+		Size: 11.3 MB (11330535 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.7-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:95b1563a9926247fec8cb1eb3b3e7dd7f7e71589cf473d73c4eba193c7533d45
+$ docker pull haxe@sha256:a4a1c79b5e8b7194719de4713ba97d2498db18792b3130a9e16806e4b10c7fa2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **18.3 KB (18263 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57b8740e2468b8f1b516ba64f8eb05533ec003b6c40429d8fb50ea89f64693e1`
+-	Image ID: `sha256:aa30bedc4a095cac604bbc14f72e89e61cf7fd4d2828b310c7a2d1d6192e4dcc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e2a704fc77439bd319ceaffb12d90fb40805c57ba3cced8cb4c88b3b0f0fa2ea`  
-		Last Modified: Thu, 11 Jun 2026 03:22:05 GMT  
+	-	`sha256:833808440bc35f92b33064f5ee4c84077948d9845de253c82702d751a837a36e`  
+		Last Modified: Wed, 24 Jun 2026 03:23:19 GMT  
 		Size: 18.3 KB (18263 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13379,90 +13379,90 @@ $ docker pull haxe@sha256:331f85fa4b85632ed02da785477bb08caec2b8b5fea8936d3d858b
 ### `haxe:4.3.7-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:30f81a51f98f53f66ae7bcebce873bbf437a6469f2d668f0dde68ece37e22d40
+$ docker pull haxe@sha256:950c23210f7198f7a721cce43f28978005178dde6cf581c5a9507fc3049c0b69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.6 MB (138591399 bytes)**  
+-	Total Size: **138.6 MB (138584644 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87da006b8c42b3d91a726d4c7633dc47369c9a240fd1ec6b64dd75c153d1128a`
+-	Image ID: `sha256:fa3ce9815e2242d1252ea6da53e4c661df8517a465d5d237a6fb0ec8a587bf98`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:43:46 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:44:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:38 GMT
+# Wed, 24 Jun 2026 03:17:48 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:16:38 GMT
+# Wed, 24 Jun 2026 03:17:48 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:38 GMT
+# Wed, 24 Jun 2026 03:17:48 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:17:53 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:17:53 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 ENV HAXE_VERSION=4.3.7
-# Thu, 11 Jun 2026 03:17:53 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:49 GMT
+# Wed, 24 Jun 2026 03:22:56 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:49 GMT
+# Wed, 24 Jun 2026 03:22:56 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:7c21e59e753cb91625909251110d6e4cc4a5411b4b7b37f74a62e56b927b7f1e`  
-		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
-		Size: 52.3 MB (52264114 bytes)  
+	-	`sha256:35157acdff35db21da73141f382d0dca0f6bc6d183c3a816d283fe39f471e539`  
+		Last Modified: Wed, 24 Jun 2026 00:27:56 GMT  
+		Size: 52.3 MB (52257219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8698eac281c2783fff44c0d5a2c381eeb273791e12f4dc8b407db26260bc3b85`  
-		Last Modified: Thu, 11 Jun 2026 00:43:55 GMT  
-		Size: 15.8 MB (15774833 bytes)  
+	-	`sha256:daf305d6ad7bad47ee0696c3db8b8fed8e9c2a42c53b57d047f8ab32f5d9b546`  
+		Last Modified: Wed, 24 Jun 2026 01:44:59 GMT  
+		Size: 15.8 MB (15774954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddd4791f1a451400cf59328cbd4f4f9bed438b89f7103b59dc50338fd2ac9293`  
-		Last Modified: Thu, 11 Jun 2026 02:24:59 GMT  
-		Size: 54.9 MB (54879555 bytes)  
+	-	`sha256:c95f37219bba62c0b4908476dc3cf7f0f98f1c87e8908c188797b1dc1f610c77`  
+		Last Modified: Wed, 24 Jun 2026 02:35:29 GMT  
+		Size: 54.9 MB (54879567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:baacce2a7964588b50482902ae4ed384b6fc4cc336f9770060e1eee928f3e5c7`  
-		Last Modified: Thu, 11 Jun 2026 03:21:55 GMT  
-		Size: 1.1 MB (1145563 bytes)  
+	-	`sha256:ea3b30df714c23811007df14174c6f5d17a98033fc8171b07b741c9ababe2ad0`  
+		Last Modified: Wed, 24 Jun 2026 03:23:02 GMT  
+		Size: 1.1 MB (1145553 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d421cb4ba3b57ec019bdaa2b38bca44bb46ce9730790a4cb31ef82e9137c607`  
-		Last Modified: Thu, 11 Jun 2026 03:21:55 GMT  
-		Size: 1.5 MB (1453630 bytes)  
+	-	`sha256:577eec45460e0345e0a7a4185876b924f0cddb8fa97e2eea2a09f07a082f84e1`  
+		Last Modified: Wed, 24 Jun 2026 03:23:02 GMT  
+		Size: 1.5 MB (1453606 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95a186b459e403df9757ef8a54bb3da1325c6f6b754101626edd28004d023d1e`  
-		Last Modified: Thu, 11 Jun 2026 03:21:56 GMT  
-		Size: 13.1 MB (13073704 bytes)  
+	-	`sha256:36b8defb24b2d4fc94128de44102f6be6bdcb84e67e0e17ff9ac5013e791cc6a`  
+		Last Modified: Wed, 24 Jun 2026 03:23:02 GMT  
+		Size: 13.1 MB (13073745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.7-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:021f33d6c95fdb0832ebf19204a0f7a9950f4179e2466ca052281e117d6adc06
+$ docker pull haxe@sha256:bff65f3f0bba3a275ed7b28c71386a48dc3441747cc942916153f30ef524c683
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.4 KB (18373 bytes)**  
+-	Total Size: **18.4 KB (18372 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:407ee91345609c3a702b6e9b85a36547496be3a6dc18422107c0f917ffacbcc9`
+-	Image ID: `sha256:0b0e3a512a358c7caa8f2160305c79fd8d89f6107d631d05163b2f5d31dc7e29`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:12a11fff8397c92ee8ad9992996bef04aca95207c203e59b53f5ff0283a41035`  
-		Last Modified: Thu, 11 Jun 2026 03:21:55 GMT  
-		Size: 18.4 KB (18373 bytes)  
+	-	`sha256:ba3aa11acbd916a14276d24be2074adadcfed8cd9003d2a187d5b0392cb0f935`  
+		Last Modified: Wed, 24 Jun 2026 03:23:01 GMT  
+		Size: 18.4 KB (18372 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.3.7-trixie`
 
 ```console
-$ docker pull haxe@sha256:8b98e17f0c9062c0aeefb3b86fd10ceea2a182a8e133c8cceb3a33e3a19832f6
+$ docker pull haxe@sha256:4f02d35e9f5cce18c3210e360f9f06ed41be2e8534973ed21ee531c7588690f7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13477,83 +13477,83 @@ $ docker pull haxe@sha256:8b98e17f0c9062c0aeefb3b86fd10ceea2a182a8e133c8cceb3a33
 ### `haxe:4.3.7-trixie` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:c43c934eb5267b759561428d41782c2b9f2a90079ac99401cb9114765b12c683
+$ docker pull haxe@sha256:7904130a8ccae528e2d96affeb3c088e857a219ea84a4f6b0563b93371225e14
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.3 MB (165319760 bytes)**  
+-	Total Size: **165.3 MB (165312858 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad037e080a6448f8d065d158716b23a103b1917a077e190c6891ba8942f04b85`
+-	Image ID: `sha256:958a6ad44224fafbabbb3008500fbea33440e00ed28177a0ef1eb47ee30fe8d6`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:42:40 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:41:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:24:44 GMT
+# Wed, 24 Jun 2026 02:28:40 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:11:45 GMT
+# Wed, 24 Jun 2026 03:17:51 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:11:45 GMT
+# Wed, 24 Jun 2026 03:17:51 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:11:45 GMT
+# Wed, 24 Jun 2026 03:17:51 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:13:03 GMT
+# Wed, 24 Jun 2026 03:19:05 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:13:03 GMT
+# Wed, 24 Jun 2026 03:19:05 GMT
 ENV HAXE_VERSION=4.3.7
-# Mon, 22 Jun 2026 20:13:03 GMT
+# Wed, 24 Jun 2026 03:19:05 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 20:16:38 GMT
+# Wed, 24 Jun 2026 03:22:35 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add luv 0.5.14 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on=luv || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:16:38 GMT
+# Wed, 24 Jun 2026 03:22:35 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ef1b08ddd59d42b444e8f9c68a6cebbed70636aed0c242fdccb0bd61b61ba26b`  
-		Last Modified: Wed, 10 Jun 2026 23:40:27 GMT  
-		Size: 49.3 MB (49317121 bytes)  
+	-	`sha256:aa3e9ef32f73c30e8b065800ee66429992d3bfea6a1fb8224afdd878ab5b994f`  
+		Last Modified: Wed, 24 Jun 2026 00:28:33 GMT  
+		Size: 49.3 MB (49317255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b365b6ff7b7e310e1b9a88f996e65b89969c7fa450492b68249d1d1c38e0676`  
-		Last Modified: Thu, 11 Jun 2026 00:42:51 GMT  
-		Size: 25.6 MB (25635173 bytes)  
+	-	`sha256:3f59c84a786323367a79d4959142649bb24b16c989bbaae7f273550b47325959`  
+		Last Modified: Wed, 24 Jun 2026 01:41:50 GMT  
+		Size: 25.6 MB (25634938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ca884014342f240be01d391b498c3ec61b2f4af2c205e7e9a0b5ac2cb2f24c4`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 67.8 MB (67784745 bytes)  
+	-	`sha256:30d0db852850114cc79598cc8ab1ec19da54691d9e3267288bb3458d7488f125`  
+		Last Modified: Wed, 24 Jun 2026 02:28:58 GMT  
+		Size: 67.8 MB (67778134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9acf2cc2bbd80c43956a7feb617f122f840c11f25186eb4e5467f6fdc7519a1b`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
-		Size: 1.5 MB (1478604 bytes)  
+	-	`sha256:0e5c811c078754cb07e6cab76023d049a8347fdd6a39454778ae6abd22a9feb1`  
+		Last Modified: Wed, 24 Jun 2026 03:22:41 GMT  
+		Size: 1.5 MB (1478605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb901720845467255cb5b5601d83eade693e8b34ff327351c8224622a7b4baac`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
-		Size: 9.4 MB (9405526 bytes)  
+	-	`sha256:cc25905a6077737e3e52aa7d6e3a3962d444dc4ac21b7b7505856aabef02455b`  
+		Last Modified: Wed, 24 Jun 2026 03:22:41 GMT  
+		Size: 9.4 MB (9405367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16ace210cbc7cc3c45b1533ae2d85fef60070146ccc058258ad552e2517c68c1`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
-		Size: 11.7 MB (11698591 bytes)  
+	-	`sha256:ed41e9b0ee635d89e9225cecdc28930e0b0dfe5c44bf16457caf6942c2663b7f`  
+		Last Modified: Wed, 24 Jun 2026 03:22:41 GMT  
+		Size: 11.7 MB (11698559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.7-trixie` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:1c321a4c46ebe5aee393ac66f45ac8d8b36efc2bc487c29b61c7fc3c82e74fb5
+$ docker pull haxe@sha256:4fce81d98a4bbd8668d159f4659857d3f1bd6f4c3d16f0b437534d44004cbeab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.1 KB (19052 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5959691c0b4b4d5386c3b97aa98edda59ca437711adea061c4bd6bcd1ef34ffb`
+-	Image ID: `sha256:3cb350a0a1840eccc057df521fc806f98afec6130418e12187c4f0cb96a6f6be`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b224822a144fe1cd388993881eb6e1cb01a194fa806f56e4d59c5649319e99e`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
+	-	`sha256:bd0cdd72b74083fc8d5123ae9c1e778699fe8c596d30f5215925c9d1157ab330`  
+		Last Modified: Wed, 24 Jun 2026 03:22:40 GMT  
 		Size: 19.1 KB (19052 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13643,84 +13643,84 @@ $ docker pull haxe@sha256:f5984625e66775fc89bee938480f152f190cc57c8c0bd6832295e9
 ### `haxe:4.3.7-trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:27797a5fc438dd5f4bee4623a39fed44721bc93874a4457006b108996c338d7a
+$ docker pull haxe@sha256:8ffd7ba24fc15d6fc8e4d11dcdc380e83047cf217a9c90c721bc967adfb8d50c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.6 MB (166555431 bytes)**  
+-	Total Size: **166.5 MB (166548292 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2b25b2e57cfce3f434f7a529af8cc2b241e6e80410403deb98133f8726fd1c3`
+-	Image ID: `sha256:c6985f832b9d9c3b21d3e1cbbc94f9210ea75d84cfd5ce39a4e3c8f8fa60100a`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:44:22 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:45:15 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:22:02 GMT
+# Wed, 24 Jun 2026 02:35:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:56:19 GMT
+# Wed, 24 Jun 2026 03:17:44 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:56:19 GMT
+# Wed, 24 Jun 2026 03:17:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:56:19 GMT
+# Wed, 24 Jun 2026 03:17:44 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:57:38 GMT
+# Wed, 24 Jun 2026 03:19:02 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:57:38 GMT
+# Wed, 24 Jun 2026 03:19:02 GMT
 ENV HAXE_VERSION=4.3.7
-# Mon, 22 Jun 2026 20:57:38 GMT
+# Wed, 24 Jun 2026 03:19:02 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 21:01:45 GMT
+# Wed, 24 Jun 2026 03:22:33 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add luv 0.5.14 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on=luv || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 21:01:45 GMT
+# Wed, 24 Jun 2026 03:22:33 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ed660e1af0f5da9e93a4c43fb29e86cb46fe69c76bcf11a3de9c57c987acab82`  
-		Last Modified: Wed, 10 Jun 2026 23:40:16 GMT  
-		Size: 49.7 MB (49678169 bytes)  
+	-	`sha256:c8a311258fd162f6aa0db134045a19154c81a2244ff9ed7620256c95ae5d6b69`  
+		Last Modified: Wed, 24 Jun 2026 00:28:21 GMT  
+		Size: 49.7 MB (49678395 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd2ab02859108b91c1c26f2badd015b5215eb066b7ef4f3a22bd1536a8debe96`  
-		Last Modified: Thu, 11 Jun 2026 00:44:32 GMT  
-		Size: 25.0 MB (25026911 bytes)  
+	-	`sha256:abe059c57e3bc40ea8086d6be574927bed6c0a000b182f3354b758009265e197`  
+		Last Modified: Wed, 24 Jun 2026 01:45:26 GMT  
+		Size: 25.0 MB (25026863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f2e427d8856f71d8d3667d1c4d9274b8aca2bd9d228387c51c211909e51263f`  
-		Last Modified: Thu, 11 Jun 2026 02:22:21 GMT  
-		Size: 67.6 MB (67599934 bytes)  
+	-	`sha256:5cf605f6b62a65326644e598c84134d29702579734c83dfca4cedf5dad7fb6d3`  
+		Last Modified: Wed, 24 Jun 2026 02:35:43 GMT  
+		Size: 67.6 MB (67592645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:377380df1e3e6c1b08aa3af9ba93dfe00a153a234c6bbc2d5a63e9e9fdd63834`  
-		Last Modified: Mon, 22 Jun 2026 21:01:51 GMT  
-		Size: 1.5 MB (1477001 bytes)  
+	-	`sha256:2036f5cecb1b7475069fa47c9d8a93ba3afa483743ca3ba32683fb35a70fcd36`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 1.5 MB (1477016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f46081d5779a696802079f4eb063a6c7cc5663193f255cd66530508d3e67018`  
-		Last Modified: Mon, 22 Jun 2026 21:01:52 GMT  
-		Size: 9.4 MB (9351018 bytes)  
+	-	`sha256:ccf124d6741bdcbe6776113bd66bf542b7ef8fc3ea7e244cdb78e2c6ca62c79d`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 9.4 MB (9351006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ada1c535373b94d5abca99a63b2967859396b8b90950e14cde610a972dff077`  
-		Last Modified: Mon, 22 Jun 2026 21:01:52 GMT  
-		Size: 13.4 MB (13422398 bytes)  
+	-	`sha256:2b668c7e7cdfe73f3316ad14ecb9c6fc32da0c2a22b900c8d37bbb9c9dbae468`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 13.4 MB (13422367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.7-trixie` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:a47518e09fa4e27fbaf12c4cc192f6272e7b026d6c0f697079462e72f50c6b4b
+$ docker pull haxe@sha256:246c56b2617c49259f05311f443260ea150c2c66a07db1f4d1b7854b69b210a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.2 KB (19197 bytes)**  
+-	Total Size: **19.2 KB (19198 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e35a281d7500a80646f9af29a2dfb443f639e687e8bb5d094757006e3b1527f6`
+-	Image ID: `sha256:0e680b09484ada294576cf618a901638f6b818e89b15a50a69aa13dd5e71d55e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d5c53edd712b128216a89d0f786b03c9e791528e8a9603adc6a729afde5b1691`  
-		Last Modified: Mon, 22 Jun 2026 21:01:51 GMT  
-		Size: 19.2 KB (19197 bytes)  
+	-	`sha256:3281151bc4ec2e30c43a398ff87a105ae11ed9b9efbb6c31aa50ba1e364b8230`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 19.2 KB (19198 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.3.7-windowsservercore`
@@ -14313,7 +14313,7 @@ CMD ["haxe"]
 ## `haxe:5.0`
 
 ```console
-$ docker pull haxe@sha256:ae27b51cda21660b5e61f72991d812058f537763eb68ca8f77f8259508746a21
+$ docker pull haxe@sha256:dd9428ae6c9add1a6ed7a7ffd536203360904692739e622451b39556825f5dba
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14330,83 +14330,83 @@ $ docker pull haxe@sha256:ae27b51cda21660b5e61f72991d812058f537763eb68ca8f77f825
 ### `haxe:5.0` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:6d17633fcda196abb026a170016585e8a97f4e6ee6f8f148b6580f005b9c31d2
+$ docker pull haxe@sha256:e97298b22094471b8b167b28887af8a0c216735d14c339de4c932ac74b4d093b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.9 MB (164864207 bytes)**  
+-	Total Size: **164.9 MB (164857039 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c503ad1714e16c335b3a8a30558f21693574ac633e871e58886dcdefbf4fbb66`
+-	Image ID: `sha256:022fc930e4d6dc4a41f6a6272968c8937cfb770eb4d050e81aa5790a3e032808`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:42:40 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:41:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:24:44 GMT
+# Wed, 24 Jun 2026 02:28:40 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:11:44 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:11:44 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:11:44 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:13:12 GMT
+# Wed, 24 Jun 2026 03:19:27 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:13:12 GMT
+# Wed, 24 Jun 2026 03:19:27 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Mon, 22 Jun 2026 20:13:12 GMT
+# Wed, 24 Jun 2026 03:19:27 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 20:16:30 GMT
+# Wed, 24 Jun 2026 03:22:45 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:16:30 GMT
+# Wed, 24 Jun 2026 03:22:45 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ef1b08ddd59d42b444e8f9c68a6cebbed70636aed0c242fdccb0bd61b61ba26b`  
-		Last Modified: Wed, 10 Jun 2026 23:40:27 GMT  
-		Size: 49.3 MB (49317121 bytes)  
+	-	`sha256:aa3e9ef32f73c30e8b065800ee66429992d3bfea6a1fb8224afdd878ab5b994f`  
+		Last Modified: Wed, 24 Jun 2026 00:28:33 GMT  
+		Size: 49.3 MB (49317255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b365b6ff7b7e310e1b9a88f996e65b89969c7fa450492b68249d1d1c38e0676`  
-		Last Modified: Thu, 11 Jun 2026 00:42:51 GMT  
-		Size: 25.6 MB (25635173 bytes)  
+	-	`sha256:3f59c84a786323367a79d4959142649bb24b16c989bbaae7f273550b47325959`  
+		Last Modified: Wed, 24 Jun 2026 01:41:50 GMT  
+		Size: 25.6 MB (25634938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ca884014342f240be01d391b498c3ec61b2f4af2c205e7e9a0b5ac2cb2f24c4`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 67.8 MB (67784745 bytes)  
+	-	`sha256:30d0db852850114cc79598cc8ab1ec19da54691d9e3267288bb3458d7488f125`  
+		Last Modified: Wed, 24 Jun 2026 02:28:58 GMT  
+		Size: 67.8 MB (67778134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02c21eb9dae4b70093ef9e10ec0e4ba05359c6345b59236ba8cfa898374c5048`  
-		Last Modified: Mon, 22 Jun 2026 20:16:36 GMT  
-		Size: 1.5 MB (1478611 bytes)  
+	-	`sha256:08a609cf6304945cd9e7395a8a0fb417f55e1143898aa0a8b4a81f92b03e0575`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
+		Size: 1.5 MB (1478608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c3d45bda203dd6c7e99355225cd9c77aa0278515474c01ac5de1c9daeae9406`  
-		Last Modified: Mon, 22 Jun 2026 20:16:36 GMT  
-		Size: 9.4 MB (9405916 bytes)  
+	-	`sha256:3a5e6b01db73e8b991a5ddbac751a062175cd7e70497636d0e197eb2a382b736`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
+		Size: 9.4 MB (9405671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8586f1f03621fa06892b82edef53215d10d576f05fad18da33d8e5d7e4d379d9`  
-		Last Modified: Mon, 22 Jun 2026 20:16:36 GMT  
-		Size: 11.2 MB (11242641 bytes)  
+	-	`sha256:730ecdde659998e68142191a0e399da86682e0f38ecb6069b831fa9f1f5d34a6`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
+		Size: 11.2 MB (11242433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:2c45d819f80dd8f88bb50cd97ad0efb9b432ee643dab1392fbb3da0c4bf12860
+$ docker pull haxe@sha256:daaa19dd4cdbecb22eaa36fb4f15f226da5e4ce70d7ea25e934b04b7cc5fac31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.2 KB (19243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11b2763bbb916d3d0f4e0046115459344549829e42cd9cb07bc55f55d66cae10`
+-	Image ID: `sha256:6cb7dd6b50768359ed30faa7bda7c179b40e4f0f3c9e450d780193ab136df994`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:caac35bc56d173762e097bc410791445b1d6e0786a352cbcea519213f4567d87`  
-		Last Modified: Mon, 22 Jun 2026 20:16:35 GMT  
+	-	`sha256:976e0602c631d58f94ca3aa02416ff770f84262127667095faa8d2c254e4c05b`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
 		Size: 19.2 KB (19243 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14496,83 +14496,83 @@ $ docker pull haxe@sha256:3b124d1fd523811fc6f681854f9c3c81ad220da48bb666da76465f
 ### `haxe:5.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:1a903c6bc7442f60dc1c6c67176c989375faca5490ebce769af071252f00cd2d
+$ docker pull haxe@sha256:a258d1966286b76ed774410cc545f6ed5bb5a166dc41a1ef8e0530bd789805a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.9 MB (165902232 bytes)**  
+-	Total Size: **165.9 MB (165895399 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1293a0e549b0974f6fc6d7c1fa77e6d5a9abfa83937807e8a3766e4544d2780`
+-	Image ID: `sha256:6648623b21790ff99d37bf3663f5c306d673a45d6796e29d83c87bd7c3a7b3c1`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:44:22 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:45:15 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:22:02 GMT
+# Wed, 24 Jun 2026 02:35:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:56:44 GMT
+# Wed, 24 Jun 2026 03:17:45 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:56:44 GMT
+# Wed, 24 Jun 2026 03:17:45 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:56:44 GMT
+# Wed, 24 Jun 2026 03:17:45 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:58:03 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:58:03 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Mon, 22 Jun 2026 20:58:03 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 21:01:36 GMT
+# Wed, 24 Jun 2026 03:22:37 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 21:01:36 GMT
+# Wed, 24 Jun 2026 03:22:37 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ed660e1af0f5da9e93a4c43fb29e86cb46fe69c76bcf11a3de9c57c987acab82`  
-		Last Modified: Wed, 10 Jun 2026 23:40:16 GMT  
-		Size: 49.7 MB (49678169 bytes)  
+	-	`sha256:c8a311258fd162f6aa0db134045a19154c81a2244ff9ed7620256c95ae5d6b69`  
+		Last Modified: Wed, 24 Jun 2026 00:28:21 GMT  
+		Size: 49.7 MB (49678395 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd2ab02859108b91c1c26f2badd015b5215eb066b7ef4f3a22bd1536a8debe96`  
-		Last Modified: Thu, 11 Jun 2026 00:44:32 GMT  
-		Size: 25.0 MB (25026911 bytes)  
+	-	`sha256:abe059c57e3bc40ea8086d6be574927bed6c0a000b182f3354b758009265e197`  
+		Last Modified: Wed, 24 Jun 2026 01:45:26 GMT  
+		Size: 25.0 MB (25026863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f2e427d8856f71d8d3667d1c4d9274b8aca2bd9d228387c51c211909e51263f`  
-		Last Modified: Thu, 11 Jun 2026 02:22:21 GMT  
-		Size: 67.6 MB (67599934 bytes)  
+	-	`sha256:5cf605f6b62a65326644e598c84134d29702579734c83dfca4cedf5dad7fb6d3`  
+		Last Modified: Wed, 24 Jun 2026 02:35:43 GMT  
+		Size: 67.6 MB (67592645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bf31bf089ec3e0638d3c067287be49c423d19bb536218f9f9ac8fb63a170dd5`  
-		Last Modified: Mon, 22 Jun 2026 21:01:43 GMT  
-		Size: 1.5 MB (1476981 bytes)  
+	-	`sha256:6ce6b5a6c23bffa7eedd0e3fcefafe251b063fb56f1026cc53f0d62ed005f7b8`  
+		Last Modified: Wed, 24 Jun 2026 03:22:43 GMT  
+		Size: 1.5 MB (1477014 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96e84225d6ad20030c913bdb061cefb8e06b67925e978622f8b4315737c9a65b`  
-		Last Modified: Mon, 22 Jun 2026 21:01:43 GMT  
-		Size: 9.4 MB (9350936 bytes)  
+	-	`sha256:4d896a39ca835c39c412426cf967ed645a66804aaabd1402bafb63a0f385d251`  
+		Last Modified: Wed, 24 Jun 2026 03:22:44 GMT  
+		Size: 9.4 MB (9351038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e5611bc4d10ad9a09d930290d5f37b0c081827c58a0b9a87c5310cbc4093e9c`  
-		Last Modified: Mon, 22 Jun 2026 21:01:43 GMT  
-		Size: 12.8 MB (12769301 bytes)  
+	-	`sha256:6ce80d45c40e364f7c010ba60cc748c124210bc839bfcfa2352895571461dd20`  
+		Last Modified: Wed, 24 Jun 2026 03:22:43 GMT  
+		Size: 12.8 MB (12769444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d0160ee5863c1ac02b42dd157ea4f112f4519aaea3ba790dac03b0f90d7c1fa0
+$ docker pull haxe@sha256:919113ba119b93e1de8411c0fa3845855255a737f0bc936f02885be524c2cfd8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.4 KB (19401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3449a1f069f2c13f82efbb9079aeeb1b02a0e927a388c945644a3ffb5ed92fff`
+-	Image ID: `sha256:e1039ab6a4a9a693f10c548167ab1119c43de54f7b7d7a8835635679fb72f57e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:05f82ea7cff73f852cb491c056c3a2ad24fbaf70ecf27ca7e8a5df5036134589`  
-		Last Modified: Mon, 22 Jun 2026 21:01:42 GMT  
+	-	`sha256:9e37b6cbeaa5f8790648aa429735f289874b1b035fdf5530d3ad7521e3512603`  
+		Last Modified: Wed, 24 Jun 2026 03:22:43 GMT  
 		Size: 19.4 KB (19401 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15523,7 +15523,7 @@ $ docker pull haxe@sha256:0b86edee9c8ba2be670ac78ebcbcf0fe9d7bae9491695ef02dd289
 ## `haxe:5.0-bookworm`
 
 ```console
-$ docker pull haxe@sha256:00903c60f1405fa7ea9ce97f46c33a1c5f570d437886ded42a6a92b827e7eb05
+$ docker pull haxe@sha256:7d42fa2a30620f781a775945c895d156015fbc844385791017c000c48f2f7686
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15538,84 +15538,84 @@ $ docker pull haxe@sha256:00903c60f1405fa7ea9ce97f46c33a1c5f570d437886ded42a6a92
 ### `haxe:5.0-bookworm` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:3f4cab29df65c4c55a3b9e6d96440678a346a0fb23b4645fe456666f94151308
+$ docker pull haxe@sha256:441430f8ea863f26fddd5185d5f3dd1f20576c483e627c7f220a196b129c1a9f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **398.2 MB (398173373 bytes)**  
+-	Total Size: **398.2 MB (398173347 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d886cc56c733061b1aa707b422191946551fa33b5afabd879dccd114f1fe1cd`
+-	Image ID: `sha256:fc1fdcf56717b29d9141e830abe35b8e401c5cf6f3edc2621da2727d3dca737d`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:42:10 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:41:22 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:26 GMT
+# Wed, 24 Jun 2026 02:28:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:50 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:16:50 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto7 		libmbedtls14 		libmbedx509-1 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:50 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:14 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:14 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Thu, 11 Jun 2026 03:18:14 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:37 GMT
+# Wed, 24 Jun 2026 03:22:26 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:37 GMT
+# Wed, 24 Jun 2026 03:22:26 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01cedcff86f879d042805360ecba268802bec3d8201484ff3ec54f4250a2d3b7`  
-		Last Modified: Wed, 10 Jun 2026 23:39:39 GMT  
-		Size: 48.5 MB (48502042 bytes)  
+	-	`sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b`  
+		Last Modified: Wed, 24 Jun 2026 00:27:40 GMT  
+		Size: 48.5 MB (48502210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4da31edd9efdb812e66d13819903973ea6b188d2e7358547676d33d1e3f706f2`  
-		Last Modified: Thu, 11 Jun 2026 00:42:23 GMT  
-		Size: 24.0 MB (24044000 bytes)  
+	-	`sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff`  
+		Last Modified: Wed, 24 Jun 2026 01:41:33 GMT  
+		Size: 24.0 MB (24044046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fbaeeb62b9d03a1204b85c3b257aa3e1ce2c4ccfeea479fb2e659211019c29d`  
-		Last Modified: Thu, 11 Jun 2026 02:24:43 GMT  
-		Size: 64.4 MB (64404116 bytes)  
+	-	`sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a`  
+		Last Modified: Wed, 24 Jun 2026 02:28:33 GMT  
+		Size: 64.4 MB (64404017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1aec4993d6b6368087381dcb5ddd49ad71237fc78c13752fd1c406d6474f3e6e`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 1.3 MB (1261526 bytes)  
+	-	`sha256:8a22241ce7a73e723859db66ae141157d76eac7628959b5074069bb81595b5e5`  
+		Last Modified: Wed, 24 Jun 2026 03:22:57 GMT  
+		Size: 1.3 MB (1261614 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ebab6ba72bbf22886f1efaac7b00ee57288349a95763e84c55217198f6831af`  
-		Last Modified: Thu, 11 Jun 2026 03:22:09 GMT  
-		Size: 1.4 MB (1385341 bytes)  
+	-	`sha256:b0a275021ef98198ccabe4220d47ee56f26a40374fdb33afa45e1c48c062ce0b`  
+		Last Modified: Wed, 24 Jun 2026 03:22:57 GMT  
+		Size: 1.4 MB (1385183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b2f177236a9e8db73da5f43d35bef1bc82a345b79be0884aa50d8fbb2ad52a1`  
-		Last Modified: Thu, 11 Jun 2026 03:22:14 GMT  
-		Size: 258.6 MB (258576348 bytes)  
+	-	`sha256:1df2928ae1d9f3b2df80191ec46db478cafafb4ef7c15416946e67059196d7ea`  
+		Last Modified: Wed, 24 Jun 2026 03:23:02 GMT  
+		Size: 258.6 MB (258576277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:2224448f7ab8a7e1866a1e7d32a483b8714d08bcf4250356e17b936a4de97853
+$ docker pull haxe@sha256:5050ff947b82e4393cec69f105439d93db4760c664e8541ea99257753721bed0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.5 KB (19542 bytes)**  
+-	Total Size: **18.6 KB (18650 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11c9930fec29573c7e32288cc3041ebf976db59fa4249dad77a030e46521fcac`
+-	Image ID: `sha256:d311a45628f5862a57cf9929b390bbed2bfd88db2665fbdb83a6b2d836f9ca14`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:777b785763d06a3909b1c35704dc90e88dbf0f52f45fddd3120c2c4fc4780c47`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 19.5 KB (19542 bytes)  
+	-	`sha256:139e1899594738d31a300cb3bd0f38efa34763f6f0cf556b17d36b7381cadfda`  
+		Last Modified: Wed, 24 Jun 2026 03:22:56 GMT  
+		Size: 18.6 KB (18650 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:5.0-bookworm` - linux; arm variant v7
@@ -15704,90 +15704,90 @@ $ docker pull haxe@sha256:3106e13106a5fb84707f2ed0254898a056dd70479af3742eda1f84
 ### `haxe:5.0-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:aa97acf8cb3d3ea8f535eb809855b0d1bc7c105f2c5da1d42dffaea203b8c371
+$ docker pull haxe@sha256:16de51bce77eaa8a309607affaf3656d1f5e1ea8d3183abd9e55e31957b99d1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **401.0 MB (400983015 bytes)**  
+-	Total Size: **401.0 MB (400982983 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a037e4b0579e875e59cefd5247b4b1f3c0f5b49f4dcfe1195f7ea02014460999`
+-	Image ID: `sha256:bc1675262586aca936e50fd3a3880b1b6583157e61a2d783179c0947ef7f7851`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:43:47 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:44:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:58 GMT
+# Wed, 24 Jun 2026 03:17:53 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:16:58 GMT
+# Wed, 24 Jun 2026 03:17:53 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto7 		libmbedtls14 		libmbedx509-1 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:58 GMT
+# Wed, 24 Jun 2026 03:17:53 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:10 GMT
+# Wed, 24 Jun 2026 03:19:07 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:10 GMT
+# Wed, 24 Jun 2026 03:19:07 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Thu, 11 Jun 2026 03:18:10 GMT
+# Wed, 24 Jun 2026 03:19:07 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:33 GMT
+# Wed, 24 Jun 2026 03:23:54 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:33 GMT
+# Wed, 24 Jun 2026 03:23:54 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:c847f328095fb083f4a22895b90fe4226efa6458ac57362b64b6e5d99da9e4a3`  
-		Last Modified: Wed, 10 Jun 2026 23:39:28 GMT  
-		Size: 48.4 MB (48389016 bytes)  
+	-	`sha256:0fb1189398e2e4b474d43aac6502510d0da0318e70137a377c21087f198814db`  
+		Last Modified: Wed, 24 Jun 2026 00:27:19 GMT  
+		Size: 48.4 MB (48389201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f511b4c80a6e453785fbcd573c1bf1cb986c4e8d43ed4500ad1ac9a4719762b`  
-		Last Modified: Thu, 11 Jun 2026 00:43:56 GMT  
-		Size: 23.6 MB (23613296 bytes)  
+	-	`sha256:03ebca214f1a4b66acfdb0bd20aa3ee139d1747885ef4b0f3d07aa2a68459230`  
+		Last Modified: Wed, 24 Jun 2026 01:44:48 GMT  
+		Size: 23.6 MB (23613316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b715a6712db064e97302c819acd7a39c0c72f8a315ff83c6ad1c27bfa1b275e`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 64.5 MB (64487878 bytes)  
+	-	`sha256:533bb0e918720911be6cb7a1a5ba9ad0e1a308fcbf24961a23aba0cd220df6cf`  
+		Last Modified: Wed, 24 Jun 2026 02:35:28 GMT  
+		Size: 64.5 MB (64487706 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c377900d740020235dbc6b9c54454c50007aaced2c51ceb3854601c093d0126b`  
-		Last Modified: Thu, 11 Jun 2026 03:22:09 GMT  
-		Size: 1.3 MB (1257937 bytes)  
+	-	`sha256:1db0e2d9a0e02f8c7f06957e571a70a30dcc6ee077c0c188e93fc7ed1f207fed`  
+		Last Modified: Wed, 24 Jun 2026 03:24:30 GMT  
+		Size: 1.3 MB (1257959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e25257d1f520b107b557c07867ddef465eef087ae511648ad78af220bbf9f969`  
-		Last Modified: Thu, 11 Jun 2026 03:22:09 GMT  
-		Size: 1.4 MB (1419938 bytes)  
+	-	`sha256:5511d3c8425ee69ddd83e79769574d664179c8cfa5c6ab3394ce99e531ea04b7`  
+		Last Modified: Wed, 24 Jun 2026 03:24:30 GMT  
+		Size: 1.4 MB (1419999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70be49f5437b61497629fcfbc6a338ab45f5c32918360a01724b320c9cf6f572`  
-		Last Modified: Thu, 11 Jun 2026 03:22:16 GMT  
-		Size: 261.8 MB (261814950 bytes)  
+	-	`sha256:3a23a67912a816ae40a06f9c8dea390e22e6aeec8c506795eb80dc0df4aded77`  
+		Last Modified: Wed, 24 Jun 2026 03:24:35 GMT  
+		Size: 261.8 MB (261814802 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:986fa0f4585f7e03f242701b34cdab21ca18d1833aec764d7cdc18265817c000
+$ docker pull haxe@sha256:6043b8fe7b34d3539d8943f20f2c97809cdb38f0d2e8d7c57dac18675dfa528d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.7 KB (19700 bytes)**  
+-	Total Size: **18.8 KB (18770 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a0516fdfb18d5c91a87e3216115b576e7f3f30544563c1d892535a381ed4c5c`
+-	Image ID: `sha256:0ce4cf7b8e8d8a02fcff61b11177068a42d667beb9bbca07afafb42dc28285dd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ecaf32048024d42f1b1cb4f87511c9fd78c1d9c93337cd4503792a1882a33c14`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 19.7 KB (19700 bytes)  
+	-	`sha256:bf79d22e17d411d737d7f96ade6312637e64b565cb0dca9b3027be2898290e60`  
+		Last Modified: Wed, 24 Jun 2026 03:24:29 GMT  
+		Size: 18.8 KB (18770 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:5.0-bullseye`
 
 ```console
-$ docker pull haxe@sha256:a6a32962b50736737054e36a69fc4ebc947317ef2134e7311928aeb9468c1c85
+$ docker pull haxe@sha256:f581e6eb54dfa8f72bf6f74518ebf40b172d224772b5494c8ab2139359f9308e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15802,83 +15802,83 @@ $ docker pull haxe@sha256:a6a32962b50736737054e36a69fc4ebc947317ef2134e7311928ae
 ### `haxe:5.0-bullseye` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:14dbd4311c8703dc7ee29ddcd3ca720b4aed131c51d0d99b0ce2c2065323c9b6
+$ docker pull haxe@sha256:8d52bc5efc7c5a4212475bc59c44b105f240ec791dc2899553453f3d5ec217b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.9 MB (137861401 bytes)**  
+-	Total Size: **137.9 MB (137862513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73e9fb2ff7d2f56c574b6b20d575ca1783ec223f12d902251e680ef976b6666f`
+-	Image ID: `sha256:5bdf1ae1a780b03f1ccf4969329c52e67affbf77e869411b312c51f43e5dc7ab`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:42:19 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:41:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:36 GMT
+# Wed, 24 Jun 2026 02:28:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:58 GMT
+# Wed, 24 Jun 2026 03:18:21 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:16:58 GMT
+# Wed, 24 Jun 2026 03:18:21 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:58 GMT
+# Wed, 24 Jun 2026 03:18:21 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:45 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:45 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:45 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:40 GMT
+# Wed, 24 Jun 2026 03:23:18 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:40 GMT
+# Wed, 24 Jun 2026 03:23:18 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:af48a3e7696e07f88a02f9674e541901b65eadb5cf0f62e566b1d895099a1e9e`  
-		Last Modified: Wed, 10 Jun 2026 23:40:09 GMT  
-		Size: 53.8 MB (53771769 bytes)  
+	-	`sha256:c67cddb4b9fcdeefaf829aa012f0ccaefcfa862a558064326104b95b8849cd81`  
+		Last Modified: Wed, 24 Jun 2026 00:28:17 GMT  
+		Size: 53.8 MB (53773009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53f53a3a71a19cca6d8312e9c60a5428b23742024a0057b1f0e46517df6ae4a9`  
-		Last Modified: Thu, 11 Jun 2026 00:42:31 GMT  
-		Size: 15.8 MB (15790824 bytes)  
+	-	`sha256:816526a6d4acf81b392ec5a1e6d8d402fbc4bf0460323c5ad45b376b247ca6fc`  
+		Last Modified: Wed, 24 Jun 2026 01:41:36 GMT  
+		Size: 15.8 MB (15790805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3db6c46730caf21fd1b15e0e84732744cb5a66e6931cf2c3753965fc32257fc`  
-		Last Modified: Thu, 11 Jun 2026 02:24:52 GMT  
-		Size: 54.7 MB (54743048 bytes)  
+	-	`sha256:2d3cf50c221acb61e259a7ecd20caf425597eca7d93e329dde2640ca7ec8aaf4`  
+		Last Modified: Wed, 24 Jun 2026 02:28:36 GMT  
+		Size: 54.7 MB (54742897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f96dd014e7e3c54c12945747492b01f50599b3eff0238e1da2b123b43b81a1d`  
-		Last Modified: Thu, 11 Jun 2026 03:21:45 GMT  
-		Size: 1.2 MB (1155243 bytes)  
+	-	`sha256:4902c21259b497f6d212bfa45ce0b6da9777429e11f4c3bb6d2263bfe2091713`  
+		Last Modified: Wed, 24 Jun 2026 03:23:23 GMT  
+		Size: 1.2 MB (1155272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c44ca9fe8bc804de7a854fb505779bc8fbe837d5c2d6b1cb21dfd9b3ed051ab`  
-		Last Modified: Thu, 11 Jun 2026 03:21:45 GMT  
-		Size: 1.5 MB (1462163 bytes)  
+	-	`sha256:4ae0b03c23e8bb2d0a628c3790ea06d6ce25ef0f2af640b1820eeeeba06365f3`  
+		Last Modified: Wed, 24 Jun 2026 03:23:23 GMT  
+		Size: 1.5 MB (1462177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ae6977fa768e88fbbb786ee16d23678c734d43bcb814053e3e06f705825df2`  
-		Last Modified: Thu, 11 Jun 2026 03:21:45 GMT  
-		Size: 10.9 MB (10938354 bytes)  
+	-	`sha256:f104e5091e77e159986eaa3b93ebb574cbac2938f72cdd2a561c2142ab4d9e5f`  
+		Last Modified: Wed, 24 Jun 2026 03:23:23 GMT  
+		Size: 10.9 MB (10938353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d9972f5eea946149b8a8f4f160a3825cd342a636dbae22ffb599a44f9a36ac54
+$ docker pull haxe@sha256:fe3f74b579cea721cd1929f2d68d2d6cd03fffce8ae87552ff5de5719baa85bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **18.6 KB (18636 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10428d872e992437b49149d7f5a3fa28410aff8f09cfab64799d5fdac82236a2`
+-	Image ID: `sha256:9564451580476637e7c08bb35d3823f98079802f252be22b62a0a07eb6ec21fd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c113d2d05605ebdb546793cf21c73e2c77b8cec2c67e936b2403f48cc8a07f6b`  
-		Last Modified: Thu, 11 Jun 2026 03:21:45 GMT  
+	-	`sha256:58552a642d65cf28f4d91bb4aafef418f2f36f2e22762f014c7aede908dfd187`  
+		Last Modified: Wed, 24 Jun 2026 03:23:23 GMT  
 		Size: 18.6 KB (18636 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15968,90 +15968,90 @@ $ docker pull haxe@sha256:74da5ea4496a5378c845c0e39d0b6315f478e65d646f4a42dd0ef6
 ### `haxe:5.0-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f10ff622ded6aa22dbde806b4f41ecb2d723b3cecfd157e86865bd3dc2c3127d
+$ docker pull haxe@sha256:16161627c5ff4fd4174c5eef0eb816e09f1e039c2b778fcd3b9d07c4722993c0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.0 MB (137997545 bytes)**  
+-	Total Size: **138.0 MB (137990759 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:500fda52d6b5d01a35a766b3ae3bbec5ecaaa229303bfcfee93724a18768e1ce`
+-	Image ID: `sha256:a4829c44f4e925c2afbde5e92f07de58b255ff96ec1304c734282628d66cc8b6`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:43:46 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:44:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:02 GMT
+# Wed, 24 Jun 2026 03:18:00 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:02 GMT
+# Wed, 24 Jun 2026 03:18:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:02 GMT
+# Wed, 24 Jun 2026 03:18:00 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:14 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:14 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:14 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:58 GMT
+# Wed, 24 Jun 2026 03:23:02 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:58 GMT
+# Wed, 24 Jun 2026 03:23:02 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:7c21e59e753cb91625909251110d6e4cc4a5411b4b7b37f74a62e56b927b7f1e`  
-		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
-		Size: 52.3 MB (52264114 bytes)  
+	-	`sha256:35157acdff35db21da73141f382d0dca0f6bc6d183c3a816d283fe39f471e539`  
+		Last Modified: Wed, 24 Jun 2026 00:27:56 GMT  
+		Size: 52.3 MB (52257219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8698eac281c2783fff44c0d5a2c381eeb273791e12f4dc8b407db26260bc3b85`  
-		Last Modified: Thu, 11 Jun 2026 00:43:55 GMT  
-		Size: 15.8 MB (15774833 bytes)  
+	-	`sha256:daf305d6ad7bad47ee0696c3db8b8fed8e9c2a42c53b57d047f8ab32f5d9b546`  
+		Last Modified: Wed, 24 Jun 2026 01:44:59 GMT  
+		Size: 15.8 MB (15774954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddd4791f1a451400cf59328cbd4f4f9bed438b89f7103b59dc50338fd2ac9293`  
-		Last Modified: Thu, 11 Jun 2026 02:24:59 GMT  
-		Size: 54.9 MB (54879555 bytes)  
+	-	`sha256:c95f37219bba62c0b4908476dc3cf7f0f98f1c87e8908c188797b1dc1f610c77`  
+		Last Modified: Wed, 24 Jun 2026 02:35:29 GMT  
+		Size: 54.9 MB (54879567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d53f2644cf30109ed69367a7d9038ceb5b6805bce5a668c9f8229b4408d5c23`  
-		Last Modified: Thu, 11 Jun 2026 03:22:04 GMT  
-		Size: 1.1 MB (1145566 bytes)  
+	-	`sha256:f7e384c56e138d2efacea9818fc80c91bfdb144cf2450d4311868f551aa2d41c`  
+		Last Modified: Wed, 24 Jun 2026 03:23:08 GMT  
+		Size: 1.1 MB (1145535 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35e1bf0b82350364ce6e4e830faf1f2c2a2c0cde3dd5188a95106fcb399656cf`  
-		Last Modified: Thu, 11 Jun 2026 03:22:04 GMT  
-		Size: 1.5 MB (1453603 bytes)  
+	-	`sha256:8dceac09ca8431b26c8799c89dc7bad422066ad6559db7d620d21ee08051d52e`  
+		Last Modified: Wed, 24 Jun 2026 03:23:08 GMT  
+		Size: 1.5 MB (1453571 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac87b7c576c06a8743203c75b49455ce39e444ccbe228576f7343af98aa1fab8`  
-		Last Modified: Thu, 11 Jun 2026 03:22:04 GMT  
-		Size: 12.5 MB (12479874 bytes)  
+	-	`sha256:493e3ec2c2377a21f0fd2f6ee1b59bec618f1390bdd90eb295cfdc3535025715`  
+		Last Modified: Wed, 24 Jun 2026 03:23:09 GMT  
+		Size: 12.5 MB (12479913 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c814812e82e9f9cb8a14fa8cbd88bd7001c8a20db103dfbfc33eb3b770dae471
+$ docker pull haxe@sha256:14f1080118e615d205a65442fc040d1fb55d5969287d0076dbc5acf9ca60be63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **18.8 KB (18758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af9dc83e56efe213b072d1bb962a2da48f2174e2f49cd31ac6658ab6f224b733`
+-	Image ID: `sha256:2b5d9954c81d5f37305b47f6b1beda238bd9fd209993d3f2955e5b70b30fe97b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cd626e969a64d9eb0a7fa7349efb7f0e6f12957e3abd53dc75618157693efaef`  
-		Last Modified: Thu, 11 Jun 2026 03:22:04 GMT  
+	-	`sha256:3fa48fcbba4378771d6042ee66b50a45773654ba544bd14da0da881dbc6d9c6c`  
+		Last Modified: Wed, 24 Jun 2026 03:23:08 GMT  
 		Size: 18.8 KB (18758 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:5.0-trixie`
 
 ```console
-$ docker pull haxe@sha256:bfc19b6f39fdb5139bb9906eb8933138f1c89c239e7d0ea9147ceef4d7115278
+$ docker pull haxe@sha256:811068cd17c356a713a405921c180c176edeb82204f590a142f35968af8f4c24
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16066,83 +16066,83 @@ $ docker pull haxe@sha256:bfc19b6f39fdb5139bb9906eb8933138f1c89c239e7d0ea9147cee
 ### `haxe:5.0-trixie` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:6d17633fcda196abb026a170016585e8a97f4e6ee6f8f148b6580f005b9c31d2
+$ docker pull haxe@sha256:e97298b22094471b8b167b28887af8a0c216735d14c339de4c932ac74b4d093b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.9 MB (164864207 bytes)**  
+-	Total Size: **164.9 MB (164857039 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c503ad1714e16c335b3a8a30558f21693574ac633e871e58886dcdefbf4fbb66`
+-	Image ID: `sha256:022fc930e4d6dc4a41f6a6272968c8937cfb770eb4d050e81aa5790a3e032808`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:42:40 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:41:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:24:44 GMT
+# Wed, 24 Jun 2026 02:28:40 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:11:44 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:11:44 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:11:44 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:13:12 GMT
+# Wed, 24 Jun 2026 03:19:27 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:13:12 GMT
+# Wed, 24 Jun 2026 03:19:27 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Mon, 22 Jun 2026 20:13:12 GMT
+# Wed, 24 Jun 2026 03:19:27 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 20:16:30 GMT
+# Wed, 24 Jun 2026 03:22:45 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:16:30 GMT
+# Wed, 24 Jun 2026 03:22:45 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ef1b08ddd59d42b444e8f9c68a6cebbed70636aed0c242fdccb0bd61b61ba26b`  
-		Last Modified: Wed, 10 Jun 2026 23:40:27 GMT  
-		Size: 49.3 MB (49317121 bytes)  
+	-	`sha256:aa3e9ef32f73c30e8b065800ee66429992d3bfea6a1fb8224afdd878ab5b994f`  
+		Last Modified: Wed, 24 Jun 2026 00:28:33 GMT  
+		Size: 49.3 MB (49317255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b365b6ff7b7e310e1b9a88f996e65b89969c7fa450492b68249d1d1c38e0676`  
-		Last Modified: Thu, 11 Jun 2026 00:42:51 GMT  
-		Size: 25.6 MB (25635173 bytes)  
+	-	`sha256:3f59c84a786323367a79d4959142649bb24b16c989bbaae7f273550b47325959`  
+		Last Modified: Wed, 24 Jun 2026 01:41:50 GMT  
+		Size: 25.6 MB (25634938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ca884014342f240be01d391b498c3ec61b2f4af2c205e7e9a0b5ac2cb2f24c4`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 67.8 MB (67784745 bytes)  
+	-	`sha256:30d0db852850114cc79598cc8ab1ec19da54691d9e3267288bb3458d7488f125`  
+		Last Modified: Wed, 24 Jun 2026 02:28:58 GMT  
+		Size: 67.8 MB (67778134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02c21eb9dae4b70093ef9e10ec0e4ba05359c6345b59236ba8cfa898374c5048`  
-		Last Modified: Mon, 22 Jun 2026 20:16:36 GMT  
-		Size: 1.5 MB (1478611 bytes)  
+	-	`sha256:08a609cf6304945cd9e7395a8a0fb417f55e1143898aa0a8b4a81f92b03e0575`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
+		Size: 1.5 MB (1478608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c3d45bda203dd6c7e99355225cd9c77aa0278515474c01ac5de1c9daeae9406`  
-		Last Modified: Mon, 22 Jun 2026 20:16:36 GMT  
-		Size: 9.4 MB (9405916 bytes)  
+	-	`sha256:3a5e6b01db73e8b991a5ddbac751a062175cd7e70497636d0e197eb2a382b736`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
+		Size: 9.4 MB (9405671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8586f1f03621fa06892b82edef53215d10d576f05fad18da33d8e5d7e4d379d9`  
-		Last Modified: Mon, 22 Jun 2026 20:16:36 GMT  
-		Size: 11.2 MB (11242641 bytes)  
+	-	`sha256:730ecdde659998e68142191a0e399da86682e0f38ecb6069b831fa9f1f5d34a6`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
+		Size: 11.2 MB (11242433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0-trixie` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:2c45d819f80dd8f88bb50cd97ad0efb9b432ee643dab1392fbb3da0c4bf12860
+$ docker pull haxe@sha256:daaa19dd4cdbecb22eaa36fb4f15f226da5e4ce70d7ea25e934b04b7cc5fac31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.2 KB (19243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11b2763bbb916d3d0f4e0046115459344549829e42cd9cb07bc55f55d66cae10`
+-	Image ID: `sha256:6cb7dd6b50768359ed30faa7bda7c179b40e4f0f3c9e450d780193ab136df994`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:caac35bc56d173762e097bc410791445b1d6e0786a352cbcea519213f4567d87`  
-		Last Modified: Mon, 22 Jun 2026 20:16:35 GMT  
+	-	`sha256:976e0602c631d58f94ca3aa02416ff770f84262127667095faa8d2c254e4c05b`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
 		Size: 19.2 KB (19243 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16232,83 +16232,83 @@ $ docker pull haxe@sha256:3b124d1fd523811fc6f681854f9c3c81ad220da48bb666da76465f
 ### `haxe:5.0-trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:1a903c6bc7442f60dc1c6c67176c989375faca5490ebce769af071252f00cd2d
+$ docker pull haxe@sha256:a258d1966286b76ed774410cc545f6ed5bb5a166dc41a1ef8e0530bd789805a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.9 MB (165902232 bytes)**  
+-	Total Size: **165.9 MB (165895399 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1293a0e549b0974f6fc6d7c1fa77e6d5a9abfa83937807e8a3766e4544d2780`
+-	Image ID: `sha256:6648623b21790ff99d37bf3663f5c306d673a45d6796e29d83c87bd7c3a7b3c1`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:44:22 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:45:15 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:22:02 GMT
+# Wed, 24 Jun 2026 02:35:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:56:44 GMT
+# Wed, 24 Jun 2026 03:17:45 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:56:44 GMT
+# Wed, 24 Jun 2026 03:17:45 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:56:44 GMT
+# Wed, 24 Jun 2026 03:17:45 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:58:03 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:58:03 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Mon, 22 Jun 2026 20:58:03 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 21:01:36 GMT
+# Wed, 24 Jun 2026 03:22:37 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 21:01:36 GMT
+# Wed, 24 Jun 2026 03:22:37 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ed660e1af0f5da9e93a4c43fb29e86cb46fe69c76bcf11a3de9c57c987acab82`  
-		Last Modified: Wed, 10 Jun 2026 23:40:16 GMT  
-		Size: 49.7 MB (49678169 bytes)  
+	-	`sha256:c8a311258fd162f6aa0db134045a19154c81a2244ff9ed7620256c95ae5d6b69`  
+		Last Modified: Wed, 24 Jun 2026 00:28:21 GMT  
+		Size: 49.7 MB (49678395 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd2ab02859108b91c1c26f2badd015b5215eb066b7ef4f3a22bd1536a8debe96`  
-		Last Modified: Thu, 11 Jun 2026 00:44:32 GMT  
-		Size: 25.0 MB (25026911 bytes)  
+	-	`sha256:abe059c57e3bc40ea8086d6be574927bed6c0a000b182f3354b758009265e197`  
+		Last Modified: Wed, 24 Jun 2026 01:45:26 GMT  
+		Size: 25.0 MB (25026863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f2e427d8856f71d8d3667d1c4d9274b8aca2bd9d228387c51c211909e51263f`  
-		Last Modified: Thu, 11 Jun 2026 02:22:21 GMT  
-		Size: 67.6 MB (67599934 bytes)  
+	-	`sha256:5cf605f6b62a65326644e598c84134d29702579734c83dfca4cedf5dad7fb6d3`  
+		Last Modified: Wed, 24 Jun 2026 02:35:43 GMT  
+		Size: 67.6 MB (67592645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bf31bf089ec3e0638d3c067287be49c423d19bb536218f9f9ac8fb63a170dd5`  
-		Last Modified: Mon, 22 Jun 2026 21:01:43 GMT  
-		Size: 1.5 MB (1476981 bytes)  
+	-	`sha256:6ce6b5a6c23bffa7eedd0e3fcefafe251b063fb56f1026cc53f0d62ed005f7b8`  
+		Last Modified: Wed, 24 Jun 2026 03:22:43 GMT  
+		Size: 1.5 MB (1477014 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96e84225d6ad20030c913bdb061cefb8e06b67925e978622f8b4315737c9a65b`  
-		Last Modified: Mon, 22 Jun 2026 21:01:43 GMT  
-		Size: 9.4 MB (9350936 bytes)  
+	-	`sha256:4d896a39ca835c39c412426cf967ed645a66804aaabd1402bafb63a0f385d251`  
+		Last Modified: Wed, 24 Jun 2026 03:22:44 GMT  
+		Size: 9.4 MB (9351038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e5611bc4d10ad9a09d930290d5f37b0c081827c58a0b9a87c5310cbc4093e9c`  
-		Last Modified: Mon, 22 Jun 2026 21:01:43 GMT  
-		Size: 12.8 MB (12769301 bytes)  
+	-	`sha256:6ce80d45c40e364f7c010ba60cc748c124210bc839bfcfa2352895571461dd20`  
+		Last Modified: Wed, 24 Jun 2026 03:22:43 GMT  
+		Size: 12.8 MB (12769444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0-trixie` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d0160ee5863c1ac02b42dd157ea4f112f4519aaea3ba790dac03b0f90d7c1fa0
+$ docker pull haxe@sha256:919113ba119b93e1de8411c0fa3845855255a737f0bc936f02885be524c2cfd8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.4 KB (19401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3449a1f069f2c13f82efbb9079aeeb1b02a0e927a388c945644a3ffb5ed92fff`
+-	Image ID: `sha256:e1039ab6a4a9a693f10c548167ab1119c43de54f7b7d7a8835635679fb72f57e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:05f82ea7cff73f852cb491c056c3a2ad24fbaf70ecf27ca7e8a5df5036134589`  
-		Last Modified: Mon, 22 Jun 2026 21:01:42 GMT  
+	-	`sha256:9e37b6cbeaa5f8790648aa429735f289874b1b035fdf5530d3ad7521e3512603`  
+		Last Modified: Wed, 24 Jun 2026 03:22:43 GMT  
 		Size: 19.4 KB (19401 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16902,7 +16902,7 @@ CMD ["haxe"]
 ## `haxe:5.0.0`
 
 ```console
-$ docker pull haxe@sha256:ae27b51cda21660b5e61f72991d812058f537763eb68ca8f77f8259508746a21
+$ docker pull haxe@sha256:dd9428ae6c9add1a6ed7a7ffd536203360904692739e622451b39556825f5dba
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16919,83 +16919,83 @@ $ docker pull haxe@sha256:ae27b51cda21660b5e61f72991d812058f537763eb68ca8f77f825
 ### `haxe:5.0.0` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:6d17633fcda196abb026a170016585e8a97f4e6ee6f8f148b6580f005b9c31d2
+$ docker pull haxe@sha256:e97298b22094471b8b167b28887af8a0c216735d14c339de4c932ac74b4d093b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.9 MB (164864207 bytes)**  
+-	Total Size: **164.9 MB (164857039 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c503ad1714e16c335b3a8a30558f21693574ac633e871e58886dcdefbf4fbb66`
+-	Image ID: `sha256:022fc930e4d6dc4a41f6a6272968c8937cfb770eb4d050e81aa5790a3e032808`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:42:40 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:41:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:24:44 GMT
+# Wed, 24 Jun 2026 02:28:40 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:11:44 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:11:44 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:11:44 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:13:12 GMT
+# Wed, 24 Jun 2026 03:19:27 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:13:12 GMT
+# Wed, 24 Jun 2026 03:19:27 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Mon, 22 Jun 2026 20:13:12 GMT
+# Wed, 24 Jun 2026 03:19:27 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 20:16:30 GMT
+# Wed, 24 Jun 2026 03:22:45 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:16:30 GMT
+# Wed, 24 Jun 2026 03:22:45 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ef1b08ddd59d42b444e8f9c68a6cebbed70636aed0c242fdccb0bd61b61ba26b`  
-		Last Modified: Wed, 10 Jun 2026 23:40:27 GMT  
-		Size: 49.3 MB (49317121 bytes)  
+	-	`sha256:aa3e9ef32f73c30e8b065800ee66429992d3bfea6a1fb8224afdd878ab5b994f`  
+		Last Modified: Wed, 24 Jun 2026 00:28:33 GMT  
+		Size: 49.3 MB (49317255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b365b6ff7b7e310e1b9a88f996e65b89969c7fa450492b68249d1d1c38e0676`  
-		Last Modified: Thu, 11 Jun 2026 00:42:51 GMT  
-		Size: 25.6 MB (25635173 bytes)  
+	-	`sha256:3f59c84a786323367a79d4959142649bb24b16c989bbaae7f273550b47325959`  
+		Last Modified: Wed, 24 Jun 2026 01:41:50 GMT  
+		Size: 25.6 MB (25634938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ca884014342f240be01d391b498c3ec61b2f4af2c205e7e9a0b5ac2cb2f24c4`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 67.8 MB (67784745 bytes)  
+	-	`sha256:30d0db852850114cc79598cc8ab1ec19da54691d9e3267288bb3458d7488f125`  
+		Last Modified: Wed, 24 Jun 2026 02:28:58 GMT  
+		Size: 67.8 MB (67778134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02c21eb9dae4b70093ef9e10ec0e4ba05359c6345b59236ba8cfa898374c5048`  
-		Last Modified: Mon, 22 Jun 2026 20:16:36 GMT  
-		Size: 1.5 MB (1478611 bytes)  
+	-	`sha256:08a609cf6304945cd9e7395a8a0fb417f55e1143898aa0a8b4a81f92b03e0575`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
+		Size: 1.5 MB (1478608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c3d45bda203dd6c7e99355225cd9c77aa0278515474c01ac5de1c9daeae9406`  
-		Last Modified: Mon, 22 Jun 2026 20:16:36 GMT  
-		Size: 9.4 MB (9405916 bytes)  
+	-	`sha256:3a5e6b01db73e8b991a5ddbac751a062175cd7e70497636d0e197eb2a382b736`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
+		Size: 9.4 MB (9405671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8586f1f03621fa06892b82edef53215d10d576f05fad18da33d8e5d7e4d379d9`  
-		Last Modified: Mon, 22 Jun 2026 20:16:36 GMT  
-		Size: 11.2 MB (11242641 bytes)  
+	-	`sha256:730ecdde659998e68142191a0e399da86682e0f38ecb6069b831fa9f1f5d34a6`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
+		Size: 11.2 MB (11242433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:2c45d819f80dd8f88bb50cd97ad0efb9b432ee643dab1392fbb3da0c4bf12860
+$ docker pull haxe@sha256:daaa19dd4cdbecb22eaa36fb4f15f226da5e4ce70d7ea25e934b04b7cc5fac31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.2 KB (19243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11b2763bbb916d3d0f4e0046115459344549829e42cd9cb07bc55f55d66cae10`
+-	Image ID: `sha256:6cb7dd6b50768359ed30faa7bda7c179b40e4f0f3c9e450d780193ab136df994`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:caac35bc56d173762e097bc410791445b1d6e0786a352cbcea519213f4567d87`  
-		Last Modified: Mon, 22 Jun 2026 20:16:35 GMT  
+	-	`sha256:976e0602c631d58f94ca3aa02416ff770f84262127667095faa8d2c254e4c05b`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
 		Size: 19.2 KB (19243 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17085,83 +17085,83 @@ $ docker pull haxe@sha256:3b124d1fd523811fc6f681854f9c3c81ad220da48bb666da76465f
 ### `haxe:5.0.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:1a903c6bc7442f60dc1c6c67176c989375faca5490ebce769af071252f00cd2d
+$ docker pull haxe@sha256:a258d1966286b76ed774410cc545f6ed5bb5a166dc41a1ef8e0530bd789805a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.9 MB (165902232 bytes)**  
+-	Total Size: **165.9 MB (165895399 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1293a0e549b0974f6fc6d7c1fa77e6d5a9abfa83937807e8a3766e4544d2780`
+-	Image ID: `sha256:6648623b21790ff99d37bf3663f5c306d673a45d6796e29d83c87bd7c3a7b3c1`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:44:22 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:45:15 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:22:02 GMT
+# Wed, 24 Jun 2026 02:35:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:56:44 GMT
+# Wed, 24 Jun 2026 03:17:45 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:56:44 GMT
+# Wed, 24 Jun 2026 03:17:45 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:56:44 GMT
+# Wed, 24 Jun 2026 03:17:45 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:58:03 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:58:03 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Mon, 22 Jun 2026 20:58:03 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 21:01:36 GMT
+# Wed, 24 Jun 2026 03:22:37 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 21:01:36 GMT
+# Wed, 24 Jun 2026 03:22:37 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ed660e1af0f5da9e93a4c43fb29e86cb46fe69c76bcf11a3de9c57c987acab82`  
-		Last Modified: Wed, 10 Jun 2026 23:40:16 GMT  
-		Size: 49.7 MB (49678169 bytes)  
+	-	`sha256:c8a311258fd162f6aa0db134045a19154c81a2244ff9ed7620256c95ae5d6b69`  
+		Last Modified: Wed, 24 Jun 2026 00:28:21 GMT  
+		Size: 49.7 MB (49678395 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd2ab02859108b91c1c26f2badd015b5215eb066b7ef4f3a22bd1536a8debe96`  
-		Last Modified: Thu, 11 Jun 2026 00:44:32 GMT  
-		Size: 25.0 MB (25026911 bytes)  
+	-	`sha256:abe059c57e3bc40ea8086d6be574927bed6c0a000b182f3354b758009265e197`  
+		Last Modified: Wed, 24 Jun 2026 01:45:26 GMT  
+		Size: 25.0 MB (25026863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f2e427d8856f71d8d3667d1c4d9274b8aca2bd9d228387c51c211909e51263f`  
-		Last Modified: Thu, 11 Jun 2026 02:22:21 GMT  
-		Size: 67.6 MB (67599934 bytes)  
+	-	`sha256:5cf605f6b62a65326644e598c84134d29702579734c83dfca4cedf5dad7fb6d3`  
+		Last Modified: Wed, 24 Jun 2026 02:35:43 GMT  
+		Size: 67.6 MB (67592645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bf31bf089ec3e0638d3c067287be49c423d19bb536218f9f9ac8fb63a170dd5`  
-		Last Modified: Mon, 22 Jun 2026 21:01:43 GMT  
-		Size: 1.5 MB (1476981 bytes)  
+	-	`sha256:6ce6b5a6c23bffa7eedd0e3fcefafe251b063fb56f1026cc53f0d62ed005f7b8`  
+		Last Modified: Wed, 24 Jun 2026 03:22:43 GMT  
+		Size: 1.5 MB (1477014 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96e84225d6ad20030c913bdb061cefb8e06b67925e978622f8b4315737c9a65b`  
-		Last Modified: Mon, 22 Jun 2026 21:01:43 GMT  
-		Size: 9.4 MB (9350936 bytes)  
+	-	`sha256:4d896a39ca835c39c412426cf967ed645a66804aaabd1402bafb63a0f385d251`  
+		Last Modified: Wed, 24 Jun 2026 03:22:44 GMT  
+		Size: 9.4 MB (9351038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e5611bc4d10ad9a09d930290d5f37b0c081827c58a0b9a87c5310cbc4093e9c`  
-		Last Modified: Mon, 22 Jun 2026 21:01:43 GMT  
-		Size: 12.8 MB (12769301 bytes)  
+	-	`sha256:6ce80d45c40e364f7c010ba60cc748c124210bc839bfcfa2352895571461dd20`  
+		Last Modified: Wed, 24 Jun 2026 03:22:43 GMT  
+		Size: 12.8 MB (12769444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d0160ee5863c1ac02b42dd157ea4f112f4519aaea3ba790dac03b0f90d7c1fa0
+$ docker pull haxe@sha256:919113ba119b93e1de8411c0fa3845855255a737f0bc936f02885be524c2cfd8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.4 KB (19401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3449a1f069f2c13f82efbb9079aeeb1b02a0e927a388c945644a3ffb5ed92fff`
+-	Image ID: `sha256:e1039ab6a4a9a693f10c548167ab1119c43de54f7b7d7a8835635679fb72f57e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:05f82ea7cff73f852cb491c056c3a2ad24fbaf70ecf27ca7e8a5df5036134589`  
-		Last Modified: Mon, 22 Jun 2026 21:01:42 GMT  
+	-	`sha256:9e37b6cbeaa5f8790648aa429735f289874b1b035fdf5530d3ad7521e3512603`  
+		Last Modified: Wed, 24 Jun 2026 03:22:43 GMT  
 		Size: 19.4 KB (19401 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18112,7 +18112,7 @@ $ docker pull haxe@sha256:0b86edee9c8ba2be670ac78ebcbcf0fe9d7bae9491695ef02dd289
 ## `haxe:5.0.0-bookworm`
 
 ```console
-$ docker pull haxe@sha256:00903c60f1405fa7ea9ce97f46c33a1c5f570d437886ded42a6a92b827e7eb05
+$ docker pull haxe@sha256:7d42fa2a30620f781a775945c895d156015fbc844385791017c000c48f2f7686
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18127,84 +18127,84 @@ $ docker pull haxe@sha256:00903c60f1405fa7ea9ce97f46c33a1c5f570d437886ded42a6a92
 ### `haxe:5.0.0-bookworm` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:3f4cab29df65c4c55a3b9e6d96440678a346a0fb23b4645fe456666f94151308
+$ docker pull haxe@sha256:441430f8ea863f26fddd5185d5f3dd1f20576c483e627c7f220a196b129c1a9f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **398.2 MB (398173373 bytes)**  
+-	Total Size: **398.2 MB (398173347 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d886cc56c733061b1aa707b422191946551fa33b5afabd879dccd114f1fe1cd`
+-	Image ID: `sha256:fc1fdcf56717b29d9141e830abe35b8e401c5cf6f3edc2621da2727d3dca737d`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:42:10 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:41:22 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:26 GMT
+# Wed, 24 Jun 2026 02:28:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:50 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:16:50 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto7 		libmbedtls14 		libmbedx509-1 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:50 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:14 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:14 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Thu, 11 Jun 2026 03:18:14 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:37 GMT
+# Wed, 24 Jun 2026 03:22:26 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:37 GMT
+# Wed, 24 Jun 2026 03:22:26 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01cedcff86f879d042805360ecba268802bec3d8201484ff3ec54f4250a2d3b7`  
-		Last Modified: Wed, 10 Jun 2026 23:39:39 GMT  
-		Size: 48.5 MB (48502042 bytes)  
+	-	`sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b`  
+		Last Modified: Wed, 24 Jun 2026 00:27:40 GMT  
+		Size: 48.5 MB (48502210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4da31edd9efdb812e66d13819903973ea6b188d2e7358547676d33d1e3f706f2`  
-		Last Modified: Thu, 11 Jun 2026 00:42:23 GMT  
-		Size: 24.0 MB (24044000 bytes)  
+	-	`sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff`  
+		Last Modified: Wed, 24 Jun 2026 01:41:33 GMT  
+		Size: 24.0 MB (24044046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fbaeeb62b9d03a1204b85c3b257aa3e1ce2c4ccfeea479fb2e659211019c29d`  
-		Last Modified: Thu, 11 Jun 2026 02:24:43 GMT  
-		Size: 64.4 MB (64404116 bytes)  
+	-	`sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a`  
+		Last Modified: Wed, 24 Jun 2026 02:28:33 GMT  
+		Size: 64.4 MB (64404017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1aec4993d6b6368087381dcb5ddd49ad71237fc78c13752fd1c406d6474f3e6e`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 1.3 MB (1261526 bytes)  
+	-	`sha256:8a22241ce7a73e723859db66ae141157d76eac7628959b5074069bb81595b5e5`  
+		Last Modified: Wed, 24 Jun 2026 03:22:57 GMT  
+		Size: 1.3 MB (1261614 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ebab6ba72bbf22886f1efaac7b00ee57288349a95763e84c55217198f6831af`  
-		Last Modified: Thu, 11 Jun 2026 03:22:09 GMT  
-		Size: 1.4 MB (1385341 bytes)  
+	-	`sha256:b0a275021ef98198ccabe4220d47ee56f26a40374fdb33afa45e1c48c062ce0b`  
+		Last Modified: Wed, 24 Jun 2026 03:22:57 GMT  
+		Size: 1.4 MB (1385183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b2f177236a9e8db73da5f43d35bef1bc82a345b79be0884aa50d8fbb2ad52a1`  
-		Last Modified: Thu, 11 Jun 2026 03:22:14 GMT  
-		Size: 258.6 MB (258576348 bytes)  
+	-	`sha256:1df2928ae1d9f3b2df80191ec46db478cafafb4ef7c15416946e67059196d7ea`  
+		Last Modified: Wed, 24 Jun 2026 03:23:02 GMT  
+		Size: 258.6 MB (258576277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:2224448f7ab8a7e1866a1e7d32a483b8714d08bcf4250356e17b936a4de97853
+$ docker pull haxe@sha256:5050ff947b82e4393cec69f105439d93db4760c664e8541ea99257753721bed0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.5 KB (19542 bytes)**  
+-	Total Size: **18.6 KB (18650 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11c9930fec29573c7e32288cc3041ebf976db59fa4249dad77a030e46521fcac`
+-	Image ID: `sha256:d311a45628f5862a57cf9929b390bbed2bfd88db2665fbdb83a6b2d836f9ca14`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:777b785763d06a3909b1c35704dc90e88dbf0f52f45fddd3120c2c4fc4780c47`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 19.5 KB (19542 bytes)  
+	-	`sha256:139e1899594738d31a300cb3bd0f38efa34763f6f0cf556b17d36b7381cadfda`  
+		Last Modified: Wed, 24 Jun 2026 03:22:56 GMT  
+		Size: 18.6 KB (18650 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:5.0.0-bookworm` - linux; arm variant v7
@@ -18293,90 +18293,90 @@ $ docker pull haxe@sha256:3106e13106a5fb84707f2ed0254898a056dd70479af3742eda1f84
 ### `haxe:5.0.0-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:aa97acf8cb3d3ea8f535eb809855b0d1bc7c105f2c5da1d42dffaea203b8c371
+$ docker pull haxe@sha256:16de51bce77eaa8a309607affaf3656d1f5e1ea8d3183abd9e55e31957b99d1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **401.0 MB (400983015 bytes)**  
+-	Total Size: **401.0 MB (400982983 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a037e4b0579e875e59cefd5247b4b1f3c0f5b49f4dcfe1195f7ea02014460999`
+-	Image ID: `sha256:bc1675262586aca936e50fd3a3880b1b6583157e61a2d783179c0947ef7f7851`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:43:47 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:44:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:58 GMT
+# Wed, 24 Jun 2026 03:17:53 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:16:58 GMT
+# Wed, 24 Jun 2026 03:17:53 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto7 		libmbedtls14 		libmbedx509-1 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:58 GMT
+# Wed, 24 Jun 2026 03:17:53 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:10 GMT
+# Wed, 24 Jun 2026 03:19:07 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:10 GMT
+# Wed, 24 Jun 2026 03:19:07 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Thu, 11 Jun 2026 03:18:10 GMT
+# Wed, 24 Jun 2026 03:19:07 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:33 GMT
+# Wed, 24 Jun 2026 03:23:54 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:33 GMT
+# Wed, 24 Jun 2026 03:23:54 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:c847f328095fb083f4a22895b90fe4226efa6458ac57362b64b6e5d99da9e4a3`  
-		Last Modified: Wed, 10 Jun 2026 23:39:28 GMT  
-		Size: 48.4 MB (48389016 bytes)  
+	-	`sha256:0fb1189398e2e4b474d43aac6502510d0da0318e70137a377c21087f198814db`  
+		Last Modified: Wed, 24 Jun 2026 00:27:19 GMT  
+		Size: 48.4 MB (48389201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f511b4c80a6e453785fbcd573c1bf1cb986c4e8d43ed4500ad1ac9a4719762b`  
-		Last Modified: Thu, 11 Jun 2026 00:43:56 GMT  
-		Size: 23.6 MB (23613296 bytes)  
+	-	`sha256:03ebca214f1a4b66acfdb0bd20aa3ee139d1747885ef4b0f3d07aa2a68459230`  
+		Last Modified: Wed, 24 Jun 2026 01:44:48 GMT  
+		Size: 23.6 MB (23613316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b715a6712db064e97302c819acd7a39c0c72f8a315ff83c6ad1c27bfa1b275e`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 64.5 MB (64487878 bytes)  
+	-	`sha256:533bb0e918720911be6cb7a1a5ba9ad0e1a308fcbf24961a23aba0cd220df6cf`  
+		Last Modified: Wed, 24 Jun 2026 02:35:28 GMT  
+		Size: 64.5 MB (64487706 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c377900d740020235dbc6b9c54454c50007aaced2c51ceb3854601c093d0126b`  
-		Last Modified: Thu, 11 Jun 2026 03:22:09 GMT  
-		Size: 1.3 MB (1257937 bytes)  
+	-	`sha256:1db0e2d9a0e02f8c7f06957e571a70a30dcc6ee077c0c188e93fc7ed1f207fed`  
+		Last Modified: Wed, 24 Jun 2026 03:24:30 GMT  
+		Size: 1.3 MB (1257959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e25257d1f520b107b557c07867ddef465eef087ae511648ad78af220bbf9f969`  
-		Last Modified: Thu, 11 Jun 2026 03:22:09 GMT  
-		Size: 1.4 MB (1419938 bytes)  
+	-	`sha256:5511d3c8425ee69ddd83e79769574d664179c8cfa5c6ab3394ce99e531ea04b7`  
+		Last Modified: Wed, 24 Jun 2026 03:24:30 GMT  
+		Size: 1.4 MB (1419999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70be49f5437b61497629fcfbc6a338ab45f5c32918360a01724b320c9cf6f572`  
-		Last Modified: Thu, 11 Jun 2026 03:22:16 GMT  
-		Size: 261.8 MB (261814950 bytes)  
+	-	`sha256:3a23a67912a816ae40a06f9c8dea390e22e6aeec8c506795eb80dc0df4aded77`  
+		Last Modified: Wed, 24 Jun 2026 03:24:35 GMT  
+		Size: 261.8 MB (261814802 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:986fa0f4585f7e03f242701b34cdab21ca18d1833aec764d7cdc18265817c000
+$ docker pull haxe@sha256:6043b8fe7b34d3539d8943f20f2c97809cdb38f0d2e8d7c57dac18675dfa528d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.7 KB (19700 bytes)**  
+-	Total Size: **18.8 KB (18770 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a0516fdfb18d5c91a87e3216115b576e7f3f30544563c1d892535a381ed4c5c`
+-	Image ID: `sha256:0ce4cf7b8e8d8a02fcff61b11177068a42d667beb9bbca07afafb42dc28285dd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ecaf32048024d42f1b1cb4f87511c9fd78c1d9c93337cd4503792a1882a33c14`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 19.7 KB (19700 bytes)  
+	-	`sha256:bf79d22e17d411d737d7f96ade6312637e64b565cb0dca9b3027be2898290e60`  
+		Last Modified: Wed, 24 Jun 2026 03:24:29 GMT  
+		Size: 18.8 KB (18770 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:5.0.0-bullseye`
 
 ```console
-$ docker pull haxe@sha256:a6a32962b50736737054e36a69fc4ebc947317ef2134e7311928aeb9468c1c85
+$ docker pull haxe@sha256:f581e6eb54dfa8f72bf6f74518ebf40b172d224772b5494c8ab2139359f9308e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18391,83 +18391,83 @@ $ docker pull haxe@sha256:a6a32962b50736737054e36a69fc4ebc947317ef2134e7311928ae
 ### `haxe:5.0.0-bullseye` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:14dbd4311c8703dc7ee29ddcd3ca720b4aed131c51d0d99b0ce2c2065323c9b6
+$ docker pull haxe@sha256:8d52bc5efc7c5a4212475bc59c44b105f240ec791dc2899553453f3d5ec217b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.9 MB (137861401 bytes)**  
+-	Total Size: **137.9 MB (137862513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73e9fb2ff7d2f56c574b6b20d575ca1783ec223f12d902251e680ef976b6666f`
+-	Image ID: `sha256:5bdf1ae1a780b03f1ccf4969329c52e67affbf77e869411b312c51f43e5dc7ab`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:42:19 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:41:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:36 GMT
+# Wed, 24 Jun 2026 02:28:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:58 GMT
+# Wed, 24 Jun 2026 03:18:21 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:16:58 GMT
+# Wed, 24 Jun 2026 03:18:21 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:58 GMT
+# Wed, 24 Jun 2026 03:18:21 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:45 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:45 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:45 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:40 GMT
+# Wed, 24 Jun 2026 03:23:18 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:40 GMT
+# Wed, 24 Jun 2026 03:23:18 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:af48a3e7696e07f88a02f9674e541901b65eadb5cf0f62e566b1d895099a1e9e`  
-		Last Modified: Wed, 10 Jun 2026 23:40:09 GMT  
-		Size: 53.8 MB (53771769 bytes)  
+	-	`sha256:c67cddb4b9fcdeefaf829aa012f0ccaefcfa862a558064326104b95b8849cd81`  
+		Last Modified: Wed, 24 Jun 2026 00:28:17 GMT  
+		Size: 53.8 MB (53773009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53f53a3a71a19cca6d8312e9c60a5428b23742024a0057b1f0e46517df6ae4a9`  
-		Last Modified: Thu, 11 Jun 2026 00:42:31 GMT  
-		Size: 15.8 MB (15790824 bytes)  
+	-	`sha256:816526a6d4acf81b392ec5a1e6d8d402fbc4bf0460323c5ad45b376b247ca6fc`  
+		Last Modified: Wed, 24 Jun 2026 01:41:36 GMT  
+		Size: 15.8 MB (15790805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3db6c46730caf21fd1b15e0e84732744cb5a66e6931cf2c3753965fc32257fc`  
-		Last Modified: Thu, 11 Jun 2026 02:24:52 GMT  
-		Size: 54.7 MB (54743048 bytes)  
+	-	`sha256:2d3cf50c221acb61e259a7ecd20caf425597eca7d93e329dde2640ca7ec8aaf4`  
+		Last Modified: Wed, 24 Jun 2026 02:28:36 GMT  
+		Size: 54.7 MB (54742897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f96dd014e7e3c54c12945747492b01f50599b3eff0238e1da2b123b43b81a1d`  
-		Last Modified: Thu, 11 Jun 2026 03:21:45 GMT  
-		Size: 1.2 MB (1155243 bytes)  
+	-	`sha256:4902c21259b497f6d212bfa45ce0b6da9777429e11f4c3bb6d2263bfe2091713`  
+		Last Modified: Wed, 24 Jun 2026 03:23:23 GMT  
+		Size: 1.2 MB (1155272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c44ca9fe8bc804de7a854fb505779bc8fbe837d5c2d6b1cb21dfd9b3ed051ab`  
-		Last Modified: Thu, 11 Jun 2026 03:21:45 GMT  
-		Size: 1.5 MB (1462163 bytes)  
+	-	`sha256:4ae0b03c23e8bb2d0a628c3790ea06d6ce25ef0f2af640b1820eeeeba06365f3`  
+		Last Modified: Wed, 24 Jun 2026 03:23:23 GMT  
+		Size: 1.5 MB (1462177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ae6977fa768e88fbbb786ee16d23678c734d43bcb814053e3e06f705825df2`  
-		Last Modified: Thu, 11 Jun 2026 03:21:45 GMT  
-		Size: 10.9 MB (10938354 bytes)  
+	-	`sha256:f104e5091e77e159986eaa3b93ebb574cbac2938f72cdd2a561c2142ab4d9e5f`  
+		Last Modified: Wed, 24 Jun 2026 03:23:23 GMT  
+		Size: 10.9 MB (10938353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d9972f5eea946149b8a8f4f160a3825cd342a636dbae22ffb599a44f9a36ac54
+$ docker pull haxe@sha256:fe3f74b579cea721cd1929f2d68d2d6cd03fffce8ae87552ff5de5719baa85bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **18.6 KB (18636 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10428d872e992437b49149d7f5a3fa28410aff8f09cfab64799d5fdac82236a2`
+-	Image ID: `sha256:9564451580476637e7c08bb35d3823f98079802f252be22b62a0a07eb6ec21fd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c113d2d05605ebdb546793cf21c73e2c77b8cec2c67e936b2403f48cc8a07f6b`  
-		Last Modified: Thu, 11 Jun 2026 03:21:45 GMT  
+	-	`sha256:58552a642d65cf28f4d91bb4aafef418f2f36f2e22762f014c7aede908dfd187`  
+		Last Modified: Wed, 24 Jun 2026 03:23:23 GMT  
 		Size: 18.6 KB (18636 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18557,90 +18557,90 @@ $ docker pull haxe@sha256:74da5ea4496a5378c845c0e39d0b6315f478e65d646f4a42dd0ef6
 ### `haxe:5.0.0-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f10ff622ded6aa22dbde806b4f41ecb2d723b3cecfd157e86865bd3dc2c3127d
+$ docker pull haxe@sha256:16161627c5ff4fd4174c5eef0eb816e09f1e039c2b778fcd3b9d07c4722993c0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.0 MB (137997545 bytes)**  
+-	Total Size: **138.0 MB (137990759 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:500fda52d6b5d01a35a766b3ae3bbec5ecaaa229303bfcfee93724a18768e1ce`
+-	Image ID: `sha256:a4829c44f4e925c2afbde5e92f07de58b255ff96ec1304c734282628d66cc8b6`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:43:46 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:44:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:02 GMT
+# Wed, 24 Jun 2026 03:18:00 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:02 GMT
+# Wed, 24 Jun 2026 03:18:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:02 GMT
+# Wed, 24 Jun 2026 03:18:00 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:14 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:14 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:14 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:58 GMT
+# Wed, 24 Jun 2026 03:23:02 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:58 GMT
+# Wed, 24 Jun 2026 03:23:02 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:7c21e59e753cb91625909251110d6e4cc4a5411b4b7b37f74a62e56b927b7f1e`  
-		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
-		Size: 52.3 MB (52264114 bytes)  
+	-	`sha256:35157acdff35db21da73141f382d0dca0f6bc6d183c3a816d283fe39f471e539`  
+		Last Modified: Wed, 24 Jun 2026 00:27:56 GMT  
+		Size: 52.3 MB (52257219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8698eac281c2783fff44c0d5a2c381eeb273791e12f4dc8b407db26260bc3b85`  
-		Last Modified: Thu, 11 Jun 2026 00:43:55 GMT  
-		Size: 15.8 MB (15774833 bytes)  
+	-	`sha256:daf305d6ad7bad47ee0696c3db8b8fed8e9c2a42c53b57d047f8ab32f5d9b546`  
+		Last Modified: Wed, 24 Jun 2026 01:44:59 GMT  
+		Size: 15.8 MB (15774954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddd4791f1a451400cf59328cbd4f4f9bed438b89f7103b59dc50338fd2ac9293`  
-		Last Modified: Thu, 11 Jun 2026 02:24:59 GMT  
-		Size: 54.9 MB (54879555 bytes)  
+	-	`sha256:c95f37219bba62c0b4908476dc3cf7f0f98f1c87e8908c188797b1dc1f610c77`  
+		Last Modified: Wed, 24 Jun 2026 02:35:29 GMT  
+		Size: 54.9 MB (54879567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d53f2644cf30109ed69367a7d9038ceb5b6805bce5a668c9f8229b4408d5c23`  
-		Last Modified: Thu, 11 Jun 2026 03:22:04 GMT  
-		Size: 1.1 MB (1145566 bytes)  
+	-	`sha256:f7e384c56e138d2efacea9818fc80c91bfdb144cf2450d4311868f551aa2d41c`  
+		Last Modified: Wed, 24 Jun 2026 03:23:08 GMT  
+		Size: 1.1 MB (1145535 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35e1bf0b82350364ce6e4e830faf1f2c2a2c0cde3dd5188a95106fcb399656cf`  
-		Last Modified: Thu, 11 Jun 2026 03:22:04 GMT  
-		Size: 1.5 MB (1453603 bytes)  
+	-	`sha256:8dceac09ca8431b26c8799c89dc7bad422066ad6559db7d620d21ee08051d52e`  
+		Last Modified: Wed, 24 Jun 2026 03:23:08 GMT  
+		Size: 1.5 MB (1453571 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac87b7c576c06a8743203c75b49455ce39e444ccbe228576f7343af98aa1fab8`  
-		Last Modified: Thu, 11 Jun 2026 03:22:04 GMT  
-		Size: 12.5 MB (12479874 bytes)  
+	-	`sha256:493e3ec2c2377a21f0fd2f6ee1b59bec618f1390bdd90eb295cfdc3535025715`  
+		Last Modified: Wed, 24 Jun 2026 03:23:09 GMT  
+		Size: 12.5 MB (12479913 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c814812e82e9f9cb8a14fa8cbd88bd7001c8a20db103dfbfc33eb3b770dae471
+$ docker pull haxe@sha256:14f1080118e615d205a65442fc040d1fb55d5969287d0076dbc5acf9ca60be63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **18.8 KB (18758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af9dc83e56efe213b072d1bb962a2da48f2174e2f49cd31ac6658ab6f224b733`
+-	Image ID: `sha256:2b5d9954c81d5f37305b47f6b1beda238bd9fd209993d3f2955e5b70b30fe97b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cd626e969a64d9eb0a7fa7349efb7f0e6f12957e3abd53dc75618157693efaef`  
-		Last Modified: Thu, 11 Jun 2026 03:22:04 GMT  
+	-	`sha256:3fa48fcbba4378771d6042ee66b50a45773654ba544bd14da0da881dbc6d9c6c`  
+		Last Modified: Wed, 24 Jun 2026 03:23:08 GMT  
 		Size: 18.8 KB (18758 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:5.0.0-preview.1`
 
 ```console
-$ docker pull haxe@sha256:ae27b51cda21660b5e61f72991d812058f537763eb68ca8f77f8259508746a21
+$ docker pull haxe@sha256:dd9428ae6c9add1a6ed7a7ffd536203360904692739e622451b39556825f5dba
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18657,83 +18657,83 @@ $ docker pull haxe@sha256:ae27b51cda21660b5e61f72991d812058f537763eb68ca8f77f825
 ### `haxe:5.0.0-preview.1` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:6d17633fcda196abb026a170016585e8a97f4e6ee6f8f148b6580f005b9c31d2
+$ docker pull haxe@sha256:e97298b22094471b8b167b28887af8a0c216735d14c339de4c932ac74b4d093b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.9 MB (164864207 bytes)**  
+-	Total Size: **164.9 MB (164857039 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c503ad1714e16c335b3a8a30558f21693574ac633e871e58886dcdefbf4fbb66`
+-	Image ID: `sha256:022fc930e4d6dc4a41f6a6272968c8937cfb770eb4d050e81aa5790a3e032808`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:42:40 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:41:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:24:44 GMT
+# Wed, 24 Jun 2026 02:28:40 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:11:44 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:11:44 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:11:44 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:13:12 GMT
+# Wed, 24 Jun 2026 03:19:27 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:13:12 GMT
+# Wed, 24 Jun 2026 03:19:27 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Mon, 22 Jun 2026 20:13:12 GMT
+# Wed, 24 Jun 2026 03:19:27 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 20:16:30 GMT
+# Wed, 24 Jun 2026 03:22:45 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:16:30 GMT
+# Wed, 24 Jun 2026 03:22:45 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ef1b08ddd59d42b444e8f9c68a6cebbed70636aed0c242fdccb0bd61b61ba26b`  
-		Last Modified: Wed, 10 Jun 2026 23:40:27 GMT  
-		Size: 49.3 MB (49317121 bytes)  
+	-	`sha256:aa3e9ef32f73c30e8b065800ee66429992d3bfea6a1fb8224afdd878ab5b994f`  
+		Last Modified: Wed, 24 Jun 2026 00:28:33 GMT  
+		Size: 49.3 MB (49317255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b365b6ff7b7e310e1b9a88f996e65b89969c7fa450492b68249d1d1c38e0676`  
-		Last Modified: Thu, 11 Jun 2026 00:42:51 GMT  
-		Size: 25.6 MB (25635173 bytes)  
+	-	`sha256:3f59c84a786323367a79d4959142649bb24b16c989bbaae7f273550b47325959`  
+		Last Modified: Wed, 24 Jun 2026 01:41:50 GMT  
+		Size: 25.6 MB (25634938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ca884014342f240be01d391b498c3ec61b2f4af2c205e7e9a0b5ac2cb2f24c4`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 67.8 MB (67784745 bytes)  
+	-	`sha256:30d0db852850114cc79598cc8ab1ec19da54691d9e3267288bb3458d7488f125`  
+		Last Modified: Wed, 24 Jun 2026 02:28:58 GMT  
+		Size: 67.8 MB (67778134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02c21eb9dae4b70093ef9e10ec0e4ba05359c6345b59236ba8cfa898374c5048`  
-		Last Modified: Mon, 22 Jun 2026 20:16:36 GMT  
-		Size: 1.5 MB (1478611 bytes)  
+	-	`sha256:08a609cf6304945cd9e7395a8a0fb417f55e1143898aa0a8b4a81f92b03e0575`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
+		Size: 1.5 MB (1478608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c3d45bda203dd6c7e99355225cd9c77aa0278515474c01ac5de1c9daeae9406`  
-		Last Modified: Mon, 22 Jun 2026 20:16:36 GMT  
-		Size: 9.4 MB (9405916 bytes)  
+	-	`sha256:3a5e6b01db73e8b991a5ddbac751a062175cd7e70497636d0e197eb2a382b736`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
+		Size: 9.4 MB (9405671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8586f1f03621fa06892b82edef53215d10d576f05fad18da33d8e5d7e4d379d9`  
-		Last Modified: Mon, 22 Jun 2026 20:16:36 GMT  
-		Size: 11.2 MB (11242641 bytes)  
+	-	`sha256:730ecdde659998e68142191a0e399da86682e0f38ecb6069b831fa9f1f5d34a6`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
+		Size: 11.2 MB (11242433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-preview.1` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:2c45d819f80dd8f88bb50cd97ad0efb9b432ee643dab1392fbb3da0c4bf12860
+$ docker pull haxe@sha256:daaa19dd4cdbecb22eaa36fb4f15f226da5e4ce70d7ea25e934b04b7cc5fac31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.2 KB (19243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11b2763bbb916d3d0f4e0046115459344549829e42cd9cb07bc55f55d66cae10`
+-	Image ID: `sha256:6cb7dd6b50768359ed30faa7bda7c179b40e4f0f3c9e450d780193ab136df994`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:caac35bc56d173762e097bc410791445b1d6e0786a352cbcea519213f4567d87`  
-		Last Modified: Mon, 22 Jun 2026 20:16:35 GMT  
+	-	`sha256:976e0602c631d58f94ca3aa02416ff770f84262127667095faa8d2c254e4c05b`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
 		Size: 19.2 KB (19243 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18823,83 +18823,83 @@ $ docker pull haxe@sha256:3b124d1fd523811fc6f681854f9c3c81ad220da48bb666da76465f
 ### `haxe:5.0.0-preview.1` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:1a903c6bc7442f60dc1c6c67176c989375faca5490ebce769af071252f00cd2d
+$ docker pull haxe@sha256:a258d1966286b76ed774410cc545f6ed5bb5a166dc41a1ef8e0530bd789805a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.9 MB (165902232 bytes)**  
+-	Total Size: **165.9 MB (165895399 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1293a0e549b0974f6fc6d7c1fa77e6d5a9abfa83937807e8a3766e4544d2780`
+-	Image ID: `sha256:6648623b21790ff99d37bf3663f5c306d673a45d6796e29d83c87bd7c3a7b3c1`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:44:22 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:45:15 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:22:02 GMT
+# Wed, 24 Jun 2026 02:35:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:56:44 GMT
+# Wed, 24 Jun 2026 03:17:45 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:56:44 GMT
+# Wed, 24 Jun 2026 03:17:45 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:56:44 GMT
+# Wed, 24 Jun 2026 03:17:45 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:58:03 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:58:03 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Mon, 22 Jun 2026 20:58:03 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 21:01:36 GMT
+# Wed, 24 Jun 2026 03:22:37 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 21:01:36 GMT
+# Wed, 24 Jun 2026 03:22:37 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ed660e1af0f5da9e93a4c43fb29e86cb46fe69c76bcf11a3de9c57c987acab82`  
-		Last Modified: Wed, 10 Jun 2026 23:40:16 GMT  
-		Size: 49.7 MB (49678169 bytes)  
+	-	`sha256:c8a311258fd162f6aa0db134045a19154c81a2244ff9ed7620256c95ae5d6b69`  
+		Last Modified: Wed, 24 Jun 2026 00:28:21 GMT  
+		Size: 49.7 MB (49678395 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd2ab02859108b91c1c26f2badd015b5215eb066b7ef4f3a22bd1536a8debe96`  
-		Last Modified: Thu, 11 Jun 2026 00:44:32 GMT  
-		Size: 25.0 MB (25026911 bytes)  
+	-	`sha256:abe059c57e3bc40ea8086d6be574927bed6c0a000b182f3354b758009265e197`  
+		Last Modified: Wed, 24 Jun 2026 01:45:26 GMT  
+		Size: 25.0 MB (25026863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f2e427d8856f71d8d3667d1c4d9274b8aca2bd9d228387c51c211909e51263f`  
-		Last Modified: Thu, 11 Jun 2026 02:22:21 GMT  
-		Size: 67.6 MB (67599934 bytes)  
+	-	`sha256:5cf605f6b62a65326644e598c84134d29702579734c83dfca4cedf5dad7fb6d3`  
+		Last Modified: Wed, 24 Jun 2026 02:35:43 GMT  
+		Size: 67.6 MB (67592645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bf31bf089ec3e0638d3c067287be49c423d19bb536218f9f9ac8fb63a170dd5`  
-		Last Modified: Mon, 22 Jun 2026 21:01:43 GMT  
-		Size: 1.5 MB (1476981 bytes)  
+	-	`sha256:6ce6b5a6c23bffa7eedd0e3fcefafe251b063fb56f1026cc53f0d62ed005f7b8`  
+		Last Modified: Wed, 24 Jun 2026 03:22:43 GMT  
+		Size: 1.5 MB (1477014 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96e84225d6ad20030c913bdb061cefb8e06b67925e978622f8b4315737c9a65b`  
-		Last Modified: Mon, 22 Jun 2026 21:01:43 GMT  
-		Size: 9.4 MB (9350936 bytes)  
+	-	`sha256:4d896a39ca835c39c412426cf967ed645a66804aaabd1402bafb63a0f385d251`  
+		Last Modified: Wed, 24 Jun 2026 03:22:44 GMT  
+		Size: 9.4 MB (9351038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e5611bc4d10ad9a09d930290d5f37b0c081827c58a0b9a87c5310cbc4093e9c`  
-		Last Modified: Mon, 22 Jun 2026 21:01:43 GMT  
-		Size: 12.8 MB (12769301 bytes)  
+	-	`sha256:6ce80d45c40e364f7c010ba60cc748c124210bc839bfcfa2352895571461dd20`  
+		Last Modified: Wed, 24 Jun 2026 03:22:43 GMT  
+		Size: 12.8 MB (12769444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-preview.1` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d0160ee5863c1ac02b42dd157ea4f112f4519aaea3ba790dac03b0f90d7c1fa0
+$ docker pull haxe@sha256:919113ba119b93e1de8411c0fa3845855255a737f0bc936f02885be524c2cfd8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.4 KB (19401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3449a1f069f2c13f82efbb9079aeeb1b02a0e927a388c945644a3ffb5ed92fff`
+-	Image ID: `sha256:e1039ab6a4a9a693f10c548167ab1119c43de54f7b7d7a8835635679fb72f57e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:05f82ea7cff73f852cb491c056c3a2ad24fbaf70ecf27ca7e8a5df5036134589`  
-		Last Modified: Mon, 22 Jun 2026 21:01:42 GMT  
+	-	`sha256:9e37b6cbeaa5f8790648aa429735f289874b1b035fdf5530d3ad7521e3512603`  
+		Last Modified: Wed, 24 Jun 2026 03:22:43 GMT  
 		Size: 19.4 KB (19401 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19850,7 +19850,7 @@ $ docker pull haxe@sha256:0b86edee9c8ba2be670ac78ebcbcf0fe9d7bae9491695ef02dd289
 ## `haxe:5.0.0-preview.1-bookworm`
 
 ```console
-$ docker pull haxe@sha256:00903c60f1405fa7ea9ce97f46c33a1c5f570d437886ded42a6a92b827e7eb05
+$ docker pull haxe@sha256:7d42fa2a30620f781a775945c895d156015fbc844385791017c000c48f2f7686
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19865,84 +19865,84 @@ $ docker pull haxe@sha256:00903c60f1405fa7ea9ce97f46c33a1c5f570d437886ded42a6a92
 ### `haxe:5.0.0-preview.1-bookworm` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:3f4cab29df65c4c55a3b9e6d96440678a346a0fb23b4645fe456666f94151308
+$ docker pull haxe@sha256:441430f8ea863f26fddd5185d5f3dd1f20576c483e627c7f220a196b129c1a9f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **398.2 MB (398173373 bytes)**  
+-	Total Size: **398.2 MB (398173347 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d886cc56c733061b1aa707b422191946551fa33b5afabd879dccd114f1fe1cd`
+-	Image ID: `sha256:fc1fdcf56717b29d9141e830abe35b8e401c5cf6f3edc2621da2727d3dca737d`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:42:10 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:41:22 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:26 GMT
+# Wed, 24 Jun 2026 02:28:14 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:50 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:16:50 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto7 		libmbedtls14 		libmbedx509-1 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:50 GMT
+# Wed, 24 Jun 2026 03:18:22 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:14 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:14 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Thu, 11 Jun 2026 03:18:14 GMT
+# Wed, 24 Jun 2026 03:19:28 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:37 GMT
+# Wed, 24 Jun 2026 03:22:26 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:37 GMT
+# Wed, 24 Jun 2026 03:22:26 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:01cedcff86f879d042805360ecba268802bec3d8201484ff3ec54f4250a2d3b7`  
-		Last Modified: Wed, 10 Jun 2026 23:39:39 GMT  
-		Size: 48.5 MB (48502042 bytes)  
+	-	`sha256:425befdf76e52426879d2abe42093a00dca59a893e7b4fa2a7679b0180b71d4b`  
+		Last Modified: Wed, 24 Jun 2026 00:27:40 GMT  
+		Size: 48.5 MB (48502210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4da31edd9efdb812e66d13819903973ea6b188d2e7358547676d33d1e3f706f2`  
-		Last Modified: Thu, 11 Jun 2026 00:42:23 GMT  
-		Size: 24.0 MB (24044000 bytes)  
+	-	`sha256:f4fd7bf6f6036613e20f62549df75ed694b99118002358bea5a81baf3929d1ff`  
+		Last Modified: Wed, 24 Jun 2026 01:41:33 GMT  
+		Size: 24.0 MB (24044046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fbaeeb62b9d03a1204b85c3b257aa3e1ce2c4ccfeea479fb2e659211019c29d`  
-		Last Modified: Thu, 11 Jun 2026 02:24:43 GMT  
-		Size: 64.4 MB (64404116 bytes)  
+	-	`sha256:791c68bc2063683c3d15907b8ed1b777cf14ca153c6f8e5b12db0868dfa7e38a`  
+		Last Modified: Wed, 24 Jun 2026 02:28:33 GMT  
+		Size: 64.4 MB (64404017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1aec4993d6b6368087381dcb5ddd49ad71237fc78c13752fd1c406d6474f3e6e`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 1.3 MB (1261526 bytes)  
+	-	`sha256:8a22241ce7a73e723859db66ae141157d76eac7628959b5074069bb81595b5e5`  
+		Last Modified: Wed, 24 Jun 2026 03:22:57 GMT  
+		Size: 1.3 MB (1261614 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ebab6ba72bbf22886f1efaac7b00ee57288349a95763e84c55217198f6831af`  
-		Last Modified: Thu, 11 Jun 2026 03:22:09 GMT  
-		Size: 1.4 MB (1385341 bytes)  
+	-	`sha256:b0a275021ef98198ccabe4220d47ee56f26a40374fdb33afa45e1c48c062ce0b`  
+		Last Modified: Wed, 24 Jun 2026 03:22:57 GMT  
+		Size: 1.4 MB (1385183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b2f177236a9e8db73da5f43d35bef1bc82a345b79be0884aa50d8fbb2ad52a1`  
-		Last Modified: Thu, 11 Jun 2026 03:22:14 GMT  
-		Size: 258.6 MB (258576348 bytes)  
+	-	`sha256:1df2928ae1d9f3b2df80191ec46db478cafafb4ef7c15416946e67059196d7ea`  
+		Last Modified: Wed, 24 Jun 2026 03:23:02 GMT  
+		Size: 258.6 MB (258576277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-preview.1-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:2224448f7ab8a7e1866a1e7d32a483b8714d08bcf4250356e17b936a4de97853
+$ docker pull haxe@sha256:5050ff947b82e4393cec69f105439d93db4760c664e8541ea99257753721bed0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.5 KB (19542 bytes)**  
+-	Total Size: **18.6 KB (18650 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11c9930fec29573c7e32288cc3041ebf976db59fa4249dad77a030e46521fcac`
+-	Image ID: `sha256:d311a45628f5862a57cf9929b390bbed2bfd88db2665fbdb83a6b2d836f9ca14`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:777b785763d06a3909b1c35704dc90e88dbf0f52f45fddd3120c2c4fc4780c47`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 19.5 KB (19542 bytes)  
+	-	`sha256:139e1899594738d31a300cb3bd0f38efa34763f6f0cf556b17d36b7381cadfda`  
+		Last Modified: Wed, 24 Jun 2026 03:22:56 GMT  
+		Size: 18.6 KB (18650 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:5.0.0-preview.1-bookworm` - linux; arm variant v7
@@ -20031,90 +20031,90 @@ $ docker pull haxe@sha256:3106e13106a5fb84707f2ed0254898a056dd70479af3742eda1f84
 ### `haxe:5.0.0-preview.1-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:aa97acf8cb3d3ea8f535eb809855b0d1bc7c105f2c5da1d42dffaea203b8c371
+$ docker pull haxe@sha256:16de51bce77eaa8a309607affaf3656d1f5e1ea8d3183abd9e55e31957b99d1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **401.0 MB (400983015 bytes)**  
+-	Total Size: **401.0 MB (400982983 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a037e4b0579e875e59cefd5247b4b1f3c0f5b49f4dcfe1195f7ea02014460999`
+-	Image ID: `sha256:bc1675262586aca936e50fd3a3880b1b6583157e61a2d783179c0947ef7f7851`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:43:47 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:44:37 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:58 GMT
+# Wed, 24 Jun 2026 03:17:53 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:16:58 GMT
+# Wed, 24 Jun 2026 03:17:53 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto7 		libmbedtls14 		libmbedx509-1 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:58 GMT
+# Wed, 24 Jun 2026 03:17:53 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:10 GMT
+# Wed, 24 Jun 2026 03:19:07 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:10 GMT
+# Wed, 24 Jun 2026 03:19:07 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Thu, 11 Jun 2026 03:18:10 GMT
+# Wed, 24 Jun 2026 03:19:07 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:33 GMT
+# Wed, 24 Jun 2026 03:23:54 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:33 GMT
+# Wed, 24 Jun 2026 03:23:54 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:c847f328095fb083f4a22895b90fe4226efa6458ac57362b64b6e5d99da9e4a3`  
-		Last Modified: Wed, 10 Jun 2026 23:39:28 GMT  
-		Size: 48.4 MB (48389016 bytes)  
+	-	`sha256:0fb1189398e2e4b474d43aac6502510d0da0318e70137a377c21087f198814db`  
+		Last Modified: Wed, 24 Jun 2026 00:27:19 GMT  
+		Size: 48.4 MB (48389201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f511b4c80a6e453785fbcd573c1bf1cb986c4e8d43ed4500ad1ac9a4719762b`  
-		Last Modified: Thu, 11 Jun 2026 00:43:56 GMT  
-		Size: 23.6 MB (23613296 bytes)  
+	-	`sha256:03ebca214f1a4b66acfdb0bd20aa3ee139d1747885ef4b0f3d07aa2a68459230`  
+		Last Modified: Wed, 24 Jun 2026 01:44:48 GMT  
+		Size: 23.6 MB (23613316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b715a6712db064e97302c819acd7a39c0c72f8a315ff83c6ad1c27bfa1b275e`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 64.5 MB (64487878 bytes)  
+	-	`sha256:533bb0e918720911be6cb7a1a5ba9ad0e1a308fcbf24961a23aba0cd220df6cf`  
+		Last Modified: Wed, 24 Jun 2026 02:35:28 GMT  
+		Size: 64.5 MB (64487706 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c377900d740020235dbc6b9c54454c50007aaced2c51ceb3854601c093d0126b`  
-		Last Modified: Thu, 11 Jun 2026 03:22:09 GMT  
-		Size: 1.3 MB (1257937 bytes)  
+	-	`sha256:1db0e2d9a0e02f8c7f06957e571a70a30dcc6ee077c0c188e93fc7ed1f207fed`  
+		Last Modified: Wed, 24 Jun 2026 03:24:30 GMT  
+		Size: 1.3 MB (1257959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e25257d1f520b107b557c07867ddef465eef087ae511648ad78af220bbf9f969`  
-		Last Modified: Thu, 11 Jun 2026 03:22:09 GMT  
-		Size: 1.4 MB (1419938 bytes)  
+	-	`sha256:5511d3c8425ee69ddd83e79769574d664179c8cfa5c6ab3394ce99e531ea04b7`  
+		Last Modified: Wed, 24 Jun 2026 03:24:30 GMT  
+		Size: 1.4 MB (1419999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70be49f5437b61497629fcfbc6a338ab45f5c32918360a01724b320c9cf6f572`  
-		Last Modified: Thu, 11 Jun 2026 03:22:16 GMT  
-		Size: 261.8 MB (261814950 bytes)  
+	-	`sha256:3a23a67912a816ae40a06f9c8dea390e22e6aeec8c506795eb80dc0df4aded77`  
+		Last Modified: Wed, 24 Jun 2026 03:24:35 GMT  
+		Size: 261.8 MB (261814802 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-preview.1-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:986fa0f4585f7e03f242701b34cdab21ca18d1833aec764d7cdc18265817c000
+$ docker pull haxe@sha256:6043b8fe7b34d3539d8943f20f2c97809cdb38f0d2e8d7c57dac18675dfa528d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.7 KB (19700 bytes)**  
+-	Total Size: **18.8 KB (18770 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a0516fdfb18d5c91a87e3216115b576e7f3f30544563c1d892535a381ed4c5c`
+-	Image ID: `sha256:0ce4cf7b8e8d8a02fcff61b11177068a42d667beb9bbca07afafb42dc28285dd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ecaf32048024d42f1b1cb4f87511c9fd78c1d9c93337cd4503792a1882a33c14`  
-		Last Modified: Thu, 11 Jun 2026 03:22:08 GMT  
-		Size: 19.7 KB (19700 bytes)  
+	-	`sha256:bf79d22e17d411d737d7f96ade6312637e64b565cb0dca9b3027be2898290e60`  
+		Last Modified: Wed, 24 Jun 2026 03:24:29 GMT  
+		Size: 18.8 KB (18770 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:5.0.0-preview.1-bullseye`
 
 ```console
-$ docker pull haxe@sha256:a6a32962b50736737054e36a69fc4ebc947317ef2134e7311928aeb9468c1c85
+$ docker pull haxe@sha256:f581e6eb54dfa8f72bf6f74518ebf40b172d224772b5494c8ab2139359f9308e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20129,83 +20129,83 @@ $ docker pull haxe@sha256:a6a32962b50736737054e36a69fc4ebc947317ef2134e7311928ae
 ### `haxe:5.0.0-preview.1-bullseye` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:14dbd4311c8703dc7ee29ddcd3ca720b4aed131c51d0d99b0ce2c2065323c9b6
+$ docker pull haxe@sha256:8d52bc5efc7c5a4212475bc59c44b105f240ec791dc2899553453f3d5ec217b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.9 MB (137861401 bytes)**  
+-	Total Size: **137.9 MB (137862513 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73e9fb2ff7d2f56c574b6b20d575ca1783ec223f12d902251e680ef976b6666f`
+-	Image ID: `sha256:5bdf1ae1a780b03f1ccf4969329c52e67affbf77e869411b312c51f43e5dc7ab`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:42:19 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:41:23 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:36 GMT
+# Wed, 24 Jun 2026 02:28:19 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:58 GMT
+# Wed, 24 Jun 2026 03:18:21 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:16:58 GMT
+# Wed, 24 Jun 2026 03:18:21 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:16:58 GMT
+# Wed, 24 Jun 2026 03:18:21 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:45 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:45 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:45 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:40 GMT
+# Wed, 24 Jun 2026 03:23:18 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:40 GMT
+# Wed, 24 Jun 2026 03:23:18 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:af48a3e7696e07f88a02f9674e541901b65eadb5cf0f62e566b1d895099a1e9e`  
-		Last Modified: Wed, 10 Jun 2026 23:40:09 GMT  
-		Size: 53.8 MB (53771769 bytes)  
+	-	`sha256:c67cddb4b9fcdeefaf829aa012f0ccaefcfa862a558064326104b95b8849cd81`  
+		Last Modified: Wed, 24 Jun 2026 00:28:17 GMT  
+		Size: 53.8 MB (53773009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53f53a3a71a19cca6d8312e9c60a5428b23742024a0057b1f0e46517df6ae4a9`  
-		Last Modified: Thu, 11 Jun 2026 00:42:31 GMT  
-		Size: 15.8 MB (15790824 bytes)  
+	-	`sha256:816526a6d4acf81b392ec5a1e6d8d402fbc4bf0460323c5ad45b376b247ca6fc`  
+		Last Modified: Wed, 24 Jun 2026 01:41:36 GMT  
+		Size: 15.8 MB (15790805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3db6c46730caf21fd1b15e0e84732744cb5a66e6931cf2c3753965fc32257fc`  
-		Last Modified: Thu, 11 Jun 2026 02:24:52 GMT  
-		Size: 54.7 MB (54743048 bytes)  
+	-	`sha256:2d3cf50c221acb61e259a7ecd20caf425597eca7d93e329dde2640ca7ec8aaf4`  
+		Last Modified: Wed, 24 Jun 2026 02:28:36 GMT  
+		Size: 54.7 MB (54742897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f96dd014e7e3c54c12945747492b01f50599b3eff0238e1da2b123b43b81a1d`  
-		Last Modified: Thu, 11 Jun 2026 03:21:45 GMT  
-		Size: 1.2 MB (1155243 bytes)  
+	-	`sha256:4902c21259b497f6d212bfa45ce0b6da9777429e11f4c3bb6d2263bfe2091713`  
+		Last Modified: Wed, 24 Jun 2026 03:23:23 GMT  
+		Size: 1.2 MB (1155272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c44ca9fe8bc804de7a854fb505779bc8fbe837d5c2d6b1cb21dfd9b3ed051ab`  
-		Last Modified: Thu, 11 Jun 2026 03:21:45 GMT  
-		Size: 1.5 MB (1462163 bytes)  
+	-	`sha256:4ae0b03c23e8bb2d0a628c3790ea06d6ce25ef0f2af640b1820eeeeba06365f3`  
+		Last Modified: Wed, 24 Jun 2026 03:23:23 GMT  
+		Size: 1.5 MB (1462177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22ae6977fa768e88fbbb786ee16d23678c734d43bcb814053e3e06f705825df2`  
-		Last Modified: Thu, 11 Jun 2026 03:21:45 GMT  
-		Size: 10.9 MB (10938354 bytes)  
+	-	`sha256:f104e5091e77e159986eaa3b93ebb574cbac2938f72cdd2a561c2142ab4d9e5f`  
+		Last Modified: Wed, 24 Jun 2026 03:23:23 GMT  
+		Size: 10.9 MB (10938353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-preview.1-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d9972f5eea946149b8a8f4f160a3825cd342a636dbae22ffb599a44f9a36ac54
+$ docker pull haxe@sha256:fe3f74b579cea721cd1929f2d68d2d6cd03fffce8ae87552ff5de5719baa85bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **18.6 KB (18636 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10428d872e992437b49149d7f5a3fa28410aff8f09cfab64799d5fdac82236a2`
+-	Image ID: `sha256:9564451580476637e7c08bb35d3823f98079802f252be22b62a0a07eb6ec21fd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c113d2d05605ebdb546793cf21c73e2c77b8cec2c67e936b2403f48cc8a07f6b`  
-		Last Modified: Thu, 11 Jun 2026 03:21:45 GMT  
+	-	`sha256:58552a642d65cf28f4d91bb4aafef418f2f36f2e22762f014c7aede908dfd187`  
+		Last Modified: Wed, 24 Jun 2026 03:23:23 GMT  
 		Size: 18.6 KB (18636 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20295,90 +20295,90 @@ $ docker pull haxe@sha256:74da5ea4496a5378c845c0e39d0b6315f478e65d646f4a42dd0ef6
 ### `haxe:5.0.0-preview.1-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f10ff622ded6aa22dbde806b4f41ecb2d723b3cecfd157e86865bd3dc2c3127d
+$ docker pull haxe@sha256:16161627c5ff4fd4174c5eef0eb816e09f1e039c2b778fcd3b9d07c4722993c0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.0 MB (137997545 bytes)**  
+-	Total Size: **138.0 MB (137990759 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:500fda52d6b5d01a35a766b3ae3bbec5ecaaa229303bfcfee93724a18768e1ce`
+-	Image ID: `sha256:a4829c44f4e925c2afbde5e92f07de58b255ff96ec1304c734282628d66cc8b6`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1781049600'
-# Thu, 11 Jun 2026 00:43:46 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1782172800'
+# Wed, 24 Jun 2026 01:44:50 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 02:24:43 GMT
+# Wed, 24 Jun 2026 02:35:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:02 GMT
+# Wed, 24 Jun 2026 03:18:00 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 11 Jun 2026 03:17:02 GMT
+# Wed, 24 Jun 2026 03:18:00 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto3 		libmbedtls12 		libmbedx509-0 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 11 Jun 2026 03:17:02 GMT
+# Wed, 24 Jun 2026 03:18:00 GMT
 ENV NEKO_VERSION=2.4.1
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:14 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-client-lgpl-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:14 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Thu, 11 Jun 2026 03:18:20 GMT
+# Wed, 24 Jun 2026 03:19:14 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Thu, 11 Jun 2026 03:21:58 GMT
+# Wed, 24 Jun 2026 03:23:02 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml-nox 		ocaml-native-compilers 		camlp4 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		libxml-light-ocaml-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Thu, 11 Jun 2026 03:21:58 GMT
+# Wed, 24 Jun 2026 03:23:02 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:7c21e59e753cb91625909251110d6e4cc4a5411b4b7b37f74a62e56b927b7f1e`  
-		Last Modified: Wed, 10 Jun 2026 23:39:58 GMT  
-		Size: 52.3 MB (52264114 bytes)  
+	-	`sha256:35157acdff35db21da73141f382d0dca0f6bc6d183c3a816d283fe39f471e539`  
+		Last Modified: Wed, 24 Jun 2026 00:27:56 GMT  
+		Size: 52.3 MB (52257219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8698eac281c2783fff44c0d5a2c381eeb273791e12f4dc8b407db26260bc3b85`  
-		Last Modified: Thu, 11 Jun 2026 00:43:55 GMT  
-		Size: 15.8 MB (15774833 bytes)  
+	-	`sha256:daf305d6ad7bad47ee0696c3db8b8fed8e9c2a42c53b57d047f8ab32f5d9b546`  
+		Last Modified: Wed, 24 Jun 2026 01:44:59 GMT  
+		Size: 15.8 MB (15774954 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddd4791f1a451400cf59328cbd4f4f9bed438b89f7103b59dc50338fd2ac9293`  
-		Last Modified: Thu, 11 Jun 2026 02:24:59 GMT  
-		Size: 54.9 MB (54879555 bytes)  
+	-	`sha256:c95f37219bba62c0b4908476dc3cf7f0f98f1c87e8908c188797b1dc1f610c77`  
+		Last Modified: Wed, 24 Jun 2026 02:35:29 GMT  
+		Size: 54.9 MB (54879567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d53f2644cf30109ed69367a7d9038ceb5b6805bce5a668c9f8229b4408d5c23`  
-		Last Modified: Thu, 11 Jun 2026 03:22:04 GMT  
-		Size: 1.1 MB (1145566 bytes)  
+	-	`sha256:f7e384c56e138d2efacea9818fc80c91bfdb144cf2450d4311868f551aa2d41c`  
+		Last Modified: Wed, 24 Jun 2026 03:23:08 GMT  
+		Size: 1.1 MB (1145535 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35e1bf0b82350364ce6e4e830faf1f2c2a2c0cde3dd5188a95106fcb399656cf`  
-		Last Modified: Thu, 11 Jun 2026 03:22:04 GMT  
-		Size: 1.5 MB (1453603 bytes)  
+	-	`sha256:8dceac09ca8431b26c8799c89dc7bad422066ad6559db7d620d21ee08051d52e`  
+		Last Modified: Wed, 24 Jun 2026 03:23:08 GMT  
+		Size: 1.5 MB (1453571 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac87b7c576c06a8743203c75b49455ce39e444ccbe228576f7343af98aa1fab8`  
-		Last Modified: Thu, 11 Jun 2026 03:22:04 GMT  
-		Size: 12.5 MB (12479874 bytes)  
+	-	`sha256:493e3ec2c2377a21f0fd2f6ee1b59bec618f1390bdd90eb295cfdc3535025715`  
+		Last Modified: Wed, 24 Jun 2026 03:23:09 GMT  
+		Size: 12.5 MB (12479913 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-preview.1-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c814812e82e9f9cb8a14fa8cbd88bd7001c8a20db103dfbfc33eb3b770dae471
+$ docker pull haxe@sha256:14f1080118e615d205a65442fc040d1fb55d5969287d0076dbc5acf9ca60be63
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **18.8 KB (18758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:af9dc83e56efe213b072d1bb962a2da48f2174e2f49cd31ac6658ab6f224b733`
+-	Image ID: `sha256:2b5d9954c81d5f37305b47f6b1beda238bd9fd209993d3f2955e5b70b30fe97b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cd626e969a64d9eb0a7fa7349efb7f0e6f12957e3abd53dc75618157693efaef`  
-		Last Modified: Thu, 11 Jun 2026 03:22:04 GMT  
+	-	`sha256:3fa48fcbba4378771d6042ee66b50a45773654ba544bd14da0da881dbc6d9c6c`  
+		Last Modified: Wed, 24 Jun 2026 03:23:08 GMT  
 		Size: 18.8 KB (18758 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:5.0.0-preview.1-trixie`
 
 ```console
-$ docker pull haxe@sha256:bfc19b6f39fdb5139bb9906eb8933138f1c89c239e7d0ea9147ceef4d7115278
+$ docker pull haxe@sha256:811068cd17c356a713a405921c180c176edeb82204f590a142f35968af8f4c24
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20393,83 +20393,83 @@ $ docker pull haxe@sha256:bfc19b6f39fdb5139bb9906eb8933138f1c89c239e7d0ea9147cee
 ### `haxe:5.0.0-preview.1-trixie` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:6d17633fcda196abb026a170016585e8a97f4e6ee6f8f148b6580f005b9c31d2
+$ docker pull haxe@sha256:e97298b22094471b8b167b28887af8a0c216735d14c339de4c932ac74b4d093b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.9 MB (164864207 bytes)**  
+-	Total Size: **164.9 MB (164857039 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c503ad1714e16c335b3a8a30558f21693574ac633e871e58886dcdefbf4fbb66`
+-	Image ID: `sha256:022fc930e4d6dc4a41f6a6272968c8937cfb770eb4d050e81aa5790a3e032808`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:42:40 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:41:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:24:44 GMT
+# Wed, 24 Jun 2026 02:28:40 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:11:44 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:11:44 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:11:44 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:13:12 GMT
+# Wed, 24 Jun 2026 03:19:27 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:13:12 GMT
+# Wed, 24 Jun 2026 03:19:27 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Mon, 22 Jun 2026 20:13:12 GMT
+# Wed, 24 Jun 2026 03:19:27 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 20:16:30 GMT
+# Wed, 24 Jun 2026 03:22:45 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:16:30 GMT
+# Wed, 24 Jun 2026 03:22:45 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ef1b08ddd59d42b444e8f9c68a6cebbed70636aed0c242fdccb0bd61b61ba26b`  
-		Last Modified: Wed, 10 Jun 2026 23:40:27 GMT  
-		Size: 49.3 MB (49317121 bytes)  
+	-	`sha256:aa3e9ef32f73c30e8b065800ee66429992d3bfea6a1fb8224afdd878ab5b994f`  
+		Last Modified: Wed, 24 Jun 2026 00:28:33 GMT  
+		Size: 49.3 MB (49317255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b365b6ff7b7e310e1b9a88f996e65b89969c7fa450492b68249d1d1c38e0676`  
-		Last Modified: Thu, 11 Jun 2026 00:42:51 GMT  
-		Size: 25.6 MB (25635173 bytes)  
+	-	`sha256:3f59c84a786323367a79d4959142649bb24b16c989bbaae7f273550b47325959`  
+		Last Modified: Wed, 24 Jun 2026 01:41:50 GMT  
+		Size: 25.6 MB (25634938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ca884014342f240be01d391b498c3ec61b2f4af2c205e7e9a0b5ac2cb2f24c4`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 67.8 MB (67784745 bytes)  
+	-	`sha256:30d0db852850114cc79598cc8ab1ec19da54691d9e3267288bb3458d7488f125`  
+		Last Modified: Wed, 24 Jun 2026 02:28:58 GMT  
+		Size: 67.8 MB (67778134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02c21eb9dae4b70093ef9e10ec0e4ba05359c6345b59236ba8cfa898374c5048`  
-		Last Modified: Mon, 22 Jun 2026 20:16:36 GMT  
-		Size: 1.5 MB (1478611 bytes)  
+	-	`sha256:08a609cf6304945cd9e7395a8a0fb417f55e1143898aa0a8b4a81f92b03e0575`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
+		Size: 1.5 MB (1478608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c3d45bda203dd6c7e99355225cd9c77aa0278515474c01ac5de1c9daeae9406`  
-		Last Modified: Mon, 22 Jun 2026 20:16:36 GMT  
-		Size: 9.4 MB (9405916 bytes)  
+	-	`sha256:3a5e6b01db73e8b991a5ddbac751a062175cd7e70497636d0e197eb2a382b736`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
+		Size: 9.4 MB (9405671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8586f1f03621fa06892b82edef53215d10d576f05fad18da33d8e5d7e4d379d9`  
-		Last Modified: Mon, 22 Jun 2026 20:16:36 GMT  
-		Size: 11.2 MB (11242641 bytes)  
+	-	`sha256:730ecdde659998e68142191a0e399da86682e0f38ecb6069b831fa9f1f5d34a6`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
+		Size: 11.2 MB (11242433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-preview.1-trixie` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:2c45d819f80dd8f88bb50cd97ad0efb9b432ee643dab1392fbb3da0c4bf12860
+$ docker pull haxe@sha256:daaa19dd4cdbecb22eaa36fb4f15f226da5e4ce70d7ea25e934b04b7cc5fac31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.2 KB (19243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11b2763bbb916d3d0f4e0046115459344549829e42cd9cb07bc55f55d66cae10`
+-	Image ID: `sha256:6cb7dd6b50768359ed30faa7bda7c179b40e4f0f3c9e450d780193ab136df994`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:caac35bc56d173762e097bc410791445b1d6e0786a352cbcea519213f4567d87`  
-		Last Modified: Mon, 22 Jun 2026 20:16:35 GMT  
+	-	`sha256:976e0602c631d58f94ca3aa02416ff770f84262127667095faa8d2c254e4c05b`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
 		Size: 19.2 KB (19243 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20559,83 +20559,83 @@ $ docker pull haxe@sha256:3b124d1fd523811fc6f681854f9c3c81ad220da48bb666da76465f
 ### `haxe:5.0.0-preview.1-trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:1a903c6bc7442f60dc1c6c67176c989375faca5490ebce769af071252f00cd2d
+$ docker pull haxe@sha256:a258d1966286b76ed774410cc545f6ed5bb5a166dc41a1ef8e0530bd789805a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.9 MB (165902232 bytes)**  
+-	Total Size: **165.9 MB (165895399 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1293a0e549b0974f6fc6d7c1fa77e6d5a9abfa83937807e8a3766e4544d2780`
+-	Image ID: `sha256:6648623b21790ff99d37bf3663f5c306d673a45d6796e29d83c87bd7c3a7b3c1`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:44:22 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:45:15 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:22:02 GMT
+# Wed, 24 Jun 2026 02:35:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:56:44 GMT
+# Wed, 24 Jun 2026 03:17:45 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:56:44 GMT
+# Wed, 24 Jun 2026 03:17:45 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:56:44 GMT
+# Wed, 24 Jun 2026 03:17:45 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:58:03 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:58:03 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Mon, 22 Jun 2026 20:58:03 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 21:01:36 GMT
+# Wed, 24 Jun 2026 03:22:37 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 21:01:36 GMT
+# Wed, 24 Jun 2026 03:22:37 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ed660e1af0f5da9e93a4c43fb29e86cb46fe69c76bcf11a3de9c57c987acab82`  
-		Last Modified: Wed, 10 Jun 2026 23:40:16 GMT  
-		Size: 49.7 MB (49678169 bytes)  
+	-	`sha256:c8a311258fd162f6aa0db134045a19154c81a2244ff9ed7620256c95ae5d6b69`  
+		Last Modified: Wed, 24 Jun 2026 00:28:21 GMT  
+		Size: 49.7 MB (49678395 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd2ab02859108b91c1c26f2badd015b5215eb066b7ef4f3a22bd1536a8debe96`  
-		Last Modified: Thu, 11 Jun 2026 00:44:32 GMT  
-		Size: 25.0 MB (25026911 bytes)  
+	-	`sha256:abe059c57e3bc40ea8086d6be574927bed6c0a000b182f3354b758009265e197`  
+		Last Modified: Wed, 24 Jun 2026 01:45:26 GMT  
+		Size: 25.0 MB (25026863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f2e427d8856f71d8d3667d1c4d9274b8aca2bd9d228387c51c211909e51263f`  
-		Last Modified: Thu, 11 Jun 2026 02:22:21 GMT  
-		Size: 67.6 MB (67599934 bytes)  
+	-	`sha256:5cf605f6b62a65326644e598c84134d29702579734c83dfca4cedf5dad7fb6d3`  
+		Last Modified: Wed, 24 Jun 2026 02:35:43 GMT  
+		Size: 67.6 MB (67592645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bf31bf089ec3e0638d3c067287be49c423d19bb536218f9f9ac8fb63a170dd5`  
-		Last Modified: Mon, 22 Jun 2026 21:01:43 GMT  
-		Size: 1.5 MB (1476981 bytes)  
+	-	`sha256:6ce6b5a6c23bffa7eedd0e3fcefafe251b063fb56f1026cc53f0d62ed005f7b8`  
+		Last Modified: Wed, 24 Jun 2026 03:22:43 GMT  
+		Size: 1.5 MB (1477014 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96e84225d6ad20030c913bdb061cefb8e06b67925e978622f8b4315737c9a65b`  
-		Last Modified: Mon, 22 Jun 2026 21:01:43 GMT  
-		Size: 9.4 MB (9350936 bytes)  
+	-	`sha256:4d896a39ca835c39c412426cf967ed645a66804aaabd1402bafb63a0f385d251`  
+		Last Modified: Wed, 24 Jun 2026 03:22:44 GMT  
+		Size: 9.4 MB (9351038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e5611bc4d10ad9a09d930290d5f37b0c081827c58a0b9a87c5310cbc4093e9c`  
-		Last Modified: Mon, 22 Jun 2026 21:01:43 GMT  
-		Size: 12.8 MB (12769301 bytes)  
+	-	`sha256:6ce80d45c40e364f7c010ba60cc748c124210bc839bfcfa2352895571461dd20`  
+		Last Modified: Wed, 24 Jun 2026 03:22:43 GMT  
+		Size: 12.8 MB (12769444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-preview.1-trixie` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d0160ee5863c1ac02b42dd157ea4f112f4519aaea3ba790dac03b0f90d7c1fa0
+$ docker pull haxe@sha256:919113ba119b93e1de8411c0fa3845855255a737f0bc936f02885be524c2cfd8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.4 KB (19401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3449a1f069f2c13f82efbb9079aeeb1b02a0e927a388c945644a3ffb5ed92fff`
+-	Image ID: `sha256:e1039ab6a4a9a693f10c548167ab1119c43de54f7b7d7a8835635679fb72f57e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:05f82ea7cff73f852cb491c056c3a2ad24fbaf70ecf27ca7e8a5df5036134589`  
-		Last Modified: Mon, 22 Jun 2026 21:01:42 GMT  
+	-	`sha256:9e37b6cbeaa5f8790648aa429735f289874b1b035fdf5530d3ad7521e3512603`  
+		Last Modified: Wed, 24 Jun 2026 03:22:43 GMT  
 		Size: 19.4 KB (19401 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21229,7 +21229,7 @@ CMD ["haxe"]
 ## `haxe:5.0.0-trixie`
 
 ```console
-$ docker pull haxe@sha256:bfc19b6f39fdb5139bb9906eb8933138f1c89c239e7d0ea9147ceef4d7115278
+$ docker pull haxe@sha256:811068cd17c356a713a405921c180c176edeb82204f590a142f35968af8f4c24
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21244,83 +21244,83 @@ $ docker pull haxe@sha256:bfc19b6f39fdb5139bb9906eb8933138f1c89c239e7d0ea9147cee
 ### `haxe:5.0.0-trixie` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:6d17633fcda196abb026a170016585e8a97f4e6ee6f8f148b6580f005b9c31d2
+$ docker pull haxe@sha256:e97298b22094471b8b167b28887af8a0c216735d14c339de4c932ac74b4d093b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.9 MB (164864207 bytes)**  
+-	Total Size: **164.9 MB (164857039 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c503ad1714e16c335b3a8a30558f21693574ac633e871e58886dcdefbf4fbb66`
+-	Image ID: `sha256:022fc930e4d6dc4a41f6a6272968c8937cfb770eb4d050e81aa5790a3e032808`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:42:40 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:41:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:24:44 GMT
+# Wed, 24 Jun 2026 02:28:40 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:11:44 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:11:44 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:11:44 GMT
+# Wed, 24 Jun 2026 03:18:05 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:13:12 GMT
+# Wed, 24 Jun 2026 03:19:27 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:13:12 GMT
+# Wed, 24 Jun 2026 03:19:27 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Mon, 22 Jun 2026 20:13:12 GMT
+# Wed, 24 Jun 2026 03:19:27 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 20:16:30 GMT
+# Wed, 24 Jun 2026 03:22:45 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:16:30 GMT
+# Wed, 24 Jun 2026 03:22:45 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ef1b08ddd59d42b444e8f9c68a6cebbed70636aed0c242fdccb0bd61b61ba26b`  
-		Last Modified: Wed, 10 Jun 2026 23:40:27 GMT  
-		Size: 49.3 MB (49317121 bytes)  
+	-	`sha256:aa3e9ef32f73c30e8b065800ee66429992d3bfea6a1fb8224afdd878ab5b994f`  
+		Last Modified: Wed, 24 Jun 2026 00:28:33 GMT  
+		Size: 49.3 MB (49317255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b365b6ff7b7e310e1b9a88f996e65b89969c7fa450492b68249d1d1c38e0676`  
-		Last Modified: Thu, 11 Jun 2026 00:42:51 GMT  
-		Size: 25.6 MB (25635173 bytes)  
+	-	`sha256:3f59c84a786323367a79d4959142649bb24b16c989bbaae7f273550b47325959`  
+		Last Modified: Wed, 24 Jun 2026 01:41:50 GMT  
+		Size: 25.6 MB (25634938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ca884014342f240be01d391b498c3ec61b2f4af2c205e7e9a0b5ac2cb2f24c4`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 67.8 MB (67784745 bytes)  
+	-	`sha256:30d0db852850114cc79598cc8ab1ec19da54691d9e3267288bb3458d7488f125`  
+		Last Modified: Wed, 24 Jun 2026 02:28:58 GMT  
+		Size: 67.8 MB (67778134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02c21eb9dae4b70093ef9e10ec0e4ba05359c6345b59236ba8cfa898374c5048`  
-		Last Modified: Mon, 22 Jun 2026 20:16:36 GMT  
-		Size: 1.5 MB (1478611 bytes)  
+	-	`sha256:08a609cf6304945cd9e7395a8a0fb417f55e1143898aa0a8b4a81f92b03e0575`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
+		Size: 1.5 MB (1478608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c3d45bda203dd6c7e99355225cd9c77aa0278515474c01ac5de1c9daeae9406`  
-		Last Modified: Mon, 22 Jun 2026 20:16:36 GMT  
-		Size: 9.4 MB (9405916 bytes)  
+	-	`sha256:3a5e6b01db73e8b991a5ddbac751a062175cd7e70497636d0e197eb2a382b736`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
+		Size: 9.4 MB (9405671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8586f1f03621fa06892b82edef53215d10d576f05fad18da33d8e5d7e4d379d9`  
-		Last Modified: Mon, 22 Jun 2026 20:16:36 GMT  
-		Size: 11.2 MB (11242641 bytes)  
+	-	`sha256:730ecdde659998e68142191a0e399da86682e0f38ecb6069b831fa9f1f5d34a6`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
+		Size: 11.2 MB (11242433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-trixie` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:2c45d819f80dd8f88bb50cd97ad0efb9b432ee643dab1392fbb3da0c4bf12860
+$ docker pull haxe@sha256:daaa19dd4cdbecb22eaa36fb4f15f226da5e4ce70d7ea25e934b04b7cc5fac31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.2 KB (19243 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11b2763bbb916d3d0f4e0046115459344549829e42cd9cb07bc55f55d66cae10`
+-	Image ID: `sha256:6cb7dd6b50768359ed30faa7bda7c179b40e4f0f3c9e450d780193ab136df994`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:caac35bc56d173762e097bc410791445b1d6e0786a352cbcea519213f4567d87`  
-		Last Modified: Mon, 22 Jun 2026 20:16:35 GMT  
+	-	`sha256:976e0602c631d58f94ca3aa02416ff770f84262127667095faa8d2c254e4c05b`  
+		Last Modified: Wed, 24 Jun 2026 03:22:51 GMT  
 		Size: 19.2 KB (19243 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21410,83 +21410,83 @@ $ docker pull haxe@sha256:3b124d1fd523811fc6f681854f9c3c81ad220da48bb666da76465f
 ### `haxe:5.0.0-trixie` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:1a903c6bc7442f60dc1c6c67176c989375faca5490ebce769af071252f00cd2d
+$ docker pull haxe@sha256:a258d1966286b76ed774410cc545f6ed5bb5a166dc41a1ef8e0530bd789805a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.9 MB (165902232 bytes)**  
+-	Total Size: **165.9 MB (165895399 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f1293a0e549b0974f6fc6d7c1fa77e6d5a9abfa83937807e8a3766e4544d2780`
+-	Image ID: `sha256:6648623b21790ff99d37bf3663f5c306d673a45d6796e29d83c87bd7c3a7b3c1`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:44:22 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:45:15 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:22:02 GMT
+# Wed, 24 Jun 2026 02:35:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:56:44 GMT
+# Wed, 24 Jun 2026 03:17:45 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:56:44 GMT
+# Wed, 24 Jun 2026 03:17:45 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:56:44 GMT
+# Wed, 24 Jun 2026 03:17:45 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:58:03 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:58:03 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 ENV HAXE_VERSION=5.0.0-preview.1
-# Mon, 22 Jun 2026 20:58:03 GMT
+# Wed, 24 Jun 2026 03:19:06 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 21:01:36 GMT
+# Wed, 24 Jun 2026 03:22:37 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 5.0.0-preview.1 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=5.3.0 --disable-sandboxing 	&& eval `opam env` 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on= || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 21:01:36 GMT
+# Wed, 24 Jun 2026 03:22:37 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ed660e1af0f5da9e93a4c43fb29e86cb46fe69c76bcf11a3de9c57c987acab82`  
-		Last Modified: Wed, 10 Jun 2026 23:40:16 GMT  
-		Size: 49.7 MB (49678169 bytes)  
+	-	`sha256:c8a311258fd162f6aa0db134045a19154c81a2244ff9ed7620256c95ae5d6b69`  
+		Last Modified: Wed, 24 Jun 2026 00:28:21 GMT  
+		Size: 49.7 MB (49678395 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd2ab02859108b91c1c26f2badd015b5215eb066b7ef4f3a22bd1536a8debe96`  
-		Last Modified: Thu, 11 Jun 2026 00:44:32 GMT  
-		Size: 25.0 MB (25026911 bytes)  
+	-	`sha256:abe059c57e3bc40ea8086d6be574927bed6c0a000b182f3354b758009265e197`  
+		Last Modified: Wed, 24 Jun 2026 01:45:26 GMT  
+		Size: 25.0 MB (25026863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f2e427d8856f71d8d3667d1c4d9274b8aca2bd9d228387c51c211909e51263f`  
-		Last Modified: Thu, 11 Jun 2026 02:22:21 GMT  
-		Size: 67.6 MB (67599934 bytes)  
+	-	`sha256:5cf605f6b62a65326644e598c84134d29702579734c83dfca4cedf5dad7fb6d3`  
+		Last Modified: Wed, 24 Jun 2026 02:35:43 GMT  
+		Size: 67.6 MB (67592645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bf31bf089ec3e0638d3c067287be49c423d19bb536218f9f9ac8fb63a170dd5`  
-		Last Modified: Mon, 22 Jun 2026 21:01:43 GMT  
-		Size: 1.5 MB (1476981 bytes)  
+	-	`sha256:6ce6b5a6c23bffa7eedd0e3fcefafe251b063fb56f1026cc53f0d62ed005f7b8`  
+		Last Modified: Wed, 24 Jun 2026 03:22:43 GMT  
+		Size: 1.5 MB (1477014 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96e84225d6ad20030c913bdb061cefb8e06b67925e978622f8b4315737c9a65b`  
-		Last Modified: Mon, 22 Jun 2026 21:01:43 GMT  
-		Size: 9.4 MB (9350936 bytes)  
+	-	`sha256:4d896a39ca835c39c412426cf967ed645a66804aaabd1402bafb63a0f385d251`  
+		Last Modified: Wed, 24 Jun 2026 03:22:44 GMT  
+		Size: 9.4 MB (9351038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e5611bc4d10ad9a09d930290d5f37b0c081827c58a0b9a87c5310cbc4093e9c`  
-		Last Modified: Mon, 22 Jun 2026 21:01:43 GMT  
-		Size: 12.8 MB (12769301 bytes)  
+	-	`sha256:6ce80d45c40e364f7c010ba60cc748c124210bc839bfcfa2352895571461dd20`  
+		Last Modified: Wed, 24 Jun 2026 03:22:43 GMT  
+		Size: 12.8 MB (12769444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:5.0.0-trixie` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:d0160ee5863c1ac02b42dd157ea4f112f4519aaea3ba790dac03b0f90d7c1fa0
+$ docker pull haxe@sha256:919113ba119b93e1de8411c0fa3845855255a737f0bc936f02885be524c2cfd8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.4 KB (19401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3449a1f069f2c13f82efbb9079aeeb1b02a0e927a388c945644a3ffb5ed92fff`
+-	Image ID: `sha256:e1039ab6a4a9a693f10c548167ab1119c43de54f7b7d7a8835635679fb72f57e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:05f82ea7cff73f852cb491c056c3a2ad24fbaf70ecf27ca7e8a5df5036134589`  
-		Last Modified: Mon, 22 Jun 2026 21:01:42 GMT  
+	-	`sha256:9e37b6cbeaa5f8790648aa429735f289874b1b035fdf5530d3ad7521e3512603`  
+		Last Modified: Wed, 24 Jun 2026 03:22:43 GMT  
 		Size: 19.4 KB (19401 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -22080,7 +22080,7 @@ CMD ["haxe"]
 ## `haxe:latest`
 
 ```console
-$ docker pull haxe@sha256:01b6518688e06f8fcbe75c49a99b6ce6a637abf5341cb97d976278a6c2cc5995
+$ docker pull haxe@sha256:d66f2b9fc43a1fae6fcc6f2a732c3ebe604f1db118165fb6d7bd115ed67aa249
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22097,83 +22097,83 @@ $ docker pull haxe@sha256:01b6518688e06f8fcbe75c49a99b6ce6a637abf5341cb97d976278
 ### `haxe:latest` - linux; amd64
 
 ```console
-$ docker pull haxe@sha256:c43c934eb5267b759561428d41782c2b9f2a90079ac99401cb9114765b12c683
+$ docker pull haxe@sha256:7904130a8ccae528e2d96affeb3c088e857a219ea84a4f6b0563b93371225e14
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **165.3 MB (165319760 bytes)**  
+-	Total Size: **165.3 MB (165312858 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad037e080a6448f8d065d158716b23a103b1917a077e190c6891ba8942f04b85`
+-	Image ID: `sha256:958a6ad44224fafbabbb3008500fbea33440e00ed28177a0ef1eb47ee30fe8d6`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:42:40 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:41:39 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:24:44 GMT
+# Wed, 24 Jun 2026 02:28:40 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:11:45 GMT
+# Wed, 24 Jun 2026 03:17:51 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:11:45 GMT
+# Wed, 24 Jun 2026 03:17:51 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:11:45 GMT
+# Wed, 24 Jun 2026 03:17:51 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:13:03 GMT
+# Wed, 24 Jun 2026 03:19:05 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:13:03 GMT
+# Wed, 24 Jun 2026 03:19:05 GMT
 ENV HAXE_VERSION=4.3.7
-# Mon, 22 Jun 2026 20:13:03 GMT
+# Wed, 24 Jun 2026 03:19:05 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 20:16:38 GMT
+# Wed, 24 Jun 2026 03:22:35 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add luv 0.5.14 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on=luv || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:16:38 GMT
+# Wed, 24 Jun 2026 03:22:35 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ef1b08ddd59d42b444e8f9c68a6cebbed70636aed0c242fdccb0bd61b61ba26b`  
-		Last Modified: Wed, 10 Jun 2026 23:40:27 GMT  
-		Size: 49.3 MB (49317121 bytes)  
+	-	`sha256:aa3e9ef32f73c30e8b065800ee66429992d3bfea6a1fb8224afdd878ab5b994f`  
+		Last Modified: Wed, 24 Jun 2026 00:28:33 GMT  
+		Size: 49.3 MB (49317255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b365b6ff7b7e310e1b9a88f996e65b89969c7fa450492b68249d1d1c38e0676`  
-		Last Modified: Thu, 11 Jun 2026 00:42:51 GMT  
-		Size: 25.6 MB (25635173 bytes)  
+	-	`sha256:3f59c84a786323367a79d4959142649bb24b16c989bbaae7f273550b47325959`  
+		Last Modified: Wed, 24 Jun 2026 01:41:50 GMT  
+		Size: 25.6 MB (25634938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ca884014342f240be01d391b498c3ec61b2f4af2c205e7e9a0b5ac2cb2f24c4`  
-		Last Modified: Thu, 11 Jun 2026 02:25:01 GMT  
-		Size: 67.8 MB (67784745 bytes)  
+	-	`sha256:30d0db852850114cc79598cc8ab1ec19da54691d9e3267288bb3458d7488f125`  
+		Last Modified: Wed, 24 Jun 2026 02:28:58 GMT  
+		Size: 67.8 MB (67778134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9acf2cc2bbd80c43956a7feb617f122f840c11f25186eb4e5467f6fdc7519a1b`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
-		Size: 1.5 MB (1478604 bytes)  
+	-	`sha256:0e5c811c078754cb07e6cab76023d049a8347fdd6a39454778ae6abd22a9feb1`  
+		Last Modified: Wed, 24 Jun 2026 03:22:41 GMT  
+		Size: 1.5 MB (1478605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb901720845467255cb5b5601d83eade693e8b34ff327351c8224622a7b4baac`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
-		Size: 9.4 MB (9405526 bytes)  
+	-	`sha256:cc25905a6077737e3e52aa7d6e3a3962d444dc4ac21b7b7505856aabef02455b`  
+		Last Modified: Wed, 24 Jun 2026 03:22:41 GMT  
+		Size: 9.4 MB (9405367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16ace210cbc7cc3c45b1533ae2d85fef60070146ccc058258ad552e2517c68c1`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
-		Size: 11.7 MB (11698591 bytes)  
+	-	`sha256:ed41e9b0ee635d89e9225cecdc28930e0b0dfe5c44bf16457caf6942c2663b7f`  
+		Last Modified: Wed, 24 Jun 2026 03:22:41 GMT  
+		Size: 11.7 MB (11698559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:latest` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:1c321a4c46ebe5aee393ac66f45ac8d8b36efc2bc487c29b61c7fc3c82e74fb5
+$ docker pull haxe@sha256:4fce81d98a4bbd8668d159f4659857d3f1bd6f4c3d16f0b437534d44004cbeab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **19.1 KB (19052 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5959691c0b4b4d5386c3b97aa98edda59ca437711adea061c4bd6bcd1ef34ffb`
+-	Image ID: `sha256:3cb350a0a1840eccc057df521fc806f98afec6130418e12187c4f0cb96a6f6be`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7b224822a144fe1cd388993881eb6e1cb01a194fa806f56e4d59c5649319e99e`  
-		Last Modified: Mon, 22 Jun 2026 20:16:44 GMT  
+	-	`sha256:bd0cdd72b74083fc8d5123ae9c1e778699fe8c596d30f5215925c9d1157ab330`  
+		Last Modified: Wed, 24 Jun 2026 03:22:40 GMT  
 		Size: 19.1 KB (19052 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -22263,84 +22263,84 @@ $ docker pull haxe@sha256:f5984625e66775fc89bee938480f152f190cc57c8c0bd6832295e9
 ### `haxe:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:27797a5fc438dd5f4bee4623a39fed44721bc93874a4457006b108996c338d7a
+$ docker pull haxe@sha256:8ffd7ba24fc15d6fc8e4d11dcdc380e83047cf217a9c90c721bc967adfb8d50c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.6 MB (166555431 bytes)**  
+-	Total Size: **166.5 MB (166548292 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2b25b2e57cfce3f434f7a529af8cc2b241e6e80410403deb98133f8726fd1c3`
+-	Image ID: `sha256:c6985f832b9d9c3b21d3e1cbbc94f9210ea75d84cfd5ce39a4e3c8f8fa60100a`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1781049600'
-# Thu, 11 Jun 2026 00:44:22 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1782172800'
+# Wed, 24 Jun 2026 01:45:15 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean # buildkit
-# Thu, 11 Jun 2026 02:22:02 GMT
+# Wed, 24 Jun 2026 02:35:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean # buildkit
-# Mon, 22 Jun 2026 20:56:19 GMT
+# Wed, 24 Jun 2026 03:17:44 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 22 Jun 2026 20:56:19 GMT
+# Wed, 24 Jun 2026 03:17:44 GMT
 RUN apt-get update && apt-get install -y --no-install-recommends 		libgc1 		zlib1g 		libpcre2-8-0 		 		libmariadb3 		libsqlite3-0 		libmbedcrypto16 		libmbedtls21 		libmbedx509-7 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 22 Jun 2026 20:56:19 GMT
+# Wed, 24 Jun 2026 03:17:44 GMT
 ENV NEKO_VERSION=2.4.1
-# Mon, 22 Jun 2026 20:57:38 GMT
+# Wed, 24 Jun 2026 03:19:02 GMT
 RUN set -ex 	&& buildDeps=' 		gcc 		make 		cmake 		libgc-dev 		libssl-dev 		libpcre2-dev 		zlib1g-dev 		apache2-dev 		libmariadb-dev-compat 		libsqlite3-dev 		libmbedtls-dev 		libgtk-3-dev 	' 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends && rm -rf /var/lib/apt/lists/* 		&& wget -O neko.tar.gz "https://github.com/HaxeFoundation/neko/archive/v2-4-1/neko-2.4.1.tar.gz" 	&& echo "702282028190dffa2078b00cca515b8e2ba889186a221df2226d2b6deb3ffaca *neko.tar.gz" | sha256sum -c - 	&& mkdir -p /usr/src/neko 	&& tar -xC /usr/src/neko --strip-components=1 -f neko.tar.gz 	&& rm neko.tar.gz 	&& cd /usr/src/neko 	&& cmake -DRELOCATABLE=OFF . 	&& make 	&& make install 		&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/neko ~/.cache # buildkit
-# Mon, 22 Jun 2026 20:57:38 GMT
+# Wed, 24 Jun 2026 03:19:02 GMT
 ENV HAXE_VERSION=4.3.7
-# Mon, 22 Jun 2026 20:57:38 GMT
+# Wed, 24 Jun 2026 03:19:02 GMT
 ENV HAXE_STD_PATH=/usr/local/share/haxe/std
-# Mon, 22 Jun 2026 21:01:45 GMT
+# Wed, 24 Jun 2026 03:22:33 GMT
 RUN set -ex 	&& buildDeps=' 		make 		ocaml 		ocaml-findlib 		zlib1g-dev 		libpcre2-dev 		libmbedtls-dev 		opam 		mccs 		m4 		unzip 		pkg-config 		libstring-shellquote-perl 		libipc-system-simple-perl 	' 	&& git clone --recursive --depth 1 --branch 4.3.7 "https://github.com/HaxeFoundation/haxe.git" /usr/src/haxe 	&& cd /usr/src/haxe 	&& mkdir -p $HAXE_STD_PATH 	&& cp -r std/* $HAXE_STD_PATH 	&& apt-get update && apt-get install -y $buildDeps --no-install-recommends 		&& opam init --compiler=4.14.2 --disable-sandboxing 	&& eval `opam env` 		&& opam pin add luv 0.5.14 --no-action 		&& ( [ -f /usr/src/haxe/opam ] || [ -f /usr/src/haxe/haxe.opam ] && opam install /usr/src/haxe --deps-only --assume-depexts --yes --ignore-constraints-on=luv || make opam_install ) 	&& make all tools 	&& mkdir -p /usr/local/bin 	&& cp haxe haxelib /usr/local/bin 	&& mkdir -p /haxelib 	&& cd / && haxelib setup /haxelib 		&& eval `opam env --revert` 	&& rm -rf ~/.opam 	&& rm -rf /var/lib/apt/lists/* 	&& apt-get purge -y --auto-remove $buildDeps 	&& rm -rf /usr/src/haxe ~/.cache # buildkit
-# Mon, 22 Jun 2026 21:01:45 GMT
+# Wed, 24 Jun 2026 03:22:33 GMT
 CMD ["haxe"]
 ```
 
 -	Layers:
-	-	`sha256:ed660e1af0f5da9e93a4c43fb29e86cb46fe69c76bcf11a3de9c57c987acab82`  
-		Last Modified: Wed, 10 Jun 2026 23:40:16 GMT  
-		Size: 49.7 MB (49678169 bytes)  
+	-	`sha256:c8a311258fd162f6aa0db134045a19154c81a2244ff9ed7620256c95ae5d6b69`  
+		Last Modified: Wed, 24 Jun 2026 00:28:21 GMT  
+		Size: 49.7 MB (49678395 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd2ab02859108b91c1c26f2badd015b5215eb066b7ef4f3a22bd1536a8debe96`  
-		Last Modified: Thu, 11 Jun 2026 00:44:32 GMT  
-		Size: 25.0 MB (25026911 bytes)  
+	-	`sha256:abe059c57e3bc40ea8086d6be574927bed6c0a000b182f3354b758009265e197`  
+		Last Modified: Wed, 24 Jun 2026 01:45:26 GMT  
+		Size: 25.0 MB (25026863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f2e427d8856f71d8d3667d1c4d9274b8aca2bd9d228387c51c211909e51263f`  
-		Last Modified: Thu, 11 Jun 2026 02:22:21 GMT  
-		Size: 67.6 MB (67599934 bytes)  
+	-	`sha256:5cf605f6b62a65326644e598c84134d29702579734c83dfca4cedf5dad7fb6d3`  
+		Last Modified: Wed, 24 Jun 2026 02:35:43 GMT  
+		Size: 67.6 MB (67592645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:377380df1e3e6c1b08aa3af9ba93dfe00a153a234c6bbc2d5a63e9e9fdd63834`  
-		Last Modified: Mon, 22 Jun 2026 21:01:51 GMT  
-		Size: 1.5 MB (1477001 bytes)  
+	-	`sha256:2036f5cecb1b7475069fa47c9d8a93ba3afa483743ca3ba32683fb35a70fcd36`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 1.5 MB (1477016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f46081d5779a696802079f4eb063a6c7cc5663193f255cd66530508d3e67018`  
-		Last Modified: Mon, 22 Jun 2026 21:01:52 GMT  
-		Size: 9.4 MB (9351018 bytes)  
+	-	`sha256:ccf124d6741bdcbe6776113bd66bf542b7ef8fc3ea7e244cdb78e2c6ca62c79d`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 9.4 MB (9351006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ada1c535373b94d5abca99a63b2967859396b8b90950e14cde610a972dff077`  
-		Last Modified: Mon, 22 Jun 2026 21:01:52 GMT  
-		Size: 13.4 MB (13422398 bytes)  
+	-	`sha256:2b668c7e7cdfe73f3316ad14ecb9c6fc32da0c2a22b900c8d37bbb9c9dbae468`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 13.4 MB (13422367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:latest` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:a47518e09fa4e27fbaf12c4cc192f6272e7b026d6c0f697079462e72f50c6b4b
+$ docker pull haxe@sha256:246c56b2617c49259f05311f443260ea150c2c66a07db1f4d1b7854b69b210a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.2 KB (19197 bytes)**  
+-	Total Size: **19.2 KB (19198 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e35a281d7500a80646f9af29a2dfb443f639e687e8bb5d094757006e3b1527f6`
+-	Image ID: `sha256:0e680b09484ada294576cf618a901638f6b818e89b15a50a69aa13dd5e71d55e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d5c53edd712b128216a89d0f786b03c9e791528e8a9603adc6a729afde5b1691`  
-		Last Modified: Mon, 22 Jun 2026 21:01:51 GMT  
-		Size: 19.2 KB (19197 bytes)  
+	-	`sha256:3281151bc4ec2e30c43a398ff87a105ae11ed9b9efbb6c31aa50ba1e364b8230`  
+		Last Modified: Wed, 24 Jun 2026 03:22:39 GMT  
+		Size: 19.2 KB (19198 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:latest` - windows version 10.0.26100.32995; amd64
