@@ -12,6 +12,8 @@
 -	[`couchdb:3.5-nouveau`](#couchdb35-nouveau)
 -	[`couchdb:3.5.2`](#couchdb352)
 -	[`couchdb:3.5.2-nouveau`](#couchdb352-nouveau)
+-	[`couchdb:3.5.2.1`](#couchdb3521)
+-	[`couchdb:3.5.2.1-nouveau`](#couchdb3521-nouveau)
 -	[`couchdb:latest`](#couchdblatest)
 
 ## `couchdb:3`
@@ -2875,6 +2877,14 @@ $ docker pull couchdb@sha256:60da35351d7600c61aefc7d511fb6269fbb8f86085148a27705
 		Last Modified: Thu, 11 Jun 2026 00:45:23 GMT  
 		Size: 24.6 KB (24612 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `couchdb:3.5.2.1`
+
+**does not exist** (yet?)
+
+## `couchdb:3.5.2.1-nouveau`
+
+**does not exist** (yet?)
 
 ## `couchdb:latest`
 
