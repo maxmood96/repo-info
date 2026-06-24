@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c1378180932a528a2ec7045901db8e29ba1d15313eb7a74cfadb9bfd46c4762b`
-- Created: `2026-06-19T02:15:12.686308934Z`
-- Virtual Size: ~ 366.42 Mb  
+- Image ID: `sha256:a65c0a579e2ea69f53a6a2ab8acced81f1f8ffdadc8d21406ce6f6c96a89de56`
+- Created: `2026-06-24T02:14:36.889639365Z`
+- Virtual Size: ~ 366.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["clj"]`
@@ -2316,28 +2316,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u7/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssh/1:8.4p1-5+deb11u7/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssl=1.1.1w-0+deb11u7`
-
-Binary Packages:
-
-- `libssl1.1:amd64=1.1.1w-0+deb11u7`
-
-**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
-If source is available (seen below), check the contents of `debian/copyright` within it.
-
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u7/
-
-
 ### `dpkg` source package: `openssl=1.1.1w-0+deb11u8`
 
 Binary Packages:
 
+- `libssl1.1:amd64=1.1.1w-0+deb11u8`
 - `openssl=1.1.1w-0+deb11u8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
