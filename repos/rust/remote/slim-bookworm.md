@@ -1,7 +1,7 @@
 ## `rust:slim-bookworm`
 
 ```console
-$ docker pull rust@sha256:c8a94a78f67ec8c4d474ec7f71e0720f21eb7e584e158daec0874cafa7c30e4d
+$ docker pull rust@sha256:a5e80efc194cfc8e7453cb27b022f07e6ed212f49fdd4055caf85f8be806538c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,171 +22,171 @@ $ docker pull rust@sha256:c8a94a78f67ec8c4d474ec7f71e0720f21eb7e584e158daec0874c
 ### `rust:slim-bookworm` - linux; amd64
 
 ```console
-$ docker pull rust@sha256:735c0f3b0d7fb33e43cbe4ac7ac0942abca94d4f127b7a13b83da32465b562d0
+$ docker pull rust@sha256:bef0c0c8eee5b866fadb56bd83cdf4681921c3851f2b01dc13b621653a06a4f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **314.2 MB (314238659 bytes)**  
+-	Total Size: **314.2 MB (314238546 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b4202f07fb7d99861732e978061e7c916f380f8fdab9d825644c8ecdf76d4fa`
+-	Image ID: `sha256:b6af8c19e4ac9303d54a74f965b4f19c834a24c9c56fd815dd553470c9a1fc57`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 01:13:24 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 02:12:16 GMT
 LABEL org.opencontainers.image.source=https://github.com/rust-lang/docker-rust
-# Thu, 11 Jun 2026 01:13:24 GMT
+# Wed, 24 Jun 2026 02:12:16 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin RUST_VERSION=1.96.0
-# Thu, 11 Jun 2026 01:13:24 GMT
+# Wed, 24 Jun 2026 02:12:16 GMT
 RUN set -eux;         apt-get update;     apt-get install -y --no-install-recommends         ca-certificates         gcc         libc6-dev         wget         ;         arch="$(dpkg --print-architecture)";     case "$arch" in         'amd64')             rustArch='x86_64-unknown-linux-gnu';             rustupSha256='4acc9acc76d5079515b46346a485974457b5a79893cfb01112423c89aeb5aa10';             ;;         'armhf')             rustArch='armv7-unknown-linux-gnueabihf';             rustupSha256='124e02253af9128f9e27ea1ac929cbb73cf44cf35469d0f594a1b62f7b71fea1';             ;;         'arm64')             rustArch='aarch64-unknown-linux-gnu';             rustupSha256='9732d6c5e2a098d3521fca8145d826ae0aaa067ef2385ead08e6feac88fa5792';             ;;         'i386')             rustArch='i686-unknown-linux-gnu';             rustupSha256='5140e82096f96d1d8077f00eb312648e0e5106d101c9918d086f72cbc69bb3a1';             ;;         'ppc64el')             rustArch='powerpc64le-unknown-linux-gnu';             rustupSha256='4bfff85bd3967d988e14567aa9cc6ab0ea386f0ffeff0f9f14d23f0103bf1f97';             ;;         's390x')             rustArch='s390x-unknown-linux-gnu';             rustupSha256='66c2c132428b6b77803facb02cbdf33b89d20c00bd20da142be8cb651f2e7cd8';             ;;         *)             echo >&2 "unsupported architecture: $arch";             exit 1;             ;;     esac;         url="https://static.rust-lang.org/rustup/archive/1.29.0/${rustArch}/rustup-init";     wget --progress=dot:giga "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;         chmod +x rustup-init;     ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch};     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;         apt-get remove -y --auto-remove         wget         ;     rm -rf /var/lib/apt/lists/*;         rustup --version;     cargo --version;     rustc --version; # buildkit
 ```
 
 -	Layers:
-	-	`sha256:b9136609bef0128191aa157637b98dd7b98e52154ca60c18258d65957a01c6d0`  
-		Last Modified: Wed, 10 Jun 2026 23:39:54 GMT  
-		Size: 28.2 MB (28237624 bytes)  
+	-	`sha256:68629629b516c3cd6f5e71ffbe18e32afb1ae5b4926c92d058c0f11ef1fd58a3`  
+		Last Modified: Wed, 24 Jun 2026 00:27:52 GMT  
+		Size: 28.2 MB (28237639 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dbfb011cb9b23f2c3d96c6745109a7c52ce8a19dadb420098c83d1931181dd0d`  
-		Last Modified: Thu, 11 Jun 2026 01:14:09 GMT  
-		Size: 286.0 MB (286001035 bytes)  
+	-	`sha256:1311f96b281a52f452c7d460943153c8ab4b464e17eb9c83be04801b1bdeae14`  
+		Last Modified: Wed, 24 Jun 2026 02:12:59 GMT  
+		Size: 286.0 MB (286000907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rust:slim-bookworm` - unknown; unknown
 
 ```console
-$ docker pull rust@sha256:33abcb6909008c290571a432e9cf2464fbf8a17a938934f67d9edbcd6d781e4b
+$ docker pull rust@sha256:6102eebfee4dc2c1682f889ed891429a37989b14c13044bc3620c64253b63c55
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.1 MB (4109408 bytes)**  
+-	Total Size: **4.1 MB (4109409 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86729391addf7d56d6d05d983c64266187c32f59ecbdc4059adb948a40256947`
+-	Image ID: `sha256:26277514eb64f94d1100b0064a343a86b6cbf9ba0dd9c277dbe2e94946fb8801`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6b9516806cab1153ceea198f9e2c73fe06d247dcea9c9b18390838c0bc1fa1f7`  
-		Last Modified: Thu, 11 Jun 2026 01:14:03 GMT  
+	-	`sha256:c18408f5b22654d929e694d1a28bacafad0b453a9714f194769b384f760e85d0`  
+		Last Modified: Wed, 24 Jun 2026 02:12:53 GMT  
 		Size: 4.1 MB (4095525 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f10a82d859eecf62652ca1fb6a1ee97291026cb077bc29fad0535433141c7a38`  
-		Last Modified: Thu, 11 Jun 2026 01:14:02 GMT  
-		Size: 13.9 KB (13883 bytes)  
+	-	`sha256:340b5ec7198319aba37282865224956d51da3b6d65dfd5a83c45c296f5e59b73`  
+		Last Modified: Wed, 24 Jun 2026 02:12:53 GMT  
+		Size: 13.9 KB (13884 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rust:slim-bookworm` - linux; arm variant v7
 
 ```console
-$ docker pull rust@sha256:96e907d088bdd88cfc3a4f74f5deb7f1cbdfc50166b17f301b588309a4479e64
+$ docker pull rust@sha256:00b1aa05cd8ee0a1a4e022955d7f0992451f4595fc12b0e6df0fde530ef6d450
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **329.6 MB (329563656 bytes)**  
+-	Total Size: **329.6 MB (329564280 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:546e3949edad609f8ea3096842314397f66d14f3b5afd63751fee2aa73733191`
+-	Image ID: `sha256:6f578be16aa0d91d60aa222b09f967f6ff4fac1261f9a5239ba228e2a59459b6`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 02:38:37 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 03:35:37 GMT
 LABEL org.opencontainers.image.source=https://github.com/rust-lang/docker-rust
-# Thu, 11 Jun 2026 02:38:37 GMT
+# Wed, 24 Jun 2026 03:35:37 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin RUST_VERSION=1.96.0
-# Thu, 11 Jun 2026 02:38:37 GMT
+# Wed, 24 Jun 2026 03:35:37 GMT
 RUN set -eux;         apt-get update;     apt-get install -y --no-install-recommends         ca-certificates         gcc         libc6-dev         wget         ;         arch="$(dpkg --print-architecture)";     case "$arch" in         'amd64')             rustArch='x86_64-unknown-linux-gnu';             rustupSha256='4acc9acc76d5079515b46346a485974457b5a79893cfb01112423c89aeb5aa10';             ;;         'armhf')             rustArch='armv7-unknown-linux-gnueabihf';             rustupSha256='124e02253af9128f9e27ea1ac929cbb73cf44cf35469d0f594a1b62f7b71fea1';             ;;         'arm64')             rustArch='aarch64-unknown-linux-gnu';             rustupSha256='9732d6c5e2a098d3521fca8145d826ae0aaa067ef2385ead08e6feac88fa5792';             ;;         'i386')             rustArch='i686-unknown-linux-gnu';             rustupSha256='5140e82096f96d1d8077f00eb312648e0e5106d101c9918d086f72cbc69bb3a1';             ;;         'ppc64el')             rustArch='powerpc64le-unknown-linux-gnu';             rustupSha256='4bfff85bd3967d988e14567aa9cc6ab0ea386f0ffeff0f9f14d23f0103bf1f97';             ;;         's390x')             rustArch='s390x-unknown-linux-gnu';             rustupSha256='66c2c132428b6b77803facb02cbdf33b89d20c00bd20da142be8cb651f2e7cd8';             ;;         *)             echo >&2 "unsupported architecture: $arch";             exit 1;             ;;     esac;         url="https://static.rust-lang.org/rustup/archive/1.29.0/${rustArch}/rustup-init";     wget --progress=dot:giga "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;         chmod +x rustup-init;     ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch};     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;         apt-get remove -y --auto-remove         wget         ;     rm -rf /var/lib/apt/lists/*;         rustup --version;     cargo --version;     rustc --version; # buildkit
 ```
 
 -	Layers:
-	-	`sha256:8ae2378435d99f39097aa4fd0d6c58c08445becca3153d53205b2cc5054b09c2`  
-		Last Modified: Wed, 10 Jun 2026 23:40:16 GMT  
-		Size: 23.9 MB (23944473 bytes)  
+	-	`sha256:0ead8fe4feab98996b3feb5f196406b6d02e126a6955d96078d2f12294dacb62`  
+		Last Modified: Wed, 24 Jun 2026 00:27:49 GMT  
+		Size: 23.9 MB (23944532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32410148cf72656a189f7bdfed301ff638a616803af60ae78e6de829f7b3f1b5`  
-		Last Modified: Thu, 11 Jun 2026 02:39:18 GMT  
-		Size: 305.6 MB (305619183 bytes)  
+	-	`sha256:f8d24efc562b6b1fe9a4364e5a7120fa1c16f45c3348c75902f6ab4b2cd986c8`  
+		Last Modified: Wed, 24 Jun 2026 03:36:21 GMT  
+		Size: 305.6 MB (305619748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rust:slim-bookworm` - unknown; unknown
 
 ```console
-$ docker pull rust@sha256:e446e75d8f822362ab9cc006cdf0985e2184709d95abaf2a11883f39f64ebeff
+$ docker pull rust@sha256:a5152b3dcd9f784315015bc526b347e8207a90e4bdf9f943f27a2f3034a5a074
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3923886 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a490b9edf283cd5ed3fec24d598ac70df781622939b7e69ba0699e4080c65b82`
+-	Image ID: `sha256:51669e97457e442d3dd54323b29a4f912a0d8af5f2bf36e044e4b9bfafb2c00a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ad8b540b9ff1347772cfc1dd24670e22275788c2796388781734abe464979be9`  
-		Last Modified: Thu, 11 Jun 2026 02:39:13 GMT  
+	-	`sha256:7594eba1c1dc3960766b52ea5aa08dd1617544d67eb42811755e6c5860b1264c`  
+		Last Modified: Wed, 24 Jun 2026 03:36:14 GMT  
 		Size: 3.9 MB (3909922 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:afc41da9920bc164d7c8aee8c722ef69325902dfecba3df843320e54367d4e42`  
-		Last Modified: Thu, 11 Jun 2026 02:39:13 GMT  
+	-	`sha256:2f79223eb7f7440a4e4e9b2b56c891aa88a14e5d48d3f9568714cd8dc4c9940e`  
+		Last Modified: Wed, 24 Jun 2026 03:36:14 GMT  
 		Size: 14.0 KB (13964 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rust:slim-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull rust@sha256:8c9aa6cc1fc5cd58528eb2c073679d1f54bb031080c7b3aef6098122b9adc5d7
+$ docker pull rust@sha256:04934a96843aadd70c92bf27ed3ad1ce8a375d5c4e54467fd2e7b3257b20849c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.2 MB (274206053 bytes)**  
+-	Total Size: **274.2 MB (274205737 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ede65f7e538cf5f5e0eff31431dc9cb49c5870bae9506e6dde0f2d69bafdf701`
+-	Image ID: `sha256:34ac09b50178d7fc138c07964c0e2f8917f9452b5753033d513058a4c68271c7`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 01:17:10 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 02:18:22 GMT
 LABEL org.opencontainers.image.source=https://github.com/rust-lang/docker-rust
-# Thu, 11 Jun 2026 01:17:10 GMT
+# Wed, 24 Jun 2026 02:18:22 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin RUST_VERSION=1.96.0
-# Thu, 11 Jun 2026 01:17:10 GMT
+# Wed, 24 Jun 2026 02:18:22 GMT
 RUN set -eux;         apt-get update;     apt-get install -y --no-install-recommends         ca-certificates         gcc         libc6-dev         wget         ;         arch="$(dpkg --print-architecture)";     case "$arch" in         'amd64')             rustArch='x86_64-unknown-linux-gnu';             rustupSha256='4acc9acc76d5079515b46346a485974457b5a79893cfb01112423c89aeb5aa10';             ;;         'armhf')             rustArch='armv7-unknown-linux-gnueabihf';             rustupSha256='124e02253af9128f9e27ea1ac929cbb73cf44cf35469d0f594a1b62f7b71fea1';             ;;         'arm64')             rustArch='aarch64-unknown-linux-gnu';             rustupSha256='9732d6c5e2a098d3521fca8145d826ae0aaa067ef2385ead08e6feac88fa5792';             ;;         'i386')             rustArch='i686-unknown-linux-gnu';             rustupSha256='5140e82096f96d1d8077f00eb312648e0e5106d101c9918d086f72cbc69bb3a1';             ;;         'ppc64el')             rustArch='powerpc64le-unknown-linux-gnu';             rustupSha256='4bfff85bd3967d988e14567aa9cc6ab0ea386f0ffeff0f9f14d23f0103bf1f97';             ;;         's390x')             rustArch='s390x-unknown-linux-gnu';             rustupSha256='66c2c132428b6b77803facb02cbdf33b89d20c00bd20da142be8cb651f2e7cd8';             ;;         *)             echo >&2 "unsupported architecture: $arch";             exit 1;             ;;     esac;         url="https://static.rust-lang.org/rustup/archive/1.29.0/${rustArch}/rustup-init";     wget --progress=dot:giga "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;         chmod +x rustup-init;     ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch};     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;         apt-get remove -y --auto-remove         wget         ;     rm -rf /var/lib/apt/lists/*;         rustup --version;     cargo --version;     rustc --version; # buildkit
 ```
 
 -	Layers:
-	-	`sha256:402614bd39aaec1e4bdcf25aa67f88588fc8d93997a2551c4e130e6ed2b06c7a`  
-		Last Modified: Wed, 10 Jun 2026 23:39:57 GMT  
-		Size: 28.1 MB (28122307 bytes)  
+	-	`sha256:74f1dcfcc9c80045f6f6394ffcfc261cb19d0c71b97e964aec3d4abf4e0f7009`  
+		Last Modified: Wed, 24 Jun 2026 00:27:48 GMT  
+		Size: 28.1 MB (28122418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2db47cb38eeac8fd09385cdaa89250b37ccd040ddd4248080eea1f7b63ec9bcf`  
-		Last Modified: Thu, 11 Jun 2026 01:17:48 GMT  
-		Size: 246.1 MB (246083746 bytes)  
+	-	`sha256:4eabf5cd4bc1905658cb07836687db40f5e9c5d667328e7d828936852fdcf121`  
+		Last Modified: Wed, 24 Jun 2026 02:19:01 GMT  
+		Size: 246.1 MB (246083319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rust:slim-bookworm` - unknown; unknown
 
 ```console
-$ docker pull rust@sha256:bcf5f487ed1a89d492c465d882e4a841089487392d406d554d4f71d6c49c1420
+$ docker pull rust@sha256:df8c1b67f8d0a5a17d5115d162b3c816b42052e75e7706bca33643c2d4f9f741
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.1 MB (4131809 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fd41a55ab96f7fa039c145f229314050aec12c4cc7367a139fdd7af0cef60780`
+-	Image ID: `sha256:992478298737b72489d485c47036259221c62c9b2f888154755f3be721f7e918`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9e67488ace5fa9d7c49fc028c0a382b599e1c6204cb7201a7127c980697030e7`  
-		Last Modified: Thu, 11 Jun 2026 01:17:42 GMT  
+	-	`sha256:3fe8e8ad5564811169e5c1a22d3bc63e702ee1eac076a12d66d120a3ea22e77a`  
+		Last Modified: Wed, 24 Jun 2026 02:18:53 GMT  
 		Size: 4.1 MB (4117821 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ee44307361fa2350a49654d7b4dcad134647b552c89cae9e5d44943f424a1548`  
-		Last Modified: Thu, 11 Jun 2026 01:17:41 GMT  
+	-	`sha256:0d7b580e64d31503fdb059a607e6b74f59cbb59451b579fcc379f0cee463ea20`  
+		Last Modified: Wed, 24 Jun 2026 02:18:53 GMT  
 		Size: 14.0 KB (13988 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -307,56 +307,56 @@ $ docker pull rust@sha256:a366ee3dd003a00274d740da4545f8ba851be081726c0cffc685c1
 ### `rust:slim-bookworm` - linux; s390x
 
 ```console
-$ docker pull rust@sha256:fe9f745b354141a97be496ec708a5cdc856b5492db8fa639a8ae90a5ef6d0afc
+$ docker pull rust@sha256:482d21baaa05c4ebf1aa3dd708d478881d28b299489c044116ea9e7095547440
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **372.3 MB (372344564 bytes)**  
+-	Total Size: **372.3 MB (372344585 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:82d4de911190a6b553c59b47d95e5cb036f37de380e0cb93cc3ad2b9f22556b3`
+-	Image ID: `sha256:481fa867e222943ffd5cbd6e923ea9ddb352b3fb1d1c95eed16d88a326b39be8`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 03:03:40 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 04:05:26 GMT
 LABEL org.opencontainers.image.source=https://github.com/rust-lang/docker-rust
-# Thu, 11 Jun 2026 03:03:40 GMT
+# Wed, 24 Jun 2026 04:05:26 GMT
 ENV RUSTUP_HOME=/usr/local/rustup CARGO_HOME=/usr/local/cargo PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin RUST_VERSION=1.96.0
-# Thu, 11 Jun 2026 03:03:40 GMT
+# Wed, 24 Jun 2026 04:05:26 GMT
 RUN set -eux;         apt-get update;     apt-get install -y --no-install-recommends         ca-certificates         gcc         libc6-dev         wget         ;         arch="$(dpkg --print-architecture)";     case "$arch" in         'amd64')             rustArch='x86_64-unknown-linux-gnu';             rustupSha256='4acc9acc76d5079515b46346a485974457b5a79893cfb01112423c89aeb5aa10';             ;;         'armhf')             rustArch='armv7-unknown-linux-gnueabihf';             rustupSha256='124e02253af9128f9e27ea1ac929cbb73cf44cf35469d0f594a1b62f7b71fea1';             ;;         'arm64')             rustArch='aarch64-unknown-linux-gnu';             rustupSha256='9732d6c5e2a098d3521fca8145d826ae0aaa067ef2385ead08e6feac88fa5792';             ;;         'i386')             rustArch='i686-unknown-linux-gnu';             rustupSha256='5140e82096f96d1d8077f00eb312648e0e5106d101c9918d086f72cbc69bb3a1';             ;;         'ppc64el')             rustArch='powerpc64le-unknown-linux-gnu';             rustupSha256='4bfff85bd3967d988e14567aa9cc6ab0ea386f0ffeff0f9f14d23f0103bf1f97';             ;;         's390x')             rustArch='s390x-unknown-linux-gnu';             rustupSha256='66c2c132428b6b77803facb02cbdf33b89d20c00bd20da142be8cb651f2e7cd8';             ;;         *)             echo >&2 "unsupported architecture: $arch";             exit 1;             ;;     esac;         url="https://static.rust-lang.org/rustup/archive/1.29.0/${rustArch}/rustup-init";     wget --progress=dot:giga "$url";     echo "${rustupSha256} *rustup-init" | sha256sum -c -;         chmod +x rustup-init;     ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch};     rm rustup-init;     chmod -R a+w $RUSTUP_HOME $CARGO_HOME;         apt-get remove -y --auto-remove         wget         ;     rm -rf /var/lib/apt/lists/*;         rustup --version;     cargo --version;     rustc --version; # buildkit
 ```
 
 -	Layers:
-	-	`sha256:6483bebe0f30256cfdd9c6f96373508f6b33d18b4bc61668ee641c700aa3108a`  
-		Last Modified: Wed, 10 Jun 2026 23:41:10 GMT  
-		Size: 26.9 MB (26893508 bytes)  
+	-	`sha256:e9aeeda7513dde59469463716e9e14f36210d6570c3cad5e5440b32d941733cd`  
+		Last Modified: Wed, 24 Jun 2026 00:27:21 GMT  
+		Size: 26.9 MB (26893585 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c7692fde640171051f8331c450fafe951652a423cd37fe293da5cca9913b1e9`  
-		Last Modified: Thu, 11 Jun 2026 03:04:58 GMT  
-		Size: 345.5 MB (345451056 bytes)  
+	-	`sha256:eb4ab97ff442c4c2716be33039f95749712f22c75abe8fe64c7881f7bc29b10f`  
+		Last Modified: Wed, 24 Jun 2026 04:06:34 GMT  
+		Size: 345.5 MB (345451000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rust:slim-bookworm` - unknown; unknown
 
 ```console
-$ docker pull rust@sha256:b411e1a3f96ecf96ab67e5ea1b638ed4824626133acb78b4e2a7a695ccb59a53
+$ docker pull rust@sha256:817300bea364bbf5358325ed44927f749f9c55d81907aa36bed3dc2a4ef2a830
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.9 MB (3947087 bytes)**  
+-	Total Size: **3.9 MB (3947086 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a172688fed8ee1928d2cabd51da777e16b1264682880d270d088923e4367982b`
+-	Image ID: `sha256:d92e25ba5cb308c68786b18231d94a409d8d99374d0d70b7391a454086bf9e2a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c2bbec673ae02522b400efaac609f6751e756a0d3e3efb9e136a6b7aba972fbb`  
-		Last Modified: Thu, 11 Jun 2026 03:04:51 GMT  
+	-	`sha256:d1cbda28d030872c213d3c540f49ca0e3fa44ec30c88529a7155dd43324c1d42`  
+		Last Modified: Wed, 24 Jun 2026 04:06:28 GMT  
 		Size: 3.9 MB (3933203 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:767c50b74ad9074853ee94d76d1091eddb1908f4867196e8c72e9851b2d17f77`  
-		Last Modified: Thu, 11 Jun 2026 03:04:51 GMT  
-		Size: 13.9 KB (13884 bytes)  
+	-	`sha256:b9065a3cf72d02fec5448ff0dc2fa9cbf9376d1cb04d0c168310bdf1e3cc7313`  
+		Last Modified: Wed, 24 Jun 2026 04:06:27 GMT  
+		Size: 13.9 KB (13883 bytes)  
 		MIME: application/vnd.in-toto+json
