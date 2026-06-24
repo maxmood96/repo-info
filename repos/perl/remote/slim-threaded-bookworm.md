@@ -1,7 +1,7 @@
 ## `perl:slim-threaded-bookworm`
 
 ```console
-$ docker pull perl@sha256:59f60f2adeaf2beb2f7e154ef65c4e3b9e6a67e67ded2a3cc0640e17b2e90422
+$ docker pull perl@sha256:8ec767032f955e6d81fa07b2c70c9a7803ae5d2133e7112193d41ddc1635b428
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -93,201 +93,201 @@ $ docker pull perl@sha256:796f1c604e4950d8ce0ee474101db87133ed2c626f3cddf4265556
 ### `perl:slim-threaded-bookworm` - linux; arm variant v5
 
 ```console
-$ docker pull perl@sha256:38ef9d64720c767827fc3f01657cdfba6768d1e84cf18dcb78bc9ca9ecbe0b6a
+$ docker pull perl@sha256:56489a2f93a7d61def15e22929eabbd17b0a1f74707d5f525faf73b48c6d6261
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.1 MB (53088366 bytes)**  
+-	Total Size: **53.1 MB (53087327 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50b6c784b7482aa97ff53dd64247448920b1d8efc3fa40a346c24e7f8463d535`
+-	Image ID: `sha256:9ff7fe15f2a15989c9c84ab639e43b64f37c69b14cce8a32d3cb63f03c5107f3`
 -	Default Command: `["perl5.42.2","-de0"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 01:25:29 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 02:23:56 GMT
 WORKDIR /usr/src/perl
-# Thu, 11 Jun 2026 01:31:43 GMT
+# Wed, 24 Jun 2026 02:30:02 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends        bzip2        ca-certificates        curl        dpkg-dev        gcc        libc6-dev        make        netbase        patch        zlib1g-dev        xz-utils        libssl-dev     && curl -fL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.42.2.tar.gz -o perl-5.42.2.tar.gz     && echo '9384e8deb75b7b1695e5637971b752281aaecd025a3d5d4734d33c1d0adfee47 *perl-5.42.2.tar.gz' | sha256sum --strict --check -     && tar --strip-components=1 -xaf perl-5.42.2.tar.gz -C /usr/src/perl     && rm perl-5.42.2.tar.gz     && cat *.patch | patch -p1     && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"     && archBits="$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)"     && archFlag="$([ "$archBits" = '64' ] && echo '-Duse64bitall' || echo '-Duse64bitint')"     && ./Configure -Darchname="$gnuArch" "$archFlag" -Dusethreads -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -fLO https://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7049.tar.gz     && echo 'b9ffb88e62a06aa91bd7d5a28ef6bdbb942608aea90e3969aa29b33640035214 *App-cpanminus-1.7049.tar.gz' | sha256sum --strict --check -     && tar -xzf App-cpanminus-1.7049.tar.gz && cd App-cpanminus-1.7049     && perl -pi -E 's{http://(www\.cpan\.org|backpan\.perl\.org|cpan\.metacpan\.org|fastapi\.metacpan\.org|cpanmetadb\.plackperl\.org)}{https://$1}g' bin/cpanm     && perl -pi -E 's{try_lwp=>1}{try_lwp=>0}g' bin/cpanm     && perl bin/cpanm . && cd /root     && curl -fLO 'https://www.cpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-1.96.tar.gz'     && echo 'ab213691685fb2a576c669cbc8d9266f8165a31563ad15b7c4030b94adfc0753 *Net-SSLeay-1.96.tar.gz' | sha256sum --strict --check -     && cpanm --notest --from $PWD Net-SSLeay-1.96.tar.gz     && curl -fLO 'https://www.cpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.098.tar.gz'     && echo 'b38473be20256b1a06447dd6769ad162bfad6a258234ed2c7e2e1819c16c4df7 *IO-Socket-SSL-2.098.tar.gz' | sha256sum --strict --check -     && SSL_CERT_DIR=/etc/ssl/certs cpanm --from $PWD IO-Socket-SSL-2.098.tar.gz     && curl -fL https://raw.githubusercontent.com/skaji/cpm/0.998003/cpm -o /usr/local/bin/cpm     && echo '6a27e528cf37635773e738db36c4b4ab4345d5a9d00b8cbd2f2dc01abc73177d */usr/local/bin/cpm' | sha256sum --strict --check -     && chmod +x /usr/local/bin/cpm     && savedPackages="ca-certificates curl make netbase zlib1g-dev libssl-dev"     && apt-mark auto '.*' > /dev/null     && apt-mark manual $savedPackages     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && rm -fr /var/cache/apt/* /var/lib/apt/lists/*     && rm -fr /root/.cpanm /root/Net-SSLeay-1.96* /root/IO-Socket-SSL-2.098* /usr/src/perl /usr/src/App-cpanminus-1.7049* /tmp/*     && cpanm --version && cpm --version # buildkit
-# Thu, 11 Jun 2026 01:31:43 GMT
+# Wed, 24 Jun 2026 02:30:02 GMT
 WORKDIR /usr/src/app
-# Thu, 11 Jun 2026 01:31:43 GMT
+# Wed, 24 Jun 2026 02:30:02 GMT
 CMD ["perl5.42.2" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:99eb1512995af32b91c63bcd418e886af77e3c7ca088226161af558763425461`  
-		Last Modified: Wed, 10 Jun 2026 23:38:28 GMT  
-		Size: 25.8 MB (25773188 bytes)  
+	-	`sha256:56a07f407b343196efb8a614d5b61dad4cbe8fd8c8e97a11342cd7a61eadc02c`  
+		Last Modified: Wed, 24 Jun 2026 00:27:42 GMT  
+		Size: 25.8 MB (25773229 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9134b0f3b98440c2465ecc61341183e126cbdfc4f2c93c89968c153ee0411993`  
-		Last Modified: Thu, 11 Jun 2026 01:31:53 GMT  
+	-	`sha256:63d0374ab58d99fc767b4f110210aad1b654016230c5e88f189417b8f5869595`  
+		Last Modified: Wed, 24 Jun 2026 02:30:12 GMT  
 		Size: 135.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cae9e1a7694b480ea399702ac5107bd9bf2bcda55850f253fc92be0baf271ea4`  
-		Last Modified: Thu, 11 Jun 2026 01:31:54 GMT  
-		Size: 27.3 MB (27314912 bytes)  
+	-	`sha256:9b9711c2a1b703a0df9c6460941e475987ad2181f89785a22fbaf900d35ae7f9`  
+		Last Modified: Wed, 24 Jun 2026 02:30:13 GMT  
+		Size: 27.3 MB (27313831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52121cac20afa532af2d6e0787da1c092f5e6dbe370055d604ec4f473e2163e2`  
-		Last Modified: Thu, 11 Jun 2026 01:31:53 GMT  
-		Size: 131.0 B  
+	-	`sha256:b3a74da1d2c1b20710f334988e386cdccc6a7c33b9a2f40d1b964a3e4b03dcbb`  
+		Last Modified: Wed, 24 Jun 2026 02:30:12 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `perl:slim-threaded-bookworm` - unknown; unknown
 
 ```console
-$ docker pull perl@sha256:318f62aa37e32c8b864e3ad4b8c18614468292c96f2b625300bbde52bcb50797
+$ docker pull perl@sha256:5de17e6110fe5e9fb37dd3345ce788f20cd049852d51b6f145b16388ca155a04
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3929970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74bfcede9256d9a76c652e789ed45acf17ade133d158b8bb296d4e712162bd47`
+-	Image ID: `sha256:c718f8580fa14ffa6e9aeaed267aa74f9fe8c967b69771a22490a47eda9f2054`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dd0c91ae7c737f0c693b1b808fbaa92656a382e91d6c73be8afcdca31a4cbe1c`  
-		Last Modified: Thu, 11 Jun 2026 01:31:53 GMT  
+	-	`sha256:826ad06068adaf62a88d1ee6b9b025f9471b0f92e79421a04dd26cc07dbf1d99`  
+		Last Modified: Wed, 24 Jun 2026 02:30:12 GMT  
 		Size: 3.9 MB (3910955 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bc87e245d7ca4a8401b92510ca43e0cc44d74e45aa2c6fcf545bde5313d365cb`  
-		Last Modified: Thu, 11 Jun 2026 01:31:53 GMT  
+	-	`sha256:fda973f44807c7071c71ad46f073a743a16ccc156e731d95f46f1308ec6b98ee`  
+		Last Modified: Wed, 24 Jun 2026 02:30:12 GMT  
 		Size: 19.0 KB (19015 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `perl:slim-threaded-bookworm` - linux; arm variant v7
 
 ```console
-$ docker pull perl@sha256:f61a5dda72c4594b99982ccb054fabd70136ced8ed678b1013643d25c640e609
+$ docker pull perl@sha256:c8643b52772d10ea9f298c2d9c65b04f7fd6056b5e6148c4efdf42c6db0f53de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.3 MB (50334421 bytes)**  
+-	Total Size: **50.3 MB (50334553 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c86a9c9a7eb37ae3a292a1939def2a922324f3efd3404fbdbae791096ee6586`
+-	Image ID: `sha256:6d7096600ab6657da4815287d242f3a5827c5ba10b8cccfa191909b68bce77de`
 -	Default Command: `["perl5.42.2","-de0"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 01:40:47 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 02:47:02 GMT
 WORKDIR /usr/src/perl
-# Thu, 11 Jun 2026 01:52:29 GMT
+# Wed, 24 Jun 2026 02:52:56 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends        bzip2        ca-certificates        curl        dpkg-dev        gcc        libc6-dev        make        netbase        patch        zlib1g-dev        xz-utils        libssl-dev     && curl -fL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.42.2.tar.gz -o perl-5.42.2.tar.gz     && echo '9384e8deb75b7b1695e5637971b752281aaecd025a3d5d4734d33c1d0adfee47 *perl-5.42.2.tar.gz' | sha256sum --strict --check -     && tar --strip-components=1 -xaf perl-5.42.2.tar.gz -C /usr/src/perl     && rm perl-5.42.2.tar.gz     && cat *.patch | patch -p1     && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"     && archBits="$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)"     && archFlag="$([ "$archBits" = '64' ] && echo '-Duse64bitall' || echo '-Duse64bitint')"     && ./Configure -Darchname="$gnuArch" "$archFlag" -Dusethreads -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -fLO https://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7049.tar.gz     && echo 'b9ffb88e62a06aa91bd7d5a28ef6bdbb942608aea90e3969aa29b33640035214 *App-cpanminus-1.7049.tar.gz' | sha256sum --strict --check -     && tar -xzf App-cpanminus-1.7049.tar.gz && cd App-cpanminus-1.7049     && perl -pi -E 's{http://(www\.cpan\.org|backpan\.perl\.org|cpan\.metacpan\.org|fastapi\.metacpan\.org|cpanmetadb\.plackperl\.org)}{https://$1}g' bin/cpanm     && perl -pi -E 's{try_lwp=>1}{try_lwp=>0}g' bin/cpanm     && perl bin/cpanm . && cd /root     && curl -fLO 'https://www.cpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-1.96.tar.gz'     && echo 'ab213691685fb2a576c669cbc8d9266f8165a31563ad15b7c4030b94adfc0753 *Net-SSLeay-1.96.tar.gz' | sha256sum --strict --check -     && cpanm --notest --from $PWD Net-SSLeay-1.96.tar.gz     && curl -fLO 'https://www.cpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.098.tar.gz'     && echo 'b38473be20256b1a06447dd6769ad162bfad6a258234ed2c7e2e1819c16c4df7 *IO-Socket-SSL-2.098.tar.gz' | sha256sum --strict --check -     && SSL_CERT_DIR=/etc/ssl/certs cpanm --from $PWD IO-Socket-SSL-2.098.tar.gz     && curl -fL https://raw.githubusercontent.com/skaji/cpm/0.998003/cpm -o /usr/local/bin/cpm     && echo '6a27e528cf37635773e738db36c4b4ab4345d5a9d00b8cbd2f2dc01abc73177d */usr/local/bin/cpm' | sha256sum --strict --check -     && chmod +x /usr/local/bin/cpm     && savedPackages="ca-certificates curl make netbase zlib1g-dev libssl-dev"     && apt-mark auto '.*' > /dev/null     && apt-mark manual $savedPackages     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && rm -fr /var/cache/apt/* /var/lib/apt/lists/*     && rm -fr /root/.cpanm /root/Net-SSLeay-1.96* /root/IO-Socket-SSL-2.098* /usr/src/perl /usr/src/App-cpanminus-1.7049* /tmp/*     && cpanm --version && cpm --version # buildkit
-# Thu, 11 Jun 2026 01:52:30 GMT
+# Wed, 24 Jun 2026 02:52:56 GMT
 WORKDIR /usr/src/app
-# Thu, 11 Jun 2026 01:52:30 GMT
+# Wed, 24 Jun 2026 02:52:56 GMT
 CMD ["perl5.42.2" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:8ae2378435d99f39097aa4fd0d6c58c08445becca3153d53205b2cc5054b09c2`  
-		Last Modified: Wed, 10 Jun 2026 23:40:16 GMT  
-		Size: 23.9 MB (23944473 bytes)  
+	-	`sha256:0ead8fe4feab98996b3feb5f196406b6d02e126a6955d96078d2f12294dacb62`  
+		Last Modified: Wed, 24 Jun 2026 00:27:49 GMT  
+		Size: 23.9 MB (23944532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edb6b22b71fcedb958ba88d0e780b2b80a19f2a2a1650466bd2d21a7282ac0ac`  
-		Last Modified: Thu, 11 Jun 2026 01:46:30 GMT  
+	-	`sha256:d8b9a04214d091151152e4f8a21f6f07723d1c9f3f0122ca12ff9c848e67c166`  
+		Last Modified: Wed, 24 Jun 2026 02:53:06 GMT  
 		Size: 135.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:416540e44f3000e339ddbd24e31f53ea710fa6fdd4579a6542d637074b6b8f57`  
-		Last Modified: Thu, 11 Jun 2026 01:52:40 GMT  
-		Size: 26.4 MB (26389681 bytes)  
+	-	`sha256:6530bd9c547659d23430e60cc34acc39d811df64d551b11b4a5e6ff89d4cbed4`  
+		Last Modified: Wed, 24 Jun 2026 02:53:06 GMT  
+		Size: 26.4 MB (26389755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a7413ecac1162d7a3a9b39885710ae92c9fe42158bd177c80ab837a42d4624f`  
-		Last Modified: Thu, 11 Jun 2026 01:52:39 GMT  
-		Size: 132.0 B  
+	-	`sha256:95730e96866f89db42e8c8d8c136cfbdb2224596302dd2a0678b15343b9da789`  
+		Last Modified: Wed, 24 Jun 2026 02:53:05 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `perl:slim-threaded-bookworm` - unknown; unknown
 
 ```console
-$ docker pull perl@sha256:49e66365472840d7a757fe3038de8ac75427e58ad29e96ca6688f3f9391b125f
+$ docker pull perl@sha256:ced598bec85f99e0b7f37f028edfd5befb6d9b7636480d5a068faa04c8e2f207
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3929195 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed9fa8581ef2a14ced39d95ef46a7409420ca2809cb5fd5751c4ae7dcfdcb95f`
+-	Image ID: `sha256:10870f7d733b8b643ae1a31324a22235ab60269510e85fde08c361f03092ed02`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f2f930f6e27fbebb0e9b030fad58a3c0a4358c08b35ad1c5c5fff5d78bde6b27`  
-		Last Modified: Thu, 11 Jun 2026 01:52:39 GMT  
+	-	`sha256:771ab1996d3a5cf9683f2905408099a64ac140f0fbbc8fdabf0701e3e2f70ce3`  
+		Last Modified: Wed, 24 Jun 2026 02:53:06 GMT  
 		Size: 3.9 MB (3910180 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:578c9c8ea1290a42dba54910ba6a311f542c4f53e856de624f498ab297261117`  
-		Last Modified: Thu, 11 Jun 2026 01:52:39 GMT  
+	-	`sha256:d5b4cf7339da6d487d3a7f9782b3d2e98948bd7f695d1072fab53323536e1622`  
+		Last Modified: Wed, 24 Jun 2026 02:53:06 GMT  
 		Size: 19.0 KB (19015 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `perl:slim-threaded-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull perl@sha256:8eba72e1d39225bc52062845dbbca60f1babd8d8ad597e554a7d6f94b8fa025f
+$ docker pull perl@sha256:92540d7979a795f19c283e714ff241c61d8b5928abb18ae4fc5b29b365f5d087
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **57.2 MB (57240831 bytes)**  
+-	Total Size: **57.2 MB (57241180 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8fa827c16d1bd83653a1514fd0ef9be67a73dbd4632f935260bb717c71d3726`
+-	Image ID: `sha256:f2077677472e0c1896ae1f64cadc7eb192a381da1d8f9709e7b8b9428af4ba46`
 -	Default Command: `["perl5.42.2","-de0"]`
 
 ```dockerfile
-# Wed, 10 Jun 2026 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1781049600'
-# Thu, 11 Jun 2026 00:49:55 GMT
+# Tue, 23 Jun 2026 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1782172800'
+# Wed, 24 Jun 2026 01:50:35 GMT
 WORKDIR /usr/src/perl
-# Thu, 11 Jun 2026 00:54:58 GMT
+# Wed, 24 Jun 2026 01:55:44 GMT
 RUN apt-get update     && apt-get install -y --no-install-recommends        bzip2        ca-certificates        curl        dpkg-dev        gcc        libc6-dev        make        netbase        patch        zlib1g-dev        xz-utils        libssl-dev     && curl -fL https://cpan.metacpan.org/authors/id/S/SH/SHAY/perl-5.42.2.tar.gz -o perl-5.42.2.tar.gz     && echo '9384e8deb75b7b1695e5637971b752281aaecd025a3d5d4734d33c1d0adfee47 *perl-5.42.2.tar.gz' | sha256sum --strict --check -     && tar --strip-components=1 -xaf perl-5.42.2.tar.gz -C /usr/src/perl     && rm perl-5.42.2.tar.gz     && cat *.patch | patch -p1     && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"     && archBits="$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)"     && archFlag="$([ "$archBits" = '64' ] && echo '-Duse64bitall' || echo '-Duse64bitint')"     && ./Configure -Darchname="$gnuArch" "$archFlag" -Dusethreads -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -fLO https://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7049.tar.gz     && echo 'b9ffb88e62a06aa91bd7d5a28ef6bdbb942608aea90e3969aa29b33640035214 *App-cpanminus-1.7049.tar.gz' | sha256sum --strict --check -     && tar -xzf App-cpanminus-1.7049.tar.gz && cd App-cpanminus-1.7049     && perl -pi -E 's{http://(www\.cpan\.org|backpan\.perl\.org|cpan\.metacpan\.org|fastapi\.metacpan\.org|cpanmetadb\.plackperl\.org)}{https://$1}g' bin/cpanm     && perl -pi -E 's{try_lwp=>1}{try_lwp=>0}g' bin/cpanm     && perl bin/cpanm . && cd /root     && curl -fLO 'https://www.cpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-1.96.tar.gz'     && echo 'ab213691685fb2a576c669cbc8d9266f8165a31563ad15b7c4030b94adfc0753 *Net-SSLeay-1.96.tar.gz' | sha256sum --strict --check -     && cpanm --notest --from $PWD Net-SSLeay-1.96.tar.gz     && curl -fLO 'https://www.cpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.098.tar.gz'     && echo 'b38473be20256b1a06447dd6769ad162bfad6a258234ed2c7e2e1819c16c4df7 *IO-Socket-SSL-2.098.tar.gz' | sha256sum --strict --check -     && SSL_CERT_DIR=/etc/ssl/certs cpanm --from $PWD IO-Socket-SSL-2.098.tar.gz     && curl -fL https://raw.githubusercontent.com/skaji/cpm/0.998003/cpm -o /usr/local/bin/cpm     && echo '6a27e528cf37635773e738db36c4b4ab4345d5a9d00b8cbd2f2dc01abc73177d */usr/local/bin/cpm' | sha256sum --strict --check -     && chmod +x /usr/local/bin/cpm     && savedPackages="ca-certificates curl make netbase zlib1g-dev libssl-dev"     && apt-mark auto '.*' > /dev/null     && apt-mark manual $savedPackages     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false     && rm -fr /var/cache/apt/* /var/lib/apt/lists/*     && rm -fr /root/.cpanm /root/Net-SSLeay-1.96* /root/IO-Socket-SSL-2.098* /usr/src/perl /usr/src/App-cpanminus-1.7049* /tmp/*     && cpanm --version && cpm --version # buildkit
-# Thu, 11 Jun 2026 00:54:58 GMT
+# Wed, 24 Jun 2026 01:55:44 GMT
 WORKDIR /usr/src/app
-# Thu, 11 Jun 2026 00:54:58 GMT
+# Wed, 24 Jun 2026 01:55:44 GMT
 CMD ["perl5.42.2" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:402614bd39aaec1e4bdcf25aa67f88588fc8d93997a2551c4e130e6ed2b06c7a`  
-		Last Modified: Wed, 10 Jun 2026 23:39:57 GMT  
-		Size: 28.1 MB (28122307 bytes)  
+	-	`sha256:74f1dcfcc9c80045f6f6394ffcfc261cb19d0c71b97e964aec3d4abf4e0f7009`  
+		Last Modified: Wed, 24 Jun 2026 00:27:48 GMT  
+		Size: 28.1 MB (28122418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81593d69db25095ffd7950ce0b343a64759ff8eb1379a065962b736b25521864`  
-		Last Modified: Thu, 11 Jun 2026 00:55:09 GMT  
+	-	`sha256:a5ab3218e01f27f0a3f4b3ed9fa0b272283decee8695ea436c2186df73132ff5`  
+		Last Modified: Wed, 24 Jun 2026 01:55:56 GMT  
 		Size: 135.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98ec79f568f0271f95bedecaabd429f66501a5f188e6f77dbe15a069774d4d9a`  
-		Last Modified: Thu, 11 Jun 2026 00:55:10 GMT  
-		Size: 29.1 MB (29118257 bytes)  
+	-	`sha256:eaebda06b59df3e2eb4f8a65e4a69713c07a3dac66216ab60baf19db3935f6db`  
+		Last Modified: Wed, 24 Jun 2026 01:55:57 GMT  
+		Size: 29.1 MB (29118496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a05cccc7035b92cd49905a80b4c762ecb2a3771951a44d46550afb6ca529ca88`  
-		Last Modified: Thu, 11 Jun 2026 00:55:09 GMT  
-		Size: 132.0 B  
+	-	`sha256:17fd59e5c7540ed0a91bc8f00546deb3ae5eea2d194106887aad67405dbd4868`  
+		Last Modified: Wed, 24 Jun 2026 01:55:56 GMT  
+		Size: 131.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `perl:slim-threaded-bookworm` - unknown; unknown
 
 ```console
-$ docker pull perl@sha256:17831ee75b6ee8caff564e8edac9676fee13892128dc41e18b714a66518e8eaa
+$ docker pull perl@sha256:ab70d34c1dc19135d2d2895ddaebd1787f9cc57e175dcdf21b6e9a096b56c5c2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.9 MB (3930392 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f84a13fd136315c4430730c0a25815c7db01b5be04d9d806090de03e41d25a5a`
+-	Image ID: `sha256:5b10e7278a3911fcb07619d58b96c3e7f02fe42140d0e6dbcc67ac793d2cc7f5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0942473b2c5a112b446091d57e8e6786045e0570cbdd77e8132d600a450befb0`  
-		Last Modified: Thu, 11 Jun 2026 00:55:09 GMT  
+	-	`sha256:341eeccefd5035a34edaaae5f8815f0c79eb8a23ff57e8468adfa3c05eb79fa8`  
+		Last Modified: Wed, 24 Jun 2026 01:55:56 GMT  
 		Size: 3.9 MB (3911349 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e03469eee57bd59bf249d64c3c531f6cd8a58fa03f0af3b1df2173f8df3bb364`  
-		Last Modified: Thu, 11 Jun 2026 00:55:09 GMT  
+	-	`sha256:e97e61113b163d0964d7b00a871d4e1330acf4ccb3eea92a09862f4e346ee717`  
+		Last Modified: Wed, 24 Jun 2026 01:55:56 GMT  
 		Size: 19.0 KB (19043 bytes)  
 		MIME: application/vnd.in-toto+json
 
