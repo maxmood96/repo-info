@@ -1,24 +1,24 @@
-# `ghost:6.45.0-alpine3.23`
+# `ghost:6.47.0-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5b617615bf2e3e5b13197d73a5c0e107679675d58d86151aa10ca9a81430206b`
-- Created: `2026-06-18T14:12:24.344438206Z`
-- Virtual Size: ~ 759.67 Mb  
+- Image ID: `sha256:fe4b828df97a725aa501e7ff6ad1223a3122b09cb01a21974c0719c6ef793162`
+- Created: `2026-06-24T18:13:44.682726112Z`
+- Virtual Size: ~ 786.9 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["node","current/index.js"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=22.23.0`
+  - `NODE_VERSION=22.23.1`
   - `YARN_VERSION=1.22.22`
   - `GOSU_VERSION=1.19`
   - `NODE_ENV=production`
   - `GHOST_CLI_VERSION=1.29.3`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
-  - `GHOST_VERSION=6.45.0`
+  - `GHOST_VERSION=6.47.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -76,16 +76,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.4-r0 description:
+alpine-release-3.23.5-r0 description:
 Alpine release data
 
-alpine-release-3.23.4-r0 webpage:
+alpine-release-3.23.5-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.4-r0 installed size:
+alpine-release-3.23.5-r0 installed size:
 343 B
 
-alpine-release-3.23.4-r0 license:
+alpine-release-3.23.5-r0 license:
 MIT
 
 ```
@@ -161,16 +161,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260413-r0 description:
+ca-certificates-bundle-20260611-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260413-r0 webpage:
+ca-certificates-bundle-20260611-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260413-r0 installed size:
-212 KiB
+ca-certificates-bundle-20260611-r0 installed size:
+175 KiB
 
-ca-certificates-bundle-20260413-r0 license:
+ca-certificates-bundle-20260611-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -195,16 +195,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.6-r0 description:
+libcrypto3-3.5.7-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.6-r0 webpage:
+libcrypto3-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.6-r0 installed size:
+libcrypto3-3.5.7-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.6-r0 license:
+libcrypto3-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -246,16 +246,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.6-r0 description:
+libssl3-3.5.7-r0 description:
 SSL shared libraries
 
-libssl3-3.5.6-r0 webpage:
+libssl3-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.6-r0 installed size:
+libssl3-3.5.7-r0 installed size:
 819 KiB
 
-libssl3-3.5.6-r0 license:
+libssl3-3.5.7-r0 license:
 Apache-2.0
 
 ```
