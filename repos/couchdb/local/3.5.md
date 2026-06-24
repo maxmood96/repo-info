@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:675fb3d5555a6f5372c57f035f5a4a98260fd9e72d7866efb6ed0a47f0b5fd21`
-- Created: `2026-06-11T00:43:28.722627055Z`
-- Virtual Size: ~ 291.42 Mb  
+- Image ID: `sha256:d44232e2936d17afb2b1798bf2c507aec7faf0cafbd28fe901513e041cdbd91b`
+- Created: `2026-06-24T01:42:14.579844673Z`
+- Virtual Size: ~ 291.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GPG_COUCH_KEY=390EF70BB1EA12B2773962950EE62FB37A00258D`
-  - `COUCHDB_VERSION=3.5.2`
+  - `COUCHDB_VERSION=3.5.2.1`
 - Labels:
   - `maintainer=CouchDB Developers dev@couchdb.apache.org`
 
@@ -407,11 +407,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/9.7-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/9.7-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `couchdb=3.5.2~trixie`
+### `dpkg` source package: `couchdb=3.5.2.1~trixie`
 
 Binary Packages:
 
-- `couchdb=3.5.2~trixie`
+- `couchdb=3.5.2.1~trixie`
 
 Licenses: (parsed from: `/usr/share/doc/couchdb/copyright`)
 
