@@ -1,7 +1,7 @@
 ## `flink:scala_2.12`
 
 ```console
-$ docker pull flink@sha256:fad0add8fc2772a08c33898a2e0002426ad095ab9aa3673b81a1b1ab74290daf
+$ docker pull flink@sha256:b4c3498ea6bd712bdca146b8e04f6151ecfe05a4802ce733e00ae0da777ca8d5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull flink@sha256:fad0add8fc2772a08c33898a2e0002426ad095ab9aa3673b81a1b
 ### `flink:scala_2.12` - linux; amd64
 
 ```console
-$ docker pull flink@sha256:9748f93f0a74e154e3cf9eb8c75d43ab06a7f710c36baeb87dc13b2b4c238d4e
+$ docker pull flink@sha256:c38a9d7553aa28d1587b01840ee71e98363dba36c14f53495b37b08b6bb1809e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **664.8 MB (664816745 bytes)**  
+-	Total Size: **701.2 MB (701205776 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ed33d9ff886a4558972c69cefdf07c15a4bc22091ff61e3255fbc0902ad7716`
+-	Image ID: `sha256:464554ec119b9857fa2c6c1424c67e3c1e68a1f6afa84e8cae08612c0201031b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -53,29 +53,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 02 Jun 2026 08:14:26 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 02 Jun 2026 09:47:00 GMT
+# Tue, 23 Jun 2026 23:27:07 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 02 Jun 2026 09:47:00 GMT
-ENV FLINK_TGZ_URL=https://dlcdn.apache.org/flink/flink-2.2.1/flink-2.2.1-bin-scala_2.12.tgz FLINK_ASC_URL=https://downloads.apache.org/flink/flink-2.2.1/flink-2.2.1-bin-scala_2.12.tgz.asc GPG_KEY=F7529FAE24811A5C0DF3CA741596BBF0726835D8 CHECK_GPG=true
-# Tue, 02 Jun 2026 09:47:00 GMT
+# Tue, 23 Jun 2026 23:27:07 GMT
+ENV FLINK_TGZ_URL=https://dlcdn.apache.org/flink/flink-2.3.0/flink-2.3.0-bin-scala_2.12.tgz FLINK_ASC_URL=https://downloads.apache.org/flink/flink-2.3.0/flink-2.3.0-bin-scala_2.12.tgz.asc GPG_KEY=E11F792053638C56C98ACFADB5B638DCA5F94E4A CHECK_GPG=true
+# Tue, 23 Jun 2026 23:27:07 GMT
 ENV FLINK_HOME=/opt/flink
-# Tue, 02 Jun 2026 09:47:00 GMT
+# Tue, 23 Jun 2026 23:27:07 GMT
 ENV PATH=/opt/flink/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 02 Jun 2026 09:47:00 GMT
+# Tue, 23 Jun 2026 23:27:07 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink # buildkit
-# Tue, 02 Jun 2026 09:47:00 GMT
+# Tue, 23 Jun 2026 23:27:07 GMT
 WORKDIR /opt/flink
-# Tue, 02 Jun 2026 09:47:30 GMT
+# Tue, 23 Jun 2026 23:27:27 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in hkps://keys.openpgp.org $(shuf -e                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;     CONF_FILE="${FLINK_HOME}/conf/config.yaml";   /bin/bash "$FLINK_HOME/bin/config-parser-utils.sh" "${FLINK_HOME}/conf" "${FLINK_HOME}/bin" "${FLINK_HOME}/lib"     "-repKV" "rest.address,localhost,0.0.0.0"     "-repKV" "rest.bind-address,localhost,0.0.0.0"     "-repKV" "jobmanager.bind-host,localhost,0.0.0.0"     "-repKV" "taskmanager.bind-host,localhost,0.0.0.0"     "-rmKV" "taskmanager.host=localhost"; # buildkit
-# Tue, 02 Jun 2026 09:47:30 GMT
+# Tue, 23 Jun 2026 23:27:27 GMT
 USER flink
-# Tue, 02 Jun 2026 09:47:30 GMT
+# Tue, 23 Jun 2026 23:27:27 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Tue, 02 Jun 2026 09:47:30 GMT
+# Tue, 23 Jun 2026 23:27:27 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 02 Jun 2026 09:47:30 GMT
+# Tue, 23 Jun 2026 23:27:27 GMT
 EXPOSE map[6123/tcp:{} 8081/tcp:{}]
-# Tue, 02 Jun 2026 09:47:30 GMT
+# Tue, 23 Jun 2026 23:27:27 GMT
 CMD ["help"]
 ```
 
@@ -100,61 +100,61 @@ CMD ["help"]
 		Last Modified: Tue, 02 Jun 2026 08:14:36 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:814a7bcb974af1435751a179bec04ae9642626a2eb685b49aa364557730334a7`  
-		Last Modified: Tue, 02 Jun 2026 09:48:01 GMT  
-		Size: 1.3 MB (1323289 bytes)  
+	-	`sha256:48c87f49ddbbd209921090ee6b1e081788bf2aad77fe2e564bb139cbee16f075`  
+		Last Modified: Tue, 23 Jun 2026 23:27:59 GMT  
+		Size: 1.3 MB (1323257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c7d20416a2c21456214019bee0ad0b1c663e7540d858cc18996a6becc8bc127c`  
-		Last Modified: Tue, 02 Jun 2026 09:48:01 GMT  
+	-	`sha256:38abab780da526870687e87bfd00b3b5d965b9ba8a960bf9603da4769551dd18`  
+		Last Modified: Tue, 23 Jun 2026 23:27:59 GMT  
 		Size: 1.2 KB (1160 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ed7f8264b9fc8bd6bd9ba5c788be4d76609db3829d7d4b055f25b77f93eb033`  
-		Last Modified: Tue, 02 Jun 2026 09:48:02 GMT  
-		Size: 115.0 B  
+	-	`sha256:8b17c37a4c99ba1c6552aa07d36909d46e7cb4659d5a134c7e6e6df2b757e45b`  
+		Last Modified: Tue, 23 Jun 2026 23:27:59 GMT  
+		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ea9db006a3ae4d8a15a00492a31271b19f0e6f722fd135a0fa5315e10aea6e1`  
-		Last Modified: Tue, 02 Jun 2026 09:48:12 GMT  
-		Size: 569.2 MB (569205474 bytes)  
+	-	`sha256:5e06b71a3463ab87661ca6495521e9d37107b6cac03edd8b219d368b42df430f`  
+		Last Modified: Tue, 23 Jun 2026 23:28:20 GMT  
+		Size: 605.6 MB (605594541 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60078103172c1a4d0c8b3ae72cfde6a4553f3ddee3a121496b750f163df0f273`  
-		Last Modified: Tue, 02 Jun 2026 09:48:03 GMT  
-		Size: 2.2 KB (2238 bytes)  
+	-	`sha256:c0bae9aed61124b250c1287b0a1444c1ff84ea56a39a90a58d9f2e5a234bee7a`  
+		Last Modified: Tue, 23 Jun 2026 23:28:00 GMT  
+		Size: 2.2 KB (2235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:scala_2.12` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:36c73df935d91e6ce2bfb00ae08349b832bfd52e12407383b6bc3a74490d3465
+$ docker pull flink@sha256:467be3e2de1206bee4a1b5794a8aa7835ddd115846f0e5b36b9e1998c262133b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3421455 bytes)**  
+-	Total Size: **3.4 MB (3422762 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d362c43758b6ff50fa4cf4f25f6c98254fa5b95f8cbcbc018f21520786a2d399`
+-	Image ID: `sha256:6a178ee2b77c3b79e6bb4257ee7ef54a5d915b6b60eb2d292bea5d0b4a34013b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f91a4d1228374ae1db9a4c0844a61bf5fe6b0859096947c8fba50babc489d88e`  
-		Last Modified: Tue, 02 Jun 2026 09:48:01 GMT  
-		Size: 3.4 MB (3395871 bytes)  
+	-	`sha256:7e97e7944ed33789b969380e58a4e9823c2a42d09fbbb138b1946f4a629f6e6b`  
+		Last Modified: Tue, 23 Jun 2026 23:27:59 GMT  
+		Size: 3.4 MB (3397178 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:957c3ce7b2fc910ac065bdb4c98f2e05a9b788e81af65662049647ba8c780b94`  
-		Last Modified: Tue, 02 Jun 2026 09:48:01 GMT  
+	-	`sha256:172c9d852508986a0459c34d81df5f219fe8e11e8234d643cd4f161e442d57db`  
+		Last Modified: Tue, 23 Jun 2026 23:27:59 GMT  
 		Size: 25.6 KB (25584 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `flink:scala_2.12` - linux; arm64 variant v8
 
 ```console
-$ docker pull flink@sha256:54110094b3668bc0ed95556e9f7f8491c4ba3d8b37d0696d3b7a3fc113859774
+$ docker pull flink@sha256:80b9a7a52b2892b7bff2dcf01d003ac2375583539aa90fa008160c29c24979b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **663.3 MB (663323462 bytes)**  
+-	Total Size: **699.7 MB (699712658 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:edac8c1f0fd93277c01287d7085c12440e6add7e912e4c5798fbb0f33dd73163`
+-	Image ID: `sha256:f6bdb883647cf418a07baf30830fdb70d6a625fb72cddbc8b7661ccfb31f1158`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["help"]`
 
@@ -187,29 +187,29 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Tue, 02 Jun 2026 08:15:52 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 02 Jun 2026 09:12:57 GMT
+# Tue, 23 Jun 2026 23:26:44 GMT
 RUN set -ex;   apt-get update;   apt-get -y install gpg libsnappy1v5 gettext-base libjemalloc-dev;   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 02 Jun 2026 09:12:57 GMT
-ENV FLINK_TGZ_URL=https://dlcdn.apache.org/flink/flink-2.2.1/flink-2.2.1-bin-scala_2.12.tgz FLINK_ASC_URL=https://downloads.apache.org/flink/flink-2.2.1/flink-2.2.1-bin-scala_2.12.tgz.asc GPG_KEY=F7529FAE24811A5C0DF3CA741596BBF0726835D8 CHECK_GPG=true
-# Tue, 02 Jun 2026 09:12:57 GMT
+# Tue, 23 Jun 2026 23:26:45 GMT
+ENV FLINK_TGZ_URL=https://dlcdn.apache.org/flink/flink-2.3.0/flink-2.3.0-bin-scala_2.12.tgz FLINK_ASC_URL=https://downloads.apache.org/flink/flink-2.3.0/flink-2.3.0-bin-scala_2.12.tgz.asc GPG_KEY=E11F792053638C56C98ACFADB5B638DCA5F94E4A CHECK_GPG=true
+# Tue, 23 Jun 2026 23:26:45 GMT
 ENV FLINK_HOME=/opt/flink
-# Tue, 02 Jun 2026 09:12:57 GMT
+# Tue, 23 Jun 2026 23:26:45 GMT
 ENV PATH=/opt/flink/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 02 Jun 2026 09:12:57 GMT
+# Tue, 23 Jun 2026 23:26:45 GMT
 RUN groupadd --system --gid=9999 flink &&     useradd --system --home-dir $FLINK_HOME --uid=9999 --gid=flink flink # buildkit
-# Tue, 02 Jun 2026 09:12:57 GMT
+# Tue, 23 Jun 2026 23:26:45 GMT
 WORKDIR /opt/flink
-# Tue, 02 Jun 2026 09:13:33 GMT
+# Tue, 23 Jun 2026 23:26:58 GMT
 RUN set -ex;   wget -nv -O flink.tgz "$FLINK_TGZ_URL";     if [ "$CHECK_GPG" = "true" ]; then     wget -nv -O flink.tgz.asc "$FLINK_ASC_URL";     export GNUPGHOME="$(mktemp -d)";     for server in hkps://keys.openpgp.org $(shuf -e                             keyserver.ubuntu.com                             hkp://keyserver.ubuntu.com:80                             pgp.mit.edu) ; do         gpg --batch --keyserver "$server" --recv-keys "$GPG_KEY" && break || : ;     done &&     gpg --batch --verify flink.tgz.asc flink.tgz;     gpgconf --kill all;     rm -rf "$GNUPGHOME" flink.tgz.asc;   fi;     tar -xf flink.tgz --strip-components=1;   rm flink.tgz;     chown -R flink:flink .;     CONF_FILE="${FLINK_HOME}/conf/config.yaml";   /bin/bash "$FLINK_HOME/bin/config-parser-utils.sh" "${FLINK_HOME}/conf" "${FLINK_HOME}/bin" "${FLINK_HOME}/lib"     "-repKV" "rest.address,localhost,0.0.0.0"     "-repKV" "rest.bind-address,localhost,0.0.0.0"     "-repKV" "jobmanager.bind-host,localhost,0.0.0.0"     "-repKV" "taskmanager.bind-host,localhost,0.0.0.0"     "-rmKV" "taskmanager.host=localhost"; # buildkit
-# Tue, 02 Jun 2026 09:13:33 GMT
+# Tue, 23 Jun 2026 23:26:58 GMT
 USER flink
-# Tue, 02 Jun 2026 09:13:33 GMT
+# Tue, 23 Jun 2026 23:26:58 GMT
 COPY docker-entrypoint.sh / # buildkit
-# Tue, 02 Jun 2026 09:13:33 GMT
+# Tue, 23 Jun 2026 23:26:58 GMT
 ENTRYPOINT ["/docker-entrypoint.sh"]
-# Tue, 02 Jun 2026 09:13:33 GMT
+# Tue, 23 Jun 2026 23:26:58 GMT
 EXPOSE map[6123/tcp:{} 8081/tcp:{}]
-# Tue, 02 Jun 2026 09:13:33 GMT
+# Tue, 23 Jun 2026 23:26:58 GMT
 CMD ["help"]
 ```
 
@@ -234,47 +234,47 @@ CMD ["help"]
 		Last Modified: Tue, 02 Jun 2026 08:16:04 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c83a5f0f68d8c2f5dcf4abf0c955fec1a91308013ce4cf96ca4a6e8a5f6c121`  
-		Last Modified: Tue, 02 Jun 2026 09:14:06 GMT  
-		Size: 1.2 MB (1187885 bytes)  
+	-	`sha256:3664ff1368481ccd0442fc3e3f67fafd21309ac41b6233ecc1ffff3455a9993a`  
+		Last Modified: Tue, 23 Jun 2026 23:27:32 GMT  
+		Size: 1.2 MB (1187922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83b260e2b3d69034668e029629d05932522141ed42227ee3f3354c4f4562ac70`  
-		Last Modified: Tue, 02 Jun 2026 09:14:06 GMT  
-		Size: 1.2 KB (1159 bytes)  
+	-	`sha256:5da182f15e30c0b5b2ddbc1012b68d1c3d37769f1f3b61e0d4029ebc0bfa65df`  
+		Last Modified: Tue, 23 Jun 2026 23:27:32 GMT  
+		Size: 1.2 KB (1160 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b20f8455c8fdeeb67a380713796eeaa8ba74a882f5e15ee1479c0ec6112d563`  
-		Last Modified: Tue, 02 Jun 2026 09:14:06 GMT  
+	-	`sha256:2855bc78ad5d08b9be5065ddbc991e4896c6b77b63f794d477db785a64ba4653`  
+		Last Modified: Tue, 23 Jun 2026 23:27:32 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e3f409bfc0cb86b9d9fe9f3964f46c76c74da30c5a6bd26edec5c646fc497e1`  
-		Last Modified: Tue, 02 Jun 2026 09:14:22 GMT  
-		Size: 569.2 MB (569205399 bytes)  
+	-	`sha256:4e0e4462a8fcae42ca7ffcf5502bba09d6fa6f80a92ea6d4952b36683e5fe422`  
+		Last Modified: Tue, 23 Jun 2026 23:27:45 GMT  
+		Size: 605.6 MB (605594560 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c71351ff66c12407abc057c240c1206eb8002e181d370dd5fab838dc597d1d3`  
-		Last Modified: Tue, 02 Jun 2026 09:14:07 GMT  
-		Size: 2.2 KB (2240 bytes)  
+	-	`sha256:eeb650d1c275eeb48fc2d5a4aa02fec3b874956a51b0aaad6bb490cb2012ccfb`  
+		Last Modified: Tue, 23 Jun 2026 23:27:33 GMT  
+		Size: 2.2 KB (2237 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `flink:scala_2.12` - unknown; unknown
 
 ```console
-$ docker pull flink@sha256:f2b1d2e9979474027c913b98c77a65fae0880c7c9eb9aae966cd57589b26ac9e
+$ docker pull flink@sha256:00c6d57f1db515e2b2f9fc1c631935d5bcdde19b63f57a70d862ebf86008c31d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3422257 bytes)**  
+-	Total Size: **3.4 MB (3423563 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47be72850728b8eb4edfcd4b6af83c33810433e2f03714b859f37d3abd1569dc`
+-	Image ID: `sha256:708b5baed08eef31f6ed27d7d6c1c7b24ad71d6d3030715d1baedf33e3ea61cc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:05a7c26f9302bff4271baa9ff8dba08536d9f864b796ccc36eb7808f30228b40`  
-		Last Modified: Tue, 02 Jun 2026 09:14:06 GMT  
-		Size: 3.4 MB (3396443 bytes)  
+	-	`sha256:163bbcf71a94f6f904746be1457fef3590b7ce64d529dbee73a13ef8c3541125`  
+		Last Modified: Tue, 23 Jun 2026 23:27:32 GMT  
+		Size: 3.4 MB (3397750 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3611aa7c482b85cfc7b9fff3f9f6cc6e1ba91881841b2674b8f4e3a185f3a11d`  
-		Last Modified: Tue, 02 Jun 2026 09:14:05 GMT  
-		Size: 25.8 KB (25814 bytes)  
+	-	`sha256:788d24f8743dae974cbf32e26eaf127bd4167bdf79adb50ae53b6e16be237f1e`  
+		Last Modified: Tue, 23 Jun 2026 23:27:32 GMT  
+		Size: 25.8 KB (25813 bytes)  
 		MIME: application/vnd.in-toto+json
