@@ -805,12 +805,7 @@ Licenses (from `rpm --query`): GPL-3.0-or-later AND LGPL-3.0-or-later AND (GPL-3
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND LGPL-2.1-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libtasn1-4.20.0-1.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libtasn1-4.20.0-1.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libunistring-1.1-10.el10.x86_64`
 
