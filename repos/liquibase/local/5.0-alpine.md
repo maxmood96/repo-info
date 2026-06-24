@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:735cc69d2a472f1a3213f884cf38c27e7f07f9e006723d24b254987a2fc4c687`
-- Created: `2026-04-17T00:30:16.741740327Z`
-- Virtual Size: ~ 229.07 Mb  
+- Image ID: `sha256:5b033fcf5c88b7364061790e9be4069210c58bddcc02f45c1f3443388b0e90b9`
+- Created: `2026-06-22T20:01:31.008330436Z`
+- Virtual Size: ~ 229.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/liquibase/docker-entrypoint.sh"]`
@@ -76,16 +76,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.22.4-r0 description:
+alpine-release-3.22.5-r0 description:
 Alpine release data
 
-alpine-release-3.22.4-r0 webpage:
+alpine-release-3.22.5-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.22.4-r0 installed size:
+alpine-release-3.22.5-r0 installed size:
 343 B
 
-alpine-release-3.22.4-r0 license:
+alpine-release-3.22.5-r0 license:
 MIT
 
 ```
@@ -93,16 +93,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.9-r3 description:
+apk-tools-2.14.10-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.9-r3 webpage:
+apk-tools-2.14.10-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.9-r3 installed size:
+apk-tools-2.14.10-r0 installed size:
 68 KiB
 
-apk-tools-2.14.9-r3 license:
+apk-tools-2.14.10-r0 license:
 GPL-2.0-only
 
 ```
@@ -161,16 +161,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20260413-r0 description:
+ca-certificates-20260611-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20260413-r0 webpage:
+ca-certificates-20260611-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20260413-r0 installed size:
-246 KiB
+ca-certificates-20260611-r0 installed size:
+207 KiB
 
-ca-certificates-20260413-r0 license:
+ca-certificates-20260611-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -178,16 +178,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260413-r0 description:
+ca-certificates-bundle-20260611-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260413-r0 webpage:
+ca-certificates-bundle-20260611-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260413-r0 installed size:
-212 KiB
+ca-certificates-bundle-20260611-r0 installed size:
+175 KiB
 
-ca-certificates-bundle-20260413-r0 license:
+ca-certificates-bundle-20260611-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -229,16 +229,16 @@ GPL-2.0-or-later
 ### `apk` package: `libapk2`
 
 ```console
-libapk2-2.14.9-r3 description:
+libapk2-2.14.10-r0 description:
 Alpine Package Keeper - package manager for alpine
 
-libapk2-2.14.9-r3 webpage:
+libapk2-2.14.10-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-libapk2-2.14.9-r3 installed size:
+libapk2-2.14.10-r0 installed size:
 179 KiB
 
-libapk2-2.14.9-r3 license:
+libapk2-2.14.10-r0 license:
 GPL-2.0-only
 
 ```
@@ -246,16 +246,16 @@ GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.6-r0 description:
+libcrypto3-3.5.7-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.6-r0 webpage:
+libcrypto3-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.6-r0 installed size:
-5095 KiB
+libcrypto3-3.5.7-r0 installed size:
+5099 KiB
 
-libcrypto3-3.5.6-r0 license:
+libcrypto3-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -297,16 +297,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.6-r0 description:
+libssl3-3.5.7-r0 description:
 SSL shared libraries
 
-libssl3-3.5.6-r0 webpage:
+libssl3-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.6-r0 installed size:
+libssl3-3.5.7-r0 installed size:
 823 KiB
 
-libssl3-3.5.6-r0 license:
+libssl3-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -382,16 +382,16 @@ X11
 ### `apk` package: `openjdk21-jre-headless`
 
 ```console
-openjdk21-jre-headless-21.0.10_p7-r0 description:
+openjdk21-jre-headless-21.0.11_p10-r0 description:
 Oracle OpenJDK 21 (JRE headless)
 
-openjdk21-jre-headless-21.0.10_p7-r0 webpage:
+openjdk21-jre-headless-21.0.11_p10-r0 webpage:
 https://github.com/openjdk/jdk21u
 
-openjdk21-jre-headless-21.0.10_p7-r0 installed size:
+openjdk21-jre-headless-21.0.11_p10-r0 installed size:
 187 MiB
 
-openjdk21-jre-headless-21.0.10_p7-r0 license:
+openjdk21-jre-headless-21.0.11_p10-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
