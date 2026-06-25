@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b2be74452857b46046e3546d3538d0ba639d850c30e808be704a083f44e56b46`
-- Created: `2026-06-15T23:17:05.279051188Z`
-- Virtual Size: ~ 878.6 Mb  
+- Image ID: `sha256:815616a9a6171187b4b6153f93281b1963dee64950dbc5cc9a38cb944a5b6cda`
+- Created: `2026-06-24T23:07:12.576879476Z`
+- Virtual Size: ~ 878.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -19,25 +19,25 @@
   - `LANG=C.UTF-8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-06-15T07:46:21Z`
+  - `build-date=2026-06-24T06:39:51Z`
   - `com.redhat.component=ubi10-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/o:redhat:enterprise_linux:10.2`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `distribution-scope=public`
-  - `io.buildah.version=1.42.2`
+  - `io.buildah.version=1.44.0`
   - `io.k8s.description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `io.k8s.display-name=Red Hat Universal Base Image 10 Minimal`
   - `io.openshift.expose-services=`
   - `io.openshift.tags=minimal rhel10`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi10/ubi-minimal`
-  - `org.opencontainers.image.created=2026-06-15T07:46:21Z`
-  - `org.opencontainers.image.revision=a079bd1cc91523a60704cf840463d737ba8b63de`
-  - `release=1781509346`
+  - `org.opencontainers.image.created=2026-06-24T06:39:51Z`
+  - `org.opencontainers.image.revision=fcffc2222455e28601e0105a0a1e9a211f7127c7`
+  - `release=1782283038`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 10.`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=a079bd1cc91523a60704cf840463d737ba8b63de`
+  - `vcs-ref=fcffc2222455e28601e0105a0a1e9a211f7127c7`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=10.2`
@@ -805,12 +805,7 @@ Licenses (from `rpm --query`): GPL-3.0-or-later AND LGPL-3.0-or-later AND (GPL-3
 
 Licenses (from `rpm --query`): GPL-3.0-or-later AND LGPL-2.1-or-later
 
-Source:
-
-```console
-$ dnf --quiet download --source --url libtasn1-4.20.0-1.el10
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi10/10/x86_64/baseos/source/SRPMS/Packages/l/libtasn1-4.20.0-1.el10.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `libunistring-1.1-10.el10.x86_64`
 
