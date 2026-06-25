@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:64218256ee85099b7c1c19386253ddc397939db8dd566586aedbfb52b8c73c2f`
-- Created: `2026-06-11T20:12:38.266604544Z`
+- Image ID: `sha256:a86d6803b133da347a8763ca89de40b3950a9cadc035d25b9f8d66a6c67799eb`
+- Created: `2026-06-24T05:25:34.709241545Z`
 - Virtual Size: ~ 1.82 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2634,11 +2634,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gst-plugins-base1.0/1.26.2-1+deb13u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gst-plugins-base1.0/1.26.2-1+deb13u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gst-plugins-good1.0=1.26.2-1+deb13u1`
+### `dpkg` source package: `gst-plugins-good1.0=1.26.2-1+deb13u2`
 
 Binary Packages:
 
-- `gstreamer1.0-plugins-good:amd64=1.26.2-1+deb13u1`
+- `gstreamer1.0-plugins-good:amd64=1.26.2-1+deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/gstreamer1.0-plugins-good/copyright`)
 
@@ -2652,13 +2652,21 @@ Licenses: (parsed from: `/usr/share/doc/gstreamer1.0-plugins-good/copyright`)
 - `LGPL-2.1+`
 - `MIT/X11 (BSD like) LGPL-2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris gst-plugins-good1.0=1.26.2-1+deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/g/gst-plugins-good1.0/gst-plugins-good1.0_1.26.2-1%2bdeb13u2.dsc' gst-plugins-good1.0_1.26.2-1+deb13u2.dsc 5230 SHA256:0bfeebc432fb07e0cf3647c301c900697ea4ff13776fe6da85a0693e2f110ca3
+'http://deb.debian.org/debian-security/pool/updates/main/g/gst-plugins-good1.0/gst-plugins-good1.0_1.26.2.orig.tar.xz' gst-plugins-good1.0_1.26.2.orig.tar.xz 2983396 SHA256:d864b9aec28c3a80895468c909dd303e5f22f92d6e2b1137f80e2a1454584339
+'http://deb.debian.org/debian-security/pool/updates/main/g/gst-plugins-good1.0/gst-plugins-good1.0_1.26.2.orig.tar.xz.asc' gst-plugins-good1.0_1.26.2.orig.tar.xz.asc 833 SHA256:a52f49271f6831942bad02fa2d6c54675b1bda054396ed76a9f0515b3d3888c4
+'http://deb.debian.org/debian-security/pool/updates/main/g/gst-plugins-good1.0/gst-plugins-good1.0_1.26.2-1%2bdeb13u2.debian.tar.xz' gst-plugins-good1.0_1.26.2-1+deb13u2.debian.tar.xz 48896 SHA256:3b9fd22c35d15760164993dd80620202c74dda9592610eec59dd80257167df99
+```
 
-- http://snapshot.debian.org/package/gst-plugins-good1.0/1.26.2-1+deb13u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/gst-plugins-good1.0/1.26.2-1+deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/gst-plugins-good1.0/1.26.2-1+deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gst-plugins-good1.0/1.26.2-1+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gstreamer1.0=1.26.2-2`
 
@@ -3049,23 +3057,23 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/icu/76.1-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/icu/76.1-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:7.1.1.43+dfsg1-1+deb13u9`
+### `dpkg` source package: `imagemagick=8:7.1.1.43+dfsg1-1+deb13u10`
 
 Binary Packages:
 
-- `imagemagick=8:7.1.1.43+dfsg1-1+deb13u9`
-- `imagemagick-7-common=8:7.1.1.43+dfsg1-1+deb13u9`
-- `imagemagick-7.q16=8:7.1.1.43+dfsg1-1+deb13u9`
-- `libmagickcore-7-arch-config:amd64=8:7.1.1.43+dfsg1-1+deb13u9`
-- `libmagickcore-7-headers=8:7.1.1.43+dfsg1-1+deb13u9`
-- `libmagickcore-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u9`
-- `libmagickcore-7.q16-10-extra:amd64=8:7.1.1.43+dfsg1-1+deb13u9`
-- `libmagickcore-7.q16-dev:amd64=8:7.1.1.43+dfsg1-1+deb13u9`
-- `libmagickcore-dev=8:7.1.1.43+dfsg1-1+deb13u9`
-- `libmagickwand-7-headers=8:7.1.1.43+dfsg1-1+deb13u9`
-- `libmagickwand-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u9`
-- `libmagickwand-7.q16-dev:amd64=8:7.1.1.43+dfsg1-1+deb13u9`
-- `libmagickwand-dev=8:7.1.1.43+dfsg1-1+deb13u9`
+- `imagemagick=8:7.1.1.43+dfsg1-1+deb13u10`
+- `imagemagick-7-common=8:7.1.1.43+dfsg1-1+deb13u10`
+- `imagemagick-7.q16=8:7.1.1.43+dfsg1-1+deb13u10`
+- `libmagickcore-7-arch-config:amd64=8:7.1.1.43+dfsg1-1+deb13u10`
+- `libmagickcore-7-headers=8:7.1.1.43+dfsg1-1+deb13u10`
+- `libmagickcore-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u10`
+- `libmagickcore-7.q16-10-extra:amd64=8:7.1.1.43+dfsg1-1+deb13u10`
+- `libmagickcore-7.q16-dev:amd64=8:7.1.1.43+dfsg1-1+deb13u10`
+- `libmagickcore-dev=8:7.1.1.43+dfsg1-1+deb13u10`
+- `libmagickwand-7-headers=8:7.1.1.43+dfsg1-1+deb13u10`
+- `libmagickwand-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u10`
+- `libmagickwand-7.q16-dev:amd64=8:7.1.1.43+dfsg1-1+deb13u10`
+- `libmagickwand-dev=8:7.1.1.43+dfsg1-1+deb13u10`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-7-common/copyright`, `/usr/share/doc/imagemagick-7.q16/copyright`, `/usr/share/doc/libmagickcore-7-arch-config/copyright`, `/usr/share/doc/libmagickcore-7-headers/copyright`, `/usr/share/doc/libmagickcore-7.q16-10/copyright`, `/usr/share/doc/libmagickcore-7.q16-10-extra/copyright`, `/usr/share/doc/libmagickcore-7.q16-dev/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickwand-7-headers/copyright`, `/usr/share/doc/libmagickwand-7.q16-10/copyright`, `/usr/share/doc/libmagickwand-7.q16-dev/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`)
 
@@ -3095,13 +3103,20 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris imagemagick=8:7.1.1.43+dfsg1-1+deb13u10
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u10.dsc' imagemagick_7.1.1.43+dfsg1-1+deb13u10.dsc 5165 SHA256:a3b34ba2a422e93a219195a499ee67b306561f91683d7a77800d83157ed7f10d
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1.orig.tar.xz' imagemagick_7.1.1.43+dfsg1.orig.tar.xz 10501740 SHA256:bcb4f3c78a930a608fa4889f889edbcb384974246ad9407fce1858f2c0607bfe
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u10.debian.tar.xz' imagemagick_7.1.1.43+dfsg1-1+deb13u10.debian.tar.xz 346928 SHA256:8aee9cfdf22414d306fa1b027670f7a4ececc359164e92868b150f21e099d621
+```
 
-- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u9/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u10/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.12-1`
 
@@ -3262,11 +3277,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/jbigkit/2.1-6.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/jbigkit/2.1-6.1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `jpeg-xl=0.11.2-0.1~deb13u1`
+### `dpkg` source package: `jpeg-xl=0.11.2-0.1~deb13u2`
 
 Binary Packages:
 
-- `libjxl0.11:amd64=0.11.2-0.1~deb13u1`
+- `libjxl0.11:amd64=0.11.2-0.1~deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/libjxl0.11/copyright`)
 
@@ -3276,17 +3291,17 @@ Licenses: (parsed from: `/usr/share/doc/libjxl0.11/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris jpeg-xl=0.11.2-0.1~deb13u1
-'http://deb.debian.org/debian/pool/main/j/jpeg-xl/jpeg-xl_0.11.2-0.1%7edeb13u1.dsc' jpeg-xl_0.11.2-0.1~deb13u1.dsc 3212 SHA256:8354702e38db8af9b4968bf888c5b3d851f2d2477171f7d27d3bafc5edcc7f74
-'http://deb.debian.org/debian/pool/main/j/jpeg-xl/jpeg-xl_0.11.2.orig.tar.gz' jpeg-xl_0.11.2.orig.tar.gz 1882762 SHA256:ab38928f7f6248e2a98cc184956021acb927b16a0dee71b4d260dc040a4320ea
-'http://deb.debian.org/debian/pool/main/j/jpeg-xl/jpeg-xl_0.11.2-0.1%7edeb13u1.debian.tar.xz' jpeg-xl_0.11.2-0.1~deb13u1.debian.tar.xz 22584 SHA256:3b5d307f876cfa62719294f1df6dbe44ad5c4602870f3cff30ed7f20ee2084a6
+$ apt-get source -qq --print-uris jpeg-xl=0.11.2-0.1~deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/j/jpeg-xl/jpeg-xl_0.11.2-0.1%7edeb13u2.dsc' jpeg-xl_0.11.2-0.1~deb13u2.dsc 3212 SHA256:b978be4319975d73759f0737ba6935fad4f4330802835d6d9298a455c2581363
+'http://deb.debian.org/debian-security/pool/updates/main/j/jpeg-xl/jpeg-xl_0.11.2.orig.tar.gz' jpeg-xl_0.11.2.orig.tar.gz 1882762 SHA256:ab38928f7f6248e2a98cc184956021acb927b16a0dee71b4d260dc040a4320ea
+'http://deb.debian.org/debian-security/pool/updates/main/j/jpeg-xl/jpeg-xl_0.11.2-0.1%7edeb13u2.debian.tar.xz' jpeg-xl_0.11.2-0.1~deb13u2.debian.tar.xz 23848 SHA256:54192375c3ff271f395b815a8ea111a5f632f5db8966baeda9dabedbc86ea2d4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/jpeg-xl/0.11.2-0.1~deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/jpeg-xl/0.11.2-0.1~deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/jpeg-xl/0.11.2-0.1~deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/jpeg-xl/0.11.2-0.1~deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/jpeg-xl/0.11.2-0.1~deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/jpeg-xl/0.11.2-0.1~deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.6.3-6`
 
@@ -6237,11 +6252,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.90-2`
+### `dpkg` source package: `linux=6.12.94-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.90-2`
+- `linux-libc-dev=6.12.94-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -6255,17 +6270,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.90-2
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.90-2.dsc' linux_6.12.90-2.dsc 292516 SHA256:3be36d36d9bede532201be1f4e97b2cc0409318baed4789112134ab515ba98ef
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.90.orig.tar.xz' linux_6.12.90.orig.tar.xz 151267988 SHA256:6e7fc837feac9d07b96e60c4a97f616d33ef694f67703228f027f816117fb82b
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.90-2.debian.tar.xz' linux_6.12.90-2.debian.tar.xz 1819476 SHA256:11de140c51000a176e573371675088713cbaf3f74b5a1435ca5599545aee6501
+$ apt-get source -qq --print-uris linux=6.12.94-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.94-1.dsc' linux_6.12.94-1.dsc 288306 SHA256:985a33d437c11f73f672b808b62589a0db3e97c6c286f315dbe14d1fc43f1191
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.94.orig.tar.xz' linux_6.12.94.orig.tar.xz 151297764 SHA256:3eea3dd18f67a103f6f8312e314075f695a27eaddd839e7b6c4641e6616dabba
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.94-1.debian.tar.xz' linux_6.12.94-1.debian.tar.xz 1838436 SHA256:8c5130fd9dee8d6efcc594dc3357809ad8e0d0234357139f85f5ed39b37922b4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.90-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.90-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.90-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.94-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.94-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.94-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lksctp-tools=1.0.21+dfsg-1`
 
