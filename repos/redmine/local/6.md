@@ -1,10 +1,10 @@
-# `redmine:6.1.2`
+# `redmine:6.1.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ca4886cf14cf8bc38dd5b257bd8d32a707aa51a6ad83656764246231ba5a946e`
-- Created: `2026-06-11T02:42:36.239427239Z`
-- Virtual Size: ~ 605.69 Mb  
+- Image ID: `sha256:3cf642de8dd8f5518f564a1d3d81b28f9b65e42a079ca944b2362bed6f283de2`
+- Created: `2026-06-24T02:48:06.551167299Z`
+- Virtual Size: ~ 605.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -21,9 +21,9 @@
   - `GOSU_VERSION=1.19`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=6.1.2`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.1.2.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=938e975e808ccfb4b0dcbad8b42f02aacf0ca9ef15491c38c5af4756740ccf08`
+  - `REDMINE_VERSION=6.1.3`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.1.3.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=61db3008c7fd18a3afc559ed656fd38fdf8df8220ac69598b319095183190b7a`
   - `RAILS_LOG_TO_STDOUT=true`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1712,15 +1712,15 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ijs/0.35-15.2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ijs/0.35-15.2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:7.1.1.43+dfsg1-1+deb13u9`
+### `dpkg` source package: `imagemagick=8:7.1.1.43+dfsg1-1+deb13u10`
 
 Binary Packages:
 
-- `imagemagick=8:7.1.1.43+dfsg1-1+deb13u9`
-- `imagemagick-7-common=8:7.1.1.43+dfsg1-1+deb13u9`
-- `imagemagick-7.q16=8:7.1.1.43+dfsg1-1+deb13u9`
-- `libmagickcore-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u9`
-- `libmagickwand-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u9`
+- `imagemagick=8:7.1.1.43+dfsg1-1+deb13u10`
+- `imagemagick-7-common=8:7.1.1.43+dfsg1-1+deb13u10`
+- `imagemagick-7.q16=8:7.1.1.43+dfsg1-1+deb13u10`
+- `libmagickcore-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u10`
+- `libmagickwand-7.q16-10:amd64=8:7.1.1.43+dfsg1-1+deb13u10`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-7-common/copyright`, `/usr/share/doc/imagemagick-7.q16/copyright`, `/usr/share/doc/libmagickcore-7.q16-10/copyright`, `/usr/share/doc/libmagickwand-7.q16-10/copyright`)
 
@@ -1750,13 +1750,20 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `Perllikelicence`
 - `aclocal`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris imagemagick=8:7.1.1.43+dfsg1-1+deb13u10
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u10.dsc' imagemagick_7.1.1.43+dfsg1-1+deb13u10.dsc 5165 SHA256:a3b34ba2a422e93a219195a499ee67b306561f91683d7a77800d83157ed7f10d
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1.orig.tar.xz' imagemagick_7.1.1.43+dfsg1.orig.tar.xz 10501740 SHA256:bcb4f3c78a930a608fa4889f889edbcb384974246ad9407fce1858f2c0607bfe
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_7.1.1.43%2bdfsg1-1%2bdeb13u10.debian.tar.xz' imagemagick_7.1.1.43+dfsg1-1+deb13u10.debian.tar.xz 346928 SHA256:8aee9cfdf22414d306fa1b027670f7a4ececc359164e92868b150f21e099d621
+```
 
-- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u9/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u10/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:7.1.1.43+dfsg1-1+deb13u10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:7.1.1.43+dfsg1-1+deb13u10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.69~deb13u1`
 
@@ -4096,11 +4103,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python-tzlocal/5.3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python-tzlocal/5.3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python-urllib3=2.3.0-3+deb13u1`
+### `dpkg` source package: `python-urllib3=2.3.0-3+deb13u2`
 
 Binary Packages:
 
-- `python3-urllib3=2.3.0-3+deb13u1`
+- `python3-urllib3=2.3.0-3+deb13u2`
 
 Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 
@@ -4109,17 +4116,17 @@ Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python-urllib3=2.3.0-3+deb13u1
-'http://deb.debian.org/debian/pool/main/p/python-urllib3/python-urllib3_2.3.0-3%2bdeb13u1.dsc' python-urllib3_2.3.0-3+deb13u1.dsc 2936 SHA256:5169eede61e71d428de69999784affa67fe9187f7b9f9e4cff198db002583935
-'http://deb.debian.org/debian/pool/main/p/python-urllib3/python-urllib3_2.3.0.orig.tar.gz' python-urllib3_2.3.0.orig.tar.gz 307268 SHA256:f8c5449b3cf0861679ce7e0503c7b44b5ec981bec0d1d3795a07f1ba96f0204d
-'http://deb.debian.org/debian/pool/main/p/python-urllib3/python-urllib3_2.3.0-3%2bdeb13u1.debian.tar.xz' python-urllib3_2.3.0-3+deb13u1.debian.tar.xz 43752 SHA256:7064e18de5f32fadc087c1102ba60d5b0c4dca51cda753be31ced6410f8e71d0
+$ apt-get source -qq --print-uris python-urllib3=2.3.0-3+deb13u2
+'http://deb.debian.org/debian-security/pool/updates/main/p/python-urllib3/python-urllib3_2.3.0-3%2bdeb13u2.dsc' python-urllib3_2.3.0-3+deb13u2.dsc 2781 SHA256:2643b0e2f7e687d48051c13479bfee3a40a1ed2a114d6e832de17c6b660348e7
+'http://deb.debian.org/debian-security/pool/updates/main/p/python-urllib3/python-urllib3_2.3.0.orig.tar.gz' python-urllib3_2.3.0.orig.tar.gz 307268 SHA256:f8c5449b3cf0861679ce7e0503c7b44b5ec981bec0d1d3795a07f1ba96f0204d
+'http://deb.debian.org/debian-security/pool/updates/main/p/python-urllib3/python-urllib3_2.3.0-3%2bdeb13u2.debian.tar.xz' python-urllib3_2.3.0-3+deb13u2.debian.tar.xz 44716 SHA256:6da9c5bf310b34fadee02edadba60d914a8fd0cf72429ef1ebee18f1f7f7b6e8
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python-urllib3/2.3.0-3+deb13u1/ (for browsing the source)
-- https://sources.debian.net/src/python-urllib3/2.3.0-3+deb13u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python-urllib3/2.3.0-3+deb13u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python-urllib3/2.3.0-3+deb13u2/ (for browsing the source)
+- https://sources.debian.net/src/python-urllib3/2.3.0-3+deb13u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python-urllib3/2.3.0-3+deb13u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.13.5-1`
 
