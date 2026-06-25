@@ -1,7 +1,7 @@
 ## `drupal:11-fpm-bookworm`
 
 ```console
-$ docker pull drupal@sha256:80737d1bf1105828fa20a38610bf92457a08c3b533a8c057abb4ff843d3551c4
+$ docker pull drupal@sha256:5c100b0d3c75116ba5b2b2aa36a4ae0286b90106169e71d204f20a767ee0abdb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -726,13 +726,13 @@ $ docker pull drupal@sha256:8b807ce4753574c1ae973b1be73158304fa216e6a30df6425a21
 ### `drupal:11-fpm-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull drupal@sha256:1e3df4249192c7655b745a32ba24c94a61fc4c7af8c58b334d5dab5688ef67bb
+$ docker pull drupal@sha256:be7a3e29a7de3519b5a3c3b3e71b9f1d9d3e035dae58ef97c3f14949b94939a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **210.5 MB (210508377 bytes)**  
+-	Total Size: **210.5 MB (210537770 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aca81ca145454443124dcbf60b89a1a90fac449780421c7da1f6cf955a6adf9e`
+-	Image ID: `sha256:f239d9ead46820c3a5f12059b8c83154ea0e7cb1ade0b16f5e049528fcd94550`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -794,14 +794,14 @@ RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_
 # Wed, 24 Jun 2026 09:20:02 GMT
 COPY /usr/bin/composer /usr/local/bin/ # buildkit
 # Wed, 24 Jun 2026 09:20:02 GMT
-ENV DRUPAL_VERSION=11.3.12
+ENV DRUPAL_VERSION=11.3.13
 # Wed, 24 Jun 2026 09:20:02 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
 # Wed, 24 Jun 2026 09:20:02 GMT
 WORKDIR /opt/drupal
-# Wed, 24 Jun 2026 09:24:49 GMT
+# Thu, 25 Jun 2026 02:36:05 GMT
 RUN set -eux; 	export COMPOSER_HOME="$(mktemp -d)"; 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; 	composer check-platform-reqs; 	chown -R www-data:www-data web/sites web/modules web/themes; 	rmdir /var/www/html; 	ln -sf /opt/drupal/web /var/www/html; 	rm -rf "$COMPOSER_HOME" # buildkit
-# Wed, 24 Jun 2026 09:24:49 GMT
+# Thu, 25 Jun 2026 02:36:05 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupal/vendor/bin
 ```
 
@@ -870,33 +870,33 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Wed, 24 Jun 2026 09:21:02 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ab057138149bca3a3a61c768eb446a9f7abcb7d79b655fabebe535018493806`  
-		Last Modified: Wed, 24 Jun 2026 09:25:25 GMT  
-		Size: 21.4 MB (21384342 bytes)  
+	-	`sha256:066b3323332873f11dd39000fd5519645e3fddec5dc19fbf57528140bb962245`  
+		Last Modified: Thu, 25 Jun 2026 02:36:48 GMT  
+		Size: 21.4 MB (21413735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:11-fpm-bookworm` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:376bb02df2d01ef25ec658f97d93e67196560307d7c5fc92d1e0a18492d46a08
+$ docker pull drupal@sha256:4f1914921758ec29e3e8709c8e7b1b03aae66b3ea1e9b9602cbb8ed0914dd5bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6638079 bytes)**  
+-	Total Size: **6.6 MB (6639151 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4512c99c461076bae5d60c13c295fbe90d910b8bad7ec52019e16e173d90e6e`
+-	Image ID: `sha256:4d7e6ef5781b05af46e5d335352505ec76ea42d6fa58c0e34df8cae9f188c600`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c763144e7753225622a7c606ee58eed2ad9e5dc1b195b5aadd57e3967916eb8d`  
-		Last Modified: Wed, 24 Jun 2026 09:25:25 GMT  
-		Size: 6.6 MB (6602092 bytes)  
+	-	`sha256:980b646a6e20c33e695b563f09843aed3615a35a97a083506e48238578381e7b`  
+		Last Modified: Thu, 25 Jun 2026 02:36:47 GMT  
+		Size: 6.6 MB (6603163 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3044d9283f4328116130f6d709363f768d393e268f9ce569097dea08dcf97e67`  
-		Last Modified: Wed, 24 Jun 2026 09:25:24 GMT  
-		Size: 36.0 KB (35987 bytes)  
+	-	`sha256:03a0be3ae4cbfbb0d894489f07500c462103996cb581f1b6dfd3358a528bec47`  
+		Last Modified: Thu, 25 Jun 2026 02:36:46 GMT  
+		Size: 36.0 KB (35988 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:11-fpm-bookworm` - linux; s390x

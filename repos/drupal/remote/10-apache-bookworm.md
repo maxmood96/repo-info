@@ -1,7 +1,7 @@
 ## `drupal:10-apache-bookworm`
 
 ```console
-$ docker pull drupal@sha256:fc1d476db1aaec4243bed58b9977d93985134419738605825bbc4fc153698350
+$ docker pull drupal@sha256:104eaae40f577330beb4c3ce20758b064b9be6c03f55b8c44a715949fc2c30c2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -838,13 +838,13 @@ $ docker pull drupal@sha256:05b66b3e86a9f30ed92404cf538f974017d16119af59eaaf40f0
 ### `drupal:10-apache-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull drupal@sha256:bce762957953e079bbe36c091e634215b44117cf0a6e039e4b6b5a5f00bcbe75
+$ docker pull drupal@sha256:2f4a27d49b8bfd4b4d7d7daafa92b1bb67f03463608a2f3eab6aa145ccfd5228
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **215.7 MB (215652010 bytes)**  
+-	Total Size: **215.7 MB (215680228 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:723f3a379f875ba2629700875633ecc609cd934f9e860e1b06846e04d54baf5b`
+-	Image ID: `sha256:eccffbfb2162034f656f336d312f9b160d6d50e974096cdf8043ee41bc8601d0`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -918,14 +918,14 @@ RUN { 		echo 'output_buffering=true'; 	} > /usr/local/etc/php/conf.d/docker-php-
 # Wed, 24 Jun 2026 09:20:02 GMT
 COPY /usr/bin/composer /usr/local/bin/ # buildkit
 # Wed, 24 Jun 2026 09:20:02 GMT
-ENV DRUPAL_VERSION=10.6.11
+ENV DRUPAL_VERSION=10.6.12
 # Wed, 24 Jun 2026 09:20:02 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
 # Wed, 24 Jun 2026 09:20:02 GMT
 WORKDIR /opt/drupal
-# Wed, 24 Jun 2026 09:32:57 GMT
+# Thu, 25 Jun 2026 02:39:17 GMT
 RUN set -eux; 	export COMPOSER_HOME="$(mktemp -d)"; 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; 	composer check-platform-reqs; 	chown -R www-data:www-data web/sites web/modules web/themes; 	rmdir /var/www/html; 	ln -sf /opt/drupal/web /var/www/html; 	rm -rf "$COMPOSER_HOME" # buildkit
-# Wed, 24 Jun 2026 09:32:57 GMT
+# Thu, 25 Jun 2026 02:39:17 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupal/vendor/bin
 ```
 
@@ -1010,32 +1010,32 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Wed, 24 Jun 2026 09:21:02 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0189e768adbd3c7a01b70bfea450200654ed8a6cee66f7e2ea73bcbe69d7392b`  
-		Last Modified: Wed, 24 Jun 2026 09:33:34 GMT  
-		Size: 21.9 MB (21910457 bytes)  
+	-	`sha256:19daa20a4e5ec3cfd518366e181f593fe7b10c5702bb7653c76ddd6793a89be7`  
+		Last Modified: Thu, 25 Jun 2026 02:39:59 GMT  
+		Size: 21.9 MB (21938675 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:10-apache-bookworm` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:bd7f89544a6ec7ed94f7540e96ad90a640609d2343c4eaa2027c8bc248228bf8
+$ docker pull drupal@sha256:c1fd2cba653c922fffef2b909ffc414f7519b2e494dbb80ee3f673c3daf08877
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7164759 bytes)**  
+-	Total Size: **7.2 MB (7165830 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e998bf5be6d43a395c04fac2203e67281537ce0577ae1da6c64caeb82d975ff2`
+-	Image ID: `sha256:c67b6bf12e810ff26b61c031306e7581b3e7b8ac33021b71933f965fd42cc61c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b1a93cda1a30c70ada7cc75ac30cf4be26465fdf34d6eeb44b72cdaacc08d0ee`  
-		Last Modified: Wed, 24 Jun 2026 09:33:34 GMT  
-		Size: 7.1 MB (7121238 bytes)  
+	-	`sha256:99bcdead9fe37947badb0b47e56953a00a4a7fd2e58e8986d7677d6ee72fa22b`  
+		Last Modified: Thu, 25 Jun 2026 02:39:59 GMT  
+		Size: 7.1 MB (7122309 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b66e5a0a3cc776f3fcb8f5e80a5ddbec88e2d2e88d5f608838d00f2de3eaff6d`  
-		Last Modified: Wed, 24 Jun 2026 09:33:33 GMT  
+	-	`sha256:8061df24e8570412845c53e2230929cf009d3f7346cbc225dc830791a67146b9`  
+		Last Modified: Thu, 25 Jun 2026 02:39:58 GMT  
 		Size: 43.5 KB (43521 bytes)  
 		MIME: application/vnd.in-toto+json
 

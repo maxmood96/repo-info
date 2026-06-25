@@ -1,7 +1,7 @@
 ## `drupal:10-apache`
 
 ```console
-$ docker pull drupal@sha256:0a921feecfb1b855ff13db9781051eff1af8a4e86ff9e4d2e90dd671490529c2
+$ docker pull drupal@sha256:6eff0d6effc264425e46eeddb02918fb5f8e4550c15fed6674c119f2058d418e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -840,13 +840,13 @@ $ docker pull drupal@sha256:d1f4ca2ae0ca4677aaa4d139631c10f31b410ef1946e561da6f0
 ### `drupal:10-apache` - linux; ppc64le
 
 ```console
-$ docker pull drupal@sha256:db7d367717386e0c26bc1c9efcc280420ae1a02b83e765e3c4bfd04a1bfa188f
+$ docker pull drupal@sha256:d60bfd52a932d9ed32bdbfc6f51cde3442a7564f233ab7e1560dcf30d8ab7d50
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **207.7 MB (207652711 bytes)**  
+-	Total Size: **207.7 MB (207680816 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:31614d4728170596a64a6aafd08cb28f9a6aef636754967fe18a7730f000aec4`
+-	Image ID: `sha256:ce33678d0539d666025f911fef54d83314997768419b61df5792e54e4ff52cf6`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -920,14 +920,14 @@ RUN { 		echo 'output_buffering=true'; 	} > /usr/local/etc/php/conf.d/docker-php-
 # Wed, 24 Jun 2026 09:17:51 GMT
 COPY /usr/bin/composer /usr/local/bin/ # buildkit
 # Wed, 24 Jun 2026 09:17:52 GMT
-ENV DRUPAL_VERSION=10.6.11
+ENV DRUPAL_VERSION=10.6.12
 # Wed, 24 Jun 2026 09:17:52 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
 # Wed, 24 Jun 2026 09:17:52 GMT
 WORKDIR /opt/drupal
-# Wed, 24 Jun 2026 09:31:57 GMT
+# Thu, 25 Jun 2026 02:38:13 GMT
 RUN set -eux; 	export COMPOSER_HOME="$(mktemp -d)"; 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; 	composer check-platform-reqs; 	chown -R www-data:www-data web/sites web/modules web/themes; 	rmdir /var/www/html; 	ln -sf /opt/drupal/web /var/www/html; 	rm -rf "$COMPOSER_HOME" # buildkit
-# Wed, 24 Jun 2026 09:31:57 GMT
+# Thu, 25 Jun 2026 02:38:13 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupal/vendor/bin
 ```
 
@@ -1012,33 +1012,33 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Wed, 24 Jun 2026 09:18:50 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e125227c1c5778fe8795933967c1c97cefb55b97331893e044173e25a162b5a2`  
-		Last Modified: Wed, 24 Jun 2026 09:32:34 GMT  
-		Size: 21.9 MB (21910551 bytes)  
+	-	`sha256:81a90de0b76cc3ed95f91d490c4991ea8c97bba93de2f397731d19520833d35a`  
+		Last Modified: Thu, 25 Jun 2026 02:38:52 GMT  
+		Size: 21.9 MB (21938656 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:10-apache` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:da24c1d9c625ad9a67a7b6043a2b792562073bc3f006672e447d1d7da9369d82
+$ docker pull drupal@sha256:695f4dcfe606b33f71526b7f83f7943fc885de55122df0b90256375f7be7430e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.5 MB (7501803 bytes)**  
+-	Total Size: **7.5 MB (7502872 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ca3a02706f34472f86e98fc8fabee130c960d48634aecbd7c6bb83140d4452c6`
+-	Image ID: `sha256:ab35dc2245562c609d1610bfd17b7adb0175c6fbfdcec3ff2a7544c4d35c31e1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b533045cfec76c1a03ef6157be6440032df8579a3bbe922ff11216710f4a9667`  
-		Last Modified: Wed, 24 Jun 2026 09:32:34 GMT  
-		Size: 7.5 MB (7454547 bytes)  
+	-	`sha256:5a11645b7d4ca0ac936800c061c60d3596ab80986409fb09e0d58c1bf6051c7f`  
+		Last Modified: Thu, 25 Jun 2026 02:38:52 GMT  
+		Size: 7.5 MB (7455618 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:802c214b757c7aa3f89341292063881c3dff8435d9b7d68169becb5f0ea061e4`  
-		Last Modified: Wed, 24 Jun 2026 09:32:34 GMT  
-		Size: 47.3 KB (47256 bytes)  
+	-	`sha256:c9022596e6c7a9583688efaa847a6e56b0abadde861867ab39365de00a787a0b`  
+		Last Modified: Thu, 25 Jun 2026 02:38:51 GMT  
+		Size: 47.3 KB (47254 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:10-apache` - linux; riscv64
