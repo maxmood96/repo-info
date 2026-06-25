@@ -1697,10 +1697,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ffmpeg=7:4.4.2-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_4.4.2.orig.tar.xz' ffmpeg_4.4.2.orig.tar.xz 9562968 SHA256:af419a7f88adbc56c758ab19b4c708afbcae15ef09606b82b855291f6a6faa93
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_4.4.2.orig.tar.xz.asc' ffmpeg_4.4.2.orig.tar.xz.asc 520 SHA256:9565fbabaf877939bbe48e80f04d424c02d4ce7be65a61d144c442658701f30e
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_4.4.2-0ubuntu0.22.04.1.debian.tar.xz' ffmpeg_4.4.2-0ubuntu0.22.04.1.debian.tar.xz 54484 SHA256:d5d0c5e4156572a9d42c4c2de9e01384cae4fbcfe79c20dc239e88b24a4b2bb8
-'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_4.4.2-0ubuntu0.22.04.1.dsc' ffmpeg_4.4.2-0ubuntu0.22.04.1.dsc 5669 SHA256:88e095cbf427ef31661500eb656bac27b459682a36049cd603f16ea9b40a7b70
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_4.4.2.orig.tar.xz' ffmpeg_4.4.2.orig.tar.xz 9562968 SHA512:abce847c607ac6d63fe32ceff8bf8724888acf2b7db9a083cba50e3235590cdcb27feb7e0a314133d0030809fb54d474f64001fc9ab7d896a819159869c09d5a
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_4.4.2.orig.tar.xz.asc' ffmpeg_4.4.2.orig.tar.xz.asc 520 SHA512:a4df97a6328fc076b5611023bd61254f1a5043db1ec2f3426bee305206b2b0937047ede9cb51db31a3387a16218fe95a7a40296770574fa32660118938a9d301
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_4.4.2-0ubuntu0.22.04.1.debian.tar.xz' ffmpeg_4.4.2-0ubuntu0.22.04.1.debian.tar.xz 54484 SHA512:4a5ecfddfc55178ff624b8742bd2037133297f0305984d0ab3b10bc937afc050a96f9bd8452310fe61fe397eeeaddc9d0c48ee4a4e160dfe6d740a20d2994f2a
+'http://archive.ubuntu.com/ubuntu/pool/universe/f/ffmpeg/ffmpeg_4.4.2-0ubuntu0.22.04.1.dsc' ffmpeg_4.4.2-0ubuntu0.22.04.1.dsc 5669 SHA512:9741833906d1fe8c7064917db224628376da978bfdfb4949e3299c9ddbdc8d75342c68a385118e1475fad5cfbec59c47935ebf1e7490a36e16f70ff4f317ba62
 ```
 
 ### `dpkg` source package: `findutils=4.8.0-1ubuntu3`
@@ -2782,9 +2782,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris hwloc=2.7.0-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/universe/h/hwloc/hwloc_2.7.0.orig.tar.bz2' hwloc_2.7.0.orig.tar.bz2 6805375 SHA256:028cee53ebcfe048283a2b3e87f2fa742c83645fc3ae329134bf5bb8b90384e0
-'http://archive.ubuntu.com/ubuntu/pool/universe/h/hwloc/hwloc_2.7.0-2ubuntu1.debian.tar.xz' hwloc_2.7.0-2ubuntu1.debian.tar.xz 14856 SHA256:2d08de149a4c70bf589b00df8397926eaec3bbe50b400558c1e9ceda9268ebb8
-'http://archive.ubuntu.com/ubuntu/pool/universe/h/hwloc/hwloc_2.7.0-2ubuntu1.dsc' hwloc_2.7.0-2ubuntu1.dsc 2597 SHA256:dc57a498d63fa5a9b9bf9f3f177f5104df9a127f51df7b3de17803a36131d072
+'http://archive.ubuntu.com/ubuntu/pool/universe/h/hwloc/hwloc_2.7.0.orig.tar.bz2' hwloc_2.7.0.orig.tar.bz2 6805375 SHA512:9f3a9d66ad9762ca88f9e38950a7c1beb208337517b635c4c363dcfbb050706562511cb12115bd403c0a86c0f7270174dd1888e7803d88557e41ae018e7e7e2f
+'http://archive.ubuntu.com/ubuntu/pool/universe/h/hwloc/hwloc_2.7.0-2ubuntu1.debian.tar.xz' hwloc_2.7.0-2ubuntu1.debian.tar.xz 14856 SHA512:16bd60bd0597b31619327a84422671281619b60aa56daa20dcb8ebe6d5cace7afc0c89aa0afbfbfe4d1b3b298b73d4c12b78cc265568e42aac8b339782169f06
+'http://archive.ubuntu.com/ubuntu/pool/universe/h/hwloc/hwloc_2.7.0-2ubuntu1.dsc' hwloc_2.7.0-2ubuntu1.dsc 2597 SHA512:db4a080d3fd99402974207e4ee38dc58e8f1d883f613919f4353553972ce55312ead4fe50809fb06d6aac91d348a08c3ea6c41d7617ed8fc170e8d1634215e8d
 ```
 
 ### `dpkg` source package: `hyphen=2.8.8-7build2`
@@ -7276,15 +7276,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.34/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig-regen-configure.tar.xz' perl_5.34.0.orig-regen-configure.tar.xz 415412 SHA256:b168f566401fdccc13d0616c258854c1e1a461276922babca617097cd9dfd85b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig.tar.xz' perl_5.34.0.orig.tar.xz 12881416 SHA256:82c2e5e5c71b0e10487a80d79140469ab1f8056349ca8545140a224dbbed7ded
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.5.debian.tar.xz' perl_5.34.0-3ubuntu1.5.debian.tar.xz 200524 SHA256:b299fde16bfd7405e40d8afdeab05027be11a6fb409ac020f2052d079f0b1f54
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.5.dsc' perl_5.34.0-3ubuntu1.5.dsc 2976 SHA256:9e51731910bdc4c1aacbeda30d22b6f2daf015fc8601b5a5c6f518cda19150b2
-```
 
 ### `dpkg` source package: `pinentry=1.1.1-1build2`
 
