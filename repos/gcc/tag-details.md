@@ -8311,19 +8311,39 @@ $ docker pull gcc@sha256:fc6828b1aa6eb1564f6243641a3768883593f31530afd411fc80436
 
 ## `gcc:14.4`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:14.4-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:14.4.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:14.4.0-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull gcc@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `gcc:15`
 
