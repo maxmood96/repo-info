@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3e8528a220fcf54d0de81c931fb522e22012b49217b68bdf0d60e2dabfdeea1b`
-- Created: `2026-06-02T11:12:08.445695613Z`
-- Virtual Size: ~ 1.31 Gb  
+- Image ID: `sha256:b067f355b67c93b5eb4c55225a3a86cbd771c71ba7515b07ecf74c7b45903b8f`
+- Created: `2026-06-25T04:12:37.271525881Z`
+- Virtual Size: ~ 1.32 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -20,8 +20,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=10`
-  - `TOMCAT_VERSION=10.1.55`
-  - `TOMCAT_SHA512=f36af12391a277e5c3a802a8e1a2a1e4354cd461b547d2e1a33ac0ab88d707d3fb2591e034a17b7d3a6b965a4c977a97dbf29bb81a3867e85aeec3d8d189e22e`
+  - `TOMCAT_VERSION=10.1.56`
+  - `TOMCAT_SHA512=8fae99273615eb9d7fbe7ed80abda0ca27647a80f6fcfda98459c5b412d5ef555740b4c4d4af5afae2eb150f1f5bede21ab007ab8cc1f407f508d8908a81b7cc`
   - `XWIKI_VERSION=17.10.9`
   - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/17.10.9`
   - `XWIKI_DOWNLOAD_SHA256=b786a85a043cc673e26d887fd0ef34d2fda2f4a9ef4a362360814868ccf41e1f`
@@ -483,11 +483,11 @@ $ apt-get source -qq --print-uris coreutils=9.4-3ubuntu6.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_9.4-3ubuntu6.2.dsc' coreutils_9.4-3ubuntu6.2.dsc 2030 SHA256:a16ffb435f38507bea51474f5e40a26e4c8191d2190da8770e8e4726c18e37ba
 ```
 
-### `dpkg` source package: `cups=2.4.7-1.2ubuntu7.9`
+### `dpkg` source package: `cups=2.4.7-1.2ubuntu7.14`
 
 Binary Packages:
 
-- `libcups2t64:amd64=2.4.7-1.2ubuntu7.9`
+- `libcups2t64:amd64=2.4.7-1.2ubuntu7.14`
 
 Licenses: (parsed from: `/usr/share/doc/libcups2t64/copyright`)
 
@@ -498,9 +498,14 @@ Licenses: (parsed from: `/usr/share/doc/libcups2t64/copyright`)
 - `FSFUL`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris cups=2.4.7-1.2ubuntu7.14
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7.orig.tar.gz' cups_2.4.7.orig.tar.gz 8134809 SHA512:914b574ff6d85de9f3471528b52d4a436c484c441f47651846e1bdfa00aec26774efd416ff466216d2bccf468f8a797b1e0d666b5c82abc87e77550ce8b00d39
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7-1.2ubuntu7.14.debian.tar.xz' cups_2.4.7-1.2ubuntu7.14.debian.tar.xz 431720 SHA512:abbeb535b12daa452d1be4cec6a4604eae1940e1ce9d9521627e1d6dce2c78eb347c95fd5377d04e6d1439372438ce7b5b89e6cccbec46ce9401c3e104209bdc
+'http://archive.ubuntu.com/ubuntu/pool/main/c/cups/cups_2.4.7-1.2ubuntu7.14.dsc' cups_2.4.7-1.2ubuntu7.14.dsc 3192 SHA512:b6cb7fe704a497194b488219d08fade046966f90126cff65d5d43d35a740dc8d21c5247f658b924a7e8cfe1a92be676c07c38a5ca6f9d9c1a8e51c56cde9e18f
+```
 
 ### `dpkg` source package: `curl=8.5.0-2ubuntu10.9`
 
@@ -1191,11 +1196,11 @@ $ apt-get source -qq --print-uris gpgme1.0=1.18.0-4.1ubuntu4
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gpgme1.0/gpgme1.0_1.18.0-4.1ubuntu4.debian.tar.xz' gpgme1.0_1.18.0-4.1ubuntu4.debian.tar.xz 29380 SHA512:bb5d01ec5ff09c917418a3d28887dad8b011e4e9ccbd538f462f97f08c7f6b8714f97314b5faf607a039847ab129973c913349edefdf1893ff2165cc5f958080
 ```
 
-### `dpkg` source package: `graphite2=1.3.14-2build1`
+### `dpkg` source package: `graphite2=1.3.14-2ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `libgraphite2-3:amd64=1.3.14-2build1`
+- `libgraphite2-3:amd64=1.3.14-2ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 
@@ -1213,10 +1218,10 @@ Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris graphite2=1.3.14-2build1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.14-2build1.dsc' graphite2_1.3.14-2build1.dsc 2675 SHA512:12a79a966967fa153b271171b7f0d07607fcd2f6f1ebb64e0367846aa131e420fb593e8481a27a77c5a027d4f1d9336b1e417f9aa4a91acc4401828e90654045
+$ apt-get source -qq --print-uris graphite2=1.3.14-2ubuntu0.24.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.14.orig.tar.gz' graphite2_1.3.14.orig.tar.gz 6629829 SHA512:49d127964d3f5c9403c7aecbfb5b18f32f25fe4919a81c49e0534e7123fe845423e16b0b8c8baaae21162b1150ab3e0f1c22c344e07d4364b6b8473c40a0822c
-'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.14-2build1.debian.tar.xz' graphite2_1.3.14-2build1.debian.tar.xz 14300 SHA512:84ef56d43d1ee5478e382c90513bbbd0e7fb66eaa731f03233959bf582d01f0eb678afab93ce3cf16eeeca5844cd3ece0b22f434cd69532a54d6b36ee1776b15
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.14-2ubuntu0.24.04.1.debian.tar.xz' graphite2_1.3.14-2ubuntu0.24.04.1.debian.tar.xz 15004 SHA512:41252c18dc437a43235113c8d73b4b0d4e5ae5a79b5792b4e3031f5ff2b7e81f3c34aef69dac7717bd7918ec76608a375c32cafcbd9908e09ebfb65962fd9c9e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/graphite2/graphite2_1.3.14-2ubuntu0.24.04.1.dsc' graphite2_1.3.14-2ubuntu0.24.04.1.dsc 2682 SHA512:be50be00243d3dca61c2ba58e3f13ee38e6925fa04c1dd076dc4a16c30d480be992c3f02dfd5edea0ec3a38273896ef15cc5b1c880fdbca7ac1b803e3a04c35f
 ```
 
 ### `dpkg` source package: `grep=3.11-4build1`
@@ -1749,20 +1754,26 @@ $ apt-get source -qq --print-uris libdeflate=1.19-1build1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdeflate/libdeflate_1.19-1build1.1.dsc' libdeflate_1.19-1build1.1.dsc 2306 SHA256:3a2552cdace2cae2b98b81b64d225f4247bc2ed4409dc0ff9eff1db9843d79d0
 ```
 
-### `dpkg` source package: `libdrm=2.4.125-1ubuntu0.1~24.04.1`
+### `dpkg` source package: `libdrm=2.4.125-1ubuntu0.1~24.04.2`
 
 Binary Packages:
 
-- `libdrm-common=2.4.125-1ubuntu0.1~24.04.1`
-- `libdrm2:amd64=2.4.125-1ubuntu0.1~24.04.1`
+- `libdrm-common=2.4.125-1ubuntu0.1~24.04.2`
+- `libdrm2:amd64=2.4.125-1ubuntu0.1~24.04.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libdrm=2.4.125-1ubuntu0.1~24.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.125.orig.tar.xz' libdrm_2.4.125.orig.tar.xz 485592 SHA512:faad141f48a49915c0312eb635df76968f0f4d41bb6851be625a7ae0e24826e7283b5ec9ec3b09ead9a96297bf42221c411288f9b000c3dbc159ed8dde93a7e4
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.125.orig.tar.xz.asc' libdrm_2.4.125.orig.tar.xz.asc 833 SHA512:e6bf22220e0a5212164f2c1ed0dd4dbbd3c535ac9856af7e3098778a9c0ada2accd955165dc04f48386a0f006b57145399381a4e9fc0d0e6365c6239810be147
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.125-1ubuntu0.1%7e24.04.2.debian.tar.xz' libdrm_2.4.125-1ubuntu0.1~24.04.2.debian.tar.xz 77556 SHA512:e17919e5a33ca4d6c6518f8ec81f30cd31a38f9b1da072c0e846929bf13e1621319d7147c60d51b92c3d22ac0ab59f8a07c3c794cc2ea187c119091263061077
+'http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm_2.4.125-1ubuntu0.1%7e24.04.2.dsc' libdrm_2.4.125-1ubuntu0.1~24.04.2.dsc 3328 SHA512:4e5fcde5b02e6a79b984d16b4dd92d8f60fa95c619db2b1e5a6ce8e7a0389938a4c7a6be94bc3ee503dea2fc3fdc4467825142f574af7ab46e8a2225ed561605
+```
 
 ### `dpkg` source package: `libe-book=0.1.3-2build6`
 
@@ -2847,20 +2858,25 @@ $ apt-get source -qq --print-uris libxinerama=2:1.1.4-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxinerama/libxinerama_1.1.4-3build1.diff.gz' libxinerama_1.1.4-3build1.diff.gz 8639 SHA512:d2a13c86831e6fdc23f6f02a4afa8cd7e0d404a87805d793085cb9b59171fe7dd8f74eee8cd2a4c471802dfd24bf4effe2cf6514032066ee20ce663a8d3555f8
 ```
 
-### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.7`
+### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.8`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.7`
+- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.8`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.8
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.8.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.8.debian.tar.xz 58596 SHA512:622c5a74574cde7bfc49748f8dd1d42a9cdab39e117ddd099293dd1aa981bed1e8156e22d28917d1d01a2746e17991d17bce93c31ddb68d5ac925e93bf539984
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.8.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.8.dsc 3079 SHA512:4d6416be5ad25c5901bf7622f0c74aec99a18ea7b7ce2c579eb8d80f17d6b0c9b39d0355b95b349126034456c13c737918776218ceeeed1da28db183f9b807a8
+```
 
 ### `dpkg` source package: `libxrandr=2:1.5.2-2build1`
 
@@ -3289,12 +3305,12 @@ $ apt-get source -qq --print-uris openldap=2.6.10+dfsg-0ubuntu0.24.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.10%2bdfsg-0ubuntu0.24.04.1.dsc' openldap_2.6.10+dfsg-0ubuntu0.24.04.1.dsc 3653 SHA256:63be3643ff4157d84ef8bd9763fb7252695ceaea46773277600377417ecd21de
 ```
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3.9`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.11`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.0.13-0ubuntu3.9`
-- `openssl=3.0.13-0ubuntu3.9`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.11`
+- `openssl=3.0.13-0ubuntu3.11`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -3303,9 +3319,14 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.11
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.11.debian.tar.xz' openssl_3.0.13-0ubuntu3.11.debian.tar.xz 195932 SHA512:1296cd3f720a97277db2d400b0817ee89f92bd0ed7165a301ce994d03a48e0da143fc3bf8b8f46d67374278671c91fd2d0883d77fb4844beba72fc21c9eba5ce
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.11.dsc' openssl_3.0.13-0ubuntu3.11.dsc 2516 SHA512:68b2827c93a1a22e2418fc7063b93d900a97d196b4809041362e7f5581315268b1520f78dba839a5d9c080227030e3f86c244c2e34cd31bc10cec529767e2661
+```
 
 ### `dpkg` source package: `orc=1:0.4.38-1ubuntu0.1`
 
@@ -3448,15 +3469,9 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.38.2-3.2ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA256:4d1b34cc058f9963cb89785ecc040d57f6d7725cd83329cfa4ef8b27566454d2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA256:d91115e90b896520e83d4de6b52f8254ef2b70a8d545ffab33200ea9f1cf29e8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.2.debian.tar.xz' perl_5.38.2-3.2ubuntu0.2.debian.tar.xz 171736 SHA256:f7149a24aef35ff716fe9e6c724f8f9a769d1c77cddd6db301b7b7c450989b75
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.2.dsc' perl_5.38.2-3.2ubuntu0.2.dsc 3036 SHA256:4940986b06decbd6b6bbcc40770508d72cbb06c9b4350e703fe555daaa74956b
-```
 
 ### `dpkg` source package: `pinentry=1.2.1-3ubuntu5`
 
@@ -3501,11 +3516,11 @@ $ apt-get source -qq --print-uris pixman=0.42.2-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pixman/pixman_0.42.2-1build1.diff.gz' pixman_0.42.2-1build1.diff.gz 327276 SHA512:a07846ba47b3f3407e43aefee37efe6265445a8c1e81589a715f175e426ed2a75822cce7545ac94bb368c3eecaaa2ccd7b0c7944aba9b51f0e939403b2f57d1e
 ```
 
-### `dpkg` source package: `poppler=24.02.0-1ubuntu9.8`
+### `dpkg` source package: `poppler=24.02.0-1ubuntu9.9`
 
 Binary Packages:
 
-- `libpoppler134:amd64=24.02.0-1ubuntu9.8`
+- `libpoppler134:amd64=24.02.0-1ubuntu9.9`
 
 Licenses: (parsed from: `/usr/share/doc/libpoppler134/copyright`)
 
@@ -3513,9 +3528,14 @@ Licenses: (parsed from: `/usr/share/doc/libpoppler134/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris poppler=24.02.0-1ubuntu9.9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0.orig.tar.gz' poppler_24.02.0.orig.tar.gz 1975230 SHA512:75fc41f94ad6848b834eab1cc9199c5ba55b30b12ffbe26d53fa85e86b9918999e752c82d2c5965d6669ace4d9658b1236159c9bfa4bbf40da2660dc00a19f37
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.9.debian.tar.xz' poppler_24.02.0-1ubuntu9.9.debian.tar.xz 44256 SHA512:ba83a39c4444ae67ecd73977eb6ca00980343de1b20c7f9d3e0569535bf778ce03f360351210468f0b996272058371aaa50bc60cf6a60181eae29ecf2c2a2a13
+'http://archive.ubuntu.com/ubuntu/pool/main/p/poppler/poppler_24.02.0-1ubuntu9.9.dsc' poppler_24.02.0-1ubuntu9.9.dsc 3940 SHA512:5d261665cc98f0d14da1845eb609bccd0c5516e6b80b00bba097451cec84442ebb91f74ec116e5796bba682ee94d4cd406566bcd7b5107c49352ca6c51d31e3b
+```
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.2`
 
