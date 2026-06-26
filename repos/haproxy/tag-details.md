@@ -39185,19 +39185,39 @@ $ docker pull haproxy@sha256:015e2bb6597b10c047951005fd75d9b0c16a097a28ce954ae21
 
 ## `haproxy:3.4.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull haproxy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `haproxy:3.4.1-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull haproxy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `haproxy:3.4.1-alpine3.24`
 
-**does not exist** (yet?)
+```console
+$ docker pull haproxy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `haproxy:3.4.1-trixie`
 
-**does not exist** (yet?)
+```console
+$ docker pull haproxy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `haproxy:alpine`
 
