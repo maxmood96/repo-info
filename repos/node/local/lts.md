@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:17259fa1bc4066f8b30575707d795c21ccf030fd8e89ee0d973cbc268d77f4e1`
-- Created: `2026-06-18T13:45:53.124218272Z`
+- Image ID: `sha256:abb4ee76bb0b4a2be8801bafdeeaa0d491a16bba3f3e775da0062ed1eef022e9`
+- Created: `2026-06-24T18:12:26.618205234Z`
 - Virtual Size: ~ 1.13 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Command: `["node"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NODE_VERSION=24.17.0`
+  - `NODE_VERSION=24.18.0`
   - `YARN_VERSION=1.22.22`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1978,23 +1978,23 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/icu/72.1-3+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/icu/72.1-3+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u10`
+### `dpkg` source package: `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u11`
 
 Binary Packages:
 
-- `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u10`
-- `imagemagick-6-common=8:6.9.11.60+dfsg-1.6+deb12u10`
-- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.6+deb12u10`
-- `libmagickcore-6-arch-config:amd64=8:6.9.11.60+dfsg-1.6+deb12u10`
-- `libmagickcore-6-headers=8:6.9.11.60+dfsg-1.6+deb12u10`
-- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u10`
-- `libmagickcore-6.q16-6-extra:amd64=8:6.9.11.60+dfsg-1.6+deb12u10`
-- `libmagickcore-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.6+deb12u10`
-- `libmagickcore-dev=8:6.9.11.60+dfsg-1.6+deb12u10`
-- `libmagickwand-6-headers=8:6.9.11.60+dfsg-1.6+deb12u10`
-- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u10`
-- `libmagickwand-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.6+deb12u10`
-- `libmagickwand-dev=8:6.9.11.60+dfsg-1.6+deb12u10`
+- `imagemagick=8:6.9.11.60+dfsg-1.6+deb12u11`
+- `imagemagick-6-common=8:6.9.11.60+dfsg-1.6+deb12u11`
+- `imagemagick-6.q16=8:6.9.11.60+dfsg-1.6+deb12u11`
+- `libmagickcore-6-arch-config:amd64=8:6.9.11.60+dfsg-1.6+deb12u11`
+- `libmagickcore-6-headers=8:6.9.11.60+dfsg-1.6+deb12u11`
+- `libmagickcore-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u11`
+- `libmagickcore-6.q16-6-extra:amd64=8:6.9.11.60+dfsg-1.6+deb12u11`
+- `libmagickcore-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.6+deb12u11`
+- `libmagickcore-dev=8:6.9.11.60+dfsg-1.6+deb12u11`
+- `libmagickwand-6-headers=8:6.9.11.60+dfsg-1.6+deb12u11`
+- `libmagickwand-6.q16-6:amd64=8:6.9.11.60+dfsg-1.6+deb12u11`
+- `libmagickwand-6.q16-dev:amd64=8:6.9.11.60+dfsg-1.6+deb12u11`
+- `libmagickwand-dev=8:6.9.11.60+dfsg-1.6+deb12u11`
 
 Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/imagemagick-6-common/copyright`, `/usr/share/doc/imagemagick-6.q16/copyright`, `/usr/share/doc/libmagickcore-6-arch-config/copyright`, `/usr/share/doc/libmagickcore-6-headers/copyright`, `/usr/share/doc/libmagickcore-6.q16-6/copyright`, `/usr/share/doc/libmagickcore-6.q16-6-extra/copyright`, `/usr/share/doc/libmagickcore-6.q16-dev/copyright`, `/usr/share/doc/libmagickcore-dev/copyright`, `/usr/share/doc/libmagickwand-6-headers/copyright`, `/usr/share/doc/libmagickwand-6.q16-6/copyright`, `/usr/share/doc/libmagickwand-6.q16-dev/copyright`, `/usr/share/doc/libmagickwand-dev/copyright`)
 
@@ -2025,13 +2025,20 @@ Licenses: (parsed from: `/usr/share/doc/imagemagick/copyright`, `/usr/share/doc/
 - `TatcherUlrichPublicDomain`
 - `aclocal`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris imagemagick=8:6.9.11.60+dfsg-1.6+deb12u11
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u11.dsc' imagemagick_6.9.11.60+dfsg-1.6+deb12u11.dsc 5134 SHA256:bc7cfc2484b72d4791be7785a0a251c8d55508975f70d794bd14cee73d06caef
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg.orig.tar.xz' imagemagick_6.9.11.60+dfsg.orig.tar.xz 9395144 SHA256:472fb516df842ee9c819ed80099c188463b9e961303511c36ae24d0eaa8959c4
+'http://deb.debian.org/debian-security/pool/updates/main/i/imagemagick/imagemagick_6.9.11.60%2bdfsg-1.6%2bdeb12u11.debian.tar.xz' imagemagick_6.9.11.60+dfsg-1.6+deb12u11.debian.tar.xz 337148 SHA256:7782105ca00f7a22dbc353b37b5da89414379545defce3986e0e1726631afd82
+```
 
-- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u10/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u11/ (for browsing the source)
+- https://sources.debian.net/src/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/imagemagick/8:6.9.11.60+dfsg-1.6+deb12u11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `imath=3.1.6-1`
 
