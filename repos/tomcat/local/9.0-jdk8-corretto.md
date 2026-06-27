@@ -1,10 +1,10 @@
-# `tomcat:9.0.118-jdk8-corretto-al2`
+# `tomcat:9.0.119-jdk8-corretto-al2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8294b9b11ecef92fdda5d04586bf31181d94ef00da5fec4897ca94402df9f202`
-- Created: `2026-06-22T18:26:11.783018919Z`
-- Virtual Size: ~ 385.07 Mb  
+- Image ID: `sha256:eeed345de73eccb52e08b8c055e4730281ac8ed2087188fe10e30cbe61b2f3b2`
+- Created: `2026-06-25T01:30:21.38941666Z`
+- Virtual Size: ~ 385.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -16,8 +16,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.118`
-  - `TOMCAT_SHA512=737367433486757ccd687329d99b1188506cdec57a53a29b415173909c38cdf9da4fc9fd73b8cd17cd0a8def8610ad43bab8e84393dc904a0bd1121da8cab2fc`
+  - `TOMCAT_VERSION=9.0.119`
+  - `TOMCAT_SHA512=5215f1c672a9869f8405e440afcc84cc8a2f1e2dce795f5afbaa534d1bc9f2ca20f083661b1d893b9ef26b9b57aa048215c58b861d808130362ba1422a23649a`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -908,15 +908,15 @@ $ dnf --quiet download --source --url openssl-libs-1.0.2k-24.amzn2.0.20
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/b2eaa298c7a8417393480d470e9af1d3ea9628498739bdd32a1e4a15da882a25/../../../../../blobstore/8f0c7e3a499278ed3ac526e48f37fa5a90f62b2fe58544ae51740d7b79cf05d7/openssl-1.0.2k-24.amzn2.0.20.src.rpm
 ```
 
-### `rpm` package: `openssl11-libs-1.1.1zg-1.amzn2.0.1.x86_64`
+### `rpm` package: `openssl11-libs-1.1.1zh-1.amzn2.0.1.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL and ASL 2.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl11-libs-1.1.1zg-1.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/b2eaa298c7a8417393480d470e9af1d3ea9628498739bdd32a1e4a15da882a25/../../../../../blobstore/b565c944c4d9e25c251b24ff287ab558b22d30d39acbb28d4204cd27c2b944a6/openssl11-1.1.1zg-1.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url openssl11-libs-1.1.1zh-1.amzn2.0.1
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/b2eaa298c7a8417393480d470e9af1d3ea9628498739bdd32a1e4a15da882a25/../../../../../blobstore/75a308ebd087c03400ca0885741d4f278a980d17f7e515582a5966499e1161be/openssl11-1.1.1zh-1.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `openssl11-pkcs11-0.4.10-6.amzn2.0.1.x86_64`
