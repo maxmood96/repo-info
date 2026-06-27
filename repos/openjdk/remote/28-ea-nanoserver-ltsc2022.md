@@ -1,7 +1,7 @@
 ## `openjdk:28-ea-nanoserver-ltsc2022`
 
 ```console
-$ docker pull openjdk@sha256:23db77b35da76b9178568d2a9a9f937b240bfb67e7ec511b47d9b041a26776cd
+$ docker pull openjdk@sha256:8cbf195c6ba2492957cc84708efdaa2ae59cf13129464105e035ac6b0c6a3f6d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,37 +11,37 @@ $ docker pull openjdk@sha256:23db77b35da76b9178568d2a9a9f937b240bfb67e7ec511b47d
 ### `openjdk:28-ea-nanoserver-ltsc2022` - windows version 10.0.20348.5256; amd64
 
 ```console
-$ docker pull openjdk@sha256:a6b991a751181a36434ac98ca408d5b4dd46e35037992a7a17b988930f041275
+$ docker pull openjdk@sha256:0406f22d2b88d9dbeda124c964c9949d4800985de93a417bf2bddaccbc277005
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **348.2 MB (348228700 bytes)**  
+-	Total Size: **348.2 MB (348223078 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a71fac6b4bdaed7b95bf82c0cfc71b10e70c760e669874b3ef695cdf410d297a`
+-	Image ID: `sha256:d0aff122af1fb687186f57544a3efdbe5d9f854e354c4c248e60df7dadfb0262`
 -	Default Command: `["jshell"]`
 -	`SHELL`: `["cmd","\/s","\/c"]`
 
 ```dockerfile
 # Sun, 07 Jun 2026 06:26:15 GMT
 RUN Apply image 10.0.20348.5256
-# Mon, 22 Jun 2026 23:09:38 GMT
+# Fri, 26 Jun 2026 23:08:56 GMT
 SHELL [cmd /s /c]
-# Mon, 22 Jun 2026 23:09:39 GMT
+# Fri, 26 Jun 2026 23:08:57 GMT
 ENV JAVA_HOME=C:\openjdk-28
-# Mon, 22 Jun 2026 23:09:39 GMT
+# Fri, 26 Jun 2026 23:08:57 GMT
 USER ContainerAdministrator
-# Mon, 22 Jun 2026 23:09:47 GMT
+# Fri, 26 Jun 2026 23:09:04 GMT
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH% 	&& setx /M PATH %JAVA_HOME%\bin;%PATH% 	&& echo Complete.
-# Mon, 22 Jun 2026 23:09:48 GMT
+# Fri, 26 Jun 2026 23:09:04 GMT
 USER ContainerUser
-# Mon, 22 Jun 2026 23:09:48 GMT
-ENV JAVA_VERSION=28-ea+3
-# Mon, 22 Jun 2026 23:10:25 GMT
-COPY dir:143aad653eaf1eafb22a0522125924463ceb107c7fe7f919363f4a6a05e7f3be in C:\openjdk-28 
-# Mon, 22 Jun 2026 23:10:31 GMT
+# Fri, 26 Jun 2026 23:09:05 GMT
+ENV JAVA_VERSION=28-ea+4
+# Fri, 26 Jun 2026 23:09:25 GMT
+COPY dir:eef968aefc3beb427e11070e56ba6cc1188ab5370b0606d52ca8b4a8548d912f in C:\openjdk-28 
+# Fri, 26 Jun 2026 23:09:29 GMT
 RUN echo Verifying install ... 	&& echo   javac --version && javac --version 	&& echo   java --version && java --version 	&& echo Complete.
-# Mon, 22 Jun 2026 23:10:32 GMT
+# Fri, 26 Jun 2026 23:09:29 GMT
 CMD ["jshell"]
 ```
 
@@ -50,39 +50,39 @@ CMD ["jshell"]
 		Last Modified: Tue, 09 Jun 2026 17:48:06 GMT  
 		Size: 124.0 MB (123997505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4ba0f432fefafc0c6fd12b6a284baaf7ebad1126900fe4bd8e80b86cbfeec188`  
-		Last Modified: Mon, 22 Jun 2026 23:10:38 GMT  
+	-	`sha256:eed77d180d477cbb985a6390cd46db954f0e316f48a4a126677cb92ef04d13a1`  
+		Last Modified: Fri, 26 Jun 2026 23:09:35 GMT  
+		Size: 1.1 KB (1069 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:623bdba95e1a6e6842530f33ef12a3497a72c5c6e899590532e366b269d039ee`  
+		Last Modified: Fri, 26 Jun 2026 23:09:35 GMT  
 		Size: 1.1 KB (1067 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7f763f86199e7fecea7036cc9a2bf10ec901e80b69888dab684009b290c62bf`  
-		Last Modified: Mon, 22 Jun 2026 23:10:38 GMT  
-		Size: 1.0 KB (1046 bytes)  
+	-	`sha256:2ad73367b2cf8b9e659bd6fc3d1908b92a468658482581b3d6a8a6040093338a`  
+		Last Modified: Fri, 26 Jun 2026 23:09:35 GMT  
+		Size: 1.1 KB (1061 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46f4b940a3c76db9df0c142dbccbf2c3ecf63b463d1a12134fa571950ed73eac`  
-		Last Modified: Mon, 22 Jun 2026 23:10:38 GMT  
-		Size: 1.1 KB (1071 bytes)  
+	-	`sha256:3a4eb594f07f477b05be3a1aa28ecb59fd677ff717c480e20eb3ea1e844cce9d`  
+		Last Modified: Fri, 26 Jun 2026 23:09:35 GMT  
+		Size: 77.5 KB (77507 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a61893a4c03135238dc99f412c8f35d362e6d8867bf459de319c9b19a3a8712`  
-		Last Modified: Mon, 22 Jun 2026 23:10:38 GMT  
-		Size: 73.4 KB (73393 bytes)  
+	-	`sha256:64a61539f982491917818e0e64aa12d16cafc758a74910dceb9ab3010d03582f`  
+		Last Modified: Fri, 26 Jun 2026 23:09:33 GMT  
+		Size: 1.0 KB (1042 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:779739fee8f7ed720829e2d93cb1d2ab9600075872f343f6af6704518ae7ae79`  
-		Last Modified: Mon, 22 Jun 2026 23:10:36 GMT  
-		Size: 1.1 KB (1067 bytes)  
+	-	`sha256:7f7229274eefc477dd4a40c2a0296d0914426b2a7847013bd283da388abd04b0`  
+		Last Modified: Fri, 26 Jun 2026 23:09:33 GMT  
+		Size: 1.0 KB (1041 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e5d7e9cf933fd6594e42330339a5cd3e7a0921caa0b1c4b0860f6776ad23b6f1`  
-		Last Modified: Mon, 22 Jun 2026 23:10:36 GMT  
-		Size: 1.1 KB (1077 bytes)  
+	-	`sha256:3484763d5f10e40ffd5ece415647032a8a45705120601e10d96acc6643c8b1d4`  
+		Last Modified: Fri, 26 Jun 2026 23:09:49 GMT  
+		Size: 224.0 MB (224046873 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:232c7d1ec9fb9570189a1e2f11b0d5efc521b54e3a036fcb788f8f12bfbea140`  
-		Last Modified: Mon, 22 Jun 2026 23:10:52 GMT  
-		Size: 224.0 MB (224028648 bytes)  
+	-	`sha256:0320b3c102fce1b205fa237174d4fc3031ba78f748589bfe1539cc644813d817`  
+		Last Modified: Fri, 26 Jun 2026 23:09:33 GMT  
+		Size: 94.9 KB (94872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d9d705877710ee6172d7a99879bc32ca8f5305b23dea397e2d7142706dc107f9`  
-		Last Modified: Mon, 22 Jun 2026 23:10:36 GMT  
-		Size: 122.8 KB (122781 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d26b04c3d5e5925554f99bd5bc4fff95b40f3fb39d4f6da1303645cc1511b119`  
-		Last Modified: Mon, 22 Jun 2026 23:10:36 GMT  
-		Size: 1.0 KB (1045 bytes)  
+	-	`sha256:d4495188fae51f13cacf10c54d118063bf4ff230854ab59c3771f097ddd3cb7c`  
+		Last Modified: Fri, 26 Jun 2026 23:09:33 GMT  
+		Size: 1.0 KB (1041 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
