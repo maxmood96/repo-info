@@ -1604,15 +1604,9 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.34.0-3ubuntu1.5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig-regen-configure.tar.xz' perl_5.34.0.orig-regen-configure.tar.xz 415412 SHA256:b168f566401fdccc13d0616c258854c1e1a461276922babca617097cd9dfd85b
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0.orig.tar.xz' perl_5.34.0.orig.tar.xz 12881416 SHA256:82c2e5e5c71b0e10487a80d79140469ab1f8056349ca8545140a224dbbed7ded
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.5.debian.tar.xz' perl_5.34.0-3ubuntu1.5.debian.tar.xz 200524 SHA256:b299fde16bfd7405e40d8afdeab05027be11a6fb409ac020f2052d079f0b1f54
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.34.0-3ubuntu1.5.dsc' perl_5.34.0-3ubuntu1.5.dsc 2976 SHA256:9e51731910bdc4c1aacbeda30d22b6f2daf015fc8601b5a5c6f518cda19150b2
-```
 
 ### `dpkg` source package: `pinentry=1.1.1-1build2`
 
@@ -1841,14 +1835,9 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `GPL-2`
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.34+dfsg-1ubuntu0.1.22.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg.orig.tar.xz' tar_1.34+dfsg.orig.tar.xz 1981736 SHA256:7d57029540cb928394defb3b377b3531237c947e795b51aa8acac0c5ba0e4844
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.04.2.debian.tar.xz' tar_1.34+dfsg-1ubuntu0.1.22.04.2.debian.tar.xz 20544 SHA256:631c322d0cfcf547ac83a0cfea3324a85ef6ffe8706e51615869216d1bb970d8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.04.2.dsc' tar_1.34+dfsg-1ubuntu0.1.22.04.2.dsc 1829 SHA256:8e03b501b3d49270d1b4df2db086e30ff4ea97b725b5477b34aac973ceb6f694
-```
 
 ### `dpkg` source package: `tzdata=2026a-0ubuntu0.22.04.1`
 
