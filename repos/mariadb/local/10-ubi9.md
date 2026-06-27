@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f3a4009e10296a74d80458cf0910c1e6433830172d59c55161b1054e3534493a`
-- Created: `2026-06-15T23:16:34.421970748Z`
-- Virtual Size: ~ 507.05 Mb  
+- Image ID: `sha256:8c89d9d13118b3c48f04f0f1837b86d32bbfa0c29207e2103dc6451216508605`
+- Created: `2026-06-25T23:28:01.977746805Z`
+- Virtual Size: ~ 508.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,13 +16,13 @@
   - `MARIADB_VERSION=10.11.18`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2026-06-15T04:14:02Z`
+  - `build-date=2026-06-25T05:47:36Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `cpe=cpe:/a:redhat:enterprise_linux:9::appstream`
   - `description=MariaDB Database for relational SQL`
   - `distribution-scope=public`
-  - `io.buildah.version=1.42.2`
+  - `io.buildah.version=1.44.0`
   - `io.k8s.description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `io.k8s.display-name=Red Hat Universal Base Image 9 Minimal`
   - `io.openshift.expose-services=`
@@ -31,11 +31,11 @@
   - `name=MariaDB Server`
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/redhat/ubi9-minimal`
-  - `org.opencontainers.image.created=2026-06-15T04:14:02Z`
+  - `org.opencontainers.image.created=2026-06-25T05:47:36Z`
   - `org.opencontainers.image.description=MariaDB Database for relational SQL`
   - `org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/`
   - `org.opencontainers.image.licenses=GPL-2.0`
-  - `org.opencontainers.image.revision=92938083b76077787596c980f5cdc39e89c50a24`
+  - `org.opencontainers.image.revision=b76cbbe03678b6bed00cb452eb031ce6d202c981`
   - `org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
@@ -44,7 +44,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://catalog.redhat.com/en/search?searchType=containers`
-  - `vcs-ref=92938083b76077787596c980f5cdc39e89c50a24`
+  - `vcs-ref=b76cbbe03678b6bed00cb452eb031ce6d202c981`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=10.11.18`
@@ -169,15 +169,15 @@ $ dnf --quiet download --source --url ca-certificates-2025.2.80_v9.0.305-91.el9.
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/ca-certificates-2025.2.80_v9.0.305-91.el9.src.rpm
 ```
 
-### `rpm` package: `coreutils-single-8.32-40.el9.x86_64`
+### `rpm` package: `coreutils-single-8.32-41.el9_8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url coreutils-single-8.32-40.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/coreutils-8.32-40.el9.src.rpm
+$ dnf --quiet download --source --url coreutils-single-8.32-41.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/coreutils-8.32-41.el9_8.src.rpm
 ```
 
 ### `rpm` package: `cracklib-2.9.6-28.el9.x86_64`
@@ -305,12 +305,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): GPLv2
 
-Source:
-
-```console
-$ dnf --quiet download --source --url epel-release-9-10.el9.noarch
-https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/e/epel-release-9-10.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `expat-2.5.0-6.el9_8.1.x86_64`
 
@@ -1112,15 +1107,15 @@ $ dnf --quiet download --source --url libstdc++-11.5.0-14.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gcc-11.5.0-14.el9.src.rpm
 ```
 
-### `rpm` package: `libtasn1-4.16.0-9.el9.x86_64`
+### `rpm` package: `libtasn1-4.16.0-10.el9_8.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libtasn1-4.16.0-9.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libtasn1-4.16.0-9.el9.src.rpm
+$ dnf --quiet download --source --url libtasn1-4.16.0-10.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libtasn1-4.16.0-10.el9_8.src.rpm
 ```
 
 ### `rpm` package: `libtirpc-1.3.3-9.el9.x86_64`
@@ -1156,11 +1151,16 @@ $ dnf --quiet download --source --url libunistring-0.9.10-15.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libunistring-0.9.10-15.el9.src.rpm
 ```
 
-### `rpm` package: `libunwind-1.6.2-1.el9.x86_64`
+### `rpm` package: `libunwind-1.8.0-4.el9.x86_64`
 
-Licenses (from `rpm --query`): BSD
+Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libunwind-1.8.0-4.el9
+https://d2lzkl7pfhq30w.cloudfront.net/pub/epel/9/Everything/source/tree/Packages/l/libunwind-1.8.0-4.el9.src.rpm
+```
 
 ### `rpm` package: `liburing-2.12-1.el9.x86_64`
 
@@ -1173,15 +1173,15 @@ $ dnf --quiet download --source --url liburing-2.12-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/l/liburing-2.12-1.el9.src.rpm
 ```
 
-### `rpm` package: `libusbx-1.0.26-1.el9.x86_64`
+### `rpm` package: `libusbx-1.0.30-1.el9_8.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libusbx-1.0.26-1.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libusbx-1.0.26-1.el9.src.rpm
+$ dnf --quiet download --source --url libusbx-1.0.30-1.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libusbx-1.0.30-1.el9_8.src.rpm
 ```
 
 ### `rpm` package: `libutempter-1.2.1-6.el9.x86_64`
@@ -1228,15 +1228,15 @@ $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-14.el9_7.x86_64`
+### `rpm` package: `libxml2-2.9.13-14.el9_8.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.13-14.el9_7
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-14.el9_7.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.13-14.el9_8.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-14.el9_8.1.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
@@ -1393,17 +1393,27 @@ $ dnf --quiet download --source --url openssl-3.5.5-4.el9_8
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.5.5-4.el9_8.src.rpm
 ```
 
-### `rpm` package: `openssl-fips-provider-3.0.7-8.el9.x86_64`
+### `rpm` package: `openssl-fips-provider-3.0.7-11.el9_8.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `openssl-fips-provider-so-3.0.7-8.el9.x86_64`
+```console
+$ dnf --quiet download --source --url openssl-fips-provider-3.0.7-11.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-fips-provider-3.0.7-11.el9_8.src.rpm
+```
+
+### `rpm` package: `openssl-fips-provider-so-3.0.7-11.el9_8.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openssl-fips-provider-so-3.0.7-11.el9_8
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-fips-provider-3.0.7-11.el9_8.src.rpm
+```
 
 ### `rpm` package: `openssl-libs-3.5.5-4.el9_8.x86_64`
 
@@ -2285,11 +2295,16 @@ $ dnf --quiet download --source --url rpm-libs-4.16.1.3-40.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-40.el9.src.rpm
 ```
 
-### `rpm` package: `rsync-3.2.5-7.el9_8.x86_64`
+### `rpm` package: `rsync-3.2.5-7.el9_8.2.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url rsync-3.2.5-7.el9_8.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rsync-3.2.5-7.el9_8.2.src.rpm
+```
 
 ### `rpm` package: `sed-4.8-10.el9.x86_64`
 
@@ -2346,48 +2361,48 @@ $ dnf --quiet download --source --url sqlite-libs-3.34.1-10.el9_8
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-10.el9_8.src.rpm
 ```
 
-### `rpm` package: `systemd-252-67.el9_8.2.x86_64`
+### `rpm` package: `systemd-252-67.el9_8.4.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-252-67.el9_8.2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-67.el9_8.2.src.rpm
+$ dnf --quiet download --source --url systemd-252-67.el9_8.4
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-67.el9_8.4.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-252-67.el9_8.2.x86_64`
+### `rpm` package: `systemd-libs-252-67.el9_8.4.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-libs-252-67.el9_8.2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-67.el9_8.2.src.rpm
+$ dnf --quiet download --source --url systemd-libs-252-67.el9_8.4
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-67.el9_8.4.src.rpm
 ```
 
-### `rpm` package: `systemd-pam-252-67.el9_8.2.x86_64`
+### `rpm` package: `systemd-pam-252-67.el9_8.4.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-pam-252-67.el9_8.2
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-67.el9_8.2.src.rpm
+$ dnf --quiet download --source --url systemd-pam-252-67.el9_8.4
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-67.el9_8.4.src.rpm
 ```
 
-### `rpm` package: `systemd-rpm-macros-252-67.el9_8.2.noarch`
+### `rpm` package: `systemd-rpm-macros-252-67.el9_8.4.noarch`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-rpm-macros-252-67.el9_8.2.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-67.el9_8.2.src.rpm
+$ dnf --quiet download --source --url systemd-rpm-macros-252-67.el9_8.4.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-67.el9_8.4.src.rpm
 ```
 
 ### `rpm` package: `tar-1.34-11.el9.x86_64`
