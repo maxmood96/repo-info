@@ -1,7 +1,7 @@
 ## `drupal:11-fpm-alpine3.23`
 
 ```console
-$ docker pull drupal@sha256:6b0ebed1aea8661a97224d52a1de787c9128011de3c60ea6bd6b712d27a51921
+$ docker pull drupal@sha256:5c1b4f913439e6a9dfbecab57a7a795d4083885a87b0d6402d7550ea1bb60b1d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1090,13 +1090,13 @@ $ docker pull drupal@sha256:dbb7d5c74dc7d53af1a0d18ddff2acfc7f61ce01c2b179c6b972
 ### `drupal:11-fpm-alpine3.23` - linux; riscv64
 
 ```console
-$ docker pull drupal@sha256:e6df193d2a5e3c91f12385fd56766e81a5370fc665dd281bfb0bce81ea49f626
+$ docker pull drupal@sha256:2b3f3f97984da6d35cd6785c30764f97097850b99789314afb81bca5c0d65e3a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.8 MB (62831062 bytes)**  
+-	Total Size: **62.9 MB (62859468 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:352ced5699a6a12bf25e9969a1073f08d8bc516bdd9e043386025772f19fa6d6`
+-	Image ID: `sha256:552147d8c1664aa00f3c4ba74774895c71444abe0325e9ec9ea25edfac6003d8`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1160,14 +1160,14 @@ RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_
 # Wed, 24 Jun 2026 08:46:33 GMT
 COPY /usr/bin/composer /usr/local/bin/ # buildkit
 # Wed, 24 Jun 2026 08:46:34 GMT
-ENV DRUPAL_VERSION=11.3.12
+ENV DRUPAL_VERSION=11.3.13
 # Wed, 24 Jun 2026 08:46:34 GMT
 ENV COMPOSER_ALLOW_SUPERUSER=1
 # Wed, 24 Jun 2026 08:46:34 GMT
 WORKDIR /opt/drupal
-# Wed, 24 Jun 2026 08:55:11 GMT
+# Sat, 27 Jun 2026 17:58:30 GMT
 RUN set -eux; 	export COMPOSER_HOME="$(mktemp -d)"; 	composer create-project --no-interaction "drupal/recommended-project:$DRUPAL_VERSION" ./; 	composer check-platform-reqs; 	chown -R www-data:www-data web/sites web/modules web/themes; 	rmdir /var/www/html; 	ln -sf /opt/drupal/web /var/www/html; 	rm -rf "$COMPOSER_HOME" # buildkit
-# Wed, 24 Jun 2026 08:55:11 GMT
+# Sat, 27 Jun 2026 17:58:30 GMT
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupal/vendor/bin
 ```
 
@@ -1236,32 +1236,32 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Last Modified: Wed, 24 Jun 2026 08:50:00 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b07f501db5e8a04d098d223e90a0b063c1e53be0959d865b0e665275cb5d857`  
-		Last Modified: Wed, 24 Jun 2026 08:57:43 GMT  
-		Size: 21.4 MB (21378108 bytes)  
+	-	`sha256:7eeb347e9d51dd18d29ee47924120b5793eab82d97b1f73dd1317916fdffd152`  
+		Last Modified: Sat, 27 Jun 2026 18:01:04 GMT  
+		Size: 21.4 MB (21406514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `drupal:11-fpm-alpine3.23` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:4c3e55d1ffcbf6f081f3095ace0d5247935d4d79136f17b38d81ca49baa8c7ca
+$ docker pull drupal@sha256:8b053c46239b0f003443348308f16c12345c65dc755a38d11cb42ce084214be6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **404.4 KB (404446 bytes)**  
+-	Total Size: **405.5 KB (405517 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f24de28622809163b25850ab1a2ba4548492445af0e740399c3d7eef08108f0b`
+-	Image ID: `sha256:f6af30d0d8fcedbe747910da4090fa4676cd942394063339442b094c78fda3ab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:79b3e43ce5efc4287ae05d157632e461692a7702f1af38682a2c94edb9ae15aa`  
-		Last Modified: Wed, 24 Jun 2026 08:57:40 GMT  
-		Size: 369.7 KB (369703 bytes)  
+	-	`sha256:8c388281c4a44295470e4bf14856b912e77a444c33e7c59571313844cc9b9e50`  
+		Last Modified: Sat, 27 Jun 2026 18:00:59 GMT  
+		Size: 370.8 KB (370774 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b3fd856130d842f561cc67d43a139af1bfe827801c7ab2a45c2bf2247b66c7f5`  
-		Last Modified: Wed, 24 Jun 2026 08:57:39 GMT  
+	-	`sha256:26c3bf2a1a5937ebf8501a581fff2e02c80e19bb039321bc91f336c3dbaee9d1`  
+		Last Modified: Sat, 27 Jun 2026 18:01:03 GMT  
 		Size: 34.7 KB (34743 bytes)  
 		MIME: application/vnd.in-toto+json
 
