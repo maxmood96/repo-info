@@ -1,10 +1,10 @@
-# `drupal:11.3.12-php8.5-apache-trixie`
+# `drupal:11.3.13-php8.5-apache-trixie`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ed5674efa980955efb83596c05c2b3e66c6c07c8cf828c1a2ef28b44d6e63372`
-- Created: `2026-06-17T22:27:15.138793296Z`
-- Virtual Size: ~ 649.7 Mb  
+- Image ID: `sha256:ceb2f4fe3579e70d16f54c8ba2ccd563a390349fcfab350643015edc23443fb0`
+- Created: `2026-06-25T01:26:57.666576838Z`
+- Virtual Size: ~ 649.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -23,7 +23,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.5.7.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.7.tar.xz.asc`
   - `PHP_SHA256=01ba2ed1c2658dacf91bebc8be6a4885f69b811c7993831fc48e26107ab29985`
-  - `DRUPAL_VERSION=11.3.12`
+  - `DRUPAL_VERSION=11.3.13`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -2383,11 +2383,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.7+dfsg-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.7+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.12.90-2`
+### `dpkg` source package: `linux=6.12.94-1`
 
 Binary Packages:
 
-- `linux-libc-dev=6.12.90-2`
+- `linux-libc-dev=6.12.94-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2401,17 +2401,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.12.90-2
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.90-2.dsc' linux_6.12.90-2.dsc 292516 SHA256:3be36d36d9bede532201be1f4e97b2cc0409318baed4789112134ab515ba98ef
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.90.orig.tar.xz' linux_6.12.90.orig.tar.xz 151267988 SHA256:6e7fc837feac9d07b96e60c4a97f616d33ef694f67703228f027f816117fb82b
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.90-2.debian.tar.xz' linux_6.12.90-2.debian.tar.xz 1819476 SHA256:11de140c51000a176e573371675088713cbaf3f74b5a1435ca5599545aee6501
+$ apt-get source -qq --print-uris linux=6.12.94-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.94-1.dsc' linux_6.12.94-1.dsc 288306 SHA256:985a33d437c11f73f672b808b62589a0db3e97c6c286f315dbe14d1fc43f1191
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.94.orig.tar.xz' linux_6.12.94.orig.tar.xz 151297764 SHA256:3eea3dd18f67a103f6f8312e314075f695a27eaddd839e7b6c4641e6616dabba
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.12.94-1.debian.tar.xz' linux_6.12.94-1.debian.tar.xz 1838436 SHA256:8c5130fd9dee8d6efcc594dc3357809ad8e0d0234357139f85f5ed39b37922b4
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.12.90-2/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.90-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.90-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.12.94-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.12.94-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.12.94-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lua5.4=5.4.7-1`
 

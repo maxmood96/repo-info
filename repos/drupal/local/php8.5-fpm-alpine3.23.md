@@ -1,10 +1,10 @@
-# `drupal:11.3.12-php8.5-fpm-alpine3.23`
+# `drupal:11.3.13-php8.5-fpm-alpine3.23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ec23e108cc3db8b5302559bfa31603c87984cfb89dd5856cca1e900d49429cbc`
-- Created: `2026-06-17T22:27:07.457357079Z`
-- Virtual Size: ~ 231.81 Mb  
+- Image ID: `sha256:80a01444ad5f7ac503ac2cd7b3f544205a40a7a9d8ea8d6a77da7a33583eb3ed`
+- Created: `2026-06-25T01:24:02.34186179Z`
+- Virtual Size: ~ 224.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.5.7.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.5.7.tar.xz.asc`
   - `PHP_SHA256=01ba2ed1c2658dacf91bebc8be6a4885f69b811c7993831fc48e26107ab29985`
-  - `DRUPAL_VERSION=11.3.12`
+  - `DRUPAL_VERSION=11.3.13`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `apk` (`.apk`-based packages)
@@ -97,16 +97,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.4-r0 description:
+alpine-release-3.23.5-r0 description:
 Alpine release data
 
-alpine-release-3.23.4-r0 webpage:
+alpine-release-3.23.5-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.4-r0 installed size:
+alpine-release-3.23.5-r0 installed size:
 343 B
 
-alpine-release-3.23.4-r0 license:
+alpine-release-3.23.5-r0 license:
 MIT
 
 ```
@@ -233,16 +233,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20260413-r0 description:
+ca-certificates-20260611-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20260413-r0 webpage:
+ca-certificates-20260611-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20260413-r0 installed size:
-246 KiB
+ca-certificates-20260611-r0 installed size:
+207 KiB
 
-ca-certificates-20260413-r0 license:
+ca-certificates-20260611-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -250,16 +250,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260413-r0 description:
+ca-certificates-bundle-20260611-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260413-r0 webpage:
+ca-certificates-bundle-20260611-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260413-r0 installed size:
-212 KiB
+ca-certificates-bundle-20260611-r0 installed size:
+175 KiB
 
-ca-certificates-bundle-20260413-r0 license:
+ca-certificates-bundle-20260611-r0 license:
 MPL-2.0 AND MIT
 
 ```
