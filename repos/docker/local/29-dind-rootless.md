@@ -1,18 +1,18 @@
-# `docker:29.6.0-dind-rootless`
+# `docker:29.6.1-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:88551c3e8cf1690efd08ab0dcd8d786bfce8a46c19141fb5e0e07672372d3aa5`
-- Created: `2026-06-19T02:10:52.621799384Z`
-- Virtual Size: ~ 412.22 Mb  
+- Image ID: `sha256:da5bb5dad84091a1a6695f967bc7974bdf20759600535244123f5d8108736cdb`
+- Created: `2026-06-26T21:10:08.053921222Z`
+- Virtual Size: ~ 411.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.6.0`
+  - `DOCKER_VERSION=29.6.1`
   - `DOCKER_BUILDX_VERSION=0.35.0`
-  - `DOCKER_COMPOSE_VERSION=5.1.4`
+  - `DOCKER_COMPOSE_VERSION=5.2.0`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
 
@@ -599,16 +599,16 @@ GPL-2.0-only
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.42-r0 description:
+libblkid-2.42.1-r0 description:
 Block device identification library from util-linux
 
-libblkid-2.42-r0 webpage:
+libblkid-2.42.1-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.42-r0 installed size:
+libblkid-2.42.1-r0 installed size:
 198 KiB
 
-libblkid-2.42-r0 license:
+libblkid-2.42.1-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -888,16 +888,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libmount`
 
 ```console
-libmount-2.42-r0 description:
+libmount-2.42.1-r0 description:
 Block device identification library from util-linux
 
-libmount-2.42-r0 webpage:
+libmount-2.42.1-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libmount-2.42-r0 installed size:
+libmount-2.42.1-r0 installed size:
 282 KiB
 
-libmount-2.42-r0 license:
+libmount-2.42.1-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1058,16 +1058,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.42-r0 description:
+libuuid-2.42.1-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.42-r0 webpage:
+libuuid-2.42.1-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.42-r0 installed size:
+libuuid-2.42.1-r0 installed size:
 29 KiB
 
-libuuid-2.42-r0 license:
+libuuid-2.42.1-r0 license:
 BSD-3-Clause
 
 ```

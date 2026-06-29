@@ -1,18 +1,18 @@
-# `docker:29.6.0-dind`
+# `docker:29.6.1-dind`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a69223e53412298a32a68f53aa962dfd39ed914c741b78d59180d7c58302a217`
-- Created: `2026-06-19T01:10:24.584517427Z`
-- Virtual Size: ~ 379.72 Mb  
+- Image ID: `sha256:c5a9896195077f64981b363a7b46cf6e629cdedb093d9eb6ba1b4a66c903daed`
+- Created: `2026-06-26T20:09:57.201869659Z`
+- Virtual Size: ~ 379.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=29.6.0`
+  - `DOCKER_VERSION=29.6.1`
   - `DOCKER_BUILDX_VERSION=0.35.0`
-  - `DOCKER_COMPOSE_VERSION=5.1.4`
+  - `DOCKER_COMPOSE_VERSION=5.2.0`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=8d9e3502aba39127e4d12196dae16d306f76993d`
 
@@ -446,16 +446,16 @@ GPL-2.0-only
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.42-r0 description:
+libblkid-2.42.1-r0 description:
 Block device identification library from util-linux
 
-libblkid-2.42-r0 webpage:
+libblkid-2.42.1-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.42-r0 installed size:
+libblkid-2.42.1-r0 installed size:
 198 KiB
 
-libblkid-2.42-r0 license:
+libblkid-2.42.1-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -803,16 +803,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.42-r0 description:
+libuuid-2.42.1-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.42-r0 webpage:
+libuuid-2.42.1-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.42-r0 installed size:
+libuuid-2.42.1-r0 installed size:
 29 KiB
 
-libuuid-2.42-r0 license:
+libuuid-2.42.1-r0 license:
 BSD-3-Clause
 
 ```
