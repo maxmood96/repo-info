@@ -4765,14 +4765,9 @@ Licenses: (parsed from: `/usr/share/doc/libheif-dev/copyright`, `/usr/share/doc/
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.21.2-3ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2.orig.tar.gz' libheif_1.21.2.orig.tar.gz 1859435 SHA512:ec7cf3a1ceafc6df01fa57b488c763da8b88971f01b71385d377036e4301d1145d743af942654e5b741468fd9d0c8ab520a9bf205c5a7d3cdd60767cec4df232
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-3ubuntu0.1.debian.tar.xz' libheif_1.21.2-3ubuntu0.1.debian.tar.xz 17564 SHA512:20a21a76ed706a44f42a2c730aa7337ff24aa6f537e735dc816e9192da06dd9b3e58cbc90aebaf2970b802f030116e8619ebc2f1425ef87314b671af39fc2209
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.21.2-3ubuntu0.1.dsc' libheif_1.21.2-3ubuntu0.1.dsc 3989 SHA512:f085a4e2c8f8c7923b48429871e950db6db9dbc05afda2ccb61d9848e76bdabe33e3332d02b3b141959b43d119978ab61c5e17b490f2e0a449eefe488544be2b
-```
 
 ### `dpkg` source package: `libice=2:1.1.1-1build1`
 
@@ -6574,14 +6569,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=7.0.0-22.22
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-22.22.diff.gz' linux_7.0.0-22.22.diff.gz 992725 SHA512:b466c2be1d17aea5a2d053a1b0f9fbc39eef7de63688ea7a8ba7759f1db4f859954c6353591459b8bf903e2c554b342057ac1f617ace6351dc095d99ad8549e0
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-22.22.dsc' linux_7.0.0-22.22.dsc 7922 SHA512:6b936bd12011eff0c641f7f72be5a124e4cd3b15f7b0cd3c5dc95ef0cad46b61a7cb1eb09085527630704380a79dff4e7d7d9db3dd9f158d74c80a40ca3100e6
-```
 
 ### `dpkg` source package: `llvm-toolchain-21=1:21.1.8-6ubuntu1`
 
