@@ -1574,14 +1574,9 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/
 - `LGPL-3+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.17.6-1ubuntu4.3
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6.orig.tar.gz' libheif_1.17.6.orig.tar.gz 1433302 SHA256:8390baf4913eda0a183e132cec62b875fb2ef507ced5ddddc98dfd2f17780aee
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.3.debian.tar.xz' libheif_1.17.6-1ubuntu4.3.debian.tar.xz 12640 SHA256:8108807f8915516c9e7e2ecf91746a3a7de10fad14e4888dfc73156e68c68ffa
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.17.6-1ubuntu4.3.dsc' libheif_1.17.6-1ubuntu4.3.dsc 3524 SHA256:43a2a6fab26a775b6001a1f08cef01b00f42a028e99693590a656c9ba93039c3
-```
 
 ### `dpkg` source package: `libidn2=2.3.7-2build1.1`
 
@@ -2064,14 +2059,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.7
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.7.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.7.debian.tar.xz 52444 SHA256:84f32df78b0f40bfa4fd9fbb9aeb4bc034828b4fea4cfa30b3824a8f05a70d20
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.7.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.7.dsc 3083 SHA256:033de6bba6af3395efb09d5e5b68a82ea8662740f50b49bddec5695cc6d5c3b0
-```
 
 ### `dpkg` source package: `libxmu=2:1.1.3-3build2`
 
@@ -2596,15 +2586,9 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.38t64/copyright`, `/usr/share/d
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.38.2-3.2ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA256:4d1b34cc058f9963cb89785ecc040d57f6d7725cd83329cfa4ef8b27566454d2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA256:d91115e90b896520e83d4de6b52f8254ef2b70a8d545ffab33200ea9f1cf29e8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.2.debian.tar.xz' perl_5.38.2-3.2ubuntu0.2.debian.tar.xz 171736 SHA256:f7149a24aef35ff716fe9e6c724f8f9a769d1c77cddd6db301b7b7c450989b75
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.2.dsc' perl_5.38.2-3.2ubuntu0.2.dsc 3036 SHA256:4940986b06decbd6b6bbcc40770508d72cbb06c9b4350e703fe555daaa74956b
-```
 
 ### `dpkg` source package: `pinentry=1.2.1-3ubuntu5`
 
