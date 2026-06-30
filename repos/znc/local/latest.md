@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9e69d8e47bb3b0f91df95c3f9bc0add834847b60807e21221fcabe8eb9700444`
-- Created: `2026-05-08T18:08:20.539877996Z`
-- Virtual Size: ~ 523.18 Mb  
+- Image ID: `sha256:c135801261c2cba14b7b0ce03a5780677fb51501b01c31b7a6a21710e13e13c8`
+- Created: `2026-06-28T08:10:13.423941185Z`
+- Virtual Size: ~ 523.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -86,16 +86,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.23.4-r0 description:
+alpine-release-3.23.5-r0 description:
 Alpine release data
 
-alpine-release-3.23.4-r0 webpage:
+alpine-release-3.23.5-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.23.4-r0 installed size:
+alpine-release-3.23.5-r0 installed size:
 343 B
 
-alpine-release-3.23.4-r0 license:
+alpine-release-3.23.5-r0 license:
 MIT
 
 ```
@@ -800,16 +800,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20260413-r0 description:
+ca-certificates-20260611-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20260413-r0 webpage:
+ca-certificates-20260611-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20260413-r0 installed size:
-246 KiB
+ca-certificates-20260611-r0 installed size:
+207 KiB
 
-ca-certificates-20260413-r0 license:
+ca-certificates-20260611-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -817,16 +817,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20260413-r0 description:
+ca-certificates-bundle-20260611-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20260413-r0 webpage:
+ca-certificates-bundle-20260611-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20260413-r0 installed size:
-212 KiB
+ca-certificates-bundle-20260611-r0 installed size:
+175 KiB
 
-ca-certificates-bundle-20260413-r0 license:
+ca-certificates-bundle-20260611-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -1191,16 +1191,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.5.6-r0 description:
+libcrypto3-3.5.7-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.5.6-r0 webpage:
+libcrypto3-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.5.6-r0 installed size:
+libcrypto3-3.5.7-r0 installed size:
 5091 KiB
 
-libcrypto3-3.5.6-r0 license:
+libcrypto3-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -1208,16 +1208,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.7.5-r0 description:
+libexpat-2.8.1-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.7.5-r0 webpage:
+libexpat-2.8.1-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.7.5-r0 installed size:
+libexpat-2.8.1-r0 installed size:
 133 KiB
 
-libexpat-2.7.5-r0 license:
+libexpat-2.8.1-r0 license:
 MIT
 
 ```
@@ -1344,16 +1344,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.5.6-r0 description:
+libssl3-3.5.7-r0 description:
 SSL shared libraries
 
-libssl3-3.5.6-r0 webpage:
+libssl3-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.5.6-r0 installed size:
+libssl3-3.5.7-r0 installed size:
 819 KiB
 
-libssl3-3.5.6-r0 license:
+libssl3-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -1395,16 +1395,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libuv`
 
 ```console
-libuv-1.51.0-r0 description:
+libuv-1.52.1-r0 description:
 Cross-platform asychronous I/O
 
-libuv-1.51.0-r0 webpage:
+libuv-1.52.1-r0 webpage:
 https://libuv.org/
 
-libuv-1.51.0-r0 installed size:
+libuv-1.52.1-r0 installed size:
 210 KiB
 
-libuv-1.51.0-r0 license:
+libuv-1.52.1-r0 license:
 MIT
 
 ```
@@ -1582,16 +1582,16 @@ X11
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.5.6-r0 description:
+openssl-3.5.7-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.5.6-r0 webpage:
+openssl-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.5.6-r0 installed size:
+openssl-3.5.7-r0 installed size:
 801 KiB
 
-openssl-3.5.6-r0 license:
+openssl-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -1599,16 +1599,16 @@ Apache-2.0
 ### `apk` package: `openssl-dev`
 
 ```console
-openssl-dev-3.5.6-r0 description:
+openssl-dev-3.5.7-r0 description:
 Toolkit for Transport Layer Security (TLS) (development files)
 
-openssl-dev-3.5.6-r0 webpage:
+openssl-dev-3.5.7-r0 webpage:
 https://www.openssl.org/
 
-openssl-dev-3.5.6-r0 installed size:
+openssl-dev-3.5.7-r0 installed size:
 1960 KiB
 
-openssl-dev-3.5.6-r0 license:
+openssl-dev-3.5.7-r0 license:
 Apache-2.0
 
 ```
@@ -1769,16 +1769,16 @@ rhash-libs-1.4.6-r0 license:
 ### `apk` package: `runtime-dependencies`
 
 ```console
-runtime-dependencies-20260508.175015 description:
+runtime-dependencies-20260628.074647 description:
 virtual meta package
 
-runtime-dependencies-20260508.175015 webpage:
+runtime-dependencies-20260628.074647 webpage:
 
 
-runtime-dependencies-20260508.175015 installed size:
+runtime-dependencies-20260628.074647 installed size:
 0 B
 
-runtime-dependencies-20260508.175015 license:
+runtime-dependencies-20260628.074647 license:
 
 
 ```
