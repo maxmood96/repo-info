@@ -2195,14 +2195,9 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.20.2-1ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.20.2.orig.tar.gz' libheif_1.20.2.orig.tar.gz 1787518 SHA512:0ab8669d2ee1ed619c89cbe3fa3a7618c25d26a7e4c65801dd4db163d4a584fde13b32ed0996461e81bd42ed4def8f4eb7b296b15b7819e90c0a7d5a8c08b06b
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.20.2-1ubuntu0.4.debian.tar.xz' libheif_1.20.2-1ubuntu0.4.debian.tar.xz 17876 SHA512:b56b45d85f8b622d41fcaa1131cc0f96fde4f1bd0f48ba94713368740c0a6e6253994f43715075daed3134d673fbf92c5c071e3d511e4be2a2531cbbcb2dfc4e
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.20.2-1ubuntu0.4.dsc' libheif_1.20.2-1ubuntu0.4.dsc 3820 SHA512:722d0a9028dd486f44ac940b935e49e5704cdcf27e27d01839a780980c196536a247392b30245d7240272bdfd204ab5f4ec67a4b16abdee0eddc8ee28348c642
-```
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
@@ -3067,14 +3062,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.17.0-35.35
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.17.0.orig.tar.gz' linux_6.17.0.orig.tar.gz 248671329 SHA512:dc17e8dad07913ff20078194c0d9036e116db2fe1639cbddfccfaeda218cff06d0c7649f8182a07a999cf705a7b9749d26c8abe988f6b0b3c46b3142448f005f
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.17.0-35.35.diff.gz' linux_6.17.0-35.35.diff.gz 2342216 SHA512:e8ee0b13b986dafe19da91665edd4ce473a31db534b1e9e0f6a767fa95d7ceab30dcf7facb8efe807eaf7c260ec0dff73d7a314d522f96c6f5be3659f37d2dc3
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.17.0-35.35.dsc' linux_6.17.0-35.35.dsc 8842 SHA512:327718aed1909f04afb80067f0ebe0e0328c2f359c99da5fb60b853481ae7e1964f48758111f22778ebdd699eb4e5518b28d4ec1dbc96a522a05f610bcc224c7
-```
 
 ### `dpkg` source package: `lto-disabled-list=69`
 
