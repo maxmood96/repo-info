@@ -1,9 +1,9 @@
-# `gradle:9.6.0-jdk-lts-and-current-alpine`
+# `gradle:9.6.1-jdk-lts-and-current-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8bb94e4e4c69e387309c2fd40df48263a8692463b3ca11799d98f36d1cd6126b`
-- Created: `2026-06-22T20:19:08.581178987Z`
+- Image ID: `sha256:0edd72403a00cd6120304adf541327305ec0890fa83b75f040c09e4d723a1e99`
+- Created: `2026-06-29T17:14:26.961891202Z`
 - Virtual Size: ~ 847.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,7 +19,7 @@
   - `JAVA_LTS_HOME=/opt/java/openjdk25`
   - `JAVA_CURRENT_HOME=/opt/java/openjdk26`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.6.0`
+  - `GRADLE_VERSION=9.6.1`
 
 ## `apk` (`.apk`-based packages)
 

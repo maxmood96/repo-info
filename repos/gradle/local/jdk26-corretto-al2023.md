@@ -1,10 +1,10 @@
-# `gradle:9.6.0-jdk26-corretto`
+# `gradle:9.6.1-jdk26-corretto`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ca61f8957cf8bf94b47c9f8fc8b62553bb0282cf3010de4d38390ef12123968a`
-- Created: `2026-06-22T18:15:20.625207544Z`
-- Virtual Size: ~ 961.01 Mb  
+- Image ID: `sha256:93b6e6d7b98b27edc71becb669c35d6078b96dc7e10768c258f6f927c3c883fe`
+- Created: `2026-06-29T17:14:22.234510318Z`
+- Virtual Size: ~ 961.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-26-amazon-corretto`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=9.6.0`
+  - `GRADLE_VERSION=9.6.1`
 
 ## `rpm` (`.rpm`-based packages)
 

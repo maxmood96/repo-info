@@ -1,9 +1,9 @@
-# `gradle:9.6.0-jdk-lts-and-current-graal`
+# `gradle:9.6.1-jdk-lts-and-current-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:317c2094bf842ffc3ec51ff913632a3c1b94eba1ad66277e5f81b365323e5fd2`
-- Created: `2026-06-22T18:09:04.81894653Z`
+- Image ID: `sha256:ca882f99fd2b50bd598ca3cd7359fb34999ba6e4f59105e6f8e8e60aee63b50b`
+- Created: `2026-06-29T17:15:31.246533504Z`
 - Virtual Size: ~ 1.47 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,7 +14,7 @@
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_LTS_HOME=/opt/java/graalvm25`
   - `JAVA_CURRENT_HOME=/opt/java/graalvm25`
-  - `GRADLE_VERSION=9.6.0`
+  - `GRADLE_VERSION=9.6.1`
 - Labels:
   - `org.opencontainers.image.created=2026-06-10T03:30:57.931695+00:00`
   - `org.opencontainers.image.description=The Ubuntu container image maintained by Canonical
@@ -1944,11 +1944,11 @@ $ apt-get source -qq --print-uris libzstd=1.5.7+dfsg-3
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.5.7%2bdfsg-3.debian.tar.xz' libzstd_1.5.7+dfsg-3.debian.tar.xz 23164 SHA256:ada18b02a46878f2f0a845fd003179ab9591f7f96f0b984db06a024ab46ae81f
 ```
 
-### `dpkg` source package: `linux=7.0.0-22.22`
+### `dpkg` source package: `linux=7.0.0-27.27`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=7.0.0-22.22`
+- `linux-libc-dev:amd64=7.0.0-27.27`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1957,10 +1957,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=7.0.0-22.22
+$ apt-get source -qq --print-uris linux=7.0.0-27.27
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0.orig.tar.gz' linux_7.0.0.orig.tar.gz 254937830 SHA512:d7906686b560bf771c919278f44285e0d646baf20e7a794b17a1759b49c122d373bdfe2069fbe0baa5b57fe49d5b7eb534939cd3cce4ca71d975d1ed1551587a
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-22.22.diff.gz' linux_7.0.0-22.22.diff.gz 992725 SHA512:b466c2be1d17aea5a2d053a1b0f9fbc39eef7de63688ea7a8ba7759f1db4f859954c6353591459b8bf903e2c554b342057ac1f617ace6351dc095d99ad8549e0
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-22.22.dsc' linux_7.0.0-22.22.dsc 7922 SHA512:6b936bd12011eff0c641f7f72be5a124e4cd3b15f7b0cd3c5dc95ef0cad46b61a7cb1eb09085527630704380a79dff4e7d7d9db3dd9f158d74c80a40ca3100e6
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-27.27.diff.gz' linux_7.0.0-27.27.diff.gz 1122147 SHA512:96547cf0d02bf3bed277032a065e3d681bb3806d4785fbdf20d97eaea3cc8bb4bae7cbb5a0e55f6b5b6deb80df47c78ccea7b77b8162468d93d4ca20d0f7c39c
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_7.0.0-27.27.dsc' linux_7.0.0-27.27.dsc 7925 SHA512:6935d5a6b3fcb3383899ee5167acb6d2660a8ad9a581c5c5d4a9c069de42ba154fc24bf6debac437b121b99b10b447e67f5be8426344d43efe5f7d3e16b8db3f
 ```
 
 ### `dpkg` source package: `lz4=1.10.0-8`
@@ -2409,14 +2409,14 @@ $ apt-get source -qq --print-uris pcre2=10.46-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.46-1build1.dsc' pcre2_10.46-1build1.dsc 2221 SHA256:0e10c366d10e72b6940fcf37b61c2309d0136e05edff7adb1843030c0765f155
 ```
 
-### `dpkg` source package: `perl=5.40.1-7build1`
+### `dpkg` source package: `perl=5.40.1-7ubuntu0.1`
 
 Binary Packages:
 
-- `libperl5.40:amd64=5.40.1-7build1`
-- `perl=5.40.1-7build1`
-- `perl-base=5.40.1-7build1`
-- `perl-modules-5.40=5.40.1-7build1`
+- `libperl5.40:amd64=5.40.1-7ubuntu0.1`
+- `perl=5.40.1-7ubuntu0.1`
+- `perl-base=5.40.1-7ubuntu0.1`
+- `perl-modules-5.40=5.40.1-7ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.40/copyright`)
 
@@ -2449,11 +2449,11 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.40.1-7build1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA256:4ea023d08101443f6ed9dc3bdd9bb5f5e08087678dc9e443d195df22da36209a
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA256:dfa20c2eef2b4af133525610bbb65dd13777ecf998c9c5b1ccf0d308e732ee3f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7build1.debian.tar.xz' perl_5.40.1-7build1.debian.tar.xz 172948 SHA256:203fd30659ad1101e08b211154337b8e9f2bb7bc5784d3b1d7653dc1f4bcf637
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7build1.dsc' perl_5.40.1-7build1.dsc 2932 SHA256:695b27c16ca71ba567e6758428401426108b2e636cb3e4376bfe0bd111d2249a
+$ apt-get source -qq --print-uris perl=5.40.1-7ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig-regen-configure.tar.xz' perl_5.40.1.orig-regen-configure.tar.xz 421056 SHA512:933261779f476b0edda581270949c92e8e7dbe4bcaf1417398e708a321cdb748fe329acb703b2e74446cdfb03c20cefcab1eb972b852418ed3ea9b870db1fa86
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1.orig.tar.xz' perl_5.40.1.orig.tar.xz 13930924 SHA512:3ff16b3462ce43ff38dab21b3dfc20f81772b8c9eac19ab96ba2d5e6cbb390e2302fa76c4879f915249357cd11c7ec0d548bcbf3ab2c156df1b9fca95da3f545
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.1.debian.tar.xz' perl_5.40.1-7ubuntu0.1.debian.tar.xz 174800 SHA512:6e7c2f3a580366b9303161465fdb9ad2cbf58bc602ab9d86fd9aad454d3d3b1ff312912e3bf694b36d23309492bdc2013a3c6e092d6cae3c4accf0e6cafa8c8f
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.1-7ubuntu0.1.dsc' perl_5.40.1-7ubuntu0.1.dsc 2893 SHA512:c4822a4d84cab4fe29b6b4c7e881fb985eea1cff87ae133848df58f1af07de8d4fdd6a86f0e3bcacc5631c46e650a38feabf03b06453c4368c3e89004d5e4f7d
 ```
 
 ### `dpkg` source package: `procps=2:4.0.4-9ubuntu1`
@@ -2933,11 +2933,11 @@ $ apt-get source -qq --print-uris sysvinit=3.15-5ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_3.15-5ubuntu1.dsc' sysvinit_3.15-5ubuntu1.dsc 2489 SHA256:48e604576ae74c4c66e7c23992f0a6a89cdaa86b475d3c64da985506a5ad5e88
 ```
 
-### `dpkg` source package: `tar=1.35+dfsg-4`
+### `dpkg` source package: `tar=1.35+dfsg-4ubuntu0.1`
 
 Binary Packages:
 
-- `tar=1.35+dfsg-4`
+- `tar=1.35+dfsg-4ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -2954,10 +2954,10 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tar=1.35+dfsg-4
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-4.dsc' tar_1.35+dfsg-4.dsc 2034 SHA256:493403c9708bdf8ccd516aea90d81058eeff058e7e459fcc46ffa78867554b39
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA256:9ae57e981c1e73c0eebc2b26c9b0c4497fe310ef1d516ea430efb5470b71f7a8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-4.debian.tar.xz' tar_1.35+dfsg-4.debian.tar.xz 21640 SHA256:9bb51d273e49502eab6d98228e8dd711c46a3418bf8428a2104148734810157e
+$ apt-get source -qq --print-uris tar=1.35+dfsg-4ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA512:3aea32b5c8de229131308420d8a7aa57f7fd1b376980456dd1aa66f97509572750c3833ab9cc2edc6fdea51f802033598c83a0d6e7f18680b1638996f0acaae7
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-4ubuntu0.1.debian.tar.xz' tar_1.35+dfsg-4ubuntu0.1.debian.tar.xz 24548 SHA512:de695f5d0a1e0882e80b5c940a36e890fc97de716d4da025caf493935335f77529d0cf5d4f29d518d4177cac3f48b7d69c6f9c518d2542c074bb37b9597e81f0
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-4ubuntu0.1.dsc' tar_1.35+dfsg-4ubuntu0.1.dsc 2124 SHA512:dea3fcd160f045ac9995e8e6f432da6396af783fa4418dac7225965fcbe450856d213eb9d88d4cdc83451636c25b16c744fcf9d20550206d2215074c701c9332
 ```
 
 ### `dpkg` source package: `tzdata=2026a-3ubuntu1`

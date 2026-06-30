@@ -1,9 +1,9 @@
-# `gradle:9.6.0-jdk25-graal-noble`
+# `gradle:9.6.1-jdk25-graal-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2bbe78625c7cad65ab2a4110956094d9ff985fb8235a09aaca125397d1c5c79f`
-- Created: `2026-06-22T18:06:26.644965807Z`
+- Image ID: `sha256:bc953467332db554991cfb9814a1d87d94aec7fc3481b27a9cf5a38125931f45`
+- Created: `2026-06-29T17:12:01.428845992Z`
 - Virtual Size: ~ 1.41 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=25.0.2`
-  - `GRADLE_VERSION=9.6.0`
+  - `GRADLE_VERSION=9.6.1`
 - Labels:
   - `org.opencontainers.image.version=24.04`
 
@@ -2335,14 +2335,14 @@ $ apt-get source -qq --print-uris pcre2=10.42-4ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.42-4ubuntu2.1.dsc' pcre2_10.42-4ubuntu2.1.dsc 2277 SHA256:6272177be186d6f8ad16b668bb508b2e07645e05b5b8402d446492cb6d18104e
 ```
 
-### `dpkg` source package: `perl=5.38.2-3.2ubuntu0.2`
+### `dpkg` source package: `perl=5.38.2-3.2ubuntu0.3`
 
 Binary Packages:
 
-- `libperl5.38t64:amd64=5.38.2-3.2ubuntu0.2`
-- `perl=5.38.2-3.2ubuntu0.2`
-- `perl-base=5.38.2-3.2ubuntu0.2`
-- `perl-modules-5.38=5.38.2-3.2ubuntu0.2`
+- `libperl5.38t64:amd64=5.38.2-3.2ubuntu0.3`
+- `perl=5.38.2-3.2ubuntu0.3`
+- `perl-base=5.38.2-3.2ubuntu0.3`
+- `perl-modules-5.38=5.38.2-3.2ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.38t64/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.38/copyright`)
 
@@ -2375,11 +2375,11 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.38t64/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.38.2-3.2ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA256:4d1b34cc058f9963cb89785ecc040d57f6d7725cd83329cfa4ef8b27566454d2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA256:d91115e90b896520e83d4de6b52f8254ef2b70a8d545ffab33200ea9f1cf29e8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.2.debian.tar.xz' perl_5.38.2-3.2ubuntu0.2.debian.tar.xz 171736 SHA256:f7149a24aef35ff716fe9e6c724f8f9a769d1c77cddd6db301b7b7c450989b75
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.2.dsc' perl_5.38.2-3.2ubuntu0.2.dsc 3036 SHA256:4940986b06decbd6b6bbcc40770508d72cbb06c9b4350e703fe555daaa74956b
+$ apt-get source -qq --print-uris perl=5.38.2-3.2ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig-regen-configure.tar.xz' perl_5.38.2.orig-regen-configure.tar.xz 418808 SHA512:c4ea40ce9eda247c2ced678a75bdbd8bc292baee5ec3490cb00b1947277e1e0e9e5160d108676380efff13d4f1304f0c8d4eaa2c7e66e543ecd57e513075cb8c
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2.orig.tar.xz' perl_5.38.2.orig.tar.xz 13679524 SHA512:0ca51e447c7a18639627c281a1c7ae6662c773745ea3c86bede46336d5514ecc97ded2c61166e1ac15635581489dc596368907aa3a775b34db225b76d7402d10
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.3.debian.tar.xz' perl_5.38.2-3.2ubuntu0.3.debian.tar.xz 173452 SHA512:a75d0901b711a0a28af4f9ea78bf9126718ffdf9cebc49d3debb8b8226d74834f0ec2407907bf32731f46794168b8751f8bf607607ea55ee728bda6b3dd19028
+'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.38.2-3.2ubuntu0.3.dsc' perl_5.38.2-3.2ubuntu0.3.dsc 2906 SHA512:061ab3b4c4ec7c7bb824d9fd9d29d2a3e4a8e948f14fb2f8ee96464436d79e305d0c993c1431b0e3efb14b8406d8f0b35a9e551518b5f875ba59c37a64d1ea1e
 ```
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.2`
@@ -2740,15 +2740,9 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.45.1-1ubuntu2.5
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig-www.tar.xz' sqlite3_3.45.1.orig-www.tar.xz 5693812 SHA256:79b60798195a024d447e661e5bbc1eb40af50387ebf840e6f581190cc02064b6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1.orig.tar.xz' sqlite3_3.45.1.orig.tar.xz 8257884 SHA256:e32e817f7b4166a301f60b14a711871bfab7d35c1d7e29b585dfc479ae150aa4
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.5.debian.tar.xz' sqlite3_3.45.1-1ubuntu2.5.debian.tar.xz 35260 SHA256:b8f41cb7843f513934307d07047b185c316c3a72c650eaece0926e02d1dfc377
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.45.1-1ubuntu2.5.dsc' sqlite3_3.45.1-1ubuntu2.5.dsc 2601 SHA256:6816e069bf0306f294001e1ed0ee578a272baced39c7afe4151053ab069a70b4
-```
 
 ### `dpkg` source package: `subversion=1.14.3-1build4`
 
@@ -2830,11 +2824,11 @@ $ apt-get source -qq --print-uris sysvinit=3.08-6ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sysvinit/sysvinit_3.08-6ubuntu3.debian.tar.xz' sysvinit_3.08-6ubuntu3.debian.tar.xz 140128 SHA512:fa53bd172bf4ce998743f3011b44ebf188948ed436f202181fc6eb7d4535e4d1426aeeac76cda4a650b040d22f9487b890e9f826cd222ddc5e939901c5f7c67c
 ```
 
-### `dpkg` source package: `tar=1.35+dfsg-3build1`
+### `dpkg` source package: `tar=1.35+dfsg-3ubuntu0.1`
 
 Binary Packages:
 
-- `tar=1.35+dfsg-3build1`
+- `tar=1.35+dfsg-3ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -2851,10 +2845,9 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tar=1.35+dfsg-3build1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-3build1.dsc' tar_1.35+dfsg-3build1.dsc 2141 SHA512:bb080610adc480448cf511d591eaaeb301395e5bbe01b16b254ad33edb33233aba18af79a4cf505fec330c83dac9570d84122432ff11b781a12c5dc409a173f6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA512:3aea32b5c8de229131308420d8a7aa57f7fd1b376980456dd1aa66f97509572750c3833ab9cc2edc6fdea51f802033598c83a0d6e7f18680b1638996f0acaae7
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-3build1.debian.tar.xz' tar_1.35+dfsg-3build1.debian.tar.xz 20948 SHA512:82b1a9f70c99c17f5288a4a9fbe8b1bef0adcd9543f97f876ee81afc16e3ac02e46182557406ff434ae90c81950f22346c3229ee3e5f5f9578dcf09a20053e9f
+$ apt-get source -qq --print-uris tar=1.35+dfsg-3ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-3ubuntu0.1.tar.gz' tar_1.35+dfsg-3ubuntu0.1.tar.gz 4368882 SHA512:59070f4edb013a780fc9d1c7b0605e84a11925b37aa547d5ac40857bdf99829220f1c30afefa8cb3456c9b7e5437a6dc8c888332e7b876d5f4e6b6915091b3a1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-3ubuntu0.1.dsc' tar_1.35+dfsg-3ubuntu0.1.dsc 1857 SHA512:2f57cb60d3ae566557fba74347a173f26dd1f2df4cff530dbef075b3b9492286d6d8b23beeff08c939cbd061f0f49c3e25a7b03772d6f502571dfb17042fa3c4
 ```
 
 ### `dpkg` source package: `tzdata=2026a-0ubuntu0.24.04.1`
