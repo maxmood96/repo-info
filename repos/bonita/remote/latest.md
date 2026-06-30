@@ -1,7 +1,7 @@
 ## `bonita:latest`
 
 ```console
-$ docker pull bonita@sha256:29a9e05eb66391835a648083af17e013bdb06244f4ce923db4de8f7165ccc849
+$ docker pull bonita@sha256:acd0119d86152b58bf0cb76595cfd67f1af336da8d8f26168bf6948943083446
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,13 +12,13 @@ $ docker pull bonita@sha256:29a9e05eb66391835a648083af17e013bdb06244f4ce923db4de
 ### `bonita:latest` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:9705bf2773c1f423d544c0183a850f3446b7cab84a29c8e6bb4d3c7bec75f007
+$ docker pull bonita@sha256:1b2a9391e9dfc51440840c83e7de8fc336702561b5ffe1a740dce2cb1a952ea2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **186.5 MB (186489443 bytes)**  
+-	Total Size: **186.8 MB (186790946 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:05778afa787814322865276a3954e772794c36d3d5f4ec79621e8ba49d9f3640`
+-	Image ID: `sha256:460f44519483b4a98fd64bf1692a186ad4f434cb48726659260771f1629487a8`
 -	Entrypoint: `["\/__cacert_entrypoint.sh","\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
@@ -45,85 +45,85 @@ RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java 
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Mon, 22 Jun 2026 19:57:30 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Mon, 22 Jun 2026 20:24:14 GMT
+# Tue, 30 Jun 2026 19:16:31 GMT
 LABEL maintainer=Bonitasoft Runtime team <rd.engine@bonitasoft.com>
-# Mon, 22 Jun 2026 20:24:14 GMT
+# Tue, 30 Jun 2026 19:16:31 GMT
 RUN apk add --no-cache tzdata curl unzip bash su-exec jattach # buildkit
-# Mon, 22 Jun 2026 20:24:14 GMT
+# Tue, 30 Jun 2026 19:16:31 GMT
 RUN mkdir /opt/custom-init.d/ # buildkit
-# Mon, 22 Jun 2026 20:24:14 GMT
+# Tue, 30 Jun 2026 19:16:31 GMT
 RUN addgroup -S -g 1000 bonita  && adduser -u 1000 -S -G bonita -h /opt/bonita/ -s /sbin/nologin bonita # buildkit
-# Mon, 22 Jun 2026 20:24:14 GMT
+# Tue, 30 Jun 2026 19:16:31 GMT
 ARG BONITA_VERSION
-# Mon, 22 Jun 2026 20:24:14 GMT
+# Tue, 30 Jun 2026 19:16:31 GMT
 ARG BRANDING_VERSION
-# Mon, 22 Jun 2026 20:24:14 GMT
+# Tue, 30 Jun 2026 19:16:31 GMT
 ARG BONITA_SHA256
-# Mon, 22 Jun 2026 20:24:14 GMT
+# Tue, 30 Jun 2026 19:16:31 GMT
 ARG BASE_URL
-# Mon, 22 Jun 2026 20:24:14 GMT
+# Tue, 30 Jun 2026 19:16:31 GMT
 ARG BONITA_URL
-# Mon, 22 Jun 2026 20:24:14 GMT
+# Tue, 30 Jun 2026 19:16:31 GMT
 ARG PROGRADE_VERSION=1.1.1
-# Mon, 22 Jun 2026 20:24:14 GMT
+# Tue, 30 Jun 2026 19:16:31 GMT
 ARG PROGRADE_JAR_SHA1=300d7ee29d79cc0ad8aad8e7abe17588ad3d33c5
-# Mon, 22 Jun 2026 20:24:14 GMT
-ENV BONITA_VERSION=11.0.0
-# Mon, 22 Jun 2026 20:24:14 GMT
-ENV BRANDING_VERSION=2026.1-u0
-# Mon, 22 Jun 2026 20:24:14 GMT
-ENV BONITA_SHA256=a3a0c80b975b51e247c630a204170beb675f4a83139ff2d1c533c1b7db17a25b
-# Mon, 22 Jun 2026 20:24:14 GMT
-ENV ZIP_FILE=BonitaCommunity-2026.1-u0.zip
-# Mon, 22 Jun 2026 20:24:14 GMT
+# Tue, 30 Jun 2026 19:16:31 GMT
+ENV BONITA_VERSION=11.1.0
+# Tue, 30 Jun 2026 19:16:31 GMT
+ENV BRANDING_VERSION=2026.2-u0
+# Tue, 30 Jun 2026 19:16:31 GMT
+ENV BONITA_SHA256=ebf172d5a6110a28b87b05071ce463f695d424afcd95948afd24e4280303387f
+# Tue, 30 Jun 2026 19:16:31 GMT
+ENV ZIP_FILE=BonitaCommunity-2026.2-u0.zip
+# Tue, 30 Jun 2026 19:16:31 GMT
 ENV BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat
-# Mon, 22 Jun 2026 20:24:14 GMT
-ENV BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/11.0.0/bundle-tomcat-11.0.0.zip
-# Mon, 22 Jun 2026 20:24:15 GMT
-# ARGS: BONITA_VERSION=11.0.0 BRANDING_VERSION=2026.1-u0 BONITA_SHA256=a3a0c80b975b51e247c630a204170beb675f4a83139ff2d1c533c1b7db17a25b BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/11.0.0/bundle-tomcat-11.0.0.zip PROGRADE_VERSION=1.1.1 PROGRADE_JAR_SHA1=300d7ee29d79cc0ad8aad8e7abe17588ad3d33c5
+# Tue, 30 Jun 2026 19:16:31 GMT
+ENV BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/11.1.0/bundle-tomcat-11.1.0.zip
+# Tue, 30 Jun 2026 19:16:31 GMT
+# ARGS: BONITA_VERSION=11.1.0 BRANDING_VERSION=2026.2-u0 BONITA_SHA256=ebf172d5a6110a28b87b05071ce463f695d424afcd95948afd24e4280303387f BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/11.1.0/bundle-tomcat-11.1.0.zip PROGRADE_VERSION=1.1.1 PROGRADE_JAR_SHA1=300d7ee29d79cc0ad8aad8e7abe17588ad3d33c5
 RUN mkdir /opt/files # buildkit
-# Mon, 22 Jun 2026 20:24:15 GMT
+# Tue, 30 Jun 2026 19:16:32 GMT
 COPY files /opt/files # buildkit
-# Mon, 22 Jun 2026 20:24:19 GMT
-# ARGS: BONITA_VERSION=11.0.0 BRANDING_VERSION=2026.1-u0 BONITA_SHA256=a3a0c80b975b51e247c630a204170beb675f4a83139ff2d1c533c1b7db17a25b BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/11.0.0/bundle-tomcat-11.0.0.zip PROGRADE_VERSION=1.1.1 PROGRADE_JAR_SHA1=300d7ee29d79cc0ad8aad8e7abe17588ad3d33c5
+# Tue, 30 Jun 2026 19:16:35 GMT
+# ARGS: BONITA_VERSION=11.1.0 BRANDING_VERSION=2026.2-u0 BONITA_SHA256=ebf172d5a6110a28b87b05071ce463f695d424afcd95948afd24e4280303387f BASE_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat BONITA_URL=https://search.maven.org/remotecontent?filepath=org/bonitasoft/distrib/bundle-tomcat/11.1.0/bundle-tomcat-11.1.0.zip PROGRADE_VERSION=1.1.1 PROGRADE_JAR_SHA1=300d7ee29d79cc0ad8aad8e7abe17588ad3d33c5
 RUN if [ -f "/opt/files/BonitaCommunity-${BRANDING_VERSION}.zip" ]; then       echo "File already present in /opt/files";     else       curl -fsSL ${BONITA_URL} -o /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip       && echo "$BONITA_SHA256 */opt/files/$ZIP_FILE" | sha256sum -c -;     fi   && unzip -q /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip -d /opt/bonita/   && mv /opt/bonita/BonitaCommunity-${BRANDING_VERSION}/* /opt/bonita   && rmdir /opt/bonita/BonitaCommunity-${BRANDING_VERSION}   && rm -f /opt/files/BonitaCommunity-${BRANDING_VERSION}.zip   && mkdir -p /opt/bonita/conf/logs/   && mkdir -p /opt/bonita/logs/   && mv /opt/files/log4j2/log4j2-appenders.xml /opt/bonita/conf/logs/   && mv /opt/bonita/server/conf/log4j2-loggers.xml /opt/bonita/conf/logs/   && mkdir -p /opt/bonita/conf/prograde   && mv /opt/files/prograde.policy /opt/bonita/conf/prograde/   && wget -nv -O pro-grade.jar https://repo1.maven.org/maven2/net/sourceforge/pro-grade/pro-grade/${PROGRADE_VERSION}/pro-grade-${PROGRADE_VERSION}.jar   && echo "${PROGRADE_JAR_SHA1}  pro-grade.jar" | sha1sum -c -   && mv pro-grade.jar /opt/bonita/server/lib/ext/pro-grade.jar   && chown -R bonita:bonita /opt/bonita   && chmod go+w /opt/   && chmod -R +rX /opt   && chmod go+w /opt/bonita   && chmod 777 /opt/bonita/server/logs   && chmod 777 /opt/bonita/logs/   && chmod 777 /opt/bonita/server/temp   && chmod 777 /opt/bonita/server/work   && chmod -R go+w /opt/bonita/server/conf   && chmod -R go+w /opt/bonita/server/bin   && chmod -R go+w /opt/bonita/server/lib/bonita   && chmod -R go+w /opt/bonita/setup # buildkit
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 ENV HTTP_API=false
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 ENV HTTP_API_USERNAME=http-api
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 ENV HTTP_API_PASSWORD=
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 ENV MONITORING_USERNAME=monitoring
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 ENV MONITORING_PASSWORD=mon1tor1ng_adm1n
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 ENV JMX_REMOTE_ACCESS=false
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 ENV REMOTE_IP_VALVE_ENABLED=false
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 ENV PRO_GRADE=true
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 ENV PRO_GRADE_POLICY_PATH=/opt/bonita/conf/prograde
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 ENV ACCESSLOGS_STDOUT_ENABLED=false
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 ENV ACCESSLOGS_FILES_ENABLED=false
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 ENV ACCESSLOGS_PATH=/opt/bonita/logs
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 ENV ACCESSLOGS_PATH_APPEND_HOSTNAME=false
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 ENV ACCESSLOGS_MAX_DAYS=30
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 ENV HTTP_MAX_THREADS=20
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 COPY templates /opt/templates # buildkit
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 EXPOSE map[8080/tcp:{} 9000/tcp:{}]
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh" "/opt/files/startup.sh"]
-# Mon, 22 Jun 2026 20:24:19 GMT
+# Tue, 30 Jun 2026 19:16:35 GMT
 CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 ```
 
@@ -148,55 +148,55 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 		Last Modified: Mon, 22 Jun 2026 19:57:40 GMT  
 		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3c97c701f173ccb02b150aeff3856ffac07e1a297e55383e2dfef4439171f7e7`  
-		Last Modified: Mon, 22 Jun 2026 20:24:30 GMT  
-		Size: 1.6 MB (1560725 bytes)  
+	-	`sha256:beae30bf672e70027f768ec2a3b686f04debfb98c113739f97d197f7c8ab7016`  
+		Last Modified: Tue, 30 Jun 2026 19:16:47 GMT  
+		Size: 1.6 MB (1560736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28f5954195cabf144a201b17f5e2f18cffada7fd4e2e9b248b3a49bcbea85aeb`  
-		Last Modified: Mon, 22 Jun 2026 20:24:29 GMT  
-		Size: 122.0 B  
+	-	`sha256:bf9fa72b64da18c364e073c4745895aef2ef94eef928f2ab4d929e31f078e2ce`  
+		Last Modified: Tue, 30 Jun 2026 19:16:46 GMT  
+		Size: 123.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2504f9b7ba8e15c8f984a74abee0dff07dfd32c60c6ff1682d8ec7ef1a14b94`  
-		Last Modified: Mon, 22 Jun 2026 20:24:29 GMT  
-		Size: 945.0 B  
+	-	`sha256:3d651722ff6a90bceae0752d772603ac2e959ce7c4c34143a94a7d023511f91d`  
+		Last Modified: Tue, 30 Jun 2026 19:16:46 GMT  
+		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b664a84877b1f36032019901eab3c8b50b8f26cd48d72731b95531360280ee91`  
-		Last Modified: Mon, 22 Jun 2026 20:24:29 GMT  
+	-	`sha256:74cafff64768b09cd7aa1bd7c156c76e655e52859b12b19a8080aad95c1d8062`  
+		Last Modified: Tue, 30 Jun 2026 19:16:46 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15ac1babae109212570d0aef5280cff263f83892db8938751ac7c9060558ecac`  
-		Last Modified: Mon, 22 Jun 2026 20:24:31 GMT  
+	-	`sha256:20ee75519275a7c4e0118d9174b0b731e4aa9a71d0e40441a2cd22cc3455ab9f`  
+		Last Modified: Tue, 30 Jun 2026 19:16:48 GMT  
 		Size: 4.9 KB (4924 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12aee428edf553411a32603f497ff3639a1cde6a7a0ec51eb26c9114534ed7b0`  
-		Last Modified: Mon, 22 Jun 2026 20:24:34 GMT  
-		Size: 111.0 MB (110952266 bytes)  
+	-	`sha256:3d887fc950a7806da61a361d60e222803bb941cc62665f70a27af11194261b4b`  
+		Last Modified: Tue, 30 Jun 2026 19:16:50 GMT  
+		Size: 111.3 MB (111253757 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:145f9d94503e0140325718d3e5579facdff56c2d46371557acfca0503e49a2ee`  
-		Last Modified: Mon, 22 Jun 2026 20:24:31 GMT  
-		Size: 6.0 KB (5952 bytes)  
+	-	`sha256:4b8ebd96e605f712c1824263daaa2ad87471e0a50d066a1957c1312a5278c2c7`  
+		Last Modified: Tue, 30 Jun 2026 19:16:48 GMT  
+		Size: 6.0 KB (5951 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:latest` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:cc510c2469d8ab2ac6df77ff39304955e8a621494d6bd8a2cf42d1c5ba6eb3b4
+$ docker pull bonita@sha256:bed35a6e17102f44391af5e3d62ab81966fc1e73c8d312247705d12898c888a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 MB (1235448 bytes)**  
+-	Total Size: **1.2 MB (1234164 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac3ec399277a7ad4b46b0e52f749d944fc436441665c006a09a6eb6f47a8a6d6`
+-	Image ID: `sha256:c48f6115d76a55b7416f1e1c3691862f99da752d40900b910beb021016f22284`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:90f42c8c363842ecdde601da24ce3b4aeb6065fe9d99fcec560b2e40da55b33a`  
-		Last Modified: Mon, 22 Jun 2026 20:24:29 GMT  
-		Size: 1.2 MB (1204742 bytes)  
+	-	`sha256:4c8520bd604f09f9db538a78c20870de47e6873896984783839d52d753504a3b`  
+		Last Modified: Tue, 30 Jun 2026 19:16:47 GMT  
+		Size: 1.2 MB (1203458 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a40a43f6dc137701b01217585ec4170e7955c71861795d36818a77d8ae05d1a6`  
-		Last Modified: Mon, 22 Jun 2026 20:24:29 GMT  
+	-	`sha256:5324cae7a13106b63e6bf1514f0d523a3e9ece05ce7a258b32974322e94b9b60`  
+		Last Modified: Tue, 30 Jun 2026 19:16:46 GMT  
 		Size: 30.7 KB (30706 bytes)  
 		MIME: application/vnd.in-toto+json
